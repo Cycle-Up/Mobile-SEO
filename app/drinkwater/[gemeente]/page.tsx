@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
-    alternates: { canonical: `https://waterfilterplatform.nl/drinkwater-${gemeente.slug}` },
+    alternates: { canonical: `https://waterfilterplatform.nl/drinkwater/${gemeente.slug}` },
     openGraph: {
       title,
       description: `Is het kraanwater in ${gemeente.naam} veilig? Wat zit erin en wanneer is filteren zinvol? Compleet overzicht.`,
@@ -142,7 +142,7 @@ export default async function DrinkwaterPage({ params }: PageProps) {
         type="BreadcrumbList"
         breadcrumbs={[
           { name: 'Home', url: 'https://waterfilterplatform.nl' },
-          { name: `Drinkwater ${gemeente.naam}`, url: `https://waterfilterplatform.nl/drinkwater-${gemeente.slug}` },
+          { name: `Drinkwater ${gemeente.naam}`, url: `https://waterfilterplatform.nl/drinkwater/${gemeente.slug}` },
         ]}
       />
 
@@ -347,7 +347,7 @@ export default async function DrinkwaterPage({ params }: PageProps) {
               {naburigeGemeenten.map(g => (
                 <Link
                   key={g.slug}
-                  href={`/drinkwater-${g.slug}`}
+                  href={`/drinkwater/${g.slug}`}
                   className="border border-gray-100 rounded-xl px-4 py-2.5 hover:border-[#005F8A] hover:shadow-sm transition-all flex justify-between items-center"
                 >
                   <span className="text-sm font-medium text-gray-800">Drinkwater {g.naam}</span>

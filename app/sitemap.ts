@@ -37,13 +37,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${BASE}/drinkwater-${g.slug}`,
+      url: `${BASE}/drinkwater/${g.slug}`,
       lastModified: new Date(),
       changeFrequency: 'yearly' as const,
       priority: 0.5,
     },
     {
-      url: `${BASE}/kalk-in-${g.slug}`,
+      url: `${BASE}/kalk-in/${g.slug}`,
       lastModified: new Date(),
       changeFrequency: 'yearly' as const,
       priority: 0.5,

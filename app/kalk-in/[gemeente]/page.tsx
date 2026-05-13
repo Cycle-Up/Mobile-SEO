@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `Kalk in ${gemeente.naam}: oorzaken, gevolgen & oplossing`,
     description: `Last van kalkaanslag in ${gemeente.naam}? Het water heeft ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}). Lees over witte aanslag, schade aan apparaten en de beste manier om kalk te verwijderen.`,
-    alternates: { canonical: `https://waterfilterplatform.nl/kalk-in-${gemeente.slug}` },
+    alternates: { canonical: `https://waterfilterplatform.nl/kalk-in/${gemeente.slug}` },
     openGraph: {
       title: `Kalk in ${gemeente.naam} — oorzaken, kosten en oplossing`,
       description: `Witte kalkaanslag in ${gemeente.naam} bij ${gemeente.hardheid}°dH leidingwater. Ontdek wat kalk je kost en hoe je het structureel oplost.`,
@@ -301,7 +301,7 @@ export default async function KalkInGemeentePage({ params }: PageProps) {
         breadcrumbs={[
           { name: 'Home', url: 'https://waterfilterplatform.nl' },
           { name: 'Kalk per gemeente', url: 'https://waterfilterplatform.nl/kennisbank/kalk-in-huis' },
-          { name: `Kalk in ${gemeente.naam}`, url: `https://waterfilterplatform.nl/kalk-in-${gemeente.slug}` },
+          { name: `Kalk in ${gemeente.naam}`, url: `https://waterfilterplatform.nl/kalk-in/${gemeente.slug}` },
         ]}
       />
 
@@ -462,7 +462,7 @@ export default async function KalkInGemeentePage({ params }: PageProps) {
                 return (
                   <Link
                     key={g.slug}
-                    href={`/kalk-in-${g.slug}`}
+                    href={`/kalk-in/${g.slug}`}
                     className={`text-sm border rounded-full px-3 py-1.5 hover:shadow-sm transition-shadow ${kleur}`}
                   >
                     Kalk in {g.naam} ({g.hardheid}°)
