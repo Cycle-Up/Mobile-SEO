@@ -15,6 +15,20 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'bruisend-water-thuis',
+    titel: 'Bruisend water thuis: de beste opties vergeleken',
+    samenvatting: 'SodaStream, onderaanrecht-systeem of 4-in-1 kraan? We vergelijken alle opties voor bruisend water thuis op prijs, kwaliteit en kosten over 3 jaar.',
+    categorie: 'Vergelijken',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'osmose-water',
+    titel: 'Osmose water: wat is het en hoe maak je het thuis?',
+    samenvatting: 'Wat is osmose water, hoe zuiver is het en hoe maak je het thuis? Vergelijking met flessenwater, kosten per liter en de beste systemen.',
+    categorie: 'Osmose',
+    datum: '13 mei 2026',
+  },
+  {
     slug: 'kalk-in-huis',
     titel: 'Kalk in huis: oorzaken, gevolgen en de beste oplossing',
     samenvatting: 'Witte aanslag, verstopte apparaten, hogere energierekening — kalk kost je meer dan je denkt. Ontdek de oorzaken en de beste structurele oplossing.',

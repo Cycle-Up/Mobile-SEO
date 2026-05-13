@@ -18,7 +18,7 @@ Alleen keywords op **positie 11+** worden getarget. Pos 1–10 is al gewonnen te
 | `omgekeerde osmose` | 5.386 | 33.98 | page | `/omgekeerde-osmose` | ✅ |
 | `osmose filter kopen` | 2.847 | 28.53 | page | `/omgekeerde-osmose/kopen` | ✅ |
 | `wat is osmose water` | 3.036 | 54.59 | page | `/omgekeerde-osmose/wat-is-osmose-water` | ✅ |
-| `osmose water` | 2.896 | 27.89 | article | `osmose-water` | ⬜ |
+| `osmose water` | 2.896 | 27.89 | article | `osmose-water` | ✅ |
 | `osmose apparaat voor thuis` | 1.852 | 26.57 | page | `/omgekeerde-osmose/voor-thuis` | ✅ |
 | `kokend water kraan` | 8.518 | 13.53 | page | `/kokend-water-kraan` | ✅ |
 | `heet water kraan` | 1.833 | 13.05 | page | `/heet-water-kraan` | ✅ |
@@ -29,7 +29,7 @@ Alleen keywords op **positie 11+** worden getarget. Pos 1–10 is al gewonnen te
 
 | Keyword | Vol. | Pos. | Type | Slug | Status |
 |---|---|---|---|---|---|
-| `bruisend water thuis` | ~800 | ~25 | article | `bruisend-water-thuis` | ⬜ |
+| `bruisend water thuis` | ~800 | ~25 | article | `bruisend-water-thuis` | ✅ |
 | `waterfilter keuken` | ~700 | ~30 | article | `waterfilter-keuken` | ⬜ |
 | `brita vs osmose` | ~600 | ~35 | article | `brita-vs-osmose` | ⬜ |
 | `kalk verwijderen water` | ~500 | ~28 | article | `kalk-verwijderen-water` | ⬜ |
@@ -73,13 +73,9 @@ Elk nieuw MDX-artikel moet voldoen aan:
 
 In volgorde van prioriteit:
 
-1. **`osmose-water`** — "osmose water" 2.896 imp/mnd, pos 27.89
-   - Focus: wat is osmose water, verschil met leidingwater, gebruik thuis
-   - Links naar: /omgekeerde-osmose/wat-is-osmose-water, /omgekeerde-osmose/kopen
+1. ✅ **`osmose-water`** — gepubliceerd 13 mei 2026
 
-2. **`bruisend-water-thuis`** — "bruisend water thuis" ~800 imp/mnd
-   - Focus: opties voor bruisend water thuis (sodastream vs osmose vs 4-in-1)
-   - Links naar: /kokend-water-kraan/met-filter, /kokend-water-kraan/vergelijken
+2. ✅ **`bruisend-water-thuis`** — gepubliceerd 13 mei 2026
 
 3. **`brita-vs-osmose`** — "brita vs osmose" ~600 imp/mnd
    - Focus: eerlijke vergelijking Brita filterkan vs osmose filter
