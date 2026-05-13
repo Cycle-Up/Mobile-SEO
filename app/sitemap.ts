@@ -53,6 +53,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/drinkwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/kraanwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/omgekeerde-osmose/onderhoud`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/omgekeerde-osmose/prijs`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${BASE}/waterfilter/vergelijken`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${BASE}/leidingwater`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
