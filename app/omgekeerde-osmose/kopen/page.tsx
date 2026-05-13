@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   description:
     'Wil je een osmose filter kopen? Vergelijk de beste reverse osmosis systemen voor thuis en ontdek welke het beste bij jou past.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/kopen' },
+  openGraph: {
+    title: 'Reverse osmosis filter kopen — welk systeem past bij jou?',
+    description: 'Vergelijk osmose filters op prijs, functies en filterkosten. Van €150 basisfilter tot complete 4-in-1 kraan met kokend water.',
+  },
 };
 
 const faqItems = [
@@ -156,6 +160,28 @@ export default function OsmoseKopenPage() {
         </section>
 
         <CTABanner context="osmose" />
+
+        <section>
+          <h2 className="text-xl font-bold text-[#003F5C] mb-4">Meer lezen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              { href: '/omgekeerde-osmose', label: 'Omgekeerde osmose: hoe werkt het?' },
+              { href: '/omgekeerde-osmose/wat-is-osmose-water', label: 'Wat is osmose water?' },
+              { href: '/omgekeerde-osmose/voor-thuis', label: 'Osmose apparaat voor thuis' },
+              { href: '/kokend-water-kraan/met-filter', label: 'Kokend water kraan met filter' },
+              { href: '/kennisbank/osmose-water-drinken', label: 'Is osmose water drinken gezond?' },
+              { href: '/waterhardheid', label: 'Waterhardheid per gemeente' },
+            ].map(l => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="flex items-center gap-2 text-sm text-[#005F8A] hover:underline bg-[#E0F2FE]/50 rounded-lg px-3 py-2"
+              >
+                <span>→</span> {l.label}
+              </Link>
+            ))}
+          </div>
+        </section>
 
         {/* FAQ */}
         <section>

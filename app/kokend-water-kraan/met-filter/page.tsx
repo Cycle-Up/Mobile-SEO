@@ -4,10 +4,14 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
-  title: 'Kokend water kraan met filter — osmose + kokend in één kraan',
+  title: 'Kokend water kraan met waterfilter — 4-in-1 kraan',
   description:
     'Een kokend water kraan met waterfilter: voordelen, werking en de beste modellen. Ontdek waarom een 4-in-1 kraan met osmosefilter de slimste keuze is.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/met-filter' },
+  openGraph: {
+    title: 'Kokend water kraan met waterfilter — 4-in-1 kraan',
+    description: 'Een kokend water kraan mét osmosefilter: puur water, kokend, koud en bruisend. De beste 4-in-1 systemen vergeleken.',
+  },
 };
 
 const faqItems = [
@@ -101,6 +105,28 @@ export default function MetFilterPage() {
         </section>
 
         <CTABanner context="kokend" />
+
+        <section>
+          <h2 className="text-xl font-bold text-[#003F5C] mb-4">Meer lezen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              { href: '/kokend-water-kraan', label: 'Kokend water kraan: complete gids' },
+              { href: '/kokend-water-kraan/vergelijken', label: 'Merken vergelijken (PureAqua vs Quooker)' },
+              { href: '/omgekeerde-osmose', label: 'Omgekeerde osmose uitleg' },
+              { href: '/omgekeerde-osmose/kopen', label: 'Osmose filter kopen' },
+              { href: '/kennisbank/kokend-water-kraan-installeren', label: 'Zelf installeren: stap-voor-stap' },
+              { href: '/kennisbank/waterfilter-vergelijken', label: 'Alle waterfilters vergelijken' },
+            ].map(l => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="flex items-center gap-2 text-sm text-[#005F8A] hover:underline bg-[#E0F2FE]/50 rounded-lg px-3 py-2"
+              >
+                <span>→</span> {l.label}
+              </Link>
+            ))}
+          </div>
+        </section>
 
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen</h2>

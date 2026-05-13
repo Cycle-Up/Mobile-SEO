@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description:
     'Hoe hard is het water in jouw gemeente? Bekijk de waterhardheid (°dH) voor alle Nederlandse gemeenten en wat dat betekent voor jouw waterfilter.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterhardheid' },
+  openGraph: {
+    title: 'Waterhardheid per gemeente — 349 gemeenten in Nederland',
+    description: 'Hoe hard is het water bij jou thuis? Zoek je gemeente op en lees wat waterhardheid betekent voor kalk, apparaten en drinkwater.',
+  },
 };
 
 const provincies = [...new Set(gemeenten.map(g => g.provincie))].sort();

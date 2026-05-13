@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   description:
     'Diepgaande artikelen over omgekeerde osmose, waterhardheid, kokend water kranen en waterkwaliteit in Nederland.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kennisbank' },
+  openGraph: {
+    title: 'Kennisbank — waterfilters, osmose en waterkwaliteit',
+    description: 'Diepgaande artikelen over omgekeerde osmose, waterhardheid, kokend water kranen en waterkwaliteit in Nederland.',
+  },
 };
 
 const artikelen = [

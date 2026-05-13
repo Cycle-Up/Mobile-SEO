@@ -9,7 +9,7 @@ interface BreadcrumbItem {
 }
 
 interface SchemaOrgProps {
-  type: 'FAQPage' | 'Article' | 'BreadcrumbList';
+  type: 'FAQPage' | 'Article' | 'BreadcrumbList' | 'Organization' | 'WebSite';
   faqItems?: FAQItem[];
   article?: {
     title: string;
@@ -62,6 +62,33 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs }: SchemaOrgPro
         name: item.name,
         item: item.url,
       })),
+    };
+  } else if (type === 'Organization') {
+    schema = {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'WaterfilterPlatform',
+      url: 'https://waterfilterplatform.nl',
+      description:
+        'Onafhankelijk informatieplatform over waterfilters, omgekeerde osmose en kokend water kranen in Nederland.',
+      sameAs: ['https://www.pureaqua.nl'],
+    };
+  } else if (type === 'WebSite') {
+    schema = {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'WaterfilterPlatform',
+      url: 'https://waterfilterplatform.nl',
+      description:
+        'Alles over omgekeerde osmose, kokend water kranen en waterhardheid per gemeente in Nederland.',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://waterfilterplatform.nl/waterhardheid/{search_term_string}',
+        },
+        'query-input': 'required name=search_term_string',
+      },
     };
   } else {
     return null;

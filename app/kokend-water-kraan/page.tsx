@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   description:
     'Alles over de kokend water kraan: hoe werkt het, welke merken zijn er en wat kost een kokend waterkraan? De complete gids voor 2026.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan' },
+  openGraph: {
+    title: 'Kokend water kraan — hoe werkt het en welk merk past bij jou?',
+    description: 'Direct 100°C water uit de kraan. Vergelijk merken en vind de beste kokend water kraan voor jouw keuken.',
+  },
 };
 
 const faqItems = [

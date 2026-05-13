@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Alles over omgekeerde osmose (RO): hoe werkt het, wat zijn de voordelen, en welk osmose filter past bij jou? Lees de volledige gids.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose' },
   openGraph: {
-    title: 'Omgekeerde osmose filter — uitleg en koopaardvijzen',
+    title: 'Omgekeerde osmose filter — uitleg en koopadvies',
     description: 'De complete gids over omgekeerde osmose waterfilters voor thuis.',
     url: 'https://waterfilterplatform.nl/omgekeerde-osmose',
   },
