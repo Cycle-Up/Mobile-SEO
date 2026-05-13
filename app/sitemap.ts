@@ -25,29 +25,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kokend-water-kraan/met-filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/heet-water-kraan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/waterhardheid`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterontharder`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterfilter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/kennisbank`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE}/over-ons`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${BASE}/quooker-alternatief`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/grohe-red-alternatief`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/sodastream-alternatief`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE}/beste-waterfilter-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/beste-osmosefilter-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/beste-kokend-water-kraan-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
-    {
-      url: `${BASE}/waterhardheid/${g.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly' as const,
-      priority: 0.5,
-    },
-    {
-      url: `${BASE}/drinkwater/${g.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly' as const,
-      priority: 0.5,
-    },
-    {
-      url: `${BASE}/kalk-in/${g.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly' as const,
-      priority: 0.5,
-    },
+    { url: `${BASE}/waterhardheid/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/drinkwater/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/kalk-in/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/waterontharder/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/waterfilter/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/osmose-filter/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
   ]);
 
   const kennisbankPages: MetadataRoute.Sitemap = getKennisbankSlugs().map(slug => ({
