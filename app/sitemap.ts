@@ -26,14 +26,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/heet-water-kraan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/waterhardheid`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/kennisbank`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${BASE}/over-ons`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.4 },
   ];
 
-  const gemeentePages: MetadataRoute.Sitemap = gemeenten.map(g => ({
-    url: `${BASE}/waterhardheid/${g.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'yearly',
-    priority: 0.5,
-  }));
+  const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
+    {
+      url: `${BASE}/waterhardheid/${g.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${BASE}/drinkwater-${g.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${BASE}/kalk-in-${g.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.5,
+    },
+  ]);
 
   const kennisbankPages: MetadataRoute.Sitemap = getKennisbankSlugs().map(slug => ({
     url: `${BASE}/kennisbank/${slug}`,

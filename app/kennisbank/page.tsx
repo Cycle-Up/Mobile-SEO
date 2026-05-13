@@ -15,6 +15,41 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'waterkwaliteit-nederland',
+    titel: 'Waterkwaliteit Nederland: hoe schoon is ons kraanwater echt?',
+    samenvatting: 'Hoe schoon is Nederlands kraanwater? Lees over normen, controle, regionale verschillen en wanneer filteren zinvol is.',
+    categorie: 'Waterkwaliteit',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'pfas-drinkwater',
+    titel: 'PFAS in drinkwater: hoe erg is het & wat helpt?',
+    samenvatting: 'PFAS in drinkwater — wat zijn forever chemicals, hoe erg is het in Nederland en welke filters helpen écht? Eerlijk overzicht.',
+    categorie: 'Waterkwaliteit',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'microplastics-drinkwater',
+    titel: 'Microplastics in drinkwater: hoe erg & wat helpt?',
+    samenvatting: 'Microplastics in kraanwater — wat weten we, wat is het risico en welke filters verwijderen ze? Nuchter overzicht met de feiten.',
+    categorie: 'Waterkwaliteit',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'chloor-in-drinkwater',
+    titel: 'Chloor in drinkwater: nuttig of schadelijk?',
+    samenvatting: 'Zit er chloor in Nederlands kraanwater? Hoeveel, hoe schadelijk, en hoe verwijder je het? Met praktische tips en filtervergelijking.',
+    categorie: 'Waterkwaliteit',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'filterkan-vs-osmose',
+    titel: 'Filterkan vs osmose filter: welke kies je?',
+    samenvatting: 'Filterkan of osmose? Vergelijk beide systemen op zuiverheid, kosten per liter en gemak — en ontdek welk filter het beste bij jou past.',
+    categorie: 'Vergelijken',
+    datum: '13 mei 2026',
+  },
+  {
     slug: 'brita-vs-osmose',
     titel: 'Brita vs osmose filter: eerlijke vergelijking',
     samenvatting: 'Brita of osmose filter — wat filtert beter en wat is goedkoper? Eerlijke vergelijking op filterwerking, kosten en toepassingen.',

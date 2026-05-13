@@ -98,6 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul className="space-y-1 text-blue-200">
                 <li><Link href="/waterhardheid" className="hover:text-white">Waterhardheid Nederland</Link></li>
                 <li><Link href="/kennisbank" className="hover:text-white">Kennisbank</Link></li>
+                <li><Link href="/over-ons" className="hover:text-white">Over ons</Link></li>
                 <li>
                   <a href="https://www.pureaqua.nl" target="_blank" rel="noopener" className="hover:text-white">
                     PureAqua.nl →
