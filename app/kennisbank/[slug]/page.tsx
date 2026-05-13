@@ -24,7 +24,7 @@ function getArticle(slug: string) {
 export async function generateStaticParams() {
   if (!fs.existsSync(contentDir)) return [];
   return fs.readdirSync(contentDir)
-    .filter(f => f.endsWith('.mdx'))
+    .filter(f => f.endsWith('.mdx') && !f.startsWith('_'))
     .map(f => ({ slug: f.replace('.mdx', '') }));
 }
 
