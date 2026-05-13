@@ -15,6 +15,29 @@ export const metadata: Metadata = {
   },
 };
 
+const faqItems = [
+  {
+    question: 'Wat is waterhardheid?',
+    answer:
+      'Waterhardheid is de hoeveelheid opgeloste calcium (Ca²⁺) en magnesium (Mg²⁺) in leidingwater. Hoe hoger de waarde in °dH (graden Duitse hardheid), hoe meer kalk het water bevat. In Nederland varieert dit van 4°dH (zacht, Zeeland) tot 22°dH (zeer hard, Limburg).',
+  },
+  {
+    question: 'Hoe hard is het water in mijn gemeente?',
+    answer:
+      'Zoek je gemeente op via onze gemeente-overzichtspagina. We hebben de waterhardheid voor alle 349 Nederlandse gemeenten in kaart gebracht, inclusief advies over kalkvorming en de beste filteroplossing per hardheidsklasse.',
+  },
+  {
+    question: 'Is hard water ongezond?',
+    answer:
+      'Hard water is niet ongezond voor de mens — calcium en magnesium zijn zelfs gezonde mineralen. Maar voor apparaten is het wél problematisch: kalkafzetting verkort de levensduur van waterkokers, koffiemachines en cv-ketels en verhoogt het energieverbruik.',
+  },
+  {
+    question: 'Hoe verwijder ik kalk uit leidingwater?',
+    answer:
+      'Een omgekeerde osmose filter verwijdert 95–99% van het calcium en magnesium. Dat beschermt je apparaten volledig en geeft puur drinkwater. Een waterontharder is een alternatief voor de hele huisinstallatie, maar filtert geen andere stoffen.',
+  },
+];
+
 const provincies = [...new Set(gemeenten.map(g => g.provincie))].sort();
 
 export default function WaterhardheidPage() {
@@ -23,6 +46,7 @@ export default function WaterhardheidPage() {
 
   return (
     <>
+      <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
@@ -146,6 +170,45 @@ export default function WaterhardheidPage() {
         </section>
 
         <CTABanner context="waterhardheid" />
+
+        {/* FAQ */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over waterhardheid</h2>
+          <div className="space-y-3">
+            {faqItems.map(item => (
+              <details key={item.question} className="border border-gray-100 rounded-xl p-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {item.question}
+                  <span className="text-[#005F8A] group-open:rotate-180 transition-transform shrink-0 ml-2">▾</span>
+                </summary>
+                <p className="mt-3 text-gray-600 text-sm leading-relaxed">{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        {/* Interne links */}
+        <section>
+          <h2 className="text-xl font-bold text-[#003F5C] mb-4">Meer lezen over waterfilters</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              { href: '/kennisbank/kalk-in-huis', label: 'Kalk in huis: oorzaken en oplossingen' },
+              { href: '/kennisbank/waterhardheid-verlagen', label: 'Waterhardheid verlagen: alle opties' },
+              { href: '/omgekeerde-osmose', label: 'Omgekeerde osmose filter uitleg' },
+              { href: '/omgekeerde-osmose/kopen', label: 'Osmose filter kopen' },
+              { href: '/kennisbank/waterfilter-vergelijken', label: 'Waterfilters vergelijken' },
+              { href: '/kokend-water-kraan/met-filter', label: 'Kokend water kraan met filter' },
+            ].map((l: { href: string; label: string }) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="flex items-center gap-2 text-sm text-[#005F8A] hover:underline bg-[#E0F2FE]/50 rounded-lg px-3 py-2"
+              >
+                <span>→</span> {l.label}
+              </Link>
+            ))}
+          </div>
+        </section>
       </div>
     </>
   );

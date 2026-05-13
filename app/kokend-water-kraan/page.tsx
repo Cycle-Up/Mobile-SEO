@@ -117,6 +117,7 @@ export default function KokendWaterKraanPage() {
             {[
               { href: '/kokend-water-kraan/vergelijken', icon: '📊', titel: 'Merken vergelijken', desc: 'PureAqua vs Quooker vs Grohe: welke wint?' },
               { href: '/kokend-water-kraan/met-filter', icon: '🔬', titel: 'Kraan met filter', desc: 'Gecombineerde kokend water + osmose filter kraan' },
+              { href: '/heet-water-kraan', icon: '♨️', titel: 'Heet water kraan', desc: 'Direct heet water uit de kraan — alle opties en merken' },
               { href: '/omgekeerde-osmose', icon: '💧', titel: 'Osmose filter', desc: 'Waarom een osmose filter het water nog schoner maakt' },
             ].map(l => (
               <Link key={l.href} href={l.href} className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">

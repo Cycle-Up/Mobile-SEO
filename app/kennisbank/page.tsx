@@ -56,6 +56,20 @@ const artikelen = [
     categorie: 'Osmose',
     datum: '15 januari 2026',
   },
+  {
+    slug: 'nitraat-drinkwater',
+    titel: 'Nitraat in drinkwater: risico\'s, normen en de beste oplossing',
+    samenvatting: 'Is nitraat in drinkwater gevaarlijk? Lees over normen, wie risico loopt (zuigelingen!) en hoe een osmosefilter 95% van het nitraat verwijdert.',
+    categorie: 'Waterkwaliteit',
+    datum: '20 april 2026',
+  },
+  {
+    slug: 'waterontharder',
+    titel: 'Waterontharder: hoe werkt het en wanneer is het slim?',
+    samenvatting: 'Waterontharder kopen of toch een osmosefilter? We vergelijken beide systemen eerlijk op prijs, werking en toepassingen voor thuis.',
+    categorie: 'Waterhardheid',
+    datum: '15 april 2026',
+  },
 ];
 
 export default function KennisbankPage() {

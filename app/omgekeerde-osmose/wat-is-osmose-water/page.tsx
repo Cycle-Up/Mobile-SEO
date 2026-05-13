@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   description:
     'Wat is osmose water precies? Is osmose water gezond? Alles over de eigenschappen, smaak en gezondheidsaspecten van omgekeerde osmose water.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/wat-is-osmose-water' },
+  openGraph: {
+    title: 'Wat is osmose water? — eigenschappen, smaak & gezondheid',
+    description: 'Is osmose water gezond om te drinken? Alles over TDS-waarden, smaak, mineralen en wanneer een remineralisatiefilter zinvol is.',
+  },
 };
 
 const faqItems = [
@@ -129,6 +133,28 @@ export default function WatIsOsmoseWaterPage() {
         </section>
 
         <CTABanner context="osmose" />
+
+        <section>
+          <h2 className="text-xl font-bold text-[#003F5C] mb-4">Meer lezen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              { href: '/omgekeerde-osmose', label: 'Omgekeerde osmose: hoe werkt het?' },
+              { href: '/omgekeerde-osmose/kopen', label: 'Osmose filter kopen' },
+              { href: '/omgekeerde-osmose/voor-thuis', label: 'Osmose apparaat voor thuis' },
+              { href: '/kennisbank/osmose-water-drinken', label: 'Osmose water drinken — gezond?' },
+              { href: '/kennisbank/waterfilter-vergelijken', label: 'Alle waterfilters vergelijken' },
+              { href: '/waterhardheid', label: 'Waterhardheid per gemeente' },
+            ].map((l: { href: string; label: string }) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="flex items-center gap-2 text-sm text-[#005F8A] hover:underline bg-[#E0F2FE]/50 rounded-lg px-3 py-2"
+              >
+                <span>→</span> {l.label}
+              </Link>
+            ))}
+          </div>
+        </section>
 
         {/* FAQ */}
         <section>

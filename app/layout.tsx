@@ -90,6 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><Link href="/kokend-water-kraan" className="hover:text-white">Kokend water kraan</Link></li>
                 <li><Link href="/kokend-water-kraan/vergelijken" className="hover:text-white">Merken vergelijken</Link></li>
                 <li><Link href="/kokend-water-kraan/met-filter" className="hover:text-white">Kraan met filter</Link></li>
+                <li><Link href="/heet-water-kraan" className="hover:text-white">Heet water kraan</Link></li>
               </ul>
             </div>
             <div>
