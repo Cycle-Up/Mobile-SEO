@@ -82,6 +82,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><Link href="/omgekeerde-osmose" className="hover:text-white">Omgekeerde osmose</Link></li>
                 <li><Link href="/omgekeerde-osmose/kopen" className="hover:text-white">Osmose filter kopen</Link></li>
                 <li><Link href="/omgekeerde-osmose/wat-is-osmose-water" className="hover:text-white">Wat is osmose water?</Link></li>
+                <li><Link href="/waterfilter" className="hover:text-white">Waterfilter</Link></li>
+                <li><Link href="/waterontharder" className="hover:text-white">Waterontharder</Link></li>
               </ul>
             </div>
             <div>
@@ -97,6 +99,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className="font-semibold mb-2">Meer</p>
               <ul className="space-y-1 text-blue-200">
                 <li><Link href="/waterhardheid" className="hover:text-white">Waterhardheid Nederland</Link></li>
+                <li><Link href="/4-in-1-kraan" className="hover:text-white">4-in-1 kraan</Link></li>
+                <li><Link href="/drinkwaterkwaliteit" className="hover:text-white">Drinkwaterkwaliteit</Link></li>
                 <li><Link href="/kennisbank" className="hover:text-white">Kennisbank</Link></li>
                 <li><Link href="/over-ons" className="hover:text-white">Over ons</Link></li>
                 <li>

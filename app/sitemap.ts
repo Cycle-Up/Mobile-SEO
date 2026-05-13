@@ -35,6 +35,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/beste-waterfilter-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/beste-osmosefilter-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/beste-kokend-water-kraan-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/4-in-1-kraan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaterkwaliteit`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/insinkerator-alternatief`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
@@ -44,6 +47,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/waterontharder/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
     { url: `${BASE}/waterfilter/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
     { url: `${BASE}/osmose-filter/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/kraanwater/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/leidingwater/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/kokend-water-kraan/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
   ]);
 
   const kennisbankPages: MetadataRoute.Sitemap = getKennisbankSlugs().map(slug => ({
