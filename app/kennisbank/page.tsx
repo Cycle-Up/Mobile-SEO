@@ -15,6 +15,48 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'brita-vs-osmose',
+    titel: 'Brita vs osmose filter: eerlijke vergelijking',
+    samenvatting: 'Brita of osmose filter — wat filtert beter en wat is goedkoper? Eerlijke vergelijking op filterwerking, kosten en toepassingen.',
+    categorie: 'Vergelijken',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-keuken',
+    titel: 'Waterfilter keuken: welk systeem past bij jou?',
+    samenvatting: 'Welk waterfilter past in jouw keuken? Vergelijk filterkan, inline filter, osmose en 4-in-1 kraan op prijs, werking en installatiegemak.',
+    categorie: 'Vergelijken',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'kalk-verwijderen-water',
+    titel: 'Kalk verwijderen uit water: alle methoden vergeleken',
+    samenvatting: 'Kalk verwijderen uit leidingwater? Vergelijk waterontharder, osmose filter en magnetische ontharder op werking, kosten en effectiviteit.',
+    categorie: 'Waterkwaliteit',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-onder-aanrecht',
+    titel: 'Waterfilter onder aanrecht: types, kosten & installatie',
+    samenvatting: 'Een waterfilter onder het aanrecht installeren? Vergelijk koolstoffilter, osmose en 4-in-1 systemen op prijs, ruimtegebruik en filterkwaliteit.',
+    categorie: 'Installatie',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'reverse-osmosis-nadelen',
+    titel: 'Omgekeerde osmose nadelen: eerlijk overzicht',
+    samenvatting: 'Wat zijn de nadelen van omgekeerde osmose? Afvalwater, mineralen, kosten en snelheid eerlijk besproken — en hoe moderne systemen deze oplossen.',
+    categorie: 'Osmose',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'osmose-water-kopen',
+    titel: 'Osmose water kopen: systeem of flessenwater?',
+    samenvatting: 'Osmose water kopen in flessen of zelf thuis maken? Vergelijk kosten, kwaliteit en gemak — en ontdek waarom een eigen systeem al snel goedkoper is.',
+    categorie: 'Osmose',
+    datum: '13 mei 2026',
+  },
+  {
     slug: 'bruisend-water-thuis',
     titel: 'Bruisend water thuis: de beste opties vergeleken',
     samenvatting: 'SodaStream, onderaanrecht-systeem of 4-in-1 kraan? We vergelijken alle opties voor bruisend water thuis op prijs, kwaliteit en kosten over 3 jaar.',

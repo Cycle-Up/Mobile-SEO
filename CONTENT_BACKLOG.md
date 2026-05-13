@@ -30,9 +30,9 @@ Alleen keywords op **positie 11+** worden getarget. Pos 1–10 is al gewonnen te
 | Keyword | Vol. | Pos. | Type | Slug | Status |
 |---|---|---|---|---|---|
 | `bruisend water thuis` | ~800 | ~25 | article | `bruisend-water-thuis` | ✅ |
-| `waterfilter keuken` | ~700 | ~30 | article | `waterfilter-keuken` | ⬜ |
-| `brita vs osmose` | ~600 | ~35 | article | `brita-vs-osmose` | ⬜ |
-| `kalk verwijderen water` | ~500 | ~28 | article | `kalk-verwijderen-water` | ⬜ |
+| `waterfilter keuken` | ~700 | ~30 | article | `waterfilter-keuken` | ✅ |
+| `brita vs osmose` | ~600 | ~35 | article | `brita-vs-osmose` | ✅ |
+| `kalk verwijderen water` | ~500 | ~28 | article | `kalk-verwijderen-water` | ✅ |
 | `waterkwaliteit nederland` | ~450 | ~40 | article | `waterkwaliteit-nederland` | ⬜ |
 | `waterontharder` | ~400 | ~45 | article | `waterontharder` | ✅ |
 | `nitraat drinkwater` | ~350 | ~50 | article | `nitraat-drinkwater` | ✅ |
@@ -44,9 +44,9 @@ Alleen keywords op **positie 11+** worden getarget. Pos 1–10 is al gewonnen te
 
 | Keyword | Vol. | Pos. | Type | Slug | Status |
 |---|---|---|---|---|---|
-| `osmose water kopen` | ~300 | ~45 | article | `osmose-water-kopen` | ⬜ |
-| `waterfilter onder aanrecht` | ~280 | ~50 | article | `waterfilter-onder-aanrecht` | ⬜ |
-| `reverse osmosis nadelen` | ~250 | ~55 | article | `reverse-osmosis-nadelen` | ⬜ |
+| `osmose water kopen` | ~300 | ~45 | article | `osmose-water-kopen` | ✅ |
+| `waterfilter onder aanrecht` | ~280 | ~50 | article | `waterfilter-onder-aanrecht` | ✅ |
+| `reverse osmosis nadelen` | ~250 | ~55 | article | `reverse-osmosis-nadelen` | ✅ |
 | `kokend water kraan installeren` | ~200 | ~30 | article | `kokend-water-kraan-installeren` | ✅ |
 | `osmose water drinken` | ~1.600 | ~45 | article | `osmose-water-drinken` | ✅ |
 | `osmose water apparaat kopen` | ~1.530 | ~58 | article | `osmose-water-apparaat` | ✅ |
@@ -77,14 +77,14 @@ In volgorde van prioriteit:
 
 2. ✅ **`bruisend-water-thuis`** — gepubliceerd 13 mei 2026
 
-3. **`brita-vs-osmose`** — "brita vs osmose" ~600 imp/mnd
-   - Focus: eerlijke vergelijking Brita filterkan vs osmose filter
-   - Links naar: /kennisbank/waterfilter-vergelijken, /omgekeerde-osmose/kopen
+3. ✅ **`brita-vs-osmose`** — gepubliceerd 13 mei 2026
 
-4. **`waterfilter-keuken`** — "waterfilter keuken" ~700 imp/mnd
-   - Focus: welke waterfilter past in de keuken, typen en installatie
-   - Links naar: /omgekeerde-osmose/voor-thuis, /kokend-water-kraan/met-filter
+4. ✅ **`waterfilter-keuken`** — gepubliceerd 13 mei 2026
 
-5. **`kalk-verwijderen-water`** — "kalk verwijderen water" ~500 imp/mnd
-   - Focus: manieren om kalk uit water te verwijderen
-   - Links naar: /kennisbank/kalk-in-huis, /waterhardheid
+5. ✅ **`kalk-verwijderen-water`** — gepubliceerd 13 mei 2026
+
+6. ✅ **`waterfilter-onder-aanrecht`** — gepubliceerd 13 mei 2026
+
+7. ✅ **`reverse-osmosis-nadelen`** — gepubliceerd 13 mei 2026
+
+8. ✅ **`osmose-water-kopen`** — gepubliceerd 13 mei 2026
