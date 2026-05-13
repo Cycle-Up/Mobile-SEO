@@ -24,6 +24,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kokend-water-kraan/vergelijken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/kokend-water-kraan/met-filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/heet-water-kraan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/osmose-filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/osmose-filter/kopen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/omgekeerde-osmose/vergelijken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/waterhardheid`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/waterontharder`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/waterfilter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -38,6 +41,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/4-in-1-kraan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/drinkwaterkwaliteit`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/insinkerator-alternatief`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE}/waterfilter/kopen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterfilter/onderhoud`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/soorten`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterontharder/kopen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterontharder/werking`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/installeren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/5-in-1`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterhardheid/kaart`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterhardheid/verlagen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kraanwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/omgekeerde-osmose/onderhoud`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
@@ -50,6 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kraanwater/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
     { url: `${BASE}/leidingwater/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
     { url: `${BASE}/kokend-water-kraan/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/waterontkalker/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
   ]);
 
   const kennisbankPages: MetadataRoute.Sitemap = getKennisbankSlugs().map(slug => ({
