@@ -2065,6 +2065,48 @@ const artikelen = [
     categorie: 'Waterfilters',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'osmose-water-koffie-thee',
+    titel: 'Osmosewater voor koffie en thee: de perfecte TDS',
+    samenvatting: 'TDS sweet spot voor espresso (75-150 mg/L), SCA waterstandaard, hoe hard water extractie verstoort en remineralisatierecept voor perfect koffiewater.',
+    categorie: 'Osmosewater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-legionella-risico',
+    titel: 'Waterfilter en Legionella: risico en preventie',
+    samenvatting: 'Wanneer waterfilters het Legionella-risico verhogen (biofilm, 25-50°C zones), hoe UV-filters werken en wat particulieren moeten weten over filteronderhoud.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'drinkwater-nitraat',
+    titel: 'Nitraat in drinkwater: risico, norm en filteren',
+    samenvatting: 'Nitraat in drinkwater: risico voor baby\'s, EU-norm 50 mg/L, risicogebieden (Achterhoek, Brabant) en welke filters nitraat verwijderen (osmose 85-95%).',
+    categorie: 'Drinkwater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterontharder-vs-waterontkalker',
+    titel: 'Waterontharder vs. waterontkalker: het verschil',
+    samenvatting: 'Fundamenteel verschil ionenwisseling vs. kristalstructuurverandering, wat waterontkalkers echt doen, EU-regelgeving en wanneer een echte ontharder nodig is.',
+    categorie: 'Waterontharder',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'kraanwater-versus-flessenwater',
+    titel: 'Kraanwater vs. flessenwater: kosten, kwaliteit, CO2',
+    samenvatting: 'TDS-vergelijking, microplastics in PET, CO2-voetafdruk (fles = 300x), kosten (€0,002/L kraan vs. €1,50/L fles) en wanneer gefilterd kraanwater beter is.',
+    categorie: 'Drinkwater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-smaak-chloor',
+    titel: 'Chloor uit drinkwater filteren voor betere smaak',
+    samenvatting: 'Chloor in kraanwater verwijderen: concentraties per regio, welke filters werken (actief kool 95-99%), chloramine vs. chloor en blind smaaktest resultaten.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
