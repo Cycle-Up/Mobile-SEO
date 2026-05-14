@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export function generateMetadata(): Metadata {
   return {
@@ -246,6 +247,8 @@ export default function VierInEenKraanPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
 
+        <QuickAnswer answer="Een 4-in-1 kraan levert kokend, koud gefilterd, warm en bruisend water uit één kraanpunt. Het systeem combineert een kokendwaterboiler met een ingebouwd osmosefilter en CO₂-unit. Hiermee vervangt het de waterkoker, het bruiswater-abonnement en het losse waterfilter. Aanschafprijs ligt tussen €699 en €899." />
+
         {/* Wat is een 4-in-1 kraan */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is een 4-in-1 kraan?</h2>
@@ -278,7 +281,7 @@ export default function VierInEenKraanPage() {
 
         {/* Hoe werkt het systeem */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe werkt het systeem: boiler, osmose en CO₂</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe werkt het systeem: boiler, osmose en CO₂?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Een 4-in-1 kraan bestaat niet alleen uit de kraan zelf. Onder het aanrecht — in de kast of in een lege ruimte — zitten
             de componenten die het systeem doen werken. Elk onderdeel vervult een specifieke taak.
@@ -321,7 +324,7 @@ export default function VierInEenKraanPage() {
 
         {/* Voordelen vs losse apparaten */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">4-in-1 kraan vs losse apparaten: vergelijking</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat zijn de voordelen van een 4-in-1 kraan vs losse apparaten?</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
             Veel mensen hebben al een waterkoker, SodaStream en misschien een aanrechtfilter. Waarom dan upgraden naar een
             4-in-1 systeem? En wanneer zijn losse apparaten eigenlijk handiger? De vergelijking hieronder laat de
@@ -354,7 +357,7 @@ export default function VierInEenKraanPage() {
 
         {/* Soorten 4-in-1 kranen */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Soorten 4-in-1 kranen</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke soorten 4-in-1 kranen zijn er?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Niet elk systeem dat zichzelf &ldquo;4-in-1&rdquo; noemt is hetzelfde. Er zijn drie hoofdcategorieën op de markt,
             elk met een andere opbouw en functieomvang.
@@ -388,7 +391,7 @@ export default function VierInEenKraanPage() {
 
         {/* Merken vergeleken */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Merken vergeleken</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke merken zijn er voor een 4-in-1 kraan?</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
             Hieronder staan de vier meest verkochte merken in de 4-in-1 categorie naast elkaar. Let op welke functies
             standaard inbegrepen zijn en welke extra kosten of modules nodig zijn.

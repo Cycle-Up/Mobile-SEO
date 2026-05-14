@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Beste osmosefilter 2026: top 5 eerlijk vergeleken',
@@ -349,9 +350,11 @@ export default function BesteOsmosefilter2026Page() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
+        <QuickAnswer answer="Het beste osmosefilter van 2026 is een 5-stadia onderbouwsysteem met remineralisatiefilter. Belangrijk: let op NSF/ANSI 58-certificering, een afvalwaterratio van 1:1 of beter, en een jaarlijkse filterwissel onder €100. Voor de meeste Nederlandse gezinnen is een systeem tussen €150 en €400 de beste prijs-kwaliteitskeuze." />
+
         {/* Vergelijkingscriteria */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Onze vergelijkingscriteria</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke vergelijkingscriteria gebruiken we?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Niet elk criterium weegt even zwaar voor elke gebruiker. Hieronder de vijf factoren die wij het
             zwaarst laten meewegen in onze beoordeling, plus waarom elk criterium relevant is.
@@ -412,7 +415,7 @@ export default function BesteOsmosefilter2026Page() {
 
         {/* Top 5 tabel */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Top 5 osmosefilters — overzichtstabel</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat zijn de beste osmosefilters in een overzicht?</h2>
           <div className="overflow-x-auto -mx-4 px-4">
             <table className="w-full min-w-[580px] text-sm border-collapse">
               <thead>
@@ -446,7 +449,7 @@ export default function BesteOsmosefilter2026Page() {
 
         {/* Per product review cards */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-5">Reviews: elk systeem uitgebreid besproken</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-5">Hoe scoren de osmosefilters in onze reviews?</h2>
           <div className="space-y-6">
             {top5.map(t => (
               <div
@@ -514,7 +517,7 @@ export default function BesteOsmosefilter2026Page() {
 
         {/* Onderdelen vergelijking */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Technische vergelijking: membraan, stadia, tank en afvalwater</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe vergelijken de osmosefilters op technische specificaties?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Onderstaande tabel vergelijkt de vijf systemen op de technische kernspecificaties. Dit helpt bij het
             vergelijken van osmose-filters wanneer je specifieke eisen hebt aan een bepaald onderdeel. Lees meer

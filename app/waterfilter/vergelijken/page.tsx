@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter Vergelijken 2026: Complete Gids',
@@ -286,6 +287,8 @@ export default function WaterfilterVergelijkenPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
+        <QuickAnswer answer="Waterfilters vergelijken: een osmosefilter verwijdert het meest (99%, inclusief kalk en nitraten, €150–500). Een koolstoffilter verbetert smaak en verwijdert chloor (€50–150). Een waterfilterkan is goedkoopst maar filtert minder (€20–80). Voor hard water of maximale zuiverheid is een osmosefilter de beste keuze." />
+
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
@@ -303,7 +306,7 @@ export default function WaterfilterVergelijkenPage() {
         {/* Filtertypen overzicht */}
         <section id="filtertypen">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Overzicht van alle waterfiltertypen
+            Welke waterfiltertypen zijn er?
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Elke filtertechnologie heeft zijn eigen principe, voordelen en beperkingen. Hieronder
@@ -365,7 +368,7 @@ export default function WaterfilterVergelijkenPage() {
         {/* Vergelijkingstabel */}
         <section id="vergelijkingsmatrix">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Vergelijkingstabel: alle filtertypen naast elkaar
+            Vergelijkingstabel: hoe staan alle filtertypen naast elkaar?
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             De onderstaande tabel zet alle zes filtertypen naast elkaar op de meest relevante
@@ -439,7 +442,7 @@ export default function WaterfilterVergelijkenPage() {
         {/* Veelgemaakte vergissingen */}
         <section id="vergissingen">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            5 veelgemaakte vergissingen bij het vergelijken van waterfilters
+            Welke vergissingen maakt u bij het vergelijken van waterfilters?
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
             Bij het vergelijken van waterfilters worden bepaalde fouten keer op keer gemaakt. Hieronder
@@ -463,7 +466,7 @@ export default function WaterfilterVergelijkenPage() {
         {/* RO diepgaand */}
         <section id="ro-diepgaand">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Omgekeerde osmose: de meest complete waterfiltertechnologie
+            Waarom is omgekeerde osmose de meest complete waterfiltertechnologie?
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
             Van alle filtertypen biedt omgekeerde osmose (reverse osmosis) de meest uitgebreide

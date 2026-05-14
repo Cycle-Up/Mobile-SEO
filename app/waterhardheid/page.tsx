@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { gemeenten } from '@/data/gemeenten';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterhardheid per gemeente in Nederland — 2026 overzicht',
@@ -72,6 +73,7 @@ export default function WaterhardheidPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-12">
+        <QuickAnswer answer="Waterhardheid in Nederland varieert van 4°dH (zacht, Noord-Holland) tot 19°dH (zeer hard, Limburg). Hard water veroorzaakt kalkafzetting in apparaten en leidingen. Boven 12°dH is een waterfilter of ontharder aan te raden. Zoek de waterhardheid van jouw gemeente direct op via de kaart hieronder." />
 
         {/* Hardheid uitleg */}
         <section>
@@ -98,7 +100,7 @@ export default function WaterhardheidPage() {
         {/* Hardste en zachtste gemeenten */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <section>
-            <h2 className="text-xl font-bold text-[#003F5C] mb-3">Hardste gemeenten</h2>
+            <h2 className="text-xl font-bold text-[#003F5C] mb-3">Welke gemeenten hebben het hardste water?</h2>
             <div className="space-y-2">
               {hardeGemeenten.map(g => (
                 <Link
@@ -116,7 +118,7 @@ export default function WaterhardheidPage() {
             </div>
           </section>
           <section>
-            <h2 className="text-xl font-bold text-[#003F5C] mb-3">Zachtste gemeenten</h2>
+            <h2 className="text-xl font-bold text-[#003F5C] mb-3">Welke gemeenten hebben het zachtste water?</h2>
             <div className="space-y-2">
               {zachteGemeenten.map(g => (
                 <Link
@@ -137,7 +139,7 @@ export default function WaterhardheidPage() {
 
         {/* Alle gemeenten per provincie */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Alle gemeenten per provincie</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Wat is de waterhardheid per gemeente per provincie?</h2>
           <div className="space-y-6">
             {provincies.map(provincie => {
               const pgemeenten = gemeenten.filter(g => g.provincie === provincie).sort((a, b) => a.naam.localeCompare(b.naam));

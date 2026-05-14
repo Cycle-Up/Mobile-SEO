@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterontharder — werking, kosten en alternatieven',
@@ -207,6 +208,8 @@ export default function WaterOntharderPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
+        <QuickAnswer answer="Een waterontharder verwijdert kalk (calcium en magnesium) uit leidingwater via ionenwisseling. Het beschermt leidingen, cv-ketel, wasmachine en vaatwasser. In Nederland is een ontharder zinvol bij een waterhardheid boven 12°dH. Bij lagere hardheden is een osmosefilter op de keukenkraan een goedkoper en praktischer alternatief." />
+
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">
@@ -318,7 +321,7 @@ export default function WaterOntharderPage() {
 
         {/* Soorten waterontharders */}
         <section id="soorten">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Soorten waterontharders</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke soorten waterontharders zijn er?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Niet elke &ldquo;waterontharder&rdquo; werkt hetzelfde. Op de markt zijn vier hoofdtypen, elk met
             eigen voor- en nadelen. Het is belangrijk om ze van elkaar te onderscheiden, want de prestaties
@@ -360,7 +363,7 @@ export default function WaterOntharderPage() {
 
         {/* Voordelen */}
         <section id="voordelen">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Voordelen van een waterontharder</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat zijn de voordelen van een waterontharder?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             In regio&apos;s met hard water biedt een goed geïnstalleerde waterontharder concrete, merkbare
             voordelen. Hieronder de belangrijkste:
@@ -411,7 +414,7 @@ export default function WaterOntharderPage() {
 
         {/* Nadelen */}
         <section id="nadelen">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Nadelen — eerlijk besproken</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat zijn de nadelen van een waterontharder?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Een waterontharder is geen wondermiddel. Hieronder de voornaamste bezwaren die je eerlijk
             moet afwegen voordat je besluit een waterontharder te kopen.

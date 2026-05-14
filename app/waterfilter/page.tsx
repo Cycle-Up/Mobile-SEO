@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter — types, vergelijking en koopadvies',
@@ -271,6 +272,7 @@ export default function WaterfilterPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <QuickAnswer answer="Een waterfilter verwijdert verontreinigingen uit leidingwater. Het beste type hangt af van je doel: een osmosefilter verwijdert 99% van alles inclusief kalk; een koolstoffilter verbetert smaak en verwijdert chloor; een waterontharder pakt kalk in het hele huis aan. Nederlands kraanwater is veilig — een filter is een kwaliteitsverbetering, geen noodzaak." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -340,7 +342,7 @@ export default function WaterfilterPage() {
 
         {/* Overzicht 5 filtertypes */}
         <section id="types">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Overzicht van 5 filtertypes</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke 5 filtertypes zijn er voor thuisgebruik?</h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
             Er zijn vijf hoofdtypes waterfilters voor thuisgebruik, elk met een ander werkingsprincipe,
             prijsklasse en toepassingsgebied. Hieronder een kort overzicht; verderop op deze pagina
@@ -380,7 +382,7 @@ export default function WaterfilterPage() {
 
         {/* Vergelijkingstabel */}
         <section id="vergelijking">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Vergelijkingstabel: waterfilter kopen</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe vergelijken de verschillende waterfilters?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Onderstaande tabel geeft een snelle{' '}
             <strong>waterfilter vergelijking</strong> op de vijf meest relevante criteria. Uitgebreide uitleg
@@ -421,7 +423,7 @@ export default function WaterfilterPage() {
 
         {/* Per type uitgebreide uitleg */}
         <section id="uitleg">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-5">Per type: uitgebreide uitleg</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-5">Hoe werkt elk filtertype in detail?</h2>
 
           {/* Filterkan */}
           <div className="mb-8">

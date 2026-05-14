@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde Osmose Vergelijken 2026: Welk Systeem?',
@@ -214,6 +215,8 @@ export default function OsmoseVergelijkenPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
+        <QuickAnswer answer="Er zijn drie typen osmosesystemen: onderbouw RO (€150–500, meest complete), aanrechtmodel (€100–350, makkelijkst te installeren) en geïntegreerde 4-in-1 kokend water kraan (€699–899, alles-in-één). Voor een gezin van 4 in een hard-watergebied is een onderbouw RO of 4-in-1 systeem de beste keuze." />
+
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
@@ -231,7 +234,7 @@ export default function OsmoseVergelijkenPage() {
         {/* Drie typen */}
         <section id="drie-typen">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            De drie typen omgekeerde osmose systemen
+            Wat zijn de drie typen omgekeerde osmose systemen?
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Omgekeerde osmose (reverse osmosis) werkt altijd op hetzelfde principe: water wordt onder
@@ -283,7 +286,7 @@ export default function OsmoseVergelijkenPage() {
         {/* Vergelijkingstabel */}
         <section id="vergelijkingstabel">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Vergelijkingstabel: specs naast elkaar
+            Vergelijkingstabel: welke specs zijn het belangrijkst?
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             De onderstaande tabel zet alle drie systemen naast elkaar op de meest relevante
@@ -419,7 +422,7 @@ export default function OsmoseVergelijkenPage() {
         {/* 4-in-1 uitgelicht */}
         <section id="vier-in-een">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Geïntegreerde 4-in-1 kokend water kraan: premium maar all-in-one
+            Is de geïntegreerde 4-in-1 kokend water kraan de premium all-in-one keuze?
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             De <strong>geïntegreerde 4-in-1 kokend water kraan met osmose filtratie</strong> is de

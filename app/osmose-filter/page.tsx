@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Osmose Filter: Hoe Werkt Het & Wat Kost Het?',
@@ -251,6 +252,7 @@ export default function OsmoseFilterPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <QuickAnswer answer="Een osmosefilter (RO-filter) gebruikt een membraan met microscopisch kleine poriën om 95–99% van alle opgeloste stoffen te verwijderen, waaronder kalk, nitraten, PFAS en zware metalen. Het systeem wordt onder het aanrecht gemonteerd en levert puur drinkwater via een apart kraantje. Filtervervanging is jaarlijks nodig." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -375,7 +377,7 @@ export default function OsmoseFilterPage() {
         {/* Vergelijking met andere filtertypes */}
         <section id="vergelijking">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Osmose filter vs koolstof-, UV- en sedimentfilter
+            Hoe verhoudt een osmose filter zich tot koolstof-, UV- en sedimentfilter?
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Op de markt zijn vier veelgebruikte filtertechnieken voor huishoudelijk water. Hieronder
@@ -442,7 +444,7 @@ export default function OsmoseFilterPage() {
         {/* 4-traps vs 5-traps vs geïntegreerd */}
         <section id="trappen">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            4-traps vs 5-traps vs geïntegreerd in kokend water kraan
+            Wat is het verschil tussen 4-traps, 5-traps en een geïntegreerde kokend water kraan?
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
             Osmose filters zijn verkrijgbaar in twee basisuitvoeringen (standalone 4-traps en

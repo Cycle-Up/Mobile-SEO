@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan — complete gids (2026)',
@@ -202,6 +203,7 @@ export default function KokendWaterKraanPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <QuickAnswer answer="Een kokend water kraan levert direct 100°C heet water via een geïsoleerde boiler onder het aanrecht. De beste modellen combineren kokend, koud, warm en bruisend water in één kraanpunt. Een 4-in-1 uitvoering met osmosefilter beschermt bovendien de boiler tegen kalkafzetting en geeft gefilterd drinkwater." />
 
         {/* Wat is een kokend water kraan */}
         <section>
@@ -252,7 +254,7 @@ export default function KokendWaterKraanPage() {
 
         {/* Soorten */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Soorten kokend water kranen</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke soorten kokend water kranen zijn er?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Niet elke kokend water kraan is gelijk. Op basis van functies onderscheiden we drie hoofdtypes, plus een variant die de kraan combineert met een waterfilter.
           </p>
@@ -284,7 +286,7 @@ export default function KokendWaterKraanPage() {
 
         {/* Kokend water kraan met filter */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Kokend water kraan met filter</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is een kokend water kraan met filter?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Een groeiend deel van de markt is een <Link href="/kokend-water-kraan/met-filter" className="text-[#005F8A] underline hover:no-underline">kokend water kraan met ingebouwd filter</Link>. De meest geavanceerde variant gebruikt <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">omgekeerde osmose (RO)</Link>: een membraan dat 95-99% van alle opgeloste stoffen verwijdert. Het resultaat is kokend en koud water dat smaakneutraal is, vrijwel kalkvrij en zonder chloor- of nitraatresten.
           </p>
@@ -298,7 +300,7 @@ export default function KokendWaterKraanPage() {
 
         {/* Merken vergeleken */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Bekende merken vergeleken</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke bekende merken zijn er en hoe vergelijken ze?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Hieronder zetten we de vier grootste merken op de Nederlandse markt naast elkaar. We kijken naar prijs, tankcapaciteit, functies, filteropties en garantie. Een uitgebreide head-to-head vind je op de <Link href="/kokend-water-kraan/vergelijken" className="text-[#005F8A] underline hover:no-underline">vergelijkpagina</Link>.
           </p>

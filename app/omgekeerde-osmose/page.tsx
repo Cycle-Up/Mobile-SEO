@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde osmose — uitleg, voordelen & filter kopen | 2026',
@@ -175,6 +176,8 @@ export default function OmgekeerdeOsmosePage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <QuickAnswer answer="Een omgekeerde osmose filter verwijdert 95–99% van alle opgeloste stoffen uit leidingwater, waaronder kalk, nitraten, pesticiden en PFAS. Het systeem werkt via een semi-permeabel membraan dat verontreinigingen tegenhoudt. Voor Nederlandse huishoudens met hard water of waterkwaliteitszorgen is het de meest effectieve filteroplossing." />
+
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">
@@ -331,7 +334,7 @@ export default function OmgekeerdeOsmosePage() {
 
         {/* Vergelijking met andere filtertypes */}
         <section id="vergelijking">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Omgekeerde osmose vs andere filtertypes</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe verhoudt omgekeerde osmose zich tot andere filtertypes?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Niet elk &ldquo;waterfilter&rdquo; doet hetzelfde. Onderstaande tabel zet de vier
             populairste consumenttechnieken naast elkaar. Voor een nog uitgebreidere analyse:
@@ -373,7 +376,7 @@ export default function OmgekeerdeOsmosePage() {
 
         {/* Geschiedenis */}
         <section id="geschiedenis">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Geschiedenis &amp; toepassingen</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is de geschiedenis en wat zijn de toepassingen van omgekeerde osmose?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Het principe van osmose werd voor het eerst beschreven in 1748 door de Franse
             natuurkundige Jean-Antoine Nollet. Het duurde echter tot de jaren <em>50</em> en{' '}

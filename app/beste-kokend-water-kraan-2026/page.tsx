@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export function generateMetadata(): Metadata {
   return {
@@ -302,6 +303,8 @@ export default function BesteKokendWaterKraan2026Page() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
+        <QuickAnswer answer="De beste kokend water kraan van 2026 is een 4-in-1 systeem met ingebouwd osmosefilter. Het combineert kokend, koud gefilterd, warm en bruisend water in één kraanpunt en vervangt waterkoker en bruiswater-abonnement. Prijs: €699–899. Quooker is de bekendste merknaam maar significant duurder bij gelijke functionaliteit." />
+
         {/* Inleiding: waarom kiezen voor een kokend water kraan */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom kiezen voor een kokend water kraan?</h2>
@@ -344,7 +347,7 @@ export default function BesteKokendWaterKraan2026Page() {
 
         {/* Vergelijkingscriteria */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Onze vergelijkingscriteria</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke vergelijkingscriteria gebruiken we?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             We beoordelen elke kokend water kraan op vijf criteria die het meest relevant zijn voor
             dagelijks gebruik in een Nederlands huishouden.
@@ -387,7 +390,7 @@ export default function BesteKokendWaterKraan2026Page() {
 
         {/* Vergelijkingstabel */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Top 5 vergelijkingstabel</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat laat de top 5 vergelijkingstabel zien?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Onderstaande tabel geeft een snel overzicht van alle vijf categorieën op de vijf
             hoofdcriteria. De 4-in-1 kraan met osmose staat links als onze #1 keuze.
@@ -540,7 +543,7 @@ export default function BesteKokendWaterKraan2026Page() {
 
         {/* Top 5 reviews */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-2">Reviews: alle 5 categorieën besproken</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-2">Hoe scoren alle 5 categorieën in onze reviews?</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Hieronder bespreken we elke categorie uitgebreid: voor wie het geschikt is, wat de echte
             kosten zijn en wanneer je beter voor een andere optie kiest. Zie ook onze pagina{' '}

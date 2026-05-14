@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export function generateMetadata(): Metadata {
   return {
@@ -224,9 +225,11 @@ export default function QuookerAlternatiefPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
 
+        <QuickAnswer answer="Een goed Quooker alternatief biedt kokend water, gefilterd drinkwater en bruisend water voor €400–900 minder dan een Quooker Fusion + CUBE. De 4-in-1 kraan met osmosefilter is het meest complete alternatief: dezelfde functies, ingebouwde kalkverwijdering en lagere jaarlijkse filterkosten. Zelf te installeren in 2–3 uur." />
+
         {/* Waarom mensen zoeken naar alternatieven */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom mensen zoeken naar een alternatief voor Quooker</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom zoeken mensen naar een alternatief voor Quooker?</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
             Quooker is in Nederland het bekendste merk in de categorie <Link href="/kokend-water-kraan" className="text-[#005F8A] underline">kokend water kranen</Link>.
             De merknaam staat bij veel mensen synoniem voor de hele productcategorie, vergelijkbaar met hoe Tempo dat doet voor zakdoekjes.
@@ -284,7 +287,7 @@ export default function QuookerAlternatiefPage() {
 
         {/* Top 4 alternatieven vergelijking tabel */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">De top 4 alternatieven vergeleken</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe vergelijken de top 4 alternatieven voor Quooker?</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
             Hieronder vergelijken we vier serieuze alternatieven naast elkaar — inclusief Quooker zelf als referentie.
             Let op de combinatie van prijs, functies en of er een gefilterd water-optie inbegrepen is.

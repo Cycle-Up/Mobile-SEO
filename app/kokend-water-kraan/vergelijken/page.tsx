@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { ComparisonTable } from '@/components/ComparisonTable';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan vergelijken — Quooker vs Grohe vs 4-in-1 osmose (2026)',
@@ -144,15 +145,17 @@ export default function VergelijkenPage() {
 
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-14">
 
+        <QuickAnswer answer="Kokend water kranen vergelijken? De 4-in-1 kraan met osmose wint op prijs-kwaliteit (€699–899, filtert kalk). Quooker Combi+ is premium (€1.500–2.000, geen filter). Quooker Fusion + CUBE heeft bruisend water maar kost over 3 jaar €2.000 meer dan een 4-in-1 alternatief. Grohe Blue Home heeft geen kokend water." />
+
         {/* Comparison table */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Vergelijking: alle merken naast elkaar</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Hoe staan alle merken naast elkaar?</h2>
           <ComparisonTable />
         </section>
 
         {/* Per-brand deep-dive */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Elk merk toegelicht</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Wat biedt elk merk precies?</h2>
           <div className="space-y-8">
 
             <div className="border-l-4 border-[#005F8A] pl-5">
@@ -202,7 +205,7 @@ export default function VergelijkenPage() {
 
         {/* TCO section */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-2">Totale kosten over 3 jaar (TCO)</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-2">Wat zijn de totale kosten over 3 jaar (TCO)?</h2>
           <p className="text-gray-600 mb-6 text-sm">
             De aanschafprijs is slechts een deel van de werkelijke kosten. Filters, installatie en onderhoud tellen mee. Hieronder de eerlijke berekening inclusief alle kosten over 3 jaar.
           </p>

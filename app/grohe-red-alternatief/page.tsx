@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export function generateMetadata(): Metadata {
   return {
@@ -188,6 +189,8 @@ export default function GroheRedAlternatiefPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
 
+        <QuickAnswer answer="Een Grohe Red alternatief levert kokend kraanwater voor €300–600 minder. De beste alternatieven zijn 4-in-1 kranen met ingebouwde osmose: die bieden extra gefilterd koud en bruisend water dat Grohe Red niet heeft. Grohe Red heeft geen waterfilter — bij hard water slijt de boiler sneller zonder extra filtering." />
+
         {/* Grohe Red functies uitleg */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat biedt de Grohe Red precies?</h2>
@@ -250,7 +253,7 @@ export default function GroheRedAlternatiefPage() {
 
         {/* Top 4 alternatieven vergelijkingstabel */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Top 4 alternatieven voor Grohe Red</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat zijn de top 4 alternatieven voor Grohe Red?</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
             Hieronder vergelijken we vier serieuze alternatieven — inclusief Grohe Red als referentie.
             Let op de verhouding tussen prijs, aanwezige functies en filteropties.
@@ -309,7 +312,7 @@ export default function GroheRedAlternatiefPage() {
 
         {/* 4-in-1 kraan met osmose detail sectie */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">4-in-1 kraan met osmose: het meest complete alternatief</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Is een 4-in-1 kraan met osmose het meest complete alternatief?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Van de vier alternatieven is de 4-in-1 kraan met osmosefilter het enige systeem dat standaard kokend water, koud gefilterd
             water, warm water én bruisend water combineert in één kraan — inclusief een ingebouwde{' '}

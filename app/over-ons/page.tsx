@@ -158,6 +158,24 @@ export default function OverOnsPage() {
           publishingPrinciples: 'https://waterfilterplatform.nl/methodologie',
         }]}
       />
+      <SchemaOrg
+        schema={[{
+          '@type': 'AboutPage',
+          '@id': 'https://waterfilterplatform.nl/over-ons',
+          url: 'https://waterfilterplatform.nl/over-ons',
+          name: 'Over WaterfilterPlatform',
+          description: 'Wie zit er achter WaterfilterPlatform? Onze redactionele aanpak, bronnen, partnerships en waarden.',
+          about: { '@id': 'https://waterfilterplatform.nl/#organization' },
+          publisher: { '@id': 'https://waterfilterplatform.nl/#organization' },
+        }, {
+          '@type': 'Person',
+          '@id': 'https://waterfilterplatform.nl/#editorial-team',
+          name: 'Redactieteam WaterfilterPlatform',
+          worksFor: { '@id': 'https://waterfilterplatform.nl/#organization' },
+          knowsAbout: ['Omgekeerde osmose', 'Waterhardheid', 'Waterfilters', 'Drinkwaterkwaliteit Nederland'],
+          description: 'Redactieteam met achtergrond in werktuigbouw, water-engineering en consumentenjournalistiek.',
+        }]}
+      />
       <SchemaOrg type="WebSite" />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg

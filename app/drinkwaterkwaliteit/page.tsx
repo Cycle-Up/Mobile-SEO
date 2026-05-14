@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export function generateMetadata(): Metadata {
   return {
@@ -122,6 +123,8 @@ export default function DrinkwaterkwaliteitPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
 
+        <QuickAnswer answer="Nederlands leidingwater behoort tot de schoonste ter wereld en voldoet ruimschoots aan het Drinkwaterbesluit. Een waterfilter is geen gezondheidsnoodzaak, maar kan de smaak verbeteren en restchloor verwijderen. In gebieden met hard water (>12°dH) beschermt een osmosefilter ook keukenapparaten tegen kalkschade." />
+
         {/* Hoe wordt drinkwater gecontroleerd */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe wordt drinkwater in Nederland gecontroleerd?</h2>
@@ -168,7 +171,7 @@ export default function DrinkwaterkwaliteitPage() {
 
         {/* Waterbedrijven */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">De waterbedrijven in Nederland</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke waterbedrijven leveren drinkwater in Nederland?</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
             Nederland heeft tien regionale waterbedrijven die samen het drinkwater voor alle huishoudens en bedrijven leveren.
             Elk bedrijf gebruikt andere bronnen (grondwater, oppervlaktewater, duinwater) en heeft daardoor een eigen waterprofiel.
@@ -252,7 +255,7 @@ export default function DrinkwaterkwaliteitPage() {
 
         {/* Regionale verschillen */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Regionale verschillen in waterkwaliteit</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe verschillen regio's in waterkwaliteit?</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
             De drinkwaterkwaliteit per regio hangt sterk samen met de waterbron: grondwater is vaak harder maar minder
             vatbaar voor oppervlaktevervuiling; oppervlaktewater is zachter maar vereist intensievere zuivering.
