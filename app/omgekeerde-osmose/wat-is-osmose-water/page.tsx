@@ -115,7 +115,7 @@ export default function WatIsOsmoseWaterPage() {
             {[
               { label: 'Leidingwater NL gemiddeld', tds: '250 mg/L', pct: 60, kleur: 'bg-amber-400' },
               { label: 'Bronwater (fles)', tds: '100-300 mg/L', pct: 50, kleur: 'bg-amber-300' },
-              { label: 'Osmose water (PureAqua)', tds: '5-30 mg/L', pct: 10, kleur: 'bg-green-400' },
+              { label: 'Osmose water (RO-filter)', tds: '5-30 mg/L', pct: 10, kleur: 'bg-green-400' },
               { label: 'Gedestilleerd water', tds: '< 5 mg/L', pct: 2, kleur: 'bg-green-500' },
             ].map(r => (
               <div key={r.label}>

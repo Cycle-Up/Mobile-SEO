@@ -28,12 +28,12 @@ const faqItems = [
   {
     question: 'Hoe vaak moet ik het filter onderhouden?',
     answer:
-      'Pre-filters (sediment, koolstof) verwissel je elk 6–12 maanden. Het RO-membraan gaat 2–3 jaar mee. Bij een 4-in-1 systeem zoals PureAqua verwissel je het complete filterpatroon jaarlijks.',
+      'Pre-filters (sediment, koolstof) verwissel je elk 6–12 maanden. Het RO-membraan gaat 2–3 jaar mee. Bij een 4-in-1 systeem verwissel je het complete filterpatroon jaarlijks.',
   },
   {
     question: 'Hoeveel afvalwater produceert een osmose apparaat?',
     answer:
-      'Goedkope systemen produceren 3–5 liter spoelwater per liter schoon water. Moderne systemen met permeaatpomp of zero-waste technologie bereiken een 1:1 verhouding. De PureAqua 4-in-1 heeft een geoptimaliseerd spoelapparaat.',
+      'Goedkope systemen produceren 3–5 liter spoelwater per liter schoon water. Moderne systemen met permeaatpomp of zero-waste technologie bereiken een 1:1 verhouding. Geïntegreerde 4-in-1 systemen hebben doorgaans een geoptimaliseerde afvalwaterverhouding.',
   },
   {
     question: 'Is osmose water geschikt voor koffie en thee?',
@@ -60,7 +60,7 @@ const types = [
     highlight: false,
   },
   {
-    naam: 'PureAqua 4-in-1 kraan',
+    naam: '4-in-1 kraan met osmose',
     prijs: '€ 699 – 899',
     geschikt: 'Complete keukenoplossing',
     voor: ['Kokend + koud + warm + bruisend', 'Osmose filter ingebouwd', 'Één jaarlijkse filterwissel', 'Stijlvol design, geen extra kraantje'],
@@ -211,7 +211,7 @@ export default function OsmoseVoorThuisPage() {
                 {[
                   { naam: 'Losse osmose filter', kosten: '€ 60–120', wissel: '6–12 maanden' },
                   { naam: 'Osmose met druktank', kosten: '€ 80–150', wissel: '6–12 maanden' },
-                  { naam: 'PureAqua 4-in-1', kosten: '€ 89', wissel: '1× per jaar (compleet)', highlight: true },
+                  { naam: '4-in-1 kraan met osmose', kosten: '€ 89', wissel: '1× per jaar (compleet)', highlight: true },
                 ].map(r => (
                   <tr key={r.naam} className={r.highlight ? 'bg-[#E0F2FE] font-medium' : 'border-b border-gray-100'}>
                     <td className="py-2.5 px-4">{r.naam}</td>

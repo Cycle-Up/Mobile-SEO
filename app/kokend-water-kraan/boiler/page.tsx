@@ -175,7 +175,7 @@ export default function KokendWaterKraanBoilerPage() {
 
           <h3 className="text-lg font-semibold text-[#003F5C] mt-6 mb-2">Vacuümisolatie: de stille besparing</h3>
           <p className="text-gray-700 leading-relaxed">
-            Het grootste verschil tussen een goedkope en een kwalitatieve boiler zit in de isolatie. Premiumboilers (zoals in Quooker en PureAqua 4-in-1) gebruiken een dubbelwandige vacuümmantel — hetzelfde principe als een thermosfles. Tussen de binnenste en buitenste wand is een vacuüm aangebracht, waardoor warmtegeleiding en convectie vrijwel nihil zijn. Alleen straling draagt nog bij aan warmteverlies, en dat is bij roestvast staal minimaal. Het resultaat: het stand-by verbruik daalt van 40-60W bij conventionele isolatieschuim naar 10-20W bij vacuümisolatie — een besparing van 60-70% op warmteverlies.
+            Het grootste verschil tussen een goedkope en een kwalitatieve boiler zit in de isolatie. Premiumboilers (zoals in premium kokendwaterkranen) gebruiken een dubbelwandige vacuümmantel — hetzelfde principe als een thermosfles. Tussen de binnenste en buitenste wand is een vacuüm aangebracht, waardoor warmtegeleiding en convectie vrijwel nihil zijn. Alleen straling draagt nog bij aan warmteverlies, en dat is bij roestvast staal minimaal. Het resultaat: het stand-by verbruik daalt van 40-60W bij conventionele isolatieschuim naar 10-20W bij vacuümisolatie — een besparing van 60-70% op warmteverlies.
           </p>
         </section>
 
@@ -214,7 +214,7 @@ export default function KokendWaterKraanBoilerPage() {
 
           <h3 className="text-lg font-semibold text-[#003F5C] mb-2">3-liter boiler: de gouden middenweg</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Verreweg het populairste volume. Een 3-liter tank levert voor 2 tot 4 personen ruim voldoende kokend water voor het dagelijks gebruik: ochtendkoffie, meerdere kopjes thee, het blancheren van groenten en het snel opzetten van een kleine pan pasta. De hersteltijd na zwaar gebruik is beperkt (5-10 minuten), en het jaarlijkse energieverbruik van circa 120 kWh is voor de meeste huishoudens acceptabel. Dit is dan ook het standaardvolume van de meeste topmodellen, waaronder de PureAqua 4-in-1.
+            Verreweg het populairste volume. Een 3-liter tank levert voor 2 tot 4 personen ruim voldoende kokend water voor het dagelijks gebruik: ochtendkoffie, meerdere kopjes thee, het blancheren van groenten en het snel opzetten van een kleine pan pasta. De hersteltijd na zwaar gebruik is beperkt (5-10 minuten), en het jaarlijkse energieverbruik van circa 120 kWh is voor de meeste huishoudens acceptabel. Dit is dan ook het standaardvolume van de meeste topmodellen.
           </p>
 
           <h3 className="text-lg font-semibold text-[#003F5C] mb-2">7-liter boiler: voor grote huishoudens en intensieve gebruikers</h3>

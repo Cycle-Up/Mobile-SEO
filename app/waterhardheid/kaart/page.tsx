@@ -494,7 +494,7 @@ export default function WaterhardheidKaartPage() {
             {[
               { href: '/waterhardheid', label: 'Waterhardheid per gemeente opzoeken' },
               { href: '/waterontharder', label: 'Waterontharder: werking en kosten' },
-              { href: '/omgekeerde-osmose/kopen', label: 'Osmosefilter kopen — PureAqua 4-in-1' },
+              { href: '/omgekeerde-osmose/kopen', label: 'Osmosefilter kopen — 4-in-1 kraan met osmose' },
               { href: '/kennisbank/hardwatergebied-nederland', label: 'Hardwatergebieden in Nederland' },
               { href: '/waterhardheid/verlagen', label: 'Waterhardheid verlagen: alle methoden' },
               { href: '/kennisbank/waterhardheid-verlagen', label: 'Gids: waterhardheid verlagen' },

@@ -146,7 +146,7 @@ const osmoseExtra = [
   {
     stap: 'Osmosemodule plaatsen',
     beschrijving:
-      'Bij een 4-in-1 kraan met ingebouwde omgekeerde osmose is er naast de boiler ook een osmosemodule (of het filterhuis met membraan). Plaats de module in de kast onder het aanrecht. Zorg voor voldoende ruimte: het filterpatroon moet jaarlijks verwisselbaar zijn zonder dat u alle andere aansluitingen hoeft te verplaatsen. Sommige systemen zoals de PureAqua 4-in-1 combineren boiler en osmosefilter in één behuizing voor maximale compactheid.',
+      'Bij een 4-in-1 kraan met ingebouwde omgekeerde osmose is er naast de boiler ook een osmosemodule (of het filterhuis met membraan). Plaats de module in de kast onder het aanrecht. Zorg voor voldoende ruimte: het filterpatroon moet jaarlijks verwisselbaar zijn zonder dat u alle andere aansluitingen hoeft te verplaatsen. Sommige compacte systemen combineren boiler en osmosefilter in één behuizing voor maximale compactheid.',
   },
   {
     stap: 'Afvoerleiding voor spoelwater',
@@ -280,7 +280,7 @@ export default function KokendWaterKraanInstallerenPage() {
               href="/omgekeerde-osmose/kopen"
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              Bekijk de PureAqua 4-in-1 kraan →
+              Osmosefilter vergelijken →
             </Link>
             <Link
               href="/kokend-water-kraan"
@@ -426,11 +426,7 @@ export default function KokendWaterKraanInstallerenPage() {
             4-in-1 met osmose: extra installatiestappen
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Een <strong>4-in-1 kraan met omgekeerde osmose</strong> — zoals de{' '}
-            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">
-              PureAqua 4-in-1
-            </Link>{' '}
-            — combineert een kokendwaterfunctie met een ingebouwd osmose filtratie systeem. Dit
+            Een <strong>4-in-1 kraan met omgekeerde osmose</strong> combineert een kokendwaterfunctie met een ingebouwd osmose filtratie systeem. Dit
             geeft u naast kokend water ook puur gefilterd water (vrij van kalk, chloor, nitraten
             en PFAS) uit dezelfde kraan. De installatie heeft een paar aanvullende stappen ten
             opzichte van een eenvoudige kokend water kraan:
@@ -609,7 +605,7 @@ export default function KokendWaterKraanInstallerenPage() {
               },
               {
                 href: '/omgekeerde-osmose/kopen',
-                title: 'PureAqua 4-in-1 kopen',
+                title: 'Osmosefilter vergelijken',
                 desc: 'Complete 4-in-1 kraan met osmosefilter, kokend water en bruisend water.',
               },
               {

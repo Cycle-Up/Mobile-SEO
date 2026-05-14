@@ -45,12 +45,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ))}
             </nav>
             <a
-              href="https://www.pureaqua.nl"
-              target="_blank"
-              rel="noopener"
+              href="/waterfilter/vergelijken"
               className="text-xs bg-[#005F8A] text-white px-3 py-1.5 rounded-lg font-medium hover:bg-[#003F5C] transition-colors"
             >
-              Kopen →
+              Vergelijken →
             </a>
           </div>
           <nav className="md:hidden flex overflow-x-auto gap-1 px-4 pb-2">
@@ -103,11 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><Link href="/drinkwaterkwaliteit" className="hover:text-white">Drinkwaterkwaliteit</Link></li>
                 <li><Link href="/kennisbank" className="hover:text-white">Kennisbank</Link></li>
                 <li><Link href="/over-ons" className="hover:text-white">Over ons</Link></li>
-                <li>
-                  <a href="https://www.pureaqua.nl" target="_blank" rel="noopener" className="hover:text-white">
-                    PureAqua.nl →
-                  </a>
-                </li>
+                <li><Link href="/kennisbank" className="hover:text-white">Alle artikelen</Link></li>
               </ul>
             </div>
           </div>

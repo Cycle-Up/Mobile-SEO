@@ -563,7 +563,7 @@ export default function WaterOntharderWerkingPage() {
                 van het RO-membraan aanzienlijk doordat er minder kalkvorming op het membraan
                 optreedt. Bekijk de{' '}
                 <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">
-                  PureAqua 4-in-1 kraan
+                  4-in-1 kraan met osmose
                 </Link>
                 {' '}als je kiest voor gefilterd én kokend water uit één kraan.
               </p>
@@ -619,7 +619,7 @@ export default function WaterOntharderWerkingPage() {
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'Osmose systeem kopen',
-                desc: 'Vergelijk de PureAqua 4-in-1 en andere osmose systemen.',
+                desc: 'Vergelijk 4-in-1 kranen met osmose en andere osmose systemen.',
               },
             ].map(l => (
               <Link

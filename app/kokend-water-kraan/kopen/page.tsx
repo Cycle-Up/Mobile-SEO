@@ -90,7 +90,7 @@ const merkOverzicht = [
   { merk: 'Quooker', type: '3-in-1 / 4-in-1', prijsRange: '€ 750–1.500', sterk: 'Marktleider NL, sterke garantie, groot dealernetwerk', minpunt: 'Premium prijs' },
   { merk: 'Grohe Red', type: '3-in-1', prijsRange: '€ 500–900', sterk: 'Uitstekende bouw, Europees merk', minpunt: 'Geen 4-in-1 met bruisend' },
   { merk: 'InSinkErator', type: '3-in-1', prijsRange: '€ 350–700', sterk: 'Betaalbaar, breed leverbaar', minpunt: 'Beperkt filteropties' },
-  { merk: 'PureAqua 4-in-1', type: '4-in-1 met RO', prijsRange: '€ 600–900', sterk: 'RO-filter ingebouwd, complete oplossing', minpunt: 'Nieuwere speler' },
+  { merk: '4-in-1 kraan met osmose', type: '4-in-1 met RO', prijsRange: '€ 600–900', sterk: 'RO-filter ingebouwd, complete oplossing', minpunt: 'Hogere aanschafprijs' },
   { merk: 'Billi', type: '3-in-1 / 4-in-1', prijsRange: '€ 800–1.400', sterk: 'Australisch premium, stille boiler', minpunt: 'Beperkte NL service' },
 ];
 
@@ -311,7 +311,7 @@ export default function KokendWaterKraanKopenPage() {
             {[
               { bereik: '€ 200–400', segment: 'Budget', voor: 'Eenvoudige 2-in-1 kranen, voldoende voor kleine huishoudens of als aanvulling op bestaande mengkraan.' },
               { bereik: '€ 400–700', segment: 'Middenklasse', voor: '3-in-1 systemen van bekende merken (InSinkErator, instapmodellen Quooker). Goede kwaliteit, gangbare functionaliteit.' },
-              { bereik: '€ 700–1.000', segment: 'Premium', voor: '4-in-1 systemen met bruisend water of ingebouwde koolstoffilter. PureAqua 4-in-1 met RO valt hier.' },
+              { bereik: '€ 700–1.000', segment: 'Premium', voor: '4-in-1 systemen met bruisend water of ingebouwde koolstoffilter. Een 4-in-1 systeem met RO valt hier.' },
               { bereik: '€ 1.000–1.500', segment: 'Topsegment', voor: 'Quooker PRO series, Billi, Grohe Red II Duo. Maximale bouwkwaliteit, uitgebreide garantie.' },
             ].map(r => (
               <div key={r.bereik} className="flex gap-4 items-start border border-gray-100 rounded-xl p-4">
@@ -336,9 +336,9 @@ export default function KokendWaterKraanKopenPage() {
           <div className="bg-[#E0F2FE] rounded-2xl p-4 text-sm text-gray-700">
             <p className="font-semibold text-[#003F5C] mb-2">Kooptip voor 4-in-1 met RO-filter</p>
             <p>
-              De <strong>PureAqua 4-in-1 kraan</strong> combineert kokend, koud, heet en bruisend water
-              met een ingebouwde omgekeerde osmose filtratie. Directe levering vanuit Nederland, inclusief
-              installatiemateriaal.
+              <strong>Een 4-in-1 kraan met osmose</strong> combineert kokend, koud, heet en bruisend water
+              met een ingebouwde omgekeerde osmose filtratie. Dit type systeem is zelf te installeren en
+              inclusief installatiemateriaal leverbaar.
             </p>
           </div>
         </section>

@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: 'Wat is het beste alternatief voor SodaStream?',
     answer:
-      'Het beste alternatief voor SodaStream hangt af van je gebruik en budget. Voor mensen die veel bruisend water drinken en ook gefilterd of kokend water willen, is een 4-in-1 kraan met onderbouwde carbonator de meest complete oplossing. De PureAqua 4-in-1 kraan levert bruisend, koud gefilterd, warm en kokend water uit één kraan. Over drie jaar is dat doorgaans goedkoper dan continu CO2-patronen kopen.',
+      'Het beste alternatief voor SodaStream hangt af van je gebruik en budget. Voor mensen die veel bruisend water drinken en ook gefilterd of kokend water willen, is een 4-in-1 kraan met onderbouwde carbonator de meest complete oplossing. Dit type kraan levert bruisend, koud gefilterd, warm en kokend water uit één punt. Over drie jaar is dat doorgaans goedkoper dan continu CO2-patronen kopen.',
   },
   {
     question: 'Is een alternatief voor SodaStream goedkoper?',
@@ -206,7 +206,7 @@ export default function SodaStreamAlternatiefPage() {
                 60 liter van een SodaStream-patroon.
               </p>
               <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                Een systeem als de PureAqua 4-in-1 combineert dit met een{' '}
+                Dit type systeem combineert dit met een{' '}
                 <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose filter</Link>,
                 kokend water en warm water in dezelfde kraan. Je hebt dus geen apart SodaStream-apparaat,
                 geen flessen op het aanrecht en geen retourpunten meer nodig. Alles vanuit één kraanpunt.
@@ -308,9 +308,9 @@ export default function SodaStreamAlternatiefPage() {
                 noot: 'Op basis van 12 patronen per jaar bij dagelijks gebruik door 2 personen.',
               },
               {
-                naam: '4-in-1 kraan met carbonator (PureAqua)',
-                aanschaf: '€ 799',
-                jaar1: '€ 799 + ± € 90 filters + ± € 30 CO2 = € 919',
+                naam: '4-in-1 kraan met carbonator',
+                aanschaf: '€ 700–1.000',
+                jaar1: '€ 850 + ± € 90 filters + ± € 30 CO2 = € 970',
                 jaar2: '± € 90 filters + ± € 30 CO2 = € 120',
                 jaar3: '± € 90 filters + ± € 30 CO2 = € 120',
                 totaal3jaar: '± € 1.159',
@@ -437,7 +437,7 @@ export default function SodaStreamAlternatiefPage() {
           <p className="text-gray-700 leading-relaxed mt-4">
             Meer lezen over de 4-in-1 kraan? Bekijk onze gids over{' '}
             <Link href="/kokend-water-kraan/met-filter" className="text-[#005F8A] underline">kokend water kraan met filter</Link>{' '}
-            en lees hoe de PureAqua zich verhoudt tot{' '}
+            en lees de vergelijking met{' '}
             <Link href="/quooker-alternatief" className="text-[#005F8A] underline">alternatieven voor Quooker</Link>.
           </p>
         </section>
@@ -466,21 +466,7 @@ export default function SodaStreamAlternatiefPage() {
           </div>
         </section>
 
-        {/* Direct CTA */}
-        <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
-          <h2 className="text-xl md:text-2xl font-bold mb-2">Klaar met SodaStream-patronen bestellen?</h2>
-          <p className="text-blue-100 mb-5 max-w-lg mx-auto">
-            Bekijk de PureAqua 4-in-1 kraan: bruisend, gefilterd, warm én kokend water direct uit de kraan — zonder patronen wisselen.
-          </p>
-          <a
-            href="https://www.pureaqua.nl"
-            target="_blank"
-            rel="noopener"
-            className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm md:text-base"
-          >
-            Naar pureaqua.nl →
-          </a>
-        </section>
+        <CTABanner context="algemeen" />
 
         {/* FAQ */}
         <section>

@@ -404,22 +404,20 @@ export default async function WaterOntkalkerGemeentePage({ params }: PageProps) 
               Bij {gemeente.hardheid}°dH in {gemeente.naam}: osmosefilter voor het drinkwater
             </p>
             <p className={`${kleur.text} opacity-90 text-sm mb-4`}>
-              Een waterontkalker alleen is niet voldoende bij dit hardheidsniveau. De PureAqua omgekeerde osmose kraan verwijdert 99% van calcium en magnesium uit je drinkwater — bewezen technologie, geen marketing claims.
+              Een waterontkalker alleen is niet voldoende bij dit hardheidsniveau. Een omgekeerde osmose filter verwijdert 99% van calcium en magnesium uit het drinkwater — bewezen technologie.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
-                className="inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
-              >
-                Bekijk PureAqua osmosefilter →
-              </a>
               <Link
                 href="/omgekeerde-osmose/kopen"
+                className="inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
+              >
+                Vergelijk osmose systemen →
+              </Link>
+              <Link
+                href="/omgekeerde-osmose"
                 className={`inline-block border ${kleur.border} ${kleur.text} font-semibold px-5 py-2.5 rounded-xl hover:bg-white transition-colors text-sm`}
               >
-                Vergelijk osmose systemen
+                Meer over omgekeerde osmose
               </Link>
             </div>
           </div>

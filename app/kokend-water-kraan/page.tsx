@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Kokend water kraan — complete gids (2026)',
   description:
-    'Kokend water kraan: hoe werkt het, welke merken zijn er en wat zijn de kosten? Vergelijk Quooker, Grohe, Insinkerator en PureAqua in deze complete gids.',
+    'Kokend water kraan: hoe werkt het, welke merken zijn er en wat zijn de kosten? Vergelijk Quooker, Grohe, Insinkerator en 4-in-1 systemen met osmose in deze complete gids.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan' },
   openGraph: {
     title: 'Kokend water kraan — hoe werkt het en welk merk past bij jou?',
@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: 'Wat kost een kokend water kraan inclusief installatie?',
     answer:
-      'Een eenvoudige kokend water kraan kost € 500-1.000 inclusief installatie. Een complete 4-in-1 kraan met osmosefilter zoals de PureAqua kost € 699-899 en is zelf te installeren. Quooker-modellen variëren van € 1.500 tot € 2.800 inclusief loodgieterkosten. Reken daarnaast op € 30-80 per jaar voor filters en energie.',
+      'Een eenvoudige kokend water kraan kost € 500-1.000 inclusief installatie. Een complete 4-in-1 kraan met osmosefilter kost € 699-899 en is zelf te installeren. Quooker-modellen variëren van € 1.500 tot € 2.800 inclusief loodgieterkosten. Reken daarnaast op € 30-80 per jaar voor filters en energie.',
   },
   {
     question: 'Hoe lang gaat een kokend water kraan mee?',
@@ -61,7 +61,7 @@ const faqItems = [
   {
     question: 'Kan ik een kokend water kraan zelf installeren?',
     answer:
-      'Een 4-in-1 kraan zoals de PureAqua is ontworpen voor doe-het-zelf installatie en duurt 1-2 uur. Je hebt enkele standaard gereedschappen nodig en een vrije WCD onder het aanrecht. Bij andere merken laat je de installatie vaak door een loodgieter doen (€ 150-300 extra). Lees onze stap-voor-stap installatiegids voor de details.',
+      'Een 4-in-1 kraan met osmose is ontworpen voor doe-het-zelf installatie en duurt 1-2 uur. Je hebt enkele standaard gereedschappen nodig en een vrije WCD onder het aanrecht. Bij andere merken laat je de installatie vaak door een loodgieter doen (€ 150-300 extra). Lees onze stap-voor-stap installatiegids voor de details.',
   },
   {
     question: 'Wat is het verschil tussen een kokend water kraan en een heet water kraan?',
@@ -72,7 +72,7 @@ const faqItems = [
 
 const vergelijking = [
   {
-    merk: 'PureAqua 4-in-1',
+    merk: '4-in-1 kraan met osmose',
     prijs: '€ 699 – 899',
     tank: '2,5 liter',
     functies: ['Kokend (100°C)', 'Koud gefilterd', 'Warm', 'Bruisend'],
@@ -188,7 +188,7 @@ export default function KokendWaterKraanPage() {
             Kokend water kraan
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Met een kokend water kraan (ook wel kokendwaterkraan) heb je direct 100°C water uit de kraan — geen waterkoker, geen wachten. In deze complete gids leggen we uit hoe een kokend water kraan werkt, welke soorten er zijn, wat ze kosten en welke merken — Quooker, Grohe, InSinkErator en PureAqua — het beste bij jouw keuken passen.
+            Met een kokend water kraan (ook wel kokendwaterkraan) heb je direct 100°C water uit de kraan — geen waterkoker, geen wachten. In deze complete gids leggen we uit hoe een kokend water kraan werkt, welke soorten er zijn, wat ze kosten en welke systemen — Quooker, Grohe, InSinkErator en 4-in-1 met osmose — het beste bij jouw keuken passen.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/kokend-water-kraan/vergelijken" className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm">
@@ -210,7 +210,7 @@ export default function KokendWaterKraanPage() {
             Een kokend water kraan is een keukenkraan die water levert van rond de 100°C, direct en onder druk. Onder het aanrecht zit een kleine, sterk geïsoleerde boiler die het water continu op temperatuur houdt. Je hoeft geen waterkoker meer aan te zetten en hoeft niet meer te wachten — handig voor thee, koffie, pasta, rijst, soep, blancheren of een snelle kom instant noodles.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            In Nederland zijn kokend water kranen sinds de jaren '90 populair geworden, mede dankzij de opmars van het merk Quooker. Inmiddels bieden ook merken als Grohe, InSinkErator en het Nederlandse <Link href="/kokend-water-kraan/vergelijken" className="text-[#005F8A] underline hover:no-underline">PureAqua</Link> een eigen variant. De moderne generatie kranen combineert kokend water vaak met andere functies zoals gefilterd koud water, warm water en bruisend water — in één kraan.
+            In Nederland zijn kokend water kranen sinds de jaren '90 populair geworden, mede dankzij de opmars van het merk Quooker. Inmiddels bieden ook merken als Grohe, InSinkErator en diverse andere aanbieders een eigen variant. De moderne generatie kranen combineert kokend water vaak met andere functies zoals gefilterd koud water, warm water en bruisend water — in één kraan.
           </p>
           <div className="bg-[#E0F2FE]/50 border-l-4 border-[#005F8A] rounded-r-xl p-4 my-4">
             <p className="text-sm text-gray-700">
@@ -268,7 +268,7 @@ export default function KokendWaterKraanPage() {
               },
               {
                 titel: '4-in-1: kokend + koud + warm + bruisend (of gefilterd)',
-                tekst: 'De meest complete kraan. Levert alle vier de temperaturen plus bruisend of gefilterd water. Voorbeeld: PureAqua 4-in-1 (met osmose-filter ingebouwd) of Quooker Fusion + CUBE. Prijs: € 699-2.800.',
+                tekst: 'De meest complete kraan. Levert alle vier de temperaturen plus bruisend of gefilterd water. Voorbeeld: 4-in-1 kraan met osmose (filter ingebouwd) of Quooker Fusion + CUBE. Prijs: € 699-2.800.',
               },
             ].map(t => (
               <div key={t.titel} className="border border-gray-100 rounded-xl p-4 bg-white">
@@ -292,7 +292,7 @@ export default function KokendWaterKraanPage() {
             Het grote voordeel van een combinatie kokend water + osmose: de boiler verkalkt niet meer aan de binnenkant, omdat het ingaande water al gefilterd is. Dat verlengt de levensduur van de tank substantieel, vooral in gebieden met <Link href="/waterhardheid" className="text-[#005F8A] underline hover:no-underline">hard water</Link>. Daarnaast smaken je koffie en thee merkbaar beter omdat de mineraalbalans rustiger is.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            De PureAqua 4-in-1 is op dit moment het bekendste systeem in Nederland dat osmose, kokend, koud, warm én <Link href="/kennisbank/bruisend-water-thuis" className="text-[#005F8A] underline hover:no-underline">bruisend water</Link> in één kraan combineert. Bij Quooker zit het bruisend water in een aparte CUBE-unit met CO₂ en koolstoffilter — geen volledige RO-filtering. Bij Grohe en InSinkErator zijn filters meestal optioneel (los koolstoffilter, geen osmose).
+            Een 4-in-1 kraan met osmose combineert osmose, kokend, koud, warm én <Link href="/kennisbank/bruisend-water-thuis" className="text-[#005F8A] underline hover:no-underline">bruisend water</Link> in één kraan. Bij Quooker zit het bruisend water in een aparte CUBE-unit met CO₂ en koolstoffilter — geen volledige RO-filtering. Bij Grohe en InSinkErator zijn filters meestal optioneel (los koolstoffilter, geen osmose).
           </p>
         </section>
 
@@ -333,7 +333,7 @@ export default function KokendWaterKraanPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed mt-5">
-            <strong className="text-[#003F5C]">Onze eerlijke beoordeling:</strong> Quooker is de premium marktleider met een uitstekende reputatie, stille tank en jaren ervaring — als budget geen issue is, krijg je een topproduct. Grohe Red Duo combineert Duitse engineering met een ruime tank en 5 jaar garantie. InSinkErator is een betaalbare Amerikaanse optie, maar levert 98°C in plaats van echte 100°C. De PureAqua 4-in-1 onderscheidt zich met de combinatie kokend + osmose + bruisend in één kraan, een prijs onder duizend euro en doe-het-zelf installatie. Voor wie filtering, bruisend water én een eerlijke prijs wil, biedt PureAqua de beste prijs-kwaliteitverhouding.
+            <strong className="text-[#003F5C]">Onze eerlijke beoordeling:</strong> Quooker is de premium marktleider met een uitstekende reputatie, stille tank en jaren ervaring — als budget geen issue is, krijg je een topproduct. Grohe Red Duo combineert Duitse engineering met een ruime tank en 5 jaar garantie. InSinkErator is een betaalbare Amerikaanse optie, maar levert 98°C in plaats van echte 100°C. Een 4-in-1 kraan met osmose onderscheidt zich met de combinatie kokend + osmose + bruisend in één kraan, een prijs onder duizend euro en doe-het-zelf installatie. Wie filtering, bruisend water én een eerlijke prijs wil, vindt in dit type systeem de beste prijs-kwaliteitverhouding.
           </p>
         </section>
 
@@ -417,7 +417,7 @@ export default function KokendWaterKraanPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De PureAqua 4-in-1 is bewust ontworpen voor doe-het-zelf installatie: alle aansluitingen zijn push-fit (geen soldeerwerk), de installatiehandleiding bevat een stappenplan en gemiddeld ben je in 1-2 uur klaar. Quooker en Grohe adviseren in de regel installatie door een loodgieter, wat € 150-300 extra kost.
+            Een 4-in-1 kraan met osmose is bewust ontworpen voor doe-het-zelf installatie: alle aansluitingen zijn push-fit (geen soldeerwerk), de installatiehandleiding bevat een stappenplan en gemiddeld ben je in 1-2 uur klaar. Quooker en Grohe adviseren in de regel installatie door een loodgieter, wat € 150-300 extra kost.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Voor de complete stap-voor-stap handleiding inclusief checklist, foto's en tips, lees onze <Link href="/kennisbank/kokend-water-kraan-installeren" className="text-[#005F8A] underline hover:no-underline">installatiegids voor een kokend water kraan</Link>. Goed om te weten: een 4-in-1 kraan met osmosefilter heeft naast de tank ook ruimte nodig voor het filterelement (typisch 10×10×35 cm) en een afvoeraansluiting voor het spoelwater.
@@ -428,14 +428,14 @@ export default function KokendWaterKraanPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Kosten over 5 jaar (TCO)</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De aanschafprijs is slechts één deel van het verhaal. Voor een eerlijke vergelijking kijk je naar de totale eigendomskosten (Total Cost of Ownership) over de levensduur. Hieronder een realistische schatting voor een gezinshuishouden over 5 jaar, vergeleken tussen de PureAqua 4-in-1 en een gemiddelde Quooker Combi+ setup.
+            De aanschafprijs is slechts één deel van het verhaal. Voor een eerlijke vergelijking kijk je naar de totale eigendomskosten (Total Cost of Ownership) over de levensduur. Hieronder een realistische schatting voor een gezinshuishouden over 5 jaar, vergeleken tussen een 4-in-1 kraan met osmose en een gemiddelde Quooker Combi+ setup.
           </p>
           <div className="overflow-x-auto -mx-4 px-4">
             <table className="w-full min-w-[480px] text-sm border-collapse">
               <thead>
                 <tr className="bg-[#E0F2FE]">
                   <th className="text-left py-3 px-4 font-semibold text-[#003F5C]">Kostenpost</th>
-                  <th className="py-3 px-3 font-semibold text-[#003F5C] text-center">PureAqua 4-in-1</th>
+                  <th className="py-3 px-3 font-semibold text-[#003F5C] text-center">4-in-1 kraan met osmose</th>
                   <th className="py-3 px-3 font-semibold text-[#003F5C] text-center">Quooker Combi+</th>
                 </tr>
               </thead>
@@ -454,7 +454,7 @@ export default function KokendWaterKraanPage() {
             Bedragen indicatief, gebaseerd op gemiddeld huishoudgebruik (2-4 personen) en prijzen mei 2026.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
-            Over 5 jaar bespaar je met de PureAqua ongeveer € 900-1.000 vergeleken met een Quooker-setup met bruisend water. Belangrijker dan het absolute bedrag is wat je terugkrijgt: bij PureAqua krijg je extra de osmose-filtering (kalk- en chloorvrij water), wat bij Quooker een aparte upgrade vergt of helemaal niet mogelijk is.
+            Over 5 jaar bespaar je met een 4-in-1 kraan met osmose ongeveer € 900-1.000 vergeleken met een Quooker-setup met bruisend water. Belangrijker dan het absolute bedrag is wat je terugkrijgt: een 4-in-1 systeem met osmose-filtering levert kalk- en chloorvrij water, wat bij Quooker een aparte upgrade vergt of helemaal niet mogelijk is.
           </p>
         </section>
 

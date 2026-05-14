@@ -7,12 +7,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'InSinkErator alternatief: beste opties vergeleken',
     description:
-      'Op zoek naar een alternatief voor InSinkErator? Vergelijk PureAqua, Quooker, Grohe Red en Franke op prijs, functies en filteropties. Eerlijke vergelijking inclusief TCO.',
+      'Op zoek naar een alternatief voor InSinkErator? Vergelijk 4-in-1 osmosekranen, Quooker, Grohe Red en Franke op prijs, functies en filteropties. Eerlijke vergelijking inclusief TCO.',
     alternates: { canonical: 'https://waterfilterplatform.nl/insinkerator-alternatief' },
     openGraph: {
       title: 'InSinkErator alternatief: top 4 opties vergeleken (2026)',
       description:
-        'Vergelijk de beste alternatieven voor InSinkErator. PureAqua, Quooker, Grohe Red en Franke naast elkaar op functies, prijs en 5-jaar kosten.',
+        'Vergelijk de beste alternatieven voor InSinkErator. 4-in-1 osmosekranen, Quooker, Grohe Red en Franke naast elkaar op functies, prijs en 5-jaar kosten.',
       url: 'https://waterfilterplatform.nl/insinkerator-alternatief',
       type: 'article',
       locale: 'nl_NL',
@@ -24,22 +24,22 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor InSinkErator?',
     answer:
-      'De vier serieuze alternatieven voor InSinkErator zijn PureAqua 4-in-1, Quooker, Grohe Red en Franke. PureAqua biedt standaard vier functies inclusief osmose filter voor de laagste prijs. Quooker is de bekendste naam in Nederland. Grohe Red scoort op design. Franke staat voor Zwitserse bouwkwaliteit. Welke het beste past hangt af van je functiebehoefte, budget en of je een ingebouwd waterfilter wilt.',
+      'De vier serieuze alternatieven voor InSinkErator zijn een 4-in-1 kraan met osmose, Quooker, Grohe Red en Franke. Een 4-in-1 osmosekraan biedt standaard vier functies inclusief osmose filter voor de laagste prijs. Quooker is de bekendste naam in Nederland. Grohe Red scoort op design. Franke staat voor Zwitserse bouwkwaliteit. Welke het beste past hangt af van je functiebehoefte, budget en of je een ingebouwd waterfilter wilt.',
   },
   {
     question: 'Is er een goedkoper alternatief voor InSinkErator?',
     answer:
-      'Ja. InSinkErator-modellen voor kokend water (zoals de HC3300 of HC3500) kosten tussen € 800 en € 1.600 exclusief installatie. PureAqua biedt een volledigere set — met osmose filter, bruisend water en kokend water — voor € 699–899. Over vijf jaar is het verschil nog groter doordat PureAqua zelf te installeren is en lagere filterkosten heeft.',
+      'Ja. InSinkErator-modellen voor kokend water (zoals de HC3300 of HC3500) kosten tussen € 800 en € 1.600 exclusief installatie. Een 4-in-1 kraan met osmose biedt een volledigere set — met osmose filter, bruisend water en kokend water — voor € 699–899. Over vijf jaar is het verschil nog groter doordat een 4-in-1 systeem zelf te installeren is en lagere filterkosten heeft.',
   },
   {
     question: 'Heeft een InSinkErator een ingebouwd waterfilter?',
     answer:
-      'InSinkErator-modellen voor kokend water hebben optioneel een filterpatroon dat kalk en chloor vermindert, maar dit is geen volledig omgekeerde osmose systeem. Wie puur gefilterd water wil — vrij van kalk, nitraat en microplastics — heeft bij InSinkErator een apart osmose systeem nodig. PureAqua heeft een osmose filter standaard meegeleverd.',
+      'InSinkErator-modellen voor kokend water hebben optioneel een filterpatroon dat kalk en chloor vermindert, maar dit is geen volledig omgekeerde osmose systeem. Wie puur gefilterd water wil — vrij van kalk, nitraat en microplastics — heeft bij InSinkErator een apart osmose systeem nodig. Een 4-in-1 kraan met osmose heeft dat filter standaard meegeleverd.',
   },
   {
     question: 'Kan ik een InSinkErator alternatief zelf installeren?',
     answer:
-      'PureAqua is zelf te installeren met standaard aansluitingen onder het aanrecht, zonder verplichte installateur. Voor Quooker en de meeste InSinkErator-modellen wordt een professionele installateur aanbevolen, wat de totaalprijs verhoogt. Grohe Red en Franke variëren per model — raadpleeg de specificaties van het specifieke model dat u overweegt.',
+      'Een 4-in-1 kraan met osmose is zelf te installeren met standaard aansluitingen onder het aanrecht, zonder verplichte installateur. Voor Quooker en de meeste InSinkErator-modellen wordt een professionele installateur aanbevolen, wat de totaalprijs verhoogt. Grohe Red en Franke variëren per model — raadpleeg de specificaties van het specifieke model dat u overweegt.',
   },
   {
     question: 'Wanneer blijf je beter bij InSinkErator?',
@@ -50,7 +50,7 @@ const faqItems = [
 
 const topAlternatieven = [
   {
-    naam: 'PureAqua 4-in-1',
+    naam: '4-in-1 kraan met osmose',
     prijs: '€ 699–899',
     kokend: 'Ja (100°C)',
     gefilterd: 'Ja (osmose standaard)',
@@ -97,7 +97,7 @@ const topAlternatieven = [
 
 const tco5jaar = [
   {
-    set: 'PureAqua 4-in-1',
+    set: '4-in-1 kraan met osmose',
     aanschaf: '€ 799',
     installatie: '€ 0 (zelf)',
     filters: '€ 90/jaar',
@@ -288,12 +288,12 @@ export default function InsinkeratorAlternatiefPage() {
           </p>
         </section>
 
-        {/* PureAqua in detail */}
+        {/* 4-in-1 in detail */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">PureAqua in detail: waarom het een sterk InSinkErator alternatief is</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">4-in-1 kraan met osmose in detail: waarom het een sterk InSinkErator alternatief is</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Van de vier alternatieven springt PureAqua eruit op het vlak van functies voor de prijs. Hier leggen we uit
-            waarom — en ook wanneer PureAqua juist niet de beste keuze is.
+            Van de vier alternatieven springt een geïntegreerde 4-in-1 osmosekraan eruit op het vlak van functies voor de prijs. Hier leggen we uit
+            waarom — en ook wanneer dit type systeem juist niet de beste keuze is.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
             {[
@@ -303,15 +303,15 @@ export default function InsinkeratorAlternatiefPage() {
               },
               {
                 titel: 'Osmose filter standaard meegeleverd',
-                tekst: 'PureAqua levert een compleet osmose systeem inclusief, dat kalk, chloor, nitraten en microplastics verwijdert. Bij InSinkErator is dit een extra aanschaf.',
+                tekst: 'Een 4-in-1 osmosekraan levert een compleet osmose systeem inclusief, dat kalk, chloor, nitraten en microplastics verwijdert. Bij InSinkErator is dit een extra aanschaf.',
               },
               {
                 titel: 'Lagere totaalprijs',
-                tekst: 'Een complete PureAqua-set kost € 699–899. Een InSinkErator met vergelijkbare functies (3-in-1 + apart osmose) kost al snel € 1.500–2.000 inclusief installatie.',
+                tekst: 'Een complete 4-in-1 set kost € 699–899. Een InSinkErator met vergelijkbare functies (3-in-1 + apart osmose) kost al snel € 1.500–2.000 inclusief installatie.',
               },
               {
                 titel: 'Zelf te installeren',
-                tekst: 'PureAqua wordt geleverd met Nederlandstalige installatiehandleiding. De meeste klanten plaatsen het systeem in 2–4 uur zonder installateur.',
+                tekst: 'De meeste 4-in-1 systemen worden geleverd met een Nederlandstalige installatiehandleiding. De meeste klanten plaatsen het systeem in 2–4 uur zonder installateur.',
               },
               {
                 titel: 'Nederlandse service',
@@ -382,19 +382,19 @@ export default function InsinkeratorAlternatiefPage() {
             {[
               {
                 titel: 'Je wilt een osmose filter in het systeem',
-                tekst: 'InSinkErator heeft geen standaard osmose filter. Wie kalkvrij, puur water wil voor koffie, thee of drinkwater, moet bij InSinkErator een apart systeem aanschaffen. PureAqua heeft dat standaard ingebouwd.',
+                tekst: 'InSinkErator heeft geen standaard osmose filter. Wie kalkvrij, puur water wil voor koffie, thee of drinkwater, moet bij InSinkErator een apart systeem aanschaffen. Een 4-in-1 kraan met osmose heeft dat standaard ingebouwd.',
               },
               {
                 titel: 'Je wilt bruisend water uit de kraan',
-                tekst: 'InSinkErator biedt geen standaard bruisend water functie. Een PureAqua 4-in-1 levert dat direct via een ingebouwde CO₂-cilinder, zonder extra module of apart apparaat.',
+                tekst: 'InSinkErator biedt geen standaard bruisend water functie. Een 4-in-1 kraan met osmose levert dat direct via een ingebouwde CO₂-cilinder, zonder extra module of apart apparaat.',
               },
               {
                 titel: 'Je zoekt een lagere prijs voor hetzelfde functiepakket',
-                tekst: 'Voor kokend water + osmose filter + bruisend water betaal je bij InSinkErator al snel € 1.500–2.000 inclusief installatie. PureAqua levert hetzelfde pakket voor € 699–899 inclusief zelfinstallatie.',
+                tekst: 'Voor kokend water + osmose filter + bruisend water betaal je bij InSinkErator al snel € 1.500–2.000 inclusief installatie. Een 4-in-1 kraan met osmose levert hetzelfde pakket voor € 699–899 inclusief zelfinstallatie.',
               },
               {
                 titel: 'Je wilt zelf installeren',
-                tekst: 'Bij InSinkErator wordt installatie via dealer aanbevolen — dat verhoogt de totaalprijs met € 100–250. PureAqua is ontworpen voor zelfinstallatie en levert een Nederlandstalige handleiding.',
+                tekst: 'Bij InSinkErator wordt installatie via dealer aanbevolen — dat verhoogt de totaalprijs met € 100–250. Een 4-in-1 kraan met osmose is ontworpen voor zelfinstallatie en wordt geleverd met een Nederlandstalige handleiding.',
               },
               {
                 titel: 'Je vergelijkt ook met andere kokend water merken',
@@ -501,22 +501,7 @@ export default function InsinkeratorAlternatiefPage() {
           </div>
         </section>
 
-        {/* Final CTA */}
-        <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
-          <h2 className="text-xl md:text-2xl font-bold mb-2">Liever direct bekijken?</h2>
-          <p className="text-blue-100 mb-5 max-w-lg mx-auto">
-            Bekijk het volledige 4-in-1 assortiment van PureAqua — met osmose filter, kokend water en bruisend water
-            standaard inbegrepen.
-          </p>
-          <a
-            href="https://www.pureaqua.nl"
-            target="_blank"
-            rel="noopener"
-            className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm md:text-base"
-          >
-            Naar pureaqua.nl →
-          </a>
-        </section>
+        <CTABanner context="kokend" />
       </div>
     </>
   );

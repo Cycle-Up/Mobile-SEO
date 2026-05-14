@@ -346,7 +346,7 @@ export default async function WaterfilterPage({ params }: PageProps) {
               <p className="text-sm font-medium text-gray-800">
                 Advies voor {gemeente.naam}:{' '}
                 {isZeerHard
-                  ? `Bij ${gemeente.hardheid}°dH in ${gemeente.naam} is osmose de enige filteroptie die echt het verschil maakt. Kalkaanslag verdwijnt vrijwel volledig. PureAqua levert osmosesystemen die speciaal zijn geoptimaliseerd voor zeer hard water.`
+                  ? `Bij ${gemeente.hardheid}°dH in ${gemeente.naam} is osmose de enige filteroptie die echt het verschil maakt. Kalkaanslag verdwijnt vrijwel volledig.`
                   : isHardWater
                   ? `Met ${gemeente.hardheid}°dH in ${gemeente.naam} is osmose de meest effectieve keuze voor wie structureel van kalkvrij water wil genieten en zijn apparaten wil beschermen.`
                   : `Osmose is ook in ${gemeente.naam} een uitstekende optie voor maximale zuiverheid — ook al is het water hier minder hard. Het verwijdert naast kalk ook andere ongewenste stoffen.`}
@@ -362,7 +362,7 @@ export default async function WaterfilterPage({ params }: PageProps) {
                 </span>
               </div>
               <p className="text-sm text-gray-700 mb-2">
-                Een kokend water kraan (zoals PureAqua 4-in-1) combineert kokend, koud, warm en bruisend water met een ingebouwd osmosefilter. Ideaal als je ook van thee, koffie of pasta koken wil profiteren van gefilterd, ontharder water.
+                Een 4-in-1 kokend water kraan combineert kokend, koud, warm en bruisend water met een ingebouwd osmosefilter. Ideaal als je ook van thee, koffie of pasta koken wil profiteren van gefilterd, ontharder water.
               </p>
               <p className="text-sm font-medium text-gray-800">
                 Advies voor {gemeente.naam}:{' '}
@@ -486,23 +486,21 @@ export default async function WaterfilterPage({ params }: PageProps) {
             </h2>
             <p className="text-blue-100 mb-5 max-w-lg">
               {isZeerHard
-                ? `In ${gemeente.naam} is een osmosefilter geen luxe maar een praktische noodzaak. PureAqua levert systemen die zijn geoptimaliseerd voor de hoge kalklast in jouw regio — direct leverbaar in Nederland.`
-                : `Met hard water in ${gemeente.naam} is een osmosesysteem de meest effectieve keuze. PureAqua levert onder-aanrecht osmosefilters en 4-in-1 kokend water kranen met ingebouwde osmose.`}
+                ? `In ${gemeente.naam} is een osmosefilter geen luxe maar een praktische noodzaak. Bekijk welk systeem het beste past bij de hoge kalklast in jouw regio.`
+                : `Met hard water in ${gemeente.naam} is een osmosesysteem de meest effectieve keuze. Vergelijk onder-aanrecht osmosefilters en 4-in-1 kokend water kranen met ingebouwde osmose.`}
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
-                className="inline-block bg-white text-[#005F8A] font-bold px-5 py-2.5 rounded-xl hover:bg-blue-50 transition-colors text-sm"
-              >
-                Bekijk PureAqua osmosefilter →
-              </a>
               <Link
                 href="/omgekeerde-osmose/kopen"
+                className="inline-block bg-white text-[#005F8A] font-bold px-5 py-2.5 rounded-xl hover:bg-blue-50 transition-colors text-sm"
+              >
+                Osmosefilters vergelijken →
+              </Link>
+              <Link
+                href="/waterfilter/vergelijken"
                 className="inline-block border border-blue-300 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors text-sm"
               >
-                Vergelijk osmose-systemen
+                Alle waterfilters
               </Link>
               <Link
                 href="/kokend-water-kraan/met-filter"

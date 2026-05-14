@@ -357,18 +357,16 @@ export default async function LeidingwaterPage({ params }: PageProps) {
             </h2>
             <p className="text-blue-100 mb-5 max-w-lg">
               {isZeerHard
-                ? `Omgekeerde osmose verwijdert 95–99% van de kalk en andere opgeloste stoffen uit het harde leidingwater in ${gemeente.naam}. PureAqua levert systemen speciaal voor deze regio.`
-                : `Met hard leidingwater is een osmosefilter de meest effectieve aanpak voor kalkreductie en smaakverbetering. PureAqua levert direct in Nederland.`}
+                ? `Omgekeerde osmose verwijdert 95–99% van de kalk en andere opgeloste stoffen uit het harde leidingwater in ${gemeente.naam}.`
+                : `Met hard leidingwater is een osmosefilter de meest effectieve aanpak voor kalkreductie en smaakverbetering.`}
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
+              <Link
+                href="/omgekeerde-osmose/kopen"
                 className="inline-block bg-white text-[#005F8A] font-bold px-5 py-2.5 rounded-xl hover:bg-blue-50 transition-colors text-sm"
               >
-                Bekijk PureAqua osmosefilter →
-              </a>
+                Vergelijk osmose systemen →
+              </Link>
               <Link
                 href="/omgekeerde-osmose"
                 className="inline-block border border-blue-300 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors text-sm"

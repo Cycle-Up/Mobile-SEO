@@ -12,15 +12,15 @@ interface Product {
 
 const producten: Product[] = [
   {
-    naam: 'PureAqua 4-in-1',
-    prijs: '€ 699 – 899',
+    naam: '4-in-1 kraan met osmose',
+    prijs: '€ 600 – 1.000',
     osmoseFilter: true,
     kokendWater: true,
     koudWater: true,
     bruisendWater: true,
     filterLevensduur: '12 maanden',
     installatie: 'Eenvoudig, onder aanrecht',
-    highlight: true,
+    highlight: false,
   },
   {
     naam: 'Quooker Combi+',

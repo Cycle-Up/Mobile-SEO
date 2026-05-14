@@ -37,7 +37,7 @@ const faqItems = [
   {
     question: 'Is een 5-in-1 kraan moeilijker te installeren dan een 3-in-1 of 4-in-1?',
     answer:
-      'Licht complexer, maar niet dramatisch. Je hebt dezelfde basisvereisten: een vrije WCD, een koude wateraansluiting en een afvoeraansluiting voor het osmose-spoelwater. Het enige extra element is de CO₂-cilinder die moet worden gekoppeld. Systemen als de PureAqua zijn ontworpen voor doe-het-zelf installatie; de CO₂-koppeling is een simpele snelkoppeling zonder gereedschap. Gemiddelde installatietijd: 2–3 uur.',
+      'Licht complexer, maar niet dramatisch. Je hebt dezelfde basisvereisten: een vrije WCD, een koude wateraansluiting en een afvoeraansluiting voor het osmose-spoelwater. Het enige extra element is de CO₂-cilinder die moet worden gekoppeld. De meeste 5-in-1 systemen zijn ontworpen voor doe-het-zelf installatie; de CO₂-koppeling is een simpele snelkoppeling zonder gereedschap. Gemiddelde installatietijd: 2–3 uur.',
   },
   {
     question: 'Welke gezinnen profiteren het meest van een 5-in-1 kraan?',
@@ -78,7 +78,7 @@ const co2Gegevens = [
   { aspect: 'Cilinder type', waarde: '425 g CO₂ (standaard SodaStream-formaat of merkspecifiek)' },
   { aspect: 'Plaatsing', waarde: 'In de onderkast naast de boiler; standaard hoogte 30–40 cm' },
   { aspect: 'Levensduur', waarde: '3–6 maanden bij 2–4 glazen bruisend per dag' },
-  { aspect: 'Kosten navulling', waarde: '€ 15–25 per cilinder (supermarkt, Coolblue, pureaqua.nl)' },
+  { aspect: 'Kosten navulling', waarde: '€ 15–25 per cilinder (supermarkt, Coolblue, diverse webshops)' },
   { aspect: 'Koppeling', waarde: 'Snelkoppeling of schroefdraad afhankelijk van merk' },
   { aspect: 'Ruimte nodig', waarde: 'Ca. 10–15 cm extra in de onderkast naast de boiler' },
 ];
@@ -92,7 +92,7 @@ const kostenVergelijking = [
     opmerking: 'Geen filter, geen kokend water, ruimte op aanrecht',
   },
   {
-    optie: '4-in-1 kraan (PureAqua)',
+    optie: '4-in-1 kraan met osmose',
     aanschaf: '€ 799',
     jaarlijks: '€ 120 (filter + CO₂)',
     vijfJaar: '€ 1.399',
@@ -100,7 +100,7 @@ const kostenVergelijking = [
     highlight: false,
   },
   {
-    optie: '5-in-1 kraan (PureAqua)',
+    optie: '5-in-1 kraan met osmose',
     aanschaf: '€ 949',
     jaarlijks: '€ 130 (filter + CO₂)',
     vijfJaar: '€ 1.599',
@@ -238,7 +238,7 @@ export default function VijfInEenKraanPage() {
               href="/omgekeerde-osmose/kopen"
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              Bekijk PureAqua 5-in-1 →
+              5-in-1 kranen vergelijken →
             </Link>
             <Link
               href="/kokend-water-kraan/vergelijken"
@@ -373,7 +373,7 @@ export default function VijfInEenKraanPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             Navullen kan via de leverancier van de kraan (vaak een wisselservice), bij Coolblue, Action of specifieke
             waterspeciaalzaken. Sommige merken gebruiken een merkspecifieke cilinder (zoals Quooker CUBE); andere —
-            waaronder de meeste PureAqua-varianten — werken met een standaard 60 L of 425 g cilinder die breed
+            waaronder de meeste 5-in-1 systemen — werken met een standaard 60 L of 425 g cilinder die breed
             beschikbaar is.
           </p>
           <div className="bg-[#E0F2FE]/50 border-l-4 border-[#005F8A] rounded-r-xl p-4">
@@ -439,7 +439,7 @@ export default function VijfInEenKraanPage() {
           <p className="text-gray-700 leading-relaxed">
             <strong className="text-[#003F5C]">Vergelijking met Quooker:</strong> een Quooker Fusion + CUBE biedt
             ook warm en koud bruisend water, maar kost al snel € 2.500 of meer in aanschaf, zonder osmosefilter
-            standaard inbegrepen. Over vijf jaar is het kostenverschil met een PureAqua 5-in-1 meer dan € 1.400.
+            standaard inbegrepen. Over vijf jaar is het kostenverschil met een 5-in-1 osmose kraan meer dan € 1.400.
             Lees het gedetailleerde overzicht op de{' '}
             <Link href="/kokend-water-kraan/vergelijken" className="text-[#005F8A] underline hover:no-underline">
               vergelijkpagina
@@ -576,12 +576,12 @@ export default function VijfInEenKraanPage() {
           </p>
         </section>
 
-        {/* Quooker CUBE vs PureAqua */}
+        {/* Quooker CUBE vs 5-in-1 */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Quooker CUBE vs PureAqua 5-in-1: een eerlijk beeld</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Quooker CUBE vs 5-in-1 kraan met osmose: een eerlijk beeld</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             De bekendste 5-in-1 variant op de Nederlandse markt is de Quooker Fusion met CUBE-module — de combinatie
-            die warm en koud bruisend water, kokend water én de standaard kraan combineert. De PureAqua 5-in-1
+            die warm en koud bruisend water, kokend water én de standaard kraan combineert. Een 5-in-1 kraan met osmose
             biedt hetzelfde functiepakket en voegt daar een volledig osmosefilter aan toe als standaard onderdeel.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -604,7 +604,7 @@ export default function VijfInEenKraanPage() {
               </ul>
             </div>
             <div className="rounded-xl border border-[#005F8A] bg-[#E0F2FE] p-4">
-              <h3 className="font-bold text-gray-900 mb-3">PureAqua 5-in-1 <span className="text-xs bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full ml-1">Aanbevolen</span></h3>
+              <h3 className="font-bold text-gray-900 mb-3">5-in-1 kraan met osmose <span className="text-xs bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full ml-1">Beste waarde</span></h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 {[
                   ['Aanschaf', '€ 949–1.099'],
@@ -625,7 +625,7 @@ export default function VijfInEenKraanPage() {
           <p className="text-gray-700 leading-relaxed mt-5">
             <strong className="text-[#003F5C]">Onze conclusie:</strong> de Quooker CUBE is een uitstekend product
             met uitstekende naam- en merkwaarde. Maar voor wie de beste prijs-kwaliteitverhouding zoekt —
-            inclusief osmosefilter en breed verkrijgbare CO₂-cilinders — biedt de PureAqua 5-in-1 meer voor minder.
+            inclusief osmosefilter en breed verkrijgbare CO₂-cilinders — biedt een 5-in-1 kraan met osmose meer voor minder.
             Het prijsverschil over vijf jaar bedraagt meer dan € 1.400.
           </p>
         </section>
@@ -641,7 +641,7 @@ export default function VijfInEenKraanPage() {
               { href: '/kokend-water-kraan', label: 'Kokend water kraan: complete gids' },
               { href: '/4-in-1-kraan', label: '4-in-1 kraan uitgelegd' },
               { href: '/kokend-water-kraan/vergelijken', label: 'Alle modellen vergelijken' },
-              { href: '/omgekeerde-osmose/kopen', label: 'PureAqua 4-in-1/5-in-1 kopen' },
+              { href: '/omgekeerde-osmose/kopen', label: '4-in-1/5-in-1 osmosekraan vergelijken' },
             ].map(l => (
               <Link
                 key={l.href}

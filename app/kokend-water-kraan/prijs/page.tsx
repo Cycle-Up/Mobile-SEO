@@ -16,7 +16,7 @@ const faqSchema = {
       name: 'Wat kost een kokend water kraan gemiddeld?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Een kokend water kraan kost inclusief boiler en installatie €800–3.000. Budget-modellen (InSinkErator, Aqua Optima) starten rond €500–800. Mid-range (Grohe Red, Zip HydroTap compact) kost €1.000–1.800. Premium (Quooker Fusion, PureAqua 4-in-1) ligt op €1.500–2.500. Jaarlijkse onderhouds- en filterkosten: €50–150.',
+        text: 'Een kokend water kraan kost inclusief boiler en installatie €800–3.000. Budget-modellen (InSinkErator, Aqua Optima) starten rond €500–800. Mid-range (Grohe Red, Zip HydroTap compact) kost €1.000–1.800. Premium (Quooker Fusion, 4-in-1 met osmose) ligt op €1.500–2.500. Jaarlijkse onderhouds- en filterkosten: €50–150.',
       },
     },
     {
@@ -32,7 +32,7 @@ const faqSchema = {
       name: 'Is een Quooker duurder dan alternatieven?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, een Quooker is het meest premium merk: aanschafprijs €1.800–2.500 plus installatie. Alternatieven als Grohe Red (€1.200–1.800) of een PureAqua 4-in-1 kraan met osmosefilter (€1.500–2.000) bieden vergelijkbare functionaliteit voor minder. De 4-in-1 kraan voegt ook een osmosefilter toe voor gefilterd drinkwater.',
+        text: 'Ja, een Quooker is het meest premium merk: aanschafprijs €1.800–2.500 plus installatie. Alternatieven als Grohe Red (€1.200–1.800) of een 4-in-1 kraan met osmosefilter (€1.500–2.000) bieden vergelijkbare functionaliteit voor minder. De 4-in-1 kraan voegt ook een osmosefilter toe voor gefilterd drinkwater.',
       },
     },
     {
@@ -114,7 +114,7 @@ export default function KokendWaterKraanPrijsPage() {
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2">4-in-1 osmose</td>
-                <td className="border border-gray-300 px-3 py-2">PureAqua 4-in-1</td>
+                <td className="border border-gray-300 px-3 py-2">4-in-1 kraan met osmose</td>
                 <td className="border border-gray-300 px-3 py-2">€1.500–2.200</td>
                 <td className="border border-gray-300 px-3 py-2">Kokend + osmosefilter + koud</td>
               </tr>

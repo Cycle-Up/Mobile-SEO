@@ -281,14 +281,12 @@ export default async function GemeentePage({ params }: PageProps) {
               {content.filterAdvies(gemeente.naam, gemeente.hardheid)}
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
+              <Link
+                href="/omgekeerde-osmose/kopen"
                 className="inline-block bg-orange-700 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-orange-800 transition-colors text-sm"
               >
-                Bekijk PureAqua osmosefilter kraan →
-              </a>
+                Osmosefilters vergelijken →
+              </Link>
               <Link href="/kennisbank/waterhardheid-verlagen" className="inline-block border border-orange-300 text-orange-800 font-semibold px-5 py-2.5 rounded-xl hover:bg-orange-100 transition-colors text-sm">
                 Lees: waterhardheid verlagen
               </Link>

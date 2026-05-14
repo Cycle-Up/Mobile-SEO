@@ -208,7 +208,7 @@ export default function WaterhardheidVerlagenPage() {
               href="/omgekeerde-osmose/kopen"
               className="inline-flex items-center gap-2 bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#004A6D] transition-colors text-sm"
             >
-              Bekijk de PureAqua 4-in-1 →
+              Bekijk osmose systemen →
             </Link>
             <Link
               href="/waterhardheid"
@@ -458,13 +458,13 @@ export default function WaterhardheidVerlagenPage() {
             ))}
           </div>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            De <strong>PureAqua 4-in-1</strong> combineert een omgekeerde osmose filter met een kokendwaterkraan, koud water, warm water en bruisend water — alles in één design kraan. Speciaal ontwikkeld voor de Nederlandse markt, inclusief NSF-gecertificeerde membranen en eenvoudige filterwissel zonder gereedschap.
+            Een <strong>4-in-1 kraan met osmose</strong> combineert een omgekeerde osmose filter met een kokendwaterkraan, koud water, warm water en bruisend water — alles in één design kraan. Inclusief NSF-gecertificeerde membranen en eenvoudige filterwissel zonder gereedschap.
           </p>
           <Link
             href="/omgekeerde-osmose/kopen"
             className="inline-flex items-center gap-2 bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-xl hover:bg-[#004A6D] transition-colors"
           >
-            Bekijk de PureAqua 4-in-1 →
+            Bekijk osmose systemen →
           </Link>
         </section>
 
@@ -651,7 +651,7 @@ export default function WaterhardheidVerlagenPage() {
             {[
               { href: '/waterhardheid', label: 'Waterhardheid per gemeente opzoeken' },
               { href: '/waterontharder', label: 'Waterontharder: uitleg en vergelijking' },
-              { href: '/omgekeerde-osmose/kopen', label: 'Osmosefilter kopen — PureAqua 4-in-1' },
+              { href: '/omgekeerde-osmose/kopen', label: 'Osmosefilter kopen — 4-in-1 kraan met osmose' },
               { href: '/kennisbank/waterhardheid-verlagen', label: 'Kennisbank: waterhardheid verlagen' },
               { href: '/waterhardheid/kaart', label: 'Waterhardheid per provincie — kaart' },
               { href: '/kennisbank/hardwatergebied-nederland', label: 'Hardwatergebieden in Nederland' },

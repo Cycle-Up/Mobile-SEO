@@ -516,7 +516,7 @@ export default function WaterfilterVergelijkenPage() {
           <p className="text-gray-700 mb-4 leading-relaxed">
             De hogere aanschafprijs (€700–1.000) wordt deels gecompenseerd door wat het vervangt.
             Bovendien betaalt u maar één keer voor installatie en hebt u slechts één jaarlijkse
-            filterwisseling in plaats van meerdere losse systemen. De PureAqua 4-in-1 kraan is het
+            filterwisseling in plaats van meerdere losse systemen. Een 4-in-1 kraan met omgekeerde osmose is het
             meest complete systeem dat momenteel op de Nederlandse markt beschikbaar is.
           </p>
           <div className="bg-white border border-gray-100 rounded-xl p-4 text-sm text-gray-700">
@@ -610,20 +610,19 @@ export default function WaterfilterVergelijkenPage() {
         <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
           <p className="text-blue-200 text-sm mb-1">Klaar met vergelijken?</p>
           <h2 className="text-xl md:text-2xl font-bold mb-3">
-            Bekijk de PureAqua 4-in-1 — het complete waterfiltersysteem
+            Bekijk alle osmosefilters en kokendwaterkranen
           </h2>
           <p className="text-blue-100 mb-5 max-w-lg mx-auto text-sm leading-relaxed">
-            De PureAqua 4-in-1 kraan combineert alle technologieën: omgekeerde osmose filtratie,
+            Een 4-in-1 kraan met omgekeerde osmose combineert alle technologieën: RO-filtratie,
             direct kokend water, koud gefilterd water en warm water uit één elegante kraan.
-            Één jaarlijkse filterwissel. Direct leverbaar.
+            Één jaarlijkse filterwissel.
           </p>
           <Link
             href="/omgekeerde-osmose/kopen"
             className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm md:text-base"
           >
-            Bekijk de PureAqua 4-in-1 →
+            Osmosefilters vergelijken →
           </Link>
-          <p className="text-xs text-blue-200 mt-3">pureaqua.nl · Nederlands merk · direct leverbaar</p>
         </section>
 
         {/* FAQ */}

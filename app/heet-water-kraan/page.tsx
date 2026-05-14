@@ -21,7 +21,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil tussen een heet water kraan en een kokend water kraan?',
     answer:
-      'Een heet water kraan levert water van 60–80°C — heet genoeg voor thee, pasta, babyvoeding en soep, maar niet kokend. Een kokend water kraan (zoals de Quooker of PureAqua 4-in-1) levert water van 100°C en vervangt volledig de waterkoker. Voor de meeste dagelijkse toepassingen volstaat een heet water kraan, maar wie écht 100°C wil voor espresso of sterilisatie, kiest voor een kokend water systeem.',
+      'Een heet water kraan levert water van 60–80°C — heet genoeg voor thee, pasta, babyvoeding en soep, maar niet kokend. Een kokend water kraan (zoals de Quooker of een 4-in-1 kraan met osmose) levert water van 100°C en vervangt volledig de waterkoker. Voor de meeste dagelijkse toepassingen volstaat een heet water kraan, maar wie écht 100°C wil voor espresso of sterilisatie, kiest voor een kokend water systeem.',
   },
   {
     question: 'Is een instant warm water kraan energiezuinig?',
@@ -31,7 +31,7 @@ const faqItems = [
   {
     question: 'Kan een heet water kraan ook filteren?',
     answer:
-      'Dat hangt af van het systeem. Eenvoudige instant water heaters hebben geen filter ingebouwd — ze verwarmen gewoon leidingwater. Systemen gebaseerd op een 4-in-1 kraan met omgekeerde osmose — zoals de PureAqua 4-in-1 — filteren het water wél via een RO-membraan en leveren naast warm ook kokend, koud gefilterd en bruisend water. Voor wie zowel heet water als waterfiltratie wil, is een volledig systeem zoals de 4-in-1 de meest complete keuze.',
+      'Dat hangt af van het systeem. Eenvoudige instant water heaters hebben geen filter ingebouwd — ze verwarmen gewoon leidingwater. Systemen gebaseerd op een 4-in-1 kraan met omgekeerde osmose filteren het water wél via een RO-membraan en leveren naast warm ook kokend, koud gefilterd en bruisend water. Voor wie zowel heet water als waterfiltratie wil, is een volledig 4-in-1 systeem de meest complete keuze.',
   },
   {
     question: 'Welke temperatuur heeft een heet water kraan?',
@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: 'Hoeveel kost een heet water kraan installeren?',
     answer:
-      'Een eenvoudige under-sink instant water heater kost €100–300 aanschaf en kan zelf worden geïnstalleerd in 30–60 minuten (aansluiting op koud water en stroom). Een complete heet water kraan met aparte tank kost €300–700 en vereist mogelijk een elektricien voor een extra wandcontactdoos. Een 4-in-1 kraan met osmosefilter (zoals de PureAqua) kost €699–899 en is zelf te installeren in 1–2 uur.',
+      'Een eenvoudige under-sink instant water heater kost €100–300 aanschaf en kan zelf worden geïnstalleerd in 30–60 minuten (aansluiting op koud water en stroom). Een complete heet water kraan met aparte tank kost €300–700 en vereist mogelijk een elektricien voor een extra wandcontactdoos. Een 4-in-1 kraan met osmosefilter kost €699–899 en is zelf te installeren in 1–2 uur.',
   },
 ];
 
@@ -95,7 +95,7 @@ const systeemTypes = [
     filter: true,
     highlight: true,
     beschrijving:
-      'De meest complete oplossing: combineert een geïntegreerd osmosefilter met vier waterfuncties — kokend (100°C), warm, koud gefilterd en bruisend water. De PureAqua 4-in-1 vervangt zowel de waterkoker als alle losse filtersystemen. Één jaarlijkse filterwissel. Beste prijs-kwaliteitverhouding voor complete wateroplossingen.',
+      'De meest complete oplossing: combineert een geïntegreerd osmosefilter met vier waterfuncties — kokend (100°C), warm, koud gefilterd en bruisend water. Dit type systeem vervangt zowel de waterkoker als alle losse filtersystemen. Één jaarlijkse filterwissel. Beste prijs-kwaliteitverhouding voor complete wateroplossingen.',
   },
 ];
 
@@ -247,7 +247,7 @@ export default function HeetWaterKraanPage() {
                 steriliseren, en voor espressoapparaten die boiling-point water vereisen. Echte kokend
                 water kranen — zoals de Quooker, GROHE Red of de{' '}
                 <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
-                  PureAqua 4-in-1 kraan
+                  4-in-1 kraan met osmose
                 </Link>{' '}
                 — zijn duurder maar leveren maximale flexibiliteit.
               </p>
@@ -515,7 +515,7 @@ export default function HeetWaterKraanPage() {
               },
               {
                 situatie: 'Ik wil ook bruisend water en heb hard leidingwater',
-                advies: 'PureAqua 4-in-1 kraan — osmose, kokend, koud en bruisend in één systeem',
+                advies: '4-in-1 kraan met osmose — kokend, koud, gefilterd en bruisend in één systeem',
                 type: 'compleet',
               },
               {
@@ -639,7 +639,7 @@ export default function HeetWaterKraanPage() {
             <Link href="/kokend-water-kraan/vergelijken" className="text-[#005F8A] underline hover:no-underline">
               merken vergelijking
             </Link>{' '}
-            voor Quooker, GROHE Red, Franke en PureAqua naast elkaar.
+            voor Quooker, GROHE Red, Franke en 4-in-1 systemen met osmose naast elkaar.
           </p>
         </section>
 
@@ -709,12 +709,12 @@ export default function HeetWaterKraanPage() {
               },
               {
                 href: '/kokend-water-kraan/vergelijken',
-                title: 'Merken vergelijken (Quooker, GROHE, PureAqua)',
+                title: 'Merken vergelijken (Quooker, GROHE, 4-in-1 met osmose)',
                 desc: 'TCO-vergelijking en functieoverzicht van alle populaire merken.',
               },
               {
                 href: '/4-in-1-kraan',
-                title: 'PureAqua 4-in-1 kraan',
+                title: '4-in-1 kraan met osmose',
                 desc: 'Kokend, koud, warm en bruisend met ingebouwde osmosefilter.',
               },
               {

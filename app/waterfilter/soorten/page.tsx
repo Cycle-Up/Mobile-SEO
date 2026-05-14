@@ -312,7 +312,7 @@ const filterTypes = [
     vormen:
       '4-in-1 of 5-in-1 kraan met alles-in-één installatie onder het aanrecht. Meest complete optie voor het Nederlandse huishouden.',
     kosten:
-      'Aanschaf € 699–899 (PureAqua 4-in-1); jaarlijks € 90–120 (filter + CO₂). Over vijf jaar de goedkoopste totaaloplossing.',
+      'Aanschaf € 699–899 (4-in-1 kraan met osmose); jaarlijks € 90–120 (filter + CO₂). Over vijf jaar de goedkoopste totaaloplossing.',
     wanneer:
       'Wanneer je één systeem wilt dat alle waterproblemen oplost én ook kokend en bruisend water levert. De aanbevolen oplossing voor gezinnen die willen upgraden van losse waterkoker, SodaStream en waterfilter.',
   },
@@ -423,7 +423,7 @@ export default function WaterfilterSoortenPage() {
               href="/omgekeerde-osmose/kopen"
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              Bekijk PureAqua waterfilter →
+              Bekijk osmose waterfilters →
             </Link>
             <Link
               href="/waterfilter/kopen"
@@ -696,7 +696,7 @@ export default function WaterfilterSoortenPage() {
                   { type: 'UV-filter', aanschaf: '€ 80–300', jaar: '€ 30–60', vijfJaar: '€ 230–600' },
                   { type: 'Ionenwisselaar / waterontharder', aanschaf: '€ 400–1.500', jaar: '€ 30–80', vijfJaar: '€ 550–1.900' },
                   { type: 'Omgekeerde osmose (los systeem)', aanschaf: '€ 200–500', jaar: '€ 60–110', vijfJaar: '€ 500–1.050' },
-                  { type: 'PureAqua 4-in-1 (RO + kokend + bruisend)', aanschaf: '€ 799', jaar: '€ 120', vijfJaar: '€ 1.399', highlight: true },
+                  { type: '4-in-1 kraan met osmose (RO + kokend + bruisend)', aanschaf: '€ 799', jaar: '€ 120', vijfJaar: '€ 1.399', highlight: true },
                 ].map(r => (
                   <tr key={r.type} className={`border-b border-gray-100 ${'highlight' in r && r.highlight ? 'bg-[#E0F2FE]/40 font-medium' : ''}`}>
                     <td className="py-2.5 px-3 text-gray-800">

@@ -36,7 +36,7 @@ const faqItems = [
   {
     question: 'Hoe duur is filtervervanging per jaar?',
     answer:
-      'Voor een standaard 4-staps RO-systeem: sedimentfilter (€5–€15) + pre-koolstof (€8–€20) + post-koolstof (€8–€20) = €20–€55 per jaar. Het RO-membraan (€30–€80) eens per 2–5 jaar. Totaal gemiddeld €30–€75 per jaar. Systemen zoals de PureAqua 4-in-1 bieden een compleet jaarset voor €60–€100.',
+      'Voor een standaard 4-staps RO-systeem: sedimentfilter (€5–€15) + pre-koolstof (€8–€20) + post-koolstof (€8–€20) = €20–€55 per jaar. Het RO-membraan (€30–€80) eens per 2–5 jaar. Totaal gemiddeld €30–€75 per jaar. Geïntegreerde 4-in-1 systemen met osmose bieden een compleet jaarset voor €60–€100.',
   },
   {
     question: 'Hoe lang gaat een omgekeerde osmose membraan mee?',

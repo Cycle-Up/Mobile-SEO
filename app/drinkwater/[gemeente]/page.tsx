@@ -309,24 +309,20 @@ export default async function DrinkwaterPage({ params }: PageProps) {
               Hard water in {gemeente.naam} ({gemeente.hardheid}°dH)
             </p>
             <p className="text-orange-700 text-sm mb-4">
-              In gemeenten met hard kraanwater zoals {gemeente.naam} kiezen veel huishoudens voor een osmosefilter — niet vanwege
-              veiligheid, maar voor betere smaak, minder kalk en bescherming van keukenapparatuur. PureAqua levert
-              osmose-systemen die direct op de keukenkraan worden aangesloten.
+              In gemeenten met hard kraanwater zoals {gemeente.naam} kiezen veel huishoudens voor een osmosefilter — niet vanwege veiligheid, maar voor betere smaak, minder kalk en bescherming van keukenapparatuur.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
-                className="inline-block bg-orange-700 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-orange-800 transition-colors text-sm"
-              >
-                Bekijk PureAqua osmosefilter →
-              </a>
               <Link
                 href="/omgekeerde-osmose/kopen"
+                className="inline-block bg-orange-700 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-orange-800 transition-colors text-sm"
+              >
+                Vergelijk osmose-systemen →
+              </Link>
+              <Link
+                href="/omgekeerde-osmose"
                 className="inline-block border border-orange-300 text-orange-800 font-semibold px-5 py-2.5 rounded-xl hover:bg-orange-100 transition-colors text-sm"
               >
-                Vergelijk osmose-systemen
+                Meer over omgekeerde osmose
               </Link>
             </div>
           </div>

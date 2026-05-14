@@ -100,7 +100,7 @@ export default function MetFilterPage() {
         <section className="prose max-w-none">
           <h2>Één filterwisseling per jaar</h2>
           <p>
-            Bij de PureAqua 4-in-1 kraan verwissel je jaarlijks één filterpatroon. Dat omvat sedimentfilter, koolstoffilter én het RO-membraan in één module. Geen gedoe met losse filterstappen, geen vergeten filterwissel.
+            Bij een 4-in-1 kraan met geïntegreerd osmosesysteem verwissel je jaarlijks één filterpatroon. Dat omvat sedimentfilter, koolstoffilter én het RO-membraan in één module. Geen gedoe met losse filterstappen, geen vergeten filterwissel.
           </p>
         </section>
 
@@ -111,7 +111,7 @@ export default function MetFilterPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { href: '/kokend-water-kraan', label: 'Kokend water kraan: complete gids' },
-              { href: '/kokend-water-kraan/vergelijken', label: 'Merken vergelijken (PureAqua vs Quooker)' },
+              { href: '/kokend-water-kraan/vergelijken', label: 'Merken vergelijken (Quooker vs 4-in-1 met osmose)' },
               { href: '/omgekeerde-osmose', label: 'Omgekeerde osmose uitleg' },
               { href: '/omgekeerde-osmose/kopen', label: 'Osmose filter kopen' },
               { href: '/kennisbank/kokend-water-kraan-installeren', label: 'Zelf installeren: stap-voor-stap' },

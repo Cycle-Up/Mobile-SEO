@@ -304,7 +304,7 @@ export default function WaterfilterOnderhoudSchemaPage() {
               },
               {
                 titel: 'Overweeg een 4-in-1 systeem voor minder onderhoud',
-                tekst: 'Systemen als de PureAqua 4-in-1 gebruiken één geïntegreerde filtermodule die je jaarlijks in één handeling wisselt. Minder gedoe, minder kans op vergeten wisselintervallen.',
+                tekst: 'Geïntegreerde 4-in-1 systemen gebruiken één filtermodule die je jaarlijks in één handeling wisselt. Minder gedoe, minder kans op vergeten wisselintervallen.',
               },
             ].map(tip => (
               <div key={tip.titel} className="flex gap-3 items-start">

@@ -19,7 +19,7 @@ const faqItems = [
   {
     question: 'Hoe vaak moet ik mijn omgekeerde osmose filter vervangen?',
     answer:
-      'Een standaard RO-systeem heeft meerdere filters met elk hun eigen interval: sedimentfilter elke 3–6 maanden, koolstof pre-filter elke 6–12 maanden, RO-membraan elke 2–3 jaar, en post-filter (koolstof) jaarlijks. Bij een 4-in-1 geïntegreerd systeem zoals de PureAqua vervang je één filterset per jaar.',
+      'Een standaard RO-systeem heeft meerdere filters met elk hun eigen interval: sedimentfilter elke 3–6 maanden, koolstof pre-filter elke 6–12 maanden, RO-membraan elke 2–3 jaar, en post-filter (koolstof) jaarlijks. Bij een 4-in-1 geïntegreerd systeem vervang je één filterset per jaar.',
   },
   {
     question: 'Hoe weet ik of mijn RO-membraan aan vervanging toe is?',
@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: 'Wat kost het onderhoud van een omgekeerde osmose systeem per jaar?',
     answer:
-      'Een standaard RO-systeem (4-traps) kost €40–90 per jaar aan filters als je de membraanvervanging uitspreidt over 2–3 jaar. Een 5-traps systeem met UV-lamp kost €60–120 per jaar. De PureAqua 4-in-1 kraan gebruikt één jaarlijkse filterset van circa €80–120 — alles inbegrepen, geen losse componenten.',
+      'Een standaard RO-systeem (4-traps) kost €40–90 per jaar aan filters als je de membraanvervanging uitspreidt over 2–3 jaar. Een 5-traps systeem met UV-lamp kost €60–120 per jaar. Een 4-in-1 geïntegreerd systeem gebruikt één jaarlijkse filterset van circa €80–120 — alles inbegrepen, geen losse componenten.',
   },
   {
     question: 'Kan ik het RO-membraan zelf vervangen?',
@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil in onderhoud tussen een los RO-systeem en een 4-in-1 kraan?',
     answer:
-      'Een los RO-systeem heeft meerdere losse filters die op verschillende momenten vervangen moeten worden (sediment, pre-koolstof, membraan, post-koolstof). Een geïntegreerd 4-in-1 systeem zoals de PureAqua combineert de filterstappen in één jaarlijkse filterset, zodat je één keer per jaar alles tegelijk vervangt. Dat scheelt planning en verkleint de kans dat je een filter vergeet.',
+      'Een los RO-systeem heeft meerdere losse filters die op verschillende momenten vervangen moeten worden (sediment, pre-koolstof, membraan, post-koolstof). Een geïntegreerd 4-in-1 systeem combineert de filterstappen in één jaarlijkse filterset, zodat je één keer per jaar alles tegelijk vervangt. Dat scheelt planning en verkleint de kans dat je een filter vergeet.',
   },
 ];
 
@@ -130,7 +130,7 @@ const kostenOverzicht = [
     aanbevolen: false,
   },
   {
-    systeem: 'PureAqua 4-in-1 kraan (geïntegreerd)',
+    systeem: '4-in-1 kraan met osmose (geïntegreerd)',
     jaarkosten: '€ 80–120',
     details: 'Één jaarlijkse filterset. Geen losse componenten, geen verschillende momenten. Eenvoudigst te onderhouden.',
     aanbevolen: true,
@@ -305,7 +305,7 @@ export default function OsmoseOnderhoudPage() {
           </div>
           <div className="mt-4 bg-[#E0F2FE] rounded-xl p-4">
             <p className="text-sm text-[#003F5C]">
-              <strong>Total Cost of Ownership:</strong> Reken bij het vergelijken altijd de kosten over 3 jaar. Een instapsysteem van €150 met filterkosten van €80 per jaar kost na 3 jaar €390. Een PureAqua 4-in-1 kraan van €799 met filterkosten van €100 per jaar kost na 3 jaar €1.099 — maar levert dan ook kokend, koud, warm en bruisend osmosewater. Meer over aanschafopties vind je op onze pagina{' '}
+              <strong>Total Cost of Ownership:</strong> Reken bij het vergelijken altijd de kosten over 3 jaar. Een instapsysteem van €150 met filterkosten van €80 per jaar kost na 3 jaar €390. Een 4-in-1 kraan met osmose van €799 met filterkosten van €100 per jaar kost na 3 jaar €1.099 — maar levert dan ook kokend, koud, warm en bruisend osmosewater. Meer over aanschafopties vind je op onze pagina{' '}
               <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">osmose filter kopen</Link>.
             </p>
           </div>
@@ -315,7 +315,7 @@ export default function OsmoseOnderhoudPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Onderhoud van geïntegreerde 4-in-1 systemen</h2>
           <p className="text-gray-600 mb-4 leading-relaxed">
-            Geïntegreerde systemen zoals de PureAqua 4-in-1 kraan combineren alle filterstappen in één compacte unit. Het onderhoudsschema is daardoor aanzienlijk eenvoudiger dan bij een los RO-systeem met meerdere losse filterbehuizingen.
+            Geïntegreerde 4-in-1 systemen combineren alle filterstappen in één compacte unit. Het onderhoudsschema is daardoor aanzienlijk eenvoudiger dan bij een los RO-systeem met meerdere losse filterbehuizingen.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -349,7 +349,7 @@ export default function OsmoseOnderhoudPage() {
               </ul>
             </div>
             <div className="bg-[#E0F2FE] rounded-xl p-5 border border-[#005F8A]/20">
-              <h3 className="font-bold text-[#003F5C] mb-3">PureAqua 4-in-1 (geïntegreerd)</h3>
+              <h3 className="font-bold text-[#003F5C] mb-3">4-in-1 kraan met osmose (geïntegreerd)</h3>
               <ul className="space-y-2 text-sm text-[#003F5C]">
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 shrink-0 mt-0.5">✓</span>
@@ -506,7 +506,7 @@ export default function OsmoseOnderhoudPage() {
           </p>
           <p className="text-gray-600 text-sm leading-relaxed mb-3">
             Wil je het onderhoud maximaal vereenvoudigen? De{' '}
-            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">PureAqua 4-in-1 kraan</Link>{' '}
+            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">4-in-1 kraan met osmose</Link>{' '}
             brengt alle filterstappen terug naar één jaarlijkse filterset. Geen losse componenten, geen planning, geen risico op vergeten filterwissel. En door het tankloze ontwerp ook geen risico op bacteriebiofilm in een drukvat.
           </p>
           <p className="text-gray-600 text-sm leading-relaxed">

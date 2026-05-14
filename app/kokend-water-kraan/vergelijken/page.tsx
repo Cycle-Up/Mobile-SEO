@@ -5,12 +5,12 @@ import { ComparisonTable } from '@/components/ComparisonTable';
 import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
-  title: 'Kokend water kraan vergelijken — PureAqua vs Quooker vs Grohe',
+  title: 'Kokend water kraan vergelijken — Quooker vs Grohe vs 4-in-1 osmose (2026)',
   description:
-    'Vergelijk kokend water kranen op prijs, filter, functies en totale kosten over 3 jaar. PureAqua, Quooker Combi+, Fusion+CUBE en Grohe Blue Home naast elkaar.',
+    'Vergelijk kokend water kranen op prijs, filter, functies en totale kosten over 3 jaar. 4-in-1 osmosekraan, Quooker Combi+, Fusion+CUBE en Grohe Blue Home naast elkaar.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/vergelijken' },
   openGraph: {
-    title: 'Kokend water kraan vergelijken — PureAqua vs Quooker vs Grohe (2026)',
+    title: 'Kokend water kraan vergelijken — Quooker vs Grohe vs 4-in-1 osmose (2026)',
     description: 'Welke kokend water kraan is het beste voor jou? Eerlijke vergelijking op prijs, filter en totale kosten over 3 jaar.',
   },
 };
@@ -22,30 +22,30 @@ const faqItems = [
       'De beste kokend water kraan hangt af van je prioriteiten. Wil je ook puur, gefilterd water en kost geld geen rol? Kies een 4-in-1 kraan met osmosefilter. Wil je puur kokend water voor een lagere prijs? Dan is een Quooker Combi+ een goede keuze.',
   },
   {
-    question: 'Is PureAqua een alternatief voor Quooker?',
+    question: 'Is een 4-in-1 osmosekraan een alternatief voor Quooker?',
     answer:
-      'Ja. De PureAqua 4-in-1 kraan biedt alle functies van een Quooker Fusion + CUBE (kokend, koud, bruisend), maar voegt een ingebouwde omgekeerde osmose filter toe voor een vergelijkbare of lagere prijs.',
+      'Ja. Een 4-in-1 kraan met osmose biedt alle functies van een Quooker Fusion + CUBE (kokend, koud, bruisend), maar voegt een ingebouwde omgekeerde osmose filter toe voor een vergelijkbare of lagere prijs.',
   },
   {
     question: 'Wat kost een kokend water kraan inclusief installatie?',
     answer:
-      'Reken voor een Quooker op €1.500–2.800 inclusief professionele installatie. Een PureAqua 4-in-1 kraan kost €699–899 en is zelf te installeren. Grohe Blue Home zit lager in prijs maar biedt geen kokend water.',
+      'Reken voor een Quooker op €1.500–2.800 inclusief professionele installatie. Een 4-in-1 kraan met osmose kost €699–899 en is zelf te installeren. Grohe Blue Home zit lager in prijs maar biedt geen kokend water.',
   },
   {
     question: 'Hoe lang gaan de filters van een kokend water kraan mee?',
     answer:
-      'Dat verschilt per systeem. PureAqua gebruikt één jaarfilter (~€89/jaar). Quooker CUBE-filters moeten elke 3 maanden vervangen worden (~€39–49/kwartaal). Grohe Blue Home filters gaan ook 3 maanden mee. Over 3 jaar scheelt dit honderden euro\'s in filterkosten.',
+      'Dat verschilt per systeem. Een 4-in-1 osmosekraan gebruikt doorgaans één jaarfilter (~€89/jaar). Quooker CUBE-filters moeten elke 3 maanden vervangen worden (~€39–49/kwartaal). Grohe Blue Home filters gaan ook 3 maanden mee. Over 3 jaar scheelt dit honderden euro\'s in filterkosten.',
   },
   {
     question: 'Verwijdert een kokend water kraan ook kalk?',
     answer:
-      'Alleen systemen met een osmosefilter verwijderen kalk effectief. De PureAqua 4-in-1 doet dat — 99% kalkverwijdering. Een Quooker (zonder extra filter) verwijdert geen kalk. Hard water blijft dus aanwezig, wat apparaten sneller slijt.',
+      'Alleen systemen met een osmosefilter verwijderen kalk effectief. Een 4-in-1 kraan met osmose doet dat — 99% kalkverwijdering. Een Quooker (zonder extra filter) verwijdert geen kalk. Hard water blijft dus aanwezig, wat apparaten sneller slijt.',
   },
 ];
 
 const tcoData = [
   {
-    naam: 'PureAqua 4-in-1',
+    naam: '4-in-1 kraan met osmose',
     aanschaf: 799,
     filters3jr: 267,
     installatie: 0,
@@ -108,7 +108,7 @@ export default function VergelijkenPage() {
             Kokend water kraan vergelijken
           </h1>
           <p className="text-gray-600 text-lg">
-            Welke kokend water kraan past het beste bij jou? We vergelijken PureAqua, Quooker en Grohe eerlijk op prijs, functies en totale kosten over 3 jaar — inclusief filters en installatie.
+            Welke kokend water kraan past het beste bij jou? We vergelijken 4-in-1 osmosekranen, Quooker en Grohe eerlijk op prijs, functies en totale kosten over 3 jaar — inclusief filters en installatie.
           </p>
         </div>
       </section>
@@ -127,12 +127,12 @@ export default function VergelijkenPage() {
           <div className="space-y-8">
 
             <div className="border-l-4 border-[#005F8A] pl-5">
-              <h3 className="text-xl font-bold text-[#003F5C] mb-2">PureAqua 4-in-1 kraan — €699–899</h3>
+              <h3 className="text-xl font-bold text-[#003F5C] mb-2">4-in-1 kraan met osmose — €699–899</h3>
               <p className="text-gray-700 leading-relaxed mb-3">
-                De PureAqua 4-in-1 kraan is de meest complete keukenoplossing op de markt. Met één kraan beschik je over kokend water (100°C), gefilterd koud water, warm water en bruisend water. Het ingebouwde omgekeerde osmose filter verwijdert 99% van kalk, chloor, nitraten en microplastics — iets wat geen enkele Quooker standaard biedt.
+                Een geïntegreerde 4-in-1 osmosekraan is de meest complete keukenoplossing op de markt. Met één kraan beschik je over kokend water (100°C), gefilterd koud water, warm water en bruisend water. Het ingebouwde omgekeerde osmose filter verwijdert 99% van kalk, chloor, nitraten en microplastics — iets wat geen enkele Quooker standaard biedt.
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
-                De aanschafprijs van €699–899 is al inclusief het complete filtersysteem. Ter vergelijking: een Quooker Fusion + CUBE met dezelfde functies kost €2.200–2.800, plus €39–49 per kwartaal aan filterkosten. Het filter van de PureAqua verwissel je slechts één keer per jaar.
+                De aanschafprijs van €699–899 is al inclusief het complete filtersysteem. Ter vergelijking: een Quooker Fusion + CUBE met dezelfde functies kost €2.200–2.800, plus €39–49 per kwartaal aan filterkosten. Het osmosefilter wissel je slechts één keer per jaar.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Installatie is eenvoudig te doen door een handig persoon met basiskennis van wateraansluitingen. Een professionele loodgieter is niet vereist, wat een extra besparing oplevert van €75–200.
@@ -152,7 +152,7 @@ export default function VergelijkenPage() {
             <div className="border-l-4 border-gray-200 pl-5">
               <h3 className="text-xl font-bold text-[#003F5C] mb-2">Quooker Fusion + CUBE — €2.200–2.800</h3>
               <p className="text-gray-700 leading-relaxed mb-3">
-                De Quooker Fusion + CUBE is Quooker's meest complete systeem: kokend, koud én bruisend water uit één kraan, met een elegante kraanvorm. De CUBE-tank verzorgt het koolzuurhoudende water. Qua functies is dit het dichtst bij de PureAqua 4-in-1.
+                De Quooker Fusion + CUBE is Quooker's meest complete systeem: kokend, koud én bruisend water uit één kraan, met een elegante kraanvorm. De CUBE-tank verzorgt het koolzuurhoudende water. Qua functies is dit het dichtst bij een 4-in-1 kraan met osmose.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Maar er zijn twee serieuze nadelen. Ten eerste: de prijs — €2.200–2.800 aanschaf plus €150 installatie plus €39–49 per kwartaal aan filterpatronen. Over 3 jaar zijn de totale kosten ruim €3.100. Ten tweede: de CUBE-filter is een koolstoffilter die geur en chloor verbetert, maar géén osmosefilter. Kalk, nitraten en microplastics worden niet verwijderd. Voor de meerprijs verwacht je meer.
@@ -221,7 +221,7 @@ export default function VergelijkenPage() {
           <div className="mt-6 bg-blue-50 border border-[#005F8A]/20 rounded-xl p-4">
             <p className="text-sm text-gray-700 font-medium mb-1">Conclusie TCO</p>
             <p className="text-sm text-gray-600">
-              De PureAqua 4-in-1 is de enige optie die kokend water, bruisend water én osmosefiltratie combineert voor minder dan €1.100 over 3 jaar. De Quooker Fusion + CUBE biedt vergelijkbare functies maar kost meer dan 3× zoveel over dezelfde periode.
+              Een 4-in-1 kraan met osmose is de enige optie die kokend water, bruisend water én osmosefiltratie combineert voor minder dan €1.100 over 3 jaar. De Quooker Fusion + CUBE biedt vergelijkbare functies maar kost meer dan 3× zoveel over dezelfde periode.
             </p>
           </div>
         </section>
@@ -232,7 +232,7 @@ export default function VergelijkenPage() {
           <div className="space-y-3">
             {[
               {
-                label: 'Kies PureAqua 4-in-1 als...',
+                label: 'Kies 4-in-1 kraan met osmose als...',
                 punten: [
                   'Je maximale waterzuivering wilt (osmose, kalk, nitraten)',
                   'Je ook kokend én bruisend water wilt uit één kraan',

@@ -55,7 +55,7 @@ const opties = [
     aanbevolen: false,
   },
   {
-    naam: 'PureAqua 4-in-1 kraan',
+    naam: '4-in-1 kraan met osmose',
     prijs: '€ 699 – 899',
     geschiktVoor: 'Complete keukeninstallatie',
     voordelen: ['Kokend + koud + warm + bruisend', 'Osmose filter ingebouwd', 'Één kraan, alles in één', 'Eén jaarlijkse filterwissel'],

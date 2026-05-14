@@ -24,12 +24,12 @@ const faqItems = [
   {
     question: 'Welke kokend water kraan is de beste in 2026?',
     answer:
-      'De beste kokend water kraan in 2026 is de 4-in-1 kraan met geïntegreerde omgekeerde osmose (zoals PureAqua). Deze combineert kokend water (100°C), koud gefilterd water, warm water en bruisend water uit één kraanpunt — terwijl het osmose filter tegelijkertijd kalk, chloor, nitraten en microplastics verwijdert. Voor wie geen filter nodig heeft, is een 3-in-1 kraan of Quooker-stijl boiler een goede tweede keuze.',
+      'De beste kokend water kraan in 2026 is de 4-in-1 kraan met geïntegreerde omgekeerde osmose. Deze combineert kokend water (100°C), koud gefilterd water, warm water en bruisend water uit één kraanpunt — terwijl het osmose filter tegelijkertijd kalk, chloor, nitraten en microplastics verwijdert. Voor wie geen filter nodig heeft, is een 3-in-1 kraan of Quooker-stijl boiler een goede tweede keuze.',
   },
   {
     question: 'Wat is het verschil tussen een 3-in-1 en 4-in-1 kokend water kraan?',
     answer:
-      'Een 3-in-1 kraan levert kokend, koud en warm water uit één kraan. Een 4-in-1 kraan voegt een vierde functie toe: gefilterd water of bruisend water. Bij de PureAqua 4-in-1 is het vierde element een volledig omgekeerde osmose filtersysteem dat het water zuivert vóór het de kraan verlaat. Dat betekent dat je niet alleen kokend water hebt, maar ook de hoogst mogelijke waterkwaliteit.',
+      'Een 3-in-1 kraan levert kokend, koud en warm water uit één kraan. Een 4-in-1 kraan voegt een vierde functie toe: gefilterd water of bruisend water. Bij een 4-in-1 kraan met osmose is het vierde element een volledig omgekeerde osmose filtersysteem dat het water zuivert vóór het de kraan verlaat. Dat betekent dat je niet alleen kokend water hebt, maar ook de hoogst mogelijke waterkwaliteit.',
   },
   {
     question: 'Heeft een kokend water kraan een filter nodig?',
@@ -39,12 +39,12 @@ const faqItems = [
   {
     question: 'Hoeveel energie gebruikt een kokend water kraan?',
     answer:
-      "Een kokend water kraan met boiler verbruikt continu standby-energie om het water op temperatuur te houden. Dat is doorgaans 5–15 Watt continu, of 45–130 kWh per jaar. Ter vergelijking: een waterkoker die 4× per dag wordt gebruikt verbruikt circa 100–150 kWh per jaar. Moderne boilers met goede isolatie (zoals de PureAqua 4-in-1) verbruiken aan de lage kant. Schakel de boiler 's nachts uit met de bijgeleverde timer om energie te besparen.",
+      "Een kokend water kraan met boiler verbruikt continu standby-energie om het water op temperatuur te houden. Dat is doorgaans 5–15 Watt continu, of 45–130 kWh per jaar. Ter vergelijking: een waterkoker die 4× per dag wordt gebruikt verbruikt circa 100–150 kWh per jaar. Moderne boilers met goede isolatie verbruiken aan de lage kant. Schakel de boiler 's nachts uit met de bijgeleverde timer om energie te besparen.",
   },
   {
     question: 'Kan ik een kokend water kraan zelf installeren?',
     answer:
-      'Ja, de meeste kokend water kranen zijn ontworpen voor doe-het-zelf installatie. De boiler wordt onder het aanrecht geplaatst en aangesloten op de koudwaterleiding. Je hebt een standaard kraaninboring nodig (35–40 mm) en een stopcontact (WCD) in de kast. De PureAqua 4-in-1 heeft een uitgebreide Nederlandstalige installatiehandleiding en de meeste installaties zijn in 2–3 uur klaar. Installeer je ook een osmose systeem, reken dan op een aanboorkraan voor de afvoer.',
+      'Ja, de meeste kokend water kranen zijn ontworpen voor doe-het-zelf installatie. De boiler wordt onder het aanrecht geplaatst en aangesloten op de koudwaterleiding. Je hebt een standaard kraaninboring nodig (35–40 mm) en een stopcontact (WCD) in de kast. Een 4-in-1 kraan met osmose wordt geleverd met een uitgebreide Nederlandstalige installatiehandleiding en de meeste installaties zijn in 2–3 uur klaar. Installeer je ook een osmose systeem, reken dan op een aanboorkraan voor de afvoer.',
   },
 ];
 
@@ -52,7 +52,7 @@ const top5Kranen = [
   {
     rang: 1,
     naam: '4-in-1 kraan met osmose filter',
-    voorbeeld: 'PureAqua 4-in-1',
+    voorbeeld: 'Geïntegreerde 4-in-1 osmosekraan',
     temperatuur: '100°C kokend',
     doorstroom: '4–6 L/min gefilterd',
     filterGeintegreerd: 'Ja — omgekeerde osmose (5-stadia)',
@@ -72,7 +72,7 @@ const top5Kranen = [
       'Installatie 2–3 uur — iets meer dan een eenvoudige 3-in-1 kraan',
     ],
     oordeel:
-      'De PureAqua 4-in-1 is de meest complete kokend water kraan in 2026. De combinatie van osmose-gefilterd kokend, koud, warm en bruisend water maakt het uniek. De aanschafprijs is hoger, maar op 3–5 jaar zijn de totale kosten concurrerend: geen waterkoker-energie, geen flessenwater, geen onthardingssysteem voor de ketel.',
+      'Een 4-in-1 kraan met osmosefilter is de meest complete kokend water kraan in 2026. De combinatie van osmose-gefilterd kokend, koud, warm en bruisend water maakt het uniek. De aanschafprijs is hoger, maar op 3–5 jaar zijn de totale kosten concurrerend: geen waterkoker-energie, geen flessenwater, geen onthardingssysteem voor de ketel.',
   },
   {
     rang: 2,
@@ -387,7 +387,7 @@ export default function BesteKokendWaterKraan2026Page() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Top 5 vergelijkingstabel</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Onderstaande tabel geeft een snel overzicht van alle vijf categorieën op de vijf
-            hoofdcriteria. De PureAqua 4-in-1 staat links als onze #1 keuze.
+            hoofdcriteria. De 4-in-1 kraan met osmose staat links als onze #1 keuze.
           </p>
           <div className="overflow-x-auto -mx-4 px-4">
             <table className="w-full min-w-[640px] text-xs border-collapse">
@@ -395,7 +395,7 @@ export default function BesteKokendWaterKraan2026Page() {
                 <tr className="bg-[#003F5C] text-white">
                   <th className="text-left py-2.5 px-3 font-semibold">Kenmerk</th>
                   <th className="py-2.5 px-2 font-semibold text-center bg-[#005F8A]">
-                    #1 PureAqua 4-in-1
+                    #1 4-in-1 met osmose
                   </th>
                   <th className="py-2.5 px-2 font-semibold text-center">#2 3-in-1 basic</th>
                   <th className="py-2.5 px-2 font-semibold text-center">#3 Quooker-stijl</th>
@@ -433,10 +433,10 @@ export default function BesteKokendWaterKraan2026Page() {
               </span>
             </div>
             <h2 className="text-2xl font-bold text-[#003F5C] mb-2">
-              4-in-1 kokend water kraan met osmose filter (PureAqua)
+              4-in-1 kokend water kraan met osmose filter
             </h2>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              De PureAqua 4-in-1 is onze absolute topkeuze voor 2026. Geen andere kokend water kraan
+              Een 4-in-1 kraan met osmosefilter is onze absolute topkeuze voor 2026. Geen andere kokend water kraan
               combineert gefilterd kokend water, koud gefilterd water, warm water én bruisend water
               met een volledig omgekeerde osmose filtersysteem in één compact kraanpunt. Dit is wat de
               kraan onderscheidt van alle alternatieven:
@@ -474,7 +474,7 @@ export default function BesteKokendWaterKraan2026Page() {
                 href="/omgekeerde-osmose/kopen"
                 className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
               >
-                Bekijk de PureAqua 4-in-1 →
+                Vergelijk alle opties →
               </Link>
               <Link
                 href="/4-in-1-kraan"
@@ -689,7 +689,7 @@ export default function BesteKokendWaterKraan2026Page() {
               <tbody>
                 {[
                   {
-                    scenario: 'PureAqua 4-in-1 + osmose',
+                    scenario: '4-in-1 kraan met osmose',
                     aanschaf: '€ 799',
                     perJaar: '≈ € 95',
                     totaal: '€ 1.084',
@@ -742,7 +742,7 @@ export default function BesteKokendWaterKraan2026Page() {
             (gezin 4 personen). Waterkokerscenario inclusief flessenwater als drinkwater voor het gezin.
           </p>
           <p className="text-gray-700 mt-4 leading-relaxed">
-            De PureAqua 4-in-1 heeft een hogere aanschaf dan een 3-in-1 basic kraan, maar vervangt
+            Een 4-in-1 kraan met osmose heeft een hogere aanschaf dan een 3-in-1 basic kraan, maar vervangt
             ook de waterkoker en het flessenwater. Op 3 jaar is de totale kostenpost lager dan
             waterkoker + flessenwater aankopen. Wil je weten welke 4-in-1 kraan het beste bij jouw
             keuken past? Bekijk{' '}
@@ -793,7 +793,7 @@ export default function BesteKokendWaterKraan2026Page() {
             <p className="font-semibold text-[#003F5C] mb-1 text-sm">Installatietijd</p>
             <p className="text-sm text-gray-700 leading-relaxed">
               Een 3-in-1 kraan zonder filter: 45–90 minuten. Een 4-in-1 kraan met osmose filter:
-              2–3 uur voor een doe-het-zelver. De PureAqua 4-in-1 wordt geleverd met een
+              2–3 uur voor een doe-het-zelver. Een 4-in-1 kraan met osmose wordt geleverd met een
               Nederlandstalige installatiehandleiding en videotutorial. Lees meer in onze gids{' '}
               <Link href="/kokend-water-kraan" className="text-[#005F8A] underline hover:no-underline">
                 kokend water kraan installeren
@@ -856,30 +856,7 @@ export default function BesteKokendWaterKraan2026Page() {
           </div>
         </section>
 
-        {/* Direct CTA sectie */}
-        <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
-          <h2 className="text-xl md:text-2xl font-bold mb-2">Klaar voor de beste kokend water kraan?</h2>
-          <p className="text-blue-100 mb-5 max-w-lg mx-auto">
-            De PureAqua 4-in-1 scoort het hoogst in onze vergelijking: osmose filter, kokend water,
-            bruisend water en warm water uit één kraanpunt. Bekijk het systeem op pureaqua.nl.
-          </p>
-          <div className="flex flex-wrap gap-3 justify-center">
-            <a
-              href="https://www.pureaqua.nl"
-              target="_blank"
-              rel="noopener"
-              className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm"
-            >
-              Naar pureaqua.nl →
-            </a>
-            <Link
-              href="/omgekeerde-osmose/kopen"
-              className="inline-block border border-white text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition-colors text-sm"
-            >
-              Osmose filter kopen
-            </Link>
-          </div>
-        </section>
+        <CTABanner context="kokend" />
 
         {/* FAQ */}
         <section id="faq">

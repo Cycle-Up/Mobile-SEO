@@ -343,23 +343,21 @@ export default async function KraanwaterPage({ params }: PageProps) {
             </h2>
             <p className="text-blue-100 mb-5 max-w-lg">
               {isZeerHard
-                ? `Bij ${gemeente.hardheid}°dH verwijdert een osmosefilter de hoge kalklast vrijwel volledig. PureAqua levert systemen geoptimaliseerd voor het harde kraanwater in jouw regio.`
-                : `Met hard kraanwater in ${gemeente.naam} is een osmosesysteem de meest effectieve keuze. PureAqua levert onder-aanrecht osmosefilters direct in Nederland.`}
+                ? `Bij ${gemeente.hardheid}°dH verwijdert een osmosefilter de hoge kalklast vrijwel volledig. Bekijk onze vergelijking van osmosefilters voor hard kraanwater.`
+                : `Met hard kraanwater in ${gemeente.naam} is een osmosesysteem de meest effectieve keuze. Bekijk welk systeem het beste bij jouw situatie past.`}
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
-                className="inline-block bg-white text-[#005F8A] font-bold px-5 py-2.5 rounded-xl hover:bg-blue-50 transition-colors text-sm"
-              >
-                Bekijk PureAqua osmosefilter →
-              </a>
               <Link
                 href="/omgekeerde-osmose/kopen"
+                className="inline-block bg-white text-[#005F8A] font-bold px-5 py-2.5 rounded-xl hover:bg-blue-50 transition-colors text-sm"
+              >
+                Osmosefilters vergelijken →
+              </Link>
+              <Link
+                href="/waterhardheid"
                 className="inline-block border border-blue-300 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors text-sm"
               >
-                Vergelijk osmose-systemen
+                Waterhardheid Nederland
               </Link>
             </div>
           </div>

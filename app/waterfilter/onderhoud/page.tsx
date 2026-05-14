@@ -34,7 +34,7 @@ const faqItems = [
   {
     question: 'Hoeveel kost waterfilter onderhoud per jaar?',
     answer:
-      'Een eenvoudig koolstoffilter verwissel je voor €15–30 per jaar. Een RO-systeem kost €40–120 per jaar aan filters (sediment + koolstof + membraan eens per 2–3 jaar). Een UV-lamp kost €20–50 per jaar. Een 4-in-1 kraan zoals de PureAqua gebruikt één jaarlijkse filterset van circa €80–120.',
+      'Een eenvoudig koolstoffilter verwissel je voor €15–30 per jaar. Een RO-systeem kost €40–120 per jaar aan filters (sediment + koolstof + membraan eens per 2–3 jaar). Een UV-lamp kost €20–50 per jaar. Een 4-in-1 kraan met osmose gebruikt één jaarlijkse filterset van circa €80–120.',
   },
   {
     question: 'Hoe weet ik of mijn RO-membraan aan vervanging toe is?',
@@ -132,7 +132,7 @@ const kostenPerType = [
     details: 'Alle bovenstaande filters + UV-lamp vervanging (€20–50 per jaar).',
   },
   {
-    systeem: 'PureAqua 4-in-1 kraan',
+    systeem: '4-in-1 kraan met osmose',
     jaarkosten: '€ 80–120',
     details: 'Één jaarlijkse filterset. Geen losse filters; alles inbegrepen. Eenvoudigst te onderhouden.',
   },
@@ -480,7 +480,7 @@ export default function WaterfilterOnderhoudPage() {
           </p>
           <p className="text-gray-600 text-sm leading-relaxed mb-3">
             Wil je het onderhoud zo eenvoudig mogelijk houden? De{' '}
-            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">PureAqua 4-in-1 kraan</Link> gebruikt één jaarlijkse filterset — geen losse componenten, één moment per jaar, klaar. Ideaal voor drukke huishoudens die gewoon schoon water willen zonder gedoe.
+            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">Een 4-in-1 kraan met osmose</Link> gebruikt één jaarlijkse filterset — geen losse componenten, één moment per jaar, klaar. Ideaal voor drukke huishoudens die gewoon schoon water willen zonder gedoe.
           </p>
           <p className="text-gray-600 text-sm leading-relaxed">
             Heb je vragen over jouw specifieke systeem? Raadpleeg onze{' '}

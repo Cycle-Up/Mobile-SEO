@@ -24,12 +24,12 @@ const faqItems = [
   {
     question: 'Wat is een 4-in-1 kraan precies?',
     answer:
-      'Een 4-in-1 kraan levert vier waterfuncties uit één enkel kraanlichaam: kokend water (100°C), koud gefilterd water, warm water voor normaal gebruik en bruisend water. Het systeem bestaat uit een speciale kraan, een compacte boiler of reservoir onder het aanrecht, een CO₂-cilinder voor het koolzuur en meestal een omgekeerde osmose filter voor de filterstap. Je vervangt daarmee zowel je gewone mengkraan als een losse koffie- of theewaterkraan.',
+      'Een 4-in-1 kraan levert vier waterfuncties uit één enkel kraanlichaam: kokend water (100°C), koud gefilterd water, warm water voor normaal gebruik en bruisend water. Het systeem bestaat uit een speciale kraan, een compacte boiler of reservoir onder het aanrecht, een CO₂-cilinder voor het koolzuur en meestal een omgekeerde osmose filter voor de filterstap. Je vervangt daarmee zowel je gewone mengkraan als een losse koffie- of theewaterkraan. De bekendste categorie is de geïntegreerde 4-in-1 osmosekraan.',
   },
   {
     question: 'Wat is het verschil tussen een 4-in-1 kraan kopen en een Quooker met CUBE?',
     answer:
-      'Een Quooker met CUBE-module biedt vergelijkbare functies maar bestaat uit meerdere losstaande componenten die je bij elkaar koopt. Een 4-in-1 kraan zoals PureAqua is ontworpen als geïntegreerd systeem waarbij boiler, osmose filter en CO₂-unit al op elkaar zijn afgestemd. Qua prijs: een Quooker Fusion met CUBE-module kost al snel meer dan € 2.500 inclusief installatie, terwijl een complete PureAqua-set rond de € 699–899 ligt.',
+      'Een Quooker met CUBE-module biedt vergelijkbare functies maar bestaat uit meerdere losstaande componenten die je bij elkaar koopt. Een geïntegreerde 4-in-1 kraan met osmosefilter is ontworpen als geïntegreerd systeem waarbij boiler, osmose filter en CO₂-unit al op elkaar zijn afgestemd. Qua prijs: een Quooker Fusion met CUBE-module kost al snel meer dan € 2.500 inclusief installatie, terwijl een complete 4-in-1 osmosekraan rond de € 699–899 ligt.',
   },
   {
     question: 'Hoe veilig is een 4-in-1 kraan met kokend water?',
@@ -44,7 +44,7 @@ const faqItems = [
   {
     question: 'Kan ik een 4-in-1 kraan zelf installeren?',
     answer:
-      'Ja, als je standaard aansluitingen (koud water en afvoer) onder je aanrecht hebt. PureAqua levert een Nederlandstalige installatiehandleiding en de meeste klanten plaatsen het systeem zelf in twee tot vier uur. Voor de CO₂-aansluiting heb je geen speciaal gereedschap nodig. Een installateur is optioneel maar niet verplicht.',
+      'Ja, als je standaard aansluitingen (koud water en afvoer) onder je aanrecht hebt. De meeste 4-in-1 systemen worden geleverd met een Nederlandstalige installatiehandleiding en de meeste klanten plaatsen het systeem zelf in twee tot vier uur. Voor de CO₂-aansluiting heb je geen speciaal gereedschap nodig. Een installateur is optioneel maar niet verplicht.',
   },
   {
     question: 'Wat kost het onderhoud van een 4-in-1 kraan per jaar?',
@@ -59,7 +59,7 @@ const faqItems = [
   {
     question: 'Welke 4-in-1 kraan heeft de beste prijs-kwaliteitsverhouding?',
     answer:
-      'Voor de meeste huishoudens biedt PureAqua de beste combinatie van prijs en functies: het complete systeem met osmose filter, boiler en CO₂-unit ligt rond € 699–899, inclusief twee jaar garantie en Nederlandstalige service. Quooker is meer naam en status maar kost bij vergelijkbare functies significant meer. Grohe Red en Franke bieden minder functies voor een vergelijkbare of hogere prijs.',
+      'Voor de meeste huishoudens biedt een geïntegreerde 4-in-1 kraan met osmosefilter de beste combinatie van prijs en functies: het complete systeem met osmose filter, boiler en CO₂-unit ligt rond € 699–899, inclusief twee jaar garantie. Quooker is meer naam en status maar kost bij vergelijkbare functies significant meer. Grohe Red en Franke bieden minder functies voor een vergelijkbare of hogere prijs.',
   },
 ];
 
@@ -104,7 +104,7 @@ const voordelen = [
 
 const merken = [
   {
-    naam: 'PureAqua 4-in-1',
+    naam: '4-in-1 kraan met osmose',
     prijs: '€ 699–899',
     functies: 'Kokend, koud gefilterd, warm, bruisend',
     osmose: 'Ja (standaard)',
@@ -151,7 +151,7 @@ const merken = [
 
 const tco5jaar = [
   {
-    set: 'PureAqua 4-in-1',
+    set: '4-in-1 kraan met osmose',
     aanschaf: '€ 799',
     installatie: '€ 0 (zelf)',
     filtersCO2: '€ 120/jaar',
@@ -363,7 +363,7 @@ export default function VierInEenKraanPage() {
             {[
               {
                 type: 'Geïntegreerd 4-in-1 systeem',
-                beschrijving: 'Boiler, osmose filter en CO₂-unit zijn ontworpen als één pakket en werken samen via de kraan. Dit is de meest gebruiksvriendelijke variant. Voorbeelden: PureAqua 4-in-1, bepaalde Quooker-combinaties.',
+                beschrijving: 'Boiler, osmose filter en CO₂-unit zijn ontworpen als één pakket en werken samen via de kraan. Dit is de meest gebruiksvriendelijke variant. Voorbeelden: geïntegreerde 4-in-1 osmosekranen, bepaalde Quooker-combinaties.',
                 geschiktVoor: 'Huishoudens die maximaal gemak willen zonder losstaande apparaten.',
               },
               {
@@ -388,7 +388,7 @@ export default function VierInEenKraanPage() {
 
         {/* Merken vergeleken */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Merken vergeleken: PureAqua als hoofdkeuze</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Merken vergeleken</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
             Hieronder staan de vier meest verkochte merken in de 4-in-1 categorie naast elkaar. Let op welke functies
             standaard inbegrepen zijn en welke extra kosten of modules nodig zijn.
@@ -439,9 +439,9 @@ export default function VierInEenKraanPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed mt-5">
-            Wil je weten hoe PureAqua zich specifiek verhoudt tot Quooker? Lees onze gedetailleerde pagina over het{' '}
+            Wil je weten hoe een 4-in-1 kraan met osmose zich specifiek verhoudt tot Quooker? Lees onze gedetailleerde pagina over het{' '}
             <Link href="/quooker-alternatief" className="text-[#005F8A] underline">Quooker alternatief</Link> of bekijk
-            hoe PureAqua scoort ten opzichte van het{' '}
+            hoe de 4-in-1 osmosekraan scoort ten opzichte van het{' '}
             <Link href="/grohe-red-alternatief" className="text-[#005F8A] underline">Grohe Red alternatief</Link>.
           </p>
         </section>
@@ -667,21 +667,7 @@ export default function VierInEenKraanPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
-          <h2 className="text-xl md:text-2xl font-bold mb-2">Klaar om een 4-in-1 kraan te kopen?</h2>
-          <p className="text-blue-100 mb-5 max-w-lg mx-auto">
-            Bekijk het complete PureAqua 4-in-1 assortiment met osmose filter, kokend water en bruisend water direct op pureaqua.nl.
-          </p>
-          <a
-            href="https://www.pureaqua.nl"
-            target="_blank"
-            rel="noopener"
-            className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm md:text-base"
-          >
-            Naar pureaqua.nl →
-          </a>
-        </section>
+        <CTABanner context="kokend" />
       </div>
     </>
   );

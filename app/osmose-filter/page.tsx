@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: 'Wat kost een osmose filter?',
     answer:
-      'Een standalone omgekeerde osmose systeem onder het aanrecht kost €150–400 in aanschaf, plus €60–150 per jaar aan filters en membraanvervanging. Een 4-in-1 geïntegreerde kraan met ingebouwd osmose systeem (zoals de PureAqua) kost €800–1.500 aanschaf, maar vervangt ook de waterkoker en bruisend water-abonnement. Over 5 jaar zijn de totale kosten van een 4-in-1 kraan vaak lager dan de combinatie van aparte waterkoker, los osmose systeem en bruisend water.',
+      'Een standalone omgekeerde osmose systeem onder het aanrecht kost €150–400 in aanschaf, plus €60–150 per jaar aan filters en membraanvervanging. Een 4-in-1 geïntegreerde kraan met ingebouwd osmose systeem kost €800–1.500 aanschaf, maar vervangt ook de waterkoker en bruisend water-abonnement. Over 5 jaar zijn de totale kosten van een 4-in-1 kraan vaak lager dan de combinatie van aparte waterkoker, los osmose systeem en bruisend water.',
   },
   {
     question: 'Wat is het verschil tussen 4-traps en 5-traps osmose?',
@@ -478,8 +478,7 @@ export default function OsmoseFilterPage() {
                 4-in-1 kokend water kraan
               </Link>
               . De kraan levert dan vier soorten water uit één uitloop: kokend (100°C), koud
-              gefilterd, warm gefilterd en bruisend gefilterd water. De PureAqua 4-in-1 is het meest
-              bekende voorbeeld op de Nederlandse markt.
+              gefilterd, warm gefilterd en bruisend gefilterd water. Dit type 4-in-1 kraan met osmose is de meest complete optie voor thuis.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
               Voordelen ten opzichte van een standalone systeem: geen aparte kleine kraan op het
@@ -677,9 +676,9 @@ export default function OsmoseFilterPage() {
                 zijn de totale kosten van een 4-in-1 kraan daardoor concurrerend met de combinatie
                 van losse apparaten. Bekijk de{' '}
                 <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">
-                  PureAqua 4-in-1 kraan
+                  4-in-1 kraan met osmose
                 </Link>
-                {' '}voor de meest volledige versie op de Nederlandse markt.
+                {' '}voor de meest volledige optie.
               </p>
             </div>
           </div>
@@ -735,7 +734,7 @@ export default function OsmoseFilterPage() {
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'Osmose systeem kopen',
-                desc: 'Vergelijk de PureAqua 4-in-1 en andere osmose systemen op prijs en prestaties.',
+                desc: 'Vergelijk 4-in-1 kranen met osmose en andere osmose systemen op prijs en prestaties.',
               },
               {
                 href: '/4-in-1-kraan',

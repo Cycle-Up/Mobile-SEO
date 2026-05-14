@@ -85,7 +85,7 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs, schema }: Sche
       url: 'https://waterfilterplatform.nl',
       description:
         'Onafhankelijk informatieplatform over waterfilters, omgekeerde osmose en kokend water kranen in Nederland.',
-      sameAs: ['https://www.pureaqua.nl'],
+      sameAs: [],
     };
   } else if (type === 'WebSite') {
     schemaObj = {

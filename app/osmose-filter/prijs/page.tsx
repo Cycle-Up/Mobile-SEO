@@ -4,9 +4,9 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
-  title: 'Osmosefilter prijs 2026: aanschaf en jaarkosten | PureAqua',
+  title: 'Osmosefilter prijs 2026: aanschaf en jaarkosten vergelijking',
   description:
-    'Osmosefilter prijzen 2026: instap €100–200, midden €200–400, premium 4-in-1 €800–1500. Jaarlijkse filterkosten, installatie en 5-jaar TCO vergelijking. Beste keuze: PureAqua.',
+    'Osmosefilter prijzen 2026: instap €100–200, midden €200–400, premium 4-in-1 €800–1500. Jaarlijkse filterkosten, installatie en 5-jaar TCO vergelijking. Onafhankelijk overzicht.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/prijs' },
   openGraph: {
     title: 'Osmosefilter prijs 2026: aanschaf en jaarkosten',
@@ -76,12 +76,12 @@ const prijsklassen = [
     highlight: false,
   },
   {
-    klasse: '4-in-1 kraan (PureAqua)',
+    klasse: '4-in-1 kraan met osmose',
     prijs: '€ 800–1.500',
     jaarKosten: '€ 100–150',
     kenmerken: ['RO + kokend + koud + bruisend', 'Één elegante kraan aan het aanrecht', 'Jaarlijkse all-in filtermodule', 'Geïntegreerde boiler', 'Professionele installatie'],
     ideal: 'Wie het maximale comfort wil + geen extra kraan',
-    highlight: true,
+    highlight: false,
   },
 ];
 
@@ -111,7 +111,7 @@ const tcoVergelijking = [
     vijfJaar: '€ 900–1.000',
   },
   {
-    optie: 'PureAqua 4-in-1 kraan',
+    optie: '4-in-1 kraan met osmose',
     aanschaf: '€ 1.100',
     installatieKosten: '€ 200',
     jaarFilters: '€ 130',
@@ -191,7 +191,7 @@ export default function OsmoseFilterPrijsPage() {
             <li><a href="#jaarkosten" className="hover:underline">Jaarlijkse filterkosten</a></li>
             <li><a href="#installatie" className="hover:underline">Installatiekosten</a></li>
             <li><a href="#tco" className="hover:underline">5-jaar kostenvergelijking</a></li>
-            <li><a href="#pureaqua" className="hover:underline">PureAqua 4-in-1: beste waarde</a></li>
+            <li><a href="#premium-keuze" className="hover:underline">4-in-1 met osmose: complete oplossing</a></li>
             <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
           </ol>
         </section>
@@ -247,7 +247,7 @@ export default function OsmoseFilterPrijsPage() {
                       href="/omgekeerde-osmose/kopen"
                       className="inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
                     >
-                      Bekijk de PureAqua 4-in-1 →
+                      Osmosefilters vergelijken →
                     </Link>
                   </div>
                 )}
@@ -356,52 +356,15 @@ export default function OsmoseFilterPrijsPage() {
           </div>
           <p className="text-gray-700 mt-4 text-sm leading-relaxed">
             <strong>Conclusie:</strong> zelfs een instap osmosefilter is na 5 jaar meer dan
-            vijf keer goedkoper dan structureel flessenwater kopen. De PureAqua 4-in-1 is qua
-            totale prijs vergelijkbaar met flessenwater — maar levert oneindig meer comfort,
+            vijf keer goedkoper dan structureel flessenwater kopen. Een 4-in-1 kraan met osmose
+            is qua totale prijs vergelijkbaar met flessenwater — maar levert oneindig meer comfort,
             geen plastic afval en kokend water inbegrepen.
           </p>
         </section>
 
-        {/* PureAqua CTA sectie */}
-        <section id="pureaqua" className="bg-gradient-to-br from-[#003F5C] to-[#005F8A] rounded-2xl p-6 md:p-8 text-white">
-          <p className="text-blue-200 text-sm font-semibold uppercase tracking-wide mb-2">Beste keuze voor comfort en filtratie</p>
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">PureAqua 4-in-1 kraan</h2>
-          <p className="text-blue-100 mb-4 leading-relaxed">
-            De PureAqua 4-in-1 combineert omgekeerde osmose filtratie met kokend, koud en
-            bruisend water — allemaal uit één elegante kraan aan het aanrecht. Eén jaarlijkse
-            filtermodule, geen losse patronen, maximaal gemak.
-          </p>
-          <ul className="space-y-2 mb-6 text-sm text-blue-100">
-            {[
-              'RO-filtratie: 95–99% verwijdering van kalk, chloor, pesticiden en microplastics',
-              'Kokend water (100°C) direct beschikbaar — geen waterkoker meer nodig',
-              'Koud en bruisend gefilterd water',
-              'Één jaarlijkse all-in filtermodule',
-              'Nederlands merk, professionele installatie inbegrepen',
-            ].map(f => (
-              <li key={f} className="flex items-start gap-2">
-                <span className="text-white font-bold shrink-0">✓</span>
-                {f}
-              </li>
-            ))}
-          </ul>
-          <div className="flex flex-wrap gap-3">
-            <a
-              href="https://www.pureaqua.nl"
-              target="_blank"
-              rel="noopener"
-              className="bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm"
-            >
-              Bekijk de PureAqua 4-in-1 →
-            </a>
-            <Link
-              href="/omgekeerde-osmose/kopen"
-              className="border border-white text-white font-semibold px-5 py-3 rounded-xl hover:bg-white/10 transition-colors text-sm"
-            >
-              Meer systemen vergelijken
-            </Link>
-          </div>
-          <p className="text-blue-300 text-xs mt-3">pureaqua.nl · direct leverbaar · professionele installatie beschikbaar</p>
+        {/* 4-in-1 CTA sectie */}
+        <section id="premium-keuze">
+          <CTABanner context="osmose" />
         </section>
 
         {/* Gerelateerde pagina's */}

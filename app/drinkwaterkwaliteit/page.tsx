@@ -419,17 +419,15 @@ export default function DrinkwaterkwaliteitPage() {
         <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
           <h2 className="text-xl md:text-2xl font-bold mb-2">Wilt u uw drinkwater verbeteren?</h2>
           <p className="text-blue-100 mb-5 max-w-lg mx-auto">
-            De PureAqua 4-in-1 kraan filtert via omgekeerde osmose en levert tegelijk kokend, koud, warm en bruisend water.
+            Een 4-in-1 kraan met omgekeerde osmose filtert via RO en levert tegelijk kokend, koud, warm en bruisend water.
             Ideaal voor harde waterregio&rsquo;s of iedereen die puur, lekker water wil.
           </p>
-          <a
-            href="https://www.pureaqua.nl"
-            target="_blank"
-            rel="noopener"
+          <Link
+            href="/omgekeerde-osmose/kopen"
             className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm md:text-base"
           >
-            Naar pureaqua.nl →
-          </a>
+            Bekijk osmosefilters →
+          </Link>
         </section>
       </div>
     </>

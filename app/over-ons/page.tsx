@@ -36,12 +36,12 @@ const faqItems = [
   {
     question: 'Zijn jullie onafhankelijk?',
     answer:
-      'We zijn redactioneel onafhankelijk in hoe we artikelen schrijven, maar financieel verbonden met PureAqua.nl. Dat betekent: we kiezen zelf welke onderwerpen we behandelen en welke claims we toetsen. We vermelden expliciet wanneer een concurrent op een specifiek aspect beter scoort dan PureAqua.',
+      'Ja. WaterfilterPlatform heeft geen commerciële partnerships, affiliate-links of doorverwijzingen naar specifieke aanbieders. We schrijven over waterfilters, osmose en drinkwaterkwaliteit puur vanuit informatief perspectief — zonder financieel belang bij welk product je koopt.',
   },
   {
-    question: 'Hoe gaan jullie om met de samenwerking met PureAqua?',
+    question: 'Hoe financieren jullie dit platform?',
     answer:
-      'Transparant. PureAqua.nl is onze commerciële partner — affiliate-links en doorverwijzingen leiden naar hun shop. Dit financiert het platform. In ruil eisen we redactionele vrijheid: als een Quooker, Grohe of ander merk objectief beter is op een aspect (bijv. prijs, afmetingen, garantie), zeggen we dat ook.',
+      'WaterfilterPlatform is momenteel een kennisplatform zonder commerciële inkomsten. In de toekomst willen we tools bouwen — zoals een productkeuzehulp — die bezoekers helpen de juiste filteroplossing te vinden. Eventuele partnerships zullen altijd transparant worden vermeld.',
   },
   {
     question: 'Hoe vaak worden artikelen geüpdatet?',
@@ -115,7 +115,7 @@ const bronnen = [
   },
   {
     naam: 'Fabrikant-specs',
-    rol: 'Datasheets, handleidingen en garantievoorwaarden van merken zoals Quooker, Grohe, Franke, PureAqua, BWT en anderen.',
+    rol: 'Datasheets, handleidingen en garantievoorwaarden van merken zoals Quooker, Grohe, Franke, BWT en anderen.',
   },
 ];
 
@@ -302,51 +302,25 @@ export default function OverOnsPage() {
         </div>
       </section>
 
-      {/* Partnerships */}
+      {/* Onafhankelijkheid */}
       <section className="bg-[#E0F2FE] py-12 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-4">
-            Hoe we partnerships aanpakken
+            Onze onafhankelijkheid
           </h2>
           <div className="bg-white rounded-2xl border border-gray-100 p-6 space-y-4 text-gray-700 leading-relaxed">
             <p>
-              <strong>Transparantie eerst.</strong> WaterfilterPlatform is financieel verbonden met{' '}
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
-                className="text-[#005F8A] font-medium hover:underline"
-              >
-                PureAqua.nl
-              </a>
-              . Affiliate-links en doorverwijzingen op deze site leiden in veel gevallen naar hun
-              shop. Die inkomsten financieren het werk dat hier gebeurt — de teksten, de
-              gemeentedatabase, het onderhoud.
+              <strong>Geen affiliate-links, geen gesponsorde content.</strong> WaterfilterPlatform heeft momenteel geen commerciële partnerships of affiliate-relaties. We worden niet betaald voor het aanbevelen van specifieke producten of merken.
             </p>
             <p>
-              <strong>Wat dat niet betekent.</strong> Het betekent niet dat we PureAqua kritiekloos
-              aanprijzen. Concreet: in onze{' '}
-              <Link href="/kokend-water-kraan" className="text-[#005F8A] font-medium hover:underline">
-                kokend water kraan
-              </Link>{' '}
-              vergelijkingen benoemen we wanneer Quooker, Grohe of Franke op een aspect (afmetingen,
-              prijs, garantie, kleurkeuze) beter scoort dan PureAqua. Bij{' '}
+              <strong>Informatie als doel.</strong> We schrijven over waterfilters,{' '}
               <Link href="/omgekeerde-osmose" className="text-[#005F8A] font-medium hover:underline">
-                osmose-systemen
-              </Link>{' '}
-              wijzen we erop dat een onder-aanrecht set van een andere fabrikant soms een betere fit
-              is dan een 4-in-1 kraan.
+                omgekeerde osmose
+              </Link>
+              {' '}en drinkwaterkwaliteit omdat deze informatie nuttig is — niet omdat er een commercieel belang aan vastzit. In vergelijkingen noemen we voor- en nadelen van alle relevante opties.
             </p>
             <p>
-              <strong>Onze regel.</strong> Als een concurrent op een specifiek aspect aantoonbaar
-              beter is, zeggen we dat. Niet omdat we onpartijdig moeten lijken, maar omdat onze
-              geloofwaardigheid uiteindelijk meer waard is dan een korte-termijn klik.
-            </p>
-            <p>
-              <strong>Affiliate-disclosure.</strong> Onderaan pagina&apos;s met productlinks of in de
-              tekst zelf staat doorgaans dat we een vergoeding ontvangen bij aankoop via die link.
-              Die vergoeding heeft geen invloed op het oordeel — wel op welke producten überhaupt
-              hier behandeld worden, omdat we niet over álles op de markt kunnen schrijven.
+              <strong>Toekomst.</strong> We werken aan een productkeuzehulp die bezoekers helpt de juiste filteroplossing te vinden op basis van hun situatie. Als er ooit commerciële samenwerkingen komen, zullen we dat altijd transparant vermelden.
             </p>
           </div>
         </div>
@@ -405,7 +379,7 @@ export default function OverOnsPage() {
                 Kokend water kraan — alle merken vergeleken
               </Link>
               <p className="text-sm text-gray-600 mt-1">
-                Quooker, Grohe Red, Franke, PureAqua. Wat zijn de echte verschillen op prijs,
+                Quooker, Grohe Red, Franke en andere merken. Wat zijn de echte verschillen op prijs,
                 installatie en filters?
               </p>
             </li>

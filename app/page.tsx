@@ -28,7 +28,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil tussen een kokend water kraan en een Quooker?',
     answer:
-      'Quooker is een merk kokend water kranen. Andere merken zoals PureAqua bieden vergelijkbare functionaliteit — soms met extra functies zoals een ingebouwd omgekeerde osmose filter, wat Quooker standaard niet heeft.',
+      'Quooker is een merk kokend water kranen. Er zijn diverse alternatieven die vergelijkbare functionaliteit bieden — soms met extra functies zoals een ingebouwd omgekeerde osmose filter, wat Quooker standaard niet heeft.',
   },
   {
     question: 'Hoe weet ik of het water bij mij hard of zacht is?',

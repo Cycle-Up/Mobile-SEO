@@ -21,7 +21,7 @@ const faqItems = [
   {
     question: 'Welk waterfilter moet ik kopen voor thuis?',
     answer:
-      'Dat hangt af van je doel. Wil je alleen chloor en smaak verbeteren? Een actieve koolstoffilter (€30–100) is voldoende. Wil je ook nitraten, PFAS, zware metalen en kalk verwijderen? Dan is omgekeerde osmose de enige effectieve optie. Wil je alles in één — filter, kokend en bruisend water? Dan is de PureAqua 4-in-1 kraan de meest complete keuze voor €699–899.',
+      'Dat hangt af van je doel. Wil je alleen chloor en smaak verbeteren? Een actieve koolstoffilter (€30–100) is voldoende. Wil je ook nitraten, PFAS, zware metalen en kalk verwijderen? Dan is omgekeerde osmose de enige effectieve optie. Wil je alles in één — filter, kokend en bruisend water? Dan is een 4-in-1 kraan met osmose de meest complete keuze voor €699–899.',
   },
   {
     question: 'Wat is het verschil tussen een waterfilter kopen en een waterontharder kopen?',
@@ -183,7 +183,7 @@ export default function WaterfilterKopenPage() {
               href="/omgekeerde-osmose/kopen"
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              PureAqua 4-in-1 bekijken →
+              Osmose systemen bekijken →
             </Link>
             <Link
               href="/waterfilter"
@@ -452,7 +452,7 @@ export default function WaterfilterKopenPage() {
               },
               {
                 budget: 'Budget €700–1.000',
-                advies: 'PureAqua 4-in-1 kraan: osmosefilter + kokend + koud + bruisend water. Vervangt waterkoker en bruisend water-abonnement — op termijn kostenefficiënt.',
+                advies: '4-in-1 kraan met osmose: osmosefilter + kokend + koud + bruisend water. Vervangt waterkoker en bruisend water-abonnement — op termijn kostenefficiënt.',
                 link: '/omgekeerde-osmose/kopen',
               },
               {
@@ -639,7 +639,7 @@ export default function WaterfilterKopenPage() {
               },
               {
                 profiel: 'Wie alles-in-één wil: filter + kokend + bruisend',
-                advies: 'PureAqua 4-in-1 kraan (€699–899). Vervangt waterkoker, bruisend water-abonnement en waterfilter in één systeem.',
+                advies: '4-in-1 kraan met osmose (€699–899). Vervangt waterkoker, bruisend water-abonnement en waterfilter in één systeem.',
                 prijs: '€ 699–899',
               },
               {

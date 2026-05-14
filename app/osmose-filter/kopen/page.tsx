@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: 'Hoeveel filterstappen heb ik nodig?',
     answer:
-      'Een 4-traps osmose filter biedt solide zuivering: sedimentfilter, koolstoffilter, RO-membraan en post-koolstoffilter. Een 5-traps systeem voegt een mineralisatiestap of UV-fase toe. Een 6-traps systeem heeft ook een alkaline of ionenwisselaar. Voor normaal Nederlands leidingwater is 4 of 5 traps ruimschoots voldoende. De PureAqua 4-in-1 kraan gebruikt een geïntegreerd meertraps osmosesysteem.',
+      'Een 4-traps osmose filter biedt solide zuivering: sedimentfilter, koolstoffilter, RO-membraan en post-koolstoffilter. Een 5-traps systeem voegt een mineralisatiestap of UV-fase toe. Een 6-traps systeem heeft ook een alkaline of ionenwisselaar. Voor normaal Nederlands leidingwater is 4 of 5 traps ruimschoots voldoende. Een geïntegreerde 4-in-1 kraan met osmose gebruikt een meertraps osmosesysteem.',
   },
   {
     question: 'Wat betekent TDS-reductie en hoe hoog moet die zijn?',
@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: 'Is een losse osmose filter of een 4-in-1 kraan slimmer?',
     answer:
-      'Een losse osmose filter is goedkoper in aanschaf (€150–400) maar vereist een apart kraantje en biedt alleen koud gefilterd water. De PureAqua 4-in-1 kraan integreert osmosefiltratie met kokend, koud, warm en bruisend water in één elegant apparaat. Op de lange termijn is de 4-in-1 kraan voordeliger als je ook een kokendwaterfunctie wilt.',
+      'Een losse osmose filter is goedkoper in aanschaf (€150–400) maar vereist een apart kraantje en biedt alleen koud gefilterd water. Een 4-in-1 kraan met osmose integreert osmosefiltratie met kokend, koud, warm en bruisend water in één elegant apparaat. Op de lange termijn is de 4-in-1 kraan voordeliger als je ook een kokendwaterfunctie wilt.',
   },
 ];
 
@@ -74,7 +74,7 @@ const filterTypes = [
     aanbevolen: false,
   },
   {
-    type: 'PureAqua 4-in-1 kraan (geïntegreerd)',
+    type: '4-in-1 kraan met osmose (geïntegreerd)',
     prijs: '€ 699 – 899',
     geschiktVoor: 'Complete keukeninstallatie',
     voordelen: [
@@ -365,7 +365,7 @@ export default function OsmoseFilterKopenPage() {
             </div>
             <div className="border border-[#005F8A] bg-[#E0F2FE] rounded-xl p-4">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="font-bold text-[#003F5C]">PureAqua 4-in-1 kraan</h3>
+                <h3 className="font-bold text-[#003F5C]">4-in-1 kraan met osmose</h3>
                 <span className="text-xs bg-[#005F8A] text-white px-2 py-0.5 rounded-full">Aanbevolen</span>
               </div>
               <p className="text-sm text-gray-700 mb-3 leading-relaxed">
@@ -472,7 +472,7 @@ export default function OsmoseFilterKopenPage() {
           </p>
           <p className="text-gray-600 text-sm leading-relaxed mb-3">
             Wil je ook kokend water, of zoek je een complete keukenoplossing zonder losse apparaten? Dan is de{' '}
-            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">PureAqua 4-in-1 kraan</Link> de slimste investering. Je betaalt meer upfront, maar bespaart op een waterkoker, apart filter-kraantje, en meerdere filtersets per jaar.
+            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">4-in-1 kraan met osmose</Link> de slimste investering. Je betaalt meer upfront, maar bespaart op een waterkoker, apart filter-kraantje, en meerdere filtersets per jaar.
           </p>
           <p className="text-gray-600 text-sm leading-relaxed">
             Bekijk ook onze{' '}

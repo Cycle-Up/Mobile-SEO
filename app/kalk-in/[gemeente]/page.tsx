@@ -409,19 +409,14 @@ export default async function KalkInGemeentePage({ params }: PageProps) {
               Stop kalkaanslag in {gemeente.naam} bij de bron
             </p>
             <p className={`${ernst.text} opacity-90 text-sm mb-4`}>
-              Met {gemeente.hardheid}°dH water is dweilen met de kraan open. Een omgekeerde osmose filter van PureAqua verwijdert tot 99% van het calcium en magnesium uit je drink- en kookwater. Geen kalkaanslag meer in waterkoker, koffie of pan.
+              Met {gemeente.hardheid}°dH water is dweilen met de kraan open. Een omgekeerde osmose filter verwijdert tot 99% van het calcium en magnesium uit je drink- en kookwater — geen kalkaanslag meer in waterkoker, koffie of pan.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
-                className={`inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm`}
-              >
-                Bekijk PureAqua osmosefilter →
-              </a>
-              <Link href="/omgekeerde-osmose/kopen" className={`inline-block border ${ernst.border} ${ernst.text} font-semibold px-5 py-2.5 rounded-xl hover:bg-white transition-colors text-sm`}>
-                Vergelijk osmose systemen
+              <Link href="/omgekeerde-osmose/kopen" className={`inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm`}>
+                Vergelijk osmose systemen →
+              </Link>
+              <Link href="/omgekeerde-osmose" className={`inline-block border ${ernst.border} ${ernst.text} font-semibold px-5 py-2.5 rounded-xl hover:bg-white transition-colors text-sm`}>
+                Meer over omgekeerde osmose
               </Link>
             </div>
           </div>

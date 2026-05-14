@@ -26,7 +26,7 @@ const faqItems = [
   {
     question: 'Hoeveel afvalwater produceert een omgekeerde osmose systeem?',
     answer:
-      'Conventionele osmose systemen zonder boostpomp produceren 2–5 liter afvalwater per liter schoon water (ratio 1:2 tot 1:5). Modernere systemen met boostpomp of permeaatpomp halen een verhouding van 1:1 of zelfs 2:1 (meer schoon dan afval). Premium systemen zoals de PureAqua 4-in-1 kraan zijn ontworpen met een gunstige afvalwaterratio. Vraag altijd naar de exacte ratio bij aanschaf.',
+      'Conventionele osmose systemen zonder boostpomp produceren 2–5 liter afvalwater per liter schoon water (ratio 1:2 tot 1:5). Modernere systemen met boostpomp of permeaatpomp halen een verhouding van 1:1 of zelfs 2:1 (meer schoon dan afval). Premium systemen zoals geïntegreerde 4-in-1 kokend water kranen zijn ontworpen met een gunstige afvalwaterratio. Vraag altijd naar de exacte ratio bij aanschaf.',
   },
   {
     question: 'Hoeveel filterstappen heeft een goed osmose systeem?',
@@ -373,7 +373,7 @@ export default function OsmoseVergelijkenPage() {
                 uitleg: `De jaarlijkse filterkosten worden vaak vergeten bij de vergelijking, maar zijn
                   cruciaal voor de total cost of ownership. Goedkope systemen met dure of veel filters
                   kunnen duurder uitvallen dan kwalitatieve systemen met één jaarlijkse wissel. De
-                  PureAqua 4-in-1 kraan is ontworpen voor één jaarlijkse filtervervanging — eenvoudig
+                  geïntegreerde 4-in-1 kraan met osmose is ontworpen voor één jaarlijkse filtervervanging — eenvoudig
                   en voorspelbaar in kosten. Vraag bij aanschaf altijd naar de specifieke
                   filterreplacement kosten en hoe frequent de filters vervangen moeten worden.`,
               },
@@ -516,20 +516,20 @@ export default function OsmoseVergelijkenPage() {
         <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
           <p className="text-blue-200 text-sm mb-1">Klaar met vergelijken?</p>
           <h2 className="text-xl md:text-2xl font-bold mb-3">
-            Bekijk de PureAqua 4-in-1 kraan — osmose, kokend én koud
+            Bekijk de 4-in-1 kraan met osmose — gefilterd, kokend én koud
           </h2>
           <p className="text-blue-100 mb-5 max-w-lg mx-auto text-sm leading-relaxed">
-            De PureAqua 4-in-1 combineert alles wat je nodig hebt: omgekeerde osmose filtratie,
+            Een 4-in-1 kraan met osmose combineert alles wat je nodig hebt: omgekeerde osmose filtratie,
             kokend water, koud gefilterd water en warm water — uit één elegante kraan. Één jaarlijkse
-            filterwissel. Direct leverbaar.
+            filterwissel.
           </p>
           <Link
             href="/omgekeerde-osmose/kopen"
             className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm md:text-base"
           >
-            Bekijk de PureAqua 4-in-1 →
+            Bekijk osmose systemen →
           </Link>
-          <p className="text-xs text-blue-200 mt-3">Nederlands merk · direct leverbaar · 2 jaar garantie</p>
+          <p className="text-xs text-blue-200 mt-3">Direct leverbaar · 2 jaar garantie</p>
         </section>
 
         {/* Interne links */}

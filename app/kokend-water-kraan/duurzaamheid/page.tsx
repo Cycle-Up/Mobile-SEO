@@ -40,7 +40,7 @@ const faqSchema = {
       name: 'Welke energie-besparende functies hebben kokend water kranen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Moderne kranen hebben: (1) Nachtstand/eco-modus: boiler koelt af naar 75°C of wordt uitgeschakeld. (2) Programmeerbare tijdschakelaars. (3) Betere isolatie: sommige merken claimen minder dan 3 W standby. (4) Variabele temperatuurinstelling: voor groene thee (70°C) minder energie dan voor koken. PureAqua 4-in-1 kan temperatuur instellen om energie te besparen.',
+        text: 'Moderne kranen hebben: (1) Nachtstand/eco-modus: boiler koelt af naar 75°C of wordt uitgeschakeld. (2) Programmeerbare tijdschakelaars. (3) Betere isolatie: sommige merken claimen minder dan 3 W standby. (4) Variabele temperatuurinstelling: voor groene thee (70°C) minder energie dan voor koken. Kwalitatieve systemen laten de temperatuur instellen om energie te besparen.',
       },
     },
   ],

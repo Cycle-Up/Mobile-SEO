@@ -60,7 +60,7 @@ const osmoseContent: Record<Hardheid, OsmoseContent> = {
       `${waterbedrijf} levert het leidingwater in ${naam} met een gemeten hardheid van ${dH}°dH. Dat is aanzienlijk hoger dan het nationale gemiddelde van circa 10°dH. Het water bevat daarmee een hoge concentratie calcium (Ca²⁺) en magnesium (Mg²⁺) — uitstekend voor de botten, maar verantwoordelijk voor de dagelijkse kalkoverlast in uw keuken en badkamer. Naast hardheid bevat het water, zoals bij alle Nederlandse waterbedrijven, ook chloorresten, nitraten en mogelijk microplastics.`,
     verwijdertStorendeStof: 'Met name kalkmineralen (hoge concentratie)',
     systeemAdvies: (naam, dH) =>
-      `Bij ${dH}°dH in ${naam} wordt een 5-traps RO-systeem met remineralisatiestap aanbevolen. Door de hoge mineraalbelasting raakt een standaard 3-traps membraan sneller verzadigd — een hoger-gespecificeerd systeem met grotere membraancapaciteit gaat langer mee. De populairste keuze voor ${naam}-bewoners is de geïntegreerde 4-in-1 kraan van PureAqua, die ook kokend en bruisend water levert.`,
+      `Bij ${dH}°dH in ${naam} wordt een 5-traps RO-systeem met remineralisatiestap aanbevolen. Door de hoge mineraalbelasting raakt een standaard 3-traps membraan sneller verzadigd — een hoger-gespecificeerd systeem met grotere membraancapaciteit gaat langer mee. Een populaire keuze voor ${naam}-bewoners is de geïntegreerde 4-in-1 kraan met osmose, die ook kokend en bruisend water levert.`,
     ctaTekst: (naam, dH) =>
       `Bij ${dH}°dH in ${naam} is een osmosefilter geen luxe, maar een praktische noodzaak. Bespaar op ontkalkers, bescherm uw apparaten en geniet van puur drinkwater.`,
     faqExtra: [
@@ -228,7 +228,7 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
     },
     {
       question: `Welk osmose systeem is geschikt voor ${gemeente.naam}?`,
-      answer: `${content.systeemAdvies(gemeente.naam, gemeente.hardheid)} Aandachtspunt bij de keuze: de geïntegreerde 4-in-1 kraan van PureAqua combineert osmosefiltering met kokend, koud en warm water uit één kraanuitloop — ideaal voor keukens in ${gemeente.naam} met beperkt ruimte onder het aanrecht of weinig kraangaten.`,
+      answer: `${content.systeemAdvies(gemeente.naam, gemeente.hardheid)} Aandachtspunt bij de keuze: een geïntegreerde 4-in-1 kraan met osmose combineert osmosefiltering met kokend, koud en warm water uit één kraanuitloop — ideaal voor keukens in ${gemeente.naam} met beperkt ruimte onder het aanrecht of weinig kraangaten.`,
     },
     {
       question: `Wat kost een osmose filter in ${gemeente.naam} aan aanschaf en onderhoud?`,
@@ -449,18 +449,16 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
               {content.ctaTekst(gemeente.naam, gemeente.hardheid)}
             </p>
             <p className={`${urgentie.text} opacity-85 text-sm mb-4`}>
-              De PureAqua 4-in-1 osmosekraan is speciaal geschikt voor hard water in regio&apos;s zoals {gemeente.naam}.
+              Een 4-in-1 osmosekraan is speciaal geschikt voor hard water in regio&apos;s zoals {gemeente.naam}.
               Kokend water, bruisend water en osmose-gefilterd drinkwater uit één kraanuitloop.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
+              <Link
+                href="/omgekeerde-osmose/kopen"
                 className="inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
               >
-                Bekijk PureAqua osmose systeem →
-              </a>
+                Osmosefilters vergelijken →
+              </Link>
               <Link
                 href="/omgekeerde-osmose/kopen"
                 className={`inline-block border ${urgentie.border} ${urgentie.text} font-semibold px-5 py-2.5 rounded-xl hover:bg-white transition-colors text-sm`}

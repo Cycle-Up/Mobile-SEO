@@ -385,22 +385,20 @@ export default async function KokendWaterKraanGemeentePage({ params }: PageProps
               Bij {gemeente.hardheid}°dH in {gemeente.naam}: kies een osmose-kraan
             </p>
             <p className={`${urgentie.text} opacity-90 text-sm mb-4`}>
-              Met hard water beschadigt kalk een onbeschermd verwarmingselement binnen maanden. De PureAqua osmose-kraan combineert 99% kalkreductie met direct kokend, koud en gefilterd water — gemaakt voor hard water zoals in {gemeente.naam}.
+              Met hard water beschadigt kalk een onbeschermd verwarmingselement binnen maanden. Een 4-in-1 osmose-kraan combineert 99% kalkreductie met direct kokend, koud en gefilterd water — ideaal voor hard water zoals in {gemeente.naam}.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
-                className="inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
-              >
-                Bekijk PureAqua osmose-kraan →
-              </a>
               <Link
                 href="/omgekeerde-osmose/kopen"
+                className="inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
+              >
+                Vergelijk osmose systemen →
+              </Link>
+              <Link
+                href="/kokend-water-kraan/vergelijken"
                 className={`inline-block border ${urgentie.border} ${urgentie.text} font-semibold px-5 py-2.5 rounded-xl hover:bg-white transition-colors text-sm`}
               >
-                Vergelijk osmose systemen
+                Kranen vergelijken
               </Link>
             </div>
           </div>

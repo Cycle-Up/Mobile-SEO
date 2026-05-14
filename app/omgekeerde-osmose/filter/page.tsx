@@ -469,7 +469,7 @@ export default function OsmoseFilterPage() {
             ))}
           </ul>
           <p className="text-gray-700 leading-relaxed">
-            De PureAqua 4-in-1 kraan is een voorbeeld van dit geïntegreerde concept op de Nederlandse markt. Wie naast gefilterd water ook kokend en bruisend water wil, vindt in een dergelijke gecombineerde oplossing de meest compacte en kostenefficiënte aanpak. Meer informatie over dit type systeem leest u op de <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">kooppagina voor osmosefilters</Link>.
+            Een 4-in-1 kraan met geïntegreerd osmosefilter is een voorbeeld van dit concept. Wie naast gefilterd water ook kokend en bruisend water wil, vindt in een dergelijke gecombineerde oplossing de meest compacte en kostenefficiënte aanpak. Meer informatie over dit type systeem leest u op de <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">kooppagina voor osmosefilters</Link>.
           </p>
         </section>
 

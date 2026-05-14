@@ -12,7 +12,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Quooker alternatief vergelijken — beste opties in 2026',
       description:
-        'Op zoek naar een alternatief voor Quooker? Vergelijk PureAqua, Grohe Red, Insinkerator en Franke op prijs, kokend water en osmose filter.',
+        'Op zoek naar een alternatief voor Quooker? Vergelijk Grohe Red, Insinkerator, Franke en 4-in-1 opties op prijs, kokend water en osmose filter.',
       url: 'https://waterfilterplatform.nl/quooker-alternatief',
       type: 'article',
       locale: 'nl_NL',
@@ -24,37 +24,37 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor een Quooker?',
     answer:
-      'Er zijn verschillende serieuze alternatieven voor Quooker: PureAqua (4-in-1 met ingebouwd osmose filter), Grohe Red (kokend water, Duits design), Insinkerator (Amerikaans, breed assortiment) en Franke Vital/Mondial. Welke het beste past hangt af van of je een filter wilt, welk design je zoekt en wat je budget is. Wil je kokend water én puur gefilterd water in één kraan? Dan biedt PureAqua dat in een lager prijssegment dan Quooker.',
+      'Er zijn verschillende serieuze alternatieven voor Quooker: 4-in-1 kranen met ingebouwd osmose filter (kokend, koud gefilterd, warm en bruisend), Grohe Red (kokend water, Duits design), Insinkerator (Amerikaans, breed assortiment) en Franke Vital/Mondial. Welke het beste past hangt af van of je een filter wilt, welk design je zoekt en wat je budget is.',
   },
   {
     question: 'Is er een goedkoper alternatief dan Quooker?',
     answer:
-      'Ja. Een Quooker met CUBE (voor bruisend water) komt al snel boven de 2.000 euro inclusief installatie. Alternatieven zoals PureAqua bieden een vergelijkbaar functiepakket (kokend, koud, warm en bruisend water met osmose filter) voor 699 tot 899 euro. Ook Insinkerator en Grohe Red kennen modellen onder de 1.500 euro voor uitsluitend kokend water.',
+      'Ja. Een Quooker met CUBE (voor bruisend water) komt al snel boven de 2.000 euro inclusief installatie. Er zijn alternatieven die een vergelijkbaar functiepakket (kokend, koud, warm en bruisend water met osmose filter) bieden voor 600 tot 1.000 euro. Ook Insinkerator en Grohe Red kennen modellen onder de 1.500 euro voor uitsluitend kokend water.',
   },
   {
-    question: 'Wat is het verschil tussen Quooker en PureAqua?',
+    question: 'Wat is het verschil tussen Quooker en een 4-in-1 kraan met osmose?',
     answer:
-      'Quooker is de bekendste naam in Nederland en richt zich primair op kokend water met optioneel bruisend water via de aparte CUBE-module. PureAqua combineert standaard vier functies in één kraan: kokend, koud gefilterd, warm en bruisend water — met een ingebouwd omgekeerde osmose filter. De prijs van een PureAqua-set ligt doorgaans onder die van een Quooker met CUBE, en het osmose filter zit standaard meegeleverd.',
+      'Quooker richt zich primair op kokend water, met optioneel bruisend water via de aparte CUBE-module. Een 4-in-1 kraan met ingebouwd osmose filter combineert standaard vier functies in één kraan: kokend, koud gefilterd, warm en bruisend water. De prijs van zo\'n combinatie ligt doorgaans onder die van een Quooker met CUBE, en het osmose filter zit standaard meegeleverd.',
   },
   {
     question: 'Welk alternatief voor Quooker heeft een ingebouwd waterfilter?',
     answer:
-      'PureAqua is in deze vergelijking het enige merk met een standaard ingebouwd omgekeerde osmose filter dat kalk, chloor en andere stoffen verwijdert. Bij Quooker is een scale control filter optioneel verkrijgbaar, maar dat is geen volledige osmose installatie. Wil je echt puur gefilterd water uit dezelfde kraan als je kokend water, dan is PureAqua de voor de hand liggende keuze.',
+      'Systemen met een standaard ingebouwd omgekeerde osmose filter zijn de meest complete keuze als je puur, kalkvrij gefilterd water wilt uit dezelfde kraan als je kokend water. Bij Quooker is een scale control filter optioneel verkrijgbaar, maar dat is geen volledige osmose installatie.',
   },
   {
     question: 'Kan ik een alternatief voor Quooker zelf installeren?',
     answer:
-      'Veel alternatieven zijn zelf te installeren als je standaard aansluitingen onder je aanrecht hebt. PureAqua wordt geleverd met een Nederlandstalige installatiehandleiding en de meeste klanten plaatsen de kraan zelf in een paar uur. Bij Quooker komt vrijwel altijd een installateur langs, wat de totale prijs verhoogt. Bij Grohe Red en Insinkerator is dat sterk afhankelijk van de dealer.',
+      'Veel alternatieven zijn zelf te installeren als je standaard aansluitingen onder je aanrecht hebt. Bij Quooker komt vrijwel altijd een installateur langs, wat de totale prijs verhoogt. Bij Grohe Red en Insinkerator is dat sterk afhankelijk van de dealer. Controleer altijd de installatievereisten van het specifieke model dat je overweegt.',
   },
   {
     question: 'Welke garantie krijg ik bij een alternatief voor Quooker?',
     answer:
-      'Garantietermijnen verschillen per merk en model. PureAqua biedt 2 jaar fabrieksgarantie op de kraan en het osmose systeem. Quooker hanteert eveneens een meerjarige garantie. Grohe Red en Insinkerator hebben hun eigen voorwaarden via de dealer. Lees altijd de actuele garantievoorwaarden op de website van de fabrikant voordat je beslist.',
+      'Garantietermijnen verschillen per merk en model. Quooker hanteert een meerjarige garantie. Grohe Red en Insinkerator hebben hun eigen voorwaarden via de dealer. Lees altijd de actuele garantievoorwaarden op de website van de fabrikant voordat je beslist.',
   },
   {
     question: 'Vergelijkbaar met Quooker maar met ander design — bestaat dat?',
     answer:
-      'Zeker. Het design van Quooker (Fusion, Classic, Flex, Nordic, Pro3) is herkenbaar maar niet voor iedereen passend. Grohe Red heeft een strak Duits design, Franke biedt slankere lijnen, Insinkerator heeft Amerikaanse stijlvarianten en PureAqua hanteert een moderne, minimalistische look met chroom- en zwartopties. Voor andere keukens of bouwstijlen is er dus volop keuze buiten Quooker.',
+      'Zeker. Het design van Quooker (Fusion, Classic, Flex, Nordic, Pro3) is herkenbaar maar niet voor iedereen passend. Grohe Red heeft een strak Duits design, Franke biedt slankere lijnen, Insinkerator heeft Amerikaanse stijlvarianten en diverse merken bieden moderne, minimalistische varianten in chroom of mat zwart. Voor andere keukens of bouwstijlen is er volop keuze buiten Quooker.',
   },
   {
     question: 'Is een alternatief voor Quooker even veilig?',
@@ -65,15 +65,15 @@ const faqItems = [
 
 const topAlternatieven = [
   {
-    naam: 'PureAqua 4-in-1',
-    prijs: '€ 699–899',
+    naam: '4-in-1 kraan met osmose',
+    prijs: '€ 600–1.000',
     kokend: 'Ja (100°C)',
     gefilterd: 'Ja (osmose ingebouwd)',
     bruisend: 'Ja, standaard',
-    garantie: '2 jaar',
-    installatie: 'Zelf installeerbaar',
-    highlight: true,
-    notitie: 'Beste prijs-kwaliteit met ingebouwde osmose filter',
+    garantie: 'Per fabrikant',
+    installatie: 'Veelal zelf installeerbaar',
+    highlight: false,
+    notitie: 'Meest complete functieset: osmose + kokend + bruisend in één systeem',
   },
   {
     naam: 'Quooker (referentie)',
@@ -112,13 +112,13 @@ const topAlternatieven = [
 
 const tco = [
   {
-    set: 'PureAqua 4-in-1',
-    aanschaf: '€ 799',
-    installatie: '€ 0 (zelf)',
-    filters: '€ 90/jaar',
+    set: '4-in-1 kraan met osmose',
+    aanschaf: '€ 600–1.000',
+    installatie: '€ 0–100',
+    filters: '€ 80–120/jaar',
     energie: '± € 35/jaar',
-    totaal5jaar: '± € 1.424',
-    highlight: true,
+    totaal5jaar: '± € 1.200–1.700',
+    highlight: false,
   },
   {
     set: 'Quooker Combi + CUBE',
@@ -168,7 +168,7 @@ const redenenAlternatief = [
   {
     titel: 'Andere fabrikant',
     tekst:
-      'Sommige consumenten geven om merksoevereiniteit, dealernetwerk, herkomst of duurzaamheidsbeleid. Een vergelijking met andere fabrikanten zoals PureAqua, Grohe, Franke of Insinkerator geeft inzicht in wat past bij jouw waarden.',
+      'Sommige consumenten geven om merksoevereiniteit, dealernetwerk, herkomst of duurzaamheidsbeleid. Een vergelijking met fabrikanten zoals Grohe, Franke, Insinkerator of andere merken geeft inzicht in wat past bij jouw waarden.',
   },
   {
     titel: 'Garantie en service',
@@ -341,45 +341,33 @@ export default function QuookerAlternatiefPage() {
           </p>
         </section>
 
-        {/* PureAqua in detail */}
+        {/* 4-in-1 kraan met osmose: uitleg */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">PureAqua in detail: het 4-in-1 alternatief</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is een 4-in-1 kraan met osmose filter?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Van de vier alternatieven springt PureAqua eruit omdat het standaard meer functies combineert in één kraan,
-            tegen een lagere prijs dan een vergelijkbare Quooker-combinatie. We lichten toe waarom dit voor veel
-            huishoudens een aantrekkelijk alternatief voor Quooker is — en wanneer dat juist niet zo is.
+            Een 4-in-1 kraan combineert kokend, koud gefilterd, warm en bruisend water in één systeem — met een ingebouwd omgekeerde osmose filter. Dit type is het meest complete alternatief voor een Quooker als je naast kokend water ook puur, kalkvrij drinkwater wilt.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
             {[
               {
-                titel: '4-in-1 functies',
+                titel: '4 functies in één kraan',
                 tekst:
                   'Kokend, koud gefilterd, warm en bruisend water uit één kraan — geen aparte CUBE-module of losse koolfiltermachine nodig.',
               },
               {
                 titel: 'Osmose filter ingebouwd',
                 tekst:
-                  'Een omgekeerde osmose systeem verwijdert kalk, chloor, nitraten en microplastics. Bij PureAqua zit dit standaard in het pakket.',
+                  'Een omgekeerde osmose systeem verwijdert kalk, chloor, nitraten en microplastics — standaard ingebouwd, geen losse installatie.',
               },
               {
-                titel: 'Prijs',
+                titel: 'Lagere aanschafprijs',
                 tekst:
-                  'Het complete pakket ligt rond € 699–899. Een Quooker met CUBE plus filter komt vaak ruim boven de € 2.000 inclusief installatie.',
+                  'Een complete set ligt doorgaans tussen € 600–1.000. Een Quooker met CUBE plus filter komt vaak ruim boven de € 2.000 inclusief installatie.',
               },
               {
-                titel: 'Garantie',
+                titel: 'Zelf installeerbaar',
                 tekst:
-                  '2 jaar fabrieksgarantie op kraan en osmose systeem, met service vanuit Nederland.',
-              },
-              {
-                titel: 'Design',
-                tekst:
-                  'Modern, minimalistisch design in chroom of mat zwart. Geschikt voor zowel strakke moderne keukens als landelijke stijlen.',
-              },
-              {
-                titel: 'Zelf installeren',
-                tekst:
-                  'Met standaard aansluitingen onder het aanrecht plaats je de kraan zelf binnen enkele uren. Geen verplichte installateur.',
+                  'Veel modellen zijn zelf te plaatsen met standaard aansluitingen onder het aanrecht, zonder verplichte installateur.',
               },
             ].map(b => (
               <div key={b.titel} className="bg-gray-50 rounded-xl p-4">
@@ -389,9 +377,9 @@ export default function QuookerAlternatiefPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Meer weten over het filtersysteem dat in deze kraan zit? Lees onze uitleg over <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link> en
+            Meer weten over het filtersysteem? Lees onze uitleg over <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link> en
             wat je moet weten bij het <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">kopen van een osmose systeem</Link>.
-            Of bekijk hoe de PureAqua zich verhoudt tot andere <Link href="/heet-water-kraan" className="text-[#005F8A] underline">heet water kranen</Link>.
+            Of bekijk het overzicht van <Link href="/heet-water-kraan" className="text-[#005F8A] underline">heet water kranen</Link>.
           </p>
         </section>
 
@@ -449,12 +437,12 @@ export default function QuookerAlternatiefPage() {
               {
                 titel: 'Een osmose filter is voor jou belangrijk',
                 tekst:
-                  'Heb je hard water, wil je kalk- en chloorvrij drinkwater of liever geen plasticresten in je glas? Dan is een kraan met ingebouwd omgekeerde osmose systeem een echte upgrade. PureAqua heeft dat standaard.',
+                  'Heb je hard water, wil je kalk- en chloorvrij drinkwater of liever geen plasticresten in je glas? Dan is een kraan met ingebouwd omgekeerde osmose systeem een echte upgrade — een functie die Quooker standaard niet biedt.',
               },
               {
                 titel: 'Je zoekt een betere prijs voor hetzelfde functiepakket',
                 tekst:
-                  'Voor kokend, koud, warm én bruisend water samen met osmose betaal je bij PureAqua doorgaans honderden tot duizend euro minder dan voor een vergelijkbare Quooker + CUBE + filter combinatie.',
+                  'Voor kokend, koud, warm én bruisend water samen met osmose betaal je bij alternatieven doorgaans honderden tot duizend euro minder dan voor een vergelijkbare Quooker + CUBE + filter combinatie.',
               },
               {
                 titel: 'Een ander design past beter bij je keuken',
@@ -464,7 +452,7 @@ export default function QuookerAlternatiefPage() {
               {
                 titel: 'Je wilt zelf installeren',
                 tekst:
-                  'Ben je technisch onderlegd en wil je geen installateur betalen? Veel alternatieven, waaronder PureAqua, zijn met de standaardaansluitingen onder je aanrecht prima zelf te plaatsen.',
+                  'Ben je technisch onderlegd en wil je geen installateur betalen? Veel alternatieven zijn met de standaardaansluitingen onder je aanrecht prima zelf te plaatsen.',
               },
               {
                 titel: 'Je wilt een breder waterconcept thuis',
@@ -537,7 +525,7 @@ export default function QuookerAlternatiefPage() {
           <p className="text-gray-700 leading-relaxed mb-3">
             Quooker is geen verkeerde keuze — het merk heeft zijn positie in Nederland terecht verdiend. Maar het is
             niet voor iedereen de meest logische keuze. Wie standaard een osmose filter wil, een lager prijspunt zoekt
-            of zelf wil installeren, vindt in <strong>PureAqua</strong> doorgaans de meest complete uitkomst.
+            of zelf wil installeren, kijkt beter naar een 4-in-1 systeem met ingebouwde osmose.
             Wie hecht aan een specifieke Quooker-vorm of dealer-installatie blijft bij Quooker.
             Grohe Red is sterk in design, Insinkerator biedt veel keuze in modellen.
           </p>
@@ -573,21 +561,7 @@ export default function QuookerAlternatiefPage() {
           </div>
         </section>
 
-        {/* Direct CTA */}
-        <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
-          <h2 className="text-xl md:text-2xl font-bold mb-2">Liever direct naar de PureAqua kraan?</h2>
-          <p className="text-blue-100 mb-5 max-w-lg mx-auto">
-            Bekijk het complete 4-in-1 assortiment met osmose filter, kokend water en bruisend water op de site van PureAqua.
-          </p>
-          <a
-            href="https://www.pureaqua.nl"
-            target="_blank"
-            rel="noopener"
-            className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm md:text-base"
-          >
-            Naar pureaqua.nl →
-          </a>
-        </section>
+        <CTABanner context="kokend" />
 
         {/* FAQ */}
         <section>

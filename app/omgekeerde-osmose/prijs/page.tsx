@@ -578,24 +578,8 @@ export default function OsmosePrijsPage() {
           </div>
         </section>
 
-        {/* CTA naar kopen */}
-        <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
-          <p className="text-blue-200 text-sm mb-1">Klaar met vergelijken?</p>
-          <h2 className="text-xl md:text-2xl font-bold mb-3">
-            Bekijk de PureAqua — osmose, kokend én koud water
-          </h2>
-          <p className="text-blue-100 mb-5 max-w-lg mx-auto text-sm leading-relaxed">
-            De PureAqua 4-in-1 combineert omgekeerde osmose filtratie met kokend, koud en warm water
-            uit één elegante kraan. Één jaarlijkse filterwissel. Direct leverbaar.
-          </p>
-          <Link
-            href="/omgekeerde-osmose/kopen"
-            className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm md:text-base"
-          >
-            Bekijk de PureAqua 4-in-1 →
-          </Link>
-          <p className="text-xs text-blue-200 mt-3">pureaqua.nl · Nederlands merk · direct leverbaar</p>
-        </section>
+        {/* CTA */}
+        <CTABanner context="osmose" />
 
         {/* FAQ */}
         <section id="faq">

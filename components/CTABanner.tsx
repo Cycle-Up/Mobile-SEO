@@ -5,24 +5,28 @@ interface CTABannerProps {
 
 const content = {
   osmose: {
-    title: 'Osmosefilter én kokend water in één kraan',
-    sub: 'De PureAqua 4-in-1 kraan filtert via omgekeerde osmose én levert kokend, koud, warm en bruisend water.',
-    cta: 'Bekijk de PureAqua 4-in-1 kraan',
+    title: 'Welk waterfilter past bij jouw situatie?',
+    sub: 'Watertype, verbruik en wensen bepalen welk systeem het meest geschikt is. Onze vergelijking helpt je kiezen.',
+    cta: 'Bekijk filtersoorten vergelijking',
+    link: '/waterfilter/vergelijken',
   },
   kokend: {
-    title: 'Kokend water én puur gefilterd water uit één kraan',
-    sub: 'De PureAqua 4-in-1 kraan combineert een kokendwaterkraan met een ingebouwd omgekeerde osmose systeem.',
-    cta: 'Ontdek de PureAqua 4-in-1 kraan',
+    title: 'Kokend water kraan of waterkoker?',
+    sub: 'Gebruik, budget en keukeninrichting bepalen wat voor jou de slimste keuze is. Lees de vergelijking.',
+    cta: 'Vergelijk kokend water opties',
+    link: '/kokend-water-kraan/vergelijken',
   },
   waterhardheid: {
     title: 'Last van kalk door hard water?',
-    sub: 'Een omgekeerde osmose filter verwijdert kalk, chloor en andere mineralen — voor schoon, zacht leidingwater.',
-    cta: 'Bekijk de PureAqua waterfilter kraan',
+    sub: 'Controleer de waterhardheid in jouw gemeente en ontdek welke oplossing het beste past.',
+    cta: 'Zoek jouw gemeente op',
+    link: '/waterhardheid',
   },
   algemeen: {
-    title: 'De slimste waterfilter kraan voor thuis',
-    sub: 'Kokend, koud, warm en bruisend water — allemaal gefilterd via omgekeerde osmose. Uit één kraan.',
-    cta: 'Bekijk de PureAqua 4-in-1 kraan',
+    title: 'Welk waterfilter past bij jou?',
+    sub: 'Van eenvoudige filterkannen tot omgekeerde osmose — er is voor elke situatie een passende oplossing. Lees de vergelijking.',
+    cta: 'Bekijk alle filtersoorten',
+    link: '/waterfilter/soorten',
   },
 };
 
@@ -31,37 +35,32 @@ export function CTABanner({ variant = 'default', context = 'algemeen' }: CTABann
 
   if (variant === 'compact') {
     return (
-      <div className="bg-[#005F8A] text-white rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+      <div className="bg-[#E0F2FE] border border-[#005F8A]/20 rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
         <div className="flex-1">
-          <p className="font-semibold text-sm">{c.title}</p>
-          <p className="text-xs text-blue-100 mt-0.5">{c.sub}</p>
+          <p className="font-semibold text-sm text-[#003F5C]">{c.title}</p>
+          <p className="text-xs text-gray-600 mt-0.5">{c.sub}</p>
         </div>
         <a
-          href="https://www.pureaqua.nl"
-          target="_blank"
-          rel="noopener"
-          className="shrink-0 bg-white text-[#005F8A] font-semibold text-sm px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors"
+          href={c.link}
+          className="shrink-0 bg-[#005F8A] text-white font-semibold text-sm px-4 py-2 rounded-lg hover:bg-[#003F5C] transition-colors"
         >
-          Bekijk nu →
+          Lees meer →
         </a>
       </div>
     );
   }
 
   return (
-    <div className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
+    <div className="bg-[#E0F2FE] border border-[#005F8A]/20 rounded-2xl p-6 md:p-8 text-center">
       <div className="text-4xl mb-3">💧</div>
-      <h2 className="text-xl md:text-2xl font-bold mb-2">{c.title}</h2>
-      <p className="text-blue-100 mb-5 max-w-lg mx-auto">{c.sub}</p>
+      <h2 className="text-xl md:text-2xl font-bold text-[#003F5C] mb-2">{c.title}</h2>
+      <p className="text-gray-600 mb-5 max-w-lg mx-auto">{c.sub}</p>
       <a
-        href="https://www.pureaqua.nl"
-        target="_blank"
-        rel="noopener"
-        className="inline-block bg-white text-[#005F8A] font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm md:text-base"
+        href={c.link}
+        className="inline-block bg-[#005F8A] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#003F5C] transition-colors text-sm md:text-base"
       >
         {c.cta} →
       </a>
-      <p className="text-xs text-blue-200 mt-3">pureaqua.nl · Nederlands merk · direct leverbaar</p>
     </div>
   );
 }

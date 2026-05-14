@@ -410,7 +410,7 @@ export default function WaterfilterOnderAanrechtPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               {
-                naam: 'PureAqua 4-in-1 RO-kraan',
+                naam: '4-in-1 kraan met osmose',
                 prijsklasse: '€ 799–1.299',
                 voor: 'Gezinnen die alles-in-één willen',
                 pros: 'Kokend + RO + warm + koud, één jaarlijkse filterwissel, strak design',

@@ -502,22 +502,20 @@ export default async function WaterOntharderGemeentePage({ params }: PageProps) 
               Kalk aanpakken in {gemeente.naam}?
             </p>
             <p className={`${advies.text} opacity-90 text-sm mb-4`}>
-              Bij {gemeente.hardheid}°dH is actie aan te raden. Een omgekeerde osmose filter van PureAqua geeft puur drinkwater zonder kalk, chloor of nitraten — direct op je keukenkraan. Voor volledige huisbescherming is een centrale waterontharder de aanvulling.
+              Bij {gemeente.hardheid}°dH is actie aan te raden. Een omgekeerde osmose filter geeft puur drinkwater zonder kalk, chloor of nitraten — direct op je keukenkraan. Voor volledige huisbescherming is een centrale waterontharder de aanvulling.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.pureaqua.nl"
-                target="_blank"
-                rel="noopener"
-                className="inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
-              >
-                Bekijk PureAqua osmosefilter →
-              </a>
               <Link
                 href="/omgekeerde-osmose/kopen"
+                className="inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
+              >
+                Osmosefilters vergelijken →
+              </Link>
+              <Link
+                href="/waterontharder"
                 className={`inline-block border ${advies.border} ${advies.text} font-semibold px-5 py-2.5 rounded-xl hover:bg-white transition-colors text-sm`}
               >
-                Vergelijk osmosesystemen
+                Waterontharder opties
               </Link>
             </div>
           </div>

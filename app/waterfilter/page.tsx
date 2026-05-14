@@ -119,7 +119,7 @@ const filtertypes = [
     installatiegemak: 'Zelf te installeren (1–2 uur)',
     highlight: true,
     beschrijving:
-      'De 4-in-1 kraan combineert een geïntegreerd osmose-systeem met kokend (100°C), koud gefilterd, warm en bruisend water — allemaal uit één kraan. Dit is de meest complete en ruimtebesparende oplossing. Eén jaarlijkse filterwissel vervangt alle losse patronen. De PureAqua 4-in-1 is momenteel de meest complete combinatie op de Nederlandse markt.',
+      'De 4-in-1 kraan combineert een geïntegreerd osmose-systeem met kokend (100°C), koud gefilterd, warm en bruisend water — allemaal uit één kraan. Dit is de meest complete en ruimtebesparende oplossing. Eén jaarlijkse filterwissel vervangt alle losse patronen.',
   },
 ];
 
@@ -519,8 +519,7 @@ export default function WaterfilterPage() {
             <p className="text-gray-700 mb-3 leading-relaxed">
               De 4-in-1 kraan combineert een geïntegreerd omgekeerde osmose systeem met vier
               waterfuncties: kokend (100°C), koud gefilterd, warm en bruisend water. Dit is de meest
-              complete waterfilter-oplossing voor in de keuken. De PureAqua 4-in-1 is de meest bekende
-              variant in Nederland en combineert alle functies in één elegant kraanontwerp.
+              complete waterfilter-oplossing voor in de keuken, en combineert alle functies in één elegant kraanontwerp.
             </p>
             <p className="text-gray-700 mb-3 leading-relaxed">
               Voordelen: één jaarlijkse filterwissel voor alles, geen aparte waterkoker meer, geen losse

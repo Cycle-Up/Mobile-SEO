@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: '4-in-1 kokend water kraan: koud, warm, heet en kokend | 2026',
   description:
-    'Alles over de 4-in-1 kokend water kraan: wat het biedt, vergelijking met 2-in-1 en 3-in-1, RO als 5e functie en waarom PureAqua de beste 4-in-1+RO keuze is.',
+    'Alles over de 4-in-1 kokend water kraan: wat het biedt, vergelijking met 2-in-1 en 3-in-1, RO als 5e functie en de beste 4-in-1+RO keuze voor thuis.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/4-in-1' },
   openGraph: {
     title: '4-in-1 kokend water kraan: koud, warm, heet en kokend',
@@ -31,7 +31,7 @@ const faqItems = [
   {
     question: 'Is een 4-in-1 kraan met RO-filtratie een 5-in-1?',
     answer:
-      'Technisch gezien wel. Wanneer een 4-in-1 kraan wordt gekoppeld aan een omgekeerde osmose systeem, levert het koud gefilterd, warm gefilterd, heet gefilterd en kokend gefilterd water — plus eventueel ongefilterd kraanwater als bypass. PureAqua hanteert de term "4-in-1 + RO" om aan te geven dat alle vier functies gefilterd zijn via osmose.',
+      'Technisch gezien wel. Wanneer een 4-in-1 kraan wordt gekoppeld aan een omgekeerde osmose systeem, levert het koud gefilterd, warm gefilterd, heet gefilterd en kokend gefilterd water — plus eventueel ongefilterd kraanwater als bypass. De term "4-in-1 + RO" geeft aan dat alle vier functies gefilterd zijn via osmose.',
   },
   {
     question: 'Hoeveel energie verbruikt een 4-in-1 boiler?',
@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: 'Hoe veilig is een 4-in-1 kraan met kokend water?',
     answer:
-      'Kokendwaterkranen hebben standaard kinderbeveiliging: dubbele hendelbediening of een vergrendelknop die simultaan worden bediend om kokend water af te tappen. Accidenteel activeren is daarmee praktisch onmogelijk. De kraan zelf voelt ook niet heet aan — het is de uitloop die kokend water levert. PureAqua heeft CE-certificering en voldoet aan alle Europese veiligheidsnormen.',
+      'Kokendwaterkranen hebben standaard kinderbeveiliging: dubbele hendelbediening of een vergrendelknop die simultaan worden bediend om kokend water af te tappen. Accidenteel activeren is daarmee praktisch onmogelijk. De kraan zelf voelt ook niet heet aan — het is de uitloop die kokend water levert. Kwalitatieve systemen hebben CE-certificering en voldoen aan alle Europese veiligheidsnormen.',
   },
   {
     question: 'Hoe lang gaat een 4-in-1 kraan mee?',
@@ -51,12 +51,12 @@ const faqItems = [
   {
     question: 'Kan ik een 4-in-1 kraan zelf installeren?',
     answer:
-      'Gedeeltelijk. Het mechanische deel (wateraansluiting, filter plaatsen) is in principe doe-het-zelf. De elektrische aansluiting van de boiler (230 V) moet echter worden uitgevoerd door een gecertificeerd elektricien of installateur, conform de Nederlandse Bouwnorm NEN 1010. PureAqua biedt professionele installatie aan als aanvullende service.',
+      'Gedeeltelijk. Het mechanische deel (wateraansluiting, filter plaatsen) is in principe doe-het-zelf. De elektrische aansluiting van de boiler (230 V) moet echter worden uitgevoerd door een gecertificeerd elektricien of installateur, conform de Nederlandse Bouwnorm NEN 1010.',
   },
   {
     question: 'Wat kost een 4-in-1 kraan per jaar aan onderhoud?',
     answer:
-      'Bij PureAqua met RO-filtratie bestaat het onderhoud uit één jaarlijkse filterwissel van het complete filterpakket. Kosten: €60–100 per jaar voor verbruiksfilters. Geen losse koolstofpatronen, geen apart membraanwissel — alles in één handeling. Dit is significant eenvoudiger dan een losstaand RO-systeem met meerdere filterstappen.',
+      'Bij een 4-in-1 systeem met RO-filtratie bestaat het onderhoud uit één jaarlijkse filterwissel van het complete filterpakket. Kosten: €60–100 per jaar voor verbruiksfilters. Geen losse koolstofpatronen, geen apart membraanwissel — alles in één handeling. Dit is significant eenvoudiger dan een losstaand RO-systeem met meerdere filterstappen.',
   },
 ];
 
@@ -100,7 +100,7 @@ export default function KokendWaterKraan4In1Page() {
         article={{
           title: '4-in-1 kokend water kraan: koud, warm, heet en kokend',
           description:
-            'Wat een 4-in-1 tap biedt, vergelijking 2-in-1 en 3-in-1, RO als 5e functie en PureAqua als de beste 4-in-1+RO optie.',
+            'Wat een 4-in-1 tap biedt, vergelijking 2-in-1 en 3-in-1, RO als 5e functie en de beste 4-in-1+RO keuze voor 2026.',
           datePublished: '2025-09-01',
           dateModified: '2026-05-14',
           url: 'https://waterfilterplatform.nl/kokend-water-kraan/4-in-1',
@@ -135,19 +135,17 @@ export default function KokendWaterKraan4In1Page() {
             waterkoker meer. Geen kalkaanslag. Geen plastic flessen.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a
-              href="https://www.pureaqua.nl"
-              target="_blank"
-              rel="noopener"
-              className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
-            >
-              Bekijk de PureAqua 4-in-1+RO kraan →
-            </a>
             <Link
               href="/omgekeerde-osmose/kopen"
+              className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
+            >
+              RO-systeem vergelijken →
+            </Link>
+            <Link
+              href="/kokend-water-kraan/vergelijken"
               className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors text-sm"
             >
-              RO-systeem kopen
+              Merken vergelijken
             </Link>
           </div>
         </div>
@@ -161,7 +159,7 @@ export default function KokendWaterKraan4In1Page() {
             <li><a href="#wat-is" className="hover:underline">Wat doet een 4-in-1 kraan?</a></li>
             <li><a href="#vergelijking" className="hover:underline">Vergelijking 2-in-1, 3-in-1, 4-in-1</a></li>
             <li><a href="#ro-integratie" className="hover:underline">RO als 5e functie</a></li>
-            <li><a href="#pureaqua" className="hover:underline">PureAqua: de beste keuze</a></li>
+            <li><a href="#beste-keuze" className="hover:underline">Wanneer kiezen voor 4-in-1+RO?</a></li>
             <li><a href="#installatie" className="hover:underline">Installatie en onderhoud</a></li>
             <li><a href="#kosten" className="hover:underline">Kosten en terugverdientijd</a></li>
             <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
@@ -285,39 +283,30 @@ export default function KokendWaterKraan4In1Page() {
           </div>
         </section>
 
-        {/* PureAqua */}
-        <section id="pureaqua">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">PureAqua: de beste 4-in-1+RO keuze</h2>
+        {/* Wanneer kiezen voor 4-in-1+RO */}
+        <section id="beste-keuze">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wanneer is een 4-in-1+RO systeem de beste keuze?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            PureAqua is momenteel de toonaangevende aanbieder van 4-in-1 kokendwaterkranen met
-            geïntegreerde omgekeerde osmose filtratie in Nederland. Waarom PureAqua uitspringt:
+            Een 4-in-1 kraan gecombineerd met ingebouwde omgekeerde osmose is het meest complete systeem voor de keuken. Dit zijn de situaties waarin het echt loont:
           </p>
           <div className="bg-gradient-to-br from-[#E0F2FE] to-white rounded-2xl p-6 mb-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 {
-                  kenmerk: 'Geïntegreerde RO-filtratie',
-                  detail: 'Alle vier functies gefilterd via osmose membraan — geen aparte kraan nodig',
+                  kenmerk: 'Hard water in je gemeente',
+                  detail: 'Kalkaanslag in waterkoker, koffiezetapparaat en pan? RO verwijdert 95–99% van kalk.',
                 },
                 {
-                  kenmerk: 'Één jaarlijkse filterwissel',
-                  detail: 'Alles-in-één filterpatroon: geen losse patronen, geen meerstaps gedoe',
+                  kenmerk: 'Je wilt altijd gefilterd water',
+                  detail: 'Alle vier functies gefilterd via osmose membraan — geen aparte kraantje of kan nodig.',
                 },
                 {
-                  kenmerk: 'Strak Nederlands design',
-                  detail: 'Slank design dat past bij moderne keukens, verkrijgbaar in meerdere afwerkingen',
+                  kenmerk: 'Eenvoudig onderhoud',
+                  detail: 'Één jaarlijkse filterwissel voor het complete systeem — geen losse patronen per fase.',
                 },
                 {
-                  kenmerk: 'Directe koeling',
-                  detail: 'Directe koeling van het koudwatertraject — altijd écht koud water zonder wachten',
-                },
-                {
-                  kenmerk: 'CE-gecertificeerd',
-                  detail: 'Voldoet aan alle Europese veiligheidsnormen voor elektrische watertoestellen',
-                },
-                {
-                  kenmerk: 'Nederlandse service',
-                  detail: 'Klantenservice en installatie via Nederlandse partners, snelle levering',
+                  kenmerk: 'Geen waterkoker meer',
+                  detail: 'Instant kokend water elimineert de waterkoker van het aanrecht.',
                 },
               ].map(k => (
                 <div key={k.kenmerk} className="flex gap-2 items-start">
@@ -331,26 +320,7 @@ export default function KokendWaterKraan4In1Page() {
             </div>
           </div>
 
-          {/* Sterke CTA */}
-          <div className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 text-center">
-            <div className="text-4xl mb-3">💧</div>
-            <h3 className="text-xl font-bold mb-2">
-              De PureAqua 4-in-1+RO kraan: gefilterd water op elke temperatuur
-            </h3>
-            <p className="text-blue-100 mb-5 max-w-md mx-auto text-sm leading-relaxed">
-              Koud, warm, heet en kokend water — allemaal gefilterd via omgekeerde osmose.
-              Geen waterkoker meer. Geen kalkaanslag. Één jaarlijkse filterwissel.
-            </p>
-            <a
-              href="https://www.pureaqua.nl"
-              target="_blank"
-              rel="noopener"
-              className="inline-block bg-white text-[#005F8A] font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors"
-            >
-              Bestel de PureAqua 4-in-1+RO →
-            </a>
-            <p className="text-xs text-blue-200 mt-3">pureaqua.nl · Nederlands merk · professionele installatie beschikbaar</p>
-          </div>
+          <CTABanner context="osmose" />
         </section>
 
         {/* Installatie */}
@@ -385,7 +355,7 @@ export default function KokendWaterKraan4In1Page() {
           <p className="text-gray-700 leading-relaxed">
             Doordat het water al gefilterd is via RO, is kalkaanslag in de boiler geen issue.
             Systemen die werken op onbehandeld leidingwater moeten de boiler jaarlijks ontkalken —
-            een extra onderhoudsstap die bij PureAqua overbodig is.
+            een extra onderhoudsstap die bij een 4-in-1+RO systeem overbodig is.
           </p>
         </section>
 
@@ -435,8 +405,8 @@ export default function KokendWaterKraan4In1Page() {
             </table>
           </div>
           <p className="text-sm text-gray-600 mt-3 leading-relaxed">
-            Bij een gezin dat flessenwater drinkt, is de terugverdientijd van een PureAqua
-            4-in-1+RO doorgaans 2 tot 3 jaar. Daarna is het jaarlijkse kostenvoordeel
+            Bij een gezin dat flessenwater drinkt, is de terugverdientijd van een 4-in-1+RO
+            systeem doorgaans 2 tot 3 jaar. Daarna is het jaarlijkse kostenvoordeel
             €300–€500 ten opzichte van de flessenwater + waterkoker combinatie.
           </p>
         </section>
