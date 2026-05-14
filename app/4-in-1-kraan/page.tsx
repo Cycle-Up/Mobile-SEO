@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export function generateMetadata(): Metadata {
   return {
-    title: '4-in-1 kraan: alles over kokend, koud & bruisend water',
+    title: 'Wat is een 4-in-1 kraan? Kokend, koud & bruisend water',
     description:
       'Alles over de 4-in-1 kraan: hoe werkt het systeem, wat kost het, welke merken zijn er en wanneer is zo\'n kraan de juiste keuze? Complete gids inclusief kostentabel.',
     alternates: { canonical: 'https://waterfilterplatform.nl/4-in-1-kraan' },
@@ -203,7 +203,7 @@ export default function VierInEenKraanPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: '4-in-1 kraan: alles over kokend, koud & bruisend water',
+          title: 'Wat is een 4-in-1 kraan? Kokend, koud & bruisend water',
           description:
             'Complete gids over de 4-in-1 kraan: werking, systemen, kosten, merken en onderhoud.',
           datePublished: '2026-05-01',

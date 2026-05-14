@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Grohe Red alternatief: vergelijking & beste opties',
+    title: 'Wat is het beste Grohe Red alternatief? Opties 2026',
     description:
       'Op zoek naar een goedkoper alternatief voor de Grohe Red? Vergelijk prijs, functies en kosten van de beste opties naast Grohe Red in 2026.',
     alternates: { canonical: 'https://waterfilterplatform.nl/grohe-red-alternatief' },

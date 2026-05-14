@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Kokend water kraan — complete gids (2026)',
+  title: 'Kokend water kraan kopen? Complete gids & vergelijking 2026',
   description:
     'Kokend water kraan: hoe werkt het, welke merken zijn er en wat zijn de kosten? Vergelijk Quooker, Grohe, Insinkerator en 4-in-1 systemen met osmose in deze complete gids.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan' },
@@ -168,7 +168,7 @@ export default function KokendWaterKraanPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'Kokend water kraan — complete gids (2026)',
+          title: 'Kokend water kraan kopen? Complete gids & vergelijking 2026',
           description:
             'Alles over de kokend water kraan: werking, soorten, merken, kosten, installatie en onderhoud.',
           datePublished: '2026-01-10',

@@ -7,12 +7,12 @@ import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Kokend water kraan vergelijken — Quooker vs Grohe vs 4-in-1 osmose (2026)',
+  title: 'Welke kokend water kraan is de beste keuze? Vergelijking 2026',
   description:
     'Vergelijk kokend water kranen op prijs, filter, functies en totale kosten over 3 jaar. 4-in-1 osmosekraan, Quooker Combi+, Fusion+CUBE en Grohe Blue Home naast elkaar.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/vergelijken' },
   openGraph: {
-    title: 'Kokend water kraan vergelijken — Quooker vs Grohe vs 4-in-1 osmose (2026)',
+    title: 'Welke kokend water kraan is de beste keuze? Vergelijking 2026',
     description: 'Welke kokend water kraan is het beste voor jou? Eerlijke vergelijking op prijs, filter en totale kosten over 3 jaar.',
   },
 };

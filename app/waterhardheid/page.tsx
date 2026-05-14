@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Waterhardheid per gemeente in Nederland — 2026 overzicht',
+  title: 'Hoe hard is het water bij u? Waterhardheid per gemeente 2026',
   description:
     'Hoe hard is het water in jouw gemeente? Bekijk de waterhardheid (°dH) voor alle Nederlandse gemeenten en wat dat betekent voor jouw waterfilter.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterhardheid' },

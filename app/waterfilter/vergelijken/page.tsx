@@ -6,7 +6,7 @@ import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Waterfilter Vergelijken 2026: Complete Gids',
+  title: 'Welk waterfilter is de beste keuze? Vergelijking 2026',
   description:
     'Waterfilter vergelijken: van koolstofblok en waterfilterkan tot osmosefilter en UV. Ontdek welk type waterfilter het beste bij jouw situatie, budget en waterprobleem past.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/vergelijken' },

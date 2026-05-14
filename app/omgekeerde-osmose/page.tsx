@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Omgekeerde osmose — uitleg, voordelen & filter kopen | 2026',
+  title: 'Wat is omgekeerde osmose? Uitleg & RO filter kopen 2026',
   description:
     'Alles over omgekeerde osmose (RO): hoe het werkt, wat het verwijdert, kosten, onderhoud en welk osmose filter past bij jou. Complete gids.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose' },

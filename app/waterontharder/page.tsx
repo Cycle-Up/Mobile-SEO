@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Waterontharder — werking, kosten en alternatieven',
+  title: 'Heb ik een waterontharder nodig? Werking, kosten & advies',
   description:
     'Alles over de waterontharder: hoe een ionenwisselaar werkt, soorten, kosten aanschaf en zout, onderhoud en wanneer een waterontharder kopen zinvol is.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder' },

@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Quooker alternatief: vergelijking & beste opties (2026)',
+    title: 'Wat is het beste Quooker alternatief? Vergelijking 2026',
     description:
       'Ontdek alternatieven voor Quooker met osmose filter en kokend water. Vergelijk prijs, functies en garantie van de beste merken naast Quooker.',
     alternates: { canonical: 'https://waterfilterplatform.nl/quooker-alternatief' },

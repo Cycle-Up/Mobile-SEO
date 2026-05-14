@@ -5,12 +5,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Waterfilter — types, vergelijking en koopadvies',
+  title: 'Welk waterfilter past bij u? Types & vergelijking 2026',
   description:
     'Welk waterfilter past bij jou? Vergelijk filterkan, koolstoffilter, omgekeerde osmose, waterontharder en 4-in-1 kraan op prijs, zuiverheid en onderhoud.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter' },
   openGraph: {
-    title: 'Waterfilter — types, vergelijking en koopadvies',
+    title: 'Welk waterfilter past bij u? Types & vergelijking 2026',
     description:
       'Complete gids voor het vergelijken van waterfilters: filterkan, koolstoffilter, osmose, waterontharder en 4-in-1 kraan. Met vergelijkingstabel en koopadvies.',
     url: 'https://waterfilterplatform.nl/waterfilter',
@@ -220,7 +220,7 @@ export default function WaterfilterPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'Waterfilter — types, vergelijking en koopadvies',
+          title: 'Welk waterfilter past bij u? Types & vergelijking 2026',
           description:
             'Complete gids over waterfilters: filterkan, koolstof, omgekeerde osmose, waterontharder en 4-in-1 kraan vergeleken op prijs, zuiverheid en onderhoud.',
           datePublished: '2025-10-01',
