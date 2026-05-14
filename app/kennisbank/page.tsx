@@ -2114,6 +2114,20 @@ const artikelen = [
     categorie: 'Waterhardheid',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'osmose-filter-afvalwater',
+    titel: 'Osmosefilter afvalwater: hoeveel en hergebruiken',
+    samenvatting: 'Osmosefilter afvalwater: hoeveel is normaal, waarom onvermijdelijk en hoe je het hergebruikt of beperkt met een waterbesparend RO-systeem.',
+    categorie: 'Osmosefilter',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-koffie-espresso',
+    titel: 'Waterfilter voor espressomachine: kalk en smaak',
+    samenvatting: 'Kalkvorming in espressoboiler voorkomen: BRITA Purity vs. BWT Bestmax, NSF/SCA-normen, vervangingsinterval berekenen en effect op smaak en levensduur.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
