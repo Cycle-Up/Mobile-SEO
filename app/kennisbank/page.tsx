@@ -1995,6 +1995,13 @@ const artikelen = [
     categorie: 'Waterfilters',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'osmose-water-wijn-bier',
+    titel: 'Osmosewater voor thuisbier en wijn: waterprofielen',
+    samenvatting: 'Waterprofielen per bierstijl, Burtonization, sulfaat/chloride-ratio, pH-bijdrage bij wijnzuurheid en brouwzouten-rekentabel voor thuisbrouwers.',
+    categorie: 'Osmosewater',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
