@@ -43,6 +43,31 @@ const faqItems = [
   },
 ];
 
+const itemListSchema = {
+  '@type': 'ItemList',
+  name: 'Kokend Water Kraan Vergelijken 2026',
+  description: 'Vergelijking van 4-in-1 osmosekraan, Quooker Combi+, Quooker Fusion + CUBE en Grohe Blue Home op aanschafprijs, filterkosten en totale kosten over 3 jaar.',
+  numberOfItems: 4,
+  itemListElement: [
+    {
+      '@type': 'ListItem', position: 1,
+      item: { '@type': 'Product', name: '4-in-1 kraan met osmosefilter', description: 'Kokend, koud, warm en bruisend water met ingebouwde omgekeerde osmose filter', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '699', highPrice: '899', offerCount: '1' } },
+    },
+    {
+      '@type': 'ListItem', position: 2,
+      item: { '@type': 'Product', name: 'Quooker Combi+', description: 'Kokend water kraan zonder ingebouwd filter', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '1500', highPrice: '2000', offerCount: '1' } },
+    },
+    {
+      '@type': 'ListItem', position: 3,
+      item: { '@type': 'Product', name: 'Quooker Fusion + CUBE', description: 'Kokend, koud en bruisend water met koolstoffilter', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '2200', highPrice: '2800', offerCount: '1' } },
+    },
+    {
+      '@type': 'ListItem', position: 4,
+      item: { '@type': 'Product', name: 'Grohe Blue Home', description: 'Gefilterd koud en bruisend kraanwater — geen kokend water', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '450', highPrice: '650', offerCount: '1' } },
+    },
+  ],
+};
+
 const tcoData = [
   {
     naam: '4-in-1 kraan met osmose',
@@ -94,6 +119,7 @@ export default function VergelijkenPage() {
           { name: 'Vergelijken', url: 'https://waterfilterplatform.nl/kokend-water-kraan/vergelijken' },
         ]}
       />
+      <SchemaOrg schema={[itemListSchema]} />
 
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">

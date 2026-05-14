@@ -45,6 +45,35 @@ const faqItems = [
   },
 ];
 
+const itemListSchema = {
+  '@type': 'ItemList',
+  name: 'Waterfilter Vergelijken 2026: Complete Gids',
+  description: 'Vergelijking van koolstofblokfilter, waterfilterkan, onderbouw RO, 4-in-1 kokend water kraan en UV-filter op prijs, wat ze verwijderen en installatie.',
+  numberOfItems: 5,
+  itemListElement: [
+    {
+      '@type': 'ListItem', position: 1,
+      item: { '@type': 'Product', name: 'Koolstofblokfilter (under-sink)', description: 'Verwijdert chloor, geur en organische stoffen. Eenvoudige installatie onder het aanrecht.', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '50', highPrice: '150', offerCount: '1' } },
+    },
+    {
+      '@type': 'ListItem', position: 2,
+      item: { '@type': 'Product', name: 'Waterfilterkan', description: 'Filtert via actief koolstof en ionenwisseling. Geen installatie nodig.', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '20', highPrice: '80', offerCount: '1' } },
+    },
+    {
+      '@type': 'ListItem', position: 3,
+      item: { '@type': 'Product', name: 'Onderbouw omgekeerde osmose (RO)', description: 'Verwijdert 95–99% van alle opgeloste stoffen inclusief zware metalen, nitraten en microplastics.', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '150', highPrice: '500', offerCount: '1' } },
+    },
+    {
+      '@type': 'ListItem', position: 4,
+      item: { '@type': 'Product', name: 'Geïntegreerde 4-in-1 kokend water kraan met RO', description: 'Kokend, koud, warm en bruisend gefilterd water uit één kraanpunt met ingebouwde osmose.', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '699', highPrice: '899', offerCount: '1' } },
+    },
+    {
+      '@type': 'ListItem', position: 5,
+      item: { '@type': 'Product', name: 'UV-waterfilter', description: 'Doodt bacteriën en virussen via UV-licht. Verwijdert geen chemische verontreinigingen.', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '80', highPrice: '300', offerCount: '1' } },
+    },
+  ],
+};
+
 const filterTypes = [
   {
     naam: 'Koolstofblokfilter (under-sink)',
@@ -214,6 +243,7 @@ export default function WaterfilterVergelijkenPage() {
           { name: 'Vergelijken', url: 'https://waterfilterplatform.nl/waterfilter/vergelijken' },
         ]}
       />
+      <SchemaOrg schema={[itemListSchema]} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">

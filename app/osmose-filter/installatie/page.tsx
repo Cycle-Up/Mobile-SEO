@@ -8,6 +8,33 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/installatie' },
 };
 
+const howToSchema = {
+  '@type': 'HowTo',
+  name: 'Osmosefilter Installeren: Stap-voor-Stap Handleiding',
+  description: 'Osmosefilter zelf installeren onder het aanrecht in 8 stappen: koudwateraansluiting, afvoerslang, tapkraan boren en eerste spoelcycli.',
+  totalTime: 'PT2H',
+  estimatedCost: { '@type': 'MonetaryAmount', currency: 'EUR', value: '325' },
+  tool: [
+    { '@type': 'HowToTool', name: 'Steeksleutel of moersleutel' },
+    { '@type': 'HowToTool', name: 'Boormachine met steppenboor' },
+    { '@type': 'HowToTool', name: 'PTFE-tape (teflonband)' },
+  ],
+  supply: [
+    { '@type': 'HowToSupply', name: 'Osmosefilter systeem (inclusief drukvat en tapkraan)' },
+    { '@type': 'HowToSupply', name: 'T-stuk 3/8"' },
+  ],
+  step: [
+    { '@type': 'HowToStep', position: '1', name: 'Water afsluiten', text: 'Sluit de hoofdkraan of de afsluitkraan onder het aanrecht. Open de keukenkraan om de resterende druk te ontlasten.' },
+    { '@type': 'HowToStep', position: '2', name: 'T-stuk aansluiten op koudwater', text: 'Schroef het T-stuk op de koudwateraansluiting (3/8" draad). Gebruik PTFE-tape voor een waterdichte aansluiting. Sluit de toevoerslang van het osmosesysteem aan op het T-stuk.' },
+    { '@type': 'HowToStep', position: '3', name: 'Afvoerslang aansluiten', text: 'Sluit de afvoerslang aan op de sifon via de saddle clamp. Boor een 6 mm gaatje in de sifon en klem de afvoerslang vast. De afvoerslang moet omlaag lopen, niet omhoog.' },
+    { '@type': 'HowToStep', position: '4', name: 'Tapkraan boren en plaatsen', text: 'Boor met een steppenboor een gat van 12 mm in de spoelbak of het aanrecht voor de aparte tapkraan. Schroef de tapkraan vast en sluit de productwater-slang aan.' },
+    { '@type': 'HowToStep', position: '5', name: 'Drukvat aansluiten', text: 'Sluit het drukvat aan op het systeem via de productwater-slang. Controleer dat het drukvat vooraf gevuld is met 0,35–0,55 bar luchtdruk. Plaats het drukvat rechtop in de kast.' },
+    { '@type': 'HowToStep', position: '6', name: 'Filters plaatsen', text: 'Schuif de filterpatronen in de filterhuis-bekers (sediment, koolstof voor, koolstof na). Schroef de bekers handvast. Sluit het membraanbehuizing en het membraan aan.' },
+    { '@type': 'HowToStep', position: '7', name: 'Water openen en op lekkage controleren', text: 'Open de waterkraan langzaam. Controleer alle aansluitingen op lekkage. Zet de tapkraan open — nu begint het systeem water te produceren en het drukvat te vullen.' },
+    { '@type': 'HowToStep', position: '8', name: 'Eerste spoelcycli', text: 'Laat het drukvat 2–3 keer volledig vullen en legen. Gooi het eerste spoelwater weg. Na de spoelcycli is het systeem gebruiksklaar.' },
+  ],
+};
+
 const faqSchema = {
   '@type': 'FAQPage',
   mainEntity: [
@@ -51,6 +78,7 @@ export default function OsmoseFilterInstallatiePage() {
     <>
       <SchemaOrg
         schema={[
+          howToSchema,
           faqSchema,
           {
             '@type': 'BreadcrumbList',

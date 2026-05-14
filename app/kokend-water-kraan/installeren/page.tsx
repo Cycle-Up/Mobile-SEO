@@ -142,6 +142,25 @@ const installatieStappen = [
   },
 ];
 
+const howToSchema = {
+  '@type': 'HowTo',
+  name: 'Kokend Water Kraan Installeren: Stap-voor-Stap',
+  description: 'Stap-voor-stap installatie van een kokend water kraan thuis. Van watertoevoer afsluiten tot eerste ingebruikname, inclusief boiler plaatsen en elektrische aansluiting.',
+  totalTime: 'PT3H',
+  estimatedCost: { '@type': 'MonetaryAmount', currency: 'EUR', value: '0' },
+  tool: [
+    { '@type': 'HowToTool', name: 'Stiftsleutel' },
+    { '@type': 'HowToTool', name: 'Gatenzaag 35–38 mm' },
+    { '@type': 'HowToTool', name: 'Schroevendraaier' },
+  ],
+  step: installatieStappen.map(s => ({
+    '@type': 'HowToStep',
+    position: String(s.nr),
+    name: s.titel,
+    text: s.beschrijving,
+  })),
+};
+
 const osmoseExtra = [
   {
     stap: 'Osmosemodule plaatsen',
@@ -254,6 +273,7 @@ export default function KokendWaterKraanInstallerenPage() {
           { name: 'Installeren', url: 'https://waterfilterplatform.nl/kokend-water-kraan/installeren' },
         ]}
       />
+      <SchemaOrg schema={[howToSchema]} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">

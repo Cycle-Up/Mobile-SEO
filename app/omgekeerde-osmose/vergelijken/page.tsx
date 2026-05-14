@@ -45,6 +45,27 @@ const faqItems = [
   },
 ];
 
+const itemListSchema = {
+  '@type': 'ItemList',
+  name: 'Omgekeerde Osmose Systemen Vergelijken 2026',
+  description: 'Vergelijking van onderbouw RO, aanrechtmodel en geïntegreerde 4-in-1 kokend water kraan met osmosefilter op prijs, doorstroom en filterkosten.',
+  numberOfItems: 3,
+  itemListElement: [
+    {
+      '@type': 'ListItem', position: 1,
+      item: { '@type': 'Product', name: 'Onderbouw RO (Under-Sink)', description: 'Klassiek onderbouwsysteem voor puur drinkwater', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '150', highPrice: '500', offerCount: '1' } },
+    },
+    {
+      '@type': 'ListItem', position: 2,
+      item: { '@type': 'Product', name: 'Aanrechtmodel Osmosefilter (Countertop RO)', description: 'Vrijstaand aanrechtmodel, eenvoudig te installeren zonder boren', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '100', highPrice: '350', offerCount: '1' } },
+    },
+    {
+      '@type': 'ListItem', position: 3,
+      item: { '@type': 'Product', name: 'Geïntegreerde 4-in-1 Kokend Water Kraan met Osmose', description: 'Premium alles-in-één systeem: kokend, koud, warm en bruisend water met ingebouwde omgekeerde osmose', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '699', highPrice: '899', offerCount: '1' } },
+    },
+  ],
+};
+
 const systemen = [
   {
     naam: 'Onderbouw RO (Under-Sink)',
@@ -150,6 +171,7 @@ export default function OsmoseVergelijkenPage() {
           { name: 'Vergelijken', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/vergelijken' },
         ]}
       />
+      <SchemaOrg schema={[itemListSchema]} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
