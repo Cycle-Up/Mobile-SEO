@@ -1729,6 +1729,41 @@ const artikelen = [
     categorie: 'Waterfilters',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'leidingwater-vs-bronwater-fles',
+    titel: 'Leidingwater vs bronwater in fles: de vergelijking',
+    samenvatting: 'Vergelijk kwaliteit, mineralen, microplastics, CO2-voetafdruk en kosten per liter. Blind taste tests, EU-normen en wanneer flessenwater wél zinvol is.',
+    categorie: 'Drinkwater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'osmose-water-diabetes-type2',
+    titel: 'Osmosewater en diabetes type 2: wat zegt onderzoek?',
+    samenvatting: 'Arseen en PFAS in drinkwater gelinkt aan verhoogd diabetesrisico. Hoe osmosefilter deze stoffen verwijdert en wat het betekent voor mensen met diabetes type 2.',
+    categorie: 'Osmosewater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'osmose-water-zelf-produceren',
+    titel: 'Zelf osmosewater produceren: complete gids',
+    samenvatting: 'Benodigde waterdruk, boosterpomp, productiecapaciteit berekenen, opslag in drukvat vs reservoir, kosten per liter en vergelijking met flessenwater.',
+    categorie: 'Osmosefilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-keuken-renovatie-planning',
+    titel: 'Waterfilter bij keukenrenovatie: planning en installatie',
+    samenvatting: '3 kritieke renovatiemomenten, elektra voor boilers, afvoer-opties en kostenscenarios van &lt;€300 tot &gt;€700 voor een complete waterfilterinstallatie.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterontharder-douche-huid-haar',
+    titel: 'Waterontharder effect op huid en haar: onderzoek',
+    samenvatting: 'Dermatologisch onderzoek naar hard water en eczeem, hoe zachter water zeep beter uitwast, huidhydratatie, haarglans en filterduche als alternatief.',
+    categorie: 'Waterontharders',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
