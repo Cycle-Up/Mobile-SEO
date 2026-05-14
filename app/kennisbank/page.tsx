@@ -2149,6 +2149,27 @@ const artikelen = [
     categorie: 'Waterontharder',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'drinkwater-mineralen',
+    titel: 'Mineralen in drinkwater: wat zit er in kraanwater?',
+    samenvatting: 'Overzicht van mineralen in kraanwater: calcium, magnesium, natrium, kalium. Hoeveel draagt drinkwater bij aan de dagelijkse behoefte en wanneer is extra filteren zinvol?',
+    categorie: 'Drinkwater',
+    datum: '14 mei 2026',
+  },
+  {
+    slug: 'reverse-osmosis-werking',
+    titel: 'Hoe werkt omgekeerde osmose? Technisch uitgelegd',
+    samenvatting: 'Het werkingsprincipe van omgekeerde osmose: membraanfiltratie, osmotische druk, TDS-reductie en het verschil met nanofiltration. Voor wie de techniek begrijpen wil.',
+    categorie: 'Omgekeerde osmose',
+    datum: '14 mei 2026',
+  },
+  {
+    slug: 'waterfilter-versus-waterkoker',
+    titel: 'Waterfilter versus waterkoker: wat filtert beter?',
+    samenvatting: 'Vergelijking waterfilter vs. waterkoker: wat verwijdert koken eigenlijk, wat blijft achter en wanneer heb je een filter nodig? Met tabel per verontreiniging.',
+    categorie: 'Waterfilters',
+    datum: '14 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import CTABanner from '@/components/CTABanner';
-import SchemaOrg from '@/components/SchemaOrg';
+import { CTABanner } from '@/components/CTABanner';
+import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Chloor uit Drinkwater Filteren: Smaak & Methoden',

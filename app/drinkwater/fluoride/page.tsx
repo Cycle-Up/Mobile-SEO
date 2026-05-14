@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import CTABanner from '@/components/CTABanner';
-import SchemaOrg from '@/components/SchemaOrg';
+import { CTABanner } from '@/components/CTABanner';
+import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Fluoride in Nederlands Drinkwater: Feiten & Filters',
@@ -115,7 +115,7 @@ export default function DrinkwaterFluoridePage() {
                 <td className="border border-gray-300 px-3 py-2">1,5 mg/L</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-3 py-2">Fluoride-risico (>4 mg/L)</td>
+                <td className="border border-gray-300 px-3 py-2">Fluoride-risico (&gt;4 mg/L)</td>
                 <td className="border border-gray-300 px-3 py-2">Skeletfluorose (chronisch)</td>
               </tr>
               <tr>

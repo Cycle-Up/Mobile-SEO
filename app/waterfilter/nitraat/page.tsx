@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import CTABanner from '@/components/CTABanner';
-import SchemaOrg from '@/components/SchemaOrg';
+import { CTABanner } from '@/components/CTABanner';
+import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Nitraat in Drinkwater Filteren: Baby\'s & Privéputten',

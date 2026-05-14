@@ -9,7 +9,7 @@ interface BreadcrumbItem {
 }
 
 interface SchemaOrgProps {
-  type: 'FAQPage' | 'Article' | 'BreadcrumbList' | 'Organization' | 'WebSite';
+  type?: 'FAQPage' | 'Article' | 'BreadcrumbList' | 'Organization' | 'WebSite';
   faqItems?: FAQItem[];
   article?: {
     title: string;
@@ -19,13 +19,27 @@ interface SchemaOrgProps {
     url: string;
   };
   breadcrumbs?: BreadcrumbItem[];
+  schema?: object[];
 }
 
-export function SchemaOrg({ type, faqItems, article, breadcrumbs }: SchemaOrgProps) {
-  let schema: object;
+export function SchemaOrg({ type, faqItems, article, breadcrumbs, schema }: SchemaOrgProps) {
+  if (schema) {
+    return (
+      <>
+        {schema.map((s, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', ...s }) }}
+          />
+        ))}
+      </>
+    );
+  }
+  let schemaObj: object;
 
   if (type === 'FAQPage' && faqItems) {
-    schema = {
+    schemaObj = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       mainEntity: faqItems.map(item => ({
@@ -38,7 +52,7 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs }: SchemaOrgPro
       })),
     };
   } else if (type === 'Article' && article) {
-    schema = {
+    schemaObj = {
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: article.title,
@@ -53,7 +67,7 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs }: SchemaOrgPro
       },
     };
   } else if (type === 'BreadcrumbList' && breadcrumbs) {
-    schema = {
+    schemaObj = {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: breadcrumbs.map((item, index) => ({
@@ -64,7 +78,7 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs }: SchemaOrgPro
       })),
     };
   } else if (type === 'Organization') {
-    schema = {
+    schemaObj = {
       '@context': 'https://schema.org',
       '@type': 'Organization',
       name: 'WaterfilterPlatform',
@@ -74,7 +88,7 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs }: SchemaOrgPro
       sameAs: ['https://www.pureaqua.nl'],
     };
   } else if (type === 'WebSite') {
-    schema = {
+    schemaObj = {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: 'WaterfilterPlatform',
@@ -97,7 +111,7 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs }: SchemaOrgPro
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaObj) }}
     />
   );
 }
