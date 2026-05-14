@@ -2107,6 +2107,13 @@ const artikelen = [
     categorie: 'Waterfilters',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'hard-water-voordelen-nadelen',
+    titel: 'Hard water: voordelen én nadelen op een rij',
+    samenvatting: 'Calcium en hart, kalkschade, huidirritatie, haarglans, smaak van koffie: alle voor- en nadelen van hard water en wanneer een waterontharder zinvol is.',
+    categorie: 'Waterhardheid',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
