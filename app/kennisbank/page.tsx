@@ -1778,6 +1778,62 @@ const artikelen = [
     categorie: 'Waterontharders',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'waterfilter-hond-kat-huisdier',
+    titel: 'Waterfilter voor hond, kat en andere huisdieren',
+    samenvatting: 'Waarom chloor en fluoride schadelijker zijn voor kleine dieren, wat dierenartsen adviseren, filteropties voor drinkfontein en wanneer osmosewater zinvol is.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'osmose-water-espresso-machine',
+    titel: 'Osmosewater in espressomachine: beschermt het de boiler?',
+    samenvatting: 'Waarom te zacht water corrosief is, optimaal TDS 75-125 voor espresso, De\'Longhi/Jura/Siemens instellingen en remineralisatie voor koffiemachines.',
+    categorie: 'Osmosewater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-sport-fitness',
+    titel: 'Waterfilter voor sport en fitness: elektrolyten',
+    samenvatting: 'Waterkwaliteit en prestatievermogen, DIY isotone sportdrank met osmosewater en zouten, draagbare filters voor outdoor sport en vergelijking sportdranken.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'hard-water-wasmachine-schade',
+    titel: 'Hard water en wasmachine: kalkschade en oplossingen',
+    samenvatting: '1 mm kalk = 10% meer energieverbruik: wasmachineschade door hard water, trommelroest, weefselschade en ROI-berekening waterontharder vs wasverzachter.',
+    categorie: 'Kalk & Ontkalking',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-tiny-house',
+    titel: 'Waterfilter in tiny house of off-grid woning',
+    samenvatting: 'Compacte RO-systemen, regenwater recycling, UV-desinfectie, grijswater separatie, batterijgevoede pompen en capaciteitsplanning voor 1-2 personen.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-studentenwoning',
+    titel: 'Waterfilter voor studentenkamer: goedkope opties',
+    samenvatting: 'Filterkruik, op-kraan filter, kleine RO zonder installatie: goedkoopste opties voor studenten (&lt;€5/maand) en drinkwaterkwaliteit in studentensteden.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'osmose-systeem-vergelijken',
+    titel: 'Osmosesysteem vergelijken: 3, 5 of 6-traps?',
+    samenvatting: 'Wat elke filterfase doet, wanneer extra fases nodig zijn en merkvergelijking op GPD, TDS-reductie, prijs en garantie voor het juiste systeem.',
+    categorie: 'Osmosefilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'drinkwater-sporters-atleten',
+    titel: 'Drinkwater voor sporters: mineralen en herstel',
+    samenvatting: 'Elektrolytenverlies bij training, osmosewater als schone basis voor sportdranken, nitraat-onderscheid en vergelijking met isotone sportdranken.',
+    categorie: 'Drinkwater',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
