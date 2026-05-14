@@ -2128,6 +2128,13 @@ const artikelen = [
     categorie: 'Waterfilters',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'osmose-water-tds-meter',
+    titel: 'TDS-meter bij osmosefilter: meten en interpreteren',
+    samenvatting: 'Wat een TDS-meter meet (en niet), optimale TDS na osmose (50-80 mg/L), wanneer het membraan vervangen (10% stijging), kalibratie en pen vs. inline meter.',
+    categorie: 'Osmosewater',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
