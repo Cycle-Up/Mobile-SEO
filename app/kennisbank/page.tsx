@@ -2135,6 +2135,20 @@ const artikelen = [
     categorie: 'Osmosewater',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'waterfilter-reizen-buitenland',
+    titel: 'Waterfilter voor reizen en buitenland',
+    samenvatting: 'Draagbare filters voor reizen: LifeStraw, Sawyer, Berkey Travel, UV-pen vergeleken. Welke landen riskant zijn en hoe je virussen én bacteriën uitschakelt.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterontharder-kinderen-gezin',
+    titel: 'Waterontharder en kinderen: is zacht water veilig?',
+    samenvatting: 'Is zacht water veilig voor baby\'s en kinderen? Natriumtoename bij ionenwisseling, aanbevelingen babyvoeding, WHO-richtlijnen en praktische tips voor gezinnen.',
+    categorie: 'Waterontharder',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
