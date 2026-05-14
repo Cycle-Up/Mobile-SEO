@@ -48,12 +48,33 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+function extractFaqItems(markdown: string) {
+  const items: { question: string; answer: string }[] = [];
+  const sections = markdown.split(/\n(?=#{1,3} )/);
+  for (const section of sections) {
+    const lines = section.split('\n');
+    const heading = lines[0].replace(/^#{1,3} /, '').trim();
+    if (!heading.endsWith('?')) continue;
+    const answer = lines
+      .slice(1)
+      .join('\n')
+      .replace(/\*\*|__|\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .split(/\n\n+/)
+      .map(p => p.trim())
+      .find(p => p.length > 30 && !p.startsWith('#') && !p.startsWith('|') && !p.startsWith('-') && !p.startsWith('1.'));
+    if (answer) items.push({ question: heading, answer });
+    if (items.length >= 8) break;
+  }
+  return items;
+}
+
 export default async function KennisbankArtikelPage({ params }: PageProps) {
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) notFound();
 
   const { title, description, date, lastModified, quickAnswer } = article.data;
+  const faqItems = extractFaqItems(article.content);
 
   return (
     <>
@@ -67,6 +88,9 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           url: `https://waterfilterplatform.nl/kennisbank/${slug}`,
         }}
       />
+      {faqItems.length >= 2 && (
+        <SchemaOrg type="FAQPage" faqItems={faqItems} />
+      )}
       <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
