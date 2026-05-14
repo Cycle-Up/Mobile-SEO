@@ -1834,6 +1834,13 @@ const artikelen = [
     categorie: 'Drinkwater',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'waterontharder-zout-tekort',
+    titel: 'Waterontharder werkt niet meer door zout tekort',
+    samenvatting: 'Te lang geen zout in waterontharder? Hoe je het hars herstelt, versnelde regeneratie instelt en wanneer hars vervangen moet.',
+    categorie: 'Waterontharders',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
