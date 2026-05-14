@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Gemeente } from '@/data/gemeenten';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { GemeenteLinks } from '@/components/GemeenteLinks';
 
 interface PageProps {
   params: Promise<{ gemeente: string }>;
@@ -144,6 +145,19 @@ export default async function DrinkwaterPage({ params }: PageProps) {
           { name: 'Home', url: 'https://waterfilterplatform.nl' },
           { name: `Drinkwater ${gemeente.naam}`, url: `https://waterfilterplatform.nl/drinkwater/${gemeente.slug}` },
         ]}
+      />
+      <SchemaOrg
+        schema={[{
+          '@type': 'Place',
+          name: gemeente.naam,
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: gemeente.naam,
+            addressRegion: gemeente.provincie,
+            addressCountry: 'NL',
+          },
+          description: `${gemeente.naam} heeft leidingwater met een hardheid van ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}), geleverd door ${gemeente.waterbedrijf}.`,
+        }]}
       />
 
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
@@ -353,6 +367,8 @@ export default async function DrinkwaterPage({ params }: PageProps) {
             </div>
           </section>
         )}
+
+        <GemeenteLinks gemeente={gemeente} currentPath="drinkwater" />
 
         {/* FAQ */}
         <section>
