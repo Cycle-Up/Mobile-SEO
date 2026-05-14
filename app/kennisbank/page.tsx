@@ -1890,6 +1890,48 @@ const artikelen = [
     categorie: 'Waterfilters',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'osmose-water-planten-kamerplanten',
+    titel: 'Osmosewater voor kamerplanten: per soort uitgelegd',
+    samenvatting: 'Orchideeën, vleesetende planten, calathea, bonsai — elk met ideale TDS en pH, remineralisatie per plantentype en symptomen van hard water.',
+    categorie: 'Osmosewater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-hormonen-medicijnen',
+    titel: 'Hormonen en medicijnresten in drinkwater',
+    samenvatting: 'Oestrogeen, antidepressiva, ibuprofen, metformine in drinkwater: concentraties, EU-normen, welke filters effectief zijn en wat waterbedrijven doen.',
+    categorie: 'Drinkwater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterhardheid-zeep-shampoo',
+    titel: 'Waterhardheid en zeep: waarom schuimt het niet?',
+    samenvatting: 'Calciumstearaat vorming, 30-50% meer zeepverbruik bij hard water, kalkranden in douche, effecten op huid en haar en de oplossingen.',
+    categorie: 'Waterhardheid',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-glastuinbouw',
+    titel: 'Waterfilter voor hydroponics en glastuinbouw',
+    samenvatting: 'EC-waarden per teelt, ontijzering voor druppelaars, osmosewater als basis voor nutriëntenoplossing en RO voor gesloten recirculatiesystemen.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-antibiotica-resistentie',
+    titel: 'Antibiotica-resistente bacteriën in drinkwater',
+    samenvatting: 'Hoe resistente bacteriën in oppervlaktewater terechtkomen, concentraties gemeten in NL, welke filters (RO, UV) effectief zijn en het WHO-standpunt.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-brouwen-koffie-bar',
+    titel: 'Waterfilter voor koffiebars: NSF, SCAE en kosten',
+    samenvatting: 'NSF-gecertificeerde filters, SCA waterstandaard, kalkschadekosten €500-2.000 vs €80/jaar filter en welke systemen grote volumes aankunnen.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
