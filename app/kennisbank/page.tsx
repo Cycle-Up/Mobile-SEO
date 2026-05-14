@@ -1841,6 +1841,55 @@ const artikelen = [
     categorie: 'Waterontharders',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'kalk-cv-leidingen-preventie',
+    titel: 'Kalk in CV-leidingen en radiatoren: preventie',
+    samenvatting: 'Verschil CV-kring en drinkwaterkring, inhibitors voor verwarming, pH van CV-water, systemflush uitvoeren en osmosewater voor CV-bijvullen.',
+    categorie: 'Kalk & Ontkalking',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-koper-leidingen',
+    titel: 'Koper in drinkwater: wanneer is het een probleem?',
+    samenvatting: 'Koper leidingen in woningen jaren 60-90, groene aanslag in kraanwater, WHO-norm 2 mg/L, lage pH als risicofactor en welke filters koper verwijderen.',
+    categorie: 'Drinkwater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterontharder-stroom-verbruik',
+    titel: 'Stroomverbruik waterontharder: hoeveel energie?',
+    samenvatting: 'Tijdgestuurd vs volumegestuurd energieverbruik, wachtstand per merk, jaarkosten bij €0,35/kWh en smart timer instellen om energie te besparen.',
+    categorie: 'Waterontharders',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'kraanwater-analyse-laboratorium',
+    titel: 'Kraanwater laten analyseren: lab, kosten & methode',
+    samenvatting: 'KIWA-gecertificeerde labs in Nederland, kosten per pakket, hoe monsters nemen, welke parameters testen en resultaten interpreteren.',
+    categorie: 'Drinkwater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'osmose-water-thee',
+    titel: 'Osmosewater voor thee: de perfecte kop thee',
+    samenvatting: 'TDS en pH voor optimale thee-extractie, verschil groene/zwarte thee, hoe zacht water kleur en smaak verandert en ideale waterparameters per theesoort.',
+    categorie: 'Osmosewater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-legionella-collectief',
+    titel: 'Legionella in collectieve waterinstallaties',
+    samenvatting: 'Wettelijke risicoanalyse voor scholen/kantoren, beheersplan, temperatuurmonitoring 60°C, UV-filters en verantwoordelijkheid beheerder vs. eigenaar.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-legionella-preventie',
+    titel: 'Waterfilter en Legionella-preventie thuis',
+    samenvatting: 'Wanneer verhogen filters het Legionella-risico? Temperatuurzones, UV-filters, collectieve installaties en wat particulieren kunnen doen.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
