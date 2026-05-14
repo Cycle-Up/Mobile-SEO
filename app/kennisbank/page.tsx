@@ -1764,6 +1764,20 @@ const artikelen = [
     categorie: 'Waterontharders',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'kraanwater-bruisend-maken',
+    titel: 'Kraanwater bruisend maken thuis: alle opties',
+    samenvatting: 'Sodastream vs kraan-integratie: CO2-patronen, installatie, maandkosten en combinatie met osmosewater voor thuisgemaakt bruisend water.',
+    categorie: 'Drinkwater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterontharder-hoe-werkt-regeneratie',
+    titel: 'Hoe werkt regeneratie van een waterontharder?',
+    samenvatting: 'Stap-voor-stap: terugspolen, zout inlaten, regeneratie, naspoelen. Tijdgestuurd vs volumegestuurd, zoutefficiëntie, brine en milieu, nacht-timer instellen.',
+    categorie: 'Waterontharders',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
