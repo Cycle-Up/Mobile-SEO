@@ -1981,6 +1981,20 @@ const artikelen = [
     categorie: 'Waterfilters',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'drinkwater-smaak-verbeteren',
+    titel: 'Drinkwater smaak verbeteren: 7 methoden van simpel tot pro',
+    samenvatting: 'Van citroen toevoegen tot osmosefilter: 7 methoden om drinkwater lekkerder te maken. Kosten per methode, smaaktestresultaten en temperatuureffect.',
+    categorie: 'Drinkwater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-hydroponics-kweken',
+    titel: 'Waterfilter voor hydroponics: EC, TDS en osmosewater',
+    samenvatting: 'EC en TDS van startwater bij hydrocultuur: osmosewater als basis voor nutriëntenoplossing bij tomaten, sla en commerciële teelt. Praktische instelling.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
