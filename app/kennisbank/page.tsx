@@ -1932,6 +1932,55 @@ const artikelen = [
     categorie: 'Waterfilters',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'osmose-water-ijsmachine',
+    titel: 'Osmosewater voor ijsmachine: helder ijs zonder vlekken',
+    samenvatting: 'Waarom kraanwater troebel ijs geeft en hoe osmosewater kristalhelder ijs produceert. Optimale TDS 50-100 mg/L, professionele bar-technieken.',
+    categorie: 'Osmosewater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterontharder-milieu-impact',
+    titel: 'Waterontharder en milieu: zout, water en energie',
+    samenvatting: 'Hoeveel zout en water verbruikt een waterontharder? CO2-voetafdruk van regeneratie, vergelijking met osmosefilter en milieuvoordelen van zacht water.',
+    categorie: 'Waterontharder',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-antibiotica-resistentie',
+    titel: 'Antibiotica-resistente bacteriën in drinkwater filteren',
+    samenvatting: 'Antibioticaresistente bacteriën in oppervlaktewater: wat drinkwaterbedrijven doen, gemeten concentraties en welke filters (RO, UV) effectief zijn.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'kraanwater-hardheid-tabel',
+    titel: "Waterhardheid tabel Nederland: alle regio's op een rij",
+    samenvatting: "Volledige tabel met waterhardheid per waterleidingbedrijf, van zacht Zeeuws water tot keihard Limburgs water. Met gevolgen per zone.",
+    categorie: 'Waterhardheid',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'osmose-water-gezondheid-huid',
+    titel: 'Osmosewater voor huidverzorging: zachter water voor huid',
+    samenvatting: 'Osmosewater voor gezichtswas, haarwassen, eczeem en rosacea. Wat dermatologen zeggen over zacht water en de effecten op huidgezondheid.',
+    categorie: 'Osmosewater',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-warmtepomp',
+    titel: 'Waterfilter voor warmtepomp: kwaliteit en rendement',
+    samenvatting: 'Kalkvorming in warmtewisselaars, osmosewater voor HMI-systemen, rendementsverlies en filteraanbevelingen voor warmtepompen en installateurs.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-zonnepanelen-reinigen',
+    titel: 'Waterfilter voor zonnepanelen reinigen: kalkloos water',
+    samenvatting: 'Kalkvrij water voorkomt vlekken op zonnepanelen. Hoe RO+DI-systemen werken, kosten vs. kalkverwijderaar en rendementsverlies door kalkvlekken.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
