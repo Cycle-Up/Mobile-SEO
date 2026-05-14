@@ -1645,6 +1645,27 @@ const artikelen = [
     categorie: 'Waterhardheid',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'waterfilter-kalkvrij-thuis',
+    titel: 'Kalkvrij thuis: welke aanpak loont het meest?',
+    samenvatting: 'Gids kalkvrij thuis: welke apparaten het meest last hebben, prioritering per interventie, ROI-berekening en totale jaarlijkse kalkschade voor een gemiddeld huishouden.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'osmose-filter-ruimte',
+    titel: 'Hoeveel ruimte heeft een osmosefilter nodig?',
+    samenvatting: 'Afmetingen standaard 5-traps systeem, kompakte vs standaard, tankloze systemen, installatie onder IKEA/Bruynzeel aanrecht en benodigde plafondruimte.',
+    categorie: 'Osmosefilters',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-vlees-bereiden',
+    titel: 'Waterfilter bij vlees bereiden: zinvol of overkill?',
+    samenvatting: 'Invloed van waterfilter op vlees marineren, sous-vide, bouillon trekken en braden. Welke contaminanten relevant zijn en wanneer osmosewater echt verschil maakt.',
+    categorie: 'Waterfilters',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
