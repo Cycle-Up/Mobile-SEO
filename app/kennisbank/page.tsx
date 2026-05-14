@@ -1512,6 +1512,34 @@ const artikelen = [
     categorie: 'Vergelijken',
     datum: '13 mei 2026',
   },
+  {
+    slug: 'osmose-membraan-kopen',
+    titel: 'Osmose membraan kopen: types, merken en compatibiliteit',
+    samenvatting: 'TFC/TFM/BW membraantypes, GPD selectie, merken Filmtec/Hydranautics/CSM/Vontron, compatibiliteit met filterhuizing en prijs €20–100.',
+    categorie: 'Osmose',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-horeca-nederland',
+    titel: 'Waterfilter voor HORECA in Nederland: complete gids',
+    samenvatting: 'NVWA-eisen drinkwater in horeca, kalkaanslag espressomachines, BRITA PRO vs Everpure vs eigen RO, kosten per horecatype per maand.',
+    categorie: 'Toepassingen',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterfilter-terrarium',
+    titel: 'Waterfilter voor terrarium en reptielen',
+    samenvatting: 'Chloor en fluoride gevaarlijk voor amfibieën en reptielen. Welke soorten zijn gevoelig? Osmose vs dechloreringstablet, kosten per maand.',
+    categorie: 'Toepassingen',
+    datum: '13 mei 2026',
+  },
+  {
+    slug: 'waterkwaliteit-analyse-thuis',
+    titel: 'Waterkwaliteit analyse thuis: tests en grenswaarden',
+    samenvatting: 'TDS, pH, chloor, hardheid en nitraat testen thuis. Teststrips vs elektronische meters, betrouwbaarheid en grenswaarden voor beginners.',
+    categorie: 'Waterkwaliteit',
+    datum: '13 mei 2026',
+  },
 ];
 
 export default function KennisbankPage() {
