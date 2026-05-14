@@ -7,6 +7,7 @@ import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -52,7 +53,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
   const article = getArticle(slug);
   if (!article) notFound();
 
-  const { title, description, date, lastModified } = article.data;
+  const { title, description, date, lastModified, quickAnswer } = article.data;
 
   return (
     <>
@@ -96,6 +97,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10">
+        {quickAnswer && <QuickAnswer answer={quickAnswer} />}
         <article className="prose max-w-none">
           <MDXRemote source={article.content} />
         </article>
