@@ -60,6 +60,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/omgekeerde-osmose/prijs`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE}/waterfilter/vergelijken`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE}/leidingwater`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${BASE}/drinkwater/kwaliteit`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/kopen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/osmose-water/ph`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/osmose-water/remineralisatie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/gezondheid`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterfilter/vervangen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/voor-hard-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterontharder/zout`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
