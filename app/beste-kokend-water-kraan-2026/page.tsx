@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { TrustBar } from '@/components/TrustBar';
 
 export function generateMetadata(): Metadata {
   return {
@@ -253,6 +254,8 @@ export default function BesteKokendWaterKraan2026Page() {
           url: 'https://waterfilterplatform.nl/beste-kokend-water-kraan-2026',
         }}
       />
+
+      <TrustBar />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">

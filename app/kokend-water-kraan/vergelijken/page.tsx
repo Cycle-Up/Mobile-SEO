@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { ComparisonTable } from '@/components/ComparisonTable';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { TrustBar } from '@/components/TrustBar';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan vergelijken — Quooker vs Grohe vs 4-in-1 osmose (2026)',
@@ -120,6 +121,8 @@ export default function VergelijkenPage() {
         ]}
       />
       <SchemaOrg schema={[itemListSchema]} />
+
+      <TrustBar />
 
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">

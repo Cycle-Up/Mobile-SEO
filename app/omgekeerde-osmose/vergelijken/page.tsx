@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { TrustBar } from '@/components/TrustBar';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde Osmose Vergelijken 2026: Welk Systeem?',
@@ -172,6 +173,8 @@ export default function OsmoseVergelijkenPage() {
         ]}
       />
       <SchemaOrg schema={[itemListSchema]} />
+
+      <TrustBar />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">

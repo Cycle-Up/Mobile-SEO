@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { TrustBar } from '@/components/TrustBar';
 
 export const metadata: Metadata = {
   title: 'Beste osmosefilter 2026: top 5 eerlijk vergeleken',
@@ -307,6 +308,8 @@ export default function BesteOsmosefilter2026Page() {
           },
         ]}
       />
+
+      <TrustBar />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
