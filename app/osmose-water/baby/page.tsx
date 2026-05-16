@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Osmose water voor baby\'s: veilig voor babyvoeding? (2026)',
-  description: 'Is osmose water veilig voor babyvoeding? WHO-richtlijn, TDS-waarden, remineralisatie als oplossing. Wat osmose verwijdert (nitraat, lood, PFAS) en wanneer het ideaal is voor baby\'s.',
+  title: 'Osmosewater voor babyvoeding: WHO-richtlijnen en remineralisatie',
+  description:
+    'Osmosewater is geschikt voor babyvoeding mits de juiste mineraalsamenstelling. WHO adviseert maximaal 200 mg/L TDS voor babywater. Bij osmosewater (TDS 5-30) is remineralisatie aan te raden om calcium en magnesium toe te voegen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/baby' },
 };
 
@@ -13,66 +16,58 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Is osmose water veilig voor babyvoeding?',
+      name: 'Is osmosewater veilig voor de voeding van een baby?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Puur osmose water (TDS 10–30 mg/L) wordt door de WHO afgeraden voor babyvoeding omdat het te weinig mineralen bevat. Osmose water mét remineralisatie (TDS 150–250 mg/L) is echter uitstekend geschikt: het combineert de verwijdering van schadelijke stoffen (nitraat, lood, PFAS, bacteriën) met een mineralengehalte vergelijkbaar met geschikt kraanwater. Controleer altijd of het remineralisatiefilter is geplaatst.',
+        text: 'Osmosewater is veilig voor babyvoeding mits het voorzien is van een remineralisatiefilter. Puur osmosewater heeft een TDS van 5-30 mg/L, wat betekent dat calcium en magnesium vrijwel volledig afwezig zijn. Dit is op zichzelf niet direct schadelijk, maar suboptimaal voor de mineraalinname van de baby. Met een remineralisatiefilter wordt de TDS verhoogd naar 80-120 mg/L met een gezonde calcium- en magnesiumverhouding, wat ideaal is voor babyvoeding.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Wat zegt de WHO over gedemineraliseerd water voor baby\'s?',
+      name: 'Wat zijn de WHO-richtlijnen voor water bij babyvoeding?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'De WHO heeft in haar richtlijnen aangegeven dat volledig gedemineraliseerd water niet aanbevolen wordt voor het bereiden van babyvoeding. Babymelkpoeder veronderstelt een bepaald mineralengehalte in het aanmaakwater. Bij gebruik van water met extreem laag TDS (onder 50 mg/L) kunnen de mineraalverhoudingen in de bereide voeding onjuist worden. Osmose + remineralisatie lost dit probleem op.',
+        text: 'De Wereldgezondheidsorganisatie (WHO) adviseert voor water dat gebruikt wordt bij het aanmaken van zuigelingenvoeding: TDS maximaal 200 mg/L, nitraat maximaal 10 mg/L, natrium maximaal 20 mg/L, calcium bij voorkeur 20-60 mg/L en magnesium 5-20 mg/L. Osmosewater met remineralisatiefilter voldoet aan al deze criteria. Puur leidingwater in de meeste Nederlandse regio\'s voldoet ook aan de WHO-criteria.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Welk TDS-gehalte is geschikt voor babyvoeding?',
+      name: 'Wat is een gevaarlijk nitraatgehalte voor baby\'s?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'De Specialty Coffee Association (SCA) en WHO-kaders voor babywater wijzen op een TDS van 150–250 mg/L als optimaal voor het aanmaken van babymelk. Puur osmose water heeft een TDS van 10–30 mg/L — te laag. Gewoon Nederlands leidingwater heeft een TDS van 150–400 mg/L, afhankelijk van de regio. Osmose met remineralisatie bereikt doorgaans een TDS van 150–250 mg/L — ideaal.',
+        text: 'Nitraat is gevaarlijk voor zuigelingen jonger dan zes maanden bij concentraties boven 10 mg/L (WHO-grens voor babywater) of 50 mg/L (EU-drinkwaternorm voor volwassenen). Hoge nitraatniveaus kunnen methemoglobinemie veroorzaken: een aandoening waarbij hemoglobine minder zuurstof kan transporteren, ook wel het blauwe baby syndroom genoemd. In agrarische gebieden van Brabant en Zeeland kunnen grondwaterputten nitraatconcentraties boven 10 mg/L hebben.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Verwijdert osmose nitraat uit water voor baby\'s?',
+      name: 'Heeft osmosewater voor baby\'s een remineralisatiefilter nodig?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Omgekeerde osmose verwijdert 85–95% van nitraat. Dit is belangrijk voor baby\'s: de WHO-grenswaarde voor nitraat is 25 mg/L voor zuigelingen, strenger dan de volwassenennorm van 50 mg/L. Nitraat kan bij baby\'s methemoglobinemie (blauwe baby-syndroom) veroorzaken. In gebieden met hoge nitraatwaarden in leidingwater (landbouwgebieden) is osmose + remineralisatie de veiligste keuze voor babyvoeding.',
+        text: 'Een remineralisatiefilter wordt sterk aanbevolen maar is niet strikt noodzakelijk. Puur osmosewater mist calcium en magnesium, maar baby\'s die borstvoeding of volledige flesvoeding krijgen, ontvangen voldoende mineralen via de voeding zelf. Bij het aanmaken van poedermelk met osmosewater zonder remineralisatie ontbreekt de mineraalbijdrage vanuit het water. Een calciet + magnesiumoxide remineralisatiefilter is de eenvoudigste oplossing.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Verwijdert osmose water lood — en is dat belangrijk voor baby\'s?',
+      name: 'Moet ik leidingwater koken voor babyvoeding?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Omgekeerde osmose verwijdert 95–99% van lood. Er is geen veilige drempelwaarde voor lood bij zuigelingen en jonge kinderen — zelfs zeer lage concentraties kunnen de neurologische ontwikkeling schaden. Woningen gebouwd voor 1960 kunnen nog loodleidingen hebben. Voor babyvoeding in oudere woningen is osmose + remineralisatie sterk aanbevolen.',
+        text: 'Het Consultatiebureau adviseert water te koken voor babyvoeding tot de baby zes weken oud is. Dit advies is bedoeld voor hygiëne, niet voor het verlagen van nitraatgehaltes. Koken vernietigt bacteriën maar concentreert nitraat juist, omdat water verdampt. Na zes weken is in de meeste regio\'s Nederlands leidingwater zonder koken veilig voor babyvoeding. Vraag uw drinkwaterbedrijf naar de lokale nitraatwaarden als u in een agrarisch gebied woont.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Wat zeggen fabrikanten van babymelkpoeder over water?',
+      name: 'Wat is beter: commercieel babywater of osmosewater met remineralisatie?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'De meeste fabrikanten adviseren "geschikt drinkwater" of "water met een laag mineralengehalte". Specifiek wordt vaak vermeld: natriumgehalte onder 200 mg/L, nitraat onder 10 mg/L en fluoride niet te hoog. Puur osmose water voldoet aan de mineraalvereisten niet (te laag), maar osmose + remineralisatie voldoet aan alle criteria. Raadpleeg ook de specifieke richtlijn van het gebruikte merk.',
+        text: 'Osmosewater met een goed afgesteld remineralisatiefilter is minstens gelijkwaardig aan commercieel babywater en in sommige opzichten beter. Commercieel babywater heeft een TDS van 100-200 mg/L en voldoet aan de WHO-normen. Osmose met remineralisatie biedt meer controle over de mineraalsamenstelling, is duurzamer (geen plastic flesjes) en goedkoper op de lange termijn. Het nadeel is de hogere aanschafprijs van het filtersysteem.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Hoe werkt remineralisatie bij een osmosefilter?',
+      name: 'Welke TDS-waarde is ideaal voor water voor babyvoeding?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Een remineralisatiefilter voegt calcium, magnesium en andere mineralen terug toe aan het osmose water via een kalksteen- of dolomietbed. Het resultaat is water met een TDS van 150–250 mg/L en een licht basische pH (7,2–8,0). De meeste osmosesystemen van kwaliteit worden aangeboden met een remineralisatiemodule als vijfde of zesde filterstap. Vervang het remineralisatiefilter zoals aanbevolen (doorgaans jaarlijks).',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Mag ik kraanwater gebruiken voor babyvoeding in Nederland?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'In de meeste Nederlandse gemeenten is kraanwater veilig voor babyvoeding. Uitzonderingen zijn: woningen met loodleidingen (voor 1960 gebouwd), gebieden met nitraat boven 25 mg/L (landbouwgebieden) of verhoogde PFAS-niveaus. Twijfel je? Laat water testen op nitraat, lood en bacteriën, of kies voor osmose + remineralisatie als volledige oplossing.',
+        text: 'De WHO adviseert een maximale TDS van 200 mg/L voor water bij zuigelingenvoeding. Er is geen officieel minimum, maar een TDS van 80-150 mg/L wordt als ideaal beschouwd. Dit garandeert een adequate aanvoer van calcium en magnesium via het water en belast de nieren van de baby niet. Puur osmosewater met TDS 5-30 mg/L valt ruim onder dit ideale bereik; met remineralisatiefilter behaalt u doorgaans een TDS van 80-120 mg/L.',
       },
     },
   ],
@@ -80,10 +75,11 @@ const faqSchema = {
 
 const articleSchema = {
   '@type': 'Article',
-  headline: 'Osmose water voor baby\'s: veilig voor babyvoeding? (2026)',
-  description: 'Is osmose water veilig voor babyvoeding? WHO-richtlijn, TDS-waarden, remineralisatie als oplossing. Wat osmose verwijdert (nitraat, lood, PFAS) en wanneer het ideaal is voor baby\'s.',
-  datePublished: '2026-04-12',
-  dateModified: '2026-04-12',
+  headline: 'Osmosewater voor babyvoeding: WHO-richtlijnen en remineralisatie',
+  description:
+    'Osmosewater is geschikt voor babyvoeding mits de juiste mineraalsamenstelling. WHO adviseert maximaal 200 mg/L TDS. Bij osmosewater is remineralisatie aan te raden.',
+  datePublished: '2026-05-01',
+  dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/baby',
   publisher: {
     '@type': 'Organization',
@@ -97,188 +93,306 @@ export default function OsmoseWaterBabyPage() {
     <>
       <SchemaOrg
         schema={[
-          faqSchema,
           {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://waterfilterplatform.nl' },
               { '@type': 'ListItem', position: 2, name: 'Osmose water', item: 'https://waterfilterplatform.nl/osmose-water' },
-              { '@type': 'ListItem', position: 3, name: 'Baby', item: 'https://waterfilterplatform.nl/osmose-water/baby' },
+              { '@type': 'ListItem', position: 3, name: 'Osmosewater voor baby', item: 'https://waterfilterplatform.nl/osmose-water/baby' },
             ],
           },
+          faqSchema,
           articleSchema,
         ]}
       />
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/osmose-water" className="hover:underline">Osmose water</a> &rsaquo;{' '}
-          <span>Baby</span>
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/osmose-water" className="hover:underline">Osmose water</Link> &rsaquo;{' '}
+          <span>Osmosewater voor baby</span>
         </nav>
 
-        <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
-          Osmose water voor baby&apos;s: veilig voor babyvoeding? (2026)
-        </h1>
-
-        {/* QuickAnswer */}
-        <div className="bg-[#E0F2FE] border-l-4 border-[#005F8A] rounded-lg p-4 mb-6">
-          <p className="text-sm font-semibold text-[#003F5C] mb-1">Snel antwoord</p>
-          <p className="text-gray-700 text-sm">
-            Puur osmose water is te mineraalarm voor babyvoeding (WHO-advies). Osmose met remineralisatie bereikt een TDS van 150–250 mg/L en is ideaal: het verwijdert nitraat, lood en PFAS terwijl het de juiste mineralen bevat. Dit is de beste waterkeuze voor babyvoeding in risicogebieden.
+        {/* Hero */}
+        <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4 rounded-xl mb-8">
+          <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
+            Osmosewater voor babyvoeding: WHO-richtlijnen en remineralisatie
+          </h1>
+          <p className="text-[#005F8A] text-lg">
+            Water voor babyvoeding stelt hogere eisen dan water voor volwassenen. De nieren van een
+            zuigeling zijn nog niet uitgerijpt en kunnen geen overschotten aan mineralen of nitraat
+            verwerken. Osmosewater biedt uitstekende zuiverheid, maar heeft een remineralisatiefilter
+            nodig om aan de WHO-richtlijnen voor babywater te voldoen.
           </p>
-        </div>
+        </section>
+
+        <QuickAnswer answer="Osmosewater is veilig voor babyvoeding mits aangevuld met een remineralisatiefilter (calciet + magnesiumoxide). Puur osmosewater heeft TDS 5-30 mg/L; na remineralisatie ca 80-120 mg/L, binnen de WHO-richtlijn van max 200 mg/L. Nitraat en natrium zijn in osmosewater verwaarloosbaar laag." />
 
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Het dilemma: schoon water versus mineralen
+          Waarom water voor babyvoeding bijzonder is
         </h2>
         <p className="text-gray-700 mb-4">
-          Ouders van pasgeborenen staan voor een afweging. Aan de ene kant is er de wens om baby&apos;s te beschermen tegen verontreinigingen in kraanwater: nitraat, lood, PFAS en eventueel bacteriën. Aan de andere kant waarschuwen voedingsdeskundigen en de WHO dat volledig gedemineraliseerd water niet geschikt is voor het aanmaken van babymelkpoeder.
-        </p>
-        <p className="text-gray-700 mb-6">
-          De oplossing is niet &eacute;&eacute;n van beiden kiezen — maar beide combineren via osmose met remineralisatie.
-        </p>
-
-        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Wat is het TDS-gehalte van osmose water?
-        </h2>
-        <p className="text-gray-700 mb-4">
-          TDS staat voor Total Dissolved Solids — het totale gehalte aan opgeloste stoffen in water, uitgedrukt in mg/L. Een osmosemembraan verwijdert 95–99% van alle opgeloste stoffen. Resultaat:
-        </p>
-        <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-1">
-          <li><strong>Puur osmose water:</strong> TDS 10–30 mg/L</li>
-          <li><strong>Nederlands leidingwater:</strong> TDS 150–400 mg/L (afhankelijk van regio)</li>
-          <li><strong>Osmose + remineralisatie:</strong> TDS 150–250 mg/L</li>
-          <li><strong>Geschikt voor babyvoeding (aanbevolen):</strong> TDS 150–250 mg/L</li>
-        </ul>
-        <p className="text-gray-700 mb-6">
-          De WHO heeft aangegeven dat voor het bereiden van babymelkpoeder water met een te laag mineralengehalte de mineraalverhoudingen in de bereide voeding kan verstoren. Calcium en magnesium zijn essentieel voor de botontwikkeling van zuigelingen.
-        </p>
-
-        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Wat osmose verwijdert dat belangrijk is voor baby&apos;s
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Juist voor baby&apos;s zijn bepaalde verontreinigingen extra gevaarlijk:
+          De nieren van een pasgeboren baby zijn functioneel maar nog niet volledig uitgerijpt.
+          Ze kunnen pas op een leeftijd van ongeveer zes maanden mineraalconcentraties verwerken
+          die vergelijkbaar zijn met die voor volwassenen. Dit heeft twee praktische gevolgen:
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
           <li>
-            <strong>Nitraat:</strong> WHO-grenswaarde voor zuigelingen is 25 mg/L — strenger dan de volwassenennorm van 50 mg/L. Nitraat kan blauwe-babysyndroom (methemoglobinemie) veroorzaken. Osmose verwijdert 85–95% van nitraat. Kritisch in landbouwgebieden.
+            <strong>Te hoge mineraalconcentraties zijn belastend:</strong> water met een hoge
+            hoeveelheid natrium (&gt;20 mg/L) of een zeer hoge TDS (&gt;200 mg/L) belast de
+            nierfunctie en kan bij langdurig gebruik schadelijk zijn.
           </li>
           <li>
-            <strong>Lood:</strong> Er is geen veilig niveau voor lood bij baby&apos;s. Lood schaadt de neurologische ontwikkeling. Osmose verwijdert 95–99%. Essentieel in woningen gebouwd voor 1960.
+            <strong>Nitraat is acuut gevaarlijk:</strong> nitraat (&gt;10 mg/L in babywater)
+            wordt in het lichaam omgezet naar nitriet, dat hemoglobine blokkeert. Bij zuigelingen
+            kan dit leiden tot methemoglobinemie, ook bekend als het blauwe baby syndroom.
+            Dit is een medisch spoedgeval.
           </li>
           <li>
-            <strong>PFAS:</strong> &ldquo;Forever chemicals&rdquo; die zich ophopen in het lichaam. Osmose verwijdert 90–99% van PFAS. Relevant in risicogebieden (Schiphol, Dordrecht, militaire bases).
-          </li>
-          <li>
-            <strong>Bacteriën:</strong> Osmose + UV (in gecombineerde systemen) verwijdert en inactiveert bacteriën. Relevant voor putwater of bij kookadviezen.
+            <strong>Te lage mineralenconcentratie is suboptimaal:</strong> calcium en magnesium
+            dragen bij aan de gezonde ontwikkeling van botten en zenuwstelsel. Water met TDS
+            onder 50 mg/L levert geen noemenswaardige bijdrage aan de mineralenopname.
           </li>
         </ul>
+        <p className="text-gray-700 mb-6">
+          Dit maakt de waterkeuze voor babyvoeding genuanceerder dan voor volwassenen:
+          niet alleen de maximumwaarden, maar ook de minimumwaarden voor calcium en magnesium
+          zijn relevant.
+        </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Vergelijking watertypen voor babyvoeding
+          WHO-richtlijnen voor water bij zuigelingenvoeding
         </h2>
+        <p className="text-gray-700 mb-4">
+          De Wereldgezondheidsorganisatie (WHO) heeft specifieke richtlijnen gepubliceerd voor
+          water dat wordt gebruikt bij het aanmaken van poedermelk en andere zuigelingenvoeding.
+          De kerncriteria zijn:
+        </p>
+
         <div className="overflow-x-auto mb-6">
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="bg-[#E0F2FE]">
-                <th className="border border-gray-300 px-3 py-2 text-left">Watertype</th>
-                <th className="border border-gray-300 px-3 py-2 text-left">TDS</th>
-                <th className="border border-gray-300 px-3 py-2 text-left">Nitraat</th>
-                <th className="border border-gray-300 px-3 py-2 text-left">Lood</th>
-                <th className="border border-gray-300 px-3 py-2 text-left">Bacteriën</th>
-                <th className="border border-gray-300 px-3 py-2 text-left">Geschikt voor baby?</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Parameter</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">WHO-richtlijn babywater</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Puur osmosewater</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Osmose + remineralisatie</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-3 py-2 font-medium">Puur osmose water</td>
-                <td className="border border-gray-300 px-3 py-2">10–30 mg/L</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Vrijwel 0</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Vrijwel 0</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Verwijderd</td>
-                <td className="border border-gray-300 px-3 py-2 text-red-700 font-medium">Nee (te weinig mineralen)</td>
+                <td className="border border-gray-300 px-3 py-2 font-medium">TDS (totaal opgeloste stoffen)</td>
+                <td className="border border-gray-300 px-3 py-2">Max 200 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2">5&ndash;30 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2">80&ndash;120 mg/L</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-3 py-2 font-medium">Osmose + remineralisatie</td>
-                <td className="border border-gray-300 px-3 py-2">150–250 mg/L</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Verwijderd</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Verwijderd</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Verwijderd</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700 font-medium">Ja (ideaal)</td>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Nitraat</td>
+                <td className="border border-gray-300 px-3 py-2">Max 10 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2">&lt;1 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2">&lt;1 mg/L</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-3 py-2 font-medium">Nederlands kraanwater</td>
-                <td className="border border-gray-300 px-3 py-2">150–400 mg/L</td>
-                <td className="border border-gray-300 px-3 py-2 text-yellow-700">Variabel</td>
-                <td className="border border-gray-300 px-3 py-2 text-yellow-700">Risico bij oude leidingen</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Doorgaans vrij</td>
-                <td className="border border-gray-300 px-3 py-2 text-yellow-700 font-medium">Doorgaans ja*</td>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Natrium</td>
+                <td className="border border-gray-300 px-3 py-2">Max 20 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2">&lt;2 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2">&lt;5 mg/L</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-3 py-2 font-medium">Flessenwater (geschikt)</td>
-                <td className="border border-gray-300 px-3 py-2">100–250 mg/L</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Laag</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Vrijwel 0</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">Vrij</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700 font-medium">Ja (duur)</td>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Calcium</td>
+                <td className="border border-gray-300 px-3 py-2">20&ndash;60 mg/L (wenselijk)</td>
+                <td className="border border-gray-300 px-3 py-2">&lt;2 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2">30&ndash;50 mg/L</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-3 py-2 font-medium">Putwater</td>
-                <td className="border border-gray-300 px-3 py-2">Variabel</td>
-                <td className="border border-gray-300 px-3 py-2 text-red-700">Risico (landbouw)</td>
-                <td className="border border-gray-300 px-3 py-2 text-red-700">Risico (bodem)</td>
-                <td className="border border-gray-300 px-3 py-2 text-red-700">Risico</td>
-                <td className="border border-gray-300 px-3 py-2 text-red-700 font-medium">Nee zonder filter</td>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Magnesium</td>
+                <td className="border border-gray-300 px-3 py-2">5&ndash;20 mg/L (wenselijk)</td>
+                <td className="border border-gray-300 px-3 py-2">&lt;1 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2">10&ndash;20 mg/L</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p className="text-gray-600 text-xs mb-6">*Controleer op nitraat (&gt;25 mg/L) en lood bij woningen gebouwd voor 1960.</p>
+
+        <p className="text-gray-700 mb-6">
+          Uit de tabel blijkt dat puur osmosewater (zonder remineralisatie) op de nitraat- en
+          natriumcriteria uitstekend scoort, maar de wenselijke calcium- en magnesiumwaarden
+          niet behaalt. Met een remineralisatiefilter voldoet osmosewater aan alle WHO-criteria.
+        </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Remineralisatie: de beste-van-beide-werelden oplossing
+          Nederlands leidingwater voor babyvoeding
         </h2>
         <p className="text-gray-700 mb-4">
-          Een osmosesysteem met remineralisatiefilter geeft het beste resultaat voor babyvoeding:
+          In de meeste Nederlandse regio&apos;s voldoet leidingwater aan de WHO-criteria voor
+          babywater. De Nederlandse drinkwaternorm hanteert een nitraatgrens van 50 mg/L
+          (EU-norm voor volwassenen), maar in de praktijk liggen de nitraatconcentraties in
+          leidingwater van drinkwaterbedrijven doorgaans ruim onder 10 mg/L.
         </p>
-        <ol className="list-decimal pl-6 text-gray-700 mb-4 space-y-2">
-          <li>Het osmosemembraan verwijdert nitraat, lood, PFAS, pesticiden, bacteriën en alle andere verontreinigingen.</li>
-          <li>Het remineralisatiefilter voegt calcium en magnesium terug toe via een kalksteen- of dolomietbed.</li>
-          <li>Het resulterende water heeft een TDS van 150–250 mg/L — vergelijkbaar met goed kraanwater en geschikt voor babymelk.</li>
-        </ol>
+        <p className="text-gray-700 mb-4">
+          Uitzonderingen zijn regio&apos;s met een intensieve landbouw, met name in:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+          <li>
+            <strong>Noord-Brabant en Limburg:</strong> agrarische gebieden waar grondwater hogere
+            nitraatconcentraties kan bevatten. Leidingwater van het drinkwaterbedrijf wordt
+            behandeld en voldoet aan de normen, maar particuliere putten en buitenverblijven
+            met eigen waterwinning vormen een risico.
+          </li>
+          <li>
+            <strong>Zeeland en Groningen:</strong> specifieke gebieden met intensieve veeteelt
+            waar grondwatermonitoring hogere nitraatwaarden laat zien.
+          </li>
+        </ul>
         <p className="text-gray-700 mb-6">
-          Lees meer over de werking van remineralisatie in ons artikel over{' '}
-          <a href="/osmose-water/mineralen" className="text-[#005F8A] underline">mineralen in osmose water</a>.
+          Het Consultatiebureau adviseert water te koken voor babyvoeding tot de baby zes weken
+          oud is. Dit advies geldt voor de hygiëne (vernietiging van bacteriën), niet voor het
+          verlagen van nitraat. Koken concentreert nitraat juist doordat water verdampt.
+          Controleer de waterkwaliteit in uw regio via de website van uw drinkwaterbedrijf.
+          Lees meer over waterkwaliteit in ons artikel over{' '}
+          <Link href="/leidingwater/verontreinigingen" className="text-[#005F8A] underline">
+            verontreinigingen in leidingwater
+          </Link>.
         </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Osmosewater en de TDS-waarde: waarom remineralisatie nodig is
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Een omgekeerde osmose filter verwijdert 95-99% van alle opgeloste stoffen uit water,
+          inclusief calcium, magnesium, natrium en nitraat. Het resulterende osmosewater heeft
+          een TDS van 5-30 mg/L, wat:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+          <li>Ruim onder de WHO-maximumgrens van 200 mg/L valt &mdash; dat is positief</li>
+          <li>Tegelijkertijd ver onder de wenselijke mineraalwaarden voor calcium en magnesium valt</li>
+          <li>Een licht zure pH heeft (5,5-6,5) doordat bufferende koolzuurionen zijn verwijderd</li>
+        </ul>
+        <p className="text-gray-700 mb-6">
+          Voor babyvoeding waarbij water een deel van de mineralenopname verzorgt, is aanvulling
+          via een remineralisatiefilter de meest praktische en goed controleerbare oplossing.
+          Lees meer over hoe osmosefilters werken op onze pagina over{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">
+            omgekeerde osmose
+          </Link>.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Remineralisatiefilter: hoe het werkt en wat het toevoegt
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Een remineralisatiefilter wordt geplaatst na het RO-membraan en voegt calcium en
+          magnesium terug aan het water toe. De meest gebruikte vulling is een combinatie
+          van <strong>calciet (calciumcarbonaat)</strong> en <strong>magnesiumoxide</strong>:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+          <li>
+            <strong>Calciet</strong> lost langzaam op in het water en verhoogt zowel de
+            calciumconcentratie als de pH. Een calcietfilter brengt calcium op 30-50 mg/L
+            en de pH op 7,0-7,5.
+          </li>
+          <li>
+            <strong>Magnesiumoxide</strong> voegt magnesium toe aan het water. Na remineralisatie
+            bereikt de magnesiumconcentratie doorgaans 10-20 mg/L.
+          </li>
+          <li>
+            <strong>TDS na remineralisatie</strong> bedraagt circa 80-120 mg/L, ruim binnen
+            de WHO-grens van 200 mg/L en in het ideale bereik voor babywater.
+          </li>
+        </ul>
+        <p className="text-gray-700 mb-4">
+          Remineralisatiefilters hebben een levensduur van 6-12 maanden afhankelijk van het
+          waterverbruik. De filtermedia zijn relatief goedkoop (&euro;15-30 per vervanging).
+          Raadpleeg onze uitgebreide pagina over{' '}
+          <Link href="/osmose-water/remineralisatie" className="text-[#005F8A] underline">
+            osmosewater remineralisatie
+          </Link>{' '}
+          voor installatiegids en filteraanbevelingen.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Commercieel babywater versus osmosewater met remineralisatie
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Supermarkten verkopen specifiek water voor babyvoeding, zoals Evian of Spa Reine.
+          Deze producten voldoen aan de WHO-normen voor babywater. Hoe verhoudt zich
+          dit tot osmosewater met remineralisatie?
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[#E0F2FE]">
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Aspect</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Commercieel babywater</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Osmose + remineralisatie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">TDS</td>
+                <td className="border border-gray-300 px-3 py-2">100&ndash;200 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2">80&ndash;120 mg/L</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium">Controle mineraalsamenstelling</td>
+                <td className="border border-gray-300 px-3 py-2">Afhankelijk van bron (vast)</td>
+                <td className="border border-gray-300 px-3 py-2">Instelbaar via filtertype</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Kosten (jaar)</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;200&ndash;600 (flesjes)</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;50&ndash;100 (filters) na aanschaf</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium">Milieu-impact</td>
+                <td className="border border-gray-300 px-3 py-2">Plastic flesjes, transport</td>
+                <td className="border border-gray-300 px-3 py-2">Geen plastic flesjes</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Gemak</td>
+                <td className="border border-gray-300 px-3 py-2">Direct beschikbaar, geen installatie</td>
+                <td className="border border-gray-300 px-3 py-2">Altijd beschikbaar na eenmalige installatie</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
           Praktisch advies voor ouders
         </h2>
-        <div className="space-y-3 mb-8">
-          <div className="border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-[#003F5C] mb-1">Gebruik altijd osmose + remineralisatie</h3>
-            <p className="text-gray-700 text-sm">Puur osmose water is niet geschikt voor babyvoeding. Controleer of jouw osmosesysteem een remineralisatiestap bevat en of het filter niet verlopen is. Vervang het remineralisatiefilter zoals aanbevolen (doorgaans jaarlijks).</p>
-          </div>
-          <div className="border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-[#003F5C] mb-1">Test op nitraat bij landbouwgebieden</h3>
-            <p className="text-gray-700 text-sm">Woon je in een landbouwintensieve regio (Brabant, Zeeland, Groningen)? Laat het leidingwater testen op nitraat. Als de waarde boven 25 mg/L ligt, is osmose + remineralisatie voor babyvoeding sterk aanbevolen.</p>
-          </div>
-          <div className="border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-[#003F5C] mb-1">Oudere woning? Test op lood</h3>
-            <p className="text-gray-700 text-sm">Woningen gebouwd voor 1960 kunnen loodleidingen hebben. Voor babyvoeding is er geen veilig looddniveau. Een osmosefilter (NSF 58-gecertificeerd) verwijdert 95–99% van lood.</p>
-          </div>
-          <div className="border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-[#003F5C] mb-1">Gewoon kraanwater kan ook veilig zijn</h3>
-            <p className="text-gray-700 text-sm">In de meeste Nederlandse gemeenten met modern leidingwerk is kraanwater veilig voor babyvoeding. Twijfel je niet? Gebruik dan kraanwater. Twijfel je wel, of woon je in een risicogebied? Kies osmose + remineralisatie.</p>
-          </div>
-        </div>
+        <p className="text-gray-700 mb-4">
+          Op basis van de beschikbare informatie gelden de volgende praktische aanbevelingen:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+          <li>
+            <strong>Osmosewater met remineralisatiefilter</strong> is de beste keuze als u al
+            een osmosefilter heeft of overweegt te installeren. De investering betaalt zich
+            terug ten opzichte van commercieel babywater en is duurzamer.
+          </li>
+          <li>
+            <strong>Nederlands leidingwater</strong> is in de meeste regio&apos;s geschikt voor
+            babyvoeding na de aanbevolen kookperiode (tot 6 weken). Controleer de waterkwaliteit
+            van uw drinkwaterbedrijf als u in een agrarisch gebied woont.
+          </li>
+          <li>
+            <strong>Puur osmosewater zonder remineralisatie</strong> kan worden gebruikt als
+            aanvullend vocht maar levert geen mineraalbijdrage. Voor de aanmaak van
+            poedermelk is remineralisatie aan te bevelen.
+          </li>
+          <li>
+            <strong>Commercieel babywater</strong> is een betrouwbare maar kostbare en
+            milieubelastende optie voor ouders zonder osmosesysteem.
+          </li>
+        </ul>
 
-        <div className="space-y-3 mb-8">
-          <h2 className="text-2xl font-semibold text-[#005F8A]">Veelgestelde vragen</h2>
+        <CTABanner context="osmose" />
+
+        <div className="space-y-3 mb-8 mt-8">
+          <h2 className="text-2xl font-semibold text-[#005F8A]">
+            Veelgestelde vragen over osmosewater voor baby
+          </h2>
           {faqSchema.mainEntity.map((faq, i) => (
             <details key={i} className="border border-gray-200 rounded-lg p-4">
               <summary className="font-semibold text-[#003F5C] cursor-pointer">
@@ -289,13 +403,12 @@ export default function OsmoseWaterBabyPage() {
           ))}
         </div>
 
-        <CTABanner context="osmose" />
-
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/osmose-water/mineralen" className="text-[#005F8A] underline">mineralen in osmose water en remineralisatie</a>{' '}
-          en{' '}
-          <a href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</a>.
+          <Link href="/osmose-water/remineralisatie" className="text-[#005F8A] underline">osmosewater remineralisatie</Link>,{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link>,{' '}
+          <Link href="/osmose-water/gezondheid" className="text-[#005F8A] underline">osmosewater en gezondheid</Link> en{' '}
+          <Link href="/osmose-water" className="text-[#005F8A] underline">osmose water overzicht</Link>.
         </p>
       </main>
     </>

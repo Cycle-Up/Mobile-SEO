@@ -2,408 +2,365 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Waterontharder onderhoud: complete handleiding | 2026',
+  title: 'Waterontharder onderhoud: jaarlijks schema, reiniging en hars',
   description:
-    'Alles over waterontharder onderhoud: zout bijvullen, harsbed reinigen, pekelreservoir schoonmaken, zoutbruggen oplossen, regeneratiecyclus controleren en wanneer een monteur bellen.',
+    'Een waterontharder vraagt minimaal onderhoud: jaarlijkse controle, zout bijvullen elke 4-8 weken, harsbed desinfecteren en om de 10-15 jaar hars vervangen. Compleet onderhoudsschema voor thuisgebruik.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/onderhoud' },
-  openGraph: {
-    title: 'Waterontharder onderhoud: complete handleiding',
-    description:
-      'Complete gids voor het onderhoud van je waterontharder: van zout bijvullen tot harsbedreiniging en het oplossen van zoutbruggen.',
-    url: 'https://waterfilterplatform.nl/waterontharder/onderhoud',
-    type: 'article',
-  },
 };
 
 const faqItems = [
   {
-    question: 'Hoe vaak moet ik zout bijvullen in mijn waterontharder?',
+    question: 'Hoe vaak heeft een waterontharder onderhoud nodig?',
     answer:
-      'De bijvulfrequentie hangt af van het watergebruik en de waterhardheid. Bij een gemiddeld huishouden (4 personen, hard water boven 15 °dH) vul je doorgaans elke 4–8 weken zout bij. Controleer het zoutniveau maandelijks en vul bij als het reservoir minder dan half vol is. Nooit helemaal leeg laten lopen.',
+      'Een waterontharder is een van de meest onderhoudsarme waterbehandelingssystemen. De enige regelmatige taak is zout bijvullen elke 4 tot 8 weken. Daarnaast is een jaarlijkse controle aanbevolen waarbij u de injector reinigt, het harsbed desinfesteert en de regeneratie-instellingen controleert. Een professionele inspectie is zinvol elke 5 jaar of wanneer de ontharder minder goed presteert.',
   },
   {
-    question: 'Welk zout moet ik gebruiken in mijn waterontharder?',
+    question: 'Hoe vaak moet ik zout bijvullen?',
     answer:
-      'Gebruik uitsluitend regeneratiezout dat specifiek is gemaakt voor waterontharders: tabletwout (zoutblokken) of granulaat. Nooit keukenzout, strooizout of industrieel zout — die bevatten onzuiverheden die het harsbed beschadigen. Pellets van het merk eigen aan je ontharder geven de meest consistente prestaties.',
-  },
-  {
-    question: 'Wat is een zoutbrug en hoe los ik het op?',
-    answer:
-      'Een zoutbrug is een harde koek van samengekit zout die boven in het pekelreservoir hangt, terwijl er onderaan geen zout meer is. De ontharder lijkt vol maar regenereert niet effectief. Je herkent het als het zoutniveau schijnbaar constant blijft. Los het op door voorzichtig met een bezem of stok in het reservoir te prikken om de brug te breken.',
-  },
-  {
-    question: 'Hoe reinig ik het pekelreservoir?',
-    answer:
-      'Reinig het pekelreservoir (brine tank) eens per jaar. Maak de tank leeg, verwijder resterende zout en slib, spoel schoon met lauw water en een milde zeep, en spoel goed na. Laat drogen voor je de tank weer vult. Gebruik geen agressieve schoonmaakmiddelen die het plastic kunnen aantasten.',
+      'De bijvulfrequentie hangt af van het waterverbruik, de waterhardheid en de capaciteit van de zoutbak. Bij een gemiddeld huishouden van vier personen met hard water (boven 15 graden dH) is bijvullen elke 4 tot 6 weken gebruikelijk. Controleer het zoutniveau maandelijks en vul bij als de bak voor minder dan de helft gevuld is. Laat de bak nooit volledig leeg raken: dit riskeert een zoutbrug en lucht in het harsbed.',
   },
   {
     question: 'Hoe lang gaat het harsbed mee?',
     answer:
-      'Een kationenuitwisselingshars gaat bij normaal gebruik en goed onderhoud 10–20 jaar mee. Regelmatig regenereren met zout houdt het harsbed gezond. Bij vervuiling door ijzer, mangaan of biologische aangroei kan een harsbedreiniging (met speciale reiniger) de levensduur verlengen.',
+      'Het ionenwisselaarhars in een waterontharder gaat bij normaal gebruik 10 tot 20 jaar mee. Veroudering is herkenbaar aan een hogere zoutdosering die nodig is voor dezelfde onthardingscapaciteit, en aan resterende hardheid in het water ondanks correct onderhoud. Harsvervanging kost circa 150 tot 300 euro aan materialen en 1 tot 2 uur werk; sommige merken bieden harsvervanging als servicepakket aan.',
   },
   {
-    question: 'Wanneer moet ik een monteur bellen voor mijn waterontharder?',
+    question: 'Hoe desinfecteer ik het harsbed van mijn waterontharder?',
     answer:
-      'Bel een monteur bij: hardneidsrestanten in het water ondanks correct zoutgebruik, lekkages bij aansluitingen of bypass-kraan, foutcodes op het display die niet te verhelpen zijn door resetten, niet-stoppende regeneratiecycli, of wanneer je twijfelt of het harsbed aan vervanging toe is.',
+      'Desinfecteer het harsbed eenmaal per jaar met een gespecialiseerde harscleaner zoals Res-Up, citroenzuuroplossing of een natriumhypochlorietzoutoplossing. Voeg het middel toe aan de zoutbak en start een handmatige regeneratiecyclus. Dit verwijdert bacterieopbouw, ijzerafzettingen en organische vervuiling. Bij ijzerrijk water (boven 0,5 mg/L) is halfjaarlijkse desinfectie aanbevolen.',
+  },
+  {
+    question: 'Wat is een zoutbrug en hoe los ik die op?',
+    answer:
+      'Een zoutbrug is een harde koek van samengekit zout die boven in de zoutbak hangt terwijl de ruimte eronder leeg is. De ontharder regenereert dan zonder zout en het water blijft hard. U herkent een zoutbrug doordat het zoutniveau schijnbaar constant blijft. Los het op door voorzichtig met een lange stok of bezemsteel door de korst te prikken. Warm water toevoegen helpt bij het oplossen van de zoutkorst.',
+  },
+  {
+    question: 'Wat kost professioneel onderhoud van een waterontharder?',
+    answer:
+      'Merken als Kinetico, BWT en Aquion bieden jaarlijkse onderhoudscontracten aan voor circa 80 tot 150 euro per jaar inclusief arbeidskosten, vervanging van kleine onderdelen en een waterhardheidstest. Dit is vaak voordeliger dan losse onderhoudsbeurten die 80 tot 200 euro per bezoek kunnen kosten. Bij harsvervanging of defecte ventielen komen materiaalkosten bovenop.',
+  },
+  {
+    question: 'Heeft de garantie invloed op het onderhoud dat ik zelf mag doen?',
+    answer:
+      'De meeste fabrikanten eisen dat u zout van voldoende kwaliteit gebruikt (minimaal 99,5 procent natriumchloride) en dat u de regeneratie-instellingen correct houdt. Zelf de injector reinigen en de zoutbak schoonmaken is bij vrijwel alle merken toegestaan en staat zelfs in de handleiding. Reparaties aan de elektronica, ventielen of het harsbed zijn doorgaans voorbehouden aan erkende servicemonteurs als u de garantie wilt behouden.',
   },
 ];
 
-const onderhoudsSchema = [
-  {
-    periode: 'Maandelijks',
-    taken: [
-      'Controleer zoutniveau — bijvullen als minder dan half vol',
-      'Controleer op zoutbruggen (prik door het zout)',
-      'Noteer het zoutverbruik om anomalieën te signaleren',
-    ],
-  },
-  {
-    periode: 'Elke 3 maanden',
-    taken: [
-      'Controleer de regeneratiefrequentie via het display',
-      'Controleer waterdruk na de ontharder',
-      'Inspecteer aansluitingen op kleine lekkages',
-    ],
-  },
-  {
-    periode: 'Jaarlijks',
-    taken: [
-      'Reinig het pekelreservoir grondig',
-      'Spoel het harsbed na met een harsbedreiniging (bij twijfel over prestaties)',
-      'Controleer de tijdinstelling van de regeneratiecyclus',
-      'Kalibreer hardheidsinstelling indien nodig',
-      'Controleer de bypass-kraan op correcte werking',
-    ],
-  },
-  {
-    periode: 'Elke 5 jaar of bij problemen',
-    taken: [
-      'Professionele inspectie harsbed (meting capaciteit)',
-      'Overweeg vervanging harsbed als capaciteit sterk afneemt',
-      'Controleer injector en venturi op verstopping',
-      'Controleer membraan van drukvat (indien aanwezig)',
-    ],
-  },
-];
+const breadcrumbSchema = {
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://waterfilterplatform.nl' },
+    { '@type': 'ListItem', position: 2, name: 'Waterontharder', item: 'https://waterfilterplatform.nl/waterontharder' },
+    { '@type': 'ListItem', position: 3, name: 'Onderhoud waterontharder', item: 'https://waterfilterplatform.nl/waterontharder/onderhoud' },
+  ],
+};
 
-const veelvoorkendeProblemen = [
-  {
-    probleem: 'Zoutbrug in het reservoir',
-    oorzaak: 'Vochtige lucht, fijn granulaat, te selten bijvullen',
-    oplossing: 'Prik met stok door de korst om de brug te breken; schakel over op grotere zoutblokken',
+const faqSchema = {
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map(item => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+};
+
+const articleSchema = {
+  '@type': 'Article',
+  headline: 'Waterontharder onderhoud: jaarlijks schema, reiniging en hars',
+  description:
+    'Een waterontharder vraagt minimaal onderhoud: jaarlijkse controle, zout bijvullen elke 4-8 weken, harsbed desinfecteren en om de 10-15 jaar hars vervangen.',
+  datePublished: '2026-05-01',
+  dateModified: '2026-05-01',
+  url: 'https://waterfilterplatform.nl/waterontharder/onderhoud',
+  publisher: {
+    '@type': 'Organization',
+    name: 'WaterfilterPlatform',
+    url: 'https://waterfilterplatform.nl',
   },
-  {
-    probleem: 'Zout slib op de bodem',
-    oorzaak: 'Onzuiverheden in zout, oud slib',
-    oplossing: 'Leeg en reinig het reservoir; gebruik hoogwaardig regeneratiezout',
-  },
-  {
-    probleem: 'Hard water ondanks voldoende zout',
-    oorzaak: 'Uitgeput harsbed, verkeerde tijdinstelling, zoutbrug',
-    oplossing: 'Controleer zoutbrug eerst; reset regeneratietijden; laat harsbed meten',
-  },
-  {
-    probleem: 'Continu regenereren',
-    oorzaak: 'Defecte tijdklok of sensor, waterlek in bypass',
-    oplossing: 'Reset apparaat; controleer bypass-kraan; monteur inschakelen',
-  },
-  {
-    probleem: 'Ijzer- of zwavelsmaak in water',
-    oorzaak: 'IJzervervuiling van harsbed',
-    oplossing: 'Harsbedreiniging met ijzerverwijderaar; bij ernstige vervuiling harsbedvervanging',
-  },
-];
+};
 
 export default function WaterontharderOnderhoudPage() {
   return (
     <>
-      <SchemaOrg type="FAQPage" faqItems={faqItems} />
-      <SchemaOrg
-        type="Article"
-        article={{
-          title: 'Waterontharder onderhoud: complete handleiding',
-          description:
-            'Complete gids voor waterontharder onderhoud: zout bijvullen, pekelreservoir reinigen, zoutbruggen, regeneratiecyclus en wanneer een monteur bellen.',
-          datePublished: '2026-02-10',
-          dateModified: '2026-05-14',
-          url: 'https://waterfilterplatform.nl/waterontharder/onderhoud',
-        }}
-      />
-      <SchemaOrg
-        type="BreadcrumbList"
-        breadcrumbs={[
-          { name: 'Home', url: 'https://waterfilterplatform.nl' },
-          { name: 'Waterontharder', url: 'https://waterfilterplatform.nl/waterontharder' },
-          { name: 'Onderhoud', url: 'https://waterfilterplatform.nl/waterontharder/onderhoud' },
-        ]}
-      />
+      <SchemaOrg schema={[breadcrumbSchema, faqSchema, articleSchema]} />
 
-      {/* Hero */}
-      <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
-        <div className="max-w-3xl mx-auto">
-          <nav className="text-xs text-gray-400 mb-4">
-            <Link href="/" className="hover:text-[#005F8A]">Home</Link>
-            <span className="mx-2">/</span>
-            <Link href="/waterontharder" className="hover:text-[#005F8A]">Waterontharder</Link>
-            <span className="mx-2">/</span>
-            <span>Onderhoud</span>
-          </nav>
-          <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Waterontharder onderhoud: complete handleiding
+      <main className="max-w-3xl mx-auto px-4 py-8">
+        <nav className="text-sm text-gray-500 mb-6">
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterontharder" className="hover:underline">Waterontharder</Link> &rsaquo;{' '}
+          <span>Onderhoud waterontharder</span>
+        </nav>
+
+        {/* Hero */}
+        <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4 rounded-xl mb-8">
+          <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
+            Waterontharder onderhoud: jaarlijks schema, reiniging en hars
           </h1>
-          <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Een waterontharder werkt op ionenwisseling: calcium en magnesium worden uitgewisseld
-            tegen natrium via een harsbed, dat periodiek met zout wordt geregenereerd. Goed
-            onderhoud is cruciaal voor optimale prestaties. In deze gids behandelen we alles van
-            zout bijvullen tot harsbedreiniging.
+          <p className="text-[#005F8A] text-lg">
+            Een waterontharder is een van de meest onderhoudsarme waterbehandelingsapparaten voor
+            thuisgebruik. De enige routinetaak is zout bijvullen elke vier tot acht weken. Met
+            een jaarlijkse grondige controle en incidentele harsbedreiniging gaat een waterontharder
+            tien tot twintig jaar mee.
           </p>
-          <div className="flex flex-wrap gap-3">
-            <a
-              href="#schema"
-              className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
-            >
-              Bekijk onderhoudsschema →
-            </a>
-            <a
-              href="#problemen"
-              className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors text-sm"
-            >
-              Veelvoorkomende problemen
-            </a>
-          </div>
+        </section>
+
+        <QuickAnswer answer="Waterontharder onderhoud bestaat uit: zout bijvullen elke 4-8 weken (tablet- of blokzout 99,5%+ NaCl), jaarlijkse injector- en zoutbakreiniging, jaarlijkse harsbeddesinfectie, en harsvervanging na 10-20 jaar voor circa 150-300 euro. Professionele onderhoudscontracten kosten 80-150 euro per jaar." />
+
+        <CTABanner context="osmose" />
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Hoe onderhoudsvriendelijk zijn waterontharders?
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Een waterontharder werkt op het principe van ionenwisseling: calcium- en magnesiumionen
+          in het harde water worden uitgewisseld tegen natriumionen in het harsbed. Wanneer het
+          hars verzadigd is, wordt het geregenereerd door een zoutoplossing (pekel) doorheen te
+          spoelen, waarbij de calcium- en magnesiumionen worden losgemaakt en afgevoerd. Dit
+          regeneratieproces verloopt automatisch op basis van een tijdklok of een watermeterteller.
+        </p>
+        <p className="text-gray-700 mb-4">
+          Het ionenwisselaarhars zelf is een duurzame vulling die tien tot twintig jaar meegaat.
+          De enige consumable die u regelmatig hoeft te vervangen is het regeneratiezout.
+          Vergeleken met een <Link href="/omgekeerde-osmose/onderhoud" className="text-[#005F8A] underline">osmosefilter</Link>,
+          waarbij membraan en prefilters om de een tot drie jaar vervangen moeten worden, is het
+          structurele onderhoud van een waterontharder zeer beperkt.
+        </p>
+        <p className="text-gray-700 mb-6">
+          De meeste problemen bij waterontharders zijn niet het gevolg van technische slijtage maar
+          van verkeerd gebruik of suboptimale instellingen: te weinig zout, verkeerd zouttype,
+          of regeneratietijden die niet zijn aangepast aan het actuele waterverbruik.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Zout bijvullen: frequentie, type en hoeveelheid
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Regeneratiezout is de enige verbruikstoffe bij een waterontharder. Het zoutniveau
+          bewaken en tijdig bijvullen is de belangrijkste onderhoudstaak. Houd de volgende
+          richtlijnen aan:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+          <li>
+            <strong>Controleer maandelijks</strong> het zoutniveau in de zoutbak. Vul bij als
+            de bak voor minder dan de helft gevuld is
+          </li>
+          <li>
+            <strong>Zoutpeil nooit helemaal op laten raken:</strong> bij een lege bak regenereert
+            de ontharder met onvoldoende pekel, wat het harsbed niet volledig herstelt. Bovendien
+            kan lucht in het systeem komen
+          </li>
+          <li>
+            <strong>Aanbevolen niveau:</strong> houd de bak altijd minimaal een derde gevuld,
+            maar vul niet hoger dan het maximumniveau (doorgaans aangegeven met een markering)
+          </li>
+          <li>
+            <strong>Aanbevolen zouttype:</strong> tablet- of blokzout met een zuiverheid van
+            minimaal 99,5 procent natriumchloride (NaCl). Dit is verkrijgbaar bij bouwmarkten,
+            waterzuiveraars en online
+          </li>
+          <li>
+            <strong>Niet aanbevolen:</strong> keukenzout, steenzout of strooizout. Deze bevatten
+            onzuiverheden (calcium, magnesium, sulfaten) die slib vormen in de zoutbak en de
+            injector kunnen verstoppen
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Zoutbrug: herkennen en oplossen
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Een zoutbrug is een hardnekkig onderhoudsprobleem bij waterontharders. Het ontstaat
+          wanneer zoutkristallen samenklonteren tot een harde koek boven in de zoutbak, terwijl
+          de ruimte eronder leeg is of slechts loose zoutkristallen bevat. De ontharder
+          "ziet" de bak als vol maar er komt nauwelijks pekel in het harsbed.
+        </p>
+        <p className="text-gray-700 mb-4">
+          <strong>Hoe herkent u een zoutbrug?</strong> Het zoutniveau lijkt constant te blijven
+          ook al verbruikt het systeem water en regenereert het regelmatig. Tegelijkertijd wordt
+          het water hard: uw zeep schuimt minder en u ziet kalkafzetting op kranen en douchekoppen.
+        </p>
+        <p className="text-gray-700 mb-6">
+          <strong>Oplossing:</strong> prik voorzichtig met een lange stok, bezem- of mopsteel
+          door de zoutkors om de brug te breken. Voeg daarna een halve emmer warm water toe om
+          het losgebrokkelde zout te helpen oplossen. Start vervolgens een handmatige
+          regeneratiecyclus om het harsbed te herstellen. Schakel over op grotere zoutblokken
+          (tablets) in plaats van fijn granulaat om herhaling te voorkomen, en bewaar de zoutbak
+          op een droge locatie.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Harsbed desinfecteren: waarom en hoe?
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Over de tijd accumuleert het harsbed niet alleen calcium en magnesium, maar ook ijzer,
+          mangaan en organische verbindingen. Bij hogere concentraties ijzer in het bronwater
+          (boven 0,3 mg/L) is ijzeraccumulatie een serieus probleem dat de onthardingscapaciteit
+          sterk vermindert. Ook bacteriegroei in het hars is een aandachtspunt, met name bij
+          langdurig stilstaand water of na een vakantieperiode.
+        </p>
+        <p className="text-gray-700 mb-4">
+          Desinfecteer het harsbed als volgt:
+        </p>
+        <ol className="list-decimal pl-6 text-gray-700 mb-6 space-y-2">
+          <li>
+            Kies een geschikt reinigingsmiddel: Res-Up (ijzerverwijderaar op basis van
+            natriumdithioniet), citroenzuuroplossing (10 procent, effectief tegen kalk en
+            ijzer) of een gespecialiseerde waterontharder-desinfectant
+          </li>
+          <li>
+            Voeg de aanbevolen hoeveelheid rechtstreeks toe aan de zoutbak, bovenop het zout
+          </li>
+          <li>
+            Start een handmatige regeneratiecyclus via het bedieningspaneel. Het reinigingsmiddel
+            lost op in de pekelmengeling en doorstroomt het harsbed
+          </li>
+          <li>
+            Laat na de cyclus extra naspoelwater doorstromen voordat u de bypass terugzet
+          </li>
+          <li>
+            Meet de waterhardheid na behandeling om te bevestigen dat de capaciteit is hersteld
+          </li>
+        </ol>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Injector en venturi reinigen
+        </h2>
+        <p className="text-gray-700 mb-4">
+          De injector (ook wel ejector of venturi-injector) is het kleine onderdeel dat de
+          pekeloplossing in het harsbed zuigt tijdens de regeneratie. Het werkt via het
+          venturi-principe: stromend water creeert onderdruk en trekt de pekel aan. Zout- en
+          slijkafzetting kunnen de injector na verloop van tijd verstoppen, wat leidt tot
+          onvolledige regeneratie.
+        </p>
+        <p className="text-gray-700 mb-6">
+          Controleer de injector jaarlijks als onderdeel van het onderhoudsschema. De meeste
+          merken leveren een onderhoudsset mee met een klein borsteltje en een extra O-ring.
+          Demonteer het injectorkopje voorzichtig (draai los of verwijder met een schroevendraaier),
+          spoel het onder de kraan, verwijder eventueel zoutresten met een tandenstoker of
+          dun borsteltje, en monteer terug. Vervang de O-ring als deze vervormd of beschadigd is.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Hars vervangen: wanneer en wat kost het?
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Ionenwisselaarhars heeft een levensduur van tien tot twintig jaar bij normaal gebruik
+          en correcte regeneratie. Vervanging is nodig wanneer:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+          <li>
+            <strong>Hogere zoutdosering vereist:</strong> u heeft aanzienlijk meer zout nodig
+            voor dezelfde onthardingsprestatie; de regeneratie-instellingen zijn maximaal opgedraaid
+          </li>
+          <li>
+            <strong>Resterende hardheid:</strong> water is harder dan de ingestelde doelwaarde,
+            ondanks correcte regeneratieinstellingen en voldoende zout
+          </li>
+          <li>
+            <strong>Harsleeftijd boven 15 jaar:</strong> bij systemen ouder dan 15 jaar is
+            preventieve harsvervanging te overwegen
+          </li>
+          <li>
+            <strong>Ernstige ijzerverontreiniging:</strong> sterk ijzerhoudend bronwater kan
+            het hars na 5 tot 8 jaar al uitputten
+          </li>
+        </ul>
+        <p className="text-gray-700 mb-6">
+          De kosten van harsvervanging bedragen circa 150 tot 300 euro aan materialen (standaard
+          harscylinder 8 tot 20 liter), plus installatiekosten van 80 tot 150 euro als u een
+          monteur inschakelt. Sommige gebruikers vervangen het hars zelf: dit is technisch
+          mogelijk maar vereist het leeghalen van het systeem en het correct doseren van het
+          nieuwe hars. Zie ook onze vergelijking van{' '}
+          <Link href="/waterontharder/kosten" className="text-[#005F8A] underline">waterontharder kosten</Link>{' '}
+          voor een volledig overzicht.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Jaarlijks onderhoudsschema voor waterontharders
+        </h2>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[#E0F2FE]">
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Frequentie</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Taak</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium align-top">Maandelijks</td>
+                <td className="border border-gray-300 px-3 py-2">Zoutniveau controleren en bijvullen indien nodig; controleren op zoutbrug</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium align-top">Elk kwartaal</td>
+                <td className="border border-gray-300 px-3 py-2">Waterhardheid meten na de ontharder; regeneratiefrequentie en zoutverbruik noteren</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium align-top">Jaarlijks</td>
+                <td className="border border-gray-300 px-3 py-2">Injector reinigen; zoutbak schoonmaken; harsbed desinfecteren; bypass-klep controleren; regeneratie-instellingen verifieren</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium align-top">Elke 5 jaar</td>
+                <td className="border border-gray-300 px-3 py-2">Professionele keuring harsbed; harscapaciteitstest; controle ventielen en aansluitingen</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium align-top">10&ndash;20 jaar</td>
+                <td className="border border-gray-300 px-3 py-2">Harsvervanging bij verminderde capaciteit; kosten circa 150&ndash;300 euro materialen</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </section>
 
-      <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Professioneel onderhoud versus zelf doen
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Waterontharder merken als Kinetico, BWT, Fleck en Aquion bieden jaarcontracten aan
+          voor regulier onderhoud. Deze contracten kosten doorgaans 80 tot 150 euro per jaar
+          en omvatten een jaarlijks bezoek waarbij de monteur de injector reinigt, het harsbed
+          controleert, de regeneratie-instellingen optimaliseert en eventuele kleine onderdelen
+          vervangt. Bij harsvervanging of ernstige defecten gelden aanvullende kosten.
+        </p>
+        <p className="text-gray-700 mb-6">
+          De meeste onderhoudstaken zijn goed door de eigenaar zelf uit te voeren: zout bijvullen,
+          zoutbrug doorprikken, zoutbak reinigen en harsbed desinfecteren. Een handig persoon
+          kan ook de injector zelf reinigen met de meegeleverde onderhoudsset. Inschakelen van
+          een monteur is pas nodig bij aanhoudend hard water na correcte zelfcontrole, lekkages,
+          foutcodes op het display of bij harsvervanging.
+        </p>
+        <p className="text-gray-700 mb-6">
+          Overweegt u de overstap naar een alternatief dat geen zout of regeneratie nodig heeft?
+          Lees dan onze vergelijking van{' '}
+          <Link href="/waterontharder/vs-osmose" className="text-[#005F8A] underline">waterontharder versus osmosefilter</Link>.
+        </p>
 
-        {/* Inhoudsopgave */}
-        <section className="bg-gray-50 rounded-2xl p-5">
-          <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
-          <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
-            <li><a href="#zout" className="hover:underline">Zout bijvullen</a></li>
-            <li><a href="#harsbed" className="hover:underline">Harsbed reinigen</a></li>
-            <li><a href="#pekel" className="hover:underline">Pekelreservoir schoonmaken</a></li>
-            <li><a href="#schema" className="hover:underline">Onderhoudsschema</a></li>
-            <li><a href="#problemen" className="hover:underline">Veelvoorkomende problemen</a></li>
-            <li><a href="#monteur" className="hover:underline">Wanneer monteur bellen?</a></li>
-            <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
-          </ol>
-        </section>
+        <CTABanner context="osmose" />
 
-        {/* Zout bijvullen */}
-        <section id="zout">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Zout bijvullen: frequentie en type</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Regeneratiezout is de &ldquo;brandstof&rdquo; van je waterontharder. Zonder
-            voldoende zout kan het harsbed zich niet regenereren en stopt de ontharding.
-          </p>
-          <div className="space-y-4">
-            <div className="bg-[#E0F2FE] rounded-2xl p-5">
-              <p className="font-semibold text-[#003F5C] mb-2">Vuistregel bijvullen:</p>
-              <ul className="text-sm text-gray-700 space-y-1.5 list-disc list-inside">
-                <li>Controleer het zoutniveau <strong>maandelijks</strong></li>
-                <li>Vul bij als het reservoir voor <strong>minder dan de helft</strong> gevuld is</li>
-                <li>Laat het reservoir <strong>nooit leeg</strong> lopen — dit kan het harsbed beschadigen</li>
-                <li>Gemiddeld gebruik: <strong>3–8 kg zout per maand</strong> voor een huishouden van 4 personen bij hard water</li>
-              </ul>
-            </div>
-            <div className="bg-white border border-gray-100 rounded-2xl p-5">
-              <p className="font-semibold text-gray-900 mb-2">Welk zouttype kiezen?</p>
-              <div className="space-y-2 text-sm text-gray-700">
-                <div className="flex gap-2"><span className="text-green-600 font-bold">✓</span><span><strong>Tabletten (zoutblokken):</strong> minste kans op zoutbruggen, meest gebruikt</span></div>
-                <div className="flex gap-2"><span className="text-green-600 font-bold">✓</span><span><strong>Granulaat:</strong> lost snel op, ideaal bij laag verbruik</span></div>
-                <div className="flex gap-2"><span className="text-amber-500 font-bold">!</span><span><strong>Pellets:</strong> geschikt, maar controleer of fabrikant dit aanraadt</span></div>
-                <div className="flex gap-2"><span className="text-red-500 font-bold">✗</span><span><strong>Nooit:</strong> keukenzout, strooizout, onzuiver industriezout</span></div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div className="space-y-3 mb-8 mt-8">
+          <h2 className="text-2xl font-semibold text-[#005F8A]">
+            Veelgestelde vragen over waterontharder onderhoud
+          </h2>
+          {faqItems.map((faq, i) => (
+            <details key={i} className="border border-gray-200 rounded-lg p-4">
+              <summary className="font-semibold text-[#003F5C] cursor-pointer">
+                {faq.question}
+              </summary>
+              <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
 
-        {/* Harsbed */}
-        <section id="harsbed">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Harsbed reinigen</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Het kationenuitwisselend harsbed is het hart van de ontharder. Met regelmatige
-            regeneratie gaat het 10–20 jaar mee. Bij vervuiling door ijzer, mangaan of biologische
-            aangroei is een speciale harsbedreiniging noodzakelijk.
-          </p>
-          <div className="space-y-3">
-            {[
-              {
-                stap: '1',
-                titel: 'Harsbedreiniging (jaarlijks of bij klachten)',
-                desc: 'Voeg een harsbedreiniging (bijv. Iron Out of vergelijkbaar product) toe aan het zoutreservoir. Dit lost zich op tijdens de eerstvolgende regeneratiecyclus en verwijdert ijzer- en mangaanafzettingen van het harsbed.',
-              },
-              {
-                stap: '2',
-                titel: 'Handmatige regeneratie triggeren',
-                desc: 'Na het toevoegen van de harsbedreiniging: start een handmatige regeneratiecyclus via het bedieningspaneel. Raadpleeg de handleiding van jouw model voor de exacte stappen.',
-              },
-              {
-                stap: '3',
-                titel: 'Naspoeling controleren',
-                desc: 'Laat na de reinigingscyclus extra water doorstromen. Meet de waterhardheid na de behandeling om te bevestigen dat de capaciteit is hersteld.',
-              },
-            ].map(s => (
-              <div key={s.stap} className="flex gap-4 items-start border border-gray-100 rounded-xl p-4">
-                <div className="w-9 h-9 rounded-full bg-[#005F8A] text-white font-bold flex items-center justify-center shrink-0 text-sm">
-                  {s.stap}
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">{s.titel}</p>
-                  <p className="text-sm text-gray-600 leading-relaxed mt-1">{s.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 text-sm text-gray-700">
-            <strong className="text-amber-900">Signalen dat harsbedreiniging nodig is:</strong>{' '}
-            ijzer- of zwavelsmaak in water, lagere drukval over het systeem, hogere restopping
-            (water is weer harder dan normaal), slijmerige afzetting in sanitair.
-          </div>
-        </section>
-
-        {/* Pekelreservoir */}
-        <section id="pekel">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Pekelreservoir schoonmaken</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Het pekelreservoir (brine tank) bevat zout en het zoutwateroplossing (pekel) die
-            het harsbed regenereert. Jaarlijkse reiniging voorkomt ophoping van slib, onzuiverheden
-            en mogelijke bacteriegroei.
-          </p>
-          <ol className="space-y-3 text-gray-700">
-            {[
-              'Zet de bypass-kraan van de ontharder open zodat leidingwater direct doorstroomt.',
-              'Verwijder alle zout uit de brine tank. Gebruik het resterende zout niet opnieuw als het sterk verkleurd of klonterig is.',
-              'Verwijder eventueel aanwezig slib (bruine of zwarte laag op de bodem) met een schepje of spatel.',
-              'Spoel de tank om met lauw water. Gebruik een milde zeepoplossing als de binnenwand vuil is.',
-              'Spoel grondig na met schoon water. Laat de tank droogdrogen of dep droog.',
-              'Vul opnieuw met vers regeneratiezout en zet de bypass terug in normale stand.',
-              'Start een handmatige regeneratiecyclus om het systeem te herinitialiseren.',
-            ].map((stap, i) => (
-              <li key={i} className="flex gap-3 items-start">
-                <span className="w-6 h-6 bg-[#E0F2FE] text-[#003F5C] rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
-                  {i + 1}
-                </span>
-                <span className="text-sm leading-relaxed">{stap}</span>
-              </li>
-            ))}
-          </ol>
-        </section>
-
-        {/* Schema */}
-        <section id="schema">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Onderhoudsschema per periode</h2>
-          <div className="space-y-5">
-            {onderhoudsSchema.map(periode => (
-              <div key={periode.periode} className="border border-gray-100 rounded-2xl overflow-hidden">
-                <div className="bg-[#E0F2FE] px-5 py-3">
-                  <p className="font-bold text-[#003F5C]">{periode.periode}</p>
-                </div>
-                <ul className="p-5 space-y-2">
-                  {periode.taken.map(taak => (
-                    <li key={taak} className="flex items-start gap-3">
-                      <span className="w-5 h-5 border-2 border-[#005F8A] rounded flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-700">{taak}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Veelvoorkomende problemen */}
-        <section id="problemen">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Veelvoorkomende problemen en oplossingen</h2>
-          <div className="space-y-4">
-            {veelvoorkendeProblemen.map(p => (
-              <div key={p.probleem} className="border border-gray-100 rounded-xl p-4">
-                <p className="font-semibold text-gray-900 mb-1">{p.probleem}</p>
-                <p className="text-xs text-gray-500 mb-2"><strong>Oorzaak:</strong> {p.oorzaak}</p>
-                <p className="text-sm text-gray-700"><strong className="text-[#005F8A]">Oplossing:</strong> {p.oplossing}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Monteur */}
-        <section id="monteur">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wanneer een monteur bellen?</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Veel onderhoudstaken zijn door de eigenaar zelf uit te voeren. Er zijn echter situaties
-            waarbij professionele hulp noodzakelijk is:
-          </p>
-          <div className="space-y-3">
-            {[
-              { titel: 'Aanhoudend hard water', desc: 'Ondanks correct zoutgebruik en geen zoutbruggen blijft het water hard. Kan wijzen op een verouderd harsbed, defecte injector of kapot controleventiel.' },
-              { titel: 'Niet-stoppende regeneratiecyclus', desc: 'De ontharder regenereert continu of schakelt niet terug naar normale modus. Dit kost veel zout en water — direct monteur bellen.' },
-              { titel: 'Waterlekkage', desc: 'Lekkage bij de aansluitingen, de bypass-kraan of het systeem zelf. Zet de bypass open en bel direct een monteur.' },
-              { titel: 'Foutcodes op het display', desc: 'Foutcodes die niet opgelost worden door resetten of in de handleiding staan beschreven vereisen technische diagnose.' },
-              { titel: 'Systeemleeftijd boven 15 jaar', desc: 'Overweeg bij een ontharder ouder dan 15 jaar een professionele keuring om de staat van het harsbed en de ventielen te beoordelen.' },
-            ].map(s => (
-              <div key={s.titel} className="flex gap-3 items-start bg-red-50 border border-red-100 rounded-xl p-4">
-                <span className="text-red-500 font-bold text-lg shrink-0">!</span>
-                <div>
-                  <p className="font-semibold text-red-900">{s.titel}</p>
-                  <p className="text-sm text-gray-700 mt-0.5">{s.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="text-gray-700 mt-4 text-sm leading-relaxed">
-            Overweeg je een waterontharder te vervangen door een osmose systeem dat geen zout of
-            regeneratie nodig heeft?{' '}
-            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">
-              Bekijk het osmosefilter overzicht
-            </Link>.
-          </p>
-        </section>
-
-        {/* CTA */}
-        <CTABanner context="waterhardheid" />
-
-        {/* Gerelateerde pagina's */}
-        <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Gerelateerde pagina&apos;s</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              { href: '/waterontharder', title: 'Waterontharder overzicht', desc: 'Alles over waterontharders: typen, werking en kosten.' },
-              { href: '/waterontharder/zout', title: 'Waterontharder zout', desc: 'Welk zout, hoeveel en hoe vaak bijvullen?' },
-              { href: '/waterhardheid/testen', title: 'Waterhardheid testen', desc: 'Meet de hardheid van je water thuis.' },
-              { href: '/omgekeerde-osmose/kopen', title: 'Osmose filter kopen', desc: 'Alternatief zonder zout of regeneratie.' },
-            ].map(l => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
-              >
-                <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">{l.title}</p>
-                <p className="text-sm text-gray-500">{l.desc}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section id="faq">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over waterontharder onderhoud</h2>
-          <div className="space-y-3">
-            {faqItems.map(item => (
-              <details key={item.question} className="border border-gray-100 rounded-xl p-4 group">
-                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
-                  {item.question}
-                  <span className="text-[#005F8A] group-open:rotate-180 transition-transform shrink-0 ml-2">▾</span>
-                </summary>
-                <p className="mt-3 text-gray-600 text-sm leading-relaxed">{item.answer}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-
-      </div>
+        <p className="text-gray-600 text-sm mt-6">
+          Zie ook:{' '}
+          <Link href="/waterontharder" className="text-[#005F8A] underline">waterontharder overzicht</Link>,{' '}
+          <Link href="/waterontharder/zout" className="text-[#005F8A] underline">waterontharder zout kiezen</Link>,{' '}
+          <Link href="/waterontharder/vs-osmose" className="text-[#005F8A] underline">waterontharder vs osmose</Link> en{' '}
+          <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid in Nederland</Link>.
+        </p>
+      </main>
     </>
   );
 }
