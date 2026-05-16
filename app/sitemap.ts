@@ -338,6 +338,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kraanwater/ph`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/leidingwater/ijzer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/kokend-water-kraan/installeren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Ronde 6 — zakelijk cluster
+    { url: `${BASE}/waterfilter/horeca`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterfilter/bedrijf`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwaterfontein/horeca`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterontharder/zakelijk`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Osmose verdieping
+    { url: `${BASE}/osmose-water/remineraliseren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/osmose-filter/zonder-tank`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/omgekeerde-osmose/rendement`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Niche & vergelijkingen
+    { url: `${BASE}/waterfilter/vijver`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/studentenkamer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/quooker`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/osmose-water/smaak`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Drinkwater verdieping
+    { url: `${BASE}/leidingwater/nitraat`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/leidingwater/mangaan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kraanwater/kwaliteit-verbeteren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/arseen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [

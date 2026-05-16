@@ -2,112 +2,90 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Osmosewater smaak: waarom smaakt het anders? | 2026',
+  title: 'Smaak van osmosewater: waarom smaakt het anders en hoe verbeter je het?',
   description:
-    'Waarom smaakt osmosewater anders dan kraanwater of bronwater? Uitleg over mineralen, CO2-zuurgraad, TDS en hoe remineralisatie de smaak verbetert.',
+    'Osmosewater smaakt soms vlak of zuur door laag TDS en lage pH. Remineralisatie, alkalische cartridge en juiste opslag verbeteren de smaak significant. Praktische tips.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/smaak' },
-  openGraph: {
-    title: 'Osmosewater smaak: waarom smaakt het anders?',
-    description:
-      'Osmosewater heeft geen mineralen en bevat CO2 opgelost — dat geeft een andere smaak dan kraanwater. Lees hoe remineralisatie helpt.',
-    url: 'https://waterfilterplatform.nl/osmose-water/smaak',
-    type: 'article',
-  },
 };
 
 const faqItems = [
   {
     question: 'Waarom smaakt osmosewater anders dan kraanwater?',
     answer:
-      'Osmosewater bevat vrijwel geen opgeloste mineralen (calcium, magnesium, natrium) en heeft daardoor een "leeg" of zacht karakter. Bovendien lost er licht CO2 in op, waardoor de pH iets daalt en het water een milde frisheid of zuurheid kan geven. Kraanwater bevat wel mineralen die bijdragen aan een voller mondgevoel.',
+      'Osmosewater bevat nauwelijks opgeloste mineralen (TDS 5-50 mg/L versus 200-500 mg/L voor kraanwater). Calcium en magnesium geven water zijn "ronde" en "volle" smaak. Zonder deze mineralen voelt water leeg of vlak aan. Bovendien heeft osmosewater een licht zure pH (6-7) door opgelost CO2, terwijl kraanwater een pH van 7,5-8,5 heeft. Ook ontbreekt chloor, wat sommige mensen juist als prettig ervaren.',
   },
   {
-    question: 'Is de smaak van osmosewater slechter dan bronwater?',
+    question: 'Is osmosewater lekker om te drinken?',
     answer:
-      'Dat is subjectief. Veel mensen omschrijven osmosewater als neutraal en fris, vergelijkbaar met licht mineraalwater. Bronwater heeft een eigen mineraalprofiel — calcium en magnesium geven een ronder mondgevoel. Met een remineralisatiepatroon kun je osmosewater een smaakprofiel geven dat lijkt op licht bronwater.',
+      'Dat verschilt per persoon. Veel mensen beschrijven puur osmosewater als neutraal, fris en schoon. Anderen missen de volheid van kraanwater of bronwater. Met een remineralisatiecartridge krijgt osmosewater een TDS van 80-150 mg/L en een pH van 7,5-8,5, wat door de meeste mensen als aangenaam en vergelijkbaar met licht bronwater wordt ervaren. De afwezigheid van chloor, kalk en metaalachtige bijsmaken is voor de meesten een duidelijk voordeel.',
   },
   {
-    question: 'Wat is TDS en hoe beïnvloedt het de smaak?',
+    question: 'Hoe verbeter ik de smaak van osmosewater?',
     answer:
-      'TDS staat voor Total Dissolved Solids — het totaal aan opgeloste stoffen in mg per liter. Osmosewater heeft typisch een TDS van 10–50 ppm. Kraanwater in Nederland: 200–500 ppm. Bronwater: 100–400 ppm. Smaakonderzoeken tonen dat de meeste mensen een TDS van 50–150 ppm als het prettigst ervaren — niet te leeg, niet te mineraalrijk.',
+      'De effectiefste methode is een remineralisatiecartridge na het RO-membraan: voegt calcium en magnesium toe, verhoogt pH naar 7,5-8,5 en brengt TDS op 80-150 mg/L. Andere opties zijn: koelen (koud water smaakt voller), een post-koolstoffilter (verwijdert membraangeur bij nieuw systeem), CO2 toevoegen voor bruisend water, of een schijfje citroen of komkommer voor infusie.',
   },
   {
-    question: 'Hoe verbetert remineralisatie de smaak van osmosewater?',
+    question: 'Smaakt osmosewater zuur?',
     answer:
-      'Een remineralisatiepatroon voegt kleine hoeveelheden calcium en magnesium toe aan het gefilterde water — typisch tot 50–100 mg/L. Dat geeft het water een voller mondgevoel, een licht zoetere afdronk en een pH van circa 7,5–8,0. Veel gebruikers beschrijven het als "zoals goed flessenwater, maar uit de kraan".',
+      'Puur osmosewater heeft een pH van 6-7, wat licht zuur is. Dit komt doordat het water weinig bicarbonaatbuffers bevat en snel CO2 uit de lucht opneemt. Sommige mensen ervaren dit als een subtiele frisheid of zuurheid. Een remineralisatiecartridge of alkalische cartridge verhoogt de pH naar 7,5-8,5, wat de zure smaak elimineert.',
   },
   {
-    question: 'Waarom heeft osmosewater soms een zure of vreemde nasmaak?',
+    question: 'Is geremineraliseerd osmosewater lekkerder?',
     answer:
-      'Opgelost CO2 maakt osmosewater licht zuur (pH 5,5–6,5). Dit geeft sommige mensen het gevoel van een subtiele zuurheid of frisheid. Als het water in een drukvat heeft gestaan kan er ook een licht rubberen of plastic nasmaak ontstaan — een post-koolstoffilter verhelpt dit. Controleer altijd of de post-filter niet aan vervanging toe is.',
+      'Voor de meeste mensen ja. Geremineraliseerd osmosewater heeft een TDS van 80-150 mg/L, een pH van 7,5-8,5 en bevat calcium en magnesium. Dit geeft een voller mondgevoel, een zachter karakter en een pH die vergelijkbaar is met bronwater. Smaakstudies tonen dat de meeste mensen water in het TDS-bereik van 50-150 mg/L als het prettigst ervaren.',
   },
   {
-    question: 'Is osmosewater geschikt voor koffie en thee?',
+    question: 'Waarom smaakt nieuw osmosewater soms plasticerig?',
     answer:
-      'Ja, en voor de meeste gebruikers werkt het uitstekend. Osmosewater met een lichte remineralisatie (TDS 50–100 ppm) geldt onder specialty-koffiezetten als ideaal: smaakcomponenten extraheren beter en er is geen chloor of kalk die de aroma\'s maskeren. Voor espresso wordt een TDS van 75–125 ppm aanbevolen.',
+      'Een nieuw RO-membraan of nieuwe slangen kunnen een lichte rubberen of plasticerige geur en smaak afgeven in de eerste week na installatie. Dit is normaal en tijdelijk. Gooi de eerste 2-3 tankwisselingen weg of laat het systeem 24-48 uur doorlopen. Een post-koolstoffilter absorbeert eventuele resterende geur en smaak. Na "inrijden" verdwijnt dit volledig.',
+  },
+  {
+    question: 'Is osmosewater lekkerder voor koffie dan kraanwater?',
+    answer:
+      'Ja, voor de meeste koffiebereidingen is osmosewater met remineralisatie duidelijk beter. De afwezigheid van chloor (dat aroma\'s maskeert) en kalk (dat neerslaat in de machine) maakt osmosewater superieur als basis. Met een TDS van 75-125 mg/L en calcium rond 50 mg/L geeft osmosewater een objectief betere espresso-extractie dan ongefilterd hard kraanwater. Specialty coffee baristas werken vrijwel universeel met gefilterd water.',
   },
 ];
 
-const vergelijking = [
-  {
-    type: 'Osmosewater (puur)',
-    tds: '10–50 ppm',
-    ph: '5,5–6,5',
-    smaak: 'Neutraal, licht fris, "leeg"',
-    mineralen: 'Minimaal',
-    highlight: false,
+const breadcrumbSchema = {
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://waterfilterplatform.nl' },
+    { '@type': 'ListItem', position: 2, name: 'Osmosewater', item: 'https://waterfilterplatform.nl/osmose-water' },
+    { '@type': 'ListItem', position: 3, name: 'Smaak van osmosewater', item: 'https://waterfilterplatform.nl/osmose-water/smaak' },
+  ],
+};
+
+const faqSchema = {
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map(item => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+};
+
+const articleSchema = {
+  '@type': 'Article',
+  headline: 'Smaak van osmosewater: waarom smaakt het anders en hoe verbeter je het?',
+  description:
+    'Osmosewater smaakt soms vlak of zuur door laag TDS en lage pH. Remineralisatie en alkalische cartridge verbeteren de smaak significant.',
+  datePublished: '2026-05-01',
+  dateModified: '2026-05-01',
+  url: 'https://waterfilterplatform.nl/osmose-water/smaak',
+  publisher: {
+    '@type': 'Organization',
+    name: 'WaterfilterPlatform',
+    url: 'https://waterfilterplatform.nl',
   },
-  {
-    type: 'Osmosewater + remineralisatie',
-    tds: '50–150 ppm',
-    ph: '7,0–8,0',
-    smaak: 'Vol, mild, vergelijkbaar met bronwater',
-    mineralen: 'Ca/Mg toegevoegd',
-    highlight: true,
-  },
-  {
-    type: 'Nederlands kraanwater',
-    tds: '200–500 ppm',
-    ph: '7,5–8,5',
-    smaak: 'Vol, soms licht chloor- of kalkachtig',
-    mineralen: 'Hoog',
-    highlight: false,
-  },
-  {
-    type: 'Bronwater (gemiddeld)',
-    tds: '100–350 ppm',
-    ph: '7,0–7,8',
-    smaak: 'Rond, frisch, mineraalachtig',
-    mineralen: 'Middel',
-    highlight: false,
-  },
-];
+};
 
 export default function OsmoseWaterSmaakPage() {
   return (
     <>
-      <SchemaOrg type="FAQPage" faqItems={faqItems} />
-      <SchemaOrg
-        type="Article"
-        article={{
-          title: 'Osmosewater smaak: waarom smaakt het anders?',
-          description:
-            'Uitleg waarom osmosewater anders smaakt dan kraanwater en bronwater, inclusief rol van TDS, CO2 en remineralisatie.',
-          datePublished: '2026-01-15',
-          dateModified: '2026-05-14',
-          url: 'https://waterfilterplatform.nl/osmose-water/smaak',
-        }}
-      />
-      <SchemaOrg
-        type="BreadcrumbList"
-        breadcrumbs={[
-          { name: 'Home', url: 'https://waterfilterplatform.nl' },
-          { name: 'Osmose water', url: 'https://waterfilterplatform.nl/osmose-water' },
-          { name: 'Smaak', url: 'https://waterfilterplatform.nl/osmose-water/smaak' },
-        ]}
-      />
+      <SchemaOrg schema={[breadcrumbSchema, faqSchema, articleSchema]} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
@@ -115,265 +93,280 @@ export default function OsmoseWaterSmaakPage() {
           <nav className="text-xs text-gray-400 mb-4">
             <Link href="/" className="hover:text-[#005F8A]">Home</Link>
             <span className="mx-2">/</span>
-            <Link href="/osmose-water" className="hover:text-[#005F8A]">Osmose water</Link>
+            <Link href="/osmose-water" className="hover:text-[#005F8A]">Osmosewater</Link>
             <span className="mx-2">/</span>
-            <span>Smaak</span>
+            <span>Smaak van osmosewater</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Osmosewater smaak: waarom smaakt het anders?
+            Smaak van osmosewater: waarom smaakt het anders en hoe verbeter je het?
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Osmosewater heeft een opvallend andere smaak dan kraanwater of bronwater. Het voelt
-            lichter, neutraler, soms frisser aan. Dat heeft alles te maken met de afwezigheid van
-            mineralen, lichte opname van CO2 en de TDS-waarde. Op deze pagina leggen we het uit —
-            en laten we zien hoe remineralisatie de smaak verbetert.
+            Osmosewater smaakt anders dan kraanwater of bronwater. Door het lage TDS (5&ndash;50 mg/L)
+            en de licht zure pH (6&ndash;7) kan het vlak of fris aanvoelen. Remineralisatie verbetert
+            de smaak significant. Alle oorzaken en oplossingen uitgelegd.
           </p>
-          <div className="flex flex-wrap gap-3">
-            <a
-              href="#waarom"
-              className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
-            >
-              Waarom anders? →
-            </a>
-            <a
-              href="#remineralisatie"
-              className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors text-sm"
-            >
-              Remineralisatie uitleg
-            </a>
-          </div>
         </div>
       </section>
 
-      <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+      <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
 
-        {/* Inhoudsopgave */}
-        <section className="bg-gray-50 rounded-2xl p-5">
-          <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
-          <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
-            <li><a href="#waarom" className="hover:underline">Waarom smaakt osmosewater anders?</a></li>
-            <li><a href="#co2" className="hover:underline">CO2 en zuurgraad</a></li>
-            <li><a href="#tds" className="hover:underline">TDS en smaakperceptie</a></li>
-            <li><a href="#vergelijking" className="hover:underline">Vergelijking met kraanwater en bronwater</a></li>
-            <li><a href="#remineralisatie" className="hover:underline">Remineralisatie verbetert smaak</a></li>
-            <li><a href="#koffie" className="hover:underline">Osmosewater voor koffie en thee</a></li>
-            <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
-          </ol>
-        </section>
+        <QuickAnswer answer="Osmosewater smaakt vlakker dan kraanwater door laag TDS (5-50 mg/L) en lage pH (6-7). Calcium en magnesium geven water zijn ronde smaak; osmosewater bevat nauwelijks mineralen. Een remineralisatiecartridge (15-35 euro per jaar) verhoogt TDS naar 80-150 mg/L en pH naar 7,5-8,5 voor een aangenamer smaakprofiel." />
+
+        <CTABanner context="osmose" />
 
         {/* Waarom anders */}
-        <section id="waarom">
+        <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom smaakt osmosewater anders?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De smaak van water wordt bepaald door <strong>opgeloste mineralen</strong>, de
-            <strong> pH-waarde</strong> en eventuele andere stoffen zoals chloor of organische
-            verbindingen. Een omgekeerde osmose membraan verwijdert 95–99% van vrijwel alles —
+            De smaak van water wordt bepaald door de opgeloste mineralen, de pH-waarde en
+            eventuele andere stoffen. Een RO-membraan verwijdert 95&ndash;99% van vrijwel alles,
             inclusief de mineralen die normaal bijdragen aan smaak en mondgevoel.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Calcium en magnesium geven water een vol, licht zoet karakter. Zonder die mineralen
-            voelt water <em>leeg</em> of <em>vlak</em> aan. Sommige mensen vinden dit prettig
-            omdat er ook geen chloor, kalk of metallieke bijsmaak meer in zit. Anderen missen
-            de volheid van kraanwater of bronwater.
+            Calcium (Ca&sup2;&plus;) geeft water stevigheid en een vol karakter. Magnesium (Mg&sup2;&plus;) draagt bij
+            aan een licht bitter of aromatisch profiel bij koffie en thee. Bicarbonaat (HCO&sup3;&ndash;) zorgt
+            voor de buffering van zuurheid en geeft een "zachte" afdronk. Osmosewater bevat
+            vrijwel geen van deze stoffen.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Bovendien heeft osmosewater een lagere buffercapaciteit: het neemt snel kleine
-            hoeveelheden CO2 op uit de lucht, waardoor de pH licht daalt. Dat geeft een subtiele
-            frisheid die sommigen als licht zuurachtig ervaren.
+            Bovendien lost osmosewater snel CO2 op uit de lucht, waardoor de pH daalt naar
+            6&ndash;6,5. Dit geeft een subtiele frisheid die sommigen als licht zuurachtig
+            ervaren. Nederlands kraanwater heeft een pH van 7,5&ndash;8,5, wat als "zachter"
+            en voller wordt beschouwd.
           </p>
         </section>
 
-        {/* CO2 sectie */}
-        <section id="co2">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">CO2 en zuurgraad van osmosewater</h2>
+        {/* Smaakcomponenten tabel */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Smaakcomponenten van water</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Puur osmosewater heeft doorgaans een pH tussen <strong>5,5 en 6,5</strong> — iets
-            zuurder dan het neutrale 7,0. Dit komt doordat osmosewater weinig carbonaatbuffers
-            bevat. CO2 uit de lucht lost gemakkelijk op en vormt koolzuur (H₂CO₃), wat de pH
-            verlaagt.
+            Elk opgelost mineraal draagt anders bij aan de smaak. Onderstaande tabel laat
+            de rol van de belangrijkste mineralen zien:
           </p>
-          <div className="bg-[#E0F2FE] rounded-2xl p-5 text-sm text-gray-700 mb-4">
-            <p className="font-semibold text-[#003F5C] mb-2">Vergelijking pH-waarden:</p>
-            <ul className="space-y-1.5">
-              <li className="flex justify-between"><span>Osmosewater (puur)</span><span className="font-semibold">pH 5,5–6,5</span></li>
-              <li className="flex justify-between"><span>Osmosewater + remineralisatie</span><span className="font-semibold">pH 7,0–8,0</span></li>
-              <li className="flex justify-between"><span>Nederlands kraanwater</span><span className="font-semibold">pH 7,5–8,5</span></li>
-              <li className="flex justify-between"><span>Bronwater (gemiddeld)</span><span className="font-semibold">pH 7,0–7,8</span></li>
-            </ul>
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            De iets lagere pH van puur osmosewater is voor de meeste mensen volledig veilig om
-            te drinken. De WHO hanteert geen ondergrens voor drinkwater-pH bij normale voeding.
-            Wie het toch liever neutraler heeft, kiest voor een remineralisatiepatroon.
-          </p>
-        </section>
-
-        {/* TDS */}
-        <section id="tds">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">TDS en smaakperceptie</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            TDS (<em>Total Dissolved Solids</em>) is de maatstaf voor het totaal aan opgeloste
-            stoffen in water, uitgedrukt in <strong>mg/L of ppm</strong>. Een TDS-meter geeft je
-            in seconden een indicatie van de waterkwaliteit en smaakprofiel.
-          </p>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Smaakstudies laten zien dat de meeste mensen water met een TDS van <strong>50–150 ppm</strong>{' '}
-            als het prettigst ervaren. Onder de 30 ppm klinkt water als "leeg". Boven de 400 ppm
-            wordt het als te zwaar of mineraalrijk ervaren.
-          </p>
-          <div className="overflow-x-auto -mx-4 px-4">
-            <table className="w-full min-w-[400px] text-sm border-collapse">
+          <div className="overflow-x-auto -mx-4 px-4 mb-6">
+            <table className="w-full min-w-[500px] text-sm border-collapse">
               <thead>
                 <tr className="bg-[#E0F2FE]">
-                  <th className="text-left py-2.5 px-3 font-semibold text-[#003F5C]">TDS-waarde</th>
-                  <th className="text-left py-2.5 px-3 font-semibold text-[#003F5C]">Smaakbeleving</th>
-                  <th className="text-left py-2.5 px-3 font-semibold text-[#003F5C]">Voorbeeld</th>
+                  <th className="border border-gray-200 px-3 py-2 text-left text-[#003F5C]">Mineraal</th>
+                  <th className="border border-gray-200 px-3 py-2 text-left text-[#003F5C]">Smaakbijdrage</th>
+                  <th className="border border-gray-200 px-3 py-2 text-left text-[#003F5C]">Optimaal voor drinken</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-gray-100">
-                  <td className="py-2.5 px-3">&lt;30 ppm</td>
-                  <td className="py-2.5 px-3 text-gray-600">Leeg, vlak, weinig karakter</td>
-                  <td className="py-2.5 px-3 text-gray-500">Osmosewater (puur)</td>
+                <tr>
+                  <td className="border border-gray-200 px-3 py-2 font-medium">Calcium (Ca&sup2;&plus;)</td>
+                  <td className="border border-gray-200 px-3 py-2">Stevigheid, "vollheid"</td>
+                  <td className="border border-gray-200 px-3 py-2">50&ndash;100 mg/L</td>
                 </tr>
-                <tr className="border-b border-gray-100 bg-green-50">
-                  <td className="py-2.5 px-3 font-semibold">50–150 ppm</td>
-                  <td className="py-2.5 px-3 text-gray-600 font-medium">Vol, fris, prettig — ideaal bereik</td>
-                  <td className="py-2.5 px-3 text-gray-500">RO + remineralisatie</td>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-200 px-3 py-2 font-medium">Magnesium (Mg&sup2;&plus;)</td>
+                  <td className="border border-gray-200 px-3 py-2">Licht bitter bij hoog niveau, aroma bij laag niveau</td>
+                  <td className="border border-gray-200 px-3 py-2">10&ndash;30 mg/L</td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-2.5 px-3">150–300 ppm</td>
-                  <td className="py-2.5 px-3 text-gray-600">Duidelijk mineraalachtig, rond mondgevoel</td>
-                  <td className="py-2.5 px-3 text-gray-500">Veel bronwaters</td>
+                <tr>
+                  <td className="border border-gray-200 px-3 py-2 font-medium">Natrium (Na&plus;)</td>
+                  <td className="border border-gray-200 px-3 py-2">Zoetheid bij laag niveau</td>
+                  <td className="border border-gray-200 px-3 py-2">10&ndash;30 mg/L</td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-2.5 px-3">300–600 ppm</td>
-                  <td className="py-2.5 px-3 text-gray-600">Zwaar, soms kalkachtig</td>
-                  <td className="py-2.5 px-3 text-gray-500">Hard kraanwater NL</td>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-200 px-3 py-2 font-medium">Bicarbonaat (HCO&sup3;&ndash;)</td>
+                  <td className="border border-gray-200 px-3 py-2">Zachtheid, buffering zurige smaak</td>
+                  <td className="border border-gray-200 px-3 py-2">50&ndash;150 mg/L</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-3 py-2 font-medium">Chloor</td>
+                  <td className="border border-gray-200 px-3 py-2">Chemische bijsmaak (negatief)</td>
+                  <td className="border border-gray-200 px-3 py-2">0 (osmose verwijdert dit)</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-200 px-3 py-2 font-medium">Sulfaat (SO&sup4;&sup2;&ndash;)</td>
+                  <td className="border border-gray-200 px-3 py-2">Bitterheid bij hoog niveau</td>
+                  <td className="border border-gray-200 px-3 py-2">&lt;50 mg/L</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p className="text-gray-700 leading-relaxed">
+            Osmosewater bevat van al deze stoffen nauwelijks iets. Dat verklaar het vlakke of
+            lege smaakprofiel. De afwezigheid van chloor en sulfaat is een voordeel; het ontbreken
+            van calcium, magnesium en bicarbonaat is het nadeel.
+          </p>
         </section>
 
-        {/* Vergelijking */}
-        <section id="vergelijking">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Osmosewater vs kraanwater vs bronwater</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Onderstaande tabel vergelijkt de vier watertypen op de parameters die het meest
-            bijdragen aan smaak en mondgevoel.
-          </p>
-          <div className="overflow-x-auto -mx-4 px-4">
-            <table className="w-full min-w-[540px] text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#003F5C] text-white">
-                  <th className="text-left py-2.5 px-3 font-semibold">Watertype</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">TDS</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">pH</th>
-                  <th className="text-left py-2.5 px-3 font-semibold">Smaakprofiel</th>
-                </tr>
-              </thead>
-              <tbody>
-                {vergelijking.map(r => (
-                  <tr
-                    key={r.type}
-                    className={r.highlight ? 'bg-[#E0F2FE] font-medium' : 'border-b border-gray-100'}
-                  >
-                    <td className="py-2.5 px-3">{r.type}</td>
-                    <td className="py-2.5 px-3 text-right">{r.tds}</td>
-                    <td className="py-2.5 px-3 text-right">{r.ph}</td>
-                    <td className="py-2.5 px-3 text-gray-600">{r.smaak}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        {/* Remineralisatie */}
-        <section id="remineralisatie">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe remineralisatie de smaak verbetert</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Een <strong>remineralisatiepatroon</strong> — ook wel mineralizer of calcitpatroon
-            genoemd — plaatst je na het RO-membraan. Het voegt kleine, gecontroleerde
-            hoeveelheden calcium en magnesium toe aan het gefilterde water.
-          </p>
+        {/* Oplossingen */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Vijf oplossingen voor een betere smaak</h2>
           <div className="space-y-4 mb-6">
-            {[
-              {
-                stap: '1',
-                titel: 'Calcitpatroon',
-                desc: 'Calciumcarbonaat-korrels lossen langzaam op in het osmosewater. Ze verhogen de pH naar 7,0–8,0 en voegen 30–80 mg/L calcium toe. Geeft een rond, mild smaakarakter.',
-              },
-              {
-                stap: '2',
-                titel: 'Magnesium-remineralisatie',
-                desc: 'Sommige patronen voegen ook magnesium toe. Dat verbetert niet alleen de smaak maar maakt osmosewater geschikt voor specialty coffee — magnesium werkt als smaakversterker bij koffie-extractie.',
-              },
-              {
-                stap: '3',
-                titel: 'Resultaat',
-                desc: 'Het geremineraliseerde water heeft een TDS van 50–150 ppm, een pH van 7,0–8,0 en een smaakprofiel dat door de meeste mensen wordt omschreven als "fris bronwater — maar dan uit de kraan".',
-              },
-            ].map(s => (
-              <div key={s.stap} className="flex gap-4 items-start">
-                <div className="w-9 h-9 rounded-full bg-[#005F8A] text-white font-bold flex items-center justify-center shrink-0 text-sm">
-                  {s.stap}
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">{s.titel}</p>
-                  <p className="text-sm text-gray-600 leading-relaxed">{s.desc}</p>
-                </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="bg-[#003F5C] text-white text-xs font-bold px-2 py-1 rounded-full">1</span>
+                <h3 className="font-semibold text-[#003F5C]">Remineralisatiecartridge</h3>
+                <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">Beste optie</span>
               </div>
-            ))}
-          </div>
-          <div className="bg-amber-50 border border-amber-100 rounded-2xl p-4 text-sm text-gray-700">
-            <strong className="text-amber-900">Let op:</strong> wissel het remineralisatiepatroon
-            tijdig (doorgaans elke 12 maanden) — een uitgeput patroon voegt geen mineralen meer
-            toe en laat puur osmosewater door.
+              <p className="text-gray-700 text-sm">
+                Voegt calciumcarbonaat en magnesiumoxide toe, verhoogt pH naar 7,5&ndash;8,5 en
+                brengt TDS op 80&ndash;150 mg/L. Geeft osmosewater een rond, aangenaam smaakprofiel
+                vergelijkbaar met licht bronwater. Kosten: &euro;15&ndash;35 per jaar als inline cartridge.
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="bg-[#003F5C] text-white text-xs font-bold px-2 py-1 rounded-full">2</span>
+                <h3 className="font-semibold text-[#003F5C]">Post-koolstoffilter</h3>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Verwijdert eventuele membraangeur (bij nieuw systeem) en geeft een schone,
+                neutrale smaak. De meeste kwalitatieve osmosesystemen hebben al een post-koolstoffilter
+                als standaard onderdeel. Vervang jaarlijks.
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="bg-[#003F5C] text-white text-xs font-bold px-2 py-1 rounded-full">3</span>
+                <h3 className="font-semibold text-[#003F5C]">Koelen</h3>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Koud osmosewater (4&ndash;8&deg;C) smaakt voller en frisser dan water op kamertemperatuur.
+                De vlakke smaak is minder opvallend bij lage temperatuur. Bewaar osmosewater
+                in de koelkast in een glazen karaf.
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="bg-[#003F5C] text-white text-xs font-bold px-2 py-1 rounded-full">4</span>
+                <h3 className="font-semibold text-[#003F5C]">CO2 toevoegen (bruisend water)</h3>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Bruisend osmosewater heeft meer smaakstructuur door de koolzuurbelletjes.
+                Een SodaStream of vergelijkbare koolzuurmaker werkt uitstekend met osmosewater
+                als basis. Geeft een frisse, licht zure maar aangenamer smaak dan puur stil water.
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="bg-[#003F5C] text-white text-xs font-bold px-2 py-1 rounded-full">5</span>
+                <h3 className="font-semibold text-[#003F5C]">Infusie</h3>
+              </div>
+              <p className="text-gray-700 text-sm">
+                Een schijfje citroen, komkommer, munt of gember in een karaf osmosewater
+                geeft smaak en aroma. Populair, eenvoudig en gezond. Osmosewater is hiervoor
+                ideaal als neutrale basis zonder storende bijsmaken.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* Koffie en thee */}
-        <section id="koffie">
+        {/* Vergelijking waters */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Smaak vergeleken met andere waters</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Osmosewater zonder remineralisatie smaakt leger dan de meeste andere waters:
+          </p>
+          <div className="overflow-x-auto -mx-4 px-4 mb-4">
+            <table className="w-full min-w-[480px] text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#E0F2FE]">
+                  <th className="border border-gray-200 px-3 py-2 text-left text-[#003F5C]">Watertype</th>
+                  <th className="border border-gray-200 px-3 py-2 text-left text-[#003F5C]">TDS</th>
+                  <th className="border border-gray-200 px-3 py-2 text-left text-[#003F5C]">pH</th>
+                  <th className="border border-gray-200 px-3 py-2 text-left text-[#003F5C]">Smaakprofiel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-200 px-3 py-2">Osmosewater (puur)</td>
+                  <td className="border border-gray-200 px-3 py-2">5&ndash;50 mg/L</td>
+                  <td className="border border-gray-200 px-3 py-2">6&ndash;7</td>
+                  <td className="border border-gray-200 px-3 py-2 text-gray-500">Neutraal, licht fris, "leeg"</td>
+                </tr>
+                <tr className="bg-[#E0F2FE]">
+                  <td className="border border-gray-200 px-3 py-2 font-medium">Osmose + remineralisatie</td>
+                  <td className="border border-gray-200 px-3 py-2 font-medium">80&ndash;150 mg/L</td>
+                  <td className="border border-gray-200 px-3 py-2 font-medium">7,5&ndash;8,5</td>
+                  <td className="border border-gray-200 px-3 py-2 font-medium text-green-700">Vol, mild, als bronwater</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-3 py-2">Nederlands kraanwater</td>
+                  <td className="border border-gray-200 px-3 py-2">150&ndash;350 mg/L</td>
+                  <td className="border border-gray-200 px-3 py-2">7,5&ndash;8,5</td>
+                  <td className="border border-gray-200 px-3 py-2 text-gray-500">Vol, soms kalk- of chloorsbijsmaak</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-200 px-3 py-2">Flessenwater (gemiddeld)</td>
+                  <td className="border border-gray-200 px-3 py-2">100&ndash;500 mg/L</td>
+                  <td className="border border-gray-200 px-3 py-2">7,0&ndash;7,8</td>
+                  <td className="border border-gray-200 px-3 py-2 text-gray-500">Rond, mineraalachtig</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Eerste gebruik */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Smaak na installatie: inrijden</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Na installatie van een nieuw osmosesysteem kan het water de eerste dagen een lichte
+            rubberen of plasticerige geur hebben. Dit is normaal en tijdelijk. Het nieuwe membraan
+            en de slangen moeten "inrijden". Praktisch advies:
+          </p>
+          <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+            <li>Gooi de eerste 2&ndash;3 tankwisselingen weg of laat het systeem 24&ndash;48 uur doorlopen</li>
+            <li>De smaak verbetert de eerste week naarmate het membraan volledig gespoeld is</li>
+            <li>Een post-koolstoffilter absorbeert eventuele resterende geur en smaak</li>
+          </ul>
+          <p className="text-gray-700 leading-relaxed">
+            Na de inrijdperiode heeft osmosewater zijn definitieve smaakprofiel. Voeg daarna
+            een remineralisatiecartridge toe als u een voller, aangenamer smaak wilt dan puur
+            osmosewater biedt.
+          </p>
+        </section>
+
+        {/* Koffie */}
+        <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Osmosewater voor koffie en thee</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Specialty coffee baristas werken bij voorkeur met gefilterd water omdat chloor en
-            hoge mineralenconcentraties de extractie verstoren en aroma&apos;s maskeren. Omgekeerde
-            osmose met remineralisatie biedt een ideaal startpunt.
+            Osmosewater met remineralisatie (TDS 100&ndash;150 mg/L, calcium 50&ndash;75 mg/L) geeft
+            objectief een betere koffiesmaak dan onbehandeld hard kraanwater. Redenen:
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-white border border-gray-100 rounded-2xl p-4">
-              <p className="font-semibold text-gray-900 mb-2">Espresso</p>
-              <p className="text-sm text-gray-600">TDS 75–125 ppm, pH 7,0–7,5. Magnesium helpt bij extractie van zoete aroma&apos;s. Vermijd TDS onder 50 ppm — dan extractie te licht.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div className="bg-[#E0F2FE] rounded-xl p-4">
+              <p className="font-semibold text-[#003F5C] mb-2">Geen chloor</p>
+              <p className="text-sm text-gray-700">Chloor in kraanwater maskeert subtiele aroma&apos;s. Osmosewater bevat geen chloor.</p>
             </div>
-            <div className="bg-white border border-gray-100 rounded-2xl p-4">
-              <p className="font-semibold text-gray-900 mb-2">Filter coffee / pour-over</p>
-              <p className="text-sm text-gray-600">TDS 50–100 ppm werkt het best. Schoon water laat fruitige en bloemige noten beter naar voren komen.</p>
+            <div className="bg-[#E0F2FE] rounded-xl p-4">
+              <p className="font-semibold text-[#003F5C] mb-2">Geen kalk</p>
+              <p className="text-sm text-gray-700">Hard water vormt kalkaanslag in de machine en beïnvloedt de extractie negatief.</p>
             </div>
-            <div className="bg-white border border-gray-100 rounded-2xl p-4">
-              <p className="font-semibold text-gray-900 mb-2">Thee</p>
-              <p className="text-sm text-gray-600">Delicate groene en witte thees profiteren van laag-TDS water. Zwarte thee en herbal zijn minder gevoelig voor de waterkwaliteit.</p>
+            <div className="bg-[#E0F2FE] rounded-xl p-4">
+              <p className="font-semibold text-[#003F5C] mb-2">Magnesium voor extractie</p>
+              <p className="text-sm text-gray-700">Magnesium verbetert de extractie van zoete en fruitige koffie-aroma&apos;s aantoonbaar.</p>
             </div>
-            <div className="bg-white border border-gray-100 rounded-2xl p-4">
-              <p className="font-semibold text-gray-900 mb-2">Babymelk &amp; bereide voeding</p>
-              <p className="text-sm text-gray-600">Puur osmosewater (laag TDS, geen chloor) is ideaal voor babymelk — geen chloor, geen nitraten, geen microplastics.</p>
+            <div className="bg-[#E0F2FE] rounded-xl p-4">
+              <p className="font-semibold text-[#003F5C] mb-2">Controleerbaar TDS</p>
+              <p className="text-sm text-gray-700">U kunt precies de gewenste TDS instellen voor espresso (75&ndash;125 mg/L) of pour-over (125&ndash;175 mg/L).</p>
             </div>
           </div>
+          <p className="text-gray-700 leading-relaxed">
+            Zie ook onze pagina over{' '}
+            <Link href="/osmose-water/espresso" className="text-[#005F8A] underline">
+              osmosewater voor espresso
+            </Link>{' '}
+            voor gedetailleerde aanbevelingen per koffiemethode.
+          </p>
         </section>
 
-        {/* CTA */}
         <CTABanner context="osmose" />
 
-        {/* Gerelateerde pagina's */}
+        {/* Interne links */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Verder lezen</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/omgekeerde-osmose', title: 'Omgekeerde osmose uitleg', desc: 'Hoe werkt het systeem en wat verwijdert het precies?' },
-              { href: '/osmose-water/remineralisatie', title: 'Remineralisatie van osmosewater', desc: 'Welk patroon, welke mineralen en wanneer wisselen?' },
-              { href: '/omgekeerde-osmose/kopen', title: 'Osmose filter kopen', desc: 'Onafhankelijk overzicht van de beste RO-systemen.' },
-              { href: '/waterhardheid/testen', title: 'Waterhardheid testen', desc: 'Meet je eigen TDS en waterhardheid thuis.' },
+              { href: '/osmose-water', title: 'Osmosewater uitleg', desc: 'Alles over puur osmosewater: kwaliteit, veiligheid en gebruik.' },
+              { href: '/osmose-water/remineraliseren', title: 'Osmosewater remineraliseren', desc: 'Alle methoden om mineralen terug toe te voegen aan osmosewater.' },
+              { href: '/omgekeerde-osmose', title: 'Omgekeerde osmose systemen', desc: 'Hoe een RO-systeem werkt en wat het verwijdert.' },
+              { href: '/alkalisch-water', title: 'Alkalisch water', desc: 'Wat is alkalisch water en zijn er gezondheidsvoordelen?' },
             ].map(l => (
               <Link
                 key={l.href}
@@ -395,7 +388,7 @@ export default function OsmoseWaterSmaakPage() {
               <details key={item.question} className="border border-gray-100 rounded-xl p-4 group">
                 <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
                   {item.question}
-                  <span className="text-[#005F8A] group-open:rotate-180 transition-transform shrink-0 ml-2">▾</span>
+                  <span className="text-[#005F8A] group-open:rotate-180 transition-transform shrink-0 ml-2">&#9662;</span>
                 </summary>
                 <p className="mt-3 text-gray-600 text-sm leading-relaxed">{item.answer}</p>
               </details>
