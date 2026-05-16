@@ -2,14 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Kokend Water Kraan Installeren: Stap-voor-Stap',
+  title: 'Kokend water kraan installeren: stappen, kosten en wat heb je nodig?',
   description:
-    'Stap-voor-stap installatie van een kokend water kraan: gereedschap, wateraansluiting, boiler plaatsen, elektrische aansluiting en de eerste ingebruikname. Inclusief 4-in-1 met osmose.',
+    'Een kokend water kraan installeren duurt 2-4 uur. U hebt een kraangat, wateraansluiting en stopcontact nodig. Kosten installateur 150-350 euro. Complete installatiegids.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/installeren' },
   openGraph: {
-    title: 'Kokend Water Kraan Installeren: Stap-voor-Stap',
+    title: 'Kokend water kraan installeren: stappen, kosten en wat heb je nodig?',
     description:
       'Complete installatiegids voor een kokend water kraan thuis. Van voorbereiding tot eerste gebruik: wateraansluiting, boiler, elektra en speciale tips voor 4-in-1 met osmose filter.',
     url: 'https://waterfilterplatform.nl/kokend-water-kraan/installeren',
@@ -142,6 +143,20 @@ const installatieStappen = [
   },
 ];
 
+const articleSchema = {
+  '@type': 'Article',
+  headline: 'Kokend water kraan installeren: stappen, kosten en wat heb je nodig?',
+  description: 'Een kokend water kraan installeren duurt 2-4 uur. U hebt een kraangat, wateraansluiting en stopcontact nodig. Kosten installateur 150-350 euro. Complete installatiegids.',
+  datePublished: '2026-05-01',
+  dateModified: '2026-05-01',
+  url: 'https://waterfilterplatform.nl/kokend-water-kraan/installeren',
+  publisher: {
+    '@type': 'Organization',
+    name: 'WaterfilterPlatform',
+    url: 'https://waterfilterplatform.nl',
+  },
+};
+
 const howToSchema = {
   '@type': 'HowTo',
   name: 'Kokend Water Kraan Installeren: Stap-voor-Stap',
@@ -273,7 +288,7 @@ export default function KokendWaterKraanInstallerenPage() {
           { name: 'Installeren', url: 'https://waterfilterplatform.nl/kokend-water-kraan/installeren' },
         ]}
       />
-      <SchemaOrg schema={[howToSchema]} />
+      <SchemaOrg schema={[howToSchema, articleSchema]} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
@@ -313,6 +328,8 @@ export default function KokendWaterKraanInstallerenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+
+        <QuickAnswer answer="Installatie vereist een kraangat (35-38 mm), koude wateraansluiting (3/8 inch aftakking) en geaard stopcontact (230V). Loodgieter: 150-280 euro in 1,5-2,5 uur. Nieuw stopcontact: altijd gecertificeerde elektricien (NEN 3140). Doe-het-zelven is mogelijk bij bestaand kraangat en stopcontact." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
