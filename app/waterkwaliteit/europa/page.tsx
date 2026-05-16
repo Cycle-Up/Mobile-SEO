@@ -106,18 +106,23 @@ export default function WaterkwaliteitEuropaPage() {
         ]}
       />
 
+      <div className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
+        <div className="max-w-3xl mx-auto">
+          <nav className="text-sm text-gray-500 mb-6">
+            <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+            <Link href="/waterkwaliteit" className="hover:underline">Waterkwaliteit</Link> &rsaquo;{' '}
+            <span>Drinkwaterkwaliteit Europa</span>
+          </nav>
+
+          <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
+            Drinkwaterkwaliteit Europa: vergelijking van EU-landen
+          </h1>
+
+          <QuickAnswer answer="De EU Drinkwaterrichtlijn geldt voor alle 27 lidstaten, maar implementatie verschilt sterk. Nederland, Duitsland en Oostenrijk scoren het best. Hongarije, Roemenie en Bulgarije kennen structurele normproblemen. PFAS is een grensoverschrijdend probleem in het Rijn- en Scheldegebied en de Italiaanse Po-vlakte." />
+        </div>
+      </div>
+
       <main className="max-w-3xl mx-auto px-4 py-8">
-        <nav className="text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
-          <Link href="/waterkwaliteit" className="hover:underline">Waterkwaliteit</Link> &rsaquo;{' '}
-          <span>Drinkwaterkwaliteit Europa</span>
-        </nav>
-
-        <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
-          Drinkwaterkwaliteit Europa: vergelijking van EU-landen
-        </h1>
-
-        <QuickAnswer answer="De EU Drinkwaterrichtlijn geldt voor alle 27 lidstaten, maar implementatie verschilt sterk. Nederland, Duitsland en Oostenrijk scoren het best. Hongarije, Roemenie en Bulgarije kennen structurele normproblemen. PFAS is een grensoverschrijdend probleem in het Rijn- en Scheldegebied en de Italiaanse Po-vlakte." />
 
         <CTABanner context="osmose" />
 

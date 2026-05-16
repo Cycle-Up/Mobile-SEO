@@ -113,17 +113,22 @@ export default function WaterkwaliteitPage() {
         ]}
       />
 
+      <div className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
+        <div className="max-w-3xl mx-auto">
+          <nav className="text-sm text-gray-500 mb-6">
+            <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+            <span>Waterkwaliteit</span>
+          </nav>
+
+          <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
+            Waterkwaliteit in Nederland: wat zit er in ons drinkwater?
+          </h1>
+
+          <QuickAnswer answer="Nederlands drinkwater behoort tot de top 3 van Europa en voldoet 99,9% van de tijd aan alle wettelijke normen. Tien drinkwaterbedrijven, het RIVM en de ILT bewaken de kwaliteit. Opkomende verontreinigingen zoals PFAS, microplastics en medicijnresten zijn aandachtspunten zonder wettelijke norm." />
+        </div>
+      </div>
+
       <main className="max-w-3xl mx-auto px-4 py-8">
-        <nav className="text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
-          <span>Waterkwaliteit</span>
-        </nav>
-
-        <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
-          Waterkwaliteit in Nederland: wat zit er in ons drinkwater?
-        </h1>
-
-        <QuickAnswer answer="Nederlands drinkwater behoort tot de top 3 van Europa en voldoet 99,9% van de tijd aan alle wettelijke normen. Tien drinkwaterbedrijven, het RIVM en de ILT bewaken de kwaliteit. Opkomende verontreinigingen zoals PFAS, microplastics en medicijnresten zijn aandachtspunten zonder wettelijke norm." />
 
         <CTABanner context="osmose" />
 

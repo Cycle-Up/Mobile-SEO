@@ -114,18 +114,23 @@ export default function WaterkwaliteitNederlandPage() {
         ]}
       />
 
+      <div className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
+        <div className="max-w-3xl mx-auto">
+          <nav className="text-sm text-gray-500 mb-6">
+            <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+            <Link href="/waterkwaliteit" className="hover:underline">Waterkwaliteit</Link> &rsaquo;{' '}
+            <span>Drinkwaterkwaliteit Nederland</span>
+          </nav>
+
+          <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
+            Drinkwaterkwaliteit Nederland 2026: normen, rapporten en regionale verschillen
+          </h1>
+
+          <QuickAnswer answer="Nederland heeft 10 drinkwaterbedrijven die streng worden gecontroleerd via de Drinkwaterwet en EU-richtlijn 2020. In 2026 gelden nieuwe PFAS-normen en een strengere loodnorm. Grondwaterbedrijven scoren stabiel; PFAS-hotspots zijn Dordrecht/Chemours en voormalige militaire bases. Waterkwaliteitsrapporten zijn gratis te downloaden via uw waterbedrijf." />
+        </div>
+      </div>
+
       <main className="max-w-3xl mx-auto px-4 py-8">
-        <nav className="text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
-          <Link href="/waterkwaliteit" className="hover:underline">Waterkwaliteit</Link> &rsaquo;{' '}
-          <span>Drinkwaterkwaliteit Nederland</span>
-        </nav>
-
-        <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
-          Drinkwaterkwaliteit Nederland 2026: normen, rapporten en regionale verschillen
-        </h1>
-
-        <QuickAnswer answer="Nederland heeft 10 drinkwaterbedrijven die streng worden gecontroleerd via de Drinkwaterwet en EU-richtlijn 2020. In 2026 gelden nieuwe PFAS-normen en een strengere loodnorm. Grondwaterbedrijven scoren stabiel; PFAS-hotspots zijn Dordrecht/Chemours en voormalige militaire bases. Waterkwaliteitsrapporten zijn gratis te downloaden via uw waterbedrijf." />
 
         <CTABanner context="osmose" />
 
