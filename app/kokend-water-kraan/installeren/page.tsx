@@ -684,6 +684,9 @@ export default function KokendWaterKraanInstallerenPage() {
             ))}
           </div>
         </section>
+
+        <CTABanner context="kokend" />
+
       </div>
     </>
   );
