@@ -370,6 +370,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/leidingwater/chlooramine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/osmose-water/koken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterfilter/microplastics`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Ronde 8 — nieuwe clusters
+    { url: `${BASE}/waterfilter/pesticiden`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/osmose-water/mineralen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterontharder/zout-gebruik`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/omgekeerde-osmose/installatie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterfilter/hardheid`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/kokend-water-kraan/energie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/leidingwater/kalium`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
