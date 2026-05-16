@@ -5,9 +5,9 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Osmosewater en gezondheid: is osmosewater veilig om te drinken?',
+  title: 'Is osmosewater gezond? Mineralen, WHO-advies en dagelijks gebruik',
   description:
-    'Osmosewater is veilig om te drinken. Het lage mineralengehalte (TDS &lt;50 mg/L) is geen gezondheidsrisico. WHO-studie, niermythe en dagelijks gebruik uitgelegd.',
+    'Is osmosewater ongezond omdat het mineralen mist? De WHO adviseert minimaal Ca 30 mg/L in drinkwater. Leer wanneer osmosewater gezond is en wanneer remineralisatie nodig is.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/gezondheid' },
 };
 
@@ -16,66 +16,66 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Is osmosewater veilig om dagelijks te drinken?',
+      name: 'Is osmosewater ongezond doordat het geen mineralen bevat?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, osmosewater is veilig om dagelijks te drinken bij een normale, gevarieerde voeding. De WHO erkent in haar richtlijnen dat water met laag mineralengehalte geen gezondheidsrisico vormt wanneer de voeding voldoende calcium en magnesium levert. Osmosewater verwijdert bovendien gevaarlijke stoffen als PFAS, lood, nitraat en farmaceutische resten, wat het juist een gezondere keuze maakt dan ongefilterd kraanwater in risicogebieden.',
+        text: 'Osmosewater is niet ongezond voor de meeste volwassenen met een gevarieerde voeding. Circa 80 procent van calcium en magnesium wordt via voeding opgenomen, niet via water. EFSA bevestigde in 2022 dat er geen bewijs is voor gezondheidsschade bij kortdurend gebruik van gedemineraliseerd water bij gezonde volwassenen. Voor langdurig dagelijks gebruik als enige drinkbron is een remineralisatiefilter of gevarieerde voeding met voldoende zuivel en groenten aanbevolen.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Bevat osmosewater te weinig mineralen?',
+      name: 'Wat adviseert de WHO over de mineralengehalten in drinkwater?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Puur osmosewater bevat weinig mineralen (TDS 5-50 mg/L), maar dit is zelden een probleem. Calcium en magnesium komen primair uit voeding: zuivel, noten, groenten leveren 80-90% van de dagelijkse behoefte. Water draagt slechts 10-20% bij. Een remineralisatiecartridge (EUR 15-35/jaar) voegt calcium en magnesium terug toe voor wie dit wenst, waardoor het water vergelijkbaar wordt met licht bronwater.',
+        text: 'De WHO publiceerde in 2011 richtlijnen en bevestigde deze in 2022: voor drinkwater dat als primaire bron dient wordt minimaal calcium 30 mg/L, magnesium 10 mg/L en een totaal TDS van meer dan 100 mg/L aanbevolen. Puur osmosewater heeft een TDS van slechts 1 tot 20 mg/L en zit ver onder deze waarden. Met een remineralisatiecartridge (circa 15 tot 35 euro per jaar) is het TDS eenvoudig op te hogen naar 80 tot 200 mg/L, ruim boven de WHO-aanbeveling.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Verzuurt osmosewater je lichaam?',
+      name: 'Mag ik een baby voeden met osmosewater?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nee, dit is een mythe. Osmosewater heeft een licht zure pH (6,0-7,0) door de absorptie van CO2 uit de lucht. Maar de pH van bloed (7,35-7,45) wordt streng gereguleerd door het bicarbonaat-buffersysteem van het lichaam en de nieren. Maagzuur heeft al een pH van 1,5-3,5. Het drinken van licht zuur water heeft geen meetbaar effect op de bloedpH. Acidose door drinkwater is fysiologisch onmogelijk bij een gezond persoon.',
+        text: 'Pure osmosewater zonder remineralisatie wordt afgeraden voor de bereiding van flesvoeding voor zuigelingen. Baby\'s zijn volledig afhankelijk van flesvoeding als voedingsbron en kunnen bij gebruik van gedemineraliseerd water een calciumtekort oplopen als de voeding zelf ook onvoldoende mineralen levert. Gebruik voor babyvoeding water dat voldoet aan de normen voor babywater: laag nitraat, laag natrium, TDS bij voorkeur 50 tot 200 mg/L. Met remineralisatiefilter is osmosewater geschikt.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Is osmosewater slecht voor je nieren?',
+      name: 'Hoe voeg ik mineralen terug aan osmosewater toe?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nee, er is geen wetenschappelijk bewijs dat osmosewater de nieren schaadt. De nieren filteren bloed, niet drinkwater direct. De mineralenconcentratie in bloed wordt door nieren en hormonen (aldosteron, ADH) gereguleerd ongeacht het soort drinkwater. Er zijn geen studies die nierschade bij normale osmosewaterconsumptie aantonen bij mensen met een gevarieerde voeding.',
+        text: 'Er zijn drie praktische methoden voor remineralisatie van osmosewater: (1) een alkalische remineralisatiecartridge op het osmosesysteem die calciet en magnesiumoxide toevoegt, kosten circa 15 tot 35 euro per jaar; (2) mineraaltabletjes of -druppels toevoegen aan het water, flexibel maar duurder per liter; (3) osmosewater mengen met mineraalwater of leidingwater in een verhouding van 50 tot 50. De cartridge is de meest praktische en goedkoopste oplossing voor dagelijks gebruik.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Lekt osmosewater mineralen uit je lichaam?',
+      name: 'Zijn sporters in het nadeel als ze osmosewater drinken?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nee, dit is een onjuist begrip van osmose. Osmose is een proces waarbij water beweegt door een membraan van lage naar hoge concentratie opgeloste stoffen. In het spijsverteringskanaal en bloed zijn de mineraalconcentraties al hoog. Er is geen fysiologisch mechanisme waarbij het drinken van mineraalarm water mineralen uit het lichaam trekt. De nieren reguleren de mineralenbalans in het bloed.',
+        text: 'Bij intensieve inspanning verliezen sporters elektrolyten (natrium, kalium, magnesium) via transpiratie. Puur osmosewater bevat deze elektrolyten niet en is daardoor minder geschikt als exclusieve dorstlesser tijdens langdurige inspanning. Sporters doen er verstandig aan osmosewater aan te vullen met elektrolytentabs of een remineralisatiefilter te gebruiken. Bij normaal dagelijks gebruik en gevarieerde voeding is osmosewater ook voor sporters geen probleem.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Moet ik osmosewater remineraliseren?',
+      name: 'Wat zijn de bewezen voordelen van osmosewater?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Niet verplicht, maar aanbevolen voor dagelijks gebruik als primaire drinkwaterbron. Remineralisatie verbetert de smaak (pH van 6,5 naar 7,5), voegt calcium en magnesium toe, en reduceert het risico op looduitloging als u koperen of loden leidingen heeft. Kosten zijn circa EUR 15-35 per jaar voor een cartridge. Zonder remineralisatie is osmosewater ook veilig bij gevarieerde voeding.',
+        text: 'Osmosewater verwijdert bewezen schadelijke stoffen: PFAS (meer dan 95 procent), lood (meer dan 97 procent), nitraat (meer dan 90 procent), hormonen en medicijnresten (meer dan 95 procent), zware metalen, microplastics en chloor. In gebieden met PFAS-belasting, woningen met loden leidingen of agrarische gebieden met verhoogd nitraat is osmosewater aantoonbaar gezonder dan ongefilterd leidingwater.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Wat zegt de WHO over osmosewater drinken?',
+      name: 'Hoe vergelijkt osmosewater met mineraalwater in fles?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'De WHO publiceerde in 2004 een rapport over water met laag TDS-gehalte. Het rapport concludeerde dat bij TDS lager dan 30 mg/L en een voeding die onvoldoende mineralen levert, er mogelijke gezondheidsrisicos bestaan op de lange termijn. Maar: het rapport benadrukt ook dat bij een normale, gevarieerde voeding er geen risico is. Mineralen uit water zijn secundair aan mineralen uit voeding. De WHO beveelt een minimaal TDS van 100 mg/L aan voor drinkwater als primaire bron, dat met remineralisatie bereikt wordt.',
+        text: 'Geremineraliseerd osmosewater (TDS 80 tot 200 mg/L) is vergelijkbaar met licht mineraalwater wat betreft mineralengehalte. Voordelen van osmosewater: geen plastic flessenafval, veel goedkoper (circa 0,01 euro per liter versus 0,50 tot 1,50 euro voor flessenwater), altijd vers, geen microplastics uit plastic flessen. Nadeel: vereist initieel een osmosefilterinstallatie van 300 tot 700 euro. Na 1 tot 2 jaar is de investering terugverdiend.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Is osmosewater beter voor je dan kraanwater?',
+      name: 'Wat is het TDS van osmosewater en is dat voldoende?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Voor mensen in PFAS-belaste gebieden, woningen met loden leidingen, of regioes met hoog nitraat of lood in het leidingwater: ja, osmosewater is dan aantoonbaar gezonder. Nederlands leidingwater is over het algemeen veilig, maar bevat in sommige regioes hogere concentraties PFAS (0,01-0,04 µg/L) en nitraat (tot 25 mg/L). Osmosefilters verwijderen meer dan 95% van deze stoffen. Voor mensen zonder specifieke risicofactoren is het verschil kleiner maar nog steeds aanwezig.',
+        text: 'Puur osmosewater direct na het membraan heeft een TDS van 1 tot 20 mg/L, afhankelijk van de kwaliteit van het membraan en het invoerwater. Dit is ver onder de WHO-aanbeveling van meer dan 100 mg/L voor drinkwater. Met een remineralisatiecartridge stijgt het TDS naar 80 tot 200 mg/L. Een TDS-meter (5 tot 15 euro) helpt u de kwaliteit van het membraan en de remineralisatie te controleren.',
       },
     },
   ],
@@ -83,9 +83,9 @@ const faqSchema = {
 
 const articleSchema = {
   '@type': 'Article',
-  headline: 'Osmosewater en gezondheid: is osmosewater veilig om te drinken?',
+  headline: 'Is osmosewater gezond? Mineralen, WHO-advies en dagelijks gebruik',
   description:
-    'Osmosewater is veilig om te drinken. Het lage mineralengehalte (TDS kleiner dan 50 mg/L) is geen gezondheidsrisico bij gevarieerde voeding. WHO-studie en mythen besproken.',
+    'Is osmosewater ongezond omdat het mineralen mist? De WHO adviseert minimaal Ca 30 mg/L in drinkwater. Leer wanneer osmosewater gezond is en wanneer remineralisatie nodig is.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/gezondheid',
@@ -96,7 +96,7 @@ const articleSchema = {
   },
 };
 
-export default function OsmoseGezondheidsPage() {
+export default function OsmoseWaterGezondheidsPage() {
   return (
     <>
       <SchemaOrg
@@ -106,7 +106,7 @@ export default function OsmoseGezondheidsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://waterfilterplatform.nl' },
               { '@type': 'ListItem', position: 2, name: 'Osmosewater', item: 'https://waterfilterplatform.nl/osmose-water' },
-              { '@type': 'ListItem', position: 3, name: 'Osmosewater en gezondheid', item: 'https://waterfilterplatform.nl/osmose-water/gezondheid' },
+              { '@type': 'ListItem', position: 3, name: 'Is osmosewater gezond?', item: 'https://waterfilterplatform.nl/osmose-water/gezondheid' },
             ],
           },
           faqSchema,
@@ -116,128 +116,264 @@ export default function OsmoseGezondheidsPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/osmose-water" className="hover:underline">Osmosewater</a> &rsaquo;{' '}
-          <span>Osmosewater en gezondheid</span>
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/osmose-water" className="hover:underline">Osmosewater</Link> &rsaquo;{' '}
+          <span>Is osmosewater gezond?</span>
         </nav>
 
+        {/* Hero */}
         <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4 rounded-xl mb-8">
           <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
-            Osmosewater en gezondheid: is osmosewater veilig om te drinken?
+            Is osmosewater gezond? Mineralen, WHO-advies en dagelijks gebruik
           </h1>
-          <p className="text-gray-600 text-sm">
-            WHO-rapport, mythen over mineralen, nieren en pH — wetenschappelijk uitgelegd
+          <p className="text-[#005F8A] text-lg">
+            Osmosewater verwijdert bijna alle opgeloste stoffen, inclusief calcium en magnesium.
+            Is dat schadelijk? De WHO geeft richtlijnen, de wetenschap nuanceert, en de praktijk
+            voor de meeste Nederlanders is minder zorgwekkend dan vaak wordt beweerd.
           </p>
         </section>
 
-        <QuickAnswer answer="Osmosewater is veilig om dagelijks te drinken bij een gevarieerde voeding. Het lage mineralengehalte (TDS 5-50 mg/L) is geen gezondheidsrisico: mineralen komen primair uit voeding. Mythen over verzuring, nierschade en mineraalverlies zijn wetenschappelijk weerlegd. Met remineralisatiecartridge is osmosewater ideaal als dagelijkse drinkwaterbron." />
+        <QuickAnswer answer="Osmosewater is voor de meeste volwassenen met een gevarieerde voeding veilig en gezond. 80 procent van calcium en magnesium komt uit voeding, niet uit water. De WHO adviseert minimaal Ca 30 mg/L en TDS meer dan 100 mg/L. Met een remineralisatiefilter voldoet osmosewater ruim aan die norm." />
 
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Wat zegt de WHO over osmosewater?
+          Wat osmosewater verwijdert: de volledige lijst
         </h2>
         <p className="text-gray-700 mb-4">
-          De Wereldgezondheidsorganisatie (WHO) publiceerde in 2004 een rapport over de gezondheidsaspecten van water met een laag TDS-gehalte (totaal opgeloste stoffen). Het rapport onderzocht of het drinken van water met TDS lager dan 30 mg/L gezondheidsrisicos met zich meebrengt.
+          Een{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde-osmosefilter</Link>{' '}
+          dwingt water door een membraan met porieen van 0,0001 micron. Dit is zo fijn dat vrijwel
+          alle opgeloste stoffen worden tegengehouden, zowel schadelijke als onschadelijke:
         </p>
-        <p className="text-gray-700 mb-4">
-          De conclusies waren genuanceerd. Het rapport erkende dat bij langdurig gebruik van water met zeer laag TDS als de <em>enige</em> mineraalbron en bij een voeding die weinig calcium en magnesium levert, marginale mineralentekorten kunnen optreden. Tegelijkertijd benadrukte het rapport expliciet dat bij een normale, gevarieerde westerse voeding er geen gezondheidsrisico bestaat. Water levert slechts 10-20% van de dagelijkse calcium- en magnesiumbehoefte; voeding is de primaire bron.
-        </p>
-        <p className="text-gray-700 mb-6">
-          De WHO beveelt een minimaal TDS van 100 mg/L aan voor drinkwater dat als primaire drinkwaterbron dient. Dit niveau wordt eenvoudig bereikt met een remineralisatiecartridge op een osmosesysteem.
-        </p>
-
-        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Drie veelgehoorde mythen ontkracht
-        </h2>
-
-        <div className="space-y-4 mb-8">
-          <div className="border-l-4 border-red-400 bg-red-50 rounded-lg p-4">
-            <h3 className="font-semibold text-red-800 mb-1">
-              Mythe 1: "Osmosewater trekt mineralen uit je lichaam"
-            </h3>
-            <p className="text-gray-700 text-sm mb-2">
-              <strong>Onwaar.</strong> Deze claim berust op een verkeerd begrip van osmose. Osmose beschrijft de beweging van <em>water</em> door een semipermeabel membraan van lage naar hoge concentratie. In het menselijk lichaam zijn bloedmineraalconcentraties strak gereguleerd door de nieren en het hormonale systeem (aldosteron, ADH). Het drinken van mineraalarm water heeft geen meetbare invloed op bloedmineraalgehaltes bij gezonde personen.
-            </p>
-            <p className="text-gray-700 text-sm">
-              Bovendien absorbeert de darmwand actief mineralen uit voedsel en water. Er is geen passief "uitspoelingsmechanisme" van lichaamsmineral via drinkwater.
-            </p>
-          </div>
-
-          <div className="border-l-4 border-red-400 bg-red-50 rounded-lg p-4">
-            <h3 className="font-semibold text-red-800 mb-1">
-              Mythe 2: "Osmosewater verzuurt je lichaam"
-            </h3>
-            <p className="text-gray-700 text-sm mb-2">
-              <strong>Onwaar.</strong> Osmosewater heeft een licht zure pH van 6,0-7,0 door absorptie van CO2 uit de lucht. Maar de pH van bloed (7,35-7,45) wordt nauwkeurig gereguleerd door drie buffersystemen: bicarbonaat/koolzuur, eiwitten en fosfaatbuffers. Maagzuur heeft zelf al een pH van 1,5-3,5. Het spijsverteringssysteem neutraliseert al het water ver voordat het het bloed bereikt.
-            </p>
-            <p className="text-gray-700 text-sm">
-              Klinische acidose (verzuring van het bloed) treedt op door ernstige nierproblemen, longziekten of diabetes, niet door het drinken van licht zuur water. Er is geen gepubliceerde studie die aantoont dat drinken van osmosewater leidt tot meetbare pH-veranderingen in het bloed.
-            </p>
-          </div>
-
-          <div className="border-l-4 border-red-400 bg-red-50 rounded-lg p-4">
-            <h3 className="font-semibold text-red-800 mb-1">
-              Mythe 3: "Osmosewater is schadelijk voor de nieren"
-            </h3>
-            <p className="text-gray-700 text-sm">
-              <strong>Geen bewijs voor.</strong> De nieren filteren bloed, niet drinkwater rechtstreeks. Drinkwater wordt via de darm geabsorbeerd, gemengd met bloed, en vervolgens gefilterd door de nieren. De mineralenconcentratie van drinkwater heeft geen directe invloed op de werklast van de nieren. Voldoende vochtinname (waaronder osmosewater) ondersteunt de nierfunctie juist. Er zijn geen studies die nierschade bij osmosewaterconsumptie aantonen bij mensen met een normale voeding en gezonde nieren.
-            </p>
-          </div>
-        </div>
-
-        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Wat er wel klopt: de nuance
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Niet alle zorgen over osmosewater zijn ongegrond. Er is een specifieke situatie waarbij lage mineraleninname via water relevant is: personen met een sterk eenzijdige voeding (weinig zuivel, weinig groenten, weinig noten) en osmosewater als enige drank kunnen op de lange termijn een marginaal lagere inname van calcium en magnesium hebben dan bij mineraalrijker water. Dit betreft een kleine minderheid.
-        </p>
-        <p className="text-gray-700 mb-6">
-          De praktische oplossing is een alkalische remineralisatiecartridge. Kosten: EUR 15-35 per jaar. De cartridge voegt calcium- en magnesiumcarbonaten toe, verhoogt de pH naar 7,0-7,5 en brengt het TDS naar 80-200 mg/L. Dit water is vergelijkbaar met licht bronwater en voldoet ruim aan de WHO-aanbeveling.
-        </p>
-
-        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Gezondheidsvoordelen van osmosewater: wat is bewezen
-        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-          <div className="border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-[#003F5C] mb-2">PFAS verwijdering (&gt;95%)</h3>
-            <p className="text-gray-700 text-sm">
-              PFAS zijn persistente "forever chemicals" die in verband worden gebracht met verhoogd risico op bepaalde kankers, schildklierproblemen en immuniteitsonderdrukning. In PFAS-belaste gebieden (grote delen van Nederland nabij vliegbases, industrieterreinen) is osmose een bewezen effectieve barriere.
-            </p>
+          <div className="border border-red-200 bg-red-50 rounded-lg p-4">
+            <h3 className="font-semibold text-red-800 mb-2">Schadelijke stoffen verwijderd</h3>
+            <ul className="text-gray-700 text-sm space-y-1">
+              <li>PFAS (meer dan 95%)</li>
+              <li>Lood en zware metalen (meer dan 97%)</li>
+              <li>Nitraat en nitriet (meer dan 90%)</li>
+              <li>Pesticiden en herbiciden (meer dan 95%)</li>
+              <li>Hormonen en medicijnresten (meer dan 95%)</li>
+              <li>Microplastics (meer dan 99%)</li>
+              <li>Bacterien en virussen (meer dan 99%)</li>
+              <li>Chloor en chloramine</li>
+            </ul>
           </div>
-          <div className="border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-[#003F5C] mb-2">Loodverwijdering (&gt;97%)</h3>
-            <p className="text-gray-700 text-sm">
-              In woningen gebouwd voor 1970 kunnen nog loden leidingen aanwezig zijn. Lood is neurotoxisch zonder veilige drempelwaarde. Osmosefilters verwijderen meer dan 97% van lood uit drinkwater, wat een aantoonbaar gezondheidsvoordeel oplevert voor bewoners van oudere woningen.
-            </p>
-          </div>
-          <div className="border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-[#003F5C] mb-2">Nitraatverwijdering (&gt;90%)</h3>
-            <p className="text-gray-700 text-sm">
-              In agrarische gebieden (Brabant, Gelderland) overschrijdt nitraat in grondwater soms de EU-norm van 50 mg/L. Osmosefilters verwijderen meer dan 90% van nitraat. Dit is relevant voor zwangere vrouwen en zuigelingen, bij wie nitraat methemoglobinemie kan veroorzaken.
-            </p>
-          </div>
-          <div className="border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-[#003F5C] mb-2">Farmaceutische resten (&gt;95%)</h3>
-            <p className="text-gray-700 text-sm">
-              Hormonen (ethinylestradiol), antibiotica en pijnstillers worden in sporen aangetroffen in Nederlands oppervlaktewater en soms leidingwater. Osmosemembranen houden meer dan 95% van farmaceutische verbindingen tegen door de moleculaire grootte.
-            </p>
+          <div className="border border-yellow-200 bg-yellow-50 rounded-lg p-4">
+            <h3 className="font-semibold text-yellow-800 mb-2">Nuttige stoffen ook verwijderd</h3>
+            <ul className="text-gray-700 text-sm space-y-1">
+              <li>Calcium (Ca) &mdash; min. 30 mg/L aanbevolen</li>
+              <li>Magnesium (Mg) &mdash; min. 10 mg/L aanbevolen</li>
+              <li>Natrium (Na)</li>
+              <li>Kalium (K)</li>
+              <li>Bicarbonaat (HCO3&minus;)</li>
+              <li>Fluor (in gebieden met fluoridering)</li>
+            </ul>
           </div>
         </div>
-
         <p className="text-gray-700 mb-6">
-          Meer informatie over de specifieke verontreinigingen die osmosefilters verwijderen leest u op de pagina{' '}
-          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link> en{' '}
-          <Link href="/osmose-water" className="text-[#005F8A] underline">osmosewater voordelen</Link>.
-          Voor gebruik bij zuigelingen raadpleegt u{' '}
-          <Link href="/alkalisch-water" className="text-[#005F8A] underline">alkalisch water en gezondheid</Link>.
+          Het verwijderen van nuttige mineralen is de reden voor de discussie over de gezondheid
+          van osmosewater. Om dit goed te beoordelen, moet u weten hoeveel mineralen we
+          daadwerkelijk uit water halen.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Mineralen uit water: hoeveel missen we echt?
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Water is voor de meeste mensen een <strong>marginale mineralenbron</strong>. De
+          Europese Voedselautoriteit (EFSA) en de WHO zijn eensluidend: de overgrote meerderheid
+          van calcium en magnesium komt uit voeding, niet uit drinkwater:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+          <li>
+            <strong>Calcium:</strong> zuivelproducten, groene bladgroenten, noten en peulvruchten
+            leveren samen meer dan 80 procent van de dagelijkse calciumbehoefte (1000&ndash;1200 mg/dag
+            voor volwassenen). Zelfs hard leidingwater (150 mg/L) levert bij 2 liter per dag
+            slechts 300 mg calcium, ofwel 25 procent van de dagelijkse behoefte.
+          </li>
+          <li>
+            <strong>Magnesium:</strong> noten, zaden, volkorengranen en groene groenten zijn
+            de primaire magnesiumbronnen. De dagelijkse behoefte is 300&ndash;400 mg; water
+            levert ook hierbij hooguit 10 tot 20 procent.
+          </li>
+        </ul>
+        <p className="text-gray-700 mb-6">
+          EFSA bevestigde in haar 2022-rapport dat er geen bewijs is voor gezondheidsschade bij
+          kortdurend gebruik van gedemineraliseerd water bij gezonde volwassenen met een
+          evenwichtige voeding. Dit nuanceert de WHO-richtlijn sterk voor de gemiddelde Nederlander.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          WHO-richtlijnen: Ca 30 mg/L en TDS &gt; 100 mg/L
+        </h2>
+        <p className="text-gray-700 mb-4">
+          De WHO publiceerde in 2011 specifieke aanbevelingen voor mineralengehalten in drinkwater,
+          bevestigd in 2022:
+        </p>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[#E0F2FE]">
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Parameter</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">WHO minimum</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Puur osmosewater</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Osmose + remineralisatie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Calcium (Ca)</td>
+                <td className="border border-gray-300 px-3 py-2">30 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2 text-red-600">0&ndash;2 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2 text-green-600">30&ndash;80 mg/L</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium">Magnesium (Mg)</td>
+                <td className="border border-gray-300 px-3 py-2">10 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2 text-red-600">0&ndash;1 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2 text-green-600">10&ndash;30 mg/L</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">TDS</td>
+                <td className="border border-gray-300 px-3 py-2">&gt;100 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2 text-red-600">1&ndash;20 mg/L</td>
+                <td className="border border-gray-300 px-3 py-2 text-green-600">80&ndash;200 mg/L</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 mb-6">
+          Meer over remineralisatie leest u op onze pagina{' '}
+          <Link href="/osmose-water/remineraliseren" className="text-[#005F8A] underline">osmosewater remineraliseren</Link>.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Risicogroepen: voor wie is osmosewater zonder remineralisatie minder geschikt?
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Voor de meeste gezonde volwassenen met een gevarieerde voeding is puur osmosewater geen
+          probleem. Echter, voor bepaalde groepen is voorzichtigheid geboden of is remineralisatie
+          sterk aanbevolen:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-3">
+          <li>
+            <strong>Baby&apos;s en zuigelingen:</strong> baby&apos;s die volledig afhankelijk zijn van
+            flesvoeding bereid met gedemineraliseerd osmosewater lopen een risico op
+            calciumtekort als de voeding zelf ook onvoldoende mineralen levert. Voor
+            babywater is een lage nitraatconcentratie en een TDS van 50 tot 200 mg/L
+            aanbevolen. Zie ook onze pagina over{' '}
+            <Link href="/osmose-water/remineraliseren" className="text-[#005F8A] underline">osmosewater remineraliseren</Link>.
+          </li>
+          <li>
+            <strong>Beroepssporters:</strong> bij intensieve training verliezen sporters
+            elektrolyten (natrium, kalium, magnesium) via zweet. Puur osmosewater bevat
+            deze niet en volstaat niet als exclusieve hydratatiebron tijdens langdurige
+            inspanning. Elektrolytentabs of geremineraliseerd water zijn beter geschikt.
+          </li>
+          <li>
+            <strong>Ouderen met verminderde eetlust:</strong> ouderen die minder eten hebben
+            minder mogelijkheid om mineralentekorten via voeding te compenseren. Een
+            remineralisatiefilter is hier zinvol als extra zekerheid.
+          </li>
+          <li>
+            <strong>Mensen met eenzijdig dieet:</strong> bij een voeding die weinig zuivel,
+            groenten en noten bevat, draagt water relatief meer bij aan de mineralenbalans.
+            In dat geval is geremineraliseerd osmosewater te prefereren.
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Osmosewater vs mineraalwater vs bronwater: mineralenvergelijking
+        </h2>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[#E0F2FE]">
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Watertype</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Ca (mg/L)</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Mg (mg/L)</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">TDS (mg/L)</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Prijs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Puur osmosewater</td>
+                <td className="border border-gray-300 px-3 py-2">0&ndash;2</td>
+                <td className="border border-gray-300 px-3 py-2">0&ndash;1</td>
+                <td className="border border-gray-300 px-3 py-2">1&ndash;20</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;0,01/L</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium">Osmose + remineralisatie</td>
+                <td className="border border-gray-300 px-3 py-2">30&ndash;80</td>
+                <td className="border border-gray-300 px-3 py-2">10&ndash;30</td>
+                <td className="border border-gray-300 px-3 py-2">80&ndash;200</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;0,02/L</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Leidingwater NL (gemiddeld)</td>
+                <td className="border border-gray-300 px-3 py-2">60&ndash;120</td>
+                <td className="border border-gray-300 px-3 py-2">5&ndash;15</td>
+                <td className="border border-gray-300 px-3 py-2">150&ndash;400</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;0,001/L</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium">Bronwater (Spa Blauw)</td>
+                <td className="border border-gray-300 px-3 py-2">5</td>
+                <td className="border border-gray-300 px-3 py-2">1</td>
+                <td className="border border-gray-300 px-3 py-2">33</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;0,50&ndash;1,00/L</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Mineraalwater (Spa Rood)</td>
+                <td className="border border-gray-300 px-3 py-2">60</td>
+                <td className="border border-gray-300 px-3 py-2">5</td>
+                <td className="border border-gray-300 px-3 py-2">260</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;0,50&ndash;1,50/L</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 mb-6">
+          Een uitgebreide vergelijking leest u op{' '}
+          <Link href="/osmose-water/vs-mineraalwater" className="text-[#005F8A] underline">osmosewater versus mineraalwater</Link>.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          De oplossing: remineralisatiefilter of gevarieerde voeding
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Er zijn twee eenvoudige manieren om de mineralenbalans te herstellen bij gebruik van
+          osmosewater als dagelijkse drinkwaterbron:
+        </p>
+        <ol className="list-decimal pl-6 text-gray-700 mb-4 space-y-3">
+          <li>
+            <strong>Remineralisatiecartridge:</strong> een alkalische remineralisatiecartridge
+            wordt na het RO-membraan geplaatst en voegt calciumcarbonaat en magnesiumoxide toe.
+            Het TDS stijgt naar 80 tot 200 mg/L. Kosten: 15 tot 35 euro per jaar. Dit is de
+            meest praktische en kosteneffectieve oplossing.
+          </li>
+          <li>
+            <strong>Gevarieerde voeding:</strong> dagelijks zuivelproducten (yoghurt, kaas, melk),
+            groene bladgroenten (boerenkool, broccoli), noten (amandelen, cashews) en volkoren
+            granen leveren ruimschoots de aanbevolen calcium- en magnesiuminname, ongeacht
+            het soort drinkwater.
+          </li>
+        </ol>
+        <p className="text-gray-700 mb-6">
+          Meer over de verschillende remineralisatieopties leest u op{' '}
+          <Link href="/osmose-water/remineraliseren" className="text-[#005F8A] underline">osmosewater remineraliseren: methoden en kosten</Link>.
         </p>
 
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">
-          <h2 className="text-2xl font-semibold text-[#005F8A]">Veelgestelde vragen over osmosewater en gezondheid</h2>
+          <h2 className="text-2xl font-semibold text-[#005F8A]">
+            Veelgestelde vragen over osmosewater en gezondheid
+          </h2>
           {faqSchema.mainEntity.map((faq, i) => (
             <details key={i} className="border border-gray-200 rounded-lg p-4">
               <summary className="font-semibold text-[#003F5C] cursor-pointer">
@@ -250,10 +386,10 @@ export default function OsmoseGezondheidsPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <Link href="/osmose-water" className="text-[#005F8A] underline">osmosewater uitleg</Link>,{' '}
-          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose filter</Link>,{' '}
-          <Link href="/alkalisch-water" className="text-[#005F8A] underline">alkalisch water</Link> en{' '}
-          <a href="/osmose-water/vs-mineraalwater" className="text-[#005F8A] underline">osmose vs mineraalwater</a>.
+          <Link href="/osmose-water/remineraliseren" className="text-[#005F8A] underline">osmosewater remineraliseren</Link>,{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link>,{' '}
+          <Link href="/osmose-water/vs-mineraalwater" className="text-[#005F8A] underline">osmose vs mineraalwater</Link> en{' '}
+          <Link href="/osmose-water" className="text-[#005F8A] underline">alle osmosewater-informatie</Link>.
         </p>
       </main>
     </>
