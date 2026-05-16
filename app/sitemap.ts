@@ -190,6 +190,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kokend-water-kraan/vs-quooker`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/waterfilter/best-getest-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/drinkwater/kwaliteitsrapport`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/zout`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/aluminium`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE}/osmose-water/vs-bronwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwater/nitraat-verlagen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterontharder/vergelijken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/waterontharder/zoutloos`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/osmose-filter/onderhoud`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/osmose-water/thee`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
