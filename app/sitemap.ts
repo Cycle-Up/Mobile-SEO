@@ -309,6 +309,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/omgekeerde-osmose/waterdruk`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/kokend-water-kraan/onderhoud`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/omgekeerde-osmose/vs-ultrafiltratie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Ronde 5 — alkalisch water cluster
+    { url: `${BASE}/alkalisch-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/alkalisch-water/gezondheid`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/alkalisch-water/ionisator`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/alkalisch-water/vs-osmose`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Bruisend water cluster
+    { url: `${BASE}/bruisend-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/bruisend-water/kraan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/bruisend-water/sodastream`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/bruisend-water/co2`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Babywater cluster
+    { url: `${BASE}/babywater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/babywater/welk-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/babywater/osmose`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Osmose-water uitbreidingen
+    { url: `${BASE}/osmose-water/vs-mineraalwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/osmose-water/vs-bronwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/osmose-water/gezondheid`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Situationeel
+    { url: `${BASE}/waterfilter/caravan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Waterzuivering cluster
+    { url: `${BASE}/waterzuivering`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterzuivering/grondwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterzuivering/oppervlaktewater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterzuivering/thuis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // pH & mineralen
+    { url: `${BASE}/kraanwater/ph`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/leidingwater/ijzer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/installeren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
