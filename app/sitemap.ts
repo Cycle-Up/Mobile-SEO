@@ -203,6 +203,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/pfas-waterfilter/testen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/pfas-waterfilter/normen-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/pfas-waterfilter/gebieden-nederland`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Waterontkalker cluster
+    { url: `${BASE}/waterontkalker/werking`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterontkalker/vergelijken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/waterontkalker/kopen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterontkalker/kosten`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterontkalker/vs-waterontharder`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterontkalker/soorten`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Heet-water-kraan cluster
+    { url: `${BASE}/heet-water-kraan/kopen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/heet-water-kraan/vergelijken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/heet-water-kraan/installeren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/heet-water-kraan/prijs`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/heet-water-kraan/filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Kalk-in cluster
+    { url: `${BASE}/kalk-in`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/kalk-in/filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/kalk-in/cv-ketel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/kalk-in/douche`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kalk-in/wasmachine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Waterfilter stoffen
+    { url: `${BASE}/waterfilter/hormonen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterfilter/legionella`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/zink`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/koper`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/milieu`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/nitriet`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/subsidie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Overig
+    { url: `${BASE}/osmose-water/koffie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/leidingwater/hard-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
