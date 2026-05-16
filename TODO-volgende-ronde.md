@@ -4,20 +4,20 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 14
+## Hoge prioriteit (direct zoekvolume) — Ronde 15
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/ammonium` — ammonium in oppervlaktewater, chlooramine, zeoliet vs actief kool
-- [ ] `/omgekeerde-osmose/zout-water` — osmose voor brak water (regenwater opvang, boot), capaivergelijking
-- [ ] `/waterontharder/elektromagnetisch` — elektronische waterontharder vs ionenwisseling, werking, effectiviteit
-- [ ] `/leidingwater/hardheid-meten` — TDS-meter, druppeltest, strips: hoe hardheid thuis meten
-- [ ] `/kokend-water-kraan/stoom` — stoom bij kokend water, normaal of gevaarlijk, sproeipatroon
-- [ ] `/osmose-water/wijn` — osmosewater voor wijnmakers, remineralisatie gist
-- [ ] `/waterfilter/sediment` — sedimentfilter als voorfilter, micron-klasse, wanneer nodig
+- [ ] `/waterfilter/actief-kool` — verschil GAC vs CTO vs blokfilter, hoe lang mee, wanneer vervangen
+- [ ] `/omgekeerde-osmose/smaak` — osmosewater smaak verbeteren, remineralisatie, pH optima
+- [ ] `/waterontharder/capaciteit` — capaciteit berekenen in granen, liter per dag, harskeuze
+- [ ] `/leidingwater/uranium` — uranium in grondwater (Brabant), WHO-norm 30 ug/L, osmose effectief
+- [ ] `/kokend-water-kraan/huurwoning` — (check of al bestaat, anders: toestemming verhuurder, installatie reversibel)
+- [ ] `/osmose-water/ijssteen` — osmosewater voor ijsblokjes: helder vs troebel ijs
+- [ ] `/waterfilter/chloor` — actief kool vs osmose voor chloor, rest-chloor, trihalomethanen
 
 ### Kennisbank diepte-artikelen (MDX)
-- [ ] `waterontharder-zout-kopen.mdx` — waar kopen, prijs per kg, online vs bouwmarkt, hoeveel bestellen
-- [ ] `leidingwater-kwaliteit-verbeteren.mdx` — top 5 maatregelen: filter, koken, bewaren, testen
+- [ ] `waterhardheid-kaart-nederland.mdx` — interactieve tabel alle provincies + uitleg
+- [ ] `beste-waterfilter-2026.mdx` — vergelijkend overzicht top 5 waterfiltertypen
 
 ---
 
@@ -41,19 +41,19 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ## Afgerond
 
-### Rondes 1-12 — zie vorige versies
+### Rondes 1-13 — zie commits
 
-### Ronde 13 — Strontium, membraandruk, bypass, silica, schoonmaken, mangan, ijzer + 2 MDX (9 bestanden)
-- [x] waterfilter/strontium — WHO-norm 4 mg/L, geen EU-norm, osmose 90-97%
-- [x] omgekeerde-osmose/membraandruk — osmotische druk, scaling, temperatuurcorrectie
-- [x] waterontharder/bypass — mengklep, tuin hard water, EU calcium minimum 60 mg/L
-- [x] leidingwater/silica — glasaanslag, 5-30 mg/L NL, osmose 85-95%, vs kalkaaanslag
-- [x] kokend-water-kraan/schoonmaken — sproeikop kwartaal, boiler citroenzuur jaarlijks
-- [x] waterfilter/mangan — zwart residu, EU-norm 50 ug/L, osmose 95-99%
-- [x] kraanwater/ijzer — roestrood water, EU-norm 200 ug/L, oxidatiefilter vs osmose
-- [x] waterfilter-vergelijken.mdx — filterkan/kraanopzet/osmose/ontharder, TCO 5 jaar
-- [x] omgekeerde-osmose-uitleg.mdx — TFC membraan, transmembraandruk, verwijderingstabel
+### Ronde 14 — Ammonium, zout-water, elektromagnetisch, hardheid-meten, stoom, wijn, sediment + 2 MDX
+- [x] waterfilter/ammonium — NH4+ EU-norm 0.5 mg/L, zeoliet 80-98%, chlooramine link
+- [x] omgekeerde-osmose/zout-water — brak water 10-20 bar, boot watermaker, regenwater + UV
+- [x] waterontharder/elektromagnetisch — TNO geen bewijs, aragoniet vs calciet, vs ionenwisseling
+- [x] leidingwater/hardheid-meten — TDS-meter, EDTA druppeltest, strips, eenheden omrekenen
+- [x] kokend-water-kraan/stoom — normaal bij 100 graden, spettering sproeikop, veiligheid
+- [x] osmose-water/wijn — TCA chloor, gist magnesium, remineralisatie concentraat wijn
+- [x] waterfilter/sediment — micronklassen 1-50 um, voorfilter osmose en UV
+- [x] waterontharder-zout-kopen.mdx — prijsvergelijking bouwmarkt vs online, merken
+- [x] leidingwater-kwaliteit-verbeteren.mdx — 5 maatregelen, situatiematrix, budget prioritering
 
 ---
 
-*Bijgewerkt: 2026-05-16 — 4124 statische paginas na ronde 13 (312/312 MDX artikelen geslaagd)*
+*Bijgewerkt: 2026-05-16 — 4132 statische paginas na ronde 14 (313/313 MDX artikelen geslaagd)*
