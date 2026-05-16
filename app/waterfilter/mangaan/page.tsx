@@ -72,7 +72,7 @@ const faqSchema = {
       name: 'Wanneer is een osmosefilter de beste keuze bij mangaan?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Een osmosefilter is de beste keuze bij mangaan als: (1) u naast mangaan ook andere verontreinigingen heeft (ijzer, nitraat, PFAS); (2) het mangaangehalte laag tot matig is (<1 mg/L); (3) u alleen drinkwater en kookwater wilt zuiveren (geen hele-huis-oplossing nodig). Voor hoge mangaanconcentraties (>1 mg/L) is een greensand-voorfilter nodig vóór de osmose, anders raakt het membraan snel vervuild.',
+        text: 'Een osmosefilter is de beste keuze bij mangaan als: (1) u naast mangaan ook andere verontreinigingen heeft (ijzer, nitraat, PFAS); (2) het mangaangehalte laag tot matig is (<1 mg/L); (3) u alleen drinkwater en kookwater wilt zuiveren (geen hele-huis-oplossing nodig). Voor hoge mangaanconcentraties (&gt;1 mg/L) is een greensand-voorfilter nodig vóór de osmose, anders raakt het membraan snel vervuild.',
       },
     },
   ],
@@ -238,7 +238,7 @@ export default function WaterfilterMangaanPage() {
               <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">Beste voor keuken + combinatieproblemen</span>
             </div>
             <p className="text-gray-700 text-sm mb-2">
-              Een osmosefilter verwijdert opgelost Mn²⁺ voor 90–95% via het semipermeabele membraan. Ideaal als naast mangaan ook nitraat, ijzer, PFAS of andere stoffen aanwezig zijn. Bij hogere mangaanconcentraties (>0,5 mg/L) is een sedimentprefilter of greensand-voorfilter noodzakelijk om het membraan te beschermen.
+              Een osmosefilter verwijdert opgelost Mn²⁺ voor 90–95% via het semipermeabele membraan. Ideaal als naast mangaan ook nitraat, ijzer, PFAS of andere stoffen aanwezig zijn. Bij hogere mangaanconcentraties (&gt;0,5 mg/L) is een sedimentprefilter of greensand-voorfilter noodzakelijk om het membraan te beschermen.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-gray-500">
               <span>Mn²⁺: ✓ 90–95%</span>
