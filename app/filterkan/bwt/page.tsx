@@ -164,7 +164,7 @@ export default function BwtFilterkanPage() {
           title: 'BWT filterkan: Penguin, Minerva en mg²⁺ technologie uitgelegd 2026',
           description:
             'BWT filterkansen onderscheiden zich door magnesium-verrijking (mg²⁺). Vergelijking Penguin, Minerva en BWT Vida modellen: prijzen, filters en wat ze verwijderen.',
-          datePublished: '2026-02-10',
+          datePublished: '2026-05-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/filterkan/bwt',
         }}

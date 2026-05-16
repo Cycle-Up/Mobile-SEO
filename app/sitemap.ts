@@ -281,6 +281,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/waterkwaliteit/nederland`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/waterkwaliteit/europa`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterkwaliteit/test`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Ronde 4 — hoge prioriteit
+    { url: `${BASE}/waterfilter/hormonen-medicijnen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/omgekeerde-osmose/installatietijd`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/osmose-filter/vervangen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/kokend-water-kraan/huurwoning`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Filterkan cluster uitbreiding
+    { url: `${BASE}/filterkan/werking`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/filterkan/brita`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/filterkan/bwt`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/filterkan/brita-vs-bwt`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/filterkan/filter-vervangen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Drinkwaterfontein cluster
+    { url: `${BASE}/drinkwaterfontein`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaterfontein/kantoor`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwaterfontein/thuis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwaterfontein/kopen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Reisfilter cluster
+    { url: `${BASE}/reisfilter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/reisfilter/lifestraw`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/reisfilter/sawyer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Technische verdieping waterontharder
+    { url: `${BASE}/waterontharder/installeren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterontharder/storingen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Technische verdieping osmose + kokend-water-kraan
+    { url: `${BASE}/omgekeerde-osmose/membraan-vervangen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/omgekeerde-osmose/waterdruk`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/onderhoud`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/omgekeerde-osmose/vs-ultrafiltratie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [

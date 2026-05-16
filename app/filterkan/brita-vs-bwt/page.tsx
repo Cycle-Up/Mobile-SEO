@@ -100,7 +100,7 @@ export default function BritaVsBwtPage() {
           title: 'Brita vs BWT filterkan: wat is het verschil en welke is beter? 2026',
           description:
             'Brita of BWT filterkan? Vergelijking op filterwerkzaamheid, magnesium-toevoeging, modellen, kosten en voor wie welk merk de beste keuze is.',
-          datePublished: '2026-02-15',
+          datePublished: '2026-05-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/filterkan/brita-vs-bwt',
         }}

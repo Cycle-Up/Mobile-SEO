@@ -146,7 +146,7 @@ export default function FilterkanPage() {
           title: 'Wat is een waterfilterkan? Brita, BWT en alternatieven vergelijken 2026',
           description:
             'Alles over waterfilterkannen: hoe ze werken, welke merken de beste zijn, wat ze wel en niet verwijderen en wanneer je beter kiest voor osmose.',
-          datePublished: '2026-01-01',
+          datePublished: '2026-05-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/filterkan',
         }}

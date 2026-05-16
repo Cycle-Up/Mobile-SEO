@@ -187,7 +187,7 @@ export default function FilterVervangenPage() {
           title: 'Filterkan filter vervangen: wanneer, hoe vaak en welke kosten 2026',
           description:
             'Hoe vaak moet je het filter van je filterkan vervangen? Brita Maxtra Pro elke 4 weken of 150L. BWT elke 120L. Stap-voor-stap vervangingsgids en kostenoverzicht.',
-          datePublished: '2026-02-15',
+          datePublished: '2026-05-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/filterkan/filter-vervangen',
         }}

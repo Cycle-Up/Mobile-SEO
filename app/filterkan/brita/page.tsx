@@ -170,7 +170,7 @@ export default function BritaFilterkanPage() {
           title: 'Brita filterkan: modellen, filterpatronen en kosten 2026',
           description:
             'Overzicht van alle Brita filterkan modellen: Marella, Maxtra Pro, Flow, Style. Vergelijking filterpatronen, capaciteit, NSF-certificering en jaarkosten.',
-          datePublished: '2026-02-10',
+          datePublished: '2026-05-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/filterkan/brita',
         }}

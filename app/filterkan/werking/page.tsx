@@ -144,7 +144,7 @@ export default function FilterkanWerkingPage() {
           title: 'Hoe werkt een filterkan? Actief kool, ionenwisseling en wat het filtert',
           description:
             'Een filterkan filtert via actief kool (chloor, geur) en ionenwisseling (kalk, zware metalen). Uitleg van de filterstappen, wat er wel en niet uit wordt gehaald en wanneer je meer nodig hebt.',
-          datePublished: '2026-02-20',
+          datePublished: '2026-05-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/filterkan/werking',
         }}
