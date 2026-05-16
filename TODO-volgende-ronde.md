@@ -4,21 +4,21 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 9
+## Hoge prioriteit (direct zoekvolume) — Ronde 10
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/waterverzachter` — verschil waterfilter vs waterverzachter (SEO-synoniemen)
-- [ ] `/osmose-water/ph` — pH van osmosewater: zuur, neutraal of basisch?
-- [ ] `/omgekeerde-osmose/onderhoud` — onderhoudsschema osmosefilter, filtervervanging, reiniging
-- [ ] `/waterontharder/kosten` — aanschaf, jaarlijks zout, TCO vergelijking huren vs kopen
-- [ ] `/leidingwater/sulfaat` — sulfaat in leidingwater: smaak, normen, filter
-- [ ] `/kraanwater/tds` — TDS meten in kraanwater, wat betekenen de waarden
-- [ ] `/waterfilter/koper` — koper in leidingwater via koperen leidingen, EU-norm 2 mg/L
+- [ ] `/waterfilter/nikkel` — nikkel in leidingwater via kranen en fittingen, EU-norm 20 ug/L
+- [ ] `/osmose-water/sport` — osmosewater voor sporters, elektrolyten, remineralisatie
+- [ ] `/omgekeerde-osmose/capaciteit` — liter per uur berekenen, debiet vergelijking, tankloze systemen
+- [ ] `/waterontharder/regeneratie-tijd` — hoe lang duurt regeneratie, automatisch vs handmatig
+- [ ] `/leidingwater/hardheid-kaart` — interactieve hardheidskaart NL per provincie (statische versie)
+- [ ] `/waterfilter/zeoliet` — zeoliet als filtermedium: ammonia, zware metalen, aquarium
+- [ ] `/kokend-water-kraan/koffie` — optimaal water voor koffie: TDS, pH, hardheid, SCA-normen
 
 ### Kennisbank diepte-artikelen (MDX)
 - [ ] `pfas-in-nederland-2026.mdx` — actuele PFAS-hotspots, watermaatschappij maatregelen
 - [ ] `osmose-water-voor-planten.mdx` — is osmosewater goed of slecht voor kamerplanten?
-- [ ] `drinkwater-statistieken-nederland.mdx` — CBS/RIVM data visualisatie
+- [ ] `drinkwater-statistieken-nederland.mdx` — CBS/RIVM data
 
 ---
 
@@ -27,7 +27,6 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 ### Gemeenten uitbreiding (programmatisch)
 - [ ] Overweeg `/pfas-waterfilter/[gemeente]` voor 30-40 hotspot-gemeenten
 - [ ] Overweeg `/heet-water-kraan/[gemeente]` als volume het rechtvaardigt
-- [ ] Overweeg `/drinkwaterfontein/[gemeente]` voor zakelijke lokale SEO
 
 ---
 
@@ -45,12 +44,11 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [ ] Core Web Vitals check na Vercel-deploy
 - [ ] Structured data validatie via Google Rich Results Test
 
-### Ideen voor ronde 10+
+### Ideen voor ronde 11+
 - Interactief waterhardheids-zoekwidget (client component, apart bundle)
 - Video-schema markup toevoegen als YouTube-content beschikbaar
 - Pricing-schema markup op vergelijkingspaginas
 - FAQ-schema cross-check met Google Search Console vertoningen
-- `/brouwwater/recepten` waterprofielen per bierstijl als interactieve tool
 - Interactief filter-vergelijkingstool (client component)
 
 ---
@@ -98,7 +96,7 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] Waterzuivering: hub, grondwater, oppervlaktewater, thuis
 - [x] Situationeel: waterfilter/caravan
 - [x] pH & mineralen: kraanwater/ph, leidingwater/ijzer
-- [x] Ontbrekende sub-pages: omgekeerde-osmose/vs-ultrafiltratie (al ronde 4), kokend-water-kraan/installeren
+- [x] Ontbrekende sub-pages: kokend-water-kraan/installeren
 
 ### Ronde 6 — Zakelijk cluster + osmose verdieping + niche (15 paginas)
 - [x] Zakelijk: waterfilter/horeca, waterfilter/bedrijf, drinkwaterfontein/horeca, waterontharder/zakelijk
@@ -116,14 +114,21 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] Technisch & gebruik: leidingwater/chlooramine, osmose-water/koken
 
 ### Ronde 8 — Installatie, mineralen, energie, zout (7 paginas)
-- [x] Gevaarlijke stoffen: waterfilter/pesticiden (0,1 ug/L EU-norm, RIVM 15% overschreding)
-- [x] Mineralen: osmose-water/mineralen (Ca/Mg vergelijkingstabel, remineralisatieopties)
-- [x] Zout: waterontharder/zout-gebruik (tablet vs granulaat vs blok, KCl alternatief)
-- [x] Installatie: omgekeerde-osmose/installatie (8-stappen gids, waterdruk, druktank)
-- [x] Hard water: waterfilter/hardheid (ontharder vs osmose vs magneet, keuzewijzer)
-- [x] Energie: kokend-water-kraan/energie (standby 15W, per-kopje vergelijking, eco-stand)
-- [x] Mineralen: leidingwater/kalium (KCl vs NaCl, hyperkaliemie-waarschuwing nierinsufficiëntie)
+- [x] Gevaarlijke stoffen: waterfilter/pesticiden
+- [x] Mineralen: osmose-water/mineralen, leidingwater/kalium
+- [x] Zout: waterontharder/zout-gebruik
+- [x] Installatie: omgekeerde-osmose/installatie
+- [x] Hard water: waterfilter/hardheid
+- [x] Energie: kokend-water-kraan/energie
+
+### Ronde 9 — Onderhoud, pH, kosten, stoffen (7 paginas)
+- [x] Synoniemen/vergelijking: waterfilter/waterverzachter
+- [x] Chemie: osmose-water/ph (CO2-absorptie, calciet remineralisatie)
+- [x] Onderhoud: omgekeerde-osmose/onderhoud (schema, sanitisatie, TDS-ratio)
+- [x] Kosten: waterontharder/kosten (TCO, besparing cv-ketel, break-even)
+- [x] Stoffen: leidingwater/sulfaat, waterfilter/koper
+- [x] Meetinstrumenten: kraanwater/tds (TDS-meter, referentiewaarden, koffie/thee)
 
 ---
 
-*Bijgewerkt: 2026-05-16 — 4092 statische paginas na ronde 8*
+*Bijgewerkt: 2026-05-16 — 4095 statische paginas na ronde 9*
