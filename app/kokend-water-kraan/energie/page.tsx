@@ -2,403 +2,363 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Kokend water kraan energieverbruik: jaarkosten berekenen | 2026',
+  title: 'Energieverbruik kokend water kraan: vergelijking met waterkoker en pan',
   description:
-    'Hoeveel stroom verbruikt een kokend water kraan? Standby 10–80W, boilervolume, dagelijks gebruik. Jaarkosten bij €0,28–0,32/kWh vergeleken met waterkoker.',
+    'Een kokend water kraan (boiler) verbruikt 24/7 standby-energie maar is per kopje thee goedkoper dan een waterkoker. Vergelijking van energiekosten: kokend waterboiler vs waterkoker vs pan op inductie.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/energie' },
-  openGraph: {
-    title: 'Kokend water kraan energieverbruik: jaarkosten berekenen',
-    description:
-      'Bereken de jaarlijkse energiekosten van een kokend water kraan en vergelijk ze met een traditionele waterkoker.',
-    url: 'https://waterfilterplatform.nl/kokend-water-kraan/energie',
-    type: 'article',
-  },
 };
 
-const faqItems = [
-  {
-    question: 'Hoeveel stroom verbruikt een kokend water kraan in standby?',
-    answer:
-      'Het standby-verbruik varieert sterk per merk en model: van circa 10W (energie-efficiënte modellen met kleine boiler) tot 80W (grote boilers bij hogere temperaturen). Een gemiddeld systeem met een boiler van 2,4L zit rond de 25–40W. Jaarlijks standby-verbruik: 220–700 kWh.',
-  },
-  {
-    question: 'Verbruikt een kokend water kraan meer stroom dan een waterkoker?',
-    answer:
-      'Bij intensief gebruik (4+ kopjes per dag) is een kokend water kraan doorgaans energiezuiniger dan een waterkoker. Een waterkoker verbruikt 1.500–3.000W per kookbeurt en kookt vaak te veel water. Een kokend water kraan houdt een kleine boiler continu warm (laag maar constant verbruik) en levert alleen precies de hoeveelheid die nodig is.',
-  },
-  {
-    question: 'Hoeveel kost een kokend water kraan per jaar aan stroom?',
-    answer:
-      'De jaarlijkse energiekosten liggen bij de meeste modellen tussen €55 en €150, afhankelijk van boilervolume, ingestelde temperatuur, gebruiksfrequentie en de stroomprijs (€0,28–€0,32/kWh in 2026). Met energiebesparende functies (nachtmodus, weekprogramma) kun je dit terugbrengen tot €40–80 per jaar.',
-  },
-  {
-    question: 'Wat is het effect van de boilertemperatuur op het verbruik?',
-    answer:
-      'Hoe hoger de ingestelde temperatuur, hoe meer energie er nodig is om het water op temperatuur te houden. Een boiler op 100°C verbruikt 20–30% meer energie dan dezelfde boiler op 90°C. Voor thee en koffie is 95–98°C voldoende; echt kokend water is alleen nodig voor pasta en het afkoken van flessen.',
-  },
-  {
-    question: 'Helpt een nachtmodus bij besparen?',
-    answer:
-      'Ja, aanzienlijk. Een nachtmodus of weekprogramma zet de boiler terug naar standby of een lagere temperatuur gedurende 8–10 uur per dag. Dat kan het jaarverbruik met 20–35% reduceren. Veel moderne modellen (bijv. Quooker COMBI, Franke) hebben deze functie standaard ingebouwd.',
-  },
-  {
-    question: 'Hoe vergelijk ik het energieverbruik van verschillende merken?',
-    answer:
-      'Kijk in de productspecificaties naar het standby-vermogen (Watt) en het boilervolume (liter). Hoe kleiner het boilervolume bij gelijk gebruik, hoe energie-efficiënter. Bereken het jaarverbruik met de formule: (standby vermogen in W × 8.760 uur) / 1.000 = kWh per jaar, maal je stroomtarief.',
-  },
-];
+const faqSchema = {
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Hoeveel standby-energie verbruikt een kokend water kraan per jaar?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Een gemiddeld model van 15 Watt standby verbruikt 15 x 8.760 uur / 1.000 = 131 kWh per jaar. Bij een stroomtarief van 35 cent per kWh is dat circa 46 euro per jaar puur aan stand-by. Modellen met betere isolatie (zoals de Quooker Cube 2.2) zitten op 10 Watt = 88 kWh/jaar = ca. 31 euro. Goedkopere merken kunnen 18-25 Watt verbruiken, wat neerkomt op 55-75 euro per jaar aan standby-kosten.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is een kokend water kraan duurder in gebruik dan een waterkoker?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Dat hangt af van het gebruikspatroon. Een waterkoker op 2.200 Watt die 45 seconden kookt voor 250 ml verbruikt 0,0275 kWh per kopje, ofwel 0,96 cent bij 35 cent/kWh. Een kokend water kraan kost bij 5 kopjes per dag (standby meegerekend) circa 0,8 cent per kopje. Bij meer dan 4-5 kopjes per dag is de kokend water kraan gelijkwaardig of goedkoper; bij minder gebruik is de waterkoker voordeliger.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hoeveel bespaart een nachtmodus op een kokend water kraan?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Een weekprogramma of nachtmodus die de boiler uitschakelt van 22:00 tot 07:00 (9 uur per dag) reduceert het energieverbruik met circa 37,5% in die uren. In de praktijk wordt 20-40% totale besparing gemeld, afhankelijk van het model. Bij een basistverbruik van 131 kWh/jaar bespaart dit 26-52 kWh/jaar, ofwel 9-18 euro per jaar.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Welk merk kokend water kraan verbruikt het minste energie?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Op basis van fabrikantspecificaties verbruiken de Quooker Cube 2.2 en Grohe Red II de minste standby-energie: circa 10 Watt. De ZIP HydroTap zit op 15 Watt. PureAqua 4-in-1 modellen vermelden 12 Watt. Budget- en private-label merken (Action, MaxiFilter) vermelden vaak 18-25 Watt. Let bij aankoop op het opgegeven standby-vermogen in de specificaties.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hoe vergelijkt een kokend water kraan met een pan op inductie?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Een inductieplaat op 2.000 Watt heeft gemiddeld 4 minuten nodig om 1 liter water te koken: 2.000 W x 4/60 uur = 0,133 kWh = 4,6 cent per liter. Een kokend water kraan levert direct kokend water zonder wachttijd. Voor kleine hoeveelheden (1-2 kopjes) is de kokend water kraan altijd goedkoper en sneller dan een pan op inductie.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Wat is de eco-modus van een kokend water kraan?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'De eco-modus houdt het water op een lagere temperatuur (doorgaans 75 graden Celsius) en verwamt het bij gebruik snel naar 98 graden Celsius in 30-45 seconden. Dit verlaagt het standby-verbruik significant omdat de temperatuurval van de omgeving kleiner is. Niet alle merken bieden deze functie aan; controleer de specificaties voor aankoop.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is een kokend water kraan duurzamer voor het milieu dan een waterkoker?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Bij gebruik van groene stroom is het verschil in CO2-uitstoot minimaal. Bij grijze stroom (gemiddelde Nederlandse energiemix) bespaart een gezin van 4 met een kokend water kraan met eco-stand en nachtmodus circa 30 kWh per jaar ten opzichte van dagelijks waterkokergebruik, wat neerkomt op circa 12 kg CO2. De productie van de extra hardware heeft ook een milieu-impact; de terugverdientijd varieert.',
+      },
+    },
+  ],
+};
 
-const modellen = [
-  {
-    type: 'Compacte boiler (1–2L)',
-    standby: '10–20W',
-    jaarKwh: '88–175 kWh',
-    jaarKosten: '€ 25–56',
-    geschiktVoor: '1–2 personen, licht gebruik',
-    highlight: false,
+const articleSchema = {
+  '@type': 'Article',
+  headline: 'Energieverbruik kokend water kraan: vergelijking met waterkoker en pan',
+  description:
+    'Een kokend water kraan verbruikt 24/7 standby-energie maar is per kopje goedkoper dan een waterkoker bij hoog gebruik. Vergelijking van energiekosten inclusief standby, nachtmodus en eco-stand.',
+  datePublished: '2026-05-01',
+  dateModified: '2026-05-01',
+  url: 'https://waterfilterplatform.nl/kokend-water-kraan/energie',
+  publisher: {
+    '@type': 'Organization',
+    name: 'WaterfilterPlatform',
+    url: 'https://waterfilterplatform.nl',
   },
-  {
-    type: 'Standaard boiler (2,4–3L)',
-    standby: '25–40W',
-    jaarKwh: '219–350 kWh',
-    jaarKosten: '€ 62–112',
-    geschiktVoor: '2–4 personen, dagelijks gebruik',
-    highlight: true,
-  },
-  {
-    type: 'Grote boiler (4–7L)',
-    standby: '50–80W',
-    jaarKwh: '438–701 kWh',
-    jaarKosten: '€ 125–224',
-    geschiktVoor: 'Intensief gebruik, gezin of kantoor',
-    highlight: false,
-  },
-  {
-    type: 'Met nachtmodus (2,4L)',
-    standby: '25–40W effectief',
-    jaarKwh: '145–230 kWh',
-    jaarKosten: '€ 41–74',
-    geschiktVoor: 'Slim gebruik — besparing 30–35%',
-    highlight: false,
-  },
-];
-
-const vergelijking = [
-  {
-    apparaat: 'Waterkoker (1 kook/dag)',
-    vermogen: '2.400W / kookbeurt',
-    jaarKwh: '~45 kWh',
-    jaarKosten: '~€ 13',
-    opmerkingen: 'Lage kosten bij klein gebruik',
-  },
-  {
-    apparaat: 'Waterkoker (4 kook/dag)',
-    vermogen: '2.400W / kookbeurt',
-    jaarKwh: '~175 kWh',
-    jaarKosten: '~€ 50',
-    opmerkingen: 'Vergelijkbaar met kokend water kraan',
-  },
-  {
-    apparaat: 'Kokend water kraan (standaard)',
-    vermogen: '25–40W continu',
-    jaarKwh: '220–350 kWh',
-    jaarKosten: '€ 62–112',
-    opmerkingen: 'Constant beschikbaar, geen wachten',
-  },
-  {
-    apparaat: 'Kokend water kraan (met nachtmodus)',
-    vermogen: 'Effectief 17–28W',
-    jaarKwh: '150–245 kWh',
-    jaarKosten: '€ 42–78',
-    opmerkingen: 'Beste balans kosten/gemak',
-  },
-];
+};
 
 export default function KokendWaterKraanEnergiePage() {
   return (
     <>
-      <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
-        type="Article"
-        article={{
-          title: 'Kokend water kraan energieverbruik: jaarkosten berekenen',
-          description:
-            'Uitleg over standby-verbruik, boilervolume en dagelijks gebruik van kokend water kranen, inclusief vergelijking met de traditionele waterkoker.',
-          datePublished: '2026-02-01',
-          dateModified: '2026-05-14',
-          url: 'https://waterfilterplatform.nl/kokend-water-kraan/energie',
-        }}
-      />
-      <SchemaOrg
-        type="BreadcrumbList"
-        breadcrumbs={[
-          { name: 'Home', url: 'https://waterfilterplatform.nl' },
-          { name: 'Kokend water kraan', url: 'https://waterfilterplatform.nl/kokend-water-kraan' },
-          { name: 'Energieverbruik', url: 'https://waterfilterplatform.nl/kokend-water-kraan/energie' },
+        schema={[
+          {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://waterfilterplatform.nl' },
+              { '@type': 'ListItem', position: 2, name: 'Kokend water kraan', item: 'https://waterfilterplatform.nl/kokend-water-kraan' },
+              { '@type': 'ListItem', position: 3, name: 'Energieverbruik', item: 'https://waterfilterplatform.nl/kokend-water-kraan/energie' },
+            ],
+          },
+          faqSchema,
+          articleSchema,
         ]}
       />
 
-      {/* Hero */}
-      <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
-        <div className="max-w-3xl mx-auto">
-          <nav className="text-xs text-gray-400 mb-4">
-            <Link href="/" className="hover:text-[#005F8A]">Home</Link>
-            <span className="mx-2">/</span>
-            <Link href="/kokend-water-kraan" className="hover:text-[#005F8A]">Kokend water kraan</Link>
-            <span className="mx-2">/</span>
-            <span>Energieverbruik</span>
-          </nav>
-          <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Kokend water kraan energieverbruik: jaarkosten berekenen
+      <main className="max-w-3xl mx-auto px-4 py-8">
+        <nav className="text-sm text-gray-500 mb-6">
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/kokend-water-kraan" className="hover:underline">Kokend water kraan</Link> &rsaquo;{' '}
+          <span>Energieverbruik</span>
+        </nav>
+
+        {/* Hero */}
+        <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4 rounded-xl mb-8">
+          <h1 className="text-3xl font-bold text-[#003F5C] mb-4">
+            Energieverbruik kokend water kraan: vergelijking met waterkoker en pan
           </h1>
-          <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Een kokend water kraan houdt continu heet water beschikbaar via een geïsoleerde
-            boiler. Dat kost stroom — ook als je er niet actief gebruik van maakt. Hoe hoog zijn
-            de jaarlijkse energiekosten echt, en hoe vergelijkt dat met een gewone waterkoker?
-            We rekenen het voor je uit.
+          <p className="text-[#005F8A] text-lg">
+            Een kokend water kraan houdt water continu op bijna 100 graden Celsius via een kleine
+            geinsuleerde boiler. Dat kost 24/7 standby-energie. Is dat duurder dan een waterkoker?
+            We rekenen het per kopje en per jaar uit.
           </p>
-          <div className="flex flex-wrap gap-3">
-            <a
-              href="#berekening"
-              className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
-            >
-              Bekijk berekening →
-            </a>
-            <a
-              href="#vergelijking"
-              className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors text-sm"
-            >
-              vs waterkoker
-            </a>
-          </div>
+        </section>
+
+        <QuickAnswer answer="Een kokend water kraan verbruikt 8-20 Watt standby, wat neerkomt op 31-61 euro per jaar aan standby-kosten. Per kopje (250 ml) is de kraan bij 5+ kopjes per dag goedkoper dan een waterkoker. Voor singles met laag gebruik blijft een waterkoker voordeliger." />
+
+        <CTABanner context="osmose" />
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Hoe werkt een kokend water kraan qua energie?
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Een kokend water kraan is voorzien van een kleine geinsuleerde boiler van 2 tot 5 liter
+          die het water continu op 98 graden Celsius houdt. Een verwarmingselement schakelt
+          periodiek in om het warmteverlies via de wanden van de boiler te compenseren.
+          Dit zogenaamde <strong>standby-verbruik</strong> loopt door zolang het apparaat
+          aangesloten is, ook als u er geen water uit tapt.
+        </p>
+        <p className="text-gray-700 mb-4">
+          De hoogte van het standby-verbruik wordt bepaald door:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+          <li><strong>Isolatiekwaliteit van de boiler:</strong> dikkere en betere isolatie = minder warmteverlies = lager verbruik</li>
+          <li><strong>Tankgrootte:</strong> een grotere tank heeft meer oppervlak en verliest meer warmte</li>
+          <li><strong>Ingestelde temperatuur:</strong> 100 graden vergt meer energie dan 95 graden</li>
+          <li><strong>Omgevingstemperatuur:</strong> een koude keukenkast verhoogt het warmteverlies</li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Standby-energiekosten per jaar
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Berekening voor een gemiddeld model met 15 Watt standby-verbruik:
+        </p>
+        <div className="bg-[#E0F2FE] rounded-lg p-5 mb-6">
+          <p className="text-[#003F5C] font-semibold mb-2">Rekenvoorbeeld: 15W standby model</p>
+          <ul className="text-gray-700 text-sm space-y-1">
+            <li>15 Watt &times; 8.760 uur per jaar &divide; 1.000 = <strong>131 kWh per jaar</strong></li>
+            <li>131 kWh &times; &euro;0,35 per kWh = <strong>ca. &euro;46 per jaar</strong> aan standby</li>
+          </ul>
         </div>
-      </section>
+        <p className="text-gray-700 mb-6">
+          Bij een model met slechte isolatie (25 Watt) lopen de standby-kosten op naar ruim
+          &euro;76 per jaar. Een topmodel als de Quooker Cube 2.2 met slechts 10 Watt kost
+          circa &euro;31 per jaar aan standby.
+        </p>
 
-      <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Kosten per gebruik: kopje voor kopje vergeleken
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Bij energievergelijking is het zinvoller te kijken naar de kosten per kopje
+          (250 ml) dan naar het totaalverbruik:
+        </p>
 
-        {/* Inhoudsopgave */}
-        <section className="bg-gray-50 rounded-2xl p-5">
-          <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
-          <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
-            <li><a href="#standby" className="hover:underline">Standby-verbruik uitgelegd</a></li>
-            <li><a href="#berekening" className="hover:underline">Jaarkosten berekenen</a></li>
-            <li><a href="#modellen" className="hover:underline">Verbruik per boilertype</a></li>
-            <li><a href="#vergelijking" className="hover:underline">Vergelijking met waterkoker</a></li>
-            <li><a href="#besparen" className="hover:underline">Tips om energie te besparen</a></li>
-            <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
-          </ol>
-        </section>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[#E0F2FE]">
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Apparaat</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Vermogen / tijd</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">kWh per kopje</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Kosten per kopje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Waterkoker (2.200W)</td>
+                <td className="border border-gray-300 px-3 py-2">45 seconden</td>
+                <td className="border border-gray-300 px-3 py-2">0,0275 kWh</td>
+                <td className="border border-gray-300 px-3 py-2">0,96 cent</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium">Kokend water kraan (15W, 5 kopjes/dag)</td>
+                <td className="border border-gray-300 px-3 py-2">Direct</td>
+                <td className="border border-gray-300 px-3 py-2">standby meegerekend</td>
+                <td className="border border-gray-300 px-3 py-2">~0,8 cent</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Pan op inductie (2.000W, 1L)</td>
+                <td className="border border-gray-300 px-3 py-2">4 minuten</td>
+                <td className="border border-gray-300 px-3 py-2">0,133 kWh per liter</td>
+                <td className="border border-gray-300 px-3 py-2">4,6 cent per liter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 mb-6">
+          Bij 5 kopjes per dag en 35 cent/kWh is het break-even punt bereikt: de kokend water
+          kraan is bij dit gebruik al goedkoper per kopje dan de waterkoker, inclusief de
+          standby-kosten. Bij meer gebruik is de kraan duidelijk voordeliger. Voor een
+          alleenstaande met 1-2 kopjes per dag blijft de waterkoker de goedkoopste optie.
+        </p>
 
-        {/* Standby */}
-        <section id="standby">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Standby-verbruik: hoe werkt het?</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Een kokend water kraan werkt met een geïsoleerde boiler die het water continu op
-            temperatuur houdt. De verwarmingselement schakelt periodiek in om warmteverlies te
-            compenseren. Dit heet het <strong>standby-verbruik</strong> — het vermogen dat nodig
-            is om de boiler warm te houden, ook als je er geen water uit tapt.
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Energiebesparende functies
+        </h2>
+
+        <h3 className="text-xl font-semibold text-[#003F5C] mt-6 mb-3">Weekprogramma en nachtmodus</h3>
+        <p className="text-gray-700 mb-4">
+          De meeste premium kokend water kranen (Quooker, Grohe Red, Franke) bieden een
+          weekprogramma waarmee u de boiler automatisch uitschakelt in de nacht (bijv.
+          22:00-07:00) en in het weekend wanneer u weg bent. Dit bespaart tot 40% van het
+          jaarverbruik:
+        </p>
+        <div className="bg-[#E0F2FE] rounded-lg p-4 mb-6">
+          <p className="text-sm text-[#003F5C]">
+            Model 15W standby: 131 kWh/jaar normaal &rarr; ca. 79 kWh/jaar met nachtmodus (9 uur/dag uit) = besparing 52 kWh = ca. &euro;18 per jaar.
           </p>
-          <div className="bg-[#E0F2FE] rounded-2xl p-5 text-sm text-gray-700 mb-4">
-            <p className="font-semibold text-[#003F5C] mb-2">Factoren die het standby-verbruik bepalen:</p>
-            <ul className="space-y-1.5 list-disc list-inside">
-              <li><strong>Boilervolume:</strong> groter reservoir = meer energie om warm te houden</li>
-              <li><strong>Isolatielaag:</strong> dikker geïsoleerde boilers verliezen minder warmte</li>
-              <li><strong>Ingestelde temperatuur:</strong> 100°C vergt 20–30% meer dan 90°C</li>
-              <li><strong>Omgevingstemperatuur:</strong> koudere keuken = meer warmteverlies</li>
-              <li><strong>Gebruiksfrequentie:</strong> meer aftappen = meer opwarmcycli</li>
-            </ul>
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            Typisch bereik: <strong>10W</strong> voor de meest energie-efficiënte kleine modellen
-            tot <strong>80W</strong> voor grote boilers bij hoge temperaturen. Het gemiddelde
-            huishoudmodel zit rond de 25–40W.
-          </p>
-        </section>
+        </div>
 
-        {/* Berekening */}
-        <section id="berekening">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Jaarkosten berekenen</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Met de volgende formule bereken je eenvoudig de jaarlijkse energiekosten van jouw
-            kokend water kraan:
-          </p>
-          <div className="bg-gray-900 text-green-300 rounded-2xl p-5 font-mono text-sm mb-4">
-            <p className="text-gray-400 mb-1">// Jaarkosten berekening</p>
-            <p>Standby vermogen (W) × 8.760 uur / 1.000 = jaarverbruik in kWh</p>
-            <p className="mt-2">Jaarverbruik (kWh) × stroomtarief (€/kWh) = jaarkosten</p>
-          </div>
-          <div className="space-y-3">
-            <div className="bg-white border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-900 mb-1">Rekenvoorbeeld: standaard model (30W, 24/7)</p>
-              <p className="text-sm text-gray-600">30W × 8.760 uur / 1.000 = <strong>263 kWh per jaar</strong></p>
-              <p className="text-sm text-gray-600">263 kWh × €0,30/kWh = <strong>€ 79 per jaar</strong></p>
-            </div>
-            <div className="bg-white border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-900 mb-1">Met nachtmodus (30W dag, 5W nacht — 16/8 verhouding)</p>
-              <p className="text-sm text-gray-600">(30W × 5.840 uur + 5W × 2.920 uur) / 1.000 = <strong>190 kWh per jaar</strong></p>
-              <p className="text-sm text-gray-600">190 kWh × €0,30/kWh = <strong>€ 57 per jaar</strong></p>
-            </div>
-          </div>
-          <div className="mt-4 bg-[#E0F2FE] rounded-2xl p-4 text-sm">
-            <p className="font-semibold text-[#003F5C] mb-1">Stroomtarieven 2026 (Nederland):</p>
-            <p className="text-gray-700">Variabele contracten: €0,28–€0,32 per kWh incl. BTW. Vast contract: afhankelijk van inschrijfdatum. Check je energierekening voor je actuele tarief.</p>
-          </div>
-        </section>
+        <h3 className="text-xl font-semibold text-[#003F5C] mt-4 mb-3">Eco-modus (75 graden stand-by)</h3>
+        <p className="text-gray-700 mb-6">
+          De eco-modus houdt het water op 75 graden Celsius en verhit het bij gebruik snel naar
+          98 graden in 30-45 seconden. Omdat de temperatuurval van de omgeving kleiner is,
+          verliest de boiler minder warmte. Besparing: tot 20% op het standby-verbruik ten
+          opzichte van continue 98 graden handhaving.
+        </p>
 
-        {/* Modellen */}
-        <section id="modellen">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Verbruik per boilertype</h2>
-          <div className="overflow-x-auto -mx-4 px-4">
-            <table className="w-full min-w-[580px] text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#003F5C] text-white">
-                  <th className="text-left py-2.5 px-3 font-semibold">Boilertype</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Standby</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Jaar kWh</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Jaarkosten</th>
-                  <th className="text-left py-2.5 px-3 font-semibold">Geschikt voor</th>
-                </tr>
-              </thead>
-              <tbody>
-                {modellen.map(m => (
-                  <tr
-                    key={m.type}
-                    className={m.highlight ? 'bg-[#E0F2FE] font-medium' : 'border-b border-gray-100'}
-                  >
-                    <td className="py-2.5 px-3">{m.type}</td>
-                    <td className="py-2.5 px-3 text-right">{m.standby}</td>
-                    <td className="py-2.5 px-3 text-right">{m.jaarKwh}</td>
-                    <td className="py-2.5 px-3 text-right font-semibold text-[#005F8A]">{m.jaarKosten}</td>
-                    <td className="py-2.5 px-3 text-xs text-gray-600">{m.geschiktVoor}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-gray-500 mt-3">
-            Berekend bij €0,32/kWh. Kosten zijn inclusief standby, exclusief incidenteel warm opkoken.
-          </p>
-        </section>
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Merkenvergelijking: standby-vermogen
+        </h2>
 
-        {/* Vergelijking */}
-        <section id="vergelijking">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Vergelijking met de traditionele waterkoker</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Is een kokend water kraan écht duurder dan een waterkoker? Dat hangt volledig af van
-            hoe vaak je per dag water kookt. Bij intensief gebruik kantelt de balans al snel.
-          </p>
-          <div className="overflow-x-auto -mx-4 px-4">
-            <table className="w-full min-w-[560px] text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#E0F2FE]">
-                  <th className="text-left py-2.5 px-3 font-semibold text-[#003F5C]">Apparaat</th>
-                  <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Vermogen</th>
-                  <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Jaar kWh</th>
-                  <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Jaarkosten</th>
-                  <th className="text-left py-2.5 px-3 font-semibold text-[#003F5C]">Noot</th>
-                </tr>
-              </thead>
-              <tbody>
-                {vergelijking.map((r, i) => (
-                  <tr key={r.apparaat} className={i % 2 === 0 ? 'bg-white border-b border-gray-100' : 'bg-gray-50 border-b border-gray-100'}>
-                    <td className="py-2.5 px-3 font-medium">{r.apparaat}</td>
-                    <td className="py-2.5 px-3 text-right text-gray-600">{r.vermogen}</td>
-                    <td className="py-2.5 px-3 text-right">{r.jaarKwh}</td>
-                    <td className="py-2.5 px-3 text-right font-semibold">{r.jaarKosten}</td>
-                    <td className="py-2.5 px-3 text-xs text-gray-500">{r.opmerkingen}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-gray-700 mt-4 text-sm leading-relaxed">
-            <strong>Conclusie:</strong> een waterkoker is goedkoper bij minder dan 2 kookbeurten
-            per dag. Boven de 4–5 kookbeurten per dag is een kokend water kraan met nachtmodus
-            vergelijkbaar of zelfs goedkoper — met als bonus: direct kokend water zonder wachten.
-          </p>
-        </section>
+        <div className="overflow-x-auto mb-6">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[#E0F2FE]">
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Merk / model</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Standby-vermogen</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-[#003F5C]">Jaarkosten standby</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Quooker Cube 2.2</td>
+                <td className="border border-gray-300 px-3 py-2">10W</td>
+                <td className="border border-gray-300 px-3 py-2">ca. &euro;31</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium">Grohe Red II Mono</td>
+                <td className="border border-gray-300 px-3 py-2">10W</td>
+                <td className="border border-gray-300 px-3 py-2">ca. &euro;31</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">ZIP HydroTap G5</td>
+                <td className="border border-gray-300 px-3 py-2">15W</td>
+                <td className="border border-gray-300 px-3 py-2">ca. &euro;46</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 font-medium">PureAqua 4-in-1</td>
+                <td className="border border-gray-300 px-3 py-2">12W</td>
+                <td className="border border-gray-300 px-3 py-2">ca. &euro;37</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Budget-merken (gemiddeld)</td>
+                <td className="border border-gray-300 px-3 py-2">18&ndash;25W</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;55&ndash;77</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 mb-6">
+          Berekend bij &euro;0,35/kWh, 24/7 gebruik zonder nachtmodus. Zie ook onze{' '}
+          <Link href="/kokend-water-kraan/vergelijken" className="text-[#005F8A] underline">
+            merkvergelijking kokend water kranen
+          </Link>{' '}
+          voor een volledig overzicht.
+        </p>
 
-        {/* Besparen */}
-        <section id="besparen">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Tips om energie te besparen</h2>
-          <div className="space-y-4">
-            {[
-              {
-                titel: 'Activeer de nachtmodus of weekprogramma',
-                tekst: 'De meeste moderne kokend water kranen hebben een nachtmodus die de boiler 8–10 uur per dag terugzet. Besparing: 20–35% op jaarbasis.',
-              },
-              {
-                titel: 'Verlaag de boilertemperatuur naar 95°C',
-                tekst: 'Voor thee, koffie en de meeste toepassingen is 95–98°C meer dan voldoende. Verlagen van 100°C naar 95°C bespaart circa 5–10% energie.',
-              },
-              {
-                titel: 'Kies een model met een kleine boiler',
-                tekst: 'Als je niet constant kokend water nodig hebt, is een boiler van 1–2L energie-efficiënter dan een grote tank. Ruil niet over naar een grotere boiler dan nodig.',
-              },
-              {
-                titel: 'Isoleer de aansluitingen goed',
-                tekst: 'Warmteverlies via de verbindingsslangen wordt gereduceerd door goede thermische isolatie. Controleer of de slangen goed geïsoleerd zijn bij installatie.',
-              },
-              {
-                titel: 'Schakel uit bij langdurige afwezigheid',
-                tekst: 'Ga je meer dan 3 dagen weg? Schakel het systeem uit. Het opwarmen bij terugkomst kost slechts 10–20 minuten en is voordeliger dan dagenlang op stand-by.',
-              },
-            ].map(tip => (
-              <div key={tip.titel} className="flex gap-3 items-start">
-                <span className="text-green-600 font-bold text-lg mt-0.5 shrink-0">✓</span>
-                <div>
-                  <p className="font-semibold text-gray-900">{tip.titel}</p>
-                  <p className="text-sm text-gray-700 leading-relaxed">{tip.tekst}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Milieu-impact: groene versus grijze stroom
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Bij groene stroom (wind- of zonne-energie) is het CO2-verschil tussen een kokend water
+          kraan en een waterkoker vrijwel nihil. Bij de gemiddelde Nederlandse energiemix
+          (2026: circa 300-400 gram CO2 per kWh) levert een gezin van 4 personen met een
+          kokend water kraan in eco-stand een besparing van circa 30 kWh per jaar ten opzichte
+          van dagelijks waterkokergebruik. Dat is ongeveer 9-12 kg CO2 per jaar.
+        </p>
+        <p className="text-gray-700 mb-6">
+          De productie van de kokend water kraan zelf (metaal, elektronica, transport) heeft
+          ook een milieuvoetdruk. Reken op een terugverdientijd van 5-10 jaar voor de
+          milieu-impact van productie, afhankelijk van uw gebruik en stroomtype.
+        </p>
 
-        {/* CTA */}
-        <CTABanner context="kokend" />
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
+          Conclusie: wanneer is een kokend water kraan energetisch zinvol?
+        </h2>
+        <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+          <li>
+            <strong>Gezin met hoog gebruik (5+ kopjes/dag):</strong> kokend water kraan is energetisch
+            vergelijkbaar of goedkoper dan meerdere waterkokers die elke keer vol worden gezet
+          </li>
+          <li>
+            <strong>Thuis werken + veel thee/koffie:</strong> directe beschikbaarheid bespaart ook
+            tijd; energetisch gunstig bij 6+ kopjes per dag
+          </li>
+          <li>
+            <strong>Singles of licht gebruik:</strong> traditionele waterkoker blijft voordeliger;
+            standby-kosten wegen niet op tegen het voordeel per kopje
+          </li>
+        </ul>
+        <p className="text-gray-700 mb-6">
+          Bent u geinteresseerd in een kokend water kraan met geintegreerd waterfilter? Bekijk dan
+          onze pagina over de{' '}
+          <Link href="/kokend-water-kraan/quooker" className="text-[#005F8A] underline">
+            Quooker met filteropties
+          </Link>{' '}
+          of lees meer over het{' '}
+          <Link href="/kokend-water-kraan/installeren" className="text-[#005F8A] underline">
+            installeren van een kokend water kraan
+          </Link>.
+        </p>
 
-        {/* Gerelateerde pagina's */}
-        <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Gerelateerde pagina&apos;s</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              { href: '/kokend-water-kraan', title: 'Kokend water kraan overzicht', desc: 'Alles over typen, merken en installatie van kokend water kranen.' },
-              { href: '/kokend-water-kraan/met-filter', title: 'Kokend water kraan met filter', desc: 'Geïntegreerde RO-filtratie en kokend water uit één kraan.' },
-              { href: '/omgekeerde-osmose/kopen', title: 'Osmose filter kopen', desc: 'Onafhankelijk overzicht van de beste RO-systemen voor thuis.' },
-              { href: '/osmose-filter/prijs', title: 'Osmosefilter prijs 2026', desc: 'Aanschaf- en jaarkosten van alle prijsklassen.' },
-            ].map(l => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
-              >
-                <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">{l.title}</p>
-                <p className="text-sm text-gray-500">{l.desc}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
+        <CTABanner context="osmose" />
 
-        {/* FAQ */}
-        <section id="faq">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over energieverbruik</h2>
-          <div className="space-y-3">
-            {faqItems.map(item => (
-              <details key={item.question} className="border border-gray-100 rounded-xl p-4 group">
-                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
-                  {item.question}
-                  <span className="text-[#005F8A] group-open:rotate-180 transition-transform shrink-0 ml-2">▾</span>
-                </summary>
-                <p className="mt-3 text-gray-600 text-sm leading-relaxed">{item.answer}</p>
-              </details>
-            ))}
-          </div>
-        </section>
+        <div className="space-y-3 mb-8 mt-8">
+          <h2 className="text-2xl font-semibold text-[#005F8A]">
+            Veelgestelde vragen over energieverbruik kokend water kraan
+          </h2>
+          {faqSchema.mainEntity.map((faq, i) => (
+            <details key={i} className="border border-gray-200 rounded-lg p-4">
+              <summary className="font-semibold text-[#003F5C] cursor-pointer">
+                {faq.name}
+              </summary>
+              <p className="mt-2 text-gray-700 text-sm">{faq.acceptedAnswer.text}</p>
+            </details>
+          ))}
+        </div>
 
-      </div>
+        <p className="text-gray-600 text-sm mt-6">
+          Zie ook:{' '}
+          <Link href="/kokend-water-kraan" className="text-[#005F8A] underline">kokend water kraan overzicht</Link>,{' '}
+          <Link href="/kokend-water-kraan/vergelijken" className="text-[#005F8A] underline">merken vergelijken</Link>,{' '}
+          <Link href="/kokend-water-kraan/quooker" className="text-[#005F8A] underline">Quooker review</Link> en{' '}
+          <Link href="/kokend-water-kraan/installeren" className="text-[#005F8A] underline">installatie kokend water kraan</Link>.
+        </p>
+      </main>
     </>
   );
 }
