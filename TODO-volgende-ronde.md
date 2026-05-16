@@ -4,21 +4,21 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 10
-
-### Nieuwe clusters
-- [ ] `/waterfilter/nikkel` — nikkel in leidingwater via kranen en fittingen, EU-norm 20 ug/L
-- [ ] `/osmose-water/sport` — osmosewater voor sporters, elektrolyten, remineralisatie
-- [ ] `/omgekeerde-osmose/capaciteit` — liter per uur berekenen, debiet vergelijking, tankloze systemen
-- [ ] `/waterontharder/regeneratie-tijd` — hoe lang duurt regeneratie, automatisch vs handmatig
-- [ ] `/leidingwater/hardheid-kaart` — interactieve hardheidskaart NL per provincie (statische versie)
-- [ ] `/waterfilter/zeoliet` — zeoliet als filtermedium: ammonia, zware metalen, aquarium
-- [ ] `/kokend-water-kraan/koffie` — optimaal water voor koffie: TDS, pH, hardheid, SCA-normen
+## Hoge prioriteit (direct zoekvolume) — Ronde 11
 
 ### Kennisbank diepte-artikelen (MDX)
 - [ ] `pfas-in-nederland-2026.mdx` — actuele PFAS-hotspots, watermaatschappij maatregelen
 - [ ] `osmose-water-voor-planten.mdx` — is osmosewater goed of slecht voor kamerplanten?
-- [ ] `drinkwater-statistieken-nederland.mdx` — CBS/RIVM data
+- [ ] `drinkwater-statistieken-nederland.mdx` — CBS/RIVM data over drinkwaterkwaliteit
+
+### Nieuwe clusters
+- [ ] `/waterfilter/chroom` — chroom-6 in grondwater, PFAS-gebieden overlap, EU-norm 25 ug/L
+- [ ] `/omgekeerde-osmose/druk` — minimale waterdruk voor osmosefilter (2.8-4 bar), drukverhoger
+- [ ] `/waterontharder/onderhoud` — jaarlijks onderhoud, desinfectie, hars vervangen
+- [ ] `/leidingwater/temperatuur` — Legionella-risicozone 20-45 graden, warmwaterboiler instelling
+- [ ] `/kokend-water-kraan/veiligheid` — veiligheid kinderen, brander-beveiliging, normen
+- [ ] `/osmose-water/baby` — osmosewater voor babyvoeding (WHO-richtlijnen, remineralisatie)
+- [ ] `/waterfilter/geur` — chloorgeur, aardse geur (geosmien), H2S, actief kool vs osmose
 
 ---
 
@@ -44,7 +44,7 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [ ] Core Web Vitals check na Vercel-deploy
 - [ ] Structured data validatie via Google Rich Results Test
 
-### Ideen voor ronde 11+
+### Ideen voor ronde 12+
 - Interactief waterhardheids-zoekwidget (client component, apart bundle)
 - Video-schema markup toevoegen als YouTube-content beschikbaar
 - Pricing-schema markup op vergelijkingspaginas
@@ -95,23 +95,23 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] Osmose water uitbreidingen: vs-mineraalwater, vs-bronwater, gezondheid
 - [x] Waterzuivering: hub, grondwater, oppervlaktewater, thuis
 - [x] Situationeel: waterfilter/caravan
-- [x] pH & mineralen: kraanwater/ph, leidingwater/ijzer
+- [x] pH en mineralen: kraanwater/ph, leidingwater/ijzer
 - [x] Ontbrekende sub-pages: kokend-water-kraan/installeren
 
 ### Ronde 6 — Zakelijk cluster + osmose verdieping + niche (15 paginas)
 - [x] Zakelijk: waterfilter/horeca, waterfilter/bedrijf, drinkwaterfontein/horeca, waterontharder/zakelijk
 - [x] Osmose verdieping: osmose-water/remineraliseren, osmose-filter/zonder-tank, omgekeerde-osmose/rendement, osmose-water/smaak
-- [x] Niche & vergelijking: waterfilter/vijver, waterfilter/studentenkamer, kokend-water-kraan/quooker
+- [x] Niche en vergelijking: waterfilter/vijver, waterfilter/studentenkamer, kokend-water-kraan/quooker
 - [x] Drinkwater verdieping: waterfilter/arseen, leidingwater/nitraat, leidingwater/mangaan, kraanwater/kwaliteit-verbeteren
 
 ### Ronde 7 — Gezondheid, kosten, gevaarlijke stoffen, seizoen (12 paginas)
-- [x] Aquarium & niche: waterfilter/aquarium
+- [x] Aquarium en niche: waterfilter/aquarium
 - [x] Gezondheid: osmose-water/gezondheid
 - [x] Huren vs kopen: waterontharder/huren
 - [x] Vergelijkingen: waterfilter/kan-vs-kraan, omgekeerde-osmose/kosten
 - [x] Gevaarlijke stoffen: waterfilter/lood, leidingwater/medicijnresten, waterfilter/microplastics
-- [x] Seizoen & veiligheid: kraanwater/zomer, kraanwater/legionella-thuis
-- [x] Technisch & gebruik: leidingwater/chlooramine, osmose-water/koken
+- [x] Seizoen en veiligheid: kraanwater/zomer, kraanwater/legionella-thuis
+- [x] Technisch en gebruik: leidingwater/chlooramine, osmose-water/koken
 
 ### Ronde 8 — Installatie, mineralen, energie, zout (7 paginas)
 - [x] Gevaarlijke stoffen: waterfilter/pesticiden
@@ -129,6 +129,15 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] Stoffen: leidingwater/sulfaat, waterfilter/koper
 - [x] Meetinstrumenten: kraanwater/tds (TDS-meter, referentiewaarden, koffie/thee)
 
+### Ronde 10 — Nikkel, sport, capaciteit, regeneratietijd, hardheidskaart, zeoliet, koffie (7 paginas)
+- [x] waterfilter/nikkel — nikkel uit kranen/fittingen, EU-norm 20 ug/L, osmose 95-98%
+- [x] osmose-water/sport — elektrolyten, hyponatriemie, remineralisatie voor sporters
+- [x] omgekeerde-osmose/capaciteit — GPD-berekening, NL correctiefactoren, tankless vs druktank
+- [x] waterontharder/regeneratie-tijd — 60-120 min, tijdgestuurd vs volumetrisch, nachtmodus
+- [x] leidingwater/hardheid-kaart — waterhardheid per provincie en 10 grootste steden
+- [x] waterfilter/zeoliet — ammoniumadsorptie 80-98%, aquariumtoepassing, vs actief kool
+- [x] kokend-water-kraan/koffie — SCA-norm TDS 75-150 mg/L, pH 6.5-7.5, osmose+remineralisatie
+
 ---
 
-*Bijgewerkt: 2026-05-16 — 4095 statische paginas na ronde 9*
+*Bijgewerkt: 2026-05-16 — 4102 statische paginas na ronde 10*
