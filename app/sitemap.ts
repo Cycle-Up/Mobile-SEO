@@ -386,6 +386,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/leidingwater/sulfaat`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/kraanwater/tds`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterfilter/koper`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Ronde 10
+    { url: `${BASE}/waterfilter/nikkel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/osmose-water/sport`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/omgekeerde-osmose/capaciteit`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterontharder/regeneratie-tijd`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/leidingwater/hardheid-kaart`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterfilter/zeoliet`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/koffie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
