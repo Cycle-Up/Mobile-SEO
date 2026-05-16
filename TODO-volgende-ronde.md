@@ -4,20 +4,20 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 12
+## Hoge prioriteit (direct zoekvolume) — Ronde 13
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/radium` — radium en radon in grondwater (Brabant, Gelderland), natuurlijk radioactief, osmose effectief
-- [ ] `/omgekeerde-osmose/afvalwater` — verhouding afvalwater:productwater, waterbesparende systemen, permeaat vs concentraat
-- [ ] `/waterontharder/zout-types` — tablet, blok, grof, zoutzak merken, prijsvergelijking
-- [ ] `/leidingwater/barium` — barium in grondwater, EU-norm 1 mg/L, gezondheidseffecten
-- [ ] `/kokend-water-kraan/thee` — optimaal water voor thee: TDS, pH, hardheid, theesommelier standaard
-- [ ] `/osmose-water/aquarium` — osmosewater voor zoetwateraquarium, hardheid instellen, buffer
-- [ ] `/waterfilter/fluoride` — fluoride in leidingwater, EU-norm 1.5 mg/L, osmose vs actief aluminium
+- [ ] `/waterfilter/strontium` — strontium in grondwater, vergelijking met barium, osmose effectief
+- [ ] `/omgekeerde-osmose/membraandruk` — osmotische druk berekenen, temperatuurcorrectie, scaling
+- [ ] `/waterontharder/bypass` — bypass instelling, wanneer hard water gewenst (planten, buiten), mengklep
+- [ ] `/leidingwater/silica` — opgelost silica in water, siliconenfilm op glas, verwijdering
+- [ ] `/kokend-water-kraan/schoonmaken` — dagelijks onderhoud, ontkalken, sproeikop reinigen
+- [ ] `/osmose-water/koken` — is osmosewater beter voor pasta, soep en koken (al bestaat: check)
+- [ ] `/waterfilter/mangan` — mangaan in grondwater, zwart residu, EU-norm 50 ug/L, oxidatiefilter
 
 ### Kennisbank diepte-artikelen (MDX)
-- [ ] `kokend-water-kraan-installeren.mdx` — stap-voor-stap installatiegids, benodigdheden, veiligheidscheck
-- [ ] `waterontharder-kiezen.mdx` — koopgids: capaciteit, merk, volumetrisch vs tijdgestuurd, prijs
+- [ ] `waterfilter-vergelijken.mdx` — filterkan vs kraanopzet vs osmose vs waterontharder: wanneer wat
+- [ ] `omgekeerde-osmose-uitleg.mdx` — technische werking RO membraan, semi-permeabel, osmotische druk
 
 ---
 
@@ -38,7 +38,7 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [ ] Core Web Vitals check na Vercel-deploy
 - [ ] Structured data validatie via Google Rich Results Test
 
-### Ideen voor ronde 13+
+### Ideen voor ronde 14+
 - Interactief waterhardheids-zoekwidget (client component, apart bundle)
 - Video-schema markup toevoegen als YouTube-content beschikbaar
 - Pricing-schema markup op vergelijkingspaginas
@@ -124,26 +124,27 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] Meetinstrumenten: kraanwater/tds (TDS-meter, referentiewaarden, koffie/thee)
 
 ### Ronde 10 — Nikkel, sport, capaciteit, regeneratietijd, hardheidskaart, zeoliet, koffie (7 paginas)
-- [x] waterfilter/nikkel — nikkel uit kranen/fittingen, EU-norm 20 ug/L, osmose 95-98%
-- [x] osmose-water/sport — elektrolyten, hyponatriemie, remineralisatie voor sporters
-- [x] omgekeerde-osmose/capaciteit — GPD-berekening, NL correctiefactoren, tankless vs druktank
-- [x] waterontharder/regeneratie-tijd — 60-120 min, tijdgestuurd vs volumetrisch, nachtmodus
-- [x] leidingwater/hardheid-kaart — waterhardheid per provincie en 10 grootste steden
-- [x] waterfilter/zeoliet — ammoniumadsorptie 80-98%, aquariumtoepassing, vs actief kool
-- [x] kokend-water-kraan/koffie — SCA-norm TDS 75-150 mg/L, pH 6.5-7.5, osmose+remineralisatie
+- [x] waterfilter/nikkel, osmose-water/sport, omgekeerde-osmose/capaciteit
+- [x] waterontharder/regeneratie-tijd, leidingwater/hardheid-kaart
+- [x] waterfilter/zeoliet, kokend-water-kraan/koffie
 
-### Ronde 11 — Chroom, druk, onderhoud, temperatuur, veiligheid, baby, geur + 3 MDX (10 bestanden)
-- [x] waterfilter/chroom — chroom-6 EU-norm 25 ug/L, NL hotspots, osmose 95-99%
-- [x] omgekeerde-osmose/druk — minimum 2.8 bar, druk meten, drukverhoger wanneer nodig
-- [x] waterontharder/onderhoud — jaarschema, zoutbrug, harsdesinfectie, hars 10-20 jaar
-- [x] leidingwater/temperatuur — Legionella risicozone 20-45 graden, boiler op 60 graden
-- [x] kokend-water-kraan/veiligheid — EN 61770, kinderbeveiliging, dubbelklik systeem
-- [x] osmose-water/baby — WHO TDS-norm 200 mg/L, remineralisatie voor zuigelingenvoeding
-- [x] waterfilter/geur — chloorgeur, geosmien, H2S, tabel geursoort vs filter
-- [x] pfas-in-nederland-2026.mdx — EU-normen 2026, hotspots, watermaatschappij maatregelen
-- [x] osmose-water-voor-planten.mdx — carnivoren verplicht, orchideeen aanbevolen, moestuin
-- [x] drinkwater-statistieken-nederland.mdx — CBS/RIVM data, verbruik, hardheid, kwaliteitstrends
+### Ronde 11 — Chroom, druk, onderhoud, temperatuur, veiligheid, baby, geur + 3 MDX
+- [x] waterfilter/chroom, omgekeerde-osmose/druk, waterontharder/onderhoud
+- [x] leidingwater/temperatuur, kokend-water-kraan/veiligheid
+- [x] osmose-water/baby, waterfilter/geur
+- [x] pfas-in-nederland-2026.mdx, osmose-water-voor-planten.mdx, drinkwater-statistieken-nederland.mdx
+
+### Ronde 12 — Radium, afvalwater, zout-types, barium, thee, aquarium, fosfaat + 2 MDX (9 bestanden)
+- [x] waterfilter/radium — radioactief grondwater, EU-norm 0.1 Bq/L, osmose 95-99%
+- [x] omgekeerde-osmose/afvalwater — 3:1 naar 1:1 verhouding, permeaatpomp
+- [x] waterontharder/zout-types — tablet vs blok vs grof, NaCl 99.5%+, merkentabel
+- [x] leidingwater/barium — EU-norm 1 mg/L, boorput risico, osmose 90-95%
+- [x] kokend-water-kraan/thee — TDS 75-150, hardheid <8 dH, temperatuur per theesoort
+- [x] osmose-water/aquarium — GH/KH instellen, mengverhouding, garnalen parameters
+- [x] leidingwater/fosfaat — corrosiebescherming loodleidingen, 0.3-2.2 mg/L
+- [x] kokend-water-kraan-installeren.mdx — 5-stappen gids, gereedschap, veiligheidscheck
+- [x] waterontharder-kiezen.mdx — capaciteit, volumetrisch vs tijdgestuurd, merkentabel
 
 ---
 
-*Bijgewerkt: 2026-05-16 — 4110 statische paginas na ronde 11 (310/310 MDX artikelen geslaagd)*
+*Bijgewerkt: 2026-05-16 — 4116 statische paginas na ronde 12 (311/311 MDX artikelen geslaagd)*
