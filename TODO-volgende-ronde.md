@@ -4,60 +4,42 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume)
+## Hoge prioriteit (direct zoekvolume) — Ronde 7
 
-### Nieuwe clusters ronde 5
-- [ ] `/alkalisch-water/` hub — alkalisch water/ionisator trend (groeiend)
-  - `/alkalisch-water/gezondheid` — claims vs wetenschap
-  - `/alkalisch-water/ionisator` — waterionisator vergelijking
-  - `/alkalisch-water/vs-osmose` — wanneer alkalisch vs osmose
-- [ ] `/bruisend-water/` hub — bruisend water thuis
-  - `/bruisend-water/kraan` — bruisend water kraan kopen
-  - `/bruisend-water/sodastream` — SodaStream vs bruisend waterkraan
-  - `/bruisend-water/co2` — CO2-systeem voor bruisend water
-- [ ] `/babywater/` — water voor babyvoeding, flesvoeding (hoge urgentie: gezondheidszoekintentie)
-  - `/babywater/welk-water` — welk water gebruiken voor flesvoeding
-  - `/babywater/osmose` — is osmosewater veilig voor baby's
-- [ ] `/osmose-water/vs-mineraalwater` — verschil osmose vs mineraalwater
-- [ ] `/osmose-water/vs-bronwater` — verschil osmose vs bronwater
-- [ ] `/waterfilter/caravan` — waterfilter voor caravan/camper
+### Nieuwe clusters
+- [ ] `/waterfilter/aquarium` — waterfilter voor zoet- en zoutwateraquarium (biologisch filtreren)
+- [ ] `/osmose-water/gezondheid` — is osmosewater ongezond? mineralen, WHO-advies
+- [ ] `/waterontharder/huren` — waterontharder huren vs kopen (vergelijking)
+- [ ] `/waterfilter/kan-vs-kraan` — uitgebreidere vergelijking filterkan vs kraanfilter
+- [ ] `/omgekeerde-osmose/kosten` — totale eigendomskosten: aanschaf + filters + water
+- [ ] `/waterfilter/lood` — lood in leidingwater: risico's, loden leidingen, filters
+- [ ] `/leidingwater/medicijnresten` — medicijnresten in drinkwater: omvang, risico, filter
 
-### Ontbrekende sub-pages bestaande clusters
-- [ ] `/omgekeerde-osmose/vs-ultrafiltratie` ✅ (gedaan ronde 4)
-- [ ] `/waterfilter/kan-vs-kraan` — uitgebreidere vergelijking (nu enkel /filterkan/vs-waterkraan-filter)
-- [ ] `/kokend-water-kraan/installeren` — installatiegids kokend waterkraan
+### Seizoensgebonden content
+- [ ] `/kraanwater/zomer` — hogere temperatuur, algengroei risico, kwaliteit in hittegolven
+- [ ] `/kraanwater/legionella-thuis` — Legionella in huishoudleidingen (verlenging ronde 2 legionella)
 
 ---
 
 ## Middelhoge prioriteit
 
-### Waterzuivering cluster
-- [ ] `/waterzuivering/` hub — hoe werkt drinkwaterzuivering in NL
-- [ ] `/waterzuivering/grondwater` — grondwater zuiveren uitgelegd
-- [ ] `/waterzuivering/oppervlaktewater` — oppervlaktewater zuiveren (Maas, Rijn)
-- [ ] `/waterzuivering/thuis` — thuiszuivering vs professioneel
+### Gemeenten uitbreiding (programmatisch)
+- [ ] Overweeg `/pfas-waterfilter/[gemeente]` voor 30-40 hotspot-gemeenten
+- [ ] Overweeg `/heet-water-kraan/[gemeente]` als volume het rechtvaardigt
+- [ ] Overweeg `/drinkwaterfontein/[gemeente]` voor zakelijke lokale SEO
 
-### Aquarium & dier cluster
-- [ ] `/waterfilter/aquarium` — waterfilter voor aquarium (zoet/zout)
-- [ ] `/waterfilter/vijver` — vijverfilter vergelijking
-
-### Zakelijk cluster
-- [ ] `/waterfilter/horeca` — waterfilter voor restaurant/café
-- [ ] `/waterfilter/bedrijf` — zakelijk waterfilter grootverbruik
-
-### pH & mineralen verdieping
-- [ ] `/kraanwater/ph` — pH van kraanwater, wanneer te laag/hoog
-- [ ] `/osmose-water/remineraliseren` — remineralisatie methoden uitgebreid
-- [ ] `/leidingwater/ijzer` — ijzer in kraanwater: bruine vlekken, smaak
+### Drinkwater verdieping
+- [ ] `/leidingwater/chlooramine` — chlooramine vs chloor (steeds meer bedrijven stappen over)
+- [ ] `/osmose-water/koken` — mag je osmosewater koken voor babyvoeding / pasta
+- [ ] `/waterfilter/microplastics` — microplastics in drinkwater: omvang, filters
 
 ---
 
 ## Lage prioriteit / technisch
 
 ### Kennisbank kwaliteitsaudit
-- [ ] Controleer alle 307 MDX-artikelen op woordaantal (min 700 woorden via check-content.mjs)
+- [ ] Controleer alle MDX-artikelen op woordaantal (min 700 woorden via check-content.mjs)
 - [ ] Controleer of alle MDX-artikelen in sitemap zitten (via getKennisbankSlugs())
-- [ ] Voeg ontbrekende kennisbank-routes toe aan sitemap indien nodig
 - [ ] Verwijder duplicate kennisbank MDX bestanden (bijv. `drinkwater-norm-nederland.mdx` en `drinkwater-normen-nederland.mdx`)
 
 ### Technische SEO
@@ -67,17 +49,9 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [ ] Core Web Vitals check na Vercel-deploy
 - [ ] Structured data validatie via Google Rich Results Test
 
-### Gemeente-varianten uitbreiding
-- [ ] Overweeg `/pfas-waterfilter/[gemeente]` voor 30-40 hotspot-gemeenten
-- [ ] Overweeg `/heet-water-kraan/[gemeente]` als volume het rechtvaardigt
-- [ ] Overweeg `/drinkwaterfontein/[gemeente]` voor zakelijke lokale SEO
-
----
-
-## Ideen voor ronde 6+
-
+### Ideen voor ronde 8+
 - Interactief waterhardheids-zoekwidget (client component, apart bundle)
-- Kennisbank uitbreiding: seizoensgebonden artikelen (zomer kraanwater kwaliteit, winter bevriezing)
+- Kennisbank uitbreiding: seizoensgebonden artikelen
 - Video-schema markup toevoegen als YouTube-content beschikbaar
 - Pricing-schema markup op vergelijkingspagina's
 - FAQ-schema cross-check met Google Search Console vertoningen
@@ -121,6 +95,22 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] Reisfilter: hub, lifestraw, sawyer
 - [x] Technische verdieping: waterontharder/installeren+storingen, osmose/membraan-vervangen+waterdruk+vs-ultrafiltratie, kokend-water-kraan/onderhoud
 
+### Ronde 5 — Nieuwe clusters uitbreiding
+- [x] Alkalisch water: hub, gezondheid, ionisator, vs-osmose
+- [x] Bruisend water: hub, kraan, sodastream, co2
+- [x] Babywater: hub, welk-water, osmose
+- [x] Osmose water uitbreidingen: vs-mineraalwater, vs-bronwater, gezondheid
+- [x] Waterzuivering: hub, grondwater, oppervlaktewater, thuis
+- [x] Situationeel: waterfilter/caravan
+- [x] pH & mineralen: kraanwater/ph, leidingwater/ijzer
+- [x] Ontbrekende sub-pages: omgekeerde-osmose/vs-ultrafiltratie (al ronde 4), kokend-water-kraan/installeren
+
+### Ronde 6 — Zakelijk cluster + osmose verdieping + niche (15 paginas)
+- [x] Zakelijk: waterfilter/horeca, waterfilter/bedrijf, drinkwaterfontein/horeca, waterontharder/zakelijk
+- [x] Osmose verdieping: osmose-water/remineraliseren, osmose-filter/zonder-tank, omgekeerde-osmose/rendement, osmose-water/smaak
+- [x] Niche & vergelijking: waterfilter/vijver, waterfilter/studentenkamer, kokend-water-kraan/quooker
+- [x] Drinkwater verdieping: waterfilter/arseen, leidingwater/nitraat, leidingwater/mangaan, kraanwater/kwaliteit-verbeteren
+
 ---
 
-*Bijgewerkt: 2026-05-16 — 4046 statische pagina's na ronde 4*
+*Bijgewerkt: 2026-05-16 — 4081 statische pagina's na ronde 6*
