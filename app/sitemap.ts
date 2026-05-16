@@ -129,6 +129,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/uv-filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/uv-filter/werking`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/uv-filter/kopen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/uv-filter/toepassingen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/keramisch-filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/sedimentfilter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/filterkan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
