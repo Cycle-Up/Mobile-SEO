@@ -130,6 +130,46 @@ const vergelijkMatrix: FilterRow[] = [
     lood: 'ja',
     smaak: 'ja',
   },
+  {
+    type: 'Filterkan (bv. Brita)',
+    chloor: 'ja',
+    kalk: 'nee',
+    nitraat: 'nee',
+    bacterien: 'nee',
+    pfas: 'gedeeltelijk',
+    lood: 'nee',
+    smaak: 'ja',
+  },
+  {
+    type: 'Waterontkalker',
+    chloor: 'nee',
+    kalk: 'ja',
+    nitraat: 'nee',
+    bacterien: 'nee',
+    pfas: 'nee',
+    lood: 'gedeeltelijk',
+    smaak: 'gedeeltelijk',
+  },
+  {
+    type: 'Ultrafiltratie (UF)',
+    chloor: 'nee',
+    kalk: 'nee',
+    nitraat: 'nee',
+    bacterien: 'ja',
+    pfas: 'nee',
+    lood: 'nee',
+    smaak: 'gedeeltelijk',
+  },
+  {
+    type: 'Nanofiltration (NF)',
+    chloor: 'gedeeltelijk',
+    kalk: 'ja',
+    nitraat: 'gedeeltelijk',
+    bacterien: 'ja',
+    pfas: 'gedeeltelijk',
+    lood: 'ja',
+    smaak: 'ja',
+  },
 ];
 
 function EffectBadge({ effect }: { effect: FilterEffect }) {
@@ -305,6 +345,105 @@ const filterTypes = [
     kosten: 'Aanschaf filterbehuizing € 15–40; patronen € 5–15 per 3–6 maanden.',
     wanneer:
       'Als voorfilter in een meertraps systeem — altijd vóór een koolstof- of RO-filter. Zelfstandig nuttig bij privéwaterbronnen met veel troebel of roestachtig water.',
+  },
+  {
+    id: 'filterkan',
+    naam: 'Filterkan (bv. Brita, TAPP)',
+    geschiktVoor: 'Chloor en smaak verbeteren — instapoptie',
+    hubUrl: '/filterkan',
+    hubLabel: 'Volledige gids over filterkansen →',
+    samenvatting:
+      'Een filterkan is de eenvoudigste en goedkoopste manier om kraanwater te verbeteren. Een compacte actief-koolstofpatroon in de kan absorbeert chloor, chloorbijproducten en lichte smaakproblemen. Geen installatie nodig — ideaal als eerste stap of voor huurders.',
+    watVerwijdert: [
+      'Vrij chloor en chloorgeur',
+      'Organische verbindingen (licht)',
+      'Smaak- en geurproblemen',
+      'Gedeeltelijk: PFAS (afhankelijk van patroon)',
+    ],
+    watNiet: ['Kalk en hardheid', 'Nitraat en nitriet', 'Bacteriën en virussen', 'Lood en zware metalen'],
+    vormen: 'Tafelmodel kan (1,5–3,5 liter reservoir), filterkraan of kleine aanrechtunit met hetzelfde principe.',
+    kosten: 'Aanschaf € 20–60; filterpatronen € 20–40 per jaar (circa elke 4–8 weken vervangen bij gemiddeld gebruik).',
+    wanneer:
+      'Wanneer je snel en zonder installatie de smaak wil verbeteren en geen hard water- of nitraatprobleem hebt. Geschikt voor huurwoningen of als tijdelijke oplossing. Voor een bredere zuivering kies je voor een ingebouwd systeem of omgekeerde osmose.',
+  },
+  {
+    id: 'waterontkalker',
+    naam: 'Waterontkalker / Antikalkfilter',
+    geschiktVoor: 'Kalkaanslag in apparaten verminderen',
+    hubUrl: '/waterontkalker',
+    hubLabel: 'Volledige gids over waterontkalkers →',
+    samenvatting:
+      'Een waterontkalker richt zich specifiek op het voorkomen of verminderen van kalkaanslag in apparaten en leidingen. Anders dan een ionenwisselaar (die kalk verwijdert) werken veel ontkalkers via fysische methoden (magneet, elektromagneet, template assisted crystallisation) die calcium en magnesium in een niet-aanhechtende kristalvorm omzetten. Effectiviteit van fysische methoden is wetenschappelijk omstreden.',
+    watVerwijdert: [
+      'Kalkaanslag (aanhechtingsgedrag verminderd)',
+      'Beschermt waterkoker, koffiemachine en leidingen',
+    ],
+    watNiet: [
+      'Kalk chemisch uit het water (water blijft hard)',
+      'Bacteriën, chemische stoffen, nitraat, PFAS',
+      'Smaakverbetering (pH en TDS ongewijzigd)',
+    ],
+    vormen:
+      'Magneetontkalker (klemmen op leiding), elektronische ontkalker, TAC/template-kristallisator (inline), zoutloze onthardingspatroon.',
+    kosten:
+      'Magneetontkalkers: € 20–80 (eenmalig, geen vervanging). TAC-patronen: € 100–300 aanschaf + € 40–80 per jaar patroonvervanging. Elektronisch: € 50–200.',
+    wanneer:
+      'Wanneer je kalkaanslag in apparaten wil reduceren zonder zout te gebruiken en zonder chemische samenstelling van het water te willen wijzigen. Combineer met een koolstoffilter voor smaakverbetering. Bij zwaar probleem met hardheid kies voor een ionenwisselaar of omgekeerde osmose.',
+  },
+  {
+    id: 'ultrafiltratie',
+    naam: 'Ultrafiltratie (UF)',
+    geschiktVoor: 'Bacteriën en virussen zonder chemicaliën',
+    hubUrl: '/ultrafiltratie',
+    hubLabel: 'Volledige gids over ultrafiltratie →',
+    samenvatting:
+      'Ultrafiltratie (UF) gebruikt membranen met poriën van 0,01–0,1 micron om bacteriën, virussen, eiwitten en colloidale deeltjes te verwijderen zonder drukpompen of chemicaliën. Het water stroomt door het membraan op leidingwaterdruk. UF verwijdert geen opgeloste stoffen zoals kalk, nitraat of chloor.',
+    watVerwijdert: [
+      'Bacteriën — 99,99%',
+      'Virussen — 99–99,9% (afhankelijk van membraangrootte)',
+      'Protozoa en cysten',
+      'Eiwitten en colloidale deeltjes',
+      'Troebelheid',
+    ],
+    watNiet: [
+      'Opgeloste zouten (kalk, nitraat, PFAS)',
+      'Chloor en organische verbindingen',
+      'Zware metalen',
+      'Kleine virussen (bij membranen >0,02 µm)',
+    ],
+    vormen:
+      'Hollow-fiber membraanmodule (inline, onder aanrecht), tafelmodel UF-unit of als aanvullend filtertreden in meertraps systeem.',
+    kosten:
+      'Aanschaf € 100–400 (afhankelijk van type en merk); membraanvervanging elke 1–3 jaar (€ 40–120). Geen elektriciteit nodig.',
+    wanneer:
+      'Wanneer microbiologische veiligheid de prioriteit is en je geen chemische verontreinigingen verwacht. Populair als aanvulling op een koolstoffilter bij privéwaterbronnen of regenwater. Combineer met een koolstoffilter voor volledige oplossing.',
+  },
+  {
+    id: 'nanofiltration',
+    naam: 'Nanofiltration (NF)',
+    geschiktVoor: 'Ontharting met gedeeltelijk mineraalbehoud',
+    hubUrl: '/nanofiltration',
+    hubLabel: 'Volledige gids over nanofiltration →',
+    samenvatting:
+      'Nanofiltration (NF) is een membraantechnologie met poriën van 0,001–0,01 micron — tussen ultrafiltratie en omgekeerde osmose in. Het verwijdert hardheid, pesticiden en kleurstoffen effectief, terwijl het een deel van de nuttige mineralen behoudt. Voor thuisgebruik zijn vrijwel geen kant-en-klare producten beschikbaar; NF wordt voornamelijk gemeentelijk en industrieel ingezet.',
+    watVerwijdert: [
+      'Hardheid / kalk (Ca²⁺, Mg²⁺) — 80–95%',
+      'Pesticiden en herbiciden — 90–99%',
+      'Kleurstoffen en grote organische moleculen',
+      'Bacteriën (99,99%) en virussen (~99%)',
+    ],
+    watNiet: [
+      'Kleine zouten (NaCl) — deels doorgelaten',
+      'Nitraat — slechts 50–70% verwijdering',
+      'PFAS — variabel (70–95%, afhankelijk van molecuulgrootte)',
+      'Monovalente ionen',
+    ],
+    vormen:
+      'Geen standaard consumentenproducten. "Zachte osmose" of "selective RO" systemen bevatten soms een NF-membraan. Industrieel als drukmembraanunit.',
+    kosten:
+      'Geen kant-en-klare thuisproducten. Maatwerk: losse NF-membraanmodule € 50–200 + installatie. RO met remineralisatiefilter is goedkoper en breder beschikbaar (€ 230–560 totaal).',
+    wanneer:
+      'Wanneer je hardheid en pesticiden wil verwijderen maar meer mineralen wil behouden dan bij RO. In de praktijk is een RO-systeem met remineralisatiefilter voor thuisgebruik de betere keuze — meer producten, betere service, hogere zekerheid voor nitraat en PFAS.',
   },
   {
     id: 'geintegreerd',
