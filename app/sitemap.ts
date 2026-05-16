@@ -368,7 +368,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kraanwater/zomer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/kraanwater/legionella-thuis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/leidingwater/chlooramine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE}/osmose-water/koken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterfilter/microplastics`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     // Ronde 8 — nieuwe clusters
     { url: `${BASE}/waterfilter/pesticiden`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -410,6 +409,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kokend-water-kraan/thee`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/osmose-water/aquarium`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/leidingwater/fosfaat`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Ronde 13
+    { url: `${BASE}/waterfilter/strontium`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/omgekeerde-osmose/membraandruk`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterontharder/bypass`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/leidingwater/silica`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/schoonmaken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/mangan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kraanwater/ijzer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
