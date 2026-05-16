@@ -2,16 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Hard leidingwater: gevolgen voor uw huis en gezondheid',
-  description:
-    'Hard leidingwater bevat veel kalk (calcium en magnesium). Gevolgen voor uw cv-ketel, wasmachine, huid en haar. Oplossingen per situatie.',
+  title: 'Hard leidingwater in Nederland: gebieden, gevolgen en oplossingen',
+  description: 'Hard leidingwater bevat veel kalk. Welke regio\'s in NL hebben het hardste water? Gevolgen voor CV, wasmachine en huid, met concrete oplossingen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/hard-water' },
   openGraph: {
-    title: 'Hard leidingwater: gevolgen voor uw huis en gezondheid',
-    description:
-      'Hard water kost u geld: cv-ketel 15% meer energie, wasmachine 30% kortere levensduur. Ontdek uw waterhardheid en de juiste oplossing per situatie.',
+    title: 'Hard leidingwater in Nederland: gebieden, gevolgen en oplossingen',
+    description: 'Hardst water: Limburg (20-30 dH), Noord-Brabant (18-25 dH). Zachts: Friesland/Groningen (4-8 dH). Gevolgen voor cv, wasmachine, huid en oplossingen per situatie.',
     url: 'https://waterfilterplatform.nl/leidingwater/hard-water',
     type: 'article',
   },
@@ -19,51 +18,98 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: 'Wat is hard leidingwater?',
+    question: 'Wat is de waterhardheid in graden dH?',
     answer:
-      'Hard leidingwater bevat een hoge concentratie opgeloste calcium- en magnesiumzouten (samen "totale hardheid" of kalk). De hardheid wordt uitgedrukt in graden Duits (dH) of millimol per liter (mmol/L). Classificatie: zacht water is &lt;7 dH, matig hard is 7-14 dH, hard is &gt;14 dH. In grote delen van Nederland (Limburg, Noord-Brabant, Zeeland) is het leidingwater hard tot zeer hard.',
+      'Waterhardheid wordt in Nederland gemeten in graden duitse hardheid (dH). 1 dH staat voor 10 mg calciumoxide of 17,8 mg calcium per liter. De schaal loopt van zacht (minder dan 7 dH) tot zeer hard (meer dan 21 dH). Zacht water bevat weinig calcium en magnesium; hard water bevat veel. De hardheid zegt niets over de hygiënische kwaliteit van het water: beide zijn volkomen veilig om te drinken.',
   },
   {
-    question: 'Welke regio\'s in Nederland hebben het hardste water?',
+    question: 'Welke provincie heeft het hardste leidingwater in Nederland?',
     answer:
-      'Het hardste leidingwater in Nederland vind je in Limburg (tot 24 dH in sommige gebieden), Noord-Brabant, Zeeland en delen van Gelderland. Het zachtste water is in Friesland, Groningen en Noord-Holland (4-8 dH). De hardheid verschilt sterk per waterwingebied: grondwater is doorgaans harder dan oppervlaktewater omdat het door kalkgesteente stroomt.',
+      'Limburg heeft het hardste leidingwater van Nederland, met waarden van 20-30 dH in grote delen van de provincie. Noord-Brabant staat op de tweede plaats met 18-25 dH. Dit heeft te maken met de kalkhoudende bodem (mergel, kalkzandsteen) van waaruit het grondwater wordt gewonnen. Het zachtste water vindt u in Friesland en Groningen (4-8 dH) en in de Randstad (8-14 dH), waar deels oppervlaktewater wordt gebruikt.',
   },
   {
-    question: 'Hoe beinvloedt hard water mijn cv-ketel?',
+    question: 'Wat kost hard water aan extra energie voor de cv-ketel?',
     answer:
-      'Hard water vormt kalkaanslag in de warmtewisselaar van uw cv-ketel. Kalk is een slechte warmtegeleider: een laag van 1 mm kalk verhoogt het energieverbruik met 7-10%. Bij 3 mm kalk stijgt het verbruik met 20-25%. Bovendien slijt de warmtewisselaar sneller door de constante thermische belasting door kalk, wat de levensduur van de ketel met 30-40% kan verkorten. Jaarlijks ontkalken of een waterontharder zijn de oplossingen.',
+      'Elk millimeter kalk op de warmtewisselaar van een cv-ketel verhoogt het gasverbruik met circa 7-10%. Bij 3 mm ketelsteen loopt dit op tot 15-20% extra gasverbruik. Bij een gemiddeld gasverbruik van 1.500 m3 per jaar (kosten: circa 1.200 euro) is dat een extra uitgave van 180-240 euro per jaar puur door kalk. Een waterontharder voor de cv-ketel verdient zichzelf terug in 4-6 jaar in harde watergebieden.',
   },
   {
-    question: 'Is hard water slecht voor de gezondheid?',
+    question: 'Schaadt hard water de gezondheid?',
     answer:
-      'Hard water is niet bewezen schadelijk voor de gezondheid. Calcium en magnesium zijn essentieel voor het lichaam en het drinken van hard water draagt bij aan de dagelijkse inname. De Wereldgezondheidsorganisatie (WHO) stelt geen bovengrens voor calciumhardheid in drinkwater voor gezondheidsdoeleinden. Wel kan hard water bij mensen met een gevoelige huid leiden tot droogheid, jeuk en eczeem, omdat kalk de huidbarriere beinvloedt.',
+      'Nee, er is geen bewezen direct gezondheidsschadelijk effect van hard water bij normale consumptie. Calcium en magnesium zijn voedingsstoffen die ook via hard water worden ingenomen. Sommige studies suggereren zelfs een beschermend effect van hard water op cardiovasculaire gezondheid. De ongemakken van hard water zijn voornamelijk esthetisch en economisch, niet medisch. Mensen met eczeem of droge huid kunnen echter wel meer last ervaren van hard douchewater.',
   },
   {
-    question: 'Wat doet hard water met mijn haar en huid?',
+    question: 'Hoeveel meer wasmiddel heeft u nodig bij hard water?',
     answer:
-      'Calcium in hard water bindt aan zeep- en shampooresiduen en vormt een laag op haar en huid. Dit kan leiden tot droog, pluizig haar dat moeilijk te stylen is, een dof uiterlijk van het haar, en droge, soms jeukende huid bij gevoelige mensen. Wetenschappelijk bewijs hiervoor is aanwezig maar niet eenduidig. Een waterontharder of een duschfilter met koolstof kan de symptomen significant verminderen.',
+      'Bij hard water (boven 14 dH) heeft u 25-40% meer wasmiddel nodig om hetzelfde schoonmaakresultaat te bereiken. Calciumionen in het water binden aan de tensiden in wasmiddel en maken ze minder effectief. Wasmiddelproducenten geven doorgaans doseringsadvies per waterhardheidsniveau op de verpakking. In de hardste zones van Limburg en Noord-Brabant betekent dit jaarlijks 30-60 euro extra aan wasmiddelkosten.',
   },
   {
-    question: 'Hoeveel meer wasmiddel gebruik je bij hard water?',
+    question: 'Is een waterontharder of een osmosefilter beter bij hard water?',
     answer:
-      'Hard water inactiveert een deel van de tensiden (werkzame stoffen) in wasmiddel door neerslag met calcium. Wasmiddelfabrikanten adviseren 25-50% meer wasmiddel bij hard water ten opzichte van zacht water. Dit verklaart waarom wasmiddelpakketten doseeradviezen geven op basis van waterhardheid. Een waterontharder of anti-kalk wasmiddeladditief reduceert het extra verbruik.',
+      'Dit hangt af van uw doel. Een waterontharder behandelt al het huishoudwater via ionenwisseling en voorkomt kalkschade aan cv-ketel, wasmachine en douchekoppen. Een osmosefilter behandelt alleen het drinkwater aan de keukenkraan, maar verwijdert behalve kalk ook nitraten, PFAS, zware metalen en medicijnresten. Voor maximale bescherming van apparaten en leidingen: waterontharder. Voor schoon drinkwater: osmose. Ideaal: combinatie van beide.',
   },
   {
-    question: 'Wat is de beste oplossing voor hard water in huis?',
+    question: 'Hoe meet ik de waterhardheid thuis?',
     answer:
-      'De beste oplossing hangt af van het doel. Voor de cv-ketel en wasmachine: een ionenwisselende waterontharder op het huisaansluitpunt (geeft zacht water door het hele huis). Voor drinkwater: osmosefilter (verwijdert kalk en overige verontreinigingen). Voor de douche: douchfilter met koolstof vermindert chloor maar verwijdert kalk niet volledig. Een combinatie van waterontharder voor de installatie en osmosefilter voor drinkwater is de meest complete aanpak.',
+      'Waterhardheid kunt u eenvoudig thuis meten met een teststrip (verkrijgbaar bij bouwmarkt of online, circa 5-15 euro voor een pakket van 50-100 strips). Dip de strip in koud kraanwater en vergelijk de kleur na 30 seconden met de bijgesloten schaal. Voor een nauwkeurigere meting kunt u een druppeltest aanschaffen of contact opnemen met uw drinkwaterbedrijf, dat de hardheidswaarde per postcodegebied kenbaar maakt. U kunt ook onze gemeentepagina raadplegen.',
   },
   {
-    question: 'Hoe meet ik de hardheid van mijn leidingwater?',
+    question: 'Helpt een douchefilter tegen de gevolgen van hard water?',
     answer:
-      'U kunt de waterhardheid op meerdere manieren meten: via de website van uw watermaatschappij (geeft de hardheid per postcodegebied), met een TDS-meter (geeft totale opgeloste stoffen, correlatie met hardheid), met een titratietest-kit (nauwkeurige chemische meting in mmol/L of dH), of via een professionele watertest bij een gecertificeerd laboratorium. Op waterfilterplatform.nl vindt u ook de waterhardheid per gemeente.',
+      'Een eenvoudig koolstof-douchefilter verwijdert geen kalk. Sommige douchefilters bevatten ionenwisselhars die tijdelijk de hardheid verlaagt, maar de capaciteit is beperkt (circa 3-6 maanden gebruik). Voor structurele vermindering van kalk in de douche is een centrale waterontharder de enige effectieve oplossing. Een douchefilter kan chloor en sommige organische stoffen verwijderen, maar is geen kalkvervanger.',
+  },
+  {
+    question: 'Wat zijn de zichtbare tekenen van hard water in huis?',
+    answer:
+      'Zichtbare tekenen van hard water: (1) witte kalkranden op douchedeur en tegels, (2) kalkafzetting op kranen en armaturen, (3) vlekken op glas en bestek uit de vaatwasser, (4) verminderd schuim van zeep en shampoo, (5) kalkkorst in waterkoker en koffieapparaat, (6) korter werkende apparaten (vaatwasser, wasmachine, boiler). Hoe meer van deze symptomen, hoe harder uw water.',
+  },
+];
+
+const regioHardheid = [
+  { regio: 'Limburg', hardheid: '20-30 dH', type: 'Zeer hard', kleur: 'bg-red-50 border-red-200 text-red-800' },
+  { regio: 'Noord-Brabant', hardheid: '18-25 dH', type: 'Zeer hard', kleur: 'bg-red-50 border-red-200 text-red-800' },
+  { regio: 'Zeeland', hardheid: '15-22 dH', type: 'Hard tot zeer hard', kleur: 'bg-orange-50 border-orange-200 text-orange-800' },
+  { regio: 'Gelderland', hardheid: '10-20 dH', type: 'Matig tot hard', kleur: 'bg-amber-50 border-amber-200 text-amber-800' },
+  { regio: 'Utrecht', hardheid: '10-18 dH', type: 'Matig tot hard', kleur: 'bg-amber-50 border-amber-200 text-amber-800' },
+  { regio: 'Zuid-Holland', hardheid: '8-15 dH', type: 'Matig hard', kleur: 'bg-yellow-50 border-yellow-200 text-yellow-800' },
+  { regio: 'Noord-Holland', hardheid: '6-12 dH', type: 'Zacht tot matig', kleur: 'bg-lime-50 border-lime-200 text-lime-800' },
+  { regio: 'Friesland', hardheid: '4-8 dH', type: 'Zacht', kleur: 'bg-green-50 border-green-200 text-green-800' },
+  { regio: 'Groningen', hardheid: '4-8 dH', type: 'Zacht', kleur: 'bg-green-50 border-green-200 text-green-800' },
+];
+
+const gevolgenHardWater = [
+  {
+    categorie: 'CV-ketel en verwarming',
+    effect: '+15% gasverbruik, kortere levensduur',
+    oplossing: 'Waterontharder voor cv-installatie',
+    href: '/waterontkalker',
+    kosten: 'Extra jaarkosten: circa 180-240 euro',
+  },
+  {
+    categorie: 'Wasmachine',
+    effect: '-30% levensduur, +25% wasmiddel',
+    oplossing: 'Waterontharder, maandelijks ontkalken',
+    href: '/kalk-in/wasmachine',
+    kosten: 'Extra jaarkosten: circa 60-120 euro',
+  },
+  {
+    categorie: 'Douche en badkamer',
+    effect: 'Kalkafzetting, meer zeep, huidirritatie',
+    oplossing: 'Waterontharder, regelmatig ontkalken',
+    href: '/kalk-in/douche',
+    kosten: 'Extra schoonmaak: circa 20-50 uur/jaar',
+  },
+  {
+    categorie: 'Drinkwater',
+    effect: 'Kalkachtige smaak, kalk in waterkoker',
+    oplossing: 'Osmosefilter aan keukenkraan',
+    href: '/omgekeerde-osmose',
+    kosten: 'Osmosefilter: circa 50-100 euro/jaar',
   },
 ];
 
 export default function HardWaterPage() {
   return (
     <>
-      <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
@@ -72,13 +118,14 @@ export default function HardWaterPage() {
           { name: 'Hard water', url: 'https://waterfilterplatform.nl/leidingwater/hard-water' },
         ]}
       />
+      <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="Article"
         article={{
-          title: 'Hard leidingwater: gevolgen voor uw huis en gezondheid',
-          description:
-            'Hard water en de gevolgen voor cv-ketel, wasmachine, huid en gezondheid. Oplossingen per situatie in Nederland.',
+          title: 'Hard leidingwater in Nederland: gebieden, gevolgen en oplossingen',
+          description: 'Hard leidingwater bevat veel kalk. Welke regio\'s in NL hebben het hardste water? Gevolgen voor CV, wasmachine en huid, met concrete oplossingen.',
           datePublished: '2026-05-01',
+          dateModified: '2026-05-01',
           url: 'https://waterfilterplatform.nl/leidingwater/hard-water',
         }}
       />
@@ -94,29 +141,26 @@ export default function HardWaterPage() {
             <span>Hard water</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Hard leidingwater: gevolgen voor uw huis en gezondheid
+            Hard leidingwater in Nederland: gebieden, gevolgen en oplossingen
           </h1>
-
-          {/* QuickAnswer */}
-          <div className="bg-white border border-[#005F8A]/30 rounded-xl p-4 mb-6">
-            <p className="text-xs font-semibold text-[#005F8A] uppercase tracking-wide mb-1">Snel antwoord</p>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              Hard water (&gt;14 dH) bevat hoge concentraties calcium en magnesium. Gevolgen: cv-ketel verbruikt 15% meer energie, apparaten gaan 30% korter mee, u gebruikt 25% meer wasmiddel. Hard water is niet schadelijk voor de gezondheid maar kan droge huid geven bij gevoelige mensen.
-            </p>
-          </div>
-
+          <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+            Bijna de helft van Nederland heeft hard tot zeer hard leidingwater. Limburg en
+            Noord-Brabant hebben de hoogste waterhardheid: 18-30 dH. Dit kost u jaarlijks
+            honderden euros aan extra energie, wasmiddel en kalkschade. Lees welke regio hard
+            water heeft en welke oplossing het beste past bij uw situatie.
+          </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="#gevolgen"
+              href="#regio"
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              Gevolgen hard water &rarr;
+              Waterhardheid per regio &rarr;
             </Link>
             <Link
-              href="#oplossingen"
+              href="/waterhardheid"
               className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors text-sm"
             >
-              Oplossingen per situatie
+              Zoek uw gemeente
             </Link>
           </div>
         </div>
@@ -124,338 +168,190 @@ export default function HardWaterPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
-        {/* Inhoudsopgave */}
-        <section className="bg-gray-50 rounded-2xl p-5">
-          <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
-          <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
-            <li><a href="#definitie" className="hover:underline">Definitie hard water</a></li>
-            <li><a href="#nederland-kaart" className="hover:underline">Hardheid per regio in NL</a></li>
-            <li><a href="#gevolgen" className="hover:underline">Economische gevolgen</a></li>
-            <li><a href="#gezondheid" className="hover:underline">Gezondheidsaspecten</a></li>
-            <li><a href="#esthetisch" className="hover:underline">Esthetische gevolgen</a></li>
-            <li><a href="#oplossingen" className="hover:underline">Oplossingen per probleem</a></li>
-            <li><a href="#meten" className="hover:underline">Hardheid meten</a></li>
-            <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
-          </ol>
-        </section>
+        <QuickAnswer answer="Hard leidingwater bevat veel calcium en magnesium (gemeten in graden dH). Zacht is minder dan 7 dH, matig 7-14 dH, hard 14-21 dH, zeer hard meer dan 21 dH. Hardst: Limburg (20-30 dH) en Noord-Brabant (18-25 dH). Zachts: Friesland en Groningen (4-8 dH). Hard water verhoogt gasverbruik cv (+15%), verkort levensduur wasmachine (-30%) en vereist meer wasmiddel (+25%)." />
 
-        {/* Definitie */}
-        <section id="definitie">
+        {/* Hardheidsdefinitie */}
+        <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Wat is hard water? Definitie en eenheden
+            Definitie waterhardheid: de dH-schaal uitgelegd
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Hard water is leidingwater met een hoge concentratie opgeloste calcium- en magnesiumzouten. Deze mineralen komen in het water door het doorsijpelen van regenwater door kalkgesteente in de bodem. Hoe meer kalk in de bodem, hoe harder het water.
+            Waterhardheid wordt veroorzaakt door opgeloste calcium- (Ca2+) en magnesiumionen (Mg2+)
+            die afkomstig zijn van kalkrijke bodemlagen waar het grondwater doorheen stroomt.
+            Hoe kalkrijker de bodem, hoe harder het water.
           </p>
-          <div className="overflow-x-auto -mx-4 px-4 mb-6">
-            <table className="w-full min-w-[440px] text-sm border-collapse">
+          <div className="overflow-x-auto -mx-4 px-4 mb-4">
+            <table className="w-full min-w-[400px] text-sm border-collapse">
               <thead>
                 <tr className="bg-[#003F5C] text-white">
-                  <th className="text-left py-2.5 px-3 font-semibold">Classificatie</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Graden Duits (dH)</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">mmol/L</th>
-                  <th className="py-2.5 px-3 font-semibold text-left hidden sm:table-cell">Kenmerk</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Categorie</th>
+                  <th className="py-2.5 px-3 font-semibold text-center">Hardheid (dH)</th>
+                  <th className="py-2.5 px-3 font-semibold text-left">Kenmerken</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { klasse: 'Zeer zacht', dh: '&lt;4 dH', mmol: '&lt;0,7', kenmerk: 'Nauwelijks kalk; zeldzaam in NL' },
-                  { klasse: 'Zacht', dh: '4-7 dH', mmol: '0,7-1,3', kenmerk: 'Friesland, Groningen, Noord-Holland (kust)' },
-                  { klasse: 'Matig hard', dh: '7-14 dH', mmol: '1,3-2,5', kenmerk: 'Randstad, grote steden; lichte kalkaanslag mogelijk' },
-                  { klasse: 'Hard', dh: '14-21 dH', mmol: '2,5-3,8', kenmerk: 'Noord-Brabant, Zeeland, Gelderland' },
-                  { klasse: 'Zeer hard', dh: '&gt;21 dH', mmol: '&gt;3,8', kenmerk: 'Delen Limburg; ernstige kalkaanslag in apparaten' },
-                ].map((r, i) => (
-                  <tr key={r.klasse} className={`border-b border-gray-100 ${i === 3 || i === 4 ? 'bg-amber-50' : i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
-                    <td className="py-2.5 px-3 font-medium text-gray-900 text-xs">{r.klasse}</td>
-                    <td className="py-2.5 px-3 text-center font-semibold text-[#005F8A] text-xs">{r.dh}</td>
-                    <td className="py-2.5 px-3 text-center text-gray-600 text-xs">{r.mmol}</td>
-                    <td className="py-2.5 px-3 text-gray-500 text-xs hidden sm:table-cell">{r.kenmerk}</td>
+                  { cat: 'Zacht', dH: 'minder dan 7', ken: 'Weinig kalk, nauwelijks aanslag, veel schuim' },
+                  { cat: 'Matig hard', dH: '7-14', ken: 'Lichte kalkaanslag, normaal zeepverbruik' },
+                  { cat: 'Hard', dH: '14-21', ken: 'Zichtbare aanslag, meer wasmiddel, cv-risico' },
+                  { cat: 'Zeer hard', dH: 'meer dan 21', ken: 'Snelle kalkaanslag, hoge energiekosten, huidirritatie' },
+                ].map(r => (
+                  <tr key={r.cat} className="border-b border-gray-100">
+                    <td className="py-2.5 px-3 font-medium text-gray-800 text-xs">{r.cat}</td>
+                    <td className="py-2.5 px-3 text-center text-xs text-[#005F8A] font-semibold">{r.dH} dH</td>
+                    <td className="py-2.5 px-3 text-xs text-gray-600">{r.ken}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-gray-700 leading-relaxed">
-            In Nederland varieert de waterhardheid sterk per regio en per waterwingebied. Grondwater is doorgaans harder dan oppervlaktewater. Uw watermaatschappij publiceert de exacte hardheid per postcodegebied op haar website.
-          </p>
         </section>
 
-        {/* Nederland kaart */}
-        <section id="nederland-kaart">
+        {/* Regio kaart */}
+        <section id="regio">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
             Waterhardheid per regio in Nederland
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De waterhardheid in Nederland verschilt aanzienlijk per provincie en waterwingebied. De bodemgesteldheid is de voornaamste oorzaak: in het zuiden en oosten van het land stroomt water door kalk- en krijtgesteente, wat resulteert in hard water.
+            De waterhardheid verschilt sterk per regio. In het zuiden en oosten is het water harder
+            omdat het grondwater door kalkrijke bodemlagen stroomt. In het noorden en de Randstad
+            is het water zachter, mede omdat hier meer oppervlaktewater wordt gebruikt.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            {[
-              {
-                regio: 'Limburg',
-                hardheid: 'Hard - Zeer hard',
-                dh: '14-24 dH',
-                kleur: 'bg-red-50 border-red-200',
-                beschrijving: 'Het hardste water van Nederland door krijtbodem (Zuid-Limburg). Kalkaanslag in apparaten is hier een serieus probleem.',
-              },
-              {
-                regio: 'Noord-Brabant',
-                hardheid: 'Hard',
-                dh: '12-20 dH',
-                kleur: 'bg-orange-50 border-orange-200',
-                beschrijving: 'Overwegend hard water door grondwaterwinning in zandige kalkrijke bodem. Waterontharder veelgevraagd.',
-              },
-              {
-                regio: 'Zeeland / Gelderland',
-                hardheid: 'Matig hard - Hard',
-                dh: '10-18 dH',
-                kleur: 'bg-amber-50 border-amber-200',
-                beschrijving: 'Regionale variaties; rivierwater (Rijn, Maas) is harder dan kustwater.',
-              },
-              {
-                regio: 'Randstad (Amsterdam, Rotterdam, Utrecht)',
-                hardheid: 'Zacht - Matig hard',
-                dh: '6-12 dH',
-                kleur: 'bg-yellow-50 border-yellow-200',
-                beschrijving: 'Deels oppervlaktewater van grote rivieren, deels grondwater. Amsterdam heeft relatief zacht water.',
-              },
-              {
-                regio: 'Friesland / Groningen',
-                hardheid: 'Zacht',
-                dh: '4-8 dH',
-                kleur: 'bg-green-50 border-green-200',
-                beschrijving: 'Het zachtste leidingwater van Nederland door klei- en veenbodem. Nauwelijks kalkaanslag.',
-              },
-              {
-                regio: 'Noord-Holland (kust)',
-                hardheid: 'Zacht - Matig zacht',
-                dh: '5-9 dH',
-                kleur: 'bg-green-50 border-green-200',
-                beschrijving: 'Duinwaterinfiltratie geeft relatief zacht water. Haarlem en Alkmaar: matig zacht.',
-              },
-            ].map(r => (
-              <div key={r.regio} className={`border rounded-xl p-4 ${r.kleur}`}>
-                <div className="flex justify-between items-start gap-2 mb-1">
-                  <p className="font-semibold text-gray-900 text-sm">{r.regio}</p>
-                  <span className="text-xs font-bold text-[#005F8A] shrink-0">{r.dh}</span>
+          <div className="space-y-2 mb-5">
+            {regioHardheid.map(r => (
+              <div key={r.regio} className={`border rounded-xl p-3 flex items-center justify-between gap-3 ${r.kleur}`}>
+                <div>
+                  <p className="font-semibold text-sm">{r.regio}</p>
+                  <p className="text-xs opacity-75">{r.type}</p>
                 </div>
-                <p className="text-xs text-gray-500 mb-1 font-medium">{r.hardheid}</p>
-                <p className="text-xs text-gray-600 leading-relaxed">{r.beschrijving}</p>
+                <span className="font-bold text-sm shrink-0">{r.hardheid}</span>
               </div>
             ))}
           </div>
-          <div className="bg-[#E0F2FE] rounded-xl p-4 text-sm text-[#003F5C]">
-            Controleer de exacte waterhardheid voor uw adres via{' '}
-            <Link href="/waterhardheid" className="text-[#005F8A] underline hover:no-underline">onze waterhardheid-kaart per gemeente</Link>.
-          </div>
-        </section>
-
-        {/* Economische gevolgen */}
-        <section id="gevolgen">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Economische gevolgen van hard water
-          </h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Hard water kost u elk jaar geld. Kalkaanslag in verwarmingssystemen, apparaten en leidingen leidt tot hogere energiekosten, meer verbruik van wasmiddelen en zeep, en kortere levensduur van dure apparaten.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-            {[
-              {
-                gevolg: 'Energiekosten CV-ketel',
-                impact: '+15%',
-                details: '1 mm kalk op warmtewisselaar = 7-10% meer energieverbruik. Bij 3 mm kalk loopt dit op tot 20-25%.',
-              },
-              {
-                gevolg: 'Levensduur apparaten',
-                impact: '-30%',
-                details: 'Wasmachine, vaatwasser, koffiezetapparaat en boiler gaan aanzienlijk korter mee door kalkafzetting in verwarmingselementen.',
-              },
-              {
-                gevolg: 'Wasmiddelverbruik',
-                impact: '+25%',
-                details: 'Calcium inactiveert tensiden in wasmiddel. Fabrikanten adviseren 25-50% hogere dosering bij hard water.',
-              },
-            ].map(g => (
-              <div key={g.gevolg} className="bg-white border border-gray-100 rounded-xl p-4 text-center">
-                <p className="font-semibold text-gray-900 mb-1 text-sm">{g.gevolg}</p>
-                <p className="text-3xl font-bold text-red-600 mb-2">{g.impact}</p>
-                <p className="text-xs text-gray-600 leading-relaxed">{g.details}</p>
-              </div>
-            ))}
-          </div>
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-900">
-            <strong>Kostenindicatie:</strong> Een huishouden in een harde waterregio geeft gemiddeld 200-400 euro per jaar meer uit aan energiekosten (cv), wasmiddelen en vervangingskosten van apparaten ten opzichte van een vergelijkbaar huishouden met zacht water.
-          </div>
-        </section>
-
-        {/* Gezondheid */}
-        <section id="gezondheid">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Gezondheidsaspecten van hard water
-          </h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Hard water is niet bewezen schadelijk voor de gezondheid. De WHO heeft geen maximumgrens gesteld voor calciumhardheid in drinkwater voor gezondheidsdoeleinden. Calcium en magnesium zijn essentieel voor het lichaam en de bijdrage via drinkwater is voor sommige mensen zelfs positief.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-              <h3 className="font-semibold text-green-800 mb-2 text-sm">Positieve aspecten hard water</h3>
-              <ul className="space-y-1.5 text-sm text-green-700">
-                <li className="flex items-start gap-2"><span className="shrink-0">&#10003;</span> Calcium draagt bij aan botgezondheid</li>
-                <li className="flex items-start gap-2"><span className="shrink-0">&#10003;</span> Magnesium ondersteunt hartfunctie</li>
-                <li className="flex items-start gap-2"><span className="shrink-0">&#10003;</span> Geen bewezen gezondheidsschade</li>
-                <li className="flex items-start gap-2"><span className="shrink-0">&#10003;</span> WHO geeft geen maximumgrens voor hardheid</li>
-              </ul>
-            </div>
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
-              <h3 className="font-semibold text-amber-800 mb-2 text-sm">Mogelijke negatieve effecten</h3>
-              <ul className="space-y-1.5 text-sm text-amber-700">
-                <li className="flex items-start gap-2"><span className="shrink-0">&mdash;</span> Droge huid bij gevoelige personen</li>
-                <li className="flex items-start gap-2"><span className="shrink-0">&mdash;</span> Eczeem-verergering (beperkt bewijs)</li>
-                <li className="flex items-start gap-2"><span className="shrink-0">&mdash;</span> Dof, pluizig haar</li>
-                <li className="flex items-start gap-2"><span className="shrink-0">&mdash;</span> Calciumoxalaat nierstenen (bij hoge inname + gevoeligheid)</li>
-              </ul>
-            </div>
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            Voor mensen met atopisch eczeem of een gevoelige huid toont onderzoek een verband met harder water, hoewel de causaliteit niet volledig bewezen is. Een waterontharder of douche-koolstoffilter kan voor deze groep relevant zijn.
+          <p className="text-sm text-gray-500">
+            Exacte hardheidswaarden per gemeente vindt u op onze{' '}
+            <Link href="/waterhardheid" className="text-[#005F8A] hover:underline">
+              waterhardheid per gemeente pagina
+            </Link>. Waarden zijn gemiddelden; lokale variatie is mogelijk.
           </p>
         </section>
 
-        {/* Esthetisch */}
-        <section id="esthetisch">
+        {/* Gevolgen */}
+        <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Esthetische gevolgen: kalkafzetting en vlekken
+            Gevolgen van hard water: economisch en esthetisch
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De esthetische gevolgen van hard water zijn direct zichtbaar in huis. Witte aanslag op kranen, glazen vlekken op servies en kalkrandjes in de waterkoker zijn de meest herkenbare tekens van hard water.
+            Hard water heeft geen bewezen direct gezondheidsrisico. Calcium en magnesium zijn
+            voedingsstoffen. De gevolgen zijn voornamelijk economisch en esthetisch:
           </p>
-          <div className="space-y-3 mb-6">
-            {[
-              { plek: 'Kranen en douche', gevolg: 'Witte kalkafzetting die snel terugkeert na schoonmaken. Chromeren oppervlakken verliezen glans. Douchekop raakt verstopt.' },
-              { plek: 'Glazen en servies', gevolg: 'Wittige vlekken op glazen na de vaatwasser. Troebel uiterlijk van glazen dat niet verdwijnt bij schoonmaken.' },
-              { plek: 'Waterkoker en koffiemachine', gevolg: 'Witte kalk-vlokken in het water en aanslag in de bodem. Vereist maandelijks ontkalken om goed te blijven functioneren.' },
-              { plek: 'Douche en bad', gevolg: 'Kalkrand op het douchegordijn, badkuip en douchecabine. Lastig te verwijderen zonder zuur ontkalkingsmiddel.' },
-              { plek: 'Haar en huid', gevolg: 'Kalk beindt aan haarresiuen en geeft dof, pluizig haar. Zeepschuim wordt minder goed afgespoeld bij hard water.' },
-            ].map(p => (
-              <div key={p.plek} className="border border-gray-100 rounded-xl p-4 bg-white">
-                <p className="font-semibold text-gray-900 mb-1 text-sm">{p.plek}</p>
-                <p className="text-sm text-gray-600 leading-relaxed">{p.gevolg}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Oplossingen */}
-        <section id="oplossingen">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Oplossingen per probleem: welke aanpak werkt?
-          </h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Er is geen universele oplossing voor alle hard-water-problemen. De juiste aanpak hangt af van welk probleem u het meest wilt oplossen.
-          </p>
-          <div className="space-y-4 mb-6">
-            {[
-              {
-                probleem: 'CV-ketel en verwarmingssysteem beschermen',
-                oplossing: 'Waterontharder op het huisaansluitpunt (centraal zacht water voor het hele huis). Alternatief: doseerpomp met onthardingszout direct op de verwarmingsinstallatie.',
-                link: '/waterontharder',
-                linkLabel: 'Waterontharder vergelijken',
-              },
-              {
-                probleem: 'Wasmachine en vaatwasser beschermen',
-                oplossing: 'Waterontharder (meest effectief) of anti-kalk wasmiddeladditief. Sommige wasmachines hebben een ingebouwde ontharder; controleer uw handleiding.',
-                link: '/waterontharder',
-                linkLabel: 'Waterontharder kiezen',
-              },
-              {
-                probleem: 'Drinkwater zonder kalk (smaak en gezondheid)',
-                oplossing: 'Osmosefilter onder het aanrecht. Verwijdert 95-99% van calcium en magnesium. Geeft kraanwater met TDS 5-15 mg/L. Kan remineralisatiecartridge toevoegen voor ideale mineralenbalans.',
-                link: '/omgekeerde-osmose',
-                linkLabel: 'Osmosefilter bekijken',
-              },
-              {
-                probleem: 'Droge huid en haar in de douche',
-                oplossing: 'Douchefilter met koolstof en KDF-media vermindert chloor en deels kalk. Of een waterontharder op het hele huis voor volledige calciumreductie in de douche.',
-                link: '/waterfilter/douche',
-                linkLabel: 'Douchefilter bekijken',
-              },
-              {
-                probleem: 'Kalkvlekken op kranen en servies',
-                oplossing: 'Waterontharder op het huisaansluitpunt is de structurele oplossing. Voor symptoombestrijding: regelmatig ontkalken met citroenzuur of azijn, en wateronthardende vaatwassertabletten.',
-                link: '/kalk-in',
-                linkLabel: 'Kalkaanslag oplossen',
-              },
-            ].map(o => (
-              <div key={o.probleem} className="border border-gray-100 rounded-xl p-4 bg-white">
-                <p className="font-semibold text-gray-900 mb-2 text-sm">Probleem: {o.probleem}</p>
-                <p className="text-sm text-gray-600 leading-relaxed mb-2">{o.oplossing}</p>
-                <Link href={o.link} className="text-xs text-[#005F8A] underline hover:no-underline font-medium">&rarr; {o.linkLabel}</Link>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <CTABanner context="osmose" />
-
-        {/* Meten */}
-        <section id="meten">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Hardheid meten: hoe weet u hoe hard uw water is?
-          </h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            U heeft meerdere opties om de hardheid van uw leidingwater te bepalen, varierend van gratis tot nauwkeurig.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            {[
-              {
-                methode: 'Website watermaatschappij (gratis)',
-                nauwkeurigheid: 'Hoog',
-                beschrijving: 'Vul uw postcode in op de website van uw waterbedrijf (Vitens, Evides, PWN etc.). Geeft directe hardheid in dH of mmol/L voor uw locatie.',
-              },
-              {
-                methode: 'TDS-meter (5-15 euro)',
-                nauwkeurigheid: 'Gemiddeld',
-                beschrijving: 'Meet totale opgeloste stoffen in ppm of mg/L. Correlatie met hardheid maar niet identiek. Snel en handig voor een indicatie.',
-              },
-              {
-                methode: 'Teststrip (2-5 euro)',
-                nauwkeurigheid: 'Laag-gemiddeld',
-                beschrijving: 'Kleurtest die hardheid globaal aangeeft in zones (zacht/matig/hard). Voldoende voor een eerste indruk, niet voor nauwkeurige metingen.',
-              },
-              {
-                methode: 'Titratietest-kit (10-20 euro)',
-                nauwkeurigheid: 'Hoog',
-                beschrijving: 'Chemische test waarbij u druppelsgewijs reagentia toevoegt tot kleurverandering. Geeft exacte hardheid in dH of mmol/L.',
-              },
-            ].map(m => (
-              <div key={m.methode} className="border border-gray-100 rounded-xl p-4 bg-white">
-                <div className="flex justify-between items-start gap-2 mb-1">
-                  <p className="font-semibold text-gray-900 text-sm">{m.methode}</p>
-                  <span className="text-xs bg-[#E0F2FE] text-[#005F8A] font-medium px-2 py-0.5 rounded-full shrink-0">{m.nauwkeurigheid}</span>
+          <div className="space-y-3 mb-5">
+            {gevolgenHardWater.map(g => (
+              <Link
+                key={g.categorie}
+                href={g.href}
+                className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] transition-all group"
+              >
+                <div className="flex items-start justify-between gap-2 mb-1">
+                  <p className="font-semibold text-sm text-gray-800 group-hover:text-[#005F8A]">{g.categorie}</p>
+                  <span className="text-xs text-red-600 font-medium shrink-0">{g.kosten}</span>
                 </div>
-                <p className="text-xs text-gray-600 leading-relaxed">{m.beschrijving}</p>
-              </div>
+                <p className="text-xs text-gray-600 mb-1">{g.effect}</p>
+                <p className="text-xs text-[#005F8A] font-medium">Oplossing: {g.oplossing} &rarr;</p>
+              </Link>
             ))}
           </div>
-          <div className="bg-[#E0F2FE] rounded-xl p-4 text-sm">
-            <p className="text-[#003F5C]">
-              Bekijk onze{' '}
-              <Link href="/waterhardheid" className="text-[#005F8A] underline hover:no-underline font-medium">waterhardheid-kaart per gemeente</Link>{' '}
-              voor de waterhardheid in uw regio.
+          <div className="bg-[#E0F2FE] rounded-xl p-4">
+            <p className="font-semibold text-[#003F5C] mb-1 text-sm">Totale jaarkosten hard water</p>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Een gezin in een harde-waterzone (boven 18 dH) betaalt gemiddeld 350-600 euro per jaar
+              extra door hoger energieverbruik, meer wasmiddel, snellere slijtage van apparaten en
+              extra schoonmaakkosten. Dit zijn de directe besparing die een waterontharder oplevert.
             </p>
           </div>
         </section>
 
         <CTABanner context="osmose" />
 
-        {/* Interne links */}
+        {/* Gezondheid */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
+            Hard water en gezondheid: feiten en fabels
+          </h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Hard water is veilig om te drinken. De WHO en het RIVM stellen dat er geen bewijs is
+            voor gezondheidsschade door hard leidingwater bij de concentraties die in Nederland
+            voorkomen. Kalk bestaat uit calcium en magnesium, beide essentieel voor botten,
+            spieren en het zenuwstelsel.
+          </p>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Sommige studies suggereren zelfs een beschermend effect van calcium in drinkwater op
+            cardiovasculaire gezondheid. Mensen met eczeem of droge huid kunnen echter meer last
+            hebben van hard douchewater: kalkzeep (calciumstearaat) vormt in reactie met zeep een
+            film die huidirritatie verergert.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Voor zuiver drinkwater zonder de smaak van kalk is een osmosefilter de beste keuze.
+            Osmose verwijdert niet alleen kalk maar ook nitraten, PFAS, zware metalen en
+            medicijnresten. Meer informatie op onze pagina over{' '}
+            <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">
+              omgekeerde osmose
+            </Link>.
+          </p>
+        </section>
+
+        {/* Oplossingen */}
+        <section>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
+            Oplossingen per situatie
+          </h2>
+          <div className="space-y-3">
+            {[
+              {
+                situatie: 'CV-ketel beschermen',
+                oplossing: 'Waterontharder op de hoofdleiding of een magnesiuminjectie voor de ketel',
+                link: '/waterontkalker',
+                linkTekst: 'Waterontkalker bekijken',
+              },
+              {
+                situatie: 'Wasmachine beschermen',
+                oplossing: 'Waterontharder, maandelijks ontkalken met citroenzuur (200 g, 60 graden C)',
+                link: '/kalk-in/wasmachine',
+                linkTekst: 'Wasmachine kalkschade',
+              },
+              {
+                situatie: 'Schoon drinkwater',
+                oplossing: 'Osmosefilter onder aanrecht: verwijdert kalk, nitraat, PFAS en meer',
+                link: '/omgekeerde-osmose',
+                linkTekst: 'Osmosefilter bekijken',
+              },
+              {
+                situatie: 'Douche en huid',
+                oplossing: 'Centrale waterontharder is de meest effectieve oplossing voor de douche',
+                link: '/kalk-in/douche',
+                linkTekst: 'Kalk in douche',
+              },
+            ].map(o => (
+              <div key={o.situatie} className="border border-gray-100 rounded-xl p-4">
+                <p className="font-semibold text-gray-900 text-sm mb-1">{o.situatie}</p>
+                <p className="text-xs text-gray-600 mb-2">{o.oplossing}</p>
+                <Link href={o.link} className="text-xs text-[#005F8A] hover:underline font-medium">
+                  {o.linkTekst} &rarr;
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Meer lezen */}
         <section>
           <h2 className="text-xl font-bold text-[#003F5C] mb-4">Meer lezen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { href: '/waterhardheid', label: 'Waterhardheid in uw gemeente controleren' },
-              { href: '/waterontharder', label: 'Waterontharder: hoe werkt het en wat kost het?' },
-              { href: '/omgekeerde-osmose', label: 'Omgekeerde osmose: kalk uit drinkwater halen' },
-              { href: '/kalk-in', label: 'Kalkaanslag: oorzaken en oplossingen' },
+              { href: '/waterhardheid', label: 'Waterhardheid per gemeente' },
+              { href: '/waterontkalker', label: 'Waterontkalker voor hard water' },
+              { href: '/waterontharder', label: 'Waterontharder: alle opties' },
+              { href: '/kalk-in', label: 'Kalk in leidingwater: overzicht' },
             ].map(l => (
               <Link
                 key={l.href}
@@ -485,6 +381,8 @@ export default function HardWaterPage() {
             ))}
           </div>
         </section>
+
+        <CTABanner context="osmose" />
 
       </div>
     </>
