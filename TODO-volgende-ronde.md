@@ -4,20 +4,21 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 7
+## Hoge prioriteit (direct zoekvolume) — Ronde 8
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/aquarium` — waterfilter voor zoet- en zoutwateraquarium (biologisch filtreren)
-- [ ] `/osmose-water/gezondheid` — is osmosewater ongezond? mineralen, WHO-advies
-- [ ] `/waterontharder/huren` — waterontharder huren vs kopen (vergelijking)
-- [ ] `/waterfilter/kan-vs-kraan` — uitgebreidere vergelijking filterkan vs kraanfilter
-- [ ] `/omgekeerde-osmose/kosten` — totale eigendomskosten: aanschaf + filters + water
-- [ ] `/waterfilter/lood` — lood in leidingwater: risico's, loden leidingen, filters
-- [ ] `/leidingwater/medicijnresten` — medicijnresten in drinkwater: omvang, risico, filter
+- [ ] `/waterfilter/pesticiden` — pesticiden in drinkwater, landbouwgebieden, osmose
+- [ ] `/osmose-water/mineralen` — welke mineralen mist osmosewater, dagelijkse behoefte
+- [ ] `/waterontharder/zout-gebruik` — zoutverbruik optimaliseren, soorten zout vergelijken
+- [ ] `/omgekeerde-osmose/installatie` — stap-voor-stap installatiegids, benodigde gereedschappen
+- [ ] `/waterfilter/hardheid` — waterfilter voor hard water: ontharder vs osmose vs magneet
+- [ ] `/kokend-water-kraan/energie` — energieverbruik vergelijking: boiler vs waterkoker vs pan
+- [ ] `/leidingwater/kalium` — kalium in leidingwater: normen, gezondheid
 
-### Seizoensgebonden content
-- [ ] `/kraanwater/zomer` — hogere temperatuur, algengroei risico, kwaliteit in hittegolven
-- [ ] `/kraanwater/legionella-thuis` — Legionella in huishoudleidingen (verlenging ronde 2 legionella)
+### Kennisbank uitbreiding
+- [ ] Seizoensartikel: `zomer-kraanwater-kwaliteit.mdx`
+- [ ] Diepte-artikel: `osmose-vs-bronwater-vs-mineraalwater.mdx`
+- [ ] Diepte-artikel: `pfas-in-nederland-2026.mdx`
 
 ---
 
@@ -27,11 +28,6 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [ ] Overweeg `/pfas-waterfilter/[gemeente]` voor 30-40 hotspot-gemeenten
 - [ ] Overweeg `/heet-water-kraan/[gemeente]` als volume het rechtvaardigt
 - [ ] Overweeg `/drinkwaterfontein/[gemeente]` voor zakelijke lokale SEO
-
-### Drinkwater verdieping
-- [ ] `/leidingwater/chlooramine` — chlooramine vs chloor (steeds meer bedrijven stappen over)
-- [ ] `/osmose-water/koken` — mag je osmosewater koken voor babyvoeding / pasta
-- [ ] `/waterfilter/microplastics` — microplastics in drinkwater: omvang, filters
 
 ---
 
@@ -43,19 +39,19 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [ ] Verwijder duplicate kennisbank MDX bestanden (bijv. `drinkwater-norm-nederland.mdx` en `drinkwater-normen-nederland.mdx`)
 
 ### Technische SEO
-- [ ] Audit canonical URLs — zijn alle pagina's correct geconfigureerd?
+- [ ] Audit canonical URLs zijn alle pagina's correct geconfigureerd?
 - [ ] Open Graph afbeeldingen toevoegen per cluster-hub
 - [ ] Lighthouse audit uitvoeren (target: >90 performance, >95 SEO)
 - [ ] Core Web Vitals check na Vercel-deploy
 - [ ] Structured data validatie via Google Rich Results Test
 
-### Ideen voor ronde 8+
+### Ideen voor ronde 9+
 - Interactief waterhardheids-zoekwidget (client component, apart bundle)
 - Kennisbank uitbreiding: seizoensgebonden artikelen
 - Video-schema markup toevoegen als YouTube-content beschikbaar
 - Pricing-schema markup op vergelijkingspagina's
 - FAQ-schema cross-check met Google Search Console vertoningen
-- `/brouwwater/recepten` — waterprofielen per bierstijl als interactieve tool
+- `/brouwwater/recepten` waterprofielen per bierstijl als interactieve tool
 - Interactief filter-vergelijkingstool (client component)
 
 ---
@@ -111,6 +107,20 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] Niche & vergelijking: waterfilter/vijver, waterfilter/studentenkamer, kokend-water-kraan/quooker
 - [x] Drinkwater verdieping: waterfilter/arseen, leidingwater/nitraat, leidingwater/mangaan, kraanwater/kwaliteit-verbeteren
 
+### Ronde 7 — Gezondheid, kosten, gevaarlijke stoffen, seizoen (12 paginas)
+- [x] Aquarium & niche: waterfilter/aquarium (stikstofcyclus, 5 filtertypen, osmose voor zoet/zout)
+- [x] Gezondheid: osmose-water/gezondheid (WHO-advies, EFSA 2022, risicogroepen)
+- [x] Huren vs kopen: waterontharder/huren (TCO 5/10 jaar, 4 aanbieders)
+- [x] Vergelijkingen: waterfilter/kan-vs-kraan (filterprestaties, kosten, gebruiksgemak)
+- [x] Kosten: omgekeerde-osmose/kosten (TCO vergelijking, terugverdientijd vs flessenwater)
+- [x] Gevaarlijke stoffen: waterfilter/lood (loden leidingen, EU-norm 5 ug/L 2036)
+- [x] Gevaarlijke stoffen: leidingwater/medicijnresten (51 stoffen RIVM 2023, osmose 80-95%)
+- [x] Gevaarlijke stoffen: waterfilter/microplastics (WHO 2022, RO 99%+, nanoplastics)
+- [x] Seizoen: kraanwater/zomer (blauwalgen, THMs, Legionella-risico)
+- [x] Veiligheid: kraanwater/legionella-thuis (doorspoelen, boiler 60C, verhuurder)
+- [x] Technisch: leidingwater/chlooramine (chloor vs chlooramine, catalytisch kool, dialyse)
+- [x] Gebruik: osmose-water/koken (babyvoeding WHO-advies, koffie/thee SCA-normen)
+
 ---
 
-*Bijgewerkt: 2026-05-16 — 4081 statische pagina's na ronde 6*
+*Bijgewerkt: 2026-05-16 — 4088 statische pagina's na ronde 7*
