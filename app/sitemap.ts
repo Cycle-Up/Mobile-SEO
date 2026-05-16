@@ -198,6 +198,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/waterontharder/zoutloos`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/osmose-filter/onderhoud`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/osmose-water/thee`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/pfas-waterfilter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/pfas-waterfilter/kopen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/pfas-waterfilter/testen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/pfas-waterfilter/normen-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/pfas-waterfilter/gebieden-nederland`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
