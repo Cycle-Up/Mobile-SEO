@@ -327,7 +327,7 @@ export default function WaterontharderVergelijkenPage() {
                 nr: '7',
                 titel: 'Single-tank vs. duplex (twin-tank)',
                 inhoud:
-                  'Een single-tank ontharder levert tijdelijk ongezacht water tijdens de regeneratie (60–90 min, doorgaans 's nachts). Een twin-tank of duplex systeem wisselt af tussen twee harsvaten zodat altijd zacht water beschikbaar is. Twin-tank is duurder maar noodzakelijk voor grote gezinnen, grote huizen of situaties waar continu zacht water vereist is (bijv. koelinstallaties, hospitality).',
+                  "Een single-tank ontharder levert tijdelijk ongezacht water tijdens de regeneratie (60–90 min, doorgaans &apos;s nachts). Een twin-tank of duplex systeem wisselt af tussen twee harsvaten zodat altijd zacht water beschikbaar is. Twin-tank is duurder maar noodzakelijk voor grote gezinnen, grote huizen of situaties waar continu zacht water vereist is (bijv. koelinstallaties, hospitality).",
               },
             ].map(k => (
               <div key={k.nr} className="flex gap-4 items-start">
