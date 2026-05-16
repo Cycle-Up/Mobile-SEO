@@ -4,21 +4,21 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 8
+## Hoge prioriteit (direct zoekvolume) — Ronde 9
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/pesticiden` — pesticiden in drinkwater, landbouwgebieden, osmose
-- [ ] `/osmose-water/mineralen` — welke mineralen mist osmosewater, dagelijkse behoefte
-- [ ] `/waterontharder/zout-gebruik` — zoutverbruik optimaliseren, soorten zout vergelijken
-- [ ] `/omgekeerde-osmose/installatie` — stap-voor-stap installatiegids, benodigde gereedschappen
-- [ ] `/waterfilter/hardheid` — waterfilter voor hard water: ontharder vs osmose vs magneet
-- [ ] `/kokend-water-kraan/energie` — energieverbruik vergelijking: boiler vs waterkoker vs pan
-- [ ] `/leidingwater/kalium` — kalium in leidingwater: normen, gezondheid
+- [ ] `/waterfilter/waterverzachter` — verschil waterfilter vs waterverzachter (SEO-synoniemen)
+- [ ] `/osmose-water/ph` — pH van osmosewater: zuur, neutraal of basisch?
+- [ ] `/omgekeerde-osmose/onderhoud` — onderhoudsschema osmosefilter, filtervervanging, reiniging
+- [ ] `/waterontharder/kosten` — aanschaf, jaarlijks zout, TCO vergelijking huren vs kopen
+- [ ] `/leidingwater/sulfaat` — sulfaat in leidingwater: smaak, normen, filter
+- [ ] `/kraanwater/tds` — TDS meten in kraanwater, wat betekenen de waarden
+- [ ] `/waterfilter/koper` — koper in leidingwater via koperen leidingen, EU-norm 2 mg/L
 
-### Kennisbank uitbreiding
-- [ ] Seizoensartikel: `zomer-kraanwater-kwaliteit.mdx`
-- [ ] Diepte-artikel: `osmose-vs-bronwater-vs-mineraalwater.mdx`
-- [ ] Diepte-artikel: `pfas-in-nederland-2026.mdx`
+### Kennisbank diepte-artikelen (MDX)
+- [ ] `pfas-in-nederland-2026.mdx` — actuele PFAS-hotspots, watermaatschappij maatregelen
+- [ ] `osmose-water-voor-planten.mdx` — is osmosewater goed of slecht voor kamerplanten?
+- [ ] `drinkwater-statistieken-nederland.mdx` — CBS/RIVM data visualisatie
 
 ---
 
@@ -39,17 +39,16 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [ ] Verwijder duplicate kennisbank MDX bestanden (bijv. `drinkwater-norm-nederland.mdx` en `drinkwater-normen-nederland.mdx`)
 
 ### Technische SEO
-- [ ] Audit canonical URLs zijn alle pagina's correct geconfigureerd?
+- [ ] Audit canonical URLs zijn alle paginas correct geconfigureerd?
 - [ ] Open Graph afbeeldingen toevoegen per cluster-hub
 - [ ] Lighthouse audit uitvoeren (target: >90 performance, >95 SEO)
 - [ ] Core Web Vitals check na Vercel-deploy
 - [ ] Structured data validatie via Google Rich Results Test
 
-### Ideen voor ronde 9+
+### Ideen voor ronde 10+
 - Interactief waterhardheids-zoekwidget (client component, apart bundle)
-- Kennisbank uitbreiding: seizoensgebonden artikelen
 - Video-schema markup toevoegen als YouTube-content beschikbaar
-- Pricing-schema markup op vergelijkingspagina's
+- Pricing-schema markup op vergelijkingspaginas
 - FAQ-schema cross-check met Google Search Console vertoningen
 - `/brouwwater/recepten` waterprofielen per bierstijl als interactieve tool
 - Interactief filter-vergelijkingstool (client component)
@@ -63,7 +62,7 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] Kokend water kraan: hub, vergelijken, met-filter
 - [x] Heet water kraan: hub, kopen, vergelijken, installeren, prijs, filter
 - [x] Osmose filter: hub, kopen, werking
-- [x] Waterhardheid: hub + 400 gemeente-pagina's
+- [x] Waterhardheid: hub + 400 gemeente-paginas
 - [x] Waterontharder: hub, kopen, vergelijken, zout, werking, zoutloos
 
 ### Ronde 2 — Uitbreiding
@@ -108,19 +107,23 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] Drinkwater verdieping: waterfilter/arseen, leidingwater/nitraat, leidingwater/mangaan, kraanwater/kwaliteit-verbeteren
 
 ### Ronde 7 — Gezondheid, kosten, gevaarlijke stoffen, seizoen (12 paginas)
-- [x] Aquarium & niche: waterfilter/aquarium (stikstofcyclus, 5 filtertypen, osmose voor zoet/zout)
-- [x] Gezondheid: osmose-water/gezondheid (WHO-advies, EFSA 2022, risicogroepen)
-- [x] Huren vs kopen: waterontharder/huren (TCO 5/10 jaar, 4 aanbieders)
-- [x] Vergelijkingen: waterfilter/kan-vs-kraan (filterprestaties, kosten, gebruiksgemak)
-- [x] Kosten: omgekeerde-osmose/kosten (TCO vergelijking, terugverdientijd vs flessenwater)
-- [x] Gevaarlijke stoffen: waterfilter/lood (loden leidingen, EU-norm 5 ug/L 2036)
-- [x] Gevaarlijke stoffen: leidingwater/medicijnresten (51 stoffen RIVM 2023, osmose 80-95%)
-- [x] Gevaarlijke stoffen: waterfilter/microplastics (WHO 2022, RO 99%+, nanoplastics)
-- [x] Seizoen: kraanwater/zomer (blauwalgen, THMs, Legionella-risico)
-- [x] Veiligheid: kraanwater/legionella-thuis (doorspoelen, boiler 60C, verhuurder)
-- [x] Technisch: leidingwater/chlooramine (chloor vs chlooramine, catalytisch kool, dialyse)
-- [x] Gebruik: osmose-water/koken (babyvoeding WHO-advies, koffie/thee SCA-normen)
+- [x] Aquarium & niche: waterfilter/aquarium
+- [x] Gezondheid: osmose-water/gezondheid
+- [x] Huren vs kopen: waterontharder/huren
+- [x] Vergelijkingen: waterfilter/kan-vs-kraan, omgekeerde-osmose/kosten
+- [x] Gevaarlijke stoffen: waterfilter/lood, leidingwater/medicijnresten, waterfilter/microplastics
+- [x] Seizoen & veiligheid: kraanwater/zomer, kraanwater/legionella-thuis
+- [x] Technisch & gebruik: leidingwater/chlooramine, osmose-water/koken
+
+### Ronde 8 — Installatie, mineralen, energie, zout (7 paginas)
+- [x] Gevaarlijke stoffen: waterfilter/pesticiden (0,1 ug/L EU-norm, RIVM 15% overschreding)
+- [x] Mineralen: osmose-water/mineralen (Ca/Mg vergelijkingstabel, remineralisatieopties)
+- [x] Zout: waterontharder/zout-gebruik (tablet vs granulaat vs blok, KCl alternatief)
+- [x] Installatie: omgekeerde-osmose/installatie (8-stappen gids, waterdruk, druktank)
+- [x] Hard water: waterfilter/hardheid (ontharder vs osmose vs magneet, keuzewijzer)
+- [x] Energie: kokend-water-kraan/energie (standby 15W, per-kopje vergelijking, eco-stand)
+- [x] Mineralen: leidingwater/kalium (KCl vs NaCl, hyperkaliemie-waarschuwing nierinsufficiëntie)
 
 ---
 
-*Bijgewerkt: 2026-05-16 — 4088 statische pagina's na ronde 7*
+*Bijgewerkt: 2026-05-16 — 4092 statische paginas na ronde 8*
