@@ -159,6 +159,8 @@ const filterTypes = [
     id: 'koolstof',
     naam: 'Koolstoffilter (Actief Kool)',
     geschiktVoor: 'Smaak en geur verbeteren',
+    hubUrl: '/koolstoffilter',
+    hubLabel: 'Volledige gids over koolstoffilters →',
     samenvatting:
       'Het meest verkochte type waterfilter wereldwijd. Actief koolstof heeft een enorme interne oppervlakte die organische verbindingen, chloor en chloorbijproducten absorbeert. Resultaat: beter smakend en frisser ruikend drinkwater.',
     watVerwijdert: [
@@ -177,6 +179,8 @@ const filterTypes = [
     id: 'keramisch',
     naam: 'Keramisch Filter',
     geschiktVoor: 'Bacteriën, cysten en troebelheid verwijderen',
+    hubUrl: '/keramisch-filter',
+    hubLabel: 'Volledige gids over keramische filters →',
     samenvatting:
       'Een keramisch filter werkt via mechanische filtratie: de kleine poriën (0,1–0,9 micron) houden deeltjes, bacteriën en protozoaire cysten (zoals Giardia en Cryptosporidium) fysiek tegen. Populair in landen met minder betrouwbaar leidingwater en als aanvulling op RO-systemen.',
     watVerwijdert: [
@@ -200,6 +204,8 @@ const filterTypes = [
     id: 'osmose',
     naam: 'Omgekeerde Osmose (RO)',
     geschiktVoor: 'Meest uitgebreide filtratie — ook kalk, nitraat, PFAS, lood',
+    hubUrl: '/omgekeerde-osmose',
+    hubLabel: 'Volledige gids over omgekeerde osmose →',
     samenvatting:
       'Omgekeerde osmose is het meest effectieve waterfiltersysteem voor thuisgebruik. Onder druk wordt water door een semi-permeabel membraan met extreem kleine poriën (0,0001 micron) geperst. Het membraan laat alleen watermoleculen door en houdt vrijwel alle opgeloste stoffen tegen — van kalk en nitraat tot lood, PFAS en microplastics.',
     watVerwijdert: [
@@ -227,6 +233,8 @@ const filterTypes = [
     id: 'uv',
     naam: 'UV-Filter',
     geschiktVoor: 'Microorganismen doden (bacteriën, virussen)',
+    hubUrl: '/uv-filter',
+    hubLabel: 'Volledige gids over UV-filters →',
     samenvatting:
       'Een UV-filter gebruikt ultraviolet licht (UV-C, 254 nm) om het DNA van microorganismen te beschadigen, zodat ze zich niet meer kunnen vermenigvuldigen en feitelijk worden geneutraliseerd. Effectief tegen vrijwel alle bacteriën, virussen en protozoën — maar het filtert geen chemische stoffen of deeltjes.',
     watVerwijdert: [
@@ -250,6 +258,8 @@ const filterTypes = [
     id: 'ionenwisselaar',
     naam: 'Ionenwisselaar / Waterontharder',
     geschiktVoor: 'Hardheid (kalk) verwijderen',
+    hubUrl: '/waterontharder',
+    hubLabel: 'Volledige gids over waterontharders →',
     samenvatting:
       'Een ionenwisselaar wisselt calcium- en magnesiumionen (verantwoordelijk voor waterhardheid) uit voor natrium- of kaliumionen via een harsbed. Het resultaat is zacht water dat geen kalkaanslag achterlaat in leidingen, apparaten en kranen. Geen filter in de traditionele zin — het verwijdert geen chemische contaminanten.',
     watVerwijdert: [
@@ -274,6 +284,8 @@ const filterTypes = [
     id: 'sediment',
     naam: 'Sedimentfilter',
     geschiktVoor: 'Deeltjes en troebelheid verwijderen (voorfilter)',
+    hubUrl: '/sedimentfilter',
+    hubLabel: 'Volledige gids over sedimentfilters →',
     samenvatting:
       'Een sedimentfilter is de eenvoudigste filtervorm: een polypropyleenpatroon of geweven filter dat deeltjes van 1–100 micron uit het water zeeft. Denk aan zand, roest, klei en aarddeeltjes. Sedimentfilters worden bijna altijd als voorfilter ingezet in een meertraps systeem om de levensduur van de volgende filterstadia (koolstof, membraan) te verlengen.',
     watVerwijdert: [
@@ -298,6 +310,8 @@ const filterTypes = [
     id: 'geintegreerd',
     naam: 'Geïntegreerd Systeem (4-in-1 Kraan + RO)',
     geschiktVoor: 'Alles in één — kokend, koud, gefilterd, bruisend',
+    hubUrl: null,
+    hubLabel: null,
     samenvatting:
       'Een geïntegreerd systeem combineert meerdere filterstadia én een intelligente kraan in één product. Het meest volledige voorbeeld is een 4-in-1 kraan met ingebouwde omgekeerde osmose: sedimentfilter, koolstoffilter, RO-membraan en nafilter zijn al op elkaar afgestemd. Bovendien levert de kraan ook kokend water en — bij 4-in-1 of 5-in-1 modellen — bruisend water.',
     watVerwijdert: [
@@ -509,6 +523,16 @@ export default function WaterfilterSoortenPage() {
                 <span className="font-semibold text-[#003F5C]">Wanneer kiezen: </span>
                 <span className="leading-relaxed">{f.wanneer}</span>
               </div>
+              {f.hubUrl && f.hubLabel && (
+                <div className="pt-1">
+                  <Link
+                    href={f.hubUrl}
+                    className="inline-flex items-center gap-1.5 text-[#005F8A] font-medium hover:underline text-sm"
+                  >
+                    {f.hubLabel}
+                  </Link>
+                </div>
+              )}
             </div>
           </section>
         ))}
