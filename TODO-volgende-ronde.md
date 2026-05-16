@@ -4,21 +4,20 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 11
-
-### Kennisbank diepte-artikelen (MDX)
-- [ ] `pfas-in-nederland-2026.mdx` — actuele PFAS-hotspots, watermaatschappij maatregelen
-- [ ] `osmose-water-voor-planten.mdx` — is osmosewater goed of slecht voor kamerplanten?
-- [ ] `drinkwater-statistieken-nederland.mdx` — CBS/RIVM data over drinkwaterkwaliteit
+## Hoge prioriteit (direct zoekvolume) — Ronde 12
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/chroom` — chroom-6 in grondwater, PFAS-gebieden overlap, EU-norm 25 ug/L
-- [ ] `/omgekeerde-osmose/druk` — minimale waterdruk voor osmosefilter (2.8-4 bar), drukverhoger
-- [ ] `/waterontharder/onderhoud` — jaarlijks onderhoud, desinfectie, hars vervangen
-- [ ] `/leidingwater/temperatuur` — Legionella-risicozone 20-45 graden, warmwaterboiler instelling
-- [ ] `/kokend-water-kraan/veiligheid` — veiligheid kinderen, brander-beveiliging, normen
-- [ ] `/osmose-water/baby` — osmosewater voor babyvoeding (WHO-richtlijnen, remineralisatie)
-- [ ] `/waterfilter/geur` — chloorgeur, aardse geur (geosmien), H2S, actief kool vs osmose
+- [ ] `/waterfilter/radium` — radium en radon in grondwater (Brabant, Gelderland), natuurlijk radioactief, osmose effectief
+- [ ] `/omgekeerde-osmose/afvalwater` — verhouding afvalwater:productwater, waterbesparende systemen, permeaat vs concentraat
+- [ ] `/waterontharder/zout-types` — tablet, blok, grof, zoutzak merken, prijsvergelijking
+- [ ] `/leidingwater/barium` — barium in grondwater, EU-norm 1 mg/L, gezondheidseffecten
+- [ ] `/kokend-water-kraan/thee` — optimaal water voor thee: TDS, pH, hardheid, theesommelier standaard
+- [ ] `/osmose-water/aquarium` — osmosewater voor zoetwateraquarium, hardheid instellen, buffer
+- [ ] `/waterfilter/fluoride` — fluoride in leidingwater, EU-norm 1.5 mg/L, osmose vs actief aluminium
+
+### Kennisbank diepte-artikelen (MDX)
+- [ ] `kokend-water-kraan-installeren.mdx` — stap-voor-stap installatiegids, benodigdheden, veiligheidscheck
+- [ ] `waterontharder-kiezen.mdx` — koopgids: capaciteit, merk, volumetrisch vs tijdgestuurd, prijs
 
 ---
 
@@ -32,11 +31,6 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ## Lage prioriteit / technisch
 
-### Kennisbank kwaliteitsaudit
-- [ ] Controleer alle MDX-artikelen op woordaantal (min 700 woorden via check-content.mjs)
-- [ ] Controleer of alle MDX-artikelen in sitemap zitten (via getKennisbankSlugs())
-- [ ] Verwijder duplicate kennisbank MDX bestanden (bijv. `drinkwater-norm-nederland.mdx` en `drinkwater-normen-nederland.mdx`)
-
 ### Technische SEO
 - [ ] Audit canonical URLs zijn alle paginas correct geconfigureerd?
 - [ ] Open Graph afbeeldingen toevoegen per cluster-hub
@@ -44,7 +38,7 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [ ] Core Web Vitals check na Vercel-deploy
 - [ ] Structured data validatie via Google Rich Results Test
 
-### Ideen voor ronde 12+
+### Ideen voor ronde 13+
 - Interactief waterhardheids-zoekwidget (client component, apart bundle)
 - Video-schema markup toevoegen als YouTube-content beschikbaar
 - Pricing-schema markup op vergelijkingspaginas
@@ -138,6 +132,18 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] waterfilter/zeoliet — ammoniumadsorptie 80-98%, aquariumtoepassing, vs actief kool
 - [x] kokend-water-kraan/koffie — SCA-norm TDS 75-150 mg/L, pH 6.5-7.5, osmose+remineralisatie
 
+### Ronde 11 — Chroom, druk, onderhoud, temperatuur, veiligheid, baby, geur + 3 MDX (10 bestanden)
+- [x] waterfilter/chroom — chroom-6 EU-norm 25 ug/L, NL hotspots, osmose 95-99%
+- [x] omgekeerde-osmose/druk — minimum 2.8 bar, druk meten, drukverhoger wanneer nodig
+- [x] waterontharder/onderhoud — jaarschema, zoutbrug, harsdesinfectie, hars 10-20 jaar
+- [x] leidingwater/temperatuur — Legionella risicozone 20-45 graden, boiler op 60 graden
+- [x] kokend-water-kraan/veiligheid — EN 61770, kinderbeveiliging, dubbelklik systeem
+- [x] osmose-water/baby — WHO TDS-norm 200 mg/L, remineralisatie voor zuigelingenvoeding
+- [x] waterfilter/geur — chloorgeur, geosmien, H2S, tabel geursoort vs filter
+- [x] pfas-in-nederland-2026.mdx — EU-normen 2026, hotspots, watermaatschappij maatregelen
+- [x] osmose-water-voor-planten.mdx — carnivoren verplicht, orchideeen aanbevolen, moestuin
+- [x] drinkwater-statistieken-nederland.mdx — CBS/RIVM data, verbruik, hardheid, kwaliteitstrends
+
 ---
 
-*Bijgewerkt: 2026-05-16 — 4102 statische paginas na ronde 10*
+*Bijgewerkt: 2026-05-16 — 4110 statische paginas na ronde 11 (310/310 MDX artikelen geslaagd)*
