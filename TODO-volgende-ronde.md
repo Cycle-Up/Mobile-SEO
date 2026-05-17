@@ -4,27 +4,20 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 15
+## Hoge prioriteit (direct zoekvolume) — Ronde 16
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/actief-kool` — verschil GAC vs CTO vs blokfilter, hoe lang mee, wanneer vervangen
-- [ ] `/omgekeerde-osmose/smaak` — osmosewater smaak verbeteren, remineralisatie, pH optima
-- [ ] `/waterontharder/capaciteit` — capaciteit berekenen in granen, liter per dag, harskeuze
-- [ ] `/leidingwater/uranium` — uranium in grondwater (Brabant), WHO-norm 30 ug/L, osmose effectief
-- [ ] `/kokend-water-kraan/huurwoning` — (check of al bestaat, anders: toestemming verhuurder, installatie reversibel)
-- [ ] `/osmose-water/ijssteen` — osmosewater voor ijsblokjes: helder vs troebel ijs
-- [ ] `/waterfilter/chloor` — actief kool vs osmose voor chloor, rest-chloor, trihalomethanen
+- [ ] `/waterfilter/bromaat` — bromaat als bijproduct van ozonisatie, EU-norm 10 ug/L
+- [ ] `/omgekeerde-osmose/diy` — zelf installeren stappenplan, gereedschap, kosten
+- [ ] `/waterontharder/storingen-checklist` — diagnose stappenplan zout op water hard
+- [ ] `/leidingwater/aluminium` — aluminium in leidingwater, EU-norm 200 ug/L
+- [ ] `/kokend-water-kraan/merken-vergelijking` — Quooker vs Grohe vs Franke vs PureAqua
+- [ ] `/osmose-water/zwembad` — osmosewater voor zwembad/spa? chloorbehoefte
+- [ ] `/waterfilter/uv-sterilisatie` — UV-licht voor watersterilisatie, wanneer nodig
 
 ### Kennisbank diepte-artikelen (MDX)
-- [ ] `waterhardheid-kaart-nederland.mdx` — interactieve tabel alle provincies + uitleg
-- [ ] `beste-waterfilter-2026.mdx` — vergelijkend overzicht top 5 waterfiltertypen
-
----
-
-## Middelhoge prioriteit
-
-### Gemeenten uitbreiding (programmatisch)
-- [ ] Overweeg `/pfas-waterfilter/[gemeente]` voor 30-40 hotspot-gemeenten
+- [ ] `osmose-vs-flessenwater-milieu.mdx` — CO2-voetafdruk vergelijking
+- [ ] `pfas-bloedwaarden-nederland.mdx` — actuele RIVM bloedwaardestudies
 
 ---
 
@@ -41,19 +34,19 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 
 ## Afgerond
 
-### Rondes 1-13 — zie commits
+### Rondes 1-14 — zie commits
 
-### Ronde 14 — Ammonium, zout-water, elektromagnetisch, hardheid-meten, stoom, wijn, sediment + 2 MDX
-- [x] waterfilter/ammonium — NH4+ EU-norm 0.5 mg/L, zeoliet 80-98%, chlooramine link
-- [x] omgekeerde-osmose/zout-water — brak water 10-20 bar, boot watermaker, regenwater + UV
-- [x] waterontharder/elektromagnetisch — TNO geen bewijs, aragoniet vs calciet, vs ionenwisseling
-- [x] leidingwater/hardheid-meten — TDS-meter, EDTA druppeltest, strips, eenheden omrekenen
-- [x] kokend-water-kraan/stoom — normaal bij 100 graden, spettering sproeikop, veiligheid
-- [x] osmose-water/wijn — TCA chloor, gist magnesium, remineralisatie concentraat wijn
-- [x] waterfilter/sediment — micronklassen 1-50 um, voorfilter osmose en UV
-- [x] waterontharder-zout-kopen.mdx — prijsvergelijking bouwmarkt vs online, merken
-- [x] leidingwater-kwaliteit-verbeteren.mdx — 5 maatregelen, situatiematrix, budget prioritering
+### Ronde 15 — Actief-kool, smaak, capaciteit, uranium, ijssteen, chloride, levensduur + 2 MDX
+- [x] waterfilter/actief-kool — GAC vs CTO vs catalytic, chlooramine, levensduur
+- [x] omgekeerde-osmose/smaak — TDS effect, CO2 pH, remineralisatie calciet/MgO
+- [x] waterontharder/capaciteit — m3*dH berekening, per persoon, hardheidsregio
+- [x] leidingwater/uranium — WHO 30 ug/L, NL hotspots, osmose 95-99%
+- [x] osmose-water/ijssteen — directional freezing, helder ijs voor cocktails/whisky
+- [x] waterfilter/chloride — Cl- ion vs Cl2 desinfectans, EU-norm 250 mg/L
+- [x] omgekeerde-osmose/levensduur — 2-5 jaar membraan, TDS-ratio meten, kosten 5 jaar
+- [x] waterhardheid-kaart-nederland.mdx — 12 provincies + 10 steden tabel
+- [x] beste-waterfilter-2026.mdx — top 5 typen, aanbeveling per situatie
 
 ---
 
-*Bijgewerkt: 2026-05-16 — 4132 statische paginas na ronde 14 (313/313 MDX artikelen geslaagd)*
+*Bijgewerkt: 2026-05-16 — 4141 statische paginas na ronde 15 (315/315 MDX artikelen geslaagd)*
