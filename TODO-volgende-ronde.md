@@ -1,23 +1,23 @@
 # SEO Content TODO — Volgende ronde
 
-Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
+Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 16
+## Hoge prioriteit (direct zoekvolume) — Ronde 17
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/bromaat` — bromaat als bijproduct van ozonisatie, EU-norm 10 ug/L
-- [ ] `/omgekeerde-osmose/diy` — zelf installeren stappenplan, gereedschap, kosten
-- [ ] `/waterontharder/storingen-checklist` — diagnose stappenplan zout op water hard
-- [ ] `/leidingwater/aluminium` — aluminium in leidingwater, EU-norm 200 ug/L
-- [ ] `/kokend-water-kraan/merken-vergelijking` — Quooker vs Grohe vs Franke vs PureAqua
-- [ ] `/osmose-water/zwembad` — osmosewater voor zwembad/spa? chloorbehoefte
-- [ ] `/waterfilter/uv-sterilisatie` — UV-licht voor watersterilisatie, wanneer nodig
+- [ ] `/waterfilter/microplastics` — microplastics in leidingwater, grootte 1-5000 um, osmose
+- [ ] `/omgekeerde-osmose/remineralisatie` — calciet/MgO cartridge, TDS instellen, pH
+- [ ] `/waterontharder/harsbed` — ionenwisselingshars, levensduur, regeneratie NaCl
+- [ ] `/leidingwater/natrium` — natrium in leidingwater, EU-norm 200 mg/L, zoutarm dieet
+- [ ] `/kokend-water-kraan/energie-verbruik` — kWh per liter kokend water, standby vs boiler
+- [ ] `/osmose-water/koken` — osmosewater gebruiken voor koken, pastadeeg, rijst
+- [ ] `/waterfilter/fluor` — fluoride in drinkwater NL, WHO-norm 1,5 mg/L, osmose 94-96%
 
 ### Kennisbank diepte-artikelen (MDX)
-- [ ] `osmose-vs-flessenwater-milieu.mdx` — CO2-voetafdruk vergelijking
-- [ ] `pfas-bloedwaarden-nederland.mdx` — actuele RIVM bloedwaardestudies
+- [ ] `waterkwaliteit-regio-vergelijking.mdx` — per provincie/waterschap vergelijking
+- [ ] `osmosefilter-onderhoud-checklist.mdx` — jaarlijkse maintenance, filters wisselen
 
 ---
 
@@ -47,6 +47,17 @@ Bijgehouden per 2026-05-16. Aanvullen na elke build-sessie.
 - [x] waterhardheid-kaart-nederland.mdx — 12 provincies + 10 steden tabel
 - [x] beste-waterfilter-2026.mdx — top 5 typen, aanbeveling per situatie
 
+### Ronde 16 — Bromaat, DIY, storingen, aluminium, merken, zwembad, UV + 2 MDX
+- [x] waterfilter/bromaat — BrO3- bijproduct ozonisatie, EU-norm 10 ug/L, osmose 85-95%
+- [x] omgekeerde-osmose/diy — zelf installeren 6 stappen, gereedschap, besparing 150-300 euro
+- [x] waterontharder/storingen-checklist — zoutbrug, brine-tank, bypass, harsbed diagnose
+- [x] leidingwater/aluminium — EU-indicatornorm 200 ug/L, flocculant, osmose 95-99%
+- [x] kokend-water-kraan/merken-vergelijking — Quooker vs Grohe vs Franke vs PureAqua tabel
+- [x] osmose-water/zwembad — TDS, chloorbehoefte, spa vs groot zwembad, pH-buffering
+- [x] waterfilter/uv-sterilisatie — DNA-schade 254 nm, putwater, UV+osmose combinatie
+- [x] osmose-vs-flessenwater-milieu.mdx — CO2 200-350g/L fles vs 15-30g/L osmose
+- [x] pfas-bloedwaarden-nederland.mdx — RIVM biomonitoring, PFOS mediaan 3-5 ng/mL, hotspots
+
 ---
 
-*Bijgewerkt: 2026-05-16 — 4141 statische paginas na ronde 15 (315/315 MDX artikelen geslaagd)*
+*Bijgewerkt: 2026-05-17 — 4150 statische paginas na ronde 16 (317/317 MDX artikelen geslaagd)*
