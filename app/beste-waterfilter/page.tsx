@@ -94,6 +94,9 @@ export default function BesteWaterfilterPage() {
         }
         pages={cluster.pages}
         ctaContext={cluster.ctaContext}
+        collectionName={cluster.title}
+        collectionUrl={`https://waterfilterplatform.nl${cluster.hub}`}
+        collectionDescription={cluster.description}
         relatedClusters={cluster.relatedClusters}
       />
 

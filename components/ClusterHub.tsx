@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { SchemaOrg } from '@/components/SchemaOrg';
 import type { CTAContext, ClusterPage, RelatedCluster } from '@/data/clusters';
 
 interface ClusterHubProps {
@@ -7,11 +8,53 @@ interface ClusterHubProps {
   pages: ClusterPage[];
   ctaContext: CTAContext;
   relatedClusters?: RelatedCluster[];
+  collectionName?: string;
+  collectionUrl?: string;
+  collectionDescription?: string;
 }
 
-export function ClusterHub({ intro, pages, ctaContext, relatedClusters }: ClusterHubProps) {
+export function ClusterHub({
+  intro,
+  pages,
+  ctaContext,
+  relatedClusters,
+  collectionName,
+  collectionUrl,
+  collectionDescription,
+}: ClusterHubProps) {
+  const hasCollection = collectionName && collectionUrl;
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
+      {hasCollection && (
+        <SchemaOrg
+          schema={[
+            {
+              '@type': 'CollectionPage',
+              name: collectionName,
+              url: collectionUrl,
+              description: collectionDescription ?? collectionName,
+              inLanguage: 'nl-NL',
+              isPartOf: {
+                '@type': 'WebSite',
+                name: 'WaterfilterPlatform',
+                url: 'https://waterfilterplatform.nl',
+              },
+              mainEntity: {
+                '@type': 'ItemList',
+                numberOfItems: pages.length,
+                itemListElement: pages.map((page, idx) => ({
+                  '@type': 'ListItem',
+                  position: idx + 1,
+                  name: page.title,
+                  url: `https://waterfilterplatform.nl${page.href}`,
+                  description: page.description,
+                })),
+              },
+            },
+          ]}
+        />
+      )}
+
       <CTABanner context={ctaContext} />
 
       <div className="mt-10 text-gray-700 leading-relaxed space-y-4">

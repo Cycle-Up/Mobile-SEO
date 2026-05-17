@@ -197,6 +197,23 @@ export default function BesteWaterfilter2026Page() {
           { name: 'Beste waterfilter 2026', url: 'https://waterfilterplatform.nl/beste-waterfilter-2026' },
         ]}
       />
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Beste waterfilters 2026',
+            url: 'https://waterfilterplatform.nl/beste-waterfilter-2026',
+            numberOfItems: top5Filters.length,
+            itemListOrder: 'https://schema.org/ItemListOrderAscending',
+            itemListElement: top5Filters.map((p) => ({
+              '@type': 'ListItem',
+              position: p.rang,
+              name: p.type,
+              description: p.samenvatting,
+            })),
+          },
+        ]}
+      />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">

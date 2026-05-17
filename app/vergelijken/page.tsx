@@ -92,6 +92,9 @@ export default function VergelijkenPage() {
         }
         pages={cluster.pages}
         ctaContext={cluster.ctaContext}
+        collectionName={cluster.title}
+        collectionUrl={`https://waterfilterplatform.nl${cluster.hub}`}
+        collectionDescription={cluster.description}
         relatedClusters={cluster.relatedClusters}
       />
       <div className="max-w-4xl mx-auto px-4 pb-10">

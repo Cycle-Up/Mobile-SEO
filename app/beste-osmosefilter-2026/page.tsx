@@ -309,6 +309,23 @@ export default function BesteOsmosefilter2026Page() {
           },
         ]}
       />
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Beste osmosefilters 2026',
+            url: 'https://waterfilterplatform.nl/beste-osmosefilter-2026',
+            numberOfItems: top5.length,
+            itemListOrder: 'https://schema.org/ItemListOrderAscending',
+            itemListElement: top5.map((p) => ({
+              '@type': 'ListItem',
+              position: p.rang,
+              name: p.naam,
+              description: p.oordeel.slice(0, 200),
+            })),
+          },
+        ]}
+      />
 
       <TrustBar />
 

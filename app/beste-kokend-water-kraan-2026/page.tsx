@@ -245,6 +245,22 @@ export default function BesteKokendWaterKraan2026Page() {
         ]}
       />
       <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Beste kokend water kranen 2026',
+            url: 'https://waterfilterplatform.nl/beste-kokend-water-kraan-2026',
+            numberOfItems: top5Kranen.length,
+            itemListOrder: 'https://schema.org/ItemListOrderAscending',
+            itemListElement: top5Kranen.map((p, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: p.naam,
+            })),
+          },
+        ]}
+      />
+      <SchemaOrg
         type="Article"
         article={{
           title: 'Beste Kokend Water Kraan 2026: Top 5',

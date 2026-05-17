@@ -154,6 +154,22 @@ export default function DrinkwaternormenPage() {
           { name: "Drinkwaternormen", url: "https://waterfilterplatform.nl/drinkwaternormen" },
         ]}
       />
+      <SchemaOrg
+        schema={[
+          {
+            "@type": "CollectionPage",
+            name: "Drinkwaternormen Nederland",
+            url: "https://waterfilterplatform.nl/drinkwaternormen",
+            description: "EU-richtlijn, Drinkwaterbesluit, RIVM, ILT en de 10 Nederlandse waterbedrijven.",
+            inLanguage: "nl-NL",
+            isPartOf: {
+              "@type": "WebSite",
+              name: "WaterfilterPlatform",
+              url: "https://waterfilterplatform.nl",
+            },
+          },
+        ]}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="Article"

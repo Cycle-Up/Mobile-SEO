@@ -56,6 +56,32 @@ export default function WaterhardheidPage() {
           { name: 'Waterhardheid', url: 'https://waterfilterplatform.nl/waterhardheid' },
         ]}
       />
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'CollectionPage',
+            name: 'Waterhardheid per gemeente Nederland',
+            url: 'https://waterfilterplatform.nl/waterhardheid',
+            description: 'Waterhardheid (dH) per gemeente, gevolgen voor kalk en apparaten, en filter-advies per hardheidsklasse.',
+            inLanguage: 'nl-NL',
+            isPartOf: {
+              '@type': 'WebSite',
+              name: 'WaterfilterPlatform',
+              url: 'https://waterfilterplatform.nl',
+            },
+            mainEntity: {
+              '@type': 'ItemList',
+              numberOfItems: gemeenten.length,
+              itemListElement: gemeenten.slice(0, 50).map((g, idx) => ({
+                '@type': 'ListItem',
+                position: idx + 1,
+                name: `Waterhardheid ${g.naam}`,
+                url: `https://waterfilterplatform.nl/waterhardheid/${g.slug}`,
+              })),
+            },
+          },
+        ]}
+      />
 
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
