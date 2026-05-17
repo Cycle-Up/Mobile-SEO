@@ -464,6 +464,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/omgekeerde-osmose/inbouw`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/leidingwater/waterkwaliteitsrapport`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/osmose-water/fermenteren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Ronde 21
+    { url: `${BASE}/waterfilter/hardheidstest`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/omgekeerde-osmose/afvalwater-hergebruik`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterontharder/aquarium`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/leidingwater/zuurstof`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE}/kokend-water-kraan/prijs-per-liter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/osmose-water/zout-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE}/waterfilter/natriumhypochloriet`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
