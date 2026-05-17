@@ -246,7 +246,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/waterontharder/hoe-lang`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/kraanwater/bacterien`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/kraanwater/hardheid`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/leidingwater/chloor`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/leidingwater/verontreinigingen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/leidingwater/bacterien`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/waterfilter/hond-kat`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
@@ -383,7 +382,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/waterontharder/kosten`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/leidingwater/sulfaat`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/kraanwater/tds`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE}/waterfilter/koper`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     // Ronde 10
     { url: `${BASE}/waterfilter/nikkel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/osmose-water/sport`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
@@ -445,6 +443,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/leidingwater/natrium`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/kokend-water-kraan/energie-verbruik`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterfilter/fluor`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Ronde 18
+    { url: `${BASE}/omgekeerde-osmose/boosterpomp`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterontharder/zout-verbruik`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/installateur`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/osmose-water/koolzuur`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
