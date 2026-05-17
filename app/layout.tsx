@@ -8,11 +8,11 @@ const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans' });
 export const metadata: Metadata = {
   metadataBase: new URL('https://waterfilterplatform.nl'),
   title: {
-    default: 'WaterfilterPlatform — omgekeerde osmose & kokend water kraan',
+    default: 'WaterfilterPlatform — onafhankelijke waterfilter informatie',
     template: '%s | WaterfilterPlatform',
   },
   description:
-    'Alles over waterfilters voor thuis: omgekeerde osmose, kokend water kraan en waterhardheid per gemeente. Onafhankelijke informatie.',
+    'Alles over waterfilters voor thuis: keuzehulp, filtertechnieken, drinkwaternormen en waterhardheid per gemeente. Onafhankelijke informatie.',
   openGraph: {
     siteName: 'WaterfilterPlatform',
     locale: 'nl_NL',
@@ -21,10 +21,62 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const navLinks = [
+const dropdownNav = [
+  {
+    label: 'Keuzehulp',
+    href: '/keuzehulp',
+    items: [
+      { label: 'Waterfilter keuzehulp', href: '/keuzehulp' },
+      { label: 'Hard water & kalk', href: '/keuzehulp/hard-water' },
+      { label: 'PFAS of lood', href: '/keuzehulp/pfas-lood' },
+      { label: 'Baby of gezin', href: '/keuzehulp/baby-gezin' },
+      { label: 'Huurwoning', href: '/keuzehulp/huurwoning' },
+      { label: 'Beste waterfilter per situatie', href: '/beste-waterfilter' },
+    ],
+  },
+  {
+    label: 'Filtertechnieken',
+    href: '/filtertechnieken',
+    items: [
+      { label: 'Alle filtertechnieken', href: '/filtertechnieken' },
+      { label: 'Omgekeerde osmose', href: '/omgekeerde-osmose' },
+      { label: 'Actief kool', href: '/filtertechnieken/actief-kool' },
+      { label: 'Ultrafiltratie', href: '/filtertechnieken/ultrafiltratie' },
+      { label: 'Ionenwisseling', href: '/filtertechnieken/ionenwisseling' },
+      { label: 'UV-sterilisatie', href: '/waterfilter/uv-sterilisatie' },
+      { label: 'Keurmerken & certificering', href: '/keurmerken' },
+    ],
+  },
+  {
+    label: 'Vergelijken',
+    href: '/vergelijken',
+    items: [
+      { label: 'Alle vergelijkingen', href: '/vergelijken' },
+      { label: 'Osmose vs filterkan', href: '/vergelijken/osmose-vs-filterkan' },
+      { label: 'Waterfilter vs waterontharder', href: '/vergelijken/waterfilter-vs-waterontharder' },
+      { label: 'Kokend water kraan merken', href: '/kokend-water-kraan/vergelijken' },
+      { label: 'Onderhoud & gebruik', href: '/onderhoud' },
+    ],
+  },
+  {
+    label: 'Drinkwaterkwaliteit',
+    href: '/stoffen-in-drinkwater',
+    items: [
+      { label: 'Stoffen in drinkwater', href: '/stoffen-in-drinkwater' },
+      { label: 'Drinkwaternormen', href: '/drinkwaternormen' },
+      { label: 'Waterhardheid per gemeente', href: '/waterhardheid' },
+      { label: 'PFAS in leidingwater', href: '/leidingwater/pfas' },
+      { label: 'Lood in leidingwater', href: '/leidingwater/lood' },
+      { label: 'Zakelijke waterfilters', href: '/zakelijk' },
+    ],
+  },
+];
+
+const mobileLinks = [
   { href: '/keuzehulp', label: 'Keuzehulp' },
-  { href: '/omgekeerde-osmose', label: 'Osmose filter' },
+  { href: '/filtertechnieken', label: 'Filtertechnieken' },
   { href: '/vergelijken', label: 'Vergelijken' },
+  { href: '/stoffen-in-drinkwater', label: 'Drinkwater' },
   { href: '/waterhardheid', label: 'Waterhardheid' },
   { href: '/kennisbank', label: 'Kennisbank' },
 ];
@@ -34,30 +86,57 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="nl" className={`${geist.variable}`}>
       <body className="antialiased min-h-full flex flex-col">
         <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-          <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
-            <Link href="/" className="font-bold text-[#005F8A] text-lg">
-              💧 WaterfilterPlatform
+          <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
+            <Link href="/" className="font-bold text-[#005F8A] text-lg shrink-0">
+              WaterfilterPlatform
             </Link>
-            <nav className="hidden md:flex gap-6 text-sm">
-              {navLinks.map(l => (
-                <Link key={l.href} href={l.href} className="text-gray-600 hover:text-[#005F8A] transition-colors">
-                  {l.label}
-                </Link>
+
+            {/* Desktop dropdown nav */}
+            <nav className="hidden md:flex items-center gap-0 text-sm">
+              {dropdownNav.map((nav) => (
+                <div key={nav.href} className="relative group/nav">
+                  <Link
+                    href={nav.href}
+                    className="flex items-center gap-1 px-3 py-4 text-gray-600 hover:text-[#005F8A] transition-colors whitespace-nowrap"
+                  >
+                    {nav.label}
+                    <span className="text-[9px] opacity-50 mt-px">&#9660;</span>
+                  </Link>
+                  <div className="invisible group-hover/nav:visible opacity-0 group-hover/nav:opacity-100 transition-all duration-100 absolute top-full left-0 pt-0 z-50 min-w-56">
+                    <div className="bg-white border border-gray-100 rounded-xl shadow-lg py-1.5 mt-0">
+                      {nav.items.map((item, i) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className={`block px-4 py-2 text-sm text-gray-600 hover:text-[#005F8A] hover:bg-[#F0F9FF] transition-colors${i === 0 ? ' font-semibold' : ''}`}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               ))}
+              <Link href="/kennisbank" className="px-3 py-4 text-gray-600 hover:text-[#005F8A] transition-colors text-sm">
+                Kennisbank
+              </Link>
             </nav>
-            <a
-              href="/waterfilter/vergelijken"
-              className="text-xs bg-[#005F8A] text-white px-3 py-1.5 rounded-lg font-medium hover:bg-[#003F5C] transition-colors"
+
+            <Link
+              href="/keuzehulp"
+              className="shrink-0 text-xs bg-[#005F8A] text-white px-3 py-1.5 rounded-lg font-medium hover:bg-[#003F5C] transition-colors"
             >
-              Vergelijken →
-            </a>
+              Keuzehulp
+            </Link>
           </div>
-          <nav className="md:hidden flex overflow-x-auto gap-1 px-4 pb-2">
-            {navLinks.map(l => (
+
+          {/* Mobile scrollable chip nav */}
+          <nav className="md:hidden flex overflow-x-auto gap-1 px-4 pb-2 scrollbar-hide">
+            {mobileLinks.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
-                className="shrink-0 text-xs text-gray-600 hover:text-[#005F8A] bg-gray-50 px-3 py-1.5 rounded-full"
+                className="shrink-0 text-xs text-gray-600 hover:text-[#005F8A] bg-gray-50 px-3 py-1.5 rounded-full whitespace-nowrap"
               >
                 {l.label}
               </Link>
@@ -71,12 +150,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
             <div>
               <p className="font-bold mb-3">WaterfilterPlatform</p>
-              <p className="text-blue-200 text-xs">
+              <p className="text-blue-200 text-xs leading-relaxed">
                 Onafhankelijke informatie over waterfilters en waterkwaliteit in Nederland.
               </p>
             </div>
             <div>
-              <p className="font-semibold mb-2">Waterfilters kiezen</p>
+              <p className="font-semibold mb-2">Waterfilter kiezen</p>
               <ul className="space-y-1 text-blue-200">
                 <li><Link href="/keuzehulp" className="hover:text-white">Keuzehulp</Link></li>
                 <li><Link href="/beste-waterfilter" className="hover:text-white">Beste waterfilter per situatie</Link></li>
@@ -107,7 +186,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div className="max-w-5xl mx-auto px-4 mt-6 pt-6 border-t border-blue-800 text-xs text-blue-300">
-            © {new Date().getFullYear()} WaterfilterPlatform.nl — Informatiesite, geen webshop.
+            &copy; {new Date().getFullYear()} WaterfilterPlatform.nl &mdash; Informatiesite, geen webshop.
           </div>
         </footer>
       </body>
