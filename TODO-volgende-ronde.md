@@ -4,20 +4,24 @@ Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 21
+## Hoge prioriteit — Ronde 22: /drinkwaternormen contenthub
 
-### Nieuwe clusters
-- [ ] `/waterfilter/hardheidstest` — thuis waterhardheid testen, teststrips vs TDS-meter vs lab
-- [ ] `/omgekeerde-osmose/afvalwater-hergebruik` — reject water hergebruiken (planten, toilet)
-- [ ] `/waterontharder/aquarium` — waterontharder en aquarium, Na+ toxisch voor vissen
-- [ ] `/leidingwater/zuurstof` — opgelost zuurstof in drinkwater, beluchting, corrosie
-- [ ] `/kokend-water-kraan/prijs-per-liter` — totale kosten per liter inclusief energie en filters
-- [ ] `/osmose-water/zout-water` — osmosewater en zeezout koken, smaak, concentratie
-- [ ] `/waterfilter/natriumhypochloriet` — chloorwater desinfectie, bijproducten THM/HAA
+### Pillar page
+- [ ] `/drinkwaternormen` — Drinkwaternormen in Nederland: wie bepaalt wat veilig drinkwater is?
 
-### Kennisbank diepte-artikelen (MDX)
-- [ ] `waterontharder-vs-ontkalkingsinstallatie.mdx` — ionenwisseling vs magneet vs template
-- [ ] `loodvrij-leidingwater.mdx` — loden leidingen NL, risico, EU-norm 2026, meten
+### Cluster pagina's (12x)
+- [ ] `/drinkwaternormen/wie-controleert-drinkwater` — RIVM, ILT, waterbedrijven, rol overheid
+- [ ] `/drinkwaternormen/drinkwaterbesluit` — Drinkwaterbesluit 2011, parameters, rapportage
+- [ ] `/drinkwaternormen/eu-drinkwaterrichtlijn` — EU Richtlijn 2020/2184, PFAS, lood, implementatie NL
+- [ ] `/drinkwaternormen/drinkwaterbedrijven` — 10 waterbedrijven NL, Vitens/Evides/PWN/Brabant Water
+- [ ] `/drinkwaternormen/waterfilter-certificering` — NSF/ANSI, Kiwa, ACS, wat betekent gecertificeerd
+- [ ] `/drinkwaternormen/kiwa-nsf-ansi` — Kiwa 113, NSF 58 (RO), NSF 42/53, certificering vergelijking
+- [ ] `/drinkwaternormen/pfas` — PFAS normen NL/EU, drinkwater actiewaarden, osmose verwijdering
+- [ ] `/drinkwaternormen/lood` — EU-norm 2026 5 ug/L, loden leidingen NL, risico, meten, osmose
+- [ ] `/drinkwaternormen/kalk-hard-water` — hardheid normen, °dH schaal, effecten, ontharder vs osmose
+- [ ] `/drinkwaternormen/medicijnresten` — farmacostetica in water, actieve kool, osmose >90% verwijdering
+- [ ] `/drinkwaternormen/microplastics` — WHO-onderzoek, NL situatie, filters, normen ontbreken
+- [ ] `/drinkwaternormen/reverse-osmosis` — osmose als extra stap naast norm, TDS, remineralisatie
 
 ---
 
@@ -47,6 +51,17 @@ Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 - [x] waterfilter-zelf-installeren.mdx — koolblok 30 min, osmose 2-3 uur, TDS-validatie
 - [x] tds-meter-gebruiken.mdx — rejectie berekening, &gt;90% goed, &lt;75% membraan vervangen
 
+### Ronde 21 — Hardheidstest, afvalwater-hergebruik, aquarium, zuurstof, prijs-per-liter, zout-water, natriumhypochloriet + 2 MDX
+- [x] waterfilter/hardheidstest — teststrips vs TDS-meter vs lab, Eijkelkamp kit, kosten
+- [x] omgekeerde-osmose/afvalwater-hergebruik — reject water hergebruiken (planten, toilet, schoonmaken)
+- [x] waterontharder/aquarium — Na+ toxisch voor vissen, alternatieven: peat, RO water, demineralisator
+- [x] leidingwater/zuurstof — opgelost zuurstof 8-12 mg/L, beluchting, corrosie-link
+- [x] kokend-water-kraan/prijs-per-liter — TCO: apparaat, energie, filters, kosten per liter vergelijking
+- [x] osmose-water/zout-water — osmosewater en zeezout koken, TDS 0 vs 500 effect op smaak
+- [x] waterfilter/natriumhypochloriet — chloorwater desinfectie, THM/HAA bijproducten, koolfilter
+- [x] waterontharder-vs-ontkalkingsinstallatie.mdx — ionenwisseling vs magneet vs template, zout-vrij
+- [x] loodvrij-leidingwater.mdx — loden leidingen NL, risico, EU-norm 2026 5 ug/L, meten, osmose
+
 ---
 
-*Bijgewerkt: 2026-05-17 — 4180 statische paginas na ronde 20 (325/325 MDX artikelen geslaagd)*
+*Bijgewerkt: 2026-05-17 — 4189 statische paginas na ronde 21 (327/327 MDX artikelen geslaagd)*
