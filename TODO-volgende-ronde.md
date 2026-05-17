@@ -4,20 +4,20 @@ Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 20
+## Hoge prioriteit (direct zoekvolume) — Ronde 21
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/nitriet` — nitriet vs nitraat, EU-norm 0,5 mg/L, osmose 85-95%
-- [ ] `/omgekeerde-osmose/membraan-vervangen` — wanneer membraan aan vervanging toe, stappenplan
-- [ ] `/waterontharder/verhuurder` — mag huurder waterontharder plaatsen, kosten, toestemming
-- [ ] `/leidingwater/fosfaat` — fosfaat als corrosiebeschermer, EU-grens 2,2 mg/L
-- [ ] `/kokend-water-kraan/kinderveiligheid` — veiligheidsventiel, vergrendeling, brandwondrisico
-- [ ] `/osmose-water/thee` — osmosewater voor thee, TDS invloed, temperatuur
-- [ ] `/waterfilter/cryptosporidium` — chloorresistent parasiet, osmose en UV
+- [ ] `/waterfilter/hardheidstest` — thuis waterhardheid testen, teststrips vs TDS-meter vs lab
+- [ ] `/omgekeerde-osmose/afvalwater-hergebruik` — reject water hergebruiken (planten, toilet)
+- [ ] `/waterontharder/aquarium` — waterontharder en aquarium, Na+ toxisch voor vissen
+- [ ] `/leidingwater/zuurstof` — opgelost zuurstof in drinkwater, beluchting, corrosie
+- [ ] `/kokend-water-kraan/prijs-per-liter` — totale kosten per liter inclusief energie en filters
+- [ ] `/osmose-water/zout-water` — osmosewater en zeezout koken, smaak, concentratie
+- [ ] `/waterfilter/natriumhypochloriet` — chloorwater desinfectie, bijproducten THM/HAA
 
 ### Kennisbank diepte-artikelen (MDX)
-- [ ] `waterfilter-zelf-installeren.mdx` — koolfilter en osmose DIY, stap-voor-stap
-- [ ] `tds-meter-gebruiken.mdx` — TDS meten, interpretatie, wanneer filter nodig
+- [ ] `waterontharder-vs-ontkalkingsinstallatie.mdx` — ionenwisseling vs magneet vs template
+- [ ] `loodvrij-leidingwater.mdx` — loden leidingen NL, risico, EU-norm 2026, meten
 
 ---
 
@@ -34,19 +34,19 @@ Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 
 ## Afgerond
 
-### Rondes 1-18 — zie commits
+### Rondes 1-19 — zie commits
 
-### Ronde 19 — Mangaanfilter, capaciteit, twin-tank, pesticiden, garantie, espresso, reisfilter + 2 MDX
-- [x] waterfilter/mangaanfilter — MnO2 oxidatiefilter, bruin water, ijzer/mangaan combinatie
-- [x] omgekeerde-osmose/capaciteit-liter — GPD naar liter, drukvat, tabel per gezinsgrootte
-- [x] waterontharder/twin-tank — duplex systeem, 24/7 zacht water, Kinetico, &gt;4 personen
-- [x] leidingwater/pesticiden — EU-norm 0,1 ug/L, glyfosaat/bentazon/AMPA, osmose 95-99%
-- [x] kokend-water-kraan/garantie — BW 7:17, merkentabel 2-5 jaar, serviceabonnement
-- [x] osmose-water/koffie-espresso — SCA-norm TDS 75-150, MgSO4+NaHCO3 recept, Third Wave
-- [x] waterfilter/reisfilter — LifeStraw vs Sawyer vs Katadyn vs SteriPen vergelijking
-- [x] omgekeerde-osmose-vs-waterontharder.mdx — 10-kolommen vergelijk, combinatieadvies
-- [x] drinkwater-baby-veilig.mdx — nitraat &lt;10 mg/L voor zuigelingen, lood EU-norm 5 ug/L 2026
+### Ronde 20 — Verhuurder, kinderveiligheid, cryptosporidium, totaaloplossing, inbouw, waterkwaliteitsrapport, fermenteren + 2 MDX
+- [x] waterontharder/verhuurder — BW 7:215, tijdelijke systemen zonder toestemming, osmose alternatief
+- [x] kokend-water-kraan/kinderveiligheid — dubbele activering, veiligheidsventiel, Quooker/PureAqua
+- [x] waterfilter/cryptosporidium — chloorresistent, oocysten 4-6 micron, osmose 100% barriere
+- [x] waterfilter/totaaloplossing — 4-traps sediment+ontharder+kool+osmose, kosten 730-2180 euro
+- [x] omgekeerde-osmose/inbouw — onderbouw vs aanrecht vs inline, installatiestappen, 30x30x40cm
+- [x] leidingwater/waterkwaliteitsrapport — Vitens/Evides/PWN/BWater, parameters lezen, actiedrempels
+- [x] osmose-water/fermenteren — bier waterprofielen, kombucha SCOBY, kimchi melkzuurbacterien
+- [x] waterfilter-zelf-installeren.mdx — koolblok 30 min, osmose 2-3 uur, TDS-validatie
+- [x] tds-meter-gebruiken.mdx — rejectie berekening, &gt;90% goed, &lt;75% membraan vervangen
 
 ---
 
-*Bijgewerkt: 2026-05-17 — 4171 statische paginas na ronde 19 (323/323 MDX artikelen geslaagd)*
+*Bijgewerkt: 2026-05-17 — 4180 statische paginas na ronde 20 (325/325 MDX artikelen geslaagd)*
