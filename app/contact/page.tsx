@@ -1,12 +1,31 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { SchemaOrg } from '@/components/SchemaOrg';
+import type { Metadata } from "next";
+import Link from "next/link";
+import { SchemaOrg } from "@/components/SchemaOrg";
 
-export const metadata: Metadata = {
-  title: 'Contact — WaterfilterPlatform',
-  description: 'Neem contact op met de redactie van WaterfilterPlatform voor vragen, correcties of samenwerking.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/contact' },
-};
+export function generateMetadata(): Metadata {
+  const title = "Contact — WaterfilterPlatform";
+  const description =
+    "Vragen over waterfilters, foutmeldingen of redactioneel contact? Neem contact op met WaterfilterPlatform.";
+
+  return {
+    title,
+    description,
+    alternates: { canonical: "https://waterfilterplatform.nl/contact" },
+    openGraph: {
+      title,
+      description,
+      url: "https://waterfilterplatform.nl/contact",
+      type: "website",
+      siteName: "WaterfilterPlatform",
+      locale: "nl_NL",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
 
 export default function ContactPage() {
   return (
@@ -14,87 +33,110 @@ export default function ContactPage() {
       <SchemaOrg
         schema={[
           {
-            '@context': 'https://schema.org',
-            '@type': 'ContactPage',
-            name: 'Contact WaterfilterPlatform',
-            url: 'https://waterfilterplatform.nl/contact',
-            description: 'Contactgegevens en redactionele richtlijnen van WaterfilterPlatform.',
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact — WaterfilterPlatform",
+            "url": "https://waterfilterplatform.nl/contact",
+            "description": "Redactioneel en zakelijk contactadres van WaterfilterPlatform.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "WaterfilterPlatform",
+              "url": "https://waterfilterplatform.nl",
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://waterfilterplatform.nl" },
+              { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://waterfilterplatform.nl/contact" },
+            ],
           },
         ]}
       />
 
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-sm text-[#005F8A] font-medium mb-2">
-            <Link href="/" className="hover:underline">Home</Link> &rsaquo; Contact
-          </p>
-          <h1 className="text-3xl font-bold text-[#003F5C] mb-3">Contact</h1>
-          <p className="text-gray-600 leading-relaxed">
-            Heeft u een vraag, opmerking of fout gevonden? Wij stellen alle feedback op prijs.
+        <div className="max-w-2xl mx-auto">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] leading-tight mb-4">
+            Contact
+          </h1>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Heeft u een inhoudelijke vraag, een foutmelding of een zakelijk verzoek? Hieronder vindt u het juiste adres. Wij beantwoorden geen vragen over specifieke filtermodellen of persoonlijk productadvies.
           </p>
         </div>
       </section>
 
-      <div className="max-w-3xl mx-auto px-4 py-10 space-y-10">
-
-        <section>
-          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Redactie</h2>
+      <section className="max-w-2xl mx-auto px-4 py-10 space-y-8">
+        <div className="bg-white border border-gray-200 rounded-2xl p-6">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-3">Redactioneel contact</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Voor inhoudelijke vragen, correcties of aanvullingen op onze artikelen kunt u mailen naar de redactie.
-            Wij reageren doorgaans binnen drie werkdagen.
+            Voor inhoudelijke vragen, foutmeldingen of wanneer u een studie of norm heeft gevonden die wij niet hebben vermeld:
           </p>
-          <p className="text-gray-700">
-            <strong>E-mail:</strong>{' '}
-            <a href="mailto:redactie@waterfilterplatform.nl" className="text-[#005F8A] hover:underline">
-              redactie@waterfilterplatform.nl
-            </a>
-          </p>
-        </section>
+          <a
+            href="mailto:redactie@waterfilterplatform.nl"
+            className="text-[#005F8A] font-semibold hover:underline text-lg"
+          >
+            redactie@waterfilterplatform.nl
+          </a>
+        </div>
 
-        <section>
-          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Zakelijke samenwerking</h2>
+        <div className="bg-white border border-gray-200 rounded-2xl p-6">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-3">Commercieel contact</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            WaterfilterPlatform werkt niet samen met willekeurige leveranciers. Wij onderhouden een beperkt
-            aantal transparante samenwerkingen waarbij wij altijd onze redactionele onafhankelijkheid bewaren.
-            Commerciele koppelingen worden duidelijk vermeld op onze{' '}
-            <Link href="/over-ons" className="text-[#005F8A] hover:underline">over-ons pagina</Link>.
+            Voor samenwerkingen en zakelijke vragen:
           </p>
-          <p className="text-gray-700">
-            <strong>E-mail:</strong>{' '}
-            <a href="mailto:zakelijk@waterfilterplatform.nl" className="text-[#005F8A] hover:underline">
-              zakelijk@waterfilterplatform.nl
-            </a>
-          </p>
-        </section>
+          <a
+            href="mailto:zakelijk@waterfilterplatform.nl"
+            className="text-[#005F8A] font-semibold hover:underline text-lg"
+          >
+            zakelijk@waterfilterplatform.nl
+          </a>
+        </div>
 
-        <section>
-          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Fout gevonden?</h2>
+        <div className="bg-white border border-gray-200 rounded-2xl p-6">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-3">Reactietijd</h2>
           <p className="text-gray-700 leading-relaxed">
-            Waterfiltertechnologie en wetgeving veranderen. Als u een feitelijke onjuistheid of verouderde
-            informatie tegenkomt, horen wij dat graag. Vermeld de URL van de pagina en de betreffende passage
-            in uw bericht. Correcties verwerken wij zo snel mogelijk en worden voorzien van een datumstempel.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Geen persoonlijk wateradvies</h2>
-          <p className="text-gray-700 leading-relaxed">
-            Wij geven geen persoonlijk wateradvies per e-mail. Voor situatiespecifieke vragen verwijzen wij u
-            naar onze <Link href="/keuzehulp" className="text-[#005F8A] hover:underline">keuzehulp</Link> of
-            naar een erkend drinkwaterinstallateur in uw regio. Voor analyse van uw kraanwater kunt u contact
-            opnemen met uw drinkwaterbedrijf of een gecertificeerd laboratorium.
-          </p>
-        </section>
-
-        <div className="bg-[#E0F2FE] rounded-xl p-6 text-sm text-gray-700">
-          <p className="font-semibold text-[#003F5C] mb-1">WaterfilterPlatform</p>
-          <p>Informatiesite over waterfilters en drinkwaterkwaliteit in Nederland.</p>
-          <p className="mt-2">
-            KvK-registratie: in aanvraag &mdash; RSIN: in aanvraag
+            Wij reageren doorgaans binnen 3 werkdagen. Wij beantwoorden geen vragen over specifieke filtermodellen of persoonlijk productadvies — daarvoor verwijzen wij u naar de fabrikant of leverancier.
           </p>
         </div>
 
-      </div>
+        <div className="bg-[#E0F2FE] rounded-2xl p-6">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-3">Foutmelding indienen</h2>
+          <p className="text-gray-700 leading-relaxed mb-3">
+            Heeft u een fout gevonden — een verouderde norm, een onjuiste claim of een verbroken link? Stuur uw melding naar{" "}
+            <a href="mailto:redactie@waterfilterplatform.nl" className="text-[#005F8A] font-medium hover:underline">
+              redactie@waterfilterplatform.nl
+            </a>{" "}
+            en vermeld:
+          </p>
+          <ul className="space-y-2 text-gray-700 text-sm">
+            <li className="flex gap-2 items-start">
+              <span className="text-[#005F8A] font-bold shrink-0">1.</span>
+              <span>De URL van de pagina waarop de fout staat</span>
+            </li>
+            <li className="flex gap-2 items-start">
+              <span className="text-[#005F8A] font-bold shrink-0">2.</span>
+              <span>Een korte beschrijving van wat er niet klopt</span>
+            </li>
+            <li className="flex gap-2 items-start">
+              <span className="text-[#005F8A] font-bold shrink-0">3.</span>
+              <span>Indien mogelijk: een bronlink die de correctie onderbouwt</span>
+            </li>
+          </ul>
+          <p className="text-sm text-gray-600 mt-4">
+            Wij nemen elke gemotiveerde foutmelding serieus en corrigeren bevestigde fouten doorgaans binnen enkele werkdagen.
+          </p>
+        </div>
+
+        <div className="pt-2 border-t border-gray-100 flex flex-wrap gap-4 text-sm">
+          <Link href="/over-ons" className="text-[#005F8A] font-medium hover:underline">
+            Over ons
+          </Link>
+          <Link href="/methodologie" className="text-[#005F8A] font-medium hover:underline">
+            Methodologie
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
