@@ -239,7 +239,7 @@ export default function BoosterpompPage() {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-semibond text-[#005F8A] mt-8 mb-4">
+        <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
           Hoe waterdruk thuis meten
         </h2>
         <p className="text-gray-700 mb-4">
