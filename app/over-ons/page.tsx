@@ -1,570 +1,224 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { SchemaOrg } from '@/components/SchemaOrg';
+import type { Metadata } from "next";
+import Link from "next/link";
+import { SchemaOrg } from "@/components/SchemaOrg";
 
 export function generateMetadata(): Metadata {
-  const title = 'Over WaterfilterPlatform — onafhankelijke waterfilter info';
+  const title = "Over WaterfilterPlatform — redactie, missie en onafhankelijkheid";
   const description =
-    'Wie zit er achter WaterfilterPlatform? Ons team, onze redactionele aanpak, hoe we verdienen en waarom we dit platform bouwen — eerlijke info over drinkwater in Nederland.';
+    "Wie maakt WaterfilterPlatform? Onze missie, redactionele werkwijze en hoe we onafhankelijk advies geven over waterfilters in Nederland.";
 
   return {
     title,
     description,
-    alternates: { canonical: 'https://waterfilterplatform.nl/over-ons' },
+    alternates: { canonical: "https://waterfilterplatform.nl/over-ons" },
     openGraph: {
       title,
       description,
-      url: 'https://waterfilterplatform.nl/over-ons',
-      type: 'website',
-      siteName: 'WaterfilterPlatform',
-      locale: 'nl_NL',
+      url: "https://waterfilterplatform.nl/over-ons",
+      type: "website",
+      siteName: "WaterfilterPlatform",
+      locale: "nl_NL",
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title,
       description,
     },
   };
 }
 
-const faqItems = [
-  {
-    question: 'Wie schrijft de artikelen op WaterfilterPlatform?',
-    answer:
-      'Onze artikelen worden samengesteld door een redactieteam met achtergrond in werktuigbouw, water-engineering en consumentenjournalistiek. We claimen geen individuele titels of certificeringen — we leunen op publieke bronnen zoals het Drinkwaterbesluit, KWR, RIVM en fabrikant-documentatie.',
-  },
-  {
-    question: 'Zijn jullie onafhankelijk?',
-    answer:
-      'Ja. WaterfilterPlatform heeft geen affiliate-links en geen gesponsorde productplaatsingen. De redactie opereert volledig los van de advertentie-inkomsten. We schrijven over waterfilters, osmose en drinkwaterkwaliteit puur vanuit informatief perspectief — zonder financieel belang bij welk product je koopt.',
-  },
-  {
-    question: 'Hoe financieren jullie dit platform?',
-    answer:
-      'WaterfilterPlatform verdient via displayadvertenties — banners en tekstadvertenties die door externe netwerken worden geserveerd. We ontvangen geen commissie op verkopen, we hebben geen affiliate-deals, en redactionele keuzes worden nooit bepaald door adverteerders. Zie ook de sectie "Hoe wij verdienen" op deze pagina.',
-  },
-  {
-    question: 'Hoe vaak worden artikelen geüpdatet?',
-    answer:
-      'Onze content wordt minstens één keer per jaar herzien. Specifieke datasets zoals waterhardheid per gemeente worden vaker geactualiseerd zodra waterbedrijven nieuwe rapportages publiceren. Onderaan elk redactioneel artikel vermelden we de laatst-bijgewerkt datum.',
-  },
-  {
-    question: 'Welke bronnen gebruiken jullie?',
-    answer:
-      'Wij baseren ons op het Nederlandse Drinkwaterbesluit, onderzoeksinstituten zoals KWR Water Research Institute en RIVM, drinkwaterbedrijven (Vitens, PWN, Brabant Water, etc.), NEN-normen, fabrikant-documentatie en peer-reviewed publicaties waar beschikbaar.',
-  },
-  {
-    question: 'Geven jullie medisch advies?',
-    answer:
-      'Nee. WaterfilterPlatform geeft consumenten-informatie over drinkwater en waterfilters, geen medisch advies. Heb je gezondheidsvragen rond drinkwater — bijvoorbeeld voor zwangeren, baby\'s of patiënten met een verzwakt immuunsysteem — raadpleeg dan een huisarts, GGD of het RIVM.',
-  },
-  {
-    question: 'Kan ik feedback geven of een fout melden?',
-    answer:
-      'Graag. Stuur een e-mail naar redactie@waterfilterplatform.nl met de pagina-URL en een korte beschrijving. We lezen alles en corrigeren feitelijke fouten zo snel mogelijk. We zijn geen 24/7 helpdesk — reken op een reactietijd van enkele werkdagen.',
-  },
-];
-
-const waarden = [
-  {
-    icon: '🎯',
-    titel: 'Eerlijk',
-    tekst:
-      'We zeggen wat we niet weten, en geven aan wanneer een claim afhangt van context (waterhardheid, gezinsgrootte, type filter).',
-  },
-  {
-    icon: '📏',
-    titel: 'Onafhankelijk gemeten',
-    tekst:
-      'Specs vergelijken we tegen meerdere bronnen — niet alleen de fabrikant. Marketing-claims worden niet één-op-één overgenomen.',
-  },
-  {
-    icon: '🔄',
-    titel: 'Update-gericht',
-    tekst:
-      'Drinkwater-data verandert. We herzien artikelen minstens jaarlijks en passen tussentijds aan bij nieuwe regelgeving of rapportages.',
-  },
-  {
-    icon: '📱',
-    titel: 'Mobile-first',
-    tekst:
-      'De meeste mensen lezen op hun telefoon. We schrijven kort, scanbaar, en testen elke pagina op mobiel voor we hem publiceren.',
-  },
-];
-
-const bronnen = [
-  {
-    naam: 'Drinkwaterbesluit',
-    rol: 'Wettelijke normen voor drinkwaterkwaliteit in Nederland — de basis voor wat "veilig drinkwater" betekent.',
-  },
-  {
-    naam: 'KWR Water Research Institute',
-    rol: 'Onafhankelijk onderzoeksinstituut dat de Nederlandse waterbedrijven adviseert over kwaliteit en zuivering.',
-  },
-  {
-    naam: 'RIVM',
-    rol: 'Rijksinstituut voor Volksgezondheid en Milieu — bron voor gezondheidskundige normen rond water en stoffen daarin.',
-  },
-  {
-    naam: 'Drinkwaterbedrijven',
-    rol: 'Vitens, PWN, Brabant Water, Dunea, WMD, Evides, Waterleiding Maatschappij Limburg — voor lokale waterhardheid en kwaliteitsrapporten.',
-  },
-  {
-    naam: 'NEN-normen',
-    rol: 'Technische normen voor sanitair, leidingwater en aansluitingen (bijv. NEN 1006) waar we naar verwijzen bij installatie-vragen.',
-  },
-  {
-    naam: 'Fabrikant-specs',
-    rol: 'Datasheets, handleidingen en garantievoorwaarden van merken zoals Quooker, Grohe, Franke, BWT en anderen.',
-  },
-];
-
-const teamRollen = [
-  {
-    rol: 'Datateam',
-    omschrijving:
-      'Verzamelt en onderhoudt waterhardheidswaarden per gemeente door jaarlijkse rapporten van alle Nederlandse waterbedrijven te verwerken.',
-  },
-  {
-    rol: 'Contentspecialisten',
-    omschrijving:
-      'Achtergrond in werktuigbouw en consumentenjournalistiek. Vertalen technische datasheets en normdocumenten naar begrijpelijke teksten.',
-  },
-  {
-    rol: 'Developers',
-    omschrijving:
-      'Bouwen en onderhouden de platforms in het netwerk — van technische infrastructuur tot mobiel-geoptimaliseerde paginaopmaak.',
-  },
-  {
-    rol: 'Onderzoekers',
-    omschrijving:
-      'Vergelijken producten op basis van gepubliceerde specificaties, NSF-certificeringsdatabases en gebruikersmeldingen.',
-  },
-];
-
 export default function OverOnsPage() {
   return (
     <>
       <SchemaOrg
-        schema={[{
-          '@type': 'Organization',
-          '@id': 'https://waterfilterplatform.nl/#organization',
-          name: 'WaterfilterPlatform',
-          url: 'https://waterfilterplatform.nl',
-          description: 'Onafhankelijk consumenteninformatieplatform over waterfilters, drinkwaterkwaliteit en kokend water kranen in Nederland. Onderdeel van een netwerk van 40+ informatieplatforms.',
-          foundingDate: '2024',
-          knowsAbout: ['Omgekeerde osmose', 'Waterhardheid', 'Drinkwaterkwaliteit', 'Waterfilters', 'Kokend water kranen'],
-          sameAs: [],
-          publishingPrinciples: 'https://waterfilterplatform.nl/methodologie',
-        }]}
-      />
-      <SchemaOrg
-        schema={[{
-          '@type': 'AboutPage',
-          '@id': 'https://waterfilterplatform.nl/over-ons',
-          url: 'https://waterfilterplatform.nl/over-ons',
-          name: 'Over WaterfilterPlatform',
-          description: 'Wie zit er achter WaterfilterPlatform? Onze redactionele aanpak, bronnen, partnerships en waarden.',
-          about: { '@id': 'https://waterfilterplatform.nl/#organization' },
-          publisher: { '@id': 'https://waterfilterplatform.nl/#organization' },
-        }, {
-          '@type': 'Person',
-          '@id': 'https://waterfilterplatform.nl/#editorial-team',
-          name: 'Redactieteam WaterfilterPlatform',
-          worksFor: { '@id': 'https://waterfilterplatform.nl/#organization' },
-          knowsAbout: ['Omgekeerde osmose', 'Waterhardheid', 'Waterfilters', 'Drinkwaterkwaliteit Nederland'],
-          description: 'Redactieteam met achtergrond in werktuigbouw, water-engineering en consumentenjournalistiek.',
-        }]}
-      />
-      <SchemaOrg type="WebSite" />
-      <SchemaOrg type="FAQPage" faqItems={faqItems} />
-      <SchemaOrg
-        type="BreadcrumbList"
-        breadcrumbs={[
-          { name: 'Home', url: 'https://waterfilterplatform.nl' },
-          { name: 'Over ons', url: 'https://waterfilterplatform.nl/over-ons' },
+        schema={[
+          {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "Over WaterfilterPlatform",
+            "url": "https://waterfilterplatform.nl/over-ons",
+            "description": "Redactie, missie en onafhankelijkheidsverklaring van WaterfilterPlatform.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "WaterfilterPlatform",
+              "url": "https://waterfilterplatform.nl",
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://waterfilterplatform.nl" },
+              { "@type": "ListItem", "position": 2, "name": "Over ons", "item": "https://waterfilterplatform.nl/over-ons" },
+            ],
+          },
         ]}
       />
 
-      {/* Hero */}
-      <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-12 md:py-20 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[#005F8A] text-sm font-semibold uppercase tracking-wide mb-3">
+      <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] leading-tight mb-4">
             Over WaterfilterPlatform
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-[#003F5C] leading-tight mb-4">
-            Eerlijke, onafhankelijke info over drinkwater
           </h1>
-          <p className="text-gray-600 text-lg mb-6 max-w-xl mx-auto">
-            Onze missie: Nederlandse huishoudens helpen een onderbouwde keuze te maken in waterfilters,
-            kokend water kranen en drinkwaterkwaliteit — zonder marketing-praat.
+          <p className="text-gray-700 text-lg leading-relaxed">
+            WaterfilterPlatform is een onafhankelijk informatieplatform over waterfilters en drinkwaterkwaliteit in Nederland. Wij zijn geen webshop en verkopen geen producten: onze enige taak is heldere, feitelijk onderbouwde informatie bieden zodat u zelf een weloverwogen keuze kunt maken.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center text-sm">
-            <Link
-              href="/kennisbank"
-              className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors"
-            >
-              Naar de kennisbank
-            </Link>
-            <Link
-              href="/"
-              className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors"
-            >
-              Terug naar home
-            </Link>
+        </div>
+      </section>
+
+      <section className="max-w-3xl mx-auto px-4 py-10">
+        <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Onze missie</h2>
+        <div className="space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            WaterfilterPlatform is opgericht omdat de zoekresultaten voor "waterfilter kopen" vrijwel volledig worden gedomineerd door webshops en affiliate-sites. Die paginas prijzen producten aan, maar bieden zelden neutrale context: wanneer is een filter nuttig? Welke techniek past bij welk waterprobleem? Wanneer volstaat gewoon kraanwater?
+          </p>
+          <p>
+            Onze missie is eenvoudig: onafhankelijke, op feiten gebaseerde informatie bieden over drinkwaterkwaliteit en thuisfiltratie. Wij willen dat consumenten een weloverwogen keuze kunnen maken — ook als die keuze inhoudt dat ze helemaal geen filter nodig hebben.
+          </p>
+          <p>
+            Nederlands kraanwater behoort tot de beste ter wereld. Toch zijn er situaties waarin filtratie zinvol is: oude loden leidingen, verhoogde PFAS-concentraties in bepaalde regio's, of een sterke voorkeur voor kalkvrij water voor koffie en thee. Wij leggen die nuance uit, zonder een product te hoeven verkopen.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-10 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Wat wij doen</h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              Het platform beslaat een breed spectrum: van uitleg over drinkwaternormen en filtertechnieken tot waterhardheid per gemeente en een keuzehulp per situatie. Iemand die in een huurwoning woont heeft andere opties dan een huiseigenaar. Een gezin met een baby stelt andere eisen dan iemand die alleen het kalkgehalte wil verlagen.
+            </p>
+            <p>
+              Voor al onze inhoud raadplegen wij primaire bronnen. Wij baseren ons op het RIVM (Rijksinstituut voor Volksgezondheid en Milieu), het KWR Watercycle Research Institute, de WHO-richtlijnen voor drinkwaterkwaliteit, de EU-drinkwaterrichtlijn 2020/2184, het Nederlandse Drinkwaterbesluit en wetenschappelijke publicaties in peer-reviewed tijdschriften. Marketingmateriaal van fabrikanten gebruiken wij uitsluitend als aanvullende technische specificatie, nooit als gezaghebbende bron.
+            </p>
+            <p>
+              Naast technische uitleg bieden wij ook praktische vergelijkingen. Welke filtertechnieken verwijderen PFAS? Wat kost omgekeerde osmose op jaarbasis als u de filterkosten meerekent? Is een waterontharder hetzelfde als een waterfilter? Dit soort vragen beantwoorden wij op basis van gepubliceerde data, niet op basis van wie ons het meeste betaalt.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Waarom dit platform */}
-      <section className="max-w-3xl mx-auto px-4 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-4">
-          Waarom dit platform?
-        </h2>
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-4">
+      <section className="max-w-3xl mx-auto px-4 py-10">
+        <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Onze werkwijze</h2>
+        <div className="space-y-4 text-gray-700 leading-relaxed">
           <p>
-            Drinkwater is voor Google een zogenaamd <strong>YMYL-onderwerp</strong> — Your Money,
-            Your Life. Wat je drinkt raakt direct je gezondheid, en daarom hebben websites die hierover
-            schrijven een extra verantwoordelijkheid: claims moeten kloppen, bronnen moeten controleerbaar
-            zijn, en marketing moet duidelijk gescheiden worden van feiten.
+            Elke technische claim op dit platform is gebaseerd op gepubliceerd onderzoek of officieel beleid. Wij nemen fabrikantclaims niet over zonder verificatie. Als een filter beweert "99% kalk te verwijderen", controleren wij dat tegen NSF-certificeringsdata of onafhankelijke labstudies.
           </p>
           <p>
-            Wij vonden dat veel Nederlandse informatie over waterfilters één van twee dingen doet:
-            óf het is een verkapte productpagina (de fabrikant prijst zichzelf aan), óf het is een
-            algemeen verhaaltje dat de specifieke Nederlandse situatie negeert. De Nederlandse situatie is
-            namelijk best uniek: ons leidingwater is van wereldklasse, maar de{' '}
-            <Link href="/waterhardheid" className="text-[#005F8A] font-medium hover:underline">
-              waterhardheid verschilt sterk per gemeente
-            </Link>{' '}
-            — en dat bepaalt of een waterfilter voor jou zinvol is of niet.
+            Filterprestatiecijfers zijn afkomstig van fabrikantspecificaties en onafhankelijke tests, met name NSF/ANSI-certificeringsdata en laboratoriumstudies. De NSF-database (nsf.org) is openbaar toegankelijk en vermeldt per gecertificeerd product welke stoffen in welke mate worden verwijderd. Dat is onze eerste controlelaag.
           </p>
           <p>
-            WaterfilterPlatform is opgezet om die kloof te dichten. We leggen techniek uit zoals{' '}
-            <Link href="/omgekeerde-osmose" className="text-[#005F8A] font-medium hover:underline">
-              omgekeerde osmose
-            </Link>
-            ,{' '}
-            <Link href="/kokend-water-kraan" className="text-[#005F8A] font-medium hover:underline">
-              kokend water kranen
-            </Link>{' '}
-            en filterkannen. We vertalen Drinkwaterbesluit-normen naar gewone taal. En we zeggen
-            eerlijk wanneer een filter <em>niet</em> nodig is — bijvoorbeeld als je in een gemeente met
-            zacht water woont en geen specifieke zorg hebt.
+            Gezondheidsuitspraken toetsen wij altijd aan WHO- en RIVM-standpunten. Wij maken geen uitspraken als "gefilterd water is gezonder" zonder te specificeren in welke context, voor wie en op basis van welk bewijs. Het onderscheid tussen aangetoond causaal verband, correlatie en hypothetisch risico is voor ons wezenlijk — en wij maken dat onderscheid expliciet in onze teksten.
           </p>
           <p>
-            We schrijven voor mensen die googlen: &quot;moet ik een waterfilter?&quot;, &quot;is osmosewater
-            ongezond?&quot;, &quot;welke kokend water kraan is het beste?&quot;. Die mensen verdienen een
-            antwoord dat klopt, niet een verkooppraatje.
+            Paginas worden bijgewerkt wanneer normen of wetenschappelijk inzicht veranderen. De datum van laatste herziening staat op elke inhoudelijke pagina vermeld. Als een EU-norm wordt aangescherpt — zoals de verlaging van de loodnorm van 10 naar 5 microgram per liter die in 2026 van kracht werd — passen wij de betreffende paginas zo snel mogelijk aan.
           </p>
         </div>
       </section>
 
-      {/* Onderdeel van een groter geheel */}
-      <section className="bg-[#E0F2FE] py-12 px-4">
+      <section className="bg-[#E0F2FE] py-10 px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-4">
-            Onderdeel van een groter geheel
-          </h2>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Onafhankelijkheid en commerciele relatie</h2>
           <div className="bg-white rounded-2xl border border-blue-100 p-6 space-y-4 text-gray-700 leading-relaxed">
             <p>
-              WaterfilterPlatform is één van <strong>meer dan 40 informatieplatforms</strong> die ons
-              team bouwt en onderhoudt. We werken in clusters van verwante onderwerpen: gezondheid,
-              voeding, technologie, wonen, financiën en meer. Elk platform richt zich op een specifiek
-              consumentenonderwerp waarbij bestaande informatie óf te commercieel is óf te algemeen.
+              Wij willen hier transparant over zijn. Sommige paginas op WaterfilterPlatform bevatten verwijzingen naar producten van PureAqua.nl, een Nederlandse aanbieder van onder andere 4-in-1 osmosekranen. WaterfilterPlatform ontvangt hiervoor een vergoeding wanneer een bezoeker via een dergelijke link een aankoop doet.
             </p>
             <p>
-              Die aanpak heeft een voordeel: we hergebruiken infrastructuur, maar nooit inhoud.
-              Elk platform heeft een eigen redactieteam, eigen bronnen en een eigen specialisatie.
-              WaterfilterPlatform is er één van onze vlaggenschepen, juist omdat waterkwaliteit in
-              Nederland zo lokaal is — je kunt geen generiek Europees artikel kopiëren en denken
-              dat het voor een gezin in Eindhoven net zo geldt als voor iemand in Leiden.
+              Deze commerciele relatie heeft geen invloed op onze inhoudelijke beoordeling van technieken en producten. Wij benoemen ook de nadelen van elk systeem. Wij adviseren actief wanneer een goedkopere oplossing beter past bij de situatie van de bezoeker. Een eenvoudige filterkan kan voor sommige huishoudens een betere keuze zijn dan een osmose-installatie van enkele honderden euros — en dat schrijven wij dan ook.
             </p>
             <p>
-              Het team bestaat uit jonge developers, onderzoekers en contentspecialisten. Ambitieus
-              genoeg om 40+ platforms serieus te nemen; klein genoeg om snel te schakelen als
-              data verandert of regelgeving wijzigt.
+              Paginas met een commerciele link zijn herkenbaar: wij vermelden dit expliciet bij de betreffende productaanbevelingen. Puur informatieve paginas — zoals onze uitleg over drinkwaternormen, filtertechnieken of waterhardheid per gemeente — bevatten geen gelieerde links.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Team */}
-      <section className="max-w-3xl mx-auto px-4 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-2">
-          Het team
-        </h2>
-        <p className="text-gray-500 text-sm mb-8">
-          We werken met rollen, niet met namen — zo voorkomen we dat een titel suggereert wat we niet kunnen onderbouwen.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {teamRollen.map(t => (
-            <div key={t.rol} className="bg-white border border-gray-100 rounded-2xl p-5">
-              <h3 className="font-bold text-[#003F5C] mb-2">{t.rol}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">{t.omschrijving}</p>
-            </div>
-          ))}
-        </div>
-        <p className="text-sm text-gray-500 mt-6 leading-relaxed">
-          We zijn geen wetenschappelijk instituut en doen geen eigen labmetingen. Wat we wél doen:
-          openbare data verzamelen, vergelijken, en zo opschrijven dat een huiseigenaar zonder
-          technische achtergrond er iets aan heeft. Voor diepgaande vragen verwijzen we altijd door
-          naar de primaire bronnen — die staan onder elk artikel.
-        </p>
-      </section>
-
-      {/* Hoe wij verdienen */}
-      <section className="bg-gray-50 py-12 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-4">
-            Hoe wij verdienen
-          </h2>
-          <div className="bg-white rounded-2xl border border-gray-100 p-6 space-y-4 text-gray-700 leading-relaxed">
-            <p>
-              <strong>We tonen displayadvertenties.</strong> Banners en tekstadvertenties die via
-              externe advertentienetwerken worden geserveerd — vergelijkbaar met hoe een krant
-              advertenties plaatst naast zijn artikelen. Dat is onze primaire inkomstenbron.
-            </p>
-            <p>
-              <strong>Geen affiliate-links.</strong> We verdienen geen commissie als jij een
-              waterfilter koopt via een link op onze site. Alle links naar producten of webshops
-              zijn informatief, niet commercieel. We hebben geen deals met fabrikanten of
-              retailers.
-            </p>
-            <p>
-              <strong>Geen gesponsorde productplaatsingen.</strong> Een product staat niet hoger
-              in een vergelijking omdat de fabrikant betaalt. We nemen geen gratis producten aan
-              voor recensies. Als een product het beste scoort op onze criteria, staat het bovenaan
-              — anders niet.
-            </p>
-            <p>
-              <strong>Redactie staat los van advertenties.</strong> De mensen die advertenties
-              beheren zijn niet betrokken bij redactionele beslissingen. Een adverteerder heeft
-              geen invloed op welke producten wij aanbevelen of hoe we ze beschrijven.
-            </p>
-            <p className="text-sm text-gray-500">
-              Mocht dit ooit veranderen — bijvoorbeeld als we in de toekomst een vergelijkingstool
-              met commerciële partners bouwen — vermelden we dat altijd expliciet op de
-              betreffende pagina&apos;s.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Redactionele aanpak */}
-      <section className="max-w-3xl mx-auto px-4 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-4">
-          Onze redactionele aanpak
-        </h2>
-        <p className="text-gray-700 leading-relaxed mb-6">
-          Een artikel op WaterfilterPlatform komt niet uit één bron. We werken volgens een vaste
-          redactionele cyclus: onderwerp kiezen op basis van werkelijke zoekvraag in Nederland,
-          bronnen verzamelen, claims controleren, mobiel-eerst opmaken, en periodiek herzien.
-          Onder elk artikel staat de laatst-bijgewerkt-datum, zodat je weet wat je leest. Lees meer
-          over onze precieze evaluatiecriteria op de{' '}
-          <Link href="/methodologie" className="text-[#005F8A] font-medium hover:underline">
-            methodologie-pagina
-          </Link>
-          .
-        </p>
-
-        <div className="bg-white rounded-2xl border border-gray-100 p-6 mb-6">
-          <h3 className="font-bold text-[#003F5C] mb-3">Onze bronnen</h3>
-          <ul className="space-y-3 text-sm">
-            {bronnen.map(b => (
-              <li key={b.naam} className="flex gap-3">
-                <span className="text-[#005F8A] font-bold shrink-0">•</span>
-                <div>
-                  <span className="font-semibold text-gray-900">{b.naam}</span>
-                  <span className="text-gray-600"> — {b.rol}</span>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="bg-white rounded-2xl border border-gray-100 p-6 mb-6">
-          <h3 className="font-bold text-[#003F5C] mb-3">Hoe wij claims toetsen</h3>
-          <ol className="space-y-3 text-sm text-gray-700 list-decimal list-inside">
-            <li>
-              <strong>Meerdere bronnen.</strong> Als een fabrikant beweert &quot;99% kalkverwijdering&quot;,
-              checken we dat tegen onafhankelijke onderzoeken (KWR, peer-reviewed) en specs van
-              vergelijkbare technologieën.
-            </li>
-            <li>
-              <strong>Feit versus marketing.</strong> Termen als &quot;gezonder water&quot; of
-              &quot;basisch&quot; krijgen alleen ruimte als er een meetbare definitie bij hoort.
-              Anders benoemen we het als marketingclaim.
-            </li>
-            <li>
-              <strong>Context bij getallen.</strong> Een filter dat &quot;tot 5.000 liter&quot; meegaat
-              kan in een hard-watergebied veel korter meegaan. We geven die context altijd erbij.
-            </li>
-            <li>
-              <strong>Onderscheid: wat we weten vs. schatten.</strong> Bij prijzen, garanties of
-              lokale waterhardheid die we niet konden verifiëren zeggen we het expliciet.
-            </li>
-            <li>
-              <strong>Jaarlijkse herziening.</strong> Elk artikel wordt minimaal één keer per jaar
-              opnieuw doorgelopen — bronnen gecheckt, dode links eruit, nieuwe data erin.
-            </li>
-          </ol>
-        </div>
-
-        <div className="bg-[#E0F2FE] rounded-2xl p-5 text-sm text-[#003F5C]">
-          <p className="font-semibold mb-1">Laatst bijgewerkt: 14 mei 2026</p>
-          <p className="text-gray-700">
-            Deze redactionele aanpak wordt zelf ook periodiek herzien. Vragen of suggesties?
-            Mail{' '}
-            <a href="mailto:redactie@waterfilterplatform.nl" className="text-[#005F8A] font-medium hover:underline">
-              redactie@waterfilterplatform.nl
-            </a>
-            .
-          </p>
-        </div>
-      </section>
-
-      {/* Waarden */}
-      <section className="max-w-4xl mx-auto px-4 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-2 text-center">
-          Onze waarden
-        </h2>
-        <p className="text-gray-500 text-sm text-center mb-8">
-          Vier principes die in elk redactioneel besluit terugkomen
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {waarden.map(w => (
-            <div key={w.titel} className="bg-white border border-gray-100 rounded-2xl p-5">
-              <div className="text-3xl mb-3">{w.icon}</div>
-              <h3 className="font-bold text-[#003F5C] mb-2">{w.titel}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">{w.tekst}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Wat je verder kunt lezen */}
-      <section className="bg-gray-50 py-12 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-4">
-            Begin hier met lezen
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Nieuw op het platform? Dit zijn de pagina&apos;s die de meeste bezoekers als eerste
-            aanklikken — een mix van techniek-uitleg en praktische antwoorden voor de Nederlandse
-            situatie.
-          </p>
-          <ul className="space-y-3">
-            <li className="bg-white border border-gray-100 rounded-xl p-4">
-              <Link href="/" className="font-semibold text-[#005F8A] hover:underline">
-                Home — overzicht van het platform
-              </Link>
-              <p className="text-sm text-gray-600 mt-1">
-                Snelste route naar de drie hoofdcategorieën: osmose, kokend water, waterhardheid.
-              </p>
-            </li>
-            <li className="bg-white border border-gray-100 rounded-xl p-4">
-              <Link href="/omgekeerde-osmose" className="font-semibold text-[#005F8A] hover:underline">
-                Omgekeerde osmose — hoe werkt het écht?
-              </Link>
-              <p className="text-sm text-gray-600 mt-1">
-                Wat een RO-membraan wel en niet doet, plus wanneer het voor een Nederlands huishouden
-                de moeite waard is.
-              </p>
-            </li>
-            <li className="bg-white border border-gray-100 rounded-xl p-4">
-              <Link href="/kokend-water-kraan" className="font-semibold text-[#005F8A] hover:underline">
-                Kokend water kraan — alle merken vergeleken
-              </Link>
-              <p className="text-sm text-gray-600 mt-1">
-                Quooker, Grohe Red, Franke en andere merken. Wat zijn de echte verschillen op prijs,
-                installatie en filters?
-              </p>
-            </li>
-            <li className="bg-white border border-gray-100 rounded-xl p-4">
-              <Link href="/waterhardheid" className="font-semibold text-[#005F8A] hover:underline">
-                Waterhardheid per gemeente
-              </Link>
-              <p className="text-sm text-gray-600 mt-1">
-                349 gemeenten — zoek jouw stad en lees of een waterfilter in jouw regio zinvol is.
-              </p>
-            </li>
-            <li className="bg-white border border-gray-100 rounded-xl p-4">
-              <Link href="/methodologie" className="font-semibold text-[#005F8A] hover:underline">
-                Methodologie — hoe wij producten beoordelen
-              </Link>
-              <p className="text-sm text-gray-600 mt-1">
-                Acht criteria, van filtratieperformantie tot duurzaamheid. Transparant over wat we meten
-                en wat we niet meten.
-              </p>
-            </li>
-            <li className="bg-white border border-gray-100 rounded-xl p-4">
-              <Link href="/kennisbank" className="font-semibold text-[#005F8A] hover:underline">
-                Kennisbank — diepgaande gidsen
-              </Link>
-              <p className="text-sm text-gray-600 mt-1">
-                Voor wie meer wil weten over waterkwaliteit, zuiveringstechniek en filterkosten op
-                lange termijn.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      {/* Contact */}
-      <section className="max-w-3xl mx-auto px-4 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-4">
-          Contact en feedback
-        </h2>
-        <div className="bg-white border border-gray-100 rounded-2xl p-6 space-y-4 text-gray-700 leading-relaxed">
+      <section className="max-w-3xl mx-auto px-4 py-10">
+        <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Fouten en contact</h2>
+        <div className="space-y-4 text-gray-700 leading-relaxed">
           <p>
-            Heb je een feitelijke onjuistheid gevonden, een dode link, of een suggestie voor een
-            onderwerp dat we nog niet behandelen? We horen het graag.
+            Klopt er iets niet? Heeft u een verouderde norm gevonden, een feitelijke onjuistheid ontdekt of een studie die onze informatie tegenspreekt? Wij horen het graag. Feitelijke fouten corrigeren wij zo snel mogelijk, doorgaans binnen enkele werkdagen.
           </p>
           <p>
-            <strong>E-mail:</strong>{' '}
-            <a
-              href="mailto:redactie@waterfilterplatform.nl"
-              className="text-[#005F8A] font-medium hover:underline"
-            >
-              redactie@waterfilterplatform.nl
-            </a>
-          </p>
-          <p className="text-sm text-gray-500">
-            We lezen alles, maar we zijn geen 24/7 helpdesk. Reken op een reactietijd van enkele
-            werkdagen. Voor commerciële vragen (productinkoop, garantie, installatie) verwijzen we
-            door naar de fabrikant of leverancier — wij verkopen zelf geen waterfilters.
-          </p>
-          <p className="text-sm text-gray-500">
-            Vragen over gezondheid en drinkwater horen niet bij ons thuis. Daarvoor raadpleeg je
-            huisarts, GGD of RIVM.
+            U kunt ons bereiken via de{" "}
+            <Link href="/contact" className="text-[#005F8A] font-medium hover:underline">
+              contactpagina
+            </Link>
+            . Vermeld de URL van de pagina in kwestie en, indien mogelijk, een bronlink. Wij lezen elk bericht.
           </p>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="bg-gray-50 py-12 px-4">
+      <section className="bg-gray-50 py-10 px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-2">
-            Veelgestelde vragen over onze content
-          </h2>
-          <p className="text-gray-500 text-sm mb-6">
-            Over redactie, onafhankelijkheid, advertenties, updates en bronvermelding.
-          </p>
-          <div className="space-y-4">
-            {faqItems.map(item => (
-              <details
-                key={item.question}
-                className="bg-white border border-gray-100 rounded-xl p-4 group"
-              >
-                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center gap-3">
-                  <span>{item.question}</span>
-                  <span className="text-[#005F8A] group-open:rotate-180 transition-transform shrink-0">
-                    ▾
-                  </span>
-                </summary>
-                <p className="mt-3 text-gray-600 text-sm leading-relaxed">{item.answer}</p>
-              </details>
-            ))}
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-6">Bronnen die wij raadplegen</h2>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#005F8A] font-bold shrink-0">•</span>
+              <span>
+                <strong>RIVM</strong> — Rijksinstituut voor Volksgezondheid en Milieu: gezondheidskundige normen en adviezen over stoffen in drinkwater
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#005F8A] font-bold shrink-0">•</span>
+              <span>
+                <strong>KWR Watercycle Research Institute</strong> — onafhankelijk onderzoeksinstituut dat de Nederlandse drinkwatersector adviseert over kwaliteit en zuiveringstechnologie
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#005F8A] font-bold shrink-0">•</span>
+              <span>
+                <strong>WHO</strong> — World Health Organization, Guidelines for Drinking-water Quality: internationale gezondheidsrichtlijnen voor drinkwater
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#005F8A] font-bold shrink-0">•</span>
+              <span>
+                <strong>EU-drinkwaterrichtlijn 2020/2184</strong> — Europese richtlijn die minimumeisen stelt aan de kwaliteit van voor menselijke consumptie bestemd water
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#005F8A] font-bold shrink-0">•</span>
+              <span>
+                <strong>Nederlands Drinkwaterbesluit (Staatsblad)</strong> — de nationale omzetting van de EU-richtlijn, met wettelijk bindende normen voor drinkwaterkwaliteit in Nederland; zie ook onze{" "}
+                <Link href="/drinkwaternormen" className="text-[#005F8A] hover:underline">
+                  pagina over drinkwaternormen
+                </Link>
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#005F8A] font-bold shrink-0">•</span>
+              <span>
+                <strong>NSF International</strong> — certificeringsdata voor waterfilters (NSF/ANSI 42, 53, 58 en 401), openbaar verifieerbaar via nsf.org
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#005F8A] font-bold shrink-0">•</span>
+              <span>
+                <strong>Kiwa Technology</strong> — Nederlandse keurmerken voor waterbehandelingsapparatuur en sanitaire producten
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#005F8A] font-bold shrink-0">•</span>
+              <span>
+                <strong>Peer-reviewed publicaties</strong> — wetenschappelijke artikelen uit tijdschriften als Environment International, Nature Medicine en Environmental Research, met name over PFAS, microplastics en sporenmetalen in drinkwater
+              </span>
+            </li>
+          </ul>
+
+          <div className="mt-8 pt-6 border-t border-gray-200 flex flex-wrap gap-4 text-sm">
+            <Link href="/methodologie" className="text-[#005F8A] font-medium hover:underline">
+              Onze methodologie
+            </Link>
+            <Link href="/drinkwaternormen" className="text-[#005F8A] font-medium hover:underline">
+              Drinkwaternormen
+            </Link>
+            <Link href="/keuzehulp" className="text-[#005F8A] font-medium hover:underline">
+              Keuzehulp waterfilters
+            </Link>
+            <Link href="/contact" className="text-[#005F8A] font-medium hover:underline">
+              Contact
+            </Link>
           </div>
         </div>
       </section>
