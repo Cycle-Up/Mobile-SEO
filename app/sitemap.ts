@@ -472,6 +472,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kokend-water-kraan/prijs-per-liter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/osmose-water/zout-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/waterfilter/natriumhypochloriet`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Drinkwaternormen hub
+    { url: `${BASE}/drinkwaternormen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/drinkwaternormen/wie-controleert-drinkwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaternormen/drinkwaterbesluit`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaternormen/eu-drinkwaterrichtlijn`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaternormen/drinkwaterbedrijven`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaternormen/waterfilter-certificering`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaternormen/kiwa-nsf-ansi`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaternormen/pfas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaternormen/lood`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/drinkwaternormen/kalk-hard-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwaternormen/medicijnresten`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwaternormen/microplastics`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwaternormen/reverse-osmosis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
