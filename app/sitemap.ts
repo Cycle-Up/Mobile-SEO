@@ -368,7 +368,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kraanwater/zomer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/kraanwater/legionella-thuis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/leidingwater/chlooramine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE}/waterfilter/microplastics`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     // Ronde 8 — nieuwe clusters
     { url: `${BASE}/waterfilter/pesticiden`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/osmose-water/mineralen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -441,6 +440,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kokend-water-kraan/merken-vergelijking`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/osmose-water/zwembad`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterfilter/uv-sterilisatie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Ronde 17
+    { url: `${BASE}/waterontharder/harsbed`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/leidingwater/natrium`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/energie-verbruik`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/fluor`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
