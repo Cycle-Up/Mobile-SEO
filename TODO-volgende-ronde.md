@@ -4,20 +4,20 @@ Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 19
+## Hoge prioriteit (direct zoekvolume) — Ronde 20
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/mangaanfilter` — mangaan in grondwater, bruin water, oxidatiefilter
-- [ ] `/omgekeerde-osmose/capaciteit-liter` — GPD berekening, 50/75/100 GPD, per gezin
-- [ ] `/waterontharder/twin-tank` — duplex systeem, continu zacht water, wanneer nodig
-- [ ] `/leidingwater/pesticiden` — glyfosaat, atrazine, EU-norm 0,1 ug/L per stof
-- [ ] `/kokend-water-kraan/huurwoning` — huurder rechten, toestemming verhuurder, tijdelijk
-- [ ] `/osmose-water/koffie-espresso` — TDS ideaal 75-150 mg/L, GH/KH voor espresso
-- [ ] `/waterfilter/reisfilter` — lifestraw, sawyer, katadyn, camping en reizen
+- [ ] `/waterfilter/nitriet` — nitriet vs nitraat, EU-norm 0,5 mg/L, osmose 85-95%
+- [ ] `/omgekeerde-osmose/membraan-vervangen` — wanneer membraan aan vervanging toe, stappenplan
+- [ ] `/waterontharder/verhuurder` — mag huurder waterontharder plaatsen, kosten, toestemming
+- [ ] `/leidingwater/fosfaat` — fosfaat als corrosiebeschermer, EU-grens 2,2 mg/L
+- [ ] `/kokend-water-kraan/kinderveiligheid` — veiligheidsventiel, vergrendeling, brandwondrisico
+- [ ] `/osmose-water/thee` — osmosewater voor thee, TDS invloed, temperatuur
+- [ ] `/waterfilter/cryptosporidium` — chloorresistent parasiet, osmose en UV
 
 ### Kennisbank diepte-artikelen (MDX)
-- [ ] `omgekeerde-osmose-vs-waterontharder.mdx` — wanneer welk systeem, combinatie
-- [ ] `drinkwater-baby-veilig.mdx` — nitraat, lood, bacterien, osmosewater vs leidingwater
+- [ ] `waterfilter-zelf-installeren.mdx` — koolfilter en osmose DIY, stap-voor-stap
+- [ ] `tds-meter-gebruiken.mdx` — TDS meten, interpretatie, wanneer filter nodig
 
 ---
 
@@ -34,16 +34,19 @@ Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 
 ## Afgerond
 
-### Rondes 1-17 — zie commits
+### Rondes 1-18 — zie commits
 
-### Ronde 18 — Boosterpomp, zout-verbruik, installateur, koolzuur + 2 MDX
-- [x] omgekeerde-osmose/boosterpomp — transmembraandruk, &lt;3,5 bar, productie +40-70%, Aquatec
-- [x] waterontharder/zout-verbruik — efficientieklassen, berekening per gezin, 40-200 euro/jaar
-- [x] kokend-water-kraan/installateur — KIWA-certificering, 150-350 euro arbeid, zelf vs loodgieter
-- [x] osmose-water/koolzuur — SodaStream vs inline carbonator, TDS voor scherpe bubbels
-- [x] waterfilter-kopen-gids-2026.mdx — beslisboom per probleem, prijsoverzicht, certificeringen
-- [x] hard-water-gevolgen-huis.mdx — boiler +7-10% energie/mm kalk, 260-520 euro/jaar schade
+### Ronde 19 — Mangaanfilter, capaciteit, twin-tank, pesticiden, garantie, espresso, reisfilter + 2 MDX
+- [x] waterfilter/mangaanfilter — MnO2 oxidatiefilter, bruin water, ijzer/mangaan combinatie
+- [x] omgekeerde-osmose/capaciteit-liter — GPD naar liter, drukvat, tabel per gezinsgrootte
+- [x] waterontharder/twin-tank — duplex systeem, 24/7 zacht water, Kinetico, &gt;4 personen
+- [x] leidingwater/pesticiden — EU-norm 0,1 ug/L, glyfosaat/bentazon/AMPA, osmose 95-99%
+- [x] kokend-water-kraan/garantie — BW 7:17, merkentabel 2-5 jaar, serviceabonnement
+- [x] osmose-water/koffie-espresso — SCA-norm TDS 75-150, MgSO4+NaHCO3 recept, Third Wave
+- [x] waterfilter/reisfilter — LifeStraw vs Sawyer vs Katadyn vs SteriPen vergelijking
+- [x] omgekeerde-osmose-vs-waterontharder.mdx — 10-kolommen vergelijk, combinatieadvies
+- [x] drinkwater-baby-veilig.mdx — nitraat &lt;10 mg/L voor zuigelingen, lood EU-norm 5 ug/L 2026
 
 ---
 
-*Bijgewerkt: 2026-05-17 — 4162 statische paginas na ronde 18 (321/321 MDX artikelen geslaagd)*
+*Bijgewerkt: 2026-05-17 — 4171 statische paginas na ronde 19 (323/323 MDX artikelen geslaagd)*
