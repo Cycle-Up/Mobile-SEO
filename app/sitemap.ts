@@ -489,6 +489,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Microplastics verdieping
     { url: `${BASE}/waterfilter/nanoplastics`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/osmose-water/microplastics`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Ronde 23: leidingwater contaminanten + drinkwaternormen chroom-6 + glyfosaat + baby
+    { url: `${BASE}/leidingwater/pfas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/leidingwater/chroom-6`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/leidingwater/lood`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/leidingwater/microplastics`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwaternormen/chroom-6`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterfilter/glyfosaat`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/osmose-water/baby-flesvoeding`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
