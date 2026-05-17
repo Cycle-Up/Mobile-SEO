@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater voor aquarium: hardheid instellen, buffer en zoetwater',
   description:
-    'Osmosewater is de basis voor precies ingesteld aquariumwater. TDS nul, geen chloor, geen nitraat. Mix met leidingwater of remineraliseer voor de gewenste GH, KH en pH voor uw vissen.',
+    'Osmosewater is de basis voor precies ingesteld aquariumwater. TDS nul, geen chloor, geen nitraat. Mix met leidingwater of remineraliseer voor de gewenste GH.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/aquarium' },
 };
 

@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterzuivering: hoe wordt drinkwater gemaakt in Nederland?',
-  description: 'Nederland heeft een van de beste drinkwaterzuiveringen ter wereld. Ontdek hoe grondwater en oppervlaktewater worden omgezet naar drinkwater in 6-10 zuiveringsstappen.',
+  description: 'Nederland heeft een van de beste drinkwaterzuiveringen ter wereld. Ontdek hoe grondwater en oppervlaktewater worden omgezet naar drinkwater in 6-10.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterzuivering' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterzuivering: hoe wordt drinkwater gemaakt in Nederland?',
-  description: 'Nederland heeft een van de beste drinkwaterzuiveringen ter wereld. Ontdek hoe grondwater en oppervlaktewater worden omgezet naar drinkwater in 6-10 zuiveringsstappen.',
+  description: 'Nederland heeft een van de beste drinkwaterzuiveringen ter wereld. Ontdek hoe grondwater en oppervlaktewater worden omgezet naar drinkwater in 6-10.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterzuivering',

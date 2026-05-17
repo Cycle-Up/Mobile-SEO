@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Chlooramine in leidingwater: verschil met chloor en gevolgen voor waterfilters',
   description:
-    'Sommige drinkwaterbedrijven schakelen over van chloor naar chlooramine als desinfectant. Chlooramine is stabieler maar lastiger te verwijderen: vereist catalytisch actief kool of osmosefilter.',
+    'Sommige drinkwaterbedrijven schakelen over van chloor naar chlooramine als desinfectant. Chlooramine is stabieler maar lastiger te verwijderen: vereist.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/chlooramine' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Chlooramine in leidingwater: verschil met chloor en gevolgen voor waterfilters',
   description:
-    'Sommige drinkwaterbedrijven schakelen over van chloor naar chlooramine als desinfectant. Chlooramine is stabieler maar lastiger te verwijderen: vereist catalytisch actief kool of osmosefilter.',
+    'Sommige drinkwaterbedrijven schakelen over van chloor naar chlooramine als desinfectant. Chlooramine is stabieler maar lastiger te verwijderen: vereist.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/chlooramine',

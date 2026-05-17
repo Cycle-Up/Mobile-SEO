@@ -9,12 +9,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Beste Kokend Water Kraan 2026: Top 5',
     description:
-      'Welke kokend water kraan is de beste in 2026? Wij vergeleken de top 5 op temperatuur, doorstroom, ingebouwd filter, prijs en energieverbruik. Met eerlijk advies.',
+      'Welke kokend water kraan is de beste in 2026? Wij vergeleken de top 5 op temperatuur, doorstroom, ingebouwd filter, prijs en energieverbruik.',
     alternates: { canonical: 'https://waterfilterplatform.nl/beste-kokend-water-kraan-2026' },
     openGraph: {
       title: 'Beste Kokend Water Kraan 2026: Top 5 eerlijk vergeleken',
       description:
-        'Top 5 kokend water kranen 2026 vergeleken op temperatuur, doorstroom, geïntegreerd filter, prijs en energiegebruik. De #1 pick heeft ook een ingebouwd osmose filter.',
+        'Top 5 kokend water kranen 2026 vergeleken op temperatuur, doorstroom, geïntegreerd filter, prijs en energiegebruik. De #1 pick heeft ook een ingebouwd osmose.',
       url: 'https://waterfilterplatform.nl/beste-kokend-water-kraan-2026',
       type: 'article',
       locale: 'nl_NL',

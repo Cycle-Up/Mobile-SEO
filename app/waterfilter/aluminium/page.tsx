@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Aluminium in drinkwater: risico\'s en hoe te filteren',
-  description: 'Aluminium in drinkwater: EU-norm 200 µg/L, Alzheimer-debat, Nederlandse situatie en welk waterfilter aluminium effectief verwijdert. Osmose vs. actief-kool vergeleken.',
+  description: 'Aluminium in drinkwater: EU-norm 200 µg/L, Alzheimer-debat, Nederlandse situatie en welk waterfilter aluminium effectief verwijdert. Osmose vs.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/aluminium' },
 };
 

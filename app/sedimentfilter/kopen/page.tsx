@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Sedimentfilter kopen: micronwaardes, types en koopgids 2026',
   description:
-    'Koopgids voor sedimentfilters: welke micronwaarde voor put/leidingwater/irrigatie, 10-inch vs big blue, 5-model vergelijking, jaarkosten en combinaties met koolstof, UV en RO.',
+    'Koopgids voor sedimentfilters: welke micronwaarde voor put/leidingwater/irrigatie, 10-inch vs big blue, 5-model vergelijking, jaarkosten en combinaties met.',
   alternates: { canonical: 'https://waterfilterplatform.nl/sedimentfilter/kopen' },
   openGraph: {
     title: 'Sedimentfilter kopen — koopgids en modellenvergelijking 2026',

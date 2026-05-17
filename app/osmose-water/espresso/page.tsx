@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Osmosewater voor espresso: de perfecte watersamenstelling voor baristas',
-  description: 'Voor espresso is de watersamenstelling cruciaal: TDS 75-150 mg/L, hardheid 50-100 mg/L CaCO3, pH 6,5-7,5. Ontdek hoe osmosewater + remineralisatie de perfecte espresso oplevert.',
+  description: 'Voor espresso is de watersamenstelling cruciaal: TDS 75-150 mg/L, hardheid 50-100 mg/L CaCO3, pH 6,5-7,5. Ontdek hoe osmosewater + remineralisatie de.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/espresso' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosewater voor espresso: de perfecte watersamenstelling voor baristas',
-  description: 'Voor espresso is de watersamenstelling cruciaal: TDS 75-150 mg/L, hardheid 50-100 mg/L CaCO3, pH 6,5-7,5. Ontdek hoe osmosewater + remineralisatie de perfecte espresso oplevert.',
+  description: 'Voor espresso is de watersamenstelling cruciaal: TDS 75-150 mg/L, hardheid 50-100 mg/L CaCO3, pH 6,5-7,5. Ontdek hoe osmosewater + remineralisatie de.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/espresso',

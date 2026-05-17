@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Elektromagnetische waterontharder: werking, effectiviteit en vergelijking',
   description:
-    'Elektronische waterontharders (magneet of elektromagnetisch) claimen kalk te kristalliseren zonder zout of ionenwisseling. Wetenschappelijk bewijs is beperkt. Vergelijking met echte ionenwisselaar waterontharder.',
+    'Elektronische waterontharders (magneet of elektromagnetisch) claimen kalk te kristalliseren zonder zout of ionenwisseling. Wetenschappelijk bewijs is beperkt.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/elektromagnetisch' },
 };
 

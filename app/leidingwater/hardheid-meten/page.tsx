@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterhardheid meten: TDS-meter, druppeltest en meetstrips vergelijken',
   description:
-    'Waterhardheid meten kan met een TDS-meter (indicatief), een druppeltest (nauwkeurig) of teststrips (snel maar minder precies). Hardheid in dH, GH of mg/L calcium: omrekeningsformules en referentiewaarden.',
+    'Waterhardheid meten kan met een TDS-meter (indicatief), een druppeltest (nauwkeurig) of teststrips (snel maar minder precies). Hardheid in dH, GH of mg/L.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/hardheid-meten' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Waterhardheid meten: TDS-meter, druppeltest en meetstrips vergelijken',
   description:
-    'Waterhardheid meten kan met een TDS-meter (indicatief), een druppeltest (nauwkeurig) of teststrips (snel maar minder precies). Hardheid in dH, GH of mg/L: omrekeningsformules en referentiewaarden.',
+    'Waterhardheid meten kan met een TDS-meter (indicatief), een druppeltest (nauwkeurig) of teststrips (snel maar minder precies). Hardheid in dH, GH of mg/L.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/hardheid-meten',

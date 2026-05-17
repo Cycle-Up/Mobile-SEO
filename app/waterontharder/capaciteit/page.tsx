@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterontharder capaciteit berekenen: hardheid, gezinsgrootte en harsvolume',
   description:
-    'Capaciteit van een waterontharder hangt af van hardheid (dH), waterverbruik per dag en harsvolume. Vuistregel 4 personen bij 20 dH: 15-20 liter harsvolume. Berekening en aanbevelingen per gezinsgrootte.',
+    'Capaciteit van een waterontharder hangt af van hardheid (dH), waterverbruik per dag en harsvolume. Vuistregel 4 personen bij 20 dH: 15-20 liter harsvolume.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/capaciteit' },
 };
 

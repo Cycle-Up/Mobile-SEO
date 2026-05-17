@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter Soorten: Welk Type Past bij Jou?',
   description:
-    'Overzicht van alle waterfilter soorten: koolstoffilter, keramisch, omgekeerde osmose, UV-filter, ionenwisselaar, sedimentfilter en geïntegreerde systemen. Vergelijkingstabel en keuzegids.',
+    'Overzicht van alle waterfilter soorten: koolstoffilter, keramisch, omgekeerde osmose, UV-filter, ionenwisselaar, sedimentfilter en geïntegreerde systemen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/soorten' },
   openGraph: {
     title: 'Waterfilter Soorten: Welk Type Past bij Jou?',
     description:
-      'Koolstoffilter, omgekeerde osmose, keramisch, UV — welk waterfiltertype past bij jouw probleem? Complete vergelijkingstabel en beslishulp voor het juiste waterfilter.',
+      'Koolstoffilter, omgekeerde osmose, keramisch, UV — welk waterfiltertype past bij jouw probleem? Complete vergelijkingstabel en beslishulp voor het juiste.',
     url: 'https://waterfilterplatform.nl/waterfilter/soorten',
     type: 'article',
     locale: 'nl_NL',

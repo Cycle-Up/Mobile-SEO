@@ -5,7 +5,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor kantoor: gezond drinkwater op de werkvloer',
-  description: 'Gefilterd water op kantoor: vergelijk oplossingen voor 1–10, 10–50 en 50+ medewerkers. ROI-berekening, Arbowet-uitleg en vergelijking waterkoeler vs osmose kraan.',
+  description: 'Gefilterd water op kantoor: vergelijk oplossingen voor 1–10, 10–50 en 50+ medewerkers. ROI-berekening, Arbowet-uitleg en vergelijking waterkoeler vs osmose.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/kantoor' },
 };
 

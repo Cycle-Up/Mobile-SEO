@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterontharder kosten: aanschaf, zout en totale eigendomskosten',
   description:
-    'Een waterontharder kost 500-2.000 euro aanschaf plus 150-300 euro per jaar aan zout en onderhoud. Vergelijking van TCO over 5 en 10 jaar versus huren (15-35 euro per maand).',
+    'Een waterontharder kost 500-2.000 euro aanschaf plus 150-300 euro per jaar aan zout en onderhoud. Vergelijking van TCO over 5 en 10 jaar versus huren (15-35.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/kosten' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Waterontharder kosten: aanschaf, zout en totale eigendomskosten',
   description:
-    'Volledig kostenoverzicht voor waterontharders: aanschaf 500-2.000 euro, jaarlijkse kosten 150-300 euro, TCO-vergelijking over 5 en 10 jaar, besparingen en huren versus kopen.',
+    'Volledig kostenoverzicht voor waterontharders: aanschaf 500-2.000 euro, jaarlijkse kosten 150-300 euro, TCO-vergelijking over 5 en 10 jaar, besparingen en.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterontharder/kosten',

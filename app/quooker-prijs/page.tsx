@@ -8,12 +8,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Quooker prijs 2026: wat kost een Quooker inclusief installatie en onderhoud?',
     description:
-      'Quooker prijs overzicht: van PRO3 (€849) tot FUSION SQUARE CUBE (€2.299). Plus installatiekosten, jaarlijks onderhoud en vergelijking met goedkopere alternatieven.',
+      'Quooker prijs overzicht: van PRO3 (€849) tot FUSION SQUARE CUBE (€2.299). Plus installatiekosten, jaarlijks onderhoud en vergelijking met goedkopere.',
     alternates: { canonical: 'https://waterfilterplatform.nl/quooker-prijs' },
     openGraph: {
       title: 'Quooker prijs 2026: wat kost een Quooker inclusief installatie en onderhoud?',
       description:
-        'Quooker prijs overzicht: van PRO3 (€849) tot FUSION SQUARE CUBE (€2.299). Plus installatiekosten, jaarlijks onderhoud en vergelijking met goedkopere alternatieven.',
+        'Quooker prijs overzicht: van PRO3 (€849) tot FUSION SQUARE CUBE (€2.299). Plus installatiekosten, jaarlijks onderhoud en vergelijking met goedkopere.',
       url: 'https://waterfilterplatform.nl/quooker-prijs',
       type: 'article',
       locale: 'nl_NL',
@@ -156,7 +156,7 @@ export default function QuookerPrijsPage() {
         article={{
           title: 'Quooker prijs 2026: wat kost een Quooker inclusief installatie en onderhoud?',
           description:
-            'Quooker prijs overzicht: van PRO3 (€849) tot FUSION SQUARE CUBE (€2.299). Plus installatiekosten, jaarlijks onderhoud en vergelijking met goedkopere alternatieven.',
+            'Quooker prijs overzicht: van PRO3 (€849) tot FUSION SQUARE CUBE (€2.299). Plus installatiekosten, jaarlijks onderhoud en vergelijking met goedkopere.',
           datePublished: '2026-03-15',
           url: 'https://waterfilterplatform.nl/quooker-prijs',
         }}

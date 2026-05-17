@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Onderhoud omgekeerde osmose: filtervervanging, reiniging en schema',
   description:
-    'Een omgekeerde osmosefilter heeft jaarlijks onderhoud nodig: sediment- en koolstoffilters elk jaar vervangen, RO-membraan elke 2-3 jaar. Onderhoudsschema, kosten en tips voor maximale levensduur.',
+    'Een omgekeerde osmosefilter heeft jaarlijks onderhoud nodig: sediment- en koolstoffilters elk jaar vervangen, RO-membraan elke 2-3 jaar.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/onderhoud' },
 };
 

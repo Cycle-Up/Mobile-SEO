@@ -6,11 +6,11 @@ import { CTABanner } from "@/components/CTABanner";
 
 export const metadata: Metadata = {
   title: "Ultrafiltratie (UF) waterfilter: 0,01 micron, hollow fiber en toepassingen",
-  description: "Ultrafiltratie filtert op 0,01 micron: verwijdert bacterien, virussen, protozoa en microplastics. Geen chemicalien, geen zouten. Verschil met osmose en nanofiltration.",
+  description: "Ultrafiltratie filtert op 0,01 micron: verwijdert bacterien, virussen, protozoa en microplastics. Geen chemicalien, geen zouten. Verschil met osmose en.",
   alternates: { canonical: "https://waterfilterplatform.nl/filtertechnieken/ultrafiltratie" },
   openGraph: {
     title: "Ultrafiltratie (UF) waterfilter: 0,01 micron, hollow fiber en toepassingen",
-    description: "Ultrafiltratie filtert op 0,01 micron: verwijdert bacterien, virussen, protozoa en microplastics. Geen chemicalien, geen zouten. Verschil met osmose en nanofiltration.",
+    description: "Ultrafiltratie filtert op 0,01 micron: verwijdert bacterien, virussen, protozoa en microplastics. Geen chemicalien, geen zouten. Verschil met osmose en.",
     type: "article",
   },
 };
@@ -61,7 +61,7 @@ const faqItems = [
 const articleSchema = {
   "@type": "Article",
   headline: "Ultrafiltratie (UF) waterfilter: 0,01 micron, hollow fiber en toepassingen",
-  description: "Ultrafiltratie filtert op 0,01 micron: verwijdert bacterien, virussen, protozoa en microplastics. Geen chemicalien, geen zouten. Verschil met osmose en nanofiltration.",
+  description: "Ultrafiltratie filtert op 0,01 micron: verwijdert bacterien, virussen, protozoa en microplastics. Geen chemicalien, geen zouten. Verschil met osmose en.",
   datePublished: "2026-05-17",
   dateModified: "2026-05-17",
   url: "https://waterfilterplatform.nl/filtertechnieken/ultrafiltratie",

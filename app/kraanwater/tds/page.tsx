@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'TDS in kraanwater meten: wat betekent TDS en wanneer is het te hoog?',
   description:
-    'TDS (Total Dissolved Solids) meet alle opgeloste stoffen in water in mg/L. Nederlands kraanwater heeft TDS 100-600 mg/L. Een TDS-meter kost 10-25 euro. Leer TDS meten, interpreteren en verlagen.',
+    'TDS (Total Dissolved Solids) meet alle opgeloste stoffen in water in mg/L. Nederlands kraanwater heeft TDS 100-600 mg/L. Een TDS-meter kost 10-25 euro.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kraanwater/tds' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'TDS in kraanwater meten: wat betekent TDS en wanneer is het te hoog?',
   description:
-    'TDS (Total Dissolved Solids) meet alle opgeloste stoffen in water in mg/L. Nederlands kraanwater heeft TDS 100-600 mg/L. Leer TDS meten, interpreteren en verlagen met een osmosefilter.',
+    'TDS (Total Dissolved Solids) meet alle opgeloste stoffen in water in mg/L. Nederlands kraanwater heeft TDS 100-600 mg/L. Leer TDS meten, interpreteren en.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kraanwater/tds',

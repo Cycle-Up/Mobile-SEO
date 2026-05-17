@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kraanwater kwaliteit in de zomer: hittegolven, algen en drinkwater',
   description:
-    'In de zomer kan kraanwater anders smaken door hogere temperaturen, blauwalgen in waterbronnen en verhoogd chloorgebruik. Leer wanneer kraanwater veilig is en hoe u de kwaliteit bewaart.',
+    'In de zomer kan kraanwater anders smaken door hogere temperaturen, blauwalgen in waterbronnen en verhoogd chloorgebruik. Leer wanneer kraanwater veilig is en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kraanwater/zomer' },
 };
 
@@ -77,7 +77,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Kraanwater kwaliteit in de zomer: hittegolven, algen en drinkwater',
   description:
-    'In de zomer kan kraanwater anders smaken door hogere temperaturen, blauwalgen in waterbronnen en verhoogd chloorgebruik. Leer wanneer kraanwater veilig is en hoe u de kwaliteit bewaart.',
+    'In de zomer kan kraanwater anders smaken door hogere temperaturen, blauwalgen in waterbronnen en verhoogd chloorgebruik. Leer wanneer kraanwater veilig is en.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kraanwater/zomer',

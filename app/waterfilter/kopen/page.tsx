@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter Kopen 2026: Eerlijke Koopgids',
   description:
-    'Waterfilter kopen in 2026? Onze eerlijke koopgids helpt je stap voor stap: waterkwaliteit beoordelen, filtertype kiezen, budget bepalen en installeren. Inclusief vergelijkingstabel en veelgemaakte fouten.',
+    'Waterfilter kopen in 2026? Onze eerlijke koopgids helpt je stap voor stap: waterkwaliteit beoordelen, filtertype kiezen, budget bepalen en installeren.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/kopen' },
   openGraph: {
     title: 'Waterfilter Kopen 2026: Eerlijke Koopgids',
     description:
-      'Stap-voor-stap koopgids voor waterfilters: waterkwaliteit beoordelen, filtertype vergelijken op prijs en prestatie, installatie en veelgemaakte fouten vermijden.',
+      'Stap-voor-stap koopgids voor waterfilters: waterkwaliteit beoordelen, filtertype vergelijken op prijs en prestatie, installatie en veelgemaakte fouten.',
     url: 'https://waterfilterplatform.nl/waterfilter/kopen',
     type: 'article',
   },

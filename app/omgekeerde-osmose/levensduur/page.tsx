@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosefilter levensduur: hoe lang gaat een RO-membraan mee?',
   description:
-    'Een RO-membraan gaat gemiddeld 2-5 jaar mee. Voorfilters jaarlijks vervangen. Post-koolfilter elke 6-12 maanden. Levensduur is afhankelijk van waterhardheid, dagelijks debiet en onderhoud.',
+    'Een RO-membraan gaat gemiddeld 2-5 jaar mee. Voorfilters jaarlijks vervangen. Post-koolfilter elke 6-12 maanden. Levensduur is afhankelijk van waterhardheid.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/levensduur' },
 };
 

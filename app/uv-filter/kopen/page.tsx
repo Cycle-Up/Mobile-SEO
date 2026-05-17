@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'UV waterfilter kopen: beste modellen en koopgids 2026',
   description:
-    'UV waterfilter kopen in Nederland: vergelijking van instap-, midden- en professionele modellen op debiet, UV-dosis, lampvermogen, NSF 55 certificering en jaarkosten.',
+    'UV waterfilter kopen in Nederland: vergelijking van instap-, midden- en professionele modellen op debiet, UV-dosis, lampvermogen, NSF 55 certificering en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/uv-filter/kopen' },
   openGraph: {
     title: 'UV waterfilter kopen: beste modellen en koopgids 2026',

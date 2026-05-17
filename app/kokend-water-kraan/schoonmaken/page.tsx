@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kokend water kraan schoonmaken: ontkalken, sproeikop en boiler reinigen',
   description:
-    'Een kokend water kraan schoonmaak je maandelijks aan de buitenkant en ontkalkt de sproeikop elk kwartaal. De boiler saneer je jaarlijks met citroenzuur. Stap-voor-stap reinigingsschema.',
+    'Een kokend water kraan schoonmaak je maandelijks aan de buitenkant en ontkalkt de sproeikop elk kwartaal. De boiler saneer je jaarlijks met citroenzuur.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/schoonmaken' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Kokend water kraan schoonmaken: ontkalken, sproeikop en boiler reinigen',
   description:
-    'Een kokend water kraan schoonmaak je maandelijks aan de buitenkant en ontkalkt de sproeikop elk kwartaal. De boiler saneer je jaarlijks met citroenzuur. Stap-voor-stap reinigingsschema.',
+    'Een kokend water kraan schoonmaak je maandelijks aan de buitenkant en ontkalkt de sproeikop elk kwartaal. De boiler saneer je jaarlijks met citroenzuur.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kokend-water-kraan/schoonmaken',

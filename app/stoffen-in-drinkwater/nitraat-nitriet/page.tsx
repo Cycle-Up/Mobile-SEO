@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Nitraat en nitriet in drinkwater -- norm, risicos en filteren | WaterfilterPlatform',
   description:
-    'Nitraat in drinkwater: EU-norm 50 mg/L, speciaal voor babies en zwangeren 25 mg/L. Nitriet max 0,5 mg/L. Osmose verwijdert 85-95%. Actief kool werkt NIET voor nitraat.',
+    'Nitraat in drinkwater: EU-norm 50 mg/L, speciaal voor babies en zwangeren 25 mg/L. Nitriet max 0,5 mg/L. Osmose verwijdert 85-95%. Actief kool werkt NIET.',
   alternates: { canonical: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/nitraat-nitriet' },
 };
 
@@ -16,7 +16,7 @@ export default function NiraatNitrietPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'Nitraat en nitriet in drinkwater -- norm, risicos en filteren',
-        description: 'Nitraat in drinkwater: EU-norm 50 mg/L, speciaal voor babies en zwangeren 25 mg/L. Nitriet max 0,5 mg/L. Osmose verwijdert 85-95%. Actief kool werkt NIET voor nitraat.',
+        description: 'Nitraat in drinkwater: EU-norm 50 mg/L, speciaal voor babies en zwangeren 25 mg/L. Nitriet max 0,5 mg/L. Osmose verwijdert 85-95%. Actief kool werkt NIET.',
         datePublished: '2026-01-01',
         url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/nitraat-nitriet',
       }} />

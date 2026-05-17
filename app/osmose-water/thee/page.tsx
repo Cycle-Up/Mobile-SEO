@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Osmose water voor thee: betere smaak door zuiver water?',
   description:
-    'Osmose water voor thee: waarom waterkwaliteit de smaak bepaalt. Het theeschuim probleem, ideale TDS voor thee, invloed van chloor en wanneer remineralisatie helpt.',
+    'Osmose water voor thee: waarom waterkwaliteit de smaak bepaalt. Het theeschuim probleem, ideale TDS voor thee, invloed van chloor en wanneer remineralisatie.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/thee' },
   openGraph: {
     title: 'Osmose water voor thee: betere smaak door zuiver water?',
     description:
-      'Chloor ruïneert delicate thee. Hard water veroorzaakt theeschuim. Osmose water geeft een heldere, nuancevolle kop thee. Lees waarom en wat de ideale TDS is voor elke theesoort.',
+      'Chloor ruïneert delicate thee. Hard water veroorzaakt theeschuim. Osmose water geeft een heldere, nuancevolle kop thee. Lees waarom en wat de ideale TDS is.',
     url: 'https://waterfilterplatform.nl/osmose-water/thee',
     type: 'article',
   },

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterdruk voor omgekeerde osmose: minimum, meten en drukverhoger',
   description:
-    'Een omgekeerde osmose filter heeft minimaal 2,8 bar waterdruk nodig voor goede werking. Bij lagere druk is de capaciteit te laag en het afvalwaterpercentage te hoog. Lees hoe u uw waterdruk meet en wanneer een drukverhoger nodig is.',
+    'Een omgekeerde osmose filter heeft minimaal 2,8 bar waterdruk nodig voor goede werking. Bij lagere druk is de capaciteit te laag en het afvalwaterpercentage.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/druk' },
 };
 
@@ -76,7 +76,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Waterdruk voor omgekeerde osmose: minimum, meten en drukverhoger',
   description:
-    'Een omgekeerde osmose filter heeft minimaal 2,8 bar waterdruk nodig. Bij lagere druk daalt de capaciteit en stijgt het afvalwaterpercentage. Compleet overzicht van druk meten, drukverhoger en tankdruk.',
+    'Een omgekeerde osmose filter heeft minimaal 2,8 bar waterdruk nodig. Bij lagere druk daalt de capaciteit en stijgt het afvalwaterpercentage.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/omgekeerde-osmose/druk',

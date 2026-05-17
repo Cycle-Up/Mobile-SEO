@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Sedimentfilter: wanneer nodig, micron klasse en als voorfilter',
   description:
-    'Een sedimentfilter verwijdert zand, slib, roest en zwevende deeltjes uit water. Micronklassen: 1, 5, 10, 25 en 50 micron. Verplicht als voorfilter voor osmosefilters en UV-systemen.',
+    'Een sedimentfilter verwijdert zand, slib, roest en zwevende deeltjes uit water. Micronklassen: 1, 5, 10, 25 en 50 micron. Verplicht als voorfilter voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/sediment' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Sedimentfilter: wanneer nodig, micron klasse en als voorfilter',
   description:
-    'Een sedimentfilter verwijdert zand, slib, roest en zwevende deeltjes uit water. Micronklassen: 1, 5, 10, 25 en 50 micron. Verplicht als voorfilter voor osmosefilters en UV-systemen.',
+    'Een sedimentfilter verwijdert zand, slib, roest en zwevende deeltjes uit water. Micronklassen: 1, 5, 10, 25 en 50 micron. Verplicht als voorfilter voor.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/sediment',

@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterontharder Kopen 2026: Complete Gids',
   description:
-    'Waterontharder kopen? Vergelijk ionenwisselaar, zoutloze TAC en kali-zout systemen. Leer op welke criteria je let: capaciteit, regeneratie, installatiekosten en total cost of ownership.',
+    'Waterontharder kopen? Vergelijk ionenwisselaar, zoutloze TAC en kali-zout systemen. Leer op welke criteria je let: capaciteit, regeneratie, installatiekosten.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/kopen' },
   openGraph: {
     title: 'Waterontharder Kopen 2026: Complete Gids',

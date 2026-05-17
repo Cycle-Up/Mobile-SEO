@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter voor aquarium: osmose voor zoet- en zoutwater | 2026',
   description:
-    'Omgekeerde osmose voor aquarium: hoe je GH/KH instelt voor zoetwatervissen, zoutwater aanmaakt, kosten vergelijkt met kraanwater en welke RO-systemen geschikt zijn.',
+    'Omgekeerde osmose voor aquarium: hoe je GH/KH instelt voor zoetwatervissen, zoutwater aanmaakt, kosten vergelijkt met kraanwater en welke RO-systemen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/voor-aquarium' },
   openGraph: {
     title: 'Waterfilter voor aquarium: osmose voor zoet- en zoutwater',

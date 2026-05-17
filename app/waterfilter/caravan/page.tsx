@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterfilter voor caravan en camper: schoon drinkwater onderweg',
   description:
-    'Een waterfilter voor caravan of camper verwijdert chloor, bacterien en smaakafwijkingen uit kampeerwater. Vergelijking van inline filters, UV-purifiers en draagbare osmosefilters.',
+    'Een waterfilter voor caravan of camper verwijdert chloor, bacterien en smaakafwijkingen uit kampeerwater. Vergelijking van inline filters, UV-purifiers en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/caravan' },
 };
 

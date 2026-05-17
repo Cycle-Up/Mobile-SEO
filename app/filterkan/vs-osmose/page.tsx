@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Filterkan vs osmose filter: wat zijn de echte verschillen? Vergelijking 2026',
   description:
-    'Filterkan of osmose filter? Vergelijking op filterwerkzaamheid, kosten, installatie en gebruik. Voor wie volstaat een filterkan en wanneer heb je osmose nodig?',
+    'Filterkan of osmose filter? Vergelijking op filterwerkzaamheid, kosten, installatie en gebruik. Voor wie volstaat een filterkan en wanneer heb je osmose.',
   alternates: { canonical: 'https://waterfilterplatform.nl/filterkan/vs-osmose' },
   openGraph: {
     title: 'Filterkan vs osmose filter: wat zijn de echte verschillen? Vergelijking 2026',
@@ -115,7 +115,7 @@ export default function FilterkanVsOsmosePage() {
         article={{
           title: 'Filterkan vs osmose filter: wat zijn de echte verschillen? Vergelijking 2026',
           description:
-            'Filterkan of osmose filter? Vergelijking op filterwerkzaamheid, kosten, installatie en gebruik. Voor wie volstaat een filterkan en wanneer heb je osmose nodig?',
+            'Filterkan of osmose filter? Vergelijking op filterwerkzaamheid, kosten, installatie en gebruik. Voor wie volstaat een filterkan en wanneer heb je osmose.',
           datePublished: '2026-02-20',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/filterkan/vs-osmose',

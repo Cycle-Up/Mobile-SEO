@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Uranium in drinkwater: WHO-norm, NL hotspots en waterfilter',
   description:
-    'Uranium in grondwater komt voor in delen van Brabant en de Achterhoek door geologische bodemlagen. WHO-richtwaarde 30 ug/L. Osmosefilter verwijdert 95-99% uranium. EU-norm volgt 2026.',
+    'Uranium in grondwater komt voor in delen van Brabant en de Achterhoek door geologische bodemlagen. WHO-richtwaarde 30 ug/L. Osmosefilter verwijdert 95-99%.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/uranium' },
 };
 

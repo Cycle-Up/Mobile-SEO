@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Zakelijke waterontharder: voor bedrijven, kantoren en industrie',
-  description: 'Een zakelijke waterontharder beschermt industriele apparatuur, verwarmingssystemen en leidingwerk tegen kalkaanslag. Vergelijking van zakelijke ontharders voor bedrijven.',
+  description: 'Een zakelijke waterontharder beschermt industriele apparatuur, verwarmingssystemen en leidingwerk tegen kalkaanslag. Vergelijking van zakelijke ontharders.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/zakelijk' },
 };
 

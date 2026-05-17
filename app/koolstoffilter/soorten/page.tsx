@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Soorten koolstoffilters: GAC, blokfilter, inline en meer',
   description:
-    'Overzicht van alle soorten koolstoffilters: GAC (granulair), koolstofblok (CTO), inline carbon, activated carbon string en keramisch+kool. Vergelijkingstabel met poriegroottes, verwijderingscapaciteit en toepassingen.',
+    'Overzicht van alle soorten koolstoffilters: GAC (granulair), koolstofblok (CTO), inline carbon, activated carbon string en keramisch+kool.',
   alternates: { canonical: 'https://waterfilterplatform.nl/koolstoffilter/soorten' },
   openGraph: {
     title: 'Soorten koolstoffilters: GAC, blokfilter, inline en meer',
     description:
-      'Alle 5 types koolstoffilters vergeleken: GAC, CTO-blokfilter, inline carbon, snaarfilter en keramisch+kool. Met vergelijkingstabel, toepassingsmatrix en kooptips.',
+      'Alle 5 types koolstoffilters vergeleken: GAC, CTO-blokfilter, inline carbon, snaarfilter en keramisch+kool. Met vergelijkingstabel, toepassingsmatrix en.',
     url: 'https://waterfilterplatform.nl/koolstoffilter/soorten',
     type: 'article',
   },
@@ -197,7 +197,7 @@ export default function SoortenKoolstoffiltersPage() {
         article={{
           title: 'Soorten koolstoffilters: GAC, blokfilter, inline en meer',
           description:
-            'Alle 5 types koolstoffilters vergeleken: GAC, CTO-blokfilter, inline carbon, snaarfilter en keramisch+kool. Met vergelijkingstabel, toepassingsmatrix en kooptips.',
+            'Alle 5 types koolstoffilters vergeleken: GAC, CTO-blokfilter, inline carbon, snaarfilter en keramisch+kool. Met vergelijkingstabel, toepassingsmatrix en.',
           datePublished: '2026-02-25',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/koolstoffilter/soorten',

@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'CE-markering waterfilters — wat garandeert het wel en niet? | WaterfilterPlatform',
-  description: 'CE-markering betekent dat een waterfilter veilig op de EU-markt mag worden gebracht, maar garandeert geen filterprestaties. Verschil met NSF en Kiwa uitgelegd voor consumenten.',
+  title: 'CE-markering waterfilters — wat garandeert het wel en niet?',
+  description: 'CE-markering betekent dat een waterfilter veilig op de EU-markt mag worden gebracht, maar garandeert geen filterprestaties. Verschil met NSF en Kiwa.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keurmerken/ce-markering' },
 };
 
@@ -15,7 +15,7 @@ export default function CeMarkPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'CE-markering waterfilters — wat garandeert het wel en niet?',
-        description: 'CE-markering betekent dat een waterfilter veilig op de EU-markt mag worden gebracht, maar garandeert geen filterprestaties. Verschil met NSF en Kiwa uitgelegd voor consumenten.',
+        description: 'CE-markering betekent dat een waterfilter veilig op de EU-markt mag worden gebracht, maar garandeert geen filterprestaties. Verschil met NSF en Kiwa.',
         datePublished: '2026-05-17',
         url: 'https://waterfilterplatform.nl/keurmerken/ce-markering',
       }} />

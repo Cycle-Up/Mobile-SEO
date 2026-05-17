@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Hoe Werkt een Osmose Filter? Complete Uitleg',
   description:
-    'Complete uitleg over hoe een osmosefilter werkt: het osmoseprincipe, semi-permeabel membraan (0,0001 micron), meerfasige filtratie, TDS-rejectie en afvalwater.',
+    'Complete uitleg over hoe een osmosefilter werkt: het osmoseprincipe, semi-permeabel membraan (0,0001 micron), meerfasige filtratie, TDS-rejectie en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/werking' },
   openGraph: {
     title: 'Hoe Werkt een Osmose Filter? Complete Uitleg',
     description:
-      'Van osmoseprincipe tot membraantechnologie: leer hoe een omgekeerde osmosefilter 95–99% van verontreinigingen verwijdert via een semi-permeabel membraan van 0,0001 micron.',
+      'Van osmoseprincipe tot membraantechnologie: leer hoe een omgekeerde osmosefilter 95–99% van verontreinigingen verwijdert via een semi-permeabel membraan van.',
     url: 'https://waterfilterplatform.nl/osmose-filter/werking',
     type: 'article',
   },

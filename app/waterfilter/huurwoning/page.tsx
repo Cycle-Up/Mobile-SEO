@@ -5,7 +5,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor huurwoning: installeren zonder boren (2026)',
-  description: 'Waterfilter plaatsen in een huurwoning zonder toestemming? Vergelijk 4 opties die geen permanente installatie vereisen: filterkan, counter-top osmose, tafelmodel en clip-on filter.',
+  description: 'Waterfilter plaatsen in een huurwoning zonder toestemming? Vergelijk 4 opties die geen permanente installatie vereisen: filterkan, counter-top osmose.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/huurwoning' },
 };
 

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Silica in leidingwater: glasaanslag, normen en waterfilter',
   description:
-    'Silica (opgelost kiezelzuur) in leidingwater veroorzaakt witte glasaanslag die moeilijk te verwijderen is. Concentraties in NL: 5-30 mg/L. Omgekeerde osmose verwijdert 85-95% silica.',
+    'Silica (opgelost kiezelzuur) in leidingwater veroorzaakt witte glasaanslag die moeilijk te verwijderen is. Concentraties in NL: 5-30 mg/L.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/silica' },
 };
 

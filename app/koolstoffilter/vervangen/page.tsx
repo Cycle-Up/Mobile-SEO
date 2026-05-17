@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Koolstoffilter vervangen: wanneer en hoe? (Handleiding 2026)',
   description:
-    'Wanneer en hoe vervangt u een koolstoffilter? Vervangingsintervallen per type (GAC, blokfilter, onderbouw), signalen dat het filter op is, stap-voor-stap handleiding, kosten en risico\'s van niet vervangen.',
+    'Wanneer en hoe vervangt u een koolstoffilter? Vervangingsintervallen per type (GAC, blokfilter, onderbouw), signalen dat het filter op is en risicos.',
   alternates: { canonical: 'https://waterfilterplatform.nl/koolstoffilter/vervangen' },
   openGraph: {
     title: 'Koolstoffilter vervangen: wanneer en hoe? (Handleiding 2026)',

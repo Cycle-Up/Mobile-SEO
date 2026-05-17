@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Leidingwater kwaliteit Nederland: wat zit er in uw kraanwater?',
   description:
-    'Alles over de kwaliteit van leidingwater in Nederland: het Drinkwaterbesluit 2011, EU-Drinkwaterrichtlijn 2020/2184, meer dan 60 gemeten parameters, regionale hardheidsverschillen en wanneer een waterfilter zinvol is.',
+    'Alles over de kwaliteit van leidingwater in Nederland: het Drinkwaterbesluit 2011, EU-Drinkwaterrichtlijn 2020/2184, meer dan 60 gemeten parameters.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/kwaliteit' },
   openGraph: {
     title: 'Leidingwater kwaliteit Nederland: wat zit er in uw kraanwater?',

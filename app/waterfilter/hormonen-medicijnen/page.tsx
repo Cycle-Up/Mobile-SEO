@@ -67,7 +67,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Hormonen en medicijnen in drinkwater: risico's en oplossingen",
   description:
-    'Hormonen, antibiotica en pijnstillers worden aangetroffen in Nederlands drinkwater. Ontdek de risicos van medicijnenresten en welk waterfilter ze effectief verwijdert.',
+    'Hormonen, antibiotica en pijnstillers worden aangetroffen in Nederlands drinkwater. Ontdek de risicos van medicijnenresten en welk waterfilter ze effectief.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/hormonen-medicijnen',

@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Bacteriën in drinkwater: risico\'s en hoe te verwijderen',
-  description: 'Bacteriën in drinkwater: E.coli, Legionella, Campylobacter in Nederlands leidingwater. Welke filters verwijderen bacteriën, wanneer is water veilig en wanneer moet je handelen?',
+  description: 'Bacteriën in drinkwater: E.coli, Legionella, Campylobacter in Nederlands leidingwater. Welke filters verwijderen bacteriën, wanneer is water veilig en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwater/bacterien' },
 };
 
@@ -81,7 +81,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Bacteriën in drinkwater: risico\'s en hoe te verwijderen',
-  description: 'Bacteriën in drinkwater: E.coli, Legionella, Campylobacter in Nederlands leidingwater. Welke filters verwijderen bacteriën, wanneer is water veilig en wanneer moet je handelen?',
+  description: 'Bacteriën in drinkwater: E.coli, Legionella, Campylobacter in Nederlands leidingwater. Welke filters verwijderen bacteriën, wanneer is water veilig en.',
   datePublished: '2026-04-12',
   dateModified: '2026-04-12',
   url: 'https://waterfilterplatform.nl/drinkwater/bacterien',

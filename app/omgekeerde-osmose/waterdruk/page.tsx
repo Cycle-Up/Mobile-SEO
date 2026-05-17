@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterdruk voor osmosefilter: minimale en maximale druk uitgelegd',
-  description: 'Een osmosefilter heeft minimaal 2,8 bar waterdruk nodig. Te lage druk = trage productie. Ontdek hoe u de waterdruk meet, verhoogt en wat de optimale druk is voor uw osmosefilter.',
+  description: 'Een osmosefilter heeft minimaal 2,8 bar waterdruk nodig. Te lage druk = trage productie. Ontdek hoe u de waterdruk meet, verhoogt en wat de optimale druk is.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/waterdruk' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterdruk voor osmosefilter: minimale en maximale druk uitgelegd',
-  description: 'Een osmosefilter heeft minimaal 2,8 bar waterdruk nodig. Te lage druk = trage productie. Ontdek hoe u de waterdruk meet, verhoogt en wat de optimale druk is voor uw osmosefilter.',
+  description: 'Een osmosefilter heeft minimaal 2,8 bar waterdruk nodig. Te lage druk = trage productie. Ontdek hoe u de waterdruk meet, verhoogt en wat de optimale druk is.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/omgekeerde-osmose/waterdruk',

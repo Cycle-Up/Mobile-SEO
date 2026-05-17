@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater smaak verbeteren: pH, mineralen en remineralisatie',
   description:
-    'Osmosewater heeft een neutrale, soms vlakke smaak door lage mineralenstand. Remineralisatie met calciet en magnesiumoxide voegt smaak en lichaam toe. pH na CO2-absorptie ca 5,5; remineralisatie verhoogt naar 7,0-7,5.',
+    'Osmosewater heeft een neutrale, soms vlakke smaak door lage mineralenstand. Remineralisatie met calciet en magnesiumoxide voegt smaak en lichaam toe.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/smaak' },
 };
 

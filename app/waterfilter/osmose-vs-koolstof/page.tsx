@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmose vs koolstoffilter: wat is het verschil? (2026)',
   description:
-    'Omgekeerde osmose of koolstoffilter? Vergelijking op 15 criteria: welke stoffen worden verwijderd, kosten, waterverbruik, onderhoud en voor wie welk systeem de beste keuze is.',
+    'Omgekeerde osmose of koolstoffilter? Vergelijking op 15 criteria: welke stoffen worden verwijderd, kosten, waterverbruik, onderhoud en voor wie welk systeem.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/osmose-vs-koolstof' },
   openGraph: {
     title: 'Osmose vs koolstoffilter: wat is het verschil? (2026)',
@@ -119,7 +119,7 @@ export default function OsmoseVsKoolstofPage() {
         article={{
           title: 'Osmose vs koolstoffilter: wat is het verschil? (2026)',
           description:
-            'Omgekeerde osmose of koolstoffilter? Vergelijking op 15 criteria: welke stoffen worden verwijderd, kosten, waterverbruik, onderhoud en voor wie welk systeem de beste keuze is.',
+            'Omgekeerde osmose of koolstoffilter? Vergelijking op 15 criteria: welke stoffen worden verwijderd, kosten, waterverbruik, onderhoud en voor wie welk systeem.',
           datePublished: '2026-03-05',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/waterfilter/osmose-vs-koolstof',

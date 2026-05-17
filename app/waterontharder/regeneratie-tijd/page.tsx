@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Hoe lang duurt regeneratie waterontharder? Tijdgestuurde vs volumetrisch',
   description:
-    'Regeneratie van een waterontharder duurt 1-2 uur. Tijdgestuurde ontharders regenereren op vaste tijden; volumetrische systemen regenereren op basis van waterverbruik. Vergelijking en optimalisatie.',
+    'Regeneratie van een waterontharder duurt 1-2 uur. Tijdgestuurde ontharders regenereren op vaste tijden; volumetrische systemen regenereren op basis van.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/regeneratie-tijd' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Hoe lang duurt regeneratie waterontharder? Tijdgestuurde vs volumetrisch',
   description:
-    'Regeneratie van een waterontharder duurt 60-120 minuten en bestaat uit backwash, pekel inlaten, langzame en snelle spoeling. Volumetrische systemen besparen 20-30% zout ten opzichte van tijdgestuurde systemen.',
+    'Regeneratie van een waterontharder duurt 60-120 minuten en bestaat uit backwash, pekel inlaten, langzame en snelle spoeling. Volumetrische systemen besparen.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterontharder/regeneratie-tijd',

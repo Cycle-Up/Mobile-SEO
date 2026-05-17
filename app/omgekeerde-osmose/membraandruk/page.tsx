@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosefilter membraandruk: osmotische druk, scaling en temperatuur',
   description:
-    'Osmotische druk van leidingwater is 0,5-1 bar. Het RO-membraan heeft 4-7 bar nodig om dit te overwinnen. Temperatuurdaling van 10 graden halveert de waterdoorlaatbaarheid. Scaling vermindert rendement met 20-40%.',
+    'Osmotische druk van leidingwater is 0,5-1 bar. Het RO-membraan heeft 4-7 bar nodig om dit te overwinnen. Temperatuurdaling van 10 graden halveert de.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/membraandruk' },
 };
 
@@ -77,7 +77,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosefilter membraandruk: osmotische druk, scaling en temperatuur',
   description:
-    'Osmotische druk van leidingwater is 0,5-1 bar. Het RO-membraan heeft 4-7 bar nodig. Temperatuurdaling halveert de doorlaatbaarheid. Scaling vermindert rendement met 20-40%.',
+    'Osmotische druk van leidingwater is 0,5-1 bar. Het RO-membraan heeft 4-7 bar nodig. Temperatuurdaling halveert de doorlaatbaarheid.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/omgekeerde-osmose/membraandruk',

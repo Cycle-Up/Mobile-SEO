@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Drinkwater in Nederland: Kwaliteit & Veiligheid',
   description:
-    'Alles over drinkwater in Nederland: kwaliteit, samenstelling, regionale verschillen en wanneer een waterfilter toegevoegde waarde biedt. Met gemeente-overzicht.',
+    'Alles over drinkwater in Nederland: kwaliteit, samenstelling, regionale verschillen en wanneer een waterfilter toegevoegde waarde biedt.',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwater' },
   openGraph: {
     title: 'Drinkwater in Nederland: Kwaliteit & Veiligheid',

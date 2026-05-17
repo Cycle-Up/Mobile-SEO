@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: "Arseen in drinkwater: risico's, normen en het beste waterfilter",
   description:
-    'Arseen in drinkwater is kankerverwekkend bij chronische blootstelling. EU-norm 10 µg/L. In NL zelden een probleem, maar bij eigen bron of hotspot-gebieden is een osmosefilter noodzakelijk.',
+    'Arseen in drinkwater is kankerverwekkend bij chronische blootstelling. EU-norm 10 µg/L. In NL zelden een probleem, maar bij eigen bron of hotspot-gebieden is.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/arseen' },
 };
 

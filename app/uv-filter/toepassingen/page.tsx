@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'UV waterfilter toepassingen: woning, bron, vijver en meer',
   description:
-    'UV waterfilter toepassingen in Nederland: bronwater, putwater, regenwater, vakantiewoning, legionellapreventie, vijver en reizigers. Klasse A vs B en NL-regelgeving.',
+    'UV waterfilter toepassingen in Nederland: bronwater, putwater, regenwater, vakantiewoning, legionellapreventie, vijver en reizigers.',
   alternates: { canonical: 'https://waterfilterplatform.nl/uv-filter/toepassingen' },
   openGraph: {
     title: 'UV waterfilter toepassingen: woning, bron, vijver en meer',
     description:
-      'Alle toepassingen van UV-waterfilters uitgelegd: bronwater, regenwater, camping, vakantiewoningen, vijver, legionella en reizen. Met NL-regelgeving en systeemaanbevelingen.',
+      'Alle toepassingen van UV-waterfilters uitgelegd: bronwater, regenwater, camping, vakantiewoningen, vijver, legionella en reizen. Met NL-regelgeving en.',
     url: 'https://waterfilterplatform.nl/uv-filter/toepassingen',
     type: 'article',
   },
@@ -183,7 +183,7 @@ export default function UvFilterToepassingenPage() {
         article={{
           title: 'UV waterfilter toepassingen: woning, bron, vijver en meer',
           description:
-            'UV waterfilter toepassingen in Nederland: bronwater, putwater, regenwater, vakantiewoning, legionellapreventie, vijver en reizigers. Klasse A vs B en NL-regelgeving.',
+            'UV waterfilter toepassingen in Nederland: bronwater, putwater, regenwater, vakantiewoning, legionellapreventie, vijver en reizigers.',
           datePublished: '2026-03-10',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/uv-filter/toepassingen',

@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor studentenkamer: compact en betaalbaar gefilterd water',
-  description: 'Op een studentenkamer past een filterkan of compact tafelmodel osmosefilter perfect. Vergelijking van kleine waterfilters voor studenten op prijs, ruimte en filterkwaliteit.',
+  description: 'Op een studentenkamer past een filterkan of compact tafelmodel osmosefilter perfect. Vergelijking van kleine waterfilters voor studenten op prijs, ruimte en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/studentenkamer' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterfilter voor studentenkamer: compact en betaalbaar gefilterd water',
-  description: 'Op een studentenkamer past een filterkan of compact tafelmodel osmosefilter perfect. Vergelijking van kleine waterfilters voor studenten op prijs, ruimte en filterkwaliteit.',
+  description: 'Op een studentenkamer past een filterkan of compact tafelmodel osmosefilter perfect. Vergelijking van kleine waterfilters voor studenten op prijs, ruimte en.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/studentenkamer',

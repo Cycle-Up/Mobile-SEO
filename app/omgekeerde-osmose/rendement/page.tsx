@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosefilter rendement: afvalwater verhouding en efficiëntie verbeteren',
   description:
-    'Een standaard osmosefilter produceert 1 liter drinkwater op 3-4 liter afvalwater (25% rendement). Permeaatpomp en tankless systemen verbeteren dit tot 1:1. Uitleg en optimalisatie.',
+    'Een standaard osmosefilter produceert 1 liter drinkwater op 3-4 liter afvalwater (25% rendement). Permeaatpomp en tankless systemen verbeteren dit tot 1:1.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/rendement' },
 };
 

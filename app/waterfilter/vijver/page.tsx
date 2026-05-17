@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Vijverfilter: de beste waterfilters voor tuin- en vijverwater',
-  description: 'Een vijverfilter houdt het water helder, verwijdert ammoniak en nitriet, en beschermt vissen. Vergelijking van vijverfilters op pompcapaciteit, filtermedium en prijs.',
+  description: 'Een vijverfilter houdt het water helder, verwijdert ammoniak en nitriet, en beschermt vissen. Vergelijking van vijverfilters op pompcapaciteit, filtermedium.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/vijver' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Vijverfilter: de beste waterfilters voor tuin- en vijverwater',
-  description: 'Een vijverfilter houdt het water helder, verwijdert ammoniak en nitriet, en beschermt vissen. Vergelijking van vijverfilters op pompcapaciteit, filtermedium en prijs.',
+  description: 'Een vijverfilter houdt het water helder, verwijdert ammoniak en nitriet, en beschermt vissen. Vergelijking van vijverfilters op pompcapaciteit, filtermedium.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/vijver',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Filterkan vs kraanfilter: welke is beter voor uw situatie?',
   description:
-    'Filterkan of kraanfilter? Een filterkan kost 15-50 euro, een kraanfilter 25-80 euro. Vergelijking van filterprestaties, kosten, gebruiksgemak en wanneer elk type de beste keuze is.',
+    'Filterkan of kraanfilter? Een filterkan kost 15-50 euro, een kraanfilter 25-80 euro. Vergelijking van filterprestaties, kosten, gebruiksgemak en wanneer elk.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/kan-vs-kraan' },
 };
 

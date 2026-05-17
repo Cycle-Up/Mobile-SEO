@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Wat is een waterontkalker? Werking, types en verschil met waterontharder',
   description:
-    'Alles over waterontkalkers: elektronisch, magnetisch of zoutvrij. Verschil met waterontharder, effectiviteit, kosten en wanneer je welke kiest voor kalkproblemen.',
+    'Alles over waterontkalkers: elektronisch, magnetisch of zoutvrij. Verschil met waterontharder, effectiviteit, kosten en wanneer je welke kiest voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontkalker' },
   openGraph: {
     title: 'Waterontkalker — werking, types en verschil met waterontharder',
@@ -135,7 +135,7 @@ export default function WaterOntkalkerPage() {
         article={{
           title: 'Wat is een waterontkalker? Werking, types en verschil met waterontharder',
           description:
-            'Alles over waterontkalkers: elektronisch, magnetisch of zoutvrij. Verschil met waterontharder, effectiviteit, kosten en wanneer je welke kiest voor kalkproblemen.',
+            'Alles over waterontkalkers: elektronisch, magnetisch of zoutvrij. Verschil met waterontharder, effectiviteit, kosten en wanneer je welke kiest voor.',
           datePublished: '2025-09-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/waterontkalker',

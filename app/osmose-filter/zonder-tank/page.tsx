@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosefilter zonder tank: tankless RO-systemen voor direct water',
   description:
-    'Een osmosefilter zonder tank (tankless RO) levert direct gefilterd water zonder opslagtank. Sneller, compacter, geen bacteriegroei in tank. Vergelijking tankless vs tank-systemen.',
+    'Een osmosefilter zonder tank (tankless RO) levert direct gefilterd water zonder opslagtank. Sneller, compacter, geen bacteriegroei in tank.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/zonder-tank' },
 };
 

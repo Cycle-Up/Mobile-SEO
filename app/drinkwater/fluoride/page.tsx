@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Fluoride in drinkwater filteren: osmose vs andere methoden',
-  description: 'Fluoride in drinkwater filteren: Nederland voegt geen fluoride toe (gestopt 1973). Actuele niveaus 0,1–0,3 mg/L. Osmose verwijdert 95–99%; actief kool werkt NIET. Alles over fluoride en waterfilters.',
+  description: 'Fluoride in drinkwater filteren: Nederland voegt geen fluoride toe (gestopt 1973). Actuele niveaus 0,1–0,3 mg/L. Osmose verwijdert 95–99%; actief kool werkt.',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwater/fluoride' },
 };
 
@@ -81,7 +81,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Fluoride in drinkwater filteren: osmose vs andere methoden',
-  description: 'Fluoride in drinkwater filteren in Nederland: NL voegt geen fluoride toe (gestopt 1973). Osmose verwijdert 95–99%; actief kool werkt niet. Complete vergelijking van methoden.',
+  description: 'Fluoride in drinkwater filteren in Nederland: NL voegt geen fluoride toe (gestopt 1973). Osmose verwijdert 95–99%; actief kool werkt niet.',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',
   url: 'https://waterfilterplatform.nl/drinkwater/fluoride',

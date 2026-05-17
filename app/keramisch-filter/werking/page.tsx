@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Hoe werkt een keramisch waterfilter? Poriënstructuur en bacteriefiltatie',
   description:
-    'Alles over de werking van keramische waterfilters: poriënstructuur (0,2–0,9 µm), dieptefiltration, zilverimpregnatie, wat het wel en niet verwijdert, regeneratie en vergelijking met UV en osmose.',
+    'Alles over de werking van keramische waterfilters: poriënstructuur (0,2–0,9 µm), dieptefiltration, zilverimpregnatie, wat het wel en niet verwijdert.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keramisch-filter/werking' },
   openGraph: {
     title: 'Hoe werkt een keramisch waterfilter? Poriënstructuur en bacteriefiltatie',

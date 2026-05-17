@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Drinkwaterfontein voor kantoor: kosten, types en regelgeving',
-  description: 'Een drinkwaterfontein op kantoor is verplicht bij 10+ medewerkers (Arbowet). Vergelijking van kantoorwaterfonteinen: huren vs kopen, kosten per medewerker en de beste keuze.',
+  description: 'Een drinkwaterfontein op kantoor is verplicht bij 10+ medewerkers (Arbowet). Vergelijking van kantoorwaterfonteinen: huren vs kopen, kosten per medewerker en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/kantoor' },
 };
 

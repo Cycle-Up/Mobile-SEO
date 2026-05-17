@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kokend water kraan veiligheid: beveiliging, kinderen en normen',
   description:
-    'Een kokend water kraan is veilig als hij voldoet aan EN 61770 en NEN 1006. Kinderbeveiliging (dubbelklik of knijpen+draaien), thermisch isolerende uitloop en automatische afschakeling zijn standaard op kwalitatieve modellen.',
+    'Een kokend water kraan is veilig als hij voldoet aan EN 61770 en NEN 1006. Kinderbeveiliging (dubbelklik of knijpen+draaien), thermisch isolerende uitloop en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/veiligheid' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Kokend water kraan veiligheid: beveiliging, kinderen en normen',
   description:
-    'Een kokend water kraan is veilig als hij voldoet aan EN 61770 en NEN 1006. Kinderbeveiliging, thermisch isolerende uitloop en automatische afschakeling zijn standaard op kwalitatieve modellen.',
+    'Een kokend water kraan is veilig als hij voldoet aan EN 61770 en NEN 1006. Kinderbeveiliging, thermisch isolerende uitloop en automatische afschakeling zijn.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kokend-water-kraan/veiligheid',

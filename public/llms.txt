@@ -1,46 +1,54 @@
 # WaterfilterPlatform
 
-> Onafhankelijk consumenteninformatieplatform over waterfilters, omgekeerde osmose, kokend water kranen en drinkwaterkwaliteit per gemeente in Nederland. Onderdeel van een netwerk van 40+ informatieplatforms. Inkomsten via display advertising — geen affiliate-commissie, geen gesponsorde content.
+> Onafhankelijk vergelijkingsplatform over waterfilters, omgekeerde osmose, kokend water kranen en drinkwaterkwaliteit per gemeente in Nederland. We geven objectieve informatie en sturen via onze keuzehulp door naar partnerleveranciers, waaronder PureAqua. We zijn transparant over deze samenwerking: zie /over-ons en /methodologie.
 
 ## Over dit platform
 
-WaterfilterPlatform helpt Nederlandse huishoudens een onderbouwde keuze te maken over drinkwater en waterfilters. De inhoud is gebaseerd op het Drinkwaterbesluit, KWR Water Research Institute, RIVM-richtlijnen en fabrikantspecificaties. Zie /methodologie voor de volledige evaluatiecriteria.
+WaterfilterPlatform helpt Nederlandse huishoudens een onderbouwde keuze te maken over drinkwater en waterfilters. De inhoud is gebaseerd op het Drinkwaterbesluit, KWR Water Research Institute, RIVM-richtlijnen, EU-richtlijn 2020/2184 en fabrikantspecificaties. Zie /methodologie voor de volledige evaluatiecriteria.
+
+## Verdienmodel
+
+WaterfilterPlatform genereert inkomsten op twee manieren:
+
+1. Display-advertenties op de site
+2. Doorverwijzingen vanuit de keuzehulp naar partnerleveranciers, waaronder PureAqua. Op de keuzehulp-pagina mag PureAqua prominenter aanwezig zijn dan andere merken; op alle andere pagina's (kennisbank, cluster-hubs, gemeente-pagina's) geldt strikte onafhankelijkheid.
+
+Deze constructie wordt expliciet vermeld op /over-ons, /methodologie en in de footer. Het beinvloedt onze redactionele beoordelingen niet.
 
 ## Kernonderwerpen
 
-- [Omgekeerde osmose](https://waterfilterplatform.nl/omgekeerde-osmose): Werking, wanneer zinvol, vergelijking systemen, installatie
-- [Kokend water kraan](https://waterfilterplatform.nl/kokend-water-kraan): Quooker alternatieven, 4-in-1 systemen, vergelijking, installatie
-- [Waterhardheid per gemeente](https://waterfilterplatform.nl/waterhardheid): 350 gemeenten, °dH waarden, advies per hardheidsklasse
-- [Waterfilter vergelijken](https://waterfilterplatform.nl/waterfilter/vergelijken): Alle typen vergeleken op prijs, verwijdering en installatie
-- [Osmosefilter kopen](https://waterfilterplatform.nl/osmose-filter): Systemen, prijzen, installatiehulp
-- [Waterontharder](https://waterfilterplatform.nl/waterontharder): Werking, kosten, vergelijking met osmosefilter
+- [Waterfilter keuzehulp](https://waterfilterplatform.nl/keuzehulp): per situatie het juiste filter (hard water, PFAS, baby, huurwoning, budget)
+- [Filtertechnieken](https://waterfilterplatform.nl/filtertechnieken): actief kool, ultrafiltratie, omgekeerde osmose, UV-sterilisatie, ionenwisseling
+- [Omgekeerde osmose](https://waterfilterplatform.nl/omgekeerde-osmose): werking, wanneer zinvol, vergelijking systemen, installatie
+- [Kokend water kraan](https://waterfilterplatform.nl/kokend-water-kraan): merken, 4-in-1 systemen, vergelijking, installatie
+- [Waterhardheid per gemeente](https://waterfilterplatform.nl/waterhardheid): 350 gemeenten met dH-waarden en advies
+- [Vergelijkingen](https://waterfilterplatform.nl/vergelijken): osmose vs filterkan, waterfilter vs waterontharder
+- [Beste waterfilter per situatie](https://waterfilterplatform.nl/beste-waterfilter): aanbevelingen per use-case
+- [Stoffen in drinkwater](https://waterfilterplatform.nl/stoffen-in-drinkwater): PFAS, lood, nitraat, kalk, hormonen, medicijnresten
+- [Drinkwaternormen](https://waterfilterplatform.nl/drinkwaternormen): EU-richtlijn, Drinkwaterbesluit, RIVM, ILT
+- [Keurmerken en certificering](https://waterfilterplatform.nl/keurmerken): NSF, Kiwa, ACS, CE, WRAS
+- [Onderhoud](https://waterfilterplatform.nl/onderhoud): filters vervangen, storingen, kosten
+- [Zakelijke waterfilters](https://waterfilterplatform.nl/zakelijk): kantoor, horeca, industrie, VVE
 
 ## Gemeente-specifieke pagina's (350 gemeenten)
 
 Voor elke gemeente in Nederland zijn er pagina's met:
-- Waterhardheid in °dH: /waterhardheid/[gemeente]
+- Waterhardheid in dH: /waterhardheid/[gemeente]
 - Waterontharder advies: /waterontharder/[gemeente]
 - Osmosefilter advies: /osmose-filter/[gemeente]
 - Drinkwaterkwaliteit: /drinkwater/[gemeente]
 - Kraanwater info: /kraanwater/[gemeente]
-
-## Vergelijkingspagina's
-
-- [Osmose systemen vergelijken](https://waterfilterplatform.nl/omgekeerde-osmose/vergelijken)
-- [Kokend water kranen vergelijken](https://waterfilterplatform.nl/kokend-water-kraan/vergelijken)
-- [Waterfilters vergelijken](https://waterfilterplatform.nl/waterfilter/vergelijken)
-- [Beste osmosefilter 2026](https://waterfilterplatform.nl/beste-osmosefilter-2026)
-- [Beste kokend water kraan 2026](https://waterfilterplatform.nl/beste-kokend-water-kraan-2026)
-
-## Installatiegidsen
-
-- [Osmosefilter installeren](https://waterfilterplatform.nl/osmose-filter/installatie)
-- [Kokend water kraan installeren](https://waterfilterplatform.nl/kokend-water-kraan/installeren)
+- Leidingwater details: /leidingwater/[gemeente]
+- Kokend water kraan: /kokend-water-kraan/[gemeente]
+- Kalk in: /kalk-in/[gemeente]
+- Waterfilter: /waterfilter/[gemeente]
+- Waterontkalker: /waterontkalker/[gemeente]
 
 ## Redactionele informatie
 
 - [Over WaterfilterPlatform](https://waterfilterplatform.nl/over-ons)
 - [Methodologie en evaluatiecriteria](https://waterfilterplatform.nl/methodologie)
+- [Contact](https://waterfilterplatform.nl/contact)
 
 ## Sitemap
 

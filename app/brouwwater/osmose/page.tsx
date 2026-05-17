@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Osmosewater voor bier brouwen: voordelen, nadelen en instellen',
-  description: 'Osmosewater is de schoonste basis voor brouwwater: TDS &lt;10 mg/L, geen ongewenste mineralen. Leer hoe je osmosewater instelt voor elk bierstijl met remineralisatie.',
+  description: 'Osmosewater is de schoonste basis voor brouwwater: TDS &lt;10 mg/L, geen ongewenste mineralen. Leer hoe je osmosewater instelt voor elk bierstijl met.',
   alternates: { canonical: 'https://waterfilterplatform.nl/brouwwater/osmose' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosewater voor bier brouwen: voordelen, nadelen en instellen',
-  description: 'Osmosewater is de schoonste basis voor brouwwater: TDS minder dan 10 mg/L, geen ongewenste mineralen. Leer hoe je osmosewater instelt voor elk bierstijl met remineralisatie.',
+  description: 'Osmosewater is de schoonste basis voor brouwwater: TDS minder dan 10 mg/L, geen ongewenste mineralen. Leer hoe je osmosewater instelt voor elk bierstijl met.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/brouwwater/osmose',

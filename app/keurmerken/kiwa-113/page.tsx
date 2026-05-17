@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Kiwa 113 — Nederlands keurmerk voor drinkwaterinstallaties | WaterfilterPlatform',
-  description: 'BRL-K 113 is het Nederlandse keurmerk voor materiaalveiligheid van drinkwaterinstallaties. Wat het inhoudt, welke fabrikanten het hebben en hoe NVWA handhaaft.',
+  title: 'Kiwa 113 — Nederlands keurmerk voor drinkwaterinstallaties',
+  description: 'BRL-K 113 is het Nederlandse keurmerk voor materiaalveiligheid van drinkwaterinstallaties. Wat het inhoudt, welke fabrikanten het hebben en hoe NVWA.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keurmerken/kiwa-113' },
 };
 
@@ -15,7 +15,7 @@ export default function Kiwa113Page() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'Kiwa 113 — Nederlands keurmerk voor drinkwaterinstallaties',
-        description: 'BRL-K 113 is het Nederlandse keurmerk voor materiaalveiligheid van drinkwaterinstallaties. Wat het inhoudt, welke fabrikanten het hebben en hoe NVWA handhaaft.',
+        description: 'BRL-K 113 is het Nederlandse keurmerk voor materiaalveiligheid van drinkwaterinstallaties. Wat het inhoudt, welke fabrikanten het hebben en hoe NVWA.',
         datePublished: '2026-05-17',
         url: 'https://waterfilterplatform.nl/keurmerken/kiwa-113',
       }} />

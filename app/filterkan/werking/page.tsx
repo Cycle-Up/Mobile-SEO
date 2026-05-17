@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Hoe werkt een filterkan? Actief kool, ionenwisseling en wat het filtert',
   description:
-    'Een filterkan filtert via actief kool (chloor, geur) en ionenwisseling (kalk, zware metalen). Uitleg van de filterstappen, wat er wel en niet uit wordt gehaald en wanneer je meer nodig hebt.',
+    'Een filterkan filtert via actief kool (chloor, geur) en ionenwisseling (kalk, zware metalen). Uitleg van de filterstappen, wat er wel en niet uit wordt.',
   alternates: { canonical: 'https://waterfilterplatform.nl/filterkan/werking' },
   openGraph: {
     title: 'Hoe werkt een filterkan? Actief kool, ionenwisseling en wat het filtert',
@@ -143,7 +143,7 @@ export default function FilterkanWerkingPage() {
         article={{
           title: 'Hoe werkt een filterkan? Actief kool, ionenwisseling en wat het filtert',
           description:
-            'Een filterkan filtert via actief kool (chloor, geur) en ionenwisseling (kalk, zware metalen). Uitleg van de filterstappen, wat er wel en niet uit wordt gehaald en wanneer je meer nodig hebt.',
+            'Een filterkan filtert via actief kool (chloor, geur) en ionenwisseling (kalk, zware metalen). Uitleg van de filterstappen, wat er wel en niet uit wordt.',
           datePublished: '2026-05-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/filterkan/werking',

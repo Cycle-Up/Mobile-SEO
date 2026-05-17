@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'NSF/ANSI 401 — certificering voor opkomende stoffen | WaterfilterPlatform',
-  description: 'NSF/ANSI 401 test waterfilters op 15 opkomende stoffen: medicijnresten (ibuprofen, DEET), pesticiden en hormonen. Waarom dit de meest recente filtercertificering is.',
+  title: 'NSF/ANSI 401 — certificering voor opkomende stoffen',
+  description: 'NSF/ANSI 401 test waterfilters op 15 opkomende stoffen: medicijnresten (ibuprofen, DEET), pesticiden en hormonen. Waarom dit de meest recente.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-401' },
 };
 
@@ -15,7 +15,7 @@ export default function NsfAnsi401Page() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'NSF/ANSI 401 — certificering voor opkomende stoffen',
-        description: 'NSF/ANSI 401 test waterfilters op 15 opkomende stoffen: medicijnresten (ibuprofen, DEET), pesticiden en hormonen. Waarom dit de meest recente filtercertificering is.',
+        description: 'NSF/ANSI 401 test waterfilters op 15 opkomende stoffen: medicijnresten (ibuprofen, DEET), pesticiden en hormonen. Waarom dit de meest recente.',
         datePublished: '2026-05-17',
         url: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-401',
       }} />

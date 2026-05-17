@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'RO-membraan vervangen: wanneer en hoe doe je dat?',
-  description: 'Het RO-membraan van een osmosefilter vervangen na 2-3 jaar. Ontdek hoe je weet wanneer het membraan aan vervanging toe is, welk membraan past en hoe je het zelf vervangt.',
+  description: 'Het RO-membraan van een osmosefilter vervangen na 2-3 jaar. Ontdek hoe je weet wanneer het membraan aan vervanging toe is, welk membraan past en hoe je het.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/membraan-vervangen' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'RO-membraan vervangen: wanneer en hoe doe je dat?',
-  description: 'Het RO-membraan van een osmosefilter vervangen na 2-3 jaar. Ontdek hoe je weet wanneer het membraan aan vervanging toe is, welk membraan past en hoe je het zelf vervangt.',
+  description: 'Het RO-membraan van een osmosefilter vervangen na 2-3 jaar. Ontdek hoe je weet wanneer het membraan aan vervanging toe is, welk membraan past en hoe je het.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/omgekeerde-osmose/membraan-vervangen',

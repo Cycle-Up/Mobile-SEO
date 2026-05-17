@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Bacterien in kraanwater: wanneer is het gevaarlijk?',
-  description: 'Kraanwater in Nederland is vrijwel bacterievrij, maar er zijn uitzonderingen. Ontdek wanneer bacterien in kraanwater gevaarlijk zijn en hoe je jezelf beschermt.',
+  description: 'Kraanwater in Nederland is vrijwel bacterievrij, maar er zijn uitzonderingen. Ontdek wanneer bacterien in kraanwater gevaarlijk zijn en hoe je jezelf.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kraanwater/bacterien' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Bacterien in kraanwater: wanneer is het gevaarlijk?',
-  description: 'Kraanwater in Nederland is vrijwel bacterievrij, maar er zijn uitzonderingen. Ontdek wanneer bacterien in kraanwater gevaarlijk zijn en hoe je jezelf beschermt.',
+  description: 'Kraanwater in Nederland is vrijwel bacterievrij, maar er zijn uitzonderingen. Ontdek wanneer bacterien in kraanwater gevaarlijk zijn en hoe je jezelf.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kraanwater/bacterien',

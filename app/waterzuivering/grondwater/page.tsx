@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Grondwaterzuivering: hoe wordt grondwater drinkwater?',
-  description: '60% van het Nederlandse drinkwater komt uit grondwater. Grondwaterzuivering verwijdert ijzer, mangaan en bacterien via beluchting, zandfiltratie en UV. Volledig uitgelegd.',
+  description: '60% van het Nederlandse drinkwater komt uit grondwater. Grondwaterzuivering verwijdert ijzer, mangaan en bacterien via beluchting, zandfiltratie en UV.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterzuivering/grondwater' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Grondwaterzuivering: hoe wordt grondwater drinkwater?',
-  description: '60% van het Nederlandse drinkwater komt uit grondwater. Grondwaterzuivering verwijdert ijzer, mangaan en bacterien via beluchting, zandfiltratie en UV. Volledig uitgelegd.',
+  description: '60% van het Nederlandse drinkwater komt uit grondwater. Grondwaterzuivering verwijdert ijzer, mangaan en bacterien via beluchting, zandfiltratie en UV.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterzuivering/grondwater',

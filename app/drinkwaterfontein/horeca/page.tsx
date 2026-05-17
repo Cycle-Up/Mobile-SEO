@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Drinkwaterfontein voor horeca: tafelwater en personeelswater',
-  description: 'Een drinkwaterfontein voor horeca levert gekoeld, gefilterd en bruisend tafelwater. Vergelijking van horeca waterfonteinen voor restaurants, hotels en cafes in 2026.',
+  description: 'Een drinkwaterfontein voor horeca levert gekoeld, gefilterd en bruisend tafelwater. Vergelijking van horeca waterfonteinen voor restaurants, hotels en cafes.',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/horeca' },
 };
 

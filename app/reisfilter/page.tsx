@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Reisfilter: beste draagbare waterfilters voor op reis in 2026',
-  description: 'Een reisfilter maakt verontreinigd water drinkbaar op reis. Vergelijking van Lifestraw, Sawyer Squeeze, Grayl Geopress en andere draagbare waterfilters voor backpackers en reizigers.',
+  description: 'Een reisfilter maakt verontreinigd water drinkbaar op reis. Vergelijking van Lifestraw, Sawyer Squeeze, Grayl Geopress en andere draagbare waterfilters voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/reisfilter' },
 };
 

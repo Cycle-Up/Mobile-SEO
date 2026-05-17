@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter voor hard water: wat werkt echt? | 2026',
   description:
-    'Hard water en kalk? Vergelijk anti-kalk magneten, ionenwisselaars en omgekeerde osmose. Uitleg over waterhardheid in °dH, Nederlandse normen en welke oplossing het best werkt.',
+    'Hard water en kalk? Vergelijk anti-kalk magneten, ionenwisselaars en omgekeerde osmose. Uitleg over waterhardheid in °dH, Nederlandse normen en welke.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/voor-hard-water' },
   openGraph: {
     title: 'Waterfilter voor hard water: wat werkt echt?',

@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Bacterien in leidingwater: legionella, E. coli en andere risicos',
-  description: 'Bacterien in leidingwater zijn zeldzaam maar gevaarlijk. Legionella, E. coli en cryptosporidium: wanneer is leidingwater bacteriologisch onveilig en wat doe je ertegen?',
+  description: 'Bacterien in leidingwater zijn zeldzaam maar gevaarlijk. Legionella, E. coli en cryptosporidium: wanneer is leidingwater bacteriologisch onveilig en wat doe.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/bacterien' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Bacterien in leidingwater: legionella, E. coli en andere risicos',
-  description: 'Bacterien in leidingwater zijn zeldzaam maar gevaarlijk. Legionella, E. coli en cryptosporidium: wanneer is leidingwater bacteriologisch onveilig en wat doe je ertegen?',
+  description: 'Bacterien in leidingwater zijn zeldzaam maar gevaarlijk. Legionella, E. coli en cryptosporidium: wanneer is leidingwater bacteriologisch onveilig en wat doe.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/bacterien',

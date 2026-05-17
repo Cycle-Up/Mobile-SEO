@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'BWT filterkan: Penguin, Minerva en mg²⁺ technologie uitgelegd 2026',
   description:
-    'BWT filterkansen onderscheiden zich door magnesium-verrijking (mg²⁺). Vergelijking Penguin, Minerva en BWT Vida modellen: prijzen, filters en wat ze verwijderen.',
+    'BWT filterkansen onderscheiden zich door magnesium-verrijking (mg²⁺). Vergelijking Penguin, Minerva en BWT Vida modellen: prijzen, filters en wat ze.',
   alternates: { canonical: 'https://waterfilterplatform.nl/filterkan/bwt' },
   openGraph: {
     title: 'BWT filterkan: Penguin, Minerva en mg²⁺ technologie uitgelegd 2026',
     description:
-      'BWT filterkansen onderscheiden zich door magnesium-verrijking (mg²⁺). Vergelijking Penguin, Minerva en BWT Vida modellen: prijzen, filters en wat ze verwijderen.',
+      'BWT filterkansen onderscheiden zich door magnesium-verrijking (mg²⁺). Vergelijking Penguin, Minerva en BWT Vida modellen: prijzen, filters en wat ze.',
     url: 'https://waterfilterplatform.nl/filterkan/bwt',
     type: 'article',
   },
@@ -163,7 +163,7 @@ export default function BwtFilterkanPage() {
         article={{
           title: 'BWT filterkan: Penguin, Minerva en mg²⁺ technologie uitgelegd 2026',
           description:
-            'BWT filterkansen onderscheiden zich door magnesium-verrijking (mg²⁺). Vergelijking Penguin, Minerva en BWT Vida modellen: prijzen, filters en wat ze verwijderen.',
+            'BWT filterkansen onderscheiden zich door magnesium-verrijking (mg²⁺). Vergelijking Penguin, Minerva en BWT Vida modellen: prijzen, filters en wat ze.',
           datePublished: '2026-05-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/filterkan/bwt',

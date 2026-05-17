@@ -202,7 +202,7 @@ export default function WaterhardheidRegioPage() {
         article={{
           title: 'Waterhardheid per regio Nederland: complete kaart 2026',
           description:
-            'Overzicht van waterhardheid per provincie in Nederland: van zeer zacht Drenthe en Groningen (3–8 °dH) tot zeer hard Limburg en Zuid-Holland (20+ °dH), met toelichting en links naar gemeenten.',
+            'Overzicht van waterhardheid per provincie in Nederland: van zeer zacht Drenthe en Groningen (3–8 °dH) tot zeer hard Limburg en Zuid-Holland (20+ °dH), met.',
           datePublished: '2025-12-01',
           dateModified: '2026-05-14',
           url: 'https://waterfilterplatform.nl/waterhardheid/regio',

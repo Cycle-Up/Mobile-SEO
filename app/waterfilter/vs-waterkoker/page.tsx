@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter of waterkoker: wat is beter voor schoon drinkwater?',
-  description: 'Waterkoker verhit water maar filtert niet. Een waterfilter verwijdert chloor, PFAS en lood. Vergelijking: wanneer kies je voor een waterfilter en wanneer voor een waterkoker?',
+  description: 'Waterkoker verhit water maar filtert niet. Een waterfilter verwijdert chloor, PFAS en lood. Vergelijking: wanneer kies je voor een waterfilter en wanneer.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/vs-waterkoker' },
 };
 

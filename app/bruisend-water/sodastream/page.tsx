@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'SodaStream vs bruisend waterkraan: welke is beter voor thuis?',
   description:
-    'SodaStream kost €100–130 en geeft bruisend water voor €0,05–0,08/L. Een bruisend waterkraan kost meer maar levert ook gefilterd en kokend water. Volledige vergelijking.',
+    'SodaStream kost €100–130 en geeft bruisend water voor €0,05–0,08/L. Een bruisend waterkraan kost meer maar levert ook gefilterd en kokend water.',
   alternates: { canonical: 'https://waterfilterplatform.nl/bruisend-water/sodastream' },
 };
 

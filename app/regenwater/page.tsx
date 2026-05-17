@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Regenwater filteren voor drinkwater: kan het en hoe? (2026)',
   description:
-    'Regenwater filteren voor drinkwater in Nederland: wettelijke status, verontreinigingen, benodigde behandeling, kosten (€800–2.500) en het verschil tussen grijs water en drinkwater.',
+    'Regenwater filteren voor drinkwater in Nederland: wettelijke status, verontreinigingen, benodigde behandeling, kosten (€800–2.500) en het verschil tussen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/regenwater' },
 };
 
@@ -83,7 +83,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Regenwater filteren voor drinkwater: kan het en hoe? (2026)',
   description:
-    'Regenwater filteren voor drinkwater in Nederland: wettelijke status, verontreinigingen, benodigde behandeling, kosten en het verschil tussen grijs water en drinkwater.',
+    'Regenwater filteren voor drinkwater in Nederland: wettelijke status, verontreinigingen, benodigde behandeling, kosten en het verschil tussen grijs water en.',
   datePublished: '2026-04-01',
   dateModified: '2026-04-01',
   url: 'https://waterfilterplatform.nl/regenwater',

@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Elektrische waterontharder: werkt het echt? | 2026',
   description:
-    'Elektrische en magnetische waterontharders vergeleken met ionenwisselaar. Wat zegt de wetenschap? Wanneer werken ze, wanneer niet, en wanneer is RO een beter alternatief.',
+    'Elektrische en magnetische waterontharders vergeleken met ionenwisselaar. Wat zegt de wetenschap? Wanneer werken ze, wanneer niet, en wanneer is RO een beter.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/elektrisch' },
   openGraph: {
     title: 'Elektrische waterontharder: werkt het echt?',

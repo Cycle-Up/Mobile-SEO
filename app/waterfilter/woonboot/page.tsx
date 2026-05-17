@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor woonboot: drinkwater bij wal en op het water',
-  description: 'Een woonboot heeft specifieke uitdagingen voor drinkwater: aansluiting op waloever, variabele waterkwaliteit en beperkte ruimte. De beste waterfilteroplossingen voor woonbootbewoners.',
+  description: 'Een woonboot heeft specifieke uitdagingen voor drinkwater: aansluiting op waloever, variabele waterkwaliteit en beperkte ruimte. De beste.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/woonboot' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterfilter voor woonboot: drinkwater bij wal en op het water',
-  description: 'Een woonboot heeft specifieke uitdagingen voor drinkwater: aansluiting op waloever, variabele waterkwaliteit en beperkte ruimte. De beste waterfilteroplossingen voor woonbootbewoners.',
+  description: 'Een woonboot heeft specifieke uitdagingen voor drinkwater: aansluiting op waloever, variabele waterkwaliteit en beperkte ruimte. De beste.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/woonboot',

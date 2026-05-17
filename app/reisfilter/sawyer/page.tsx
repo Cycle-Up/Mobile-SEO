@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Sawyer Squeeze review: de duurzaamste reisfilter met onbeperkte capaciteit',
-  description: 'Sawyer Squeeze is de duurzaamste reisfilter: onbeperkte filtercapaciteit, 0,1 µm holle vezel, levenslange garantie. Review en vergelijking met Lifestraw en Grayl.',
+  description: 'Sawyer Squeeze is de duurzaamste reisfilter: onbeperkte filtercapaciteit, 0,1 µm holle vezel, levenslange garantie. Review en vergelijking met Lifestraw en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/reisfilter/sawyer' },
 };
 

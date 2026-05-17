@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmose apparaat voor thuis: welk systeem past bij u?',
   description:
-    'Osmose apparaat voor thuis kopen? Vergelijk onderbouw, aanrechtmodel en 4-in-1 systemen op prijs, installatiegemak en filterkosten. Alles over RO thuis installeren.',
+    'Osmose apparaat voor thuis kopen? Vergelijk onderbouw, aanrechtmodel en 4-in-1 systemen op prijs, installatiegemak en filterkosten.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/voor-thuis' },
   openGraph: {
     title: 'Osmose apparaat voor thuis — vergelijking & koopadvies 2026',
     description:
-      'Osmose apparaat voor thuis kopen? Vergelijk onderbouw, aanrechtmodel en 4-in-1 systemen op prijs, installatiegemak en filterkosten. Alles over RO thuis installeren.',
+      'Osmose apparaat voor thuis kopen? Vergelijk onderbouw, aanrechtmodel en 4-in-1 systemen op prijs, installatiegemak en filterkosten.',
     url: 'https://waterfilterplatform.nl/omgekeerde-osmose/voor-thuis',
     type: 'article',
   },

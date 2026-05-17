@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter onder aanrecht: types, installatie en prijzen | 2026',
   description:
-    'Alles over waterfilters onder aanrecht: carbon block, RO, UV-combinaties, benodigde ruimte, dedicated tap vs omleidingsventiel en prijzen €150–1500. Top picks 2026.',
+    'Alles over waterfilters onder aanrecht: carbon block, RO, UV-combinaties, benodigde ruimte, dedicated tap vs omleidingsventiel en prijzen €150–1500.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/onder-aanrecht' },
   openGraph: {
     title: 'Waterfilter onder aanrecht: types, installatie en prijzen',

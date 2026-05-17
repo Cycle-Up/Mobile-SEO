@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Waterontharder in Appartement: Mag Dit & Welke Opties?',
-  description: 'Waterontharder installeren in appartement of huurwoning: toestemming verhuurder, demontabele opties, TAC-systemen, osmosefilter als alternatief en juridisch kader.',
+  description: 'Waterontharder installeren in appartement of huurwoning: toestemming verhuurder, demontabele opties, TAC-systemen, osmosefilter als alternatief en juridisch.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/appartement' },
 };
 

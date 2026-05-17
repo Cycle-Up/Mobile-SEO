@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Temperatuur leidingwater: Legionella-risicozone en veilige instelling',
   description:
-    'Legionella groeit het snelst bij 20-45 graden Celsius in leidingwater. Warm water boiler instellen op minimaal 60 graden. Koude leiding altijd onder 25 graden houden. Praktisch advies voor veilig huishoudelijk water.',
+    'Legionella groeit het snelst bij 20-45 graden Celsius in leidingwater. Warm water boiler instellen op minimaal 60 graden. Koude leiding altijd onder 25.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/temperatuur' },
 };
 
@@ -71,7 +71,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Temperatuur leidingwater: Legionella-risicozone en veilige instelling',
   description:
-    'Legionella groeit het snelst bij 20-45 graden Celsius. Boiler instellen op minimaal 60 graden. Koude leiding altijd onder 25 graden houden. Praktisch advies voor veilig huishoudelijk water.',
+    'Legionella groeit het snelst bij 20-45 graden Celsius. Boiler instellen op minimaal 60 graden. Koude leiding altijd onder 25 graden houden.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/temperatuur',

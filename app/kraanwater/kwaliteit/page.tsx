@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kraanwater kwaliteit: veilig, maar niet altijd optimaal',
   description:
-    'Is kraanwater veilig in Nederland? Alles over de kwaliteit van kraanwater: zuiveringsproces, jaarverslagen, residuele zorgen over PFAS, microplastics en hardheid, en wanneer extra filtratie zinvol is.',
+    'Is kraanwater veilig in Nederland? Alles over de kwaliteit van kraanwater: zuiveringsproces, jaarverslagen, residuele zorgen over PFAS, microplastics en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kraanwater/kwaliteit' },
   openGraph: {
     title: 'Kraanwater kwaliteit: veilig, maar niet altijd optimaal',
     description:
-      'Nederlands kraanwater: veilig door strenge wetgeving, maar consumenten maken zich terecht zorgen over chloor, PFAS, hardheid en microplastics. Wat kunt u doen?',
+      'Nederlands kraanwater: veilig door strenge wetgeving, maar consumenten maken zich terecht zorgen over chloor, PFAS, hardheid en microplastics.',
     url: 'https://waterfilterplatform.nl/kraanwater/kwaliteit',
     type: 'article',
   },

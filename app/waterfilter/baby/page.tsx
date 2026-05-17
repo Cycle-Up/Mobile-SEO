@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor Baby: Veilig Water voor Zuigelingen',
-  description: 'Welk waterfilter is geschikt voor babyvoeding? Osmosefilter verwijdert nitraat, lood en PFAS. Veiligheidsadvies voor zuigelingen onder 6 maanden, met remineralisatie.',
+  description: 'Welk waterfilter is geschikt voor babyvoeding? Osmosefilter verwijdert nitraat, lood en PFAS. Veiligheidsadvies voor zuigelingen onder 6 maanden, met.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/baby' },
 };
 

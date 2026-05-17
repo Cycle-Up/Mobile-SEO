@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Wanneer osmosefilter vervangen? Filterwissel schema en kosten',
   description:
-    'Osmosefilter filters vervangen: sedimentfilter na 6-12 maanden, koolstoffilter na 6-12 maanden, RO-membraan na 2-3 jaar. Compleet filterwissel schema met kosten.',
+    'Osmosefilter filters vervangen: sedimentfilter na 6-12 maanden, koolstoffilter na 6-12 maanden, RO-membraan na 2-3 jaar. Compleet filterwissel schema met.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/vervangen' },
 };
 
@@ -62,7 +62,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Wanneer osmosefilter vervangen? Filterwissel schema en kosten',
   description:
-    'Osmosefilter filters vervangen: sedimentfilter na 6-12 maanden, koolstoffilter na 6-12 maanden, RO-membraan na 2-3 jaar. Compleet filterwissel schema met kosten.',
+    'Osmosefilter filters vervangen: sedimentfilter na 6-12 maanden, koolstoffilter na 6-12 maanden, RO-membraan na 2-3 jaar. Compleet filterwissel schema met.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-filter/vervangen',

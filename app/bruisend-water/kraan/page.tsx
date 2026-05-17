@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Bruisend waterkraan kopen: 4-in-1 kranen vergeleken',
   description:
-    'Een bruisend waterkraan geeft kokend, koud, gefilterd en bruisend water uit 1 kraan. Vergelijking van 4-in-1 kraanmodellen: Quooker, Grohe Blue, Zip HydroTap en PureAqua.',
+    'Een bruisend waterkraan geeft kokend, koud, gefilterd en bruisend water uit 1 kraan. Vergelijking van 4-in-1 kraanmodellen: Quooker, Grohe Blue, Zip HydroTap.',
   alternates: { canonical: 'https://waterfilterplatform.nl/bruisend-water/kraan' },
 };
 

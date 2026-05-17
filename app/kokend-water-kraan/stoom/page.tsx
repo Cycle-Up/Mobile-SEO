@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Stoom bij kokend water kraan: normaal, gevaarlijk of probleem?',
   description:
-    'Stoom bij het uitschenken van een kokend water kraan is normaal en onvermijdelijk bij 100 graden Celsius. Overmatige stoom of spetteren wijst op een te hoge temperatuurinstelling of verstopte sproeikop.',
+    'Stoom bij het uitschenken van een kokend water kraan is normaal en onvermijdelijk bij 100 graden Celsius. Overmatige stoom of spetteren wijst op een te hoge.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/stoom' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Stoom bij kokend water kraan: normaal, gevaarlijk of probleem?',
   description:
-    'Stoom bij het uitschenken van een kokend water kraan is normaal en onvermijdelijk bij 100 graden Celsius. Overmatige stoom of spetteren wijst op een te hoge temperatuurinstelling of verstopte sproeikop.',
+    'Stoom bij het uitschenken van een kokend water kraan is normaal en onvermijdelijk bij 100 graden Celsius. Overmatige stoom of spetteren wijst op een te hoge.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kokend-water-kraan/stoom',

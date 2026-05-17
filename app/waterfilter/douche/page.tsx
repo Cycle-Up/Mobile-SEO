@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Douchefilter: Chloor & Kalk Filteren onder de Douche',
-  description: 'Een douchefilter verwijdert chloor, kalk en zware metalen uit douchewater. Beter voor huid, haar en eczeem. Vergelijk inline-filters, vitamine C en KDF-filters.',
+  description: 'Een douchefilter verwijdert chloor, kalk en zware metalen uit douchewater. Beter voor huid, haar en eczeem. Vergelijk inline-filters, vitamine C en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/douche' },
 };
 

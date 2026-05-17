@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Drinkwater kwaliteitsrapport: zo lees je het rapport van uw waterbedrijf',
   description:
-    'Wat staat er in het jaarlijkse drinkwater kwaliteitsrapport van uw waterbedrijf? Leer welke parameters tellen, waar u het rapport vindt (Vitens, Evides, PWN) en wanneer onafhankelijk testen zin heeft.',
+    'Wat staat er in het jaarlijkse drinkwater kwaliteitsrapport van uw waterbedrijf? Leer welke parameters tellen, waar u het rapport vindt (Vitens, Evides, PWN).',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwater/kwaliteitsrapport' },
   openGraph: {
     title: 'Drinkwater kwaliteitsrapport: zo lees je het rapport van uw waterbedrijf',
@@ -90,7 +90,7 @@ export default function KwaliteitsrapportPage() {
         article={{
           title: 'Drinkwater kwaliteitsrapport: zo lees je het rapport van uw waterbedrijf',
           description:
-            'Uitleg over drinkwater kwaliteitsrapporten in Nederland: waar te vinden, welke parameters tellen, wat de normen betekenen en wanneer onafhankelijk testen zinvol is.',
+            'Uitleg over drinkwater kwaliteitsrapporten in Nederland: waar te vinden, welke parameters tellen, wat de normen betekenen en wanneer onafhankelijk testen.',
           datePublished: '2026-04-18',
           url: 'https://waterfilterplatform.nl/drinkwater/kwaliteitsrapport',
         }}

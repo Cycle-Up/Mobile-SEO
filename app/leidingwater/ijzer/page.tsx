@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'IJzer in kraanwater: bruine vlekken, roestsmaak en oplossingen',
   description:
-    'IJzer in kraanwater veroorzaakt bruine vlekken in toilet en wasbak, roestige smaak en oranje verkleuringen. Oorzaken, veiligheidsgrens (200 µg/L) en filteroplossingen.',
+    'IJzer in kraanwater veroorzaakt bruine vlekken in toilet en wasbak, roestige smaak en oranje verkleuringen. Oorzaken, veiligheidsgrens (200 µg/L) en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/ijzer' },
 };
 

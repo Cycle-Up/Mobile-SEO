@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Osmosefilter onderhoud: vervangingsschema en kosten',
   description:
-    'Compleet onderhoudsschema voor osmosefilters: sedimentfilter (3-6 mnd), koolstoffilter (6-12 mnd), RO-membraan (2-3 jaar), UV-lamp (12 mnd). Kosten DIY vs servicecontract.',
+    'Compleet onderhoudsschema voor osmosefilters: sedimentfilter (3-6 mnd), koolstoffilter (6-12 mnd), RO-membraan (2-3 jaar), UV-lamp (12 mnd).',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/onderhoud' },
   openGraph: {
     title: 'Osmosefilter onderhoud: vervangingsschema en kosten',
     description:
-      'Wanneer vervang je welk osmosefilter? Volledig schema, stap-voor-stap handleiding, kostenvergelijking DIY vs servicecontract, veelgemaakte fouten en benodigde gereedschappen.',
+      'Wanneer vervang je welk osmosefilter? Volledig schema, stap-voor-stap handleiding, kostenvergelijking DIY vs servicecontract, veelgemaakte fouten en.',
     url: 'https://waterfilterplatform.nl/osmose-filter/onderhoud',
     type: 'article',
   },

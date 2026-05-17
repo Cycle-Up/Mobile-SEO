@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Alkalisch water: wat is het en is het gezond?',
   description:
-    'Alkalisch water heeft een pH hoger dan 7 en wordt gepromoot als gezonder. Maar wat zegt de wetenschap? Alles over alkalisch water, ionisatoren en het verschil met osmosewater.',
+    'Alkalisch water heeft een pH hoger dan 7 en wordt gepromoot als gezonder. Maar wat zegt de wetenschap? Alles over alkalisch water, ionisatoren en het.',
   alternates: { canonical: 'https://waterfilterplatform.nl/alkalisch-water' },
 };
 

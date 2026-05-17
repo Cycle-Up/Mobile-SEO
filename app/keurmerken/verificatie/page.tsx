@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Hoe controleer je of een waterfilter echt gecertificeerd is? | WaterfilterPlatform',
-  description: 'Stap-voor-stap: NSF productdatabase checken, Kiwa publiek register, rode vlaggen herkennen en nep-keurmerken onderscheiden van echte certificeringen voor waterfilters.',
+  title: 'Hoe controleer je of een waterfilter echt gecertificeerd is?',
+  description: 'Stap-voor-stap: NSF productdatabase checken, Kiwa publiek register, rode vlaggen herkennen en nep-keurmerken onderscheiden van echte certificeringen voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keurmerken/verificatie' },
 };
 
@@ -15,7 +15,7 @@ export default function VerificatiePage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'Hoe controleer je of een waterfilter echt gecertificeerd is?',
-        description: 'Stap-voor-stap: NSF productdatabase checken, Kiwa publiek register, rode vlaggen herkennen en nep-keurmerken onderscheiden van echte certificeringen voor waterfilters.',
+        description: 'Stap-voor-stap: NSF productdatabase checken, Kiwa publiek register, rode vlaggen herkennen en nep-keurmerken onderscheiden van echte certificeringen voor.',
         datePublished: '2026-05-17',
         url: 'https://waterfilterplatform.nl/keurmerken/verificatie',
       }} />

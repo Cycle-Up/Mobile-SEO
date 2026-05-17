@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterfilter of waterverzachter: wat is het verschil?',
   description:
-    'Een waterfilter zuivert water van schadelijke stoffen. Een waterverzachter verwijdert alleen kalk. Vergelijking van waterfilter vs waterverzachter: wanneer hebt u welk systeem nodig?',
+    'Een waterfilter zuivert water van schadelijke stoffen. Een waterverzachter verwijdert alleen kalk. Vergelijking van waterfilter vs waterverzachter: wanneer.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/waterverzachter' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Waterfilter of waterverzachter: wat is het verschil?',
   description:
-    'Een waterfilter zuivert water van schadelijke stoffen. Een waterverzachter verwijdert alleen kalk. Vergelijking en advies over wanneer u welk systeem nodig hebt.',
+    'Een waterfilter zuivert water van schadelijke stoffen. Een waterverzachter verwijdert alleen kalk. Vergelijking en advies over wanneer u welk systeem nodig.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/waterverzachter',

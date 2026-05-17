@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Drinkwaterkwaliteit Nederland 2026: normen en feiten',
   description:
-    'Overzicht van drinkwaterkwaliteit in Nederland 2026: EU-Drinkwaterrichtlijn 2020/2184, RIVM-monitoring, PFAS-update 2024, Nederlandse score vs. EU-gemiddelde en wanneer extra filtratie zinvol is.',
+    'Overzicht van drinkwaterkwaliteit in Nederland 2026: EU-Drinkwaterrichtlijn 2020/2184, RIVM-monitoring, PFAS-update 2024, Nederlandse score vs.',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwater/kwaliteit' },
   openGraph: {
     title: 'Drinkwaterkwaliteit Nederland 2026: normen en feiten',

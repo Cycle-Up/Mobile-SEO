@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Kokend water kraan kopen: complete gids 2026',
   description:
-    'Alles wat je moet weten voor je een kokend water kraan koopt: types (kokend, heet, koud, bruisend), capaciteit, boilervolume, installatie-eisen, prijsrange €200–€1500 en beste merken 2026.',
+    'Alles wat je moet weten voor je een kokend water kraan koopt: types (kokend, heet, koud, bruisend), capaciteit, boilervolume, installatie-eisen, prijsrange.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/kopen' },
   openGraph: {
     title: 'Kokend water kraan kopen: complete gids 2026',

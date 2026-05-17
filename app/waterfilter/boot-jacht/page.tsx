@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor boot en jacht: drinkwater op het water',
-  description: 'Op een boot of jacht is schoon drinkwater cruciaal. Vergelijking van waterfilters voor zeiljacht, motorjacht en sloep: van dakwaterfilter tot zeewater-omgekeerde osmose.',
+  description: 'Op een boot of jacht is schoon drinkwater cruciaal. Vergelijking van waterfilters voor zeiljacht, motorjacht en sloep: van dakwaterfilter tot.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/boot-jacht' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterfilter voor boot en jacht: drinkwater op het water',
-  description: 'Op een boot of jacht is schoon drinkwater cruciaal. Vergelijking van waterfilters voor zeiljacht, motorjacht en sloep: van dakwaterfilter tot zeewater-omgekeerde osmose.',
+  description: 'Op een boot of jacht is schoon drinkwater cruciaal. Vergelijking van waterfilters voor zeiljacht, motorjacht en sloep: van dakwaterfilter tot.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/boot-jacht',

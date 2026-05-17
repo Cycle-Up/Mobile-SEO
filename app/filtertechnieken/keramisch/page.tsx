@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Keramisch waterfilter — diatomeeenaarde en zilverbehandeling | WaterfilterPlatform',
-  description: 'Hoe werkt een keramisch waterfilter? Poriemaat 0,2-0,5 micron filtert bacterien en protozoa. Zilverbehandeling, types (Berkey, kaars) en vergelijking met UF en RO.',
+  title: 'Keramisch waterfilter — diatomeeenaarde en zilverbehandeling',
+  description: 'Hoe werkt een keramisch waterfilter? Poriemaat 0,2-0,5 micron filtert bacterien en protozoa. Zilverbehandeling, types (Berkey, kaars) en vergelijking met UF.',
   alternates: { canonical: 'https://waterfilterplatform.nl/filtertechnieken/keramisch' },
   openGraph: {
     title: 'Keramisch waterfilter — diatomeeenaarde en zilverbehandeling',

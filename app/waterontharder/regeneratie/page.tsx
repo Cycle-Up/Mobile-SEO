@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterontharder regeneratie uitgelegd: hoe vaak en hoeveel zout?',
-  description: 'Regeneratie is het herstelproces van een waterontharder waarbij harshars met zout worden doorgespoeld. Leer hoe regeneratie werkt, hoe vaak het plaatsvindt en hoeveel zout het kost.',
+  description: 'Regeneratie is het herstelproces van een waterontharder waarbij harshars met zout worden doorgespoeld. Leer hoe regeneratie werkt, hoe vaak het plaatsvindt.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/regeneratie' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterontharder regeneratie uitgelegd: hoe vaak en hoeveel zout?',
-  description: 'Regeneratie is het herstelproces van een waterontharder waarbij harshars met zout worden doorgespoeld. Leer hoe regeneratie werkt, hoe vaak het plaatsvindt en hoeveel zout het kost.',
+  description: 'Regeneratie is het herstelproces van een waterontharder waarbij harshars met zout worden doorgespoeld. Leer hoe regeneratie werkt, hoe vaak het plaatsvindt.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterontharder/regeneratie',

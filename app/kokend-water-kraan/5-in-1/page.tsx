@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: '5-in-1 Kokend Water Kraan: Alle Functies Uitgelegd',
   description:
-    'Een 5-in-1 kokend water kraan levert kokend, koud gefilterd, warm, koud bruisend én warm bruisend water. Lees alles over CO₂-integratie, kosten en of het de meerprijs waard is.',
+    'Een 5-in-1 kokend water kraan levert kokend, koud gefilterd, warm, koud bruisend én warm bruisend water. Lees alles over CO₂-integratie, kosten en of het de.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/5-in-1' },
   openGraph: {
     title: '5-in-1 Kokend Water Kraan: Alle Functies Uitgelegd',

@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Beste waterfilter voor een studentenkamer — zonder installatie | WaterfilterPlatform',
-  description: 'Waterfilter voor huurkamer zonder toestemming of installatie. Beste opties: filterkan Brita of ZeroWater, aanrechtmodel en reisfilterfles. Jaarkosten EUR 40-70.',
+  description: 'Waterfilter voor huurkamer zonder toestemming of installatie. Beste opties: filterkan Brita of ZeroWater, aanrechtmodel en reisfilterfles.',
   alternates: { canonical: 'https://waterfilterplatform.nl/beste-waterfilter/studentenkamer' },
   openGraph: {
     title: 'Beste waterfilter voor een studentenkamer — zonder installatie',

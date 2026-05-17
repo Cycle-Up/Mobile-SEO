@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterionisator kopen: werking, merken en is het de investering waard?',
   description:
-    'Een waterionisator maakt alkalisch water via elektrolyse. Merken als Kangen, Tyent en Life Ionizer vergeleken op prijs (€500-3.000), werking en wetenschappelijk bewijs.',
+    'Een waterionisator maakt alkalisch water via elektrolyse. Merken als Kangen, Tyent en Life Ionizer vergeleken op prijs (€500-3.000), werking en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/alkalisch-water/ionisator' },
 };
 

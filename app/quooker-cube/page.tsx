@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Quooker CUBE: bruisend en gekoeld water — kosten, werking en alternatieven 2026',
   description:
-    'De Quooker CUBE voegt gekoeld (4°C) en bruisend gefilterd water toe aan je Quooker. Kosten, CO₂-verbruik, onderhoud en vergelijking met 4-in-1 osmose alternatieven.',
+    'De Quooker CUBE voegt gekoeld (4°C) en bruisend gefilterd water toe aan je Quooker. Kosten, CO₂-verbruik, onderhoud en vergelijking met 4-in-1 osmose.',
   alternates: { canonical: 'https://waterfilterplatform.nl/quooker-cube' },
   openGraph: {
     title: 'Quooker CUBE: bruisend en gekoeld water — kosten, werking en alternatieven 2026',
     description:
-      'De Quooker CUBE voegt gekoeld (4°C) en bruisend gefilterd water toe aan je Quooker. Kosten, CO₂-verbruik, onderhoud en vergelijking met 4-in-1 osmose alternatieven.',
+      'De Quooker CUBE voegt gekoeld (4°C) en bruisend gefilterd water toe aan je Quooker. Kosten, CO₂-verbruik, onderhoud en vergelijking met 4-in-1 osmose.',
     url: 'https://waterfilterplatform.nl/quooker-cube',
     type: 'article',
     locale: 'nl_NL',
@@ -78,7 +78,7 @@ export default function QuookerCubePage() {
         article={{
           title: 'Quooker CUBE: bruisend en gekoeld water — kosten, werking en alternatieven 2026',
           description:
-            'De Quooker CUBE voegt gekoeld (4°C) en bruisend gefilterd water toe aan je Quooker. Kosten, CO₂-verbruik, onderhoud en vergelijking met 4-in-1 osmose alternatieven.',
+            'De Quooker CUBE voegt gekoeld (4°C) en bruisend gefilterd water toe aan je Quooker. Kosten, CO₂-verbruik, onderhoud en vergelijking met 4-in-1 osmose.',
           datePublished: '2026-04-10',
           url: 'https://waterfilterplatform.nl/quooker-cube',
         }}

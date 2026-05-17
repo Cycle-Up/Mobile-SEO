@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Radioactieve stoffen in drinkwater -- radon, uranium en radium | WaterfilterPlatform',
   description:
-    'Uranium (EU-norm 30 ug/L), radon en radium in drinkwater. Nederlandse situatie: grotendeels veilig, maar priveputen in graniet- en leemgebieden zijn risicovoller. Osmose verwijdert uranium.',
+    'Uranium (EU-norm 30 ug/L), radon en radium in drinkwater. Nederlandse situatie: grotendeels veilig, maar priveputen in graniet- en leemgebieden zijn.',
   alternates: { canonical: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/radioactieve-stoffen' },
 };
 
@@ -16,7 +16,7 @@ export default function RadioactieveStoffenPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'Radioactieve stoffen in drinkwater -- radon, uranium en radium',
-        description: 'Uranium (EU-norm 30 ug/L), radon en radium in drinkwater. Nederlandse situatie: grotendeels veilig, maar priveputen in graniet- en leemgebieden zijn risicovoller. Osmose verwijdert uranium.',
+        description: 'Uranium (EU-norm 30 ug/L), radon en radium in drinkwater. Nederlandse situatie: grotendeels veilig, maar priveputen in graniet- en leemgebieden zijn.',
         datePublished: '2026-01-01',
         url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/radioactieve-stoffen',
       }} />

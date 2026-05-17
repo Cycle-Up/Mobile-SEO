@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kalk en mineralen in drinkwater -- calcium, magnesium en bicarbonaat | WaterfilterPlatform',
   description:
-    'Kalk in drinkwater: calciumcarbonaat, waterhardheid en aanslag. Calcium (gem. 80 mg/L NL), magnesium en bicarbonaat. Osmose verwijdert 95% -- remineralisatie dan nodig.',
+    'Kalk in drinkwater: calciumcarbonaat, waterhardheid en aanslag. Calcium (gem. 80 mg/L NL), magnesium en bicarbonaat. Osmose verwijdert 95% -- remineralisatie.',
   alternates: { canonical: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/kalk-mineralen' },
 };
 
@@ -16,7 +16,7 @@ export default function KalkMineralenPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'Kalk en mineralen in drinkwater -- calcium, magnesium en bicarbonaat',
-        description: 'Kalk in drinkwater: calciumcarbonaat, waterhardheid en aanslag. Calcium (gem. 80 mg/L NL), magnesium en bicarbonaat. Osmose verwijdert 95% -- remineralisatie dan nodig.',
+        description: 'Kalk in drinkwater: calciumcarbonaat, waterhardheid en aanslag. Calcium (gem. 80 mg/L NL), magnesium en bicarbonaat. Osmose verwijdert 95% -- remineralisatie.',
         datePublished: '2026-01-01',
         url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/kalk-mineralen',
       }} />

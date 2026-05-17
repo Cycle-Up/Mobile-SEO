@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Is osmosewater gezond? Mineralen, WHO-advies en dagelijks gebruik',
   description:
-    'Is osmosewater ongezond omdat het mineralen mist? De WHO adviseert minimaal Ca 30 mg/L in drinkwater. Leer wanneer osmosewater gezond is en wanneer remineralisatie nodig is.',
+    'Is osmosewater ongezond omdat het mineralen mist? De WHO adviseert minimaal Ca 30 mg/L in drinkwater. Leer wanneer osmosewater gezond is en wanneer.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/gezondheid' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Is osmosewater gezond? Mineralen, WHO-advies en dagelijks gebruik',
   description:
-    'Is osmosewater ongezond omdat het mineralen mist? De WHO adviseert minimaal Ca 30 mg/L in drinkwater. Leer wanneer osmosewater gezond is en wanneer remineralisatie nodig is.',
+    'Is osmosewater ongezond omdat het mineralen mist? De WHO adviseert minimaal Ca 30 mg/L in drinkwater. Leer wanneer osmosewater gezond is en wanneer.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/gezondheid',

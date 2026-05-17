@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Sulfaat in leidingwater: smaak, normen en waterfilter',
   description:
-    'Sulfaat (SO4) in leidingwater geeft een bittere smaak boven 250 mg/L. De EU-norm is 250 mg/L. In Nederland zit sulfaat gemiddeld op 50-150 mg/L. Osmosefilter verwijdert 97-99% van sulfaat.',
+    'Sulfaat (SO4) in leidingwater geeft een bittere smaak boven 250 mg/L. De EU-norm is 250 mg/L. In Nederland zit sulfaat gemiddeld op 50-150 mg/L.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/sulfaat' },
 };
 

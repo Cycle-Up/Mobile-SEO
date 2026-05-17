@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterkwaliteit in Nederland: wat zit er in ons drinkwater?',
   description:
-    'Nederland heeft uitstekende drinkwaterkwaliteit, maar regionale verschillen en opkomende verontreinigingen (PFAS, medicijnen) blijven aandachtspunten. Alles over Nederlandse waterkwaliteit.',
+    'Nederland heeft uitstekende drinkwaterkwaliteit, maar regionale verschillen en opkomende verontreinigingen (PFAS, medicijnen) blijven aandachtspunten.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterkwaliteit' },
 };
 

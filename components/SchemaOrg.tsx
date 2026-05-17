@@ -60,10 +60,21 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs, schema }: Sche
       datePublished: article.datePublished,
       dateModified: article.dateModified ?? article.datePublished,
       url: article.url,
+      inLanguage: 'nl-NL',
+      image: 'https://waterfilterplatform.nl/og/home.svg',
+      author: {
+        '@type': 'Organization',
+        name: 'WaterfilterPlatform',
+        url: 'https://waterfilterplatform.nl',
+      },
       publisher: {
         '@type': 'Organization',
         name: 'WaterfilterPlatform',
         url: 'https://waterfilterplatform.nl',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://waterfilterplatform.nl/og/home.svg',
+        },
       },
     };
   } else if (type === 'BreadcrumbList' && breadcrumbs) {

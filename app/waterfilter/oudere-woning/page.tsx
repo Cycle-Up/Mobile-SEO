@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor oudere woning: lood, koper en verouderde leidingen',
-  description: 'In woningen van voor 1960 kunnen loodleidingen aanwezig zijn. Lood in drinkwater is gevaarlijk. Ontdek welk waterfilter beschermt tegen lood, koper en andere risicos in oude woningen.',
+  description: 'In woningen van voor 1960 kunnen loodleidingen aanwezig zijn. Lood in drinkwater is gevaarlijk. Ontdek welk waterfilter beschermt tegen lood, koper en andere.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/oudere-woning' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterfilter voor oudere woning: lood, koper en verouderde leidingen',
-  description: 'In woningen van voor 1960 kunnen loodleidingen aanwezig zijn. Lood in drinkwater is gevaarlijk. Ontdek welk waterfilter beschermt tegen lood, koper en andere risicos in oude woningen.',
+  description: 'In woningen van voor 1960 kunnen loodleidingen aanwezig zijn. Lood in drinkwater is gevaarlijk. Ontdek welk waterfilter beschermt tegen lood, koper en andere.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/oudere-woning',

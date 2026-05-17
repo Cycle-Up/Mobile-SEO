@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     "Waterfilteroplossingen voor bedrijven: kantoor, horeca, industrie en appartementsgebouwen. Capaciteit, certificering, onderhoud en legionella-beheersplan.",
   alternates: { canonical: "https://waterfilterplatform.nl/zakelijk" },
   openGraph: {
+    images: [{ url: 'https://waterfilterplatform.nl/og/zakelijk.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Zakelijke waterfilters: voor kantoor, horeca, industrie en VVE",
     description:
       "Waterfilteroplossingen voor bedrijven: kantoor, horeca, industrie en appartementsgebouwen. Capaciteit, certificering, onderhoud en legionella-beheersplan.",

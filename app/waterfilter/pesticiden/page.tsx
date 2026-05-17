@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: "Pesticiden in drinkwater: risico's, normen en waterfilter",
   description:
-    'Pesticiden in drinkwater komen van landbouw en tuingebruik. EU-norm per stof: 0,1 microgram per liter. In NL regelmatig overschreden in grondwater. Osmosefilter verwijdert 85-99% van pesticiden.',
+    'Pesticiden in drinkwater komen van landbouw en tuingebruik. EU-norm per stof: 0,1 microgram per liter. In NL regelmatig overschreden in grondwater.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/pesticiden' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Pesticiden in drinkwater: risico's, normen en waterfilter",
   description:
-    'Pesticiden in drinkwater komen van landbouw en tuingebruik. EU-norm per stof: 0,1 microgram per liter. In NL regelmatig overschreden in grondwater. Osmosefilter verwijdert 85-99% van pesticiden.',
+    'Pesticiden in drinkwater komen van landbouw en tuingebruik. EU-norm per stof: 0,1 microgram per liter. In NL regelmatig overschreden in grondwater.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/pesticiden',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Mineralen in osmosewater: wat mist er en wanneer is aanvulling nodig?',
   description:
-    'Osmosewater mist calcium, magnesium en bicarbonaat. De WHO adviseert minimum Ca 30 mg/L. Voor gezonde volwassenen met gevarieerde voeding is aanvulling niet noodzakelijk. Baby&apos;s en sporters vormen een uitzondering.',
+    'Osmosewater mist calcium, magnesium en bicarbonaat. De WHO adviseert minimum Ca 30 mg/L. Voor gezonde volwassenen met gevarieerde voeding is aanvulling niet.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/mineralen' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Mineralen in osmosewater: wat mist er en wanneer is aanvulling nodig?',
   description:
-    'Osmosewater mist calcium, magnesium en bicarbonaat. De WHO adviseert minimum Ca 30 mg/L. Voor gezonde volwassenen met gevarieerde voeding is aanvulling niet noodzakelijk. Baby\'s en sporters vormen een uitzondering.',
+    'Osmosewater mist calcium, magnesium en bicarbonaat. De WHO adviseert minimum Ca 30 mg/L. Voor gezonde volwassenen is aanvulling niet noodzakelijk.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/mineralen',

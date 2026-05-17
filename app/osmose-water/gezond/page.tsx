@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Is Osmosewater Gezond? Feiten & Fabels Onderzocht',
-  description: 'Osmosewater bevat bijna geen mineralen — maar is dat ongezond? Wetenschappelijk onderbouwde antwoorden over osmosewater en gezondheid, remineralisatie en dagelijks gebruik.',
+  description: 'Osmosewater bevat bijna geen mineralen — maar is dat ongezond? Wetenschappelijk onderbouwde antwoorden over osmosewater en gezondheid, remineralisatie en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/gezond' },
 };
 

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'PFAS normen 2026: EU-limiet, Nederlandse situatie en wat het betekent',
   description:
-    'De nieuwe EU PFAS-norm (0,10 µg/L sum-20) uitgelegd: welke 20 stoffen tellen mee, hoe Nederland implementeert, wat er veranderde en wat het betekent voor uw drinkwater.',
+    'De nieuwe EU PFAS-norm (0,10 µg/L sum-20) uitgelegd: welke 20 stoffen tellen mee, hoe Nederland implementeert, wat er veranderde en wat het betekent voor uw.',
   alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter/normen-2026' },
 };
 

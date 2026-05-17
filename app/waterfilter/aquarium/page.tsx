@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterfilter voor aquarium: zuiver water voor zoet- en zoutwateraquarium',
   description:
-    'Een aquariumfilter verwijdert ammoniak, nitriet en nitraat via biologische, mechanische en chemische filtratie. Vergelijking van aquariumfilters voor zoet- en zoutwateraquariums.',
+    'Een aquariumfilter verwijdert ammoniak, nitriet en nitraat via biologische, mechanische en chemische filtratie. Vergelijking van aquariumfilters voor zoet.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/aquarium' },
 };
 
@@ -86,7 +86,7 @@ const articleSchema = {
   headline:
     'Waterfilter voor aquarium: zuiver water voor zoet- en zoutwateraquarium',
   description:
-    'Een aquariumfilter verwijdert ammoniak, nitriet en nitraat via biologische, mechanische en chemische filtratie. Vergelijking van aquariumfilters voor zoet- en zoutwateraquariums.',
+    'Een aquariumfilter verwijdert ammoniak, nitriet en nitraat via biologische, mechanische en chemische filtratie. Vergelijking van aquariumfilters voor zoet.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/aquarium',

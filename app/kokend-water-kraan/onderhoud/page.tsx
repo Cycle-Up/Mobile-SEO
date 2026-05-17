@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan onderhoud: ontkalken, filters en jaarlijkse service',
-  description: 'Een kokend water kraan vereist regelmatig onderhoud: ontkalken elke 3-6 maanden, filters vervangen 1-2x per jaar. Complete onderhoudsgids voor Quooker, PureAqua en andere merken.',
+  description: 'Een kokend water kraan vereist regelmatig onderhoud: ontkalken elke 3-6 maanden, filters vervangen 1-2x per jaar. Complete onderhoudsgids voor Quooker.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/onderhoud' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Kokend water kraan onderhoud: ontkalken, filters en jaarlijkse service',
-  description: 'Een kokend water kraan vereist regelmatig onderhoud: ontkalken elke 3-6 maanden, filters vervangen 1-2x per jaar. Complete onderhoudsgids voor Quooker, PureAqua en andere merken.',
+  description: 'Een kokend water kraan vereist regelmatig onderhoud: ontkalken elke 3-6 maanden, filters vervangen 1-2x per jaar. Complete onderhoudsgids voor Quooker.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kokend-water-kraan/onderhoud',

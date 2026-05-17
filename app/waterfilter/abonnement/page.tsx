@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter abonnement: voor- en nadelen in Nederland | 2026',
   description:
-    'Is een waterfilter abonnement in Nederland de moeite waard? Wat zit er in (filterlevering, onderhoud, monitoring), vergelijking met zelf kopen en wanneer een abonnement loont.',
+    'Is een waterfilter abonnement in Nederland de moeite waard? Wat zit er in (filterlevering, onderhoud, monitoring), vergelijking met zelf kopen en wanneer een.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/abonnement' },
   openGraph: {
     title: 'Waterfilter abonnement: voor- en nadelen in Nederland',

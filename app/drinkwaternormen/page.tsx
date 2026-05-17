@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "Drinkwaternormen NL: Drinkwaterbesluit, EU-richtlijn 2020/2184, RIVM, ILT en 10 waterbedrijven. Alles over PFAS, lood, certificering en extra filtratie.",
   alternates: { canonical: "https://waterfilterplatform.nl/drinkwaternormen" },
   openGraph: {
+    images: [{ url: 'https://waterfilterplatform.nl/og/drinkwaternormen.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Drinkwaternormen Nederland: wie bepaalt wat veilig drinkwater is?",
     description:
       "Drinkwaternormen NL: Drinkwaterbesluit, EU-richtlijn 2020/2184, RIVM, ILT en 10 waterbedrijven. Alles over PFAS, lood, certificering en extra filtratie.",

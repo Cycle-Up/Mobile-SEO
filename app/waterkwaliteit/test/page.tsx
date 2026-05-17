@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterkwaliteit testen: hoe meet je de kwaliteit van je kraanwater?',
   description:
-    'Test uw waterkwaliteit thuis met een TDS-meter, teststrips of laat het analyseren door een gecertificeerd lab. Stap-voor-stap gids voor waterkwaliteitstests in Nederland.',
+    'Test uw waterkwaliteit thuis met een TDS-meter, teststrips of laat het analyseren door een gecertificeerd lab. Stap-voor-stap gids voor waterkwaliteitstests.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterkwaliteit/test' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Waterkwaliteit testen: hoe meet je de kwaliteit van je kraanwater?',
   description:
-    'Test uw waterkwaliteit thuis met een TDS-meter, teststrips of laat het analyseren door een gecertificeerd lab. Stap-voor-stap gids voor waterkwaliteitstests in Nederland.',
+    'Test uw waterkwaliteit thuis met een TDS-meter, teststrips of laat het analyseren door een gecertificeerd lab. Stap-voor-stap gids voor waterkwaliteitstests.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterkwaliteit/test',

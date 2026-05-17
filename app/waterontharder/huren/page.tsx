@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterontharder huren: voordelen, kosten en wanneer huren vs kopen',
   description:
-    'Waterontharder huren kost 15-35 euro per maand inclusief zout en onderhoud. Vergelijking van huren versus kopen: wanneer is huren voordeliger en wat zijn de valkuilen?',
+    'Waterontharder huren kost 15-35 euro per maand inclusief zout en onderhoud. Vergelijking van huren versus kopen: wanneer is huren voordeliger en wat zijn de.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/huren' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Waterontharder huren: voordelen, kosten en wanneer huren vs kopen',
   description:
-    'Waterontharder huren kost 15-35 euro per maand inclusief zout en onderhoud. Vergelijking van huren versus kopen: wanneer is huren voordeliger en wat zijn de valkuilen?',
+    'Waterontharder huren kost 15-35 euro per maand inclusief zout en onderhoud. Vergelijking van huren versus kopen: wanneer is huren voordeliger en wat zijn de.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterontharder/huren',

@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Hoe Werkt een Waterontharder? Uitleg 2026',
   description:
-    'Complete uitleg over hoe een waterontharder werkt: ionenwisseling, brine tank, harsbad, regeneratiecyclus, zoutverbruik per gezinsgrootte en vergelijking met osmose.',
+    'Complete uitleg over hoe een waterontharder werkt: ionenwisseling, brine tank, harsbad, regeneratiecyclus, zoutverbruik per gezinsgrootte en vergelijking met.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/werking' },
   openGraph: {
     title: 'Hoe Werkt een Waterontharder? Uitleg 2026',
     description:
-      'Begrijp de werking van de waterontharder: ionenwisseling (calcium/magnesium → natrium), brine tank, harsbad, regeneratie en het verschil met zoutloos (TAC) en elektronisch/magnetisch.',
+      'Begrijp de werking van de waterontharder: ionenwisseling (calcium/magnesium → natrium), brine tank, harsbad, regeneratie en het verschil met zoutloos (TAC).',
     url: 'https://waterfilterplatform.nl/waterontharder/werking',
     type: 'article',
   },

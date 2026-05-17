@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Barium in leidingwater: EU-norm, bronnen en waterfilter',
   description:
-    'Barium in leidingwater heeft een EU-norm van 1 mg/L. In Nederland is barium in leidingwater zelden een probleem maar in grondwaterputten kan het voorkomen. Osmosefilter verwijdert 90-95% barium.',
+    'Barium in leidingwater heeft een EU-norm van 1 mg/L. In Nederland is barium in leidingwater zelden een probleem maar in grondwaterputten kan het voorkomen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/barium' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Barium in leidingwater: EU-norm, bronnen en waterfilter',
   description:
-    'Barium in leidingwater heeft een EU-norm van 1 mg/L. In Nederland is barium in leidingwater zelden een probleem maar bij eigen grondwaterputten kan het voorkomen. Osmosefilter verwijdert 90-95% barium.',
+    'Barium in leidingwater heeft een EU-norm van 1 mg/L. In Nederland is barium in leidingwater zelden een probleem maar bij eigen grondwaterputten kan het.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/barium',

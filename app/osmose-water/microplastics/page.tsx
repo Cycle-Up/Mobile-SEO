@@ -7,12 +7,12 @@ import { CTABanner } from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Osmosewater en microplastics: aantoonbaar vrij van plastic deeltjes",
   description:
-    "Osmosewater bevat geen microplastics of nanoplastics. Membraanporieen 0,0001 micron houden alle plastic deeltjes tegen. Meten met TDS-meter en onafhankelijke testresultaten.",
+    "Osmosewater bevat geen microplastics of nanoplastics. Membraanporieen 0,0001 micron houden alle plastic deeltjes tegen. Meten met TDS-meter en onafhankelijke.",
   alternates: { canonical: "https://waterfilterplatform.nl/osmose-water/microplastics" },
   openGraph: {
     title: "Osmosewater en microplastics: aantoonbaar vrij van plastic deeltjes",
     description:
-      "Osmosewater bevat geen microplastics of nanoplastics. Membraanporieen 0,0001 micron houden alle plastic deeltjes tegen. Meten met TDS-meter en onafhankelijke testresultaten.",
+      "Osmosewater bevat geen microplastics of nanoplastics. Membraanporieen 0,0001 micron houden alle plastic deeltjes tegen. Meten met TDS-meter en onafhankelijke.",
     type: "website",
   },
 };

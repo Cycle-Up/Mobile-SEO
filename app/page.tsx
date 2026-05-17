@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     'Waterfilter keuzehulp, filtertechnieken, drinkwaternormen en waterhardheid per gemeente. Vergelijk filters en vind de beste oplossing voor jouw situatie.',
   alternates: { canonical: 'https://waterfilterplatform.nl' },
   openGraph: {
+    images: [{ url: 'https://waterfilterplatform.nl/og/home.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: 'WaterfilterPlatform — onafhankelijke waterfilter informatie',
     description: 'Keuzehulp voor waterfilters: van osmosefilter tot waterontharder. Onafhankelijke informatie over drinkwaterkwaliteit in Nederland.',
   },

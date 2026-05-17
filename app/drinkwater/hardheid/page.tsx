@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Harde water: wat is waterhardheid en wat doet het?',
-  description: 'Waterhardheid in Nederland: kalk, kalkaanslag en energiekosten. Hardheid per regio (Limburg 25–30°dH, Amsterdam 10–15°dH). Waterontharder, osmose of ontkalker — wat werkt?',
+  description: 'Waterhardheid in Nederland: kalk, kalkaanslag en energiekosten. Hardheid per regio (Limburg 25–30°dH, Amsterdam 10–15°dH). Waterontharder, osmose of.',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwater/hardheid' },
 };
 
@@ -81,7 +81,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Harde water: wat is waterhardheid en wat doet het?',
-  description: 'Waterhardheid in Nederland uitgelegd: calcium en magnesium, schaal in °dH, regionale verdeling, huishoudelijke effecten en oplossingen zoals waterontharder en osmose.',
+  description: 'Waterhardheid in Nederland uitgelegd: calcium en magnesium, schaal in °dH, regionale verdeling, huishoudelijke effecten en oplossingen zoals waterontharder.',
   datePublished: '2026-04-10',
   dateModified: '2026-04-10',
   url: 'https://waterfilterplatform.nl/drinkwater/hardheid',

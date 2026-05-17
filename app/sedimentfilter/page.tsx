@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Wat is een sedimentfilter? Werking, micrometraties en toepassing 2026',
   description:
-    'Alles over sedimentfilters: wat ze verwijderen, welke micronwaarde je nodig hebt, wanneer vervangen en hoe ze als voorfilter in osmose- en UV-systemen werken. Kosten €10–25 per jaar.',
+    'Alles over sedimentfilters: wat ze verwijderen, welke micronwaarde je nodig hebt, wanneer vervangen en hoe ze als voorfilter in osmose- en UV-systemen werken.',
   alternates: { canonical: 'https://waterfilterplatform.nl/sedimentfilter' },
   openGraph: {
     title: 'Wat is een sedimentfilter? Werking, micrometraties en toepassing 2026',
     description:
-      'Sedimentfilters verwijderen zand, roest, slib en zwevende deeltjes uit water. Leer welke micronwaarde je nodig hebt, wanneer je vervangt en waarom een sedimentfilter altijd als eerste komt in een meertraps systeem.',
+      'Sedimentfilters verwijderen zand, roest, slib en zwevende deeltjes uit water. Leer welke micronwaarde je nodig hebt, wanneer je vervangt en waarom een.',
     url: 'https://waterfilterplatform.nl/sedimentfilter',
     type: 'article',
     locale: 'nl_NL',

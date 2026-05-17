@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Hoe werkt een sedimentfilter? Mechanische filtratie uitgelegd',
   description:
-    'Hoe werkt een sedimentfilter? Mechanische filtratie, micronwaardes uitgelegd (1–50 µm), string-wound vs geplooide vs melt-blown filter, drukval, voorfilterrol voor koolstof en RO en vervangingsinterval.',
+    'Hoe werkt een sedimentfilter? Mechanische filtratie, micronwaardes uitgelegd (1–50 µm), string-wound vs geplooide vs melt-blown filter, drukval.',
   alternates: { canonical: 'https://waterfilterplatform.nl/sedimentfilter/werking' },
   openGraph: {
     title: 'Hoe werkt een sedimentfilter? Mechanische filtratie uitgelegd',

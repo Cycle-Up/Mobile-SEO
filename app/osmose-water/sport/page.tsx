@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater voor sporters: elektrolyten, remineralisatie en prestaties',
   description:
-    'Osmosewater mist elektrolyten die sporters nodig hebben. Na intensieve training compenseer je via voeding of remineralisatietabletten. Leer wanneer osmosewater goed is voor sporters en wanneer aanvulling nodig is.',
+    'Osmosewater mist elektrolyten die sporters nodig hebben. Na intensieve training compenseer je via voeding of remineralisatietabletten.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/sport' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosewater voor sporters: elektrolyten, remineralisatie en prestaties',
   description:
-    'Osmosewater mist elektrolyten die sporters nodig hebben. Na intensieve training compenseer je via voeding of remineralisatietabletten. Leer wanneer osmosewater goed is voor sporters en wanneer aanvulling nodig is.',
+    'Osmosewater mist elektrolyten die sporters nodig hebben. Na intensieve training compenseer je via voeding of remineralisatietabletten.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/sport',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosefilter installeren: hoe lang duurt het en wat heb je nodig?',
   description:
-    'Een osmosefilter installeren duurt 2-4 uur voor een ervaren doe-het-zelver of 1-2 uur voor een loodgieter. Stap-voor-stap overzicht van de installatie en wat je nodig hebt.',
+    'Een osmosefilter installeren duurt 2-4 uur voor een ervaren doe-het-zelver of 1-2 uur voor een loodgieter. Stap-voor-stap overzicht van de installatie en wat.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/installatietijd' },
 };
 
@@ -67,7 +67,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosefilter installeren: hoe lang duurt het en wat heb je nodig?',
   description:
-    'Een osmosefilter installeren duurt 2-4 uur voor een ervaren doe-het-zelver of 1-2 uur voor een loodgieter. Stap-voor-stap overzicht van de installatie en wat je nodig hebt.',
+    'Een osmosefilter installeren duurt 2-4 uur voor een ervaren doe-het-zelver of 1-2 uur voor een loodgieter. Stap-voor-stap overzicht van de installatie en wat.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/omgekeerde-osmose/installatietijd',

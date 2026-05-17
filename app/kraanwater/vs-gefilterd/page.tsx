@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kraanwater vs gefilterd water: wat is het verschil? (2026)',
   description:
-    'Kraanwater vs gefilterd water: uitgebreide vergelijking op smaak, veiligheid, kosten, milieu, mineralen, microplastics en PFAS. Welk water is het beste voor uw situatie?',
+    'Kraanwater vs gefilterd water: uitgebreide vergelijking op smaak, veiligheid, kosten, milieu, mineralen, microplastics en PFAS. Welk water is het beste voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kraanwater/vs-gefilterd' },
   openGraph: {
     title: 'Kraanwater vs gefilterd water: wat is het verschil? (2026)',

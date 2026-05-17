@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Beste waterfilter 2026: getest en vergeleken (grote gids)',
   description:
-    'Welk waterfilter is de beste keuze in 2026? Onze methodologie, categorie-winnaars, uitgebreide vergelijkingstabel (5 × 8 criteria), rode vlaggen in marketing en welke certificeringen tellen.',
+    'Welk waterfilter is de beste keuze in 2026? Onze methodologie, categorie-winnaars, uitgebreide vergelijkingstabel (5 × 8 criteria), rode vlaggen in marketing.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/best-getest-2026' },
   openGraph: {
     title: 'Beste waterfilter 2026: getest en vergeleken (grote gids)',
     description:
-      'BWT Penguin (filterkan), Ecosoft FMV3ECO (koolstof), Steripen Ultra (UV), PureAqua 4-in-1 (osmose) en Brita Maxtra Pro (budget) — 5 winnaars per categorie vergeleken op 8 criteria.',
+      'BWT Penguin (filterkan), Ecosoft FMV3ECO (koolstof), Steripen Ultra (UV), PureAqua 4-in-1 (osmose) en Brita Maxtra Pro (budget) — 5 winnaars per categorie.',
     url: 'https://waterfilterplatform.nl/waterfilter/best-getest-2026',
     type: 'article',
   },

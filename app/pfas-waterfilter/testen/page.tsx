@@ -7,7 +7,7 @@ import { CTABanner } from '@/components/CTABanner';
 export const metadata: Metadata = {
   title: 'PFAS in uw water testen: zo weet u wat erin zit',
   description:
-    'Hoe test u uw drinkwater op PFAS? Stap-voor-stap gids: RIVM-kaart, drinkwaterbedrijf jaarrapport, labotests (EUR 80-200) en DIY-kits. Resultaten interpreteren.',
+    'Hoe test u uw drinkwater op PFAS? Stap-voor-stap gids: RIVM-kaart, drinkwaterbedrijf jaarrapport, labotests (EUR 80-200) en DIY-kits.',
   alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter/testen' },
 };
 

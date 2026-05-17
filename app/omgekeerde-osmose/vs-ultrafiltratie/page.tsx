@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde osmose vs ultrafiltratie: wat is het verschil?',
-  description: 'Omgekeerde osmose (RO) filtert tot 0,0001 µm en verwijdert 95-99% van alle verontreinigingen. Ultrafiltratie (UF) filtert tot 0,01 µm en verwijdert bacteriën maar niet alle chemicaliën. Vergelijking.',
+  description: 'Omgekeerde osmose (RO) filtert tot 0,0001 µm en verwijdert 95-99% van alle verontreinigingen. Ultrafiltratie (UF) filtert tot 0,01 µm en verwijdert bacteriën.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/vs-ultrafiltratie' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Omgekeerde osmose vs ultrafiltratie: wat is het verschil?',
-  description: 'Omgekeerde osmose (RO) filtert tot 0,0001 µm en verwijdert 95-99% van alle verontreinigingen. Ultrafiltratie (UF) filtert tot 0,01 µm en verwijdert bacteriën maar niet alle chemicaliën.',
+  description: 'Omgekeerde osmose (RO) filtert tot 0,0001 µm en verwijdert 95-99% van alle verontreinigingen. Ultrafiltratie (UF) filtert tot 0,01 µm en verwijdert bacteriën.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/omgekeerde-osmose/vs-ultrafiltratie',

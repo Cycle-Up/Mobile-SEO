@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Actief koolfilter: GAC vs CTO vs blokfilter, werking en levensduur',
   description:
-    'Een actief koolfilter verwijdert chloor, geur en organische verontreinigingen via adsorptie. Granular (GAC) vs blokfilter (CTO) vs catalytic carbon: verschillen in verwijderingsrendement, debiet en levensduur.',
+    'Een actief koolfilter verwijdert chloor, geur en organische verontreinigingen via adsorptie. Granular (GAC) vs blokfilter (CTO) vs catalytic carbon.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/actief-kool' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Actief koolfilter: GAC vs CTO vs blokfilter, werking en levensduur',
   description:
-    'Een actief koolfilter verwijdert chloor, geur en organische verontreinigingen via adsorptie. GAC, CTO en catalytic carbon vergeleken op rendement en levensduur.',
+    'Een actief koolfilter verwijdert chloor, geur en organische verontreinigingen via adsorptie. GAC, CTO en catalytic carbon vergeleken op rendement en.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/actief-kool',

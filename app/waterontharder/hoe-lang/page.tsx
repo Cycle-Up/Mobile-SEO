@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Hoe lang gaat een waterontharder mee? Levensduur en onderhoud',
-  description: 'Een waterontharder gaat gemiddeld 15-25 jaar mee bij goed onderhoud. Ontdek wat de levensduur bepaalt, wanneer vervanging nodig is en hoe u uw ontharder langer mee laat gaan.',
+  description: 'Een waterontharder gaat gemiddeld 15-25 jaar mee bij goed onderhoud. Ontdek wat de levensduur bepaalt, wanneer vervanging nodig is en hoe u uw ontharder.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/hoe-lang' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Hoe lang gaat een waterontharder mee? Levensduur en onderhoud',
-  description: 'Een waterontharder gaat gemiddeld 15-25 jaar mee bij goed onderhoud. Ontdek wat de levensduur bepaalt, wanneer vervanging nodig is en hoe u uw ontharder langer mee laat gaan.',
+  description: 'Een waterontharder gaat gemiddeld 15-25 jaar mee bij goed onderhoud. Ontdek wat de levensduur bepaalt, wanneer vervanging nodig is en hoe u uw ontharder.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterontharder/hoe-lang',

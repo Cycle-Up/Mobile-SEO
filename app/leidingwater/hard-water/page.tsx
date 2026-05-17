@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/hard-water' },
   openGraph: {
     title: 'Hard leidingwater in Nederland: gebieden, gevolgen en oplossingen',
-    description: 'Hardst water: Limburg (20-30 dH), Noord-Brabant (18-25 dH). Zachts: Friesland/Groningen (4-8 dH). Gevolgen voor cv, wasmachine, huid en oplossingen per situatie.',
+    description: 'Hardst water: Limburg (20-30 dH), Noord-Brabant (18-25 dH). Zachts: Friesland/Groningen (4-8 dH). Gevolgen voor cv, wasmachine, huid en oplossingen per.',
     url: 'https://waterfilterplatform.nl/leidingwater/hard-water',
     type: 'article',
   },

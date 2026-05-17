@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterontharder onderhoud: jaarlijks schema, reiniging en hars',
   description:
-    'Een waterontharder vraagt minimaal onderhoud: jaarlijkse controle, zout bijvullen elke 4-8 weken, harsbed desinfecteren en om de 10-15 jaar hars vervangen. Compleet onderhoudsschema voor thuisgebruik.',
+    'Een waterontharder vraagt minimaal onderhoud: jaarlijkse controle, zout bijvullen elke 4-8 weken, harsbed desinfecteren en om de 10-15 jaar hars vervangen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/onderhoud' },
 };
 

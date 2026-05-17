@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter onderhoud schema: wanneer vervangen? | 2026',
   description:
-    'Compleet onderhoud schema voor waterfilters: sedimentfilter (3-6m), koolstoffilter (6-12m), RO-membraan (2-5j), UV-lamp (12m). Checklist op basis van waterhardheid en gebruik.',
+    'Compleet onderhoud schema voor waterfilters: sedimentfilter (3-6m), koolstoffilter (6-12m), RO-membraan (2-5j), UV-lamp (12m). Checklist op basis van.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/onderhoud-schema' },
   openGraph: {
     title: 'Waterfilter onderhoud schema: wanneer vervangen?',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Chloride in drinkwater: bron, smaak en waterfilter',
   description:
-    'Chloride (Cl-) in drinkwater is niet hetzelfde als chloor. EU-norm 250 mg/L als indicatorparameter. Te hoog chloride geeft zoute smaak en is corrosief voor leidingen. Osmosefilter verwijdert 95-99% chloride.',
+    'Chloride (Cl-) in drinkwater is niet hetzelfde als chloor. EU-norm 250 mg/L als indicatorparameter. Te hoog chloride geeft zoute smaak en is corrosief voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/chloride' },
 };
 

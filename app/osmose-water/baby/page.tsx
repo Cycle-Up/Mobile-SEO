@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater voor babyvoeding: WHO-richtlijnen en remineralisatie',
   description:
-    'Osmosewater is geschikt voor babyvoeding mits de juiste mineraalsamenstelling. WHO adviseert maximaal 200 mg/L TDS voor babywater. Bij osmosewater (TDS 5-30) is remineralisatie aan te raden om calcium en magnesium toe te voegen.',
+    'Osmosewater is geschikt voor babyvoeding mits de juiste mineraalsamenstelling. WHO adviseert maximaal 200 mg/L TDS voor babywater. Bij osmosewater (TDS 5-30).',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/baby' },
 };
 
@@ -77,7 +77,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosewater voor babyvoeding: WHO-richtlijnen en remineralisatie',
   description:
-    'Osmosewater is geschikt voor babyvoeding mits de juiste mineraalsamenstelling. WHO adviseert maximaal 200 mg/L TDS. Bij osmosewater is remineralisatie aan te raden.',
+    'Osmosewater is geschikt voor babyvoeding mits de juiste mineraalsamenstelling. WHO adviseert maximaal 200 mg/L TDS. Bij osmosewater is remineralisatie aan te.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/baby',

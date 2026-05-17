@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: "Lood in leidingwater: risico's, loden leidingen en het beste waterfilter",
   description:
-    "Lood in leidingwater is schadelijk bij elke concentratie. EU-norm wordt aangescherpt naar 5 microgram per liter in 2036. Huizen van voor 1960 hebben mogelijk loden leidingen. Osmosefilter verwijdert 95-99% van het lood.",
+    "Lood in leidingwater is schadelijk bij elke concentratie. EU-norm wordt aangescherpt naar 5 microgram per liter in 2036. Huizen van voor 1960 hebben mogelijk.",
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/lood' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Lood in leidingwater: risico's, loden leidingen en het beste waterfilter",
   description:
-    'Lood in leidingwater is schadelijk bij elke concentratie. Osmosefilter verwijdert 95-99% van het lood. Structurele oplossing is vervanging van loden leidingen.',
+    'Lood in leidingwater is schadelijk bij elke concentratie. Osmosefilter verwijdert 95-99% van het lood. Structurele oplossing is vervanging van loden.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/lood',

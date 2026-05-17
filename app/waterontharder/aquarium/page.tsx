@@ -7,7 +7,7 @@ import { CTABanner } from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Waterontharder en aquarium: natrium gevaarlijk voor vissen",
   description:
-    "Waterontharder water is NIET geschikt voor aquarium: natrium (Na+) is toxisch voor zoetwatervissen. Gebruik osmosewater of onbehandeld leidingwater voor aquarium.",
+    "Waterontharder water is NIET geschikt voor aquarium: natrium (Na+) is toxisch voor zoetwatervissen. Gebruik osmosewater of onbehandeld leidingwater voor.",
   alternates: { canonical: "https://waterfilterplatform.nl/waterontharder/aquarium" },
   openGraph: {
     title: "Waterontharder en aquarium: natrium gevaarlijk voor vissen",

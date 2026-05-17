@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Mangaan in leidingwater: zwarte vlekken, smaak en gezondheidsrisico',
-  description: 'Mangaan in leidingwater veroorzaakt zwarte vlekken, metalige smaak en bij hoge concentraties neurologische risicos. EU-norm 50 µg/L. Filteroplossingen uitgelegd.',
+  description: 'Mangaan in leidingwater veroorzaakt zwarte vlekken, metalige smaak en bij hoge concentraties neurologische risicos. EU-norm 50 µg/L.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/mangaan' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Mangaan in leidingwater: zwarte vlekken, smaak en gezondheidsrisico',
-  description: 'Mangaan in leidingwater veroorzaakt zwarte vlekken, metalige smaak en bij hoge concentraties neurologische risicos. EU-norm 50 µg/L. Filteroplossingen uitgelegd.',
+  description: 'Mangaan in leidingwater veroorzaakt zwarte vlekken, metalige smaak en bij hoge concentraties neurologische risicos. EU-norm 50 µg/L.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/mangaan',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: "Koper in leidingwater: risico's van koperen leidingen en waterfilters",
   description:
-    'Koper in leidingwater komt van koperen huisleidingen. EU-norm is 2 mg/L. Bij nieuw leidingwerk en zacht zuur water kan koper boven de norm uitkomen. Osmosefilter verwijdert 97-99% van koper.',
+    'Koper in leidingwater komt van koperen huisleidingen. EU-norm is 2 mg/L. Bij nieuw leidingwerk en zacht zuur water kan koper boven de norm uitkomen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/koper' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Koper in leidingwater: risico's van koperen leidingen en waterfilters",
   description:
-    'Koper in leidingwater komt van koperen huisleidingen. EU-norm 2 mg/L. Bij nieuw leidingwerk en zacht zuur water kan koper boven de norm uitkomen. Osmosefilter verwijdert 97-99%.',
+    'Koper in leidingwater komt van koperen huisleidingen. EU-norm 2 mg/L. Bij nieuw leidingwerk en zacht zuur water kan koper boven de norm uitkomen.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/koper',

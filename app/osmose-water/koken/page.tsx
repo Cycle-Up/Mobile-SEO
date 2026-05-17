@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater koken: veilig voor pasta, thee en babyvoeding?',
   description:
-    'Osmosewater koken is veilig voor pasta, rijst en thee. Voor babyvoeding adviseert de WHO remineralisatie. Osmosewater heeft een lagere kookpunt-neutraliteit maar geen meetbaar kookverschil.',
+    'Osmosewater koken is veilig voor pasta, rijst en thee. Voor babyvoeding adviseert de WHO remineralisatie. Osmosewater heeft een lagere kookpunt-neutraliteit.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/koken' },
 };
 
@@ -77,7 +77,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosewater koken: veilig voor pasta, thee en babyvoeding?',
   description:
-    'Osmosewater koken is veilig voor pasta, rijst en thee. Voor babyvoeding adviseert de WHO remineralisatie. Osmosewater heeft een lagere kookpunt-neutraliteit maar geen meetbaar kookverschil.',
+    'Osmosewater koken is veilig voor pasta, rijst en thee. Voor babyvoeding adviseert de WHO remineralisatie. Osmosewater heeft een lagere kookpunt-neutraliteit.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/koken',

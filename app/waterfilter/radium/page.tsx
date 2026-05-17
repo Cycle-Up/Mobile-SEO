@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Radium en radon in drinkwater: risico, normen en waterfilter',
   description:
-    'Radium en radon in grondwater komen voor in Brabant en Gelderland door uraniumhoudende bodemlagen. EU-norm voor radium-226+228 is 0,1 Bq/L. Osmosefilter verwijdert 95-99% van opgelost radium.',
+    'Radium en radon in grondwater komen voor in Brabant en Gelderland door uraniumhoudende bodemlagen. EU-norm voor radium-226+228 is 0,1 Bq/L.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/radium' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Radium en radon in drinkwater: risico, normen en waterfilter',
   description:
-    'Radium en radon in grondwater komen voor in Brabant en Gelderland door uraniumhoudende bodemlagen. EU-norm voor radium-226+228 is 0,1 Bq/L. Osmosefilter verwijdert 95-99% van opgelost radium.',
+    'Radium en radon in grondwater komen voor in Brabant en Gelderland door uraniumhoudende bodemlagen. EU-norm voor radium-226+228 is 0,1 Bq/L.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/radium',

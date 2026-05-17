@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Optimaal water voor thee: temperatuur, TDS, hardheid en waterfilter',
   description:
-    'Voor thee is water met TDS 50-150 mg/L, pH 6-7 en lage hardheid ideaal. Hard water maakt thee troebel en bitter. Osmosewater plus lichte remineralisatie geeft de beste theeextractie.',
+    'Voor thee is water met TDS 50-150 mg/L, pH 6-7 en lage hardheid ideaal. Hard water maakt thee troebel en bitter. Osmosewater plus lichte remineralisatie.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/thee' },
 };
 

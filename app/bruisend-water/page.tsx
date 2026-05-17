@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Bruisend water thuis: kraan, SodaStream of CO2-systeem?',
   description:
-    'Bruisend water thuis maken: vergelijking van bruisend-waterkraan, SodaStream en CO2-systemen op kosten, gemak en kwaliteit. Altijd sprankelend water voor €0,01–0,08 per liter.',
+    'Bruisend water thuis maken: vergelijking van bruisend-waterkraan, SodaStream en CO2-systemen op kosten, gemak en kwaliteit. Altijd sprankelend water voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/bruisend-water' },
 };
 

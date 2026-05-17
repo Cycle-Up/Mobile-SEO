@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor tiny house: compacte oplossingen zonder vaste aansluiting',
-  description: 'Een tiny house heeft speciale waterfilterwensen: compact, energie-efficient, vaak zonder vast leidingwater. De beste waterfilteroplossingen voor off-grid en tiny house.',
+  description: 'Een tiny house heeft speciale waterfilterwensen: compact, energie-efficient, vaak zonder vast leidingwater. De beste waterfilteroplossingen voor off-grid en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/tiny-house' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterfilter voor tiny house: compacte oplossingen zonder vaste aansluiting',
-  description: 'Een tiny house heeft speciale waterfilterwensen: compact, energie-efficient, vaak zonder vast leidingwater. De beste waterfilteroplossingen voor off-grid en tiny house.',
+  description: 'Een tiny house heeft speciale waterfilterwensen: compact, energie-efficient, vaak zonder vast leidingwater. De beste waterfilteroplossingen voor off-grid en.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/tiny-house',

@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Chlooramine in water: zwaarder te verwijderen dan chloor',
-  description: 'Chlooramine in drinkwater: wat is monochloramine, waarom gebruiken waterbedrijven het, waarom is het moeilijker te verwijderen dan chloor, en welke filters werken écht?',
+  description: 'Chlooramine in drinkwater: wat is monochloramine, waarom gebruiken waterbedrijven het, waarom is het moeilijker te verwijderen dan chloor, en welke filters.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/chlooramine' },
 };
 

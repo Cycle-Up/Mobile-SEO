@@ -7,7 +7,7 @@ import { CTABanner } from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Twin-tank waterontharder: continu zacht water met duplex systeem",
   description:
-    "Twin-tank waterontharder heeft 2 harskolommen voor continu zacht water zonder regeneratiepauze. Ideaal voor gezinnen &gt;4 personen of bedrijven. Kosten en merken.",
+    "Twin-tank waterontharder heeft 2 harskolommen voor continu zacht water zonder regeneratiepauze. Ideaal voor gezinnen &gt;4 personen of bedrijven.",
   alternates: { canonical: "https://waterfilterplatform.nl/waterontharder/twin-tank" },
   openGraph: {
     title: "Twin-tank waterontharder: continu zacht water met duplex systeem",

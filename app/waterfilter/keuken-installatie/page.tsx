@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter keuken installeren: onder aanrecht gids | 2026',
   description:
-    'Stap-voor-stap gids voor het installeren van een under-sink waterfilter in de keuken: benodigde ruimte (min 30 cm hoogte), boorwerk voor kraangat, T-stuk aansluiting, afvoerverbinding en filterhuizing plaatsing.',
+    'Stap-voor-stap gids voor het installeren van een under-sink waterfilter in de keuken: benodigde ruimte (min 30 cm hoogte), boorwerk voor kraangat, T-stuk.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/keuken-installatie' },
   openGraph: {
     title: 'Waterfilter keuken installeren: onder aanrecht gids',

@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Osmosefilter zonder afvalwater: permeate pump systemen | 2026',
   description:
-    'Hoe werken osmose systemen zonder afvalwater? Uitleg over permeaatpomp en gesloten-kring systemen, efficiëntievergelijking met traditioneel RO (50% afval), kosten en wanneer zero-waste zinvol is.',
+    'Hoe werken osmose systemen zonder afvalwater? Uitleg over permeaatpomp en gesloten-kring systemen, efficiëntievergelijking met traditioneel RO (50% afval).',
   alternates: {
     canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/zonder-afvalwater',
   },
@@ -111,7 +111,7 @@ export default function ZonderAfvalwaterPage() {
         article={{
           title: 'Osmosefilter zonder afvalwater: permeate pump systemen uitgelegd',
           description:
-            'Uitleg over zero-waste RO-systemen met permeaatpomp of gesloten kring: hoe werken ze, hoeveel water besparen ze, wat kosten ze en wanneer is een zero-waste osmosefilter de betere keuze.',
+            'Uitleg over zero-waste RO-systemen met permeaatpomp of gesloten kring: hoe werken ze, hoeveel water besparen ze, wat kosten ze en wanneer is een zero-waste.',
           datePublished: '2025-10-15',
           dateModified: '2026-05-14',
           url: 'https://waterfilterplatform.nl/omgekeerde-osmose/zonder-afvalwater',

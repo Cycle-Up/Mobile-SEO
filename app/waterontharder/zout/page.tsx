@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterontharder zout kopen: types en verbruik | 2026',
   description:
-    'Tabletzout, blokzout of granulaat voor je waterontharder? Vergelijking van merkzout vs. budget, verbruik per persoon (5–8 kg/jaar), wanneer bijvullen en de goedkoopste zout opties.',
+    'Tabletzout, blokzout of granulaat voor je waterontharder? Vergelijking van merkzout vs. budget, verbruik per persoon (5–8 kg/jaar), wanneer bijvullen en de.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/zout' },
   openGraph: {
     title: 'Waterontharder zout kopen: types en verbruik',

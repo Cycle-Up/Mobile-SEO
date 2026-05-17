@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater voor wijnmakers: watersamenstelling, gist en remineralisatie',
   description:
-    'Thuiswijnmakers en kleine wijnmakerijen gebruiken osmosewater als basiswater voor remineralisatie op maat. pH-instelling, gist-gezondheid en sulfaatgehalte beinvloeden gisting en smaakprofiel.',
+    'Thuiswijnmakers en kleine wijnmakerijen gebruiken osmosewater als basiswater voor remineralisatie op maat. pH-instelling, gist-gezondheid en sulfaatgehalte.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/wijn' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosewater voor wijnmakers: watersamenstelling, gist en remineralisatie',
   description:
-    'Thuiswijnmakers en kleine wijnmakerijen gebruiken osmosewater als basiswater voor remineralisatie op maat. pH-instelling, gist-gezondheid en sulfaatgehalte beinvloeden gisting en smaakprofiel.',
+    'Thuiswijnmakers en kleine wijnmakerijen gebruiken osmosewater als basiswater voor remineralisatie op maat. pH-instelling, gist-gezondheid en sulfaatgehalte.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/wijn',

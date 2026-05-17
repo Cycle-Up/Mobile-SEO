@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmose Filter: Hoe Werkt Het & Wat Kost Het?',
   description:
-    'Alles over het osmose filter: semi-permeabel membraan, afwijzingspercentage, 4-traps vs 5-traps, wat het verwijdert (PFAS, nitraat, zware metalen), onderhoud en prijzen.',
+    'Alles over het osmose filter: semi-permeabel membraan, afwijzingspercentage, 4-traps vs 5-traps, wat het verwijdert (PFAS, nitraat, zware metalen), onderhoud.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter' },
   openGraph: {
     title: 'Osmose Filter: Hoe Werkt Het & Wat Kost Het?',
     description:
-      'Complete gids over het osmose filter: werking, vergelijking met koolstof- en UV-filter, 4-traps vs 5-traps vs geïntegreerd in kokend water kraan, prijzen en onderhoud.',
+      'Complete gids over het osmose filter: werking, vergelijking met koolstof- en UV-filter, 4-traps vs 5-traps vs geïntegreerd in kokend water kraan, prijzen en.',
     url: 'https://waterfilterplatform.nl/osmose-filter',
     type: 'article',
   },

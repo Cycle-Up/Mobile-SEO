@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Pesticiden in drinkwater -- glyfosaat, atrazine en MCPA | WaterfilterPlatform',
+  title: 'Pesticiden in drinkwater -- glyfosaat, atrazine en MCPA',
   description:
     'Pesticiden in drinkwater: EU-norm 0,1 ug/L per stof. Meest gevonden stoffen in Nederland: glyfosaat, bentazon en MCPA. Oplossingen met actief kool en osmose.',
   alternates: { canonical: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/pesticiden' },

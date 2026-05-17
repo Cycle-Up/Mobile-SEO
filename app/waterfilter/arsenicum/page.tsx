@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Arsenicum in drinkwater: risico\'s, hotspots en filtratie',
-  description: 'Arsenicum in drinkwater: WHO-norm 10 µg/L, risicoprovinices in Nederland, IARC-groep 1 carcinogeen. Welk waterfilter verwijdert arsenicum het best? Geactiveerd alumina vs. osmose.',
+  description: 'Arsenicum in drinkwater: WHO-norm 10 µg/L, risicoprovinices in Nederland, IARC-groep 1 carcinogeen. Welk waterfilter verwijdert arsenicum het best?',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/arsenicum' },
 };
 

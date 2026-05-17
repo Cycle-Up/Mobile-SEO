@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Welk water voor flesvoeding? Kraanwater, osmose of flessenwater',
   description:
-    'Voor flesvoeding kies je water met natrium <20 mg/L en nitraat <10 mg/L. In Nederland is osmosewater de veiligste en goedkoopste keuze. Vergelijking per watersoort.',
+    'Voor flesvoeding kies je water met natrium <20 mg/L en nitraat <10 mg/L. In Nederland is osmosewater de veiligste en goedkoopste keuze.',
   alternates: { canonical: 'https://waterfilterplatform.nl/babywater/welk-water' },
 };
 

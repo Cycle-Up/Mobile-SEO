@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'PFAS in drinkwater -- PFOA, PFOS en de nieuwe EU-norm | WaterfilterPlatform',
+  title: 'PFAS in drinkwater -- PFOA, PFOS en de nieuwe EU-norm',
   description:
     'PFAS in drinkwater: eeuwige chemicalien, 4.700+ stoffen en nieuwe EU-norm 2026 (som 4 PFAS max 0,1 ug/L). Nederlandse hotspots en hoe osmose 90%+ verwijdert.',
   alternates: { canonical: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/pfas-overzicht' },

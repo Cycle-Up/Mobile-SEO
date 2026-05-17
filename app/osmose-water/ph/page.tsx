@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'pH van osmosewater: waarom het zuur is en hoe u het corrigeert',
   description:
-    'Osmosewater heeft een pH van 5-6 door CO2-absorptie. Dit is licht zuur maar niet schadelijk voor gezondheid. Remineralisatiefilter brengt de pH naar 7-7,5. Uitleg en oplossingen.',
+    'Osmosewater heeft een pH van 5-6 door CO2-absorptie. Dit is licht zuur maar niet schadelijk voor gezondheid. Remineralisatiefilter brengt de pH naar 7-7,5.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/ph' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'pH van osmosewater: waarom het zuur is en hoe u het corrigeert',
   description:
-    'Osmosewater heeft een pH van 5-6 door CO2-absorptie na verwijdering van carbonaatbuffers. Niet schadelijk voor gezondheid. Remineralisatiefilter corrigeert de pH naar 7-7,5.',
+    'Osmosewater heeft een pH van 5-6 door CO2-absorptie na verwijdering van carbonaatbuffers. Niet schadelijk voor gezondheid. Remineralisatiefilter corrigeert.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/ph',

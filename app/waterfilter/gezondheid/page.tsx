@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter en gezondheid: wat filtert wat? | 2026',
   description:
-    'Overzicht van gezondheidsrelevante stoffen in Nederlands kraanwater: PFAS, nitraat, lood, chloor en arseen. Per stof: aanwezig in NL, gezondheidsrisico en welk filter het verwijdert.',
+    'Overzicht van gezondheidsrelevante stoffen in Nederlands kraanwater: PFAS, nitraat, lood, chloor en arseen. Per stof: aanwezig in NL, gezondheidsrisico en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/gezondheid' },
   openGraph: {
     title: 'Waterfilter en gezondheid: wat filtert wat?',

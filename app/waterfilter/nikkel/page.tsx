@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Nikkel in leidingwater: EU-norm, bronnen en waterfilter',
   description:
-    'Nikkel in leidingwater komt van kranen en fittingen van laaggelegeerd staal. EU-norm is 20 microgram per liter. Bij nieuw kraanwerk altijd doorspoelen. Osmosefilter verwijdert 95-98% van nikkel.',
+    'Nikkel in leidingwater komt van kranen en fittingen van laaggelegeerd staal. EU-norm is 20 microgram per liter. Bij nieuw kraanwerk altijd doorspoelen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/nikkel' },
 };
 

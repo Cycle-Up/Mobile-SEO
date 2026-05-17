@@ -9,7 +9,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Welke kokend water kraan is de beste keuze? Vergelijking 2026',
   description:
-    'Vergelijk kokend water kranen op prijs, filter, functies en totale kosten over 3 jaar. 4-in-1 osmosekraan, Quooker Combi+, Fusion+CUBE en Grohe Blue Home naast elkaar.',
+    'Vergelijk kokend water kranen op prijs, filter, functies en totale kosten over 3 jaar. 4-in-1 osmosekraan, Quooker Combi+, Fusion+CUBE en Grohe Blue Home.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/vergelijken' },
   openGraph: {
     title: 'Welke kokend water kraan is de beste keuze? Vergelijking 2026',

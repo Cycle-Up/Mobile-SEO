@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Babywater: welk water is veilig voor flesvoeding en babyvoeding?',
   description:
-    'Voor flesvoeding is laag-mineraal water (natrium <20 mg/L, nitraat <10 mg/L) het veiligst. Vergelijking van kraanwater, gefilterd water, osmosewater en flessenbabywater voor baby\'s.',
+    'Voor flesvoeding is laag-mineraal water (natrium onder 20 mg/L, nitraat onder 10 mg/L) het veiligst. Vergelijking van kraanwater, filter en osmose.',
   alternates: { canonical: 'https://waterfilterplatform.nl/babywater' },
 };
 
@@ -59,7 +59,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Babywater: welk water is veilig voor flesvoeding en babyvoeding?',
   description:
-    'Voor flesvoeding is laag-mineraal water (natrium onder 20 mg/L, nitraat onder 10 mg/L) het veiligst. Vergelijking van kraanwater, gefilterd water, osmosewater en flessenbabywater.',
+    'Voor flesvoeding is laag-mineraal water (natrium onder 20 mg/L, nitraat onder 10 mg/L) het veiligst. Vergelijking van kraanwater, filter en osmose.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/babywater',

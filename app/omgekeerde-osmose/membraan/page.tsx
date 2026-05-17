@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'RO membraan: levensduur, types en vervanging | 2026',
   description:
-    'Alles over het RO membraan: TFC-technologie uitgelegd, levensduur 2–5 jaar, signalen dat vervanging nodig is (TDS-stijging), vervangingsprocedure en merkvergelijking Filmtec vs Hydranautics.',
+    'Alles over het RO membraan: TFC-technologie uitgelegd, levensduur 2–5 jaar, signalen dat vervanging nodig is (TDS-stijging), vervangingsprocedure en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/membraan' },
   openGraph: {
     title: 'RO membraan: levensduur, types en vervanging',

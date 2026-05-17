@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kalium in leidingwater: normen, gezondheid en waterontharder met KCl',
   description:
-    'Kalium (K) in leidingwater is van nature aanwezig in kleine hoeveelheden (1-15 mg/L). KCl als alternatief voor NaCl in waterontharders verhoogt het kaliumgehalte. Normen, gezondheidseffecten en filters.',
+    'Kalium (K) in leidingwater is van nature aanwezig in kleine hoeveelheden (1-15 mg/L). KCl als alternatief voor NaCl in waterontharders verhoogt het.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/kalium' },
 };
 
@@ -77,7 +77,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Kalium in leidingwater: normen, gezondheid en waterontharder met KCl',
   description:
-    'Kalium (K) in leidingwater is van nature aanwezig in kleine hoeveelheden. KCl als alternatief voor NaCl in waterontharders verhoogt het kaliumgehalte. Normen, gezondheidseffecten en filters.',
+    'Kalium (K) in leidingwater is van nature aanwezig in kleine hoeveelheden. KCl als alternatief voor NaCl in waterontharders verhoogt het kaliumgehalte.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/kalium',

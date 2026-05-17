@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Chloor in leidingwater: veilig of ongezond?',
-  description: 'Chloor in leidingwater ruikt en smaakt onaangenaam maar is veilig. Leer waarom drinkbedrijven chloor toevoegen, hoeveel er in zit en hoe je de smaak verbetert.',
+  description: 'Chloor in leidingwater ruikt en smaakt onaangenaam maar is veilig. Leer waarom drinkbedrijven chloor toevoegen, hoeveel er in zit en hoe je de smaak.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/chloor' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Chloor in leidingwater: veilig of ongezond?',
-  description: 'Chloor in leidingwater ruikt en smaakt onaangenaam maar is veilig. Leer waarom drinkbedrijven chloor toevoegen, hoeveel er in zit en hoe je de smaak verbetert.',
+  description: 'Chloor in leidingwater ruikt en smaakt onaangenaam maar is veilig. Leer waarom drinkbedrijven chloor toevoegen, hoeveel er in zit en hoe je de smaak.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/chloor',

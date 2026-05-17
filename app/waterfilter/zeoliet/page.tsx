@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Zeoliet als waterfiltermedium: ammoniak, zware metalen en aquarium',
   description:
-    'Zeoliet is een mineraal filtermedium dat ammoniak, ammonium en sommige zware metalen adsorbeert. Gebruikt in aquariums, waterbehandeling en als aanvulling op osmosefilters. Vergelijking met actief kool.',
+    'Zeoliet is een mineraal filtermedium dat ammoniak, ammonium en sommige zware metalen adsorbeert. Gebruikt in aquariums, waterbehandeling en als aanvulling op.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/zeoliet' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Zeoliet als waterfiltermedium: ammoniak, zware metalen en aquarium',
   description:
-    'Zeoliet is een mineraal filtermedium dat ammoniak, ammonium en sommige zware metalen adsorbeert. Vergeleken met actief kool, toepassingen in aquarium, drinkwater en zwembad.',
+    'Zeoliet is een mineraal filtermedium dat ammoniak, ammonium en sommige zware metalen adsorbeert. Vergeleken met actief kool, toepassingen in aquarium.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/zeoliet',

@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Kokend Water Kraan Boiler: Hoe Werkt Het?',
   description:
-    'Alles over de boiler van een kokend water kraan: werking, volumes (1L, 3L, 7L), energieverbruik, vacuümisolatie, drukventiel EN 61770 en onderhoud. Complete gids.',
+    'Alles over de boiler van een kokend water kraan: werking, volumes (1L, 3L, 7L), energieverbruik, vacuümisolatie, drukventiel EN 61770 en onderhoud.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/boiler' },
   openGraph: {
     title: 'Kokend Water Kraan Boiler: Hoe Werkt Het?',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Microplastics in drinkwater: risico\'s, normen en waterfilter',
   description:
-    'Microplastics zijn aangetroffen in Nederlands kraanwater en flessenwater. WHO 2022: bij huidige concentraties geen bewijs voor gezondheidsschade, maar onderzoek loopt. Osmosefilter verwijdert 99% van microplastics.',
+    'Microplastics zijn aangetroffen in Nederlands kraanwater en flessenwater. WHO 2022: bij huidige concentraties geen bewijs voor gezondheidsschade, maar.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/microplastics' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Microplastics in drinkwater: risico's, normen en waterfilter",
   description:
-    'Microplastics zijn aangetroffen in Nederlands kraanwater en flessenwater. WHO 2022: bij huidige concentraties geen bewijs voor gezondheidsschade, maar onderzoek loopt. Osmosefilter verwijdert 99% van microplastics.',
+    'Microplastics zijn aangetroffen in Nederlands kraanwater en flessenwater. WHO 2022: bij huidige concentraties geen bewijs voor gezondheidsschade, maar.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/microplastics',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterontharder zout: tablet, blok en grof zout vergelijken',
   description:
-    'Voor een waterontharder gebruik je regeneratiezout: tabletzout (meest gebruikt), blokzout of grof zout. Kwaliteit 99,5%+ NaCl is essentieel. Vergelijking van merken, prijzen en wanneer welk zouttype te kiezen.',
+    'Voor een waterontharder gebruik je regeneratiezout: tabletzout (meest gebruikt), blokzout of grof zout. Kwaliteit 99,5%+ NaCl is essentieel.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/zout-types' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Waterontharder zout: tablet, blok en grof zout vergelijken',
   description:
-    'Voor een waterontharder gebruik je regeneratiezout: tabletzout, blokzout of grof zout. Kwaliteit 99,5%+ NaCl is essentieel. Vergelijking van merken, prijzen en zouttypen.',
+    'Voor een waterontharder gebruik je regeneratiezout: tabletzout, blokzout of grof zout. Kwaliteit 99,5%+ NaCl is essentieel. Vergelijking van merken, prijzen.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterontharder/zout-types',

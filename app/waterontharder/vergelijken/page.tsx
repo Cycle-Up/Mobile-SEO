@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterontharder vergelijken: de beste modellen van 2026',
   description:
-    'Waterontharder vergelijken op capaciteit, zoutverbruik, NSF/ANSI 44 certificering, stroomverbruik en smart-bediening. 6-modellen tabel, 5-jaar TCO en wanneer osmose beter is.',
+    'Waterontharder vergelijken op capaciteit, zoutverbruik, NSF/ANSI 44 certificering, stroomverbruik en smart-bediening. 6-modellen tabel, 5-jaar TCO en wanneer.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/vergelijken' },
   openGraph: {
     title: 'Waterontharder vergelijken: de beste modellen van 2026',
     description:
-      'Vergelijk de beste waterontharders van 2026: Kinetico, Harvey, BWT, Ecowat en meer. Capaciteit, zoutverbruik, NSF-certificering, kosten en wie wat nodig heeft.',
+      'Vergelijk de beste waterontharders van 2026: Kinetico, Harvey, BWT, Ecowat en meer. Capaciteit, zoutverbruik, NSF-certificering, kosten en wie wat nodig.',
     url: 'https://waterfilterplatform.nl/waterontharder/vergelijken',
     type: 'article',
   },

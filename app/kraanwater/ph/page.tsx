@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'pH van kraanwater: wat is normaal en wanneer is het een probleem?',
   description:
-    'De pH van Nederlands kraanwater ligt normaal tussen 7,2 en 9,5. Te lage pH (zuur) lost lood en koper op uit leidingen. Alles over pH van kraanwater en wanneer actie nodig is.',
+    'De pH van Nederlands kraanwater ligt normaal tussen 7,2 en 9,5. Te lage pH (zuur) lost lood en koper op uit leidingen. Alles over pH van kraanwater en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kraanwater/ph' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'pH van kraanwater: wat is normaal en wanneer is het een probleem?',
   description:
-    'De pH van Nederlands kraanwater ligt normaal tussen 7,2 en 9,5. Te lage pH (zuur) lost lood en koper op uit leidingen. Alles over pH van kraanwater en wanneer actie nodig is.',
+    'De pH van Nederlands kraanwater ligt normaal tussen 7,2 en 9,5. Te lage pH (zuur) lost lood en koper op uit leidingen. Alles over pH van kraanwater en.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kraanwater/ph',

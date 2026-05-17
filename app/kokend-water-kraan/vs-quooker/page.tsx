@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kokend water kraan vs Quooker: welke is beter in 2026?',
   description:
-    'Quooker of een 4-in-1 kokend water kraan met osmose? Eerlijke vergelijking op prijs, functies, filterkwaliteit en totale kosten — inclusief 12-criteria tabel en wie welke keuze moet maken.',
+    'Quooker of een 4-in-1 kokend water kraan met osmose? Eerlijke vergelijking op prijs, functies, filterkwaliteit en totale kosten — inclusief 12-criteria tabel.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/vs-quooker' },
   openGraph: {
     title: 'Kokend water kraan vs Quooker: welke is beter in 2026?',
     description:
-      'Quooker Fusion €900–1.200 + CUBE €300 + osmose €400 = €1.600–1.900 totaal. PureAqua 4-in-1 €800–1.200 all-in. Vergelijk eerlijk op filterkwaliteit, PFAS en totale kosten.',
+      'Quooker Fusion €900–1.200 + CUBE €300 + osmose €400 = €1.600–1.900 totaal. PureAqua 4-in-1 €800–1.200 all-in. Vergelijk eerlijk op filterkwaliteit, PFAS en.',
     url: 'https://waterfilterplatform.nl/kokend-water-kraan/vs-quooker',
     type: 'article',
   },

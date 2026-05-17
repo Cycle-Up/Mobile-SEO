@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Optimaal water voor koffie: TDS, pH, hardheid en de beste waterfilter',
   description:
-    'De Specialty Coffee Association adviseert water met TDS 75-150 mg/L, pH 6,5-7,5 en hardheid 50-175 mg/L CaCO3 voor perfecte espresso en filterkoffie. Leer hoe u uw kraanwater optimaliseert.',
+    'De Specialty Coffee Association adviseert water met TDS 75-150 mg/L, pH 6,5-7,5 en hardheid 50-175 mg/L CaCO3 voor perfecte espresso en filterkoffie.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/koffie' },
 };
 

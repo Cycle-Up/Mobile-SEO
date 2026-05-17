@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor hond en kat: schoner drinkwater voor uw huisdier',
-  description: 'Een waterfilter voor uw hond of kat verwijdert chloor, lood en bacterien uit drinkwater. Vergelijking drinkfonteinen met filter, osmosewater en gefilterd kraanwater voor huisdieren.',
+  description: 'Een waterfilter voor uw hond of kat verwijdert chloor, lood en bacterien uit drinkwater. Vergelijking drinkfonteinen met filter, osmosewater en gefilterd.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/hond-kat' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterfilter voor hond en kat: schoner drinkwater voor uw huisdier',
-  description: 'Een waterfilter voor uw hond of kat verwijdert chloor, lood en bacterien uit drinkwater. Vergelijking drinkfonteinen met filter, osmosewater en gefilterd kraanwater voor huisdieren.',
+  description: 'Een waterfilter voor uw hond of kat verwijdert chloor, lood en bacterien uit drinkwater. Vergelijking drinkfonteinen met filter, osmosewater en gefilterd.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/hond-kat',

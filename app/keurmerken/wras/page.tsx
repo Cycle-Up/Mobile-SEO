@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'WRAS — Brits keurmerk voor drinkwaterinstallaties | WaterfilterPlatform',
-  description: 'WRAS (Water Regulations Advisory Scheme) is het Britse equivalent van Kiwa voor drinkwaterinstallaties. Na Brexit nog relevant bij Britse importeurs. Wat het test en wanneer het telt.',
+  title: 'WRAS — Brits keurmerk voor drinkwaterinstallaties',
+  description: 'WRAS (Water Regulations Advisory Scheme) is het Britse equivalent van Kiwa voor drinkwaterinstallaties. Na Brexit nog relevant bij Britse importeurs.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keurmerken/wras' },
 };
 
@@ -15,7 +15,7 @@ export default function WrasPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'WRAS — Brits keurmerk voor drinkwaterinstallaties',
-        description: 'WRAS (Water Regulations Advisory Scheme) is het Britse equivalent van Kiwa voor drinkwaterinstallaties. Na Brexit nog relevant bij Britse importeurs. Wat het test en wanneer het telt.',
+        description: 'WRAS (Water Regulations Advisory Scheme) is het Britse equivalent van Kiwa voor drinkwaterinstallaties. Na Brexit nog relevant bij Britse importeurs.',
         datePublished: '2026-05-17',
         url: 'https://waterfilterplatform.nl/keurmerken/wras',
       }} />

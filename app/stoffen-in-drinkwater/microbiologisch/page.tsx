@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Microbiologische risicos in drinkwater -- bacterien, virussen en protozoen | WaterfilterPlatform',
   description:
-    'E.coli, Legionella, Cryptosporidium en norovirus in drinkwater: normen, risicos en wanneer extra filtering nodig is. UV-sterilisatie en ultrafiltratie als oplossingen.',
+    'E.coli, Legionella, Cryptosporidium en norovirus in drinkwater: normen, risicos en wanneer extra filtering nodig is. UV-sterilisatie en ultrafiltratie als.',
   alternates: { canonical: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/microbiologisch' },
 };
 
@@ -16,7 +16,7 @@ export default function MicrobiologischPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'Microbiologische risicos in drinkwater -- bacterien, virussen en protozoen',
-        description: 'E.coli, Legionella, Cryptosporidium en norovirus in drinkwater: normen, risicos en wanneer extra filtering nodig is. UV-sterilisatie en ultrafiltratie als oplossingen.',
+        description: 'E.coli, Legionella, Cryptosporidium en norovirus in drinkwater: normen, risicos en wanneer extra filtering nodig is. UV-sterilisatie en ultrafiltratie als.',
         datePublished: '2026-01-01',
         url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/microbiologisch',
       }} />

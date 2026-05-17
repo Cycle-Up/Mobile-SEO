@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Oppervlaktewaterzuivering: hoe wordt Maas- en Rijnwater drinkwater?',
-  description: '40% van Nederlands drinkwater komt uit de Maas en Rijn. Oppervlaktewaterzuivering vereist meer stappen dan grondwater door hogere verontreinigingsgraad. Volledig uitgelegd.',
+  description: '40% van Nederlands drinkwater komt uit de Maas en Rijn. Oppervlaktewaterzuivering vereist meer stappen dan grondwater door hogere verontreinigingsgraad.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterzuivering/oppervlaktewater' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Oppervlaktewaterzuivering: hoe wordt Maas- en Rijnwater drinkwater?',
-  description: '40% van Nederlands drinkwater komt uit de Maas en Rijn. Oppervlaktewaterzuivering vereist meer stappen dan grondwater door hogere verontreinigingsgraad. Volledig uitgelegd.',
+  description: '40% van Nederlands drinkwater komt uit de Maas en Rijn. Oppervlaktewaterzuivering vereist meer stappen dan grondwater door hogere verontreinigingsgraad.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterzuivering/oppervlaktewater',

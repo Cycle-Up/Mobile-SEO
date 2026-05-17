@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Drinkwaterkwaliteit Europa: vergelijking van EU-landen',
   description:
-    'Drinkwaterkwaliteit verschilt enorm per Europees land. Nederland en Duitsland scoren uitstekend, terwijl Oost-Europese landen vaker normen overschrijden. Vergelijking van alle EU-landen.',
+    'Drinkwaterkwaliteit verschilt enorm per Europees land. Nederland en Duitsland scoren uitstekend, terwijl Oost-Europese landen vaker normen overschrijden.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterkwaliteit/europa' },
 };
 

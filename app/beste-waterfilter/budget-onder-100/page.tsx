@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Beste waterfilter onder EUR 100 — eerlijke vergelijking goedkope filters | WaterfilterPlatform',
-  description: 'Top opties onder EUR 100: Brita Marella, ZeroWater, aanrechtfilters. Reele verwachtingen: filtert chloor en geur, GEEN PFAS of nitraat volledig. Inclusief jaarkosten.',
+  description: 'Top opties onder EUR 100: Brita Marella, ZeroWater, aanrechtfilters. Reele verwachtingen: filtert chloor en geur, GEEN PFAS of nitraat volledig.',
   alternates: { canonical: 'https://waterfilterplatform.nl/beste-waterfilter/budget-onder-100' },
   openGraph: {
     title: 'Beste waterfilter onder EUR 100 — eerlijke vergelijking goedkope filters',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterontharder bypass: instelling, mengklep en wanneer hard water gewenst',
   description:
-    'Een waterontharder bypass laat ongezacht water door voor situaties waar zacht water ongewenst is: tuin, buiten kraan, en menging voor drinkwater. Mengklep geeft instelbaarheid tussen 0-100% bypass.',
+    'Een waterontharder bypass laat ongezacht water door voor situaties waar zacht water ongewenst is: tuin, buiten kraan, en menging voor drinkwater.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/bypass' },
 };
 
@@ -77,7 +77,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Waterontharder bypass: instelling, mengklep en wanneer hard water gewenst',
   description:
-    'Een waterontharder bypass leidt water om de ontharder heen. Mengklep geeft instelbaarheid voor optimale drinkwatermineralen en tuinwater. EU-advies minimum 60 mg/L calcium in drinkwater.',
+    'Een waterontharder bypass leidt water om de ontharder heen. Mengklep geeft instelbaarheid voor optimale drinkwatermineralen en tuinwater.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterontharder/bypass',

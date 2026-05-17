@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'CO2-systeem voor bruisend water thuis: kosten en installatie',
   description:
-    'Een los CO2-systeem voor bruisend water thuis kost €150–400 en produceert water voor €0,02–0,04/L. Ideaal voor grote gezinnen en horeca. Installatie, cilinders en merken.',
+    'Een los CO2-systeem voor bruisend water thuis kost €150–400 en produceert water voor €0,02–0,04/L. Ideaal voor grote gezinnen en horeca.',
   alternates: { canonical: 'https://waterfilterplatform.nl/bruisend-water/co2' },
 };
 

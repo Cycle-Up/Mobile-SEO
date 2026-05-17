@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Ammonium in leidingwater: bronnen, normen en waterfilter',
   description:
-    'Ammonium in leidingwater wijst op verontreiniging of rioollek. EU-norm is 0,5 mg/L. Zeoliet adsorbeert ammonium voor 80-98%. Omgekeerde osmose verwijdert ammonium als NH4+ voor 90-95%.',
+    'Ammonium in leidingwater wijst op verontreiniging of rioollek. EU-norm is 0,5 mg/L. Zeoliet adsorbeert ammonium voor 80-98%. Omgekeerde osmose verwijdert.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/ammonium' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Ammonium in leidingwater: bronnen, normen en waterfilter',
   description:
-    'Ammonium in leidingwater wijst op verontreiniging of rioollek. EU-norm is 0,5 mg/L. Zeoliet adsorbeert ammonium voor 80-98%. Omgekeerde osmose verwijdert ammonium als NH4+ voor 90-95%.',
+    'Ammonium in leidingwater wijst op verontreiniging of rioollek. EU-norm is 0,5 mg/L. Zeoliet adsorbeert ammonium voor 80-98%. Omgekeerde osmose verwijdert.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/ammonium',

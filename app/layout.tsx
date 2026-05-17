@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     siteName: 'WaterfilterPlatform',
     locale: 'nl_NL',
     type: 'website',
+    images: [{ url: '/og/home.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og/home.svg'],
   },
   robots: { index: true, follow: true },
 };
@@ -185,8 +190,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </ul>
             </div>
           </div>
-          <div className="max-w-5xl mx-auto px-4 mt-6 pt-6 border-t border-blue-800 text-xs text-blue-300">
-            &copy; {new Date().getFullYear()} WaterfilterPlatform.nl &mdash; Informatiesite, geen webshop.
+          <div className="max-w-5xl mx-auto px-4 mt-6 pt-6 border-t border-blue-800 text-xs text-blue-300 space-y-3">
+            <p className="leading-relaxed">
+              Dit kennisplatform is gelieerd aan PureAqua. We ontvangen vergoeding via onze keuzehulp, maar dat
+              beinvloedt onze redactionele beoordelingen niet. Lees onze{' '}
+              <Link href="/methodologie" className="underline hover:text-white">methodologie</Link> en{' '}
+              <Link href="/over-ons" className="underline hover:text-white">over-ons</Link> pagina voor de volledige toelichting.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/over-ons" className="hover:text-white">Over ons</Link>
+              <Link href="/methodologie" className="hover:text-white">Methodologie</Link>
+              <Link href="/contact" className="hover:text-white">Contact</Link>
+            </div>
+            <p>
+              &copy; {new Date().getFullYear()} WaterfilterPlatform.nl &mdash; Onafhankelijk vergelijkingsplatform.
+            </p>
           </div>
         </footer>
       </body>

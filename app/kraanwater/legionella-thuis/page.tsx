@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Legionella thuis: risico in huishoudleidingen en hoe te voorkomen',
   description:
-    'Legionella in huishoudleidingen kan dodelijk zijn. Risico neemt toe bij stagnant warm water (25-50 graden Celsius). Na vakantie of verbouwing altijd doorspoelen. Welke maatregelen beschermen uw huishouden?',
+    'Legionella in huishoudleidingen kan dodelijk zijn. Risico neemt toe bij stagnant warm water (25-50 graden Celsius). Na vakantie of verbouwing altijd.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kraanwater/legionella-thuis' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Legionella thuis: risico in huishoudleidingen en hoe te voorkomen',
   description:
-    'Legionella in huishoudleidingen kan dodelijk zijn. Risico neemt toe bij stagnant warm water (25-50 graden Celsius). Na vakantie of verbouwing altijd doorspoelen. Welke maatregelen beschermen uw huishouden?',
+    'Legionella in huishoudleidingen kan dodelijk zijn. Risico neemt toe bij stagnant warm water (25-50 graden Celsius). Na vakantie of verbouwing altijd.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kraanwater/legionella-thuis',

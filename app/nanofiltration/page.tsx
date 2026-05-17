@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Wat is nanofiltration (NF)? Tussen ultrafiltratie en osmose uitgelegd',
   description:
-    'Nanofiltration (NF) filtert hardheid, pesticiden en kleurstoffen terwijl het nuttige mineralen deels behoudt. Vergelijking met omgekeerde osmose en ultrafiltratie voor thuisgebruik.',
+    'Nanofiltration (NF) filtert hardheid, pesticiden en kleurstoffen terwijl het nuttige mineralen deels behoudt. Vergelijking met omgekeerde osmose en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/nanofiltration' },
   openGraph: {
     title: 'Wat is nanofiltration (NF)? Tussen ultrafiltratie en osmose uitgelegd',
     description:
-      'Nanofiltration (NF) filtert hardheid, pesticiden en kleurstoffen terwijl het nuttige mineralen deels behoudt. Vergelijking met omgekeerde osmose en ultrafiltratie voor thuisgebruik.',
+      'Nanofiltration (NF) filtert hardheid, pesticiden en kleurstoffen terwijl het nuttige mineralen deels behoudt. Vergelijking met omgekeerde osmose en.',
     url: 'https://waterfilterplatform.nl/nanofiltration',
     type: 'article',
     locale: 'nl_NL',
@@ -78,7 +78,7 @@ export default function NanofiltrationPage() {
         article={{
           title: 'Wat is nanofiltration (NF)? Tussen ultrafiltratie en osmose uitgelegd',
           description:
-            'Nanofiltration (NF) filtert hardheid, pesticiden en kleurstoffen terwijl het nuttige mineralen deels behoudt. Vergelijking met omgekeerde osmose en ultrafiltratie voor thuisgebruik.',
+            'Nanofiltration (NF) filtert hardheid, pesticiden en kleurstoffen terwijl het nuttige mineralen deels behoudt. Vergelijking met omgekeerde osmose en.',
           datePublished: '2026-05-16',
           url: 'https://waterfilterplatform.nl/nanofiltration',
         }}

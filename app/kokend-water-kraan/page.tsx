@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kokend water kraan kopen? Complete gids & vergelijking 2026',
   description:
-    'Kokend water kraan: hoe werkt het, welke merken zijn er en wat zijn de kosten? Vergelijk Quooker, Grohe, Insinkerator en 4-in-1 systemen met osmose in deze complete gids.',
+    'Kokend water kraan: hoe werkt het, welke merken zijn er en wat zijn de kosten? Vergelijk Quooker, Grohe, Insinkerator en 4-in-1 systemen met osmose in deze.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan' },
   openGraph: {
     title: 'Kokend water kraan — hoe werkt het en welk merk past bij jou?',

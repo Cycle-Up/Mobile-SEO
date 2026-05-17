@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater vs mineraalwater: wat is het verschil en wat is gezonder?',
   description:
-    'Osmosewater heeft TDS &lt;50 mg/L en geen verontreinigingen. Mineraalwater heeft vaste mineraalsamenstelling. Vergelijking voor gezondheid, koffie, kosten en milieu.',
+    'Osmosewater heeft TDS &lt;50 mg/L en geen verontreinigingen. Mineraalwater heeft vaste mineraalsamenstelling. Vergelijking voor gezondheid, koffie, kosten en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/vs-mineraalwater' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosewater vs mineraalwater: wat is het verschil en wat is gezonder?',
   description:
-    'Osmosewater heeft TDS kleiner dan 50 mg/L en geen verontreinigingen. Mineraalwater heeft vaste mineraalsamenstelling. Vergelijking voor gezondheid, koffie, kosten en milieu.',
+    'Osmosewater heeft TDS kleiner dan 50 mg/L en geen verontreinigingen. Mineraalwater heeft vaste mineraalsamenstelling. Vergelijking voor gezondheid, koffie.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/osmose-water/vs-mineraalwater',

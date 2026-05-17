@@ -7,7 +7,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterhardheid Nederland: Kaart & Overzicht',
   description:
-    'Ontdek de waterhardheid in elke provincie van Nederland. Bekijk ons regionaal overzicht met gemiddelde °dH-waarden, hardste en zachtste gebieden en uitleg over geologie.',
+    'Ontdek de waterhardheid in elke provincie van Nederland. Bekijk ons regionaal overzicht met gemiddelde °dH-waarden, hardste en zachtste gebieden en uitleg.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterhardheid/kaart' },
   openGraph: {
     title: 'Waterhardheid Nederland: Kaart & Overzicht per provincie',

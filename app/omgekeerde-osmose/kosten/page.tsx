@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kosten omgekeerde osmose: aanschaf, filters en totale eigendomskosten',
   description:
-    'Een osmosefilter kost 250-800 euro aanschaf. De totale eigendomskosten (TCO) over 5 jaar zijn 600-1.500 euro. Vergelijking met flessenwater (500-1.500 euro/jaar) en filterkan.',
+    'Een osmosefilter kost 250-800 euro aanschaf. De totale eigendomskosten (TCO) over 5 jaar zijn 600-1.500 euro. Vergelijking met flessenwater (500-1.500.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/kosten' },
 };
 

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Fosfaat in leidingwater: corrosiebescherming, normen en waterfilter',
   description:
-    'Watermaatschappijen voegen kleine hoeveelheden fosfaat toe aan leidingwater als corrosiebescherming voor loodleidingen en koper. De norm is 2,2 mg/L. Osmosefilter verwijdert 95-99% fosfaat.',
+    'Watermaatschappijen voegen kleine hoeveelheden fosfaat toe aan leidingwater als corrosiebescherming voor loodleidingen en koper. De norm is 2,2 mg/L.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/fosfaat' },
 };
 

@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Nanofiltration (NF) — tussen ultrafiltratie en omgekeerde osmose | WaterfilterPlatform',
-  description: 'Nanofiltration filtert 0,001-0,01 micron: verwijdert waterhardheid, pesticiden en kleurstoffen maar houdt natrium door. Hogere doorvoer en minder afvalwater dan RO.',
+  description: 'Nanofiltration filtert 0,001-0,01 micron: verwijdert waterhardheid, pesticiden en kleurstoffen maar houdt natrium door. Hogere doorvoer en minder afvalwater.',
   alternates: { canonical: 'https://waterfilterplatform.nl/filtertechnieken/nanofiltration' },
   openGraph: {
     title: 'Nanofiltration (NF) — tussen ultrafiltratie en omgekeerde osmose',

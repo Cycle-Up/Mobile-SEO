@@ -5,7 +5,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Medicijnresten in drinkwater: risico\'s en filtratie (2026)',
-  description: 'Komen medicijnresten voor in Nederlands drinkwater? Wat zegt het RIVM? Welke filters verwijderen farmaceutische residuen? Osmose verwijdert 90–99% van medicijnresten.',
+  description: 'Komen medicijnresten voor in Nederlands drinkwater? Wat zegt het RIVM? Welke filters verwijderen farmaceutische residuen? Osmose verwijdert 90–99% van.',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwater/medicijnresten' },
 };
 

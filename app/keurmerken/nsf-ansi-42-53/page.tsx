@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'NSF/ANSI 42 en 53 — keurmerken voor actief koolfilters | WaterfilterPlatform',
-  description: 'NSF 42 certificeert esthetische kwaliteit (chloor, geur, smaak), NSF 53 gezondheidsrelevante stoffen (lood, VOC). Verschil uitgelegd en welk filter welk label nodig heeft.',
+  title: 'NSF/ANSI 42 en 53 — keurmerken voor actief koolfilters',
+  description: 'NSF 42 certificeert esthetische kwaliteit (chloor, geur, smaak), NSF 53 gezondheidsrelevante stoffen (lood, VOC). Verschil uitgelegd en welk filter welk.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-42-53' },
 };
 
@@ -15,7 +15,7 @@ export default function NsfAnsi4253Page() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'NSF/ANSI 42 en 53 — keurmerken voor actief koolfilters',
-        description: 'NSF 42 certificeert esthetische kwaliteit (chloor, geur, smaak), NSF 53 gezondheidsrelevante stoffen (lood, VOC). Verschil uitgelegd en welk filter welk label nodig heeft.',
+        description: 'NSF 42 certificeert esthetische kwaliteit (chloor, geur, smaak), NSF 53 gezondheidsrelevante stoffen (lood, VOC). Verschil uitgelegd en welk filter welk.',
         datePublished: '2026-05-17',
         url: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-42-53',
       }} />

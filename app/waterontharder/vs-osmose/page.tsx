@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterontharder of osmosefilter: wanneer kies je wat?',
-  description: 'Waterontharder verzacht water door calciumionen te wisselen voor natrium. Osmosefilter verwijdert 95-99% van alle verontreinigingen. Vergelijking voor elke situatie.',
+  description: 'Waterontharder verzacht water door calciumionen te wisselen voor natrium. Osmosefilter verwijdert 95-99% van alle verontreinigingen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/vs-osmose' },
 };
 

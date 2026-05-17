@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kokend water kraan in huurwoning: mag dat en hoe vraag je toestemming?',
   description:
-    'Een kokend water kraan installeren in een huurwoning mag in de meeste gevallen, maar u hebt toestemming van de verhuurder nodig. Alles over rechten, regels en reversibele installatie.',
+    'Een kokend water kraan installeren in een huurwoning mag in de meeste gevallen, maar u hebt toestemming van de verhuurder nodig. Alles over rechten, regels.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/huurwoning' },
 };
 
@@ -67,7 +67,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Kokend water kraan in huurwoning: mag dat en hoe vraag je toestemming?',
   description:
-    'Een kokend water kraan installeren in een huurwoning mag in de meeste gevallen, maar u hebt toestemming van de verhuurder nodig. Alles over rechten, regels en reversibele installatie.',
+    'Een kokend water kraan installeren in een huurwoning mag in de meeste gevallen, maar u hebt toestemming van de verhuurder nodig. Alles over rechten, regels.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kokend-water-kraan/huurwoning',

@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Osmosewater vs gedistilleerd water: wat is het verschil?',
-  description: 'Osmosewater en gedistilleerd water zijn beide bijna puur, maar verschillen in productiewijze, mineraalgehalte en toepassingen. Vergelijking voor drinken, koffie, stoomijzer en accu.',
+  description: 'Osmosewater en gedistilleerd water zijn beide bijna puur, maar verschillen in productiewijze, mineraalgehalte en toepassingen. Vergelijking voor drinken.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/vs-gedistilleerd' },
 };
 

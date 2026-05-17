@@ -5,9 +5,9 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Chloor bijproducten in drinkwater -- THM en HAA | WaterfilterPlatform',
+  title: 'Chloor bijproducten in drinkwater -- THM en HAA',
   description:
-    'Trihalomethanen (THM) en haloazijnzuren (HAA) als chloor bijproducten in drinkwater: EU-norm 100 ug/L, IARC Groep 2B kankerrisico. Actief kool en osmose als oplossingen.',
+    'Trihalomethanen (THM) en haloazijnzuren (HAA) als chloor bijproducten in drinkwater: EU-norm 100 ug/L, IARC Groep 2B kankerrisico. Actief kool en osmose als.',
   alternates: { canonical: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/chloor-bijproducten' },
 };
 
@@ -16,7 +16,7 @@ export default function ChloorBijproducktenPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'Chloor bijproducten in drinkwater -- THM en HAA',
-        description: 'Trihalomethanen (THM) en haloazijnzuren (HAA) als chloor bijproducten in drinkwater: EU-norm 100 ug/L, IARC Groep 2B kankerrisico. Actief kool en osmose als oplossingen.',
+        description: 'Trihalomethanen (THM) en haloazijnzuren (HAA) als chloor bijproducten in drinkwater: EU-norm 100 ug/L, IARC Groep 2B kankerrisico. Actief kool en osmose als.',
         datePublished: '2026-01-01',
         url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/chloor-bijproducten',
       }} />

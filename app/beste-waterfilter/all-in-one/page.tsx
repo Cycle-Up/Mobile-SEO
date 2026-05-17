@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'All-in-one waterfilter — osmose + kokend water + koolstoffilter in 1 systeem | WaterfilterPlatform',
-  description: 'Een 4-in-1 systeem combineert RO-membraan, pre/post-koolfilter en kokendwaterboiler. 1 installatie, 1 kraantje. Prijsklasse EUR 800-2500. Vergelijking met losse componenten.',
+  description: 'Een 4-in-1 systeem combineert RO-membraan, pre/post-koolfilter en kokendwaterboiler. 1 installatie, 1 kraantje. Prijsklasse EUR 800-2500.',
   alternates: { canonical: 'https://waterfilterplatform.nl/beste-waterfilter/all-in-one' },
   openGraph: {
     title: 'All-in-one waterfilter — osmose + kokend water + koolstoffilter in 1 systeem',

@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'ACS keurmerk — Franse norm voor drinkwatercontact | WaterfilterPlatform',
-  description: 'ACS (Attestation de Conformite Sanitaire) is de Franse drinkwaternorm erkend door de EU. Wat het test, verschil met NSF en Kiwa, en wanneer het relevant is voor Nederlandse consumenten.',
+  title: 'ACS keurmerk — Franse norm voor drinkwatercontact',
+  description: 'ACS (Attestation de Conformite Sanitaire) is de Franse drinkwaternorm erkend door de EU. Wat het test, verschil met NSF en Kiwa, en wanneer het relevant is.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keurmerken/acs' },
 };
 
@@ -15,7 +15,7 @@ export default function AcsPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'ACS keurmerk — Franse norm voor drinkwatercontact',
-        description: 'ACS (Attestation de Conformite Sanitaire) is de Franse drinkwaternorm erkend door de EU. Wat het test, verschil met NSF en Kiwa, en wanneer het relevant is voor Nederlandse consumenten.',
+        description: 'ACS (Attestation de Conformite Sanitaire) is de Franse drinkwaternorm erkend door de EU. Wat het test, verschil met NSF en Kiwa, en wanneer het relevant is.',
         datePublished: '2026-05-17',
         url: 'https://waterfilterplatform.nl/keurmerken/acs',
       }} />

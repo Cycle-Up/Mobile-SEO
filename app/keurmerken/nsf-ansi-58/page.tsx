@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'NSF/ANSI 58 keurmerk — wat betekent het voor osmosefilters? | WaterfilterPlatform',
-  description: 'NSF/ANSI 58 is de internationale norm voor omgekeerde osmosefilters. Wat test het, wat garandeert het en hoe verifieert u een echte certificering via de NSF-database?',
+  title: 'NSF/ANSI 58 keurmerk — wat betekent het voor osmosefilters?',
+  description: 'NSF/ANSI 58 is de internationale norm voor omgekeerde osmosefilters. Wat test het, wat garandeert het en hoe verifieert u een echte certificering.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-58' },
 };
 
@@ -15,7 +15,7 @@ export default function NsfAnsi58Page() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'NSF/ANSI 58 keurmerk — wat betekent het voor osmosefilters?',
-        description: 'NSF/ANSI 58 is de internationale norm voor omgekeerde osmosefilters. Wat test het, wat garandeert het en hoe verifieert u een echte certificering via de NSF-database?',
+        description: 'NSF/ANSI 58 is de internationale norm voor omgekeerde osmosefilters. Wat test het, wat garandeert het en hoe verifieert u een echte certificering.',
         datePublished: '2026-05-17',
         url: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-58',
       }} />
@@ -84,7 +84,7 @@ export default function NsfAnsi58Page() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text="[#005F8A] mb-4">NSF/ANSI 58 versus NSF/ANSI 401</h2>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">NSF/ANSI 58 versus NSF/ANSI 401</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             NSF/ANSI 58 dekt de klassieke contaminanten: zware metalen, nitraten, bepaalde pesticiden. Voor nieuwere stoffen zoals medicijnresten, hormonen en DEET bestaat een aparte norm: <Link href="/keurmerken/nsf-ansi-401" className="text-[#005F8A] hover:underline font-medium">NSF/ANSI 401</Link>. Als u specifiek bezorgd bent over farmaceutische resten in uw water, controleer dan of het osmosesysteem ook NSF/ANSI 401-certificering heeft naast NSF/ANSI 58.
           </p>

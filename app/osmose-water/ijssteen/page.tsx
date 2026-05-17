@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater voor ijsblokjes: helder ijs, smaak en cocktailgebruik',
   description:
-    'Osmosewater geeft helder, kristalhelder ijs zonder witte kern. Geen kalkdeeltjes of luchtbelletjes. Ideaal voor cocktails, whisky en luxe horeca. Tip: langzaam invriezen voor maximale helderheid.',
+    'Osmosewater geeft helder, kristalhelder ijs zonder witte kern. Geen kalkdeeltjes of luchtbelletjes. Ideaal voor cocktails, whisky en luxe horeca.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/ijssteen' },
 };
 

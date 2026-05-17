@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterfilterkan kopen: welke is de beste keuze? Vergelijking 2026',
   description:
-    'Welke waterfilterkan kopen in 2026? Vergelijk Brita, BWT, PUR en Laica op filterprestaties, cartridgekosten en NSF-certificering. Inclusief wanneer osmose slimmer is.',
+    'Welke waterfilterkan kopen in 2026? Vergelijk Brita, BWT, PUR en Laica op filterprestaties, cartridgekosten en NSF-certificering. Inclusief wanneer osmose.',
   alternates: { canonical: 'https://waterfilterplatform.nl/filterkan/kopen' },
   openGraph: {
     title: 'Waterfilterkan kopen — vergelijking 2026',

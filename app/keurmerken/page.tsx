@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     "Waterfilter keurmerken: NSF/ANSI 42/53/58/401, Kiwa 113, ACS en CE. Wat garanderen ze en welk keurmerk heeft u nodig voor osmose, koolfilter of UV?",
   alternates: { canonical: "https://waterfilterplatform.nl/keurmerken" },
   openGraph: {
+    images: [{ url: 'https://waterfilterplatform.nl/og/keurmerken.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Waterfilter keurmerken: NSF, Kiwa, ACS en CE uitgelegd",
     description:
       "Waterfilter keurmerken: NSF/ANSI 42/53/58/401, Kiwa 113, ACS en CE. Wat garanderen ze en welk keurmerk heeft u nodig voor osmose, koolfilter of UV?",

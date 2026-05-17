@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Hoe werkt een UV-waterfilter? UV-C desinfectie uitgelegd',
   description:
-    'UV waterfilter werking: hoe UV-C licht op 254 nm DNA beschadigt, log-reducties, wat UV wel en niet verwijdert, turbiditeitseis, UV vs chloor vs osmose en de beste filtercombinaties.',
+    'UV waterfilter werking: hoe UV-C licht op 254 nm DNA beschadigt, log-reducties, wat UV wel en niet verwijdert, turbiditeitseis, UV vs chloor vs osmose en de.',
   alternates: { canonical: 'https://waterfilterplatform.nl/uv-filter/werking' },
   openGraph: {
     title: 'Hoe werkt een UV-waterfilter? UV-C desinfectie uitgelegd',

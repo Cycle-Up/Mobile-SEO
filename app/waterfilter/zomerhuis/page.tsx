@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor vakantiehuis en zomerhuis: schoon water bij seizoensgebruik',
-  description: 'Een vakantiehuis of zomerhuis heeft wekenlang stilstaand water in leidingen. Ontdek hoe u veilig drinkwater krijgt bij seizoensgebruik en welk waterfilter het beste past.',
+  description: 'Een vakantiehuis of zomerhuis heeft wekenlang stilstaand water in leidingen. Ontdek hoe u veilig drinkwater krijgt bij seizoensgebruik en welk waterfilter.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/zomerhuis' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Waterfilter voor vakantiehuis en zomerhuis: schoon water bij seizoensgebruik',
-  description: 'Een vakantiehuis of zomerhuis heeft wekenlang stilstaand water in leidingen. Ontdek hoe u veilig drinkwater krijgt bij seizoensgebruik en welk waterfilter het beste past.',
+  description: 'Een vakantiehuis of zomerhuis heeft wekenlang stilstaand water in leidingen. Ontdek hoe u veilig drinkwater krijgt bij seizoensgebruik en welk waterfilter.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/zomerhuis',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Wat is een UV-filter voor water? Werking, kosten en toepassing 2026',
   description:
-    'Alles over UV-waterfilters: hoe UV-C licht bacteriën en virussen neutraliseert, wat het niet verwijdert, kosten, onderhoud en wanneer je een UV-filter nodig hebt.',
+    'Alles over UV-waterfilters: hoe UV-C licht bacteriën en virussen neutraliseert, wat het niet verwijdert, kosten, onderhoud en wanneer je een UV-filter nodig.',
   alternates: { canonical: 'https://waterfilterplatform.nl/uv-filter' },
   openGraph: {
     title: 'UV-filter water — complete gids over UV-C waterdesinfectie',

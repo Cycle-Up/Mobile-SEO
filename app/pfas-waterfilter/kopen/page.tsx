@@ -7,7 +7,7 @@ import { CTABanner } from '@/components/CTABanner';
 export const metadata: Metadata = {
   title: 'PFAS waterfilter kopen: beste modellen die PFAS verwijderen (2026)',
   description:
-    'Welk waterfilter koopt u voor PFAS-verwijdering? Vergelijking van 6 modellen, NSF/ANSI 58 certificering uitgelegd, kosten over 5 jaar en wat u NIET moet kopen.',
+    'Welk waterfilter koopt u voor PFAS-verwijdering? Vergelijking van 6 modellen, NSF/ANSI 58 certificering uitgelegd, kosten over 5 jaar en wat u NIET moet.',
   alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter/kopen' },
 };
 
@@ -108,7 +108,7 @@ export default function PfasWaterfilterKopenPage() {
         article={{
           title: 'PFAS waterfilter kopen: beste modellen die PFAS verwijderen (2026)',
           description:
-            'Welk waterfilter koopt u voor PFAS-verwijdering? Vergelijking van 6 modellen, NSF/ANSI 58 certificering uitgelegd, kosten over 5 jaar en wat u NIET moet kopen.',
+            'Welk waterfilter koopt u voor PFAS-verwijdering? Vergelijking van 6 modellen, NSF/ANSI 58 certificering uitgelegd, kosten over 5 jaar en wat u NIET moet.',
           datePublished: '2026-04-25',
           dateModified: '2026-04-25',
           url: 'https://waterfilterplatform.nl/pfas-waterfilter/kopen',

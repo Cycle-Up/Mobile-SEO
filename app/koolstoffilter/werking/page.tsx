@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Hoe werkt een koolstoffilter? Actief kool uitgelegd (2026)',
   description:
-    'Hoe werkt een koolstoffilter? Adsorptie via van der Waals-krachten, GAC vs blokfilter vs inline, wat het verwijdert (chloor, THM, pesticiden) en wat niet (nitraat, PFAS, bacteriën). Vervangingsinterval en vergelijking met osmose en UV.',
+    'Hoe werkt een koolstoffilter? Adsorptie via van der Waals-krachten, GAC vs blokfilter vs inline, wat het verwijdert (chloor, THM, pesticiden) en wat niet.',
   alternates: { canonical: 'https://waterfilterplatform.nl/koolstoffilter/werking' },
   openGraph: {
     title: 'Hoe werkt een koolstoffilter? Actief kool uitgelegd (2026)',

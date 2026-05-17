@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Capaciteit omgekeerde osmose: liter per uur, debiet en tankgrootte',
   description:
-    'Een huishoudelijk osmosefilter produceert 190-400 liter per dag (8-17 liter per uur). Tankless systemen leveren direct 1-2 liter per minuut. Leer hoe u de juiste capaciteit kiest voor uw huishouden.',
+    'Een huishoudelijk osmosefilter produceert 190-400 liter per dag (8-17 liter per uur). Tankless systemen leveren direct 1-2 liter per minuut.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/capaciteit' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Capaciteit omgekeerde osmose: liter per uur, debiet en tankgrootte',
   description:
-    'Een huishoudelijk osmosefilter produceert 190-400 liter per dag onder ideale omstandigheden. In Nederland rekent u op 40-60% van de opgegeven GPD-waarde. Leer hoe u de juiste capaciteit kiest.',
+    'Een huishoudelijk osmosefilter produceert 190-400 liter per dag onder ideale omstandigheden. In Nederland rekent u op 40-60% van de opgegeven GPD-waarde.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/omgekeerde-osmose/capaciteit',

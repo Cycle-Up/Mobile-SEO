@@ -5,9 +5,9 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Hormonen en medicijnresten in drinkwater -- wat weten we? | WaterfilterPlatform',
+  title: 'Hormonen en medicijnresten in drinkwater -- wat weten we?',
   description:
-    'Oestrogeen, ibuprofen en metformine in drinkwater: concentraties in nanogram per liter. Wetenschappelijke discussie over gezondheidseffecten. NSF 401, osmose en actief kool.',
+    'Oestrogeen, ibuprofen en metformine in drinkwater: concentraties in nanogram per liter. Wetenschappelijke discussie over gezondheidseffecten.',
   alternates: { canonical: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/hormonen' },
 };
 
@@ -16,7 +16,7 @@ export default function HormonenPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'Hormonen en medicijnresten in drinkwater -- wat weten we?',
-        description: 'Oestrogeen, ibuprofen en metformine in drinkwater: concentraties in nanogram per liter. Wetenschappelijke discussie over gezondheidseffecten. NSF 401, osmose en actief kool.',
+        description: 'Oestrogeen, ibuprofen en metformine in drinkwater: concentraties in nanogram per liter. Wetenschappelijke discussie over gezondheidseffecten.',
         datePublished: '2026-01-01',
         url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/hormonen',
       }} />

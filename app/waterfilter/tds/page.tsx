@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'TDS meten in water: wat is het en wanneer filteren?',
-  description: 'TDS (Total Dissolved Solids) in water uitgelegd: wat het is, hoe je het meet, wat de waarden betekenen voor Nederlands kraanwater, en wanneer filteren zinvol is.',
+  description: 'TDS (Total Dissolved Solids) in water uitgelegd: wat het is, hoe je het meet, wat de waarden betekenen voor Nederlands kraanwater, en wanneer filteren zinvol.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/tds' },
 };
 

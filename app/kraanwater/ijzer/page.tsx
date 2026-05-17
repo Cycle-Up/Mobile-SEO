@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'IJzer in kraanwater: roestkleur, smaak en het beste waterfilter',
   description:
-    'IJzer in kraanwater geeft roestbruine kleur, metaalachtige smaak en roestafzetting op sanitair. EU-norm is 200 ug/L. Oxidatiefilter of osmosefilter verwijdert ijzer effectief.',
+    'IJzer in kraanwater geeft roestbruine kleur, metaalachtige smaak en roestafzetting op sanitair. EU-norm is 200 ug/L. Oxidatiefilter of osmosefilter.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kraanwater/ijzer' },
 };
 

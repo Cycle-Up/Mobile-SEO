@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Lifestraw review: de bekendste reisfilter getest en vergeleken',
-  description: 'Lifestraw is de meest bekende reisfilter ter wereld. Review van Lifestraw Personal, Go en Peak Series: filterprestaties, gebruiksgemak en wanneer Lifestraw de juiste keuze is.',
+  description: 'Lifestraw is de meest bekende reisfilter ter wereld. Review van Lifestraw Personal, Go en Peak Series: filterprestaties, gebruiksgemak en wanneer Lifestraw.',
   alternates: { canonical: 'https://waterfilterplatform.nl/reisfilter/lifestraw' },
 };
 

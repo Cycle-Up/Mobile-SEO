@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter per budget — wat kunt u verwachten voor EUR 50, EUR 200 en EUR 500+? | WaterfilterPlatform',
-  description: 'Vergelijk waterfilters op budget: filterkan onder EUR 100, onderkastfilter EUR 100-500 en osmosefilter EUR 500+. Inclusief jaarlijkse kosten en kosten per liter.',
+  description: 'Vergelijk waterfilters op budget: filterkan onder EUR 100, onderkastfilter EUR 100-500 en osmosefilter EUR 500+. Inclusief jaarlijkse kosten en kosten per.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keuzehulp/budget' },
   openGraph: {
     title: 'Waterfilter per budget — wat kunt u verwachten voor EUR 50, EUR 200 en EUR 500+?',

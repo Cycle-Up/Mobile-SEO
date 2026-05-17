@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Hoe werkt het Quooker filter? Werking, kosten en wat het niet verwijdert',
   description:
-    'Het Quooker filter is een actief koolstoffilter dat chloor en geur verwijdert. Maar wat doet het niet? Kosten, vervangingsinterval en vergelijking met osmose filtration.',
+    'Het Quooker filter is een actief koolstoffilter dat chloor en geur verwijdert. Maar wat doet het niet? Kosten, vervangingsinterval en vergelijking met osmose.',
   alternates: { canonical: 'https://waterfilterplatform.nl/quooker-filter' },
   openGraph: {
     title: 'Quooker filter — werking, kosten en wat het niet verwijdert',
@@ -118,7 +118,7 @@ export default function QuookerFilterPage() {
         article={{
           title: 'Hoe werkt het Quooker filter? Werking, kosten en wat het niet verwijdert',
           description:
-            'Het Quooker filter is een actief koolstoffilter dat chloor en geur verwijdert. Maar wat doet het niet? Kosten, vervangingsinterval en vergelijking met osmose filtration.',
+            'Het Quooker filter is een actief koolstoffilter dat chloor en geur verwijdert. Maar wat doet het niet? Kosten, vervangingsinterval en vergelijking met osmose.',
           datePublished: '2026-04-10',
           url: 'https://waterfilterplatform.nl/quooker-filter',
         }}

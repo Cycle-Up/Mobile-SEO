@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterfilter voor wasmachine: minder kalk, betere was (2026)',
   description:
-    'Welk antikalkfilter past bij jouw wasmachine? Vergelijk polyfosfoaat doseerunit, magnetisch antikalk, sedimentfilter en waterontharder. Met ROI-berekening en waterhardheid-drempels.',
+    'Welk antikalkfilter past bij jouw wasmachine? Vergelijk polyfosfoaat doseerunit, magnetisch antikalk, sedimentfilter en waterontharder.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/wasmachine' },
   openGraph: {
     title: 'Waterfilter voor wasmachine: minder kalk, betere was (2026)',
     description:
-      'Welk antikalkfilter past bij jouw wasmachine? Vergelijk polyfosfoaat doseerunit, magnetisch antikalk, sedimentfilter en waterontharder. Met ROI-berekening en waterhardheid-drempels.',
+      'Welk antikalkfilter past bij jouw wasmachine? Vergelijk polyfosfoaat doseerunit, magnetisch antikalk, sedimentfilter en waterontharder.',
     url: 'https://waterfilterplatform.nl/waterfilter/wasmachine',
     type: 'article',
   },

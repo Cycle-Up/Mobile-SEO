@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kokend water kraan met filter: wat zijn de opties?',
   description:
-    'Kokend water kraan met filter: vergelijk koolstoffilter, osmosefilter en 4-in-1 systemen. Wat verwijdert elk filter? Prijzen van €300 tot €900. Complete koopgids.',
+    'Kokend water kraan met filter: vergelijk koolstoffilter, osmosefilter en 4-in-1 systemen. Wat verwijdert elk filter? Prijzen van €300 tot €900.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/met-filter' },
   openGraph: {
     title: 'Kokend water kraan met filter — vergelijking & koopgids 2026',
     description:
-      'Kokend water kraan met filter: vergelijk koolstoffilter, osmosefilter en 4-in-1 systemen. Wat verwijdert elk filter? Prijzen van €300 tot €900. Complete koopgids.',
+      'Kokend water kraan met filter: vergelijk koolstoffilter, osmosefilter en 4-in-1 systemen. Wat verwijdert elk filter? Prijzen van €300 tot €900.',
     url: 'https://waterfilterplatform.nl/kokend-water-kraan/met-filter',
     type: 'article',
   },

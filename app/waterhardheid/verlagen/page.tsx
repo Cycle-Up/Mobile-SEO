@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterhardheid Verlagen: Methoden & Kosten 2026',
   description:
-    'Hoe kunt u de waterhardheid verlagen? Vergelijk waterontharder, TAC-filter, omgekeerde osmose en meer. Complete gids met kosten, effectiviteit en advies voor 2026.',
+    'Hoe kunt u de waterhardheid verlagen? Vergelijk waterontharder, TAC-filter, omgekeerde osmose en meer. Complete gids met kosten, effectiviteit en advies voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterhardheid/verlagen' },
   openGraph: {
     title: 'Waterhardheid Verlagen: Methoden & Kosten 2026',

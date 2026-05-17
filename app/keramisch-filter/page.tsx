@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Wat is een keramisch waterfilter? Werking, types en wanneer kiezen?',
   description:
-    'Alles over keramische waterfilters: hoe de microporiën werken, welke verontreinigingen worden tegengehouden, wanneer keramisch de juiste keuze is en hoe je het onderhoudt.',
+    'Alles over keramische waterfilters: hoe de microporiën werken, welke verontreinigingen worden tegengehouden, wanneer keramisch de juiste keuze is en hoe je.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keramisch-filter' },
   openGraph: {
     title: 'Keramisch waterfilter — complete gids over werking, types en onderhoud',

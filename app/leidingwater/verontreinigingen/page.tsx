@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Wat zit er in leidingwater? Verontreinigingen in Nederlands drinkwater',
-  description: 'Nederlands leidingwater is veilig maar bevat sporen van medicijnen, PFAS, nitraat, lood en microplastics. Ontdek wat er echt in zit en wanneer filteren zinvol is.',
+  description: 'Nederlands leidingwater is veilig maar bevat sporen van medicijnen, PFAS, nitraat, lood en microplastics. Ontdek wat er echt in zit en wanneer filteren.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/verontreinigingen' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Wat zit er in leidingwater? Verontreinigingen in Nederlands drinkwater',
-  description: 'Nederlands leidingwater is veilig maar bevat sporen van medicijnen, PFAS, nitraat, lood en microplastics. Ontdek wat er echt in zit en wanneer filteren zinvol is.',
+  description: 'Nederlands leidingwater is veilig maar bevat sporen van medicijnen, PFAS, nitraat, lood en microplastics. Ontdek wat er echt in zit en wanneer filteren.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/verontreinigingen',

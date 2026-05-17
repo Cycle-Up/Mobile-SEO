@@ -5,8 +5,8 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Meest ecologisch waterfilter — milieuvoetafdruk vergeleken | WaterfilterPlatform',
-  description: 'Vergelijking milieubelasting: flessenwater (300-600g CO2/liter) vs filterkan vs osmose vs kokendwaterkraan. Osmosefilter wint op 10-jaar horizon vergeleken met flessenwater.',
+  title: 'Meest ecologisch waterfilter — milieuvoetafdruk vergeleken',
+  description: 'Vergelijking milieubelasting: flessenwater (300-600g CO2/liter) vs filterkan vs osmose vs kokendwaterkraan. Osmosefilter wint op 10-jaar horizon vergeleken.',
   alternates: { canonical: 'https://waterfilterplatform.nl/beste-waterfilter/ecologisch' },
   openGraph: {
     title: 'Meest ecologisch waterfilter — milieuvoetafdruk vergeleken',

@@ -7,7 +7,7 @@ import { CTABanner } from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Chroom-6 norm drinkwater: EU 25 ug/L vs WHO 0,05 ug/L — groot verschil",
   description:
-    "Chroom-6 norm in drinkwater: EU stelt 25 ug/L voor totaal chroom, WHO adviseert 0,05 ug/L voor chroom-6. Osmose verwijdert 95-99%. NL situatie en filteradvies.",
+    "Chroom-6 norm in drinkwater: EU stelt 25 ug/L voor totaal chroom, WHO adviseert 0,05 ug/L voor chroom-6. Osmose verwijdert 95-99%. NL situatie en.",
   alternates: { canonical: "https://waterfilterplatform.nl/drinkwaternormen/chroom-6" },
 };
 
@@ -91,7 +91,7 @@ export default function Chroom6NormPage() {
         article={{
           title: "Chroom-6 norm drinkwater: EU 25 ug/L vs WHO 0,05 ug/L — groot verschil",
           description:
-            "Chroom-6 norm in drinkwater: EU stelt 25 ug/L voor totaal chroom, WHO adviseert 0,05 ug/L voor chroom-6. Osmose verwijdert 95-99%. NL situatie en filteradvies.",
+            "Chroom-6 norm in drinkwater: EU stelt 25 ug/L voor totaal chroom, WHO adviseert 0,05 ug/L voor chroom-6. Osmose verwijdert 95-99%. NL situatie en.",
           datePublished: "2026-05-01",
           url: "https://waterfilterplatform.nl/drinkwaternormen/chroom-6",
         }}

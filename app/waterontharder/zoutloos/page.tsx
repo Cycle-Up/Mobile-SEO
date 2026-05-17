@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Zoutloze waterontharder: werkt het echt? (2026)',
   description:
-    'Zoutloze waterontharder: wat werkt en wat niet? Vergelijking van TAC, magnetische en citroenzuur-systemen. Wetenschappelijk bewijs, wie baat heeft en wanneer ionenwisselaar beter is.',
+    'Zoutloze waterontharder: wat werkt en wat niet? Vergelijking van TAC, magnetische en citroenzuur-systemen. Wetenschappelijk bewijs, wie baat heeft en wanneer.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/zoutloos' },
   openGraph: {
     title: 'Zoutloze waterontharder: werkt het echt? (2026)',
     description:
-      'TAC, magnetisch of citroenzuurdosering — welke zoutloze waterontharder werkt echt? Wetenschappelijk bewijs, vergelijkingstabel en duidelijk advies voor Nederlandse consumenten.',
+      'TAC, magnetisch of citroenzuurdosering — welke zoutloze waterontharder werkt echt? Wetenschappelijk bewijs, vergelijkingstabel en duidelijk advies voor.',
     url: 'https://waterfilterplatform.nl/waterontharder/zoutloos',
     type: 'article',
   },

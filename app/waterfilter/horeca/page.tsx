@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor horeca: schoon water voor restaurant en cafe',
-  description: 'Een waterfilter voor horeca verbetert koffie- en theekwaliteit, beschermt apparatuur en voldoet aan HACCP-normen. Vergelijking van horeca waterfilters voor restaurants, cafes en hotels.',
+  description: 'Een waterfilter voor horeca verbetert koffie- en theekwaliteit, beschermt apparatuur en voldoet aan HACCP-normen. Vergelijking van horeca waterfilters voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/horeca' },
 };
 

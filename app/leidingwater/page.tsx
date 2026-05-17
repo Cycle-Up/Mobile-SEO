@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Leidingwater: Kwaliteit, Prijs & Samenstelling',
     description:
-      'Hoe werkt het Nederlandse leidingwaterstelsel? Lees over de 10 waterbedrijven, zuiveringsproces, samenstelling, Drinkwaterbesluit en wanneer filteren toegevoegde waarde biedt.',
+      'Hoe werkt het Nederlandse leidingwaterstelsel? Lees over de 10 waterbedrijven, zuiveringsproces, samenstelling, Drinkwaterbesluit en wanneer filteren.',
     url: 'https://waterfilterplatform.nl/leidingwater',
     type: 'article',
   },

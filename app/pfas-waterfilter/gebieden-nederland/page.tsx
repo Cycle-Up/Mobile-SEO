@@ -7,7 +7,7 @@ import { CTABanner } from '@/components/CTABanner';
 export const metadata: Metadata = {
   title: 'PFAS in drinkwater per regio: risicogebieden in Nederland',
   description:
-    'Overzicht van PFAS-hotspots in Nederland per regio: Dordrecht/Chemours, Schiphol, militaire bases, Zeeland. Per gebied: bron, gemeten niveaus, drinkwaterbedrijf en status.',
+    'Overzicht van PFAS-hotspots in Nederland per regio: Dordrecht/Chemours, Schiphol, militaire bases, Zeeland. Per gebied: bron, gemeten niveaus.',
   alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter/gebieden-nederland' },
 };
 

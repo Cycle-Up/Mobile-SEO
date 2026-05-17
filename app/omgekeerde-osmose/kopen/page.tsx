@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Omgekeerde osmose filter kopen? Alles wat je moet weten',
   description:
-    'Omgekeerde osmose filter kopen? Lees wat de beste keuze is: NSF-gecertificeerd, 5-stadia, 1:1 afvalwaterratio. Vergelijk prijzen van €150 tot €500 en leer wat de installatie inhoudt.',
+    'Omgekeerde osmose filter kopen? Lees wat de beste keuze is: NSF-gecertificeerd, 5-stadia, 1:1 afvalwaterratio. Vergelijk prijzen van €150 tot €500 en leer.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/kopen' },
   openGraph: {
     title: 'Omgekeerde osmose filter kopen — complete koopgids 2026',
     description:
-      'Omgekeerde osmose filter kopen? Lees wat de beste keuze is: NSF-gecertificeerd, 5-stadia, 1:1 afvalwaterratio. Vergelijk prijzen van €150 tot €500 en leer wat de installatie inhoudt.',
+      'Omgekeerde osmose filter kopen? Lees wat de beste keuze is: NSF-gecertificeerd, 5-stadia, 1:1 afvalwaterratio. Vergelijk prijzen van €150 tot €500 en leer.',
     url: 'https://waterfilterplatform.nl/omgekeerde-osmose/kopen',
     type: 'article',
   },

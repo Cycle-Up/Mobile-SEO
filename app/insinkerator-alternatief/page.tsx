@@ -7,7 +7,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'InSinkErator alternatief: beste opties vergeleken',
     description:
-      'Op zoek naar een alternatief voor InSinkErator? Vergelijk 4-in-1 osmosekranen, Quooker, Grohe Red en Franke op prijs, functies en filteropties. Eerlijke vergelijking inclusief TCO.',
+      'Op zoek naar een alternatief voor InSinkErator? Vergelijk 4-in-1 osmosekranen, Quooker, Grohe Red en Franke op prijs, functies en filteropties.',
     alternates: { canonical: 'https://waterfilterplatform.nl/insinkerator-alternatief' },
     openGraph: {
       title: 'InSinkErator alternatief: top 4 opties vergeleken (2026)',

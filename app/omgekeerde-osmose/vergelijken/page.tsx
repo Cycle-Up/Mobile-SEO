@@ -8,12 +8,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Omgekeerde Osmose Vergelijken 2026: Welk Systeem?',
   description:
-    'Omgekeerde osmose systemen vergelijken? Ontdek de verschillen tussen onderbouw, aanrecht en geïntegreerde 4-in-1 systemen op doorstroomsnelheid, afvalwaterratio, filterkosten en geschiktheid.',
+    'Omgekeerde osmose systemen vergelijken? Ontdek de verschillen tussen onderbouw, aanrecht en geïntegreerde 4-in-1 systemen op doorstroomsnelheid.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/vergelijken' },
   openGraph: {
     title: 'Omgekeerde Osmose Vergelijken 2026: Welk Systeem Past Bij Jou?',
     description:
-      'Vergelijk onderbouw RO, aanrechtmodel en geïntegreerde 4-in-1 kokend water kraan op specs: doorstroom (L/u), afvalwaterratio, tankvolume, filterkosten en prijs.',
+      'Vergelijk onderbouw RO, aanrechtmodel en geïntegreerde 4-in-1 kokend water kraan op specs: doorstroom (L/u), afvalwaterratio, tankvolume, filterkosten en.',
     url: 'https://waterfilterplatform.nl/omgekeerde-osmose/vergelijken',
     type: 'article',
   },

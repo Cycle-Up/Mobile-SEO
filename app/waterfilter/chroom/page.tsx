@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Chroom-6 in drinkwater: risico, normen en waterfilter',
   description:
-    'Chroom-6 in drinkwater is kankerverwekkend. EU-norm is 25 microgram per liter. In Nederland zijn er hotspotgebieden door industriele verontreiniging. Osmosefilter verwijdert 95-99% chroom-6.',
+    'Chroom-6 in drinkwater is kankerverwekkend. EU-norm is 25 microgram per liter. In Nederland zijn er hotspotgebieden door industriele verontreiniging.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/chroom' },
 };
 
@@ -76,7 +76,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Chroom-6 in drinkwater: risico, normen en waterfilter',
   description:
-    'Chroom-6 in drinkwater is kankerverwekkend. EU-norm is 25 microgram per liter. In Nederland zijn er hotspotgebieden door industriele verontreiniging. Osmosefilter verwijdert 95-99% chroom-6.',
+    'Chroom-6 in drinkwater is kankerverwekkend. EU-norm is 25 microgram per liter. In Nederland zijn er hotspotgebieden door industriele verontreiniging.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/chroom',

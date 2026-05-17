@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Omgekeerde osmose installeren: stap-voor-stap gids',
   description:
-    'Een omgekeerde osmosefilter zelf installeren duurt 1-2 uur en vereist geen loodgieter. Lees de volledige installatiegids: benodigde gereedschappen, wateraansluiting, kraantje boren en eerste gebruik.',
+    'Een omgekeerde osmosefilter zelf installeren duurt 1-2 uur en vereist geen loodgieter. Lees de volledige installatiegids: benodigde gereedschappen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/installatie' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Omgekeerde osmose installeren: stap-voor-stap gids',
   description:
-    'Een omgekeerde osmosefilter zelf installeren duurt 1-2 uur en vereist geen loodgieter. Volledige gids: benodigde gereedschappen, wateraansluiting, kraantje boren en eerste gebruik.',
+    'Een omgekeerde osmosefilter zelf installeren duurt 1-2 uur en vereist geen loodgieter. Volledige gids: benodigde gereedschappen, wateraansluiting, kraantje.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/omgekeerde-osmose/installatie',

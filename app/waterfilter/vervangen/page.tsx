@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Wanneer waterfilter vervangen? Levensduur per type | 2026',
   description:
-    'Levensduur van waterfilters: sedimentfilter (6–12 mnd), koolstoffilter (6–12 mnd), RO-membraan (2–5 jaar), UV-lamp (1 jaar), waterontharder hars (10–15 jaar). Symptomen van een versleten filter.',
+    'Levensduur van waterfilters: sedimentfilter (6–12 mnd), koolstoffilter (6–12 mnd), RO-membraan (2–5 jaar), UV-lamp (1 jaar), waterontharder hars (10–15 jaar).',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/vervangen' },
   openGraph: {
     title: 'Wanneer waterfilter vervangen? Levensduur per type',

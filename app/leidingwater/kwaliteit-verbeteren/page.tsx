@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Leidingwater kwaliteit verbeteren: 6 bewezen methoden',
   description:
-    'Hoe verbeter je de kwaliteit van leidingwater thuis? 6 bewezen methoden vergeleken op kosten, onderhoud en effectiviteit — van filterkan tot omgekeerde osmose.',
+    'Hoe verbeter je de kwaliteit van leidingwater thuis? 6 bewezen methoden vergeleken op kosten, onderhoud en effectiviteit — van filterkan tot omgekeerde.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/kwaliteit-verbeteren' },
   openGraph: {
     title: 'Leidingwater kwaliteit verbeteren: 6 bewezen methoden',

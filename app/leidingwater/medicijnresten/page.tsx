@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: "Medicijnresten in drinkwater: risico's, normen en waterfilter",
   description:
-    'Medicijnresten in drinkwater: ibuprofen, hormoonpillen, antibiotica en antidepressiva zijn meetbaar in Nederlands drinkwater. EU-norm in ontwikkeling. Osmosefilter verwijdert 80-95% van farmaceutische stoffen.',
+    'Medicijnresten in drinkwater: ibuprofen, hormoonpillen, antibiotica en antidepressiva zijn meetbaar in Nederlands drinkwater. EU-norm in ontwikkeling.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/medicijnresten' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Medicijnresten in drinkwater: risico's, normen en waterfilter",
   description:
-    'Medicijnresten in drinkwater: ibuprofen, hormoonpillen, antibiotica en antidepressiva zijn meetbaar in Nederlands drinkwater. EU-norm in ontwikkeling. Osmosefilter verwijdert 80-95% van farmaceutische stoffen.',
+    'Medicijnresten in drinkwater: ibuprofen, hormoonpillen, antibiotica en antidepressiva zijn meetbaar in Nederlands drinkwater. EU-norm in ontwikkeling.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/medicijnresten',

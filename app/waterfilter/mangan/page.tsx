@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Mangaan in drinkwater: zwart residu, EU-norm en waterfilter',
   description:
-    'Mangaan in drinkwater geeft zwart-bruin residu in leidingen en een metaalachtige smaak. EU-norm is 50 microgram per liter. Osmosefilter verwijdert 95-99% mangaan. Oxidatiefilter is effectief bij hoge concentraties.',
+    'Mangaan in drinkwater geeft zwart-bruin residu in leidingen en een metaalachtige smaak. EU-norm is 50 microgram per liter. Osmosefilter verwijdert 95-99%.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/mangan' },
 };
 
@@ -77,7 +77,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Mangaan in drinkwater: zwart residu, EU-norm en waterfilter',
   description:
-    'Mangaan in drinkwater geeft zwart-bruin residu en een metaalachtige smaak. EU-norm 50 ug/L. Osmosefilter verwijdert 95-99% mangaan en is de beste thuisoplossing.',
+    'Mangaan in drinkwater geeft zwart-bruin residu en een metaalachtige smaak. EU-norm 50 ug/L. Osmosefilter verwijdert 95-99% mangaan en is de beste.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/mangan',

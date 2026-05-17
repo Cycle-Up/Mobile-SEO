@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosefilter voor brak water en bronwater: capaciteit en installatie',
   description:
-    'Een osmosefilter geschikt voor brak water (TDS 1000-10.000 mg/L) heeft hogere werkdruk (10-20 bar) dan een thuissysteem. Geschikt voor boot, vakantiewoning op eigen bron of regenwater opvang.',
+    'Een osmosefilter geschikt voor brak water (TDS 1000-10.000 mg/L) heeft hogere werkdruk (10-20 bar) dan een thuissysteem. Geschikt voor boot, vakantiewoning.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/zout-water' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosefilter voor brak water en bronwater: capaciteit en installatie',
   description:
-    'Een osmosefilter geschikt voor brak water (TDS 1.000-10.000 mg/L) heeft hogere werkdruk (10-20 bar) dan een thuissysteem. Geschikt voor boot, vakantiewoning op eigen bron of regenwater opvang.',
+    'Een osmosefilter geschikt voor brak water (TDS 1.000-10.000 mg/L) heeft hogere werkdruk (10-20 bar) dan een thuissysteem. Geschikt voor boot, vakantiewoning.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/omgekeerde-osmose/zout-water',

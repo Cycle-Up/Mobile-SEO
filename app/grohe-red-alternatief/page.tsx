@@ -13,7 +13,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Grohe Red alternatief vergelijken — beste opties 2026',
       description:
-        'Grohe Red is een kwaliteitsmerk, maar er zijn goedkopere alternatieven met vergelijkbare functies. Vergelijk 4-in-1 osmosekraan, Quooker, InSinkErator en Franke.',
+        'Grohe Red is een kwaliteitsmerk, maar er zijn goedkopere alternatieven met vergelijkbare functies. Vergelijk 4-in-1 osmosekraan, Quooker, InSinkErator en.',
       url: 'https://waterfilterplatform.nl/grohe-red-alternatief',
       type: 'article',
       locale: 'nl_NL',

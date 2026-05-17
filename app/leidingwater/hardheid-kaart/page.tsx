@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterhardheid per provincie en gemeente: kaart en overzicht Nederland',
   description:
-    'Nederlandse waterhardheid varieert van 4 dH (Friesland, zacht) tot 28 dH (Limburg, zeer hard). Overzicht per provincie en de 10 grootste steden. Wat betekent waterhardheid voor uw waterfilter?',
+    'Nederlandse waterhardheid varieert van 4 dH (Friesland, zacht) tot 28 dH (Limburg, zeer hard). Overzicht per provincie en de 10 grootste steden.',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/hardheid-kaart' },
 };
 

@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Omgekeerde Osmose Filter: Uitleg & Keuze 2026',
   description:
-    'Hoe werkt een omgekeerde osmose filter? Uitleg over sedimentfilter, koolstoffilter, RO-membraan, nafilter, TFC vs CTA en NSF/ANSI-certificeringen. Keuze 4-, 5- of 6-traps.',
+    'Hoe werkt een omgekeerde osmose filter? Uitleg over sedimentfilter, koolstoffilter, RO-membraan, nafilter, TFC vs CTA en NSF/ANSI-certificeringen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/filter' },
   openGraph: {
     title: 'Omgekeerde Osmose Filter: Uitleg & Keuze 2026',

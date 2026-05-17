@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Alkalisch water vs osmosewater: wat is het verschil en wat is beter?',
   description:
-    'Alkalisch water heeft hoge pH, osmosewater is puur en laag in TDS. Ze zijn fundamenteel anders: osmose filtert verontreinigingen, ionisatoren veranderen pH. Vergelijking.',
+    'Alkalisch water heeft hoge pH, osmosewater is puur en laag in TDS. Ze zijn fundamenteel anders: osmose filtert verontreinigingen, ionisatoren veranderen pH.',
   alternates: { canonical: 'https://waterfilterplatform.nl/alkalisch-water/vs-osmose' },
 };
 

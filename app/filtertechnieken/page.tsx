@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description: "Alle waterfiltertechnieken vergeleken: RO, UV-sterilisatie, actief kool, ultrafiltratie, ionenwisseling. Welke techniek verwijdert wat?",
   alternates: { canonical: "https://waterfilterplatform.nl/filtertechnieken" },
   openGraph: {
+    images: [{ url: 'https://waterfilterplatform.nl/og/filtertechnieken.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Filtertechnieken waterfilters: omgekeerde osmose, UV, actief kool en meer",
     description: "Alle waterfiltertechnieken vergeleken: RO, UV-sterilisatie, actief kool, ultrafiltratie, ionenwisseling. Welke techniek verwijdert wat?",
     type: "website",

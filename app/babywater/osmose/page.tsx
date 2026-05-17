@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater voor baby: veilig voor flesvoeding en babyvoeding?',
   description:
-    'Osmosewater is veilig en ideaal voor babyvoeding: natrium <5 mg/L, nitraat <1 mg/L, geen lood, geen PFAS. Het lage TDS is geen probleem want melkpoeder bevat alle mineralen.',
+    'Osmosewater is veilig en ideaal voor babyvoeding: natrium <5 mg/L, nitraat <1 mg/L, geen lood, geen PFAS. Het lage TDS is geen probleem want melkpoeder bevat.',
   alternates: { canonical: 'https://waterfilterplatform.nl/babywater/osmose' },
 };
 
@@ -63,7 +63,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Osmosewater voor baby: veilig voor flesvoeding en babyvoeding?',
   description:
-    'Osmosewater is veilig en ideaal voor babyvoeding: natrium onder 5 mg/L, nitraat onder 1 mg/L, geen lood, geen PFAS. Het lage TDS is geen probleem want melkpoeder bevat alle mineralen.',
+    'Osmosewater is veilig en ideaal voor babyvoeding: natrium onder 5 mg/L, nitraat onder 1 mg/L, geen lood, geen PFAS. Het lage TDS is geen probleem want.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/babywater/osmose',

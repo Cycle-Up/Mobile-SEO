@@ -38,7 +38,9 @@ const faqItems = [
   },
 ];
 
-const technieken = [
+type Cel = boolean | 'deels';
+type Techniek = { naam: string; chloor: Cel; geur: Cel; bacterien: Cel; virussen: Cel; protozoa: Cel; pfas: Cel; zware_metalen: Cel; nitraat: Cel; kalk: Cel; pesticiden: Cel; medicijnen: Cel };
+const technieken: Techniek[] = [
   { naam: 'Actief kool', chloor: true, geur: true, bacterien: false, virussen: false, protozoa: false, pfas: 'deels', zware_metalen: 'deels', nitraat: false, kalk: false, pesticiden: 'deels', medicijnen: 'deels' },
   { naam: 'Sedimentfilter', chloor: false, geur: false, bacterien: false, virussen: false, protozoa: false, pfas: false, zware_metalen: false, nitraat: false, kalk: false, pesticiden: false, medicijnen: false },
   { naam: 'Ultrafiltratie (UF)', chloor: false, geur: false, bacterien: true, virussen: 'deels', protozoa: true, pfas: false, zware_metalen: false, nitraat: false, kalk: false, pesticiden: false, medicijnen: false },

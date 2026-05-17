@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Filterkan of waterkraan filter: welke waterfilter past bij u?',
-  description: 'Filterkan (Brita, PearlCo) of een filterkraan: beide filteren chloor en kalk, maar verschillen in gemak, filterkosten en filtratiewerking. Vergelijking voor thuis.',
+  description: 'Filterkan (Brita, PearlCo) of een filterkraan: beide filteren chloor en kalk, maar verschillen in gemak, filterkosten en filtratiewerking.',
   alternates: { canonical: 'https://waterfilterplatform.nl/filterkan/vs-waterkraan-filter' },
 };
 

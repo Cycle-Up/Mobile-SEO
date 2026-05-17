@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Osmosewater remineraliseren: hoe en waarom? | 2026',
   description:
-    'Waarom bevat puur osmosewater geen mineralen en hoe remineraliseer je het? Vergelijking van calciet, dolomiet en maifaniet patronen. Doelwaarde TDS 50–150 mg/L. DIY vs inline patroon.',
+    'Waarom bevat puur osmosewater geen mineralen en hoe remineraliseer je het? Vergelijking van calciet, dolomiet en maifaniet patronen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/remineralisatie' },
   openGraph: {
     title: 'Osmosewater remineraliseren: hoe en waarom?',

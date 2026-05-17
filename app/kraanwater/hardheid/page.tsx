@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Hardheid kraanwater per regio: kaart en tabel voor alle provincies',
-  description: 'Hardheid kraanwater verschilt sterk per regio: van 3 dH in Zeeland tot 28 dH in Limburg. Bekijk de waterhardheidskaart per provincie en wat het betekent voor uw apparaten.',
+  description: 'Hardheid kraanwater verschilt sterk per regio: van 3 dH in Zeeland tot 28 dH in Limburg. Bekijk de waterhardheidskaart per provincie en wat het betekent voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kraanwater/hardheid' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Hardheid kraanwater per regio: kaart en tabel voor alle provincies',
-  description: 'Hardheid kraanwater verschilt sterk per regio: van 3 dH in Zeeland tot 28 dH in Limburg. Bekijk de waterhardheidskaart per provincie en wat het betekent voor uw apparaten.',
+  description: 'Hardheid kraanwater verschilt sterk per regio: van 3 dH in Zeeland tot 28 dH in Limburg. Bekijk de waterhardheidskaart per provincie en wat het betekent voor.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kraanwater/hardheid',

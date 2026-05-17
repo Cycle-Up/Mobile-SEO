@@ -5,7 +5,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Waterfilter nieuwbouwwoning: de beste keuze bij oplevering',
-  description: 'Waterfilter in nieuwbouw inbouwen? Leer wanneer installeren het goedkoopst is (tijdens bouw 40–60% goedkoper), welke systemen passen en wat je de aannemer moet vragen.',
+  description: 'Waterfilter in nieuwbouw inbouwen? Leer wanneer installeren het goedkoopst is (tijdens bouw 40–60% goedkoper), welke systemen passen en wat je de aannemer.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/nieuwbouw' },
 };
 

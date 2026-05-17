@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Onderbouw koolstoffilter: beste keuze voor betere kraanwatersmaak',
   description:
-    'Onderbouw koolstoffilter onder het aanrecht: vergelijking van enkelvoudige en meervoudige systemen, top 5 modellen met prijs en specs, installatieoverzicht, jaarkosten en voor wie het geschikt is.',
+    'Onderbouw koolstoffilter onder het aanrecht: vergelijking van enkelvoudige en meervoudige systemen, top 5 modellen met prijs en specs, installatieoverzicht.',
   alternates: { canonical: 'https://waterfilterplatform.nl/koolstoffilter/onderbouw' },
   openGraph: {
     title: 'Onderbouw koolstoffilter: beste keuze voor betere kraanwatersmaak',

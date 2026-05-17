@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Welk waterfilter heb ik nodig? Keuzehulp 2026',
   description:
-    'Welk waterfilter past bij jouw situatie? Keuzehulp met beslissingsstappen op basis van probleem, budget en installatiemogelijkheid. Van filterkan tot omgekeerde osmose.',
+    'Welk waterfilter past bij jouw situatie? Keuzehulp met beslissingsstappen op basis van probleem, budget en installatiemogelijkheid.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/welk-filter' },
   openGraph: {
     title: 'Welk waterfilter heb ik nodig? Keuzehulp 2026',

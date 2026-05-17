@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterfilter voor koelkast: wanneer vervangen en welk type?',
   description:
-    'Alles over koelkast waterfilters: interne filters van Samsung, LG, Beko en Bosch, vervangingsintervallen, wat ze verwijderen, en wanneer je beter kiest voor een extern osmosefilter.',
+    'Alles over koelkast waterfilters: interne filters van Samsung, LG, Beko en Bosch, vervangingsintervallen, wat ze verwijderen, en wanneer je beter kiest voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/koelkast' },
   openGraph: {
     title: 'Waterfilter voor koelkast: wanneer vervangen en welk type?',
     description:
-      'Alles over koelkast waterfilters: interne filters van Samsung, LG, Beko en Bosch, vervangingsintervallen, wat ze verwijderen, en wanneer je beter kiest voor een extern osmosefilter.',
+      'Alles over koelkast waterfilters: interne filters van Samsung, LG, Beko en Bosch, vervangingsintervallen, wat ze verwijderen, en wanneer je beter kiest voor.',
     url: 'https://waterfilterplatform.nl/waterfilter/koelkast',
     type: 'article',
   },

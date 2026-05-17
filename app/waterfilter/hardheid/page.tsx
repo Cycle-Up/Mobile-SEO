@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterfilter voor hard water: ontharder, osmose of magneetfilter?',
   description:
-    'Hard water (boven 15 dH) veroorzaakt kalkafzetting in apparaten en leidingen. Vergelijking van waterontharder, osmosefilter en magnetische waterbehandeling voor hard water in Nederland.',
+    'Hard water (boven 15 dH) veroorzaakt kalkafzetting in apparaten en leidingen. Vergelijking van waterontharder, osmosefilter en magnetische waterbehandeling.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/hardheid' },
 };
 

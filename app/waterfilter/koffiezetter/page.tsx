@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterfilter voor koffiezetter: betere smaak, minder kalk (2026)',
   description:
-    'Welk waterfilter past bij jouw koffiezetapparaat? Vergelijk interne machinefilters, filterkannen, koolstoffilters en omgekeerde osmose. Ideaal TDS voor koffie: 150–250 mg/L.',
+    'Welk waterfilter past bij jouw koffiezetapparaat? Vergelijk interne machinefilters, filterkannen, koolstoffilters en omgekeerde osmose.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/koffiezetter' },
   openGraph: {
     title: 'Waterfilter voor koffiezetter: betere smaak, minder kalk (2026)',
     description:
-      'Welk waterfilter past bij jouw koffiezetapparaat? Vergelijk interne machinefilters, filterkannen, koolstoffilters en omgekeerde osmose. Ideaal TDS voor koffie: 150–250 mg/L.',
+      'Welk waterfilter past bij jouw koffiezetapparaat? Vergelijk interne machinefilters, filterkannen, koolstoffilters en omgekeerde osmose.',
     url: 'https://waterfilterplatform.nl/waterfilter/koffiezetter',
     type: 'article',
   },

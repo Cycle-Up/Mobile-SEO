@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Afvalwater osmosefilter: verhouding, besparing en waterbesparende systemen',
   description:
-    'Een osmosefilter produceert 2-4 liter afvalwater per liter drinkwater. Moderne tankloze systemen met permeaatpomp halen een verhouding van 1:1. Lees hoe u afvalwater beperkt en hergebruikt.',
+    'Een osmosefilter produceert 2-4 liter afvalwater per liter drinkwater. Moderne tankloze systemen met permeaatpomp halen een verhouding van 1:1.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/afvalwater' },
 };
 

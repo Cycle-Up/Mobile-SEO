@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Quooker alternatief: kokend water kranen vergeleken met Quooker',
-  description: 'Quooker is de bekendste kokend water kraan maar kost 1.500-3.200 euro. Vergelijking van Quooker alternatieven: PureAqua, Grohe Red, Zip HydroTap en InSinkErator op prijs en functies.',
+  description: 'Quooker is de bekendste kokend water kraan maar kost 1.500-3.200 euro. Vergelijking van Quooker alternatieven: PureAqua, Grohe Red, Zip HydroTap en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/quooker' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Quooker alternatief: kokend water kranen vergeleken met Quooker',
-  description: 'Quooker is de bekendste kokend water kraan maar kost 1.500-3.200 euro. Vergelijking van Quooker alternatieven: PureAqua, Grohe Red, Zip HydroTap en InSinkErator op prijs en functies.',
+  description: 'Quooker is de bekendste kokend water kraan maar kost 1.500-3.200 euro. Vergelijking van Quooker alternatieven: PureAqua, Grohe Red, Zip HydroTap en.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kokend-water-kraan/quooker',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Osmosewater remineraliseren: mineralen toevoegen na omgekeerde osmose',
   description:
-    'Osmosewater heeft TDS &lt;50 mg/L. Remineraliseren voegt calcium en magnesium terug toe voor betere smaak, hogere pH en gezondheidsvoordelen. Methoden en kosten vergeleken.',
+    'Osmosewater heeft TDS &lt;50 mg/L. Remineraliseren voegt calcium en magnesium terug toe voor betere smaak, hogere pH en gezondheidsvoordelen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/remineraliseren' },
 };
 

@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterontharder Prijs: Kosten & Vergelijking 2026',
   description:
-    'Wat kost een waterontharder? Aanschafprijs, jaarlijkse zout- en onderhoudskosten, huur vs. koop en TCO over 5 jaar. Vergelijking met osmosefilter en niets doen.',
+    'Wat kost een waterontharder? Aanschafprijs, jaarlijkse zout- en onderhoudskosten, huur vs. koop en TCO over 5 jaar. Vergelijking met osmosefilter en niets.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/prijs' },
   openGraph: {
     title: 'Waterontharder Prijs: Kosten & Vergelijking 2026',
     description:
-      'Aanschafprijs €300–4000, zoutkosten €30–120/jaar. Vergelijk de totale kosten van een waterontharder over 5 jaar — inclusief huur vs. koop en vergelijking met osmose.',
+      'Aanschafprijs €300–4000, zoutkosten €30–120/jaar. Vergelijk de totale kosten van een waterontharder over 5 jaar — inclusief huur vs.',
     url: 'https://waterfilterplatform.nl/waterontharder/prijs',
     type: 'article',
   },

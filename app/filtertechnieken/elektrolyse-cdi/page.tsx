@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Elektrolyse en CDI waterontzouting — hoe werkt capacitieve deionisatie? | WaterfilterPlatform',
-  description: 'CDI (Capacitive Deionization) trekt ionen aan via elektroden zonder membraan. Laag energieverbruik, geen druk. Vergelijking CDI vs omgekeerde osmose voor thuisgebruik.',
+  description: 'CDI (Capacitive Deionization) trekt ionen aan via elektroden zonder membraan. Laag energieverbruik, geen druk. Vergelijking CDI vs omgekeerde osmose voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/filtertechnieken/elektrolyse-cdi' },
   openGraph: {
     title: 'Elektrolyse en CDI waterontzouting — hoe werkt capacitieve deionisatie?',

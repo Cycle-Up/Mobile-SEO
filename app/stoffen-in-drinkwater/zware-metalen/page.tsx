@@ -5,9 +5,9 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Zware metalen in drinkwater -- lood, koper, chroom en arseen | WaterfilterPlatform',
+  title: 'Zware metalen in drinkwater -- lood, koper, chroom en arseen',
   description:
-    'Welke zware metalen zitten er in drinkwater? Leer over lood in leidingwater, koper, arseen en chroom-6: normen, gezondheidsrisicos en hoe osmose 90-95% verwijdert.',
+    'Welke zware metalen zitten er in drinkwater? Leer over lood in leidingwater, koper, arseen en chroom-6: normen, gezondheidsrisicos en hoe osmose 90-95%.',
   alternates: { canonical: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/zware-metalen' },
 };
 
@@ -16,7 +16,7 @@ export default function ZwareMetalenPage() {
     <>
       <SchemaOrg type="Article" article={{
         title: 'Zware metalen in drinkwater -- lood, koper, chroom en arseen',
-        description: 'Welke zware metalen zitten er in drinkwater? Leer over lood in leidingwater, koper, arseen en chroom-6: normen, gezondheidsrisicos en hoe osmose 90-95% verwijdert.',
+        description: 'Welke zware metalen zitten er in drinkwater? Leer over lood in leidingwater, koper, arseen en chroom-6: normen, gezondheidsrisicos en hoe osmose 90-95%.',
         datePublished: '2026-01-01',
         url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/zware-metalen',
       }} />

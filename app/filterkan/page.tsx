@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Wat is een waterfilterkan? Brita, BWT en alternatieven vergelijken 2026',
   description:
-    'Alles over waterfilterkannen: hoe ze werken, welke merken (Brita, BWT, PUR) de beste zijn, wat ze wel en niet verwijderen en wanneer je beter kiest voor osmose.',
+    'Alles over waterfilterkannen: hoe ze werken, welke merken (Brita, BWT, PUR) de beste zijn, wat ze wel en niet verwijderen en wanneer je beter kiest voor.',
   alternates: { canonical: 'https://waterfilterplatform.nl/filterkan' },
   openGraph: {
     title: 'Waterfilterkan — Brita, BWT en alternatieven vergelijken 2026',

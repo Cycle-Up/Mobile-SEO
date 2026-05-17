@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Wat is ultrafiltratie (UF)? Membraanfiltratie voor thuis uitgelegd',
   description:
-    'Ultrafiltratie (UF) filtert water via een 0,01–0,1 micron membraan: verwijdert bacteriën, virussen en colloïden zonder stroom of afvalwater. Vergelijking met osmose en keramisch.',
+    'Ultrafiltratie (UF) filtert water via een 0,01–0,1 micron membraan: verwijdert bacteriën, virussen en colloïden zonder stroom of afvalwater.',
   alternates: { canonical: 'https://waterfilterplatform.nl/ultrafiltratie' },
   openGraph: {
     title: 'Ultrafiltratie (UF) — membraanfiltratie voor thuis uitgelegd',
@@ -161,7 +161,7 @@ export default function UltrafiltrationPage() {
         article={{
           title: 'Wat is ultrafiltratie (UF)? Membraanfiltratie voor thuis uitgelegd',
           description:
-            'Ultrafiltratie (UF) filtert water via een 0,01–0,1 micron membraan: verwijdert bacteriën, virussen en colloïden zonder stroom of afvalwater. Vergelijking met osmose en keramisch.',
+            'Ultrafiltratie (UF) filtert water via een 0,01–0,1 micron membraan: verwijdert bacteriën, virussen en colloïden zonder stroom of afvalwater.',
           datePublished: '2025-09-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/ultrafiltratie',

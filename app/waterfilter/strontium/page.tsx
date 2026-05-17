@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Strontium in leidingwater: bronnen, gezondheid en waterfilter',
   description:
-    'Strontium in leidingwater is chemisch vergelijkbaar met calcium. Geen EU-norm. Bij hoge concentraties (>4 mg/L) mogelijk schadelijk voor botvorming. Osmosefilter verwijdert 90-97% strontium.',
+    'Strontium in leidingwater is chemisch vergelijkbaar met calcium. Geen EU-norm. Bij hoge concentraties (>4 mg/L) mogelijk schadelijk voor botvorming.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/strontium' },
 };
 
@@ -77,7 +77,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Strontium in leidingwater: bronnen, gezondheid en waterfilter',
   description:
-    'Strontium in leidingwater is chemisch vergelijkbaar met calcium. Geen EU-norm. Bij hoge concentraties mogelijk schadelijk. Osmosefilter verwijdert 90-97% strontium.',
+    'Strontium in leidingwater is chemisch vergelijkbaar met calcium. Geen EU-norm. Bij hoge concentraties mogelijk schadelijk. Osmosefilter verwijdert 90-97%.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/strontium',

@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Wat is osmose water? Werking, kwaliteit & gezondheid',
   description:
-    'Wat is osmose water? Gefilterd water via een semipermeabel membraan dat 95–99% van verontreinigingen verwijdert. Lees over werking, kwaliteit, gezondheid en vergelijking met kraanwater.',
+    'Wat is osmose water? Gefilterd water via een semipermeabel membraan dat 95–99% van verontreinigingen verwijdert. Lees over werking, kwaliteit, gezondheid en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/wat-is-osmose-water' },
   openGraph: {
     title: 'Wat is osmose water? Werking, kwaliteit en gezondheid uitgelegd',
     description:
-      'Wat is osmose water? Gefilterd water via een semipermeabel membraan dat 95–99% van verontreinigingen verwijdert. Lees over werking, kwaliteit, gezondheid en vergelijking met kraanwater.',
+      'Wat is osmose water? Gefilterd water via een semipermeabel membraan dat 95–99% van verontreinigingen verwijdert. Lees over werking, kwaliteit, gezondheid en.',
     url: 'https://waterfilterplatform.nl/omgekeerde-osmose/wat-is-osmose-water',
     type: 'article',
   },

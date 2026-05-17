@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kokend water kraan installeren: stappen, kosten en wat heb je nodig?',
   description:
-    'Een kokend water kraan installeren duurt 2-4 uur. U hebt een kraangat, wateraansluiting en stopcontact nodig. Kosten installateur 150-350 euro. Complete installatiegids.',
+    'Een kokend water kraan installeren duurt 2-4 uur. U hebt een kraangat, wateraansluiting en stopcontact nodig. Kosten installateur 150-350 euro.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/installeren' },
   openGraph: {
     title: 'Kokend water kraan installeren: stappen, kosten en wat heb je nodig?',
     description:
-      'Complete installatiegids voor een kokend water kraan thuis. Van voorbereiding tot eerste gebruik: wateraansluiting, boiler, elektra en speciale tips voor 4-in-1 met osmose filter.',
+      'Complete installatiegids voor een kokend water kraan thuis. Van voorbereiding tot eerste gebruik: wateraansluiting, boiler, elektra en speciale tips voor.',
     url: 'https://waterfilterplatform.nl/kokend-water-kraan/installeren',
     type: 'article',
   },
@@ -146,7 +146,7 @@ const installatieStappen = [
 const articleSchema = {
   '@type': 'Article',
   headline: 'Kokend water kraan installeren: stappen, kosten en wat heb je nodig?',
-  description: 'Een kokend water kraan installeren duurt 2-4 uur. U hebt een kraangat, wateraansluiting en stopcontact nodig. Kosten installateur 150-350 euro. Complete installatiegids.',
+  description: 'Een kokend water kraan installeren duurt 2-4 uur. U hebt een kraangat, wateraansluiting en stopcontact nodig. Kosten installateur 150-350 euro.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kokend-water-kraan/installeren',
@@ -160,7 +160,7 @@ const articleSchema = {
 const howToSchema = {
   '@type': 'HowTo',
   name: 'Kokend Water Kraan Installeren: Stap-voor-Stap',
-  description: 'Stap-voor-stap installatie van een kokend water kraan thuis. Van watertoevoer afsluiten tot eerste ingebruikname, inclusief boiler plaatsen en elektrische aansluiting.',
+  description: 'Stap-voor-stap installatie van een kokend water kraan thuis. Van watertoevoer afsluiten tot eerste ingebruikname, inclusief boiler plaatsen en elektrische.',
   totalTime: 'PT3H',
   estimatedCost: { '@type': 'MonetaryAmount', currency: 'EUR', value: '0' },
   tool: [

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Energieverbruik kokend water kraan: vergelijking met waterkoker en pan',
   description:
-    'Een kokend water kraan (boiler) verbruikt 24/7 standby-energie maar is per kopje thee goedkoper dan een waterkoker. Vergelijking van energiekosten: kokend waterboiler vs waterkoker vs pan op inductie.',
+    'Een kokend water kraan (boiler) verbruikt 24/7 standby-energie maar is per kopje thee goedkoper dan een waterkoker. Vergelijking van energiekosten: kokend.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/energie' },
 };
 
@@ -77,7 +77,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Energieverbruik kokend water kraan: vergelijking met waterkoker en pan',
   description:
-    'Een kokend water kraan verbruikt 24/7 standby-energie maar is per kopje goedkoper dan een waterkoker bij hoog gebruik. Vergelijking van energiekosten inclusief standby, nachtmodus en eco-stand.',
+    'Een kokend water kraan verbruikt 24/7 standby-energie maar is per kopje goedkoper dan een waterkoker bij hoog gebruik. Vergelijking van energiekosten.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/kokend-water-kraan/energie',

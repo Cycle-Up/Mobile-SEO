@@ -7,7 +7,7 @@ import { CTABanner } from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Waterhardheid thuis testen: teststrips, TDS-meter en labanalyse",
   description:
-    "Waterhardheid thuis testen: teststrips 2-5 euro, TDS-meter 8-25 euro, labanalyse 25-60 euro. Nauwkeurigheid vergeleken. Gratis hardheidscheck via drinkwaterbedrijf.",
+    "Waterhardheid thuis testen: teststrips 2-5 euro, TDS-meter 8-25 euro, labanalyse 25-60 euro. Nauwkeurigheid vergeleken. Gratis hardheidscheck via.",
   alternates: { canonical: "https://waterfilterplatform.nl/waterfilter/hardheidstest" },
   openGraph: {
     title: "Waterhardheid thuis testen: teststrips, TDS-meter en labanalyse",

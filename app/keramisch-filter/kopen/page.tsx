@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Keramisch waterfilter kopen: koopgids en beste modellen 2026',
   description:
-    'Koopgids voor keramische waterfilters: vergelijk 5 modellen (Doulton, Berkefeld, British Berkefeld, Gravity, Katadyn) op poriemaat, doorstroom, prijs en filterduur. Onafhankelijk advies.',
+    'Koopgids voor keramische waterfilters: vergelijk 5 modellen (Doulton, Berkefeld, British Berkefeld, Gravity, Katadyn) op poriemaat, doorstroom, prijs en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keramisch-filter/kopen' },
   openGraph: {
     title: 'Keramisch waterfilter kopen — koopgids en modellenvergelijking 2026',

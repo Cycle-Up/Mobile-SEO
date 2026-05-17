@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Brouwwater remineraliseren: mineralen toevoegen aan osmosewater',
-  description: 'Remineraliseer osmosewater voor bier brouwen door calcium, magnesium, sulfaat en chloride toe te voegen. Stap-voor-stap gids met doseringen voor populaire bierstijlen.',
+  description: 'Remineraliseer osmosewater voor bier brouwen door calcium, magnesium, sulfaat en chloride toe te voegen. Stap-voor-stap gids met doseringen voor populaire.',
   alternates: { canonical: 'https://waterfilterplatform.nl/brouwwater/remineraliseren' },
 };
 
@@ -75,7 +75,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Brouwwater remineraliseren: mineralen toevoegen aan osmosewater',
-  description: 'Remineraliseer osmosewater voor bier brouwen door calcium, magnesium, sulfaat en chloride toe te voegen. Stap-voor-stap gids met doseringen voor populaire bierstijlen.',
+  description: 'Remineraliseer osmosewater voor bier brouwen door calcium, magnesium, sulfaat en chloride toe te voegen. Stap-voor-stap gids met doseringen voor populaire.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/brouwwater/remineraliseren',

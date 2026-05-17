@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Soorten keramische filters: kaars, pot, disc en meer',
   description:
-    'Overzicht van alle soorten keramische waterfilters: filterkaars, potfilter, keramische schijf en samengesteld keramisch. Vergelijkingstabel, koopadvies en combinatiemogelijkheden.',
+    'Overzicht van alle soorten keramische waterfilters: filterkaars, potfilter, keramische schijf en samengesteld keramisch. Vergelijkingstabel, koopadvies en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/keramisch-filter/soorten' },
   openGraph: {
     title: 'Soorten keramische filters: kaars, pot, disc en samengesteld',

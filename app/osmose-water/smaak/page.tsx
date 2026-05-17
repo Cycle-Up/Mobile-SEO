@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Smaak van osmosewater: waarom smaakt het anders en hoe verbeter je het?',
   description:
-    'Osmosewater smaakt soms vlak of zuur door laag TDS en lage pH. Remineralisatie, alkalische cartridge en juiste opslag verbeteren de smaak significant. Praktische tips.',
+    'Osmosewater smaakt soms vlak of zuur door laag TDS en lage pH. Remineralisatie, alkalische cartridge en juiste opslag verbeteren de smaak significant.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/smaak' },
 };
 

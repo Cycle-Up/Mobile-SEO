@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Waterfilter voor de tuin: planten, vijver en beregeningssysteem',
   description:
-    'Waarom kraanwater niet ideaal is voor de tuin: chloor, kalk en fluoride. Vergelijk regenwater opvangen, koolstoffilter, vijverfilter en beregeningsfilters. Praktische setups per situatie.',
+    'Waarom kraanwater niet ideaal is voor de tuin: chloor, kalk en fluoride. Vergelijk regenwater opvangen, koolstoffilter, vijverfilter en beregeningsfilters.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/tuin' },
   openGraph: {
     title: 'Waterfilter voor de tuin: planten, vijver en beregeningssysteem',
     description:
-      'Waarom kraanwater niet ideaal is voor de tuin: chloor, kalk en fluoride. Vergelijk regenwater opvangen, koolstoffilter, vijverfilter en beregeningsfilters. Praktische setups per situatie.',
+      'Waarom kraanwater niet ideaal is voor de tuin: chloor, kalk en fluoride. Vergelijk regenwater opvangen, koolstoffilter, vijverfilter en beregeningsfilters.',
     url: 'https://waterfilterplatform.nl/waterfilter/tuin',
     type: 'article',
   },

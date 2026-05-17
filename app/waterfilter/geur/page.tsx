@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Geur uit leidingwater verwijderen: chloor, aards en H2S waterfilter',
   description:
-    'Leidingwater met chloor-, aardse of rotte-eierengeur heeft een specifieke oorzaak en oplossing. Actief koolfilter verwijdert chloorgeur. Osmosefilter verwijdert H2S en geosmien. Overzicht van geursoorten en de juiste waterfilter.',
+    'Leidingwater met chloor-, aardse of rotte-eierengeur heeft een specifieke oorzaak en oplossing. Actief koolfilter verwijdert chloorgeur.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/geur' },
 };
 
@@ -85,7 +85,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Geur uit leidingwater verwijderen: chloor, aards en H2S waterfilter',
   description:
-    'Leidingwater met chloor-, aardse of rotte-eierengeur heeft een specifieke oorzaak en oplossing. Actief koolfilter verwijdert chloorgeur; osmosefilter verwijdert H2S en geosmien.',
+    'Leidingwater met chloor-, aardse of rotte-eierengeur heeft een specifieke oorzaak en oplossing. Actief koolfilter verwijdert chloorgeur; osmosefilter.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/waterfilter/geur',

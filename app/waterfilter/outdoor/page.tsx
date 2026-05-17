@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Outdoor Waterfilter: Wandelen, Camping & Reizen',
-  description: 'Beste outdoor waterfilters voor wandelen, camping en reizen: LifeStraw, Sawyer, Berkey Travel, UV-pen. Filtermethoden vergeleken op gewicht, snelheid en effectiviteit.',
+  description: 'Beste outdoor waterfilters voor wandelen, camping en reizen: LifeStraw, Sawyer, Berkey Travel, UV-pen. Filtermethoden vergeleken op gewicht, snelheid en.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/outdoor' },
 };
 
