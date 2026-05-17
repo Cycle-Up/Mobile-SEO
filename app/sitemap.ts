@@ -456,6 +456,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kokend-water-kraan/garantie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/osmose-water/koffie-espresso`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterfilter/reisfilter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Ronde 20
+    { url: `${BASE}/waterontharder/verhuurder`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/kinderveiligheid`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterfilter/cryptosporidium`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/totaaloplossing`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/omgekeerde-osmose/inbouw`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/leidingwater/waterkwaliteitsrapport`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/osmose-water/fermenteren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
