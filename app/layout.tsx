@@ -22,8 +22,9 @@ export const metadata: Metadata = {
 };
 
 const navLinks = [
+  { href: '/keuzehulp', label: 'Keuzehulp' },
   { href: '/omgekeerde-osmose', label: 'Osmose filter' },
-  { href: '/kokend-water-kraan', label: 'Kokend water kraan' },
+  { href: '/vergelijken', label: 'Vergelijken' },
   { href: '/waterhardheid', label: 'Waterhardheid' },
   { href: '/kennisbank', label: 'Kennisbank' },
 ];
@@ -75,33 +76,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </p>
             </div>
             <div>
-              <p className="font-semibold mb-2">Waterfilters</p>
+              <p className="font-semibold mb-2">Waterfilters kiezen</p>
+              <ul className="space-y-1 text-blue-200">
+                <li><Link href="/keuzehulp" className="hover:text-white">Keuzehulp</Link></li>
+                <li><Link href="/beste-waterfilter" className="hover:text-white">Beste waterfilter per situatie</Link></li>
+                <li><Link href="/vergelijken" className="hover:text-white">Vergelijkingen</Link></li>
+                <li><Link href="/filtertechnieken" className="hover:text-white">Filtertechnieken</Link></li>
+                <li><Link href="/keurmerken" className="hover:text-white">Keurmerken</Link></li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-semibold mb-2">Waterfilters & kranen</p>
               <ul className="space-y-1 text-blue-200">
                 <li><Link href="/omgekeerde-osmose" className="hover:text-white">Omgekeerde osmose</Link></li>
                 <li><Link href="/omgekeerde-osmose/kopen" className="hover:text-white">Osmose filter kopen</Link></li>
-                <li><Link href="/omgekeerde-osmose/wat-is-osmose-water" className="hover:text-white">Wat is osmose water?</Link></li>
-                <li><Link href="/waterfilter" className="hover:text-white">Waterfilter</Link></li>
-                <li><Link href="/waterontharder" className="hover:text-white">Waterontharder</Link></li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold mb-2">Kokend water</p>
-              <ul className="space-y-1 text-blue-200">
                 <li><Link href="/kokend-water-kraan" className="hover:text-white">Kokend water kraan</Link></li>
-                <li><Link href="/kokend-water-kraan/vergelijken" className="hover:text-white">Merken vergelijken</Link></li>
-                <li><Link href="/kokend-water-kraan/met-filter" className="hover:text-white">Kraan met filter</Link></li>
-                <li><Link href="/heet-water-kraan" className="hover:text-white">Heet water kraan</Link></li>
+                <li><Link href="/waterontharder" className="hover:text-white">Waterontharder</Link></li>
+                <li><Link href="/onderhoud" className="hover:text-white">Onderhoud & gebruik</Link></li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold mb-2">Meer</p>
+              <p className="font-semibold mb-2">Drinkwaterkwaliteit</p>
               <ul className="space-y-1 text-blue-200">
-                <li><Link href="/waterhardheid" className="hover:text-white">Waterhardheid Nederland</Link></li>
-                <li><Link href="/4-in-1-kraan" className="hover:text-white">4-in-1 kraan</Link></li>
-                <li><Link href="/drinkwaterkwaliteit" className="hover:text-white">Drinkwaterkwaliteit</Link></li>
+                <li><Link href="/drinkwaternormen" className="hover:text-white">Drinkwaternormen</Link></li>
+                <li><Link href="/stoffen-in-drinkwater" className="hover:text-white">Stoffen in drinkwater</Link></li>
+                <li><Link href="/waterhardheid" className="hover:text-white">Waterhardheid</Link></li>
+                <li><Link href="/zakelijk" className="hover:text-white">Zakelijke waterfilters</Link></li>
                 <li><Link href="/kennisbank" className="hover:text-white">Kennisbank</Link></li>
-                <li><Link href="/over-ons" className="hover:text-white">Over ons</Link></li>
-                <li><Link href="/kennisbank" className="hover:text-white">Alle artikelen</Link></li>
               </ul>
             </div>
           </div>
