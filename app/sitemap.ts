@@ -433,6 +433,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/osmose-water/ijssteen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterfilter/chloride`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/omgekeerde-osmose/levensduur`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Ronde 16
+    { url: `${BASE}/waterfilter/bromaat`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/omgekeerde-osmose/diy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/waterontharder/storingen-checklist`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/leidingwater/aluminium`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/kokend-water-kraan/merken-vergelijking`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/osmose-water/zwembad`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterfilter/uv-sterilisatie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
