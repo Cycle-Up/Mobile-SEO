@@ -4,20 +4,20 @@ Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 
 ---
 
-## Hoge prioriteit (direct zoekvolume) — Ronde 17
+## Hoge prioriteit (direct zoekvolume) — Ronde 18
 
 ### Nieuwe clusters
-- [ ] `/waterfilter/microplastics` — microplastics in leidingwater, grootte 1-5000 um, osmose
-- [ ] `/omgekeerde-osmose/remineralisatie` — calciet/MgO cartridge, TDS instellen, pH
-- [ ] `/waterontharder/harsbed` — ionenwisselingshars, levensduur, regeneratie NaCl
-- [ ] `/leidingwater/natrium` — natrium in leidingwater, EU-norm 200 mg/L, zoutarm dieet
-- [ ] `/kokend-water-kraan/energie-verbruik` — kWh per liter kokend water, standby vs boiler
-- [ ] `/osmose-water/koken` — osmosewater gebruiken voor koken, pastadeeg, rijst
-- [ ] `/waterfilter/fluor` — fluoride in drinkwater NL, WHO-norm 1,5 mg/L, osmose 94-96%
+- [ ] `/waterfilter/koper` — koper in leidingwater, EU-norm 2 mg/L, koperleiding corrosie
+- [ ] `/omgekeerde-osmose/boosterpomp` — lage waterdruk aanpakken, pomp installeren
+- [ ] `/waterontharder/zout-verbruik` — kg zout per m3, verbruiksberekening, bespaartips
+- [ ] `/leidingwater/chloor` — chloordesinfectie leidingwater, bijproducten THM/HAA
+- [ ] `/kokend-water-kraan/installateur` — wanneer loodgieter nodig, kosten, certificering
+- [ ] `/osmose-water/koolzuur` — osmosewater + CO2 bruisend water zelf maken
+- [ ] `/waterfilter/ijzer` — ijzer in leidingwater, roestwater, osmose vs oxidatiefilter
 
 ### Kennisbank diepte-artikelen (MDX)
-- [ ] `waterkwaliteit-regio-vergelijking.mdx` — per provincie/waterschap vergelijking
-- [ ] `osmosefilter-onderhoud-checklist.mdx` — jaarlijkse maintenance, filters wisselen
+- [ ] `waterfilter-kopen-gids-2026.mdx` — compleet aankoopadvies per situatie
+- [ ] `hard-water-gevolgen-huis.mdx` — kalk in leidingen, apparaten, badkamer
 
 ---
 
@@ -34,18 +34,7 @@ Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 
 ## Afgerond
 
-### Rondes 1-14 — zie commits
-
-### Ronde 15 — Actief-kool, smaak, capaciteit, uranium, ijssteen, chloride, levensduur + 2 MDX
-- [x] waterfilter/actief-kool — GAC vs CTO vs catalytic, chlooramine, levensduur
-- [x] omgekeerde-osmose/smaak — TDS effect, CO2 pH, remineralisatie calciet/MgO
-- [x] waterontharder/capaciteit — m3*dH berekening, per persoon, hardheidsregio
-- [x] leidingwater/uranium — WHO 30 ug/L, NL hotspots, osmose 95-99%
-- [x] osmose-water/ijssteen — directional freezing, helder ijs voor cocktails/whisky
-- [x] waterfilter/chloride — Cl- ion vs Cl2 desinfectans, EU-norm 250 mg/L
-- [x] omgekeerde-osmose/levensduur — 2-5 jaar membraan, TDS-ratio meten, kosten 5 jaar
-- [x] waterhardheid-kaart-nederland.mdx — 12 provincies + 10 steden tabel
-- [x] beste-waterfilter-2026.mdx — top 5 typen, aanbeveling per situatie
+### Rondes 1-15 — zie commits
 
 ### Ronde 16 — Bromaat, DIY, storingen, aluminium, merken, zwembad, UV + 2 MDX
 - [x] waterfilter/bromaat — BrO3- bijproduct ozonisatie, EU-norm 10 ug/L, osmose 85-95%
@@ -58,6 +47,14 @@ Bijgehouden per 2026-05-17. Aanvullen na elke build-sessie.
 - [x] osmose-vs-flessenwater-milieu.mdx — CO2 200-350g/L fles vs 15-30g/L osmose
 - [x] pfas-bloedwaarden-nederland.mdx — RIVM biomonitoring, PFOS mediaan 3-5 ng/mL, hotspots
 
+### Ronde 17 — Harsbed, natrium, energie-verbruik, fluor + 2 MDX
+- [x] waterontharder/harsbed — ionenwisselingshars, regeneratie NaCl, ijzervergiftiging, 10-15 jaar
+- [x] leidingwater/natrium — EU-norm 200 mg/L, waterontharder +Na, KCl alternatief, osmose 85-95%
+- [x] kokend-water-kraan/energie-verbruik — 0,013-0,025 kWh/L, standby 3-10W, vergelijking waterkoker
+- [x] waterfilter/fluor — WHO-norm 1,5 mg/L, NL 0,05-0,3 mg/L geen toevoeging, osmose 94-96%
+- [x] waterkwaliteit-regio-vergelijking.mdx — 12 provincies, hardheid/nitraat/PFAS per regio
+- [x] osmosefilter-onderhoud-checklist.mdx — pre-filter 6-12 mnd, membraan 2-5 jaar, TDS-ratio bewaking
+
 ---
 
-*Bijgewerkt: 2026-05-17 — 4150 statische paginas na ronde 16 (317/317 MDX artikelen geslaagd)*
+*Bijgewerkt: 2026-05-17 — 4156 statische paginas na ronde 17 (319/319 MDX artikelen geslaagd)*
