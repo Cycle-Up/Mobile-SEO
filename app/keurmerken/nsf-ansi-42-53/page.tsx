@@ -161,6 +161,20 @@ export default function NsfAnsi4253Page() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF 42: chloor en bijproducten</h3>
+              <p className="text-sm text-gray-600">Trihalomethanen en andere chloordesinfectiebijproducten in drinkwater.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF 53: lood, cysts en arseen</h3>
+              <p className="text-sm text-gray-600">Gezondheidsrelevante stoffen in drinkwater waartegen NSF 53 beschermt.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="algemeen" />
       </div>
     </>
