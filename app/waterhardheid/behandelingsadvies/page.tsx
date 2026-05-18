@@ -217,6 +217,7 @@ export default function BehandelingsadviesPage() {
               { label: "Waterontharder kopen", href: "/waterontharder/kopen" },
               { label: "Osmosefilter kopen", href: "/omgekeerde-osmose/kopen" },
               { label: "Ionenwisseling", href: "/filtertechnieken/ionenwisseling" },
+              { label: "Kalk en mineralen in drinkwater", href: "/stoffen-in-drinkwater/kalk-mineralen" },
             ].map((link) => (
               <Link
                 key={link.href}

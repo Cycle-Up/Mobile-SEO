@@ -282,6 +282,7 @@ export default function PerProvinciePage() {
               { label: "Waterontharder kopen", href: "/waterontharder/kopen" },
               { label: "Osmosefilter kopen", href: "/omgekeerde-osmose/kopen" },
               { label: "Behandelingsadvies", href: "/waterhardheid/behandelingsadvies" },
+              { label: "Kalk en mineralen in drinkwater", href: "/stoffen-in-drinkwater/kalk-mineralen" },
             ].map((link) => (
               <Link
                 key={link.href}

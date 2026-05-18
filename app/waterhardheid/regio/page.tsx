@@ -576,6 +576,11 @@ export default function WaterhardheidRegioPage() {
                 title: 'Omgekeerde osmose gids',
                 desc: 'Hoe werkt RO, wat verwijdert het en wat zijn de kosten?',
               },
+              {
+                href: '/stoffen-in-drinkwater/kalk-mineralen',
+                title: 'Kalk en mineralen in drinkwater',
+                desc: 'Calcium, magnesium en carbonaathardheid: effecten op gezondheid en apparatuur.',
+              },
             ].map(l => (
               <Link
                 key={l.href}

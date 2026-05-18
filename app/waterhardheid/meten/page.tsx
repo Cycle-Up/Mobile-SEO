@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 
@@ -207,6 +208,16 @@ export default function WaterhardheidMetenPage() {
             </details>
           ))}
         </div>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Calcium, magnesium en carbonaathardheid: effecten op gezondheid en apparatuur.</p>
+            </Link>
+          </div>
+        </section>
 
         <CTABanner />
       </main>

@@ -358,6 +358,7 @@ export default function WaterhardheidTestenPage() {
               { href: '/omgekeerde-osmose/kopen', title: 'Osmose filter kopen', desc: 'Hardwateroplossing: onafhankelijk overzicht van de beste systemen.' },
               { href: '/waterontharder/onderhoud', title: 'Waterontharder onderhoud', desc: 'Complete handleiding voor zout, hars en regeneratiecyclus.' },
               { href: '/waterfilter/onderhoud-schema', title: 'Waterfilter onderhoud schema', desc: 'Wanneer moet je welk filter vervangen?' },
+              { href: '/stoffen-in-drinkwater/kalk-mineralen', title: 'Kalk en mineralen in drinkwater', desc: 'Calcium, magnesium en carbonaathardheid: effecten op gezondheid en apparatuur.' },
             ].map(l => (
               <Link
                 key={l.href}

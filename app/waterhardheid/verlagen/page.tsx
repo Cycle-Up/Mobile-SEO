@@ -655,6 +655,7 @@ export default function WaterhardheidVerlagenPage() {
               { href: '/kennisbank/waterhardheid-verlagen', label: 'Kennisbank: waterhardheid verlagen' },
               { href: '/waterhardheid/kaart', label: 'Waterhardheid per provincie — kaart' },
               { href: '/kennisbank/hardwatergebied-nederland', label: 'Hardwatergebieden in Nederland' },
+              { href: '/stoffen-in-drinkwater/kalk-mineralen', label: 'Kalk en mineralen in drinkwater' },
             ].map((l: { href: string; label: string }) => (
               <Link
                 key={l.href}

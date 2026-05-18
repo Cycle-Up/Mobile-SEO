@@ -208,6 +208,7 @@ export default function EffectOpKoffiePage() {
               { label: "Osmose remineralisatie", href: "/omgekeerde-osmose/remineralisatie" },
               { label: "Per provincie", href: "/waterhardheid/per-provincie" },
               { label: "Actief kool", href: "/filtertechnieken/actief-kool" },
+              { label: "Kalk en mineralen in drinkwater", href: "/stoffen-in-drinkwater/kalk-mineralen" },
             ].map((link) => (
               <Link
                 key={link.href}
