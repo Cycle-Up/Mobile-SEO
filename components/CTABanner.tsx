@@ -1,6 +1,6 @@
 interface CTABannerProps {
   variant?: 'default' | 'compact';
-  context?: 'osmose' | 'kokend' | 'waterhardheid' | 'algemeen';
+  context?: 'osmose' | 'kokend' | 'waterhardheid' | 'algemeen' | 'zakelijk';
 }
 
 const content = {
@@ -27,6 +27,12 @@ const content = {
     sub: 'Van eenvoudige filterkannen tot omgekeerde osmose — er is voor elke situatie een passende oplossing. Lees de vergelijking.',
     cta: 'Bekijk alle filtersoorten',
     link: '/waterfilter/soorten',
+  },
+  zakelijk: {
+    title: 'Zakelijke waterfiltratie: vraag een offerte aan',
+    sub: 'Van kantoor tot industrie — vergelijk systemen op capaciteit, certificering en kosten. Onafhankelijk advies voor uw situatie.',
+    cta: 'Bekijk zakelijke oplossingen',
+    link: '/zakelijk',
   },
 };
 
