@@ -154,6 +154,10 @@ export default function NsfAnsi4253Page() {
               <h3 className="font-semibold text-[#005F8A] mb-1">Alle keurmerken</h3>
               <p className="text-sm text-gray-600">Overzicht van NSF, Kiwa, ACS, CE en WRAS voor waterfilters.</p>
             </Link>
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtertechniek</h3>
+              <p className="text-sm text-gray-600">Adsorptie, poriënstructuur, werking voor chloor en organische verbindingen.</p>
+            </Link>
           </div>
         </section>
 

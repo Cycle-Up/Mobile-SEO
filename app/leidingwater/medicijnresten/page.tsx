@@ -387,6 +387,9 @@ export default function MedicijnrestenPage() {
           <Link href="/leidingwater/verontreinigingen" className="text-[#005F8A] underline">verontreinigingen in leidingwater</Link> en{' '}
           <Link href="/waterfilter/hormonen-medicijnen" className="text-[#005F8A] underline">filter voor hormonen en medicijnen</Link>.
         </p>
+        <p className="text-gray-700 mt-4">
+          Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/hormonen" className="text-[#005F8A] hover:underline font-medium">Hormonen en medicijnresten in drinkwater: wat weten we?</Link>
+        </p>
       </main>
     </>
   );

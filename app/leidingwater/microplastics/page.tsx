@@ -348,6 +348,9 @@ export default function MicroplasticsLeidingwaterPage() {
               drinkwaternormen microplastics
             </Link>.
           </p>
+          <p className="text-gray-700 mt-4">
+            Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/microbiologisch" className="text-[#005F8A] hover:underline font-medium">Microbiologische en chemische risico&apos;s in drinkwater</Link>.
+          </p>
         </section>
 
         <section className="mt-10">

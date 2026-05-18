@@ -305,6 +305,9 @@ export default function LeidingwaterUraniumPage() {
           <Link href="/waterfilter/zwaar-metalen" className="text-[#005F8A] underline">zware metalen filter</Link> en{' '}
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link>.
         </p>
+        <p className="text-gray-700 mt-4">
+          Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/radioactieve-stoffen" className="text-[#005F8A] hover:underline font-medium">Radioactieve stoffen in drinkwater: radon, uranium en radium</Link>.
+        </p>
       </main>
     </>
   );

@@ -147,6 +147,10 @@ export default function Kiwa113Page() {
               <h3 className="font-semibold text-[#005F8A] mb-1">Certificering controleren</h3>
               <p className="text-sm text-gray-600">Hoe controleert u Kiwa-certificering via het productregister?</p>
             </Link>
+            <Link href="/filtertechnieken/vergelijking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken vergeleken</h3>
+              <p className="text-sm text-gray-600">Welke techniek filtert wat? Overzichtstabel per contaminant.</p>
+            </Link>
           </div>
         </section>
 

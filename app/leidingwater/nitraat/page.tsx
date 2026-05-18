@@ -272,6 +272,9 @@ export default function NiraatLeidingwaterPage() {
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link> en{' '}
           <Link href="/waterfilter/baby" className="text-[#005F8A] underline">waterfilter voor babywater</Link>.
         </p>
+        <p className="text-gray-700 mt-4">
+          Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/nitraat-nitriet" className="text-[#005F8A] hover:underline font-medium">Nitraat en nitriet in drinkwater: normen en gezondheidsrisico&apos;s</Link>.
+        </p>
       </main>
     </>
   );

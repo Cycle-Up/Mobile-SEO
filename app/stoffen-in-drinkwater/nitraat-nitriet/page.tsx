@@ -115,6 +115,28 @@ export default function NiraatNitrietPage() {
           </p>
         </section>
 
+        <section className="mt-4">
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Gerelateerde pagina&apos;s</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/leidingwater/nitraat" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat in leidingwater</h3>
+              <p className="text-sm text-gray-600">Regionale concentraties, hotspots in landbouwgebieden en waterbedrijfsrapportages.</p>
+            </Link>
+            <Link href="/keuzehulp/baby-gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor baby en gezin</h3>
+              <p className="text-sm text-gray-600">Welk filter is veilig voor babyvoeding? Advies per situatie.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Hoe werkt omgekeerde osmose?</h3>
+              <p className="text-sm text-gray-600">Werking, membraan, afvalwater en certificering van RO-systemen uitgelegd.</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen Nederland</h3>
+              <p className="text-sm text-gray-600">Alle parameterwaarden uit het Drinkwaterbesluit op een rij.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

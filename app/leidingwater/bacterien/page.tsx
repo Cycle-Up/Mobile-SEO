@@ -304,6 +304,9 @@ export default function BacterienLeidingwaterPage() {
           <Link href="/leidingwater/verontreinigingen" className="text-[#005F8A] underline">verontreinigingen in leidingwater</Link> en{' '}
           <Link href="/leidingwater/chloor" className="text-[#005F8A] underline">chloor in leidingwater</Link>.
         </p>
+        <p className="text-gray-700 mt-4">
+          Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/microbiologisch" className="text-[#005F8A] hover:underline font-medium">Microbiologische risico&apos;s in drinkwater</Link>.
+        </p>
       </main>
     </>
   );

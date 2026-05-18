@@ -361,6 +361,9 @@ export default function LoodLeidingwaterPage() {
             en de pagina{" "}
             <Link href="/drinkwater/lood" className="text-[#005F8A] underline hover:no-underline">drinkwater en lood</Link>.
           </p>
+          <p className="text-gray-700 mt-4">
+            Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/zware-metalen" className="text-[#005F8A] hover:underline font-medium">Zware metalen in drinkwater: lood, koper en arseen</Link>.
+          </p>
         </section>
 
         <section className="mt-10">

@@ -146,6 +146,10 @@ export default function NsfAnsi58Page() {
               <h3 className="font-semibold text-[#005F8A] mb-1">Certificering controleren</h3>
               <p className="text-sm text-gray-600">Stap-voor-stap: echte certificeringen onderscheiden van nep-logo's.</p>
             </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Hoe werkt omgekeerde osmose?</h3>
+              <p className="text-sm text-gray-600">Membraantechnologie, werkingsprincipe, afvalwater en TDS-reductie uitgelegd.</p>
+            </Link>
           </div>
         </section>
 

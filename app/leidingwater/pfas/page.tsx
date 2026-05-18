@@ -333,6 +333,9 @@ export default function PFASLeidingwaterPage() {
             <Link href="/drinkwaternormen/pfas" className="text-[#005F8A] underline hover:no-underline">drinkwaternormen PFAS</Link>{" "}en de vergelijkingspagina{" "}
             <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">osmosefilter kopen</Link>.
           </p>
+          <p className="text-gray-700 mt-4">
+            Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="text-[#005F8A] hover:underline font-medium">PFAS als stofgroep in drinkwater: overzicht en filteradvies</Link>.
+          </p>
         </section>
 
         <section className="mt-10">

@@ -158,6 +158,10 @@ export default function NsfAnsi401Page() {
               <h3 className="font-semibold text-[#005F8A] mb-1">Alle keurmerken</h3>
               <p className="text-sm text-gray-600">Terug naar het keurmerken overzicht.</p>
             </Link>
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool voor opkomende stoffen</h3>
+              <p className="text-sm text-gray-600">Hoe actief kool medicijnresten en hormonen adsorbeert — en wanneer niet.</p>
+            </Link>
           </div>
         </section>
 

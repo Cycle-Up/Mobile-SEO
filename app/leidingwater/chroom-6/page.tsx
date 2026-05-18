@@ -308,6 +308,9 @@ export default function Chroom6LeidingwaterPage() {
             en de uitgebreide{" "}
             <Link href="/drinkwaternormen" className="text-[#005F8A] underline hover:no-underline">drinkwaternormen overzichtspagina</Link>.
           </p>
+          <p className="text-gray-700 mt-4">
+            Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/zware-metalen" className="text-[#005F8A] hover:underline font-medium">Zware metalen in drinkwater: chroom-6, lood en arseen</Link>.
+          </p>
         </section>
 
         <section className="mt-10">

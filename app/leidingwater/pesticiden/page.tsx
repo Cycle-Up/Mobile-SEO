@@ -259,6 +259,9 @@ export default function PesticideWaterPage() {
             actief koolfilter voor water
           </Link>.
         </p>
+        <p className="text-gray-700 mt-4">
+          Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/pesticiden" className="text-[#005F8A] hover:underline font-medium">Pesticiden in drinkwater: overzicht per stofgroep</Link>.
+        </p>
 
         <CTABanner context="osmose" />
 

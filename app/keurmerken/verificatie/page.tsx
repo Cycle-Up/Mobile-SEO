@@ -187,6 +187,10 @@ export default function VerificatiePage() {
               <h3 className="font-semibold text-[#005F8A] mb-1">Keurmerken overzicht</h3>
               <p className="text-sm text-gray-600">Terug naar het complete keurmerken overzicht.</p>
             </Link>
+            <Link href="/filtertechnieken/vergelijking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken vergelijken</h3>
+              <p className="text-sm text-gray-600">Technisch overzicht van alle filterprincipes met effectiviteitsdata.</p>
+            </Link>
           </div>
         </section>
 

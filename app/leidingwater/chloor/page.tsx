@@ -312,6 +312,9 @@ export default function ChloorLeidingwaterPage() {
           <Link href="/waterfilter" className="text-[#005F8A] underline">alle waterfilters vergelijken</Link> en{' '}
           <Link href="/leidingwater/verontreinigingen" className="text-[#005F8A] underline">verontreinigingen in leidingwater</Link>.
         </p>
+        <p className="text-gray-700 mt-4">
+          Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="text-[#005F8A] hover:underline font-medium">Chloor bijproducten (THM en HAA) in drinkwater</Link>.
+        </p>
       </main>
     </>
   );
