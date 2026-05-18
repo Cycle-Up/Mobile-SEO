@@ -23,6 +23,14 @@ export default function FiltertechniekenPage() {
   return (
     <>
       <SchemaOrg
+        type="FAQPage"
+        faqItems={[
+          { question: "Welke filtertechniek verwijdert PFAS uit drinkwater?", answer: "Omgekeerde osmose (RO) is de enige betrouwbare consumentenoplossing voor PFAS-verwijdering: een gecertificeerd RO-systeem (NSF/ANSI 58, getest op PFAS) verwijdert 90-99% van PFAS-verbindingen. Actief kool heeft beperkte effectiviteit, met name voor kortketenige PFAS." },
+          { question: "Wat is het verschil tussen ultrafiltratie en omgekeerde osmose?", answer: "Ultrafiltratie (UF) heeft poriën van 0,01-0,1 micron en houdt bacteriën, virussen en colloïden tegen, maar laat opgeloste ionen (kalk, nitraat, lood) passeren. Omgekeerde osmose werkt op moleculair niveau (0,0001 micron) en filtert ook ionen en kleine moleculen, maar produceert afvalwater en vereist hogere druk." },
+          { question: "Verwijdert actief kool bacteriën uit water?", answer: "Nee. Actief kool adsorbeert organische verbindingen, chloor, geur en smaak, maar geen bacteriën of virussen. Voor microbiologische bescherming is ultrafiltratie, UV-sterilisatie of omgekeerde osmose nodig." },
+        ]}
+      />
+      <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: "Home", url: "https://waterfilterplatform.nl" },

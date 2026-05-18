@@ -23,6 +23,14 @@ export default function KeuzehulpPage() {
   return (
     <>
       <SchemaOrg
+        type="FAQPage"
+        faqItems={[
+          { question: "Welk waterfilter heb ik nodig bij hard water?", answer: "Bij hard water (boven 14 °dH) zijn de beste opties een ionenwisselingsontharder voor het hele huis, of een omgekeerde osmosefilter aan de keukenkraan. Een filterkan of actief-koolfilter verwijdert geen kalk. Controleer uw waterhardheid op de pagina voor uw gemeente." },
+          { question: "Welk waterfilter is veilig voor babymelk?", answer: "Voor babymelk wordt een omgekeerde osmosefilter aanbevolen: het verwijdert nitraat, lood en PFAS die schadelijk kunnen zijn voor baby's. Gebruik altijd gefilterd water dat is opgewarmd, niet afgekoeld gekookt leidingwater zonder filtratie." },
+          { question: "Kan ik in een huurwoning een waterfilter installeren?", answer: "Ja. In een huurwoning zijn er opties zonder boren: een filterkan, een aanrechtfilter (zonder gat in het aanrecht) of een osmosefilter met een aparte kraan die met een klem aan de bestaande kraan wordt bevestigd. Vraag altijd toestemming voor permanente aanpassingen." },
+        ]}
+      />
+      <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: "Home", url: "https://waterfilterplatform.nl" },
