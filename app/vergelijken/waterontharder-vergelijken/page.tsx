@@ -112,6 +112,7 @@ export default function WaterOntharderVergelijkenPage() {
             bepalen, worden uitgewisseld voor natriumionen (Na+). Het resultaat is water met een hardheid
             van 0-5 dH.
           </p>
+          <p className="text-gray-700 mt-4">Zie ook: <Link href="/filtertechnieken/ionenwisseling" className="text-[#005F8A] hover:underline font-medium">Ionenwisseling als wateronthardingstechniek</Link>.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Wanneer het harsbed verzadigd is met calcium en magnesium, vindt een regeneratiecyclus plaats:
             een geconcentreerde zoutoplossing (brine) spoelt het hars schoon en herstelt de natriumbelading.

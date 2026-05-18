@@ -334,6 +334,7 @@ export default function OmgekeerdeOsmoseVergelijkenPage() {
               { label: "Osmosefilter kopen", href: "/omgekeerde-osmose/kopen" },
               { label: "Waterfilter keuzehulp", href: "/keuzehulp" },
               { label: "Filtertechnieken", href: "/filtertechnieken" },
+              { label: "Hoe werkt omgekeerde osmose? Technisch uitgelegd", href: "/filtertechnieken/omgekeerde-osmose" },
             ].map((link) => (
               <Link
                 key={link.href}

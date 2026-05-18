@@ -205,8 +205,9 @@ export default function StoringenOplossenPage() {
           Zie ook:{" "}
           <Link href="/onderhoud" className="text-[#005F8A] underline">Onderhoud overzicht</Link>,{" "}
           <Link href="/onderhoud/osmose-filter-vervangen" className="text-[#005F8A] underline">Osmosefilter vervangen</Link>,{" "}
-          <Link href="/kennisbank/tds-meter-gebruiken" className="text-[#005F8A] underline">TDS-meter gebruiken</Link> en{" "}
-          <Link href="/waterontharder" className="text-[#005F8A] underline">Waterontharder informatie</Link>.
+          <Link href="/kennisbank/tds-meter-gebruiken" className="text-[#005F8A] underline">TDS-meter gebruiken</Link>,{" "}
+          <Link href="/waterontharder" className="text-[#005F8A] underline">Waterontharder informatie</Link> en{" "}
+          <Link href="/filtertechnieken/vergelijking" className="text-[#005F8A] hover:underline font-medium">Filtertechnieken vergeleken: welke past bij jou?</Link>.
         </p>
       </main>
     </>

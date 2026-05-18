@@ -208,6 +208,7 @@ export default function KokendWaterKraanOnderhoudPage() {
           stoffen door, wat leidt tot smaakproblemen en extra kalkafzetting in de tank. De meeste
           filters zijn eenvoudig te wisselen zonder gereedschap.
         </p>
+        <p className="text-gray-700 mt-4">Zie ook: <Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline font-medium">Actief kool filter: werking en levensduur</Link>.</p>
         <ol className="list-decimal list-inside text-gray-700 mb-4 space-y-2 pl-2">
           <li>
             <strong>Watertoevoer afsluiten:</strong> sluit de afsluitkraan onder het aanrecht

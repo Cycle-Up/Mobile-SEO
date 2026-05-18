@@ -92,6 +92,7 @@ export default function OsmoseVsFilterkanPage() {
             pesticiden worden op die manier effectief verwijderd. Opgeloste ionen (lood, nitraat, PFAS)
             zijn echter te klein en te polaire om significant te adsorberen.
           </p>
+          <p className="text-gray-700 mt-4">Zie ook: <Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline font-medium">Actief kool filtertechniek uitgelegd</Link>.</p>
 
           <h2 className="text-2xl font-bold text-[#005F8A] mt-8 mb-4">Vergelijkingstabel: 10 eigenschappen</h2>
           <div className="overflow-x-auto">

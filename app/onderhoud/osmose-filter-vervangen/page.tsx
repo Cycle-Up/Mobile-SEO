@@ -310,8 +310,9 @@ export default function OsmoseFilterVervangenPage() {
           Zie ook:{" "}
           <Link href="/onderhoud" className="text-[#005F8A] underline">Onderhoud overzicht</Link>,{" "}
           <Link href="/onderhoud/storingen-oplossen" className="text-[#005F8A] underline">Storingen oplossen</Link>,{" "}
-          <Link href="/kennisbank/tds-meter-gebruiken" className="text-[#005F8A] underline">TDS-meter gebruiken</Link> en{" "}
-          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">Omgekeerde osmose uitleg</Link>.
+          <Link href="/kennisbank/tds-meter-gebruiken" className="text-[#005F8A] underline">TDS-meter gebruiken</Link>,{" "}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">Omgekeerde osmose uitleg</Link> en{" "}
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline font-medium">Hoe een omgekeerde osmose membraan werkt</Link>.
         </p>
       </main>
     </>

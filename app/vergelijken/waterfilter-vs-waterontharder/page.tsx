@@ -229,6 +229,7 @@ export default function WaterfilterVsWaterOntharderPage() {
               { label: "Ionenwisseling", href: "/filtertechnieken/ionenwisseling" },
               { label: "Omgekeerde osmose", href: "/omgekeerde-osmose" },
               { label: "Keuzehulp hard water", href: "/keuzehulp/hard-water" },
+              { label: "Kalk en mineralen in drinkwater: calcium en magnesium", href: "/stoffen-in-drinkwater/kalk-mineralen" },
             ].map((link) => (
               <Link
                 key={link.href}

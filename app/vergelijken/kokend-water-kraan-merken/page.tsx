@@ -171,6 +171,7 @@ export default function KokendWaterKraanMerkenPage() {
             microplastics. Het nadeel: RO-filters beperken de doorstroomsnelheid, waardoor de
             capaciteit in liters per uur lager is dan bij systemen zonder filter.
           </p>
+          <p className="text-gray-700 mt-4">Zie ook: <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline font-medium">Omgekeerde osmose filtertechniek</Link>.</p>
 
           <h2 className="text-2xl font-bold text-[#003F5C] mt-8 mb-4">Energieverbruik per merk: standby kWh</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
