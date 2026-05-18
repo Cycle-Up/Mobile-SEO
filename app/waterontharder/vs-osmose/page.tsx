@@ -308,6 +308,20 @@ export default function WaterontharderVsOsmosePage() {
           <Link href="/waterontkalker/vs-waterontharder" className="text-[#005F8A] underline">waterontkalker vs waterontharder</Link>.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk: wat willen we verwijderen?</h3>
+              <p className="text-sm text-gray-600">Kalk en mineralen in drinkwater: wat ze zijn en waarom we ze willen verwijderen.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmose als alternatief voor ontharder</h3>
+              <p className="text-sm text-gray-600">Hoe omgekeerde osmose werkt als alternatief voor een klassieke waterontharder.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

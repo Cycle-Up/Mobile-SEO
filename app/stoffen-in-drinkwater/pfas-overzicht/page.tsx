@@ -85,11 +85,19 @@ export default function PfasOverzichtPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Osmose verwijdert 90%+ van PFAS</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Omgekeerde osmose (RO) is momenteel de enige consumentenoplossing die PFAS effectief verwijdert. Het semi-permeabele membraan houdt moleculen op basis van grootte en lading tegen. PFAS-moleculen, ondanks hun relatief kleine formaat, worden door goed gecertificeerde RO-systemen voor 90-99% tegengehouden.
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Omgekeerde osmose</Link> (RO) is momenteel de enige consumentenoplossing die PFAS effectief verwijdert. Het semi-permeabele membraan houdt moleculen op basis van grootte en lading tegen. PFAS-moleculen, ondanks hun relatief kleine formaat, worden door goed gecertificeerde RO-systemen voor 90-99% tegengehouden.
           </p>
           <p className="text-gray-700 leading-relaxed mb-3">
             Actief koolfilters hebben een beperkte effectiviteit tegen PFAS: kortketenige PFAS (zoals PFBA en PFHxA) worden slecht geadsorbeerd. RO-systemen gecertificeerd voor NSF/ANSI 58 en getest op PFAS bieden de meeste zekerheid.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Welk filter filtert dit?</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li><Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Osmose: enige betrouwbare PFAS-oplossing</Link></li>
+            <li><Link href="/keurmerken/nsf-ansi-401" className="text-[#005F8A] hover:underline">NSF/ANSI 401 certificering voor PFAS</Link></li>
+          </ul>
         </section>
 
         <CTABanner context="osmose" />

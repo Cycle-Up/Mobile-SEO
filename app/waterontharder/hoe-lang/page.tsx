@@ -337,6 +337,20 @@ export default function WaterontharderHoeLangPage() {
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose als alternatief</Link>.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk: wat het met leidingen doet</h3>
+              <p className="text-sm text-gray-600">Hoe kalk en mineralen in drinkwater leidingen en apparaten aantasten over de tijd.</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisselaar levensduur</h3>
+              <p className="text-sm text-gray-600">Hoe lang gaat ionenwisselingshars mee en wanneer is vervanging nodig?</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

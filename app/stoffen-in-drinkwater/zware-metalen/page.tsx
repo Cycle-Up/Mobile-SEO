@@ -89,7 +89,7 @@ export default function ZwareMetalenPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Osmose verwijdert 90-95% van zware metalen</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Omgekeerde osmose (RO) is de meest effectieve huishoudelijke methode om zware metalen te verwijderen. Het membraan filtert deeltjes tot 0,0001 micron, waardoor lood, arseen, koper, chroom en andere zware metalen met een verwijderingspercentage van 90-95% worden tegengehouden.
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Omgekeerde osmose</Link> (RO) is de meest effectieve huishoudelijke methode om zware metalen te verwijderen. Het membraan filtert deeltjes tot 0,0001 micron, waardoor lood, arseen, koper, chroom en andere zware metalen met een verwijderingspercentage van 90-95% worden tegengehouden.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
@@ -124,6 +124,14 @@ export default function ZwareMetalenPage() {
               </tbody>
             </table>
           </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Welk filter filtert dit?</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li><Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Osmose: lood 95-99%, arseen 95%+</Link></li>
+            <li><Link href="/keurmerken/nsf-ansi-58" className="text-[#005F8A] hover:underline">Certificering voor loodverwijdering</Link></li>
+          </ul>
         </section>
 
         <CTABanner context="osmose" />

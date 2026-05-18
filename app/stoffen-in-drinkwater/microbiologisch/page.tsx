@@ -102,11 +102,19 @@ export default function MicrobiologischPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">UV-sterilisatie en ultrafiltratie als oplossingen</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            UV-sterilisatoren verstoren het DNA van micro-organismen en voorkomen reproductie. Ze zijn effectief tegen bacterien, virussen en protozoen -- inclusief chloorresistente Cryptosporidium. UV werkt niet voor chemische verontreinigingen.
+            <Link href="/filtertechnieken/uv-sterilisatie" className="text-[#005F8A] hover:underline">UV-sterilisatoren</Link> verstoren het DNA van micro-organismen en voorkomen reproductie. Ze zijn effectief tegen bacterien, virussen en protozoen -- inclusief chloorresistente Cryptosporidium. UV werkt niet voor chemische verontreinigingen.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Ultrafiltratiesystemen (UF) gebruiken holle vezelmembranen met een poriegrootte van 0,01 tot 0,1 micron. Ze verwijderen bacterien, protozoen en grote virusdeeltjes fysiek. Combinatie van UV en UF biedt de meest robuuste microbiologische bescherming voor huishoudelijk gebruik.
+            <Link href="/filtertechnieken/ultrafiltratie" className="text-[#005F8A] hover:underline">Ultrafiltratiesystemen (UF)</Link> gebruiken holle vezelmembranen met een poriegrootte van 0,01 tot 0,1 micron. Ze verwijderen bacterien, protozoen en grote virusdeeltjes fysiek. Combinatie van UV en UF biedt de meest robuuste microbiologische bescherming voor huishoudelijk gebruik.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Welk filter filtert dit?</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li><Link href="/filtertechnieken/uv-sterilisatie" className="text-[#005F8A] hover:underline">UV vernietigt bacterien en virussen</Link></li>
+            <li><Link href="/filtertechnieken/ultrafiltratie" className="text-[#005F8A] hover:underline">UF: fysieke barriere voor bacterien</Link></li>
+          </ul>
         </section>
 
         <CTABanner context="algemeen" />

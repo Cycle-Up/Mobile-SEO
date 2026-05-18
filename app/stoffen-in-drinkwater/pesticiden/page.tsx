@@ -105,14 +105,22 @@ export default function PesticidentPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Actief kool en osmose als oplossingen</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Actief koolfilters (gecertificeerd NSF/ANSI 53 of NSF/ANSI 58) zijn effectief tegen een breed spectrum aan pesticiden. Ze binden organische moleculen aan het koolstofoppervlak. De effectiviteit varieert per stof: voor polaire verbindingen zoals glyfosaat is de adsorptie beperkter dan voor apolaire pesticiden.
+            <Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">Actief koolfilters</Link> (gecertificeerd NSF/ANSI 53 of NSF/ANSI 58) zijn effectief tegen een breed spectrum aan pesticiden. Ze binden organische moleculen aan het koolstofoppervlak. De effectiviteit varieert per stof: voor polaire verbindingen zoals glyfosaat is de adsorptie beperkter dan voor apolaire pesticiden.
           </p>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Omgekeerde osmose biedt bredere bescherming: het membraan filtert moleculen op grootte en lading, waardoor ook moeilijk te adsorberen pesticiden worden tegengehouden. Gecombineerde systemen (actief kool + RO-membraan) geven de hoogste verwijderingspercentages.
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Omgekeerde osmose</Link> biedt bredere bescherming: het membraan filtert moleculen op grootte en lading, waardoor ook moeilijk te adsorberen pesticiden worden tegengehouden. Gecombineerde systemen (actief kool + RO-membraan) geven de hoogste verwijderingspercentages.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Meer informatie: <Link href="/leidingwater/pesticiden" className="text-[#005F8A] hover:underline">pesticiden in leidingwater</Link>.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Welk filter filtert dit?</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li><Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Osmose verwijdert pesticiden 90%+</Link></li>
+            <li><Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">Actief kool voor organische pesticiden</Link></li>
+          </ul>
         </section>
 
         <CTABanner context="osmose" />

@@ -92,7 +92,7 @@ export default function RadioactieveStoffenPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Osmose verwijdert uranium effectief</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Omgekeerde osmose is effectief voor de verwijdering van uranium en radium uit drinkwater. Het semi-permeabele membraan houdt zware metaalionen en radioactieve deeltjes tegen. Verwijderingspercentages van 90-99% voor uranium zijn gedocumenteerd bij gecertificeerde RO-systemen.
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Omgekeerde osmose</Link> is effectief voor de verwijdering van uranium en radium uit drinkwater. Het semi-permeabele membraan houdt zware metaalionen en radioactieve deeltjes tegen. Verwijderingspercentages van 90-99% voor uranium zijn gedocumenteerd bij gecertificeerde RO-systemen.
           </p>
           <p className="text-gray-700 leading-relaxed mb-3">
             Radon als gas wordt door osmose niet volledig verwijderd, omdat het als opgelost gas deels door het membraan kan passeren. Ventilatie van de opslagtank en het gebruik van een actief koolfilter na het membraan reduceren radon verder.
@@ -100,6 +100,14 @@ export default function RadioactieveStoffenPage() {
           <p className="text-gray-700 leading-relaxed">
             Zie ook: <Link href="/leidingwater/uranium" className="text-[#005F8A] hover:underline">uranium in leidingwater</Link>.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Welk filter filtert dit?</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li><Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Osmose verwijdert uranium en radium</Link></li>
+            <li><Link href="/drinkwaternormen" className="text-[#005F8A] hover:underline">Drinkwaternormen voor radioactieve stoffen</Link></li>
+          </ul>
         </section>
 
         <CTABanner context="osmose" />

@@ -85,14 +85,22 @@ export default function ChloorBijproducktenPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Actief kool en osmose als oplossingen</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Actief koolfilters (NSF/ANSI 42 en 53 gecertificeerd) zijn zeer effectief voor de verwijdering van THM en andere vluchtige organische verbindingen. De koolstofmatrix adsorbeert deze moleculen. Een goed onderhouden actief koolfilter kan THM-concentraties met 70-90% reduceren.
+            <Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">Actief koolfilters</Link> (NSF/ANSI 42 en 53 gecertificeerd) zijn zeer effectief voor de verwijdering van THM en andere vluchtige organische verbindingen. De koolstofmatrix adsorbeert deze moleculen. Een goed onderhouden actief koolfilter kan THM-concentraties met 70-90% reduceren.
           </p>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Omgekeerde osmose biedt een bredere bescherming en is ook effectief tegen HAA en andere desinfectiebijproducten. Gecombineerde systemen met actief kool als voorfilter en RO-membraan geven de meest volledige verwijdering.
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Omgekeerde osmose</Link> biedt een bredere bescherming en is ook effectief tegen HAA en andere desinfectiebijproducten. Gecombineerde systemen met actief kool als voorfilter en RO-membraan geven de meest volledige verwijdering.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Zie ook: <Link href="/leidingwater/chloor" className="text-[#005F8A] hover:underline">chloor in leidingwater</Link>.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Welk filter filtert dit?</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li><Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">Actief kool verwijdert chloor en THM</Link></li>
+            <li><Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Osmose als aanvullende filtering</Link></li>
+          </ul>
         </section>
 
         <CTABanner context="osmose" />

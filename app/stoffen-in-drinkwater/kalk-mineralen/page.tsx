@@ -85,7 +85,7 @@ export default function KalkMineralenPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Osmose verwijdert 95% -- remineralisatie nodig</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Omgekeerde osmose verwijdert vrijwel alle opgeloste mineralen, inclusief calcium, magnesium en bicarbonaat (95% of meer). Het resultaat is zeer zacht, bijna gedistilleerd water met een lage pH (licht zuur door het ontbreken van buffercapaciteit).
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Omgekeerde osmose</Link> verwijdert vrijwel alle opgeloste mineralen, inclusief calcium, magnesium en bicarbonaat (95% of meer). Het resultaat is zeer zacht, bijna gedistilleerd water met een lage pH (licht zuur door het ontbreken van buffercapaciteit).
           </p>
           <p className="text-gray-700 leading-relaxed mb-3">
             Dit water heeft voordelen (geen kalkaanslag, betere smaak voor koffie en thee) maar ook nadelen: het mist de nuttige mineralen van gewoon leidingwater. Kwalitatieve osmosesystemen zijn dan ook voorzien van een remineralisatiecartridge die calcium en magnesium terugvoegt en de pH stabiliseert.
@@ -93,6 +93,14 @@ export default function KalkMineralenPage() {
           <p className="text-gray-700 leading-relaxed">
             Meer informatie over regionale waterhardheid: <Link href="/waterhardheid" className="text-[#005F8A] hover:underline">waterhardheid per gemeente</Link>.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Welk filter filtert dit?</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li><Link href="/filtertechnieken/ionenwisseling" className="text-[#005F8A] hover:underline">Ionenwisseling: waterontharder werking</Link></li>
+            <li><Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Osmose verwijdert 90-97% kalk</Link></li>
+          </ul>
         </section>
 
         <CTABanner context="osmose" />

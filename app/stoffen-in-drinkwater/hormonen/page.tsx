@@ -117,8 +117,16 @@ export default function HormonenPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Osmose en actief kool: meest effectieve combinatie</h2>
           <p className="text-gray-700 leading-relaxed">
-            Omgekeerde osmose gecombineerd met actief kool biedt de meest volledige verwijdering van farmaceutische microverontreinigingen. Actief kool adsorbeert organische moleculen; het RO-membraan filtert resterende geladen en neutrale deeltjes op grootte. Systemen gecertificeerd op NSF 401 en NSF 58 bieden de meeste garanties voor een bewezen reductie van medicijnresten.
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Omgekeerde osmose</Link> gecombineerd met <Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">actief kool</Link> biedt de meest volledige verwijdering van farmaceutische microverontreinigingen. Actief kool adsorbeert organische moleculen; het RO-membraan filtert resterende geladen en neutrale deeltjes op grootte. Systemen gecertificeerd op NSF 401 en NSF 58 bieden de meeste garanties voor een bewezen reductie van medicijnresten.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Welk filter filtert dit?</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li><Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Osmose verwijdert hormonen en medicijnresten</Link></li>
+            <li><Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">Actief kool: beperkte effectiviteit voor medicijnresten</Link></li>
+          </ul>
         </section>
 
         <CTABanner context="osmose" />
