@@ -251,6 +251,9 @@ export default function HardWaterGebiedPage() {
             </Link>
             .
           </p>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over kalk en mineralen: <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="text-[#005F8A] hover:underline font-medium">Kalk en mineralen in drinkwater: effecten en verwijdering</Link>.
+          </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Beperkingen: een osmosefilter behandelt alleen het water op het aangeslo ten kraantje.
             De cv-ketel, wasmachine, douche en overige leidingen worden er niet door beschermd.

@@ -263,6 +263,9 @@ export default function HardWaterPage() {
             </Link>{" "}
             voor een uitgebreide kostenberekening.
           </p>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over kalk en mineralen: <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="text-[#005F8A] hover:underline font-medium">Kalk en mineralen in drinkwater: calcium en magnesium</Link>.
+          </p>
 
           <h2 className="text-2xl font-bold text-[#003F5C] mt-8 mb-4">
             Vergelijkingstabel: waterontharder vs osmosefilter

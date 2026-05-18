@@ -198,6 +198,28 @@ export default function WaterhardheidPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Dieper inzicht in kalk en waterhardheid</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Calcium, magnesium en bicarbonaat: gezondheidseffecten, normen en verwijdering.</p>
+            </Link>
+            <Link href="/waterhardheid/behandelingsadvies" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Behandelingsadvies per hardheidszone</h3>
+              <p className="text-sm text-gray-600">Welke aanpak past bij uw waterhardheid? Overzicht per °dH-categorie.</p>
+            </Link>
+            <Link href="/vergelijken/waterontharder-vergelijken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterontharders vergelijken</h3>
+              <p className="text-sm text-gray-600">Ionenwisselaar, zoutloos, magnetisch: welk type past bij uw situatie?</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling als filtertechniek</h3>
+              <p className="text-sm text-gray-600">Werking van het harsbed, regeneratie en effectiviteit uitgelegd.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="waterhardheid" />
 
         {/* FAQ */}

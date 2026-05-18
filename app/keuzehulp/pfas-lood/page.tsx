@@ -205,6 +205,12 @@ export default function PfasLoodPage() {
               lood in leidingwater
             </Link>.
           </p>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over PFAS: <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="text-[#005F8A] hover:underline font-medium">PFAS in drinkwater: alle feiten over PFAS-verbindingen</Link>.
+          </p>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over zware metalen: <Link href="/stoffen-in-drinkwater/zware-metalen" className="text-[#005F8A] hover:underline font-medium">Zware metalen in drinkwater: lood, koper en arseen</Link>.
+          </p>
         </section>
 
         <section className="mt-10">

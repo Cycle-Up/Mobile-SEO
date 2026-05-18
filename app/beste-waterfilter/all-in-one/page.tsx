@@ -100,6 +100,9 @@ export default function AllInOnePage() {
             <li><strong>Post-koolstoffilter:</strong> verfijnt smaak en geur van het gefiltreerde water</li>
             <li><strong>Kokendwaterboiler:</strong> houdt 1,5-3 liter water permanent op 100 graden Celsius</li>
           </ol>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over PFAS-verwijdering door osmose: <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="text-[#005F8A] hover:underline font-medium">PFAS in drinkwater: verwijdering door osmose</Link>.
+          </p>
           <p className="text-gray-700 mb-4">
             Via de combi-kraan heeft u: gefilterd koud drinkwater (via osmose), koud niet-gefilterd water (voor spoelen), warm water, en direct kokend water (via de boiler). U hoeft nooit meer te wachten op een waterkoker.
           </p>

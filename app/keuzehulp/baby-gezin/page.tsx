@@ -192,6 +192,12 @@ export default function BabyGezinPage() {
               veilig drinkwater voor baby
             </Link>.
           </p>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over nitraat: <Link href="/stoffen-in-drinkwater/nitraat-nitriet" className="text-[#005F8A] hover:underline font-medium">Nitraat en nitriet in drinkwater: risico's voor babies</Link>.
+          </p>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over PFAS: <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="text-[#005F8A] hover:underline font-medium">PFAS in drinkwater: overzicht</Link>.
+          </p>
 
           <h2 className="text-2xl font-bold text-[#003F5C] mt-8 mb-4">
             Osmose als aanbevolen filter voor gezinnen met baby

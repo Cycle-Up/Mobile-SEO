@@ -101,6 +101,9 @@ export default function BuitenlandReizenPage() {
           <p className="text-gray-700 mb-4">
             De WHO classificeert drinkwaterrisicos per regio. De voornaamste gevaren zijn bacteriele verontreinigingen (E. coli, Salmonella, Campylobacter), protozoa (Giardia, Cryptosporidium) en virussen (hepatitis A, norovirus, rotavirus). In West-Europa en Noord-Amerika is leidingwater vrijwel altijd veilig zonder filtering.
           </p>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over microbiologische risico's: <Link href="/stoffen-in-drinkwater/microbiologisch" className="text-[#005F8A] hover:underline font-medium">Microbiologische risico's in drinkwater: bacteriën en virussen</Link>.
+          </p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>

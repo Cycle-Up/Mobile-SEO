@@ -106,6 +106,9 @@ export default function GeurSmaakPage() {
           <p className="text-gray-700 mb-4">
             <strong>Beste oplossing:</strong> katalytisch actief kool (CAC) — dit is een speciaal geactiveerd kool met een hogere reactieoppervlak dat chloramine sneller afbreekt. Vraag uw waterbedrijf of chloramine wordt gebruikt; dit staat ook in het jaarlijkse waterkwaliteitsrapport.
           </p>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over chloor en bijproducten: <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="text-[#005F8A] hover:underline font-medium">Chloor bijproducten (THM en HAA) in drinkwater</Link>.
+          </p>
 
           <h3 className="text-xl font-semibold text-[#005F8A] mb-2 mt-6">3. Koperleidingen en metaalsmaak</h3>
           <p className="text-gray-700 mb-4">

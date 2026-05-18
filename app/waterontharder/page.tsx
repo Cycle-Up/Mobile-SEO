@@ -750,6 +750,16 @@ export default function WaterOntharderPage() {
                 title: 'Waterfilter vergelijken',
                 desc: 'Alle filtertypes naast elkaar: osmose, ontharder, koolstof en filterkan.',
               },
+              {
+                href: '/stoffen-in-drinkwater/kalk-mineralen',
+                title: 'Kalk en mineralen in drinkwater',
+                desc: 'Calcium, magnesium en bicarbonaat: effecten op gezondheid, apparaten en smaak.',
+              },
+              {
+                href: '/filtertechnieken/ionenwisseling',
+                title: 'Ionenwisseling als filtertechniek',
+                desc: 'Hoe een harsbed werkt, regeneratie met zout en toepassingen voor ontharding.',
+              },
             ].map(l => (
               <Link
                 key={l.href}

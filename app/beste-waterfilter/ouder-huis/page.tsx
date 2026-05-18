@@ -184,6 +184,9 @@ export default function OuderHuisPage() {
             </Link>
             .
           </p>
+          <p className="text-gray-700 mt-4">
+            Meer achtergrondinformatie over lood in leidingen: <Link href="/stoffen-in-drinkwater/zware-metalen" className="text-[#005F8A] hover:underline font-medium">Zware metalen in drinkwater: lood in oude leidingen</Link>.
+          </p>
 
           <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
             Zijn er alternatieven?
