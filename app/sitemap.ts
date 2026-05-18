@@ -528,6 +528,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/zakelijk`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/zakelijk/horeca`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/zakelijk/kantoor`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Ronde 23 — nieuwe cluster sub-pagina's
+    { url: `${BASE}/vergelijken/kraanwater-vs-flessenwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/vergelijken/osmose-vs-bronwater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/vergelijken/kokend-water-kraan-merken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/vergelijken/omgekeerde-osmose-vergelijken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/vergelijken/waterontharder-vergelijken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/beste-waterfilter/woonboot`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/beste-waterfilter/hard-water-gebied`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/onderhoud/waterontharder-zout`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/onderhoud/kokend-water-kraan-onderhoud`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/onderhoud/koolstoffilter-levensduur`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/zakelijk/industrie-proceswater`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/zakelijk/appartementen-vve`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/zakelijk/scholen-kinderopvang`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/zakelijk/sportschool-wellness`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/zakelijk/waterkoeler-vs-filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
