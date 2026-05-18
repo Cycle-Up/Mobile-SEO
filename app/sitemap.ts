@@ -544,6 +544,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/zakelijk/scholen-kinderopvang`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/zakelijk/sportschool-wellness`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/zakelijk/waterkoeler-vs-filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/zakelijk/legionella-beheersplan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/zakelijk/waterkwaliteitsanalyse`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Stoffen-in-drinkwater sub-pagina's
+    { url: `${BASE}/stoffen-in-drinkwater/zware-metalen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/stoffen-in-drinkwater/pesticiden`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/stoffen-in-drinkwater/pfas-overzicht`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/stoffen-in-drinkwater/microbiologisch`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/stoffen-in-drinkwater/kalk-mineralen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/stoffen-in-drinkwater/nitraat-nitriet`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/stoffen-in-drinkwater/chloor-bijproducten`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/stoffen-in-drinkwater/hormonen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/stoffen-in-drinkwater/radioactieve-stoffen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Filtertechnieken sub-pagina's
+    { url: `${BASE}/filtertechnieken/keramisch`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/filtertechnieken/nanofiltration`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/filtertechnieken/elektrolyse-cdi`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/filtertechnieken/vergelijking`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Keuzehulp sub-pagina's
+    { url: `${BASE}/keuzehulp/geur-smaak`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/keuzehulp/budget`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/keuzehulp/buitenland-reizen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/keuzehulp/installatie-type`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Beste-waterfilter sub-pagina's
+    { url: `${BASE}/beste-waterfilter/studentenkamer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/beste-waterfilter/budget-onder-100`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/beste-waterfilter/all-in-one`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/beste-waterfilter/ecologisch`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    // Keurmerken sub-pagina's
+    { url: `${BASE}/keurmerken/nsf-ansi-58`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/keurmerken/nsf-ansi-42-53`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/keurmerken/nsf-ansi-401`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/keurmerken/kiwa-113`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/keurmerken/acs`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/keurmerken/ce-markering`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/keurmerken/wras`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/keurmerken/verificatie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Onderhoud sub-pagina's
+    { url: `${BASE}/onderhoud/filterkan-filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/onderhoud/storingen-oplossen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
