@@ -628,6 +628,37 @@ export default function DrinkwaterPage() {
             ))}
           </div>
         </section>
+
+        {/* Verdiep je kennis */}
+        <section>
+          <h2 className="text-2xl font-semibold text-[#003F5C] mb-4">Verdiep je kennis</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <Link href="/drinkwater/bacterien" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Bacteriën in drinkwater</h3>
+              <p className="text-xs text-gray-500 mt-1">E.coli, Legionella, normen en risico&apos;s.</p>
+            </Link>
+            <Link href="/drinkwater/medicijnresten" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Medicijnresten in drinkwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Welke farmaceutische resten worden gemeten en wat is het risico?</p>
+            </Link>
+            <Link href="/drinkwater/fluoride" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Fluoride in kraanwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Fluoridegehalte in Nederland: normen, debat en filteropties.</p>
+            </Link>
+            <Link href="/drinkwater/hardheid" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Waterhardheid en kalk</h3>
+              <p className="text-xs text-gray-500 mt-1">Calcium, kalkaanslag en wat jij eraan kunt doen.</p>
+            </Link>
+            <Link href="/drinkwater/nitraat-verlagen" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Nitraat in drinkwater verlagen</h3>
+              <p className="text-xs text-gray-500 mt-1">Oorzaken van nitraat en effectieve filteroplossingen.</p>
+            </Link>
+            <Link href="/drinkwater/microplastics" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Microplastics in drinkwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Wat weten we over microplastics in kraanwater en hoe filter je ze eruit?</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

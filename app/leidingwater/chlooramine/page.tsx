@@ -325,7 +325,7 @@ export default function ChlooraminePage() {
             <h3 className="font-semibold text-red-700 mb-2">Niet effectief: gewone actief kool</h3>
             <p className="text-gray-700 text-sm">
               Standaard actief koolfilters &mdash; inclusief filterkannen zoals{' '}
-              <Link href="/waterfilter/filterkan" className="text-[#005F8A] underline">
+              <Link href="/filterkan" className="text-[#005F8A] underline">
                 Brita en vergelijkbare merken
               </Link>{' '}
               &mdash; zijn <strong>niet effectief</strong> tegen chlooramine. De adsorptiekinetiek van
@@ -378,7 +378,7 @@ export default function ChlooraminePage() {
           Zie ook:{' '}
           <Link href="/leidingwater/chloor" className="text-[#005F8A] underline">chloor in leidingwater</Link>,{' '}
           <Link href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</Link>,{' '}
-          <Link href="/waterfilter/filterkan" className="text-[#005F8A] underline">filterkan vergelijking</Link> en{' '}
+          <Link href="/filterkan" className="text-[#005F8A] underline">filterkan vergelijking</Link> en{' '}
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">osmosefilter uitleg</Link>.
         </p>
       </main>

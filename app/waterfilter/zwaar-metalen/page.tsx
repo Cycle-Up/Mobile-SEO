@@ -355,7 +355,7 @@ export default function ZwaarMetalenPage() {
         </ol>
         <p className="text-gray-700 mb-6">
           Wil je meer weten over specifiek loodverwijdering? Lees ons gedetailleerde artikel over{' '}
-          <a href="/waterfilter/lood-water" className="text-[#005F8A] underline">lood in drinkwater filteren</a>.
+          <a href="/leidingwater/lood" className="text-[#005F8A] underline">lood in drinkwater filteren</a>.
         </p>
 
         <CTABanner context="osmose" />

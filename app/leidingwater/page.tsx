@@ -858,6 +858,49 @@ export default function LeidingwaterPage() {
             ))}
           </div>
         </section>
+
+        {/* Stoffen en eigenschappen */}
+        <section className="max-w-4xl mx-auto px-4 pb-12">
+          <h2 className="text-2xl font-semibold text-[#003F5C] mb-4">Stoffen en eigenschappen van leidingwater</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <Link href="/leidingwater/temperatuur" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Watertemperatuur</h3>
+              <p className="text-xs text-gray-500 mt-1">Optimale temperatuur, Legionella-risico en seizoensinvloeden.</p>
+            </Link>
+            <Link href="/leidingwater/zuurstof" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Zuurstof in leidingwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Hoeveel opgelost zuurstof zit er in kraanwater en wat betekent dat?</p>
+            </Link>
+            <Link href="/leidingwater/silica" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Silica in leidingwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Wat is silicium in water, waar komt het vandaan en is het schadelijk?</p>
+            </Link>
+            <Link href="/leidingwater/sulfaat" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Sulfaat in leidingwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Normen, herkomst en gezondheidseffecten van sulfaat in drinkwater.</p>
+            </Link>
+            <Link href="/leidingwater/barium" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Barium in leidingwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Achtergrondgehalten, wettelijke grenzen en risico's van barium.</p>
+            </Link>
+            <Link href="/leidingwater/kalium" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Kalium in leidingwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Kaliumgehalte in drinkwater en de rol ervan in dagelijkse inname.</p>
+            </Link>
+            <Link href="/leidingwater/mangaan" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Mangaan in leidingwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Bruine verkleuring, normen en verwijdering van mangaan uit kraanwater.</p>
+            </Link>
+            <Link href="/leidingwater/fosfaat" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Fosfaat in leidingwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Waarom fosfaat wordt toegevoegd en wat de gezondheidsimpact is.</p>
+            </Link>
+            <Link href="/leidingwater/aluminium" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Aluminium in leidingwater</h3>
+              <p className="text-xs text-gray-500 mt-1">Aluminiumgehalten, zuiveringsproces en veiligheidsdrempels.</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

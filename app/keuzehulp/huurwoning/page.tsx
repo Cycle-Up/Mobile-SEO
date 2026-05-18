@@ -238,7 +238,7 @@ export default function HuurwoningPage() {
           <h3 className="font-semibold text-[#003F5C] mb-3">Verwante paginas</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/waterfilter/filterkan" className="text-[#005F8A] hover:underline">
+              <Link href="/filterkan" className="text-[#005F8A] hover:underline">
                 Filterkan vergelijking: Brita, BWT en alternatieven
               </Link>
             </li>

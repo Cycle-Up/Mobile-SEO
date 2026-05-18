@@ -333,7 +333,7 @@ export default function WaterontharderHoeLangPage() {
           Lees meer over alternatieven en onderhoud in onze gidsen over{' '}
           <Link href="/waterontharder" className="text-[#005F8A] underline">waterontharders</Link>,{' '}
           <Link href="/waterontharder/regeneratie" className="text-[#005F8A] underline">regeneratie van de waterontharder</Link>,{' '}
-          <Link href="/waterkalker/vs-waterontharder" className="text-[#005F8A] underline">waterontkalker vs waterontharder</Link> en{' '}
+          <Link href="/vergelijken/waterontharder-vergelijken" className="text-[#005F8A] underline">waterontkalker vs waterontharder</Link> en{' '}
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose als alternatief</Link>.
         </p>
 

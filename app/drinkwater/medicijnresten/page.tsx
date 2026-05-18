@@ -405,7 +405,7 @@ export default function MedicijnrestenDrinkwaterPage() {
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a>, <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en <a href="/drinkwater/pfas" className="text-[#005F8A] underline">PFAS in drinkwater</a>.
+          Lees ook: <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a>, <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en <a href="/leidingwater/pfas" className="text-[#005F8A] underline">PFAS in drinkwater</a>.
         </p>
       </main>
     </>

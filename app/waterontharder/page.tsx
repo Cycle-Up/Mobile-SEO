@@ -694,7 +694,7 @@ export default function WaterOntharderPage() {
           <p className="text-gray-700 leading-relaxed">
             Woon je in Amsterdam, Utrecht of een andere stad en wil je weten hoe hard het water is bij jou in
             de buurt? Bekijk onze lokale informatie, zoals{' '}
-            <Link href="/waterontharder/amsterdam" className="text-[#005F8A] underline hover:no-underline">
+            <Link href="/waterhardheid/amsterdam" className="text-[#005F8A] underline hover:no-underline">
               waterontharder Amsterdam
             </Link>
             . We hebben voor de grootste gemeenten de waterhardheid, kalkoverlast en meest geschikte
@@ -741,8 +741,8 @@ export default function WaterOntharderPage() {
                 desc: 'Wat kalk doet met apparaten, leidingen en tegels — en hoe je het bestrijdt.',
               },
               {
-                href: '/waterontharder/amsterdam',
-                title: 'Waterontharder in Amsterdam',
+                href: '/waterhardheid/amsterdam',
+                title: 'Waterhardheid in Amsterdam',
                 desc: 'Lokale waterhardheidsdata en de beste aanpak voor Amsterdamse woningen.',
               },
               {

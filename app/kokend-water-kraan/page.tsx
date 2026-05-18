@@ -588,6 +588,41 @@ export default function KokendWaterKraanPage() {
           </div>
         </section>
 
+        {/* Orphaned sub-pages */}
+        <section>
+          <h2 className="text-2xl font-semibold text-[#003F5C] mb-4">Meer over kokend water kranen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <Link href="/kokend-water-kraan/boiler" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">De boilertank uitgelegd</h3>
+              <p className="text-xs text-gray-500 mt-1">Werking, materialen en levensduur van de onderbouwtank.</p>
+            </Link>
+            <Link href="/kokend-water-kraan/5-in-1" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">5-in-1 kokend water kraan</h3>
+              <p className="text-xs text-gray-500 mt-1">Alles over modellen met vijf functies in één kraanpunt.</p>
+            </Link>
+            <Link href="/kokend-water-kraan/prijs-per-liter" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Kosten per liter kokend water</h3>
+              <p className="text-xs text-gray-500 mt-1">Wat betaal je werkelijk per liter? Vergelijking met de waterkoker.</p>
+            </Link>
+            <Link href="/kokend-water-kraan/duurzaamheid" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Duurzaamheid & milieu</h3>
+              <p className="text-xs text-gray-500 mt-1">Ecologische voetafdruk, levensduur en minder plasticafval.</p>
+            </Link>
+            <Link href="/kokend-water-kraan/huurwoning" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Kokend water kraan in huurwoning</h3>
+              <p className="text-xs text-gray-500 mt-1">Wat mag, wat is mogelijk en hoe vraag je toestemming aan de verhuurder.</p>
+            </Link>
+            <Link href="/kokend-water-kraan/kinderveiligheid" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Kinderveiligheid</h3>
+              <p className="text-xs text-gray-500 mt-1">Kindsloten, veiligheidsontgrendeling en tips voor gezinnen met kleine kinderen.</p>
+            </Link>
+            <Link href="/kokend-water-kraan/installateur" className="border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-[#003F5C] group-hover:text-[#005F8A] text-sm">Installateur inschakelen</h3>
+              <p className="text-xs text-gray-500 mt-1">Wanneer heb je een loodgieter nodig en wat kost installatie door een vakman?</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over de kokend water kraan</h2>

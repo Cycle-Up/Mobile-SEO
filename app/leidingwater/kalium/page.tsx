@@ -361,7 +361,7 @@ export default function LeidingwaterKaliumPage() {
           Zie ook:{' '}
           <Link href="/waterfilter/vergelijken" className="text-[#005F8A] underline">waterfilters vergelijken</Link>,{' '}
           <Link href="/waterfilter/zout" className="text-[#005F8A] underline">waterontharder zout kiezen</Link>,{' '}
-          <Link href="/waterfilter/zout-gebruik" className="text-[#005F8A] underline">zoutverbruik waterontharder</Link> en{' '}
+          <Link href="/onderhoud/waterontharder-zout" className="text-[#005F8A] underline">zoutverbruik waterontharder</Link> en{' '}
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link>.
         </p>
       </main>
