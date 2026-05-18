@@ -583,6 +583,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Onderhoud sub-pagina's
     { url: `${BASE}/onderhoud/filterkan-filter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/onderhoud/storingen-oplossen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    // Osmose-water hub (was missing, linked from 33 pages)
+    { url: `${BASE}/osmose-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
   ];
 
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
