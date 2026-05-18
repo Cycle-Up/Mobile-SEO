@@ -13,6 +13,16 @@ export const metadata: Metadata = {
 export default function AcsPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Keurmerken', url: 'https://waterfilterplatform.nl/keurmerken' },
+        { name: 'ACS keurmerk — Franse norm voor drinkwatercontact', url: 'https://waterfilterplatform.nl/keurmerken/acs' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat is het ACS keurmerk voor waterfilters?", answer: "ACS (Attestation de Conformité Sanitaire) is de Franse norm die garandeert dat materialen in contact met drinkwater geen schadelijke stoffen afgeven. Het is de Europees erkende tegenhanger van het Nederlandse Kiwa 113 en wordt breed aanvaard voor waterfiltercomponenten op de Europese markt." },
+        { question: "Wat is het verschil tussen ACS en Kiwa 113?", answer: "Zowel ACS als Kiwa 113 testen of materialen schadelijke stoffen afgeven aan drinkwater, maar ze gebruiken een ander nationaal normatief kader. ACS komt uit Frankrijk en is formeel erkend door de Europese Commissie voor de gehele EU. Kiwa 113 is de Nederlandse standaard en is nationaal erkend." },
+        { question: "Garandeert een ACS keurmerk dat een waterfilter goed filtert?", answer: "Nee, ACS beoordeelt uitsluitend of een materiaal veilig is voor drinkwatercontact. ACS zegt niets over de filterprestaties. Voor een bewijs dat een filter daadwerkelijk contaminanten verwijdert zijn NSF-normen zoals NSF/ANSI 58 of NSF/ANSI 53 vereist." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'ACS keurmerk — Franse norm voor drinkwatercontact',
         description: 'ACS (Attestation de Conformite Sanitaire) is de Franse drinkwaternorm erkend door de EU. Wat het test, verschil met NSF en Kiwa, en wanneer het relevant is.',

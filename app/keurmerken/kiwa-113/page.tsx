@@ -13,6 +13,16 @@ export const metadata: Metadata = {
 export default function Kiwa113Page() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Keurmerken', url: 'https://waterfilterplatform.nl/keurmerken' },
+        { name: 'Kiwa 113 — Nederlands keurmerk voor drinkwaterinstallaties', url: 'https://waterfilterplatform.nl/keurmerken/kiwa-113' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat is het Kiwa 113 keurmerk voor waterfilters?", answer: "Kiwa 113 (BRL-K 113) is de Nederlandse beoordelingsrichtlijn die garandeert dat materialen in contact met drinkwater geen schadelijke stoffen afgeven, zoals zware metalen of weekmakers uit plastic behuizingen. Het keurmerk zegt niets over filterprestaties, maar is essentieel voor materiaalveiligheid." },
+        { question: "Is Kiwa 113 verplicht voor een waterfilter in Nederland?", answer: "Voor consumenten die een waterfilter installeren na de watermeter geldt geen formele verplichting om Kiwa 113-gecertificeerde onderdelen te gebruiken. Voor waterbedrijven en installateurs gelden wel strengere eisen. Het is echter sterk aanbevolen, omdat niet-gecertificeerde slangen en fittingen weekmakers kunnen afgeven aan uw drinkwater." },
+        { question: "Wat is het verschil tussen Kiwa 113 en NSF certificering?", answer: "Kiwa 113 test uitsluitend of de materialen van een filtersysteem geen schadelijke stoffen afgeven aan drinkwater. NSF-normen (42, 53, 58) testen of het filter daadwerkelijk contaminanten verwijdert. Een goed osmosesysteem heeft idealiter zowel Kiwa 113 als een NSF-certificering." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Kiwa 113 — Nederlands keurmerk voor drinkwaterinstallaties',
         description: 'BRL-K 113 is het Nederlandse keurmerk voor materiaalveiligheid van drinkwaterinstallaties. Wat het inhoudt, welke fabrikanten het hebben en hoe NVWA.',

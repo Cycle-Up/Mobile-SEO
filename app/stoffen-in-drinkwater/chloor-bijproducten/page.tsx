@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export default function ChloorBijproducktenPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Stoffen in drinkwater', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater' },
+        { name: 'Chloor bijproducten in drinkwater — THM en HAA', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/chloor-bijproducten' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat zijn trihalomethanen (THM) in drinkwater?", answer: "Trihalomethanen ontstaan wanneer chloor reageert met van nature aanwezige organische stoffen in water. De bekendste zijn chloroform, bromodichloormethaan en bromoform. De EU-norm voor de som van THM in drinkwater is 100 microgram per liter." },
+        { question: "Zijn chloor bijproducten in drinkwater gevaarlijk?", answer: "Langdurige blootstelling aan hoge concentraties THM is in studies geassocieerd met een licht verhoogd risico op blaaskanker. IARC heeft sommige THM geclassificeerd als mogelijk kankerverwekkend (Groep 2B). Bij Nederlandse drinkwaterconcentraties is het risico laag." },
+        { question: "Hoe verwijder je chloor bijproducten uit drinkwater?", answer: "Actief koolfilters (NSF/ANSI 42 en 53 gecertificeerd) reduceren THM met 70-90%. Omgekeerde osmose biedt bredere bescherming en is ook effectief tegen haloazijnzuren (HAA). Een combinatie van actief kool en RO geeft de meest volledige verwijdering." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Chloor bijproducten in drinkwater -- THM en HAA',
         description: 'Trihalomethanen (THM) en haloazijnzuren (HAA) als chloor bijproducten in drinkwater: EU-norm 100 ug/L, IARC Groep 2B kankerrisico. Actief kool en osmose als.',

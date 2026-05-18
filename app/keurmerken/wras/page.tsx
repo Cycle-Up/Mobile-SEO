@@ -13,6 +13,16 @@ export const metadata: Metadata = {
 export default function WrasPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Keurmerken', url: 'https://waterfilterplatform.nl/keurmerken' },
+        { name: 'WRAS — Brits keurmerk voor drinkwaterinstallaties', url: 'https://waterfilterplatform.nl/keurmerken/wras' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat is het WRAS keurmerk?", answer: "WRAS (Water Regulations Advisory Scheme) is het Britse equivalent van Kiwa 113: het certificeert dat materialen in contact met drinkwater veilig zijn en geen schadelijke stoffen afgeven. Het wordt erkend door alle Britse waterbedrijven en de Britse toezichthouder op drinkwaterkwaliteit." },
+        { question: "Is WRAS nog geldig in Nederland na Brexit?", answer: "Na Brexit is WRAS niet meer automatisch erkend als equivalent van Kiwa 113 of ACS voor de Nederlandse en EU-markt. Voor particuliere consumenten heeft dit minder directe gevolgen: WRAS blijft een onafhankelijk keurmerk voor materiaalveiligheid, maar waterbedrijven en installateurs in Nederland zullen Kiwa 113 of ACS verkiezen." },
+        { question: "Wat is het verschil tussen WRAS, Kiwa 113 en ACS?", answer: "WRAS (VK), Kiwa 113 (Nederland) en ACS (Frankrijk) testen allemaal hetzelfde: of materialen geen schadelijke stoffen afgeven aan drinkwater. Het onderscheid zit in de juridische erkenning. Voor Nederlandse consumenten zijn Kiwa 113 en ACS de meest relevante keuze; WRAS is een aanvullend vertrouwenssignaal bij Brits geproduceerde producten." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'WRAS — Brits keurmerk voor drinkwaterinstallaties',
         description: 'WRAS (Water Regulations Advisory Scheme) is het Britse equivalent van Kiwa voor drinkwaterinstallaties. Na Brexit nog relevant bij Britse importeurs.',

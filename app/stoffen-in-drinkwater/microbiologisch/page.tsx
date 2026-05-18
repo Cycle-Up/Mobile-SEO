@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export default function MicrobiologischPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Stoffen in drinkwater', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater' },
+        { name: 'Microbiologische risicos in drinkwater — bacterien, virussen en protozoen', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/microbiologisch' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Is Nederlands leidingwater microbiologisch veilig?", answer: "Ja, Nederlands leidingwater is microbiologisch veilig dankzij chloordesinfectie en meerfasige zuivering. E. coli-overschrijdingen worden zelden gerapporteerd. Risicos bestaan wel bij eigen waterputten, na overstroming of bij problemen in het warmwatercircuit." },
+        { question: "Hoe voorkom je Legionella in drinkwater?", answer: "Legionella groeit bij watertemperaturen tussen 20 en 45 graden Celsius. Preventie: houd warm water boven 60 graden (70 graden aanbevolen voor leidingen), vermijd temperatuurlagen in de boiler en spoel zelden gebruikte leidingen periodiek door." },
+        { question: "Welk filter beschermt tegen bacterien en virussen in water?", answer: "UV-sterilisatie inactiveert bacterien, virussen en protozoen inclusief chloorresistente Cryptosporidium. Ultrafiltratie (UF) met membranen van 0,01-0,1 micron verwijdert bacterien en grote virusdeeltjes fysiek. Combinatie van UV en UF biedt de meest robuuste bescherming." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Microbiologische risicos in drinkwater -- bacterien, virussen en protozoen',
         description: 'E.coli, Legionella, Cryptosporidium en norovirus in drinkwater: normen, risicos en wanneer extra filtering nodig is. UV-sterilisatie en ultrafiltratie als.',

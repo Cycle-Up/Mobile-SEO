@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export default function PesticidentPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Stoffen in drinkwater', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater' },
+        { name: 'Pesticiden in drinkwater — glyfosaat, atrazine en MCPA', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/pesticiden' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat is de norm voor pesticiden in drinkwater?", answer: "De EU-norm voor pesticiden in drinkwater is 0,1 microgram per liter per afzonderlijke stof en maximaal 0,5 ug/L totaal. Deze normen zijn gebaseerd op het voorzorgsbeginsel." },
+        { question: "Welke pesticiden worden het meest aangetroffen in Nederlands drinkwater?", answer: "In Nederland worden glyfosaat, bentazon, MCPA en atrazine het vaakst gemeten in oppervlaktewater en drinkwater, voornamelijk afkomstig uit de landbouw. Atrazine is verboden in de EU maar is nog steeds aanwezig in de bodem." },
+        { question: "Hoe verwijder je pesticiden uit drinkwater?", answer: "Actief koolfilters (NSF/ANSI 53 gecertificeerd) zijn effectief tegen een breed spectrum aan pesticiden. Omgekeerde osmose biedt bredere bescherming, ook voor moeilijk adsorbeerbare polaire verbindingen zoals glyfosaat. Een combinatie van beide geeft de hoogste verwijderingspercentages." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Pesticiden in drinkwater -- glyfosaat, atrazine en MCPA',
         description: 'Pesticiden in drinkwater: EU-norm 0,1 ug/L per stof. Meest gevonden stoffen in Nederland: glyfosaat, bentazon en MCPA. Oplossingen met actief kool en osmose.',

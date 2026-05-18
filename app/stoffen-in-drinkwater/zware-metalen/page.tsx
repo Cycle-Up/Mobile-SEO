@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export default function ZwareMetalenPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Stoffen in drinkwater', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater' },
+        { name: 'Zware metalen in drinkwater — lood, koper, chroom en arseen', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/zware-metalen' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Zit er lood in mijn drinkwater?", answer: "Lood komt niet voor in het water bij het drinkwaterbedrijf, maar kan oplossen uit loden leidingen in oudere woningen. Woningen gebouwd voor 1960 hebben een verhoogde kans op loodleidingen; de EU-norm is aangescherpt naar 5 microgram per liter." },
+        { question: "Welke zware metalen kunnen in drinkwater zitten?", answer: "De meest voorkomende zware metalen in drinkwater zijn lood (via loodleidingen), koper (uit koperen leidingen), arseen (geologische oorsprong) en chroom-6. Ze kunnen gezondheidsschade veroorzaken bij langdurige blootstelling." },
+        { question: "Hoe verwijder je zware metalen uit drinkwater?", answer: "Omgekeerde osmose is de meest effectieve huishoudelijke methode: het membraan filtert deeltjes tot 0,0001 micron en verwijdert lood, arseen, koper en chroom met 90-95% efficientie." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Zware metalen in drinkwater -- lood, koper, chroom en arseen',
         description: 'Welke zware metalen zitten er in drinkwater? Leer over lood in leidingwater, koper, arseen en chroom-6: normen, gezondheidsrisicos en hoe osmose 90-95%.',

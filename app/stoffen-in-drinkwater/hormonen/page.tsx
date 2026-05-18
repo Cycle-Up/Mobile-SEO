@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export default function HormonenPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Stoffen in drinkwater', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater' },
+        { name: 'Hormonen en medicijnresten in drinkwater — wat weten we?', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/hormonen' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Zitten er medicijnresten in drinkwater?", answer: "Ja, in drinkwater worden sporen aangetroffen van medicijnen zoals ethinylestradiol (anticonceptiepil), ibuprofen, metformine en diclofenac, in concentraties van nanogram per liter. Conventionele waterzuivering verwijdert deze stoffen niet volledig." },
+        { question: "Zijn hormonen en medicijnresten in drinkwater gevaarlijk?", answer: "Volgens RIVM en WHO zijn de concentraties in drinkwater te laag voor aantoonbare schade bij gezonde volwassenen. Er is wel een wetenschappelijke discussie over langdurige gecombineerde blootstelling aan meerdere stoffen tegelijk, met name bij foetussen en zuigelingen." },
+        { question: "Welk filter verwijdert medicijnresten uit drinkwater?", answer: "Omgekeerde osmose gecombineerd met actief kool biedt de meest volledige verwijdering van farmaceutische microverontreinigingen. Systemen met NSF/ANSI 401-certificering zijn specifiek getest op 15 opkomende verontreinigingen waaronder hormonen en medicijnen." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Hormonen en medicijnresten in drinkwater -- wat weten we?',
         description: 'Oestrogeen, ibuprofen en metformine in drinkwater: concentraties in nanogram per liter. Wetenschappelijke discussie over gezondheidseffecten.',

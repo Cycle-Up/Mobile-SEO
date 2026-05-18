@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export default function NiraatNitrietPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Stoffen in drinkwater', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater' },
+        { name: 'Nitraat en nitriet in drinkwater — norm, risicos en filteren', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/nitraat-nitriet' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat is de norm voor nitraat in drinkwater?", answer: "De EU-norm voor nitraat in drinkwater is 50 mg/L. Voor babies jonger dan 6 maanden en zwangere vrouwen wordt een strengere grens van 25 mg/L aangehouden vanwege het risico op methemoglobinemie." },
+        { question: "Is nitraat in drinkwater gevaarlijk voor babies?", answer: "Ja, voor zuigelingen jonger dan 6 maanden kan nitraat via omzetting in nitriet het zuurstoftransport in het bloed blokkeren, wat 'blue baby syndrome' (methemoglobinemie) veroorzaakt. Gebruik voor babyvoeding water met minder dan 25 mg/L nitraat." },
+        { question: "Welk filter verwijdert nitraat uit drinkwater?", answer: "Omgekeerde osmose verwijdert 85-95% van nitraat. Actief koolfilters zoals Brita-kannen werken niet tegen nitraat -- nitraat is een klein anion dat niet adsorbeert aan koolstof." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Nitraat en nitriet in drinkwater -- norm, risicos en filteren',
         description: 'Nitraat in drinkwater: EU-norm 50 mg/L, speciaal voor babies en zwangeren 25 mg/L. Nitriet max 0,5 mg/L. Osmose verwijdert 85-95%. Actief kool werkt NIET.',

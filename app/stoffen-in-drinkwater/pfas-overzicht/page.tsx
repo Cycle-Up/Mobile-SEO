@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export default function PfasOverzichtPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Stoffen in drinkwater', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater' },
+        { name: 'PFAS in drinkwater — PFOA, PFOS en de nieuwe EU-norm', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/pfas-overzicht' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat zijn PFAS in drinkwater?", answer: "PFAS zijn meer dan 4.700 synthetische chemicalien met een fluorkoolstofketen die vrijwel niet afbreken in het milieu of het menselijk lichaam. Bekende voorbeelden zijn PFOA en PFOS, vroeger gebruikt in Teflon en blusschuim." },
+        { question: "Wat is de EU-norm voor PFAS in drinkwater?", answer: "Vanaf 2026 geldt een EU-norm van maximaal 0,1 microgram per liter voor de som van de vier meest zorgelijke PFAS (PFOA, PFOS, PFNA en PFHxS). Voor de som van alle meetbare PFAS is de norm 0,5 ug/L." },
+        { question: "Hoe verwijder je PFAS uit drinkwater?", answer: "Omgekeerde osmose (RO) is de enige consumentenoplossing die PFAS effectief verwijdert: 90-99% van PFAS-verbindingen wordt tegengehouden door het semi-permeabele membraan. Actief koolfilters zijn minder betrouwbaar, vooral voor kortketenige PFAS." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'PFAS in drinkwater -- PFOA, PFOS en de nieuwe EU-norm',
         description: 'PFAS in drinkwater: eeuwige chemicalien, 4.700+ stoffen en nieuwe EU-norm 2026 (som 4 PFAS max 0,1 ug/L). Nederlandse hotspots en hoe osmose 90%+ verwijdert.',

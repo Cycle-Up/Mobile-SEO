@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export default function RadioactieveStoffenPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Stoffen in drinkwater', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater' },
+        { name: 'Radioactieve stoffen in drinkwater — radon, uranium en radium', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/radioactieve-stoffen' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Zit er uranium in drinkwater?", answer: "In Nederlands leidingwater zijn de uraniumconcentraties doorgaans laag, ruim onder de EU-norm van 30 microgram per liter. Priveputen in gebieden met klei- of fosfaatrijke bodems (delen van Brabant en Limburg) kunnen hogere concentraties bevatten." },
+        { question: "Is radon in drinkwater gevaarlijk?", answer: "De blootstelling aan radon via drinkwater is klein vergeleken met radon via binnenlucht. Bij koken en douchen verdampt radon vrijwel volledig. In goed geventileerde ruimtes is dit geen probleem; in slecht geventileerde kelders of badkamers kan radon zich wel ophopen." },
+        { question: "Hoe verwijder je uranium en radioactieve stoffen uit drinkwater?", answer: "Omgekeerde osmose verwijdert uranium en radium effectief met 90-99%. Radon als opgelost gas wordt door osmose niet volledig verwijderd; ventilatie van de opslagtank en een actief koolfilter na het membraan reduceren radon verder." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Radioactieve stoffen in drinkwater -- radon, uranium en radium',
         description: 'Uranium (EU-norm 30 ug/L), radon en radium in drinkwater. Nederlandse situatie: grotendeels veilig, maar priveputen in graniet- en leemgebieden zijn.',

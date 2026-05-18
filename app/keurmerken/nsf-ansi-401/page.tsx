@@ -13,6 +13,16 @@ export const metadata: Metadata = {
 export default function NsfAnsi401Page() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Keurmerken', url: 'https://waterfilterplatform.nl/keurmerken' },
+        { name: 'NSF/ANSI 401 — certificering voor opkomende stoffen', url: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-401' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat is NSF/ANSI 401 certificering?", answer: "NSF/ANSI 401 is een waterfilternorm die in 2012 is geïntroduceerd en certificeert dat een filter minimaal 15 opkomende stoffen reduceert, waaronder medicijnresten zoals ibuprofen en carbamazepine, hormonen zoals BPA en estron, en insecticiden zoals DEET." },
+        { question: "Zitten medicijnresten in Nederlands leidingwater?", answer: "In Nederlands leidingwater zijn concentraties van farmaceutische stoffen na zuivering vrijwel altijd onder de detectielimieten. Toch worden stoffen als carbamazepine en metformine regelmatig aangetroffen in het oppervlaktewater van de Maas en de Rijn, die als bron dienen voor een deel van het Nederlandse drinkwater." },
+        { question: "Wat is het verschil tussen NSF 401 en NSF 58?", answer: "NSF/ANSI 58 certificeert de prestaties van het RO-membraan voor klassieke contaminanten zoals zware metalen en nitraten. NSF/ANSI 401 vult dit aan door te certificeren dat de voor- en nafiltertrappen opkomende stoffen zoals medicijnresten en hormonen reduceren. Beide normen zijn complementair." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'NSF/ANSI 401 — certificering voor opkomende stoffen',
         description: 'NSF/ANSI 401 test waterfilters op 15 opkomende stoffen: medicijnresten (ibuprofen, DEET), pesticiden en hormonen. Waarom dit de meest recente.',

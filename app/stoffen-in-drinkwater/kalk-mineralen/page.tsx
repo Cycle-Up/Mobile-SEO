@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export default function KalkMineralenPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Stoffen in drinkwater', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater' },
+        { name: 'Kalk en mineralen in drinkwater — calcium, magnesium en bicarbonaat', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/kalk-mineralen' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Is kalk in drinkwater schadelijk voor de gezondheid?", answer: "Nee, kalk (calciumcarbonaat) in drinkwater is niet schadelijk voor de gezondheid. Het veroorzaakt wel aanslag op kranen, waterkokers en huishoudapparaten. Calcium en magnesium zijn juist nuttige mineralen voor botten en spieren." },
+        { question: "Hoe hard is het water in Nederland?", answer: "De waterhardheid in Nederland varieert van zacht (4-6 dH in Zeeland) tot zeer hard (18-22 dH in Limburg). Er is geen EU-maximumnorm voor waterhardheid. Het gemiddelde calciumgehalte in Nederlands drinkwater is circa 80 mg/L." },
+        { question: "Verwijdert een osmosefilter kalk uit drinkwater?", answer: "Ja, omgekeerde osmose verwijdert 95% of meer van alle opgeloste mineralen inclusief calcium, magnesium en bicarbonaat. Kwalitatieve osmosesystemen zijn voorzien van een remineralisatiecartridge die calcium en magnesium terugvoegt en de pH stabiliseert." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Kalk en mineralen in drinkwater -- calcium, magnesium en bicarbonaat',
         description: 'Kalk in drinkwater: calciumcarbonaat, waterhardheid en aanslag. Calcium (gem. 80 mg/L NL), magnesium en bicarbonaat. Osmose verwijdert 95% -- remineralisatie.',

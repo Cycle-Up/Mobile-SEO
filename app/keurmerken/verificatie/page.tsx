@@ -13,6 +13,16 @@ export const metadata: Metadata = {
 export default function VerificatiePage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Keurmerken', url: 'https://waterfilterplatform.nl/keurmerken' },
+        { name: 'Hoe controleer je of een waterfilter echt gecertificeerd is?', url: 'https://waterfilterplatform.nl/keurmerken/verificatie' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Hoe controleer ik of een waterfilter echt NSF gecertificeerd is?", answer: "Ga naar nsf.org/certified-products-systems en zoek op het exacte modelnummer van het filter. Controleer of het specifieke model (niet alleen het merk) geregistreerd staat, welke normen van toepassing zijn, welke contaminanten zijn gecertificeerd en of de certificering actief is." },
+        { question: "Wat is het verschil tussen 'NSF-getest' en 'NSF-gecertificeerd'?", answer: "'NSF-getest' kan betrekking hebben op een interne test door de fabrikant zelf. 'NSF-gecertificeerd' impliceert een onafhankelijke beoordeling door NSF International met periodieke hercontroles. Dit onderscheid wordt soms bewust vaag gehouden door fabrikanten." },
+        { question: "Hoe herken ik een nep waterfilter keurmerk?", answer: "Rode vlaggen zijn: een keurmerk-logo zonder verifieerbaar certificaatnummer, een certificering die niet vindbaar is in de officiële database, onbekende 'certificeringsinstanties' met fantasienamen, of claims als '99,9% reductie' zonder vermelding van de norm die de test heeft uitgevoerd." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'Hoe controleer je of een waterfilter echt gecertificeerd is?',
         description: 'Stap-voor-stap: NSF productdatabase checken, Kiwa publiek register, rode vlaggen herkennen en nep-keurmerken onderscheiden van echte certificeringen voor.',

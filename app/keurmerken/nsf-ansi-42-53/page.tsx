@@ -13,6 +13,16 @@ export const metadata: Metadata = {
 export default function NsfAnsi4253Page() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Keurmerken', url: 'https://waterfilterplatform.nl/keurmerken' },
+        { name: 'NSF/ANSI 42 en 53 — keurmerken voor actief koolfilters', url: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-42-53' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat is het verschil tussen NSF/ANSI 42 en NSF/ANSI 53?", answer: "NSF/ANSI 42 certificeert dat een filter de smaak en geur van water verbetert door chloor en sediment te verwijderen. NSF/ANSI 53 gaat verder en bewijst dat het filter gezondheidsrelevante stoffen verwijdert, zoals lood, vluchtige organische verbindingen en bepaalde pesticiden." },
+        { question: "Verwijdert een NSF 42 gecertificeerd waterfilter ook lood?", answer: "Nee, NSF/ANSI 42 richt zich alleen op esthetische parameters zoals smaak, geur en helderheid. Voor loodreductie heeft u een filter nodig dat gecertificeerd is onder NSF/ANSI 53." },
+        { question: "Welk waterfilter keurmerk heb ik nodig voor een oudere woning met loden leidingen?", answer: "Voor een oudere woning met risico op lood in het water heeft u minimaal een NSF/ANSI 53 gecertificeerd filter nodig, het liefst gecombineerd met NSF/ANSI 42. Controleer altijd of lood expliciet in de certificeringsscope van het product is opgenomen." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'NSF/ANSI 42 en 53 — keurmerken voor actief koolfilters',
         description: 'NSF 42 certificeert esthetische kwaliteit (chloor, geur, smaak), NSF 53 gezondheidsrelevante stoffen (lood, VOC). Verschil uitgelegd en welk filter welk.',

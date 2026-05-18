@@ -13,6 +13,16 @@ export const metadata: Metadata = {
 export default function NsfAnsi58Page() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Keurmerken', url: 'https://waterfilterplatform.nl/keurmerken' },
+        { name: 'NSF/ANSI 58 keurmerk — wat betekent het voor osmosefilters?', url: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-58' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat is NSF/ANSI 58 certificering?", answer: "NSF/ANSI 58 is de internationale norm voor omgekeerde osmosefilters die aan de keukenkraan worden gebruikt. Een gecertificeerd filter is getest op materiaaleisen, structurele integriteit en filterprestaties door een onafhankelijk accrediteerd laboratorium." },
+        { question: "Wat filtert een NSF/ANSI 58 gecertificeerd osmosefilter?", answer: "Een NSF/ANSI 58 gecertificeerd filter is getest op reductie van stoffen als arseen, barium, cadmium, fluoride, lood, nitraten, selenium, TDS en radium. De norm test uitsluitend de stoffen die in de lijst zijn opgenomen." },
+        { question: "Hoe controleer ik of een osmosefilter echt NSF/ANSI 58 gecertificeerd is?", answer: "Ga naar nsf.org/certified-products-systems en zoek op het exacte modelnummer van het filter. Controleer of de certificering actief is, welke contaminanten zijn opgenomen en wat de gemeten reductiepercentages zijn." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'NSF/ANSI 58 keurmerk — wat betekent het voor osmosefilters?',
         description: 'NSF/ANSI 58 is de internationale norm voor omgekeerde osmosefilters. Wat test het, wat garandeert het en hoe verifieert u een echte certificering.',

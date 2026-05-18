@@ -13,6 +13,16 @@ export const metadata: Metadata = {
 export default function CeMarkPage() {
   return (
     <>
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'Keurmerken', url: 'https://waterfilterplatform.nl/keurmerken' },
+        { name: 'CE-markering waterfilters — wat garandeert het wel en niet?', url: 'https://waterfilterplatform.nl/keurmerken/ce-markering' },
+      ]} />
+      <SchemaOrg type="FAQPage" faqItems={[
+        { question: "Wat betekent CE-markering op een waterfilter?", answer: "CE-markering betekent dat de fabrikant verklaart dat het product voldoet aan de toepasselijke Europese richtlijnen en legaal in de EU mag worden verkocht. Het is een wettelijk conformiteitsteken, geen kwaliteitskeurmerk, en er is geen verplichte onafhankelijke beoordeling vereist." },
+        { question: "Garandeert CE-markering dat een waterfilter lood of PFAS verwijdert?", answer: "Nee, CE-markering garandeert niet dat een waterfilter daadwerkelijk contaminanten zoals lood, nitraten of PFAS verwijdert. De opgegeven reductiepercentages zijn niet door een onafhankelijk laboratorium geverifieerd. Daarvoor zijn NSF-certificeringen vereist zoals NSF/ANSI 58 of NSF/ANSI 53." },
+        { question: "Is CE-markering voldoende als ik een waterfilter koop?", answer: "Nee, CE alleen is onvoldoende als u daadwerkelijk contaminanten wilt verwijderen. CE is de minimale drempeleis voor legale verkoop in de EU. Voor aantoonbare filterprestaties heeft u aanvullend een NSF-certificering nodig, en voor materiaalveiligheid een Kiwa 113 of ACS keurmerk." },
+      ]} />
       <SchemaOrg type="Article" article={{
         title: 'CE-markering waterfilters — wat garandeert het wel en niet?',
         description: 'CE-markering betekent dat een waterfilter veilig op de EU-markt mag worden gebracht, maar garandeert geen filterprestaties. Verschil met NSF en Kiwa.',
