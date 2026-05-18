@@ -223,6 +223,20 @@ export default function BudgetPage() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief koolfilter: goedkoop en effectief</h3>
+              <p className="text-sm text-gray-600">Hoe actief kool chloor en geur verwijdert en waarom het het meest betaalbare filtertype is.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Wat zit er in kraanwater?</h3>
+              <p className="text-sm text-gray-600">Overzicht van chloor en bijproducten in drinkwater: wat zijn de normen en risicos?</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

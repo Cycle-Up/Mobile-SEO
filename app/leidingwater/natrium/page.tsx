@@ -330,6 +330,20 @@ export default function NatriumPage() {
           <Link href="/waterontharder/zout-gebruik" className="text-[#005F8A] underline">zoutverbruik ontharder</Link> en{' '}
           <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter kopen</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterontharder: uitleg en werking</h3>
+              <p className="text-sm text-gray-600">Hoe een waterontharder natrium gebruikt om kalk te verwijderen en wat dat betekent voor uw natriuminname.</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling als filtertechniek</h3>
+              <p className="text-sm text-gray-600">Hoe ionenwisseling natrium en andere ionen uit water verwijdert of uitwisselt voor zachter water.</p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

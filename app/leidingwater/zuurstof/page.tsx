@@ -318,6 +318,20 @@ export default function LeidingwaterZuurstofPage() {
           {" en "}
           <Link href="/waterfilter" className="text-[#005F8A] underline">waterfilter soorten</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen in Nederland</h3>
+              <p className="text-sm text-gray-600">Welke wettelijke normen gelden voor drinkwaterkwaliteit, inclusief zuurstof en temperatuur?</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose: uitleg en werking</h3>
+              <p className="text-sm text-gray-600">Hoe een osmosefilter uw leidingwater zuivert en wat het effect is op het zuurstofgehalte.</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

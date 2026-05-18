@@ -358,6 +358,20 @@ export default function WaterkwaliteitsrapportPage() {
           </ul>
         </div>
 
+        <section className="mt-8 mb-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater: compleet overzicht</h3>
+              <p className="text-sm text-gray-600">Alle stoffen die voorkomen in Nederlands drinkwater: van mineralen tot verontreinigingen en hun normen.</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen in Nederland</h3>
+              <p className="text-sm text-gray-600">Welke wettelijke normen gelden voor drinkwaterkwaliteit en hoe kunt u uw waterkwaliteitsrapport interpreteren?</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <section className="mt-10">

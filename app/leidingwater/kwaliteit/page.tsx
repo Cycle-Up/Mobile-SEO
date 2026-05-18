@@ -537,6 +537,16 @@ export default function LeidingwaterKwaliteitPage() {
                 title: 'Alle waterfiltersoorten',
                 desc: 'Filterkan, koolstof, UV, ontharder of osmose — welk type past bij uw situatie?',
               },
+              {
+                href: '/stoffen-in-drinkwater',
+                title: 'Stoffen in drinkwater: compleet overzicht',
+                desc: 'Alle stoffen die voorkomen in Nederlands drinkwater: van mineralen tot verontreinigingen en hun normen.',
+              },
+              {
+                href: '/drinkwaternormen',
+                title: 'Drinkwaternormen in Nederland',
+                desc: 'Welke wettelijke normen gelden voor drinkwaterkwaliteit en hoe presteert Nederland?',
+              },
             ].map(l => (
               <Link
                 key={l.href}

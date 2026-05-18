@@ -274,6 +274,20 @@ export default function InstallatieTypePage() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmose: uitleg en installatie</h3>
+              <p className="text-sm text-gray-600">Hoe een inbouw osmosefilter werkt, wat de installatie inhoudt en voor wie het de beste keuze is.</p>
+            </Link>
+            <Link href="/keurmerken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter keurmerken checklist</h3>
+              <p className="text-sm text-gray-600">Welke keurmerken en certificeringen zijn betrouwbaar bij het kiezen van een waterfilter?</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

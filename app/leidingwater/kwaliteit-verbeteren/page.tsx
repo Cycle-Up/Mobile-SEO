@@ -486,6 +486,16 @@ export default function LeidingwaterKwaliteitVerberenPage() {
                 title: 'Omgekeerde osmose uitgelegd',
                 desc: 'Hoe werkt RO-filtratie en voor wie is het de beste keuze?',
               },
+              {
+                href: '/filtertechnieken',
+                title: 'Alle filtertechnieken vergelijken',
+                desc: 'Overzicht van alle waterfiltertechnieken: van actief kool tot omgekeerde osmose.',
+              },
+              {
+                href: '/keuzehulp',
+                title: 'Keuzehulp waterfilter',
+                desc: 'Beantwoord een paar vragen en ontdek welk waterfilter het beste past bij uw situatie.',
+              },
             ].map(l => (
               <Link
                 key={l.href}
