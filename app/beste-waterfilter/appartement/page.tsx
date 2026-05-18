@@ -257,6 +257,16 @@ export default function AppartementPage() {
                 Installatietype kiezen: onderbouw vs aanrecht vs filterkan
               </Link>
             </li>
+            <li>
+              <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="text-[#005F8A] hover:underline">
+                Kalk in leidingwater
+              </Link>
+            </li>
+            <li>
+              <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">
+                Osmose voor appartement
+              </Link>
+            </li>
           </ul>
         </div>
 

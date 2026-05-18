@@ -323,6 +323,16 @@ export default function KoffieTheePage() {
                 TDS meten: hoe gebruik je een TDS-meter?
               </Link>
             </li>
+            <li>
+              <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="text-[#005F8A] hover:underline">
+                Kalk en smaak van koffie
+              </Link>
+            </li>
+            <li>
+              <Link href="/waterhardheid" className="text-[#005F8A] hover:underline">
+                Waterhardheid in uw gemeente
+              </Link>
+            </li>
           </ul>
         </div>
 

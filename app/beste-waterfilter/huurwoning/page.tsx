@@ -270,6 +270,16 @@ export default function HuurwoningPage() {
                 Waterfilter in huurwoning: keuzehulp
               </Link>
             </li>
+            <li>
+              <Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">
+                Actief koolfilter zonder installatie
+              </Link>
+            </li>
+            <li>
+              <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="text-[#005F8A] hover:underline">
+                Chloor in leidingwater
+              </Link>
+            </li>
           </ul>
         </div>
 

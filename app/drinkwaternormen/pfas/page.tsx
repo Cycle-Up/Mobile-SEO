@@ -415,6 +415,20 @@ export default function PfasPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in drinkwater: overzicht</h3>
+              <p className="text-sm text-gray-600">Uitgebreide informatie over PFAS-verbindingen, bronnen en gezondheidseffecten.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose verwijdert PFAS</h3>
+              <p className="text-sm text-gray-600">Hoe omgekeerde osmose werkt en waarom het de meest effectieve methode is voor PFAS-verwijdering.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

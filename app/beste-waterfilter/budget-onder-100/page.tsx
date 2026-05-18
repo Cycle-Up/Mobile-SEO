@@ -191,6 +191,8 @@ export default function BudgetOnder100Page() {
             <li><Link href="/keuzehulp/budget" className="text-[#005F8A] hover:underline">Waterfilter per budget: EUR 50, EUR 200 en EUR 500+</Link></li>
             <li><Link href="/beste-waterfilter/studentenkamer" className="text-[#005F8A] hover:underline">Beste waterfilter voor studentenkamer</Link></li>
             <li><Link href="/beste-waterfilter" className="text-[#005F8A] hover:underline">Terug naar beste waterfilter overzicht</Link></li>
+            <li><Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">Actief koolfilter: werking en kosten</Link></li>
+            <li><Link href="/keuzehulp" className="text-[#005F8A] hover:underline">Waterfilter keuzehulp</Link></li>
           </ul>
         </div>
 

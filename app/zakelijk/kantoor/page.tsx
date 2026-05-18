@@ -234,8 +234,10 @@ export default function KantoorPage() {
           <Link href="/zakelijk" className="text-[#005F8A] underline">Zakelijk overzicht</Link>,{" "}
           <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">Osmosefilter kopen</Link>,{" "}
           <Link href="/onderhoud" className="text-[#005F8A] underline">Onderhoud en gebruik</Link>,{" "}
-          <Link href="/vergelijken/waterfilter-vs-waterontharder" className="text-[#005F8A] underline">Waterfilter vs waterontharder</Link> en{" "}
-          <Link href="/kokend-water-kraan" className="text-[#005F8A] underline">Kokend water kraan</Link>.
+          <Link href="/vergelijken/waterfilter-vs-waterontharder" className="text-[#005F8A] underline">Waterfilter vs waterontharder</Link>,{" "}
+          <Link href="/kokend-water-kraan" className="text-[#005F8A] underline">Kokend water kraan</Link>,{" "}
+          <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="text-[#005F8A] underline">Kalk in kraanwater op kantoor</Link> en{" "}
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] underline">Osmosefilter voor kantoor</Link>.
         </p>
       </main>
     </>

@@ -223,6 +223,8 @@ export default function EcologischPage() {
             <li><Link href="/filterkan" className="text-[#005F8A] hover:underline">Filterkan: duurzamer alternatief voor flessenwater</Link></li>
             <li><Link href="/kraanwater" className="text-[#005F8A] hover:underline">Kraanwater vs flessenwater: feiten en cijfers</Link></li>
             <li><Link href="/beste-waterfilter" className="text-[#005F8A] hover:underline">Terug naar beste waterfilter overzicht</Link></li>
+            <li><Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Osmose vs. ecologische footprint</Link></li>
+            <li><Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">Actief koolfilter als milieuvriendelijke optie</Link></li>
           </ul>
         </div>
 

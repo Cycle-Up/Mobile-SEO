@@ -442,6 +442,16 @@ export default function DrinkwaterbedrijvenPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/leidingwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Leidingwater in Nederland</h3>
+              <p className="text-sm text-gray-600">Alles over de kwaliteit, samenstelling en eigenschappen van Nederlands leidingwater per regio.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

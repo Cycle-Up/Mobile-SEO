@@ -212,6 +212,8 @@ export default function StudentenkamerPage() {
             <li><Link href="/beste-waterfilter/budget-onder-100" className="text-[#005F8A] hover:underline">Beste waterfilter onder EUR 100</Link></li>
             <li><Link href="/keuzehulp/huurwoning" className="text-[#005F8A] hover:underline">Waterfilter voor huurwoning</Link></li>
             <li><Link href="/beste-waterfilter" className="text-[#005F8A] hover:underline">Terug naar beste waterfilter overzicht</Link></li>
+            <li><Link href="/filtertechnieken/actief-kool" className="text-[#005F8A] hover:underline">Actief koolfilter voor kraanwater</Link></li>
+            <li><Link href="/keuzehulp" className="text-[#005F8A] hover:underline">Waterfilter keuzehulp: klein budget</Link></li>
           </ul>
         </div>
 
