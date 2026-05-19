@@ -347,6 +347,20 @@ export default function KokendWaterKraanPrijsPerLiterPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Budget keuzehulp waterfilter</h3>
+              <p className="text-sm text-gray-600">Hoe de kosten per liter van gefilterd water, kokend water en osmosewater zich tot elkaar verhouden.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk verhoogt filterkosten</h3>
+              <p className="text-sm text-gray-600">Hoe harde watergebieden meer filteronderhoud vragen en daarmee de prijs per liter beïnvloeden.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

@@ -459,6 +459,20 @@ export default function VsQuookerPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keurmerken/ce-markering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">CE-markering Quooker-alternatieven</h3>
+              <p className="text-sm text-gray-600">Hoe CE-markering en EN 61770 garanderen dat Quooker-alternatieven voldoen aan dezelfde Europese veiligheidseisen.</p>
+            </Link>
+            <Link href="/vergelijken/kokend-water-kraan-merken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kokend water kraan merken vergelijken</h3>
+              <p className="text-sm text-gray-600">Alle Quooker-alternatieven naast elkaar: prijs, garantie, filtermogelijkheden en installatie-eisen vergeleken.</p>
+            </Link>
+          </div>
+        </section>
+
       </div>
     </>
   );

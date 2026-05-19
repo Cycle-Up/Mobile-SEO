@@ -359,6 +359,20 @@ export default function VergelijkenPage() {
             ))}
           </div>
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keurmerken/ce-markering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">CE-markering: veiligheidsnorm vergelijking</h3>
+              <p className="text-sm text-gray-600">Welke merken CE-gecertificeerd zijn en hoe CE (EN 61770) de minimale veiligheidseisen per model bepaalt.</p>
+            </Link>
+            <Link href="/vergelijken/kokend-water-kraan-merken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Uitgebreide merkenvergelijking</h3>
+              <p className="text-sm text-gray-600">Quooker vs. Grohe Red vs. PureAqua vs. Franke: complete vergelijking op prijs, capaciteit en filterfunctie.</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );
