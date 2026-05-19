@@ -369,6 +369,20 @@ export default function KokendWaterKraanStoomPage() {
           ))}
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keurmerken/ce-markering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">CE-markering: stoomveiligheid norm</h3>
+              <p className="text-sm text-gray-600">Hoe EN 61770 (CE-norm) eisen stelt aan stoombeveiliging en thermische isolatie van kokend water kranen.</p>
+            </Link>
+            <Link href="/keuzehulp/baby-gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Stoom en veiligheid met kinderen</h3>
+              <p className="text-sm text-gray-600">Hoe u stoomrisico's beperkt in een gezin met jonge kinderen en welke modellen de veiligste stoombehandeling bieden.</p>
+            </Link>
+          </div>
+        </section>
+
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
           <Link href="/kokend-water-kraan" className="text-[#005F8A] underline">kokend water kraan vergelijken</Link>,{' '}

@@ -351,6 +351,20 @@ export default function KokendWaterKraanEnergiePage() {
           ))}
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Budget waterfilter keuzehulp</h3>
+              <p className="text-sm text-gray-600">Hoe u kosten van kokend water kraan, osmosefilter en waterontharder vergelijkt en de goedkoopste oplossing voor uw situatie vindt.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Hoe kalkafzetting de efficiëntie van uw kokend water kraan verlaagt en wat ontkalkingsbehandelingen kosten.</p>
+            </Link>
+          </div>
+        </section>
+
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
           <Link href="/kokend-water-kraan" className="text-[#005F8A] underline">kokend water kraan overzicht</Link>,{' '}

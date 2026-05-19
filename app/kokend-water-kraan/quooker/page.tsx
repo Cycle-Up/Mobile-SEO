@@ -273,6 +273,20 @@ export default function QuookerVergelijkingPage() {
           ))}
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/vergelijken/kokend-water-kraan-merken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Alle merken kokend water kraan vergelijken</h3>
+              <p className="text-sm text-gray-600">Quooker, PureAqua, Grohe Red, Franke en meer: uitgebreide vergelijking op prijs, filter, garantie en installatie.</p>
+            </Link>
+            <Link href="/keurmerken/ce-markering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">CE-markering bij kokend water kranen</h3>
+              <p className="text-sm text-gray-600">Hoe CE-markering (EN 61770) garandeert dat Quooker en concurrenten voldoen aan Europese veiligheidsnormen.</p>
+            </Link>
+          </div>
+        </section>
+
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
           <Link href="/kokend-water-kraan" className="text-[#005F8A] underline">kokend water kraan overzicht</Link>,{' '}

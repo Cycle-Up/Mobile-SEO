@@ -158,6 +158,20 @@ export default function KokendWaterKraanDuurzaamheidPage() {
 
         <CTABanner />
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische waterkwaliteit</h3>
+              <p className="text-sm text-gray-600">Hoe microbiologische verontreinigingen in leidingwater worden behandeld en welke filters bacteriën en virussen verwijderen.</p>
+            </a>
+            <a href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Duurzame waterfilter kiezen op budget</h3>
+              <p className="text-sm text-gray-600">Hoe u een milieuvriendelijke keuze maakt die ook financieel voordelig uitpakt op lange termijn.</p>
+            </a>
+          </div>
+        </section>
+
         <p className="text-gray-600 text-sm mt-6">
           Zie ook: <a href="/kokend-water-kraan/energie" className="text-[#005F8A] underline">energieverbruik kokend water kraan</a> en <a href="/kokend-water-kraan/prijs" className="text-[#005F8A] underline">prijsvergelijking</a>.
         </p>

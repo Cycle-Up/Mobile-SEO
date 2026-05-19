@@ -386,6 +386,20 @@ export default function InstallateurPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keurmerken/ce-markering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">CE-markering en erkende installateurs</h3>
+              <p className="text-sm text-gray-600">Wat erkende installateurs moeten controleren: CE-markering, NEN 1006-conformiteit en aardingsplicht bij kokend water kranen.</p>
+            </Link>
+            <Link href="/onderhoud/kokend-water-kraan-onderhoud" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Onderhoudsschema kokend water kraan</h3>
+              <p className="text-sm text-gray-600">Periodiek onderhoud dat een installateur kan uitvoeren: ontkalken, filterwissel en lekcheck per merk.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="kokend" />
       </div>
     </>

@@ -301,6 +301,20 @@ export default function KinderveiligheidPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keurmerken/ce-markering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">CE-markering en veiligheidsnormen</h3>
+              <p className="text-sm text-gray-600">CE-markering (EN 61770) en NEN 1006 bepalen welke veiligheidseisen gelden voor kokend water kranen in Nederland.</p>
+            </Link>
+            <Link href="/keuzehulp/baby-gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Veilig water voor baby's en kinderen</h3>
+              <p className="text-sm text-gray-600">Waterfilter kiezen voor gezinnen met baby's: welke verontreinigingen extra risico vormen en welk filter beschermt.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="kokend" />
       </div>
     </>

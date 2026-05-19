@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 
@@ -199,6 +200,20 @@ export default function KokendWaterKraanPrijsPage() {
             </details>
           ))}
         </div>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Budget waterfilter keuzehulp</h3>
+              <p className="text-sm text-gray-600">Hoe u de totale eigendomskosten (aanschaf + energie + filters + installatie) van verschillende watersystemen vergelijkt.</p>
+            </Link>
+            <Link href="/vergelijken/kokend-water-kraan-merken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kokend water kraan merken vergelijken</h3>
+              <p className="text-sm text-gray-600">Prijsvergelijking per merk: Quooker, Grohe Red, PureAqua en meer, inclusief boilerkapaciteit en filtermogelijkheden.</p>
+            </Link>
+          </div>
+        </section>
 
         <CTABanner />
       </main>
