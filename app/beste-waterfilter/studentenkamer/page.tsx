@@ -217,6 +217,20 @@ export default function StudentenkamerPage() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filterkan voor studenten</h3>
+              <p className="text-sm text-gray-600">Hoe filterkannen zonder installatie geschikt zijn voor een studentenkamer met beperkte ruimte.</p>
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Budget keuzehulp waterfilter studenten</h3>
+              <p className="text-sm text-gray-600">Welke filters het beste passen bij een studentenbudget zonder concessies aan filterkwaliteit.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="algemeen" />
       </div>
     </>

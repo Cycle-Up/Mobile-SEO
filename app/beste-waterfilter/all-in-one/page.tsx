@@ -208,6 +208,20 @@ export default function AllInOnePage() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose: kern van all-in-one</h3>
+              <p className="text-sm text-gray-600">Waarom RO de hoofdtechniek is in all-in-one systemen en hoe voorfilters het membraan beschermen.</p>
+            </Link>
+            <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF 58 keurmerk all-in-one filters</h3>
+              <p className="text-sm text-gray-600">Wat NSF 58 certificering valideert bij gecombineerde filterstrengen en osmosemembranen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="kokend" />
       </div>
     </>

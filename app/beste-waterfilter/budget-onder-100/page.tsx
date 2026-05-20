@@ -196,6 +196,20 @@ export default function BudgetOnder100Page() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool: betaalbare filtertechniek</h3>
+              <p className="text-sm text-gray-600">Hoe actief kool filterkannen onder 100 euro werken en welke prestaties u kunt verwachten.</p>
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Budget keuzehulp waterfilter</h3>
+              <p className="text-sm text-gray-600">Hoe u de totale eigendomskosten van budgetfilters berekent en wanneer een duurder model loont.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="algemeen" />
       </div>
     </>
