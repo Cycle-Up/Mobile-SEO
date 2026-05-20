@@ -229,6 +229,20 @@ export default function VergelijkingPage() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58: keurmerk osmose en filters</h3>
+              <p className="text-sm text-gray-600">Welke filtertechnieken NSF-certificeerbaar zijn en wat de certificering toetst per techniek.</p>
+            </Link>
+            <Link href="/keuzehulp/installatie-type" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Installatietype keuzehulp</h3>
+              <p className="text-sm text-gray-600">Welke filtertechniek bij welk installatietype past: onderbouw, aanrecht, inline of draagbaar.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>
