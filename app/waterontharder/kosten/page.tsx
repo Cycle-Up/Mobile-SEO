@@ -365,6 +365,20 @@ export default function WaterontharderKostenPage() {
           <Link href="/waterontharder/vergelijken" className="text-[#005F8A] underline">waterontharders vergelijken</Link> en{' '}
           <Link href="/waterontharder/installeren" className="text-[#005F8A] underline">waterontharder installeren</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Budget keuzehulp waterontharder</h3>
+              <p className="text-sm text-gray-600">Totale kosten: aanschaf, zout, water, energie en onderhoud over 10 jaar vergeleken.</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: bedrijfskosten</h3>
+              <p className="text-sm text-gray-600">Hoe de hars-regeneratie het zoutverbruik bepaalt en daarmee de operationele kosten.</p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

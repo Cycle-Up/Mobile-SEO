@@ -590,6 +590,20 @@ export default function WaterontharderZoutloosPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling vs. zoutloze systemen</h3>
+              <p className="text-sm text-gray-600">Waarom traditionele ionenwisseling chemisch echt ontharden is en wat zoutloze systemen wel/niet doen.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk-behandeling zonder zout</h3>
+              <p className="text-sm text-gray-600">Hoe template-assisted crystallization (TAC) kalkkristallen vormt zonder ionen te verwijderen.</p>
+            </Link>
+          </div>
+        </section>
+
       </div>
     </>
   );

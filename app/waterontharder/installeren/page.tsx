@@ -290,6 +290,20 @@ export default function WaterontharderInstallerenPage() {
           <Link href="/waterontharder/regeneratie" className="text-[#005F8A] underline">waterontharder regeneratie instellen</Link> en{' '}
           <Link href="/waterontharder/zout" className="text-[#005F8A] underline">welk zout voor waterontharder</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keurmerken/ce-markering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">CE-markering en installatienorm</h3>
+              <p className="text-sm text-gray-600">Welke CE-eisen gelden voor waterontharders en hoe NEN 1006 de installatie reguleert.</p>
+            </Link>
+            <Link href="/onderhoud/storingen-oplossen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Storingen na installatie oplossen</h3>
+              <p className="text-sm text-gray-600">Veelvoorkomende storingen na installatie en hoe u ze diagnosticeert.</p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

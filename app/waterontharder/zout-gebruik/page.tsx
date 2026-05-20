@@ -389,6 +389,20 @@ export default function WaterontharderZoutgebruikPage() {
           <Link href="/waterontharder/regeneratie" className="text-[#005F8A] underline">waterontharder regeneratie</Link> en{' '}
           <Link href="/waterontharder/zout" className="text-[#005F8A] underline">waterontharder zout kopen</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/onderhoud/waterontharder-zout" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zout voor waterontharder</h3>
+              <p className="text-sm text-gray-600">Welke zoutsoort u bijvult, hoe vaak en wat de gevolgen zijn van verkeerde zout-keuze.</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: zoutverbruik</h3>
+              <p className="text-sm text-gray-600">Hoe het zoutverbruik samenhangt met regeneratiefrequentie en harscapaciteit.</p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

@@ -360,6 +360,20 @@ export default function WaterontharderOnderhoudPage() {
           <Link href="/waterontharder/vs-osmose" className="text-[#005F8A] underline">waterontharder vs osmose</Link> en{' '}
           <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid in Nederland</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/onderhoud/storingen-oplossen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Storingen oplossen onderhoud</h3>
+              <p className="text-sm text-gray-600">Diagnostische checklist voor regeneratie-storingen, zoutblokkades en harsuitval.</p>
+            </Link>
+            <Link href="/onderhoud/waterontharder-zout" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zout bijvullen en zoutbloemen</h3>
+              <p className="text-sm text-gray-600">Hoe u de juiste zoutsoort kiest en zoutbloemen voorkomt bij regeneratie.</p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

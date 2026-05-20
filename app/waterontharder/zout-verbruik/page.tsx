@@ -402,6 +402,20 @@ export default function ZoutVerbruikPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/onderhoud/waterontharder-zout" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zout-onderhoud waterontharder</h3>
+              <p className="text-sm text-gray-600">Hoe vaak u zout moet bijvullen en welke factoren het verbruik beïnvloeden.</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: zoutverbruik per regeneratie</h3>
+              <p className="text-sm text-gray-600">Waarom regeneratiefrequentie en harsbedgrootte het jaarlijkse zoutverbruik bepalen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

@@ -365,6 +365,20 @@ export default function WaterOntharderRegeneratietijdPage() {
           <Link href="/waterontharder" className="text-[#005F8A] underline">waterontharders vergelijken</Link> en{' '}
           <Link href="/waterontharder/installeren" className="text-[#005F8A] underline">waterontharder installeren</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: regeneratiecyclus</h3>
+              <p className="text-sm text-gray-600">Hoe de regeneratiecyclus werkt en welke factoren de regeneratietijd beïnvloeden.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk-belasting bepaalt regeneratie</h3>
+              <p className="text-sm text-gray-600">Waarom hardere watergebieden vaker regeneratie nodig hebben en hoe dit de planning beïnvloedt.</p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

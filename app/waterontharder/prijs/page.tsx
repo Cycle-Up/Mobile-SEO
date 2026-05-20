@@ -659,6 +659,20 @@ export default function WaterOntharderPrijsPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Budget keuzehulp waterontharder</h3>
+              <p className="text-sm text-gray-600">Welke prijsklasse past bij uw behoefte en welke functies extra kosten rechtvaardigen.</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: prijs versus kwaliteit</h3>
+              <p className="text-sm text-gray-600">Wat ionenwisselhars en regelautomaten kosten bij verschillende prijsklassen.</p>
+            </Link>
+          </div>
+        </section>
+
       </div>
     </>
   );
