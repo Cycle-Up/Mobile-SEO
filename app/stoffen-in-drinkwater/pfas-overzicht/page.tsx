@@ -100,6 +100,28 @@ export default function PfasOverzichtPage() {
           </ul>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/pfas-waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS waterfilter gids</h3>
+              <p className="text-sm text-gray-600">Complete gids voor PFAS-filtratie: welke technologie, kosten en certificering.</p>
+            </Link>
+            <Link href="/pfas-waterfilter/gebieden-nederland" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS-hotspots Nederland</h3>
+              <p className="text-sm text-gray-600">Kaart van risicogebieden in Nederland en wat dit betekent voor uw drinkwater.</p>
+            </Link>
+            <Link href="/drinkwaternormen/pfas" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS drinkwaternormen</h3>
+              <p className="text-sm text-gray-600">EU-norm 0,1 ug/L voor de som van 20 PFAS-stoffen: achtergrond en handhaving.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Hoe RO-membranen werken en waarom ze de meest effectieve PFAS-barriere zijn.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

@@ -249,9 +249,17 @@ export default function NanofiltrationPage() {
               <h3 className="font-semibold text-[#005F8A] mb-1">PFAS verwijdering met nanofiltratie</h3>
               <p className="text-sm text-gray-600">Hoe nanofiltratie PFAS, pesticiden en moleculen onder 1 nm tegenhoudt zonder volledige demineralisatie.</p>
             </Link>
+            <Link href="/pfas-waterfilter/vergelijken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS-filters vergelijken</h3>
+              <p className="text-sm text-gray-600">RO, nanofiltration, actief kool en pitcher: verwijderingspercentages per PFAS-soort vergeleken.</p>
+            </Link>
             <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">NSF 58: keurmerk membraanfilters</h3>
               <p className="text-sm text-gray-600">Wat NSF 58 betekent voor membraanfiltratie inclusief nanofiltratie en RO.</p>
+            </Link>
+            <Link href="/pfas-waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS waterfilter gids</h3>
+              <p className="text-sm text-gray-600">Complete gids: welk filtertype kiest u voor PFAS-verwijdering thuis?</p>
             </Link>
           </div>
         </section>

@@ -486,6 +486,7 @@ export default function NanofiltrationPage() {
             {[
               { href: '/omgekeerde-osmose', label: 'Omgekeerde osmose: volledige gids' },
               { href: '/ultrafiltratie', label: 'Ultrafiltratie (UF) uitgelegd' },
+              { href: '/pfas-waterfilter/vergelijken', label: 'PFAS-filteropties vergelijken' },
               { href: '/waterfilter/soorten', label: 'Alle waterfiltersoorten vergelijken' },
               { href: '/keramisch-filter', label: 'Keramisch filter: mechanische filtratie' },
               { href: '/sedimentfilter', label: 'Sedimentfilter: grove voorfiltratie' },

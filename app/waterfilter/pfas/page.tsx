@@ -186,6 +186,10 @@ export default function WaterfilterPFASPage() {
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
             <p className="text-sm text-gray-600">Complete gids over EU- en Nederlandse drinkwaternormen voor alle relevante stoffen.</p>
           </a>
+          <a href="/pfas-waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">PFAS waterfilter complete gids</h3>
+            <p className="text-sm text-gray-600">Vergelijking van alle filtertypen voor PFAS: verwijderingspercentages, kosten en certificering.</p>
+          </a>
         </div>
       </section>
 

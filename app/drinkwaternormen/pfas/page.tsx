@@ -426,6 +426,14 @@ export default function PfasPage() {
               <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose verwijdert PFAS</h3>
               <p className="text-sm text-gray-600">Hoe omgekeerde osmose werkt en waarom het de meest effectieve methode is voor PFAS-verwijdering.</p>
             </Link>
+            <Link href="/pfas-waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS waterfilter gids</h3>
+              <p className="text-sm text-gray-600">Welke filters verwijderen PFAS? Vergelijking van osmose, koolstof en nanofiltration.</p>
+            </Link>
+            <Link href="/pfas-waterfilter/gebieden-nederland" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS-hotspots in Nederland</h3>
+              <p className="text-sm text-gray-600">Kaart van risicogebieden: Dordrecht, Schiphol-regio, Westerschelde en meer.</p>
+            </Link>
           </div>
         </section>
 

@@ -291,7 +291,15 @@ export default function ActiefKoolPage() {
             </Link>
             <Link href="/keurmerken/nsf-ansi-42-53" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">NSF 42/53: keurmerk actief koolfilters</h3>
-              <p className="text-sm text-gray-600">Wat NSF 42 (esthetiek) en NSF 53 (gezondheid) certificering betekenen voor koolstoffilters.</p>
+              <p className="text-sm text-gray-600">Wat NSF 42 (esthetiek) en NSF 53 (gezondheid) betekenen voor koolstoffilters.</p>
+            </Link>
+            <Link href="/pfas-waterfilter/vergelijken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool vs osmose voor PFAS</h3>
+              <p className="text-sm text-gray-600">Verwijderingspercentages per PFAS-soort: waarom korte-keten PFAS actief kool omzeilen.</p>
+            </Link>
+            <Link href="/koolstoffilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter gids</h3>
+              <p className="text-sm text-gray-600">Types, kosten, installatie en wanneer koolstoffilters de beste keuze zijn.</p>
             </Link>
           </div>
         </section>

@@ -187,6 +187,10 @@ export default function WaterfilterChloorPage() {
             <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen</h3>
             <p className="text-sm text-gray-600">Vijf methoden om chloor uit kraanwater te verwijderen, inclusief vergelijking van effectiviteit.</p>
           </a>
+          <a href="/koolstoffilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor chloor</h3>
+            <p className="text-sm text-gray-600">Alles over koolstoffilters: types, kosten, NSF-certificering en installatie-opties.</p>
+          </a>
         </div>
       </section>
 

@@ -103,6 +103,28 @@ export default function ChloorBijproducktenPage() {
           </ul>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/koolstoffilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor chloor</h3>
+              <p className="text-sm text-gray-600">Types, kosten en NSF-certificering voor effectieve chloor- en THM-verwijdering.</p>
+            </Link>
+            <Link href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen: 5 methoden</h3>
+              <p className="text-sm text-gray-600">Van laten staan tot osmose: welke aanpak past bij uw situatie.</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+              <p className="text-sm text-gray-600">EU- en Nederlandse normen voor chloor, THM en andere desinfectie-bijproducten.</p>
+            </Link>
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief koolfiltratie uitleg</h3>
+              <p className="text-sm text-gray-600">Adsorptiewerking, GAC vs blokfilter en wanneer catalytisch kool nodig is.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>
