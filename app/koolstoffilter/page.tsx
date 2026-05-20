@@ -549,9 +549,34 @@ export default function KoolstoffilterPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               {
+                href: '/koolstoffilter/chloor',
+                title: 'Koolstoffilter voor chloor',
+                desc: 'Adsorptie, NSF/ANSI 42, chlooramine: wanneer volstaat een koolstoffilter?',
+              },
+              {
+                href: '/koolstoffilter/geur-smaak',
+                title: 'Koolstoffilter geur en smaak',
+                desc: 'Oorzaken van geur in kraanwater en de meest effectieve koolstoffilters.',
+              },
+              {
                 href: '/koolstoffilter/kopen',
                 title: 'Koolstoffilter kopen',
                 desc: 'Welk type past bij jou? Koopgids met vergelijkingstabel en certificatieadvies.',
+              },
+              {
+                href: '/koolstoffilter/soorten',
+                title: 'Soorten koolstoffilters',
+                desc: 'GAC, blokfilter, inline, onderbouw: overzicht met vergelijkingstabel.',
+              },
+              {
+                href: '/koolstoffilter/werking',
+                title: 'Werking koolstoffilter',
+                desc: 'Adsorptieprincipe, BET-oppervlak, contact-tijd en verzadigingsverloop uitgelegd.',
+              },
+              {
+                href: '/koolstoffilter/vervangen',
+                title: 'Koolstoffilter vervangen',
+                desc: 'Wanneer en hoe vervangt u een koolstoffilterpatroon? Stap-voor-stap handleiding.',
               },
               {
                 href: '/waterfilter/soorten',
@@ -562,11 +587,6 @@ export default function KoolstoffilterPage() {
                 href: '/omgekeerde-osmose',
                 title: 'Omgekeerde osmose',
                 desc: 'De meest grondige filtratie: werking, kosten en de beste RO-systemen voor thuis.',
-              },
-              {
-                href: '/omgekeerde-osmose/kopen',
-                title: 'Osmose filter kopen',
-                desc: 'Onafhankelijke vergelijking van de beste osmose filters op de Nederlandse markt.',
               },
             ].map(l => (
               <Link

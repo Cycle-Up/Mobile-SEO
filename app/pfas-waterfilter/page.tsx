@@ -261,11 +261,15 @@ export default function PfasWaterfilterPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Meer lezen over PFAS en waterfilters</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
+              { href: '/pfas-waterfilter/osmose', label: 'RO verwijdert 95-99% PFAS: alles uitgelegd' },
+              { href: '/pfas-waterfilter/vergelijken', label: 'PFAS-filters vergelijken: RO vs koolstof vs NF' },
+              { href: '/pfas-waterfilter/kosten', label: 'Kosten PFAS-filter: TCO-berekening 5 jaar' },
+              { href: '/pfas-waterfilter/huis', label: 'PFAS filteren thuis: per woningtype' },
+              { href: '/pfas-waterfilter/pfas-soorten', label: 'PFAS-soorten: PFOS, PFOA, GenX uitgelegd' },
               { href: '/pfas-waterfilter/kopen', label: 'PFAS waterfilter kopen: beste modellen 2026' },
               { href: '/pfas-waterfilter/testen', label: 'PFAS in uw water testen: hoe en waar?' },
               { href: '/pfas-waterfilter/normen-2026', label: 'PFAS normen 2026: EU-limiet uitgelegd' },
               { href: '/pfas-waterfilter/gebieden-nederland', label: 'PFAS hotspots per regio in Nederland' },
-              { href: '/omgekeerde-osmose', label: 'Omgekeerde osmose: complete gids' },
               { href: '/pfas-water', label: 'PFAS in drinkwater: risicos en normen' },
             ].map(l => (
               <Link
