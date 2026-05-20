@@ -595,6 +595,20 @@ export default function WaterontharderVergelijkenPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keurmerken/ce-markering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">CE-markering waterontharders</h3>
+              <p className="text-sm text-gray-600">Welke CE-normen gelden voor ontharders en hoe u dit per merk verifieert.</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: kerntechniek vergelijken</h3>
+              <p className="text-sm text-gray-600">Hoe de hars-kwaliteit en regelautomaat de prestaties tussen merken bepalen.</p>
+            </Link>
+          </div>
+        </section>
+
       </div>
     </>
   );

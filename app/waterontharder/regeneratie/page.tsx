@@ -382,6 +382,20 @@ export default function WaterontharderRegeneratiePage() {
           <Link href="/waterontharder/zout" className="text-[#005F8A] underline">waterontharder zout</Link> en{' '}
           <Link href="/waterontkalker/vs-waterontharder" className="text-[#005F8A] underline">waterontkalker vs waterontharder</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: regeneratieproces</h3>
+              <p className="text-sm text-gray-600">Hoe regeneratie de ionenwisselhars vervangt en weer geschikt maakt voor ontharden.</p>
+            </Link>
+            <Link href="/onderhoud/waterontharder-zout" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zout voor regeneratie</h3>
+              <p className="text-sm text-gray-600">Welke zoutsoort werkt het beste en hoe u zout-aanvullen tijdig doet voor optimale regeneratie.</p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

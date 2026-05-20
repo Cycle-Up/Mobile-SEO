@@ -655,6 +655,20 @@ export default function WaterOntharderWerkingPage() {
             ))}
           </div>
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: werkingsprincipe</h3>
+              <p className="text-sm text-gray-600">De chemische basis van ionenwisseling: hoe natrium calcium- en magnesiumionen vervangt.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen: wat wordt verwijderd</h3>
+              <p className="text-sm text-gray-600">Welke mineralen ionenwisseling verwijdert en welke (zoals natrium) achterblijven.</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

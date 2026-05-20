@@ -325,6 +325,20 @@ export default function TwinTankPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: twin-tank principe</h3>
+              <p className="text-sm text-gray-600">Hoe twin-tank waterontharders continue zachtwaterlevering garanderen door dubbele harsbed.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Hard water keuzehulp grote huishoudens</h3>
+              <p className="text-sm text-gray-600">Wanneer twin-tank zinvol is bij hoge waterverbruik en welke huishoudensgrootte profiteert.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="waterhardheid" />
       </div>
     </>
