@@ -618,6 +618,20 @@ export default function WaterhardheidRegioPage() {
             ))}
           </div>
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Welke regio&apos;s hard water hebben en hoe de waterbron de mineraalsamenstelling bepaalt.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Hard water keuzehulp regio&apos;s</h3>
+              <p className="text-sm text-gray-600">Per regio: welk filter of ontharder het beste resultaat geeft voor uw lokale waterhardheid.</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

@@ -510,6 +510,20 @@ export default function WaterhardheidKaartPage() {
             ))}
           </div>
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Wat de hardheidsklassen betekenen voor calcium- en magnesiumgehalte per regio.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Hard water keuzehulp</h3>
+              <p className="text-sm text-gray-600">Per hardheidsklasse: welke filter of ontharder past bij uw woonsituatie.</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

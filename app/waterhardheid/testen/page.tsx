@@ -388,6 +388,20 @@ export default function WaterhardheidTestenPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Wat de gemeten hardheidsklassen betekenen voor calcium- en magnesiumgehalte in uw water.</p>
+            </Link>
+            <Link href="/keurmerken/verificatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Verificatie waterkwaliteit</h3>
+              <p className="text-sm text-gray-600">Hoe u testresultaten zelf verifieert en wanneer een laboratoriumanalyse meer betrouwbaar is.</p>
+            </Link>
+          </div>
+        </section>
+
       </div>
     </>
   );

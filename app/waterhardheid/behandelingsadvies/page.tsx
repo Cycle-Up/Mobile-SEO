@@ -230,6 +230,20 @@ export default function BehandelingsadviesPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: werking ontharder</h3>
+              <p className="text-sm text-gray-600">Hoe een ionenwisselende ontharder calcium en magnesium vervangt door natrium voor zacht water.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Hard water keuzehulp</h3>
+              <p className="text-sm text-gray-600">Welke onthardertechniek past bij uw waterhardheid en huishoudgrootte.</p>
+            </Link>
+          </div>
+        </section>
+
         <div className="mt-10">
           <CTABanner context="waterhardheid" />
         </div>

@@ -221,6 +221,20 @@ export default function EffectOpKoffiePage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/beste-waterfilter/koffie-thee" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Beste filter voor koffie en thee</h3>
+              <p className="text-sm text-gray-600">Welke waterfilter optimaal is voor espresso-extractie en welke TDS-waarde barista&apos;s adviseren.</p>
+            </Link>
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool voor koffiewater</h3>
+              <p className="text-sm text-gray-600">Hoe actief kool chloor en smaakafwijkingen verwijdert voor optimale koffieextractie.</p>
+            </Link>
+          </div>
+        </section>
+
         <div className="mt-10">
           <CTABanner context="waterhardheid" />
         </div>
