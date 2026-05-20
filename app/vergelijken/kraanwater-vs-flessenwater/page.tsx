@@ -260,6 +260,20 @@ export default function KraanwaterVsFlessenwaterPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS: kraanwater vs. flessenwater</h3>
+              <p className="text-sm text-gray-600">Hoe Nederlandse waterbedrijven omgaan met PFAS en wat onderzoek toont over PFAS in flessenwater.</p>
+            </Link>
+            <Link href="/drinkwaternormen/eu-drinkwaterrichtlijn" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">EU drinkwaterrichtlijn 2020/2184</h3>
+              <p className="text-sm text-gray-600">Welke normen kraanwater moet halen onder de EU-richtlijn en hoe dat zich verhoudt tot flessenwaternormen.</p>
+            </Link>
+          </div>
+        </section>
+
         <div className="mt-10">
           <CTABanner context="osmose" />
         </div>
