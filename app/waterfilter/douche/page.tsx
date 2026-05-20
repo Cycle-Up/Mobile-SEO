@@ -189,6 +189,28 @@ export default function WaterfilterDouchePage() {
           ))}
         </div>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief koolfilter uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe actief kool chloor, geur en organische stoffen uit water verwijdert.</p>
+          </a>
+          <a href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen uit water</h3>
+            <p className="text-sm text-gray-600">Welk filter verwijdert chloor en chlooraminen het meest effectief?</p>
+          </a>
+          <a href="/waterfilter/keuken-installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter keuken installatie</h3>
+            <p className="text-sm text-gray-600">Stap-voor-stap handleiding voor het plaatsen van een onderkraan waterfilter.</p>
+          </a>
+          <a href="/waterhardheid/behandelingsadvies" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheid behandelingsadvies</h3>
+            <p className="text-sm text-gray-600">Welke aanpak past het beste bij uw waterhardheidsniveau?</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">

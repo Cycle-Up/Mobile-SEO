@@ -294,6 +294,28 @@ export default function WaterfilterHondKatPage() {
           <Link href="/leidingwater/verontreinigingen" className="text-[#005F8A] underline">verontreinigingen in leidingwater</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/waterfilter/baby" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor baby</h3>
+            <p className="text-sm text-gray-600">Veilig drinkwater voor zuigelingen: welk filter verwijdert nitraat, lood en PFAS?</p>
+          </a>
+          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief koolfilter uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe actief kool chloor, geur en organische stoffen uit water verwijdert.</p>
+          </a>
+          <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Lood in drinkwater filteren</h3>
+            <p className="text-sm text-gray-600">Hoe verwijder je lood uit drinkwater en welk filter is het meest effectief?</p>
+          </a>
+          <a href="/waterfilter/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter en gezondheid</h3>
+            <p className="text-sm text-gray-600">Overzicht van gezondheidsrelevante stoffen in kraanwater en welk filter wat verwijdert.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

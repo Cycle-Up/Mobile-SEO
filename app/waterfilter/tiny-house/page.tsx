@@ -256,6 +256,28 @@ export default function WaterfilterTinyHousePage() {
           Voor gebruik op leidingwater is dit een uitstekende investering. Combineer de kokend waterkraan met een osmosefilter voor zowel het kokende als het gekoelde gefilterde water uit dezelfde installatie. Op off-grid stroom vereist de boiler een omvormer (230V) of een DC-variant (12V/24V systemen zijn beschikbaar).
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/beste-waterfilter/woonboot" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor woonboot</h3>
+              <p className="text-sm text-gray-600">Compacte en off-grid filteroplossingen voor leven op het water.</p>
+            </Link>
+            <Link href="/waterfilter/huurwoning" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter in een huurwoning</h3>
+              <p className="text-sm text-gray-600">Welke waterfilters plaatst u zonder permanente aanpassingen in een huurwoning?</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
+              <p className="text-sm text-gray-600">Hoe osmosefiltratie werkt en waarom het ook off-grid zonder stroom kan.</p>
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter op budget kiezen</h3>
+              <p className="text-sm text-gray-600">De beste betaalbare filteropties voor een tiny house of kleine ruimte.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

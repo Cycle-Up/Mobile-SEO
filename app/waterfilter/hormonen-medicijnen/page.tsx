@@ -334,6 +334,28 @@ export default function HormonenMedicijnenPage() {
           .
         </p>
 
+        <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/stoffen-in-drinkwater/hormonen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Hormonen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Uitgebreide informatie over welke hormonen in drinkwater voorkomen en wat de gezondheidseffecten zijn.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose medicijnresten en hormonen effectief uit drinkwater verwijdert.</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Overzicht van de Europese en Nederlandse normen voor drinkwaterkwaliteit en wat ontbreekt voor medicijnen.</p>
+          </Link>
+          <Link href="/waterfilter/hormonen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter hormonen</h3>
+            <p className="text-sm text-gray-600">Welke waterfilters hormonen zoals ethinylestradiol effectief verwijderen en hoe ze werken.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <section className="mt-8 mb-8">

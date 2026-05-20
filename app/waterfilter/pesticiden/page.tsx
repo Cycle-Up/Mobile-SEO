@@ -356,6 +356,28 @@ export default function WaterfilterPesticidenPage() {
           <Link href="/waterkwaliteit/test" className="text-[#005F8A] underline">waterkwaliteit kunt testen</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/stoffen-in-drinkwater/pesticiden" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Pesticiden in drinkwater</h3>
+            <p className="text-sm text-gray-600">Uitgebreid overzicht van pesticiden in drinkwater: bronnen, normen en risicogebieden in Nederland.</p>
+          </Link>
+          <Link href="/waterfilter/glyfosaat" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Glyfosaat in drinkwater</h3>
+            <p className="text-sm text-gray-600">Glyfosaat en AMPA in drinkwater: risicos, EU-norm en de beste filteroplossingen.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose werkt en waarom het de meest effectieve methode is voor pesticidenverwijdering.</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Complete gids over EU- en Nederlandse drinkwaternormen voor alle relevante stoffen.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

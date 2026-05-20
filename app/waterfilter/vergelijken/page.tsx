@@ -661,6 +661,28 @@ export default function WaterfilterVergelijkenPage() {
           </Link>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/vergelijken/waterfilter-vs-waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter vs. waterontharder</h3>
+              <p className="text-sm text-gray-600">Wat zijn de verschillen en wanneer kiest u voor welk systeem?</p>
+            </Link>
+            <Link href="/vergelijken/osmose-vs-filterkan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmose vs. filterkan vergelijken</h3>
+              <p className="text-sm text-gray-600">Kosten, kwaliteit en gebruiksgemak van osmose versus een Brita-filterkan.</p>
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter op budget kiezen</h3>
+              <p className="text-sm text-gray-600">Welk waterfilter past bij uw budget? Overzicht van de goedkoopste opties.</p>
+            </Link>
+            <Link href="/filtertechnieken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Alle filtertechnieken</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle beschikbare filtertechnologieen: van koolstof tot osmose.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">

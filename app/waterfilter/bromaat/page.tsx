@@ -272,6 +272,28 @@ export default function WaterfilterBromaatPage() {
           ))}
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Chloor-bijproducten in drinkwater</h3>
+            <p className="text-sm text-gray-600">Trihalomethanen, bromaat en andere bijproducten van chloordesinfectie: risicos en normen.</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Overzicht van EU- en WHO-normen voor drinkwaterkwaliteit en wat ze betekenen voor consumenten.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en waarom is het de meest effectieve thuisfiltratiemethode?</p>
+          </Link>
+          <Link href="/waterfilter/chloor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Chloor in drinkwater filteren</h3>
+            <p className="text-sm text-gray-600">Chloor uit kraanwater verwijderen: welke filters werken en waarom verschilt chloor van bromaat.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <p className="text-gray-600 text-sm mt-6">

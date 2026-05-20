@@ -333,6 +333,28 @@ export default function ChloorVerwijderenPage() {
           Epidemiologisch onderzoek toont een associatie tussen langdurige blootstelling aan THM-concentraties boven 70 µg/L en blaaskanker. Nederlandse leidingwaterbedrijven handhaven niveaus ruim onder de norm. Wilt u alsnog de maximale zekerheid? Een osmosefilter verwijdert THM&rsquo;s effectief — koolstoffilters verwijderen ze deels.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief koolfiltratie</h3>
+            <p className="text-sm text-gray-600">Hoe actief kool werkt, welke stoffen het adsorbeert en hoe u het juiste filter kiest.</p>
+          </a>
+          <a href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Chloor-bijproducten in drinkwater</h3>
+            <p className="text-sm text-gray-600">Trihalomethanen, bromaat en andere bijproducten van chloordesinfectie: risicos en normen.</p>
+          </a>
+          <a href="/waterfilter/geur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor geur</h3>
+            <p className="text-sm text-gray-600">Onaangename geur uit kraanwater verwijderen: oorzaken en de beste filteroplossingen.</p>
+          </a>
+          <a href="/onderhoud/koolstoffilter-levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Levensduur koolstoffilter</h3>
+            <p className="text-sm text-gray-600">Hoe lang gaat een koolstoffilter mee en wanneer is het tijd om het te vervangen?</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

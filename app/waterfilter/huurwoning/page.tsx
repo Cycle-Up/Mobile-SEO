@@ -356,6 +356,28 @@ export default function WaterfilterHuurwoningPage() {
         <p className="text-gray-600 text-sm">
           Lees ook: <a href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</a>, <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a>.
         </p>
+
+        <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/keuzehulp/huurwoning" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp huurwoning</h3>
+            <p className="text-sm text-gray-600">Persoonlijk advies voor het kiezen van het juiste waterfilter als huurder.</p>
+          </a>
+          <a href="/beste-waterfilter/huurwoning" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor huurwoning</h3>
+            <p className="text-sm text-gray-600">Rangschikking van de beste waterfilters speciaal geselecteerd voor huurders.</p>
+          </a>
+          <a href="/waterfilter/onder-aanrecht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter onder aanrecht</h3>
+            <p className="text-sm text-gray-600">Alles over onder-aanrecht waterfilters: installatie, kosten en of het past in een huurwoning.</p>
+          </a>
+          <a href="/waterfilter/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter kopen</h3>
+            <p className="text-sm text-gray-600">Praktische koopgids voor waterfilters: worauf je let bij prijs, kwaliteit en installatie.</p>
+          </a>
+        </div>
+      </section>
       </main>
     </>
   );

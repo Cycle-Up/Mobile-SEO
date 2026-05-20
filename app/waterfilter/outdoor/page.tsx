@@ -169,6 +169,28 @@ export default function WaterfilterOutdoorPage() {
           ))}
         </div>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Reisfilter water</h3>
+            <p className="text-sm text-gray-600">Beste reisfilters voor kamperen, trekken en reizen: LifeStraw, Sawyer en Katadyn vergeleken.</p>
+          </a>
+          <a href="/waterfilter/camper" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor camper</h3>
+            <p className="text-sm text-gray-600">Compacte waterfilteroplossingen speciaal voor gebruik in campers en caravans.</p>
+          </a>
+          <a href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie</h3>
+            <p className="text-sm text-gray-600">Hoe UV-sterilisatie werkt en wanneer het de juiste keuze is voor veilig drinkwater.</p>
+          </a>
+          <a href="/waterfilter/sediment" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Sedimentfilter</h3>
+            <p className="text-sm text-gray-600">Wanneer een sedimentfilter nodig is, micronklassen en toepassing als voorfilter.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">

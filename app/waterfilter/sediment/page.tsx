@@ -397,6 +397,28 @@ export default function WaterfilterSedimentPage() {
           <Link href="/waterfilter/arseen" className="text-[#005F8A] underline">osmosefilters voor verontreinigingen</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/sedimentfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Sedimentfilter techniek</h3>
+            <p className="text-sm text-gray-600">Diepgaande uitleg over de techniek achter sedimentfilters: micronklassen, filtertypen en onderhoud.</p>
+          </Link>
+          <Link href="/waterfilter/keuken-installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter keuken installatie</h3>
+            <p className="text-sm text-gray-600">Hoe u een waterfilter onder het aanrecht installeert met sedimentfilter als verplichte eerste trap.</p>
+          </Link>
+          <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter vervangen</h3>
+            <p className="text-sm text-gray-600">Stap-voor-stap handleiding voor het vervangen van filtercartridges inclusief het sedimentvoorfilter.</p>
+          </Link>
+          <Link href="/waterfilter/onderhoud" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter onderhoud</h3>
+            <p className="text-sm text-gray-600">Alles over het onderhoud van waterfilters: wanneer vervangen, hoe reinigen en wat de kosten zijn.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

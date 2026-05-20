@@ -363,6 +363,28 @@ export default function WaterfilterNieuwbouwPage() {
         <p className="text-gray-600 text-sm">
           Lees ook: <a href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</a>, <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit Nederland</a>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/waterfilter/keuken-installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter keuken installatie</h3>
+              <p className="text-sm text-gray-600">Tips voor installatie onder aanrecht bij een nieuwe keuken.</p>
+            </a>
+            <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Lood in drinkwater</h3>
+              <p className="text-sm text-gray-600">Risico's en filteroplossingen voor lood in kraanwater.</p>
+            </a>
+            <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
+              <p className="text-sm text-gray-600">Hoe werkt een RO-membraan en wat filtert het?</p>
+            </a>
+            <a href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor een appartement</h3>
+              <p className="text-sm text-gray-600">Welk systeem past in een kleinere ruimte?</p>
+            </a>
+          </div>
+        </section>
       </main>
     </>
   );

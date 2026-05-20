@@ -261,6 +261,28 @@ export default function WaterfilterBedrijfPage() {
           en WRAS (Groot-Brittannie). Vraag altijd om certificaatdocumentatie bij aanschaf of huur.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/zakelijk/kantoor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor kantoor</h3>
+              <p className="text-sm text-gray-600">Welke waterfilteroplossing past bij een kantoor met meerdere medewerkers?</p>
+            </Link>
+            <Link href="/zakelijk/horeca" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor horeca</h3>
+              <p className="text-sm text-gray-600">Wat zijn de eisen aan waterfilters in de horeca en welke systemen voldoen?</p>
+            </Link>
+            <Link href="/zakelijk/waterkoeler-vs-filter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterkoeler vs waterfilter zakelijk</h3>
+              <p className="text-sm text-gray-600">Wat is het verschil en welke oplossing is het meest kostenefficiënt voor uw bedrijf?</p>
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp: waterfilter op budget</h3>
+              <p className="text-sm text-gray-600">Wat is de beste waterfilter als je een beperkt budget hebt?</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

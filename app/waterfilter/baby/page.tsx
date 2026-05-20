@@ -185,6 +185,28 @@ export default function WaterfilterBabyPage() {
         <p className="text-gray-600 text-sm">
           Lees ook: <a href="/drinkwater/baby" className="text-[#005F8A] underline">Drinkwater voor baby: welk water is veilig?</a> en <a href="/kennisbank/waterfilter-baby" className="text-[#005F8A] underline">waterfilter voor babyvoeding: complete gids</a>.
         </p>
+
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/keuzehulp/baby-gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp: waterfilter voor baby en gezin</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter is het veiligst voor een gezin met jonge kinderen?</p>
+          </a>
+          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken: omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en wat verwijdert het uit drinkwater?</p>
+          </a>
+          <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Lood in drinkwater filteren</h3>
+            <p className="text-sm text-gray-600">Hoe verwijder je lood uit drinkwater en welk filter is het meest effectief?</p>
+          </a>
+          <a href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor appartement</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter past in een appartement zonder grote verbouwing?</p>
+          </a>
+        </div>
+      </section>
       </main>
     </>
   );

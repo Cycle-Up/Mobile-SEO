@@ -490,6 +490,28 @@ export default function OsmoseVsKoolstofPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/vergelijken/waterfilter-vs-waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter vs waterontharder</h3>
+            <p className="text-sm text-gray-600">Wanneer kies je voor een ontharder en wanneer voor een filter?</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose techniek</h3>
+            <p className="text-sm text-gray-600">Diepgaande uitleg over hoe een RO-membraan werkt.</p>
+          </Link>
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
+            <p className="text-sm text-gray-600">Hoe adsorptie werkt en welke stoffen kool effectief verwijdert.</p>
+          </Link>
+          <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter kiezen op budget</h3>
+            <p className="text-sm text-gray-600">Welk systeem past bij jouw budget en waterkwaliteitsbehoefte?</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

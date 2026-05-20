@@ -212,6 +212,28 @@ export default function WaterfilterCamperPage() {
         <p className="text-gray-600 text-sm">
           Lees ook: <a href="/kennisbank/waterfilter-camper" className="text-[#005F8A] underline">Waterfilter voor camper – praktisch gids</a> en <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</a>.
         </p>
+
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Reisfilter</h3>
+            <p className="text-sm text-gray-600">Draagbare waterfilters voor op reis: van UV-pennen tot compacte holle-vezelfilters.</p>
+          </a>
+          <a href="/waterfilter/outdoor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Outdoor waterfilter</h3>
+            <p className="text-sm text-gray-600">Waterfilters voor buiten, wandelen en kamperen: lichtgewicht en betrouwbaar.</p>
+          </a>
+          <a href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie</h3>
+            <p className="text-sm text-gray-600">Hoe UV-sterilisatie bacterien en virussen vernietigt zonder chemicalien toe te voegen.</p>
+          </a>
+          <a href="/waterfilter/sediment" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Sedimentfilter</h3>
+            <p className="text-sm text-gray-600">Hoe een sedimentfilter deeltjes en troebel water aanpakt als eerste stap in uw filtersysteem.</p>
+          </a>
+        </div>
+      </section>
       </main>
     </>
   );

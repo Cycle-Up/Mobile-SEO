@@ -244,6 +244,28 @@ export default function WaterfilterBootJachtPage() {
           Dit is een complete en betaalbare filteroplossing voor de Nederlandse watersporter, zonder de kosten van een marine watermaker.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/waterfilter/voor-aquarium" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor aquarium</h3>
+            <p className="text-sm text-gray-600">Schoon water voor zoetwater- en zoutwateraquaria: filtertypen, pompen en onderhoud.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en wanneer is het de beste keuze voor waterfiltratie?</p>
+          </Link>
+          <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter vervangen</h3>
+            <p className="text-sm text-gray-600">Wanneer en hoe vervangt u de membraan en filters van uw osmosesysteem?</p>
+          </Link>
+          <Link href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Reisfilter</h3>
+            <p className="text-sm text-gray-600">Draagbare waterfilters voor op reis: van UV-pennen tot compacte holle-vezelfilters.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

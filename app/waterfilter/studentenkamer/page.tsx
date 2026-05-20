@@ -245,6 +245,28 @@ export default function StudentenkamerWaterfilterPage() {
           Zelfs de eenvoudigste filterkan betaalt zichzelf binnen twee maanden terug ten opzichte van flessenwater. Over vier jaar studie bespaart u met gefilterd kraanwater gemakkelijk 1.000 tot 2.000 euro.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/beste-waterfilter/studentenkamer" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor studentenkamer</h3>
+            <p className="text-sm text-gray-600">Redactietips: de beste compacte waterfilters specifiek getest voor studentenkamers en kleine appartementen.</p>
+          </Link>
+          <Link href="/waterfilter/huurwoning" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor huurwoning</h3>
+            <p className="text-sm text-gray-600">Waterfilters zonder installatie of boren: de beste opties voor huurders die geen aanpassingen mogen doen.</p>
+          </Link>
+          <Link href="/waterfilter/kan-vs-kraan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkan vs kraanfilter</h3>
+            <p className="text-sm text-gray-600">Filterkan of kraanmontage filter: vergelijking op kosten, gebruiksgemak en filterwerking.</p>
+          </Link>
+          <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp op budget</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter past bij uw budget? Van goedkope filterkan tot complete osmose-installatie.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

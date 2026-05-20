@@ -250,6 +250,28 @@ export default function VijverfilterPage() {
           Vijverwater bevat E. coli, algen, visparasieten, ammoniak, zware metalen en talloze andere organismen. Het is absoluut niet geschikt als drinkwaterbron, ook niet na behandeling met een huishoudelijk filter. Drinkwater voor de vijver bijvullen kan gewoon met leidingwater; laat het water desgewenst een dag staan zodat chloor kan verdampen.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterfilter/tuin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor de tuin</h3>
+              <p className="text-sm text-gray-600">Filteropties voor planten, beregeningssystemen en vijvers in uw tuin.</p>
+            </Link>
+            <Link href="/waterfilter/voor-aquarium" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor aquarium</h3>
+              <p className="text-sm text-gray-600">Osmosewater voor zoet- en zoutwateraquaria: GH, KH en TDS instellen.</p>
+            </Link>
+            <Link href="/waterfilter/aquarium" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Aquariumfilter vergelijken</h3>
+              <p className="text-sm text-gray-600">Vergelijking van de beste aquariumfilters voor helder en gezond water.</p>
+            </Link>
+            <Link href="/filtertechnieken/ultrafiltratie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ultrafiltratie techniek</h3>
+              <p className="text-sm text-gray-600">Hoe ultrafiltratie werkt voor vijver- en buitenwaterfiltratie.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

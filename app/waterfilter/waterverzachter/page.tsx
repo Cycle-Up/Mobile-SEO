@@ -342,6 +342,28 @@ export default function WaterfilterVsWaterverzachterPage() {
           onderbouwing.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterontharder/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Hoe werkt een waterontharder?</h3>
+              <p className="text-sm text-gray-600">Uitleg over ionenwisseling en hoe een waterontharder calcium en magnesium verwijdert.</p>
+            </Link>
+            <Link href="/vergelijken/waterfilter-vs-waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter vs waterontharder</h3>
+              <p className="text-sm text-gray-600">Vergelijking van waterfilter en waterontharder: wat zijn de verschillen en wanneer kies je wat?</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling als filtertechniek</h3>
+              <p className="text-sm text-gray-600">Diepgaande uitleg over de ionenwisselaartechniek en toepassingen in waterbehandeling.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp hard water</h3>
+              <p className="text-sm text-gray-600">Vind de juiste aanpak voor jouw hardwaterprobleem met onze stap-voor-stap keuzehulp.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

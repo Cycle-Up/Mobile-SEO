@@ -407,6 +407,28 @@ export default function WaterfilterGeurPage() {
           </li>
         </ul>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief koolfilter uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe actief kool chloor, geur en organische stoffen uit water verwijdert.</p>
+          </Link>
+          <Link href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen uit water</h3>
+            <p className="text-sm text-gray-600">Welk filter verwijdert chloor en chlooraminen het meest effectief?</p>
+          </Link>
+          <Link href="/keuzehulp/geur-smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp geur en smaak</h3>
+            <p className="text-sm text-gray-600">Vind het juiste filter op basis van het type geur of smaak in uw water.</p>
+          </Link>
+          <Link href="/onderhoud/koolstoffilter-levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Levensduur koolstoffilter</h3>
+            <p className="text-sm text-gray-600">Wanneer vervangt u een koolstoffilterpatroon en hoe herkent u slijtage?</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

@@ -351,6 +351,28 @@ export default function WaterfilterIjzerPage() {
           <a href="/waterfilter/soorten" className="text-[#005F8A] underline">waterfilter soorten vergelijken</a>.
         </p>
 
+        <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Welke zware metalen in drinkwater voorkomen, wat de risicos zijn en hoe je ze verwijdert.</p>
+          </a>
+          <a href="/waterfilter/mangaan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter mangaan</h3>
+            <p className="text-sm text-gray-600">Mangaan in water filteren: zwarte vlekken, oorzaken en welke filters mangaan effectief verwijderen.</p>
+          </a>
+          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose ijzer en andere opgeloste stoffen uit drinkwater verwijdert.</p>
+          </a>
+          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">De EU- en WHO-normen voor ijzer en andere stoffen in drinkwater en wat ze betekenen.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

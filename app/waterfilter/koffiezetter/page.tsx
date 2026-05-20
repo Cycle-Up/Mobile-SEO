@@ -440,6 +440,28 @@ export default function WaterfilterKoffiezetterPage() {
           </ol>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/waterfilter/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter kopen</h3>
+            <p className="text-sm text-gray-600">Praktische koopgids voor waterfilters: worauf je let bij prijs, kwaliteit en installatie.</p>
+          </Link>
+          <Link href="/waterhardheid/effect-op-koffie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Effect van waterhardheid op koffie</h3>
+            <p className="text-sm text-gray-600">Hoe waterhardheid de smaak van koffie beinvloedt en wat de ideale waterhardheid is voor espresso.</p>
+          </Link>
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtertechniek</h3>
+            <p className="text-sm text-gray-600">Hoe actief kool werkt in koffiezetapparaat-filters en wat het doet met de smaakvormende stoffen.</p>
+          </Link>
+          <Link href="/onderhoud/koolstoffilter-levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Levensduur koolstoffilter</h3>
+            <p className="text-sm text-gray-600">Hoe lang gaat een koolstoffilter mee en wanneer is vervanging nodig voor optimale koffiekwaliteit.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

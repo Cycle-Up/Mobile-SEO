@@ -343,6 +343,28 @@ export default function TDSWaterPage() {
           Met een TDS-meter kun je eenvoudig controleren of je osmosefilter goed werkt: na het RO-membraan zou de TDS ten minste 90% lager moeten zijn dan het ingaande water. Als dit niet het geval is, is het membraan mogelijk beschadigd of aan vervanging toe. Lees meer over dit principe in ons artikel over <a href="/osmose-water/gezondheidsvoordelen" className="text-[#005F8A] underline">gezondheidsvoordelen van osmosewater</a>.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
+              <p className="text-sm text-gray-600">Hoe omgekeerde osmose TDS drastisch verlaagt en water ultrazuiver maakt.</p>
+            </a>
+            <a href="/waterhardheid/testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheid testen</h3>
+              <p className="text-sm text-gray-600">Meet de hardheid van uw kraanwater en begrijp de relatie met TDS.</p>
+            </a>
+            <a href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter vervangen</h3>
+              <p className="text-sm text-gray-600">Wanneer en hoe u het membraan en filters van uw osmosesysteem vervangt.</p>
+            </a>
+            <a href="/waterfilter/hardheidstest" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter hardheidstest</h3>
+              <p className="text-sm text-gray-600">Test de hardheid van uw water en ontdek welk filter het beste past.</p>
+            </a>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

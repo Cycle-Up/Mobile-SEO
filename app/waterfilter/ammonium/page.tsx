@@ -373,6 +373,28 @@ export default function WaterfilterAmmoniumPage() {
           niet het ammonium zelf maar de mogelijke aanwezigheid van pathogenen bij fecale verontreiniging.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische verontreinigingen</h3>
+            <p className="text-sm text-gray-600">Welke bacteriën en virussen kunnen in drinkwater zitten en hoe filter je ze?</p>
+          </Link>
+          <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken: ionenwisseling</h3>
+            <p className="text-sm text-gray-600">Hoe werkt ionenwisseling en voor welke stoffen is het de beste methode?</p>
+          </Link>
+          <Link href="/waterfilter/nitraat" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat verwijderen uit drinkwater</h3>
+            <p className="text-sm text-gray-600">Hoe verwijder je nitraat effectief en welk filter is het meest geschikt?</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Wat zijn de wettelijke normen voor drinkwaterkwaliteit in Nederland en de EU?</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

@@ -175,6 +175,28 @@ export default function WaterfilterSportPage() {
           ))}
         </div>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/waterfilter/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter en gezondheid</h3>
+            <p className="text-sm text-gray-600">Hoe een waterfilter bijdraagt aan betere gezondheid en welke stoffen u het beste kunt verwijderen.</p>
+          </a>
+          <a href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Reisfilter water</h3>
+            <p className="text-sm text-gray-600">Draagbare waterfilters voor sporters onderweg: LifeStraw, Sawyer en UV-pen vergeleken.</p>
+          </a>
+          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
+            <p className="text-sm text-gray-600">Hoe actief kool chloor en smaakstoffen verwijdert voor frisser en zuiverder drinkwater.</p>
+          </a>
+          <a href="/waterfilter/gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor gezin</h3>
+            <p className="text-sm text-gray-600">De beste waterfilteroplossingen voor gezinnen met een hoog waterverbruik en actieve levensstijl.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
       </main>
     </>

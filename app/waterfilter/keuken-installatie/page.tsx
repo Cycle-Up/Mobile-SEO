@@ -413,6 +413,28 @@ export default function WaterfilterKeukenInstallatiePage() {
           </div>
         </section>
 
+        <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/waterfilter/onder-aanrecht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter onder aanrecht</h3>
+            <p className="text-sm text-gray-600">Alles over onder-aanrecht waterfilters: typen, kosten en hoe je het juiste systeem kiest.</p>
+          </Link>
+          <Link href="/waterfilter/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter kopen</h3>
+            <p className="text-sm text-gray-600">Praktische koopgids: worauf je let bij prijs, kwaliteit en het type waterfilter voor thuis.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose werkt en waarom het populair is als onder-aanrecht installatie.</p>
+          </Link>
+          <Link href="/keuzehulp/huurwoning" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp huurwoning</h3>
+            <p className="text-sm text-gray-600">Waterfilter kiezen als huurder: welke opties zijn er zonder permanente installatie.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

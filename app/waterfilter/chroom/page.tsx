@@ -340,6 +340,28 @@ export default function WaterfilterChroomPage() {
           150 tot 300 euro.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Overzicht van zware metalen zoals lood, arseen en chroom in leidingwater: risicos en normen.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose zware metalen en ionen zoals chroom-6 verwijdert uit drinkwater.</p>
+          </Link>
+          <Link href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Lood in drinkwater filteren</h3>
+            <p className="text-sm text-gray-600">Lood in kraanwater: oorzaken, normen en de beste filteropties voor uw situatie.</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Overzicht van EU- en WHO-normen voor drinkwaterkwaliteit en wat ze betekenen voor consumenten.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

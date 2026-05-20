@@ -370,6 +370,28 @@ export default function WaterfilterKantoorPage() {
         <p className="text-gray-600 text-sm">
           Lees ook: <a href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</a>, <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle waterfiltersoorten</a>.
         </p>
+
+        <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/zakelijk/kantoor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter zakelijk kantoor</h3>
+            <p className="text-sm text-gray-600">Uitgebreid overzicht van waterfilteroplossingen voor kantooromgevingen van alle groottes.</p>
+          </a>
+          <a href="/zakelijk/waterkoeler-vs-filter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterkoeler vs waterfilter</h3>
+            <p className="text-sm text-gray-600">Vergelijk waterkoelers en waterfilters op kosten, onderhoud en waterkwaliteit voor de werkvloer.</p>
+          </a>
+          <a href="/waterfilter/bedrijf" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor bedrijf</h3>
+            <p className="text-sm text-gray-600">Waterfilteroplossingen voor bedrijven: van klein kantoor tot grote organisaties.</p>
+          </a>
+          <a href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor appartement</h3>
+            <p className="text-sm text-gray-600">De beste waterfilters voor appartementen en kleine ruimtes zonder installatieproblemen.</p>
+          </a>
+        </div>
+      </section>
       </main>
     </>
   );

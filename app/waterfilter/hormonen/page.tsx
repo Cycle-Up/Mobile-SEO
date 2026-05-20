@@ -271,6 +271,28 @@ export default function WaterfilterHormonenPage() {
           Het structurele probleem ligt bij rioolwaterzuiveringsinstallaties (rwzi) die niet zijn ontworpen voor medicijnverwijdering. Aanpassing van rwzi met ozonisatie en actieve koolfilters is een beleidsprioriteit in Nederland en de EU.
         </p>
 
+        <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/stoffen-in-drinkwater/hormonen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Hormonen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Uitgebreide informatie over welke hormonen in drinkwater voorkomen en wat de gezondheidseffecten zijn.</p>
+          </a>
+          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose hormonen en medicijnresten effectief uit drinkwater verwijdert.</p>
+          </a>
+          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Overzicht van de Europese en Nederlandse normen voor drinkwaterkwaliteit en wat ontbreekt.</p>
+          </a>
+          <a href="/waterfilter/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter en gezondheid</h3>
+            <p className="text-sm text-gray-600">Wat de gezondheidsvoordelen zijn van gefilterd drinkwater en voor wie het extra relevant is.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

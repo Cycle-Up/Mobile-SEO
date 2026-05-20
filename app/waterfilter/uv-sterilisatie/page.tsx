@@ -482,6 +482,28 @@ export default function UvSterilisatiePage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie filtertechniek</h3>
+              <p className="text-sm text-gray-600">Technische achtergrond van UV-C desinfectie en toepassingen in waterbehandeling.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische stoffen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Welke bacterien, virussen en parasieten kunnen in drinkwater voorkomen?</p>
+            </Link>
+            <Link href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Reisfilter voor veilig water onderweg</h3>
+              <p className="text-sm text-gray-600">Draagbare UV-filters en reisfilters voor gebruik in landen met onveilig water.</p>
+            </Link>
+            <Link href="/filtertechnieken/ultrafiltratie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ultrafiltratie techniek</h3>
+              <p className="text-sm text-gray-600">Hoe ultrafiltratie bacterien en virussen mechanisch tegenhoudt zonder UV.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

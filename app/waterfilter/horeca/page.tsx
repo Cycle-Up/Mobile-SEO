@@ -288,6 +288,28 @@ export default function WaterfilterHorecaPage() {
           Vraag uw accountant naar de Kleinschaligheidsinvesteringsaftrek (KIA) voor kleinere investeringen.
         </p>
 
+        <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/zakelijk/horeca" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter zakelijk horeca</h3>
+            <p className="text-sm text-gray-600">Overzicht van professionele waterfilteroplossingen specifiek voor de horecasector.</p>
+          </Link>
+          <Link href="/zakelijk/waterkoeler-vs-filter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterkoeler vs waterfilter</h3>
+            <p className="text-sm text-gray-600">Vergelijk waterkoelers en waterfilters op kosten, kwaliteit en gebruiksgemak voor bedrijven.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose werkt en waarom het de goudstandaard is voor horeca waterzuivering.</p>
+          </Link>
+          <Link href="/waterfilter/koffiezetter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor koffiezetter</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter past bij uw espressomachine of koffiezetapparaat voor optimale smaak.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

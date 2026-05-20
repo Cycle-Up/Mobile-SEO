@@ -432,6 +432,28 @@ export default function WaterfilterOnderhoudPage() {
           </p>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter filters vervangen</h3>
+            <p className="text-sm text-gray-600">Stap-voor-stap handleiding voor het wisselen van RO-filters.</p>
+          </Link>
+          <Link href="/onderhoud/koolstoffilter-levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Levensduur koolstoffilter</h3>
+            <p className="text-sm text-gray-600">Hoe lang gaat een actief koolfilter mee en wanneer vervangen?</p>
+          </Link>
+          <Link href="/onderhoud/storingen-oplossen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter storingen oplossen</h3>
+            <p className="text-sm text-gray-600">Veelvoorkomende problemen en oplossingen bij waterfilters.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose systemen</h3>
+            <p className="text-sm text-gray-600">Alles over RO-filtratie: werking, onderdelen en onderhoud.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

@@ -439,6 +439,28 @@ export default function WaterfilterMilieuPage() {
           </p>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/waterfilter/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter en gezondheid</h3>
+            <p className="text-sm text-gray-600">Wat zijn de gezondheidsvoordelen van gefilterd drinkwater?</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en wat zijn de milieu-implicaties?</p>
+          </Link>
+          <Link href="/waterfilter/microplastics" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Microplastics in drinkwater</h3>
+            <p className="text-sm text-gray-600">Hoe vermindert een waterfilter microplastics in uw drinkwater?</p>
+          </Link>
+          <Link href="/vergelijken/kraanwater-vs-flessenwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Kraanwater vs. flessenwater</h3>
+            <p className="text-sm text-gray-600">Volledige vergelijking van kwaliteit, kosten en milieu-impact.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         {/* Interne links */}

@@ -553,6 +553,28 @@ export default function NanoplasticsPage() {
           ))}
         </div>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/stoffen-in-drinkwater/microplastics" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Microplastics in drinkwater</h3>
+            <p className="text-sm text-gray-600">Wetenschappelijke achtergrond en normen voor microplastics in drinkwater.</p>
+          </Link>
+          <Link href="/waterfilter/microplastics" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter microplastics</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter verwijdert microplastics het meest effectief?</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en waarom houdt het nanoplastics tegen?</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen Nederland</h3>
+            <p className="text-sm text-gray-600">Actueel overzicht van EU- en Nederlandse normen voor drinkwaterkwaliteit.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <p className="text-gray-600 text-sm mt-6">

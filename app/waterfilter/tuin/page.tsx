@@ -449,6 +449,28 @@ export default function WaterfilterTuinPage() {
           </p>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterfilter/vijver" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Vijverfilter kiezen</h3>
+              <p className="text-sm text-gray-600">De beste vijverfilters voor helder water en gezonde vissen in uw tuin.</p>
+            </Link>
+            <Link href="/waterfilter/voor-aquarium" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor aquarium</h3>
+              <p className="text-sm text-gray-600">Osmosewater voor zoet- en zoutwateraquaria: GH, KH en TDS instellen.</p>
+            </Link>
+            <Link href="/filtertechnieken/ultrafiltratie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ultrafiltratie techniek</h3>
+              <p className="text-sm text-gray-600">Hoe ultrafiltratie werkt voor buitenwater en tuinirrigatie.</p>
+            </Link>
+            <Link href="/waterfilter/sediment" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Sedimentfilter voor de tuin</h3>
+              <p className="text-sm text-gray-600">Bescherm uw beregeningssysteem met een sedimentfilter als pre-filter.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

@@ -297,6 +297,28 @@ export default function WaterfilterOudereWoningPage() {
           <li>Bij kinderen jonger dan 6 jaar of zwangere vrouwen: gebruik uitsluitend osmosewater of flessenwater voor drinken en bereiden van voedsel</li>
         </ol>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/beste-waterfilter/ouder-huis" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor een ouder huis</h3>
+            <p className="text-sm text-gray-600">Aanbevelingen specifiek voor woningen met verouderde leidingen.</p>
+          </Link>
+          <Link href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Lood in drinkwater filteren</h3>
+            <p className="text-sm text-gray-600">Effectieve filteroplossingen voor loodverontreiniging.</p>
+          </Link>
+          <Link href="/waterfilter/nieuwbouw" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter in nieuwbouw</h3>
+            <p className="text-sm text-gray-600">Vergelijk de aanpak voor oudere woningen met nieuwbouw.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">RO verwijdert meer dan 95% van lood en andere zware metalen.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

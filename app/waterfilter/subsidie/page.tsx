@@ -389,6 +389,28 @@ export default function WaterfilterSubsidiePage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterfilter/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter kopen: complete gids</h3>
+              <p className="text-sm text-gray-600">Alles over het kiezen en aanschaffen van het juiste waterfilter voor thuis.</p>
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter op budget kiezen</h3>
+              <p className="text-sm text-gray-600">Welk waterfilter past bij uw budget? Overzicht van de goedkoopste opties.</p>
+            </Link>
+            <Link href="/waterfilter/abonnement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter abonnement</h3>
+              <p className="text-sm text-gray-600">Betaal maandelijks voor een waterfilter inclusief onderhoud en filtervervanging.</p>
+            </Link>
+            <Link href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor appartement</h3>
+              <p className="text-sm text-gray-600">Compacte waterfilters geschikt voor appartementen en kleine keukens.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">

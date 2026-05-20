@@ -524,6 +524,29 @@ export default function WaterfilterAbonnementPage() {
           </div>
         </section>
 
+        {/* Gerelateerde onderwerpen */}
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor appartement</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter past in een appartement zonder grote verbouwing?</p>
+          </Link>
+          <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Onderhoud: osmose filter vervangen</h3>
+            <p className="text-sm text-gray-600">Hoe en wanneer vervang je de filters van een osmosesysteem?</p>
+          </Link>
+          <Link href="/vergelijken/waterfilter-vs-waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter vs waterontharder</h3>
+            <p className="text-sm text-gray-600">Wat is het verschil en welke oplossing past bij jouw waterkwaliteit?</p>
+          </Link>
+          <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp: waterfilter op budget</h3>
+            <p className="text-sm text-gray-600">Wat is de beste waterfilter als je een beperkt budget hebt?</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

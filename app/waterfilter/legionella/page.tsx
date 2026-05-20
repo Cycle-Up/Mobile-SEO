@@ -252,6 +252,28 @@ export default function WaterfilterLegionellaPage() {
           In huurwoningen heeft de verhuurder een wettelijke legionellabeheersingsplicht op basis van het Drinkwaterbesluit. Bij klachten over watertemperatuur of stilstaand water kunt u de verhuurder aansprakelijk stellen.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/zakelijk/legionella-beheersplan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Legionella beheersplan zakelijk</h3>
+            <p className="text-sm text-gray-600">Wettelijke verplichtingen en praktische aanpak voor bedrijven en instellingen.</p>
+          </a>
+          <a href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische verontreinigingen</h3>
+            <p className="text-sm text-gray-600">Overzicht van bacterien, virussen en andere microbiologische risico's in drinkwater.</p>
+          </a>
+          <a href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe werkt UV-desinfectie en wanneer is het de beste keuze tegen bacterien?</p>
+          </a>
+          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen Nederland</h3>
+            <p className="text-sm text-gray-600">Actueel overzicht van EU- en Nederlandse normen voor drinkwaterkwaliteit.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

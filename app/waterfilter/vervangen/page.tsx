@@ -405,6 +405,28 @@ export default function WaterfilterVervangenPage() {
           </p>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter vervangen: stap voor stap</h3>
+              <p className="text-sm text-gray-600">Hoe u het membraan en de pre-filters van uw osmosesysteem vervangt.</p>
+            </Link>
+            <Link href="/onderhoud/koolstoffilter-levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Levensduur koolstoffilter</h3>
+              <p className="text-sm text-gray-600">Wanneer is een actief koolstoffilter uitgeput en hoe herkent u dat?</p>
+            </Link>
+            <Link href="/waterfilter/onderhoud" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter onderhoud</h3>
+              <p className="text-sm text-gray-600">Complete onderhoudsgids voor alle typen waterfilters thuis.</p>
+            </Link>
+            <Link href="/waterfilter/abonnement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter abonnement</h3>
+              <p className="text-sm text-gray-600">Nooit meer nadenken over filtervervanging met een onderhoudabonnement.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

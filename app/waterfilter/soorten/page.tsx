@@ -883,6 +883,28 @@ export default function WaterfilterSoortenPage() {
           </p>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle filtertechnieken: van sedimentfiltratie tot omgekeerde osmose en UV-sterilisatie.</p>
+          </Link>
+          <Link href="/vergelijken/waterfilter-vs-waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter vs waterontharder</h3>
+            <p className="text-sm text-gray-600">Wat is het verschil tussen een waterfilter en een waterontharder, en welke kiest u voor uw situatie?</p>
+          </Link>
+          <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp op budget</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter past bij uw budget? Van goedkope filterkan tot complete osmose-installatie.</p>
+          </Link>
+          <Link href="/waterfilter/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter kopen</h3>
+            <p className="text-sm text-gray-600">Praktische koopgids voor waterfilters: waar op te letten, welke merken en waar te kopen.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA Banner */}
         <CTABanner context="osmose" />
 

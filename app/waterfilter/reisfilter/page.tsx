@@ -343,6 +343,28 @@ export default function WaterfilterReisfilterPage() {
           </p>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/waterfilter/outdoor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Outdoor waterfilter</h3>
+            <p className="text-sm text-gray-600">De beste outdoor waterfilters voor wandelen, camping en reizen: typen vergeleken op gewicht en effectiviteit.</p>
+          </Link>
+          <Link href="/waterfilter/camper" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor camper</h3>
+            <p className="text-sm text-gray-600">Compacte waterfilteroplossingen speciaal voor gebruik in campers en caravans.</p>
+          </Link>
+          <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie</h3>
+            <p className="text-sm text-gray-600">Hoe UV-sterilisatie werkt en wanneer u het combineert met een mechanisch reisfilter voor maximale bescherming.</p>
+          </Link>
+          <Link href="/filtertechnieken/ultrafiltratie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Ultrafiltratie</h3>
+            <p className="text-sm text-gray-600">Ultrafiltratie verwijdert bacterien en virussen zonder chemicalien: werking en toepassingen uitgelegd.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <section id="faq" className="mt-10">
