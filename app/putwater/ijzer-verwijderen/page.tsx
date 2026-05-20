@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'IJzer verwijderen uit putwater: beluchting, zandfilter, kosten',
   description:
-    'IJzer (Fe2+/Fe3+) uit putwater verwijderen: beluchting plus zandfilter, oxidatiefilter, EU-norm 200 microgram per liter. Installatiekosten 600-1500 euro, onderhoud uitgelegd.',
+    'IJzer (Fe2+/Fe3+) uit putwater: beluchting plus zandfilter of oxidatiefilter. EU-norm 200 microgram/L. Installatiekosten 600-1500 euro uitgelegd.',
   alternates: { canonical: 'https://waterfilterplatform.nl/putwater/ijzer-verwijderen' },
 };
 
@@ -59,7 +59,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'IJzer verwijderen uit putwater: beluchting, zandfilter, kosten',
   description:
-    'IJzer (Fe2+/Fe3+) uit putwater verwijderen: beluchting plus zandfilter, oxidatiefilter, EU-norm 200 microgram per liter. Installatiekosten 600-1500 euro, onderhoud uitgelegd.',
+    'IJzer (Fe2+/Fe3+) uit putwater: beluchting plus zandfilter of oxidatiefilter. EU-norm 200 microgram/L. Installatiekosten 600-1500 euro uitgelegd.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/putwater/ijzer-verwijderen',

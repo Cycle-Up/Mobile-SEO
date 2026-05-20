@@ -319,6 +319,44 @@ export default function PutwaterPage() {
           ))}
         </div>
 
+        <section className="mt-10">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Putwater-onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/putwater/bacterien-testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Bacterien testen</h3>
+              <p className="text-sm text-gray-600">E. coli, coliformen en enterokokken: RIVM-procedure, labkosten en testfrequentie.</p>
+            </a>
+            <a href="/putwater/nitraat" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat in putwater</h3>
+              <p className="text-sm text-gray-600">Landbouwgebieden, EU-norm 50 mg/L en welke filters nitraat verwijderen.</p>
+            </a>
+            <a href="/putwater/ijzer-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">IJzer verwijderen</h3>
+              <p className="text-sm text-gray-600">Roestbruine vlekken, oxidatiefilter en kosten installatie ijzerverwijdering.</p>
+            </a>
+            <a href="/putwater/mangaan-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Mangaan verwijderen</h3>
+              <p className="text-sm text-gray-600">Zwarte aanslag in leidingen en hoe mangaanfilters werken.</p>
+            </a>
+            <a href="/putwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen</h3>
+              <p className="text-sm text-gray-600">Arseen, lood en koper uit geologie of corroderende leidingen.</p>
+            </a>
+            <a href="/putwater/uv-desinfectie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">UV-desinfectie</h3>
+              <p className="text-sm text-gray-600">UV-C lampen, dosering en pre-filtratie voor microbiologische veiligheid.</p>
+            </a>
+            <a href="/putwater/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">RO als compleet 5-traps filtersysteem voor putwater.</p>
+            </a>
+            <a href="/putwater/kosten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kosten en budget</h3>
+              <p className="text-sm text-gray-600">Van basis tot compleet systeem en jaarlijkse onderhoudskosten.</p>
+            </a>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <p className="text-gray-600 text-sm mt-6">

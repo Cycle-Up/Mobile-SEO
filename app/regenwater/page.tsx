@@ -271,6 +271,40 @@ export default function RegenwaterPage() {
           ))}
         </div>
 
+        <section className="mt-10">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Regenwater-toepassingen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/regenwater/filteren" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Regenwater filteren</h3>
+              <p className="text-sm text-gray-600">Filtervolgorde van dakvanger tot UV: welke stappen voor welk doel.</p>
+            </a>
+            <a href="/regenwater/drinken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Regenwater drinken</h3>
+              <p className="text-sm text-gray-600">Wettelijke status, behandelingsketen voor drinkwaterkwaliteit en risicos.</p>
+            </a>
+            <a href="/regenwater/tuin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Regenwater in de tuin</h3>
+              <p className="text-sm text-gray-600">Kalkarm gieten zonder filter, opvang via regenton en hergebruikpercentages.</p>
+            </a>
+            <a href="/regenwater/wc-doorspoelen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">WC-doorspoelen</h3>
+              <p className="text-sm text-gray-600">Separate leiding, 30-40% drinkwaterbesparing en gemeentelijke subsidies.</p>
+            </a>
+            <a href="/regenwater/wassen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Wasmachine</h3>
+              <p className="text-sm text-gray-600">0 dH hardheid bespaart 50% wasmiddel; sedimentfilter 100 micron volstaat.</p>
+            </a>
+            <a href="/regenwater/opslagtank" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Opslagtank kiezen</h3>
+              <p className="text-sm text-gray-600">Beton vs HDPE, 1000-10000L en dakoppervlak-berekening.</p>
+            </a>
+            <a href="/regenwater/pfas" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in regenwater</h3>
+              <p className="text-sm text-gray-600">Atmosferische depositie, NL-meetwaarden en welke filters PFAS verwijderen.</p>
+            </a>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <p className="text-gray-600 text-sm mt-6">

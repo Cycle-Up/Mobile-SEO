@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Zware metalen in putwater: arseen, lood, koper en nikkel',
   description:
-    'Zware metalen in putwater zoals arseen, lood, koper en nikkel ontstaan door geologie of corrosie. ICP-MS test detecteert ze; omgekeerde osmose verwijdert meer dan 97%.',
+    'Zware metalen in putwater (arseen, lood, koper, nikkel) ontstaan door geologie of corrosie. ICP-MS detecteert ze; osmose verwijdert meer dan 97%.',
   alternates: { canonical: 'https://waterfilterplatform.nl/putwater/zware-metalen' },
 };
 

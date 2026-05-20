@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Mangaan verwijderen uit putwater: mangaanfilter, KMnO4, kosten',
   description:
-    'Mangaan (Mn2+) uit putwater verwijderen: oorzaken, zwarte aanslag, EU-norm 50 microgram per liter, mangaanfilter met KMnO4-regeneratie en combinatiefilter Fe/Mn uitgelegd.',
+    'Mangaan (Mn2+) uit putwater: zwarte aanslag, EU-norm 50 microgram/L, mangaanfilter met KMnO4-regeneratie en combinatiefilter Fe/Mn vergeleken.',
   alternates: { canonical: 'https://waterfilterplatform.nl/putwater/mangaan-verwijderen' },
 };
 
@@ -59,7 +59,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Mangaan verwijderen uit putwater: mangaanfilter, KMnO4, kosten',
   description:
-    'Mangaan (Mn2+) uit putwater verwijderen: oorzaken, zwarte aanslag, EU-norm 50 microgram per liter, mangaanfilter met KMnO4-regeneratie en combinatiefilter Fe/Mn uitgelegd.',
+    'Mangaan (Mn2+) uit putwater: zwarte aanslag, EU-norm 50 microgram/L, mangaanfilter met KMnO4-regeneratie en combinatiefilter Fe/Mn vergeleken.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/putwater/mangaan-verwijderen',

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Omgekeerde osmose voor putwater: 5-traps zuivering compleet',
   description:
-    'Omgekeerde osmose verwijdert PFAS, zware metalen, nitraat en bacterien uit putwater. 5-traps systeem met minimaal 3 bar druk; capaciteit 200-600 liter per dag.',
+    'Omgekeerde osmose verwijdert PFAS, zware metalen, nitraat en bacterien uit putwater. 5-traps systeem, minimaal 3 bar druk, 200-600 liter per dag.',
   alternates: { canonical: 'https://waterfilterplatform.nl/putwater/omgekeerde-osmose' },
 };
 

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'UV-desinfectie voor putwater: dosering, kosten en onderhoud',
   description:
-    'UV-C lampen (254 nm) desinfecteren putwater met 30 mJ/cm2 dosering. Pre-filtratie onder 5 micrometer nodig, lampvervanging elk jaar, totaalkosten 350-900 euro installatie.',
+    'UV-C lampen (254 nm) desinfecteren putwater met 30 mJ/cm2 dosering. Pre-filtratie tot 5 micrometer nodig, jaarlijkse lampwissel, installatie 350-900 euro.',
   alternates: { canonical: 'https://waterfilterplatform.nl/putwater/uv-desinfectie' },
 };
 

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Putwater testen op bacterien: E. coli, coliformen, kosten',
   description:
-    'Test putwater op E. coli, coliforme bacterien en enterokokken via RIVM-procedure. Monstername, labkosten 80-150 euro, jaarlijks testen, sneltest vs labtest uitgelegd.',
+    'Test putwater op E. coli, coliformen en enterokokken via RIVM-procedure. Labkosten 80-150 euro, jaarlijks testen, sneltest vs labtest vergeleken.',
   alternates: { canonical: 'https://waterfilterplatform.nl/putwater/bacterien-testen' },
 };
 
@@ -59,7 +59,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Putwater testen op bacterien: E. coli, coliformen, kosten',
   description:
-    'Test putwater op E. coli, coliforme bacterien en enterokokken via RIVM-procedure. Monstername, labkosten 80-150 euro, jaarlijks testen, sneltest vs labtest uitgelegd.',
+    'Test putwater op E. coli, coliformen en enterokokken via RIVM-procedure. Labkosten 80-150 euro, jaarlijks testen, sneltest vs labtest vergeleken.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/putwater/bacterien-testen',

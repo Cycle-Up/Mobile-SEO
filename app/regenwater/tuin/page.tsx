@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Regenwater voor de tuin: opvang, voordelen en tot 50% besparing',
   description:
-    'Regenwater voor tuinbesproeiing: kalkarm, plantvriendelijk, geen filtering nodig. Regenton 200-1000 liter, hergebruik tot 50% van tuinverbruik bespaart fors.',
+    'Regenwater voor tuinbesproeiing: kalkarm, plantvriendelijk, geen filtering nodig. Regenton 200-1000 liter, tot 50% van tuinverbruik vervangen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/regenwater/tuin' },
 };
 
@@ -59,7 +59,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Regenwater voor de tuin: opvang, voordelen en tot 50% besparing',
   description:
-    'Regenwater voor tuinbesproeiing: kalkarm, plantvriendelijk, geen filtering nodig. Regenton 200-1000 liter, hergebruik tot 50% van tuinverbruik bespaart fors.',
+    'Regenwater voor tuinbesproeiing: kalkarm, plantvriendelijk, geen filtering nodig. Regenton 200-1000 liter, tot 50% van tuinverbruik vervangen.',
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/regenwater/tuin',
