@@ -305,6 +305,20 @@ export default function LegionellaBeheersplanPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische waterkwaliteit</h3>
+              <p className="text-sm text-gray-600">Wat legionella is, hoe het zich verspreidt en welke wettelijke beheerseisen gelden voor risicolocaties.</p>
+            </Link>
+            <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie tegen legionella</h3>
+              <p className="text-sm text-gray-600">Hoe UV-licht legionella-bacteriën inactiveert en wanneer dit als beheermaatregel passend is.</p>
+            </Link>
+          </div>
+        </section>
+
         <div className="mt-8">
           <CTABanner context="zakelijk" />
         </div>

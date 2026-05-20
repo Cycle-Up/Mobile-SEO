@@ -257,6 +257,20 @@ export default function ScholenKinderopvangPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in drinkwater scholen</h3>
+              <p className="text-sm text-gray-600">Hoe PFAS in drinkwater op scholen wordt gemonitord en welke filtertechniek effectief is bij kwetsbare doelgroepen.</p>
+            </Link>
+            <Link href="/keuzehulp/baby-gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor kinderen</h3>
+              <p className="text-sm text-gray-600">Welke verontreinigingen extra risicovol zijn voor kinderen en welke filtertechniek voldoende bescherming biedt.</p>
+            </Link>
+          </div>
+        </section>
+
         <div className="mt-8">
           <CTABanner context="zakelijk" />
         </div>
