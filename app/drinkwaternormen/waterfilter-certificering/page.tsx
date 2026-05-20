@@ -388,6 +388,20 @@ export default function WaterfilterCertificeringPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keurmerken/verificatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keurmerken: verificatie en transparantie</h3>
+              <p className="text-sm text-gray-600">Hoe u keurmerk-claims onafhankelijk verifieert via Kiwa, NSF en SGS-laboratorium-databases.</p>
+            </Link>
+            <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 osmose keurmerk</h3>
+              <p className="text-sm text-gray-600">Wat NSF 58 certificering inhoudt voor osmosefilters en welke verontreinigingen onafhankelijk getest worden.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>
