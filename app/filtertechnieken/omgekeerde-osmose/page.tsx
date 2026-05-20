@@ -270,6 +270,20 @@ export default function OmgekeerdeOsmosePage() {
           <Link href="/stoffen-in-drinkwater/zware-metalen" className="text-[#005F8A] underline">zware metalen in water</Link> en{" "}
           <Link href="/filtertechnieken/vergelijking" className="text-[#005F8A] underline">filtervergelijking tabel</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS-verwijdering met osmose</h3>
+              <p className="text-sm text-gray-600">Waarom RO 95-99% van PFAS verwijdert en de geldende EU-norm 2026 ruimschoots haalt.</p>
+            </Link>
+            <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF 58: het RO-keurmerk</h3>
+              <p className="text-sm text-gray-600">Wat NSF/ANSI 58 certificering inhoudt en welke verontreinigingen onafhankelijk worden getest.</p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );
