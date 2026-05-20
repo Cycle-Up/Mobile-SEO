@@ -337,6 +337,20 @@ export default function BabyGezinPage() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in drinkwater: risico voor baby's</h3>
+              <p className="text-sm text-gray-600">Waarom PFAS-blootstelling extra risicovol is voor baby's en zwangeren en welke filtertechnieken effectief verwijderen.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose voor flesvoeding</h3>
+              <p className="text-sm text-gray-600">Hoe een osmosefilter babyflesvoeding voorziet van mineraal-arm water dat aansluit op melkpoeder-specificaties.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

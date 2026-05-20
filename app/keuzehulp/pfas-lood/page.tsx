@@ -259,6 +259,20 @@ export default function PfasLoodPage() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in drinkwater: bronnen en risico</h3>
+              <p className="text-sm text-gray-600">Wat PFAS zijn, hoe ze in drinkwater terechtkomen en welke gezondheidsrisico's wetenschappelijk zijn onderbouwd.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose verwijdert PFAS en lood</h3>
+              <p className="text-sm text-gray-600">Waarom RO de meest effectieve filtertechniek is voor PFAS, lood en zware metalen (95-99% verwijdering).</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>
