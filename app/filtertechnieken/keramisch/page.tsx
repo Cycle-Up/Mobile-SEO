@@ -238,6 +238,20 @@ export default function KeramischPage() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische verontreiniging</h3>
+              <p className="text-sm text-gray-600">Hoe bacteriën, virussen en parasieten in water terechtkomen en welke filtratie effectief is.</p>
+            </Link>
+            <Link href="/keurmerken/nsf-ansi-401" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF 401: keurmerk opkomende verontreinigingen</h3>
+              <p className="text-sm text-gray-600">Wat NSF 401 betekent voor keramische en geavanceerde filters bij medicijnresten en pesticiden.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="algemeen" />
       </div>
     </>

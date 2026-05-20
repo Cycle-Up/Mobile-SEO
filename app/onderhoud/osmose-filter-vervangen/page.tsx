@@ -314,6 +314,20 @@ export default function OsmoseFilterVervangenPage() {
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">Omgekeerde osmose uitleg</Link> en{" "}
           <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline font-medium">Hoe een omgekeerde osmose membraan werkt</Link>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose: werking</h3>
+              <p className="text-sm text-gray-600">Hoe het membraan en de voorfilters samenwerken en waarom voorfilters het membraan beschermen.</p>
+            </Link>
+            <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF 58: keurmerk osmose en filterlevensduur</h3>
+              <p className="text-sm text-gray-600">Wat NSF/ANSI 58 zegt over filterlevensduur en welke testmethoden gebruikt worden.</p>
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

@@ -242,6 +242,20 @@ export default function NanofiltrationPage() {
           </ul>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS verwijdering met nanofiltratie</h3>
+              <p className="text-sm text-gray-600">Hoe nanofiltratie PFAS, pesticiden en moleculen onder 1 nm tegenhoudt zonder volledige demineralisatie.</p>
+            </Link>
+            <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF 58: keurmerk membraanfilters</h3>
+              <p className="text-sm text-gray-600">Wat NSF 58 betekent voor membraanfiltratie inclusief nanofiltratie en RO.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>
