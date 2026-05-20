@@ -377,6 +377,28 @@ export default function WaterfilterZoutPage() {
           <a href="/waterfilter/nitraat" className="text-[#005F8A] underline">nitraat verwijderen met een waterfilter</a> voor meer filteropties.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/waterontharder/zout" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zout voor waterontharder</h3>
+              <p className="text-sm text-gray-600">Tabletzout, blokzout of granulaat voor de waterontharder: wat is het beste en voordeligst?</p>
+            </a>
+            <a href="/waterontharder/zout-gebruik" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zoutgebruik waterontharder</h3>
+              <p className="text-sm text-gray-600">Hoeveel zout verbruikt een waterontharder en hoe optimaliseer je het zoutverbruik?</p>
+            </a>
+            <a href="/waterfilter/waterverzachter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter of waterverzachter?</h3>
+              <p className="text-sm text-gray-600">Vergelijking van waterfilter en waterverzachter: wat zijn de verschillen en wanneer kies je wat?</p>
+            </a>
+            <a href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp hard water</h3>
+              <p className="text-sm text-gray-600">Vind de juiste aanpak voor jouw hardwaterprobleem met onze stap-voor-stap keuzehulp.</p>
+            </a>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

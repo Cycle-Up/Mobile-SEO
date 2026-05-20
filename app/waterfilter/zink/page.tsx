@@ -245,6 +245,28 @@ export default function WaterfilterZinkPage() {
           Een gecertificeerd laboratoriumonderzoek voor zink kost circa &euro;20-40. Een uitgebreidere meting inclusief lood, koper en cadmium kost &euro;60-120 en geeft een compleet beeld van metaalcontaminatie vanuit leidingen.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle zware metalen die in drinkwater kunnen voorkomen en de bijbehorende risicos.</p>
+            </a>
+            <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor lood</h3>
+              <p className="text-sm text-gray-600">Lood in drinkwater: bronnen, risicos en welke waterfilters lood effectief verwijderen.</p>
+            </a>
+            <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
+              <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en waarom is het de meest effectieve methode voor zware metalen?</p>
+            </a>
+            <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen Nederland</h3>
+              <p className="text-sm text-gray-600">Overzicht van de wettelijke normen voor drinkwater in Nederland en de EU.</p>
+            </a>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

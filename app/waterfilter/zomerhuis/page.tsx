@@ -247,6 +247,28 @@ export default function WaterfilterZomerhuisPage() {
           Voor chemische verontreinigingen zoals nitraat, pesticiden of zware metalen zijn portable filters onvoldoende. In dat geval is koken of een portable osmose-unit de enige betrouwbare oplossing.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterfilter/woonboot" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor woonboot</h3>
+              <p className="text-sm text-gray-600">Specifieke filteroplossingen voor woonboten met walwateraansluiting en beperkte ruimte.</p>
+            </Link>
+            <Link href="/waterfilter/tiny-house" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor tiny house</h3>
+              <p className="text-sm text-gray-600">Compacte waterfilteroplossingen voor tiny houses en kleine woonruimtes.</p>
+            </Link>
+            <Link href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Reisfilter voor onderweg</h3>
+              <p className="text-sm text-gray-600">Draagbare waterfilters voor op reis en als backup bij een vakantiehuis zonder vast filter.</p>
+            </Link>
+            <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie uitgelegd</h3>
+              <p className="text-sm text-gray-600">Hoe UV-sterilisatie bacterien en virussen doodt in drinkwater en wanneer het zinvol is.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">
