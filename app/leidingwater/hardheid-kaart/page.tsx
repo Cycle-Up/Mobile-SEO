@@ -480,6 +480,28 @@ export default function WaterhardheidKaartPage() {
           hardheid essentieel om de juiste bescherming voor uw apparaten te kiezen.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterhardheid/kaart" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheidskaart Nederland</h3>
+              <p className="text-sm text-gray-600">Interactieve kaart met de waterhardheid per regio en gemeente.</p>
+            </Link>
+            <Link href="/waterhardheid/per-provincie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheid per provincie</h3>
+              <p className="text-sm text-gray-600">Vergelijk de waterhardheid in alle Nederlandse provincies.</p>
+            </Link>
+            <Link href="/waterontharder/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Werking van een waterontharder</h3>
+              <p className="text-sm text-gray-600">Hoe een waterontharder kalkaanslag en hard water aanpakt.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp bij hard water</h3>
+              <p className="text-sm text-gray-600">Vind de juiste oplossing voor hard water in uw situatie.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

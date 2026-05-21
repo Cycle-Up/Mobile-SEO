@@ -499,6 +499,28 @@ export default function LeidingwaterKwaliteitPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+              <p className="text-sm text-gray-600">Wettelijke grenswaarden voor de kwaliteit van drinkwater in Nederland.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle stoffen die voorkomen in Nederlands drinkwater.</p>
+            </Link>
+            <Link href="/waterkwaliteit/nederland" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterkwaliteit in Nederland</h3>
+              <p className="text-sm text-gray-600">Actuele informatie over de kwaliteit van drinkwater per regio.</p>
+            </Link>
+            <Link href="/kraanwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kraanwater in Nederland</h3>
+              <p className="text-sm text-gray-600">Alles over de veiligheid en samenstelling van Nederlands kraanwater.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

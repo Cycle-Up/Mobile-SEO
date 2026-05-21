@@ -458,6 +458,28 @@ export default function LeidingwaterKwaliteitVerberenPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken voor drinkwater</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle filtertechnieken om uw drinkwaterkwaliteit te verbeteren.</p>
+            </Link>
+            <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp waterfilter</h3>
+              <p className="text-sm text-gray-600">Vind het juiste waterfilter op basis van uw waterkwaliteit en wensen.</p>
+            </Link>
+            <Link href="/waterfilter/soorten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Soorten waterfilters</h3>
+              <p className="text-sm text-gray-600">Van kraan- tot ondertafelfilters: vergelijk alle typen waterfilters.</p>
+            </Link>
+            <Link href="/kraanwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kraanwater in Nederland</h3>
+              <p className="text-sm text-gray-600">Alles over de veiligheid en samenstelling van Nederlands kraanwater.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

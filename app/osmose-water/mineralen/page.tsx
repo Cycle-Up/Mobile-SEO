@@ -372,6 +372,28 @@ export default function OsmoseMineralenPage() {
           <Link href="/osmose-water/remineraliseren" className="text-[#005F8A] underline">osmosewater remineraliseren</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/osmose-water/remineralisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Remineralisatie van osmosewater</h3>
+            <p className="text-sm text-gray-600">Hoe en waarom je mineralen toevoegt aan osmosewater.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/remineralisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Remineralisatie bij omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Remineralisatiefilters en -methoden voor osmosesystemen.</p>
+          </Link>
+          <Link href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en gezondheid</h3>
+            <p className="text-sm text-gray-600">De gezondheidseffecten van osmosewater dagelijks drinken.</p>
+          </Link>
+          <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Welke mineralen in drinkwater zitten en wat kalk doet.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

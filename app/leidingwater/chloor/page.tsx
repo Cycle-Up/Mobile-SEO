@@ -292,6 +292,50 @@ export default function ChloorLeidingwaterPage() {
           </div>
         </div>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Chloorbijproducten in drinkwater</h3>
+              <p className="text-sm text-gray-600">Informatie over trihalomethanen en andere bijproducten van chloordesinfectie.</p>
+            </Link>
+            <Link href="/koolstoffilter/chloor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor chloor</h3>
+              <p className="text-sm text-gray-600">Hoe een koolstoffilter chloor effectief uit leidingwater verwijdert.</p>
+            </Link>
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief-kool filtratie</h3>
+              <p className="text-sm text-gray-600">De werking van actief-kool als filtertechniek voor chloor en andere stoffen.</p>
+            </Link>
+            <Link href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen uit water</h3>
+              <p className="text-sm text-gray-600">Praktische opties om chloor en chloorsmaken uit kraanwater te verwijderen.</p>
+            </Link>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Chloor bijproducten in drinkwater</h3>
+              <p className="text-sm text-gray-600">Trihalomethanen en andere bijproducten die ontstaan bij chloordesinfectie.</p>
+            </Link>
+            <Link href="/koolstoffilter/chloor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor chloor</h3>
+              <p className="text-sm text-gray-600">Hoe een koolstoffilter chloor en chloorlucht effectief uit kraanwater verwijdert.</p>
+            </Link>
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
+              <p className="text-sm text-gray-600">Uitleg over actief kool als filtertechniek voor chloor, geur en smaak.</p>
+            </Link>
+            <Link href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen uit water</h3>
+              <p className="text-sm text-gray-600">Vergelijking van methoden en filters om chloor uit leidingwater te verwijderen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">
