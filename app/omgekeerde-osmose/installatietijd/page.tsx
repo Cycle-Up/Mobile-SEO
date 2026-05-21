@@ -326,6 +326,28 @@ export default function InstallatietijdPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Installatie</h3>
+            <p className="text-sm text-gray-600">Alles over het installeren van een omgekeerde osmose systeem.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/inbouw" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Inbouw</h3>
+            <p className="text-sm text-gray-600">Inbouwopties en wat u moet weten voordat u begint.</p>
+          </Link>
+          <Link href="/keuzehulp/installatie-type" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Installatietype kiezen</h3>
+            <p className="text-sm text-gray-600">Welk installatietype past het beste bij uw situatie?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Terug naar het hoofdoverzicht van omgekeerde osmose.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <section className="mt-8 mb-8">

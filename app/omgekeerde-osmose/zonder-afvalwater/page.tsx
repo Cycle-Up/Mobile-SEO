@@ -508,6 +508,28 @@ export default function ZonderAfvalwaterPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/afvalwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Afvalwater bij omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoeveel afvalwater produceert een osmosesysteem en hoe kunt u dit hergebruiken?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/rendement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Rendement van osmosefilters</h3>
+            <p className="text-sm text-gray-600">Hoe efficient is uw osmosesysteem en hoe kunt u het rendement verbeteren?</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechniek omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">De techniek achter RO-filtratie uitgelegd voor consumenten.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose overzicht</h3>
+            <p className="text-sm text-gray-600">Alles over omgekeerde osmose: werking, kosten, installatie en onderhoud.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

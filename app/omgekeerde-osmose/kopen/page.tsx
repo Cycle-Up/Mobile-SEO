@@ -426,6 +426,28 @@ export default function OsmoseKopenPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/vergelijken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Vergelijken</h3>
+            <p className="text-sm text-gray-600">Vergelijk verschillende omgekeerde osmose systemen naast elkaar.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/kosten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Kosten</h3>
+            <p className="text-sm text-gray-600">Wat kost een omgekeerde osmose systeem inclusief installatie en onderhoud?</p>
+          </Link>
+          <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 keurmerk</h3>
+            <p className="text-sm text-gray-600">Waarom dit certificaat belangrijk is bij het kopen van een RO-systeem.</p>
+          </Link>
+          <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp</h3>
+            <p className="text-sm text-gray-600">Beantwoord een paar vragen en vind het systeem dat bij u past.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

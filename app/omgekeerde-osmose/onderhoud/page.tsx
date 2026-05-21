@@ -394,6 +394,28 @@ export default function OmgekeerdeOsmoseOnderhoudPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmose filter vervangen</h3>
+            <p className="text-sm text-gray-600">Stap-voor-stap uitleg voor het vervangen van osmose filters.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/membraan-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Membraan vervangen</h3>
+            <p className="text-sm text-gray-600">Wanneer en hoe vervangt u het membraan van uw osmose systeem?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Levensduur</h3>
+            <p className="text-sm text-gray-600">Hoe lang gaat een omgekeerde osmose systeem mee?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Terug naar het hoofdoverzicht van omgekeerde osmose.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

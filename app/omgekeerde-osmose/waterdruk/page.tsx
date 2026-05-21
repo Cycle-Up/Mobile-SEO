@@ -296,6 +296,28 @@ export default function OsmoseWaterdrukPage() {
           Meet de tankdruk met een gewone fietspompmanometer via het ventiel op de onderzijde van de tank (water eerst aftappen). Is de druk hoger dan 0,5 bar, dan remt dit de productie omdat het membraan harder moet werken om de tank te vullen. Breng de druk terug naar 0,3-0,4 bar.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/boosterpomp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Boosterpomp voor osmose</h3>
+            <p className="text-sm text-gray-600">Wanneer heeft u een boosterpomp nodig en wat zijn de kosten?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/druk" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Druk bij osmosefilters</h3>
+            <p className="text-sm text-gray-600">Optimale drukwaarden voor een goed werkend osmosesysteem.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/membraandruk" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Membraandruk uitgelegd</h3>
+            <p className="text-sm text-gray-600">Hoe membraandruk de filtratiecapaciteit en levensduur beinvloedt.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose overzicht</h3>
+            <p className="text-sm text-gray-600">Alles over omgekeerde osmose: werking, kosten, installatie en onderhoud.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">
