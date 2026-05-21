@@ -408,28 +408,6 @@ export default function WaterhardheidMetenPage() {
           </div>
         </section>
 
-        <section className="mt-8">
-          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Link href="/waterhardheid/testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheid testen</h3>
-              <p className="text-sm text-gray-600">Verschillende methoden om de hardheid van uw leidingwater nauwkeurig te meten.</p>
-            </Link>
-            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
-              <p className="text-sm text-gray-600">Calcium, magnesium en bicarbonaat als oorzaak van waterhardheid uitgelegd.</p>
-            </Link>
-            <Link href="/waterontharder/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">Hoe werkt een waterontharder?</h3>
-              <p className="text-sm text-gray-600">Technische werking van waterontharders en wanneer ze zinvol zijn.</p>
-            </Link>
-            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp hard water</h3>
-              <p className="text-sm text-gray-600">Vind de beste oplossing voor hard water op basis van uw situatie.</p>
-            </Link>
-          </div>
-        </section>
-
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">
