@@ -304,6 +304,28 @@ export default function DrinkwaterfonteinHorecaPage() {
           garandeert ook tussen servicevisites in. Documenteer het onderhoud in uw HACCP-plan.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/zakelijk/sportschool-wellness" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Waterfilter voor sportschool en wellness</p>
+              <p className="text-xs text-gray-500">Zakelijke wateroplossingen voor sport en wellness</p>
+            </Link>
+            <Link href="/drinkwaterfontein/kopen" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Drinkwaterfontein kopen voor bedrijven</p>
+              <p className="text-xs text-gray-500">Koopgids met modellenvergelijking voor zakelijk gebruik</p>
+            </Link>
+            <Link href="/drinkwaterfontein/huren" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Huren voordelig voor horeca?</p>
+              <p className="text-xs text-gray-500">Vergelijking huren vs kopen voor horecabedrijven</p>
+            </Link>
+            <Link href="/drinkwaterfontein" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Drinkwaterfontein overzicht</p>
+              <p className="text-xs text-gray-500">Alle informatie over drinkwaterfonteinen</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

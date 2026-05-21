@@ -297,6 +297,28 @@ export default function SawyerPage() {
           Een combinatiestrategie is ook mogelijk: neem een Sawyer Squeeze mee voor dagelijks gebruik in de natuur en een UV-pen voor momenten waarop virusrisico hoger is (stedelijk water, twijfelachtige bronnen). Lees meer op onze <Link href="/reisfilter" className="text-[#005F8A] underline">reisfilter vergelijkingspagina</Link> en de <Link href="/reisfilter/lifestraw" className="text-[#005F8A] underline">Lifestraw review</Link>.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/reisfilter" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Reisfilter overzicht</p>
+              <p className="text-xs text-gray-500">Alle reisfilters vergeleken op gewicht, prijs en gebruik</p>
+            </Link>
+            <Link href="/reisfilter/lifestraw" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">LifeStraw reisfilter vergelijken</p>
+              <p className="text-xs text-gray-500">Sawyer vs LifeStraw: welke past het beste bij u?</p>
+            </Link>
+            <Link href="/filtertechnieken/ultrafiltratie" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Ultrafiltratie technologie uitgelegd</p>
+              <p className="text-xs text-gray-500">Hoe werken holle vezelmembranen bij 0,1 micrometer?</p>
+            </Link>
+            <Link href="/waterfilter/soorten" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Alle waterfiltersoorten vergeleken</p>
+              <p className="text-xs text-gray-500">Overzicht van alle filtertypes en hun toepassingen</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

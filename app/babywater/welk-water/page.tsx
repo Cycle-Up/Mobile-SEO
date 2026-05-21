@@ -231,6 +231,28 @@ export default function WelkWaterFlesvoedingPage() {
           Een omgekeerd osmosefilter geeft u jarenlang zekerheid over de waterkwaliteit voor uw baby, zonder afhankelijkheid van waterrapporten of dure flessenbabywater. De investering in een osmosefilter (&euro;300&ndash;800) verdient zichzelf terug in 1&ndash;3 jaar ten opzichte van flessenbabywater, en geeft u schoner water dan de meeste commerciele babymerken &mdash; vrij van PFAS, lood, nitraten en medicijnresten.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/babywater/osmose" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Osmosewater voor baby's</p>
+              <p className="text-xs text-gray-500">Is osmosewater veilig voor flesvoeding?</p>
+            </Link>
+            <Link href="/keuzehulp/baby-gezin" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Keuzehulp voor gezinnen met baby's</p>
+              <p className="text-xs text-gray-500">Welk waterfilter past bij uw gezinssituatie?</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Drinkwaternormen voor zuigelingen</p>
+              <p className="text-xs text-gray-500">Wettelijke grenzen voor natrium, nitraat en meer</p>
+            </Link>
+            <Link href="/babywater" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Terug naar babywater overzicht</p>
+              <p className="text-xs text-gray-500">Alle informatie over water voor baby's</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

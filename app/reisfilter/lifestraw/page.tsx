@@ -253,6 +253,28 @@ export default function LifestrawPage() {
           Bewaar de Lifestraw droog maar niet uitgedroogd (laat bij langdurige opslag een klein beetje vochtigheid in de vezels). Het allerbelangrijkste: nooit laten bevriezen. Vriezen zorgt voor micro-scheurtjes in de holle vezels waardoor het filter ineffectief en gevaarlijk wordt. Een ingevroren Lifestraw ziet er intact uit maar filtert niet meer correct &mdash; er is geen visuele indicatie van de schade.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/reisfilter" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Reisfilter overzicht</p>
+              <p className="text-xs text-gray-500">Alle reisfilters vergeleken op gewicht, prijs en gebruik</p>
+            </Link>
+            <Link href="/reisfilter/sawyer" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Sawyer reisfilter vergelijken</p>
+              <p className="text-xs text-gray-500">Lifestraw vs Sawyer: welke past het beste bij u?</p>
+            </Link>
+            <Link href="/filtertechnieken/ultrafiltratie" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Ultrafiltratie: hoe filtert het bacterien?</p>
+              <p className="text-xs text-gray-500">Technische uitleg van holle vezelmembranen</p>
+            </Link>
+            <Link href="/putwater/bacterien-testen" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Bacterien testen in onbekend water</p>
+              <p className="text-xs text-gray-500">Hoe controleert u de veiligheid van uw waterbron?</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

@@ -268,6 +268,28 @@ export default function DrinkwaterfonteinThuisPage() {
           Als u zowel gekoeld drinkwater als kokend water wilt, heeft u de keuze: een aparte drinkwaterfontein naast uw bestaande kokend water kraan, of een enkele 4-in-1 kraan die alles combineert. De 4-in-1 kraan spaart ruimte en heeft een enkele wateraansluiting, maar is duurder in aanschaf. Lees meer over <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose systemen</Link> voor een uitgebreid filtervergelijk.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/drinkwaterfontein/kopen" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Drinkwaterfontein kopen</p>
+              <p className="text-xs text-gray-500">Koopgids met modellenvergelijking voor thuis</p>
+            </Link>
+            <Link href="/drinkwaterfontein/huren" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Huren vs kopen vergelijking</p>
+              <p className="text-xs text-gray-500">Wanneer is huren voordeliger dan kopen?</p>
+            </Link>
+            <Link href="/waterfilter/soorten" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Alle waterfiltersoorten vergeleken</p>
+              <p className="text-xs text-gray-500">Overzicht van alle filtertypes en hun toepassingen</p>
+            </Link>
+            <Link href="/drinkwaterfontein" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Drinkwaterfontein overzicht</p>
+              <p className="text-xs text-gray-500">Alle informatie over drinkwaterfonteinen</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

@@ -217,6 +217,28 @@ export default function OsmosewaterBabyPage() {
           Bij gebruik van osmosewater voor de bereiding van flesvoeding hoeft u GEEN extra mineralen toe te voegen &mdash; het melkpoeder levert alle benodigde mineralen. Het toevoegen van mineraaldruppels of mineraalpoeder aan flesvoeding-water is niet aanbevolen zonder advies van een arts of dieetkundige, omdat dit de mineralenbalans van de voeding verstoort. Overleg met uw kinderarts als u specifieke zorgen heeft over de mineraleninname van uw kind.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/babywater/welk-water" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Welk water is het beste voor baby's?</p>
+              <p className="text-xs text-gray-500">Vergelijking van alle watersoorten voor flesvoeding</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Hoe werkt omgekeerde osmose?</p>
+              <p className="text-xs text-gray-500">Technische uitleg van het osmosefiltratie­proces</p>
+            </Link>
+            <Link href="/keuzehulp/baby-gezin" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Keuzehulp voor gezinnen met baby's</p>
+              <p className="text-xs text-gray-500">Welk waterfilter past bij uw gezinssituatie?</p>
+            </Link>
+            <Link href="/babywater" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Terug naar babywater overzicht</p>
+              <p className="text-xs text-gray-500">Alle informatie over water voor baby's</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

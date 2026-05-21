@@ -562,6 +562,28 @@ export default function SedimentfilterWerkingPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/sedimentfilter/kopen" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Sedimentfilter kopen tips</p>
+              <p className="text-xs text-gray-500">Koopgids met micronadvies en modellenvergelijking</p>
+            </Link>
+            <Link href="/sedimentfilter" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Sedimentfilter overzicht</p>
+              <p className="text-xs text-gray-500">Complete gids over sedimentfilters en toepassingen</p>
+            </Link>
+            <Link href="/filtertechnieken/ultrafiltratie" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Ultrafiltratie als hogere filtratie</p>
+              <p className="text-xs text-gray-500">Fijnere membraanfiltratie na uw sedimentfilter</p>
+            </Link>
+            <Link href="/waterfilter/soorten" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Alle waterfiltersoorten vergeleken</p>
+              <p className="text-xs text-gray-500">Overzicht van alle filtertypes en hun toepassingen</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

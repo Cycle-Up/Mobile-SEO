@@ -391,6 +391,28 @@ export default function QuookerFilterVervangenPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/quooker" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Quooker overzicht</p>
+              <p className="text-xs text-gray-500">Alles over de Quooker kokendwaterkraan</p>
+            </Link>
+            <Link href="/onderhoud/osmose-filter-vervangen" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Osmosefilter vervangen stappenplan</p>
+              <p className="text-xs text-gray-500">Stap-voor-stap instructies voor RO-filterwissel</p>
+            </Link>
+            <Link href="/koolstoffilter/vervangen" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Koolstoffilter vervangen tips</p>
+              <p className="text-xs text-gray-500">Wanneer en hoe vervangt u een koolstoffilter?</p>
+            </Link>
+            <Link href="/kokend-water-kraan/onderhoud" className="group border border-gray-200 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1 text-sm">Kokend water kraan onderhoud</p>
+              <p className="text-xs text-gray-500">Onderhoudstips voor uw kokendwaterkraan</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <section>
