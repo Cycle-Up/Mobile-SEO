@@ -331,6 +331,28 @@ export default function BrouwwaterPage() {
 
         <CTABanner context="osmose" />
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterhardheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterhardheid</p>
+              <p className="text-sm text-gray-600">Hardheid per gemeente en hoe dit de smaak en schuimvorming van bier beinvloedt.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</p>
+              <p className="text-sm text-gray-600">RO als startpunt voor brouwwater: nagenoeg mineraalvrij en volledig controleerbaar.</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilter vergelijken</p>
+              <p className="text-sm text-gray-600">Welk filter past bij uw brouwerij: van actief koolfilter tot osmosefilter.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in water</p>
+              <p className="text-sm text-gray-600">Calcium, magnesium en bicarbonaat: hun rol in brouwwater en smaakprofiel.</p>
+            </Link>
+          </div>
+        </section>
+
         <div className="space-y-3 mb-8 mt-8">
           <h2 className="text-2xl font-semibold text-[#005F8A]">Veelgestelde vragen over brouwwater</h2>
           {faqSchema.mainEntity.map((faq, i) => (

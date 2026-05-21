@@ -298,6 +298,28 @@ export default function KalkInPage() {
 
         <CTABanner context="osmose" />
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterhardheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterhardheid</p>
+              <p className="text-sm text-gray-600">Hardheid per gemeente in graden Duits en wat dat betekent voor uw huishouden.</p>
+            </Link>
+            <Link href="/waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterontharder</p>
+              <p className="text-sm text-gray-600">Centrale ontharders voor de hele huisinstallatie: werking, kosten en merken.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</p>
+              <p className="text-sm text-gray-600">Calcium en magnesium: nuttig voor gezondheid maar schadelijk voor apparaten.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keuzehulp hard water</p>
+              <p className="text-sm text-gray-600">Welke oplossing past het beste bij uw hardwaterprobleem en budget?</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over kalk in leidingwater</h2>

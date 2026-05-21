@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 
@@ -358,6 +359,28 @@ export default function PutwaterPage() {
         </section>
 
         <CTABanner context="osmose" />
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Filtertechnieken uitgelegd</p>
+              <p className="text-sm text-gray-600">Alle technologieen die putwater geschikt maken voor gebruik en consumptie.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</p>
+              <p className="text-sm text-gray-600">Nitraat, ijzer, mangaan, arseen en andere verontreinigingen in grondwater.</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</p>
+              <p className="text-sm text-gray-600">Wettelijke grenzen voor verontreinigingen en hoe putwater hieraan voldoet.</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilter vergelijken</p>
+              <p className="text-sm text-gray-600">Van sedimentfilter tot volledig RO-systeem: welk filter past bij uw putwater?</p>
+            </Link>
+          </div>
+        </section>
 
         <p className="text-gray-600 text-sm mt-6">
           Meer lezen: <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitgelegd</a>, <a href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</a> en <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</a>.

@@ -235,6 +235,28 @@ export default function BabywaterPage() {
 
         <CTABanner context="osmose" />
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/keuzehulp/baby-gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keuzehulp baby &amp; gezin</p>
+              <p className="text-sm text-gray-600">Welk waterfilter is het beste voor jonge kinderen en gezinnen?</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</p>
+              <p className="text-sm text-gray-600">Hoe RO-filtratie lood, nitraat en PFAS tot boven 95% verwijdert.</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</p>
+              <p className="text-sm text-gray-600">Wettelijke grenzen voor natrium, nitraat en lood in Nederlands drinkwater.</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilter vergelijken</p>
+              <p className="text-sm text-gray-600">Alle filtertypen naast elkaar: van filterkan tot osmosefilter onder het aanrecht.</p>
+            </Link>
+          </div>
+        </section>
+
         <div className="space-y-3 mb-8 mt-8">
           <h2 className="text-2xl font-semibold text-[#005F8A] mb-4">
             Veelgestelde vragen over babywater en flesvoeding

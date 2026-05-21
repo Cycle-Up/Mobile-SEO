@@ -238,6 +238,28 @@ export default function WaterhardheidPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</p>
+              <p className="text-sm text-gray-600">Calcium en magnesium: de oorzaak van hardheid en hun effect op gezondheid.</p>
+            </Link>
+            <Link href="/waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterontharder</p>
+              <p className="text-sm text-gray-600">Centrale ontharders voor de hele huisinstallatie: werking, kosten en merken.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keuzehulp hard water</p>
+              <p className="text-sm text-gray-600">Welke oplossing past het beste bij uw hardwaterprobleem en budget?</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</p>
+              <p className="text-sm text-gray-600">Wettelijke grenzen voor hardheid en mineralen in Nederlands drinkwater.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* Interne links */}
         <section>
           <h2 className="text-xl font-bold text-[#003F5C] mb-4">Meer lezen over waterfilters</h2>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 
@@ -306,6 +307,28 @@ export default function RegenwaterPage() {
         </section>
 
         <CTABanner context="osmose" />
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Filtertechnieken uitgelegd</p>
+              <p className="text-sm text-gray-600">Welke filtertechnologie maakt regenwater geschikt voor drinkwater of toilet?</p>
+            </Link>
+            <Link href="/waterkwaliteit" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterkwaliteit</p>
+              <p className="text-sm text-gray-600">Hoe verhoudt regenwater zich tot leidingwater qua kwaliteit en samenstelling?</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilter vergelijken</p>
+              <p className="text-sm text-gray-600">Alle filtertypen voor thuisgebruik naast elkaar vergeleken.</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</p>
+              <p className="text-sm text-gray-600">Wanneer voldoet behandeld regenwater aan de wettelijke drinkwaternormen?</p>
+            </Link>
+          </div>
+        </section>
 
         <p className="text-gray-600 text-sm mt-6">
           Meer lezen: <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</a>, <a href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</a> en <a href="/putwater" className="text-[#005F8A] underline">putwater filteren</a>.

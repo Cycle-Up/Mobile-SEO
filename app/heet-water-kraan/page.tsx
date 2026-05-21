@@ -737,6 +737,28 @@ export default function HeetWaterKraanPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/kokend-water-kraan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Kokend water kraan</p>
+              <p className="text-sm text-gray-600">Vergelijking van 100 graden kraanmodellen: Quooker, Grohe en meer.</p>
+            </Link>
+            <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</p>
+              <p className="text-sm text-gray-600">Combineer een heet waterkraan met RO-filtratie voor puur, heet water.</p>
+            </Link>
+            <Link href="/vergelijken/kokend-water-kraan-merken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Kokend water kraan merken</p>
+              <p className="text-sm text-gray-600">Quooker, Grohe, Franke en andere merken naast elkaar vergeleken.</p>
+            </Link>
+            <Link href="/keurmerken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keurmerken waterfilter</p>
+              <p className="text-sm text-gray-600">NSF, KIWA en andere certificeringen: wat moet u controleren bij aanschaf?</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">

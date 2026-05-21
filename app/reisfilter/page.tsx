@@ -325,6 +325,28 @@ export default function ReisfilterPage() {
 
         <CTABanner context="osmose" />
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/ultrafiltratie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Ultrafiltratie uitgelegd</p>
+              <p className="text-sm text-gray-600">Hoe holle vezelmembranen bacterien en protozoa uit water filteren op reis.</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilter vergelijken</p>
+              <p className="text-sm text-gray-600">Overzicht van alle filtertypen: van reisfilter tot osmosefilter voor thuis.</p>
+            </Link>
+            <Link href="/putwater/bacterien-testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Bacterien testen in water</p>
+              <p className="text-sm text-gray-600">Hoe u water op bacteriologische veiligheid test voor en na filtratie.</p>
+            </Link>
+            <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keuzehulp waterfilter</p>
+              <p className="text-sm text-gray-600">Vind het juiste filter voor uw bestemming en reissituatie.</p>
+            </Link>
+          </div>
+        </section>
+
         <div className="space-y-3 mb-8 mt-8">
           <h2 className="text-2xl font-semibold text-[#005F8A]">Veelgestelde vragen over reisfilters</h2>
           {faqSchema.mainEntity.map((faq, i) => (

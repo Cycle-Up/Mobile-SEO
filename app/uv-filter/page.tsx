@@ -608,6 +608,28 @@ export default function UvFilterPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie uitgelegd</p>
+              <p className="text-sm text-gray-600">Hoe UV-C licht bacterien, virussen en protozoa onschadelijk maakt.</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilter vergelijken</p>
+              <p className="text-sm text-gray-600">Overzicht van alle filtertypen: combineer UV met andere filtertechnologieen.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Microbiologische veiligheid</p>
+              <p className="text-sm text-gray-600">Bacterien, virussen en parasieten in drinkwater: normen en risicos.</p>
+            </Link>
+            <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keuzehulp waterfilter</p>
+              <p className="text-sm text-gray-600">Wanneer is een UV-filter de juiste keuze en wanneer heeft u meer nodig?</p>
+            </Link>
+          </div>
+        </section>
+
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over UV-waterfilters</h2>
           <div className="space-y-3">

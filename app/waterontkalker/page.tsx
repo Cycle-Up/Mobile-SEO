@@ -586,6 +586,28 @@ export default function WaterOntkalkerPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterontharder</p>
+              <p className="text-sm text-gray-600">Centrale ontharders voor de hele huisinstallatie: werking, kosten en merken.</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Ionenwisseling uitgelegd</p>
+              <p className="text-sm text-gray-600">Hoe ionenwisselaars calcium en magnesium vervangen door natrium of kalium.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keuzehulp hard water</p>
+              <p className="text-sm text-gray-600">Ontkalker, ontharder of osmosefilter: welke oplossing past het beste?</p>
+            </Link>
+            <Link href="/waterhardheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterhardheid</p>
+              <p className="text-sm text-gray-600">Hardheid per gemeente en wat dit betekent voor uw huishouden en apparaten.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">

@@ -624,6 +624,28 @@ export default function KeramischFilterPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Filtertechnieken uitgelegd</p>
+              <p className="text-sm text-gray-600">Alle filtertechnologieen vergeleken: actief kool, osmose, UV en meer.</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilter vergelijken</p>
+              <p className="text-sm text-gray-600">Welk filter past bij uw situatie? Overzicht van alle typen voor thuis.</p>
+            </Link>
+            <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keuzehulp waterfilter</p>
+              <p className="text-sm text-gray-600">Vind het juiste filter op basis van uw waterkwaliteit en woonruimte.</p>
+            </Link>
+            <Link href="/keurmerken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keurmerken waterfilter</p>
+              <p className="text-sm text-gray-600">NSF, KIWA en andere certificeringen: wat garanderen ze voor keramische filters?</p>
+            </Link>
+          </div>
+        </section>
+
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over keramische waterfilters</h2>
           <div className="space-y-3">

@@ -358,6 +358,28 @@ export default function SedimentfilterPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Filtertechnieken uitgelegd</p>
+              <p className="text-sm text-gray-600">Alle filtertechnologieen vergeleken: sediment, actief kool, osmose en UV.</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilter vergelijken</p>
+              <p className="text-sm text-gray-600">Welk filter past bij uw situatie? Overzicht van alle typen voor thuis.</p>
+            </Link>
+            <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keuzehulp waterfilter</p>
+              <p className="text-sm text-gray-600">Vind de juiste filtercombinatie op basis van uw waterprobleem.</p>
+            </Link>
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Actief-koolfilter</p>
+              <p className="text-sm text-gray-600">De volgende stap na voorfiltration: chloor, geur en smaak verbeteren.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over sedimentfilters</h2>

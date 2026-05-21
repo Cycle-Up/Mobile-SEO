@@ -101,6 +101,28 @@ export default function BesteWaterfilterPage() {
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-12">
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/vergelijken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilters vergelijken</p>
+              <p className="text-sm text-gray-600">Merken, prijzen en prestaties naast elkaar in een overzichtelijke tabel.</p>
+            </Link>
+            <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keuzehulp waterfilter</p>
+              <p className="text-sm text-gray-600">Vind het juiste filter op basis van uw woonsituatie en budget.</p>
+            </Link>
+            <Link href="/keurmerken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Keurmerken waterfilter</p>
+              <p className="text-sm text-gray-600">NSF, KIWA en andere certificeringen: wat zeggen ze over filterkwaliteit?</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-[#005F8A] mb-1">Waterfilter overzicht</p>
+              <p className="text-sm text-gray-600">Alle filtertypen voor thuis: filterkan, actief kool, osmose en meer.</p>
+            </Link>
+          </div>
+        </section>
+
         <section className="mt-10">
           <h2 className="text-2xl font-semibold text-[#005F8A] mb-6">
             Veelgestelde vragen over het beste waterfilter
