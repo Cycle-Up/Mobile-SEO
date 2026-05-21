@@ -338,6 +338,28 @@ export default function PfasWaterfilterKopenPage() {
           </div>
         </section>
 
+        <section className="mt-8 mb-10">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/pfas-waterfilter" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS waterfilter overzicht</p>
+              <p className="text-sm text-gray-500">PFAS waterfilter overzicht</p>
+            </Link>
+            <Link href="/pfas-waterfilter/vergelijken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS waterfilters vergelijken</p>
+              <p className="text-sm text-gray-500">PFAS waterfilters vergelijken</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Osmose als effectiefste PFAS-filter</p>
+              <p className="text-sm text-gray-500">Osmose als effectiefste PFAS-filter</p>
+            </Link>
+            <Link href="/keuzehulp/pfas-lood" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Keuzehulp bij PFAS en lood</p>
+              <p className="text-sm text-gray-500">Keuzehulp bij PFAS en lood</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>
