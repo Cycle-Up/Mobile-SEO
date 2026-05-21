@@ -899,6 +899,28 @@ export default function BesteKokendWaterKraan2026Page() {
             ))}
           </div>
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/kokend-water-kraan" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Kokend water kraan</p>
+              <p className="text-sm text-gray-500">Complete gids over kokend water kranen</p>
+            </Link>
+            <Link href="/vergelijken/kokend-water-kraan-merken" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Kokend water kraan merken vergelijken</p>
+              <p className="text-sm text-gray-500">Alle merken naast elkaar</p>
+            </Link>
+            <Link href="/keurmerken" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Keurmerken waterfilters</p>
+              <p className="text-sm text-gray-500">Welke certificeringen zijn belangrijk?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Omgekeerde osmose</p>
+              <p className="text-sm text-gray-500">Hoe werkt omgekeerde osmose filtratie?</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

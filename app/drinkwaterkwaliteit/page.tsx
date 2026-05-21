@@ -432,6 +432,28 @@ export default function DrinkwaterkwaliteitPage() {
             Bekijk osmosefilters →
           </Link>
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/drinkwaternormen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Drinkwaternormen</p>
+              <p className="text-sm text-gray-500">Wettelijke normen voor drinkwater in Nederland</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Stoffen in drinkwater</p>
+              <p className="text-sm text-gray-500">Overzicht van stoffen in uw leidingwater</p>
+            </Link>
+            <Link href="/leidingwater" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Leidingwater</p>
+              <p className="text-sm text-gray-500">Alles over leidingwater in Nederland</p>
+            </Link>
+            <Link href="/waterhardheid" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterhardheid</p>
+              <p className="text-sm text-gray-500">Waterhardheid per gemeente in Nederland</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

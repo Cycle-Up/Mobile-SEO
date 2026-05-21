@@ -455,6 +455,28 @@ export default function QuookerVersusOsmosePage() {
         </section>
 
         <CTABanner context="osmose" />
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/omgekeerde-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Omgekeerde osmose</p>
+              <p className="text-sm text-gray-500">Hoe werkt omgekeerde osmose filtratie?</p>
+            </Link>
+            <Link href="/kokend-water-kraan" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Kokend water kraan</p>
+              <p className="text-sm text-gray-500">Complete gids over kokend water kranen</p>
+            </Link>
+            <Link href="/vergelijken/omgekeerde-osmose-vergelijken" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Omgekeerde osmose vergelijken</p>
+              <p className="text-sm text-gray-500">Systemen naast elkaar gezet</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Omgekeerde osmose filtertechniek</p>
+              <p className="text-sm text-gray-500">Technische uitleg over osmose filtratie</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

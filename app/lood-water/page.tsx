@@ -280,6 +280,28 @@ export default function LoodWaterPage() {
         <p className="text-gray-600 text-sm mt-6">
           Meer lezen: <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitgelegd</a>, <a href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</a> en <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid in jouw gemeente</a>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Zware metalen in drinkwater</p>
+              <p className="text-sm text-gray-500">Overzicht van zware metalen in leidingwater</p>
+            </a>
+            <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Omgekeerde osmose filtertechniek</p>
+              <p className="text-sm text-gray-500">Hoe werkt omgekeerde osmose filtratie?</p>
+            </a>
+            <a href="/drinkwaternormen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Drinkwaternormen</p>
+              <p className="text-sm text-gray-500">Wettelijke normen voor drinkwater in Nederland</p>
+            </a>
+            <a href="/keuzehulp/pfas-lood" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Keuzehulp PFAS en lood</p>
+              <p className="text-sm text-gray-500">Welk filter past bij jouw situatie?</p>
+            </a>
+          </div>
+        </section>
       </main>
     </>
   );

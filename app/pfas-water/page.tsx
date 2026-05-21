@@ -275,6 +275,28 @@ export default function PfasWaterPage() {
         <p className="text-gray-600 text-sm mt-6">
           Meer lezen: <a href="/lood-water" className="text-[#005F8A] underline">lood in kraanwater</a>, <a href="/putwater" className="text-[#005F8A] underline">putwater filteren</a> en <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a>.
         </p>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/pfas-waterfilter" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">PFAS waterfilter</p>
+              <p className="text-sm text-gray-500">Welk filter verwijdert PFAS effectief?</p>
+            </a>
+            <a href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">PFAS overzicht stoffen</p>
+              <p className="text-sm text-gray-500">Alle PFAS-verbindingen in drinkwater</p>
+            </a>
+            <a href="/drinkwaternormen/pfas" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">PFAS drinkwaternormen</p>
+              <p className="text-sm text-gray-500">Wettelijke normen voor PFAS in drinkwater</p>
+            </a>
+            <a href="/keuzehulp/pfas-lood" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Keuzehulp PFAS en lood</p>
+              <p className="text-sm text-gray-500">Welk filter past bij jouw situatie?</p>
+            </a>
+          </div>
+        </section>
       </main>
     </>
   );

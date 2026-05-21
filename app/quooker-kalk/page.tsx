@@ -605,6 +605,28 @@ export default function QuookerKalkPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterhardheid" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterhardheid</p>
+              <p className="text-sm text-gray-500">Waterhardheid per gemeente in Nederland</p>
+            </Link>
+            <Link href="/waterontharder" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder</p>
+              <p className="text-sm text-gray-500">Kalk en hardheid verwijderen uit water</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Kalk en mineralen in drinkwater</p>
+              <p className="text-sm text-gray-500">Wat zit er in hard water?</p>
+            </Link>
+            <Link href="/kokend-water-kraan" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Kokend water kraan</p>
+              <p className="text-sm text-gray-500">Complete gids over kokend water kranen</p>
+            </Link>
+          </div>
+        </section>
+
       </div>
     </>
   );

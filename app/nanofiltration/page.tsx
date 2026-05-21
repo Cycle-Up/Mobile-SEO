@@ -520,6 +520,28 @@ export default function NanofiltrationPage() {
             ))}
           </div>
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Filtertechnieken</p>
+              <p className="text-sm text-gray-500">Uitleg over verschillende filtertechnieken</p>
+            </Link>
+            <Link href="/omgekeerde-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Omgekeerde osmose</p>
+              <p className="text-sm text-gray-500">Hoe werkt omgekeerde osmose filtratie?</p>
+            </Link>
+            <Link href="/waterfilter" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter</p>
+              <p className="text-sm text-gray-500">Alles over waterfilters voor thuis</p>
+            </Link>
+            <Link href="/vergelijken/omgekeerde-osmose-vergelijken" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Omgekeerde osmose vergelijken</p>
+              <p className="text-sm text-gray-500">Systemen naast elkaar gezet</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );
