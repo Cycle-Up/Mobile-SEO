@@ -222,6 +222,28 @@ export default function SodaStreamVsKraanPage() {
           Een SodaStream filtert het water niet &mdash; het maakt gewoon kraanwater bruisend. In gebieden met verhoogde PFAS-concentraties in kraanwater (zoals de omgeving van Dordrecht of de Schiphol-zone) is het verstandig om eerst het water te filteren via een osmosefilter of een kwalitatieve filterkan. Gebruik het gefilterde water vervolgens als basis in uw SodaStream voor het schoonste en lekkerste bruisende water.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/bruisend-water/co2" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">CO2-systeem voor bruisend water</h3>
+              <p className="text-sm text-gray-600">Los CO2-systeem voor grote gezinnen: kosten, installatie en grote cilinders.</p>
+            </Link>
+            <Link href="/bruisend-water/kraan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">4-in-1 bruisend waterkraan</h3>
+              <p className="text-sm text-gray-600">Vergelijking van 4-in-1 kranen: Quooker, Grohe Blue, Zip HydroTap en PureAqua.</p>
+            </Link>
+            <Link href="/vergelijken/kraanwater-vs-flessenwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kraanwater vs flessenwater</h3>
+              <p className="text-sm text-gray-600">Vergelijking van kraanwater en flessenwater op kwaliteit, kosten en milieu-impact.</p>
+            </Link>
+            <Link href="/bruisend-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Bruisend water: alle methoden</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle manieren om thuis bruisend water te maken.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

@@ -220,6 +220,28 @@ export default function CO2SysteemPage() {
           Let op bij grote cilinders (6&ndash;10 kg): CO2 is zwaarder dan lucht en kan zich ophopen in laag gelegen, slecht geventileerde ruimtes (kelders, diepe kasten). Bij concentraties boven 2% in lucht treedt kortademigheid op; boven 5% zijn ernstige klachten mogelijk. Bij normaal gebruik en goede ventilatie is dit risico verwaarloosbaar klein. Bewaar cilinders nooit in slaapkamers of kleine ruimtes zonder ventilatie.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/bruisend-water/kraan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">4-in-1 bruisend waterkraan</h3>
+              <p className="text-sm text-gray-600">Vergelijking van 4-in-1 kranen: Quooker, Grohe Blue, Zip HydroTap en PureAqua.</p>
+            </Link>
+            <Link href="/bruisend-water/sodastream" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">SodaStream vs bruisend waterkraan</h3>
+              <p className="text-sm text-gray-600">Welke keuze past bij uw budget en verbruik?</p>
+            </Link>
+            <Link href="/waterfilter/koffiezetter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor koffiezetter</h3>
+              <p className="text-sm text-gray-600">Hoe filtert u water voor de beste koffiesmaak en langere levensduur van uw apparaat?</p>
+            </Link>
+            <Link href="/bruisend-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Bruisend water: alle methoden</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle manieren om thuis bruisend water te maken.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

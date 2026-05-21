@@ -603,6 +603,28 @@ export default function KeramischFilterWerkingPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/keramisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keramische filtertechniek</h3>
+              <p className="text-sm text-gray-600">Hoe werkt keramische filtratie als techniek en wanneer is het de juiste keuze?</p>
+            </Link>
+            <Link href="/keramisch-filter/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keramisch waterfilter kopen</h3>
+              <p className="text-sm text-gray-600">Koopgids met 5-model vergelijking, prijsoverzicht en kopadvies per situatie.</p>
+            </Link>
+            <Link href="/filtertechnieken/ultrafiltratie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ultrafiltratie techniek</h3>
+              <p className="text-sm text-gray-600">Hoe werkt ultrafiltratie en hoe verhoudt het zich tot keramische filtratie?</p>
+            </Link>
+            <Link href="/keramisch-filter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keramisch filter: complete gids</h3>
+              <p className="text-sm text-gray-600">Alles over keramische waterfilters: typen, kosten en onderhoud.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

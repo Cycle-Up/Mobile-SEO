@@ -484,6 +484,29 @@ export default function UvFilterWerkingPage() {
           </div>
         </section>
 
+        {/* Gerelateerde onderwerpen */}
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie als filtertechniek</h3>
+              <p className="text-sm text-gray-600">Hoe werkt UV-sterilisatie technisch en wanneer is het de juiste keuze?</p>
+            </Link>
+            <Link href="/uv-filter/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">UV-waterfilter kopen</h3>
+              <p className="text-sm text-gray-600">Koopgids en modeloverzicht: welk UV-filter past bij jouw situatie en budget?</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische stoffen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Welke bacteriën, virussen en parasieten kunnen in drinkwater voorkomen?</p>
+            </Link>
+            <Link href="/uv-filter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">UV-filter: complete gids</h3>
+              <p className="text-sm text-gray-600">Alles over UV-waterfilters: werking, types, toepassingen en onderhoud.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

@@ -288,6 +288,28 @@ export default function AlkalischWaterGezondheidsPage() {
           voor een volledig overzicht.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en gezondheid</h3>
+              <p className="text-sm text-gray-600">Wat doet osmosewater met uw gezondheid? Vergelijking met kraanwater en mineraalwater.</p>
+            </Link>
+            <Link href="/osmose-water/ph" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">pH van osmosewater</h3>
+              <p className="text-sm text-gray-600">Waarom is osmosewater licht zuur en wat betekent dat voor dagelijks gebruik?</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Welke mineralen zitten in drinkwater en wat is de invloed op uw gezondheid?</p>
+            </Link>
+            <Link href="/alkalisch-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Alkalisch water: complete gids</h3>
+              <p className="text-sm text-gray-600">Alles over alkalisch water: wat het is, hoe het wordt gemaakt en of het de moeite waard is.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">
