@@ -547,6 +547,28 @@ export default function KoolstoffilterVervangenPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/koolstoffilter" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Koolstoffilter overzicht</p>
+              <p className="text-sm text-gray-500">Koolstoffilter overzicht</p>
+            </Link>
+            <Link href="/koolstoffilter/werking" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Werking uitgelegd: wanneer is het filter op?</p>
+              <p className="text-sm text-gray-500">Werking uitgelegd: wanneer is het filter op?</p>
+            </Link>
+            <Link href="/onderhoud/osmose-filter-vervangen" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Osmosefilter vervangen</p>
+              <p className="text-sm text-gray-500">Osmosefilter vervangen</p>
+            </Link>
+            <Link href="/waterfilter/onderhoud" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Waterfilter onderhoud algemeen</p>
+              <p className="text-sm text-gray-500">Waterfilter onderhoud algemeen</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

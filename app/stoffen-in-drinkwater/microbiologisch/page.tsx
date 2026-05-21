@@ -117,6 +117,28 @@ export default function MicrobiologischPage() {
           </ul>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Alle stoffen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle verontreinigingen en stoffen die in drinkwater kunnen voorkomen.</p>
+            </Link>
+            <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie voor bacterien</h3>
+              <p className="text-sm text-gray-600">Hoe UV-straling bacterien, virussen en protozoen inactiveert zonder chemicalien.</p>
+            </Link>
+            <Link href="/putwater/bacterien-testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Bacterien in putwater testen</h3>
+              <p className="text-sm text-gray-600">Wanneer en hoe u putwater laat testen op E. coli en andere bacterien.</p>
+            </Link>
+            <Link href="/filtertechnieken/ultrafiltratie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ultrafiltratie voor micro-organismen</h3>
+              <p className="text-sm text-gray-600">UF-membranen als fysieke barriere tegen bacterien, protozoen en grote virussen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="algemeen" />
       </div>
     </>

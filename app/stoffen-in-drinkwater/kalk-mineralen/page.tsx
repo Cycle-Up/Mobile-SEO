@@ -103,6 +103,28 @@ export default function KalkMineralenPage() {
           </ul>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Alle stoffen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle verontreinigingen en stoffen die in drinkwater kunnen voorkomen.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp bij hard water</h3>
+              <p className="text-sm text-gray-600">Welk filter of systeem past het best bij uw regio en waterhardheidsniveau?</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling voor kalkverwijdering</h3>
+              <p className="text-sm text-gray-600">Hoe een waterontharder via ionenwisseling calcium en magnesium vervangt door natrium.</p>
+            </Link>
+            <Link href="/waterhardheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheid in uw gemeente</h3>
+              <p className="text-sm text-gray-600">Controleer de waterhardheid per gemeente en regio in Nederland.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

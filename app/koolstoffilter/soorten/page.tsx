@@ -538,6 +538,28 @@ export default function SoortenKoolstoffiltersPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/koolstoffilter" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Koolstoffilter overzicht</p>
+              <p className="text-sm text-gray-500">Koolstoffilter overzicht</p>
+            </Link>
+            <Link href="/koolstoffilter/werking" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Hoe werkt een koolstoffilter?</p>
+              <p className="text-sm text-gray-500">Hoe werkt een koolstoffilter?</p>
+            </Link>
+            <Link href="/filtertechnieken/actief-kool" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">GAC vs blokfilter: technische vergelijking</p>
+              <p className="text-sm text-gray-500">GAC vs blokfilter: technische vergelijking</p>
+            </Link>
+            <Link href="/waterfilter/soorten" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Alle waterfiltersoorten overzicht</p>
+              <p className="text-sm text-gray-500">Alle waterfiltersoorten overzicht</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}
