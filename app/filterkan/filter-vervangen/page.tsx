@@ -607,6 +607,28 @@ export default function FilterVervangenPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/onderhoud/koolstoffilter-levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Levensduur koolstoffilters</h3>
+            <p className="text-sm text-gray-600">Hoelang gaat een koolstoffilter mee en wanneer is vervangen echt nodig?</p>
+          </Link>
+          <Link href="/filterkan/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Hoe werkt een filterkan?</h3>
+            <p className="text-sm text-gray-600">Begrijp waarom regelmatig vervangen zo belangrijk is voor de filterprestaties.</p>
+          </Link>
+          <Link href="/filterkan/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkan kopen</h3>
+            <p className="text-sm text-gray-600">Bent u toe aan een nieuwe filterkan? Vergelijk de beste modellen van 2026.</p>
+          </Link>
+          <Link href="/filterkan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkannengids</h3>
+            <p className="text-sm text-gray-600">Alles over filterkannnen: onderhoud, merken en filterwisseling op een rij.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

@@ -421,6 +421,28 @@ export default function DrinkwaterNitraatVerlagenPage() {
           <a href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</a>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/drinkwater/nitraat" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat in drinkwater</h3>
+            <p className="text-sm text-gray-600">Normen en risicos van nitraat in drinkwater voor Nederland.</p>
+          </a>
+          <a href="/stoffen-in-drinkwater/nitraat-nitriet" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat en nitriet in drinkwater</h3>
+            <p className="text-sm text-gray-600">Achtergronden van nitraat en nitriet als verontreiniging in water.</p>
+          </a>
+          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose nitraat effectief uit water verwijdert.</p>
+          </a>
+          <a href="/waterfilter/nitraat" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor nitraat</h3>
+            <p className="text-sm text-gray-600">Welke waterfilters nitraat effectief uit drinkwater verwijderen.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

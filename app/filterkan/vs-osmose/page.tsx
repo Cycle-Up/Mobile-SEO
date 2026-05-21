@@ -509,6 +509,28 @@ export default function FilterkanVsOsmosePage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
+            <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en waarom is het zuiverder dan een filterkan?</p>
+          </Link>
+          <Link href="/vergelijken/waterfilter-vs-waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter vs waterontharder</h3>
+            <p className="text-sm text-gray-600">Een bredere vergelijking van alle waterbehandelingstechnieken naast elkaar.</p>
+          </Link>
+          <Link href="/filterkan/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkan kopen</h3>
+            <p className="text-sm text-gray-600">Na uw vergelijking: de beste filterkannnen van 2026 op een rij.</p>
+          </Link>
+          <Link href="/filterkan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkannengids</h3>
+            <p className="text-sm text-gray-600">Alles over filterkannnen als alternatief voor grotere filtersystemen.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

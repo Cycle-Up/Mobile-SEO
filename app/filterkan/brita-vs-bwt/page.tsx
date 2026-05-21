@@ -512,6 +512,28 @@ export default function BritaVsBwtPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filterkan/brita" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Brita filterkannnen</h3>
+            <p className="text-sm text-gray-600">Uitgebreide informatie over het Brita-aanbod: modellen, filters en prijzen.</p>
+          </Link>
+          <Link href="/filterkan/bwt" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">BWT filterkannnen</h3>
+            <p className="text-sm text-gray-600">Alles over BWT: de Magnesium-technologie en wat het onderscheidt van de concurrentie.</p>
+          </Link>
+          <Link href="/filterkan/vs-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkan vs osmosefilter</h3>
+            <p className="text-sm text-gray-600">Wanneer is een osmosefilter een betere keuze dan een filterkan?</p>
+          </Link>
+          <Link href="/filterkan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkannengids</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle filterkannmerken, filtertypen en kosten.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

@@ -441,6 +441,29 @@ export default function HeetWaterKraanFilterPage() {
         {/* CTA 2 */}
         <CTABanner context="osmose" />
 
+        {/* Gerelateerde onderwerpen */}
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/koolstoffilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter</h3>
+              <p className="text-sm text-gray-600">Alles over koolstoffilters: werking, typen en wanneer u ze gebruikt bij heet water.</p>
+            </Link>
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtertechniek</h3>
+              <p className="text-sm text-gray-600">Hoe actief kool werkt en wat het filtert uit heet water.</p>
+            </Link>
+            <Link href="/onderhoud/koolstoffilter-levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Levensduur koolstoffilter</h3>
+              <p className="text-sm text-gray-600">Hoe lang gaat een koolstoffilter mee en wanneer vervangt u hem?</p>
+            </Link>
+            <Link href="/heet-water-kraan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Heet water kraan</h3>
+              <p className="text-sm text-gray-600">Alles over heet water kranen: types, installatie en gebruik.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* Verder lezen */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Verder lezen</h2>

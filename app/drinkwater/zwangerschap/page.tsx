@@ -77,6 +77,28 @@ export default function DrinkwaterZwangerschapPage() {
           Tijdens de zwangerschap wil je zeker weten dat wat je drinkt veilig is voor jou en je ongeboren kind. Nederlands leidingwater is over het algemeen veilig, maar er zijn situaties waarin extra voorzorg verstandig is.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/babywater/osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater voor baby</h3>
+            <p className="text-sm text-gray-600">Is osmosewater geschikt voor babyvoeding tijdens en na de zwangerschap?</p>
+          </a>
+          <a href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en gezondheid</h3>
+            <p className="text-sm text-gray-600">De gezondheidseffecten van gefilterd osmosewater.</p>
+          </a>
+          <a href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in drinkwater</h3>
+            <p className="text-sm text-gray-600">Risicos van PFAS voor zwangere vrouwen en hoe u ze kunt verminderen.</p>
+          </a>
+          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Wettelijke normen voor drinkwaterkwaliteit in Nederland.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

@@ -528,6 +528,28 @@ export default function KwaliteitsrapportPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/drinkwaternormen/drinkwaterbedrijven" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaterbedrijven</h3>
+            <p className="text-sm text-gray-600">Overzicht van Nederlandse drinkwaterbedrijven en hun gebieden.</p>
+          </Link>
+          <Link href="/drinkwaternormen/wie-controleert-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Wie controleert drinkwater</h3>
+            <p className="text-sm text-gray-600">Hoe drinkwatercontrole in Nederland is georganiseerd.</p>
+          </Link>
+          <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle stoffen die in drinkwater kunnen voorkomen.</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Wettelijke normen voor drinkwaterkwaliteit in Nederland.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

@@ -580,6 +580,28 @@ export default function BwtFilterkanPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filterkan/brita-vs-bwt" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">BWT vs Brita vergelijking</h3>
+            <p className="text-sm text-gray-600">Welk merk wint? Een objectieve vergelijking van BWT en Brita filterkannnen.</p>
+          </Link>
+          <Link href="/filterkan/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Hoe werkt een filterkan?</h3>
+            <p className="text-sm text-gray-600">Begrijp de technologie achter BWT-filterpatronen en de Magnesium-aanrijking.</p>
+          </Link>
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
+            <p className="text-sm text-gray-600">De basis filtertechniek die ook BWT-filters gebruiken om uw water te verbeteren.</p>
+          </Link>
+          <Link href="/filterkan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkannengids</h3>
+            <p className="text-sm text-gray-600">Vergelijk alle filterkannmerken en kies de beste optie voor uw huishouden.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

@@ -151,6 +151,28 @@ export default function DrinkwaterLoodPage() {
           ))}
         </div>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Overzicht van zware metalen die in drinkwater kunnen voorkomen.</p>
+          </a>
+          <a href="/drinkwaternormen/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Loodnormen drinkwater</h3>
+            <p className="text-sm text-gray-600">Wettelijke normen voor lood in drinkwater en wat ze betekenen.</p>
+          </a>
+          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose lood en andere verontreinigingen verwijdert.</p>
+          </a>
+          <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor lood</h3>
+            <p className="text-sm text-gray-600">Welke waterfilters lood effectief uit drinkwater verwijderen.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">

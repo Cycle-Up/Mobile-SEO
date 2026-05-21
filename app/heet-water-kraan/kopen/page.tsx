@@ -474,6 +474,29 @@ export default function HeetWaterKraanKopenPage() {
           </div>
         </section>
 
+        {/* Gerelateerde onderwerpen */}
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/kokend-water-kraan/vergelijken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kokend water kraan vergelijken</h3>
+              <p className="text-sm text-gray-600">Vergelijking van kokend water kranen op prijs, functies en kwaliteit.</p>
+            </Link>
+            <Link href="/heet-water-kraan/vergelijken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Heet water kraan vergelijken</h3>
+              <p className="text-sm text-gray-600">Vergelijking van alle heet water kraan modellen en merken.</p>
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp budget</h3>
+              <p className="text-sm text-gray-600">Welke heet water kraan past bij uw budget? Overzicht per prijsklasse.</p>
+            </Link>
+            <Link href="/heet-water-kraan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Heet water kraan</h3>
+              <p className="text-sm text-gray-600">Alles over heet water kranen: types, installatie en gebruik.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* CTA 2 */}
         <CTABanner context="osmose" />
 

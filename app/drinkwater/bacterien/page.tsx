@@ -253,6 +253,28 @@ export default function DrinkwaterBacterienPage() {
           ))}
         </div>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische waterkwaliteit</h3>
+            <p className="text-sm text-gray-600">Achtergronden van microbiologische risicos en normen in drinkwater.</p>
+          </a>
+          <a href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie</h3>
+            <p className="text-sm text-gray-600">Hoe UV-licht bacterien en virussen effectief inactiveert.</p>
+          </a>
+          <a href="/waterfilter/legionella" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor legionella</h3>
+            <p className="text-sm text-gray-600">Welke filteropties bescherming bieden tegen legionella-risicos.</p>
+          </a>
+          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Wettelijke normen voor drinkwaterkwaliteit in Nederland.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <p className="text-gray-600 text-sm mt-6">

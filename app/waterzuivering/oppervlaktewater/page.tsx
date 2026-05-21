@@ -272,6 +272,28 @@ export default function OppervlaktewaterzuiveringPage() {
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose als thuisfilter</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/drinkwaternormen/drinkwaterbedrijven" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaterbedrijven</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle Nederlandse drinkwaterbedrijven en hun waterbronnen.</p>
+          </Link>
+          <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Welke stoffen zitten er in drinkwater en wat zijn de gezondheidsrisico's?</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle wettelijke normen voor drinkwater in Nederland en Europa.</p>
+          </Link>
+          <Link href="/waterzuivering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterzuivering</h3>
+            <p className="text-sm text-gray-600">Hoe wordt drinkwater gezuiverd in Nederland? Overzicht van alle methoden.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

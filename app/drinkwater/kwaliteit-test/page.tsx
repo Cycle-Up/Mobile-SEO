@@ -187,6 +187,28 @@ export default function DrinkwaterKwaliteitTestPage() {
           ))}
         </div>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/waterkwaliteit/test" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterkwaliteit testen</h3>
+            <p className="text-sm text-gray-600">Hoe u uw drinkwaterkwaliteit thuis kunt testen.</p>
+          </a>
+          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Wettelijke normen voor drinkwaterkwaliteit in Nederland.</p>
+          </a>
+          <a href="/pfas-waterfilter/testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">PFAS testen</h3>
+            <p className="text-sm text-gray-600">Hoe u uw water kunt testen op PFAS en wat u kunt doen.</p>
+          </a>
+          <a href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle stoffen die in drinkwater kunnen voorkomen.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
       </main>
     </>

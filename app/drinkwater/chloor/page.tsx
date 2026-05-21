@@ -259,6 +259,28 @@ export default function DrinkwaterChloorPage() {
           <a href="/waterfilter/soorten" className="text-[#005F8A] underline">vergelijking van waterfiltersoorten</a>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Chloorbijproducten in drinkwater</h3>
+            <p className="text-sm text-gray-600">Risicos van trihalomethanen en andere chloorbijproducten.</p>
+          </a>
+          <a href="/koolstoffilter/chloor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor chloor</h3>
+            <p className="text-sm text-gray-600">Hoe actief kool chloor effectief uit kraanwater verwijdert.</p>
+          </a>
+          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
+            <p className="text-sm text-gray-600">Werking en toepassingen van actief kool als filtertechniek.</p>
+          </a>
+          <a href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen</h3>
+            <p className="text-sm text-gray-600">Overzicht van methoden om chloor uit kraanwater te verwijderen.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

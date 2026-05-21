@@ -294,6 +294,28 @@ export default function ThuiszuiveringPage() {
           <Link href="/waterzuivering" className="text-[#005F8A] underline">hoe waterzuivering werkt in Nederland</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose werkt en wanneer het de beste keuze is voor thuiszuivering.</p>
+          </Link>
+          <Link href="/waterfilter/soorten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Soorten waterfilters</h3>
+            <p className="text-sm text-gray-600">Vergelijking van alle soorten waterfilters voor thuisgebruik: voor- en nadelen.</p>
+          </Link>
+          <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp waterfilter</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter past bij uw situatie? Gebruik onze keuzehulp.</p>
+          </Link>
+          <Link href="/filtertechnieken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle filtertechnieken voor drinkwater en hun werking.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

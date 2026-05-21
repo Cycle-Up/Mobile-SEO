@@ -237,6 +237,28 @@ export default function DrinkwaterfonteinKantoorPage() {
           Op kantoor is de intensiteit van gebruik hoger dan thuis, waardoor hygiene extra aandacht verdient. Het mondstuk (tapkraan) dient wekelijks gereinigd te worden, bij voorkeur dagelijks bij hoog gebruik. De druppelplaat wordt dagelijks leeggemaakt. Een volledige interne reiniging door een technicus vindt bij de meeste leveranciers maandelijks of kwartaalsgewijs plaats als onderdeel van het servicecontract.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/zakelijk/kantoor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Zakelijke wateroplossingen kantoor</h3>
+            <p className="text-sm text-gray-600">Wateroplossingen voor kantoren: van drinkwaterfontein tot gefilterd kraanwater.</p>
+          </Link>
+          <Link href="/drinkwaterfontein/huren" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaterfontein huren</h3>
+            <p className="text-sm text-gray-600">Drinkwaterfontein huren voor kantoor: kosten, aanbieders en wat in het huurcontract staat.</p>
+          </Link>
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtertechniek</h3>
+            <p className="text-sm text-gray-600">Hoe actief kool werkt in drinkwaterfonteinen en wat het filtert.</p>
+          </Link>
+          <Link href="/drinkwaterfontein" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaterfontein</h3>
+            <p className="text-sm text-gray-600">Alles over drinkwaterfonteinen: types, kosten en onderhoud.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

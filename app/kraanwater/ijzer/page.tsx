@@ -377,6 +377,28 @@ export default function KraanwaterIJzerPage() {
           beide effectief in een stap.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/leidingwater/ijzer" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">IJzer in leidingwater</h3>
+            <p className="text-sm text-gray-600">Oorzaken, normen en praktische tips voor ijzerproblemen in leidingwater.</p>
+          </Link>
+          <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Overzicht van zware metalen zoals ijzer, mangaan, lood en koper in water.</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose techniek</h3>
+            <p className="text-sm text-gray-600">Hoe een RO-membraan ijzer en andere opgeloste stoffen tegenhoudt.</p>
+          </Link>
+          <Link href="/waterfilter/ijzer" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor ijzer</h3>
+            <p className="text-sm text-gray-600">Vergelijking van filteropties voor ijzerverwijdering uit drinkwater.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

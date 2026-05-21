@@ -306,6 +306,28 @@ export default function WaterkwaliteitTestPage() {
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilters</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/pfas-waterfilter/testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">PFAS testen in water</h3>
+            <p className="text-sm text-gray-600">Hoe test u uw drinkwater op PFAS en wat zijn de normen?</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle wettelijke normen voor drinkwater in Nederland en Europa.</p>
+          </Link>
+          <Link href="/waterfilter/tds" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">TDS waterfilter</h3>
+            <p className="text-sm text-gray-600">Wat is TDS en hoe meet u de totale opgeloste stoffen in uw drinkwater?</p>
+          </Link>
+          <Link href="/waterkwaliteit" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterkwaliteit</h3>
+            <p className="text-sm text-gray-600">Alles over de kwaliteit van drinkwater: meten, normen en verbeteren.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

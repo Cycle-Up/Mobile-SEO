@@ -334,6 +334,28 @@ export default function DrinkwaterFluoridePage() {
           Wilt u toch specifiek fluoride verwijderen: kies een osmosefilter als alles-in-één oplossing, of geactiveerd alumina als u uitsluitend fluoride wilt aanpakken. Gebruik nooit een gewoon actief-koolfilter in de veronderstelling dat het fluoride verwijdert — dat doet het niet.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Wettelijke normen voor fluoride en andere stoffen in drinkwater.</p>
+          </a>
+          <a href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle stoffen die in drinkwater kunnen voorkomen.</p>
+          </a>
+          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose fluoride en andere stoffen verwijdert.</p>
+          </a>
+          <a href="/waterfilter/fluor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor fluoride</h3>
+            <p className="text-sm text-gray-600">Welke waterfilters fluoride effectief uit drinkwater verwijderen.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

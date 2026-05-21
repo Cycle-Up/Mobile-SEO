@@ -415,6 +415,28 @@ export default function WaterOntkalkerWerkingPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/waterontharder/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Hoe werkt een waterontharder?</h3>
+            <p className="text-sm text-gray-600">Vergelijk de werking van ontharders met die van ontkalkers.</p>
+          </Link>
+          <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling uitgelegd</h3>
+            <p className="text-sm text-gray-600">De wetenschappelijke basis achter het ontkalkinssproces: hoe harskorrels calcium en magnesium vastleggen.</p>
+          </Link>
+          <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Welke mineralen verwijdert een ontkalker en welke blijven er in uw water?</p>
+          </Link>
+          <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp bij hard water</h3>
+            <p className="text-sm text-gray-600">Heeft u echt een ontkalker nodig? Controleer uw waterhardheid en kies de juiste oplossing.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" variant="compact" />
 
         {/* FAQ */}

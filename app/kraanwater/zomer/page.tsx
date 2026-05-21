@@ -309,6 +309,28 @@ export default function KraanwaterZomerPage() {
           .
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/leidingwater/temperatuur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Leidingwatertemperatuur</h3>
+            <p className="text-sm text-gray-600">Hoe temperatuurwisselingen de kwaliteit van leidingwater beinvloeden.</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Wettelijke normen voor drinkwaterkwaliteit in Nederland.</p>
+          </Link>
+          <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische waterkwaliteit</h3>
+            <p className="text-sm text-gray-600">Achtergronden van microbiologische risicos en normen in drinkwater.</p>
+          </Link>
+          <Link href="/kraanwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Kraanwater in Nederland</h3>
+            <p className="text-sm text-gray-600">Alles over de kwaliteit en veiligheid van Nederlands kraanwater.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

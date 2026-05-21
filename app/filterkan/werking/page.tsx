@@ -505,6 +505,28 @@ export default function FilterkanWerkingPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
+            <p className="text-sm text-gray-600">De techniek achter filterkannnen: hoe actief kool chloor, geuren en andere stoffen bindt.</p>
+          </Link>
+          <Link href="/filterkan/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkan kopen</h3>
+            <p className="text-sm text-gray-600">Nu u weet hoe een filterkan werkt: vergelijk de beste modellen van 2026.</p>
+          </Link>
+          <Link href="/filterkan/filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filter vervangen</h3>
+            <p className="text-sm text-gray-600">Wanneer en hoe vervangt u het filter in uw filterkan?</p>
+          </Link>
+          <Link href="/filterkan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkannengids</h3>
+            <p className="text-sm text-gray-600">Het complete overzicht van filterkannnen: merken, modellen en onderhoud.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

@@ -266,6 +266,28 @@ export default function DrinkwaterfonteinKopenPage() {
           Let bij aankoop op: garantietermijn (2-5 jaar gangbaar voor hardware), beschikbaarheid van vervangingsfilters in Nederland (importproducten kunnen problemen geven), en de aanwezigheid van lokale servicepartners. Een drinkwaterfontein is een langetermijninvestering; servicebaarheid op de lange termijn is minstens even belangrijk als de aankoopprijs. Lees meer op onze pagina over <Link href="/drinkwaterfontein/kantoor" className="text-[#005F8A] underline">drinkwaterfonteinen voor kantoor</Link> en <Link href="/drinkwaterfontein/thuis" className="text-[#005F8A] underline">fonteinen voor thuis</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/drinkwaterfontein/huren" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaterfontein huren</h3>
+            <p className="text-sm text-gray-600">Huren als alternatief voor kopen: kosten, voor- en nadelen per situatie.</p>
+          </Link>
+          <Link href="/drinkwaterfontein/onderhoud" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaterfontein onderhoud</h3>
+            <p className="text-sm text-gray-600">Hoe houdt u uw drinkwaterfontein hygiënisch en in goede staat?</p>
+          </Link>
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtertechniek</h3>
+            <p className="text-sm text-gray-600">Hoe actief kool werkt in drinkwaterfonteinen en wat het filtert.</p>
+          </Link>
+          <Link href="/drinkwaterfontein" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaterfontein</h3>
+            <p className="text-sm text-gray-600">Alles over drinkwaterfonteinen: types, kosten en onderhoud.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

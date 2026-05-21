@@ -236,6 +236,28 @@ export default function KalkCVKetelPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterontharder/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Werking waterontharder</h3>
+              <p className="text-sm text-gray-600">Hoe een waterontharder kalk verwijdert en uw CV-ketel beschermt.</p>
+            </Link>
+            <Link href="/waterhardheid/behandelingsadvies" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Behandelingsadvies waterhardheid</h3>
+              <p className="text-sm text-gray-600">Welke behandeling past bij uw waterhardheidsniveau?</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Wat zijn de gevolgen van kalk en mineralen in drinkwater voor apparaten?</p>
+            </Link>
+            <Link href="/kalk-in" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kalk in leidingwater</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle gevolgen van kalk in leidingwater en oplossingen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

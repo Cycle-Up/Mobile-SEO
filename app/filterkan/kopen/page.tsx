@@ -449,6 +449,28 @@ export default function FilterkanKopenPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filterkan/vs-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkan vs osmosefilter</h3>
+            <p className="text-sm text-gray-600">Overweegt u ook een osmosefilter? Vergelijk beide opties voor u koopt.</p>
+          </Link>
+          <Link href="/filterkan/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Hoe werkt een filterkan?</h3>
+            <p className="text-sm text-gray-600">Weet wat u koopt: begrijp de filterprestaties voordat u een keuze maakt.</p>
+          </Link>
+          <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp: waterfilter op budget</h3>
+            <p className="text-sm text-gray-600">Wat is de beste waterfilteroplossing voor uw budget?</p>
+          </Link>
+          <Link href="/filterkan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkannengids</h3>
+            <p className="text-sm text-gray-600">Het complete overzicht van filterkannnen, merken en modellen.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

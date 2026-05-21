@@ -329,6 +329,28 @@ export default function KraanwaterKwaliteitVerbeteren() {
           Elk filtersysteem is op jaarbasis goedkoper dan flessenwater. Een osmosefilter van 600 euro verdient zichzelf in 1 tot 2 jaar terug ten opzichte van flessenwater. Over 10 jaar bespaart u 2.500 tot 5.000 euro door over te stappen op gefilterd kraanwater.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle filtertechnieken om kraanwater te verbeteren.</p>
+          </Link>
+          <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp waterfilter</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter past bij uw situatie en waterkwaliteit?</p>
+          </Link>
+          <Link href="/waterfilter/soorten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Soorten waterfilters</h3>
+            <p className="text-sm text-gray-600">Vergelijking van filtersoorten: osmose, koolstof, UV en meer.</p>
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+            <p className="text-sm text-gray-600">Wettelijke normen voor drinkwaterkwaliteit in Nederland.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

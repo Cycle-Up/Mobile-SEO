@@ -127,6 +127,28 @@ export default function MedicijnrestenDrinkwaterPage() {
 
         <QuickAnswer answer="In Nederlands kraanwater zijn sporenconcentraties medicijnresten aangetoond (ng/L-niveau). Direct gezondheidsrisico is niet aangetoond, maar het voorzorgsbeginsel geldt. Osmose (RO) verwijdert 90–99% van farmaceutische residuen — de meest effectieve thuisoplossing. Actief kool helpt voor sommige stoffen maar is niet consistent voor alle medicijntypes." />
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/stoffen-in-drinkwater/hormonen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Hormonen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Overzicht van hormoonverstorende stoffen in drinkwater.</p>
+          </a>
+          <a href="/drinkwaternormen/medicijnresten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Normen voor medicijnresten</h3>
+            <p className="text-sm text-gray-600">Wat zegt de wet over medicijnresten in drinkwater?</p>
+          </a>
+          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Hoe omgekeerde osmose farmaceutische residuen verwijdert.</p>
+          </a>
+          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
+            <p className="text-sm text-gray-600">Werking en toepassingen van actief kool als filtertechniek.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

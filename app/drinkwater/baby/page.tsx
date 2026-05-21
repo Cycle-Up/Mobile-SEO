@@ -179,6 +179,28 @@ export default function DrinkwaterBabyPage() {
           ))}
         </div>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/babywater/osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater voor baby</h3>
+            <p className="text-sm text-gray-600">Is osmosewater geschikt voor de bereiding van babyvoeding?</p>
+          </a>
+          <a href="/babywater/welk-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Welk water voor baby</h3>
+            <p className="text-sm text-gray-600">Overzicht van de beste wateropties voor baby en zuigeling.</p>
+          </a>
+          <a href="/osmose-water/baby" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en baby</h3>
+            <p className="text-sm text-gray-600">Praktische gids voor het gebruik van osmosewater bij babyvoeding.</p>
+          </a>
+          <a href="/stoffen-in-drinkwater/nitraat-nitriet" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat en nitriet in drinkwater</h3>
+            <p className="text-sm text-gray-600">Risicos van nitraat voor baby en hoe u deze kunt verminderen.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
       </main>
     </>

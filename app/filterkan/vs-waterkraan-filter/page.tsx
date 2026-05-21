@@ -307,6 +307,28 @@ export default function FilterkanVsWaterkraanFilterPage() {
           voordat u een keuze maakt tussen filterkan, filterkraan of osmose.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
+            <p className="text-sm text-gray-600">De filtermethode die zowel filterkannnen als waterkraanfilters gebruiken.</p>
+          </Link>
+          <Link href="/waterfilter/soorten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Soorten waterfilters</h3>
+            <p className="text-sm text-gray-600">Overzicht van alle waterfiltertypen: van kan tot ondertafel osmosefilter.</p>
+          </Link>
+          <Link href="/filterkan/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkan kopen</h3>
+            <p className="text-sm text-gray-600">Kiest u toch voor een filterkan? Bekijk de beste modellen van 2026.</p>
+          </Link>
+          <Link href="/filterkan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filterkannengids</h3>
+            <p className="text-sm text-gray-600">Alles over filterkannnen als alternatief voor een waterkraanfilter.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">
