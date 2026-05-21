@@ -77,6 +77,28 @@ export default function OsmoseWaterGezondPage() {
           Osmosewater is vrijwel volledig zuiver — geen kalk, geen chloor, geen lood, geen PFAS. Maar dat roept de vraag op: mis je dan ook gezonde mineralen? We leggen uit wat de wetenschap zegt.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en gezondheid</h3>
+            <p className="text-sm text-gray-600">Wat zegt de wetenschap over de gezondheidseffecten van osmosewater drinken?</p>
+          </a>
+          <a href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+            <p className="text-sm text-gray-600">Welke mineralen zitten in osmosewater en wat is de invloed op uw gezondheid?</p>
+          </a>
+          <a href="/osmose-water/gezondheidsvoordelen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Gezondheidsvoordelen van osmosewater</h3>
+            <p className="text-sm text-gray-600">De bewezen voordelen van het drinken van gefilterd osmosewater.</p>
+          </a>
+          <a href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater overzicht</h3>
+            <p className="text-sm text-gray-600">Alles over osmosewater: toepassingen, gezondheid en kwaliteit.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

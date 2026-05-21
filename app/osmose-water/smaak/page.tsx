@@ -356,6 +356,28 @@ export default function OsmoseWaterSmaakPage() {
           </p>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/osmose-water/smaak-verbetering" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Smaak van osmosewater verbeteren</h3>
+              <p className="text-sm text-gray-600">Praktische tips en methoden om de smaak van osmosewater te verbeteren.</p>
+            </Link>
+            <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+              <p className="text-sm text-gray-600">Welke mineralen ontbreken na omgekeerde osmose en waarom dat ertoe doet.</p>
+            </Link>
+            <Link href="/koolstoffilter/geur-smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor geur en smaak</h3>
+              <p className="text-sm text-gray-600">Hoe actief koolstof chloor, geur en smaakafwijkingen uit water verwijdert.</p>
+            </Link>
+            <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater uitleg</h3>
+              <p className="text-sm text-gray-600">Alles over osmosewater: werking, kwaliteit en toepassingen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         {/* Interne links */}

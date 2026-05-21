@@ -386,6 +386,28 @@ export default function ZwembadOsmosePage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterfilter/vijver" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor vijver</h3>
+              <p className="text-sm text-gray-600">Hoe u vijver- en zwembadwater filtert voor schoon en helder water.</p>
+            </Link>
+            <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie als filtertechniek</h3>
+              <p className="text-sm text-gray-600">Hoe UV-licht bacterien en algen in water desinfecteert zonder chemicalien.</p>
+            </Link>
+            <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater uitleg</h3>
+              <p className="text-sm text-gray-600">Alles over osmosewater: werking, kwaliteit en toepassingen.</p>
+            </Link>
+            <Link href="/waterfilter/soorten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Soorten waterfilters</h3>
+              <p className="text-sm text-gray-600">Overzicht van alle waterfiltertypes en wanneer u welk type kiest.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

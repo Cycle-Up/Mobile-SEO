@@ -327,6 +327,28 @@ export default function OsmoseWaterZoutWaterPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/waterontharder/zout" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zout in waterontharders</h3>
+              <p className="text-sm text-gray-600">Hoe regeneratiezout werkt in ionenwisselaars en wat het verschil maakt voor uw water.</p>
+            </Link>
+            <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling als filtertechniek</h3>
+              <p className="text-sm text-gray-600">Hoe ionenwisseling natrium, kalk en andere ionen uit water verwijdert.</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/zout-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose voor zout water</h3>
+              <p className="text-sm text-gray-600">Hoe RO-membranen zout en zouten verwijderen uit brak of zout water.</p>
+            </Link>
+            <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater uitleg</h3>
+              <p className="text-sm text-gray-600">Alles over osmosewater: werking, kwaliteit en toepassingen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

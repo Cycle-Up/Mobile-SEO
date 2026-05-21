@@ -278,6 +278,28 @@ export default function OsmoseWaterIjssteenPage() {
           worden allemaal beter.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/osmose-water/koffie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater voor koffie</h3>
+            <p className="text-sm text-gray-600">Hoe osmosewater de smaak van uw koffie beinvloedt en verbetert.</p>
+          </Link>
+          <Link href="/osmose-water/smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Smaak van osmosewater</h3>
+            <p className="text-sm text-gray-600">Hoe smaakt osmosewater en hoe kunt u de smaak verbeteren?</p>
+          </Link>
+          <Link href="/waterfilter/koelkast" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor koelkast</h3>
+            <p className="text-sm text-gray-600">Waterfilters speciaal voor koelkasten met ijsblokjesmaker.</p>
+          </Link>
+          <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater overzicht</h3>
+            <p className="text-sm text-gray-600">Alles over osmosewater: toepassingen, gezondheid en kwaliteit.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

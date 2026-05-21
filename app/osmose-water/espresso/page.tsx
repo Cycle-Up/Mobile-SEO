@@ -337,6 +337,28 @@ export default function OsmoseWaterEspressoPage() {
           <Link href="/osmose-water" className="text-[#005F8A] underline">osmosewater overzicht</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/waterfilter/koffiezetter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor koffiezetter</h3>
+            <p className="text-sm text-gray-600">Welk waterfilter verbetert de kwaliteit van uw koffiezetter?</p>
+          </Link>
+          <Link href="/osmose-water/koffie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater voor koffie</h3>
+            <p className="text-sm text-gray-600">Hoe osmosewater de smaak van uw koffie beinvloedt en verbetert.</p>
+          </Link>
+          <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+            <p className="text-sm text-gray-600">Welke mineralen zitten in osmosewater en wat is hun invloed op smaak?</p>
+          </Link>
+          <Link href="/waterhardheid/effect-op-koffie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheid en koffie</h3>
+            <p className="text-sm text-gray-600">Hoe waterhardheid de smaak en kwaliteit van uw koffie beinvloedt.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

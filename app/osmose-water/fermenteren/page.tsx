@@ -316,6 +316,28 @@ export default function FermenterenPage() {
           ))}
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/brouwwater/osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Brouwwater met osmose</h3>
+            <p className="text-sm text-gray-600">Osmosewater als basis voor brouwwater: mineraalprofiel en aanpassing.</p>
+          </Link>
+          <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+            <p className="text-sm text-gray-600">Welke mineralen zitten in osmosewater en hoe kunt u ze aanpassen?</p>
+          </Link>
+          <Link href="/osmose-water/ph" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">pH van osmosewater</h3>
+            <p className="text-sm text-gray-600">Wat is de pH van osmosewater en hoe beinvloedt dit fermentatie?</p>
+          </Link>
+          <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater overzicht</h3>
+            <p className="text-sm text-gray-600">Alles over osmosewater: toepassingen, gezondheid en kwaliteit.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

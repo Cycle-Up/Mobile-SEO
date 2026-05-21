@@ -515,6 +515,28 @@ export default function OsmoseWaterTheePage() {
           </Link>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/osmose-water/koffie-espresso" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater voor koffie en espresso</h3>
+              <p className="text-sm text-gray-600">Hoe de juiste waterkwaliteit de smaak van espresso en filterkoffie bepaalt.</p>
+            </Link>
+            <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+              <p className="text-sm text-gray-600">Welke mineralen ontbreken na omgekeerde osmose en waarom dat ertoe doet.</p>
+            </Link>
+            <Link href="/waterhardheid/effect-op-koffie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Effect van waterhardheid op koffie</h3>
+              <p className="text-sm text-gray-600">Waarom hard water koffie- en theezetapparaten beschadigt en de smaak beinvloedt.</p>
+            </Link>
+            <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater uitleg</h3>
+              <p className="text-sm text-gray-600">Alles over osmosewater: werking, kwaliteit en toepassingen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         {/* Interne links */}

@@ -285,6 +285,28 @@ export default function OsmoseWaterVsGedistilleerdPage() {
           Gedistilleerd water is zo puur dat het moeilijker te sturen is qua waterchemie.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+              <p className="text-sm text-gray-600">Welke mineralen ontbreken na omgekeerde osmose en waarom dat ertoe doet.</p>
+            </Link>
+            <Link href="/osmose-water/vs-bronwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater vs. bronwater</h3>
+              <p className="text-sm text-gray-600">Vergelijking van osmosewater en bronwater op kwaliteit, mineralen en kosten.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechniek omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Hoe het RO-membraan werkt en welke stoffen het verwijdert uit leidingwater.</p>
+            </Link>
+            <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater uitleg</h3>
+              <p className="text-sm text-gray-600">Alles over osmosewater: werking, kwaliteit en toepassingen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

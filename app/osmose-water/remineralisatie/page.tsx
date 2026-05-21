@@ -314,6 +314,29 @@ export default function OsmoseWaterRemineralisatiePage() {
         </section>
 
         {/* CTA */}
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/omgekeerde-osmose/remineralisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Remineralisatie RO-systeem</h3>
+              <p className="text-sm text-gray-600">Hoe een remineralisatiestap werkt in een volledig omgekeerde-osmosesysteem.</p>
+            </Link>
+            <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+              <p className="text-sm text-gray-600">Welke mineralen ontbreken na omgekeerde osmose en waarom dat ertoe doet.</p>
+            </Link>
+            <Link href="/osmose-water/ph" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">pH van osmosewater</h3>
+              <p className="text-sm text-gray-600">Waarom osmosewater een lage pH heeft en hoe remineralisatie dit corrigeert.</p>
+            </Link>
+            <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater uitleg</h3>
+              <p className="text-sm text-gray-600">Alles over osmosewater: werking, kwaliteit en toepassingen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

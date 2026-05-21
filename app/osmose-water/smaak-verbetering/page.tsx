@@ -77,6 +77,28 @@ export default function OsmoseWaterSmaakVerbeteringPage() {
           Puur osmosewater is schoon maar smaakt voor velen "leeg" of "vlak". Met remineralisatie geef je het water terug zijn karakter — en smaakt het beter dan de meeste flessenwateren.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="/osmose-water/smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Smaak van osmosewater</h3>
+              <p className="text-sm text-gray-600">Waarom osmosewater anders smaakt en wat de invloed is van mineralen en pH.</p>
+            </a>
+            <a href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+              <p className="text-sm text-gray-600">Welke mineralen ontbreken na omgekeerde osmose en waarom dat ertoe doet.</p>
+            </a>
+            <a href="/koolstoffilter/geur-smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor geur en smaak</h3>
+              <p className="text-sm text-gray-600">Hoe actief koolstof chloor, geur en smaakafwijkingen uit water verwijdert.</p>
+            </a>
+            <a href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater uitleg</h3>
+              <p className="text-sm text-gray-600">Alles over osmosewater: werking, kwaliteit en toepassingen.</p>
+            </a>
+          </div>
+        </section>
+
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

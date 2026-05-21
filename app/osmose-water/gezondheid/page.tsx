@@ -368,6 +368,28 @@ export default function OsmoseWaterGezondheidsPage() {
           <Link href="/osmose-water/remineraliseren" className="text-[#005F8A] underline">osmosewater remineraliseren: methoden en kosten</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+            <p className="text-sm text-gray-600">Welke mineralen zitten in osmosewater en wat is de invloed op uw gezondheid?</p>
+          </Link>
+          <Link href="/osmose-water/gezondheidsvoordelen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Gezondheidsvoordelen van osmosewater</h3>
+            <p className="text-sm text-gray-600">De bewezen voordelen van het drinken van gefilterd osmosewater.</p>
+          </Link>
+          <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</h3>
+            <p className="text-sm text-gray-600">Welke stoffen zitten er in uw leidingwater en welke risicos brengen ze mee?</p>
+          </Link>
+          <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater overzicht</h3>
+            <p className="text-sm text-gray-600">Alles over osmosewater: toepassingen, gezondheid en kwaliteit.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">
