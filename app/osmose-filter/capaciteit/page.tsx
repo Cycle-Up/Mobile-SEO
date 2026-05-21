@@ -77,6 +77,28 @@ export default function OsmoseFilterCapaciteitPage() {
           &ldquo;50 GPD&rdquo; of &ldquo;400 GPD&rdquo; — wat betekent dit in de praktijk? We vertalen filtercapaciteit naar liters per dag en helpen je de juiste maat kiezen voor jouw huishouden.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
+            <p className="text-sm text-gray-600">Hoe het RO-membraan werkt en waarom capaciteit zo'n belangrijke specificatie is.</p>
+          </a>
+          <a href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter kopen</h3>
+            <p className="text-sm text-gray-600">Welke capaciteit heeft u nodig? Vergelijk de beste osmosefilters van 2026.</p>
+          </a>
+          <a href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 keurmerk</h3>
+            <p className="text-sm text-gray-600">Wat betekent het NSF-keurmerk voor de filterprestaties van osmosefilters?</p>
+          </a>
+          <a href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter gids</h3>
+            <p className="text-sm text-gray-600">Alles over omgekeerde osmose: werking, capaciteit, kosten en onderhoud.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

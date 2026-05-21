@@ -105,6 +105,28 @@ export default function OsmoseFilterInstallatiePage() {
           De meeste osmosefilters zijn zonder loodgieter te installeren. Met de juiste voorbereiding heb je het systeem in 1–2 uur operationeel. Hier is alles wat je nodig hebt.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
+            <p className="text-sm text-gray-600">Begrijp hoe het osmosesysteem werkt voordat u begint met installeren.</p>
+          </a>
+          <a href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter kopen</h3>
+            <p className="text-sm text-gray-600">Nog geen osmosefilter? Vergelijk de beste modellen inclusief installatiegemak.</p>
+          </a>
+          <a href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 keurmerk</h3>
+            <p className="text-sm text-gray-600">Controleer of uw osmosefilter voldoet aan internationale veiligheidsnormen.</p>
+          </a>
+          <a href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter gids</h3>
+            <p className="text-sm text-gray-600">Alles over omgekeerde osmose: van installatie tot onderhoud en kosten.</p>
+          </a>
+        </div>
+      </section>
+
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

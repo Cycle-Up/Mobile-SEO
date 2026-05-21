@@ -326,6 +326,28 @@ export default function OsmoseFilterVervangenPage() {
           .
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
+            <p className="text-sm text-gray-600">Begrijp hoe membranen en filters samenwerken en waarom vervanging cruciaal is.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter kopen</h3>
+            <p className="text-sm text-gray-600">Tijd voor een nieuw systeem? Vergelijk de beste osmosefilters inclusief onderhoudskosten.</p>
+          </Link>
+          <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 keurmerk</h3>
+            <p className="text-sm text-gray-600">Gecertificeerde vervangende filters voldoen aan de strengste normen voor drinkwaterveiligheid.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter gids</h3>
+            <p className="text-sm text-gray-600">Alles over osmosefilters: van aanschaf en installatie tot filtervervanging.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <section className="mt-8 mb-8">

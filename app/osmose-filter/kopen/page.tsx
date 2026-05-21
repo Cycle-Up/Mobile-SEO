@@ -424,6 +424,28 @@ export default function OsmoseFilterKopenPage() {
           </div>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
+            <p className="text-sm text-gray-600">Weet wat u koopt: begrijp hoe RO-membranen water zuiveren tot 99% puur.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter koopgids</h3>
+            <p className="text-sm text-gray-600">Uitgebreide koopgids met prijsklassen, merken en de beste keuzes van 2026.</p>
+          </Link>
+          <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 keurmerk</h3>
+            <p className="text-sm text-gray-600">Waarom u alleen een gecertificeerd osmosefilter moet kopen en wat dit keurmerk betekent.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter gids</h3>
+            <p className="text-sm text-gray-600">Alles over osmosefilters: van werking en capaciteit tot installatie en onderhoud.</p>
+          </Link>
+        </div>
+      </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

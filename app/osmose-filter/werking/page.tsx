@@ -677,6 +677,28 @@ export default function OsmoseFilterWerkingPage() {
           </p>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
+            <p className="text-sm text-gray-600">Verdiep u verder in de wetenschappelijke werking van het RO-membraan.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter kopen</h3>
+            <p className="text-sm text-gray-600">Nu u begrijpt hoe osmose werkt: vergelijk de beste systemen van 2026.</p>
+          </Link>
+          <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 keurmerk</h3>
+            <p className="text-sm text-gray-600">Hoe weet u of een osmosefilter echt zuivert wat de fabrikant belooft?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter gids</h3>
+            <p className="text-sm text-gray-600">Het complete platform voor osmosefilters: werking, kosten, merken en keuzehulp.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         {/* Interne links */}
