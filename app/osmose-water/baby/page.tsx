@@ -387,6 +387,28 @@ export default function OsmoseWaterBabyPage() {
           </li>
         </ul>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/babywater/osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Babywater met osmose</h3>
+            <p className="text-sm text-gray-600">Is osmosewater geschikt als babywater en wat zijn de aandachtspunten?</p>
+          </Link>
+          <Link href="/babywater/welk-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Welk water voor baby?</h3>
+            <p className="text-sm text-gray-600">Overzicht van watersoorten en welke het meest geschikt zijn voor baby's.</p>
+          </Link>
+          <Link href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en gezondheid</h3>
+            <p className="text-sm text-gray-600">Wat zegt de wetenschap over de gezondheidseffecten van osmosewater?</p>
+          </Link>
+          <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater overzicht</h3>
+            <p className="text-sm text-gray-600">Alles over osmosewater: toepassingen, gezondheid en kwaliteit.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

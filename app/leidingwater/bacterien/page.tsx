@@ -306,28 +306,6 @@ export default function BacterienLeidingwaterPage() {
           </div>
         </section>
 
-        <section className="mt-8">
-          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische stoffen in drinkwater</h3>
-              <p className="text-sm text-gray-600">Overzicht van bacterien, virussen en andere micro-organismen in drinkwater.</p>
-            </Link>
-            <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie</h3>
-              <p className="text-sm text-gray-600">Hoe UV-licht bacterien en virussen effectief neutraliseert in drinkwater.</p>
-            </Link>
-            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
-              <p className="text-sm text-gray-600">Wettelijke normen en grenswaarden voor de kwaliteit van Nederlands drinkwater.</p>
-            </Link>
-            <Link href="/waterfilter/legionella" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter tegen legionella</h3>
-              <p className="text-sm text-gray-600">Filteroplossingen die legionellabesmetting in leidingwater voorkomen.</p>
-            </Link>
-          </div>
-        </section>
-
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

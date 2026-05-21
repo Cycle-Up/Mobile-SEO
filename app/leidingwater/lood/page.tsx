@@ -376,6 +376,28 @@ export default function LoodLeidingwaterPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Overzicht van lood, koper, chroom en andere zware metalen in leidingwater.</p>
+            </Link>
+            <Link href="/drinkwaternormen/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen voor lood</h3>
+              <p className="text-sm text-gray-600">Wettelijke grenswaarden voor lood in drinkwater en recente aanscherpingen.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Hoe omgekeerde osmose lood en andere zware metalen tot meer dan 99% verwijdert.</p>
+            </Link>
+            <Link href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor lood</h3>
+              <p className="text-sm text-gray-600">Vergelijking van filters die lood effectief uit drinkwater verwijderen.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

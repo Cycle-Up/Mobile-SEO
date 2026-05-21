@@ -334,6 +334,28 @@ export default function MedicijnrestenPage() {
           Normale filterkans verwijderen nauwelijks farmaceutische stoffen.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/hormonen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Hormonen en medicijnresten in drinkwater</h3>
+              <p className="text-sm text-gray-600">Hoe hormonen en farmaceutische stoffen in het drinkwater terechtkomen.</p>
+            </Link>
+            <Link href="/drinkwaternormen/medicijnresten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen voor medicijnresten</h3>
+              <p className="text-sm text-gray-600">Actuele normen en grenswaarden voor farmaceutische stoffen in drinkwater.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Hoe omgekeerde osmose medicijnresten en microverontreinigingen verwijdert.</p>
+            </Link>
+            <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
+              <p className="text-sm text-gray-600">Hoe actief kool farmaceutische microverontreinigingen adsorbeert uit water.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

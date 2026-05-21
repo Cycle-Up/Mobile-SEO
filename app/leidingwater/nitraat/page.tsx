@@ -252,6 +252,28 @@ export default function NiraatLeidingwaterPage() {
           <li>U zwanger bent en in een gebied woont met verhoogd nitraatgehalte</li>
         </ul>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/nitraat-nitriet" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat en nitriet in drinkwater</h3>
+              <p className="text-sm text-gray-600">Herkomst, gezondheidsrisicos en normen voor nitraat en nitriet in water.</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
+              <p className="text-sm text-gray-600">Wettelijke normen en grenswaarden voor de kwaliteit van Nederlands drinkwater.</p>
+            </Link>
+            <Link href="/putwater/nitraat" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat in putwater</h3>
+              <p className="text-sm text-gray-600">Waarom putwater vaker verhoogde nitraatwaarden heeft en wat u kunt doen.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Hoe omgekeerde osmose nitraat en andere verontreinigingen effectief verwijdert.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

@@ -348,6 +348,28 @@ export default function PFASLeidingwaterPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in drinkwater: overzicht</h3>
+              <p className="text-sm text-gray-600">Wetenschappelijk overzicht van PFAS-stoffen en hun aanwezigheid in drinkwater.</p>
+            </Link>
+            <Link href="/pfas-waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS waterfilter</h3>
+              <p className="text-sm text-gray-600">Vergelijking van waterfilters die PFAS effectief uit drinkwater verwijderen.</p>
+            </Link>
+            <Link href="/drinkwaternormen/pfas" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen voor PFAS</h3>
+              <p className="text-sm text-gray-600">Actuele Europese en Nederlandse normen en grenswaarden voor PFAS in drinkwater.</p>
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Hoe omgekeerde osmose PFAS en andere persistente stoffen effectief verwijdert.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>
