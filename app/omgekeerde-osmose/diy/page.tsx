@@ -287,6 +287,28 @@ export default function OsmoseDIYPage() {
           ))}
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter installatie</h3>
+            <p className="text-sm text-gray-600">Stap-voor-stap installatiegids voor uw osmosefilter.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/filter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe werkt elk filteronderdeel van een omgekeerde osmose systeem?</p>
+          </Link>
+          <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter vervangen</h3>
+            <p className="text-sm text-gray-600">Wanneer en hoe vervangt u de filters van uw osmosesysteem?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+            <p className="text-sm text-gray-600">Complete gids over omgekeerde osmose: werking, voordelen en keuze.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <p className="text-gray-600 text-sm mt-6">

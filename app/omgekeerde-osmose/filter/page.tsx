@@ -487,6 +487,29 @@ export default function OsmoseFilterPage() {
           </p>
         </section>
 
+        {/* Gerelateerde onderwerpen */}
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechniek omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Uitleg over de filtertechniek achter omgekeerde osmose systemen.</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter kopen</h3>
+              <p className="text-sm text-gray-600">Vergelijk osmosefilters en vind het beste systeem voor uw budget.</p>
+            </Link>
+            <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 keurmerk</h3>
+              <p className="text-sm text-gray-600">Wat betekent NSF/ANSI 58 certificering voor uw osmosefilter?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+              <p className="text-sm text-gray-600">Complete gids over omgekeerde osmose: werking, voordelen en keuze.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

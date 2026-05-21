@@ -361,6 +361,28 @@ export default function MembraandrukPage() {
           </Link>.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/omgekeerde-osmose/druk" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterdruk voor osmose</h3>
+              <p className="text-sm text-gray-600">Welke waterdruk heb je minimaal nodig voor een goed werkend RO-systeem?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/boosterpomp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Boosterpomp voor osmose</h3>
+              <p className="text-sm text-gray-600">Wanneer is een boosterpomp nodig en welk effect heeft het op de filterprestaties?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/waterdruk" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterdruk meten en optimaliseren</h3>
+              <p className="text-sm text-gray-600">Hoe meet je de waterdruk thuis en wat doe je als die te laag is?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose: complete gids</h3>
+              <p className="text-sm text-gray-600">Alles over hoe RO werkt, wat het filtert en welk systeem bij jou past.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

@@ -320,6 +320,28 @@ export default function CapaciteitLiterPage() {
           ))}
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/capaciteit" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Capaciteit omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">Liter per uur, debiet en tankgrootte: alles over osmosecapaciteit.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/voor-thuis" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter voor thuis</h3>
+            <p className="text-sm text-gray-600">Welk osmosefilter past het beste bij uw thuissituatie?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter kopen</h3>
+            <p className="text-sm text-gray-600">Vergelijk osmosefilters en vind het beste systeem voor uw budget.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+            <p className="text-sm text-gray-600">Complete gids over omgekeerde osmose: werking, voordelen en keuze.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

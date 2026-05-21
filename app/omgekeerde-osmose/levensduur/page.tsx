@@ -342,6 +342,28 @@ export default function OmgekeerdeOsmoseLevensduurPage() {
           voor een compleet onderhoudsplan.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/omgekeerde-osmose/membraan-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Membraan vervangen</h3>
+              <p className="text-sm text-gray-600">Wanneer en hoe vervang je het RO-membraan voor optimale filterprestaties?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/onderhoud" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Onderhoud osmosesysteem</h3>
+              <p className="text-sm text-gray-600">Compleet onderhoudsplan voor een lang meegaand en goed werkend RO-systeem.</p>
+            </Link>
+            <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter vervangen</h3>
+              <p className="text-sm text-gray-600">Stap-voor-stap handleiding voor het vervangen van alle filters in je osmosesysteem.</p>
+            </Link>
+            <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose: complete gids</h3>
+              <p className="text-sm text-gray-600">Alles over hoe RO werkt, wat het filtert en welk systeem bij jou past.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

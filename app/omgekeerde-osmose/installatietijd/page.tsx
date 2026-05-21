@@ -304,6 +304,28 @@ export default function InstallatietijdPage() {
           pagina voor opties met ingebouwde osmose.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/omgekeerde-osmose/installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Installatie omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Stap-voor-stap uitleg over het installeren van een RO-systeem onder de gootsteen.</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/inbouw" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Inbouw osmosefilter</h3>
+              <p className="text-sm text-gray-600">Wat is een inbouwsysteem en wanneer kies je daarvoor boven een losstaand model?</p>
+            </Link>
+            <Link href="/keuzehulp/installatie-type" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp installatietypes</h3>
+              <p className="text-sm text-gray-600">Welk installatietype past bij jouw keuken en waterleiding?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose: complete gids</h3>
+              <p className="text-sm text-gray-600">Alles over hoe RO werkt, wat het filtert en welk systeem bij jou past.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <section className="mt-8 mb-8">

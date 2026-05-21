@@ -578,6 +578,28 @@ export default function OsmosePrijsPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/omgekeerde-osmose/kosten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Kosten omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Wat kost een osmosesysteem op jaarbasis, inclusief filters en onderhoud?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosesysteem kopen</h3>
+              <p className="text-sm text-gray-600">Welke RO-systemen bieden de beste prijs-kwaliteitverhouding voor thuisgebruik?</p>
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp op budget</h3>
+              <p className="text-sm text-gray-600">Vind een waterfilter dat past binnen jouw budget zonder in te leveren op kwaliteit.</p>
+            </Link>
+            <Link href="/vergelijken/waterfilter-vs-waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter vs. waterontharder</h3>
+              <p className="text-sm text-gray-600">Welke oplossing is goedkoper en effectiever voor jouw situatie?</p>
+            </Link>
+          </div>
+        </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

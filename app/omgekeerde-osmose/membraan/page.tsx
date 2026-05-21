@@ -420,6 +420,28 @@ export default function ROMembraanPage() {
           </p>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechniek: omgekeerde osmose</h3>
+              <p className="text-sm text-gray-600">Hoe werkt het RO-filterproces en welke verontreinigingen verwijdert het membraan?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/membraan-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Membraan vervangen</h3>
+              <p className="text-sm text-gray-600">Wanneer en hoe vervang je het RO-membraan voor optimale filterprestaties?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/rendement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Rendement osmosesysteem</h3>
+              <p className="text-sm text-gray-600">Hoeveel water wordt daadwerkelijk gefilterd en wat bepaalt het waterrendement?</p>
+            </Link>
+            <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 keurmerk</h3>
+              <p className="text-sm text-gray-600">Wat betekent dit certificaat voor de kwaliteit en veiligheid van het membraan?</p>
+            </Link>
+          </div>
+        </section>
+
         {/* CTA */}
         <CTABanner context="osmose" />
 

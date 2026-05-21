@@ -425,6 +425,28 @@ export default function OsmoseKostenPage() {
           </li>
         </ul>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmosesysteem kopen</h3>
+              <p className="text-sm text-gray-600">Welke RO-systemen bieden de beste prijs-kwaliteitverhouding voor thuisgebruik?</p>
+            </Link>
+            <Link href="/omgekeerde-osmose/prijs" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Prijs osmosefilter</h3>
+              <p className="text-sm text-gray-600">Wat bepaalt de aanschafprijs van een osmosefilter en waar zit het prijsverschil?</p>
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp op budget</h3>
+              <p className="text-sm text-gray-600">Vind een waterfilter dat past binnen jouw budget zonder in te leveren op kwaliteit.</p>
+            </Link>
+            <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose: complete gids</h3>
+              <p className="text-sm text-gray-600">Alles over hoe RO werkt, wat het filtert en welk systeem bij jou past.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

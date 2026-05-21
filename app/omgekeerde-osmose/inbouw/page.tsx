@@ -313,6 +313,28 @@ export default function OsmoseInbouwPage() {
           ))}
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter installatie</h3>
+            <p className="text-sm text-gray-600">Stap-voor-stap installatiegids voor uw osmosefilter.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/voor-thuis" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter voor thuis</h3>
+            <p className="text-sm text-gray-600">Welk osmosefilter past het beste bij uw thuissituatie?</p>
+          </Link>
+          <Link href="/keuzehulp/installatie-type" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp installatietype</h3>
+            <p className="text-sm text-gray-600">Inbouw, aanrecht of inline: welk installatietype past bij u?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+            <p className="text-sm text-gray-600">Complete gids over omgekeerde osmose: werking, voordelen en keuze.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

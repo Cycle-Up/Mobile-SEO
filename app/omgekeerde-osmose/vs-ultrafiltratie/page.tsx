@@ -309,6 +309,28 @@ export default function RoVsUltrafiltatiePage() {
           <li>U woont in een gebied zonder PFAS, nitraat- of loodprobleem</li>
         </ul>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/filtertechnieken/ultrafiltratie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Ultrafiltratie uitgelegd</h3>
+            <p className="text-sm text-gray-600">Hoe werkt ultrafiltratie en voor welke toepassingen is het geschikt?</p>
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechniek omgekeerde osmose</h3>
+            <p className="text-sm text-gray-600">De techniek achter RO-filtratie uitgelegd voor consumenten.</p>
+          </Link>
+          <Link href="/vergelijken/waterfilter-vs-waterontharder" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter vs waterontharder</h3>
+            <p className="text-sm text-gray-600">Wat is het verschil en welke oplossing past bij uw situatie?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe werkt het membraan en wat filtert het eruit?</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

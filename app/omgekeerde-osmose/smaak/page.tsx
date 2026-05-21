@@ -237,6 +237,28 @@ export default function OsmoseSmaakPage() {
           de <Link href="/omgekeerde-osmose/kosten" className="text-[#005F8A] underline">totale kosten</Link>.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/osmose-water/smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater smaak</h3>
+            <p className="text-sm text-gray-600">Hoe smaakt osmosewater en hoe verbetert u de smaak?</p>
+          </Link>
+          <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
+            <p className="text-sm text-gray-600">Welke mineralen zitten in osmosewater en wat is de invloed op uw gezondheid?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/remineralisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Remineralisatie van osmosewater</h3>
+            <p className="text-sm text-gray-600">Mineralen terugvoegen na osmosefiltratie voor betere smaak en gezondheid.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe werkt het membraan en wat filtert het eruit?</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

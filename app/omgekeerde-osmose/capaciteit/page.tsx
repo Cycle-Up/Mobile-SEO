@@ -340,6 +340,28 @@ export default function OsmoseCapaciteitPage() {
           lager uitvalt dan het papier belooft.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/capaciteit-liter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Capaciteit in liters berekenen</h3>
+            <p className="text-sm text-gray-600">GPD omrekenen naar liters per dag en de juiste capaciteit kiezen voor uw gezin.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/voor-thuis" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter voor thuis</h3>
+            <p className="text-sm text-gray-600">Welk osmosefilter past het beste bij uw thuissituatie?</p>
+          </Link>
+          <Link href="/keuzehulp" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp waterfilter</h3>
+            <p className="text-sm text-gray-600">Vind het juiste waterfilter voor uw situatie met onze keuzehulp.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+            <p className="text-sm text-gray-600">Complete gids over omgekeerde osmose: werking, voordelen en keuze.</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

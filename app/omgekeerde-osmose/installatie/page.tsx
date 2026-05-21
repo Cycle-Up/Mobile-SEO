@@ -377,6 +377,28 @@ export default function OsmoseInstallatiePage() {
           voor een volledig onderhoudsschema en tips voor filtervervanging.
         </p>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/inbouw" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter inbouw</h3>
+            <p className="text-sm text-gray-600">Alles over inbouw osmosefilters onder het aanrecht: modellen en installatie.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/diy" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Zelf installeren (DIY)</h3>
+            <p className="text-sm text-gray-600">Osmosefilter zelf installeren zonder loodgieter: compleet stappenplan.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/installatietijd" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Installatietijd osmosefilter</h3>
+            <p className="text-sm text-gray-600">Hoelang duurt het installeren van een osmosefilter?</p>
+          </Link>
+          <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter vervangen</h3>
+            <p className="text-sm text-gray-600">Wanneer en hoe vervangt u de filters van uw osmosesysteem?</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         <div className="space-y-3 mb-8 mt-8">

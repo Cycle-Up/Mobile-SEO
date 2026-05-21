@@ -308,6 +308,28 @@ export default function OmgekeerdeOsmoseRendementPage() {
           </p>
         </section>
 
+      <section className="mt-8">
+        <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/omgekeerde-osmose/afvalwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Afvalwater bij osmose</h3>
+            <p className="text-sm text-gray-600">Hoeveel afvalwater produceert uw osmosefilter en hoe kunt u dit hergebruiken?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/membraan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">RO-membraan uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe werkt het RO-membraan en wanneer moet u het vervangen?</p>
+          </Link>
+          <Link href="/omgekeerde-osmose/waterdruk" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Waterdruk voor osmose</h3>
+            <p className="text-sm text-gray-600">Optimale druk voor maximaal rendement van uw RO-systeem.</p>
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
+            <p className="text-sm text-gray-600">Hoe werkt het membraan en wat filtert het eruit?</p>
+          </Link>
+        </div>
+      </section>
+
         <CTABanner context="osmose" />
 
         {/* Interne links */}
