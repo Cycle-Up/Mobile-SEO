@@ -366,6 +366,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/waterfilter/horeca`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/waterfilter/bedrijf`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/drinkwaterfontein/horeca`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwaterfontein/huren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/drinkwaterfontein/onderhoud`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterontharder/zakelijk`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     // Osmose verdieping
     { url: `${BASE}/osmose-water/remineraliseren`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
