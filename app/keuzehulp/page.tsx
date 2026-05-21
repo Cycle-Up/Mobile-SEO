@@ -76,6 +76,27 @@ export default function KeuzehulpPage() {
         collectionDescription={cluster.description}
         relatedClusters={cluster.relatedClusters}
       />
+      <div className="max-w-4xl mx-auto px-4 pb-10">
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { href: "/waterfilter", title: "Waterfiltersoorten overzicht" },
+              { href: "/filtertechnieken", title: "Filtertechnieken vergelijken" },
+              { href: "/waterhardheid", title: "Waterhardheid in uw gemeente" },
+              { href: "/vergelijken", title: "Filters naast elkaar vergelijken" },
+            ].map(l => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
+              >
+                <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">{l.title}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
     </>
   );
 }

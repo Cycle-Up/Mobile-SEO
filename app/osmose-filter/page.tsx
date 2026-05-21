@@ -802,6 +802,25 @@ export default function OsmoseFilterPage() {
             ))}
           </div>
         </section>
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { href: "/omgekeerde-osmose", title: "Omgekeerde osmose uitgelegd" },
+              { href: "/filtertechnieken/omgekeerde-osmose", title: "Osmose als filtertechniek" },
+              { href: "/keurmerken", title: "NSF/ANSI-58 voor osmosefilters" },
+              { href: "/keuzehulp/pfas-lood", title: "Osmosefilter voor PFAS en lood?" },
+            ].map(l => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
+              >
+                <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">{l.title}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
       </div>
     </>
   );

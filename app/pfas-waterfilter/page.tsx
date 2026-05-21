@@ -305,6 +305,26 @@ export default function PfasWaterfilterPage() {
           Meer lezen: <Link href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</Link>, <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</Link> en <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose gids</Link>.
         </p>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { href: "/stoffen-in-drinkwater/pfas-overzicht", title: "PFAS-stoffen in drinkwater uitgelegd" },
+              { href: "/drinkwaternormen/pfas", title: "PFAS-normen in drinkwater" },
+              { href: "/filtertechnieken/omgekeerde-osmose", title: "Osmose als effectiefste PFAS-filter" },
+              { href: "/keuzehulp/pfas-lood", title: "Keuzehulp bij PFAS en lood" },
+            ].map(l => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
+              >
+                <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">{l.title}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
       </div>
     </>
   );

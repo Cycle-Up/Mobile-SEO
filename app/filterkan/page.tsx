@@ -529,6 +529,25 @@ export default function FilterkanPage() {
             ))}
           </div>
         </section>
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { href: "/waterfilter", title: "Waterfiltersoorten vergelijken" },
+              { href: "/vergelijken/osmose-vs-filterkan", title: "Filterkan vs osmosefilter" },
+              { href: "/filtertechnieken/actief-kool", title: "Actief kool: techniek achter filterkansen" },
+              { href: "/keuzehulp", title: "Is een filterkan de juiste keuze voor u?" },
+            ].map(l => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
+              >
+                <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">{l.title}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
       </div>
     </>
   );
