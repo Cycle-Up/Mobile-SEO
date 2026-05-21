@@ -659,6 +659,28 @@ export default function DrinkwaterPage() {
             </Link>
           </div>
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/drinkwaternormen" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Drinkwaternormen in Nederland</p>
+              <p className="text-sm text-gray-500">Welke wettelijke normen gelden er voor drinkwater in Nederland?</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Stoffen in drinkwater</p>
+              <p className="text-sm text-gray-500">Welke mineralen, verontreinigingen en toevoegingen zitten er in uw drinkwater?</p>
+            </Link>
+            <Link href="/waterhardheid" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterhardheid per gemeente</p>
+              <p className="text-sm text-gray-500">Zoek op postcode hoe hard het drinkwater is in uw gemeente.</p>
+            </Link>
+            <Link href="/filtertechnieken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Drinkwater filteren: welke methoden?</p>
+              <p className="text-sm text-gray-500">Vergelijk filtertechnieken voor het zuiveren van drinkwater thuis.</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

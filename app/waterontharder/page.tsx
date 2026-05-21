@@ -775,6 +775,28 @@ export default function WaterOntharderPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/ionenwisseling" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Ionenwisseling: hoe werkt onthardering?</p>
+              <p className="text-sm text-gray-500">De technische werking van ionenwisseling en wanneer het de juiste keuze is.</p>
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Keuzehulp bij hard water</p>
+              <p className="text-sm text-gray-500">Welke oplossing past het beste bij uw situatie: ontharder, anti-kalkfilter of osmose?</p>
+            </Link>
+            <Link href="/waterhardheid" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterhardheid in uw gemeente</p>
+              <p className="text-sm text-gray-500">Zoek op postcode hoe hard het water is in uw regio.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Kalk en mineralen in drinkwater</p>
+              <p className="text-sm text-gray-500">Wat zijn calcium en magnesium in water, en zijn ze schadelijk of juist gezond?</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">

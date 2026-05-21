@@ -752,6 +752,28 @@ export default function WaterfilterPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Alle filtertechnieken vergeleken</p>
+              <p className="text-sm text-gray-500">Een overzicht van actieve kool, ionenwisseling, osmose en UV-filtratie naast elkaar.</p>
+            </Link>
+            <Link href="/keuzehulp" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Welk filter past bij u?</p>
+              <p className="text-sm text-gray-500">Beantwoord een paar vragen en ontdek welk waterfilter het beste bij uw situatie past.</p>
+            </Link>
+            <Link href="/keurmerken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterfilter keurmerken uitgelegd</p>
+              <p className="text-sm text-gray-500">NSF, KIWA en andere keurmerken: wat zeggen ze over de kwaliteit van een waterfilter?</p>
+            </Link>
+            <Link href="/vergelijken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterfilters vergelijken</p>
+              <p className="text-sm text-gray-500">Vergelijk populaire waterfiltermerken en -modellen op prijs, prestaties en onderhoud.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over waterfilters</h2>

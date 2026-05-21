@@ -901,6 +901,28 @@ export default function LeidingwaterPage() {
             </Link>
           </div>
         </section>
+
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/drinkwaternormen" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Drinkwaternormen in Nederland</p>
+              <p className="text-sm text-gray-500">Welke wettelijke normen gelden er voor de kwaliteit van leidingwater?</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Welke stoffen zitten er in leidingwater?</p>
+              <p className="text-sm text-gray-500">Een overzicht van mineralen, verontreinigingen en toevoegingen in Nederlands leidingwater.</p>
+            </Link>
+            <Link href="/waterhardheid" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterhardheid in uw gemeente</p>
+              <p className="text-sm text-gray-500">Zoek op postcode hoe hard het water is in uw regio en wat u eraan kunt doen.</p>
+            </Link>
+            <Link href="/filtertechnieken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Leidingwater filteren: welke techniek?</p>
+              <p className="text-sm text-gray-500">Vergelijk filtertechnieken om uw leidingwater verder te zuiveren.</p>
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

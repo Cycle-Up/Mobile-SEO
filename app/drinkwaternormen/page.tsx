@@ -403,6 +403,28 @@ export default function DrinkwaternormenPage() {
           ))}
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Stoffen in drinkwater uitgelegd</p>
+              <p className="text-sm text-gray-500">Welke stoffen worden gemeten in drinkwater en wat betekenen de grenswaarden?</p>
+            </Link>
+            <Link href="/leidingwater" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Leidingwater kwaliteit in Nederland</p>
+              <p className="text-sm text-gray-500">Alles over de kwaliteit, samenstelling en veiligheid van Nederlands leidingwater.</p>
+            </Link>
+            <Link href="/filtertechnieken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Welke filter verwijdert wat?</p>
+              <p className="text-sm text-gray-500">Vergelijk filtertechnieken op basis van de stoffen die ze uit drinkwater verwijderen.</p>
+            </Link>
+            <Link href="/waterhardheid" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterhardheid en normen per gemeente</p>
+              <p className="text-sm text-gray-500">Waterhardheid verschilt per regio. Bekijk de waarden voor uw gemeente.</p>
+            </Link>
+          </div>
+        </section>
+
         <CTABanner context="osmose" />
       </div>
     </>

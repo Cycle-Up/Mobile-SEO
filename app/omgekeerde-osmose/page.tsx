@@ -799,6 +799,28 @@ export default function OmgekeerdeOsmosePage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Omgekeerde osmose als filtertechniek</p>
+              <p className="text-sm text-gray-500">Technische uitleg over hoe RO-filtratie werkt en waarvoor het geschikt is.</p>
+            </Link>
+            <Link href="/keuzehulp/pfas-lood" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Keuzehulp: osmose voor PFAS en lood</p>
+              <p className="text-sm text-gray-500">Stap-voor-stap advies bij het kiezen van een osmosesysteem voor PFAS of lood.</p>
+            </Link>
+            <Link href="/waterfilter/pfas" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">PFAS waterfilter vergelijken</p>
+              <p className="text-sm text-gray-500">Welke waterfilters verwijderen PFAS effectief? Vergelijk de opties.</p>
+            </Link>
+            <Link href="/keurmerken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">NSF/ANSI-58: keurmerk voor osmosefilters</p>
+              <p className="text-sm text-gray-500">Wat betekent het NSF/ANSI-58 keurmerk en waarom is het belangrijk bij osmose?</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over omgekeerde osmose</h2>

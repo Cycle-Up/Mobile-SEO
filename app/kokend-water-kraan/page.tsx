@@ -623,6 +623,28 @@ export default function KokendWaterKraanPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/omgekeerde-osmose" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Osmose als aanvullende filtratie</p>
+              <p className="text-sm text-gray-500">Combineer uw kokend water kraan met omgekeerde osmose voor puur drinkwater.</p>
+            </Link>
+            <Link href="/vergelijken/kokend-water-kraan-merken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Kokend water kraan merken vergelijken</p>
+              <p className="text-sm text-gray-500">Vergelijk Quooker, Grohe, Zip en andere merken op prijs en functies.</p>
+            </Link>
+            <Link href="/keurmerken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Veiligheid en keurmerken voor kokend water</p>
+              <p className="text-sm text-gray-500">Welke keurmerken zijn relevant voor kokend water kranen en boilers?</p>
+            </Link>
+            <Link href="/waterfilter" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterfilter voor de keuken</p>
+              <p className="text-sm text-gray-500">Welk waterfilter past het beste bij uw keuken? Vergelijk alle opties.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over de kokend water kraan</h2>

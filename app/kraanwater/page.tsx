@@ -556,6 +556,28 @@ export default function KraanwaterPage() {
           </div>
         </section>
 
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/stoffen-in-drinkwater" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Welke stoffen zitten er in kraanwater?</p>
+              <p className="text-sm text-gray-500">Een volledig overzicht van mineralen, verontreinigingen en toevoegingen in kraanwater.</p>
+            </Link>
+            <Link href="/drinkwaternormen" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Drinkwaternormen in Nederland</p>
+              <p className="text-sm text-gray-500">Welke wettelijke normen gelden er voor de kwaliteit van drinkwater in Nederland?</p>
+            </Link>
+            <Link href="/leidingwater" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Leidingwater kwaliteit uitgelegd</p>
+              <p className="text-sm text-gray-500">Hoe wordt leidingwater gezuiverd en hoe veilig is het in Nederland?</p>
+            </Link>
+            <Link href="/filtertechnieken" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Kraanwater filteren: welke opties?</p>
+              <p className="text-sm text-gray-500">Vergelijk filtertechnieken voor het verbeteren van de kwaliteit van uw kraanwater.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over kraanwater</h2>
