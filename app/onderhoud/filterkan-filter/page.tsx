@@ -58,6 +58,32 @@ const articleSchema = {
     name: "WaterfilterPlatform",
     url: "https://waterfilterplatform.nl",
   },
+  reviewedBy: {
+    "@type": "Organization",
+    "@id": "https://waterfilterplatform.nl/#redactie",
+    name: "WaterfilterPlatform Redactieteam",
+  },
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: [".quick-answer", "h1", "[data-speakable='true']"],
+  },
+};
+
+const howToSchema = {
+  "@type": "HowTo",
+  name: "Hoe een filterkancartridge vervangen",
+  description: "Stap-voor-stap handleiding voor het wisselen van het filter in een filterkan zoals Brita of BWT.",
+  inLanguage: "nl-NL",
+  totalTime: "PT15M",
+  step: [
+    { "@type": "HowToStep", position: 1, name: "Controleer de vervangtermijn", text: "Controleer of de cartridge de aanbevolen termijn heeft bereikt: gemiddeld 4-8 weken of 150-200 liter gebruik. Gebruik de filterindicator op de kan of houd de startdatum bij." },
+    { "@type": "HowToStep", position: 2, name: "Koop vervangende cartridge", text: "Koop een nieuwe cartridge van hetzelfde model als uw filterkan. Kies voor een gecertificeerde cartridge (NSF/ANSI 42) voor betrouwbare filterprestaties." },
+    { "@type": "HowToStep", position: 3, name: "Week de nieuwe cartridge 15 minuten in koud water", text: "Leg de nieuwe cartridge 15 minuten in een bak koud water. Dit activeert het filtermateriaal en verwijdert losse koolstofdeeltjes." },
+    { "@type": "HowToStep", position: 4, name: "Demonteer de filterkan", text: "Verwijder het deksel en het bovenste reservoir van de kan. Spoel alle losse onderdelen af met schoon water." },
+    { "@type": "HowToStep", position: 5, name: "Verwijder de oude cartridge", text: "Verwijder de verbruikte cartridge uit de houder in het bovenste reservoir. Gooi de oude cartridge weg." },
+    { "@type": "HowToStep", position: 6, name: "Installeer de nieuwe cartridge", text: "Plaats de geweekte nieuwe cartridge in de houder en druk hem stevig op zijn plek. Zorg dat hij goed is vergrendeld." },
+    { "@type": "HowToStep", position: 7, name: "Vul de kan en gooi de eerste vulling weg", text: "Vul het bovenste reservoir met koud kraanwater en laat het volledig door de cartridge lopen. Gooi deze eerste vulling weg om resterende koolstofdeeltjes te verwijderen. Reset de filterindicator indien aanwezig." },
+  ],
 };
 
 const faqSchema = {
@@ -84,6 +110,7 @@ export default function FilterkanFilterPage() {
           },
           faqSchema,
           articleSchema,
+          howToSchema,
         ]}
       />
 

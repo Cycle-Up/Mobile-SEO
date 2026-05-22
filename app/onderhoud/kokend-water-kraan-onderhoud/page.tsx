@@ -84,6 +84,31 @@ export default function KokendWaterKraanOnderhoudPage() {
               name: "WaterfilterPlatform",
               url: "https://waterfilterplatform.nl",
             },
+            reviewedBy: {
+              "@type": "Organization",
+              "@id": "https://waterfilterplatform.nl/#redactie",
+              name: "WaterfilterPlatform Redactieteam",
+            },
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: [".quick-answer", "h1", "[data-speakable='true']"],
+            },
+          },
+          {
+            "@type": "HowTo",
+            name: "Hoe een kokend water kraan ontkalken en het filter vervangen",
+            description: "Stap-voor-stap handleiding voor het ontkalken van de boilertank en het wisselen van het filter van een kokend water kraan.",
+            inLanguage: "nl-NL",
+            totalTime: "PT60M",
+            step: [
+              { "@type": "HowToStep", position: 1, name: "Schakel de kokend water kraan uit en laat afkoelen", text: "Zet het systeem uit via de schakelaar of de app. Laat het systeem minimaal 30 minuten afkoelen tot kamertemperatuur voordat u begint met onderhoud." },
+              { "@type": "HowToStep", position: 2, name: "Leeg de boilertank", text: "Leeg de boilertank via de drain of afvoerfunctie. U kunt ook wachten tot het systeem zichzelf heeft leeggedampt. Raadpleeg de handleiding voor de juiste methode bij uw model." },
+              { "@type": "HowToStep", position: 3, name: "Ontkalk de boilertank met citroenzuuroplossing", text: "Los 30-50 gram voedselveilig citroenzuurpoeder op in 1 liter lauwwarm water. Vul de tank met deze oplossing en laat 20-30 minuten inwerken (tot 60 minuten bij ernstige aanslag). Gebruik geen azijn, want dat kan rubberen afdichtingen aantasten." },
+              { "@type": "HowToStep", position: 4, name: "Spoel de boiler driemaal door met schoon water", text: "Sluit de watertoevoer opnieuw aan en spoel de tank met minimaal 3 tankinhouden schoon leidingwater door. Laat het water weglopen via de afvoerfunctie of de kraan totdat er geen zure smaak meer is." },
+              { "@type": "HowToStep", position: 5, name: "Controleer de magneetfilter op het waterinlaatpunt", text: "Controleer of er een magneetfilter aanwezig is op het waterinlaatpunt. Verwijder eventueel vastgehecht ijzerdeeltjes door de magneet schoon te vegen." },
+              { "@type": "HowToStep", position: 6, name: "Vervang het pre-filter", text: "Als het systeem een inline-filter heeft, vervang deze dan nu. Schroef de filterbehuizing los, verwijder de oude cartridge en plaats de nieuwe. Controleer de O-ring en draai de behuizing goed vast." },
+              { "@type": "HowToStep", position: 7, name: "Reset de kalktellerstand en start opnieuw op", text: "Reset de kalk- of onderhoudsteller in het display of de app van uw systeem. Zet het systeem aan en laat het opwarmen. Controleer op lekkage bij alle aansluitingen." },
+            ],
           },
         ]}
       />

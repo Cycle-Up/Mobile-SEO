@@ -84,6 +84,31 @@ export default function KoolstoffilterLevensduurPage() {
               name: "WaterfilterPlatform",
               url: "https://waterfilterplatform.nl",
             },
+            reviewedBy: {
+              "@type": "Organization",
+              "@id": "https://waterfilterplatform.nl/#redactie",
+              name: "WaterfilterPlatform Redactieteam",
+            },
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: [".quick-answer", "h1", "[data-speakable='true']"],
+            },
+          },
+          {
+            "@type": "HowTo",
+            name: "Hoe een koolstoffilter vervangen",
+            description: "Stap-voor-stap handleiding voor het vervangen van een koolstoffilter (CTO-blok of GAC-granulaat) in een waterfiltersysteem.",
+            inLanguage: "nl-NL",
+            totalTime: "PT20M",
+            step: [
+              { "@type": "HowToStep", position: 1, name: "Stel de vervangdatum in", text: "Stel de vervangdatum in op basis van het filtertype: 6-12 maanden voor een CTO-koolstofblokfilter, of 3-6 maanden voor een GAC-granulaatfilter. Noteer de installatiedatum op het filter." },
+              { "@type": "HowToStep", position: 2, name: "Controleer waterdruk en doorstroomsnelheid", text: "Een verminderde doorstroomsnelheid of terugkerende chloorgeur in het gefilterde water zijn indicatoren dat het filter aan vervanging toe is. Doe ook de geurtest: ruik aan het gefilterde water." },
+              { "@type": "HowToStep", position: 3, name: "Sluit de watertoevoer af voor het filterhuis", text: "Sluit de afsluitkraan op de koudwaterleiding die naar het filtersysteem leidt. Open de filterkraan om het systeem drukvrij te laten lopen." },
+              { "@type": "HowToStep", position: 4, name: "Verwijder het filterhuis en de verouderde cartridge", text: "Gebruik de meegeleverde filtersleutel om de behuizing linksom los te draaien. Houd een opvangbak gereed. Verwijder de verbruikte koolstofcartridge." },
+              { "@type": "HowToStep", position: 5, name: "Reinig het filterhuis met schoon water", text: "Spoel het filterhuis af met schoon water en een zachte borstel. Controleer de O-ring op beschadigingen en vervang deze indien nodig." },
+              { "@type": "HowToStep", position: 6, name: "Installeer de nieuwe koolstofcartridge", text: "Verwijder de verpakking van de nieuwe cartridge, let op de flow-richting (pijlen op de cartridge) en plaats het filter in de behuizing. Draai de behuizing met de hand vast plus een kwart slag extra met de filtersleutel." },
+              { "@type": "HowToStep", position: 7, name: "Open de watertoevoer en spoel 5 minuten door", text: "Open de afsluitkraan langzaam en controleer op lekkage. Laat het systeem 5 minuten doorstromen. Het eerste water kan grijs zijn door koolstofdeeltjes — dit is normaal. Gooi dit water weg." },
+            ],
           },
         ]}
       />

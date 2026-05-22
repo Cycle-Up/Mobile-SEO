@@ -5,6 +5,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { WaterhardheidMapNL } from '@/components/WaterhardheidMapNL';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Hoe hard is het water bij u? Waterhardheid per gemeente 2026',
@@ -109,6 +110,8 @@ export default function WaterhardheidPage() {
             Indicatieve waterhardheid per provincie in graden Duitse hardheid (°dH). Zeeland en het noorden hebben zacht water; Noord-Holland en Limburg het hardst.
           </figcaption>
         </figure>
+
+        <MethodologyBadge lastReviewed="2026-05-22" />
 
         {/* Hardheid uitleg */}
         <section>

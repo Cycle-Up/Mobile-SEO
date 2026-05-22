@@ -4,6 +4,7 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
 import { DrinkwaterNormenHierarchy } from "@/components/DrinkwaterNormenHierarchy";
+import { MethodologyBadge } from "@/components/MethodologyBadge";
 
 export const metadata: Metadata = {
   title: "Drinkwaternormen Nederland: wie bepaalt wat veilig drinkwater is?",
@@ -204,6 +205,7 @@ export default function DrinkwaternormenPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <MethodologyBadge lastReviewed="2026-05-22" />
         <CTABanner context="osmose" />
 
         <section className="mt-10 prose prose-blue max-w-none">

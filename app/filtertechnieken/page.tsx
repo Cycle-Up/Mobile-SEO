@@ -5,6 +5,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { FilterTechniekenComparison } from "@/components/FilterTechniekenComparison";
+import { MethodologyBadge } from "@/components/MethodologyBadge";
 import { getCluster } from "@/data/clusters";
 
 export const metadata: Metadata = {
@@ -38,6 +39,32 @@ export default function FiltertechniekenPage() {
           { name: "Filtertechnieken", url: "https://waterfilterplatform.nl/filtertechnieken" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Filtertechnieken waterfilters: omgekeerde osmose, UV, actief kool en meer",
+          description: "Alle waterfiltertechnieken vergeleken: RO, UV-sterilisatie, actief kool, ultrafiltratie, ionenwisseling. Welke techniek verwijdert wat?",
+          datePublished: "2026-05-17",
+          dateModified: "2026-05-22",
+          url: "https://waterfilterplatform.nl/filtertechnieken",
+        }}
+      />
+      <SchemaOrg
+        type="DefinedTermSet"
+        definedTerms={{
+          name: "Waterfilter filtertechnieken — begrippen",
+          description: "Definities van filtertechnieken voor huishoudelijk drinkwater",
+          url: "https://waterfilterplatform.nl/filtertechnieken",
+          terms: [
+            { name: "Omgekeerde osmose (RO)", description: "Filtratietechniek waarbij water onder druk door een semi-permeabel membraan met poriën van ~0,0001 µm wordt geperst. Verwijdert 95-99% van opgeloste stoffen inclusief PFAS, lood, nitraat en microplastics.", url: "https://waterfilterplatform.nl/omgekeerde-osmose" },
+            { name: "Actief kool (GAC/CTO)", description: "Adsorptiemateriaal dat organische verbindingen, chloor, geur en smaak uit water bindt. Poriegrootte ~0,5 µm. Verwijdert geen opgeloste ionen zoals kalk, nitraat of lood.", url: "https://waterfilterplatform.nl/filtertechnieken/actief-kool" },
+            { name: "Ultrafiltratie (UF)", description: "Membraanfiltratie met poriën van 0,01-0,1 µm. Stopt bacteriën, virussen en microplastics. Laat opgeloste mineralen en ionen passeren.", url: "https://waterfilterplatform.nl/filtertechnieken/ultrafiltratie" },
+            { name: "Ionenwisseling", description: "Harsbedfiltratie waarbij hardheidsionen (Ca²⁺, Mg²⁺) worden uitgewisseld voor natriumionen. Basis van waterontharders.", url: "https://waterfilterplatform.nl/filtertechnieken/ionenwisseling" },
+            { name: "UV-sterilisatie", description: "Ultraviolet licht (254 nm) inactiveert microorganismen door DNA-schade. Geen chemische stoffen. Verwijdert geen opgeloste verontreinigingen.", url: "https://waterfilterplatform.nl/waterfilter/uv-sterilisatie" },
+            { name: "Nanofiltratie (NF)", description: "Membraanfiltratie met poriën van ~0,001 µm. Verwijdert pesticiden, hormonen en kalk, maar laat monovalente ionen deels door. Minder afvalwater dan RO.", url: "https://waterfilterplatform.nl/filtertechnieken/nanofiltratie" },
+          ],
+        }}
+      />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
           <nav className="text-sm text-gray-500 mb-4">
@@ -48,7 +75,7 @@ export default function FiltertechniekenPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Filtertechnieken waterfilters: van actief kool tot omgekeerde osmose
           </h1>
-          <QuickAnswer answer="Elke filtertechniek verwijdert andere stoffen: actief kool absorbeert chloor en geur, ultrafiltratie stopt bacterien en virussen, ionenwisseling vervangt hardheidsionen, en omgekeerde osmose filtert op moleculair niveau inclusief PFAS, nitraat en lood. De juiste keuze hangt af van wat er in uw water zit." />
+          <QuickAnswer question="Welke filtertechniek verwijdert welke stoffen?" answer="Elke filtertechniek verwijdert andere stoffen: actief kool absorbeert chloor en geur, ultrafiltratie stopt bacterien en virussen, ionenwisseling vervangt hardheidsionen, en omgekeerde osmose filtert op moleculair niveau inclusief PFAS, nitraat en lood. De juiste keuze hangt af van wat er in uw water zit." />
           <figure className="mt-6">
             <FilterTechniekenComparison className="w-full h-auto rounded-2xl shadow-sm bg-white" />
             <figcaption className="text-xs text-gray-500 text-center mt-2">
@@ -76,6 +103,7 @@ export default function FiltertechniekenPage() {
         relatedClusters={cluster.relatedClusters}
       />
       <div className="max-w-4xl mx-auto px-4 pb-10">
+        <MethodologyBadge lastReviewed="2026-05-22" />
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

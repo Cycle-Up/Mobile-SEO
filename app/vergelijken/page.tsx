@@ -5,6 +5,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
+import { MethodologyBadge } from "@/components/MethodologyBadge";
 
 export const metadata: Metadata = {
   title: "Waterfilter vergelijken: osmose vs filterkan, waterontharder en meer",
@@ -60,6 +61,16 @@ export default function VergelijkenPage() {
         ]}
       />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Waterfilter vergelijken: osmose vs filterkan, waterontharder en meer",
+          description: "Eerlijke vergelijkingen: osmose vs filterkan, waterfilter vs waterontharder, kraanwater vs flessenwater. Kosten, prestaties en milieu-impact.",
+          datePublished: "2026-05-17",
+          dateModified: "2026-05-22",
+          url: "https://waterfilterplatform.nl/vergelijken",
+        }}
+      />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
           <nav className="text-sm text-gray-500 mb-4">
@@ -70,7 +81,7 @@ export default function VergelijkenPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Waterfilter vergelijken: osmose vs filterkan, waterontharder en meer
           </h1>
-          <QuickAnswer answer="Een osmosefilter filtert op moleculair niveau en verwijdert PFAS, lood en nitraat. Een filterkan verwijdert alleen chloor en geur. Een waterontharder verwijdert alleen kalk. De beste keuze hangt af van uw specifieke probleem." />
+          <QuickAnswer question="Wat is het verschil tussen osmosefilter, filterkan en waterontharder?" answer="Een osmosefilter filtert op moleculair niveau en verwijdert PFAS, lood en nitraat. Een filterkan verwijdert alleen chloor en geur. Een waterontharder verwijdert alleen kalk. De beste keuze hangt af van uw specifieke probleem." />
         </div>
       </section>
       <ClusterHub
@@ -98,6 +109,7 @@ export default function VergelijkenPage() {
         relatedClusters={cluster.relatedClusters}
       />
       <div className="max-w-4xl mx-auto px-4 pb-10">
+        <MethodologyBadge lastReviewed="2026-05-22" />
         <section className="mt-12">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen</h2>
           {faqItems.map((item, i) => (

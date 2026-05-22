@@ -5,6 +5,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
+import { MethodologyBadge } from "@/components/MethodologyBadge";
 
 export const metadata: Metadata = {
   title: "Waterfilter keurmerken: NSF, Kiwa, ACS en CE uitgelegd",
@@ -65,6 +66,16 @@ export default function KeurmerkenPage() {
         ]}
       />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Waterfilter keurmerken: NSF, Kiwa, ACS en CE uitgelegd",
+          description: "Waterfilter keurmerken: NSF/ANSI 42/53/58/401, Kiwa 113, ACS en CE. Wat garanderen ze en welk keurmerk heeft u nodig voor osmose, koolfilter of UV?",
+          datePublished: "2026-05-17",
+          dateModified: "2026-05-22",
+          url: "https://waterfilterplatform.nl/keurmerken",
+        }}
+      />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
           <nav className="text-sm text-gray-500 mb-4">
@@ -75,7 +86,7 @@ export default function KeurmerkenPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Waterfilter keurmerken: NSF, Kiwa, ACS en CE uitgelegd
           </h1>
-          <QuickAnswer answer="Certificering van waterfilters is vrijwillig, maar biedt het enige objectieve bewijs dat een filter doet wat de fabrikant beweert. Erkende keurmerken zoals NSF/ANSI (prestaties) en Kiwa 113 (materiaalveiligheid) vereisen onafhankelijke laboratoriumtests en periodieke hercontrole; een CE-markering of niet-geregistreerd logo geeft die garantie niet." />
+          <QuickAnswer question="Welke keurmerken zijn belangrijk bij een waterfilter?" answer="Certificering van waterfilters is vrijwillig, maar biedt het enige objectieve bewijs dat een filter doet wat de fabrikant beweert. Erkende keurmerken zoals NSF/ANSI (prestaties) en Kiwa 113 (materiaalveiligheid) vereisen onafhankelijke laboratoriumtests en periodieke hercontrole; een CE-markering of niet-geregistreerd logo geeft die garantie niet." />
         </div>
       </section>
       <ClusterHub
@@ -111,6 +122,7 @@ export default function KeurmerkenPage() {
         relatedClusters={cluster.relatedClusters}
       />
       <div className="max-w-4xl mx-auto px-4 pb-10">
+        <MethodologyBadge lastReviewed="2026-05-22" />
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

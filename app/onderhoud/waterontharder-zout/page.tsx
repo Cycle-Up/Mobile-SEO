@@ -79,6 +79,30 @@ export default function WaterontharderZoutPage() {
               name: "WaterfilterPlatform",
               url: "https://waterfilterplatform.nl",
             },
+            reviewedBy: {
+              "@type": "Organization",
+              "@id": "https://waterfilterplatform.nl/#redactie",
+              name: "WaterfilterPlatform Redactieteam",
+            },
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: [".quick-answer", "h1", "[data-speakable='true']"],
+            },
+          },
+          {
+            "@type": "HowTo",
+            name: "Hoe waterontharder zout bijvullen en onderhouden",
+            description: "Stap-voor-stap handleiding voor het controleren en bijvullen van regeneratiezout in een waterontharder, inclusief het herkennen en oplossen van brugvorming.",
+            inLanguage: "nl-NL",
+            totalTime: "PT20M",
+            step: [
+              { "@type": "HowToStep", position: 1, name: "Controleer het zoutniveau in de zoutbak", text: "Til het deksel van de zouttank op en controleer het zoutniveau. Vul bij als het niveau onder de 1/3-markering van de tank zakt. Wacht nooit tot de tank volledig leeg is." },
+              { "@type": "HowToStep", position: 2, name: "Controleer op zoutbrug", text: "Controleer op brugvorming (zoutbrug): klop zacht op de zijkant van de zouttank. Als er een hol geluid klinkt of een lange stok wegzakt in het midden van het zout, is er een brug aanwezig." },
+              { "@type": "HowToStep", position: 3, name: "Voeg waterontharderzout toe", text: "Voeg uitsluitend gecertificeerd regeneratiezout toe (IEC 60734-norm): zoutblokken of tabletzout. Gebruik nooit keukenzout, zeezout of strooizout, want die bevatten verontreinigingen die de hars beschadigen. Vul niet meer dan 2/3 van de tank." },
+              { "@type": "HowToStep", position: 4, name: "Controleer na 24 uur of de regeneratiecyclus is doorgekomen", text: "Wacht 24 uur en controleer of de ontharder een regeneratiecyclus heeft uitgevoerd. Controleer het display of de app van uw systeem. Een succesvol uitgevoerde cyclus is te zien aan een verlaagd zoutniveau." },
+              { "@type": "HowToStep", position: 5, name: "Meet de resthardheidinstelling van de ontharder", text: "Controleer de ingestelde resthardheid van de ontharder. De aanbevolen instelling is 5-8 °dH voor huishoudelijk gebruik. Pas de instelling aan via het display of de handleiding als de gemeten waterhardheid afwijkt." },
+              { "@type": "HowToStep", position: 6, name: "Spoel de harsen door bij onvoldoende ontharding", text: "Als het water ondanks voldoende zout toch hard blijft, initieer dan handmatig een regeneratiecyclus via het display of de app. Controleer ook of er geen zoutbrug is die de brine-oplossing blokkeert." },
+            ],
           },
         ]}
       />

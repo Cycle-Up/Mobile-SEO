@@ -5,6 +5,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
+import { MethodologyBadge } from "@/components/MethodologyBadge";
 
 export const metadata: Metadata = {
   title: "Waterfilter keuzehulp: welk filter past bij jouw situatie?",
@@ -37,6 +38,16 @@ export default function KeuzehulpPage() {
           { name: "Keuzehulp", url: "https://waterfilterplatform.nl/keuzehulp" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Waterfilter keuzehulp: welk filter past bij jouw situatie?",
+          description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Zonder verkoopadvies.",
+          datePublished: "2026-05-17",
+          dateModified: "2026-05-22",
+          url: "https://waterfilterplatform.nl/keuzehulp",
+        }}
+      />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
           <nav className="text-sm text-gray-500 mb-4">
@@ -47,7 +58,7 @@ export default function KeuzehulpPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Waterfilter keuzehulp: welk filter past bij jouw situatie?
           </h1>
-          <QuickAnswer answer="Het juiste waterfilter hangt af van uw specifieke situatie: de waterhardheid in uw gemeente, eventuele verontreinigingen zoals PFAS of lood, uw woonsituatie (koop of huur) en uw budget. Een osmosefilter biedt de breedste bescherming en verwijdert kalk, PFAS, lood en nitraat. Een waterontharder pakt alleen kalk aan voor het hele huis. Een filterkan volstaat voor smaak en chloor. Deze keuzehulp leidt u per situatie naar het meest passende systeem, zonder verborgen verkoopadvies." />
+          <QuickAnswer question="Welk waterfilter past bij mijn situatie?" answer="Het juiste waterfilter hangt af van uw specifieke situatie: de waterhardheid in uw gemeente, eventuele verontreinigingen zoals PFAS of lood, uw woonsituatie (koop of huur) en uw budget. Een osmosefilter biedt de breedste bescherming en verwijdert kalk, PFAS, lood en nitraat. Een waterontharder pakt alleen kalk aan voor het hele huis. Een filterkan volstaat voor smaak en chloor. Deze keuzehulp leidt u per situatie naar het meest passende systeem, zonder verborgen verkoopadvies." />
         </div>
       </section>
       <ClusterHub
@@ -77,6 +88,7 @@ export default function KeuzehulpPage() {
         relatedClusters={cluster.relatedClusters}
       />
       <div className="max-w-4xl mx-auto px-4 pb-10">
+        <MethodologyBadge lastReviewed="2026-05-22" />
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

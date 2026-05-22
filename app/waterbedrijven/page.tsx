@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Nederlandse Waterbedrijven — Overzicht | WaterfilterPlatform',
@@ -137,6 +138,11 @@ export default function WaterbedrijvenPage() {
         </div>
 
         <QuickAnswer answer="Nederland heeft 10 drinkwaterbedrijven die samen zo'n 1,2 miljard m3 drinkwater per jaar leveren aan 17 miljoen mensen. Elk bedrijf gebruikt andere bronnen (grondwater of oppervlaktewater) wat de waterhardheid en samenstelling beinvloedt." />
+
+        <MethodologyBadge
+          sources={['RIVM', 'ILT', 'VEWIN (Vereniging van waterbedrijven)', 'EU-richtlijn 2020/2184']}
+          lastReviewed="2026-05-22"
+        />
 
         <CTABanner context="algemeen" />
 

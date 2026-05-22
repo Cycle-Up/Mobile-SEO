@@ -5,6 +5,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
+import { MethodologyBadge } from "@/components/MethodologyBadge";
 
 export const metadata: Metadata = {
   title: "Stoffen in drinkwater: overzicht, normen en wanneer filtreren?",
@@ -65,6 +66,31 @@ export default function StoffenInDrinkwaterPage() {
         ]}
       />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Stoffen in drinkwater: overzicht, normen en wanneer filtreren?",
+          description: "Welke stoffen zitten in Nederlands drinkwater? Overzicht van PFAS, lood, pesticiden, kalk, hormonen en microplastics: normen, risico en filteradvies.",
+          datePublished: "2026-05-17",
+          dateModified: "2026-05-22",
+          url: "https://waterfilterplatform.nl/stoffen-in-drinkwater",
+        }}
+      />
+      <SchemaOrg
+        type="DefinedTermSet"
+        definedTerms={{
+          name: "Stoffen in Nederlands drinkwater — begrippen en normen",
+          description: "Definities van veelgestelde stoffen in Nederlands leidingwater met EU/NL-normen",
+          url: "https://waterfilterplatform.nl/stoffen-in-drinkwater",
+          terms: [
+            { name: "PFAS (per- en polyfluoralkylstoffen)", description: "Groep van >4.700 synthetische stoffen. EU-norm drinkwater: totaal-PFAS 0,1 µg/L (vanaf 2026). Worden niet afgebroken in het milieu ('forever chemicals'). RO-filter verwijdert >99%.", url: "https://waterfilterplatform.nl/stoffen-in-drinkwater/pfas-overzicht" },
+            { name: "Lood (Pb)", description: "Zwaar metaal. NL-norm: 5 µg/L (per Drinkwaterbesluit). Risico bij huizen gebouwd voor 1960 met loden leidingen. Geen smaak of geur. RO verwijdert 97%.", url: "https://waterfilterplatform.nl/leidingwater/lood" },
+            { name: "Nitraat (NO₃⁻)", description: "Landbouwgerelateerde verontreiniging. EU-norm: 50 mg/L. Risico voor zuigelingen (methemoglobinemie). RO verwijdert 85-95%.", url: "https://waterfilterplatform.nl/stoffen-in-drinkwater/nitraat-nitriet" },
+            { name: "Waterhardheid (Ca²⁺/Mg²⁺)", description: "Opgeloste calcium- en magnesiumzouten. Uitgedrukt in °dH. Geen gezondheidsrisico maar veroorzaakt kalkafzetting. In Nederland 4-22 °dH.", url: "https://waterfilterplatform.nl/waterhardheid" },
+            { name: "Microplastics", description: "Plastic deeltjes 1-5000 µm. Geen wettelijke norm in drinkwater (2026). Ultrafiltratie en RO verwijderen effectief. WHO: beperkt bewijs van gezondheidsschade.", url: "https://waterfilterplatform.nl/stoffen-in-drinkwater/microplastics" },
+          ],
+        }}
+      />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
           <nav className="text-sm text-gray-500 mb-4">
@@ -75,7 +101,7 @@ export default function StoffenInDrinkwaterPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Stoffen in drinkwater: overzicht, normen en wanneer filtreren?
           </h1>
-          <QuickAnswer answer="Nederlands drinkwater is veilig: het voldoet aan meer dan 60 wettelijke parameters en behoort tot de schoonste ter wereld. Toch bevat het naast nuttige mineralen ook kleine hoeveelheden PFAS, medicijnresten, nitraten en kalk. Extra filtratie is zinvol als u loden leidingen heeft, gevoelig bent voor bepaalde stoffen, of in een hard-watergebied woont." />
+          <QuickAnswer question="Welke stoffen zitten er in Nederlands drinkwater?" answer="Nederlands drinkwater is veilig: het voldoet aan meer dan 60 wettelijke parameters en behoort tot de schoonste ter wereld. Toch bevat het naast nuttige mineralen ook kleine hoeveelheden PFAS, medicijnresten, nitraten en kalk. Extra filtratie is zinvol als u loden leidingen heeft, gevoelig bent voor bepaalde stoffen, of in een hard-watergebied woont." />
         </div>
       </section>
       <ClusterHub
@@ -109,6 +135,7 @@ export default function StoffenInDrinkwaterPage() {
         relatedClusters={cluster.relatedClusters}
       />
       <div className="max-w-4xl mx-auto px-4 pb-10">
+        <MethodologyBadge lastReviewed="2026-05-22" />
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

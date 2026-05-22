@@ -58,6 +58,32 @@ const articleSchema = {
     name: "WaterfilterPlatform",
     url: "https://waterfilterplatform.nl",
   },
+  reviewedBy: {
+    "@type": "Organization",
+    "@id": "https://waterfilterplatform.nl/#redactie",
+    name: "WaterfilterPlatform Redactieteam",
+  },
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: [".quick-answer", "h1", "[data-speakable='true']"],
+  },
+};
+
+const howToSchema = {
+  "@type": "HowTo",
+  name: "Hoe osmosefilters vervangen",
+  description: "Stap-voor-stap handleiding voor het vervangen van filters en membraan in een omgekeerde osmose systeem.",
+  inLanguage: "nl-NL",
+  totalTime: "PT45M",
+  step: [
+    { "@type": "HowToStep", position: 1, name: "Check of filters aan vervanging toe zijn", text: "Meet het TDS van het ruwe leidingwater en van het gefilterde osmosewater. Bereken de rejectie: als het TDS van het gefilterde water meer dan 50% bedraagt van het leidingwater-TDS, is het membraan uitgeput. Prefilters vervangen elke 6-12 maanden op tijdschema." },
+    { "@type": "HowToStep", position: 2, name: "Koop vervangende filters", text: "Koop filters in het juiste formaat (doorgaans 2,5 x 10 inch voor prefilters) en controleer of ze NSF-gecertificeerd zijn. Noteer het merk en model van uw systeem voor de juiste cartridge." },
+    { "@type": "HowToStep", position: 3, name: "Sluit watertoevoer af en ontlast het systeem", text: "Sluit de invoerkraan van het osmosesysteem af. Open de osmosekraan en laat het systeem leeglopen totdat er geen water meer uitkomt. Zet een opvangbak onder de filterbehuizingen." },
+    { "@type": "HowToStep", position: 4, name: "Verwijder verouderde prefilters", text: "Schroef de filterbehuizing los met de meegeleverde filtersleutel (linksom draaien). Verwijder de verbruikte sediment- en koolstofcartridge en reinig de behuizing. Controleer en vervang de O-ring indien beschadigd." },
+    { "@type": "HowToStep", position: 5, name: "Vervang het RO-membraan indien nodig", text: "Ontkoppel de snelkoppeling-slangen van de membraanbehuizing. Open de eindkap, noteer de orientatie van het membraan en verwijder het verbruikte membraan. Reinig de behuizing en breng het nieuwe membraan aan in de correcte richting." },
+    { "@type": "HowToStep", position: 6, name: "Installeer nieuwe postfilter / remineralisatie", text: "Plaats de nieuwe postfiltercartridge of remineralisatiefilter in de behuizing en schroef deze vast. Controleer alle O-ringen op beschadigingen." },
+    { "@type": "HowToStep", position: 7, name: "Open de watertoevoer en spoel 30 minuten door", text: "Open de watertoevoer langzaam en controleer op lekkage. Laat het systeem minimaal 30 minuten doorspoelen. Gooi het eerste reservoir weg — dit bevat conserveringsmiddelen uit het nieuwe membraan." },
+  ],
 };
 
 const faqSchema = {
@@ -84,6 +110,7 @@ export default function OsmoseFilterVervangenPage() {
           },
           faqSchema,
           articleSchema,
+          howToSchema,
         ]}
       />
 
