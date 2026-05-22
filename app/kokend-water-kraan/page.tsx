@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { KokendWaterKraanDiagram } from '@/components/KokendWaterKraanDiagram';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan kopen? Complete gids & vergelijking 2026',
@@ -652,6 +653,8 @@ export default function KokendWaterKraanPage() {
             </Link>
           </div>
         </section>
+
+        <MethodologyBadge lastReviewed="2026-05-22" sources={['ILT', 'EU-richtlijn 2020/2184', 'RIVM', 'NSF International']} />
 
         {/* FAQ */}
         <section>

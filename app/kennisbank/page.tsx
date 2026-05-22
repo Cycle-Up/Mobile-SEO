@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Kennisbank — waterfilters, osmose en waterkwaliteit',
@@ -2182,6 +2183,34 @@ export default function KennisbankPage() {
           { name: 'Kennisbank', url: 'https://waterfilterplatform.nl/kennisbank' },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Kennisbank — waterfilters, osmose en waterkwaliteit',
+          description: 'Diepgaande artikelen over omgekeerde osmose, waterhardheid, kokend water kranen en waterkwaliteit in Nederland.',
+          datePublished: '2026-01-01',
+          dateModified: '2026-05-22',
+          url: 'https://waterfilterplatform.nl/kennisbank',
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Kennisbank — waterfilters, osmose en waterkwaliteit',
+            url: 'https://waterfilterplatform.nl/kennisbank',
+            numberOfItems: artikelen.length,
+            itemListElement: artikelen.slice(0, 60).map((a, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              url: `https://waterfilterplatform.nl/kennisbank/${a.slug}`,
+              name: a.titel,
+            })),
+          }),
+        }}
+      />
 
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-3xl mx-auto">
@@ -2214,6 +2243,8 @@ export default function KennisbankPage() {
             </Link>
           ))}
         </div>
+
+        <MethodologyBadge lastReviewed="2026-05-22" />
 
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>

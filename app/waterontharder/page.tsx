@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Heb ik een waterontharder nodig? Werking, kosten & advies',
@@ -796,6 +797,8 @@ export default function WaterOntharderPage() {
             </Link>
           </div>
         </section>
+
+        <MethodologyBadge lastReviewed="2026-05-22" sources={['RIVM', 'ILT', 'EU-richtlijn 2020/2184', 'WHO – Guidelines for Drinking-water Quality']} />
 
         {/* FAQ */}
         <section id="faq">

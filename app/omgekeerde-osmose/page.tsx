@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { OsmoseIllustration } from '@/components/OsmoseIllustration';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Wat is omgekeerde osmose? Uitleg & RO filter kopen 2026',
@@ -828,6 +829,8 @@ export default function OmgekeerdeOsmosePage() {
             </Link>
           </div>
         </section>
+
+        <MethodologyBadge lastReviewed="2026-05-22" sources={['NSF International', 'WHO – Guidelines for Drinking-water Quality', 'RIVM', 'EU-richtlijn 2020/2184']} />
 
         {/* FAQ */}
         <section id="faq">
