@@ -132,7 +132,7 @@ export default function HomePage() {
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-12 md:py-20 px-4">
+      <section className="bg-gradient-to-b from-[#E0F2FE] to-white pt-12 pb-8 md:pt-20 md:pb-12 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[#005F8A] text-sm font-semibold uppercase tracking-wide mb-3">
             Onafhankelijk kennisplatform
@@ -160,8 +160,27 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Actueel — topical banner */}
+      <section className="bg-gradient-to-b from-white to-[#E0F2FE]/30 px-4 pb-10">
+        <div className="max-w-5xl mx-auto -mt-2">
+          <Link
+            href="/drinkwaternormen/pfas"
+            className="group flex items-center gap-4 bg-[#003F5C] hover:bg-[#005F8A] transition-colors rounded-2xl text-white px-5 py-4 md:px-6 md:py-5 shadow-sm"
+          >
+            <span className="text-2xl shrink-0" aria-hidden="true">⚡</span>
+            <div className="flex-1 min-w-0">
+              <p className="text-[11px] uppercase tracking-wide opacity-80 font-semibold mb-0.5">Actueel</p>
+              <p className="font-semibold text-base md:text-lg leading-tight">
+                PFAS in drinkwater — strengere EU-normen vanaf 2026
+              </p>
+            </div>
+            <span className="text-2xl shrink-0 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" aria-hidden="true">»</span>
+          </Link>
+        </div>
+      </section>
+
       {/* Statistieken */}
-      <section className="border-y border-gray-100 py-5 px-4">
+      <section className="border-y border-gray-100 py-5 px-4 bg-white">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           {[
             { waarde: '330+', label: 'kennisbankartikelen' },
@@ -179,46 +198,52 @@ export default function HomePage() {
 
       {/* Uitgelicht uit de kennisbank */}
       <section className="max-w-5xl mx-auto px-4 pt-12 pb-4">
-        <h2 className="text-2xl font-bold text-[#003F5C] mb-2">Uitgelicht uit de kennisbank</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-2">Uitgelicht uit de kennisbank</h2>
         <p className="text-gray-500 text-sm mb-6">Diepgaande artikelen over actuele onderwerpen in drinkwaterkwaliteit</p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {uitgelicht.map((artikel) => (
             <Link
               key={artikel.slug}
               href={`/kennisbank/${artikel.slug}`}
-              className="group bg-white border border-gray-100 rounded-2xl p-5 hover:border-[#005F8A] hover:shadow-md transition-all flex flex-col"
+              className="group bg-[#F0F9FF] hover:bg-[#E0F2FE] rounded-2xl p-5 transition-all flex flex-col"
             >
-              <span className="inline-block text-xs bg-[#E0F2FE] text-[#005F8A] px-2 py-0.5 rounded-full font-medium mb-3 w-fit">
+              <span className="inline-block text-[11px] bg-white text-[#005F8A] px-2.5 py-1 rounded-full font-medium mb-3 w-fit">
                 {artikel.tag}
               </span>
-              <h3 className="font-bold text-gray-900 group-hover:text-[#005F8A] transition-colors text-sm leading-snug flex-1 mb-3">
+              <h3 className="font-bold text-[#003F5C] text-base leading-snug flex-1 mb-4">
                 {artikel.title}
               </h3>
-              <span className="text-xs text-[#005F8A] font-semibold">Lees artikel →</span>
+              <div className="flex items-center justify-between mt-auto">
+                <span className="text-xs text-[#005F8A] font-semibold">Lees artikel</span>
+                <span className="text-2xl text-gray-400 group-hover:text-[#005F8A] group-hover:translate-x-1 transition-all leading-none" aria-hidden="true">»</span>
+              </div>
             </Link>
           ))}
         </div>
       </section>
 
       {/* Alle onderwerpen */}
-      <section className="max-w-5xl mx-auto px-4 py-10">
-        <h2 className="text-2xl font-bold text-[#003F5C] mb-2 text-center">Ontdek alle onderwerpen</h2>
+      <section className="max-w-5xl mx-auto px-4 py-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#003F5C] mb-2 text-center">Ontdek alle onderwerpen</h2>
         <p className="text-gray-500 text-sm text-center mb-8">Van drinkwaternormen en filtertechnieken tot waterhardheid per gemeente</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {clusters.map((cat) => (
             <Link
               key={cat.href}
               href={cat.href}
-              className="group bg-white border border-gray-100 rounded-2xl p-5 hover:border-[#005F8A] hover:shadow-md transition-all"
+              className="group bg-[#F0F9FF] hover:bg-[#E0F2FE] rounded-2xl p-5 transition-all flex flex-col min-h-[180px]"
             >
-              <div className="text-3xl mb-3">{cat.icon}</div>
-              <h3 className="font-bold text-gray-900 group-hover:text-[#005F8A] transition-colors text-sm leading-snug mb-1">
-                {cat.title}
-              </h3>
-              <p className="text-xs text-gray-500 mb-3 leading-relaxed">{cat.desc}</p>
-              <span className="inline-block text-xs bg-[#E0F2FE] text-[#005F8A] px-2 py-0.5 rounded-full font-medium">
-                {cat.badge}
-              </span>
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="text-2xl shrink-0" aria-hidden="true">{cat.icon}</span>
+                <h3 className="font-bold text-[#005F8A] text-base leading-tight">
+                  {cat.title}
+                </h3>
+              </div>
+              <p className="text-xs text-gray-600 leading-relaxed mb-4 flex-1">{cat.desc}</p>
+              <div className="flex items-center justify-between mt-auto">
+                <span className="text-[11px] text-[#005F8A] font-medium opacity-80">{cat.badge}</span>
+                <span className="text-2xl text-gray-400 group-hover:text-[#005F8A] group-hover:translate-x-1 transition-all leading-none" aria-hidden="true">»</span>
+              </div>
             </Link>
           ))}
         </div>
