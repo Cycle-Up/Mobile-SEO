@@ -218,16 +218,20 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto -mt-2">
           <Link
             href="/drinkwaternormen/pfas"
-            className="group flex items-center gap-4 bg-[#003F5C] hover:bg-[#005F8A] transition-colors rounded-2xl text-white px-6 py-5 shadow-sm"
+            className="group flex items-center gap-4 bg-[#003F5C] hover:bg-[#005F8A] transition-colors rounded-2xl text-white px-6 py-5 shadow-md"
           >
-            <span className="text-2xl shrink-0" aria-hidden="true">⚡</span>
+            <svg viewBox="0 0 20 20" fill="none" className="w-5 h-5 shrink-0 text-yellow-300" aria-hidden="true">
+              <path d="M11 2L4 11h6l-1 7 7-9h-6l1-7z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" fillOpacity="0.3"/>
+            </svg>
             <div className="flex-1 min-w-0">
               <p className="text-[11px] uppercase tracking-wide opacity-80 font-semibold mb-0.5">Actueel</p>
               <p className="font-semibold text-base md:text-lg leading-tight">
                 PFAS in drinkwater — strengere EU-normen vanaf 2026
               </p>
             </div>
-            <span className="text-2xl shrink-0 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" aria-hidden="true">»</span>
+            <svg viewBox="0 0 16 16" fill="none" className="w-4 h-4 shrink-0 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" aria-hidden="true">
+              <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </Link>
         </div>
       </section>
@@ -308,7 +312,7 @@ export default function HomePage() {
             <Link
               key={artikel.slug}
               href={`/kennisbank/${artikel.slug}`}
-              className="group bg-[#F0F9FF] hover:bg-[#E0F2FE] rounded-2xl p-5 transition-all flex flex-col"
+              className="group bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col"
             >
               <span className="inline-block text-[11px] bg-white text-[#005F8A] px-2.5 py-1 rounded-full font-medium mb-3 w-fit">
                 {artikel.tag}
@@ -318,7 +322,9 @@ export default function HomePage() {
               </h3>
               <div className="flex items-center justify-between mt-auto">
                 <span className="text-xs text-[#005F8A] font-semibold">Lees artikel</span>
-                <span className="text-2xl text-gray-400 group-hover:text-[#005F8A] group-hover:translate-x-1 transition-all leading-none" aria-hidden="true">»</span>
+                <svg viewBox="0 0 16 16" fill="none" className="w-4 h-4 shrink-0 text-gray-300 group-hover:text-[#005F8A] group-hover:translate-x-0.5 transition-all" aria-hidden="true">
+                  <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </Link>
           ))}
@@ -334,7 +340,7 @@ export default function HomePage() {
             <Link
               key={cat.href}
               href={cat.href}
-              className="group bg-[#F0F9FF] hover:bg-[#E0F2FE] rounded-2xl p-5 transition-all flex flex-col min-h-[180px]"
+              className="group bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col min-h-[180px]"
             >
               <div className="flex items-center gap-2.5 mb-3">
                 <div className="shrink-0">{cat.icon}</div>
@@ -345,7 +351,9 @@ export default function HomePage() {
               <p className="text-xs text-gray-600 leading-relaxed mb-4 flex-1">{cat.desc}</p>
               <div className="flex items-center justify-between mt-auto">
                 <span className="text-[11px] text-[#005F8A] font-medium opacity-80">{cat.badge}</span>
-                <span className="text-2xl text-gray-400 group-hover:text-[#005F8A] group-hover:translate-x-1 transition-all leading-none" aria-hidden="true">»</span>
+                <svg viewBox="0 0 16 16" fill="none" className="w-4 h-4 shrink-0 text-gray-300 group-hover:text-[#005F8A] group-hover:translate-x-0.5 transition-all" aria-hidden="true">
+                  <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </Link>
           ))}
@@ -371,7 +379,7 @@ export default function HomePage() {
             <Link
               key={tag.href}
               href={tag.href}
-              className="text-sm bg-[#F0F9FF] text-[#005F8A] px-3 py-1.5 rounded-lg hover:bg-[#E0F2FE] transition-colors"
+              className="text-sm bg-[#F0F9FF] border border-[#BAE6FD]/50 text-[#005F8A] px-3 py-1.5 rounded-lg hover:bg-[#E0F2FE] hover:border-[#005F8A]/30 transition-colors"
             >
               {tag.label}
             </Link>
@@ -389,7 +397,7 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over drinkwater</h2>
         <div className="space-y-4">
           {faqItems.map((item) => (
-            <details key={item.question} className="border border-gray-100 rounded-xl p-4 group">
+            <details key={item.question} className="border border-gray-200 rounded-xl p-4 group hover:border-gray-300 transition-colors">
               <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
                 {item.question}
                 <span className="text-[#005F8A] group-open:rotate-180 transition-transform">&#9660;</span>

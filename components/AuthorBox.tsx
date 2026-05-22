@@ -10,11 +10,19 @@ function formatDate(dateStr?: string) {
   return new Date(dateStr).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
+function ChevronRight() {
+  return (
+    <svg viewBox="0 0 12 12" fill="none" className="w-3 h-3 shrink-0 inline-block" aria-hidden="true">
+      <path d="M4.5 2.5l3 3.5-3 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export function AuthorBox({ datePublished, dateModified }: AuthorBoxProps) {
   const displayDate = dateModified ?? datePublished;
 
   return (
-    <div className="flex items-start gap-3 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl p-4 mb-6 text-sm">
+    <div className="flex items-start gap-3 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl p-4 mb-6 text-sm shadow-sm">
       {/* Avatar */}
       <div
         className="shrink-0 w-10 h-10 rounded-full bg-[#005F8A] text-white flex items-center justify-center font-bold text-xs leading-none"
@@ -28,8 +36,8 @@ export function AuthorBox({ datePublished, dateModified }: AuthorBoxProps) {
         <p className="font-semibold text-gray-900 text-sm">WaterfilterPlatform Redactieteam</p>
         <p className="text-gray-500 text-xs mt-0.5 leading-relaxed">
           Onze artikelen worden geschreven door drinkwaterspecialisten en gebaseerd op bronnen van RIVM, ILT en de Europese Unie.{' '}
-          <Link href="/methodologie" className="text-[#005F8A] hover:underline">
-            Lees onze methodologie →
+          <Link href="/methodologie" className="text-[#005F8A] hover:text-[#003F5C] inline-flex items-center gap-0.5 transition-colors">
+            Lees onze methodologie <ChevronRight />
           </Link>
         </p>
         {displayDate && (
@@ -41,9 +49,9 @@ export function AuthorBox({ datePublished, dateModified }: AuthorBoxProps) {
         )}
       </div>
 
-      {/* Trust badge */}
-      <div className="shrink-0 hidden sm:flex flex-col items-center gap-1 text-center">
-        <div className="w-8 h-8 rounded-full bg-green-50 border border-green-200 flex items-center justify-center">
+      {/* Trust badge — altijd zichtbaar */}
+      <div className="shrink-0 flex flex-col items-center gap-1 text-center">
+        <div className="w-9 h-9 rounded-full bg-green-50 border border-green-200 flex items-center justify-center">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -68,7 +76,7 @@ export function AuthorBox({ datePublished, dateModified }: AuthorBoxProps) {
             />
           </svg>
         </div>
-        <span className="text-[9px] text-green-700 font-medium leading-tight">Gecontroleerd</span>
+        <span className="text-[10px] text-green-700 font-medium leading-tight">Gecontroleerd</span>
       </div>
     </div>
   );

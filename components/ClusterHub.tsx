@@ -3,6 +3,14 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import type { CTAContext, ClusterPage, RelatedCluster } from '@/data/clusters';
 
+function ChevronRight() {
+  return (
+    <svg viewBox="0 0 16 16" fill="none" className="w-4 h-4 shrink-0" aria-hidden="true">
+      <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 interface ClusterHubProps {
   intro: React.ReactNode;
   pages: ClusterPage[];
@@ -67,7 +75,7 @@ export function ClusterHub({
             <Link
               key={page.href}
               href={page.href}
-              className="group block border border-gray-200 rounded-xl p-5 hover:border-[#005F8A] hover:shadow-sm transition-all"
+              className="group block border border-gray-100 rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 hover:border-[#BAE6FD] transition-all"
             >
               <div className="flex items-start justify-between gap-2">
                 <h3 className="font-semibold text-[#005F8A] group-hover:text-[#003F5C] transition-colors">
@@ -94,7 +102,7 @@ export function ClusterHub({
       </section>
 
       {relatedClusters && relatedClusters.length > 0 && (
-        <section className="mt-12 border-t border-gray-100 pt-8">
+        <section className="mt-12 border-t border-gray-200 pt-8">
           <h2 className="text-lg font-semibold text-[#003F5C] mb-4">Verwante onderwerpen</h2>
           <div className="flex flex-wrap gap-3">
             {relatedClusters.map((cluster) => (
@@ -103,7 +111,8 @@ export function ClusterHub({
                 href={cluster.href}
                 className="inline-flex items-center gap-1.5 bg-[#E0F2FE] text-[#005F8A] font-medium text-sm px-4 py-2 rounded-lg hover:bg-[#005F8A] hover:text-white transition-colors"
               >
-                {cluster.label} &rarr;
+                {cluster.label}
+                <ChevronRight />
               </Link>
             ))}
           </div>

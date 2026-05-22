@@ -112,7 +112,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     className="flex items-center gap-1 px-3 py-4 text-gray-600 hover:text-[#005F8A] transition-colors whitespace-nowrap"
                   >
                     {nav.label}
-                    <span className="text-[9px] opacity-50 mt-px">&#9660;</span>
+                    <svg viewBox="0 0 10 10" fill="none" className="w-2.5 h-2.5 shrink-0 text-gray-400 mt-px" aria-hidden="true">
+                      <path d="M2 3.5l3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   </Link>
                   <div className="invisible group-hover/nav:visible opacity-0 group-hover/nav:opacity-100 transition-all duration-100 absolute top-full left-0 pt-0 z-50 min-w-56">
                     <div className="bg-white border border-gray-100 rounded-xl shadow-lg py-1.5 mt-0">
@@ -136,7 +138,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <Link
               href="/keuzehulp"
-              className="shrink-0 text-xs bg-[#005F8A] text-white px-3 py-1.5 rounded-lg font-medium hover:bg-[#003F5C] transition-colors"
+              className="shrink-0 text-sm bg-[#005F8A] text-white px-4 py-1.5 rounded-lg font-semibold hover:bg-[#003F5C] transition-colors shadow-sm"
             >
               Keuzehulp
             </Link>
@@ -148,7 +150,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link
                 key={l.href}
                 href={l.href}
-                className="shrink-0 text-xs text-gray-600 hover:text-[#005F8A] bg-gray-50 px-3 py-1.5 rounded-full whitespace-nowrap"
+                className="shrink-0 text-xs text-gray-600 hover:text-[#005F8A] bg-[#F0F9FF] hover:bg-[#E0F2FE] px-3 py-1.5 rounded-full whitespace-nowrap transition-colors"
               >
                 {l.label}
               </Link>
