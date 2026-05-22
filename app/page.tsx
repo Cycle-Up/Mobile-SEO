@@ -149,7 +149,7 @@ const clusters = [
 
 const uitgelicht = [
   {
-    slug: 'pfas-in-drinkwater',
+    slug: 'pfas-drinkwater',
     title: 'PFAS in drinkwater: wat weten we?',
     tag: 'Stoffen',
   },

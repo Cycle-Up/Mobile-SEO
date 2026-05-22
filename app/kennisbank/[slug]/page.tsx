@@ -9,6 +9,8 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { SourcesSection } from '@/components/SourcesSection';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -94,7 +96,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
   const article = getArticle(slug);
   if (!article) notFound();
 
-  const { title, description, date, lastModified, quickAnswer, image } = article.data;
+  const { title, description, date, lastModified, quickAnswer, image, sources, methodologySources, lastReviewed } = article.data;
   const faqItems = extractFaqItems(article.content);
   const articleImage = articleImagePath(slug, image);
 
@@ -144,11 +146,14 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10">
+        <MethodologyBadge sources={methodologySources} lastReviewed={lastReviewed ?? lastModified} />
         <AuthorBox datePublished={date} dateModified={lastModified} />
         {quickAnswer && <QuickAnswer answer={quickAnswer} />}
         <article className="prose max-w-none">
           <MDXRemote source={article.content} />
         </article>
+
+        <SourcesSection sources={sources} />
 
         <div className="mt-12">
           <CTABanner context="osmose" />
