@@ -134,7 +134,7 @@ export default function ActiefKoolPage() {
           GAC (Granular Activated Carbon) bestaat uit losse koolstofkorrels van 0,5 tot 2 mm groot. Water stroomt vrij door de ruimte tussen de korrels, wat zorgt voor een relatief korte contacttijd met het koolstofoppervlak. De voordelen van GAC zijn de lagere kostprijs en een hogere doorstroomsnelheid. Het nadeel is dat water ook deels tussen de korrels door kan stromen zonder contact te maken met het actief kool, waardoor de filterprestaties minder consistent zijn.
         </p>
         <p className="text-gray-700 mb-4">
-          GAC-filters worden vaak gebruikt als voorfase in osmosesystemen, in waterontharders en in filterkannen zoals Brita-patronen. De levensduur bedraagt doorgaans 6 tot 12 maanden of 3000-5000 liter, afhankelijk van de waterkwaliteit.
+          GAC-filters worden vaak gebruikt als voorfase in <Link href="/omgekeerde-osmose" className="text-[#005F8A] hover:underline">osmosesystemen</Link>, in <Link href="/waterontharder" className="text-[#005F8A] hover:underline">waterontharders</Link> en in filterkannen zoals Brita-patronen. De levensduur bedraagt doorgaans 6 tot 12 maanden of 3000-5000 liter, afhankelijk van de waterkwaliteit.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -253,7 +253,7 @@ export default function ActiefKoolPage() {
           Actief kool als voorfase voor omgekeerde osmose
         </h2>
         <p className="text-gray-700 mb-4">
-          In een osmosesysteem speelt het actief koolfilter een cruciale rol als beschermer van het RO-membraan. Chloor in leidingwater (standaard 0,1-0,3 mg/L in Nederland) tast het polymide RO-membraan aan via oxidatie. Een CTO-filter als tweede voorfase (na het sedimentfilter) verwijdert chloor tot onder de detectiegrens, waardoor de levensduur van het RO-membraan toeneemt van 1-2 jaar naar 2-3 jaar.
+          In een <Link href="/omgekeerde-osmose" className="text-[#005F8A] hover:underline">osmosesysteem</Link> speelt het actief koolfilter een cruciale rol als beschermer van het RO-membraan. Chloor in leidingwater (standaard 0,1-0,3 mg/L in Nederland) tast het polymide RO-membraan aan via oxidatie. Een CTO-filter als tweede voorfase (na het <Link href="/filtertechnieken" className="text-[#005F8A] hover:underline">sedimentfilter</Link>) verwijdert chloor tot onder de detectiegrens, waardoor de levensduur van het RO-membraan toeneemt van 1-2 jaar naar 2-3 jaar.
         </p>
         <p className="text-gray-700 mb-4">
           Sommige osmosesystemen gebruiken ook een actief koolfilter als post-filter na het opslagvat, om eventuele smaakafwijkingen te corrigeren en een frisse, schone smaak te garanderen.
@@ -300,6 +300,14 @@ export default function ActiefKoolPage() {
             <Link href="/koolstoffilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter gids</h3>
               <p className="text-sm text-gray-600">Types, kosten, installatie en wanneer koolstoffilters de beste keuze zijn.</p>
+            </Link>
+            <Link href="/vergelijken/osmose-vs-filterkan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Osmose vs. filterkan</h3>
+              <p className="text-sm text-gray-600">Vergelijking op filterprestaties, kosten en welke situatie bij welke oplossing past.</p>
+            </Link>
+            <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</h3>
+              <p className="text-sm text-gray-600">Welke stoffen zitten er in leidingwater en welk filter verwijdert wat?</p>
             </Link>
           </div>
         </section>

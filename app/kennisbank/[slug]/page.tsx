@@ -25,6 +25,33 @@ function getArticle(slug: string) {
   return matter(raw);
 }
 
+function getClusterLinks(slug: string) {
+  const s = slug.toLowerCase();
+  const candidates = [
+    { test: /pfas|lood|nitraat|hormonen|chroom|uranium|microplast|pesticid|chloor-|zware-metalen/, href: '/stoffen-in-drinkwater', title: 'Stoffen in drinkwater', desc: 'Verontreinigingen, normen en filteradvies per stofgroep' },
+    { test: /osmose|ro-filter|ro-membraan|omgekeerde|reverse/, href: '/omgekeerde-osmose', title: 'Omgekeerde osmose', desc: 'Complete gids over RO waterfilters' },
+    { test: /filtertechniek|ultrafiltr|actief-kool|ionenwissel|uv-steril|nanofiltr|keramisch|sediment-filter/, href: '/filtertechnieken', title: 'Filtertechnieken', desc: 'Alle waterfiltertechnieken vergeleken' },
+    { test: /hardheid|kalk|dh-|kalkaanslag|kalkvrij|hard-water/, href: '/waterhardheid', title: 'Waterhardheid', desc: 'Waterhardheid per gemeente in Nederland' },
+    { test: /ontharder|waterontharder|ionenwisseling|ontharding/, href: '/waterontharder', title: 'Waterontharder', desc: 'Werking, kosten en wanneer zinvol' },
+    { test: /keurmerk|nsf|kiwa|certifi|ce-markering/, href: '/keurmerken', title: 'Keurmerken', desc: 'NSF, Kiwa, ACS en CE uitgelegd' },
+    { test: /vergelij|vs-[a-z]|versus|beste-waterfilter/, href: '/vergelijken', title: 'Vergelijken', desc: 'Eerlijke vergelijkingen op prestaties en kosten' },
+    { test: /onderhoud|vervangen|levensduur|wisselen|reinigen|storing/, href: '/onderhoud', title: 'Onderhoud', desc: 'Filters vervangen en onderhoudstips' },
+    { test: /zakelijk|kantoor|horeca|bedrijf|industrie|vve/, href: '/zakelijk', title: 'Zakelijk', desc: 'Waterfiltratie voor bedrijven en organisaties' },
+    { test: /drinkwaterbedrijf|vitens|evides|pwn|dunea|waterbedrijf/, href: '/waterbedrijven', title: 'Waterbedrijven', desc: 'De 10 Nederlandse drinkwaterbedrijven' },
+    { test: /norm|drinkwaterbeslu|eu-richtlijn|wetgeving|grenswaarde/, href: '/drinkwaternormen', title: 'Drinkwaternormen', desc: 'Wettelijke normen voor drinkwater in Nederland' },
+    { test: /waterfilter|filter-kopen|beste-filter/, href: '/waterfilter', title: 'Waterfilters', desc: 'Alle waterfiltersoorten op een rij' },
+  ];
+  const seen = new Set<string>();
+  const matched = candidates
+    .filter(c => c.test.test(s))
+    .map(({ href, title, desc }) => ({ href, title, desc }))
+    .filter(l => !seen.has(l.href) && seen.add(l.href));
+  if (!seen.has('/keuzehulp') && matched.length < 4) {
+    matched.push({ href: '/keuzehulp', title: 'Keuzehulp', desc: 'Welk filter past bij uw situatie?' });
+  }
+  return matched.slice(0, 4);
+}
+
 function articleImagePath(slug: string, fmImage?: string) {
   if (fmImage) return fmImage;
   const s = slug.toLowerCase();
@@ -156,6 +183,28 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
         </article>
 
         <SourcesSection sources={sources} />
+
+        {(() => {
+          const clusterLinks = getClusterLinks(slug);
+          if (clusterLinks.length === 0) return null;
+          return (
+            <section className="mt-10">
+              <h2 className="text-lg font-bold text-[#003F5C] mb-4">Verken verder</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {clusterLinks.map(link => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
+                  >
+                    <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors text-sm">{link.title}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{link.desc}</p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
 
         <div className="mt-12">
           <CTABanner context="osmose" />
