@@ -165,7 +165,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto -mt-2">
           <Link
             href="/drinkwaternormen/pfas"
-            className="group flex items-center gap-4 bg-[#003F5C] hover:bg-[#005F8A] transition-colors rounded-2xl text-white px-5 py-4 md:px-6 md:py-5 shadow-sm"
+            className="group flex items-center gap-4 bg-[#003F5C] hover:bg-[#005F8A] transition-colors rounded-2xl text-white px-6 py-5 shadow-sm"
           >
             <span className="text-2xl shrink-0" aria-hidden="true">⚡</span>
             <div className="flex-1 min-w-0">

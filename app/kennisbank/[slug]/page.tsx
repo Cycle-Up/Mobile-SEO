@@ -22,6 +22,20 @@ function getArticle(slug: string) {
   return matter(raw);
 }
 
+function articleImagePath(slug: string, fmImage?: string) {
+  if (fmImage) return fmImage;
+  const s = slug.toLowerCase();
+  if (/pfas|lood|nitraat|chloor|microplast|hormonen|chroom|uranium|zware/.test(s)) return '/og/stoffen-in-drinkwater.svg';
+  if (/osmose|filter-|filtertechniek|ultrafiltr|actief-kool|ionenwissel|uv-steril|nanofiltr|kerami/.test(s)) return '/og/filtertechnieken.svg';
+  if (/hardheid|kalk|ontharder/.test(s)) return '/og/waterhardheid.svg';
+  if (/norm|drinkwaterbeslu|eu-richtl|wetge/.test(s)) return '/og/drinkwaternormen.svg';
+  if (/keurmerk|nsf|kiwa|certifi/.test(s)) return '/og/keurmerken.svg';
+  if (/vergelij|vs-|versus/.test(s)) return '/og/vergelijken.svg';
+  if (/onderhoud|vervang|levensduur|reinig/.test(s)) return '/og/onderhoud.svg';
+  if (/keuze|welk|beste-/.test(s)) return '/og/keuzehulp.svg';
+  return '/og/home.svg';
+}
+
 export async function generateStaticParams() {
   if (!fs.existsSync(contentDir)) return [];
   return fs.readdirSync(contentDir)
@@ -34,7 +48,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const article = getArticle(slug);
   if (!article) return {};
 
-  const { title, description, date } = article.data;
+  const { title, description, date, image } = article.data;
+  const og = articleImagePath(slug, image);
   return {
     title,
     description,
@@ -44,6 +59,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description,
       publishedTime: date,
       type: 'article',
+      images: [{ url: og, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: [og],
     },
   };
 }
@@ -73,8 +93,9 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
   const article = getArticle(slug);
   if (!article) notFound();
 
-  const { title, description, date, lastModified, quickAnswer } = article.data;
+  const { title, description, date, lastModified, quickAnswer, image } = article.data;
   const faqItems = extractFaqItems(article.content);
+  const articleImage = articleImagePath(slug, image);
 
   return (
     <>
@@ -86,6 +107,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           datePublished: date,
           dateModified: lastModified,
           url: `https://waterfilterplatform.nl/kennisbank/${slug}`,
+          image: articleImage,
         }}
       />
       {faqItems.length >= 2 && (

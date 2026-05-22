@@ -17,10 +17,14 @@ interface SchemaOrgProps {
     datePublished: string;
     dateModified?: string;
     url: string;
+    image?: string;
   };
   breadcrumbs?: BreadcrumbItem[];
   schema?: object[];
 }
+
+const DEFAULT_IMAGE = 'https://waterfilterplatform.nl/og/home.svg';
+const SOCIAL_LINKS: string[] = [];
 
 export function SchemaOrg({ type, faqItems, article, breadcrumbs, schema }: SchemaOrgProps) {
   if (schema) {
@@ -52,6 +56,9 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs, schema }: Sche
       })),
     };
   } else if (type === 'Article' && article) {
+    const imageUrl = article.image
+      ? (article.image.startsWith('http') ? article.image : `https://waterfilterplatform.nl${article.image}`)
+      : DEFAULT_IMAGE;
     schemaObj = {
       '@context': 'https://schema.org',
       '@type': 'Article',
@@ -60,8 +67,9 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs, schema }: Sche
       datePublished: article.datePublished,
       dateModified: article.dateModified ?? article.datePublished,
       url: article.url,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': article.url },
       inLanguage: 'nl-NL',
-      image: 'https://waterfilterplatform.nl/og/home.svg',
+      image: imageUrl,
       author: {
         '@type': 'Organization',
         name: 'WaterfilterPlatform',
@@ -94,9 +102,13 @@ export function SchemaOrg({ type, faqItems, article, breadcrumbs, schema }: Sche
       '@type': 'Organization',
       name: 'WaterfilterPlatform',
       url: 'https://waterfilterplatform.nl',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://waterfilterplatform.nl/og/home.svg',
+      },
       description:
         'Onafhankelijk informatieplatform over waterfilters, omgekeerde osmose en kokend water kranen in Nederland.',
-      sameAs: [],
+      ...(SOCIAL_LINKS.length > 0 ? { sameAs: SOCIAL_LINKS } : {}),
     };
   } else if (type === 'WebSite') {
     schemaObj = {

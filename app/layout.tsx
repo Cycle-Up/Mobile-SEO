@@ -3,7 +3,7 @@ import { Geist } from 'next/font/google';
 import Link from 'next/link';
 import './globals.css';
 
-const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans' });
+const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans', display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://waterfilterplatform.nl'),
