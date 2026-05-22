@@ -53,6 +53,48 @@ const uitgelicht = [
     hardheid: '10-14 dH (matig)',
     desc: 'Levert duinwater via Rijn-infiltratie aan 1,2 miljoen mensen in en rond Den Haag.',
   },
+  {
+    naam: 'Brabant Water',
+    href: '/waterbedrijven/brabant-water',
+    regio: 'Noord-Brabant',
+    hardheid: '6-10 dH (zacht tot matig)',
+    desc: 'Enige drinkwaterleverancier in Noord-Brabant. Levert zacht grondwater aan 2,5 miljoen mensen.',
+  },
+  {
+    naam: 'Waternet',
+    href: '/waterbedrijven/waternet',
+    regio: 'Amsterdam en omgeving',
+    hardheid: '15-20 dH (hard)',
+    desc: 'Levert relatief hard IJmeerwater aan circa 1 miljoen Amsterdammers. Kalkafzetting is een veelgehoorde klacht.',
+  },
+  {
+    naam: 'WML',
+    href: '/waterbedrijven/wml',
+    regio: 'Limburg',
+    hardheid: '15-22 dH (hard tot zeer hard)',
+    desc: 'Levert het hardste water van Nederland aan 1,1 miljoen Limburgers vanuit grondwater en de Maas.',
+  },
+  {
+    naam: 'Oasen',
+    href: '/waterbedrijven/oasen',
+    regio: 'Midden-Holland (Gouda, Alphen)',
+    hardheid: '9-13 dH (matig)',
+    desc: 'Levert oevergrondwater aan circa 800.000 mensen in Midden-Holland en de Krimpenerwaard.',
+  },
+  {
+    naam: 'WDL',
+    href: '/waterbedrijven/wdl',
+    regio: 'Noordwest-Overijssel',
+    hardheid: '4-8 dH (zacht)',
+    desc: 'Levert zacht grondwater in Noordwest-Overijssel. Kalkafzetting is nauwelijks een probleem.',
+  },
+  {
+    naam: 'Waterbedrijf Groningen',
+    href: '/waterbedrijven/waterbedrijf-groningen',
+    regio: 'Provincie Groningen',
+    hardheid: '3-7 dH (zacht)',
+    desc: 'Levert een van de zachtste drinkwaters van Nederland vanuit Gronings grondwater.',
+  },
 ];
 
 export default function WaterbedrijvenPage() {
@@ -154,7 +196,7 @@ export default function WaterbedrijvenPage() {
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Vier grote waterbedrijven uitgelicht
+          Alle 10 Nederlandse waterbedrijven
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
           {uitgelicht.map((b) => (
@@ -177,32 +219,46 @@ export default function WaterbedrijvenPage() {
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link
-              href="/waterbedrijven/vitens"
+              href="/waterbedrijven/brabant-water"
               className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
             >
-              <p className="font-semibold text-[#005F8A] mb-1">Vitens</p>
-              <p className="text-sm text-gray-600">Waterkwaliteit, regio en hardheid van het grootste waterbedrijf van Nederland.</p>
+              <p className="font-semibold text-[#005F8A] mb-1">Brabant Water</p>
+              <p className="text-sm text-gray-600">Zacht grondwater in Noord-Brabant: hardheid, kwaliteit en bijzonderheden.</p>
             </Link>
             <Link
-              href="/waterbedrijven/evides"
+              href="/waterbedrijven/waternet"
               className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
             >
-              <p className="font-semibold text-[#005F8A] mb-1">Evides</p>
-              <p className="text-sm text-gray-600">Drinkwater in Zeeland en Zuidwest-Nederland: bronnen, hardheid en zuivering.</p>
+              <p className="font-semibold text-[#005F8A] mb-1">Waternet</p>
+              <p className="text-sm text-gray-600">Hard IJmeerwater in Amsterdam — oorzaken, gevolgen en oplossingen.</p>
             </Link>
             <Link
-              href="/waterbedrijven/pwn"
+              href="/waterbedrijven/wml"
               className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
             >
-              <p className="font-semibold text-[#005F8A] mb-1">PWN</p>
-              <p className="text-sm text-gray-600">Drinkwater in Noord-Holland via duinwaterzuivering van Rijnwater.</p>
+              <p className="font-semibold text-[#005F8A] mb-1">WML</p>
+              <p className="text-sm text-gray-600">Hard tot zeer hard water in Limburg vanuit kalkrijke Maasbodem.</p>
             </Link>
             <Link
-              href="/waterbedrijven/dunea"
+              href="/waterbedrijven/oasen"
               className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
             >
-              <p className="font-semibold text-[#005F8A] mb-1">Dunea</p>
-              <p className="text-sm text-gray-600">Duinwater voor Den Haag en de Zuid-Hollandse kust via Rijn-infiltratie.</p>
+              <p className="font-semibold text-[#005F8A] mb-1">Oasen</p>
+              <p className="text-sm text-gray-600">Matig water in Midden-Holland (Gouda, Alphen) via oevergrondwater.</p>
+            </Link>
+            <Link
+              href="/waterbedrijven/wdl"
+              className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-[#005F8A] mb-1">WDL</p>
+              <p className="text-sm text-gray-600">Zacht grondwater in Noordwest-Overijssel — nauwelijks kalkproblemen.</p>
+            </Link>
+            <Link
+              href="/waterbedrijven/waterbedrijf-groningen"
+              className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
+            >
+              <p className="font-semibold text-[#005F8A] mb-1">Waterbedrijf Groningen</p>
+              <p className="text-sm text-gray-600">Een van de zachtste drinkwaters van Nederland vanuit Gronings grondwater.</p>
             </Link>
             <Link
               href="/waterhardheid"
@@ -210,20 +266,6 @@ export default function WaterbedrijvenPage() {
             >
               <p className="font-semibold text-[#005F8A] mb-1">Waterhardheid per gemeente</p>
               <p className="text-sm text-gray-600">Zoek de waterhardheid in uw gemeente en ontdek welk waterfilter past.</p>
-            </Link>
-            <Link
-              href="/waterhardheid/per-provincie"
-              className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
-            >
-              <p className="font-semibold text-[#005F8A] mb-1">Waterhardheid per provincie</p>
-              <p className="text-sm text-gray-600">Regionale hardheidsverschillen per provincie in kaart gebracht.</p>
-            </Link>
-            <Link
-              href="/stoffen-in-drinkwater"
-              className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all"
-            >
-              <p className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</p>
-              <p className="text-sm text-gray-600">PFAS, nitraat, lood en andere stoffen in Nederlands drinkwater.</p>
             </Link>
             <Link
               href="/drinkwaternormen"

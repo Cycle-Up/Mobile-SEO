@@ -364,6 +364,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/waterbedrijven/evides`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterbedrijven/pwn`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/waterbedrijven/dunea`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterbedrijven/brabant-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterbedrijven/waternet`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterbedrijven/wml`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterbedrijven/oasen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterbedrijven/wdl`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/waterbedrijven/waterbedrijf-groningen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     // pH & mineralen
     { url: `${BASE}/kraanwater/ph`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/leidingwater/ijzer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
