@@ -4,6 +4,7 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
+import { FilterTechniekenComparison } from "@/components/FilterTechniekenComparison";
 import { getCluster } from "@/data/clusters";
 
 export const metadata: Metadata = {
@@ -48,6 +49,12 @@ export default function FiltertechniekenPage() {
             Filtertechnieken waterfilters: van actief kool tot omgekeerde osmose
           </h1>
           <QuickAnswer answer="Elke filtertechniek verwijdert andere stoffen: actief kool absorbeert chloor en geur, ultrafiltratie stopt bacterien en virussen, ionenwisseling vervangt hardheidsionen, en omgekeerde osmose filtert op moleculair niveau inclusief PFAS, nitraat en lood. De juiste keuze hangt af van wat er in uw water zit." />
+          <figure className="mt-6">
+            <FilterTechniekenComparison className="w-full h-auto rounded-2xl shadow-sm bg-white" />
+            <figcaption className="text-xs text-gray-500 text-center mt-2">
+              Vergelijking van 5 filtertechnieken op poriegrootte en doelstoffen — van grof (sediment, 5&nbsp;µm) tot fijn (omgekeerde osmose, 0,0001&nbsp;µm).
+            </figcaption>
+          </figure>
         </div>
       </section>
       <ClusterHub

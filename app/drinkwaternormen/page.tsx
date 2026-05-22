@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { DrinkwaterNormenHierarchy } from "@/components/DrinkwaterNormenHierarchy";
 
 export const metadata: Metadata = {
   title: "Drinkwaternormen Nederland: wie bepaalt wat veilig drinkwater is?",
@@ -193,6 +194,12 @@ export default function DrinkwaternormenPage() {
             Drinkwaternormen in Nederland: wie bepaalt wat veilig drinkwater is?
           </h1>
           <QuickAnswer answer="Drinkwaternormen in Nederland worden bepaald door EU-richtlijn 2020/2184, uitgewerkt in het Drinkwaterbesluit. RIVM levert de wetenschappelijke onderbouwing, ILT houdt toezicht en de 10 drinkwaterbedrijven zijn verantwoordelijk voor levering en kwaliteitscontrole. Nederlands kraanwater voldoet vrijwel altijd aan alle normen, maar sommige consumenten kiezen voor extra filtratie vanwege smaak, kalk of persoonlijke risicoperceptie." />
+          <figure className="mt-6">
+            <DrinkwaterNormenHierarchy className="w-full h-auto rounded-2xl shadow-sm bg-white" />
+            <figcaption className="text-xs text-gray-500 text-center mt-2">
+              Hiërarchie van Nederlandse drinkwaterregelgeving: EU &rarr; nationale wet &rarr; toezicht door RIVM en ILT &rarr; 10 waterbedrijven &rarr; consument.
+            </figcaption>
+          </figure>
         </div>
       </section>
 

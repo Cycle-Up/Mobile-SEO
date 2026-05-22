@@ -4,6 +4,7 @@ import { gemeenten } from '@/data/gemeenten';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { WaterhardheidMapNL } from '@/components/WaterhardheidMapNL';
 
 export const metadata: Metadata = {
   title: 'Hoe hard is het water bij u? Waterhardheid per gemeente 2026',
@@ -101,6 +102,13 @@ export default function WaterhardheidPage() {
 
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-12">
         <QuickAnswer answer="Waterhardheid in Nederland varieert van 4°dH (zacht, Noord-Holland) tot 19°dH (zeer hard, Limburg). Hard water veroorzaakt kalkafzetting in apparaten en leidingen. Boven 12°dH is een waterfilter of ontharder aan te raden. Zoek de waterhardheid van jouw gemeente direct op via de kaart hieronder." />
+
+        <figure>
+          <WaterhardheidMapNL className="w-full h-auto rounded-2xl shadow-sm bg-white" />
+          <figcaption className="text-xs text-gray-500 text-center mt-2">
+            Indicatieve waterhardheid per provincie in graden Duitse hardheid (°dH). Zeeland en het noorden hebben zacht water; Noord-Holland en Limburg het hardst.
+          </figcaption>
+        </figure>
 
         {/* Hardheid uitleg */}
         <section>

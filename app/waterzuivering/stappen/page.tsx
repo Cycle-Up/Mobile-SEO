@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { WaterzuiveringFlow } from '@/components/WaterzuiveringFlow';
 
 export const metadata: Metadata = {
   title: 'Stappen in drinkwaterzuivering: van bron tot kraan | WaterfilterPlatform',
@@ -99,6 +100,13 @@ export default function ZuiveringsstappenPage() {
         </div>
 
         <QuickAnswer answer="Drinkwaterzuivering doorloopt 6 hoofdstappen: coagulatie/flocculatie, sedimentatie, filtratie (zandfilter), actief-koolfiltratie, desinfectie (chloor, UV of ozon) en distributie via het leidingnet." />
+
+        <figure>
+          <WaterzuiveringFlow className="w-full h-auto rounded-2xl shadow-sm bg-white" />
+          <figcaption className="text-xs text-gray-500 text-center mt-2">
+            Het drinkwaterzuiveringsproces in Nederland in 7 stappen — van inname tot kraan.
+          </figcaption>
+        </figure>
 
         <CTABanner context="algemeen" />
 
