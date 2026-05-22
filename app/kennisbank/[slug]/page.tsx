@@ -8,6 +8,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -143,6 +144,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10">
+        <AuthorBox datePublished={date} dateModified={lastModified} />
         {quickAnswer && <QuickAnswer answer={quickAnswer} />}
         <article className="prose max-w-none">
           <MDXRemote source={article.content} />

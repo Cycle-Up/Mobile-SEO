@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { OsmoseIllustration } from '@/components/OsmoseIllustration';
 
 export const metadata: Metadata = {
   title: 'Wat is omgekeerde osmose? Uitleg & RO filter kopen 2026',
@@ -177,6 +178,13 @@ export default function OmgekeerdeOsmosePage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
         <QuickAnswer answer="Een omgekeerde osmose filter verwijdert 95–99% van alle opgeloste stoffen uit leidingwater, waaronder kalk, nitraten, pesticiden en PFAS. Het systeem werkt via een semi-permeabel membraan dat verontreinigingen tegenhoudt. Voor Nederlandse huishoudens met hard water of waterkwaliteitszorgen is het de meest effectieve filteroplossing." />
+
+        <figure className="my-8">
+          <OsmoseIllustration className="rounded-2xl shadow-sm" />
+          <figcaption className="text-xs text-gray-400 text-center mt-2">
+            Schematische weergave: hoe omgekeerde osmose verontreinigingen tegenhoudt
+          </figcaption>
+        </figure>
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">

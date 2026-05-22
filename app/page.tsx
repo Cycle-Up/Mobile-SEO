@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { HeroIllustration } from '@/components/HeroIllustration';
 
 export const metadata: Metadata = {
   title: 'WaterfilterPlatform — kennisplatform over waterkwaliteit en waterfiltratie',
@@ -46,56 +47,100 @@ const faqItems = [
 const clusters = [
   {
     href: '/drinkwaternormen',
-    icon: '📋',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 shrink-0" aria-hidden="true">
+        <rect x="4" y="3" width="16" height="18" rx="2" stroke="#005F8A" strokeWidth="1.5"/>
+        <path d="M8 7h8M8 11h8M8 15h5" stroke="#005F8A" strokeWidth="1.5" strokeLinecap="round"/>
+      </svg>
+    ),
     title: 'Drinkwaternormen',
     desc: 'Wie controleert drinkwater in Nederland? EU-richtlijn, Drinkwaterbesluit, RIVM en de 10 waterbedrijven toegelicht.',
     badge: '13 onderwerpen',
   },
   {
     href: '/stoffen-in-drinkwater',
-    icon: '🧪',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 shrink-0" aria-hidden="true">
+        <path d="M9 3h6M10 3v7l-3.5 6A2 2 0 008.25 19h7.5A2 2 0 0017.5 16L14 10V3" stroke="#005F8A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="10.5" cy="16" r="1" fill="#005F8A"/>
+        <circle cx="13.5" cy="17.5" r="0.8" fill="#005F8A"/>
+      </svg>
+    ),
     title: 'Stoffen in drinkwater',
     desc: 'PFAS, lood, nitraat, kalk, hormonen en meer: ontdek welke stoffen in Nederlands leidingwater kunnen voorkomen.',
     badge: '12 stoffen',
   },
   {
     href: '/waterhardheid',
-    icon: '🗺️',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 shrink-0" aria-hidden="true">
+        <path d="M12 3C12 3 5 11 5 15a7 7 0 0014 0C19 11 12 3 12 3z" stroke="#005F8A" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M9 15.5C9.5 17 10.6 17.5 12 17.5" stroke="#005F8A" strokeWidth="1.3" strokeLinecap="round"/>
+      </svg>
+    ),
     title: 'Waterhardheid per gemeente',
     desc: 'Hoe hard is het water in uw gemeente? Zoek de exacte hardheidswaarde op voor alle 349 Nederlandse gemeenten.',
     badge: '349 gemeenten',
   },
   {
     href: '/filtertechnieken',
-    icon: '🔬',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 shrink-0" aria-hidden="true">
+        <path d="M3 4.5h18L13.5 12v6.5l-3-1.5V12L3 4.5z" stroke="#005F8A" strokeWidth="1.5" strokeLinejoin="round"/>
+      </svg>
+    ),
     title: 'Filtertechnieken',
     desc: 'Leer hoe elke filtertechniek werkt: van actief kool en ultrafiltratie tot omgekeerde osmose en ionenwisseling.',
     badge: '10 technieken',
   },
   {
     href: '/kennisbank',
-    icon: '📚',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 shrink-0" aria-hidden="true">
+        <path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke="#005F8A" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" stroke="#005F8A" strokeWidth="1.5"/>
+        <path d="M8 7h8M8 11h6" stroke="#005F8A" strokeWidth="1.3" strokeLinecap="round"/>
+      </svg>
+    ),
     title: 'Kennisbank',
     desc: 'Meer dan 330 diepgaande artikelen over waterkwaliteit, wateronderzoek, filteronderhoud en drinkwaterwetenschap.',
     badge: '330+ artikelen',
   },
   {
     href: '/keurmerken',
-    icon: '✅',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 shrink-0" aria-hidden="true">
+        <path d="M12 2L3 6v6c0 5 3.86 9.68 9 11 5.14-1.32 9-6 9-11V6L12 2z" stroke="#005F8A" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M9 12l2 2 4-4" stroke="#005F8A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
     title: 'Keurmerken & certificering',
     desc: 'Ontdek wat NSF/ANSI, Kiwa, ACS en WRAS betekenen en hoe u de certificering van een waterfilter verifieert.',
     badge: '8 keurmerken',
   },
   {
     href: '/keuzehulp',
-    icon: '🎯',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 shrink-0" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" stroke="#005F8A" strokeWidth="1.5"/>
+        <circle cx="12" cy="12" r="2.5" stroke="#005F8A" strokeWidth="1.2"/>
+        <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="#005F8A" strokeWidth="1.3" strokeLinecap="round"/>
+      </svg>
+    ),
     title: 'Waterfilter keuzehulp',
     desc: 'Hard water, PFAS, baby, huurwoning of budget? Per situatie een gerichte aanbeveling op basis van uw waterprobleem.',
     badge: 'Keuzehulp',
   },
   {
     href: '/vergelijken',
-    icon: '⚖️',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 shrink-0" aria-hidden="true">
+        <path d="M12 3v18" stroke="#005F8A" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M5 8l-2 5h4L5 8z" stroke="#005F8A" strokeWidth="1.3" strokeLinejoin="round"/>
+        <path d="M19 16l-2-5-2 5h4z" stroke="#005F8A" strokeWidth="1.3" strokeLinejoin="round"/>
+        <path d="M5 8h7M12 16h7" stroke="#005F8A" strokeWidth="1.3" strokeLinecap="round"/>
+      </svg>
+    ),
     title: 'Vergelijkingen',
     desc: 'Osmose vs filterkan, waterfilter vs waterontharder: prestaties en kosten eerlijk naast elkaar.',
     badge: 'Objectief',
@@ -133,29 +178,37 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white pt-12 pb-8 md:pt-20 md:pb-12 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[#005F8A] text-sm font-semibold uppercase tracking-wide mb-3">
-            Onafhankelijk kennisplatform
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-[#003F5C] leading-tight mb-4">
-            Alles over waterkwaliteit en waterfiltratie
-          </h1>
-          <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-            WaterfilterPlatform is het onafhankelijke kennisplatform voor iedereen die wil begrijpen wat er in drinkwater zit, hoe waterfilters werken en wat waterhardheid betekent voor hun situatie.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link
-              href="/kennisbank"
-              className="bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-xl hover:bg-[#003F5C] transition-colors"
-            >
-              Verken de kennisbank
-            </Link>
-            <Link
-              href="/waterhardheid"
-              className="border border-[#005F8A] text-[#005F8A] font-semibold px-6 py-3 rounded-xl hover:bg-[#E0F2FE] transition-colors"
-            >
-              Waterhardheid in uw gemeente
-            </Link>
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          {/* Left: Text */}
+          <div>
+            <p className="text-[#005F8A] text-sm font-semibold uppercase tracking-wide mb-3">
+              Onafhankelijk kennisplatform
+            </p>
+            <h1 className="text-3xl md:text-5xl font-bold text-[#003F5C] leading-tight mb-4">
+              Alles over waterkwaliteit en waterfiltratie
+            </h1>
+            <p className="text-gray-600 text-lg mb-8">
+              WaterfilterPlatform is het onafhankelijke kennisplatform voor iedereen die wil begrijpen wat er in drinkwater zit, hoe waterfilters werken en wat waterhardheid betekent voor hun situatie.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/kennisbank"
+                className="bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-xl hover:bg-[#003F5C] transition-colors text-center"
+              >
+                Verken de kennisbank
+              </Link>
+              <Link
+                href="/waterhardheid"
+                className="border border-[#005F8A] text-[#005F8A] font-semibold px-6 py-3 rounded-xl hover:bg-[#E0F2FE] transition-colors text-center"
+              >
+                Waterhardheid in uw gemeente
+              </Link>
+            </div>
+          </div>
+
+          {/* Right: Illustration */}
+          <div className="hidden md:block">
+            <HeroIllustration />
           </div>
         </div>
       </section>
@@ -191,6 +244,56 @@ export default function HomePage() {
             <div key={s.label} className="flex flex-col">
               <span className="text-2xl font-bold text-[#005F8A]">{s.waarde}</span>
               <span className="text-xs text-gray-500 mt-0.5">{s.label}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Trust section */}
+      <section className="max-w-5xl mx-auto px-4 py-10">
+        <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 text-center mb-6">
+          Waarom WaterfilterPlatform vertrouwen
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          {[
+            {
+              icon: (
+                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" aria-hidden="true">
+                  <path d="M12 2L3 6V12C3 16.97 6.84 21.61 12 23C17.16 21.61 21 16.97 21 12V6L12 2Z" fill="#DBEAFE" stroke="#3B82F6" strokeWidth="1.5" strokeLinejoin="round"/>
+                  <path d="M9 12L11 14L15 10" stroke="#1D4ED8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              ),
+              title: 'Onafhankelijke redactie',
+              desc: 'Geen adverteerdersinvloed op de inhoud. Artikelen zijn gebaseerd op RIVM-rapporten, EU-richtlijnen en wetenschappelijke literatuur.',
+            },
+            {
+              icon: (
+                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" aria-hidden="true">
+                  <circle cx="11" cy="11" r="7" fill="#DCFCE7" stroke="#16A34A" strokeWidth="1.5"/>
+                  <path d="M11 8V11L13 13" stroke="#15803D" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M20 20L17 17" stroke="#16A34A" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
+              ),
+              title: 'Actuele informatie',
+              desc: 'Alle artikelen worden periodiek bijgewerkt zodra regelgeving, normen of wetenschappelijk inzicht verandert.',
+            },
+            {
+              icon: (
+                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="16" rx="3" fill="#F0F9FF" stroke="#0EA5E9" strokeWidth="1.5"/>
+                  <path d="M7 9H17M7 13H14" stroke="#0284C7" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
+              ),
+              title: 'Wetenschappelijke bronnen',
+              desc: 'We verwijzen naar primaire bronnen: Drinkwaterbesluit, WHO-richtlijnen, EFSA-rapporten en peer-reviewed onderzoek.',
+            },
+          ].map((item) => (
+            <div key={item.title} className="flex items-start gap-3 p-4 rounded-xl border border-gray-100 bg-white">
+              <div className="shrink-0 mt-0.5">{item.icon}</div>
+              <div>
+                <p className="font-semibold text-gray-900 text-sm mb-1">{item.title}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -234,7 +337,7 @@ export default function HomePage() {
               className="group bg-[#F0F9FF] hover:bg-[#E0F2FE] rounded-2xl p-5 transition-all flex flex-col min-h-[180px]"
             >
               <div className="flex items-center gap-2.5 mb-3">
-                <span className="text-2xl shrink-0" aria-hidden="true">{cat.icon}</span>
+                <div className="shrink-0">{cat.icon}</div>
                 <h3 className="font-bold text-[#005F8A] text-base leading-tight">
                   {cat.title}
                 </h3>
