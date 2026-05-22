@@ -109,8 +109,10 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           description,
           datePublished: date,
           dateModified: lastModified,
+          lastReviewed: lastReviewed ?? lastModified,
           url: `https://waterfilterplatform.nl/kennisbank/${slug}`,
           image: articleImage,
+          sources,
         }}
       />
       {faqItems.length >= 2 && (
@@ -148,7 +150,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
       <div className="max-w-3xl mx-auto px-4 py-10">
         <MethodologyBadge sources={methodologySources} lastReviewed={lastReviewed ?? lastModified} />
         <AuthorBox datePublished={date} dateModified={lastModified} />
-        {quickAnswer && <QuickAnswer answer={quickAnswer} />}
+        {quickAnswer && <QuickAnswer answer={quickAnswer} question={title} />}
         <article className="prose max-w-none">
           <MDXRemote source={article.content} />
         </article>
