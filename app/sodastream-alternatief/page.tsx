@@ -86,6 +86,16 @@ const vergelijkingData = [
 export default function SodaStreamAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'SodaStream alternatief: opties voor bruisend water',
+          description: 'Bekijk de beste alternatieven voor SodaStream: van onderbouwde carbonators tot 4-in-1 kranen. Vergelijk kosten, gebruiksgemak en duurzaamheid.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/sodastream-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

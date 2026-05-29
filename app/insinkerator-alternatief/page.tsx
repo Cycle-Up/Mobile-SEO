@@ -139,6 +139,16 @@ const tco5jaar = [
 export default function InsinkeratorAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'InSinkErator alternatief: beste opties vergeleken',
+          description: 'Op zoek naar een alternatief voor InSinkErator? Vergelijk 4-in-1 osmosekranen, Quooker, Grohe Red en Franke op prijs, functies en filteropties.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/insinkerator-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

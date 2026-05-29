@@ -53,6 +53,16 @@ export default function ZoutlozeWaterontharderVergelijkenPage() {
           { name: "Zoutloze waterontharder vergelijken", url: "https://waterfilterplatform.nl/vergelijken/zoutloze-waterontharder-vergelijken" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Zoutloze waterontharder vergelijken: TAC, magneet of elektronisch",
+          description: "Zoutloze waterontharders vergeleken: template-assisted crystallization (TAC), magnetische en elektronische antikalk. Wat werkt echt en wanneer kies je wat?",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/vergelijken/zoutloze-waterontharder-vergelijken",
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">

@@ -49,6 +49,16 @@ const faqItems = [
 export default function ViteauWaterontharderPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Viteau waterontharder: modellen, ervaringen en alternatief',
+          description: 'Viteau waterontharder: wat biedt dit Nederlandse merk, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/viteau-waterontharder',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

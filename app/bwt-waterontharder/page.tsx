@@ -49,6 +49,16 @@ const faqItems = [
 export default function BwtWaterontharderPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'BWT waterontharder: modellen, ervaringen en alternatief (2026)',
+          description: 'BWT waterontharder: wat biedt de AQA Perla-lijn, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/bwt-waterontharder',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

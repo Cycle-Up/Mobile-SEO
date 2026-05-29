@@ -93,6 +93,16 @@ const topAlternatieven = [
 export default function BritaAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Brita alternatief: betere waterfilters dan de filterkan? (2026)',
+          description: 'Zoek je een alternatief voor de Brita filterkan? Vergelijk BWT, ZeroWater, een onder-aanrecht filter en osmose op filtering, kosten en gemak in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/brita-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

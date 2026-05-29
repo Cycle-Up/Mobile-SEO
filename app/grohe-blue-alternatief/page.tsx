@@ -93,6 +93,16 @@ const topAlternatieven = [
 export default function GroheBlueAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Grohe Blue alternatief: osmose en kokend water (2026)',
+          description: 'Zoek je een alternatief voor de Grohe Blue? Vergelijk gefilterd en bruisend water met een 4-in-1 osmosekraan die ook kokend water levert.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/grohe-blue-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

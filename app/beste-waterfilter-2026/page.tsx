@@ -191,6 +191,16 @@ const filterTypen = [
 export default function BesteWaterfilter2026Page() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Beste waterfilter 2026: eerlijk getest & vergeleken',
+          description: 'Welk waterfilter is het beste in 2026? We vergelijken filterkan, omgekeerde osmose, inline en 4-in-1 kraan op kosten, zuiverheid en installatie.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/beste-waterfilter-2026',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

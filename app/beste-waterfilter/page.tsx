@@ -62,6 +62,16 @@ export default function BesteWaterfilterPage() {
           },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Beste waterfilter per situatie: welk filter past bij uw woning?",
+          description: "Welk waterfilter is het beste voor een appartement, huurwoning, ouder huis of gezin? Concrete aanbevelingen per woningtype en gebruik.",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/beste-waterfilter",
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">

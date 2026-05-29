@@ -144,6 +144,16 @@ const tco5jaar = [
 export default function BesteWaterontharder2026Page() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Beste waterontharder 2026: koopgids en shortlist per situatie',
+          description: 'Beste waterontharder 2026: shortlist per situatie, bekende merken, zout vs zoutloos en kosten over 5 jaar. Welke waterontharder past bij jouw waterhardheid?',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/beste-waterontharder-2026',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

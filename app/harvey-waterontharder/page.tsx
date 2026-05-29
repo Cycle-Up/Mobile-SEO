@@ -49,6 +49,16 @@ const faqItems = [
 export default function HarveyWaterontharderPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Harvey waterontharder: modellen, ervaringen en alternatief',
+          description: 'Harvey waterontharder: wat biedt het non-electric twin-tank systeem op blokzout, voor wie is het geschikt en waar let je op? Plus alternatieven in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/harvey-waterontharder',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

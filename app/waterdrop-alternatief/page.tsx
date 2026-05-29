@@ -76,6 +76,16 @@ const topAlternatieven = [
 export default function WaterdropAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Waterdrop alternatief en review: beste osmosefilters 2026',
+          description: 'Waterdrop osmosefilter review en alternatieven: vergelijk tankless RO-systemen op prijs, capaciteit, certificering en filterkosten in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/waterdrop-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

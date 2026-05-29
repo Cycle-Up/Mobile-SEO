@@ -49,6 +49,16 @@ const faqItems = [
 export default function MaximaWaterontharderPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Maxima waterontharder: modellen, ervaringen en alternatief',
+          description: 'Maxima waterontharder: wat biedt dit betaalbare NL-marktmerk, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/maxima-waterontharder',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

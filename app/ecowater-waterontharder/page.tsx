@@ -49,6 +49,16 @@ const faqItems = [
 export default function EcowaterWaterontharderPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'EcoWater waterontharder: modellen, ervaringen en alternatief',
+          description: 'EcoWater waterontharder: wat biedt dit internationale merk, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/ecowater-waterontharder',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

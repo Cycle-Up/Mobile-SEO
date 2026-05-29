@@ -80,6 +80,16 @@ const picks = [
 export default function BesteFilterkan2026Page() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Beste filterkan 2026: koopgids en shortlist per situatie',
+          description: 'Beste waterfilterkan 2026: Brita, BWT en alternatieven vergeleken op filterprestatie, kosten per liter en smaak. Shortlist per huishouden.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/beste-filterkan-2026',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

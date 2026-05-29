@@ -79,6 +79,16 @@ const topAlternatieven = [
 export default function BorettiAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Boretti alternatief: kokend water kraan met osmose (2026)',
+          description: 'Zoek je een alternatief voor de Boretti kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gefilterd en bruisend water geeft.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/boretti-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

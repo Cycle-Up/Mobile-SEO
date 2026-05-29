@@ -183,6 +183,16 @@ const redenenAlternatief = [
 export default function QuookerAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Wat is het beste Quooker alternatief? Vergelijking 2026',
+          description: 'Ontdek alternatieven voor Quooker met osmose filter en kokend water. Vergelijk prijs, functies en garantie van de beste merken naast Quooker.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/quooker-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

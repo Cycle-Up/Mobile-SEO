@@ -93,6 +93,16 @@ const topAlternatieven = [
 export default function ZeroWaterAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'ZeroWater alternatief: goedkoper TDS 0 met osmose? (2026)',
+          description: 'Zoek je een alternatief voor de ZeroWater filterkan? Vergelijk TDS-verwijdering, kosten per liter en gemak met osmose en andere filters in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/zerowater-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

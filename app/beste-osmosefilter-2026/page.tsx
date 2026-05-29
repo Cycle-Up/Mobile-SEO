@@ -300,6 +300,16 @@ const tco5jaar = [
 export default function BesteOsmosefilter2026Page() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Beste osmosefilter 2026: top 5 eerlijk vergeleken',
+          description: 'Welk osmosefilter is het beste in 2026? Wij vergeleken 5 systemen op prijs, membraankwaliteit, filterstadia, tankgrootte en TCO. Met eerlijke reviews.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/beste-osmosefilter-2026',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

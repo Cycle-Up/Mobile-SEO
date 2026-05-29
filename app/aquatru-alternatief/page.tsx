@@ -93,6 +93,16 @@ const topAlternatieven = [
 export default function AquaTruAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'AquaTru alternatief: osmose zonder werkblad-unit? (2026)',
+          description: 'Zoek je een alternatief voor de AquaTru countertop osmose? Vergelijk filtering, capaciteit, kosten en ruimte met een onder-aanrecht osmosesysteem in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/aquatru-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

@@ -49,6 +49,16 @@ const faqItems = [
 export default function GrunbeckWaterontharderPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Grunbeck waterontharder: modellen, ervaringen en alternatief',
+          description: 'Grunbeck waterontharder: wat biedt de softliQ-serie, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/grunbeck-waterontharder',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

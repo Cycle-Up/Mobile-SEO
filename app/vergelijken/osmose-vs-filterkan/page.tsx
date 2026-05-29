@@ -58,6 +58,16 @@ export default function OsmoseVsFilterkanPage() {
           { name: "Osmose vs filterkan", url: "https://waterfilterplatform.nl/vergelijken/osmose-vs-filterkan" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Osmose vs filterkan: prestaties, kosten en wanneer welke keuze?",
+          description: "Osmosefilter vs Brita-kan: filterprestaties (PFAS, lood, nitraat), kosten per liter, capaciteit en onderhoud eerlijk vergeleken.",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/vergelijken/osmose-vs-filterkan",
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">

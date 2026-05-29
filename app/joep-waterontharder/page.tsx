@@ -68,6 +68,16 @@ const specs = [
 export default function JoepWaterontharderPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'JOEP waterontharder: specificaties, kosten en voor wie',
+          description: 'JOEP waterontharder (AquaSens): WRAS-gecertificeerd, 5 m3/u, miniregeneratie en 20 jaar harsgarantie. Specificaties, kosten en voor wie het geschikt is.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/joep-waterontharder',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

@@ -53,6 +53,16 @@ export default function HarveyVsBwtPage() {
           { name: "Harvey vs BWT", url: "https://waterfilterplatform.nl/vergelijken/harvey-vs-bwt" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Harvey vs BWT: non-electric of elektrische waterontharder?",
+          description: "Harvey vs BWT waterontharder vergeleken: non-electric blokzout twin-tank versus elektrische ionenwisselaar. Verschil in werking, zout, ruimte en onderhoud.",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/vergelijken/harvey-vs-bwt",
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">

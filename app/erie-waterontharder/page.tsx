@@ -49,6 +49,16 @@ const faqItems = [
 export default function ErieWaterontharderPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Erie waterontharder: modellen, ervaringen en alternatief',
+          description: 'Erie waterontharder: wat biedt dit merk (onderdeel van Pentair), voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/erie-waterontharder',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

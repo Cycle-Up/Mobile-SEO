@@ -53,6 +53,16 @@ export default function BwtVsGrunbeckPage() {
           { name: "BWT vs Grunbeck", url: "https://waterfilterplatform.nl/vergelijken/bwt-vs-grunbeck" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "BWT vs Grunbeck: welke waterontharder is beter?",
+          description: "BWT vs Grunbeck waterontharder vergeleken: technologie, zoutverbruik, bediening, service en prijssegment. Welk premium merk past het beste bij jou?",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/vergelijken/bwt-vs-grunbeck",
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">

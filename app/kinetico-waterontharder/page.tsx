@@ -49,6 +49,16 @@ const faqItems = [
 export default function KineticoWaterontharderPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Kinetico waterontharder: modellen, ervaringen en alternatief',
+          description: 'Kinetico waterontharder: wat biedt de non-electric twin-tank techniek, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/kinetico-waterontharder',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

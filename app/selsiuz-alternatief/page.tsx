@@ -102,6 +102,16 @@ const topAlternatieven = [
 export default function SelsiuzAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Selsiuz alternatief: goedkoper met osmosefilter? (2026)',
+          description: 'Zoek je een alternatief voor de Selsiuz kokend water kraan? Vergelijk prijs, functies en kosten met een 4-in-1 osmosekraan, Quooker en meer in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/selsiuz-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"

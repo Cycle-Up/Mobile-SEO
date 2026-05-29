@@ -53,6 +53,16 @@ export default function GroheBlueVsGroheRedPage() {
           { name: "Grohe Blue vs Grohe Red", url: "https://waterfilterplatform.nl/vergelijken/grohe-blue-vs-grohe-red" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Grohe Blue vs Grohe Red: wat is het verschil?",
+          description: "Grohe Blue vs Grohe Red vergeleken: Blue geeft gekoeld en bruisend gefilterd water, Red geeft kokend water. Plus de 4-in-1 osmosekraan die beide combineert.",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/vergelijken/grohe-blue-vs-grohe-red",
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
