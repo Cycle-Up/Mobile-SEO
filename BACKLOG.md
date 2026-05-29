@@ -25,7 +25,7 @@ in `app/kennisbank/page.tsx`, `npm run check-content` 100%.
 - [x] 9. `/grohe-blue-filter` (page) - "grohe blue filter vervangen/kosten". Klaar wanneer: TSX-standaard, parent /grohe-blue.
 - [x] 10. `/vergelijken/quooker-vs-grohe-red` (page) - kokend-water merk-duo. Klaar wanneer: TSX-standaard, parent /vergelijken.
 - [x] 11. `/vergelijken/selsiuz-vs-grohe-blue` (page) - merk-duo. Klaar wanneer: TSX-standaard, parent /vergelijken.
-- [ ] 12. Long-tail kennisbank-ronde: 3 nieuwe MDX-artikelen in onderbenutte sub-thema's (elk eerst kannibalisatie-gecheckt tegen bestaande slugs). Klaar wanneer: 3 artikelen voldoen aan MDX-standaard; check-content 100%; build groen.
+- [x] 12. Long-tail kennisbank-ronde: 3 nieuwe MDX-artikelen in onderbenutte sub-thema's (elk eerst kannibalisatie-gecheckt tegen bestaande slugs). Klaar wanneer: 3 artikelen voldoen aan MDX-standaard; check-content 100%; build groen.
 
 ## TECHNIEK (later - verplaatst naar onderen)
 

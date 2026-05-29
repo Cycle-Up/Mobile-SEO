@@ -16,6 +16,27 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'waterfilter-strijkijzer-stoom',
+    titel: 'Welk water in je strijkijzer? Kalkvrij stoomstrijken',
+    samenvatting: 'Kraanwater, gedemineraliseerd of osmosewater in je stoomstrijkijzer? Zo voorkom je kalkaanslag en verleng je de levensduur.',
+    categorie: 'Waterfilter',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'ijsblokjes-helder-maken',
+    titel: 'Heldere ijsblokjes maken: waarom gefilterd water helpt',
+    samenvatting: 'Waarom worden ijsblokjes troebel en hoe maak je ze helder? De rol van mineralen, lucht en gefilterd of osmosewater, plus de directionele-vriestruc.',
+    categorie: 'Osmose',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'vaatwasserzout-vs-waterontharderzout',
+    titel: 'Vaatwasserzout vs waterontharderzout: wat is het verschil?',
+    samenvatting: 'Is vaatwasserzout hetzelfde als waterontharderzout? Verschillen in vorm, zuiverheid en gebruik, en of je het ene voor het andere kunt gebruiken.',
+    categorie: 'Waterontharder',
+    datum: '29 mei 2026',
+  },
+  {
     slug: 'gratis-kraanwater-horeca',
     titel: 'Moet de horeca gratis kraanwater geven?',
     samenvatting: 'Is de horeca verplicht gratis kraanwater te schenken? De regels, de EU-drinkwaterrichtlijn over toegang tot water en hoe het in de praktijk werkt.',
