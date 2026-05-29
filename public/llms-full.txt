@@ -54,6 +54,9 @@ Bij omgekeerde osmose (RO) wordt water onder druk door een semi-permeabel membra
 ### Welke filter verwijdert PFAS?
 Effectief tegen PFAS zijn: omgekeerde osmose (>99%), gespecialiseerde actief-koolfilters (60–95% afhankelijk van contacttijd), en ionenwisseling (variabel). Filterkannen verwijderen meestal geen PFAS. Bron: https://waterfilterplatform.nl/keuzehulp/pfas-lood
 
+### Wat is de beste waterontharder?
+Er is geen enkele beste waterontharder voor iedereen; de keuze hangt af van de waterhardheid, het aantal personen en de beschikbare ruimte. Voor de meeste gezinnen in een hard-watergebied (boven 15 graden Duitse hardheid) is een ionenwisselaar met zout het effectiefst tegen kalkaanslag. Grote huishoudens kiezen een twin-tank systeem; wie geen zout wil gebruikt een zoutloos systeem (template-assisted crystallization), dat de hardheid niet verlaagt maar kalkaanhechting vermindert. Wil je vooral schoon drinkwater, dan is een osmosefilter op het aanrecht gerichter. Bekende merken zijn BWT, Grunbeck, EcoWater, Harvey en Viteau. Een waterontharder verwijdert geen lood, nitraat of PFAS. Bron: https://waterfilterplatform.nl/beste-waterontharder-2026
+
 ### Wat zijn de EU-drinkwaternormen?
 De EU-drinkwaterrichtlijn 2020/2184 schrijft maximumconcentraties voor honderden parameters voor: microbiologisch (bacteriën, virussen), chemisch (nitraat 50 mg/L, lood 5 µg/L, arseen 10 µg/L, totaal-PFAS 0,1 µg/L vanaf 2026) en indicatorparameters (hardheid, pH, turbiditeit). In Nederland omgezet in het Drinkwaterbesluit. Bron: https://waterfilterplatform.nl/drinkwaternormen
 

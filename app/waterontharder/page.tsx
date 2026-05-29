@@ -779,6 +779,10 @@ export default function WaterOntharderPage() {
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/beste-waterontharder-2026" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Beste waterontharder 2026</p>
+              <p className="text-sm text-gray-500">Koopgids met shortlist per situatie, bekende merken en kosten over 5 jaar.</p>
+            </Link>
             <Link href="/filtertechnieken/ionenwisseling" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Ionenwisseling: hoe werkt onthardering?</p>
               <p className="text-sm text-gray-500">De technische werking van ionenwisseling en wanneer het de juiste keuze is.</p>

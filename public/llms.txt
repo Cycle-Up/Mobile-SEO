@@ -24,6 +24,7 @@ Deze constructie wordt expliciet vermeld op /over-ons, /methodologie en in de fo
 - [Waterhardheid per gemeente](https://waterfilterplatform.nl/waterhardheid): 350 gemeenten met dH-waarden en advies
 - [Vergelijkingen](https://waterfilterplatform.nl/vergelijken): osmose vs filterkan, waterfilter vs waterontharder
 - [Beste waterfilter per situatie](https://waterfilterplatform.nl/beste-waterfilter): aanbevelingen per use-case
+- [Beste waterontharder 2026](https://waterfilterplatform.nl/beste-waterontharder-2026): koopgids met shortlist per situatie, bekende merken (BWT, Grunbeck, EcoWater, Harvey, Viteau), zout vs zoutloos en kosten over 5 jaar
 - [Stoffen in drinkwater](https://waterfilterplatform.nl/stoffen-in-drinkwater): PFAS, lood, nitraat, kalk, hormonen, medicijnresten
 - [Drinkwaternormen](https://waterfilterplatform.nl/drinkwaternormen): EU-richtlijn, Drinkwaterbesluit, RIVM, ILT
 - [Keurmerken en certificering](https://waterfilterplatform.nl/keurmerken): NSF, Kiwa, ACS, CE, WRAS
