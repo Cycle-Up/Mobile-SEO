@@ -145,3 +145,13 @@ Geskipt wegens kannibalisatie (gemotiveerd):
 - Verse keyword-export trekken; `CONTENT_BACKLOG.md` is mei 2026 en ~12 maanden oud.
 - Conversielaag naar PureAqua bedraden zodra de affiliate-bestemming bekend is; de merk-
   alternatief-pagina's (selsiuz/grohe-blue/boretti/fonteq/waterdrop) zijn de logische plek.
+
+## 7. Nieuwe serie 2026: watertappunten & toegang tot kraanwater
+
+Verse, eerder lege vein (gap+trend, zie SERIE-CONTENT.md): 5 TSX product-pagina's onder
+`/drinkwaterfontein` (soorten, leidinggebonden-vs-fles, met-bruiswater, koeling, contactloos)
+en 5 kennisbank-MDX rond toegang/regelgeving (gratis-kraanwater-horeca, watertappunt-aanvragen,
+toegang-tot-kraanwater-eu-richtlijn, kraanwater-onderweg-bidon, gratis-water-evenement).
+Gebouwd op de 2026-maatstaf (information gain, E-E-A-T, AEO/schema). Funnelt naar
+`/drinkwaterfontein` + `/zakelijk`; B2B/fontein-gericht (niet de PureAqua-osmose/kokend-water
+consumentenfunnel) - bewuste keuze omdat dit structureel de minst verzadigde vein was.
