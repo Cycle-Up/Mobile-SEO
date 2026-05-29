@@ -109,8 +109,39 @@ QuickAnswer/speakable, CTABanner, interne links, TCO-tabellen):
 Alle vijf toegevoegd aan `app/sitemap.ts`. `npm run check-content` 363/363; `npm run build`
 groen.
 
-## 5. Vervolg (volgende ronde)
+## 5. Ronde 2 gebouwd (resterende gaps uitgewerkt) - 2026-05-29
 
-- Prio 2/3 hierboven afbouwen (beste-filterkan-2026, merk-vs-merk, resterende long-tail).
+Alle resterende niet-geskipte items uit sectie 2 zijn nu gebouwd volgens de bestaande
+template/schema-conventies (FAQPage + BreadcrumbList, QuickAnswer/speakable, CTABanner,
+vergelijkings-/TCO-tabellen). check-content 368/368; build groen (4.381 pagina's).
+
+Merk-pagina's (TSX):
+- [x] `/fonteq-alternatief` - kokend-water-kraan merk -> 4-in-1 osmosekraan
+- [x] `/waterdrop-alternatief` - RO-merk, review + alternatief -> osmose
+
+Koopgids + merk-vs-merk (TSX):
+- [x] `/beste-filterkan-2026` - jaarlijkse koopgids, complementair aan `/filterkan`
+- [x] `/vergelijken/quooker-vs-selsiuz`
+- [x] `/vergelijken/grohe-blue-vs-grohe-red`
+
+Kennisbank-artikelen (MDX, met quickAnswer, in `app/kennisbank/page.tsx` geregistreerd):
+- [x] `brita-vs-bwt`
+- [x] `waterfilter-vorst-bevriezen`
+- [x] `osmose-water-medicijnen-innemen`
+- [x] `kokend-water-kraan-stroomstoring`
+- [x] `osmose-water-honden-katten-veilig` (osmose/demineralisatie-angle, cross-link naar
+  bestaande `waterfilter-hond-kat`)
+
+Geskipt wegens kannibalisatie (gemotiveerd):
+- [skip] `waterontharder-stroomverbruik-kosten-2026` - overlap met bestaande
+  `waterontharder-stroom-verbruik`.
+- [skip] `drinkwater-hitte-zomer-kwaliteit` - de bestaande pagina `/kraanwater/zomer`
+  ("Kraanwater kwaliteit in de zomer: hittegolven, algen en drinkwater") dekt exact deze
+  intentie; een kennisbankartikel zou daarmee kannibaliseren.
+
+## 6. Vervolg (volgende ronde)
+
 - Zodra GSC-export beschikbaar is: gaps valideren op werkelijk zoekvolume i.p.v. inferentie.
 - Verse keyword-export trekken; `CONTENT_BACKLOG.md` is mei 2026 en ~12 maanden oud.
+- Conversielaag naar PureAqua bedraden zodra de affiliate-bestemming bekend is; de merk-
+  alternatief-pagina's (selsiuz/grohe-blue/boretti/fonteq/waterdrop) zijn de logische plek.

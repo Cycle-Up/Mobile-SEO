@@ -16,6 +16,41 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'brita-vs-bwt',
+    titel: 'Brita vs BWT: welke waterfilterkan is beter?',
+    samenvatting: 'Brita en BWT vergeleken op techniek, filterprestatie, kosten per liter en smaak. Welke waterfilterkan past het beste bij jou?',
+    categorie: 'Vergelijken',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'waterfilter-vorst-bevriezen',
+    titel: 'Waterfilter en vorst: bevriezing voorkomen in de winter',
+    samenvatting: 'Voorkom dat je waterfilter of osmosesysteem kapotvriest. Tips voor aftappen, isoleren en vorstvrij opslaan, plus wat te doen na bevriezing.',
+    categorie: 'Onderhoud',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'osmose-water-medicijnen-innemen',
+    titel: 'Osmosewater en medicijnen innemen: is dat veilig?',
+    samenvatting: 'Is het veilig om medicijnen in te nemen met osmosewater, en heeft het invloed op de werking? Uitleg plus wanneer je arts of apotheker raadpleegt.',
+    categorie: 'Gezondheid',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'kokend-water-kraan-stroomstoring',
+    titel: 'Kokend water kraan bij stroomstoring: wat werkt nog?',
+    samenvatting: 'Wat werkt er nog van je kokend water kraan tijdens een stroomuitval? Kokend water valt weg, koud water blijft. Praktische tips.',
+    categorie: 'Kokend water',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'osmose-water-honden-katten-veilig',
+    titel: 'Osmosewater voor honden en katten: veilig of niet?',
+    samenvatting: 'Is mineraalarm osmosewater veilig als drinkwater voor hond of kat? Wat zegt de wetenschap over mineralentekort en wanneer is het juist beter?',
+    categorie: 'Toepassingen',
+    datum: '29 mei 2026',
+  },
+  {
     slug: 'waterontharder-voordelen',
     titel: 'Waterontharder voordelen: wat levert het je op?',
     samenvatting: 'Overzicht van de voordelen van een waterontharder: minder kalk, zuinigere apparaten, zachte huid en lagere energiekosten.',
