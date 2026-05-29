@@ -14,7 +14,7 @@ in `app/kennisbank/page.tsx`, `npm run check-content` 100%.
 
 ## CONTENT (nu)
 
-- [ ] 1. `/brita-alternatief` (page) - "brita alternatief"; Brita = 801 interne vermeldingen, geen eigen merkpagina. Funnel naar /filterkan + /omgekeerde-osmose. Kannibalisatie-check vs bestaande `brita-vs-osmose`/`brita-vs-bwt` (andere intentie: alternatief != vergelijking). Klaar wanneer: zie TSX-standaard hierboven.
+- [x] 1. `/brita-alternatief` (page) - "brita alternatief"; Brita = 801 interne vermeldingen, geen eigen merkpagina. Funnel naar /filterkan + /omgekeerde-osmose. Kannibalisatie-check vs bestaande `brita-vs-osmose`/`brita-vs-bwt` (andere intentie: alternatief != vergelijking). Klaar wanneer: zie TSX-standaard hierboven. (af: build groen, static prerendered, in sitemap)
 - [ ] 2. `/zerowater-alternatief` (page) - "zerowater alternatief" (29 vermeldingen, RO/filter-intentie). Funnel naar /omgekeerde-osmose + /filterkan. Klaar wanneer: TSX-standaard.
 - [ ] 3. `/aquatru-alternatief` (page) - "aquatru alternatief" (RO-merk). Funnel naar /omgekeerde-osmose + /beste-osmosefilter-2026. Klaar wanneer: TSX-standaard.
 - [ ] 4. `/selsiuz` (page) - neutrale merk-hub (73 vermeldingen) analoog aan /quooker; overzicht + links naar sub-intents en /selsiuz-alternatief. Distinct van de alternatief-pagina. Klaar wanneer: TSX-standaard + linkt naar >=2 eigen sub-pagina's.
