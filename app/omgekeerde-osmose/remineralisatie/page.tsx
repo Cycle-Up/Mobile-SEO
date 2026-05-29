@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Osmosewater Remineralisatie: Filter, Druppels & Methoden',
   description: 'Osmosewater remineraliseren: calcietpatroon toevoegen, mineraaldruppels, mengen met leidingwater. TDS verhogen naar 50-80 mg/L voor optimale smaak en pH.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/remineralisatie' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/remineralisatie' },
 };
 
 const faqSchema = {

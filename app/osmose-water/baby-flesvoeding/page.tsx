@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Osmosewater voor flesvoeding: veilig voor baby en aanbevolen TDS",
   description:
     "Osmosewater voor babymelk: WHO adviseert water met laag TDS voor flesvoeding. Osmose geeft TDS 1-20 mg/L. Remineralisatie aanbevolen.",
-  alternates: { canonical: "https://waterfilterplatform.nl/osmose-water/baby-flesvoeding" },
+  alternates: { canonical: "https://waterfilterplatform.nl/osmose-water/baby" },
 };
 
 const faqItems = [

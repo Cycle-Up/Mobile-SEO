@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Osmose Filter Kopen 2026: Beste Keuze & Prijzen',
   description:
     'Osmose filter kopen? Vergelijk tankless vs tank, 4-traps vs 5-traps vs 6-traps systemen. Bekijk prijzen, specs en welk systeem het beste bij jou past in 2026.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/kopen' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/kopen' },
   openGraph: {
     title: 'Osmose Filter Kopen 2026: Beste Keuze & Prijzen',
     description:

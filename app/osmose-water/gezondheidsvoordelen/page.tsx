@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Gezondheidsvoordelen osmose water: wat zegt het onderzoek?',
   description: 'Bewezen en betwiste gezondheidsvoordelen van osmosewater: wat verwijdert het, wat zegt de WHO over mineralen, en voor wie is osmosewater het meest voordelig?',
-  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/gezondheidsvoordelen' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/gezondheid' },
 };
 
 const faqSchema = {
