@@ -821,6 +821,14 @@ export default function WaterOntharderPage() {
               <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Beste waterontharder 2026</p>
               <p className="text-sm text-gray-500">Koopgids met shortlist per situatie, bekende merken en kosten over 5 jaar.</p>
             </Link>
+            <Link href="/waterontharder/nadelen" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Nadelen van een waterontharder</p>
+              <p className="text-sm text-gray-500">De eerlijke keerzijde: kosten, natrium, onderhoud en wanneer het niet zinvol is.</p>
+            </Link>
+            <Link href="/waterontharder/gezondheid" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterontharder en gezondheid</p>
+              <p className="text-sm text-gray-500">Is onthard water gezond? Natrium, mineralen en voor wie oplet - genuanceerd.</p>
+            </Link>
             <Link href="/filtertechnieken/ionenwisseling" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Ionenwisseling: hoe werkt onthardering?</p>
               <p className="text-sm text-gray-500">De technische werking van ionenwisseling en wanneer het de juiste keuze is.</p>

@@ -79,3 +79,31 @@ Wijzigingen volgens `WATERFILTERPLATFORM_SEO_AI_SEARCH_HANDOVER.md`.
 - Niet gedaan: de 40+ promotionele artikelen / "JOEP wint"-vergelijking / lokale JOEP-pagina's
   uit het bronstuk - die botsen met onafhankelijkheid, scaled-content en YMYL-regels.
 - check-content 100%; build groen (4.416 paginas).
+
+## 2026-05-29 — Waterontharder SEO-strategie: clusterarchitectuur gecompleteerd
+
+### Belangrijke noot (transparantie, conform handover "geen content verzinnen")
+- Van de 4 in de opdracht genoemde documenten waren alleen WATERFILTERPLATFORM_SEO_AI_SEARCH_HANDOVER.md
+  en het JOEP-stuk aanwezig. WATERONTHARDERS_KEYWORD_RESEARCH.md, WATERONTHARDERS_CONTENT_CLUSTERS.md
+  en WATERONTHARDERS_QUICK_WIN_PAGES.md ONTBREKEN in de repo/uploads. Hun inhoud is NIET verzonnen.
+- De waterontharder-cluster was bovendien in eerdere rondes al grotendeels gebouwd: pillar
+  /waterontharder + ~30 sub-pagina's (werking, kosten, prijs, onderhoud, zout x4, regeneratie,
+  installeren, capaciteit, storingen, twin-tank, harsbed, bypass, elektrisch, zoutloos,
+  vs-osmose, appartement, verhuurder, aquarium, zakelijk, huren), 11 long-tail MDX,
+  10 merkpagina's + JOEP, /beste-waterontharder-2026 en de /vergelijken-pagina's.
+
+### Toegevoegd (de twee echte, niet-duplicerende gaps in de gevraagde architectuur)
+- `/waterontharder/nadelen` - eigen zoekintentie "waterontharder nadelen" (distinct van
+  zacht-water-nadelen.mdx). Eerlijk/balanced, YMYL-nuance op natrium, "wanneer niet zinvol".
+- `/waterontharder/gezondheid` - "is onthard water gezond" (breder dan de natrium-MDX);
+  zware YMYL-nuance, disclaimer (geen medisch advies), bronnen (RIVM/Vewin/Gezondheidsraad).
+- Beide: Article + BreadcrumbList + FAQPage schema, speakable QuickAnswer, AuthorBox +
+  MethodologyBadge, rustige CTA (keuzehulp/vergelijken, geen agressieve sales).
+- Interne links: gelinkt vanuit de pillar /waterontharder (Gerelateerde onderwerpen) en
+  onderling + naar kosten/prijs/vs-osmose/zoutloos/natrium-MDX/keuzehulp; in sitemap opgenomen.
+
+### Bewust NIET gedaan
+- Geen extra near-duplicate waterontharder-pagina's (cluster is verzadigd; zou doorway/duplicate
+  MUST-regels schenden). Quick-win/keyword/cluster-docs kunnen alsnog verwerkt worden zodra ze
+  worden aangeleverd.
+- check-content 100%; build groen (4.418 paginas).
