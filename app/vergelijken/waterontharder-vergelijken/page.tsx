@@ -329,6 +329,7 @@ export default function WaterOntharderVergelijkenPage() {
           <h2 className="text-lg font-semibold text-[#003F5C] mb-4">Gerelateerde pagina&apos;s</h2>
           <div className="flex flex-wrap gap-3">
             {[
+              { label: "Beste waterontharder 2026", href: "/beste-waterontharder-2026" },
               { label: "Vergelijken", href: "/vergelijken" },
               { label: "Waterontharder", href: "/waterontharder" },
               { label: "Keuzehulp hard water", href: "/keuzehulp/hard-water" },

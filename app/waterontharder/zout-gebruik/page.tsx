@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Waterontharder zoutverbruik: optimaliseren, soorten zout en kosten',
   description:
     'Een waterontharder verbruikt 3-10 kg zout per regeneratie. Het verbruik hangt af van de harscapaciteit, waterhardheid en regeneratiefrequentie.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/zout-gebruik' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/zout-verbruik' },
 };
 
 const faqSchema = {

@@ -8,7 +8,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Beste waterontharder 2026: koopgids en shortlist per situatie',
     description:
-      'Beste waterontharder 2026: shortlist per huishouden, selectiecriteria, capaciteit en kosten over 5 jaar. Ionenwisselaar, zoutloos of osmose - wat past bij jou?',
+      'Beste waterontharder 2026: shortlist per situatie, bekende merken, zout vs zoutloos en kosten over 5 jaar. Welke waterontharder past bij jouw waterhardheid?',
     alternates: { canonical: 'https://waterfilterplatform.nl/beste-waterontharder-2026' },
     openGraph: {
       title: 'Beste waterontharder 2026 - koopgids per situatie',
@@ -47,6 +47,53 @@ const faqItems = [
     answer:
       'Nee. Een waterontharder verlaagt de hardheid maar verwijdert geen lood, nitraat, PFAS of microplastics, en voegt bij zoutsystemen juist natrium toe. Wil je puur drinkwater, combineer dan met een osmosefilter op het aanrecht of kies osmose als gerichte drinkwateroplossing.',
   },
+  {
+    question: 'Welk merk waterontharder is het beste?',
+    answer:
+      'Geen enkel merk is voor iedereen het beste. Bekende waterontharder-merken in Nederland zijn onder andere BWT, Grunbeck, EcoWater, Harvey en Viteau. Vergelijk ze niet op naam maar op de juiste capaciteit voor jouw waterhardheid, de certificering (zoals DVGW of Kiwa), het zout- en waterverbruik bij regeneratie en de service en garantie. Een goed afgestemd middensegment-toestel presteert vaak beter dan een te groot of te klein duur merktoestel.',
+  },
+  {
+    question: 'Wat is de beste waterontharder zonder zout?',
+    answer:
+      'Wil je geen zout gebruiken, dan is een zoutloos systeem op basis van template-assisted crystallization (TAC) doorgaans de beste keuze. Het verlaagt de waterhardheid niet, maar zet kalk om in een vorm die minder aanhecht aan leidingen en apparaten. Zoutloze systemen zijn onderhoudsarm en verbruiken geen zout of regeneratiewater, maar zijn bij zeer hard water (boven 15 dH) minder effectief dan een ionenwisselaar met zout.',
+  },
+  {
+    question: 'Is een waterontharder de moeite waard?',
+    answer:
+      'Bij een waterhardheid boven 15 dH is een waterontharder meestal de moeite waard: minder kalkaanslag, een langere levensduur van boiler, waterkoker en vaatwasser, en minder schoonmaakmiddel en ontkalker. Onder 8 dH (zacht water) is het zelden nodig. Reken de besparing op apparaten en middelen af tegen de aanschaf-, zout- en onderhoudskosten over vijf jaar.',
+  },
+];
+
+const ranking = [
+  {
+    naam: 'Ionenwisselaar met zout',
+    notitie: 'Beste algemene keuze voor gezinnen in een hard-watergebied (boven 15 dH). Verlaagt de hardheid het effectiefst tegen kalkaanslag. Beste prijs-prestatie.',
+  },
+  {
+    naam: 'Twin-tank ionenwisselaar',
+    notitie: 'Beste voor grote huishoudens en continu verbruik: levert ook zacht water tijdens de regeneratie.',
+  },
+  {
+    naam: 'Zoutloos systeem (TAC)',
+    notitie: 'Beste zoutvrije en onderhoudsarme keuze; vermindert kalkaanhechting zonder zout, ideaal voor huurders en matig hard water.',
+  },
+  {
+    naam: 'Osmosefilter op aanrecht',
+    notitie: 'Beste keuze als je vooral schoon drinkwater wilt in plaats van huisbrede ontharding.',
+  },
+];
+
+const merken = [
+  ['BWT', 'Oostenrijks merk met een breed assortiment ionenwisselaars, bekend van de AQA Perla-lijn met magnesiumtechnologie.', '/bwt-waterontharder'],
+  ['Grunbeck', 'Duits premium-merk; de softliQ-serie biedt zuinige regeneratie en app-besturing.', '/grunbeck-waterontharder'],
+  ['EcoWater', 'Internationaal merk met ionenwisselaars en uitgebreide monitoring van zout- en waterverbruik.', '/ecowater-waterontharder'],
+  ['Harvey', 'Bekend van compacte, non-electric twin-tank systemen op blokzout, geschikt voor kleine ruimtes.', '/harvey-waterontharder'],
+  ['Kinetico', 'Non-electric twin-tank dat op waterdruk werkt en regenereert op werkelijk verbruik; premium, via dealer.', '/kinetico-waterontharder'],
+  ['Culligan', 'Groot internationaal merk met sterk service- en dealernetwerk en huur/onderhoudsopties.', '/culligan-waterontharder'],
+  ['Erie', 'In de Benelux veelgebruikt merk (onderdeel van Pentair) voor ionenwisselaars en besturingskleppen.', '/erie-waterontharder'],
+  ['Viteau', 'Nederlandse aanbieder en installateur van waterontharders met landelijke service.', '/viteau-waterontharder'],
+  ['Aquacell', 'Betaalbare ionenwisselaars uit het instap- en middensegment, veel online verkocht in Nederland.', '/aquacell-waterontharder'],
+  ['Maxima', 'Op de Nederlandse markt veel verkocht waarde-/middensegment merk van ionenwisselaars.', '/maxima-waterontharder'],
 ];
 
 const picks = [
@@ -100,6 +147,26 @@ export default function BesteWaterontharder2026Page() {
         breadcrumbs={[
           { name: 'Home', url: 'https://waterfilterplatform.nl' },
           { name: 'Beste waterontharder 2026', url: 'https://waterfilterplatform.nl/beste-waterontharder-2026' },
+        ]}
+      />
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Beste waterontharders 2026 per situatie',
+            description:
+              'Aanbevolen waterontharders per huishouden en waterhardheid, gerangschikt van beste algemene keuze tot specifieke situaties.',
+            itemListOrder: 'https://schema.org/ItemListOrderDescending',
+            numberOfItems: ranking.length,
+            url: 'https://waterfilterplatform.nl/beste-waterontharder-2026',
+            itemListElement: ranking.map((r, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: r.naam,
+              description: r.notitie,
+              url: 'https://waterfilterplatform.nl/beste-waterontharder-2026',
+            })),
+          },
         ]}
       />
 
@@ -229,6 +296,29 @@ export default function BesteWaterontharder2026Page() {
           <p className="text-xs text-gray-400 mt-3">
             Indicatieve cijfers, gemiddeld gebruik (4 personen) en regionale waterhardheid. Werkelijke
             kosten varieren per merk en hardheid.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Bekende waterontharder-merken in Nederland</h2>
+          <p className="text-gray-700 leading-relaxed mb-5">
+            De juiste keuze draait om het systeemtype en de capaciteit, niet om het merk. Toch helpt
+            het om de bekendste waterontharder-merken op de Nederlandse markt te kennen. Beoordeel ze
+            op capaciteit, certificering, zout- en waterverbruik en service - niet op naam alleen.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {merken.map(([naam, beschrijving, href]) => (
+              <div key={naam} className="bg-gray-50 rounded-xl p-4">
+                <p className="font-semibold text-gray-800 mb-1">
+                  <Link href={href} className="hover:text-[#005F8A]">{naam} waterontharder</Link>
+                </p>
+                <p className="text-sm text-gray-600 leading-relaxed">{beschrijving}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-400 mt-3">
+            Wij verkopen deze merken niet en ontvangen er geen vergoeding voor. Controleer actuele
+            specificaties en certificering altijd bij de leverancier. Bijgewerkt mei 2026.
           </p>
         </section>
 

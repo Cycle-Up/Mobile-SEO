@@ -597,6 +597,7 @@ export default function WaterontharderKopenPage() {
           <h2 className="text-xl font-bold text-[#003F5C] mb-4">Meer lezen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
+              { href: '/beste-waterontharder-2026', label: 'Beste waterontharder 2026: koopgids en shortlist' },
               { href: '/waterontharder', label: 'Waterontharder: werking, kosten en alternatieven' },
               { href: '/kennisbank/waterontharder', label: 'Kennisbank: waterontharder' },
               { href: '/omgekeerde-osmose/kopen', label: 'Osmose filter kopen — welk systeem past bij jou?' },

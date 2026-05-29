@@ -78,12 +78,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const article = getArticle(slug);
   if (!article) return {};
 
-  const { title, description, date, image } = article.data;
+  const { title, description, date, image, canonical } = article.data;
   const og = articleImagePath(slug, image);
   return {
     title,
     description,
-    alternates: { canonical: `https://waterfilterplatform.nl/kennisbank/${slug}` },
+    alternates: { canonical: canonical ?? `https://waterfilterplatform.nl/kennisbank/${slug}` },
     openGraph: {
       title,
       description,

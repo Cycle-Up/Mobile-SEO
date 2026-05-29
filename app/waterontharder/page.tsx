@@ -777,8 +777,49 @@ export default function WaterOntharderPage() {
         </section>
 
         <section className="mt-8">
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Waterontharder-merken</h2>
+          <p className="text-gray-600 text-sm mb-4">
+            Bekende merken op de Nederlandse en Belgische markt. Neutrale uitleg per merk, zonder
+            verkoopprikkel - beoordeel altijd op de juiste capaciteit, certificering en service.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              ['BWT', '/bwt-waterontharder'],
+              ['Grunbeck', '/grunbeck-waterontharder'],
+              ['EcoWater', '/ecowater-waterontharder'],
+              ['Harvey', '/harvey-waterontharder'],
+              ['Viteau', '/viteau-waterontharder'],
+              ['Aquacell', '/aquacell-waterontharder'],
+              ['Maxima', '/maxima-waterontharder'],
+              ['Culligan', '/culligan-waterontharder'],
+              ['Kinetico', '/kinetico-waterontharder'],
+              ['Erie', '/erie-waterontharder'],
+            ].map(([naam, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="inline-flex items-center gap-1.5 bg-[#E0F2FE] text-[#005F8A] font-medium text-sm px-3.5 py-2 rounded-lg hover:bg-[#005F8A] hover:text-white transition-colors"
+              >
+                {naam} waterontharder
+              </Link>
+            ))}
+          </div>
+          <p className="text-sm text-gray-600 mt-4">
+            Merken vergelijken? Lees{' '}
+            <Link href="/vergelijken/bwt-vs-grunbeck" className="text-[#005F8A] underline">BWT vs Grunbeck</Link>,{' '}
+            <Link href="/vergelijken/harvey-vs-bwt" className="text-[#005F8A] underline">Harvey vs BWT</Link>{' '}
+            of de{' '}
+            <Link href="/beste-waterontharder-2026" className="text-[#005F8A] underline">beste waterontharder koopgids</Link>.
+          </p>
+        </section>
+
+        <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/beste-waterontharder-2026" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Beste waterontharder 2026</p>
+              <p className="text-sm text-gray-500">Koopgids met shortlist per situatie, bekende merken en kosten over 5 jaar.</p>
+            </Link>
             <Link href="/filtertechnieken/ionenwisseling" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Ionenwisseling: hoe werkt onthardering?</p>
               <p className="text-sm text-gray-500">De technische werking van ionenwisseling en wanneer het de juiste keuze is.</p>
@@ -798,7 +839,7 @@ export default function WaterOntharderPage() {
           </div>
         </section>
 
-        <MethodologyBadge lastReviewed="2026-05-22" sources={['RIVM', 'ILT', 'EU-richtlijn 2020/2184', 'WHO – Guidelines for Drinking-water Quality']} />
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'ILT', 'EU-richtlijn 2020/2184', 'Vewin', 'WHO – Guidelines for Drinking-water Quality']} />
 
         {/* FAQ */}
         <section id="faq">
