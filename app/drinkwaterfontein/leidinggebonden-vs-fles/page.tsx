@@ -10,12 +10,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Leidinggebonden vs flessenfontein: wat is beter?',
     description:
-      'Leidinggebonden vs flessenfontein vergeleken op kosten per liter, plaatsing, hygiene, duurzaamheid, capaciteit en onderhoud. Welke drinkwaterfontein past bij jouw situatie?',
+      'Leidinggebonden vs flessenfontein vergeleken op kosten per liter, plaatsing, hygiene, duurzaamheid, capaciteit en onderhoud. Welke drinkwaterfontein past bij',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/leidinggebonden-vs-fles' },
     openGraph: {
       title: 'Leidinggebonden vs flessenfontein: wat is beter?',
       description:
-        'Head-to-head: leidinggebonden (mains-fed) vs flessenfontein op kosten per liter, plaatsing, hygiene, duurzaamheid, capaciteit en onderhoud - met een duidelijke vergelijkingstabel.',
+        'Head-to-head: leidinggebonden (mains-fed) vs flessenfontein op kosten per liter, plaatsing, hygiene, duurzaamheid, capaciteit en onderhoud - met een',
       url: 'https://waterfilterplatform.nl/drinkwaterfontein/leidinggebonden-vs-fles',
       type: 'article',
       locale: 'nl_NL',

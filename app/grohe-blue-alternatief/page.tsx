@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Grohe Blue alternatief: osmose en kokend water (2026)',
     description:
-      'Zoek je een alternatief voor de Grohe Blue? Vergelijk gefilterd en bruisend water met een 4-in-1 osmosekraan die ook kokend water levert. Prijzen en functies 2026.',
+      'Zoek je een alternatief voor de Grohe Blue? Vergelijk gefilterd en bruisend water met een 4-in-1 osmosekraan die ook kokend water levert.',
     alternates: { canonical: 'https://waterfilterplatform.nl/grohe-blue-alternatief' },
     openGraph: {
       title: 'Grohe Blue alternatief vergelijken - beste opties 2026',

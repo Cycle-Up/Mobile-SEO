@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Regenwater voor wasmachine: 50% minder wasmiddel, geen kalk',
   description:
-    'Regenwater is ideaal voor de wasmachine: 0 dH hardheid betekent geen kalkaanslag, 50% minder wasmiddel nodig en zachtere kleding. Sedimentfilter 100 micron volstaat.',
+    'Regenwater is ideaal voor de wasmachine: 0 dH hardheid betekent geen kalkaanslag, 50% minder wasmiddel nodig en zachtere kleding. Sedimentfilter 100 micron',
   alternates: { canonical: 'https://waterfilterplatform.nl/regenwater/wassen' },
 };
 

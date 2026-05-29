@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'PFAS in drinkwater: risico\'s, normen en hoe te filteren (2026)',
   description:
-    'PFAS in Nederlands drinkwater: wat zijn PFAS, EU-norm 0,10 µg/L, risicogebieden (Dordrecht, Schiphol), gezondheidsrisico\'s, welke filters PFAS verwijderen en vergelijking per methode.',
+    'PFAS in Nederlands drinkwater: wat zijn PFAS, EU-norm 0,10 µg/L, risicogebieden (Dordrecht, Schiphol), gezondheidsrisico\'s, welke filters PFAS verwijderen',
   alternates: { canonical: 'https://waterfilterplatform.nl/pfas-water' },
 };
 

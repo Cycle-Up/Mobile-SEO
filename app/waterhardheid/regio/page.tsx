@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterhardheid per regio Nederland: complete kaart 2026',
   description:
-    'Waterhardheid per provincie in Nederland: kaart 2026. Hardste regio\'s (Limburg 25+ °dH, Zuid-Holland 20+ °dH), zachtste regio\'s (Drenthe, Groningen 5–8 °dH) en links naar gemeenten.',
+    'Waterhardheid per provincie in Nederland: kaart 2026. Hardste regio\'s (Limburg 25+ °dH, Zuid-Holland 20+ °dH), zachtste regio\'s (Drenthe, Groningen 5–8',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterhardheid/regio' },
   openGraph: {
     title: 'Waterhardheid per regio Nederland: complete kaart 2026',

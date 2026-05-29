@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Lood in kraanwater: oorzaken, risico\'s en hoe te verwijderen',
   description:
-    'Lood in kraanwater: oude loden leidingen voor 1960, EU-norm 5 µg/L, gezondheidsrisico\'s (neurotoxisch, gevaarlijk voor kinderen), welke filters lood verwijderen en wat niet werkt.',
+    'Lood in kraanwater: oude loden leidingen voor 1960, EU-norm 5 µg/L, gezondheidsrisico\'s (neurotoxisch, gevaarlijk voor kinderen), welke filters lood',
   alternates: { canonical: 'https://waterfilterplatform.nl/lood-water' },
 };
 

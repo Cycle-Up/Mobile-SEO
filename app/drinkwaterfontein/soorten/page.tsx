@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Drinkwaterfontein soorten: types, koeling en bruiswater vergeleken',
     description:
-      'Welke soorten drinkwaterfonteinen zijn er? Leidinggebonden vs flessenfontein, met koeling, bruiswater of contactloos - vergeleken op gebruik, kosten en onderhoud.',
+      'Welke soorten drinkwaterfonteinen zijn er? Leidinggebonden vs flessenfontein, met koeling, bruiswater of contactloos - vergeleken op gebruik, kosten en',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/soorten' },
     openGraph: {
       title: 'Drinkwaterfontein soorten: types vergeleken',

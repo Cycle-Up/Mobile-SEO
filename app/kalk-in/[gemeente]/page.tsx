@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/gemeenten';
+import { clampDescription } from '@/lib/seo';
+
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
@@ -21,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `Kalk in ${gemeente.naam}: oorzaken, gevolgen & oplossing`,
-    description: `Last van kalkaanslag in ${gemeente.naam}? Het water heeft ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}). Lees over witte aanslag, schade aan apparaten en de beste manier om kalk te verwijderen.`,
+    description: clampDescription(`Last van kalkaanslag in ${gemeente.naam}? Het water heeft ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}). Lees over witte aanslag, schade aan apparaten en de beste manier om kalk te verwijderen.`),
     alternates: { canonical: `https://waterfilterplatform.nl/kalk-in/${gemeente.slug}` },
     openGraph: {
       title: `Kalk in ${gemeente.naam} — oorzaken, kosten en oplossing`,

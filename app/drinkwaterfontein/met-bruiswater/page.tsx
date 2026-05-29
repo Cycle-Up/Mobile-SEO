@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Drinkwaterfontein met bruiswater: hoe werkt het?',
     description:
-      'Hoe werkt een drinkwaterfontein met bruiswater? Uitleg over CO2-cilinder, koeling en toepassing in horeca en kantoor, met kosten-aandachtspunten en een vergelijking met losse oplossingen.',
+      'Hoe werkt een drinkwaterfontein met bruiswater? Uitleg over CO2-cilinder, koeling en toepassing in horeca en kantoor, met kosten-aandachtspunten en een',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/met-bruiswater' },
     openGraph: {
       title: 'Drinkwaterfontein met bruiswater: hoe werkt het?',

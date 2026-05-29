@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kosten PFAS waterfilter: aanschaf, TCO en subsidies (2026)',
   description:
-    'Budgetvergelijking PFAS-waterfilters: pitcher EUR 30-80, onderbouw koolstof EUR 100-300, RO EUR 300-800, professioneel EUR 800-2000. TCO 5-jaar berekening en subsidies.',
+    'Budgetvergelijking PFAS-waterfilters: pitcher EUR 30-80, onderbouw koolstof EUR 100-300, RO EUR 300-800, professioneel EUR 800-2000. TCO 5-jaar berekening en',
   alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter/kosten' },
 };
 

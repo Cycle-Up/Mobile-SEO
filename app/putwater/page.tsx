@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: "Putwater filteren: risico's, vereisten en beste waterfilters",
   description:
-    "Putwater of bronwater thuis gebruiken? Leer over wettelijke status, verontreinigingsrisico's per regio, verplicht testen, aanbevolen filtersystemen en kosten voor veilig drinkwater uit eigen put.",
+    "Putwater of bronwater thuis gebruiken? Leer over wettelijke status, verontreinigingsrisico's per regio, verplicht testen, aanbevolen filtersystemen en kosten",
   alternates: { canonical: 'https://waterfilterplatform.nl/putwater' },
 };
 
@@ -84,7 +84,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Putwater filteren: risico's, vereisten en beste waterfilters",
   description:
-    "Putwater of bronwater thuis gebruiken? Leer over wettelijke status, verontreinigingsrisico's per regio, verplicht testen, aanbevolen filtersystemen en kosten voor veilig drinkwater uit eigen put.",
+    "Putwater of bronwater thuis gebruiken? Leer over wettelijke status, verontreinigingsrisico's per regio, verplicht testen, aanbevolen filtersystemen en kosten",
   datePublished: '2026-04-01',
   dateModified: '2026-04-01',
   url: 'https://waterfilterplatform.nl/putwater',

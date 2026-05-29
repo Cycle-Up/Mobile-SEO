@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Wat is een 4-in-1 kraan? Kokend, koud & bruisend water',
     description:
-      'Alles over de 4-in-1 kraan: hoe werkt het systeem, wat kost het, welke merken zijn er en wanneer is zo\'n kraan de juiste keuze? Complete gids inclusief kostentabel.',
+      'Alles over de 4-in-1 kraan: hoe werkt het systeem, wat kost het, welke merken zijn er en wanneer is zo\'n kraan de juiste keuze? Complete gids inclusief',
     alternates: { canonical: 'https://waterfilterplatform.nl/4-in-1-kraan' },
     openGraph: {
       title: '4-in-1 kraan: kokend, koud, warm en bruisend water uit één kraan',

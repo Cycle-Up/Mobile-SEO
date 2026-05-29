@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Erie waterontharder: modellen, ervaringen en alternatief',
     description:
-      'Erie waterontharder: wat biedt dit merk (onderdeel van Pentair), voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
+      'Erie waterontharder: wat biedt dit merk (onderdeel van Pentair), voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in',
     alternates: { canonical: 'https://waterfilterplatform.nl/erie-waterontharder' },
     openGraph: {
       title: 'Erie waterontharder: modellen, ervaringen en alternatief',

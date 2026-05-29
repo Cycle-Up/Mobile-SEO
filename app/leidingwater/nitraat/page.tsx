@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Nitraat in leidingwater: normen, risicos en filteren',
-  description: 'De EU-norm voor nitraat in leidingwater is 50 mg/L. In landbouwgebieden wordt deze soms overschreden. Nitraat is gevaarlijk voor baby\'s. Osmosefilter verwijdert 85-95%.',
+  description: 'De EU-norm voor nitraat in leidingwater is 50 mg/L. In landbouwgebieden wordt deze soms overschreden. Nitraat is gevaarlijk voor baby\'s. Osmosefilter',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/nitraat' },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Nitraat in leidingwater: normen, risicos en filteren',
-  description: "De EU-norm voor nitraat in leidingwater is 50 mg/L. In landbouwgebieden wordt deze soms overschreden. Nitraat is gevaarlijk voor baby's. Osmosefilter verwijdert 85-95%.",
+  description: "De EU-norm voor nitraat in leidingwater is 50 mg/L. In landbouwgebieden wordt deze soms overschreden. Nitraat is gevaarlijk voor baby's. Osmosefilter",
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/nitraat',

@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Nitraat in Drinkwater Filteren: Baby\'s & Privéputten',
-  description: 'Nitraat in drinkwater: EU-norm 50 mg/L, risico voor baby\'s (methemoglobinemie), risicogebieden Nederland en welke filters nitraat verwijderen (osmose, ionenwisseling).',
+  description: 'Nitraat in drinkwater: EU-norm 50 mg/L, risico voor baby\'s (methemoglobinemie), risicogebieden Nederland en welke filters nitraat verwijderen (osmose',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/nitraat' },
 };
 

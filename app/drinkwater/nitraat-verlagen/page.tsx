@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Nitraat in drinkwater verlagen: oorzaken en filteroplossingen',
-  description: 'Hoog nitraat in drinkwater: oorzaken (landbouw Brabant, Gelderland), EU-norm 50 mg/L, risico voor baby\'s en welke filters nitraat effectief verwijderen. Osmose vs. ionenwisseling.',
+  description: 'Hoog nitraat in drinkwater: oorzaken (landbouw Brabant, Gelderland), EU-norm 50 mg/L, risico voor baby\'s en welke filters nitraat effectief verwijderen',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwater/nitraat-verlagen' },
 };
 

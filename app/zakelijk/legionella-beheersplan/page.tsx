@@ -7,12 +7,12 @@ import { CTABanner } from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Legionella-beheersplan voor bedrijven: wettelijke eisen & aanpak",
   description:
-    "Wie moet een Legionella-beheersplan hebben, wat staat erin en hoe helpen waterfilters? Eisen uit het Drinkwaterbesluit uitgelegd voor hotels, scholen en sportscholen.",
+    "Wie moet een Legionella-beheersplan hebben, wat staat erin en hoe helpen waterfilters? Eisen uit het Drinkwaterbesluit uitgelegd voor hotels, scholen en",
   alternates: { canonical: "https://waterfilterplatform.nl/zakelijk/legionella-beheersplan" },
   openGraph: {
     title: "Legionella-beheersplan voor bedrijven: wettelijke eisen & aanpak",
     description:
-      "Wie moet een Legionella-beheersplan hebben, wat staat erin en hoe helpen waterfilters? Eisen uit het Drinkwaterbesluit uitgelegd voor hotels, scholen en sportscholen.",
+      "Wie moet een Legionella-beheersplan hebben, wat staat erin en hoe helpen waterfilters? Eisen uit het Drinkwaterbesluit uitgelegd voor hotels, scholen en",
     type: "article",
   },
 };
@@ -62,7 +62,7 @@ export default function LegionellaBeheersplanPage() {
         article={{
           title: "Legionella-beheersplan voor bedrijven: wettelijke eisen & aanpak",
           description:
-            "Wie moet een Legionella-beheersplan hebben, wat staat erin en hoe helpen waterfilters? Eisen uit het Drinkwaterbesluit uitgelegd voor hotels, scholen en sportscholen.",
+            "Wie moet een Legionella-beheersplan hebben, wat staat erin en hoe helpen waterfilters? Eisen uit het Drinkwaterbesluit uitgelegd voor hotels, scholen en",
           datePublished: "2026-05-18",
           url: "https://waterfilterplatform.nl/zakelijk/legionella-beheersplan",
         }}

@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Selsiuz kokend water kraan: modellen, prijs en onderhoud (2026)',
     description:
-      'Alles over de Selsiuz kokend water kraan: hoe het werkt, welke modellen en afwerkingen er zijn, wat het kost, het onderhoud en hoe het zich verhoudt tot alternatieven.',
+      'Alles over de Selsiuz kokend water kraan: werking, modellen, afwerkingen, prijs en onderhoud - en hoe het zich verhoudt tot alternatieven.',
     alternates: { canonical: 'https://waterfilterplatform.nl/selsiuz' },
     openGraph: {
       title: 'Selsiuz kokend water kraan: modellen, prijs en onderhoud (2026)',

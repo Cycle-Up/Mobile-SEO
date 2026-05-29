@@ -9,7 +9,7 @@ import { MethodologyBadge } from '@/components/MethodologyBadge';
 export const metadata: Metadata = {
   title: 'PFAS waterfilters vergelijken: RO, nanofiltration, koolstof',
   description:
-    'Vergelijking van alle PFAS-filtertypen: RO (95-99%), nanofiltration (85-95%), actief kool (60-90% langketen), pitcher (20-40%). NSF/ANSI 58, 53 en P473 uitgelegd.',
+    'Vergelijking van alle PFAS-filtertypen: RO (95-99%), nanofiltration (85-95%), actief kool (60-90% langketen), pitcher (20-40%). NSF/ANSI 58, 53 en P473',
   alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter/vergelijken' },
 };
 

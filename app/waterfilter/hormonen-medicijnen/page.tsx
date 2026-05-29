@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: "Hormonen en medicijnen in drinkwater: risico's en oplossingen",
   description:
-    'Hormonen, antibiotica en pijnstillers worden aangetroffen in Nederlands drinkwater. Ontdek de risico\'s van medicijnenresten en welk waterfilter ze effectief verwijdert.',
+    'Hormonen, antibiotica en pijnstillers worden aangetroffen in Nederlands drinkwater. Ontdek de risico\'s van medicijnenresten en welk waterfilter ze effectief',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/hormonen-medicijnen' },
 };
 

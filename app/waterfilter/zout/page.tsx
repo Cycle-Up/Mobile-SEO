@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Zout in drinkwater: waar komt het vandaan en hoe verwijderen?',
-  description: 'Zout (natrium en chloride) in kraanwater: oorzaken, Nederlandse normen, gezondheidsrisico\'s en welk waterfilter natrium effectief verwijdert. Osmose vs. waterontharder vergeleken.',
+  description: 'Zout (natrium en chloride) in kraanwater: oorzaken, Nederlandse normen, gezondheidsrisico\'s en welk waterfilter natrium effectief verwijdert. Osmose vs',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/zout' },
 };
 

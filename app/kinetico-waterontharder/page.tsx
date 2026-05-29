@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Kinetico waterontharder: modellen, ervaringen en alternatief',
     description:
-      'Kinetico waterontharder: wat biedt de non-electric twin-tank techniek, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
+      'Kinetico waterontharder: wat biedt de non-electric twin-tank techniek, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en',
     alternates: { canonical: 'https://waterfilterplatform.nl/kinetico-waterontharder' },
     openGraph: {
       title: 'Kinetico waterontharder: modellen, ervaringen en alternatief',

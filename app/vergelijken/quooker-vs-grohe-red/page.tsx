@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Quooker vs Grohe Red: welke kokend water kraan kiezen? (2026)',
     description:
-      'Quooker of Grohe Red? Vergelijk de twee bekende kokend water kranen op functies, prijs, onderhoud en filtering - plus wanneer een 4-in-1 osmosekraan logischer is.',
+      'Quooker of Grohe Red? Vergelijk de twee kokend water kranen op functies, prijs, onderhoud en filtering - plus het 4-in-1 osmose-alternatief.',
     alternates: { canonical: 'https://waterfilterplatform.nl/vergelijken/quooker-vs-grohe-red' },
     openGraph: {
       title: 'Quooker vs Grohe Red - kokend water kranen vergeleken (2026)',

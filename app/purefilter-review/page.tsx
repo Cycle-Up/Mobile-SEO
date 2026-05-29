@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'PureFilter Mineral+ review: claims, bewijs en eerlijke afweging',
     description:
-      'Onafhankelijke review van PureFilter Mineral+. We zetten de claims (PFAS, microplastics, fluoride, NSF) naast de bewijsstatus en zeggen eerlijk wat nog niet bevestigd is.',
+      'Onafhankelijke review van PureFilter Mineral+: claims (PFAS, microplastics, fluoride, NSF) naast de bewijsstatus, en wat nog niet bevestigd is.',
     alternates: { canonical: 'https://waterfilterplatform.nl/purefilter-review' },
     openGraph: {
       title: 'PureFilter Mineral+ review: claims, bewijs en eerlijke afweging',

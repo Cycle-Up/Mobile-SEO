@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Selsiuz vs Grohe Blue: kokend of bruisend water? (2026)',
     description:
-      'Selsiuz of Grohe Blue? De een levert kokend water, de ander gefilterd, gekoeld en bruisend. Vergelijk functies, prijs en onderhoud - en wanneer een 4-in-1 beide doet.',
+      'Selsiuz of Grohe Blue? De een levert kokend water, de ander gefilterd, gekoeld en bruisend. Vergelijk functies, prijs en onderhoud.',
     alternates: { canonical: 'https://waterfilterplatform.nl/vergelijken/selsiuz-vs-grohe-blue' },
     openGraph: {
       title: 'Selsiuz vs Grohe Blue - kokend of bruisend water (2026)',
@@ -89,7 +89,7 @@ export default function SelsiuzVsGroheBluePage() {
         article={{
           title: 'Selsiuz vs Grohe Blue: kokend of bruisend water?',
           description:
-            'Een eerlijke vergelijking van Selsiuz (kokend water) en Grohe Blue (gefilterd, gekoeld en bruisend), met een 4-in-1 osmosekraan als alternatief dat beide combineert.',
+            'Een eerlijke vergelijking van Selsiuz (kokend water) en Grohe Blue (gefilterd, gekoeld en bruisend), met een 4-in-1 osmosekraan als alternatief dat beide',
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
           url: 'https://waterfilterplatform.nl/vergelijken/selsiuz-vs-grohe-blue',

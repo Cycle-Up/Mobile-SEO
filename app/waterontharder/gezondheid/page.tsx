@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Waterontharder en gezondheid: is onthard water gezond?',
     description:
-      'Is onthard water gezond om te drinken? Wat onthard water doet met natrium, mineralen, huid en voor wie oplet (dieet, bloeddruk, baby). Genuanceerd en met bronnen.',
+      'Is onthard water gezond om te drinken? Wat onthard water doet met natrium, mineralen, huid en voor wie oplet (dieet, bloeddruk, baby). Genuanceerd en met',
     alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/gezondheid' },
     openGraph: {
       title: 'Waterontharder en gezondheid: is onthard water gezond?',

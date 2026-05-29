@@ -4,7 +4,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
   title: 'Mangaan in water: gevaren, herkenning en de beste waterfilters',
-  description: 'Mangaan in water: zwarte vlekken, donker slijm en neurologische risico\'s. Welk waterfilter verwijdert mangaan het best? Greensand, birm en osmose vergeleken voor Nederland.',
+  description: 'Mangaan in water: zwarte vlekken, donker slijm en neurologische risico\'s. Welk waterfilter verwijdert mangaan het best? Greensand, birm en osmose vergeleken',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/mangaan' },
 };
 

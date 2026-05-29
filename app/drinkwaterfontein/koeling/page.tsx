@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Gekoelde drinkwaterfontein: koeltechniek en verbruik',
     description:
-      'Hoe werkt koeling bij een drinkwaterfontein? Doorstroomkoeling vs voorraadkoeling vergeleken op capaciteit, energieverbruik en hygiene, met de juiste temperatuurinstelling.',
+      'Hoe werkt koeling bij een drinkwaterfontein? Doorstroomkoeling vs voorraadkoeling vergeleken op capaciteit, energieverbruik en hygiene, met de juiste',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/koeling' },
     openGraph: {
       title: 'Gekoelde drinkwaterfontein: koeltechniek en verbruik',

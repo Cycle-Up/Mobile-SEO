@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Contactloze drinkwaterfontein: sensor, hygiene en gebruik',
     description:
-      'Een contactloze drinkwaterfontein tap je zonder aanraking via sensor, infrarood of voetbediening. Hygienischer voor openbaar en druk gebruik, met bidon-vulpunt - let op sensoronderhoud en stroom.',
+      'Een contactloze drinkwaterfontein tap je zonder aanraking via sensor, infrarood of voetbediening. Hygienischer voor openbaar en druk gebruik, met',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/contactloos' },
     openGraph: {
       title: 'Contactloze drinkwaterfontein: sensor en hygiene',
