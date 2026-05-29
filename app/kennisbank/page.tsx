@@ -16,6 +16,41 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'gratis-kraanwater-horeca',
+    titel: 'Moet de horeca gratis kraanwater geven?',
+    samenvatting: 'Is de horeca verplicht gratis kraanwater te schenken? De regels, de EU-drinkwaterrichtlijn over toegang tot water en hoe het in de praktijk werkt.',
+    categorie: 'Drinkwater',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'watertappunt-aanvragen',
+    titel: 'Watertappunt aanvragen: openbaar drinkwaterpunt plaatsen',
+    samenvatting: 'Een openbaar watertappunt aanvragen via gemeente of drinkwaterbedrijf: stappenplan, verantwoordelijkheden en waar een goede locatie aan voldoet.',
+    categorie: 'Drinkwater',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'toegang-tot-kraanwater-eu-richtlijn',
+    titel: 'EU-drinkwaterrichtlijn: toegang tot kraanwater uitgelegd',
+    samenvatting: 'De EU-drinkwaterrichtlijn 2020/2184 verplicht niet alleen kwaliteitsnormen maar ook het bevorderen van toegang tot kraanwater. Wat betekent dat in Nederland?',
+    categorie: 'Drinkwater',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'kraanwater-onderweg-bidon',
+    titel: 'Kraanwater onderweg: je bidon bijvullen bij tappunten',
+    samenvatting: 'Onderweg je bidon bijvullen met kraanwater is veilig, gratis en duurzaam. Waar je kunt bijvullen en hoe je je drinkfles hygienisch houdt.',
+    categorie: 'Praktisch',
+    datum: '29 mei 2026',
+  },
+  {
+    slug: 'gratis-water-evenement',
+    titel: 'Gratis water en watertappunten op evenementen',
+    samenvatting: 'Steeds meer evenementen bieden gratis kraanwater via tijdelijke watertappunten. De motieven, de organisatie en de voordelen voor bezoekers.',
+    categorie: 'Drinkwater',
+    datum: '29 mei 2026',
+  },
+  {
     slug: 'waterontharder-instellen',
     titel: 'Waterontharder instellen: op welke hardheid zetten?',
     samenvatting: 'Op welke resthardheid zet je een waterontharder (meestal 4-8 dH, niet op 0) en hoe stel je hem stap voor stap in op je ingaande waterhardheid?',
