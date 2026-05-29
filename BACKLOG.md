@@ -33,8 +33,8 @@ in `app/kennisbank/page.tsx`, `npm run check-content` 100%.
 - [x] T2. Unit-tests voor `scripts/check-content.mjs`-kernregels - klaar wanneer: fout-fixture faalt, goede fixture slaagt; `npm test` groen.
 - [x] T3. `scripts/check-links.mjs` (interne-link-resolver) - klaar wanneer: exit-code + test dekt bekende-goede/foute link.
 - [x] T4. Dode interne links repareren - klaar wanneer: `node scripts/check-links.mjs` 0 dode links; build groen.
-- [ ] T5. `scripts/check-sitemap.mjs` (volledigheid) - klaar wanneer: rapporteert ontbrekende routes; test groen.
-- [ ] T6. Sitemap-gaten dichten - klaar wanneer: 0 onverklaarde ontbrekende routes; build groen.
+- [x] T5. `scripts/check-sitemap.mjs` (volledigheid) - klaar wanneer: rapporteert ontbrekende routes; test groen.
+- [x] T6. Sitemap-gaten dichten - klaar wanneer: 0 onverklaarde ontbrekende routes; build groen.
 - [ ] T7. `scripts/audit-html.mjs` (post-build canonical/title/h1/description/JSON-LD) - klaar wanneer: rapporteert violations met exit-code over de hele build.
 - [ ] T8. Violations uit T7 oplossen - klaar wanneer: 0 fouten (of gedocumenteerde uitzonderingen); build groen.
 - [ ] T9. Article-schema toevoegen aan commerciele merk-/vergelijkingspagina's (SEO-AUDIT P2) - klaar wanneer: audit-html ziet Article-JSON-LD; build groen.
