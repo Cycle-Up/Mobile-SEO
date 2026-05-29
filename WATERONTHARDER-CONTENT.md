@@ -55,3 +55,18 @@ Alle merken: 0 bestaande pagina's -> bouwen. Echte NL/BE-markt merken, neutraal,
 - waterontharder-winterklaar / vorst -> overlap met nieuwe `waterfilter-vorst-bevriezen`.
 - resthardheid voor planten/aquarium -> overlap met `waterhardheid-planten` + `waterontharder-aquarium`.
 - waterverbruik bij regeneratie -> overlap met `waterontharder-zout-verbruik` + `waterontharder-regeneratie`.
+
+## Ranking-optimalisatie ronde (2026-05-29) - geen nieuwe pagina's
+
+- **FASE 1 - Consolidatie:** 3 TSX->TSX + 17 MDX->TSX canonicals naar de commerciele
+  `/waterontharder/*` cluster. Volledige map + bewuste niet-consolidaties in
+  CANNIBALIZATION-AUDIT.md. Kennisbank-template ondersteunt nu een `canonical`-frontmatterveld.
+- **FASE 2 - Link-sculpting:** `/beste-waterontharder-2026` linkt nu alle 10 merkpagina's;
+  `/waterontharder` hub heeft een Merken-sectie; merk-laag in llms.txt.
+- **FASE 3 - Structured data:** HowTo-schema (8 stappen) op `/waterontharder/installeren`;
+  ItemList op `/beste-waterontharder-2026`; FAQPage+BreadcrumbList+speakable QuickAnswer breed aanwezig.
+- **FASE 4 - Versheid/E-E-A-T:** hub lastReviewed 2026-05-29 + Vewin als bron.
+- **FASE 5 - Titels/canonicals:** geen dubbele titels gecreeerd; canonical dedupliceert.
+  CTR-tuning van titels/descriptions is GSC-afhankelijk -> volgende stap.
+- **GSC = volgende stap:** zonder Search Console is FASE 1 structuur-gebaseerd. Met GSC:
+  valideren welke URL per query wint, en hoog-impressie/lage-CTR pagina's herschrijven.
