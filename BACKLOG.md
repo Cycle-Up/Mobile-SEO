@@ -17,9 +17,9 @@ in `app/kennisbank/page.tsx`, `npm run check-content` 100%.
 - [x] 1. `/brita-alternatief` (page) - "brita alternatief"; Brita = 801 interne vermeldingen, geen eigen merkpagina. Funnel naar /filterkan + /omgekeerde-osmose. Kannibalisatie-check vs bestaande `brita-vs-osmose`/`brita-vs-bwt` (andere intentie: alternatief != vergelijking). Klaar wanneer: zie TSX-standaard hierboven. (af: build groen, static prerendered, in sitemap)
 - [x] 2. `/zerowater-alternatief` (page) - "zerowater alternatief" (29 vermeldingen, RO/filter-intentie). Funnel naar /omgekeerde-osmose + /filterkan. Klaar wanneer: TSX-standaard. (af: build groen, static prerendered, in sitemap)
 - [x] 3. `/aquatru-alternatief` (page) - "aquatru alternatief" (RO-merk). Funnel naar /omgekeerde-osmose + /beste-osmosefilter-2026. Klaar wanneer: TSX-standaard. (af: build groen, static prerendered, in sitemap)
-- [ ] 4. `/selsiuz` (page) - neutrale merk-hub (73 vermeldingen) analoog aan /quooker; overzicht + links naar sub-intents en /selsiuz-alternatief. Distinct van de alternatief-pagina. Klaar wanneer: TSX-standaard + linkt naar >=2 eigen sub-pagina's.
-- [ ] 5. `/selsiuz-prijs` (page) - "selsiuz prijs/kosten" met indicatieve TCO-tabel (+ datum, geen prijs-als-feit). Klaar wanneer: TSX-standaard, parent /selsiuz.
-- [ ] 6. `/selsiuz-onderhoud` (page) - "selsiuz onderhoud/filter vervangen". Klaar wanneer: TSX-standaard, parent /selsiuz.
+- [x] 4. `/selsiuz` (page) - neutrale merk-hub (73 vermeldingen) analoog aan /quooker; overzicht + links naar sub-intents en /selsiuz-alternatief. Distinct van de alternatief-pagina. Klaar wanneer: TSX-standaard + linkt naar >=2 eigen sub-pagina's.
+- [x] 5. `/selsiuz-prijs` (page) - "selsiuz prijs/kosten" met indicatieve TCO-tabel (+ datum, geen prijs-als-feit). Klaar wanneer: TSX-standaard, parent /selsiuz.
+- [x] 6. `/selsiuz-onderhoud` (page) - "selsiuz onderhoud/filter vervangen". Klaar wanneer: TSX-standaard, parent /selsiuz.
 - [ ] 7. `/grohe-blue` (page) - neutrale merk-hub (110 vermeldingen) analoog aan /quooker. Klaar wanneer: TSX-standaard + linkt naar >=2 eigen sub-pagina's.
 - [ ] 8. `/grohe-blue-prijs` (page) - "grohe blue prijs/kosten" indicatieve TCO. Klaar wanneer: TSX-standaard, parent /grohe-blue.
 - [ ] 9. `/grohe-blue-filter` (page) - "grohe blue filter vervangen/kosten". Klaar wanneer: TSX-standaard, parent /grohe-blue.
