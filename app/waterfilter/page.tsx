@@ -737,6 +737,11 @@ export default function WaterfilterPage() {
                 title: 'Beste waterfilter 2026',
                 desc: 'Ons actuele koopadvies voor elk budget en elke situatie.',
               },
+              {
+                href: '/purefilter-review',
+                title: 'PureFilter Mineral+ review',
+                desc: 'Claims naast de bewijsstatus: wat is geclaimd en wat nog niet bevestigd.',
+              },
             ].map(l => (
               <Link
                 key={l.href}

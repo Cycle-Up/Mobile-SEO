@@ -490,6 +490,11 @@ export default function WaterfilterOnderAanrechtPage() {
                 title: 'Alle waterfilter types',
                 desc: 'Van filterkan tot under-sink RO: alle opties vergeleken.',
               },
+              {
+                href: '/purefilter-review',
+                title: 'PureFilter Mineral+ review',
+                desc: 'Eerlijke beoordeling van de claims van dit gemineraliseerde filter.',
+              },
             ].map(l => (
               <Link
                 key={l.href}

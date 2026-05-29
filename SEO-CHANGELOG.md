@@ -63,6 +63,34 @@ Wijzigingen volgens `WATERFILTERPLATFORM_SEO_AI_SEARCH_HANDOVER.md`.
 ### Verificatie
 - `npm run check-content`: 100%. `npm run build`: exit 0, 4.415 pagina's, geen errors.
 
+## 2026-05-29 — PureFilter Mineral+ review geplaatst (evidence-first, guideline-conform)
+
+- Nieuwe reviewpagina `/purefilter-review` in het transparante merkpagina-patroon (JOEP/The Source):
+  Article + FAQPage + BreadcrumbList + Brand-schema, QuickAnswer (speakable), AuthorBox +
+  MethodologyBadge (bronnen: EPA, WHO, NSF/ANSI-standaarden, RIVM).
+- **Evidence-first, want het PureFilter-onderzoekspakket kon GEEN claim primair verifieren** (geen
+  certificaatnummers, listings of labrapporten). Daarom:
+  - Claim-bewijs-tabel die elke claim (PFAS, microplastics, zware metalen, fluoride, chloor,
+    medicijnresten, NSF/ANSI 42/53/61/372, Swedish Mineral Rock) markeert als "geclaimd /
+    niet onafhankelijk bevestigd" met "wat nog nodig is".
+  - **Geen** verzonnen certificaatnummers, removal-percentages, sterren of cijferoordeel.
+  - YMYL-nuance: microplastics-kennislacunes (WHO), PFAS-techniek (EPA), remineralisatie als
+    smaak- niet gezondheidsclaim, "geen medisch advies".
+  - Beoordelingsmethode-blok (bronnen, certificaten/labrapporten gevonden? nee, controledatum,
+    commerciele disclosure).
+- **Scope-keuze (door gebruiker bevestigd): alleen de reviewpagina, geen near-duplicates.** De
+  non-branded gidsen uit het pakket (PFAS, microplastics, onder-aanrecht, beste-waterfilter,
+  fluoride, zware metalen, medicijnresten, mineralisatie, NSF-uitleg) bestaan al op de site
+  (`/pfas-waterfilter`, `/waterfilter/microplastics`, `/waterfilter/onder-aanrecht`,
+  `/beste-waterfilter(-2026)`, `/waterfilter/fluoride`, `/omgekeerde-osmose/remineralisatie`,
+  `/keurmerken/nsf-ansi-42-53`, e.a.) -> overslaan i.v.m. kannibalisatie/scaled content.
+  Vergelijkingspagina's (PureFilter vs Brita/ZeroWater/AquaTru) overgeslagen: met 0 geverifieerde
+  PureFilter-data zou een vergelijking dun zijn en het pakket verbiedt een winnaar bij
+  asymmetrisch bewijs. Details in `PUREFILTER-IMPLEMENTATIE.md`.
+- Integratie: opgenomen in `app/sitemap.ts`, doorgelinkt vanuit de `/waterfilter`-hub en
+  `/waterfilter/onder-aanrecht`, en toegevoegd aan `public/llms.txt`.
+- build groen; `/purefilter-review` als static gegenereerd.
+
 ## 2026-05-29 — The Source 50 geplaatst (osmose-merkpagina, guideline-conform)
 
 - Nieuwe merk-/productpagina `/the-source` (PureAqua) in het transparante merkpagina-patroon van
