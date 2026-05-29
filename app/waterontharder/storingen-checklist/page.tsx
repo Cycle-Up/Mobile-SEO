@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Waterontharder storing: diagnose checklist en oplossingen',
   description:
     'Waterontharder werkt niet? Diagnose checklist: zout op water, regeneratie faalt, bypass open. Stap-voor-stap oplossingen zonder monteur.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/storingen-checklist' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/storingen' },
   openGraph: {
     title: 'Waterontharder storing: diagnose checklist en oplossingen',
     description:

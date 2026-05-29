@@ -98,3 +98,51 @@ URL bekijken, dan beslissen.
   gevallen valideren op werkelijke impressies/posities voordat verder geconsolideerd wordt.
 - **Zelfde audit voor andere clusters:** `/waterontharder` vs `/waterontkalker`,
   `/leidingwater` vs `/kraanwater` vertonen vergelijkbare synoniem-overlap.
+
+---
+
+## Waterontharder-cluster consolidatie (2026-05-29)
+
+Structuur-gebaseerd (geen GSC). De commerciele TSX-cluster (`/waterontharder/*`, in nav en
+sitemap) is gekozen als primair; duplicaat kennisbank-MDX en duplicaat-TSX wijzen via
+`canonical` naar de primaire pagina. Niets verwijderd; alle pagina's blijven leesbaar.
+De kennisbank-template (`app/kennisbank/[slug]/page.tsx`) leest nu een optioneel
+`canonical`-frontmatterveld zodat MDX naar een TSX-pagina kan canonicaliseren.
+
+### TSX -> TSX (zelfde commerciele cluster)
+| Zwakker (canonical aangepast) | -> Primair | Reden |
+|---|---|---|
+| `/waterontharder/zout-gebruik` | `/waterontharder/zout-verbruik` | beide "zoutverbruik" |
+| `/waterontharder/storingen-checklist` | `/waterontharder/storingen` | beide diagnose/oplossingen |
+| `/waterontharder/kosten` | `/waterontharder/prijs` | beide kosten/prijs; prijs is dieper |
+
+### Kennisbank-MDX -> TSX (zelfde zoekintentie)
+| MDX (canonical -> TSX) | Primair |
+|---|---|
+| waterontharder-hoe-lang | /waterontharder/hoe-lang |
+| waterontharder-onderhoud | /waterontharder/onderhoud |
+| waterontharder-installatie | /waterontharder/installeren |
+| waterontharder-regeneratie | /waterontharder/regeneratie |
+| waterontharder-regeneratie-tijden | /waterontharder/regeneratie-tijd |
+| waterontharder-hoe-werkt-regeneratie | /waterontharder/regeneratie |
+| waterontharder-zout | /waterontharder/zout |
+| waterontharder-zout-kopen | /waterontharder/zout |
+| waterontharder-zout-verbruik | /waterontharder/zout-verbruik |
+| waterontharder-zout-soorten | /waterontharder/zout-types |
+| waterontharder-huren | /waterontharder/huren |
+| waterontharder-huren-vs-kopen | /waterontharder/huren |
+| waterontharder-vs-osmose | /waterontharder/vs-osmose |
+| waterontharder-appartement | /waterontharder/appartement |
+| waterontharder-appartement-huren | /waterontharder/verhuurder |
+| waterontharder-appartement-huurwoning | /waterontharder/verhuurder |
+| waterontharder-kiezen | /waterontharder/kopen |
+
+### Bewust NIET geconsolideerd (distinct intent of te hoog-stakes zonder GSC)
+- `/waterontharder/kopen` vs `/waterontharder/vergelijken` vs `/beste-waterontharder-2026`:
+  drie money-pagina's met net andere intentie (koopgids vs modellen vergelijken vs jaarlijkse
+  shortlist) -> GSC-validatie vereist voor verdere consolidatie.
+- `/waterontharder/zout` vs `/waterontharder/zout-types` vs `/waterontharder/zout-verbruik`:
+  bewust 3 distinct sub-intenties (kopen, types, verbruik) gehouden.
+- `/waterontharder/regeneratie` vs `/regeneratie-tijd`: algemeen vs duur - distinct gehouden.
+- Distinct MDX behouden: voordelen, milieu-impact, stroom-verbruik, zout-tekort, kinderen-gezin,
+  douche-huid-haar, weg-op-vakantie, merken (overzicht), en de 11 nieuwe long-tail artikelen.
