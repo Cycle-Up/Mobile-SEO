@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Osmosewater Smaak Verbeteren: Remineralisatie & Tips',
   description: 'Osmosewater smaakt "leeg"? Zo verbeter je de smaak: remineralisatiefilter, calcietpatroon, mineraaldruppels of mengen met leidingwater. Kosten en resultaat.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/smaak-verbetering' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/smaak' },
 };
 
 const faqSchema = {

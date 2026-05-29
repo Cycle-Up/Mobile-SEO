@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Osmosewater vs bronwater: verschil in kwaliteit, veiligheid en kosten',
   description:
     'Bronwater komt uit beschermde bron maar bevat variabele samenstelling. Osmosewater is consistent puur. Vergelijking voor drinken, koken en milieu.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/vs-bronwater' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/vergelijken/osmose-vs-bronwater' },
 };
 
 const faqSchema = {

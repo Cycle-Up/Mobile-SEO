@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Osmosewater smaak verbeteren: pH, mineralen en remineralisatie',
   description:
     'Osmosewater heeft een neutrale, soms vlakke smaak door lage mineralenstand. Remineralisatie met calciet en magnesiumoxide voegt smaak en lichaam toe.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/smaak' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-water/smaak' },
 };
 
 const faqSchema = {

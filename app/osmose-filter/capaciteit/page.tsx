@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Osmosefilter Capaciteit: GPD, Liters & Juiste Keuze',
   description: 'Wat betekent 50 GPD of 100 GPD bij een osmosefilter? Werkelijke capaciteit in liters, temperatuureffect, tankloze systemen en berekening voor jouw huishouden.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/capaciteit' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/capaciteit' },
 };
 
 const faqSchema = {

@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Osmosefilter Installeren: Stap-voor-Stap Handleiding',
   description: 'Osmosefilter zelf installeren onder het aanrecht: benodigdheden, aansluiting op koudwaterleiding, afvoer en tapkraan. Complete installatiegids in 8 stappen.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/installatie' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/installatie' },
 };
 
 const howToSchema = {

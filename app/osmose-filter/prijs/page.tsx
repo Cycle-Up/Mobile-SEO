@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Osmosefilter prijs 2026: aanschaf en jaarkosten vergelijking',
   description:
     'Osmosefilter prijzen 2026: instap €100–200, midden €200–400, premium 4-in-1 €800–1500. Jaarlijkse filterkosten, installatie en 5-jaar TCO vergelijking.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/prijs' },
+  alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/prijs' },
   openGraph: {
     title: 'Osmosefilter prijs 2026: aanschaf en jaarkosten',
     description:
