@@ -295,6 +295,11 @@ export default function DrinkwaterfonteinPage() {
           <li><Link href="/drinkwaterfontein/kantoor" className="text-[#005F8A] underline">Drinkwaterfontein voor kantoor</Link>: Arbowet, capaciteitsberekening en leveranciersvergelijking</li>
           <li><Link href="/drinkwaterfontein/thuis" className="text-[#005F8A] underline">Drinkwaterfontein voor thuis</Link>: compacte modellen, gezinsverbruik en bruisend water</li>
           <li><Link href="/drinkwaterfontein/kopen" className="text-[#005F8A] underline">Drinkwaterfontein kopen</Link>: koopgids met checklist, prijsklassen en merken</li>
+          <li><Link href="/drinkwaterfontein/soorten" className="text-[#005F8A] underline">Soorten drinkwaterfonteinen</Link>: types vergeleken met een keuzematrix per situatie</li>
+          <li><Link href="/drinkwaterfontein/leidinggebonden-vs-fles" className="text-[#005F8A] underline">Leidinggebonden vs flessenfontein</Link>: kosten, hygiene en duurzaamheid afgewogen</li>
+          <li><Link href="/drinkwaterfontein/met-bruiswater" className="text-[#005F8A] underline">Drinkwaterfontein met bruiswater</Link>: hoe CO2-bruiswater uit de fontein werkt</li>
+          <li><Link href="/drinkwaterfontein/koeling" className="text-[#005F8A] underline">Gekoelde drinkwaterfontein</Link>: koeltechniek, verbruik en hygiene</li>
+          <li><Link href="/drinkwaterfontein/contactloos" className="text-[#005F8A] underline">Contactloze drinkwaterfontein</Link>: sensorbediening en hygiene voor openbaar gebruik</li>
           <li><Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">Omgekeerde osmose</Link>: hoe RO-filtratie werkt en waarom het de beste keuze is voor waterkwaliteit</li>
           <li><Link href="/waterfilter" className="text-[#005F8A] underline">Alle waterfilters</Link>: overzicht van alle filtertypen voor thuis</li>
         </ul>
