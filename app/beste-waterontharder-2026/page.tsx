@@ -84,12 +84,16 @@ const ranking = [
 ];
 
 const merken = [
-  ['BWT', 'Oostenrijks merk met een breed assortiment ionenwisselaars, bekend van de AQA Perla-lijn met magnesiumtechnologie.'],
-  ['Grunbeck', 'Duits premium-merk; de softliQ-serie biedt zuinige regeneratie en app-besturing.'],
-  ['EcoWater', 'Internationaal merk met ionenwisselaars en uitgebreide monitoring van zout- en waterverbruik.'],
-  ['Harvey', 'Bekend van compacte, non-electric twin-tank systemen op blokzout, geschikt voor kleine ruimtes.'],
-  ['Viteau', 'Nederlandse aanbieder en installateur van waterontharders met landelijke service.'],
-  ['Aquacell / Maxima', 'Betaalbare ionenwisselaars die in Nederland veel worden verkocht voor het instap- en middensegment.'],
+  ['BWT', 'Oostenrijks merk met een breed assortiment ionenwisselaars, bekend van de AQA Perla-lijn met magnesiumtechnologie.', '/bwt-waterontharder'],
+  ['Grunbeck', 'Duits premium-merk; de softliQ-serie biedt zuinige regeneratie en app-besturing.', '/grunbeck-waterontharder'],
+  ['EcoWater', 'Internationaal merk met ionenwisselaars en uitgebreide monitoring van zout- en waterverbruik.', '/ecowater-waterontharder'],
+  ['Harvey', 'Bekend van compacte, non-electric twin-tank systemen op blokzout, geschikt voor kleine ruimtes.', '/harvey-waterontharder'],
+  ['Kinetico', 'Non-electric twin-tank dat op waterdruk werkt en regenereert op werkelijk verbruik; premium, via dealer.', '/kinetico-waterontharder'],
+  ['Culligan', 'Groot internationaal merk met sterk service- en dealernetwerk en huur/onderhoudsopties.', '/culligan-waterontharder'],
+  ['Erie', 'In de Benelux veelgebruikt merk (onderdeel van Pentair) voor ionenwisselaars en besturingskleppen.', '/erie-waterontharder'],
+  ['Viteau', 'Nederlandse aanbieder en installateur van waterontharders met landelijke service.', '/viteau-waterontharder'],
+  ['Aquacell', 'Betaalbare ionenwisselaars uit het instap- en middensegment, veel online verkocht in Nederland.', '/aquacell-waterontharder'],
+  ['Maxima', 'Op de Nederlandse markt veel verkocht waarde-/middensegment merk van ionenwisselaars.', '/maxima-waterontharder'],
 ];
 
 const picks = [
@@ -303,9 +307,11 @@ export default function BesteWaterontharder2026Page() {
             op capaciteit, certificering, zout- en waterverbruik en service - niet op naam alleen.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {merken.map(([naam, beschrijving]) => (
+            {merken.map(([naam, beschrijving, href]) => (
               <div key={naam} className="bg-gray-50 rounded-xl p-4">
-                <p className="font-semibold text-gray-800 mb-1">{naam}</p>
+                <p className="font-semibold text-gray-800 mb-1">
+                  <Link href={href} className="hover:text-[#005F8A]">{naam} waterontharder</Link>
+                </p>
                 <p className="text-sm text-gray-600 leading-relaxed">{beschrijving}</p>
               </div>
             ))}

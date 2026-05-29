@@ -94,6 +94,24 @@ const articleSchema = {
   },
 };
 
+const howToSchema = {
+  '@type': 'HowTo',
+  name: 'Waterontharder zelf installeren in 8 stappen',
+  description: 'Stap-voor-stap een waterontharder aansluiten op de hoofdwaterleiding, inclusief bypassventiel, drain, zoutreservoir en eerste regeneratie.',
+  totalTime: 'PT6H',
+  inLanguage: 'nl-NL',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Watertoevoer afsluiten', text: 'Sluit de watertoevoer af via de hoofdkraan of het afsluitventiel vlak voor de installatielocatie.' },
+    { '@type': 'HowToStep', position: 2, name: 'Bypassventiel plaatsen', text: 'Plaats een bypassventiel zodat de ontharder altijd omzeild kan worden zonder het hele huis droog te zetten.' },
+    { '@type': 'HowToStep', position: 3, name: 'Ontharder in lijn plaatsen', text: 'Plaats de ontharder in lijn: koud water inkomend aan de invoerzijde, zacht water uitgaand aan de uitvoerzijde. Let op de pijlrichting.' },
+    { '@type': 'HowToStep', position: 4, name: 'Drain aansluiten', text: 'Sluit de drainslang aan van de drain outlet naar de dichtstbijzijnde rioolaansluiting, met een luchtgat tegen terugstroom.' },
+    { '@type': 'HowToStep', position: 5, name: 'Zoutreservoir vullen', text: 'Vul het zoutreservoir met minimaal 5 kg regeneratiezout (tabletten of grove kristallen, geen keukenzout).' },
+    { '@type': 'HowToStep', position: 6, name: 'Controller instellen', text: 'Voer de lokale waterhardheid in, stel het regeneratietijdstip in (standaard 02:00 uur) en het dagelijkse waterverbruik.' },
+    { '@type': 'HowToStep', position: 7, name: 'Initiele regeneratie uitvoeren', text: 'Start handmatig een eerste regeneratiecyclus om het harsbed te activeren en te spoelen.' },
+    { '@type': 'HowToStep', position: 8, name: 'TDS en hardheid meten', text: 'Meet na installatie de hardheid om te bevestigen dat het water correct wordt onthard (doel: onder 5 dH of naar wens).' },
+  ],
+};
+
 export default function WaterontharderInstallerenPage() {
   return (
     <>
@@ -109,6 +127,7 @@ export default function WaterontharderInstallerenPage() {
           },
           faqSchema,
           articleSchema,
+          howToSchema,
         ]}
       />
 

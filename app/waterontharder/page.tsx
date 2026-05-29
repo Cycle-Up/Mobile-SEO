@@ -839,7 +839,7 @@ export default function WaterOntharderPage() {
           </div>
         </section>
 
-        <MethodologyBadge lastReviewed="2026-05-22" sources={['RIVM', 'ILT', 'EU-richtlijn 2020/2184', 'WHO – Guidelines for Drinking-water Quality']} />
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'ILT', 'EU-richtlijn 2020/2184', 'Vewin', 'WHO – Guidelines for Drinking-water Quality']} />
 
         {/* FAQ */}
         <section id="faq">
