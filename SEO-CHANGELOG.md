@@ -63,6 +63,28 @@ Wijzigingen volgens `WATERFILTERPLATFORM_SEO_AI_SEARCH_HANDOVER.md`.
 ### Verificatie
 - `npm run check-content`: 100%. `npm run build`: exit 0, 4.415 pagina's, geen errors.
 
+## 2026-05-29 — The Source 50 geplaatst (osmose-merkpagina, guideline-conform)
+
+- Nieuwe merk-/productpagina `/the-source` (PureAqua) in het transparante merkpagina-patroon van
+  JOEP: Article + FAQPage + BreadcrumbList + Brand + Product/Offer-schema, QuickAnswer (speakable),
+  AuthorBox + MethodologyBadge (bronnen: fabrikant/PureAqua, NSF/ANSI 58, RIVM, Vewin), spectabel.
+- **5 aangeleverde artikelen geconsolideerd tot 1 pagina** (anti-kannibalisatie): de bronartikelen
+  over koopwijzer, waterverspilling en kosten overlappen met de bestaande osmose-cluster
+  (`/omgekeerde-osmose`, `/beste-osmosefilter-2026`). In plaats van 5 bijna-duplicaten die met de
+  eigen cluster zouden concurreren, is alle feitelijke inhoud (stroomloos, circa 1:1 verhouding,
+  NSF/ANSI 58, circa 99%, vanaf 395 euro, filterset ca. 89 euro/jaar, 100 dagen proef, 2 jaar
+  garantie, remineralisatie) samengebracht op een productpagina die naar de cluster doorlinkt.
+- **Guideline-conform**:
+  - Geen verzonnen test/sterren-rating; specs/prijzen gebronde aan de aanbieder, met "controleer
+    actuele prijzen".
+  - YMYL-nuance: RO verwijdert ook mineralen + "geen medisch advies"; afvalwaterverhouding "laag
+    maar niet nul"; kraanwater is op zichzelf al veilig, RO is keuze geen noodzaak.
+  - **Commerciele transparantie**: disclosure-blok dat WaterfilterPlatform aan PureAqua gelieerd is;
+    enige externe CTA met rel="sponsored nofollow" naar shop.pureaqua.nl; verder rustige interne CTAs.
+- Integratie: opgenomen in `app/sitemap.ts`, doorgelinkt vanuit de `/omgekeerde-osmose`-hub en de
+  koopgids `/beste-osmosefilter-2026`, en toegevoegd aan `public/llms.txt`.
+- check-content 100%; build groen; `/the-source` als static gegenereerd.
+
 ## 2026-05-29 — JOEP waterontharder geplaatst (merkpagina, guideline-conform)
 
 - Nieuwe merkpagina `/joep-waterontharder` (AquaSens) in het bestaande `/[merk]-waterontharder`

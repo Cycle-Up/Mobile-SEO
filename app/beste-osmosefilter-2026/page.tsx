@@ -729,6 +729,11 @@ export default function BesteOsmosefilter2026Page() {
                 desc: 'Onze actuele koopgids met aanbevelingen per budget en situatie.',
               },
               {
+                href: '/the-source',
+                title: 'The Source 50 (PureAqua)',
+                desc: 'Stroomloos RO-systeem met NSF/ANSI 58 en circa 1:1 verhouding. Specificaties en kosten.',
+              },
+              {
                 href: '/kennisbank/osmose-water-apparaat',
                 title: 'Osmose water apparaat',
                 desc: 'Technische uitleg over de componenten van een osmose-systeem.',

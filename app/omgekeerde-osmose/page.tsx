@@ -769,6 +769,11 @@ export default function OmgekeerdeOsmosePage() {
                 desc: 'Drie hoofdtypen voor thuisgebruik vergeleken op prijs, capaciteit en gemak.',
               },
               {
+                href: '/the-source',
+                title: 'The Source 50 (PureAqua)',
+                desc: 'Stroomloos osmosesysteem, NSF/ANSI 58, circa 1:1 verhouding. Specificaties en kosten.',
+              },
+              {
                 href: '/kokend-water-kraan/met-filter',
                 title: 'Kokend water kraan met filter',
                 desc: 'Geïntegreerde oplossing: kokend, koud en gefilterd water uit één kraan.',
