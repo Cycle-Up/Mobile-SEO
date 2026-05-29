@@ -62,3 +62,20 @@ Wijzigingen volgens `WATERFILTERPLATFORM_SEO_AI_SEARCH_HANDOVER.md`.
 
 ### Verificatie
 - `npm run check-content`: 100%. `npm run build`: exit 0, 4.415 pagina's, geen errors.
+
+## 2026-05-29 — JOEP waterontharder geplaatst (merkpagina, guideline-conform)
+
+- Nieuwe merkpagina `/joep-waterontharder` (AquaSens) in het bestaande `/[merk]-waterontharder`
+  patroon: FAQPage + BreadcrumbList + Brand-schema, QuickAnswer (speakable), AuthorBox +
+  MethodologyBadge (bronnen: fabrikant/brochure, WRAS, Battelle Institute, RIVM), spectabel.
+- **Guideline-conform** (afwijkend van het promotionele bronstuk):
+  - Geen verzonnen "6-maanden-test" of sterren-rating; claims gebronde aan fabrikant/WRAS.
+  - Energie-claim (Battelle) genuanceerd als indicatie, geen garantie; YMYL-nuance.
+  - Geen absolute "beste"; eerlijke "voor wie minder geschikt" + "niet zinvol onder ~8 dH".
+  - **Commerciele transparantie**: JOEP loopt via partner PureAqua + watervanjoep.nl;
+    disclosure-blok + rel="sponsored"/"nofollow" op externe links.
+- Integratie: toegevoegd aan koopgids-merkenlijst (`/beste-waterontharder-2026`),
+  Merken-sectie op `/waterontharder` hub, `app/sitemap.ts` en `public/llms.txt`.
+- Niet gedaan: de 40+ promotionele artikelen / "JOEP wint"-vergelijking / lokale JOEP-pagina's
+  uit het bronstuk - die botsen met onafhankelijkheid, scaled-content en YMYL-regels.
+- check-content 100%; build groen (4.416 paginas).

@@ -794,6 +794,7 @@ export default function WaterOntharderPage() {
               ['Culligan', '/culligan-waterontharder'],
               ['Kinetico', '/kinetico-waterontharder'],
               ['Erie', '/erie-waterontharder'],
+              ['JOEP', '/joep-waterontharder'],
             ].map(([naam, href]) => (
               <Link
                 key={href}

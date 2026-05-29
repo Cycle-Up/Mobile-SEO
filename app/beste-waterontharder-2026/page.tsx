@@ -96,6 +96,7 @@ const merken = [
   ['Viteau', 'Nederlandse aanbieder en installateur van waterontharders met landelijke service.', '/viteau-waterontharder'],
   ['Aquacell', 'Betaalbare ionenwisselaars uit het instap- en middensegment, veel online verkocht in Nederland.', '/aquacell-waterontharder'],
   ['Maxima', 'Op de Nederlandse markt veel verkocht waarde-/middensegment merk van ionenwisselaars.', '/maxima-waterontharder'],
+  ['JOEP', 'Nederlands merk van AquaSens (Joure); WRAS-gecertificeerde compacte ionenwisselaar met miniregeneratie en 20 jaar harsgarantie.', '/joep-waterontharder'],
 ];
 
 const picks = [
