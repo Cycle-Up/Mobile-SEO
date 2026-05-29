@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
@@ -224,6 +226,8 @@ export default function QuookerAlternatiefPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Een goed Quooker alternatief biedt kokend water, gefilterd drinkwater en bruisend water voor €400–900 minder dan een Quooker Fusion + CUBE. De 4-in-1 kraan met osmosefilter is het meest complete alternatief: dezelfde functies, ingebouwde kalkverwijdering en lagere jaarlijkse filterkosten. Zelf te installeren in 2–3 uur." />
 

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Quooker vs osmose filter: wat filtert meer en wat kost het? Vergelijking 2026',
@@ -123,6 +125,8 @@ export default function QuookerVersusOsmosePage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Een Quooker filtert alleen chloor en geur via actief kool. Een osmosefilter verwijdert 95–99% van nitraten, PFAS, zware metalen, kalk en microplastics. Voor smaakverbetering volstaat de Quooker; voor echt puur drinkwater of hard water biedt osmose aanzienlijk meer. Je kunt osmose ook combineren mét een Quooker." />
 

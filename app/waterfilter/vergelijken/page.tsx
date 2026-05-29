@@ -4,6 +4,8 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Welk waterfilter is de beste keuze? Vergelijking 2026',
@@ -286,6 +288,8 @@ export default function WaterfilterVergelijkenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Waterfilters vergelijken: een osmosefilter verwijdert het meest (99%, inclusief kalk en nitraten, €150–500). Een koolstoffilter verbetert smaak en verwijdert chloor (€50–150). Een waterfilterkan is goedkoopst maar filtert minder (€20–80). Voor hard water of maximale zuiverheid is een osmosefilter de beste keuze." />
 

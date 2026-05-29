@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Waterontkalker kopen: waar op letten? Complete koopgids 2026',
@@ -120,6 +122,8 @@ export default function WaterOntkalkerKopenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Bij het kopen van een waterontkalker zijn capaciteit (harsvolume vs. waterverbruik en hardheid), regeneratietype (vraaggestuurd &gt; tijdgestuurd), zoutverbruik, garantie en servicecontract de 5 sleutelcriteria. Huren is duurder op lange termijn. Osmose is beter voor drinkwater in huurwoningen. Prijsklassen: budget €300-600, midden €600-1.200, premium €1.200+." />
 

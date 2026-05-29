@@ -4,6 +4,8 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Beste osmosefilter 2026: top 5 eerlijk vergeleken',
@@ -366,6 +368,8 @@ export default function BesteOsmosefilter2026Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Het beste osmosefilter van 2026 is een 5-stadia onderbouwsysteem met remineralisatiefilter. Belangrijk: let op NSF/ANSI 58-certificering, een afvalwaterratio van 1:1 of beter, en een jaarlijkse filterwissel onder €100. Voor de meeste Nederlandse gezinnen is een systeem tussen €150 en €400 de beste prijs-kwaliteitskeuze." />
 

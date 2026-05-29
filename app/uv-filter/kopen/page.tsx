@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'UV waterfilter kopen: beste modellen en koopgids 2026',
@@ -198,6 +200,8 @@ export default function UvFilterKopenPage() {
 
       {/* Main content */}
       <div className="max-w-3xl mx-auto px-4 py-8 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="UV-waterfilter kopen: kies op basis van debiet (L/min), UV-dosis (min. 40 mJ/cm²) en NSF/ANSI 55 Klasse A (voor putwater) of B (voor stadswater). Instap €80–150, midden €150–300, professioneel €300+. Altijd gecombineerd met sediment- en koolstoffilter. Lampvervanging jaarlijks €30–60." />
 

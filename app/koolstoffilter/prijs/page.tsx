@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Koolstoffilter prijs: aanschaf, maandkosten en TCO (2026)',
@@ -115,6 +117,8 @@ export default function KoolstoffilterPrijsPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-8 space-y-10">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Koolstoffilter maandkosten per type: filterkan (GAC) EUR 1-3, onderbouw blokfilter EUR 5-15, whole-house GAC EUR 10-25, inline koelkastfilter EUR 3-8. Aanschafkosten: filterkan EUR 25-60, onderbouwsysteem EUR 80-350, whole-house EUR 300-800. Op TCO-basis is een Doulton onderbouwfilter bij hoog verbruik goedkoper dan een Brita filterkan." />
 

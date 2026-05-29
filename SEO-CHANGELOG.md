@@ -33,3 +33,32 @@ Wijzigingen volgens `WATERFILTERPLATFORM_SEO_AI_SEARCH_HANDOVER.md`.
   GSC-data; blind verwijderen zou waarde en functionaliteit kunnen breken (zie SEO-AUDIT.md P1).
 - Geen `Article`-schema toegevoegd aan commerciele pagina's in deze ronde (P2, vervolgronde),
   nu trustblokken zichtbaar zijn kan dat in een volgende stap correct.
+
+## 2026-05-29 — Audit-ronde 2: E-E-A-T site-breed afgemaakt
+
+### Opgelost (P1 E-E-A-T, vervolg op ronde 1)
+- `AuthorBox` + `MethodologyBadge` (RIVM/Vewin/EU-richtlijn 2020/2184, lastReviewed 2026-05-29)
+  toegevoegd aan **54 extra commerciele/vergelijkings-/koopgidspagina's** die ze nog misten:
+  - Oudere merk-/alternatief-pagina's: quooker-alternatief, grohe-red-alternatief,
+    sodastream-alternatief, insinkerator-alternatief, quooker-versus-osmose, 4-in-1-kraan.
+  - Oudere "beste X 2026": beste-osmosefilter-2026, beste-kokend-water-kraan-2026,
+    beste-waterfilter-2026.
+  - Alle `/vergelijken/*` (osmose-vs-filterkan, waterfilter-vs-waterontharder,
+    kokend-water-kraan-merken, kraanwater-vs-flessenwater, osmose-vs-bronwater,
+    omgekeerde-osmose-vergelijken, waterontharder-vergelijken).
+  - Koop-/prijspagina's: omgekeerde-osmose/{kopen,prijs}, waterontharder/{kopen,prijs},
+    kokend-water-kraan/{kopen,prijs}, waterfilter/kopen, osmose-filter/{kopen,prijs},
+    heet-water-kraan/{kopen,vergelijken,prijs}, pfas-waterfilter/{kopen,vergelijken},
+    koolstoffilter/{kopen,prijs}, waterontkalker/{kopen,vergelijken}, filterkan/kopen,
+    keramisch-filter/kopen, uv-filter/kopen, sedimentfilter/kopen, drinkwaterfontein/kopen,
+    kokend-water-kraan/4-in-1/vergelijken, alle `/beste-waterfilter/*` situatiepagina's.
+- Trustblok geplaatst als eerste element van de contentcontainer (voor QuickAnswer/CTABanner),
+  consistent met de kennisbank-volgorde. Patches met veiligheids-guard (geen plaatsing in hero).
+
+### Resultaat
+- **82 commerciele pagina's** hebben nu zichtbare E-E-A-T trust (auteur/redactie + bronnen + datum).
+- Resteren: 2 pillar/overzichtspagina's (`/vergelijken`, `/beste-waterfilter`) die via de
+  `ClusterHub`-component renderen; bewust niet geforceerd (pillar-type, routing/overzicht).
+
+### Verificatie
+- `npm run check-content`: 100%. `npm run build`: exit 0, 4.415 pagina's, geen errors.

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Keramisch waterfilter kopen: koopgids en beste modellen 2026',
@@ -176,6 +178,8 @@ export default function KeramischFilterKopenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-8 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Een keramisch waterfilter kopen? Kies minimaal poriemaat 0,2–0,5 µm voor bacteriebescherming, controleer op zilverimpregnatie en NSF/ANSI 53 certificering. Gravity-filter (€30–180) voor off-grid gebruik; under-sink keramisch (€80–200) voor dagelijks comfort. Jaarlijkse filterkosten: €15–60. Verwijdert geen virussen of chemische stoffen — overweeg dan osmose." />
 

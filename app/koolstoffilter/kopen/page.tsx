@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Koolstoffilter kopen: welk type past bij jou? Vergelijking 2026',
@@ -150,6 +152,8 @@ export default function KoolstoffilterKopenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <QuickAnswer answer="Een koolstoffilter kopen begint met het kiezen van het juiste type: filterkan (geen installatie, €20–60), kraanfilter (op de kraan, €30–80) of inline blokfilter (onder aanrecht, €60–150). Controleer altijd NSF/ANSI 42 certificering. Een blokfilter filtert altijd beter dan een granulair filter. Vervang het patroon op tijd — bij filterkannen elke 4–6 weken, bij inline elke 6–12 maanden." />
 
         <section className="bg-gray-50 rounded-2xl p-5">

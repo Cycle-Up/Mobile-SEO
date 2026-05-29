@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Drinkwaterfontein kopen: vergelijking en koopgids 2026',
@@ -113,6 +115,8 @@ export default function DrinkwaterfonteinKopenPage() {
       />
 
       <main className="max-w-3xl mx-auto px-4 py-8">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <nav className="text-sm text-gray-500 mb-6">
           <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
           <Link href="/drinkwaterfontein" className="hover:underline">Drinkwaterfontein</Link> &rsaquo;{' '}

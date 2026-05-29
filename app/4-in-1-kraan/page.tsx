@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
@@ -246,6 +248,8 @@ export default function VierInEenKraanPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Een 4-in-1 kraan levert kokend, koud gefilterd, warm en bruisend water uit één kraanpunt. Het systeem combineert een kokendwaterboiler met een ingebouwd osmosefilter en CO₂-unit. Hiermee vervangt het de waterkoker, het bruiswater-abonnement en het losse waterfilter. Aanschafprijs ligt tussen €699 en €899." />
 

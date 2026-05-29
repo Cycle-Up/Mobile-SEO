@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Kokend Water Kraan Prijs 2026: Kosten & Vergelijking',
@@ -65,6 +67,8 @@ export default function KokendWaterKraanPrijsPage() {
       />
 
       <main className="max-w-3xl mx-auto px-4 py-8">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <nav className="text-sm text-gray-500 mb-6">
           <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
           <a href="/kokend-water-kraan" className="hover:underline">Kokend water kraan</a> &rsaquo;{' '}

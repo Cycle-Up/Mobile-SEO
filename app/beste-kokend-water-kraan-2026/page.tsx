@@ -4,6 +4,8 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
@@ -318,6 +320,8 @@ export default function BesteKokendWaterKraan2026Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="De beste kokend water kraan van 2026 is een 4-in-1 systeem met ingebouwd osmosefilter. Het combineert kokend, koud gefilterd, warm en bruisend water in één kraanpunt en vervangt waterkoker en bruiswater-abonnement. Prijs: €699–899. Quooker is de bekendste merknaam maar significant duurder bij gelijke functionaliteit." />
 

@@ -5,6 +5,8 @@ import { ComparisonTable } from '@/components/ComparisonTable';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Welke kokend water kraan is de beste keuze? Vergelijking 2026',
@@ -144,6 +146,8 @@ export default function VergelijkenPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Kokend water kranen vergelijken? De 4-in-1 kraan met osmose wint op prijs-kwaliteit (€699–899, filtert kalk). Quooker Combi+ is premium (€1.500–2.000, geen filter). Quooker Fusion + CUBE heeft bruisend water maar kost over 3 jaar €2.000 meer dan een 4-in-1 alternatief. Grohe Blue Home heeft geen kokend water." />
 

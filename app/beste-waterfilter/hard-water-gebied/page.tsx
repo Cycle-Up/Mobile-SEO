@@ -3,6 +3,8 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: "Beste waterfilter voor hard water: kalk verwijderen of behandelen",
@@ -97,6 +99,8 @@ export default function HardWaterGebiedPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <CTABanner context="osmose" />
 
         <section className="mt-10">

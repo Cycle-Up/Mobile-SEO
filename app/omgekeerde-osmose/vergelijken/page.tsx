@@ -4,6 +4,8 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde Osmose Vergelijken 2026: Welk Systeem?',
@@ -214,6 +216,8 @@ export default function OsmoseVergelijkenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Er zijn drie typen osmosesystemen: onderbouw RO (€150–500, meest complete), aanrechtmodel (€100–350, makkelijkst te installeren) en geïntegreerde 4-in-1 kokend water kraan (€699–899, alles-in-één). Voor een gezin van 4 in een hard-watergebied is een onderbouw RO of 4-in-1 systeem de beste keuze." />
 
