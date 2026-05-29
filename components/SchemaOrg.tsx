@@ -66,7 +66,7 @@ interface SchemaOrgProps {
   schema?: object[];
 }
 
-const DEFAULT_IMAGE = 'https://waterfilterplatform.nl/og/home.svg';
+const DEFAULT_IMAGE = 'https://waterfilterplatform.nl/opengraph-image';
 const SOCIAL_LINKS: string[] = [];
 
 const EDITORIAL_TEAM = {

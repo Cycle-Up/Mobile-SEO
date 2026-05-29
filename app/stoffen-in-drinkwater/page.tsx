@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     "Welke stoffen zitten in Nederlands drinkwater? Overzicht van PFAS, lood, pesticiden, kalk, hormonen en microplastics: normen, risico en filteradvies.",
   alternates: { canonical: "https://waterfilterplatform.nl/stoffen-in-drinkwater" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/stoffen-in-drinkwater.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Stoffen in drinkwater: overzicht, normen en wanneer filtreren?",
     description:
       "Welke stoffen zitten in Nederlands drinkwater? Overzicht van PFAS, lood, pesticiden, kalk, hormonen en microplastics: normen, risico en filteradvies.",

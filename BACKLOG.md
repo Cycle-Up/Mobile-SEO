@@ -41,3 +41,9 @@ in `app/kennisbank/page.tsx`, `npm run check-content` 100%.
 - [x] T10. `scripts/check-typography.mjs` met baseline-ratchet - klaar wanneer: baseline vast, exit!=0 alleen bij stijging; test bevestigt falen bij nieuwe overtreding.
 - [x] T11. `npm run verify` bundelen - klaar wanneer: draait alle gates met een exit-code.
 - [x] T12. `scripts/site-health.mjs` -> `SITE-HEALTH.md` - klaar wanneer: genereert het bestand; `npm test` bevestigt foutloze run.
+
+## OG-IMAGE PIPELINE (ROADMAP-brok E, opgebroken)
+
+- [x] OG1. `app/opengraph-image.tsx` via next/og (ImageResponse, 1200x630 PNG, merkkleuren + sitenaam/tagline) - klaar wanneer: build genereert de PNG-route, build groen.
+- [x] OG2. Layout-metadata + SchemaOrg DEFAULT_IMAGE van SVG naar PNG omzetten - klaar wanneer: og:image/twitter:image verwijzen naar PNG; build groen; audit-html 0 violations.
+- [x] OG3. `app/twitter-image.tsx` zodat ook de twitter-card een PNG is - klaar wanneer: build genereert twitter-image PNG; build groen.

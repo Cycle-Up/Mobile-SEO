@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     "Welk waterfilter is het beste voor een appartement, huurwoning, ouder huis of gezin? Concrete aanbevelingen per woningtype en gebruik.",
   alternates: { canonical: "https://waterfilterplatform.nl/beste-waterfilter" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/beste-waterfilter.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Beste waterfilter per situatie: welk filter past bij uw woning?",
     description:
       "Welk waterfilter is het beste voor een appartement, huurwoning, ouder huis of gezin? Concrete aanbevelingen per woningtype en gebruik.",

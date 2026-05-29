@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Zonder verkoopadvies.",
   alternates: { canonical: "https://waterfilterplatform.nl/keuzehulp" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/keuzehulp.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Waterfilter keuzehulp: welk filter past bij jouw situatie?",
     description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Zonder verkoopadvies.",
     type: "website",

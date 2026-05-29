@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     "Onderhoud voor osmosefilters, waterontharders, filterkansen en koolstoffilters: wanneer wisselen, hoe reinigen en hoe storingen oplossen.",
   alternates: { canonical: "https://waterfilterplatform.nl/onderhoud" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/onderhoud.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Waterfilter onderhoud: wanneer filters wisselen, reinigen en controleren",
     description:
       "Onderhoud voor osmosefilters, waterontharders, filterkansen en koolstoffilters: wanneer wisselen, hoe reinigen en hoe storingen oplossen.",

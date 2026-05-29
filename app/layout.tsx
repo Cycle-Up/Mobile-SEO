@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     siteName: 'WaterfilterPlatform',
     locale: 'nl_NL',
     type: 'website',
-    images: [{ url: '/og/home.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
+    // og:image wordt site-breed geleverd door app/opengraph-image.tsx (PNG via next/og).
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/og/home.svg'],
+    // twitter:image volgt automatisch uit app/opengraph-image.tsx (PNG).
   },
   robots: { index: true, follow: true },
 };

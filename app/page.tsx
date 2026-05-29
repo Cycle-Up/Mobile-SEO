@@ -10,7 +10,6 @@ export const metadata: Metadata = {
     'Alles over drinkwaterkwaliteit, waterfiltratie en waterhardheid in Nederland. Onafhankelijke informatie over stoffen in leidingwater, filtertechnieken en',
   alternates: { canonical: 'https://waterfilterplatform.nl' },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/home.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: 'WaterfilterPlatform — kennisplatform over waterkwaliteit en waterfiltratie',
     description: 'Onafhankelijke informatie over drinkwaterkwaliteit, filtertechnieken, waterhardheid per gemeente en stoffen in Nederlands leidingwater.',
   },

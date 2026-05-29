@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     "Eerlijke vergelijkingen: osmose vs filterkan, waterfilter vs waterontharder, kraanwater vs flessenwater. Kosten, prestaties en milieu-impact.",
   alternates: { canonical: "https://waterfilterplatform.nl/vergelijken" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/vergelijken.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Waterfilter vergelijken: osmose vs filterkan, waterontharder en meer",
     description:
       "Eerlijke vergelijkingen: osmose vs filterkan, waterfilter vs waterontharder, kraanwater vs flessenwater. Kosten, prestaties en milieu-impact.",
