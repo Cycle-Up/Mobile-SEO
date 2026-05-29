@@ -20,11 +20,11 @@ in `app/kennisbank/page.tsx`, `npm run check-content` 100%.
 - [x] 4. `/selsiuz` (page) - neutrale merk-hub (73 vermeldingen) analoog aan /quooker; overzicht + links naar sub-intents en /selsiuz-alternatief. Distinct van de alternatief-pagina. Klaar wanneer: TSX-standaard + linkt naar >=2 eigen sub-pagina's.
 - [x] 5. `/selsiuz-prijs` (page) - "selsiuz prijs/kosten" met indicatieve TCO-tabel (+ datum, geen prijs-als-feit). Klaar wanneer: TSX-standaard, parent /selsiuz.
 - [x] 6. `/selsiuz-onderhoud` (page) - "selsiuz onderhoud/filter vervangen". Klaar wanneer: TSX-standaard, parent /selsiuz.
-- [ ] 7. `/grohe-blue` (page) - neutrale merk-hub (110 vermeldingen) analoog aan /quooker. Klaar wanneer: TSX-standaard + linkt naar >=2 eigen sub-pagina's.
-- [ ] 8. `/grohe-blue-prijs` (page) - "grohe blue prijs/kosten" indicatieve TCO. Klaar wanneer: TSX-standaard, parent /grohe-blue.
-- [ ] 9. `/grohe-blue-filter` (page) - "grohe blue filter vervangen/kosten". Klaar wanneer: TSX-standaard, parent /grohe-blue.
-- [ ] 10. `/vergelijken/quooker-vs-grohe-red` (page) - kokend-water merk-duo. Klaar wanneer: TSX-standaard, parent /vergelijken.
-- [ ] 11. `/vergelijken/selsiuz-vs-grohe-blue` (page) - merk-duo. Klaar wanneer: TSX-standaard, parent /vergelijken.
+- [x] 7. `/grohe-blue` (page) - neutrale merk-hub (110 vermeldingen) analoog aan /quooker. Klaar wanneer: TSX-standaard + linkt naar >=2 eigen sub-pagina's.
+- [x] 8. `/grohe-blue-prijs` (page) - "grohe blue prijs/kosten" indicatieve TCO. Klaar wanneer: TSX-standaard, parent /grohe-blue.
+- [x] 9. `/grohe-blue-filter` (page) - "grohe blue filter vervangen/kosten". Klaar wanneer: TSX-standaard, parent /grohe-blue.
+- [x] 10. `/vergelijken/quooker-vs-grohe-red` (page) - kokend-water merk-duo. Klaar wanneer: TSX-standaard, parent /vergelijken.
+- [x] 11. `/vergelijken/selsiuz-vs-grohe-blue` (page) - merk-duo. Klaar wanneer: TSX-standaard, parent /vergelijken.
 - [ ] 12. Long-tail kennisbank-ronde: 3 nieuwe MDX-artikelen in onderbenutte sub-thema's (elk eerst kannibalisatie-gecheckt tegen bestaande slugs). Klaar wanneer: 3 artikelen voldoen aan MDX-standaard; check-content 100%; build groen.
 
 ## TECHNIEK (later - verplaatst naar onderen)
