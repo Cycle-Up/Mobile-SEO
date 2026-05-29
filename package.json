@@ -9,7 +9,8 @@
     "lint": "eslint",
     "check-content": "node scripts/check-content.mjs",
     "test": "node --test",
-    "verify": "node scripts/check-content.mjs"
+    "verify": "node scripts/check-content.mjs && node scripts/check-typography.mjs && node scripts/check-links.mjs && node scripts/check-sitemap.mjs",
+    "audit-html": "node scripts/audit-html.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

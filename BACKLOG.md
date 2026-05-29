@@ -39,5 +39,5 @@ in `app/kennisbank/page.tsx`, `npm run check-content` 100%.
 - [x] T8. Violations uit T7 oplossen - klaar wanneer: 0 fouten (of gedocumenteerde uitzonderingen); build groen.
 - [x] T9. Article-schema toevoegen aan commerciele merk-/vergelijkingspagina's (SEO-AUDIT P2) - klaar wanneer: audit-html ziet Article-JSON-LD; build groen.
 - [x] T10. `scripts/check-typography.mjs` met baseline-ratchet - klaar wanneer: baseline vast, exit!=0 alleen bij stijging; test bevestigt falen bij nieuwe overtreding.
-- [ ] T11. `npm run verify` bundelen - klaar wanneer: draait alle gates met een exit-code.
+- [x] T11. `npm run verify` bundelen - klaar wanneer: draait alle gates met een exit-code.
 - [ ] T12. `scripts/site-health.mjs` -> `SITE-HEALTH.md` - klaar wanneer: genereert het bestand; `npm test` bevestigt foutloze run.
