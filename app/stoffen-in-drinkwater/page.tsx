@@ -87,7 +87,7 @@ export default function StoffenInDrinkwaterPage() {
             { name: "Lood (Pb)", description: "Zwaar metaal. NL-norm: 5 µg/L (per Drinkwaterbesluit). Risico bij huizen gebouwd voor 1960 met loden leidingen. Geen smaak of geur. RO verwijdert 97%.", url: "https://waterfilterplatform.nl/leidingwater/lood" },
             { name: "Nitraat (NO₃⁻)", description: "Landbouwgerelateerde verontreiniging. EU-norm: 50 mg/L. Risico voor zuigelingen (methemoglobinemie). RO verwijdert 85-95%.", url: "https://waterfilterplatform.nl/stoffen-in-drinkwater/nitraat-nitriet" },
             { name: "Waterhardheid (Ca²⁺/Mg²⁺)", description: "Opgeloste calcium- en magnesiumzouten. Uitgedrukt in °dH. Geen gezondheidsrisico maar veroorzaakt kalkafzetting. In Nederland 4-22 °dH.", url: "https://waterfilterplatform.nl/waterhardheid" },
-            { name: "Microplastics", description: "Plastic deeltjes 1-5000 µm. Geen wettelijke norm in drinkwater (2026). Ultrafiltratie en RO verwijderen effectief. WHO: beperkt bewijs van gezondheidsschade.", url: "https://waterfilterplatform.nl/stoffen-in-drinkwater/microplastics" },
+            { name: "Microplastics", description: "Plastic deeltjes 1-5000 µm. Geen wettelijke norm in drinkwater (2026). Ultrafiltratie en RO verwijderen effectief. WHO: beperkt bewijs van gezondheidsschade.", url: "https://waterfilterplatform.nl/drinkwater/microplastics" },
           ],
         }}
       />

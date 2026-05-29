@@ -251,7 +251,7 @@ export default function KraanwaterVsFlessenwaterPage() {
               { label: "Kraanwater beter dan flessenwater", href: "/kennisbank/kraanwater-beter-dan-flessenwater" },
               { label: "Drinkwaternormen", href: "/drinkwaternormen" },
               { label: "Waterfilter kiezen", href: "/waterfilter" },
-              { label: "Microplastics in drinkwater", href: "/stoffen-in-drinkwater/microplastics" },
+              { label: "Microplastics in drinkwater", href: "/drinkwater/microplastics" },
             ].map((link) => (
               <Link
                 key={link.href}

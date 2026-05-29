@@ -369,7 +369,7 @@ export default function WaterontharderHoeLangPage() {
           Zie ook:{' '}
           <Link href="/waterontharder" className="text-[#005F8A] underline">waterontharder overzicht</Link>,{' '}
           <Link href="/waterontharder/regeneratie" className="text-[#005F8A] underline">waterontharder regeneratie</Link>,{' '}
-          <Link href="/waterkalker/vs-waterontharder" className="text-[#005F8A] underline">waterontkalker vs waterontharder</Link> en{' '}
+          <Link href="/waterontkalker/vs-waterontharder" className="text-[#005F8A] underline">waterontkalker vs waterontharder</Link> en{' '}
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link>.
         </p>
       </main>
