@@ -54,6 +54,24 @@ export default function OnderhoudPage() {
       <SchemaOrg
         schema={[
           {
+            '@type': 'ItemList',
+            name: 'Onderhoud',
+            url: 'https://waterfilterplatform.nl/onderhoud',
+            numberOfItems: 6,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Filterkan filter wisselen: Brita, BWT en andere merken vergeleken', url: 'https://waterfilterplatform.nl/onderhoud/filterkan-filter' },
+            { '@type': 'ListItem', position: 2, name: 'Kokend water kraan onderhoud: filter wisselen, ontkalken en lekkage', url: 'https://waterfilterplatform.nl/onderhoud/kokend-water-kraan-onderhoud' },
+            { '@type': 'ListItem', position: 3, name: 'Koolstoffilter levensduur: wanneer vervangen en hoe controleren', url: 'https://waterfilterplatform.nl/onderhoud/koolstoffilter-levensduur' },
+            { '@type': 'ListItem', position: 4, name: 'Osmosefilter vervangen: wanneer en hoe wissel je filters en membraan?', url: 'https://waterfilterplatform.nl/onderhoud/osmose-filter-vervangen' },
+            { '@type': 'ListItem', position: 5, name: 'Waterfilter storingen oplossen: osmose, filterkan en waterontharder', url: 'https://waterfilterplatform.nl/onderhoud/storingen-oplossen' },
+            { '@type': 'ListItem', position: 6, name: 'Waterontharder zout: soorten, verbruik en wanneer bijvullen', url: 'https://waterfilterplatform.nl/onderhoud/waterontharder-zout' },
+            ],
+          },
+        ]}
+      />
+      <SchemaOrg
+        schema={[
+          {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://waterfilterplatform.nl" },

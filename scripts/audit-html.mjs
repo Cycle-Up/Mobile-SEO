@@ -25,6 +25,18 @@ const HTML_DIR = path.join(ROOT, '.next', 'server', 'app');
 
 export const MAX_DESCRIPTION = 160;
 
+// Hub-overzichtspagina's die een ItemList-JSON-LD moeten bevatten (AEO-diepte).
+export const HUB_ITEMLIST_ROUTES = [
+  'filtertechnieken', 'keurmerken', 'drinkwaternormen', 'stoffen-in-drinkwater',
+  'keuzehulp', 'onderhoud', 'zakelijk', 'vergelijken', 'beste-waterfilter',
+  'waterontharder', 'omgekeerde-osmose', 'kokend-water-kraan', 'drinkwaterfontein',
+];
+
+/** True if the HTML contains an ItemList JSON-LD block. */
+export function hasItemList(html) {
+  return /"@type"\s*:\s*"ItemList"/.test(html);
+}
+
 function countMatches(html, re) {
   return (html.match(re) || []).length;
 }
@@ -116,12 +128,20 @@ function runCli() {
     for (const v of violations) addViolation(v, route);
   });
 
+  // Hub-ItemList gate
+  const hubMissing = [];
+  for (const hub of HUB_ITEMLIST_ROUTES) {
+    const f = path.join(HTML_DIR, hub + '.html');
+    if (!fs.existsSync(f) || !hasItemList(fs.readFileSync(f, 'utf-8'))) hubMissing.push('/' + hub);
+  }
+  for (const r of hubMissing) addViolation('hub mist ItemList-schema', r);
+
   const totalViolations = Object.values(byType).reduce((a, b) => a + b.count, 0);
   console.log('\n🔍 Post-build HTML audit — WaterfilterPlatform\n');
-  console.log(`Pages scanned: ${pages}`);
+  console.log(`Pages scanned: ${pages} | hubs met ItemList: ${HUB_ITEMLIST_ROUTES.length - hubMissing.length}/${HUB_ITEMLIST_ROUTES.length}`);
 
   if (totalViolations === 0) {
-    console.log('\n✅ Geen HTML-violations gevonden (canonical/title/h1/description/JSON-LD).\n');
+    console.log('\n✅ Geen HTML-violations gevonden (canonical/title/h1/description/JSON-LD/ItemList).\n');
     return;
   }
   console.log(`\n❌ ${totalViolations} violation(s) over ${Object.keys(byType).length} type(s):\n`);

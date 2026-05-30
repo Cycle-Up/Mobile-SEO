@@ -27,8 +27,8 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 
 ## Fase B - Structured-data & AEO-diepte
 
-- [ ] B1. `ItemList`-schema toevoegen aan de 13 hub-overzichtspagina's zonder ItemList (filtertechnieken, keurmerken, drinkwaternormen, stoffen-in-drinkwater, keuzehulp, onderhoud, zakelijk, vergelijken, beste-waterfilter, waterontharder, omgekeerde-osmose, kokend-water-kraan, drinkwaterfontein) - ItemList = ware representatie van de zichtbare lijst sub-pagina's/links op die hub. Klaar wanneer: alle 13 hubs bevatten valide ItemList-JSON-LD; `npm run build` groen; `npm run audit-html` 0 violations.
-- [ ] B2. `scripts/audit-html.mjs` uitbreiden met een hub-ItemList-check (een vaste lijst hub-routes moet ItemList-JSON-LD bevatten) + test in `test/audit-html.test.mjs`. Klaar wanneer: audit-html faalt als een hub ItemList mist en slaagt nu (na B1); `npm test` groen.
+- [x] B1. `ItemList`-schema toevoegen aan de 13 hub-overzichtspagina's zonder ItemList (filtertechnieken, keurmerken, drinkwaternormen, stoffen-in-drinkwater, keuzehulp, onderhoud, zakelijk, vergelijken, beste-waterfilter, waterontharder, omgekeerde-osmose, kokend-water-kraan, drinkwaterfontein) - ItemList = ware representatie van de zichtbare lijst sub-pagina's/links op die hub. Klaar wanneer: alle 13 hubs bevatten valide ItemList-JSON-LD; `npm run build` groen; `npm run audit-html` 0 violations.
+- [x] B2. `scripts/audit-html.mjs` uitbreiden met een hub-ItemList-check (een vaste lijst hub-routes moet ItemList-JSON-LD bevatten) + test in `test/audit-html.test.mjs`. Klaar wanneer: audit-html faalt als een hub ItemList mist en slaagt nu (na B1); `npm test` groen.
 
 ## Fase C - Contentuitbreiding merklaag (vervolg)
 

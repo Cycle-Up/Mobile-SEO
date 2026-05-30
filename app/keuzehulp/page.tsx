@@ -23,6 +23,26 @@ export default function KeuzehulpPage() {
   return (
     <>
       <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Waterfilter keuzehulp',
+            url: 'https://waterfilterplatform.nl/keuzehulp',
+            numberOfItems: 8,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Waterfilter voor baby en gezin: osmose voor flesvoeding en jong gezin', url: 'https://waterfilterplatform.nl/keuzehulp/baby-gezin' },
+            { '@type': 'ListItem', position: 2, name: 'Waterfilter per budget - wat kunt u verwachten voor EUR 50, EUR 200 en EUR 500+?', url: 'https://waterfilterplatform.nl/keuzehulp/budget' },
+            { '@type': 'ListItem', position: 3, name: 'Waterfilter op reis - beste reisfilter voor drinkwater in het buitenland', url: 'https://waterfilterplatform.nl/keuzehulp/buitenland-reizen' },
+            { '@type': 'ListItem', position: 4, name: 'Waterfilter voor geur en smaak - chloor, chloramine en metaalindruk', url: 'https://waterfilterplatform.nl/keuzehulp/geur-smaak' },
+            { '@type': 'ListItem', position: 5, name: 'Hard water en waterfilter: waterontharder of osmose?', url: 'https://waterfilterplatform.nl/keuzehulp/hard-water' },
+            { '@type': 'ListItem', position: 6, name: 'Waterfilter in huurwoning: welke opties zonder boren of installatie?', url: 'https://waterfilterplatform.nl/keuzehulp/huurwoning' },
+            { '@type': 'ListItem', position: 7, name: 'Welk type waterfilter past bij uw keuken? Aanrecht, onderkast of inbouw', url: 'https://waterfilterplatform.nl/keuzehulp/installatie-type' },
+            { '@type': 'ListItem', position: 8, name: 'PFAS of lood in drinkwater: wanneer is osmose de beste keuze?', url: 'https://waterfilterplatform.nl/keuzehulp/pfas-lood' },
+            ],
+          },
+        ]}
+      />
+      <SchemaOrg
         type="FAQPage"
         faqItems={[
           { question: "Welk waterfilter heb ik nodig bij hard water?", answer: "Bij hard water (boven 14 °dH) zijn de beste opties een ionenwisselingsontharder voor het hele huis, of een omgekeerde osmosefilter aan de keukenkraan. Een filterkan of actief-koolfilter verwijdert geen kalk. Controleer uw waterhardheid op de pagina voor uw gemeente." },
@@ -114,7 +134,7 @@ export default function KeuzehulpPage() {
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <Link key="/keuzehulp/buitenland-reizen" href="/keuzehulp/buitenland-reizen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter op reis — beste reisfilter voor drinkwater</p>
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter op reis - beste reisfilter voor drinkwater</p>
               </Link>
           </div>
         </section>

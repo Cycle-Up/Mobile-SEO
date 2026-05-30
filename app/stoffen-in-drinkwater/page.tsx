@@ -58,6 +58,27 @@ export default function StoffenInDrinkwaterPage() {
   return (
     <>
       <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Stoffen in drinkwater',
+            url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater',
+            numberOfItems: 9,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Chloor bijproducten in drinkwater -- THM en HAA', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/chloor-bijproducten' },
+            { '@type': 'ListItem', position: 2, name: 'Hormonen en medicijnresten in drinkwater -- wat weten we?', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/hormonen' },
+            { '@type': 'ListItem', position: 3, name: 'Kalk en mineralen in drinkwater -- calcium, magnesium en bicarbonaat', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/kalk-mineralen' },
+            { '@type': 'ListItem', position: 4, name: 'Microbiologische risicos in drinkwater -- bacterien, virussen en protozoen', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/microbiologisch' },
+            { '@type': 'ListItem', position: 5, name: 'Nitraat en nitriet in drinkwater -- norm, risicos en filteren', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/nitraat-nitriet' },
+            { '@type': 'ListItem', position: 6, name: 'Pesticiden in drinkwater -- glyfosaat, atrazine en MCPA', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/pesticiden' },
+            { '@type': 'ListItem', position: 7, name: 'PFAS in drinkwater -- PFOA, PFOS en de nieuwe EU-norm', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/pfas-overzicht' },
+            { '@type': 'ListItem', position: 8, name: 'Radioactieve stoffen in drinkwater -- radon, uranium en radium', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/radioactieve-stoffen' },
+            { '@type': 'ListItem', position: 9, name: 'Zware metalen in drinkwater -- lood, koper, chroom en arseen', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/zware-metalen' },
+            ],
+          },
+        ]}
+      />
+      <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: "Home", url: "https://waterfilterplatform.nl" },

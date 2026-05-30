@@ -122,6 +122,47 @@ const vergelijking = [
 export default function OmgekeerdeOsmosePage() {
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Omgekeerde osmose',
+            url: 'https://waterfilterplatform.nl/omgekeerde-osmose',
+            numberOfItems: 29,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Afvalwater osmosefilter: verhouding, besparing en waterbesparende systemen', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/afvalwater' },
+            { '@type': 'ListItem', position: 2, name: 'Osmosefilter afvalwater hergebruiken: planten, toilet en tuin', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/afvalwater-hergebruik' },
+            { '@type': 'ListItem', position: 3, name: 'Boosterpomp osmosefilter: lage waterdruk oplossen en installeren', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/boosterpomp' },
+            { '@type': 'ListItem', position: 4, name: 'Capaciteit omgekeerde osmose: liter per uur, debiet en tankgrootte', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/capaciteit' },
+            { '@type': 'ListItem', position: 5, name: 'Osmosefilter capaciteit: GPD berekening en keuze per gezin', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/capaciteit-liter' },
+            { '@type': 'ListItem', position: 6, name: 'Omgekeerde osmose filter zelf installeren: stappenplan', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/diy' },
+            { '@type': 'ListItem', position: 7, name: 'Waterdruk voor omgekeerde osmose: minimum, meten en drukverhoger', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/druk' },
+            { '@type': 'ListItem', position: 8, name: 'Omgekeerde Osmose Filter: Uitleg & Keuze 2026', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/filter' },
+            { '@type': 'ListItem', position: 9, name: 'Osmosefilter inbouw onder aanrecht: installatie en modellen 2026', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/inbouw' },
+            { '@type': 'ListItem', position: 10, name: 'Omgekeerde osmose installeren: stap-voor-stap gids', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/installatie' },
+            { '@type': 'ListItem', position: 11, name: 'Osmosefilter installeren: hoe lang duurt het en wat heb je nodig?', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/installatietijd' },
+            { '@type': 'ListItem', position: 12, name: 'Omgekeerde osmose filter kopen? Alles wat je moet weten', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/kopen' },
+            { '@type': 'ListItem', position: 13, name: 'Kosten omgekeerde osmose: aanschaf, filters en totale eigendomskosten', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/kosten' },
+            { '@type': 'ListItem', position: 14, name: 'Osmosefilter levensduur: hoe lang gaat een RO-membraan mee?', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/levensduur' },
+            { '@type': 'ListItem', position: 15, name: 'RO membraan: levensduur, types en vervanging', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/membraan' },
+            { '@type': 'ListItem', position: 16, name: 'RO-membraan vervangen: wanneer en hoe doe je dat?', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/membraan-vervangen' },
+            { '@type': 'ListItem', position: 17, name: 'Osmosefilter membraandruk: osmotische druk, scaling en temperatuur', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/membraandruk' },
+            { '@type': 'ListItem', position: 18, name: 'Onderhoud omgekeerde osmose: filtervervanging, reiniging en schema', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/onderhoud' },
+            { '@type': 'ListItem', position: 19, name: 'Omgekeerde Osmose Prijs: Kosten & Vergelijking 2026', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/prijs' },
+            { '@type': 'ListItem', position: 20, name: 'Osmosewater Remineralisatie: Filter, Druppels & Methoden', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/remineralisatie' },
+            { '@type': 'ListItem', position: 21, name: 'Osmosefilter rendement: afvalwater verhouding en efficiëntie verbeteren', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/rendement' },
+            { '@type': 'ListItem', position: 22, name: 'Osmosewater smaak verbeteren: pH, mineralen en remineralisatie', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/smaak' },
+            { '@type': 'ListItem', position: 23, name: 'Omgekeerde Osmose Vergelijken 2026: Welk Systeem?', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/vergelijken' },
+            { '@type': 'ListItem', position: 24, name: 'Osmose apparaat voor thuis: welk systeem past bij u?', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/voor-thuis' },
+            { '@type': 'ListItem', position: 25, name: 'Omgekeerde osmose vs ultrafiltratie: wat is het verschil?', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/vs-ultrafiltratie' },
+            { '@type': 'ListItem', position: 26, name: 'Wat is osmose water? Werking, kwaliteit & gezondheid', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/wat-is-osmose-water' },
+            { '@type': 'ListItem', position: 27, name: 'Waterdruk voor osmosefilter: minimale en maximale druk uitgelegd', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/waterdruk' },
+            { '@type': 'ListItem', position: 28, name: 'Osmosefilter zonder afvalwater: permeate pump systemen', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/zonder-afvalwater' },
+            { '@type': 'ListItem', position: 29, name: 'Osmosefilter voor brak water en bronwater: capaciteit en installatie', url: 'https://waterfilterplatform.nl/omgekeerde-osmose/zout-water' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="Article"

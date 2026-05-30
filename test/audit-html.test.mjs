@@ -35,3 +35,15 @@ test('analyzeHtml: flags invalid JSON-LD', () => {
   const r = analyzeHtml(html);
   assert.ok(r.violations.some(v => v.includes('invalid JSON')));
 });
+
+import { hasItemList, HUB_ITEMLIST_ROUTES } from '../scripts/audit-html.mjs';
+
+test('hasItemList detects an ItemList JSON-LD block', () => {
+  assert.equal(hasItemList('<script>{"@type":"ItemList","name":"x"}</script>'), true);
+  assert.equal(hasItemList('<script>{"@type":"FAQPage"}</script>'), false);
+});
+
+test('HUB_ITEMLIST_ROUTES lists the 13 hubs', () => {
+  assert.equal(HUB_ITEMLIST_ROUTES.length, 13);
+  assert.ok(HUB_ITEMLIST_ROUTES.includes('vergelijken'));
+});

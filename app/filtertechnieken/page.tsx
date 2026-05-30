@@ -24,6 +24,27 @@ export default function FiltertechniekenPage() {
   return (
     <>
       <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Filtertechnieken',
+            url: 'https://waterfilterplatform.nl/filtertechnieken',
+            numberOfItems: 9,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Actief kool waterfilter: GAC vs CTO, werking en wanneer effectief', url: 'https://waterfilterplatform.nl/filtertechnieken/actief-kool' },
+            { '@type': 'ListItem', position: 2, name: 'Elektrolyse en CDI waterontzouting - hoe werkt capacitieve deionisatie?', url: 'https://waterfilterplatform.nl/filtertechnieken/elektrolyse-cdi' },
+            { '@type': 'ListItem', position: 3, name: 'Ionenwisseling voor drinkwater: principe, hars en regeneratie uitgelegd', url: 'https://waterfilterplatform.nl/filtertechnieken/ionenwisseling' },
+            { '@type': 'ListItem', position: 4, name: 'Keramisch waterfilter - diatomeeenaarde en zilverbehandeling', url: 'https://waterfilterplatform.nl/filtertechnieken/keramisch' },
+            { '@type': 'ListItem', position: 5, name: 'Nanofiltration (NF) - tussen ultrafiltratie en omgekeerde osmose', url: 'https://waterfilterplatform.nl/filtertechnieken/nanofiltration' },
+            { '@type': 'ListItem', position: 6, name: 'Omgekeerde osmose filtertechniek: werking, membraan en effectiviteit', url: 'https://waterfilterplatform.nl/filtertechnieken/omgekeerde-osmose' },
+            { '@type': 'ListItem', position: 7, name: 'Ultrafiltratie (UF) waterfilter: 0,01 micron, hollow fiber en toepassingen', url: 'https://waterfilterplatform.nl/filtertechnieken/ultrafiltratie' },
+            { '@type': 'ListItem', position: 8, name: 'UV-sterilisatie waterfilter: werking, dosis en toepassingen', url: 'https://waterfilterplatform.nl/filtertechnieken/uv-sterilisatie' },
+            { '@type': 'ListItem', position: 9, name: 'Filtertechnieken vergelijken - welke technologie verwijdert wat?', url: 'https://waterfilterplatform.nl/filtertechnieken/vergelijking' },
+            ],
+          },
+        ]}
+      />
+      <SchemaOrg
         type="FAQPage"
         faqItems={[
           { question: "Welke filtertechniek verwijdert PFAS uit drinkwater?", answer: "Omgekeerde osmose (RO) is de enige betrouwbare consumentenoplossing voor PFAS-verwijdering: een gecertificeerd RO-systeem (NSF/ANSI 58, getest op PFAS) verwijdert 90-99% van PFAS-verbindingen. Actief kool heeft beperkte effectiviteit, met name voor kortketenige PFAS." },

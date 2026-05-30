@@ -53,6 +53,32 @@ export default function VergelijkenPage() {
   return (
     <>
       <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Vergelijkingen',
+            url: 'https://waterfilterplatform.nl/vergelijken',
+            numberOfItems: 14,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'BWT vs Grunbeck: welke waterontharder is beter?', url: 'https://waterfilterplatform.nl/vergelijken/bwt-vs-grunbeck' },
+            { '@type': 'ListItem', position: 2, name: 'Grohe Blue vs Grohe Red: wat is het verschil?', url: 'https://waterfilterplatform.nl/vergelijken/grohe-blue-vs-grohe-red' },
+            { '@type': 'ListItem', position: 3, name: 'Harvey vs BWT: non-electric of elektrische waterontharder?', url: 'https://waterfilterplatform.nl/vergelijken/harvey-vs-bwt' },
+            { '@type': 'ListItem', position: 4, name: 'Kokend water kraan merken vergelijken: Quooker, Grohe, PureAqua en meer', url: 'https://waterfilterplatform.nl/vergelijken/kokend-water-kraan-merken' },
+            { '@type': 'ListItem', position: 5, name: 'Kraanwater vs flessenwater: kosten, kwaliteit en milieu vergeleken', url: 'https://waterfilterplatform.nl/vergelijken/kraanwater-vs-flessenwater' },
+            { '@type': 'ListItem', position: 6, name: 'Omgekeerde osmose vergelijken: typen, prestaties en kosten', url: 'https://waterfilterplatform.nl/vergelijken/omgekeerde-osmose-vergelijken' },
+            { '@type': 'ListItem', position: 7, name: 'Osmosewater vs bronwater: mineralen, zuiverheid en kosten', url: 'https://waterfilterplatform.nl/vergelijken/osmose-vs-bronwater' },
+            { '@type': 'ListItem', position: 8, name: 'Osmose vs filterkan: prestaties, kosten en wanneer welke keuze?', url: 'https://waterfilterplatform.nl/vergelijken/osmose-vs-filterkan' },
+            { '@type': 'ListItem', position: 9, name: 'Quooker vs Grohe Red: welke kokend water kraan kiezen? (2026)', url: 'https://waterfilterplatform.nl/vergelijken/quooker-vs-grohe-red' },
+            { '@type': 'ListItem', position: 10, name: 'Quooker vs Selsiuz: welke kokend water kraan is beter?', url: 'https://waterfilterplatform.nl/vergelijken/quooker-vs-selsiuz' },
+            { '@type': 'ListItem', position: 11, name: 'Selsiuz vs Grohe Blue: kokend of bruisend water? (2026)', url: 'https://waterfilterplatform.nl/vergelijken/selsiuz-vs-grohe-blue' },
+            { '@type': 'ListItem', position: 12, name: 'Waterfilter vs waterontharder: verschil, kosten en wanneer welke keuze?', url: 'https://waterfilterplatform.nl/vergelijken/waterfilter-vs-waterontharder' },
+            { '@type': 'ListItem', position: 13, name: 'Waterontharder vergelijken: zoutgebaseerd, zoutloos en osmose', url: 'https://waterfilterplatform.nl/vergelijken/waterontharder-vergelijken' },
+            { '@type': 'ListItem', position: 14, name: 'Zoutloze waterontharder vergelijken: TAC, magneet of elektronisch', url: 'https://waterfilterplatform.nl/vergelijken/zoutloze-waterontharder-vergelijken' },
+            ],
+          },
+        ]}
+      />
+      <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: "Home", url: "https://waterfilterplatform.nl" },

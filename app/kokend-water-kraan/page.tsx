@@ -159,6 +159,43 @@ const nadelen = [
 export default function KokendWaterKraanPage() {
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Kokend water kraan',
+            url: 'https://waterfilterplatform.nl/kokend-water-kraan',
+            numberOfItems: 25,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: '4-in-1 kokend water kraan: koud, warm, heet en kokend', url: 'https://waterfilterplatform.nl/kokend-water-kraan/4-in-1' },
+            { '@type': 'ListItem', position: 2, name: '5-in-1 Kokend Water Kraan: Alle Functies Uitgelegd', url: 'https://waterfilterplatform.nl/kokend-water-kraan/5-in-1' },
+            { '@type': 'ListItem', position: 3, name: 'Kokend Water Kraan Boiler: Hoe Werkt Het?', url: 'https://waterfilterplatform.nl/kokend-water-kraan/boiler' },
+            { '@type': 'ListItem', position: 4, name: 'Kokend Water Kraan Duurzaamheid: Energie & CO2-impact', url: 'https://waterfilterplatform.nl/kokend-water-kraan/duurzaamheid' },
+            { '@type': 'ListItem', position: 5, name: 'Energieverbruik kokend water kraan: vergelijking met waterkoker en pan', url: 'https://waterfilterplatform.nl/kokend-water-kraan/energie' },
+            { '@type': 'ListItem', position: 6, name: 'Kokend water kraan energieverbruik: kWh kosten en besparing', url: 'https://waterfilterplatform.nl/kokend-water-kraan/energie-verbruik' },
+            { '@type': 'ListItem', position: 7, name: 'Kokend water kraan garantie: wat is gedekt en hoe lang?', url: 'https://waterfilterplatform.nl/kokend-water-kraan/garantie' },
+            { '@type': 'ListItem', position: 8, name: 'Kokend water kraan in huurwoning: mag dat en hoe vraag je toestemming?', url: 'https://waterfilterplatform.nl/kokend-water-kraan/huurwoning' },
+            { '@type': 'ListItem', position: 9, name: 'Kokend water kraan installateur: kosten, certificering en zelf doen', url: 'https://waterfilterplatform.nl/kokend-water-kraan/installateur' },
+            { '@type': 'ListItem', position: 10, name: 'Kokend water kraan installeren: stappen, kosten en wat heb je nodig?', url: 'https://waterfilterplatform.nl/kokend-water-kraan/installeren' },
+            { '@type': 'ListItem', position: 11, name: 'Kokend water kraan kinderveiligheid: veiligheidsventiel en vergrendeling', url: 'https://waterfilterplatform.nl/kokend-water-kraan/kinderveiligheid' },
+            { '@type': 'ListItem', position: 12, name: 'Optimaal water voor koffie: TDS, pH, hardheid en de beste waterfilter', url: 'https://waterfilterplatform.nl/kokend-water-kraan/koffie' },
+            { '@type': 'ListItem', position: 13, name: 'Kokend water kraan kopen: complete gids 2026', url: 'https://waterfilterplatform.nl/kokend-water-kraan/kopen' },
+            { '@type': 'ListItem', position: 14, name: 'Kokend water kraan merken vergelijking: Quooker vs Grohe vs Franke vs PureAqua', url: 'https://waterfilterplatform.nl/kokend-water-kraan/merken-vergelijking' },
+            { '@type': 'ListItem', position: 15, name: 'Kokend water kraan met filter: wat zijn de opties?', url: 'https://waterfilterplatform.nl/kokend-water-kraan/met-filter' },
+            { '@type': 'ListItem', position: 16, name: 'Kokend water kraan onderhoud: ontkalken, filters en jaarlijkse service', url: 'https://waterfilterplatform.nl/kokend-water-kraan/onderhoud' },
+            { '@type': 'ListItem', position: 17, name: 'Kokend Water Kraan Prijs 2026: Kosten & Vergelijking', url: 'https://waterfilterplatform.nl/kokend-water-kraan/prijs' },
+            { '@type': 'ListItem', position: 18, name: 'Kokend water kraan kosten per liter: berekening en vergelijking', url: 'https://waterfilterplatform.nl/kokend-water-kraan/prijs-per-liter' },
+            { '@type': 'ListItem', position: 19, name: 'Quooker alternatief: kokend water kranen vergeleken met Quooker', url: 'https://waterfilterplatform.nl/kokend-water-kraan/quooker' },
+            { '@type': 'ListItem', position: 20, name: 'Kokend water kraan schoonmaken: ontkalken, sproeikop en boiler reinigen', url: 'https://waterfilterplatform.nl/kokend-water-kraan/schoonmaken' },
+            { '@type': 'ListItem', position: 21, name: 'Stoom bij kokend water kraan: normaal, gevaarlijk of probleem?', url: 'https://waterfilterplatform.nl/kokend-water-kraan/stoom' },
+            { '@type': 'ListItem', position: 22, name: 'Optimaal water voor thee: temperatuur, TDS, hardheid en waterfilter', url: 'https://waterfilterplatform.nl/kokend-water-kraan/thee' },
+            { '@type': 'ListItem', position: 23, name: 'Kokend water kraan veiligheid: beveiliging, kinderen en normen', url: 'https://waterfilterplatform.nl/kokend-water-kraan/veiligheid' },
+            { '@type': 'ListItem', position: 24, name: 'Welke kokend water kraan is de beste keuze? Vergelijking 2026', url: 'https://waterfilterplatform.nl/kokend-water-kraan/vergelijken' },
+            { '@type': 'ListItem', position: 25, name: 'Kokend water kraan vs Quooker: welke is beter in 2026?', url: 'https://waterfilterplatform.nl/kokend-water-kraan/vs-quooker' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"
