@@ -139,6 +139,17 @@ export default function OnderhoudPage() {
           </div>
         </section>
       </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/onderhoud/filterkan-filter" href="/onderhoud/filterkan-filter" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Filterkan filter wisselen</p>
+              </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

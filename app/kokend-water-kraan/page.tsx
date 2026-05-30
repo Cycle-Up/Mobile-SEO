@@ -672,6 +672,32 @@ export default function KokendWaterKraanPage() {
           </div>
         </section>
       </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/kokend-water-kraan/energie-verbruik" href="/kokend-water-kraan/energie-verbruik" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Kokend water kraan energieverbruik</p>
+              </Link>
+              <Link key="/kokend-water-kraan/garantie" href="/kokend-water-kraan/garantie" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Kokend water kraan garantie</p>
+              </Link>
+              <Link key="/kokend-water-kraan/schoonmaken" href="/kokend-water-kraan/schoonmaken" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Kokend water kraan schoonmaken</p>
+              </Link>
+              <Link key="/kokend-water-kraan/stoom" href="/kokend-water-kraan/stoom" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Stoom bij kokend water kraan</p>
+              </Link>
+              <Link key="/fonteq-alternatief" href="/fonteq-alternatief" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Fonteq alternatief</p>
+              </Link>
+              <Link key="/quooker-storing" href="/quooker-storing" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Quooker storing</p>
+              </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

@@ -870,6 +870,41 @@ export default function WaterOntharderPage() {
           </div>
         </section>
       </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/waterontharder/appartement" href="/waterontharder/appartement" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder in Appartement</p>
+              </Link>
+              <Link key="/waterontharder/aquarium" href="/waterontharder/aquarium" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder en aquarium</p>
+              </Link>
+              <Link key="/waterontharder/bypass" href="/waterontharder/bypass" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder bypass</p>
+              </Link>
+              <Link key="/waterontharder/elektrisch" href="/waterontharder/elektrisch" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Elektrische waterontharder</p>
+              </Link>
+              <Link key="/waterontharder/regeneratie-tijd" href="/waterontharder/regeneratie-tijd" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Hoe lang duurt regeneratie waterontharder? Tijdgestuurde</p>
+              </Link>
+              <Link key="/waterontharder/storingen-checklist" href="/waterontharder/storingen-checklist" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder storing</p>
+              </Link>
+              <Link key="/waterontharder/twin-tank" href="/waterontharder/twin-tank" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Twin-tank waterontharder</p>
+              </Link>
+              <Link key="/waterontharder/verhuurder" href="/waterontharder/verhuurder" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder plaatsen als huurder</p>
+              </Link>
+              <Link key="/waterontharder/zout-verbruik" href="/waterontharder/zout-verbruik" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder zoutverbruik</p>
+              </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

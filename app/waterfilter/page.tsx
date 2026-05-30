@@ -797,6 +797,74 @@ export default function WaterfilterPage() {
           </div>
         </section>
       </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/waterfilter/aluminium" href="/waterfilter/aluminium" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Aluminium in drinkwater</p>
+              </Link>
+              <Link key="/waterfilter/ammonium" href="/waterfilter/ammonium" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Ammonium in leidingwater</p>
+              </Link>
+              <Link key="/waterfilter/bromaat" href="/waterfilter/bromaat" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Bromaat in water</p>
+              </Link>
+              <Link key="/waterfilter/caravan" href="/waterfilter/caravan" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter voor caravan en camper</p>
+              </Link>
+              <Link key="/waterfilter/chloride" href="/waterfilter/chloride" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Chloride in drinkwater</p>
+              </Link>
+              <Link key="/waterfilter/cryptosporidium" href="/waterfilter/cryptosporidium" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Cryptosporidium in water</p>
+              </Link>
+              <Link key="/waterfilter/douche" href="/waterfilter/douche" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Douchefilter</p>
+              </Link>
+              <Link key="/waterfilter/hond-kat" href="/waterfilter/hond-kat" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter voor hond en kat</p>
+              </Link>
+              <Link key="/waterfilter/kantoor" href="/waterfilter/kantoor" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter voor kantoor</p>
+              </Link>
+              <Link key="/waterfilter/natriumhypochloriet" href="/waterfilter/natriumhypochloriet" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Natriumhypochloriet in leidingwater</p>
+              </Link>
+              <Link key="/waterfilter/nikkel" href="/waterfilter/nikkel" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Nikkel in leidingwater</p>
+              </Link>
+              <Link key="/waterfilter/oudere-woning" href="/waterfilter/oudere-woning" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter voor oudere woning</p>
+              </Link>
+              <Link key="/waterfilter/sport" href="/waterfilter/sport" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter voor Sport</p>
+              </Link>
+              <Link key="/waterfilter/studentenkamer" href="/waterfilter/studentenkamer" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter voor studentenkamer</p>
+              </Link>
+              <Link key="/waterfilter/totaaloplossing" href="/waterfilter/totaaloplossing" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter totaaloplossing</p>
+              </Link>
+              <Link key="/waterfilter/vs-waterkoker" href="/waterfilter/vs-waterkoker" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter of waterkoker</p>
+              </Link>
+              <Link key="/waterfilter/zeoliet" href="/waterfilter/zeoliet" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Zeoliet als waterfiltermedium</p>
+              </Link>
+              <Link key="/waterfilter/zink" href="/waterfilter/zink" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter voor zink</p>
+              </Link>
+              <Link key="/waterfilter/zomerhuis" href="/waterfilter/zomerhuis" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter voor vakantiehuis en zomerhuis</p>
+              </Link>
+              <Link key="/begrippenlijst" href="/begrippenlijst" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Begrippenlijst waterfilters en drinkwater</p>
+              </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

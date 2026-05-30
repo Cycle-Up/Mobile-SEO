@@ -855,6 +855,23 @@ export default function OmgekeerdeOsmosePage() {
           </div>
         </section>
       </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/omgekeerde-osmose/afvalwater-hergebruik" href="/omgekeerde-osmose/afvalwater-hergebruik" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosefilter afvalwater hergebruiken</p>
+              </Link>
+              <Link key="/aquatru-alternatief" href="/aquatru-alternatief" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">AquaTru alternatief</p>
+              </Link>
+              <Link key="/zerowater-alternatief" href="/zerowater-alternatief" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">ZeroWater alternatief</p>
+              </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

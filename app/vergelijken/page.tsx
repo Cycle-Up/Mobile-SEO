@@ -138,6 +138,26 @@ export default function VergelijkenPage() {
           </div>
         </section>
       </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/vergelijken/osmose-vs-bronwater" href="/vergelijken/osmose-vs-bronwater" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosewater vs bronwater</p>
+              </Link>
+              <Link key="/vergelijken/quooker-vs-grohe-red" href="/vergelijken/quooker-vs-grohe-red" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Quooker vs Grohe Red</p>
+              </Link>
+              <Link key="/vergelijken/selsiuz-vs-grohe-blue" href="/vergelijken/selsiuz-vs-grohe-blue" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Selsiuz vs Grohe Blue</p>
+              </Link>
+              <Link key="/vergelijken/zoutloze-waterontharder-vergelijken" href="/vergelijken/zoutloze-waterontharder-vergelijken" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Zoutloze waterontharder vergelijken</p>
+              </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 }
