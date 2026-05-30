@@ -1,60 +1,49 @@
 # ROADMAP - Waterfilterplatform.nl (autonome werkstroom)
 
 Grotere brokken in logische volgorde. Live wachtrij: `BACKLOG.md`, logboek: `WORKLOG.md`.
-Focus: **content** eerst (merk-/vergelijkings-/kennisbanklaag), techniek daarna.
+Werkwijze: backlog van boven naar beneden afwerken; bij lege backlog de volgende roadmap-brok
+opbreken in concrete taken. Elke pagina vooraf kannibalisatie-gecheckt tegen bestaande slugs en
+`CANNIBALIZATION-AUDIT.md`.
 
-Onderbouwing (inventarisatie 2026-05-29): de informationele clusters zijn vrijwel verzadigd en
-de gedocumenteerde CONTENT_GAPS-items zijn gebouwd. De echte witte vlek is de **commerciele
-merklaag**: Quooker heeft een diep cluster (11 pagina's) terwijl even vaak intern genoemde
-merken geen hub/sub-pagina's hebben - Brita (801 interne vermeldingen), SodaStream (243),
-Grohe Blue (110), Selsiuz (73), Waterdrop (55). Ook ontbreken vrijwel alle logische
-merk-vs-merk-vergelijkingen. Elke nieuwe pagina wordt vooraf tegen bestaande slugs en
-`CANNIBALIZATION-AUDIT.md` gecheckt.
+---
 
-## CONTENT (eerst)
+## RONDE 1-2 - AFGEROND
 
-### C1. Merk-alternatief-pagina's afmaken — DONE (brita/zerowater/aquatru-alternatief)
-Het bewezen `/[merk]-alternatief`-patroon uitbreiden naar hoog-vermelde merken zonder eigen
-pagina (Brita, ZeroWater, AquaTru). Funnel naar /filterkan + /omgekeerde-osmose.
+Commerciele merklaag uitgebreid (brita/zerowater/aquatru-alternatief, Selsiuz- en Grohe
+Blue-clusters, 2 merkvergelijkingen, 3 long-tail MDX) en een volledige verificatie-/gate-laag
+gebouwd (node --test test-harness, check-content/typography/links/sitemap, audit-html,
+site-health, OG-image PNG-pipeline). Eindstatus: npm test groen, npm run verify exit 0,
+audit-html 0 violations, 0 dode links, 0 sitemap-gaten. Detail: zie WORKLOG.md + git-historie.
 
-### C2. Merk-diepteclusters (Quooker-model uitrollen) — DONE (Selsiuz- + Grohe Blue-cluster)
-Voor hoogst-vermelde merken zonder diepte (Selsiuz, Grohe Blue): een neutrale merk-hub +
-2-3 sub-intent pagina's (prijs/kosten, onderhoud/filter, modellen). Distinct van de
-alternatief-pagina (die "waarom overstappen" framet); de hub is neutrale merkinfo.
+---
 
-### C3. Ontbrekende merk-vs-merk vergelijkingen — DONE (quooker-vs-grohe-red, selsiuz-vs-grohe-blue)
-De `/vergelijken/`-matrix aanvullen met logische duo's die nog ontbreken
-(quooker-vs-grohe-red, selsiuz-vs-grohe-blue, en osmose-merk-duo's).
+## RONDE 3 - HUIDIG PLAN
 
-### C4. Long-tail kennisbank-uitbreiding — DONE (ronde: strijkijzer-stoom, ijsblokjes-helder-maken, vaatwasserzout-vs-waterontharderzout)
-Nieuwe MDX in onderbenutte sub-thema's, elk vooraf kannibalisatie-gecheckt tegen de 384
-bestaande slugs. Per artikel: >=700 woorden, quickAnswer, >=2 interne links, registratie in
-`app/kennisbank/page.tsx`.
+Onderbouwing (inventarisatie 2026-05-30): basis is sterk en geautomatiseerd. Concrete witte
+vlekken: (a) `llms.txt` mist de 11 nieuwe merk-/vergelijkingspagina's uit ronde 2; (b) er is geen
+orphan-detectie over 573 routes; (c) 13 hub-overzichtspagina's missen `ItemList`-schema;
+(d) hoog-vermelde merken zonder neutrale hub: SodaStream (246 vermeldingen), InsinkErator (123),
+Waterdrop (59). a11y-basis is al gezond (html lang, geen rauwe img, geen generieke linktekst) en
+BreadcrumbList staat al op alle 573 routes - die krijgen dus geen aparte brok.
 
-### C5. "Beste X 2026" + seizoenscontent — DONE voor het autonome deel (jaar-koopgidsset compleet incl. /beste-filterkan-2026; verdere seizoens-updates vergen redactionele/actualiteitskeuzes)
-Categorieen die de jaar-koopgids-set nog mist; seizoens-/normen-updates met information gain.
+### Fase A - AI-discovery & interne-linkgezondheid
+Een sync-check + fix voor `llms.txt`, en een orphan-detector die pagina's zonder inkomende
+interne links vindt en wegwerkt. Hoogste SEO/crawl-waarde, volledig autonoom.
 
-## TECHNIEK (later - verplaatst naar onderen)
+### Fase B - Structured-data & AEO-diepte
+`ItemList`-schema op de 13 hub-overzichtspagina's die het missen, plus een gate in `audit-html`
+zodat hubs het behouden. (BreadcrumbList is al 573/573; geen werk.)
 
-### T1. Verificatie-fundament — DONE (node --test, npm test, npm run verify)
-Testlaag met Node's ingebouwde runner (`node --test`), `npm test` + `npm run verify`. Geen
-nieuwe dependency.
+### Fase C - Contentuitbreiding merklaag (vervolg)
+Neutrale merk-hubs voor SodaStream (+ CO2/prijs sub), InsinkErator en Waterdrop; nieuwe
+merk-vs-merk vergelijkingen; een nieuwe long-tail kennisbank-ronde. Distinct van de bestaande
+`-alternatief`-pagina's; interne `CTABanner` blijft tot affiliate-bestemming bekend is.
 
-### T2. SEO-invarianten als automatische checks — DONE (check-links, check-sitemap, audit-html)
-Interne-link-resolver, sitemap-volledigheid, post-build HTML-audit (canonical / title /
-1x h1 / meta-description / valide JSON-LD).
+### Fase D - Observability & gates uitbreiden
+`npm run verify` en `SITE-HEALTH.md` uitbreiden met de nieuwe orphan- en llms-sync-checks zodat
+de nieuwe invarianten bewaakt blijven.
 
-### T3. Bevindingen repareren — DONE (24 dode links, 4 sitemap-gaten, 1644 HTML-violations, Article-schema op 35 pagina's)
-Dode interne links, sitemap-gaten, ontbrekend Article-schema (SEO-AUDIT P2), JSON-LD-fouten.
-
-### T4. Hygiene-ratchet — DONE (check-typography baseline-ratchet); content-gate uitbreiden = optioneel vervolg
-Typografie-baseline die niet mag stijgen; check-content aanvullen met DoD-regels.
-
-### T5. OG-image pipeline (P3) — DONE (opengraph-image + twitter-image PNG via next/og)
-1200x630 PNG's voor hub-pagina's via next/og (geen extra dependency).
-
-### T6. Site-health observability — DONE (scripts/site-health.mjs -> SITE-HEALTH.md)
-Afgeleide SITE-HEALTH.md uit scriptoutput; tracking-docs bundelen.
+---
 
 ## Voor mij: beslissingen nodig (NIET autonoom)
 - PR #3 mergen / naar productie publiceren.
