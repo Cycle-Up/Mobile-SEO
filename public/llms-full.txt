@@ -92,7 +92,7 @@ Hub: 8 keurmerken (NSF, Kiwa, ACS, CE, WRAS)
 
 ### Cluster 8: /vergelijken
 Hub: Productvergelijkingen
-Sub-pagina's: osmose-vs-filterkan, waterfilter-vs-waterontharder, kokend-water-kraan-merken, kraanwater-vs-flessenwater, omgekeerde-osmose-vergelijken, waterontharder-vergelijken
+Sub-pagina's: osmose-vs-filterkan, waterfilter-vs-waterontharder, kokend-water-kraan-merken, kraanwater-vs-flessenwater, omgekeerde-osmose-vergelijken, waterontharder-vergelijken, osmose-vs-bronwater, quooker-vs-selsiuz, quooker-vs-grohe-red, grohe-blue-vs-grohe-red, selsiuz-vs-grohe-blue, bwt-vs-grunbeck, harvey-vs-bwt, zoutloze-waterontharder-vergelijken
 
 ### Cluster 9: /onderhoud
 Hub: Filter onderhoud en gebruik
@@ -101,6 +101,11 @@ Sub-pagina's: osmose-filter-vervangen, waterontharder-zout, kokend-water-kraan-o
 ### Cluster 10: /zakelijk
 Hub: Zakelijke waterfilters
 Sub-pagina's: kantoor, horeca, industrie-proceswater, appartementen-vve, scholen-kinderopvang, sportschool-wellness, waterkoeler-vs-filter, legionella-beheersplan, waterkwaliteitsanalyse
+
+### Cluster: Merklaag (alternatieven, merk-hubs, koopgidsen)
+Merk-alternatieven (neutrale "X alternatief", funnel naar 4-in-1 osmosekraan of filterkan/osmose): quooker-alternatief, grohe-red-alternatief, grohe-blue-alternatief, selsiuz-alternatief, sodastream-alternatief, insinkerator-alternatief, boretti-alternatief, fonteq-alternatief, brita-alternatief, zerowater-alternatief, aquatru-alternatief, waterdrop-alternatief
+Merk-hubs (neutrale specs/prijs/onderhoud): /selsiuz (+ /selsiuz-prijs, /selsiuz-onderhoud), /grohe-blue (+ /grohe-blue-prijs, /grohe-blue-filter), /the-source, /purefilter-review, /filterkan
+Koopgidsen: /beste-waterfilter, /beste-waterfilter-2026, /beste-osmosefilter-2026, /beste-kokend-water-kraan-2026, /beste-filterkan-2026, /beste-waterontharder-2026
 
 ### Cluster: /waterbedrijven
 Hub + 10 Nederlandse waterbedrijven: Vitens, Evides, PWN, Dunea, Brabant Water, Waternet, WML, Oasen, WDL, Waterbedrijf Groningen
