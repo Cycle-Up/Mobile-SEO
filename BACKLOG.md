@@ -39,7 +39,7 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 - [x] C5. `/waterdrop` neutrale merk-hub/review (RO-/filtermerk, 59 vermeldingen) - distinct van /waterdrop-alternatief; funnel naar /omgekeerde-osmose + /beste-osmosefilter-2026. Klaar wanneer: TSX-standaard, in sitemap.
 - [x] C6. `/vergelijken/sodastream-vs-grohe-blue` (bruiswatertoestel vs bruisend-waterkraan) - kannibalisatie-gecheckt. Klaar wanneer: TSX-standaard, parent /vergelijken.
 - [x] C7. `/vergelijken/waterdrop-vs-aquatru` (twee RO-merken) - kannibalisatie-gecheckt. Klaar wanneer: TSX-standaard, parent /vergelijken.
-- [ ] C8. Long-tail kennisbank-ronde: 3 nieuwe MDX in witte vlekken (vooraf kannibalisatie-gecheckt tegen de 387 bestaande slugs; kandidaten o.a. waterfilter-koffiezetapparaat-ontkalken, osmose-water-aquarium-opstarten, kraanwater-laten-doorlopen-loodleiding - definitief bepalen bij uitvoering). Klaar wanneer: 3 artikelen voldoen aan de MDX-standaard; `npm run check-content` 100%; build groen.
+- [x] C8. Long-tail kennisbank-ronde: 3 nieuwe MDX in witte vlekken (vooraf kannibalisatie-gecheckt tegen de 387 bestaande slugs; kandidaten o.a. waterfilter-koffiezetapparaat-ontkalken, osmose-water-aquarium-opstarten, kraanwater-laten-doorlopen-loodleiding - definitief bepalen bij uitvoering). Klaar wanneer: 3 artikelen voldoen aan de MDX-standaard; `npm run check-content` 100%; build groen.
 
 ## Fase D - Observability & gates uitbreiden
 

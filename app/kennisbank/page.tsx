@@ -16,6 +16,27 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'kraanwater-doorspoelen-loodleiding',
+    titel: 'Kraanwater doorspoelen bij een loodleiding: zo doe je het',
+    samenvatting: 'Zo spoel je kraanwater goed door bij een mogelijke loodleiding, wanneer het wel en niet helpt, en welke oplossing lood echt aanpakt.',
+    categorie: 'Stoffen in drinkwater',
+    datum: '30 mei 2026',
+  },
+  {
+    slug: 'osmose-water-vissenvijver-koi',
+    titel: 'Osmosewater voor de koivijver: wanneer en hoe gebruik je het?',
+    samenvatting: 'Osmosewater in een koivijver om KH, GH en TDS bij te sturen: wanneer zinvol, hoe veilig mengen en remineraliseren, en welke fouten je voorkomt.',
+    categorie: 'Osmose',
+    datum: '30 mei 2026',
+  },
+  {
+    slug: 'waterfilter-ijsblokjesmachine',
+    titel: 'Waterfilter voor je ijsblokjesmachine: kalk voorkomen en helder ijs',
+    samenvatting: 'Een waterfilter voor de ijsblokjesmachine voorkomt kalkaanslag en geeft helderder ijs. Welk water gebruik je en wanneer is osmose zinvol?',
+    categorie: 'Waterfilter',
+    datum: '30 mei 2026',
+  },
+  {
     slug: 'waterfilter-strijkijzer-stoom',
     titel: 'Welk water in je strijkijzer? Kalkvrij stoomstrijken',
     samenvatting: 'Kraanwater, gedemineraliseerd of osmosewater in je stoomstrijkijzer? Zo voorkom je kalkaanslag en verleng je de levensduur.',
