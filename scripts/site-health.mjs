@@ -17,6 +17,9 @@ import { fileURLToPath, pathToFileURL } from 'url';
 import { buildRouteIndex, isValidLink, extractLinks } from './check-links.mjs';
 import { scanRepo } from './check-typography.mjs';
 import { extractSitemapPaths, computeMissing } from './check-sitemap.mjs';
+import { collectLinkedTargets, findOrphans } from './check-orphans.mjs';
+import { importantRoutes, findMissing } from './check-llms.mjs';
+import { HUB_ITEMLIST_ROUTES } from './audit-html.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -74,6 +77,21 @@ export function collectHealth(root = ROOT) {
   const bf = path.join(__dirname, 'typography-baseline.json');
   if (fs.existsSync(bf)) typoBaseline = JSON.parse(fs.readFileSync(bf, 'utf-8')).baseline;
 
+  // orphans
+  const linked = collectLinkedTargets(root);
+  const orphans = findOrphans(index.staticRoutes, linked).length;
+
+  // llms sync
+  const llms = fs.existsSync(path.join(root, 'public', 'llms.txt'))
+    ? fs.readFileSync(path.join(root, 'public', 'llms.txt'), 'utf-8') : '';
+  const llmsMissing = findMissing(importantRoutes(path.join(root, 'app')), llms).length;
+
+  // hub ItemList coverage (source-level check, no build needed)
+  const hubItemListOk = HUB_ITEMLIST_ROUTES.filter(h => {
+    const f = path.join(root, 'app', h, 'page.tsx');
+    return fs.existsSync(f) && fs.readFileSync(f, 'utf-8').includes('ItemList');
+  }).length;
+
   return {
     pageFiles,
     staticRoutes: staticRoutes.length,
@@ -83,6 +101,10 @@ export function collectHealth(root = ROOT) {
     sitemapGaps,
     typographyTotal: typo.total,
     typographyBaseline: typoBaseline,
+    orphans,
+    llmsMissing,
+    hubItemListOk,
+    hubItemListTotal: HUB_ITEMLIST_ROUTES.length,
   };
 }
 
@@ -100,11 +122,14 @@ Laatste run: ${date.toISOString().slice(0, 10)}.
 | Dynamische route-patronen | ${stats.dynamicRoutes} | - |
 | Kennisbank-artikelen (MDX) | ${stats.mdxCount} | - |
 | Dode interne links | ${stats.deadLinks} | ${ok(stats.deadLinks)} |
+| Orphan-pagina's | ${stats.orphans} | ${ok(stats.orphans)} |
 | Sitemap-gaten | ${stats.sitemapGaps} | ${ok(stats.sitemapGaps)} |
+| llms.txt ontbrekend | ${stats.llmsMissing} | ${ok(stats.llmsMissing)} |
+| Hubs met ItemList | ${stats.hubItemListOk}/${stats.hubItemListTotal} | ${stats.hubItemListOk === stats.hubItemListTotal ? 'OK' : 'LET OP'} |
 | Banned typografie | ${stats.typographyTotal} | ${stats.typographyBaseline !== null && stats.typographyTotal <= stats.typographyBaseline ? 'OK (<= baseline ' + stats.typographyBaseline + ')' : 'LET OP'} |
 
-Gates: \`npm test\`, \`npm run verify\` (check-content + typografie + links + sitemap),
-\`npm run build && npm run audit-html\` (post-build canonical/title/h1/description/JSON-LD).
+Gates: \`npm test\`, \`npm run verify\` (check-content + typografie + links + sitemap + orphans + llms),
+\`npm run build && npm run audit-html\` (post-build canonical/title/h1/description/JSON-LD/ItemList).
 `;
 }
 

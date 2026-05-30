@@ -43,8 +43,8 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 
 ## Fase D - Observability & gates uitbreiden
 
-- [ ] D1. `npm run verify` uitbreiden met `check-orphans` en `check-llms` (na de andere gates, gezamenlijke exit-code). Klaar wanneer: `npm run verify` draait beide nieuwe checks en faalt als een ervan faalt; exit 0 in de schone staat.
-- [ ] D2. `scripts/site-health.mjs` + `SITE-HEALTH.md` uitbreiden met orphan-aantal, llms-sync-status en hub-ItemList-dekking; `test/site-health.test.mjs` dekt de nieuwe metrics. Klaar wanneer: `node scripts/site-health.mjs` toont de nieuwe regels; `npm test` groen.
+- [x] D1. `npm run verify` uitbreiden met `check-orphans` en `check-llms` (na de andere gates, gezamenlijke exit-code). Klaar wanneer: `npm run verify` draait beide nieuwe checks en faalt als een ervan faalt; exit 0 in de schone staat.
+- [x] D2. `scripts/site-health.mjs` + `SITE-HEALTH.md` uitbreiden met orphan-aantal, llms-sync-status en hub-ItemList-dekking; `test/site-health.test.mjs` dekt de nieuwe metrics. Klaar wanneer: `node scripts/site-health.mjs` toont de nieuwe regels; `npm test` groen.
 
 ## Definition of Done (ronde 3)
 Backlog leeg, `npm test` groen, `npm run verify` exit 0 (incl. orphans + llms), `npm run build`

@@ -26,20 +26,20 @@ orphan-detectie over 573 routes; (c) 13 hub-overzichtspagina's missen `ItemList`
 Waterdrop (59). a11y-basis is al gezond (html lang, geen rauwe img, geen generieke linktekst) en
 BreadcrumbList staat al op alle 573 routes - die krijgen dus geen aparte brok.
 
-### Fase A - AI-discovery & interne-linkgezondheid
+### Fase A - AI-discovery & interne-linkgezondheid - DONE (check-llms + 30 routes, check-orphans + 101 orphans weggewerkt)
 Een sync-check + fix voor `llms.txt`, en een orphan-detector die pagina's zonder inkomende
 interne links vindt en wegwerkt. Hoogste SEO/crawl-waarde, volledig autonoom.
 
-### Fase B - Structured-data & AEO-diepte
+### Fase B - Structured-data & AEO-diepte - DONE (ItemList op 13 hubs + hub-ItemList-gate)
 `ItemList`-schema op de 13 hub-overzichtspagina's die het missen, plus een gate in `audit-html`
 zodat hubs het behouden. (BreadcrumbList is al 573/573; geen werk.)
 
-### Fase C - Contentuitbreiding merklaag (vervolg)
+### Fase C - Contentuitbreiding merklaag (vervolg) - DONE (SodaStream-cluster, InsinkErator, Waterdrop, 2 vergelijkingen, 3 long-tail MDX)
 Neutrale merk-hubs voor SodaStream (+ CO2/prijs sub), InsinkErator en Waterdrop; nieuwe
 merk-vs-merk vergelijkingen; een nieuwe long-tail kennisbank-ronde. Distinct van de bestaande
 `-alternatief`-pagina's; interne `CTABanner` blijft tot affiliate-bestemming bekend is.
 
-### Fase D - Observability & gates uitbreiden
+### Fase D - Observability & gates uitbreiden - DONE (verify incl. orphans+llms; SITE-HEALTH uitgebreid)
 `npm run verify` en `SITE-HEALTH.md` uitbreiden met de nieuwe orphan- en llms-sync-checks zodat
 de nieuwe invarianten bewaakt blijven.
 
