@@ -732,6 +732,9 @@ export default function KokendWaterKraanPage() {
               <Link key="/quooker-storing" href="/quooker-storing" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Quooker storing</p>
               </Link>
+              <Link key="/insinkerator" href="/insinkerator" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">InsinkErator</p>
+              </Link>
           </div>
         </section>
       </div>

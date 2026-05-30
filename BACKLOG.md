@@ -32,13 +32,13 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 
 ## Fase C - Contentuitbreiding merklaag (vervolg)
 
-- [ ] C1. `/sodastream` neutrale merk-hub (bruisend-watermerk, 246 vermeldingen) - overzicht + links naar sub-intents en /sodastream-alternatief; funnel naar /bruisend-water + 4-in-1. Klaar wanneer: TSX-standaard, in sitemap, linkt naar >=2 eigen sub-pagina's.
-- [ ] C2. `/sodastream-co2` (CO2-cilinders: ruilen, kosten, compatibiliteit) - sub van /sodastream. Klaar wanneer: TSX-standaard, parent /sodastream.
-- [ ] C3. `/sodastream-prijs` (toestellen, cilinders, kosten per liter bruiswater) - sub van /sodastream. Klaar wanneer: TSX-standaard, parent /sodastream.
-- [ ] C4. `/insinkerator` neutrale merk-hub (instant-hot-water + afvalvermaler, 123 vermeldingen) - distinct van /insinkerator-alternatief. Klaar wanneer: TSX-standaard, in sitemap.
-- [ ] C5. `/waterdrop` neutrale merk-hub/review (RO-/filtermerk, 59 vermeldingen) - distinct van /waterdrop-alternatief; funnel naar /omgekeerde-osmose + /beste-osmosefilter-2026. Klaar wanneer: TSX-standaard, in sitemap.
-- [ ] C6. `/vergelijken/sodastream-vs-grohe-blue` (bruiswatertoestel vs bruisend-waterkraan) - kannibalisatie-gecheckt. Klaar wanneer: TSX-standaard, parent /vergelijken.
-- [ ] C7. `/vergelijken/waterdrop-vs-aquatru` (twee RO-merken) - kannibalisatie-gecheckt. Klaar wanneer: TSX-standaard, parent /vergelijken.
+- [x] C1. `/sodastream` neutrale merk-hub (bruisend-watermerk, 246 vermeldingen) - overzicht + links naar sub-intents en /sodastream-alternatief; funnel naar /bruisend-water + 4-in-1. Klaar wanneer: TSX-standaard, in sitemap, linkt naar >=2 eigen sub-pagina's.
+- [x] C2. `/sodastream-co2` (CO2-cilinders: ruilen, kosten, compatibiliteit) - sub van /sodastream. Klaar wanneer: TSX-standaard, parent /sodastream.
+- [x] C3. `/sodastream-prijs` (toestellen, cilinders, kosten per liter bruiswater) - sub van /sodastream. Klaar wanneer: TSX-standaard, parent /sodastream.
+- [x] C4. `/insinkerator` neutrale merk-hub (instant-hot-water + afvalvermaler, 123 vermeldingen) - distinct van /insinkerator-alternatief. Klaar wanneer: TSX-standaard, in sitemap.
+- [x] C5. `/waterdrop` neutrale merk-hub/review (RO-/filtermerk, 59 vermeldingen) - distinct van /waterdrop-alternatief; funnel naar /omgekeerde-osmose + /beste-osmosefilter-2026. Klaar wanneer: TSX-standaard, in sitemap.
+- [x] C6. `/vergelijken/sodastream-vs-grohe-blue` (bruiswatertoestel vs bruisend-waterkraan) - kannibalisatie-gecheckt. Klaar wanneer: TSX-standaard, parent /vergelijken.
+- [x] C7. `/vergelijken/waterdrop-vs-aquatru` (twee RO-merken) - kannibalisatie-gecheckt. Klaar wanneer: TSX-standaard, parent /vergelijken.
 - [ ] C8. Long-tail kennisbank-ronde: 3 nieuwe MDX in witte vlekken (vooraf kannibalisatie-gecheckt tegen de 387 bestaande slugs; kandidaten o.a. waterfilter-koffiezetapparaat-ontkalken, osmose-water-aquarium-opstarten, kraanwater-laten-doorlopen-loodleiding - definitief bepalen bij uitvoering). Klaar wanneer: 3 artikelen voldoen aan de MDX-standaard; `npm run check-content` 100%; build groen.
 
 ## Fase D - Observability & gates uitbreiden
