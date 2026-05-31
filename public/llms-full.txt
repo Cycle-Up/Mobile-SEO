@@ -359,6 +359,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Kraanwater laten analyseren: laboratorium, kosten en aanpak](https://waterfilterplatform.nl/kennisbank/kraanwater-analyse-laboratorium) (2026-02-26)
 - [Kraanwater bruisend maken thuis: alle opties vergeleken](https://waterfilterplatform.nl/kennisbank/kraanwater-bruisend-maken) (2026-02-26)
 - [Kraanwater in het buitenland: wanneer veilig?](https://waterfilterplatform.nl/kennisbank/kraanwater-buitenland) (2026-04-08)
+- [Cold brew koffie met kraanwater: zo smaakt het beter (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-cold-brew-koffie) (2026-05-31)
 - [Kraanwater doorspoelen bij een loodleiding: zo doe je het](https://waterfilterplatform.nl/kennisbank/kraanwater-doorspoelen-loodleiding) (2026-05-30)
 - [Kraanwater hardheid meten thuis: methoden en schalen uitgelegd](https://waterfilterplatform.nl/kennisbank/kraanwater-hardheid-meten) (2026-02-26)
 - [Waterhardheid tabel Nederland: alle regio's op een rij](https://waterfilterplatform.nl/kennisbank/kraanwater-hardheid-tabel) (2025-09-16)
@@ -368,8 +369,10 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Moet je kraanwater koken? Wat het wel en niet verwijdert](https://waterfilterplatform.nl/kennisbank/kraanwater-koken) (2025-11-10)
 - [Kombucha maken met kraanwater: chloor en de SCOBY (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-kombucha-maken) (2026-05-31)
 - [Limonade zelf maken met kraanwater (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-limonade-zelf-maken) (2026-05-31)
+- [Matcha zetten met kraanwater: zacht water, betere smaak (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-matcha-thee) (2026-05-31)
 - [Kraanwater onderweg: je bidon bijvullen bij tappunten](https://waterfilterplatform.nl/kennisbank/kraanwater-onderweg-bidon) (2026-05-29)
 - [Kraanwater smaak verbeteren: oorzaken en oplossingen](https://waterfilterplatform.nl/kennisbank/kraanwater-smaak) (2025-11-11)
+- [Smoothies met kraanwater: frisser met gefilterd water (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-smoothie-blender) (2026-05-31)
 - [Kraanwater stinkt: oorzaken, oplossingen en wanneer niet te drinken](https://waterfilterplatform.nl/kennisbank/kraanwater-stinkt) (2026-05-18)
 - [Kraanwater vs. flessenwater: de eerlijke vergelijking](https://waterfilterplatform.nl/kennisbank/kraanwater-versus-flessenwater) (2026-01-15)
 - [Kraanwater vs flessenwater: eerlijk vergeleken](https://waterfilterplatform.nl/kennisbank/kraanwater-vs-flessenwater) (2026-01-19)
@@ -566,6 +569,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Waterfilter prijs: compleet kostenoverzicht per filtertype](https://waterfilterplatform.nl/kennisbank/waterfilter-prijs) (2025-12-11)
 - [Waterfilter voor reizen: veilig water in het buitenland](https://waterfilterplatform.nl/kennisbank/waterfilter-reizen-buitenland) (2026-03-04)
 - [Waterfilter voor horeca en restaurant: complete gids 2026](https://waterfilterplatform.nl/kennisbank/waterfilter-restaurant) (2026-03-02)
+- [Welk water in je rijstkoker? Kalk en smaak (2026)](https://waterfilterplatform.nl/kennisbank/waterfilter-rijstkoker) (2026-05-31)
 - [Waterfilter voor caravan en camper: de beste keuze](https://waterfilterplatform.nl/kennisbank/waterfilter-rv) (2026-03-26)
 - [RVS leidingen en waterfilters: nikkeluitloging uitgelegd](https://waterfilterplatform.nl/kennisbank/waterfilter-rvs-leidingen) (2026-03-23)
 - [Waterfilter voor sauna en spa: kalkvrij en hygiënisch](https://waterfilterplatform.nl/kennisbank/waterfilter-sauna) (2026-03-02)
@@ -669,7 +673,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zachte water voordelen: minder kalk, zuiniger en meer](https://waterfilterplatform.nl/kennisbank/zacht-water-voordelen) (2026-03-23)
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
 
-Totaal: 398 kennisbank-artikelen.
+Totaal: 402 kennisbank-artikelen.
 
 ## Index
 

@@ -19,6 +19,34 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'kraanwater-cold-brew-koffie',
+    titel: 'Cold brew koffie met kraanwater: zo smaakt het beter',
+    samenvatting: 'Hoe hardheid en chloor de smaak van cold brew bepalen en waarom gefilterd of laag-mineraal water een zachtere, zoetere koffie geeft.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'kraanwater-matcha-thee',
+    titel: 'Matcha zetten met kraanwater: zacht water, betere smaak',
+    samenvatting: 'Waarom hard water en chloor matcha bitter en vlak maken, en hoe zacht of gefilterd water een romige, zoete kop oplevert.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'kraanwater-smoothie-blender',
+    titel: 'Smoothies met kraanwater: frisser met gefilterd water',
+    samenvatting: 'Hoe chloor en kalk de smaak van smoothies dempen en wanneer gefilterd of osmosewater een frissere, zuiverdere smoothie geeft.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'waterfilter-rijstkoker',
+    titel: 'Welk water in je rijstkoker? Kalk en smaak',
+    samenvatting: 'Hoe hardheid en chloor de smaak en kalkaanslag in de rijstkoker beinvloeden en wanneer gefilterd of osmosewater loont.',
+    categorie: 'Waterfilter',
+    datum: '31 mei 2026',
+  },
+  {
     slug: 'kraanwater-waterijs-maken',
     titel: 'Waterijs maken met kraanwater: helder en lekker',
     samenvatting: 'Waarom wordt zelfgemaakt waterijs troebel en flauw? De rol van lucht, kalk en chloor, plus hoe gefilterd of osmosewater helderdere ijsjes geeft.',
