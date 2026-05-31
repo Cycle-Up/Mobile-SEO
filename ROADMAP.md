@@ -105,3 +105,4 @@ Twee long-tail kennisbank-rondes (8 MDX) + 2 vergelijkingen, elk kannibalisatie-
 - Gemeente-programmatische laag (~3.500 pagina's): wel/niet noindexen/consolideren (vereist GSC-data).
 - PureFilter-claims naar "bevestigd" (vereist bewijsdossier van fabrikant).
 - Strategische merkkeuzes: welke merken wel/niet een dieptecluster verdienen.
+- Sitemap-index via `generateSitemaps` (ronde 5 C7): uitgesteld. Vereist uitzoeken waarom Next `id` tijdens prerender niet als verwachte waarde doorgeeft; marginale winst bij <5k URL's. De huidige enkele sitemap werkt correct (4.514 URL's).
