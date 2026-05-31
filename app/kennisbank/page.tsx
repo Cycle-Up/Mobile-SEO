@@ -16,6 +16,34 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'kraanwater-ijsthee',
+    titel: 'IJsthee maken met kraanwater: helder en fris',
+    samenvatting: 'Waarom wordt zelfgemaakte ijsthee troebel en flauw? De rol van hard water en chloor, plus hoe gefilterd of osmosewater frissere ijsthee geeft.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'waterfilter-stoomoven',
+    titel: 'Welk water in je stoomoven? Kalk voorkomen',
+    samenvatting: 'Kraanwater, gedemineraliseerd of osmosewater in je stoomoven? Zo voorkom je kalkaanslag, lange ontkalkbeurten en schade aan het toestel.',
+    categorie: 'Waterfilter',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'kraanwater-limonade-zelf-maken',
+    titel: 'Limonade zelf maken met kraanwater',
+    samenvatting: 'Zelf limonade maken met kraanwater? Zo beinvloeden chloor en kalk de smaak en bruis, en wanneer gefilterd of osmosewater de moeite waard is.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'waterfilter-broodbakmachine',
+    titel: 'Welk water voor je broodbakmachine?',
+    samenvatting: 'Hoe kalk en chloor de gist en het deeg beinvloeden, welk water het luchtigste brood geeft en wanneer filteren of mengen loont.',
+    categorie: 'Waterfilter',
+    datum: '31 mei 2026',
+  },
+  {
     slug: 'kraanwater-doorspoelen-loodleiding',
     titel: 'Kraanwater doorspoelen bij een loodleiding: zo doe je het',
     samenvatting: 'Zo spoel je kraanwater goed door bij een mogelijke loodleiding, wanneer het wel en niet helpt, en welke oplossing lood echt aanpakt.',
