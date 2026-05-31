@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Kokend Water Kraan Duurzaamheid: Energie & CO2-impact',
@@ -65,8 +66,8 @@ export default function KokendWaterKraanDuurzaamheidPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/kokend-water-kraan" className="hover:underline">Kokend water kraan</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/kokend-water-kraan" className="hover:underline">Kokend water kraan</Link> &rsaquo;{' '}
           <span>Duurzaamheid</span>
         </nav>
 
@@ -139,7 +140,7 @@ export default function KokendWaterKraanDuurzaamheidPage() {
             <div className="text-green-500 font-bold text-xl">✓</div>
             <div>
               <p className="font-semibold text-[#003F5C]">Geen plastic waterflessen nodig</p>
-              <p className="text-gray-700 text-sm">Een kokend water kraan met <a href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</a> elimineert de behoefte aan flessenwater volledig.</p>
+              <p className="text-gray-700 text-sm">Een kokend water kraan met <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</Link> elimineert de behoefte aan flessenwater volledig.</p>
             </div>
           </div>
         </div>
@@ -161,19 +162,19 @@ export default function KokendWaterKraanDuurzaamheidPage() {
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische waterkwaliteit</h3>
               <p className="text-sm text-gray-600">Hoe microbiologische verontreinigingen in leidingwater worden behandeld en welke filters bacteriën en virussen verwijderen.</p>
-            </a>
-            <a href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Duurzame waterfilter kiezen op budget</h3>
               <p className="text-sm text-gray-600">Hoe u een milieuvriendelijke keuze maakt die ook financieel voordelig uitpakt op lange termijn.</p>
-            </a>
+            </Link>
           </div>
         </section>
 
         <p className="text-gray-600 text-sm mt-6">
-          Zie ook: <a href="/kokend-water-kraan/energie" className="text-[#005F8A] underline">energieverbruik kokend water kraan</a> en <a href="/kokend-water-kraan/prijs" className="text-[#005F8A] underline">prijsvergelijking</a>.
+          Zie ook: <Link href="/kokend-water-kraan/energie" className="text-[#005F8A] underline">energieverbruik kokend water kraan</Link> en <Link href="/kokend-water-kraan/prijs" className="text-[#005F8A] underline">prijsvergelijking</Link>.
         </p>
       </main>
     </>

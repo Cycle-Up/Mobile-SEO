@@ -108,8 +108,8 @@ export default function OsmoseVsBronwaterPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/osmose-water" className="hover:underline">Osmosewater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/osmose-water" className="hover:underline">Osmosewater</Link> &rsaquo;{' '}
           <span>Osmosewater vs bronwater</span>
         </nav>
 

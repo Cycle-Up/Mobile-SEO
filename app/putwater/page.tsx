@@ -114,7 +114,7 @@ export default function PutwaterPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
           <span>Putwater filteren</span>
         </nav>
 
@@ -225,7 +225,7 @@ export default function PutwaterPage() {
           </div>
           <div className="border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-1">Hoog nitraat → Omgekeerde osmose</h3>
-            <p className="text-gray-700 text-sm">Een <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerd osmosefilter</a> verwijdert 85–95% van nitraat. Eenvoudiger dan ionenwisseling en pakt tegelijk ook andere verontreinigingen aan. Zie ook onze pagina over <a href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</a>.</p>
+            <p className="text-gray-700 text-sm">Een <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerd osmosefilter</Link> verwijdert 85–95% van nitraat. Eenvoudiger dan ionenwisseling en pakt tegelijk ook andere verontreinigingen aan. Zie ook onze pagina over <Link href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</Link>.</p>
           </div>
           <div className="border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-1">IJzer en mangaan → IJzerfilter + sedimentfilter</h3>
@@ -305,7 +305,7 @@ export default function PutwaterPage() {
         </div>
 
         <p className="text-gray-700 mb-6">
-          Bekijk ook de vergelijking van <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</a> voor meer informatie over filtertypen die geschikt zijn voor putwater. Voor PFAS-risico&apos;s in jouw regio, zie onze pagina over <a href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</a>.
+          Bekijk ook de vergelijking van <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</Link> voor meer informatie over filtertypen die geschikt zijn voor putwater. Voor PFAS-risico&apos;s in jouw regio, zie onze pagina over <Link href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</Link>.
         </p>
 
         <div className="space-y-3 mb-8">
@@ -323,38 +323,38 @@ export default function PutwaterPage() {
         <section className="mt-10">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Putwater-onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/putwater/bacterien-testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/putwater/bacterien-testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Bacterien testen</h3>
               <p className="text-sm text-gray-600">E. coli, coliformen en enterokokken: RIVM-procedure, labkosten en testfrequentie.</p>
-            </a>
-            <a href="/putwater/nitraat" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/putwater/nitraat" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat in putwater</h3>
               <p className="text-sm text-gray-600">Landbouwgebieden, EU-norm 50 mg/L en welke filters nitraat verwijderen.</p>
-            </a>
-            <a href="/putwater/ijzer-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/putwater/ijzer-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">IJzer verwijderen</h3>
               <p className="text-sm text-gray-600">Roestbruine vlekken, oxidatiefilter en kosten installatie ijzerverwijdering.</p>
-            </a>
-            <a href="/putwater/mangaan-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/putwater/mangaan-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Mangaan verwijderen</h3>
               <p className="text-sm text-gray-600">Zwarte aanslag in leidingen en hoe mangaanfilters werken.</p>
-            </a>
-            <a href="/putwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/putwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen</h3>
               <p className="text-sm text-gray-600">Arseen, lood en koper uit geologie of corroderende leidingen.</p>
-            </a>
-            <a href="/putwater/uv-desinfectie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/putwater/uv-desinfectie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">UV-desinfectie</h3>
               <p className="text-sm text-gray-600">UV-C lampen, dosering en pre-filtratie voor microbiologische veiligheid.</p>
-            </a>
-            <a href="/putwater/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/putwater/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
               <p className="text-sm text-gray-600">RO als compleet 5-traps filtersysteem voor putwater.</p>
-            </a>
-            <a href="/putwater/kosten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/putwater/kosten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Kosten en budget</h3>
               <p className="text-sm text-gray-600">Van basis tot compleet systeem en jaarlijkse onderhoudskosten.</p>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -383,7 +383,7 @@ export default function PutwaterPage() {
         </section>
 
         <p className="text-gray-600 text-sm mt-6">
-          Meer lezen: <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitgelegd</a>, <a href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</a> en <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</a>.
+          Meer lezen: <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitgelegd</Link>, <Link href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</Link> en <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</Link>.
         </p>
       </main>
     </>

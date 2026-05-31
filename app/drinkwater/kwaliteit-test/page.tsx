@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Drinkwaterkwaliteit Testen: Methoden & Interpretatie',
@@ -65,8 +66,8 @@ export default function DrinkwaterKwaliteitTestPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/drinkwater" className="hover:underline">Drinkwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/drinkwater" className="hover:underline">Drinkwater</Link> &rsaquo;{' '}
           <span>Kwaliteitstest</span>
         </nav>
 
@@ -172,7 +173,7 @@ export default function DrinkwaterKwaliteitTestPage() {
           <li><strong>Bacteriën:</strong> UV-filter + osmosefilter combinatie</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Een <a href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</a> is de meest veelzijdige oplossing: het pakt de meeste verontreinigingen tegelijk aan. Zie ook: <a href="/waterfilter/gezondheid" className="text-[#005F8A] underline">waterfilter en gezondheid</a>.
+          Een <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</Link> is de meest veelzijdige oplossing: het pakt de meeste verontreinigingen tegelijk aan. Zie ook: <Link href="/waterfilter/gezondheid" className="text-[#005F8A] underline">waterfilter en gezondheid</Link>.
         </p>
 
         <div className="space-y-4 mb-8">
@@ -190,22 +191,22 @@ export default function DrinkwaterKwaliteitTestPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/waterkwaliteit/test" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/waterkwaliteit/test" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterkwaliteit testen</h3>
             <p className="text-sm text-gray-600">Hoe u uw drinkwaterkwaliteit thuis kunt testen.</p>
-          </a>
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
             <p className="text-sm text-gray-600">Wettelijke normen voor drinkwaterkwaliteit in Nederland.</p>
-          </a>
-          <a href="/pfas-waterfilter/testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/pfas-waterfilter/testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">PFAS testen</h3>
             <p className="text-sm text-gray-600">Hoe u uw water kunt testen op PFAS en wat u kunt doen.</p>
-          </a>
-          <a href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</h3>
             <p className="text-sm text-gray-600">Overzicht van alle stoffen die in drinkwater kunnen voorkomen.</p>
-          </a>
+          </Link>
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Gezondheidsvoordelen osmose water: wat zegt het onderzoek?',
@@ -112,8 +113,8 @@ export default function OsmoseGezondheidsvoordelen() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/osmose-water" className="hover:underline">Osmose water</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/osmose-water" className="hover:underline">Osmose water</Link> &rsaquo;{' '}
           <span>Gezondheidsvoordelen</span>
         </nav>
 
@@ -165,7 +166,7 @@ export default function OsmoseGezondheidsvoordelen() {
             <div className="border border-gray-200 rounded-xl p-4">
               <h3 className="font-semibold text-[#003F5C] mb-2">Chloor, chloramine en THM&rsquo;s — nagenoeg volledig</h3>
               <p className="text-gray-700 text-sm">
-                Osmosefilters verwijderen chloor en chloramine via het koolstofvoorfilter, en trihalomethanen (desinfectiebijproducten) via het RO-membraan. Dit verbetert niet alleen de smaak maar vermindert ook blootstelling aan THM&rsquo;s die bij hoge concentraties geassocieerd zijn met blaaskanker. Zie ook onze pagina over <a href="/waterfilter/chlooramine" className="text-[#005F8A] underline">chlooramine verwijderen</a>.
+                Osmosefilters verwijderen chloor en chloramine via het koolstofvoorfilter, en trihalomethanen (desinfectiebijproducten) via het RO-membraan. Dit verbetert niet alleen de smaak maar vermindert ook blootstelling aan THM&rsquo;s die bij hoge concentraties geassocieerd zijn met blaaskanker. Zie ook onze pagina over <Link href="/waterfilter/chlooramine" className="text-[#005F8A] underline">chlooramine verwijderen</Link>.
               </p>
             </div>
             <div className="border border-gray-200 rounded-xl p-4">
@@ -314,28 +315,28 @@ export default function OsmoseGezondheidsvoordelen() {
           </table>
         </div>
         <p className="text-gray-700 mb-6">
-          Voor meer informatie over de basis van osmosewater en wat er in zit, lees ons artikel over <a href="/osmose-water/gezond" className="text-[#005F8A] underline">is osmosewater gezond</a>.
+          Voor meer informatie over de basis van osmosewater en wat er in zit, lees ons artikel over <Link href="/osmose-water/gezond" className="text-[#005F8A] underline">is osmosewater gezond</Link>.
         </p>
 
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en gezondheid</h3>
             <p className="text-sm text-gray-600">Wat zegt de wetenschap over de gezondheidseffecten van osmosewater drinken?</p>
-          </a>
-          <a href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
             <p className="text-sm text-gray-600">Welke mineralen zitten in osmosewater en wat is de invloed op uw gezondheid?</p>
-          </a>
-          <a href="/osmose-water/ph" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/osmose-water/ph" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">pH van osmosewater</h3>
             <p className="text-sm text-gray-600">Wat is de pH van osmosewater en wat betekent dit voor uw gezondheid?</p>
-          </a>
-          <a href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater overzicht</h3>
             <p className="text-sm text-gray-600">Alles over osmosewater: toepassingen, gezondheid en kwaliteit.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -355,9 +356,9 @@ export default function OsmoseGezondheidsvoordelen() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/osmose-water/gezond" className="text-[#005F8A] underline">is osmosewater gezond? feiten en fabels</a>{' '}
+          <Link href="/osmose-water/gezond" className="text-[#005F8A] underline">is osmosewater gezond? feiten en fabels</Link>{' '}
           en{' '}
-          <a href="/waterfilter/zwaar-metalen" className="text-[#005F8A] underline">zware metalen in water filteren</a>.
+          <Link href="/waterfilter/zwaar-metalen" className="text-[#005F8A] underline">zware metalen in water filteren</Link>.
         </p>
       </main>
     </>

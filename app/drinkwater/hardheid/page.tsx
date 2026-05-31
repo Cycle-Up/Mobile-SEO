@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Harde water: wat is waterhardheid en wat doet het?',
@@ -112,8 +113,8 @@ export default function DrinkwaterHardheidPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/drinkwater" className="hover:underline">Drinkwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/drinkwater" className="hover:underline">Drinkwater</Link> &rsaquo;{' '}
           <span>Waterhardheid</span>
         </nav>
 
@@ -234,7 +235,7 @@ export default function DrinkwaterHardheidPage() {
 
         <p className="text-gray-700 mb-6">
           Voor de exacte hardheid in uw gemeente, zie{' '}
-          <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</a> — uw drinkwaterbedrijf publiceert altijd de exacte waarde voor uw postcodegebied.
+          <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</Link> — uw drinkwaterbedrijf publiceert altijd de exacte waarde voor uw postcodegebied.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -309,7 +310,7 @@ export default function DrinkwaterHardheidPage() {
             </div>
             <p className="text-gray-700 text-sm mb-2">
               Een ionenwisselaar vervangt calcium- en magnesiumionen door natriumionen via hars. Het water wordt volledig onthard (typisch 0–4°dH). Vereist periodieke regeneratie met zout. Ideaal voor hele-huis toepassing: beschermt boiler, CV-ketel, wasmachine en vaatwasser. Meer informatie over waterontharders op onze{' '}
-              <a href="/waterontharder" className="text-[#005F8A] underline">waterontharder vergelijking</a>.
+              <Link href="/waterontharder" className="text-[#005F8A] underline">waterontharder vergelijking</Link>.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-gray-500">
               <span>Hardheid: ✓ 90–100% verwijdering</span>
@@ -366,29 +367,29 @@ export default function DrinkwaterHardheidPage() {
 
         <p className="text-gray-700 mb-6">
           Meer details over ontharting vindt u op onze pagina&apos;s over{' '}
-          <a href="/waterontharder" className="text-[#005F8A] underline">waterontharders vergelijken</a> en{' '}
-          <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</a>.
+          <Link href="/waterontharder" className="text-[#005F8A] underline">waterontharders vergelijken</Link> en{' '}
+          <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</Link>.
         </p>
 
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/waterhardheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/waterhardheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheid per regio</h3>
             <p className="text-sm text-gray-600">De waterhardheid in uw gemeente en wat dat praktisch betekent.</p>
-          </a>
-          <a href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
             <p className="text-sm text-gray-600">Hoe kalk en mineralen de hardheid van drinkwater bepalen.</p>
-          </a>
-          <a href="/waterontharder/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterontharder/werking" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Werking waterontharder</h3>
             <p className="text-sm text-gray-600">Hoe een waterontharder kalk uit leidingwater verwijdert.</p>
-          </a>
-          <a href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp hard water</h3>
             <p className="text-sm text-gray-600">Welke oplossing past het best bij uw situatie met hard water?</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -408,9 +409,9 @@ export default function DrinkwaterHardheidPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</a>,{' '}
-          <a href="/waterontharder" className="text-[#005F8A] underline">waterontharder vergelijken</a> en{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</a>.
+          <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</Link>,{' '}
+          <Link href="/waterontharder" className="text-[#005F8A] underline">waterontharder vergelijken</Link> en{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</Link>.
         </p>
       </main>
     </>

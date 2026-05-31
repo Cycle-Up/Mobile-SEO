@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Medicijnresten in drinkwater: risico\'s en filtratie (2026)',
@@ -113,8 +114,8 @@ export default function MedicijnrestenDrinkwaterPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/drinkwater" className="hover:underline">Drinkwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/drinkwater" className="hover:underline">Drinkwater</Link> &rsaquo;{' '}
           <span>Medicijnresten</span>
         </nav>
 
@@ -130,22 +131,22 @@ export default function MedicijnrestenDrinkwaterPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/hormonen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/hormonen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Hormonen in drinkwater</h3>
             <p className="text-sm text-gray-600">Overzicht van hormoonverstorende stoffen in drinkwater.</p>
-          </a>
-          <a href="/drinkwaternormen/medicijnresten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen/medicijnresten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Normen voor medicijnresten</h3>
             <p className="text-sm text-gray-600">Wat zegt de wet over medicijnresten in drinkwater?</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
             <p className="text-sm text-gray-600">Hoe omgekeerde osmose farmaceutische residuen verwijdert.</p>
-          </a>
-          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
             <p className="text-sm text-gray-600">Werking en toepassingen van actief kool als filtertechniek.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -292,7 +293,7 @@ export default function MedicijnrestenDrinkwaterPage() {
           <li><strong>Bronbescherming:</strong> De richtlijn legt meer nadruk op het voorkomen van vervuiling bij de bron (RWZI-verbeteringen, medicijninzameling) in plaats van enkel zuivering aan het einde.</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Lees meer op onze pagina over <a href="/drinkwater/kwaliteit" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a> voor een overzicht van alle relevante normen.
+          Lees meer op onze pagina over <Link href="/drinkwater/kwaliteit" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</Link> voor een overzicht van alle relevante normen.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -364,7 +365,7 @@ export default function MedicijnrestenDrinkwaterPage() {
           <li><strong>Meerdere filterstappen:</strong> Moderne osmosesystemen combineren RO-membraan met actief koolfilters voor een dubbele barrière.</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Bekijk ons uitgebreide overzicht op de pagina <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose werking en selectie</a> voor technische details.
+          Bekijk ons uitgebreide overzicht op de pagina <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose werking en selectie</Link> voor technische details.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -421,13 +422,13 @@ export default function MedicijnrestenDrinkwaterPage() {
           <p className="text-gray-700 mb-4">
             De PureAqua 4-in-1 osmose + kokend water kraan filtert 90–99% van farmaceutische residuen, naast kalk, PFAS, nitraat en zware metalen. De meest complete drinkwaterbescherming voor thuis.
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk osmosefilters →
-          </a>
+          </Link>
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a>, <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en <a href="/leidingwater/pfas" className="text-[#005F8A] underline">PFAS in drinkwater</a>.
+          Lees ook: <Link href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</Link>, <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link> en <Link href="/leidingwater/pfas" className="text-[#005F8A] underline">PFAS in drinkwater</Link>.
         </p>
       </main>
     </>

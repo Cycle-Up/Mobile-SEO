@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Drinkwater tijdens Zwangerschap: Wat is Veilig?',
@@ -65,8 +66,8 @@ export default function DrinkwaterZwangerschapPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/drinkwater" className="hover:underline">Drinkwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/drinkwater" className="hover:underline">Drinkwater</Link> &rsaquo;{' '}
           <span>Zwangerschap</span>
         </nav>
 
@@ -80,22 +81,22 @@ export default function DrinkwaterZwangerschapPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/babywater/osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/babywater/osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater voor baby</h3>
             <p className="text-sm text-gray-600">Is osmosewater geschikt voor babyvoeding tijdens en na de zwangerschap?</p>
-          </a>
-          <a href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en gezondheid</h3>
             <p className="text-sm text-gray-600">De gezondheidseffecten van gefilterd osmosewater.</p>
-          </a>
-          <a href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in drinkwater</h3>
             <p className="text-sm text-gray-600">Risicos van PFAS voor zwangere vrouwen en hoe u ze kunt verminderen.</p>
-          </a>
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
             <p className="text-sm text-gray-600">Wettelijke normen voor drinkwaterkwaliteit in Nederland.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -143,7 +144,7 @@ export default function DrinkwaterZwangerschapPage() {
           Osmosefilter als extra zekerheid
         </h2>
         <p className="text-gray-700 mb-4">
-          Een <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde-osmosefilter</a> is de meest uitgebreide waterzuivering voor thuisgebruik. Het RO-membraan verwijdert:
+          Een <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde-osmosefilter</Link> is de meest uitgebreide waterzuivering voor thuisgebruik. Het RO-membraan verwijdert:
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-1">
           <li>Lood: 95–99%</li>
@@ -161,9 +162,9 @@ export default function DrinkwaterZwangerschapPage() {
           <p className="text-gray-700 mb-4">
             Een osmosefilter geeft maximale bescherming voor jou en je ongeboren kind — verwijdert lood, PFAS, nitraat en chloor in één systeem.
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk osmosefilters →
-          </a>
+          </Link>
         </div>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -181,7 +182,7 @@ export default function DrinkwaterZwangerschapPage() {
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/kennisbank/drinkwater-zwangerschap" className="text-[#005F8A] underline">Drinkwater tijdens zwangerschap: volledige gids</a> en <a href="/kennisbank/pfas-drinkwater" className="text-[#005F8A] underline">PFAS in drinkwater: risico&rsquo;s en filtering</a>.
+          Lees ook: <Link href="/kennisbank/drinkwater-zwangerschap" className="text-[#005F8A] underline">Drinkwater tijdens zwangerschap: volledige gids</Link> en <Link href="/kennisbank/pfas-drinkwater" className="text-[#005F8A] underline">PFAS in drinkwater: risico&rsquo;s en filtering</Link>.
         </p>
       </main>
     </>

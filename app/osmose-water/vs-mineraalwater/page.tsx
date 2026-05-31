@@ -116,8 +116,8 @@ export default function OsmoseVsMineraaalwaterPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/osmose-water" className="hover:underline">Osmosewater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/osmose-water" className="hover:underline">Osmosewater</Link> &rsaquo;{' '}
           <span>Osmosewater vs mineraalwater</span>
         </nav>
 
@@ -316,7 +316,7 @@ export default function OsmoseVsMineraaalwaterPage() {
           <Link href="/osmose-water" className="text-[#005F8A] underline">osmosewater uitleg</Link>,{' '}
           <Link href="/osmose-water/vs-bronwater" className="text-[#005F8A] underline">osmose vs bronwater</Link>,{' '}
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose filter</Link> en{' '}
-          <a href="/osmose-water/koffie" className="text-[#005F8A] underline">osmosewater voor koffie</a>.
+          <Link href="/osmose-water/koffie" className="text-[#005F8A] underline">osmosewater voor koffie</Link>.
         </p>
       </main>
     </>

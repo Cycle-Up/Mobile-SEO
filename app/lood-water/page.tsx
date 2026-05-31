@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Lood in kraanwater: oorzaken, risico\'s en hoe te verwijderen',
@@ -113,7 +114,7 @@ export default function LoodWaterPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
           <span>Lood in kraanwater</span>
         </nav>
 
@@ -254,13 +255,13 @@ export default function LoodWaterPage() {
         <ol className="list-decimal pl-6 text-gray-700 mb-6 space-y-3">
           <li><strong>Laten lopen:</strong> Laat de koude kraan minimaal 2 minuten doorstromen na stilstand van meer dan 1 uur. Direct drinkbaar na gebruik of na lange afwezigheid. Dit is een tijdelijke maatregel, geen definitieve oplossing.</li>
           <li><strong>Watertest:</strong> Laat het water testen op lood door een gecertificeerd laboratorium (€30–80). Dit geeft zekerheid over de daadwerkelijke loodconcentratie in jouw situatie.</li>
-          <li><strong>Filterkeuze:</strong> Bij loodwaarden boven 5 µg/L of bij aanwezigheid van kinderen: installeer een <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerd osmosefilter</a> (meest betrouwbaar) of een NSF/ANSI 53-gecertificeerd koolstofblokfilter op de keukenkraan.</li>
+          <li><strong>Filterkeuze:</strong> Bij loodwaarden boven 5 µg/L of bij aanwezigheid van kinderen: installeer een <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerd osmosefilter</Link> (meest betrouwbaar) of een NSF/ANSI 53-gecertificeerd koolstofblokfilter op de keukenkraan.</li>
           <li><strong>Leidinginspectie:</strong> Laat een loodvrije leidinginspectie uitvoeren door een erkend installateur. Bij bevestigde loden leidingen: vervanging aanvragen.</li>
           <li><strong>Leidingvervanging:</strong> De structurele oplossing is vervanging van loden binnenhuisleidingen. Vraag subsidie aan bij de gemeente of Nationaal Warmtefonds (in sommige gemeenten beschikbaar als onderdeel van renovatieprogramma&apos;s).</li>
         </ol>
 
         <p className="text-gray-700 mb-6">
-          Naast lood zijn er meer verontreinigingen die een risico kunnen vormen in kraanwater. Lees onze pagina&apos;s over <a href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</a> en <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</a> voor een compleet overzicht. Gebruik je putwater? Zie dan ook <a href="/putwater" className="text-[#005F8A] underline">putwater filteren</a>.
+          Naast lood zijn er meer verontreinigingen die een risico kunnen vormen in kraanwater. Lees onze pagina&apos;s over <Link href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</Link> en <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</Link> voor een compleet overzicht. Gebruik je putwater? Zie dan ook <Link href="/putwater" className="text-[#005F8A] underline">putwater filteren</Link>.
         </p>
 
         <div className="space-y-3 mb-8">
@@ -278,28 +279,28 @@ export default function LoodWaterPage() {
         <CTABanner context="osmose" />
 
         <p className="text-gray-600 text-sm mt-6">
-          Meer lezen: <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitgelegd</a>, <a href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</a> en <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid in jouw gemeente</a>.
+          Meer lezen: <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitgelegd</Link>, <Link href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</Link> en <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid in jouw gemeente</Link>.
         </p>
 
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Zware metalen in drinkwater</p>
               <p className="text-sm text-gray-500">Overzicht van zware metalen in leidingwater</p>
-            </a>
-            <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Omgekeerde osmose filtertechniek</p>
               <p className="text-sm text-gray-500">Hoe werkt omgekeerde osmose filtratie?</p>
-            </a>
-            <a href="/drinkwaternormen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Drinkwaternormen</p>
               <p className="text-sm text-gray-500">Wettelijke normen voor drinkwater in Nederland</p>
-            </a>
-            <a href="/keuzehulp/pfas-lood" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/keuzehulp/pfas-lood" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Keuzehulp PFAS en lood</p>
               <p className="text-sm text-gray-500">Welk filter past bij jouw situatie?</p>
-            </a>
+            </Link>
           </div>
         </section>
       </main>

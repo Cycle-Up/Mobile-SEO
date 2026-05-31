@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'PFAS in drinkwater: risico\'s, normen en hoe te filteren (2026)',
@@ -113,7 +114,7 @@ export default function PfasWaterPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
           <span>PFAS in drinkwater</span>
         </nav>
 
@@ -249,13 +250,13 @@ export default function PfasWaterPage() {
           Voor de meeste Nederlanders is het drinkwater veilig wat PFAS betreft. Neem actie als:
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-          <li>Jij woont in een risicogebied (zie lijst hierboven) en gebruik je een <a href="/putwater" className="text-[#005F8A] underline">privéput of bronwater</a></li>
+          <li>Jij woont in een risicogebied (zie lijst hierboven) en gebruik je een <Link href="/putwater" className="text-[#005F8A] underline">privéput of bronwater</Link></li>
           <li>Het jaarverslag van jouw drinkwaterbedrijf verhoogde PFAS-waarden meldt</li>
           <li>Er zijn kleine kinderen of zwangere vrouwen in het huishouden (voorzorgsprincipe)</li>
           <li>Je wil zekerheid onafhankelijk van waterbedrijf-rapportages</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Bekijk ook de uitgebreide informatie over <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</a> om de beste keuze voor jouw situatie te maken. Een <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerd osmosefilter</a> pakt niet alleen PFAS aan, maar verwijdert tegelijk ook lood, nitraat en andere verontreinigingen.
+          Bekijk ook de uitgebreide informatie over <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</Link> om de beste keuze voor jouw situatie te maken. Een <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerd osmosefilter</Link> pakt niet alleen PFAS aan, maar verwijdert tegelijk ook lood, nitraat en andere verontreinigingen.
         </p>
 
         <div className="space-y-3 mb-8">
@@ -273,28 +274,28 @@ export default function PfasWaterPage() {
         <CTABanner context="osmose" />
 
         <p className="text-gray-600 text-sm mt-6">
-          Meer lezen: <a href="/lood-water" className="text-[#005F8A] underline">lood in kraanwater</a>, <a href="/putwater" className="text-[#005F8A] underline">putwater filteren</a> en <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a>.
+          Meer lezen: <Link href="/lood-water" className="text-[#005F8A] underline">lood in kraanwater</Link>, <Link href="/putwater" className="text-[#005F8A] underline">putwater filteren</Link> en <Link href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</Link>.
         </p>
 
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/pfas-waterfilter" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/pfas-waterfilter" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 hover:text-[#005F8A]">PFAS waterfilter</p>
               <p className="text-sm text-gray-500">Welk filter verwijdert PFAS effectief?</p>
-            </a>
-            <a href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 hover:text-[#005F8A]">PFAS overzicht stoffen</p>
               <p className="text-sm text-gray-500">Alle PFAS-verbindingen in drinkwater</p>
-            </a>
-            <a href="/drinkwaternormen/pfas" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/drinkwaternormen/pfas" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 hover:text-[#005F8A]">PFAS drinkwaternormen</p>
               <p className="text-sm text-gray-500">Wettelijke normen voor PFAS in drinkwater</p>
-            </a>
-            <a href="/keuzehulp/pfas-lood" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/keuzehulp/pfas-lood" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Keuzehulp PFAS en lood</p>
               <p className="text-sm text-gray-500">Welk filter past bij jouw situatie?</p>
-            </a>
+            </Link>
           </div>
         </section>
       </main>

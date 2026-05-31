@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Osmosewater Remineralisatie: Filter, Druppels & Methoden',
@@ -65,8 +66,8 @@ export default function OsmoseRemineralisatiePage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/omgekeerde-osmose" className="hover:underline">Omgekeerde osmose</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/omgekeerde-osmose" className="hover:underline">Omgekeerde osmose</Link> &rsaquo;{' '}
           <span>Remineralisatie</span>
         </nav>
 
@@ -167,29 +168,29 @@ export default function OsmoseRemineralisatiePage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
             <p className="text-sm text-gray-600">Welke mineralen ontbreken in osmosewater en hoe voegt u ze terug toe?</p>
-          </a>
-          <a href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Gezondheid osmosewater</h3>
             <p className="text-sm text-gray-600">Is geremineraliseerd osmosewater gezond om te drinken?</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechniek: omgekeerde osmose</h3>
             <p className="text-sm text-gray-600">Hoe werkt de omgekeerde osmose filtertechniek precies?</p>
-          </a>
-          <a href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
             <p className="text-sm text-gray-600">Terug naar het hoofdoverzicht van omgekeerde osmose.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">
-          Meer: <a href="/osmose-water/smaak-verbetering" className="text-[#005F8A] underline">smaak verbetering osmosewater</a> en <a href="/osmose-water/ph" className="text-[#005F8A] underline">pH van osmosewater</a>.
+          Meer: <Link href="/osmose-water/smaak-verbetering" className="text-[#005F8A] underline">smaak verbetering osmosewater</Link> en <Link href="/osmose-water/ph" className="text-[#005F8A] underline">pH van osmosewater</Link>.
         </p>
       </main>
     </>

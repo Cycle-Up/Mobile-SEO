@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Lood in Drinkwater: Risico, Testen & Verwijderen',
@@ -65,8 +66,8 @@ export default function DrinkwaterLoodPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/drinkwater" className="hover:underline">Drinkwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/drinkwater" className="hover:underline">Drinkwater</Link> &rsaquo;{' '}
           <span>Lood</span>
         </nav>
 
@@ -154,29 +155,29 @@ export default function DrinkwaterLoodPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
             <p className="text-sm text-gray-600">Overzicht van zware metalen die in drinkwater kunnen voorkomen.</p>
-          </a>
-          <a href="/drinkwaternormen/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Loodnormen drinkwater</h3>
             <p className="text-sm text-gray-600">Wettelijke normen voor lood in drinkwater en wat ze betekenen.</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
             <p className="text-sm text-gray-600">Hoe omgekeerde osmose lood en andere verontreinigingen verwijdert.</p>
-          </a>
-          <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor lood</h3>
             <p className="text-sm text-gray-600">Welke waterfilters lood effectief uit drinkwater verwijderen.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">
-          Zie ook: <a href="/drinkwater/kwaliteit-test" className="text-[#005F8A] underline">drinkwater testen</a> en <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose werking</a>.
+          Zie ook: <Link href="/drinkwater/kwaliteit-test" className="text-[#005F8A] underline">drinkwater testen</Link> en <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose werking</Link>.
         </p>
       </main>
     </>
