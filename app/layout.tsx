@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Geist } from 'next/font/google';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
@@ -25,6 +25,12 @@ export const metadata: Metadata = {
     // twitter:image volgt automatisch uit app/opengraph-image.tsx (PNG).
   },
   robots: { index: true, follow: true },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#005F8A',
 };
 
 const dropdownNav = [
@@ -95,6 +101,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl" className={`${geist.variable}`}>
       <body className="antialiased min-h-full flex flex-col">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-2 focus:left-2 focus:bg-white focus:text-[#005F8A] focus:px-4 focus:py-2 focus:rounded-lg focus:shadow"
+        >
+          Direct naar inhoud
+        </a>
         <SchemaOrg type="Organization" />
         <SchemaOrg type="WebSite" />
         <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
@@ -158,7 +170,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </nav>
         </header>
 
-        <main className="flex-1">{children}</main>
+        <main id="main" className="flex-1">{children}</main>
 
         <footer className="bg-[#003F5C] text-white py-10 mt-16">
           <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
