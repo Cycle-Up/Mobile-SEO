@@ -30,9 +30,9 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 
 ## Fase B - AI-Search / AEO-integriteit
 
-- [ ] B1. `scripts/generate-llms-full.mjs` bouwt `llms-full.txt` uit cluster-routes + kennisbank-frontmatter (titel/description/url/datum) onder een vaste curated preamble - klaar wanneer: script draait deterministisch en produceert een bestand met alle clusterroutes + alle kennisbankslugs.
-- [ ] B2. `llms-full.txt` (her)genereren met B1 - klaar wanneer: bestand bevat ronde-4 + ronde-5 pagina's (grep op `bwt-vs-brita`, `kraanwater-ijsthee` raak); typografie-ratchet groen.
-- [ ] B3. Gate `scripts/check-llms-full.mjs` + test: faalt als `llms-full.txt` niet in sync is met content (ontbrekende kennisbankslug of kernroute); aan `npm run verify` toevoegen - klaar wanneer: gate exit 0 na B2, exit 1 bij een bewust ontbrekende entry (fixture); `npm test` groen.
+- [x] B1. `scripts/generate-llms-full.mjs` bouwt `llms-full.txt` uit cluster-routes + kennisbank-frontmatter (titel/description/url/datum) onder een vaste curated preamble - klaar wanneer: script draait deterministisch en produceert een bestand met alle clusterroutes + alle kennisbankslugs.
+- [x] B2. `llms-full.txt` (her)genereren met B1 - klaar wanneer: bestand bevat ronde-4 + ronde-5 pagina's (grep op `bwt-vs-brita`, `kraanwater-ijsthee` raak); typografie-ratchet groen.
+- [x] B3. Gate `scripts/check-llms-full.mjs` + test: faalt als `llms-full.txt` niet in sync is met content (ontbrekende kennisbankslug of kernroute); aan `npm run verify` toevoegen - klaar wanneer: gate exit 0 na B2, exit 1 bij een bewust ontbrekende entry (fixture); `npm test` groen.
 
 ## Fase C - Techniek, UX & tests
 
