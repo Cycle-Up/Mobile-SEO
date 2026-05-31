@@ -7,7 +7,10 @@ export const metadata: Metadata = {
   title: 'Kennisbank — waterfilters, osmose en waterkwaliteit',
   description:
     'Diepgaande artikelen over omgekeerde osmose, waterhardheid, kokend water kranen en waterkwaliteit in Nederland.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/kennisbank' },
+  alternates: {
+    canonical: 'https://waterfilterplatform.nl/kennisbank',
+    types: { 'application/rss+xml': 'https://waterfilterplatform.nl/kennisbank/feed.xml' },
+  },
   openGraph: {
     title: 'Kennisbank — waterfilters, osmose en waterkwaliteit',
     description: 'Diepgaande artikelen over omgekeerde osmose, waterhardheid, kokend water kranen en waterkwaliteit in Nederland.',
@@ -2741,6 +2744,15 @@ export default function KennisbankPage() {
           <p className="text-gray-600 text-lg">
             Diepgaande artikelen over waterfilters, waterkwaliteit en alles wat je wilt weten over osmose water en kokend water kranen.
           </p>
+          <a
+            href="/kennisbank/feed.xml"
+            className="inline-flex items-center gap-1.5 text-sm text-[#005F8A] hover:underline mt-4"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4" aria-hidden="true">
+              <path d="M4 11a5 5 0 0 1 5 5H7a3 3 0 0 0-3-3v-2zm0-4a9 9 0 0 1 9 9h-2a7 7 0 0 0-7-7V7zm1.5 7.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+            </svg>
+            RSS-feed van de kennisbank
+          </a>
         </div>
       </section>
 
