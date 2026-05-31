@@ -48,7 +48,7 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 
 - [x] D1. Long-tail kennisbank ronde C: 4 nieuwe MDX in geverifieerde witruimte (definitief + kannibalisatie-check bij uitvoering) - klaar wanneer: MDX-standaard, `check-content` 100%, build groen.
 - [x] D2. Long-tail kennisbank ronde D: 4 nieuwe MDX - klaar wanneer: idem.
-- [ ] D3. 2 nieuwe merk-vs-merk of type-vs-type vergelijkingen in echte witruimte - klaar wanneer: TSX-standaard, in sitemap + llms.txt, 0 orphans, `audit-html` 0, build groen.
+- [x] D3. 2 nieuwe merk-vs-merk of type-vs-type vergelijkingen in echte witruimte - klaar wanneer: TSX-standaard, in sitemap + llms.txt, 0 orphans, `audit-html` 0, build groen.
 
 ## Afsluiting
 

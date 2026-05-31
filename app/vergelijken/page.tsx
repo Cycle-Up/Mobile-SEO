@@ -186,6 +186,12 @@ export default function VergelijkenPage() {
               <Link key="/vergelijken/boretti-vs-quooker" href="/vergelijken/boretti-vs-quooker" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Boretti vs Quooker</p>
               </Link>
+              <Link key="/vergelijken/quooker-vs-fonteq" href="/vergelijken/quooker-vs-fonteq" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Quooker vs Fonteq</p>
+              </Link>
+              <Link key="/vergelijken/waterontharder-vs-magneet" href="/vergelijken/waterontharder-vs-magneet" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder vs magneet</p>
+              </Link>
           </div>
         </section>
       </div>
