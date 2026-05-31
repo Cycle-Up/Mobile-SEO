@@ -45,7 +45,7 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 
 - [x] K3. Interne `<a href="/...">` -> `<Link>` ombouwen, batch 1 (35 van de 70 bestanden; import toevoegen waar nodig, className/attrs behouden, externe rel="sponsored/nofollow"-links ongemoeid) - klaar wanneer: build groen, audit-html 0 violations, 0 orphans, geen `no-html-link-for-pages` in die bestanden.
 - [x] K4. `<a>` -> `<Link>` batch 2 (rest) - klaar wanneer: `npx eslint .` repo-breed 0x `no-html-link-for-pages`; build groen, 0 orphans.
-- [ ] K5. `lint` als gate aan `npm run verify` toevoegen - klaar wanneer: `npm run verify` draait eslint en is exit 0 in de schone staat; `npm test` groen.
+- [x] K5. `lint` als gate aan `npm run verify` toevoegen - klaar wanneer: `npm run verify` draait eslint en is exit 0 in de schone staat; `npm test` groen.
 
 ## Fase T - SEO-techniek (secundair)
 

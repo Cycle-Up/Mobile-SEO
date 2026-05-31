@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "node scripts/check-content.mjs && next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint . --max-warnings=0",
     "check-content": "node scripts/check-content.mjs",
     "test": "node --test",
-    "verify": "node scripts/check-content.mjs && node scripts/check-typography.mjs && node scripts/check-links.mjs && node scripts/check-sitemap.mjs && node scripts/check-orphans.mjs && node scripts/check-llms.mjs",
+    "verify": "eslint . --max-warnings=0 && node scripts/check-content.mjs && node scripts/check-typography.mjs && node scripts/check-links.mjs && node scripts/check-sitemap.mjs && node scripts/check-orphans.mjs && node scripts/check-llms.mjs",
     "audit-html": "node scripts/audit-html.mjs"
   },
   "dependencies": {
