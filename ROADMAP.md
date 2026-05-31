@@ -73,6 +73,31 @@ de pure lib/schema-org.mjs (K6). Beide met eigen testdekking.
 RONDE 4 autonome scope volledig afgerond; BACKLOG.md leeg. Resterend werk staat enkel hieronder
 onder "Voor mij: beslissingen nodig" (vereist jouw input/accounts/productie).
 
+## RONDE 5 - HUIDIG PLAN
+
+Onderbouwing (2026-05-31): ronde 4 afgerond, alle gates groen. Content is breed (398 MDX +
+~70 clusters). Hoogste hefboom nu = kwaliteit/compliance/integriteit i.p.v. nog meer breedte
+(keuze gebruiker: alle workstreams + wat content). Gevonden gaten: geen herbruikbare YMYL-
+gezondheidsdisclaimer (handover-eis), 0/398 MDX met eigen bronnen (Article-citation altijd leeg),
+verouderde handmatige llms-full.txt zonder gate, geen PWA-manifest/viewport/skip-link/RSS,
+clampDescription + CTABanner ongetest.
+
+### Fase A - Trust & YMYL-compliance
+HealthDisclaimer-component, automatische YMYL-detectie (heuristiek + frontmatter-override),
+topic->autoriteit-bronnen per onderwerp (RIVM/WHO/Drinkwaterbesluit/EU 2020-2184/KWR/ILT/Vewin;
+geen verzonnen claims), gekoppeld aan SourcesSection + Article-citation, en een check-ymyl-gate.
+
+### Fase B - AI-Search / AEO-integriteit
+llms-full.txt automatisch genereren uit content (curated preamble + autogen index) en een
+check-llms-full-gate die drift afvangt.
+
+### Fase C - Techniek, UX & tests
+PWA-manifest + icon, viewport/theme-color, skip-link (a11y), RSS-feed voor de kennisbank,
+unit-tests voor clampDescription + CTABanner-logica, en (laag) sitemap-index via generateSitemaps.
+
+### Fase D - Nieuwe content
+Twee long-tail kennisbank-rondes (8 MDX) + 2 vergelijkingen, elk kannibalisatie-gecheckt.
+
 ## Voor mij: beslissingen nodig (NIET autonoom)
 - PR #3 mergen / naar productie publiceren.
 - Affiliate-CTA-bestemmingen voor merkpagina's (nu interne CTABanner; echte bestemming = jouw input).

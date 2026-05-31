@@ -11,6 +11,8 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { SourcesSection } from '@/components/SourcesSection';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
+import { isYmyl } from '@/lib/ymyl.mjs';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -117,6 +119,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
   if (!article) notFound();
 
   const { title, description, date, lastModified, quickAnswer, image, sources, methodologySources, lastReviewed } = article.data;
+  const ymyl = isYmyl(slug, article.data);
   const faqItems = extractFaqItems(article.content);
   const articleImage = articleImagePath(slug, image);
 
@@ -171,6 +174,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
         <MethodologyBadge sources={methodologySources} lastReviewed={lastReviewed ?? lastModified} />
         <AuthorBox datePublished={date} dateModified={lastModified} />
         {quickAnswer && <QuickAnswer answer={quickAnswer} question={title} />}
+        {ymyl && <HealthDisclaimer />}
         <article className="prose max-w-none">
           <MDXRemote source={article.content} />
         </article>
