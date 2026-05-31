@@ -13,6 +13,7 @@ import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { SourcesSection } from '@/components/SourcesSection';
 import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { isYmyl } from '@/lib/ymyl.mjs';
+import { sourcesForSlug } from '@/lib/article-sources.mjs';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -120,6 +121,8 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
 
   const { title, description, date, lastModified, quickAnswer, image, sources, methodologySources, lastReviewed } = article.data;
   const ymyl = isYmyl(slug, article.data);
+  // Onderwerp-passende autoriteiten wanneer een artikel geen eigen bronnen meegeeft.
+  const articleSources: string[] = sources?.length ? sources : sourcesForSlug(slug);
   const faqItems = extractFaqItems(article.content);
   const articleImage = articleImagePath(slug, image);
 
@@ -135,7 +138,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           lastReviewed: lastReviewed ?? lastModified,
           url: `https://waterfilterplatform.nl/kennisbank/${slug}`,
           image: articleImage,
-          sources,
+          sources: articleSources,
         }}
       />
       {faqItems.length >= 2 && (
@@ -179,7 +182,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           <MDXRemote source={article.content} />
         </article>
 
-        <SourcesSection sources={sources} />
+        <SourcesSection sources={articleSources} />
 
         {(() => {
           const clusterLinks = getClusterLinks(slug);
