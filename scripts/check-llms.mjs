@@ -27,9 +27,6 @@ const EXTRA_SINGLETONS = new Set([
   'sodastream', 'insinkerator', 'waterdrop',
 ]);
 
-function hasPage(rel) {
-  return fs.existsSync(path.join(APP, rel, 'page.tsx'));
-}
 
 /** Collect the important commercial/brand/comparison/buy-guide routes. */
 export function importantRoutes(appDir = APP) {

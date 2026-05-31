@@ -45,6 +45,27 @@ de nieuwe invarianten bewaakt blijven.
 
 ---
 
+## RONDE 4 - HUIDIG PLAN
+
+Onderbouwing (2026-05-30): content/SEO is volwassen en alle gates groen (0 dode links/orphans/
+sitemap-gaten, 0 dubbele titles+descriptions over 4440 pagina's). Focus deze ronde (keuze
+gebruiker): vooral meer content, plus de goedgekeurde codekwaliteit-fixes. `npm run lint` is nu
+rood: 302x no-unescaped-entities (regel versoepelen), 283x no-html-link-for-pages in ~70
+bestanden (interne <a> -> <Link>), 11x unused-vars. Geen component-tests; sitemap lastmod = nu
+uniform buildtijd.
+
+### Fase K - Codekwaliteit & lint-gate
+eslint-apostrofregel versoepelen, ongebruikte vars opruimen, interne <a href="/..."> ombouwen
+naar next/link (SPA-navigatie), en lint als gate aan verify toevoegen.
+
+### Fase C4 - Contentuitbreiding (focus)
+Grohe Red dieptecluster (hub + prijs + filter), nieuwe merk-vs-merk vergelijkingen
+(grohe-red-vs-grohe-blue, bwt-vs-brita, brita-vs-zerowater, boretti-vs-quooker) en twee
+long-tail kennisbank-rondes (8 MDX), elk kannibalisatie-gecheckt.
+
+### Fase T - SEO-techniek (secundair)
+sitemap reele lastModified (frontmatter-date + git-commitdatum) en een unit-test voor SchemaOrg.
+
 ## Voor mij: beslissingen nodig (NIET autonoom)
 - PR #3 mergen / naar productie publiceren.
 - Affiliate-CTA-bestemmingen voor merkpagina's (nu interne CTABanner; echte bestemming = jouw input).

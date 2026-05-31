@@ -13,6 +13,13 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    rules: {
+      // Bewuste Nederlandse apostrofs/aanhalingstekens in JSX-tekst (bv. "je's");
+      // deze renderen correct en hoeven niet geescaped te worden.
+      "react/no-unescaped-entities": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;

@@ -310,7 +310,7 @@ export default function SedimentfilterPage() {
                   { post: 'Filterpatroon (standaard 10 inch, 5–10 µm)', bedrag: '€ 5 – 15 per stuk' },
                   { post: 'Vervanging bij normaal leidingwater (2× per jaar)', bedrag: '€ 10 – 30 per jaar' },
                   { post: 'Vervanging bij zwaar vervuild water (4× per jaar)', bedrag: '€ 20 – 60 per jaar' },
-                ].map((r, i) => (
+                ].map((r) => (
                   <tr key={r.post} className="border-b border-gray-100">
                     <td className="py-2.5 px-3 text-gray-700">{r.post}</td>
                     <td className="py-2.5 px-3 text-right font-semibold text-[#005F8A]">{r.bedrag}</td>

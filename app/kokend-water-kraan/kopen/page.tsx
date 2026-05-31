@@ -184,7 +184,7 @@ export default function KokendWaterKraanKopenPage() {
             hoger de prijs.
           </p>
           <div className="space-y-4">
-            {typesTabel.map((t, i) => (
+            {typesTabel.map((t) => (
               <div
                 key={t.type}
                 className={`border rounded-2xl p-5 ${t.highlight ? 'border-[#005F8A] bg-[#E0F2FE]' : 'border-gray-100'}`}
