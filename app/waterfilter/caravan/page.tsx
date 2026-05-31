@@ -108,8 +108,8 @@ export default function WaterfilterCaravanPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Waterfilter caravan en camper</span>
         </nav>
 
@@ -311,7 +311,7 @@ export default function WaterfilterCaravanPage() {
           <Link href="/waterfilter" className="text-[#005F8A] underline">alle waterfilters</Link>,{' '}
           <Link href="/waterfilter/boot-jacht" className="text-[#005F8A] underline">waterfilter boot en jacht</Link>,{' '}
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link> en{' '}
-          <a href="/waterfilter/outdoor" className="text-[#005F8A] underline">outdoor waterfilters</a>.
+          <Link href="/waterfilter/outdoor" className="text-[#005F8A] underline">outdoor waterfilters</Link>.
         </p>
       </main>
     </>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'IJzer in water filteren: bruine vlekken en metaalsmaak oplossen',
@@ -112,8 +113,8 @@ export default function WaterfilterIjzerPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>IJzer</span>
         </nav>
 
@@ -347,29 +348,29 @@ export default function WaterfilterIjzerPage() {
         </ol>
         <p className="text-gray-700 mb-6">
           Meer informatie over waterfilters voor specifieke verontreinigingen vindt u op onze pagina over{' '}
-          <a href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</a>. Voor een volledige vergelijking van filtersoorten, zie{' '}
-          <a href="/waterfilter/soorten" className="text-[#005F8A] underline">waterfilter soorten vergelijken</a>.
+          <Link href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</Link>. Voor een volledige vergelijking van filtersoorten, zie{' '}
+          <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">waterfilter soorten vergelijken</Link>.
         </p>
 
         <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
             <p className="text-sm text-gray-600">Welke zware metalen in drinkwater voorkomen, wat de risicos zijn en hoe je ze verwijdert.</p>
-          </a>
-          <a href="/waterfilter/mangaan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/mangaan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter mangaan</h3>
             <p className="text-sm text-gray-600">Mangaan in water filteren: zwarte vlekken, oorzaken en welke filters mangaan effectief verwijderen.</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
             <p className="text-sm text-gray-600">Hoe omgekeerde osmose ijzer en andere opgeloste stoffen uit drinkwater verwijdert.</p>
-          </a>
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
             <p className="text-sm text-gray-600">De EU- en WHO-normen voor ijzer en andere stoffen in drinkwater en wat ze betekenen.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -388,7 +389,7 @@ export default function WaterfilterIjzerPage() {
         </div>
 
         <p className="text-gray-600 text-sm mt-6">
-          Zie ook: <a href="/waterfilter/soorten" className="text-[#005F8A] underline">vergelijking van waterfiltersoorten</a> en <a href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater filteren</a>.
+          Zie ook: <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">vergelijking van waterfiltersoorten</Link> en <Link href="/drinkwater/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater filteren</Link>.
         </p>
       </main>
     </>

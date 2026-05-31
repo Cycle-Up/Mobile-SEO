@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor Camper & Caravan | Veilig Drinkwater Onderweg',
@@ -65,8 +66,8 @@ export default function WaterfilterCamperPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Camper</span>
         </nav>
 
@@ -120,7 +121,7 @@ export default function WaterfilterCamperPage() {
           Een compacte RO-installatie geeft de hoogste waterkwaliteit: vrijwel geen mineralen, bacteriën, virussen of zware metalen. Vereist minimaal 2,5 bar waterdruk en produceert afvalwater (verhouding 1:3 bij standaard membraan).
         </p>
         <p className="text-gray-700 mb-4">
-          Bekijk ons overzicht van <a href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilters kopen</a> voor compacte modellen die geschikt zijn voor campergebruik.
+          Bekijk ons overzicht van <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilters kopen</Link> voor compacte modellen die geschikt zijn voor campergebruik.
         </p>
 
         <div className="overflow-x-auto mb-6">
@@ -204,34 +205,34 @@ export default function WaterfilterCamperPage() {
           <p className="text-gray-700 mb-4">
             Een osmosefilter thuis geeft dezelfde superieure waterkwaliteit als je filtersysteem in de camper — maar dan voor je hele gezin. Bekijk ons aanbod:
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk osmosefilters →
-          </a>
+          </Link>
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/kennisbank/waterfilter-camper" className="text-[#005F8A] underline">Waterfilter voor camper – praktisch gids</a> en <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</a>.
+          Lees ook: <Link href="/kennisbank/waterfilter-camper" className="text-[#005F8A] underline">Waterfilter voor camper – praktisch gids</Link> en <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</Link>.
         </p>
 
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Reisfilter</h3>
             <p className="text-sm text-gray-600">Draagbare waterfilters voor op reis: van UV-pennen tot compacte holle-vezelfilters.</p>
-          </a>
-          <a href="/waterfilter/outdoor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/outdoor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Outdoor waterfilter</h3>
             <p className="text-sm text-gray-600">Waterfilters voor buiten, wandelen en kamperen: lichtgewicht en betrouwbaar.</p>
-          </a>
-          <a href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie</h3>
             <p className="text-sm text-gray-600">Hoe UV-sterilisatie bacterien en virussen vernietigt zonder chemicalien toe te voegen.</p>
-          </a>
-          <a href="/waterfilter/sediment" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/sediment" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Sedimentfilter</h3>
             <p className="text-sm text-gray-600">Hoe een sedimentfilter deeltjes en troebel water aanpakt als eerste stap in uw filtersysteem.</p>
-          </a>
+          </Link>
         </div>
       </section>
       </main>

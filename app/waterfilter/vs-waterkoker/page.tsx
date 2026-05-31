@@ -114,8 +114,8 @@ export default function WaterfilterVsWaterkokerPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Waterfilter vs waterkoker</span>
         </nav>
 

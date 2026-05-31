@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Douchefilter: Chloor & Kalk Filteren onder de Douche',
@@ -65,8 +66,8 @@ export default function WaterfilterDouchePage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Douche</span>
         </nav>
 
@@ -158,10 +159,10 @@ export default function WaterfilterDouchePage() {
           Douchefilter of waterontharder?
         </h2>
         <p className="text-gray-700 mb-4">
-          Een douchefilter filtert chloor en metalen maar verwijdert geen kalk. Hard water blijft hard — kalkaanslag op de douchekop en huid. Een <a href="/waterontharder" className="text-[#005F8A] underline">waterontharder</a> verzacht al het water in huis, inclusief douchewater, maar verwijdert geen chloor.
+          Een douchefilter filtert chloor en metalen maar verwijdert geen kalk. Hard water blijft hard — kalkaanslag op de douchekop en huid. Een <Link href="/waterontharder" className="text-[#005F8A] underline">waterontharder</Link> verzacht al het water in huis, inclusief douchewater, maar verwijdert geen chloor.
         </p>
         <p className="text-gray-700 mb-6">
-          De meest complete oplossing voor douchewater: een waterontharder (voor kalk) gecombineerd met een KDF/vitamine C-douchefilter (voor chloor en metalen). Of een <a href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter voor drinkwater</a> en een douchefilter specifiek voor de douche.
+          De meest complete oplossing voor douchewater: een waterontharder (voor kalk) gecombineerd met een KDF/vitamine C-douchefilter (voor chloor en metalen). Of een <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter voor drinkwater</Link> en een douchefilter specifiek voor de douche.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -192,29 +193,29 @@ export default function WaterfilterDouchePage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Actief koolfilter uitleg</h3>
             <p className="text-sm text-gray-600">Hoe actief kool chloor, geur en organische stoffen uit water verwijdert.</p>
-          </a>
-          <a href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen uit water</h3>
             <p className="text-sm text-gray-600">Welk filter verwijdert chloor en chlooraminen het meest effectief?</p>
-          </a>
-          <a href="/waterfilter/keuken-installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/keuken-installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter keuken installatie</h3>
             <p className="text-sm text-gray-600">Stap-voor-stap handleiding voor het plaatsen van een onderkraan waterfilter.</p>
-          </a>
-          <a href="/waterhardheid/behandelingsadvies" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterhardheid/behandelingsadvies" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheid behandelingsadvies</h3>
             <p className="text-sm text-gray-600">Welke aanpak past het beste bij uw waterhardheidsniveau?</p>
-          </a>
+          </Link>
         </div>
       </section>
 
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">
-          Lees ook: <a href="/kennisbank/waterfilter-douche-chloor" className="text-[#005F8A] underline">Douchefilter voor chloor: welk type werkt het best?</a> en <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid in jouw regio</a>.
+          Lees ook: <Link href="/kennisbank/waterfilter-douche-chloor" className="text-[#005F8A] underline">Douchefilter voor chloor: welk type werkt het best?</Link> en <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid in jouw regio</Link>.
         </p>
       </main>
     </>

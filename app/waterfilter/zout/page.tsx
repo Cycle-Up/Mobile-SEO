@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Zout in drinkwater: waar komt het vandaan en hoe verwijderen?',
@@ -112,8 +113,8 @@ export default function WaterfilterZoutPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Zout in drinkwater</span>
         </nav>
 
@@ -242,7 +243,7 @@ export default function WaterfilterZoutPage() {
             </div>
             <p className="text-gray-700 text-sm mb-2">
               Osmosefilters verwijderen 95–99% van opgeloste ionen, inclusief Na⁺ en Cl⁻. Het semipermeabele membraan laat alleen watermoleculen door; ionen worden tegengehouden en afgevoerd naar het afvalwater. De meest complete oplossing voor zout in water, en tegelijkertijd effectief tegen nitraat, lood, PFAS, bacteriën en andere verontreinigingen. Zie ons artikel over{' '}
-              <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</a> voor meer uitleg.
+              <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</Link> voor meer uitleg.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-gray-500">
               <span>Natrium: 95–99% verwijdering</span>
@@ -374,28 +375,28 @@ export default function WaterfilterZoutPage() {
         </div>
         <p className="text-gray-700 mb-6">
           Dit is een van de meest aanbevolen combinaties voor huishoudens met een waterontharder en baby&apos;s of hartpatiënten. Zie ook ons artikel over{' '}
-          <a href="/waterfilter/nitraat" className="text-[#005F8A] underline">nitraat verwijderen met een waterfilter</a> voor meer filteropties.
+          <Link href="/waterfilter/nitraat" className="text-[#005F8A] underline">nitraat verwijderen met een waterfilter</Link> voor meer filteropties.
         </p>
 
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/waterontharder/zout" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/waterontharder/zout" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Zout voor waterontharder</h3>
               <p className="text-sm text-gray-600">Tabletzout, blokzout of granulaat voor de waterontharder: wat is het beste en voordeligst?</p>
-            </a>
-            <a href="/waterontharder/zout-gebruik" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/waterontharder/zout-gebruik" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Zoutgebruik waterontharder</h3>
               <p className="text-sm text-gray-600">Hoeveel zout verbruikt een waterontharder en hoe optimaliseer je het zoutverbruik?</p>
-            </a>
-            <a href="/waterfilter/waterverzachter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/waterfilter/waterverzachter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter of waterverzachter?</h3>
               <p className="text-sm text-gray-600">Vergelijking van waterfilter en waterverzachter: wat zijn de verschillen en wanneer kies je wat?</p>
-            </a>
-            <a href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/keuzehulp/hard-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp hard water</h3>
               <p className="text-sm text-gray-600">Vind de juiste aanpak voor jouw hardwaterprobleem met onze stap-voor-stap keuzehulp.</p>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -415,9 +416,9 @@ export default function WaterfilterZoutPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/waterfilter/arsenicum" className="text-[#005F8A] underline">arsenicum in drinkwater filteren</a>,{' '}
-          <a href="/waterfilter/nitraat" className="text-[#005F8A] underline">nitraat verwijderen uit water</a> en{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a>.
+          <Link href="/waterfilter/arsenicum" className="text-[#005F8A] underline">arsenicum in drinkwater filteren</Link>,{' '}
+          <Link href="/waterfilter/nitraat" className="text-[#005F8A] underline">nitraat verwijderen uit water</Link> en{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link>.
         </p>
       </main>
     </>

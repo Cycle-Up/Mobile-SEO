@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor fluoride: verwijdert osmose fluoride uit water?',
@@ -105,8 +106,8 @@ export default function WaterfilterFluoridePage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Fluoride</span>
         </nav>
 
@@ -296,22 +297,22 @@ export default function WaterfilterFluoridePage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Kalk en mineralen in drinkwater</h3>
             <p className="text-sm text-gray-600">Overzicht van kalk, calcium en magnesium in Nederlands leidingwater.</p>
-          </a>
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen Nederland</h3>
             <p className="text-sm text-gray-600">Alle wettelijke grenswaarden voor drinkwater op een rij.</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
             <p className="text-sm text-gray-600">Hoe een osmosefilter fluoride en andere ionen uit water verwijdert.</p>
-          </a>
-          <a href="/waterfilter/fluor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/fluor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Fluor in leidingwater</h3>
             <p className="text-sm text-gray-600">Normen, gezondheidsfeiten en de situatie in Nederland rondom fluor.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -331,10 +332,10 @@ export default function WaterfilterFluoridePage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/waterfilter" className="text-[#005F8A] underline">alle waterfilters</a>,{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a>,{' '}
-          <a href="/pfas-waterfilter" className="text-[#005F8A] underline">PFAS waterfilter</a> en{' '}
-          <a href="/waterfilter/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</a>.
+          <Link href="/waterfilter" className="text-[#005F8A] underline">alle waterfilters</Link>,{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link>,{' '}
+          <Link href="/pfas-waterfilter" className="text-[#005F8A] underline">PFAS waterfilter</Link> en{' '}
+          <Link href="/waterfilter/nitraat" className="text-[#005F8A] underline">nitraat in drinkwater</Link>.
         </p>
       </main>
     </>

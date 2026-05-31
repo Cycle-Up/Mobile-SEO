@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Waterfilter legionella: beschermt een filter tegen legionella-bacterie?',
@@ -113,8 +114,8 @@ export default function WaterfilterLegionellaPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Legionella</span>
         </nav>
 
@@ -255,22 +256,22 @@ export default function WaterfilterLegionellaPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/zakelijk/legionella-beheersplan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/zakelijk/legionella-beheersplan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Legionella beheersplan zakelijk</h3>
             <p className="text-sm text-gray-600">Wettelijke verplichtingen en praktische aanpak voor bedrijven en instellingen.</p>
-          </a>
-          <a href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische verontreinigingen</h3>
             <p className="text-sm text-gray-600">Overzicht van bacterien, virussen en andere microbiologische risico's in drinkwater.</p>
-          </a>
-          <a href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie uitleg</h3>
             <p className="text-sm text-gray-600">Hoe werkt UV-desinfectie en wanneer is het de beste keuze tegen bacterien?</p>
-          </a>
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen Nederland</h3>
             <p className="text-sm text-gray-600">Actueel overzicht van EU- en Nederlandse normen voor drinkwaterkwaliteit.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -290,9 +291,9 @@ export default function WaterfilterLegionellaPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/waterfilter" className="text-[#005F8A] underline">alle waterfilters</a>,{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en{' '}
-          <a href="/waterfilter/hormonen" className="text-[#005F8A] underline">hormonen en medicijnresten in water</a>.
+          <Link href="/waterfilter" className="text-[#005F8A] underline">alle waterfilters</Link>,{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link> en{' '}
+          <Link href="/waterfilter/hormonen" className="text-[#005F8A] underline">hormonen en medicijnresten in water</Link>.
         </p>
       </main>
     </>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Nitraat in Drinkwater Filteren: Baby\'s & Privéputten',
@@ -65,8 +66,8 @@ export default function WaterfilterNitraatPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Nitraat</span>
         </nav>
 
@@ -167,29 +168,29 @@ export default function WaterfilterNitraatPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/nitraat-nitriet" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/nitraat-nitriet" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat en nitriet in drinkwater</h3>
             <p className="text-sm text-gray-600">Bronnen, normen en gezondheidsrisico's van stikstofverbindingen.</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtratie</h3>
             <p className="text-sm text-gray-600">RO verwijdert 85-95% van nitraat uit drinkwater.</p>
-          </a>
-          <a href="/waterfilter/nitriet" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/nitriet" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Nitriet in drinkwater</h3>
             <p className="text-sm text-gray-600">Vergelijkbare stof met hogere toxiciteit en strengere normen.</p>
-          </a>
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Nederlandse drinkwaternormen</h3>
             <p className="text-sm text-gray-600">EU-norm voor nitraat en andere stoffen in drinkwater.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">
-          Zie ook: <a href="/drinkwater/baby" className="text-[#005F8A] underline">drinkwater voor baby</a> en <a href="/drinkwater/kwaliteit-test" className="text-[#005F8A] underline">drinkwater testen</a>.
+          Zie ook: <Link href="/drinkwater/baby" className="text-[#005F8A] underline">drinkwater voor baby</Link> en <Link href="/drinkwater/kwaliteit-test" className="text-[#005F8A] underline">drinkwater testen</Link>.
         </p>
       </main>
     </>

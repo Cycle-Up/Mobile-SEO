@@ -66,8 +66,8 @@ export default function WaterhardheidMetenPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterhardheid" className="hover:underline">Waterhardheid</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterhardheid" className="hover:underline">Waterhardheid</Link> &rsaquo;{' '}
           <span>Meten</span>
         </nav>
 
@@ -194,7 +194,7 @@ export default function WaterhardheidMetenPage() {
           </table>
         </div>
         <p className="text-gray-700 mb-6">
-          Bekijk ook <a href="/waterhardheid/kaart" className="text-[#005F8A] underline">waterhardheid per gemeente</a> of <a href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilters voor hard water</a>.
+          Bekijk ook <Link href="/waterhardheid/kaart" className="text-[#005F8A] underline">waterhardheid per gemeente</Link> of <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilters voor hard water</Link>.
         </p>
 
         <div className="space-y-4 mb-8">

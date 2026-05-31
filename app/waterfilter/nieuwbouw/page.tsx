@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Waterfilter nieuwbouwwoning: de beste keuze bij oplevering',
@@ -113,8 +114,8 @@ export default function WaterfilterNieuwbouwPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Nieuwbouw</span>
         </nav>
 
@@ -141,7 +142,7 @@ export default function WaterfilterNieuwbouwPage() {
           <li><strong>Geen reparatiekosten:</strong> Na oplevering zijn er geen tegels, stucwerk of schilderwerk om te herstellen. Dit scheelt €300–800 aan bijkomende kosten.</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Lees ook onze pagina over <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</a> voor een overzicht van beschikbare systemen.
+          Lees ook onze pagina over <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</Link> voor een overzicht van beschikbare systemen.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -174,7 +175,7 @@ export default function WaterfilterNieuwbouwPage() {
 
         <h3 className="text-xl font-semibold text-[#003F5C] mt-6 mb-3">1. Pre-piped osmosefilter onder het aanrecht</h3>
         <p className="text-gray-700 mb-3">
-          De aannemer legt een extra koud-wateraftap en afvoerpunt onder het aanrecht. Na oplevering plaatst de installateur het osmosesysteem in de voorbereidde ruimte. Geen wegbreekwerk, geen stofoverlast. Bekijk ons aanbod aan <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose systemen</a> voor de technische specificaties.
+          De aannemer legt een extra koud-wateraftap en afvoerpunt onder het aanrecht. Na oplevering plaatst de installateur het osmosesysteem in de voorbereidde ruimte. Geen wegbreekwerk, geen stofoverlast. Bekijk ons aanbod aan <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose systemen</Link> voor de technische specificaties.
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-1">
           <li>Verwijdert 95%+ van kalk, nitraat, PFAS, lood en bacteriën</li>
@@ -355,34 +356,34 @@ export default function WaterfilterNieuwbouwPage() {
           <p className="text-gray-700 mb-4">
             De PureAqua 4-in-1 osmose + kokend water kraan is de perfecte keuze voor nieuwbouw: één systeem voor gefilterd drinkwater en kokend water op aanvraag, volledig te integreren bij de keukenmontage.
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk PureAqua systemen →
-          </a>
+          </Link>
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</a>, <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit Nederland</a>.
+          Lees ook: <Link href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</Link>, <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link> en <Link href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit Nederland</Link>.
         </p>
 
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/waterfilter/keuken-installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/waterfilter/keuken-installatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter keuken installatie</h3>
               <p className="text-sm text-gray-600">Tips voor installatie onder aanrecht bij een nieuwe keuken.</p>
-            </a>
-            <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Lood in drinkwater</h3>
               <p className="text-sm text-gray-600">Risico's en filteroplossingen voor lood in kraanwater.</p>
-            </a>
-            <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
               <p className="text-sm text-gray-600">Hoe werkt een RO-membraan en wat filtert het?</p>
-            </a>
-            <a href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor een appartement</h3>
               <p className="text-sm text-gray-600">Welk systeem past in een kleinere ruimte?</p>
-            </a>
+            </Link>
           </div>
         </section>
       </main>

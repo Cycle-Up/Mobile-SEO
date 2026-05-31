@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Chloor verwijderen uit kraanwater: 5 effectieve methoden',
@@ -112,8 +113,8 @@ export default function ChloorVerwijderenPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Chloor verwijderen</span>
         </nav>
 
@@ -138,7 +139,7 @@ export default function ChloorVerwijderenPage() {
         </p>
         <p className="text-gray-700 mb-4">
           De WHO stelt een maximale advieswaarde van 5 mg/L vrij chloor, maar in de praktijk werken Nederlandse waterbedrijven met aanzienlijk lagere concentraties: 0,1–0,3 mg/L vrij chloor aan de kraan. De EU-norm via het Drinkwaterbesluit bedraagt 0,3 mg/L. Meer achtergrond leest u op onze pagina over{' '}
-          <a href="/drinkwater/chloor" className="text-[#005F8A] underline">chloor in drinkwater</a>.
+          <Link href="/drinkwater/chloor" className="text-[#005F8A] underline">chloor in drinkwater</Link>.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -336,22 +337,22 @@ export default function ChloorVerwijderenPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Actief koolfiltratie</h3>
             <p className="text-sm text-gray-600">Hoe actief kool werkt, welke stoffen het adsorbeert en hoe u het juiste filter kiest.</p>
-          </a>
-          <a href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Chloor-bijproducten in drinkwater</h3>
             <p className="text-sm text-gray-600">Trihalomethanen, bromaat en andere bijproducten van chloordesinfectie: risicos en normen.</p>
-          </a>
-          <a href="/waterfilter/geur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/geur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor geur</h3>
             <p className="text-sm text-gray-600">Onaangename geur uit kraanwater verwijderen: oorzaken en de beste filteroplossingen.</p>
-          </a>
-          <a href="/onderhoud/koolstoffilter-levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/onderhoud/koolstoffilter-levensduur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Levensduur koolstoffilter</h3>
             <p className="text-sm text-gray-600">Hoe lang gaat een koolstoffilter mee en wanneer is het tijd om het te vervangen?</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -370,7 +371,7 @@ export default function ChloorVerwijderenPage() {
         </div>
 
         <p className="text-gray-600 text-sm mt-6">
-          Zie ook: <a href="/waterfilter/chloor" className="text-[#005F8A] underline">chloor uit drinkwater filteren</a> en <a href="/drinkwater/chloor" className="text-[#005F8A] underline">chloor in drinkwater — achtergrond en veiligheid</a>.
+          Zie ook: <Link href="/waterfilter/chloor" className="text-[#005F8A] underline">chloor uit drinkwater filteren</Link> en <Link href="/drinkwater/chloor" className="text-[#005F8A] underline">chloor in drinkwater — achtergrond en veiligheid</Link>.
         </p>
       </main>
     </>

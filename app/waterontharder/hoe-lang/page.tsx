@@ -114,8 +114,8 @@ export default function WaterontharderHoeLangPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterontharder" className="hover:underline">Waterontharder</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterontharder" className="hover:underline">Waterontharder</Link> &rsaquo;{' '}
           <span>Hoe lang gaat een waterontharder mee</span>
         </nav>
 

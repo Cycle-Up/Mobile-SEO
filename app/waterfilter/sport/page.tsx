@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor Sport: Osmosewater & Sportdranken',
@@ -65,8 +66,8 @@ export default function WaterfilterSportPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Sport</span>
         </nav>
 
@@ -157,10 +158,10 @@ export default function WaterfilterSportPage() {
           Thuis een osmosefilter voor dagelijkse sporthydratatie
         </h2>
         <p className="text-gray-700 mb-4">
-          Een <a href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</a> thuis geeft dagelijks schoon water voor je bidon, sportdranken en herstelshakes. Kosten: €0,01–0,03 per liter — versus €1–3 voor commerciële sportdranken.
+          Een <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</Link> thuis geeft dagelijks schoon water voor je bidon, sportdranken en herstelshakes. Kosten: €0,01–0,03 per liter — versus €1–3 voor commerciële sportdranken.
         </p>
         <p className="text-gray-700 mb-6">
-          Lees ook: <a href="/kennisbank/waterfilter-sport-fitness" className="text-[#005F8A] underline">waterfilter voor sport en fitness: uitgebreide gids</a>.
+          Lees ook: <Link href="/kennisbank/waterfilter-sport-fitness" className="text-[#005F8A] underline">waterfilter voor sport en fitness: uitgebreide gids</Link>.
         </p>
 
         <div className="space-y-4 mb-8">
@@ -178,22 +179,22 @@ export default function WaterfilterSportPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/waterfilter/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/waterfilter/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter en gezondheid</h3>
             <p className="text-sm text-gray-600">Hoe een waterfilter bijdraagt aan betere gezondheid en welke stoffen u het beste kunt verwijderen.</p>
-          </a>
-          <a href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Reisfilter water</h3>
             <p className="text-sm text-gray-600">Draagbare waterfilters voor sporters onderweg: LifeStraw, Sawyer en UV-pen vergeleken.</p>
-          </a>
-          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
             <p className="text-sm text-gray-600">Hoe actief kool chloor en smaakstoffen verwijdert voor frisser en zuiverder drinkwater.</p>
-          </a>
-          <a href="/waterfilter/gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor gezin</h3>
             <p className="text-sm text-gray-600">De beste waterfilteroplossingen voor gezinnen met een hoog waterverbruik en actieve levensstijl.</p>
-          </a>
+          </Link>
         </div>
       </section>
 

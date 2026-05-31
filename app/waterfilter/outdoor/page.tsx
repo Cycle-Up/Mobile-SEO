@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Outdoor Waterfilter: Wandelen, Camping & Reizen',
@@ -65,8 +66,8 @@ export default function WaterfilterOutdoorPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Outdoor</span>
         </nav>
 
@@ -172,29 +173,29 @@ export default function WaterfilterOutdoorPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/waterfilter/reisfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Reisfilter water</h3>
             <p className="text-sm text-gray-600">Beste reisfilters voor kamperen, trekken en reizen: LifeStraw, Sawyer en Katadyn vergeleken.</p>
-          </a>
-          <a href="/waterfilter/camper" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/camper" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor camper</h3>
             <p className="text-sm text-gray-600">Compacte waterfilteroplossingen speciaal voor gebruik in campers en caravans.</p>
-          </a>
-          <a href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie</h3>
             <p className="text-sm text-gray-600">Hoe UV-sterilisatie werkt en wanneer het de juiste keuze is voor veilig drinkwater.</p>
-          </a>
-          <a href="/waterfilter/sediment" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/sediment" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Sedimentfilter</h3>
             <p className="text-sm text-gray-600">Wanneer een sedimentfilter nodig is, micronklassen en toepassing als voorfilter.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">
-          Meer: <a href="/waterfilter/camper" className="text-[#005F8A] underline">waterfilter voor camper</a> en <a href="/waterfilter" className="text-[#005F8A] underline">alle waterfiltersoorten</a>.
+          Meer: <Link href="/waterfilter/camper" className="text-[#005F8A] underline">waterfilter voor camper</Link> en <Link href="/waterfilter" className="text-[#005F8A] underline">alle waterfiltersoorten</Link>.
         </p>
       </main>
     </>
