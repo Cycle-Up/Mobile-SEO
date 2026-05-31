@@ -2,8 +2,17 @@ import type { MetadataRoute } from 'next';
 import { gemeenten } from '@/data/gemeenten';
 import fs from 'fs';
 import path from 'path';
+import {
+  routeLastModified,
+  gitCommitDate,
+  mdxFrontmatterDate,
+  pickLastModified,
+} from '@/lib/sitemap-dates.mjs';
 
 const BASE = 'https://waterfilterplatform.nl';
+
+// Computed once per build; used as the fallback when no git/frontmatter date exists.
+const BUILD_DATE = new Date();
 
 function getKennisbankSlugs(): string[] {
   const dir = path.join(process.cwd(), 'content/kennisbank');
@@ -11,6 +20,14 @@ function getKennisbankSlugs(): string[] {
   return fs.readdirSync(dir)
     .filter(f => f.endsWith('.mdx'))
     .map(f => f.replace('.mdx', ''));
+}
+
+/** Realistic lastModified for a gemeente sub-route via its [gemeente] template. */
+function gemeenteTemplateDate(segment: string): Date {
+  return pickLastModified({
+    gitDate: gitCommitDate(`app/${segment}/[gemeente]/page.tsx`),
+    buildDate: BUILD_DATE,
+  });
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -688,25 +705,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/waterfilter/wijn-bier`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
   ];
 
+  // One git lookup per gemeente template (shared across all 350 gemeenten).
+  const gemeenteDates: Record<string, Date> = Object.fromEntries(
+    ['waterhardheid', 'drinkwater', 'kalk-in', 'waterontharder', 'waterfilter',
+     'osmose-filter', 'kraanwater', 'leidingwater', 'kokend-water-kraan', 'waterontkalker']
+      .map(seg => [seg, gemeenteTemplateDate(seg)]),
+  );
+
   const gemeentePages: MetadataRoute.Sitemap = gemeenten.flatMap(g => [
-    { url: `${BASE}/waterhardheid/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
-    { url: `${BASE}/drinkwater/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
-    { url: `${BASE}/kalk-in/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
-    { url: `${BASE}/waterontharder/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
-    { url: `${BASE}/waterfilter/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
-    { url: `${BASE}/osmose-filter/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
-    { url: `${BASE}/kraanwater/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
-    { url: `${BASE}/leidingwater/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
-    { url: `${BASE}/kokend-water-kraan/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
-    { url: `${BASE}/waterontkalker/${g.slug}`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/waterhardheid/${g.slug}`, lastModified: gemeenteDates['waterhardheid'], changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/drinkwater/${g.slug}`, lastModified: gemeenteDates['drinkwater'], changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/kalk-in/${g.slug}`, lastModified: gemeenteDates['kalk-in'], changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/waterontharder/${g.slug}`, lastModified: gemeenteDates['waterontharder'], changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/waterfilter/${g.slug}`, lastModified: gemeenteDates['waterfilter'], changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/osmose-filter/${g.slug}`, lastModified: gemeenteDates['osmose-filter'], changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/kraanwater/${g.slug}`, lastModified: gemeenteDates['kraanwater'], changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/leidingwater/${g.slug}`, lastModified: gemeenteDates['leidingwater'], changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/kokend-water-kraan/${g.slug}`, lastModified: gemeenteDates['kokend-water-kraan'], changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${BASE}/waterontkalker/${g.slug}`, lastModified: gemeenteDates['waterontkalker'], changeFrequency: 'yearly' as const, priority: 0.5 },
   ]);
 
+  const contentDir = path.join(process.cwd(), 'content/kennisbank');
   const kennisbankPages: MetadataRoute.Sitemap = getKennisbankSlugs().map(slug => ({
     url: `${BASE}/kennisbank/${slug}`,
-    lastModified: new Date(),
+    lastModified: pickLastModified({
+      frontmatterDate: mdxFrontmatterDate(path.join(contentDir, `${slug}.mdx`)),
+      buildDate: BUILD_DATE,
+    }),
     changeFrequency: 'monthly',
     priority: 0.7,
   }));
 
-  return [...staticPages, ...gemeentePages, ...kennisbankPages];
+  // Override the placeholder dates on the static entries with the source file's
+  // git-commit date (fallback: build date), keyed by the literal URL path.
+  const staticPagesWithDates: MetadataRoute.Sitemap = staticPages.map(p => ({
+    ...p,
+    lastModified: routeLastModified(String(p.url).slice(BASE.length) || '/', BUILD_DATE),
+  }));
+
+  return [...staticPagesWithDates, ...gemeentePages, ...kennisbankPages];
 }

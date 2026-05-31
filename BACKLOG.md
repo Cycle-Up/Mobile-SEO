@@ -49,7 +49,7 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 
 ## Fase T - SEO-techniek (secundair)
 
-- [ ] T1. `app/sitemap.ts` reele `lastModified` (kennisbank uit frontmatter-`date`; overige routes via git-commitdatum met fallback naar build-datum) + kleine test voor de datum-helper - klaar wanneer: sitemap toont per-route reele datums; `scripts/check-sitemap.mjs` 0 gaten; `npm test` groen; build groen.
+- [x] T1. `app/sitemap.ts` reele `lastModified` (kennisbank uit frontmatter-`date`; overige routes via git-commitdatum met fallback naar build-datum) + kleine test voor de datum-helper - klaar wanneer: sitemap toont per-route reele datums; `scripts/check-sitemap.mjs` 0 gaten; `npm test` groen; build groen.
 - [ ] K6. Unit-test voor `SchemaOrg` (server-render -> valide JSON-LD per type: Article/FAQPage/BreadcrumbList/ItemList) - klaar wanneer: test slaagt; `npm test` groen.
 
 ## Definition of Done (ronde 4)
