@@ -54,17 +54,24 @@ rood: 302x no-unescaped-entities (regel versoepelen), 283x no-html-link-for-page
 bestanden (interne <a> -> <Link>), 11x unused-vars. Geen component-tests; sitemap lastmod = nu
 uniform buildtijd.
 
-### Fase K - Codekwaliteit & lint-gate
-eslint-apostrofregel versoepelen, ongebruikte vars opruimen, interne <a href="/..."> ombouwen
-naar next/link (SPA-navigatie), en lint als gate aan verify toevoegen.
+### Fase K - Codekwaliteit & lint-gate - DONE
+eslint-apostrofregel versoepeld (K1), ongebruikte vars opgeruimd (K2), alle interne
+<a href="/..."> in 70 bestanden omgebouwd naar next/link (K3+K4, repo-breed 0
+no-html-link-for-pages) en eslint (--max-warnings=0) als gate aan npm run verify toegevoegd (K5).
 
-### Fase C4 - Contentuitbreiding (focus)
-Grohe Red dieptecluster (hub + prijs + filter), nieuwe merk-vs-merk vergelijkingen
-(grohe-red-vs-grohe-blue, bwt-vs-brita, brita-vs-zerowater, boretti-vs-quooker) en twee
-long-tail kennisbank-rondes (8 MDX), elk kannibalisatie-gecheckt.
+### Fase C4 - Contentuitbreiding (focus) - DONE
+Grohe Red dieptecluster (hub + prijs + filter, C1-C3) + 4 merk-vs-merk vergelijkingen
+(grohe-red-vs-grohe-blue, bwt-vs-brita, brita-vs-zerowater, boretti-vs-quooker, C4-C7) en
+8 long-tail kennisbank-MDX in twee rondes (C8: ijsthee, stoomoven, limonade, broodbakmachine;
+C9: waterijs, stoomreiniger, kombucha, zuurdesem-starter), elk kannibalisatie-gecheckt.
 
-### Fase T - SEO-techniek (secundair)
-sitemap reele lastModified (frontmatter-date + git-commitdatum) en een unit-test voor SchemaOrg.
+### Fase T - SEO-techniek (secundair) - DONE
+sitemap reele lastModified (kennisbank uit frontmatter-date, overige routes uit git-commitdatum
+met build-datum fallback) via lib/sitemap-dates.mjs (T1), en een unit-test voor SchemaOrg via
+de pure lib/schema-org.mjs (K6). Beide met eigen testdekking.
+
+RONDE 4 autonome scope volledig afgerond; BACKLOG.md leeg. Resterend werk staat enkel hieronder
+onder "Voor mij: beslissingen nodig" (vereist jouw input/accounts/productie).
 
 ## Voor mij: beslissingen nodig (NIET autonoom)
 - PR #3 mergen / naar productie publiceren.
