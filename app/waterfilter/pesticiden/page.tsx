@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -136,6 +137,7 @@ export default function WaterfilterPesticidenPage() {
 
         <QuickAnswer answer="Pesticiden in drinkwater komen van landbouw en tuingebruik. EU-norm is 0,1 µg/L per stof en 0,5 µg/L totaal. In NL worden normen in 15% van grondwaterpompen overschreden, met name in Brabant, Limburg en Groningen. Een osmosefilter (NSF 58) verwijdert 85-99% van pesticiden, afhankelijk van molecuulgrootte." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

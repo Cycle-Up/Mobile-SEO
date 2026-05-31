@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import Link from 'next/link';
 
@@ -78,6 +79,7 @@ export default function DrinkwaterMicroplasticsPage() {
           Microplastics zijn inmiddels overal aangetroffen — ook in drinkwater. Wat weten we over de risico&apos;s, en wat kun je er aan doen?
         </p>
 
+        <HealthDisclaimer />
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

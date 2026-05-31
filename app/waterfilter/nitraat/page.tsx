@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import Link from 'next/link';
 
@@ -78,6 +79,7 @@ export default function WaterfilterNitraatPage() {
           Nitraat in drinkwater is vooral risicovol voor baby&apos;s en mensen met een privéput in landbouwgebieden. Zo test en filter je het.
         </p>
 
+        <HealthDisclaimer />
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

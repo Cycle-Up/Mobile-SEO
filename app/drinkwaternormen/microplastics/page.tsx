@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { HealthDisclaimer } from "@/components/HealthDisclaimer";
 
 export const metadata: Metadata = {
   title: "Microplastics in drinkwater: WHO-bevindingen, normen en filteropties",
@@ -117,6 +118,7 @@ export default function MicroplasticsPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <section className="mt-10 prose prose-blue max-w-none">

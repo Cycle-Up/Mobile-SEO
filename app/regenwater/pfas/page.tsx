@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -106,6 +107,7 @@ export default function RegenwaterPfasPage() {
 
         <QuickAnswer answer="Nederlands regenwater bevat 5&ndash;50 ng/L PFAS door atmosferische depositie, met hotspots tot 100 ng/L bij Dordrecht (Chemours) en Schiphol. Voor verwijdering: omgekeerde osmose verwijdert &gt;95% van alle PFAS-verbindingen, actief kool 60&ndash;90% van lange-keten PFAS maar slechts 20&ndash;50% van korte-keten PFAS zoals GenX. Voor tuin en WC is ongezuiverd regenwater acceptabel; voor douchen of drinken is filtering noodzakelijk in hotspots." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

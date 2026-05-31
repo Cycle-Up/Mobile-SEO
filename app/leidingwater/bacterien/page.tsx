@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -123,6 +124,7 @@ export default function BacterienLeidingwaterPage() {
 
         <QuickAnswer answer="Nederlands leidingwater is bacteriologisch 99,9% veilig (RIVM). Legionella groeit niet in het net maar in uw eigen boiler bij 20-45 graden Celsius en is gevaarlijk via inademing, niet drinken. E. coli wijst op fecale besmetting bij calamiteiten. Cryptosporidium is chloorresistent; UV of osmose verwijdert het. Een koolstoffilter biedt geen bacteriologische bescherming." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import Link from 'next/link';
@@ -117,6 +118,7 @@ export default function WaterfilterFluoridePage() {
 
         <QuickAnswer answer="Nederlands kraanwater bevat van nature ~0,1 mg/L fluoride — ruim onder de WHO-grens van 1,5 mg/L. Nederland fluoreert drinkwater niet, in tegenstelling tot de VS en het VK. Een standaard koolstoffilter verwijdert geen fluoride. Omgekeerde osmose verwijdert 85-95% van fluoride en is de meest praktische keuze als u fluoride wilt reduceren." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -135,6 +136,7 @@ export default function OsmoseWaterGezondheidsPage() {
 
         <QuickAnswer answer="Osmosewater is voor de meeste volwassenen met een gevarieerde voeding veilig en gezond. 80 procent van calcium en magnesium komt uit voeding, niet uit water. De WHO adviseert minimaal Ca 30 mg/L en TDS meer dan 100 mg/L. Met een remineralisatiefilter voldoet osmosewater ruim aan die norm." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

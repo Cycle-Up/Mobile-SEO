@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import Link from 'next/link';
 
@@ -130,6 +131,7 @@ export default function DrinkwaterBacterienPage() {
           </p>
         </div>
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import Link from 'next/link';
 
@@ -78,6 +79,7 @@ export default function DrinkwaterBabyPage() {
           Baby&rsquo;s jonger dan 6 maanden zijn extra kwetsbaar voor verontreinigingen in water. Welk water is veilig voor het aanmaken van kunstvoeding? We zetten de feiten op een rij.
         </p>
 
+        <HealthDisclaimer />
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

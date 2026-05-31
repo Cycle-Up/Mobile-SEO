@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -114,6 +115,7 @@ export default function WaterfilterChroomPage() {
 
         <QuickAnswer answer="Chroom-6 (Cr(VI)) is kankerverwekkend (IARC groep 1) en verschilt sterk van het onschadelijke chroom-3. De EU-norm voor totaal chroom is 25 ug/L; de WHO-richtwaarde voor Cr(VI) is 0,05 ug/L. In Nederland zijn hotspots bekend bij Doetinchem, Tilburg en Den Bosch. Een osmosefilter verwijdert 95-99% van chroom-6." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

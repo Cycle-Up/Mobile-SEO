@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { HealthDisclaimer } from "@/components/HealthDisclaimer";
 
 export const metadata: Metadata = {
   title: "Mangaanfilter voor water: bruin water en mangaan verwijderen",
@@ -100,6 +101,7 @@ export default function MangaanfilterPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-10 mb-4">

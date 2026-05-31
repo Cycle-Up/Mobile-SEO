@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import Link from 'next/link';
@@ -125,6 +126,7 @@ export default function WaterfilterLegionellaPage() {
 
         <QuickAnswer answer="Legionella groeit in stilstaand warm water tussen 25-50 graden Celsius in leidingen, boilers en douchekoppen. Een UV-filter doodt legionella effectief (99,99%+). Een osmosefilter verwijdert bacterien fysiek. Een standaard koolstoffilter beschermt niet en kan bij slecht onderhoud zelfs bacteriegroei bevorderen. Preventie via boilertemperatuur (&gt;60 graden Celsius) blijft de primaire maatregel." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

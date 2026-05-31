@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { HealthDisclaimer } from "@/components/HealthDisclaimer";
 
 export const metadata: Metadata = {
   title: "Osmosewater voor flesvoeding: veilig voor baby en aanbevolen TDS",
@@ -114,6 +115,7 @@ export default function BabyFlesvoedingOsmosePage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <HealthDisclaimer />
         <CTABanner context="kokend" />
 
         <section className="mt-10">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { HealthDisclaimer } from "@/components/HealthDisclaimer";
 
 export const metadata: Metadata = {
   title: "Osmosewater en microplastics: aantoonbaar vrij van plastic deeltjes",
@@ -115,6 +116,7 @@ export default function OsmoseWaterMicroplasticsPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <section className="mt-10 prose prose-blue max-w-none">

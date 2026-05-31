@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -136,6 +137,7 @@ export default function WaterfilterLoodPage() {
 
         <QuickAnswer answer="Lood in leidingwater is neurotoxisch zonder veilige grenswaarde. Woningen van voor 1960 kunnen loden leidingen hebben. Laat altijd 30 seconden koud water doorlopen voor gebruik. Een osmosefilter verwijdert 95-99% van het lood. Structurele oplossing is vervanging van loden leidingen door een gecertificeerde loodgieter." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { HealthDisclaimer } from "@/components/HealthDisclaimer";
 
 export const metadata: Metadata = {
   title: "Nanoplastics in drinkwater: gezondheidsrisico's en osmose als enige oplossing",
@@ -158,6 +159,7 @@ export default function NanoplasticsPage() {
           <QuickAnswer answer="Nanoplastics (kleiner dan 1 µm) passeren bijna alle standaard waterfilters. Ze zijn aangetoond in menselijk bloed, longen en placentaweefsel. Alleen omgekeerde osmose (porieen 0,0001 µm) houdt nanoplastics volledig tegen. Flessenwater bevat significant meer nanoplastics dan kraanwater." />
         </section>
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         {/* Sectie 1: Wat zijn nanoplastics */}

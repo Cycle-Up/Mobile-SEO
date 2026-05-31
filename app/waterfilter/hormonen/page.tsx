@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import Link from 'next/link';
@@ -125,6 +126,7 @@ export default function WaterfilterHormonenPage() {
 
         <QuickAnswer answer="In Nederlands kraanwater zitten sporen van hormonen (ethinylestradiol uit de pil) en medicijnresten (ibuprofen, antibiotica, metformine) in nanogram-concentraties. Bij huidige niveaus geen bewezen gezondheidsrisico, maar het voorzorgsbeginsel rechtvaardigt actie. Osmosefilter verwijdert 90-99% van medicijnresten. Koolstoffilter is deels effectief. UV-filter werkt niet tegen chemische stoffen." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -110,6 +111,7 @@ export default function PfasSoortenPage() {
 
         <QuickAnswer answer="De PFAS-familie omvat PFOS (verboden 2009), PFOA (verboden 2020), PFNA, PFHxS, GenX en honderden andere verbindingen. De EU-som-norm in drinkwater is 0,10 µg/L voor 20 prioritaire stoffen. Langketenige PFAS (PFOS, PFOA) bioaccumuleren sterk: halfwaardetijd 4-5 jaar in het menselijk lichaam. Actief kool verwijdert kortketenige GenX slecht (30-60%). Omgekeerde osmose verwijdert alle PFAS-soorten voor &gt;95%." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-bold text-[#003F5C] mt-10 mb-4">

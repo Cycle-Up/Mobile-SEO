@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { HealthDisclaimer } from "@/components/HealthDisclaimer";
 
 export const metadata: Metadata = {
   title: "Chroom-6 norm drinkwater: EU 25 ug/L vs WHO 0,05 ug/L — groot verschil",
@@ -114,6 +115,7 @@ export default function Chroom6NormPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <section className="mt-10">

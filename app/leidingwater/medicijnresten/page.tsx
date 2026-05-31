@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -137,6 +138,7 @@ export default function MedicijnrestenPage() {
 
         <QuickAnswer answer="Medicijnresten zoals diclofenac, hormoonpillen en antibiotica zijn in sporenconcentraties (nanogram/liter) aanwezig in Nederlands drinkwater. RIVM stelt: geen acuut risico bij huidige niveaus. Een osmosefilter verwijdert 80-95% van farmaceutische stoffen. Lever medicijnen altijd in bij de apotheek." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

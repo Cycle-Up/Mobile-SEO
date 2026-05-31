@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -136,6 +137,7 @@ export default function WaterfilterMicroplasticsPage() {
 
         <QuickAnswer answer="Microplastics (kleiner dan 5 mm) zijn aangetroffen in 80% van onderzochte kraanwatersamples wereldwijd. Nederlands kraanwater bevat slechts 0,1-3 deeltjes per liter (laag). Flessenwater bevat 10-100x meer microplastics. WHO 2022: geen bewezen gezondheidsrisico bij huidige concentraties. Osmosefilter verwijdert 99%+ van microplastics en nanoplastics." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

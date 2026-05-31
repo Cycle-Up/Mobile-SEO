@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -132,6 +133,7 @@ export default function NiraatLeidingwaterPage() {
 
         <QuickAnswer answer="Nitraat in leidingwater: EU-norm is 50 mg/L, gemiddeld NL 5-25 mg/L. In landbouwgebieden (Brabant, Gelderse Vallei) tot 45 mg/L. Gevaarlijk voor baby's onder 6 maanden boven 10 mg/L (blauwe baby syndroom). Osmosefilter en ionenwisselaar verwijderen 85-95%. Koken concentreert nitraat juist." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

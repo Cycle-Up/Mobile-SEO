@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -128,6 +129,7 @@ export default function LeidingwaterUraniumPage() {
 
         <QuickAnswer answer="Uranium komt natuurlijk voor in diep grondwater in delen van Brabant, Achterhoek en oostelijke Veluwe. WHO-richtwaarde 30 ug/L, EU-norm vanaf 2026 ook 30 ug/L. Nederlands leidingwater zit doorgaans onder 5 ug/L. In particuliere putten incidenteel 30-100 ug/L. Omgekeerde osmose verwijdert 95-99% en is de beste thuisoplossing." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

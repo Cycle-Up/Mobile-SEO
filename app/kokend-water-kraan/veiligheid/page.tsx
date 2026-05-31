@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -137,6 +138,7 @@ export default function KokendWaterKraanVeiligheidPage() {
 
         <QuickAnswer answer="Een kokend water kraan is veilig bij CE-markering (EN 61770) en NEN 1006-installatie. Verplichte kinderbeveiliging (knijpen-en-draaien of dubbelklik), thermisch isolerende uitloop en automatische afschakeling voorkomen de meeste ongelukken. Installatie door erkend installateur wordt sterk aanbevolen." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
