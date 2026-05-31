@@ -19,6 +19,34 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'kraanwater-kefir-maken',
+    titel: 'Kefir maken met kraanwater: chloor en de korrels',
+    samenvatting: 'Hoe chloor en mineralen kefirkorrels (water- en melkkefir) beinvloeden en hoe je kraanwater voorbereidt met ontchloren of filteren.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'osmose-water-snijbloemen-vaas',
+    titel: 'Snijbloemen langer mooi: welk water in de vaas?',
+    samenvatting: 'Hoe chloor, kalk en bacterien het vaasleven van snijbloemen beinvloeden, en wanneer gefilterd of osmosewater echt helpt.',
+    categorie: 'Osmose',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'kraanwater-cocktails-helder-ijs',
+    titel: 'Cocktails en helder ijs: welk water gebruik je?',
+    samenvatting: 'Hoe water en ijs de smaak en helderheid van cocktails bepalen en waarom gefilterd of osmosewater een zuiverdere drank en helder ijs geeft.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'waterfilter-slowcooker-stoofpot',
+    titel: 'Welk water voor de slowcooker? Smaak en kalk',
+    samenvatting: 'Hoe hardheid en chloor de smaak en kalkaanslag bij langzaam garen beinvloeden en wanneer gefilterd water loont voor stoofpot en bouillon.',
+    categorie: 'Waterfilter',
+    datum: '31 mei 2026',
+  },
+  {
     slug: 'kraanwater-cold-brew-koffie',
     titel: 'Cold brew koffie met kraanwater: zo smaakt het beter',
     samenvatting: 'Hoe hardheid en chloor de smaak van cold brew bepalen en waarom gefilterd of laag-mineraal water een zachtere, zoetere koffie geeft.',

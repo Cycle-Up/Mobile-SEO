@@ -359,11 +359,13 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Kraanwater laten analyseren: laboratorium, kosten en aanpak](https://waterfilterplatform.nl/kennisbank/kraanwater-analyse-laboratorium) (2026-02-26)
 - [Kraanwater bruisend maken thuis: alle opties vergeleken](https://waterfilterplatform.nl/kennisbank/kraanwater-bruisend-maken) (2026-02-26)
 - [Kraanwater in het buitenland: wanneer veilig?](https://waterfilterplatform.nl/kennisbank/kraanwater-buitenland) (2026-04-08)
+- [Cocktails en helder ijs: welk water gebruik je? (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-cocktails-helder-ijs) (2026-05-31)
 - [Cold brew koffie met kraanwater: zo smaakt het beter (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-cold-brew-koffie) (2026-05-31)
 - [Kraanwater doorspoelen bij een loodleiding: zo doe je het](https://waterfilterplatform.nl/kennisbank/kraanwater-doorspoelen-loodleiding) (2026-05-30)
 - [Kraanwater hardheid meten thuis: methoden en schalen uitgelegd](https://waterfilterplatform.nl/kennisbank/kraanwater-hardheid-meten) (2026-02-26)
 - [Waterhardheid tabel Nederland: alle regio's op een rij](https://waterfilterplatform.nl/kennisbank/kraanwater-hardheid-tabel) (2025-09-16)
 - [IJsthee maken met kraanwater: helder en fris (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-ijsthee) (2026-05-31)
+- [Kefir maken met kraanwater: chloor en de korrels (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-kefir-maken) (2026-05-31)
 - [Kraanwater koelen: koud gefilterd water thuis](https://waterfilterplatform.nl/kennisbank/kraanwater-koelen) (2026-02-27)
 - [Kraanwater in de koelkast: koud en fris bewaren](https://waterfilterplatform.nl/kennisbank/kraanwater-koelkast) (2026-02-27)
 - [Moet je kraanwater koken? Wat het wel en niet verwijdert](https://waterfilterplatform.nl/kennisbank/kraanwater-koken) (2025-11-10)
@@ -442,6 +444,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Osmosewater en nierwerking: advies bij nierziekten](https://waterfilterplatform.nl/kennisbank/osmose-water-nier) (2026-04-13)
 - [Osmosewater voor planten: wanneer helpt het en hoe gebruik je het?](https://waterfilterplatform.nl/kennisbank/osmose-water-planten) (2026-03-06)
 - [Osmosewater voor kamerplanten: welke soorten profiteren?](https://waterfilterplatform.nl/kennisbank/osmose-water-planten-kamerplanten) (2026-03-09)
+- [Snijbloemen langer mooi: welk water in de vaas? (2026)](https://waterfilterplatform.nl/kennisbank/osmose-water-snijbloemen-vaas) (2026-05-31)
 - [Osmose water en sport: is het goed voor sporters?](https://waterfilterplatform.nl/kennisbank/osmose-water-sport) (2026-02-04)
 - [TDS-meter gebruiken bij osmosefilter: complete handleiding](https://waterfilterplatform.nl/kennisbank/osmose-water-tds-meter) (2026-03-09)
 - [Osmosewater voor thee: de perfecte kop thee zetten](https://waterfilterplatform.nl/kennisbank/osmose-water-thee) (2026-02-04)
@@ -574,6 +577,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [RVS leidingen en waterfilters: nikkeluitloging uitgelegd](https://waterfilterplatform.nl/kennisbank/waterfilter-rvs-leidingen) (2026-03-23)
 - [Waterfilter voor sauna en spa: kalkvrij en hygiënisch](https://waterfilterplatform.nl/kennisbank/waterfilter-sauna) (2026-03-02)
 - [Waterfilter voor ouderen: eenvoudig en veilig drinkwater voor 65+](https://waterfilterplatform.nl/kennisbank/waterfilter-senioren) (2026-03-19)
+- [Welk water voor de slowcooker? Smaak en kalk (2026)](https://waterfilterplatform.nl/kennisbank/waterfilter-slowcooker-stoofpot) (2026-05-31)
 - [Chloor in drinkwater verwijderen: smaak en filters](https://waterfilterplatform.nl/kennisbank/waterfilter-smaak-chloor) (2026-03-26)
 - [Waterfilter soorten: alle types uitgelegd en vergeleken](https://waterfilterplatform.nl/kennisbank/waterfilter-soorten) (2025-12-12)
 - [Waterfilter voor sport en fitness: betere hydratatie](https://waterfilterplatform.nl/kennisbank/waterfilter-sport-fitness) (2026-03-03)
@@ -673,7 +677,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zachte water voordelen: minder kalk, zuiniger en meer](https://waterfilterplatform.nl/kennisbank/zacht-water-voordelen) (2026-03-23)
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
 
-Totaal: 402 kennisbank-artikelen.
+Totaal: 406 kennisbank-artikelen.
 
 ## Index
 
