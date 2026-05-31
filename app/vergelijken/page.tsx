@@ -183,6 +183,9 @@ export default function VergelijkenPage() {
               <Link key="/vergelijken/sodastream-vs-grohe-blue" href="/vergelijken/sodastream-vs-grohe-blue" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">SodaStream vs Grohe Blue</p>
               </Link>
+              <Link key="/vergelijken/boretti-vs-quooker" href="/vergelijken/boretti-vs-quooker" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Boretti vs Quooker</p>
+              </Link>
           </div>
         </section>
       </div>

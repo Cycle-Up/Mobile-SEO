@@ -25,16 +25,16 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 
 ## Fase C4 - Content: Grohe Red dieptecluster (focus)
 
-- [ ] C1. `/grohe-red` neutrale merk-hub (kokend water; distinct van /grohe-red-alternatief) - klaar wanneer: TSX-standaard, linkt naar >=2 eigen sub-pagina's.
-- [ ] C2. `/grohe-red-prijs` (toestel, filter, installatie; indicatieve TCO) - klaar wanneer: TSX-standaard, parent /grohe-red.
-- [ ] C3. `/grohe-red-filter` (filterpatroon: wanneer vervangen, kosten) - klaar wanneer: TSX-standaard, parent /grohe-red.
+- [x] C1. `/grohe-red` neutrale merk-hub (kokend water; distinct van /grohe-red-alternatief) - klaar wanneer: TSX-standaard, linkt naar >=2 eigen sub-pagina's.
+- [x] C2. `/grohe-red-prijs` (toestel, filter, installatie; indicatieve TCO) - klaar wanneer: TSX-standaard, parent /grohe-red.
+- [x] C3. `/grohe-red-filter` (filterpatroon: wanneer vervangen, kosten) - klaar wanneer: TSX-standaard, parent /grohe-red.
 
 ## Fase C4 - Content: merk-vs-merk vergelijkingen
 
-- [ ] C4. `/vergelijken/grohe-red-vs-grohe-blue` (kokend vs gefilterd/bruisend, zelfde merkfamilie) - klaar wanneer: TSX-standaard, parent /vergelijken.
-- [ ] C5. `/vergelijken/bwt-vs-brita` (twee filterkanmerken) - klaar wanneer: TSX-standaard, kannibalisatie-gecheckt vs bestaande filterkan-content.
-- [ ] C6. `/vergelijken/brita-vs-zerowater` (twee filterkannen, TDS-angle) - klaar wanneer: TSX-standaard, kannibalisatie-gecheckt.
-- [ ] C7. `/vergelijken/boretti-vs-quooker` (budget vs premium kokend) - klaar wanneer: TSX-standaard.
+- [x] C4. `/vergelijken/grohe-red-vs-grohe-blue` (kokend vs gefilterd/bruisend, zelfde merkfamilie) - klaar wanneer: TSX-standaard, parent /vergelijken.
+- [x] C5. `/vergelijken/bwt-vs-brita` (twee filterkanmerken) - klaar wanneer: TSX-standaard, kannibalisatie-gecheckt vs bestaande filterkan-content.
+- [x] C6. `/vergelijken/brita-vs-zerowater` (twee filterkannen, TDS-angle) - klaar wanneer: TSX-standaard, kannibalisatie-gecheckt.
+- [x] C7. `/vergelijken/boretti-vs-quooker` (budget vs premium kokend) - klaar wanneer: TSX-standaard.
 
 ## Fase C4 - Content: long-tail kennisbank (2 rondes)
 
