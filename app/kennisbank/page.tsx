@@ -16,6 +16,34 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'kraanwater-waterijs-maken',
+    titel: 'Waterijs maken met kraanwater: helder en lekker',
+    samenvatting: 'Waarom wordt zelfgemaakt waterijs troebel en flauw? De rol van lucht, kalk en chloor, plus hoe gefilterd of osmosewater helderdere ijsjes geeft.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'waterfilter-stoomreiniger',
+    titel: 'Welk water in je stoomreiniger? Kalk voorkomen',
+    samenvatting: 'Kraanwater, gedemineraliseerd of osmosewater in je stoomreiniger? Zo voorkom je verstopping, kalkspatten en schade aan de boiler.',
+    categorie: 'Waterfilter',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'kraanwater-kombucha-maken',
+    titel: 'Kombucha maken met kraanwater: chloor en de SCOBY',
+    samenvatting: 'Hoe chloor en mineralen de SCOBY-cultuur beinvloeden en hoe je kraanwater voorbereidt met ontchloren, filteren of gemengd osmosewater.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'kraanwater-zuurdesem-starter',
+    titel: 'Welk water voor je zuurdesem-starter?',
+    samenvatting: 'Chloor kan een jonge zuurdesem-starter remmen. Zo bereid je je water voor met ontchloren of filteren voor een actieve, gezonde cultuur.',
+    categorie: 'Waterfilter',
+    datum: '31 mei 2026',
+  },
+  {
     slug: 'kraanwater-ijsthee',
     titel: 'IJsthee maken met kraanwater: helder en fris',
     samenvatting: 'Waarom wordt zelfgemaakte ijsthee troebel en flauw? De rol van hard water en chloor, plus hoe gefilterd of osmosewater frissere ijsthee geeft.',

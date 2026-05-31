@@ -39,7 +39,7 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 ## Fase C4 - Content: long-tail kennisbank (2 rondes)
 
 - [x] C8. Long-tail ronde A: 4 nieuwe MDX in geverifieerde witruimte (kraanwater-ijsthee, waterfilter-stoomoven, kraanwater-limonade-zelf-maken, waterfilter-broodbakmachine; kandidaten waterfilter-vaatwasser/-koffiebar-horeca/waterontharder-vloerverwarming geskipt wegens kannibalisatie) - klaar wanneer: 4 artikelen voldoen aan MDX-standaard; check-content 100%; build groen.
-- [ ] C9. Long-tail ronde B: 4 nieuwe MDX (kandidaten: waterfilter-tandenpoetsen, drinkwater-hardloop-marathon, waterfilter-wasdroger + 1 te bepalen; kannibalisatie-gecheckt) - klaar wanneer: idem.
+- [x] C9. Long-tail ronde B: 4 nieuwe MDX (kraanwater-waterijs-maken, waterfilter-stoomreiniger, kraanwater-kombucha-maken, kraanwater-zuurdesem-starter; kandidaten tandenpoetsen/hardloop-marathon/wasdroger geskipt wegens kannibalisatie/zwak onderwerp) - klaar wanneer: idem.
 
 ## Fase K - Codekwaliteit: <a> -> <Link> + lint-gate
 
