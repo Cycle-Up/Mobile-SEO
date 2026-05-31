@@ -26,7 +26,7 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 - [x] A4. Disclaimer toepassen op YMYL-TSX-pagina's zonder disclaimer (71 routes via script: vlak voor de eerste CTABanner + import) - klaar wanneer: die routes bevatten de disclaimer in HTML; build groen; `audit-html` 0.
 - [x] A5. Topic->bronnen-mapping `lib/article-sources.mjs` (`sourcesForSlug(slug)` -> autoriteiten per onderwerp, fallback `DEFAULT_SOURCES`) - klaar wanneer: unit-test slaagt; gezondheidsonderwerpen geven >=3 onderwerp-specifieke bronnen; `npm test` groen.
 - [x] A6. `sourcesForSlug` koppelen aan de kennisbank-renderer (SourcesSection + Article-`citation`) wanneer frontmatter geen `sources` heeft - klaar wanneer: build groen; een gezondheidsartikel toont onderwerp-bronnen in HTML en `citation` in de Article-JSON-LD; `audit-html` 0.
-- [ ] A7. Gate `scripts/check-ymyl.mjs` + test: elk YMYL-artikel resolvet naar >=3 bronnen (disclaimer+citaties zullen renderen); aan `npm run verify` toevoegen - klaar wanneer: gate exit 0 in schone staat, exit 1 op een fixture zonder bronnen; `npm test` groen.
+- [x] A7. Gate `scripts/check-ymyl.mjs` + test: elk YMYL-artikel resolvet naar >=3 bronnen (disclaimer+citaties zullen renderen); aan `npm run verify` toevoegen - klaar wanneer: gate exit 0 in schone staat, exit 1 op een fixture zonder bronnen; `npm test` groen.
 
 ## Fase B - AI-Search / AEO-integriteit
 
