@@ -128,7 +128,7 @@ Laatste run: ${date.toISOString().slice(0, 10)}.
 | Hubs met ItemList | ${stats.hubItemListOk}/${stats.hubItemListTotal} | ${stats.hubItemListOk === stats.hubItemListTotal ? 'OK' : 'LET OP'} |
 | Banned typografie | ${stats.typographyTotal} | ${stats.typographyBaseline !== null && stats.typographyTotal <= stats.typographyBaseline ? 'OK (<= baseline ' + stats.typographyBaseline + ')' : 'LET OP'} |
 
-Gates: \`npm test\`, \`npm run verify\` (eslint + check-content + typografie + links + sitemap + orphans + llms),
+Gates: \`npm test\`, \`npm run verify\` (eslint + check-content + typografie + links + sitemap + orphans + llms + ymyl + llms-full),
 \`npm run build && npm run audit-html\` (post-build canonical/title/h1/description/JSON-LD/ItemList).
 `;
 }

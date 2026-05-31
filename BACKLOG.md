@@ -52,7 +52,7 @@ Per afgeronde taak: vink af + 1 regel in WORKLOG.md + commit per logische groep.
 
 ## Afsluiting
 
-- [ ] Z1. `SITE-HEALTH.md` hergenereren + WORKLOG bijwerken - klaar wanneer: `site-health.mjs` draait, metrics actueel, alles gecommit en gepusht.
+- [x] Z1. `SITE-HEALTH.md` hergenereren + WORKLOG bijwerken - klaar wanneer: `site-health.mjs` draait, metrics actueel, alles gecommit en gepusht.
 
 ## Definition of Done (ronde 5)
 Backlog leeg, `npm test` groen, `npm run verify` exit 0 (incl. lint + check-ymyl + check-llms-full),
