@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
     title: 'Gekoelde drinkwaterfontein: koeltechniek en verbruik',
     description:
-      'Hoe werkt koeling bij een drinkwaterfontein? Doorstroomkoeling vs voorraadkoeling vergeleken op capaciteit, energieverbruik en hygiene, met de juiste temperatuurinstelling.',
+      'Hoe werkt koeling bij een drinkwaterfontein? Doorstroomkoeling vs voorraadkoeling vergeleken op capaciteit, energieverbruik en hygiene, met de juiste',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/koeling' },
     openGraph: {
       title: 'Gekoelde drinkwaterfontein: koeltechniek en verbruik',
@@ -116,6 +118,8 @@ export default function DrinkwaterfonteinKoelingPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer
           question="Hoe werkt koeling bij een drinkwaterfontein?"

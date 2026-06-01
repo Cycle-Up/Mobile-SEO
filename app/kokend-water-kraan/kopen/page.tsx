@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan kopen: complete gids 2026',
@@ -156,6 +158,8 @@ export default function KokendWaterKraanKopenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -180,7 +184,7 @@ export default function KokendWaterKraanKopenPage() {
             hoger de prijs.
           </p>
           <div className="space-y-4">
-            {typesTabel.map((t, i) => (
+            {typesTabel.map((t) => (
               <div
                 key={t.type}
                 className={`border rounded-2xl p-5 ${t.highlight ? 'border-[#005F8A] bg-[#E0F2FE]' : 'border-gray-100'}`}

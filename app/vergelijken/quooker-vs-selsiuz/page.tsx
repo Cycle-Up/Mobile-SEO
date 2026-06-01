@@ -3,6 +3,8 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: "Quooker vs Selsiuz: welke kokend water kraan is beter?",
@@ -51,6 +53,16 @@ export default function QuookerVsSelsiuzPage() {
           { name: "Quooker vs Selsiuz", url: "https://waterfilterplatform.nl/vergelijken/quooker-vs-selsiuz" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Quooker vs Selsiuz: welke kokend water kraan is beter?",
+          description: "Quooker vs Selsiuz vergeleken: prijs, functies, design, filter en onderhoud. Plus wanneer een 4-in-1 osmosekraan een completer alternatief is.",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/vergelijken/quooker-vs-selsiuz",
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
@@ -72,6 +84,8 @@ export default function QuookerVsSelsiuzPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <CTABanner context="kokend" />
 
         <section className="mt-10">

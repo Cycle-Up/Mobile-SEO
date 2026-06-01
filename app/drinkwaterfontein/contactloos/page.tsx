@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
     title: 'Contactloze drinkwaterfontein: sensor, hygiene en gebruik',
     description:
-      'Een contactloze drinkwaterfontein tap je zonder aanraking via sensor, infrarood of voetbediening. Hygienischer voor openbaar en druk gebruik, met bidon-vulpunt - let op sensoronderhoud en stroom.',
+      'Een contactloze drinkwaterfontein tap je zonder aanraking via sensor, infrarood of voetbediening. Hygienischer voor openbaar en druk gebruik, met',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/contactloos' },
     openGraph: {
       title: 'Contactloze drinkwaterfontein: sensor en hygiene',
@@ -116,6 +118,8 @@ export default function DrinkwaterfonteinContactloosPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer
           question="Wat is een contactloze drinkwaterfontein?"

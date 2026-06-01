@@ -6,7 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Drinkwaterfontein onderhoud: reinigen, filters vervangen en levensduur 2026',
-  description: 'Hoe onderhoud u een drinkwaterfontein? Stappenplan voor reiniging, filtervervanging en desinfectie. Inclusief schema voor koolstoffilter, UV-lamp en RO-membraan.',
+  description: 'Hoe onderhoud u een drinkwaterfontein? Stappenplan voor reiniging, filtervervanging en desinfectie. Inclusief schema voor koolstoffilter, UV-lamp en',
   alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/onderhoud' },
 };
 

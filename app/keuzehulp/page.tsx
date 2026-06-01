@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
 import { MethodologyBadge } from "@/components/MethodologyBadge";
@@ -12,7 +11,6 @@ export const metadata: Metadata = {
   description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Zonder verkoopadvies.",
   alternates: { canonical: "https://waterfilterplatform.nl/keuzehulp" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/keuzehulp.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Waterfilter keuzehulp: welk filter past bij jouw situatie?",
     description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Zonder verkoopadvies.",
     type: "website",
@@ -23,6 +21,26 @@ export default function KeuzehulpPage() {
   const cluster = getCluster("keuzehulp")!;
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Waterfilter keuzehulp',
+            url: 'https://waterfilterplatform.nl/keuzehulp',
+            numberOfItems: 8,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Waterfilter voor baby en gezin: osmose voor flesvoeding en jong gezin', url: 'https://waterfilterplatform.nl/keuzehulp/baby-gezin' },
+            { '@type': 'ListItem', position: 2, name: 'Waterfilter per budget - wat kunt u verwachten voor EUR 50, EUR 200 en EUR 500+?', url: 'https://waterfilterplatform.nl/keuzehulp/budget' },
+            { '@type': 'ListItem', position: 3, name: 'Waterfilter op reis - beste reisfilter voor drinkwater in het buitenland', url: 'https://waterfilterplatform.nl/keuzehulp/buitenland-reizen' },
+            { '@type': 'ListItem', position: 4, name: 'Waterfilter voor geur en smaak - chloor, chloramine en metaalindruk', url: 'https://waterfilterplatform.nl/keuzehulp/geur-smaak' },
+            { '@type': 'ListItem', position: 5, name: 'Hard water en waterfilter: waterontharder of osmose?', url: 'https://waterfilterplatform.nl/keuzehulp/hard-water' },
+            { '@type': 'ListItem', position: 6, name: 'Waterfilter in huurwoning: welke opties zonder boren of installatie?', url: 'https://waterfilterplatform.nl/keuzehulp/huurwoning' },
+            { '@type': 'ListItem', position: 7, name: 'Welk type waterfilter past bij uw keuken? Aanrecht, onderkast of inbouw', url: 'https://waterfilterplatform.nl/keuzehulp/installatie-type' },
+            { '@type': 'ListItem', position: 8, name: 'PFAS of lood in drinkwater: wanneer is osmose de beste keuze?', url: 'https://waterfilterplatform.nl/keuzehulp/pfas-lood' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg
         type="FAQPage"
         faqItems={[
@@ -106,6 +124,17 @@ export default function KeuzehulpPage() {
                 <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">{l.title}</p>
               </Link>
             ))}
+          </div>
+        </section>
+      </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/keuzehulp/buitenland-reizen" href="/keuzehulp/buitenland-reizen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterfilter op reis - beste reisfilter voor drinkwater</p>
+              </Link>
           </div>
         </section>
       </div>

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/gemeenten';
+import { clampDescription } from '@/lib/seo';
+
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
@@ -22,7 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `Kokend water kraan in ${gemeente.naam}: advies voor ${gemeente.hardheid}°dH`;
   return {
     title: title.length > 70 ? title.slice(0, 67) + '...' : title,
-    description: `Overweeg je een kokend water kraan in ${gemeente.naam}? Het water heeft ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}). Lees welk type kraan past, hoe vaak ontkalken en wat de installatie kost.`,
+    description: clampDescription(`Overweeg je een kokend water kraan in ${gemeente.naam}? Het water heeft ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}). Lees welk type kraan past, hoe vaak ontkalken en wat de installatie kost.`),
     alternates: { canonical: `https://waterfilterplatform.nl/kokend-water-kraan/${gemeente.slug}` },
     openGraph: {
       title: `Kokend water kraan in ${gemeente.naam} — advies bij ${gemeente.hardheid}°dH water`,

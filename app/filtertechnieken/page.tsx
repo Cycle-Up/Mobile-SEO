@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { FilterTechniekenComparison } from "@/components/FilterTechniekenComparison";
 import { MethodologyBadge } from "@/components/MethodologyBadge";
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
   description: "Alle waterfiltertechnieken vergeleken: RO, UV-sterilisatie, actief kool, ultrafiltratie, ionenwisseling. Welke techniek verwijdert wat?",
   alternates: { canonical: "https://waterfilterplatform.nl/filtertechnieken" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/filtertechnieken.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Filtertechnieken waterfilters: omgekeerde osmose, UV, actief kool en meer",
     description: "Alle waterfiltertechnieken vergeleken: RO, UV-sterilisatie, actief kool, ultrafiltratie, ionenwisseling. Welke techniek verwijdert wat?",
     type: "website",
@@ -24,6 +22,27 @@ export default function FiltertechniekenPage() {
   const cluster = getCluster("filtertechnieken")!;
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Filtertechnieken',
+            url: 'https://waterfilterplatform.nl/filtertechnieken',
+            numberOfItems: 9,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Actief kool waterfilter: GAC vs CTO, werking en wanneer effectief', url: 'https://waterfilterplatform.nl/filtertechnieken/actief-kool' },
+            { '@type': 'ListItem', position: 2, name: 'Elektrolyse en CDI waterontzouting - hoe werkt capacitieve deionisatie?', url: 'https://waterfilterplatform.nl/filtertechnieken/elektrolyse-cdi' },
+            { '@type': 'ListItem', position: 3, name: 'Ionenwisseling voor drinkwater: principe, hars en regeneratie uitgelegd', url: 'https://waterfilterplatform.nl/filtertechnieken/ionenwisseling' },
+            { '@type': 'ListItem', position: 4, name: 'Keramisch waterfilter - diatomeeenaarde en zilverbehandeling', url: 'https://waterfilterplatform.nl/filtertechnieken/keramisch' },
+            { '@type': 'ListItem', position: 5, name: 'Nanofiltration (NF) - tussen ultrafiltratie en omgekeerde osmose', url: 'https://waterfilterplatform.nl/filtertechnieken/nanofiltration' },
+            { '@type': 'ListItem', position: 6, name: 'Omgekeerde osmose filtertechniek: werking, membraan en effectiviteit', url: 'https://waterfilterplatform.nl/filtertechnieken/omgekeerde-osmose' },
+            { '@type': 'ListItem', position: 7, name: 'Ultrafiltratie (UF) waterfilter: 0,01 micron, hollow fiber en toepassingen', url: 'https://waterfilterplatform.nl/filtertechnieken/ultrafiltratie' },
+            { '@type': 'ListItem', position: 8, name: 'UV-sterilisatie waterfilter: werking, dosis en toepassingen', url: 'https://waterfilterplatform.nl/filtertechnieken/uv-sterilisatie' },
+            { '@type': 'ListItem', position: 9, name: 'Filtertechnieken vergelijken - welke technologie verwijdert wat?', url: 'https://waterfilterplatform.nl/filtertechnieken/vergelijking' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg
         type="FAQPage"
         faqItems={[

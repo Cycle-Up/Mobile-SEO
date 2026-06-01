@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { HealthDisclaimer } from "@/components/HealthDisclaimer";
 
 export const metadata: Metadata = {
   title: "Nanoplastics in drinkwater: gezondheidsrisico's en osmose als enige oplossing",
@@ -158,6 +159,7 @@ export default function NanoplasticsPage() {
           <QuickAnswer answer="Nanoplastics (kleiner dan 1 µm) passeren bijna alle standaard waterfilters. Ze zijn aangetoond in menselijk bloed, longen en placentaweefsel. Alleen omgekeerde osmose (porieen 0,0001 µm) houdt nanoplastics volledig tegen. Flessenwater bevat significant meer nanoplastics dan kraanwater." />
         </section>
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         {/* Sectie 1: Wat zijn nanoplastics */}
@@ -556,7 +558,7 @@ export default function NanoplasticsPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Link href="/stoffen-in-drinkwater/microplastics" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/drinkwater/microplastics" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Microplastics in drinkwater</h3>
             <p className="text-sm text-gray-600">Wetenschappelijke achtergrond en normen voor microplastics in drinkwater.</p>
           </Link>

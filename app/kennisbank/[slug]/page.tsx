@@ -11,6 +11,9 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { SourcesSection } from '@/components/SourcesSection';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
+import { isYmyl } from '@/lib/ymyl.mjs';
+import { sourcesForSlug } from '@/lib/article-sources.mjs';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -52,18 +55,11 @@ function getClusterLinks(slug: string) {
   return matched.slice(0, 4);
 }
 
-function articleImagePath(slug: string, fmImage?: string) {
-  if (fmImage) return fmImage;
-  const s = slug.toLowerCase();
-  if (/pfas|lood|nitraat|chloor|microplast|hormonen|chroom|uranium|zware/.test(s)) return '/og/stoffen-in-drinkwater.svg';
-  if (/osmose|filter-|filtertechniek|ultrafiltr|actief-kool|ionenwissel|uv-steril|nanofiltr|kerami/.test(s)) return '/og/filtertechnieken.svg';
-  if (/hardheid|kalk|ontharder/.test(s)) return '/og/waterhardheid.svg';
-  if (/norm|drinkwaterbeslu|eu-richtl|wetge/.test(s)) return '/og/drinkwaternormen.svg';
-  if (/keurmerk|nsf|kiwa|certifi/.test(s)) return '/og/keurmerken.svg';
-  if (/vergelij|vs-|versus/.test(s)) return '/og/vergelijken.svg';
-  if (/onderhoud|vervang|levensduur|reinig/.test(s)) return '/og/onderhoud.svg';
-  if (/keuze|welk|beste-/.test(s)) return '/og/keuzehulp.svg';
-  return '/og/home.svg';
+function articleImagePath(_slug: string, fmImage?: string) {
+  // Sociale previews gebruiken de site-brede PNG (app/opengraph-image.tsx); SVG
+  // og:images renderen niet betrouwbaar op social platforms. Frontmatter-image
+  // blijft leidend wanneer een artikel een eigen afbeelding meegeeft.
+  return fmImage ?? 'https://waterfilterplatform.nl/opengraph-image';
 }
 
 export async function generateStaticParams() {
@@ -124,6 +120,9 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
   if (!article) notFound();
 
   const { title, description, date, lastModified, quickAnswer, image, sources, methodologySources, lastReviewed } = article.data;
+  const ymyl = isYmyl(slug, article.data);
+  // Onderwerp-passende autoriteiten wanneer een artikel geen eigen bronnen meegeeft.
+  const articleSources: string[] = sources?.length ? sources : sourcesForSlug(slug);
   const faqItems = extractFaqItems(article.content);
   const articleImage = articleImagePath(slug, image);
 
@@ -139,7 +138,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           lastReviewed: lastReviewed ?? lastModified,
           url: `https://waterfilterplatform.nl/kennisbank/${slug}`,
           image: articleImage,
-          sources,
+          sources: articleSources,
         }}
       />
       {faqItems.length >= 2 && (
@@ -178,11 +177,12 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
         <MethodologyBadge sources={methodologySources} lastReviewed={lastReviewed ?? lastModified} />
         <AuthorBox datePublished={date} dateModified={lastModified} />
         {quickAnswer && <QuickAnswer answer={quickAnswer} question={title} />}
+        {ymyl && <HealthDisclaimer />}
         <article className="prose max-w-none">
           <MDXRemote source={article.content} />
         </article>
 
-        <SourcesSection sources={sources} />
+        <SourcesSection sources={articleSources} />
 
         {(() => {
           const clusterLinks = getClusterLinks(slug);

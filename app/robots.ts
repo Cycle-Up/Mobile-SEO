@@ -10,9 +10,11 @@ export default function robots(): MetadataRoute.Robots {
       // Explicitly welcome all major AI crawlers
       { userAgent: 'GPTBot', allow: '/' },
       { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'OAI-SearchBot', allow: '/' },
       { userAgent: 'ClaudeBot', allow: '/' },
       { userAgent: 'Claude-Web', allow: '/' },
       { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'Perplexity-User', allow: '/' },
       { userAgent: 'Googlebot-Extended', allow: '/' },
       { userAgent: 'Google-Extended', allow: '/' },
       { userAgent: 'YouBot', allow: '/' },

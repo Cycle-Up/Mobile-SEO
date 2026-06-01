@@ -26,46 +26,15 @@ function WaterDropIcon() {
   );
 }
 
+import { ctaContent } from '@/lib/cta.mjs';
+
 interface CTABannerProps {
   variant?: 'default' | 'compact';
   context?: 'osmose' | 'kokend' | 'waterhardheid' | 'algemeen' | 'zakelijk';
 }
 
-const content = {
-  osmose: {
-    title: 'Welk waterfilter past bij jouw situatie?',
-    sub: 'Watertype, verbruik en wensen bepalen welk systeem het meest geschikt is. Onze vergelijking helpt je kiezen.',
-    cta: 'Bekijk filtersoorten vergelijking',
-    link: '/waterfilter/vergelijken',
-  },
-  kokend: {
-    title: 'Kokend water kraan of waterkoker?',
-    sub: 'Gebruik, budget en keukeninrichting bepalen wat voor jou de slimste keuze is. Lees de vergelijking.',
-    cta: 'Vergelijk kokend water opties',
-    link: '/kokend-water-kraan/vergelijken',
-  },
-  waterhardheid: {
-    title: 'Last van kalk door hard water?',
-    sub: 'Controleer de waterhardheid in jouw gemeente en ontdek welke oplossing het beste past.',
-    cta: 'Zoek jouw gemeente op',
-    link: '/waterhardheid',
-  },
-  algemeen: {
-    title: 'Welk waterfilter past bij jou?',
-    sub: 'Van eenvoudige filterkannen tot omgekeerde osmose — er is voor elke situatie een passende oplossing. Lees de vergelijking.',
-    cta: 'Bekijk alle filtersoorten',
-    link: '/waterfilter/soorten',
-  },
-  zakelijk: {
-    title: 'Zakelijke waterfiltratie: vraag een offerte aan',
-    sub: 'Van kantoor tot industrie — vergelijk systemen op capaciteit, certificering en kosten. Onafhankelijk advies voor uw situatie.',
-    cta: 'Bekijk zakelijke oplossingen',
-    link: '/zakelijk',
-  },
-};
-
 export function CTABanner({ variant = 'default', context = 'algemeen' }: CTABannerProps) {
-  const c = content[context];
+  const c = ctaContent(context);
 
   if (variant === 'compact') {
     return (

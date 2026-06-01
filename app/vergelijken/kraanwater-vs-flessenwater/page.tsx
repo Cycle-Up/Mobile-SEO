@@ -3,6 +3,8 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: "Kraanwater vs flessenwater: kosten, kwaliteit en milieu vergeleken",
@@ -84,6 +86,8 @@ export default function KraanwaterVsFlessenwaterPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <CTABanner context="algemeen" />
 
         <section className="mt-10">
@@ -247,7 +251,7 @@ export default function KraanwaterVsFlessenwaterPage() {
               { label: "Kraanwater beter dan flessenwater", href: "/kennisbank/kraanwater-beter-dan-flessenwater" },
               { label: "Drinkwaternormen", href: "/drinkwaternormen" },
               { label: "Waterfilter kiezen", href: "/waterfilter" },
-              { label: "Microplastics in drinkwater", href: "/stoffen-in-drinkwater/microplastics" },
+              { label: "Microplastics in drinkwater", href: "/drinkwater/microplastics" },
             ].map((link) => (
               <Link
                 key={link.href}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { HealthDisclaimer } from "@/components/HealthDisclaimer";
 
 export const metadata: Metadata = {
   title: "Kokend water kraan kinderveiligheid: veiligheidsventiel en vergrendeling",
@@ -100,6 +101,7 @@ export default function KinderveiligheidPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <HealthDisclaimer />
         <CTABanner context="kokend" />
 
         <section className="mt-10 prose prose-blue max-w-none">

@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Koolstoffilter voor leidingwater: zinvol of niet? (2026)',
   description:
-    'Wanneer is een koolstoffilter zinvol voor leidingwater? Chloor, smaak, regio in Nederland. Wanneer niet voldoende: PFAS, nitraat, zware metalen. Combinatie met sedimentfilter.',
+    'Wanneer is een koolstoffilter zinvol voor leidingwater? Chloor, smaak, regio in Nederland. Wanneer niet voldoende: PFAS, nitraat, zware metalen. Combinatie',
   alternates: { canonical: 'https://waterfilterplatform.nl/koolstoffilter/leidingwater' },
 };
 

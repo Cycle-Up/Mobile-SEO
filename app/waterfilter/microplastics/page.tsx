@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -136,6 +137,7 @@ export default function WaterfilterMicroplasticsPage() {
 
         <QuickAnswer answer="Microplastics (kleiner dan 5 mm) zijn aangetroffen in 80% van onderzochte kraanwatersamples wereldwijd. Nederlands kraanwater bevat slechts 0,1-3 deeltjes per liter (laag). Flessenwater bevat 10-100x meer microplastics. WHO 2022: geen bewezen gezondheidsrisico bij huidige concentraties. Osmosefilter verwijdert 99%+ van microplastics en nanoplastics." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -380,7 +382,7 @@ export default function WaterfilterMicroplasticsPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Link href="/stoffen-in-drinkwater/microplastics" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/drinkwater/microplastics" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Microplastics in drinkwater</h3>
             <p className="text-sm text-gray-600">Wetenschappelijke achtergrond en normen voor microplastics in drinkwater.</p>
           </Link>

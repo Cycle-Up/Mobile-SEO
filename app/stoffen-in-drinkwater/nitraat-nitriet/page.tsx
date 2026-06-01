@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -159,6 +160,7 @@ export default function NiraatNitrietPage() {
           </div>
         </section>
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
       </div>
     </>

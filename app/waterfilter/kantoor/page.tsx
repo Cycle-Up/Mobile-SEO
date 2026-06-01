@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor kantoor: gezond drinkwater op de werkvloer',
@@ -113,8 +114,8 @@ export default function WaterfilterKantoorPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Kantoor</span>
         </nav>
 
@@ -141,7 +142,7 @@ export default function WaterfilterKantoorPage() {
           <li><strong>Kostenreductie:</strong> Flessenwater kost €2–4 per persoon per dag. Een osmosesysteem verlaagt de kosten naar &lt;€0,01 per liter.</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Lees ook onze pagina over <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a> voor de achtergrond van wat er in kraanwater zit.
+          Lees ook onze pagina over <Link href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</Link> voor de achtergrond van wat er in kraanwater zit.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -340,7 +341,7 @@ export default function WaterfilterKantoorPage() {
           <li><strong>Documentatie:</strong> Houd een logboek bij voor het geval een arbeidsinspectie de waterkwaliteit controleert.</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Bekijk onze pagina <a href="/waterfilter/onderhoud" className="text-[#005F8A] underline">waterfilter onderhoud</a> voor gedetailleerde onderhoudsschema&rsquo;s.
+          Bekijk onze pagina <Link href="/waterfilter/onderhoud" className="text-[#005F8A] underline">waterfilter onderhoud</Link> voor gedetailleerde onderhoudsschema&rsquo;s.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -362,34 +363,34 @@ export default function WaterfilterKantoorPage() {
           <p className="text-gray-700 mb-4">
             De PureAqua 4-in-1 osmose + kokend water kraan is de complete kantooroplossing: osmosekwaliteit drinkwater, direct kokend water voor thee en koffie, nul plastic flessen. Terugverdientijd bij 10+ medewerkers: &lt;6 maanden.
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk kantooroplossingen →
-          </a>
+          </Link>
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</a>, <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle waterfiltersoorten</a>.
+          Lees ook: <Link href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</Link>, <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link> en <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle waterfiltersoorten</Link>.
         </p>
 
         <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/zakelijk/kantoor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/zakelijk/kantoor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter zakelijk kantoor</h3>
             <p className="text-sm text-gray-600">Uitgebreid overzicht van waterfilteroplossingen voor kantooromgevingen van alle groottes.</p>
-          </a>
-          <a href="/zakelijk/waterkoeler-vs-filter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/zakelijk/waterkoeler-vs-filter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterkoeler vs waterfilter</h3>
             <p className="text-sm text-gray-600">Vergelijk waterkoelers en waterfilters op kosten, onderhoud en waterkwaliteit voor de werkvloer.</p>
-          </a>
-          <a href="/waterfilter/bedrijf" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/bedrijf" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor bedrijf</h3>
             <p className="text-sm text-gray-600">Waterfilteroplossingen voor bedrijven: van klein kantoor tot grote organisaties.</p>
-          </a>
-          <a href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor appartement</h3>
             <p className="text-sm text-gray-600">De beste waterfilters voor appartementen en kleine ruimtes zonder installatieproblemen.</p>
-          </a>
+          </Link>
         </div>
       </section>
       </main>

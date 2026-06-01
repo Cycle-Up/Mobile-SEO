@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
 
@@ -12,7 +11,6 @@ export const metadata: Metadata = {
     "Onderhoud voor osmosefilters, waterontharders, filterkansen en koolstoffilters: wanneer wisselen, hoe reinigen en hoe storingen oplossen.",
   alternates: { canonical: "https://waterfilterplatform.nl/onderhoud" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/onderhoud.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Waterfilter onderhoud: wanneer filters wisselen, reinigen en controleren",
     description:
       "Onderhoud voor osmosefilters, waterontharders, filterkansen en koolstoffilters: wanneer wisselen, hoe reinigen en hoe storingen oplossen.",
@@ -52,6 +50,24 @@ export default function OnderhoudPage() {
   const cluster = getCluster("onderhoud")!;
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Onderhoud',
+            url: 'https://waterfilterplatform.nl/onderhoud',
+            numberOfItems: 6,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Filterkan filter wisselen: Brita, BWT en andere merken vergeleken', url: 'https://waterfilterplatform.nl/onderhoud/filterkan-filter' },
+            { '@type': 'ListItem', position: 2, name: 'Kokend water kraan onderhoud: filter wisselen, ontkalken en lekkage', url: 'https://waterfilterplatform.nl/onderhoud/kokend-water-kraan-onderhoud' },
+            { '@type': 'ListItem', position: 3, name: 'Koolstoffilter levensduur: wanneer vervangen en hoe controleren', url: 'https://waterfilterplatform.nl/onderhoud/koolstoffilter-levensduur' },
+            { '@type': 'ListItem', position: 4, name: 'Osmosefilter vervangen: wanneer en hoe wissel je filters en membraan?', url: 'https://waterfilterplatform.nl/onderhoud/osmose-filter-vervangen' },
+            { '@type': 'ListItem', position: 5, name: 'Waterfilter storingen oplossen: osmose, filterkan en waterontharder', url: 'https://waterfilterplatform.nl/onderhoud/storingen-oplossen' },
+            { '@type': 'ListItem', position: 6, name: 'Waterontharder zout: soorten, verbruik en wanneer bijvullen', url: 'https://waterfilterplatform.nl/onderhoud/waterontharder-zout' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg
         schema={[
           {
@@ -137,6 +153,17 @@ export default function OnderhoudPage() {
                 <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">{l.title}</p>
               </Link>
             ))}
+          </div>
+        </section>
+      </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/onderhoud/filterkan-filter" href="/onderhoud/filterkan-filter" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Filterkan filter wisselen</p>
+              </Link>
           </div>
         </section>
       </div>

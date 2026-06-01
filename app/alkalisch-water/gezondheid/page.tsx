@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -139,6 +140,7 @@ export default function AlkalischWaterGezondheidsPage() {
 
         <QuickAnswer answer="Wetenschappelijk bewijs voor alkalisch water is dun. Enig bewijs bestaat voor zuurreflux (pH 8,8 inactiveert pepsine in vitro) en rehydratatie na sport (kleine studies). Claims over kankerpreventie en pH-neutralisatie zijn onwaar. De WHO geeft geen aanbeveling. Voor gezonde mensen geen bewezen voordeel boven normaal kraanwater of osmosewater." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter Onderhoud: Complete Handleiding 2026',
   description:
-    'Alles over waterfilter onderhoud: onderhoudsschema per filtertype, signalen van een verouderd filter, kosten en hygiënerisico\'s van verwaarlozing. Complete handleiding 2026.',
+    'Alles over waterfilter onderhoud: onderhoudsschema per filtertype, signalen van een verouderd filter, kosten en hygiënerisico\'s van verwaarlozing. Complete',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/onderhoud' },
   openGraph: {
     title: 'Waterfilter Onderhoud: Complete Handleiding 2026',

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -110,6 +111,7 @@ export default function OsmosewaterBabyPage() {
 
         <QuickAnswer answer="Osmosewater is veilig en bij voorkeur de beste keuze voor flesvoeding: natrium &lt;5 mg/L, nitraat &lt;1 mg/L, geen lood, geen PFAS. Het lage TDS is geen probleem want babymelkpoeder bevat alle mineralen. Kosten &euro;0,02&ndash;0,05 per liter versus &euro;0,40&ndash;0,80 voor flessenbabywater. Kook osmosewater altijd tot minimaal 70&deg;C voor aanmaak." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

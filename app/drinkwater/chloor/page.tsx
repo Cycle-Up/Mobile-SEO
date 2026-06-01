@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Chloor in drinkwater: waarom erin en is het veilig?',
@@ -112,8 +113,8 @@ export default function DrinkwaterChloorPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/drinkwater" className="hover:underline">Drinkwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/drinkwater" className="hover:underline">Drinkwater</Link> &rsaquo;{' '}
           <span>Chloor</span>
         </nav>
 
@@ -255,29 +256,29 @@ export default function DrinkwaterChloorPage() {
         </ul>
         <p className="text-gray-700 mb-6">
           Voor een uitgebreide vergelijking van alle methoden, zie onze pagina over{' '}
-          <a href="/waterfilter/chloor-verwijderen" className="text-[#005F8A] underline">chloor verwijderen uit kraanwater</a>. Voor algemene filteropties, zie onze{' '}
-          <a href="/waterfilter/soorten" className="text-[#005F8A] underline">vergelijking van waterfiltersoorten</a>.
+          <Link href="/waterfilter/chloor-verwijderen" className="text-[#005F8A] underline">chloor verwijderen uit kraanwater</Link>. Voor algemene filteropties, zie onze{' '}
+          <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">vergelijking van waterfiltersoorten</Link>.
         </p>
 
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Chloorbijproducten in drinkwater</h3>
             <p className="text-sm text-gray-600">Risicos van trihalomethanen en andere chloorbijproducten.</p>
-          </a>
-          <a href="/koolstoffilter/chloor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/koolstoffilter/chloor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor chloor</h3>
             <p className="text-sm text-gray-600">Hoe actief kool chloor effectief uit kraanwater verwijdert.</p>
-          </a>
-          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Actief kool filtratie</h3>
             <p className="text-sm text-gray-600">Werking en toepassingen van actief kool als filtertechniek.</p>
-          </a>
-          <a href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen</h3>
             <p className="text-sm text-gray-600">Overzicht van methoden om chloor uit kraanwater te verwijderen.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -296,7 +297,7 @@ export default function DrinkwaterChloorPage() {
         </div>
 
         <p className="text-gray-600 text-sm mt-6">
-          Zie ook: <a href="/waterfilter/chloor-verwijderen" className="text-[#005F8A] underline">5 methoden om chloor te verwijderen</a> en <a href="/drinkwater/kwaliteit" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a>.
+          Zie ook: <Link href="/waterfilter/chloor-verwijderen" className="text-[#005F8A] underline">5 methoden om chloor te verwijderen</Link> en <Link href="/drinkwater/kwaliteit" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</Link>.
         </p>
       </main>
     </>

@@ -822,6 +822,23 @@ export default function OsmoseFilterPage() {
           </div>
         </section>
       </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/osmose-filter/capaciteit" href="/osmose-filter/capaciteit" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosefilter Capaciteit</p>
+              </Link>
+              <Link key="/osmose-filter/kopen" href="/osmose-filter/kopen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmose Filter Kopen 2026</p>
+              </Link>
+              <Link key="/osmose-filter/onderhoud" href="/osmose-filter/onderhoud" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosefilter onderhoud</p>
+              </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

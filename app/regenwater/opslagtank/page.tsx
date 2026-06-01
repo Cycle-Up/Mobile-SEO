@@ -7,7 +7,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Regenwater opslagtank: 1000-10000L, beton of HDPE, kiezen',
   description:
-    'Een regenwatertank kiezen: 1000 tot 10000 liter, ondergronds (beton, HDPE) of bovengronds. Bereken benodigde inhoud, vergelijk materialen en kies de juiste filters.',
+    'Een regenwatertank kiezen: 1000 tot 10000 liter, ondergronds (beton, HDPE) of bovengronds. Bereken benodigde inhoud, vergelijk materialen en kies de juiste',
   alternates: { canonical: 'https://waterfilterplatform.nl/regenwater/opslagtank' },
 };
 

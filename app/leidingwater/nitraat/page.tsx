@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'Nitraat in leidingwater: normen, risicos en filteren',
-  description: 'De EU-norm voor nitraat in leidingwater is 50 mg/L. In landbouwgebieden wordt deze soms overschreden. Nitraat is gevaarlijk voor baby\'s. Osmosefilter verwijdert 85-95%.',
+  description: 'De EU-norm voor nitraat in leidingwater is 50 mg/L. In landbouwgebieden wordt deze soms overschreden. Nitraat is gevaarlijk voor baby\'s. Osmosefilter',
   alternates: { canonical: 'https://waterfilterplatform.nl/leidingwater/nitraat' },
 };
 
@@ -83,7 +84,7 @@ const faqSchema = {
 const articleSchema = {
   '@type': 'Article',
   headline: 'Nitraat in leidingwater: normen, risicos en filteren',
-  description: "De EU-norm voor nitraat in leidingwater is 50 mg/L. In landbouwgebieden wordt deze soms overschreden. Nitraat is gevaarlijk voor baby's. Osmosefilter verwijdert 85-95%.",
+  description: "De EU-norm voor nitraat in leidingwater is 50 mg/L. In landbouwgebieden wordt deze soms overschreden. Nitraat is gevaarlijk voor baby's. Osmosefilter",
   datePublished: '2026-05-01',
   dateModified: '2026-05-01',
   url: 'https://waterfilterplatform.nl/leidingwater/nitraat',
@@ -132,6 +133,7 @@ export default function NiraatLeidingwaterPage() {
 
         <QuickAnswer answer="Nitraat in leidingwater: EU-norm is 50 mg/L, gemiddeld NL 5-25 mg/L. In landbouwgebieden (Brabant, Gelderse Vallei) tot 45 mg/L. Gevaarlijk voor baby's onder 6 maanden boven 10 mg/L (blauwe baby syndroom). Osmosefilter en ionenwisselaar verwijderen 85-95%. Koken concentreert nitraat juist." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

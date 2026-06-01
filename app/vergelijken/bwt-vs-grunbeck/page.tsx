@@ -3,6 +3,8 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: "BWT vs Grunbeck: welke waterontharder is beter?",
@@ -51,6 +53,16 @@ export default function BwtVsGrunbeckPage() {
           { name: "BWT vs Grunbeck", url: "https://waterfilterplatform.nl/vergelijken/bwt-vs-grunbeck" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "BWT vs Grunbeck: welke waterontharder is beter?",
+          description: "BWT vs Grunbeck waterontharder vergeleken: technologie, zoutverbruik, bediening, service en prijssegment. Welk premium merk past het beste bij jou?",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/vergelijken/bwt-vs-grunbeck",
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
@@ -72,6 +84,8 @@ export default function BwtVsGrunbeckPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <CTABanner context="waterhardheid" />
 
         <section className="mt-10">

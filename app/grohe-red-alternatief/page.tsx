@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
@@ -143,6 +145,16 @@ const tco5jaar = [
 export default function GroheRedAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Wat is het beste Grohe Red alternatief? Opties 2026',
+          description: 'Op zoek naar een goedkoper alternatief voor de Grohe Red? Vergelijk prijs, functies en kosten van de beste opties naast Grohe Red in 2026.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/grohe-red-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"
@@ -188,6 +200,8 @@ export default function GroheRedAlternatiefPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Een Grohe Red alternatief levert kokend kraanwater voor €300–600 minder. De beste alternatieven zijn 4-in-1 kranen met ingebouwde osmose: die bieden extra gefilterd koud en bruisend water dat Grohe Red niet heeft. Grohe Red heeft geen waterfilter — bij hard water slijt de boiler sneller zonder extra filtering." />
 

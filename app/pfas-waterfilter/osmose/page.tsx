@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: 'PFAS verwijderen met omgekeerde osmose: 95-99% reductie',
   description:
-    'Omgekeerde osmose verwijdert 95-99% van alle PFAS-verbindingen via een membraan van 0,0001 micron. Vergelijking met koolstoffilter, installatiekosten en NSF/ANSI 58 certificering uitgelegd.',
+    'Omgekeerde osmose verwijdert 95-99% van alle PFAS-verbindingen via een membraan van 0,0001 micron. Vergelijking met koolstoffilter, installatiekosten en',
   alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter/osmose' },
 };
 
@@ -70,7 +71,7 @@ export default function PfasOsmosePage() {
         article={{
           title: 'PFAS verwijderen met omgekeerde osmose: 95-99% reductie',
           description:
-            'Omgekeerde osmose verwijdert 95-99% van alle PFAS-verbindingen via een membraan van 0,0001 micron. Vergelijking met koolstoffilter, installatiekosten en NSF/ANSI 58.',
+            'Omgekeerde osmose verwijdert 95-99% van alle PFAS-verbindingen via een membraan van 0,0001 micron. Vergelijking met koolstoffilter, installatiekosten en',
           datePublished: '2026-05-01',
           dateModified: '2026-05-01',
           url: 'https://waterfilterplatform.nl/pfas-waterfilter/osmose',
@@ -94,6 +95,7 @@ export default function PfasOsmosePage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <section className="mb-10">

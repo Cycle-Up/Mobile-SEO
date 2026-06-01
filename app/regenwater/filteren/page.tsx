@@ -135,7 +135,7 @@ export default function RegenwaterFilterenPage() {
           De voorfilter zit in de leiding van regenpijp naar opslagtank en heeft een veel fijnere maaswijdte dan de dakfilter: 100-200 micron. Hij houdt fijn zand, klein organisch materiaal en kleine deeltjes tegen die langs de dakfilter konden komen. Veel systemen werken met een zelfreinigende cycloonfilter die het filtraat afvoert naar het riool.
         </p>
         <p className="text-gray-700 mb-6">
-          Een goede voorfilter beschermt de hele rest van de filterketen en uw tankpomp. Voor meer technische diepgang over fijnfiltering zie onze pagina over <Link href="/filtertechnieken/sedimentfilter" className="text-[#005F8A] underline">sedimentfilters</Link>.
+          Een goede voorfilter beschermt de hele rest van de filterketen en uw tankpomp. Voor meer technische diepgang over fijnfiltering zie onze pagina over <Link href="/waterfilter/sediment" className="text-[#005F8A] underline">sedimentfilters</Link>.
         </p>
 
         <h3 className="text-xl font-semibold text-[#005F8A] mt-6 mb-3">
@@ -229,7 +229,7 @@ export default function RegenwaterFilterenPage() {
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Link href="/filtertechnieken/sedimentfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/waterfilter/sediment" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Sedimentfilter</h3>
               <p className="text-sm text-gray-600">Werking en micrometers van sedimentfilters voor regenwater en kraanwater.</p>
             </Link>

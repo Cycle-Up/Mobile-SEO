@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Mangaan in water: gevaren, herkenning en de beste waterfilters',
-  description: 'Mangaan in water: zwarte vlekken, donker slijm en neurologische risico\'s. Welk waterfilter verwijdert mangaan het best? Greensand, birm en osmose vergeleken voor Nederland.',
+  description: 'Mangaan in water: zwarte vlekken, donker slijm en neurologische risico\'s. Welk waterfilter verwijdert mangaan het best? Greensand, birm en osmose vergeleken',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/mangaan' },
 };
 
@@ -112,8 +114,8 @@ export default function WaterfilterMangaanPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Mangaan</span>
         </nav>
 
@@ -128,6 +130,7 @@ export default function WaterfilterMangaanPage() {
           </p>
         </div>
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -318,7 +321,7 @@ export default function WaterfilterMangaanPage() {
         </p>
         <p className="text-gray-700 mb-4">
           Bij een <strong>privéput</strong> bent u volledig zelf verantwoordelijk voor de waterkwaliteit. De overheid verplicht private putgebruikers niet tot jaarlijkse analyse, maar het RIVM adviseert dit sterk — zeker voor mangaan en ijzer in risicogebieden zoals Gelderland en Overijssel. Meer informatie over putwater en verplichtingen vindt u op onze pagina over{' '}
-          <a href="/putwater" className="text-[#005F8A] underline">putwater en privébronnen</a>.
+          <Link href="/putwater" className="text-[#005F8A] underline">putwater en privébronnen</Link>.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -333,29 +336,29 @@ export default function WaterfilterMangaanPage() {
         </ol>
         <p className="text-gray-700 mb-6">
           Voor een volledige vergelijking van filtertypen, zie ook{' '}
-          <a href="/waterfilter/ijzer" className="text-[#005F8A] underline">ijzer in water filteren</a> en{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a>.
+          <Link href="/waterfilter/ijzer" className="text-[#005F8A] underline">ijzer in water filteren</Link> en{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link>.
         </p>
 
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
             <p className="text-sm text-gray-600">Overzicht van alle zware metalen die in drinkwater kunnen voorkomen.</p>
-          </a>
-          <a href="/waterfilter/ijzer" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/ijzer" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">IJzer in water filteren</h3>
             <p className="text-sm text-gray-600">Alles over ijzer in grondwater en de beste filters voor ijzerverwijdering.</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitleg</h3>
             <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en wanneer is het de beste keuze?</p>
-          </a>
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen Nederland</h3>
             <p className="text-sm text-gray-600">Actueel overzicht van EU- en Nederlandse normen voor drinkwaterkwaliteit.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -375,9 +378,9 @@ export default function WaterfilterMangaanPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/waterfilter/ijzer" className="text-[#005F8A] underline">ijzer in water filteren</a>,{' '}
-          <a href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</a> en{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</a>.
+          <Link href="/waterfilter/ijzer" className="text-[#005F8A] underline">ijzer in water filteren</Link>,{' '}
+          <Link href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</Link> en{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</Link>.
         </p>
       </main>
     </>

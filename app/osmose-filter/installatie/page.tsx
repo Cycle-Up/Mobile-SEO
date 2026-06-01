@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Osmosefilter Installeren: Stap-voor-Stap Handleiding',
@@ -93,8 +94,8 @@ export default function OsmoseFilterInstallatiePage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/osmose-filter" className="hover:underline">Osmosefilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/osmose-filter" className="hover:underline">Osmosefilter</Link> &rsaquo;{' '}
           <span>Installatie</span>
         </nav>
 
@@ -108,22 +109,22 @@ export default function OsmoseFilterInstallatiePage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
             <p className="text-sm text-gray-600">Begrijp hoe het osmosesysteem werkt voordat u begint met installeren.</p>
-          </a>
-          <a href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/omgekeerde-osmose/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter kopen</h3>
             <p className="text-sm text-gray-600">Nog geen osmosefilter? Vergelijk de beste modellen inclusief installatiegemak.</p>
-          </a>
-          <a href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/keurmerken/nsf-ansi-58" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">NSF/ANSI 58 keurmerk</h3>
             <p className="text-sm text-gray-600">Controleer of uw osmosefilter voldoet aan internationale veiligheidsnormen.</p>
-          </a>
-          <a href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter gids</h3>
             <p className="text-sm text-gray-600">Alles over omgekeerde osmose: van installatie tot onderhoud en kosten.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -221,13 +222,13 @@ export default function OsmoseFilterInstallatiePage() {
           <p className="text-gray-700 mb-4">
             Bekijk ons aanbod van osmosefilters — inclusief installatiehandleiding en support.
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk osmosefilters →
-          </a>
+          </Link>
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/kennisbank/osmose-filter-installatie" className="text-[#005F8A] underline">Osmosefilter installatie: tips van de expert</a> en <a href="/osmose-filter/werking" className="text-[#005F8A] underline">hoe werkt een osmosefilter?</a>
+          Lees ook: <Link href="/kennisbank/osmose-filter-installatie" className="text-[#005F8A] underline">Osmosefilter installatie: tips van de expert</Link> en <Link href="/osmose-filter/werking" className="text-[#005F8A] underline">hoe werkt een osmosefilter?</Link>
         </p>
       </main>
     </>

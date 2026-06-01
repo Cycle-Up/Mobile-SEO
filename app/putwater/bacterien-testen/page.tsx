@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -106,6 +107,7 @@ export default function PutwaterBacterienTestenPage() {
 
         <QuickAnswer answer="Putwater moet minimaal jaarlijks worden getest op E. coli, coliforme bacterien en enterokokken volgens de RIVM-procedure. Een microbiologisch basispakket bij een erkend laboratorium (Aqualab, Eurofins, Vitens) kost 80 tot 150 euro. Sneltesten (10-30 euro) zijn een eerste indicatie maar niet wettelijk erkend. Bij positieve uitslag: stop met drinken, chloreer de put en installeer een UV-sterilisator." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

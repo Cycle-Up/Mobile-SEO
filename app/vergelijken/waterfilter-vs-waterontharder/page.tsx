@@ -3,6 +3,8 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: "Waterfilter vs waterontharder: verschil, kosten en wanneer welke keuze?",
@@ -56,6 +58,16 @@ export default function WaterfilterVsWaterOntharderPage() {
           { name: "Waterfilter vs waterontharder", url: "https://waterfilterplatform.nl/vergelijken/waterfilter-vs-waterontharder" },
         ]}
       />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Waterfilter vs waterontharder: verschil, kosten en wanneer welke keuze?",
+          description: "Osmosefilter of waterontharder? Verschil in werking, toepassingen, kosten en wat elk systeem wel en niet verwijdert.",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/vergelijken/waterfilter-vs-waterontharder",
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-4xl mx-auto">
@@ -74,6 +86,8 @@ export default function WaterfilterVsWaterOntharderPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <CTABanner context="osmose" />
 
         <section className="mt-10">

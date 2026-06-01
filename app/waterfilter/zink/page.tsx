@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor zink: te veel zink in kraanwater?',
@@ -105,8 +106,8 @@ export default function WaterfilterZinkPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Zink</span>
         </nav>
 
@@ -248,22 +249,22 @@ export default function WaterfilterZinkPage() {
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
               <p className="text-sm text-gray-600">Overzicht van alle zware metalen die in drinkwater kunnen voorkomen en de bijbehorende risicos.</p>
-            </a>
-            <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor lood</h3>
               <p className="text-sm text-gray-600">Lood in drinkwater: bronnen, risicos en welke waterfilters lood effectief verwijderen.</p>
-            </a>
-            <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
               <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en waarom is het de meest effectieve methode voor zware metalen?</p>
-            </a>
-            <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen Nederland</h3>
               <p className="text-sm text-gray-600">Overzicht van de wettelijke normen voor drinkwater in Nederland en de EU.</p>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -283,10 +284,10 @@ export default function WaterfilterZinkPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/waterfilter" className="text-[#005F8A] underline">alle waterfilters</a>,{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a>,{' '}
-          <a href="/waterfilter/koper" className="text-[#005F8A] underline">koper in drinkwater</a> en{' '}
-          <a href="/waterfilter/zwaar-metalen" className="text-[#005F8A] underline">zware metalen in water</a>.
+          <Link href="/waterfilter" className="text-[#005F8A] underline">alle waterfilters</Link>,{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link>,{' '}
+          <Link href="/waterfilter/koper" className="text-[#005F8A] underline">koper in drinkwater</Link> en{' '}
+          <Link href="/waterfilter/zwaar-metalen" className="text-[#005F8A] underline">zware metalen in water</Link>.
         </p>
       </main>
     </>

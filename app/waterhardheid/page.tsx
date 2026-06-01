@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     'Hoe hard is het water in jouw gemeente? Bekijk de waterhardheid (°dH) voor alle Nederlandse gemeenten en wat dat betekent voor jouw waterfilter.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterhardheid' },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/waterhardheid.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: 'Waterhardheid per gemeente — 349 gemeenten in Nederland',
     description: 'Hoe hard is het water bij jou thuis? Zoek je gemeente op en lees wat waterhardheid betekent voor kalk, apparaten en drinkwater.',
   },
@@ -291,6 +290,17 @@ export default function WaterhardheidPage() {
                 <span>→</span> {l.label}
               </Link>
             ))}
+          </div>
+        </section>
+      </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/waterhardheid/regio" href="/waterhardheid/regio" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterhardheid per regio Nederland</p>
+              </Link>
           </div>
         </section>
       </div>

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Waterfilterkan kopen: welke is de beste keuze? Vergelijking 2026',
@@ -190,6 +192,8 @@ export default function FilterkanKopenPage() {
 
       {/* Main content */}
       <div className="max-w-3xl mx-auto px-4 py-8 space-y-10">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         {/* Quick Answer */}
         <QuickAnswer answer="Voor de meeste Nederlandse huishoudens is Brita Maxtra+ de beste prijs-kwaliteitskeuze: breed verkrijgbaar, lage cartridgekosten (€5–8) en NSF 42-gecertificeerd. BWT Penguin is de beste keuze voor koffieliefhebbers. PUR is als enige merk NSF 53-gecertificeerd. Gebruik je putwater of woon je in een PFAS-risicogebied? Dan is osmose noodzakelijk." />

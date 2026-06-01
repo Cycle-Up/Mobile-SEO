@@ -100,6 +100,29 @@ export default function DrinkwaterfonteinPage() {
       <SchemaOrg
         schema={[
           {
+            '@type': 'ItemList',
+            name: 'Drinkwaterfontein',
+            url: 'https://waterfilterplatform.nl/drinkwaterfontein',
+            numberOfItems: 11,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Contactloze drinkwaterfontein: sensor, hygiene en gebruik', url: 'https://waterfilterplatform.nl/drinkwaterfontein/contactloos' },
+            { '@type': 'ListItem', position: 2, name: 'Drinkwaterfontein voor horeca: tafelwater en personeelswater', url: 'https://waterfilterplatform.nl/drinkwaterfontein/horeca' },
+            { '@type': 'ListItem', position: 3, name: 'Drinkwaterfontein huren: kosten, aanbieders en alternatieven 2026', url: 'https://waterfilterplatform.nl/drinkwaterfontein/huren' },
+            { '@type': 'ListItem', position: 4, name: 'Drinkwaterfontein voor kantoor: kosten, types en regelgeving', url: 'https://waterfilterplatform.nl/drinkwaterfontein/kantoor' },
+            { '@type': 'ListItem', position: 5, name: 'Gekoelde drinkwaterfontein: koeltechniek en verbruik', url: 'https://waterfilterplatform.nl/drinkwaterfontein/koeling' },
+            { '@type': 'ListItem', position: 6, name: 'Drinkwaterfontein kopen: vergelijking en koopgids 2026', url: 'https://waterfilterplatform.nl/drinkwaterfontein/kopen' },
+            { '@type': 'ListItem', position: 7, name: 'Leidinggebonden vs flessenfontein: wat is beter?', url: 'https://waterfilterplatform.nl/drinkwaterfontein/leidinggebonden-vs-fles' },
+            { '@type': 'ListItem', position: 8, name: 'Drinkwaterfontein met bruiswater: hoe werkt het?', url: 'https://waterfilterplatform.nl/drinkwaterfontein/met-bruiswater' },
+            { '@type': 'ListItem', position: 9, name: 'Drinkwaterfontein onderhoud: reinigen, filters vervangen en levensduur 2026', url: 'https://waterfilterplatform.nl/drinkwaterfontein/onderhoud' },
+            { '@type': 'ListItem', position: 10, name: 'Drinkwaterfontein soorten: types, koeling en bruiswater vergeleken', url: 'https://waterfilterplatform.nl/drinkwaterfontein/soorten' },
+            { '@type': 'ListItem', position: 11, name: 'Drinkwaterfontein voor thuis: gekoeld gefilterd water altijd klaar', url: 'https://waterfilterplatform.nl/drinkwaterfontein/thuis' },
+            ],
+          },
+        ]}
+      />
+      <SchemaOrg
+        schema={[
+          {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://waterfilterplatform.nl' },

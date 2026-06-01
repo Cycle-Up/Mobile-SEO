@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Gemeente } from '@/data/gemeenten';
+import { clampDescription } from '@/lib/seo';
+
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
@@ -28,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!gemeente) return {};
 
   const title = buildTitle(gemeente.naam);
-  const description = `Kwaliteit en samenstelling van leidingwater in ${gemeente.naam}. Geleverd door ${gemeente.waterbedrijf}: hardheid ${gemeente.hardheid}°dH, zuiveringsproces, pH, nitraat en vergelijking met andere gemeenten in ${gemeente.provincie}.`;
+  const description = clampDescription(`Kwaliteit en samenstelling van leidingwater in ${gemeente.naam}. Geleverd door ${gemeente.waterbedrijf}: hardheid ${gemeente.hardheid}°dH, zuiveringsproces, pH, nitraat en vergelijking met andere gemeenten in ${gemeente.provincie}.`);
 
   return {
     title,

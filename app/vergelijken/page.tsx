@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
 import { MethodologyBadge } from "@/components/MethodologyBadge";
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
     "Eerlijke vergelijkingen: osmose vs filterkan, waterfilter vs waterontharder, kraanwater vs flessenwater. Kosten, prestaties en milieu-impact.",
   alternates: { canonical: "https://waterfilterplatform.nl/vergelijken" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/vergelijken.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Waterfilter vergelijken: osmose vs filterkan, waterontharder en meer",
     description:
       "Eerlijke vergelijkingen: osmose vs filterkan, waterfilter vs waterontharder, kraanwater vs flessenwater. Kosten, prestaties en milieu-impact.",
@@ -53,6 +51,32 @@ export default function VergelijkenPage() {
   const cluster = getCluster("vergelijken")!;
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Vergelijkingen',
+            url: 'https://waterfilterplatform.nl/vergelijken',
+            numberOfItems: 14,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'BWT vs Grunbeck: welke waterontharder is beter?', url: 'https://waterfilterplatform.nl/vergelijken/bwt-vs-grunbeck' },
+            { '@type': 'ListItem', position: 2, name: 'Grohe Blue vs Grohe Red: wat is het verschil?', url: 'https://waterfilterplatform.nl/vergelijken/grohe-blue-vs-grohe-red' },
+            { '@type': 'ListItem', position: 3, name: 'Harvey vs BWT: non-electric of elektrische waterontharder?', url: 'https://waterfilterplatform.nl/vergelijken/harvey-vs-bwt' },
+            { '@type': 'ListItem', position: 4, name: 'Kokend water kraan merken vergelijken: Quooker, Grohe, PureAqua en meer', url: 'https://waterfilterplatform.nl/vergelijken/kokend-water-kraan-merken' },
+            { '@type': 'ListItem', position: 5, name: 'Kraanwater vs flessenwater: kosten, kwaliteit en milieu vergeleken', url: 'https://waterfilterplatform.nl/vergelijken/kraanwater-vs-flessenwater' },
+            { '@type': 'ListItem', position: 6, name: 'Omgekeerde osmose vergelijken: typen, prestaties en kosten', url: 'https://waterfilterplatform.nl/vergelijken/omgekeerde-osmose-vergelijken' },
+            { '@type': 'ListItem', position: 7, name: 'Osmosewater vs bronwater: mineralen, zuiverheid en kosten', url: 'https://waterfilterplatform.nl/vergelijken/osmose-vs-bronwater' },
+            { '@type': 'ListItem', position: 8, name: 'Osmose vs filterkan: prestaties, kosten en wanneer welke keuze?', url: 'https://waterfilterplatform.nl/vergelijken/osmose-vs-filterkan' },
+            { '@type': 'ListItem', position: 9, name: 'Quooker vs Grohe Red: welke kokend water kraan kiezen? (2026)', url: 'https://waterfilterplatform.nl/vergelijken/quooker-vs-grohe-red' },
+            { '@type': 'ListItem', position: 10, name: 'Quooker vs Selsiuz: welke kokend water kraan is beter?', url: 'https://waterfilterplatform.nl/vergelijken/quooker-vs-selsiuz' },
+            { '@type': 'ListItem', position: 11, name: 'Selsiuz vs Grohe Blue: kokend of bruisend water? (2026)', url: 'https://waterfilterplatform.nl/vergelijken/selsiuz-vs-grohe-blue' },
+            { '@type': 'ListItem', position: 12, name: 'Waterfilter vs waterontharder: verschil, kosten en wanneer welke keuze?', url: 'https://waterfilterplatform.nl/vergelijken/waterfilter-vs-waterontharder' },
+            { '@type': 'ListItem', position: 13, name: 'Waterontharder vergelijken: zoutgebaseerd, zoutloos en osmose', url: 'https://waterfilterplatform.nl/vergelijken/waterontharder-vergelijken' },
+            { '@type': 'ListItem', position: 14, name: 'Zoutloze waterontharder vergelijken: TAC, magneet of elektronisch', url: 'https://waterfilterplatform.nl/vergelijken/zoutloze-waterontharder-vergelijken' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
@@ -136,6 +160,38 @@ export default function VergelijkenPage() {
                 <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">{l.title}</p>
               </Link>
             ))}
+          </div>
+        </section>
+      </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/vergelijken/osmose-vs-bronwater" href="/vergelijken/osmose-vs-bronwater" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosewater vs bronwater</p>
+              </Link>
+              <Link key="/vergelijken/quooker-vs-grohe-red" href="/vergelijken/quooker-vs-grohe-red" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Quooker vs Grohe Red</p>
+              </Link>
+              <Link key="/vergelijken/selsiuz-vs-grohe-blue" href="/vergelijken/selsiuz-vs-grohe-blue" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Selsiuz vs Grohe Blue</p>
+              </Link>
+              <Link key="/vergelijken/zoutloze-waterontharder-vergelijken" href="/vergelijken/zoutloze-waterontharder-vergelijken" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Zoutloze waterontharder vergelijken</p>
+              </Link>
+              <Link key="/vergelijken/sodastream-vs-grohe-blue" href="/vergelijken/sodastream-vs-grohe-blue" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">SodaStream vs Grohe Blue</p>
+              </Link>
+              <Link key="/vergelijken/boretti-vs-quooker" href="/vergelijken/boretti-vs-quooker" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Boretti vs Quooker</p>
+              </Link>
+              <Link key="/vergelijken/quooker-vs-fonteq" href="/vergelijken/quooker-vs-fonteq" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Quooker vs Fonteq</p>
+              </Link>
+              <Link key="/vergelijken/waterontharder-vs-magneet" href="/vergelijken/waterontharder-vs-magneet" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder vs magneet</p>
+              </Link>
           </div>
         </section>
       </div>

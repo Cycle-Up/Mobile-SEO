@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -104,6 +105,7 @@ export default function BabywaterPage() {
 
         <QuickAnswer answer="Voor flesvoeding gebruikt u water met natrium &lt;20 mg/L en nitraat &lt;10 mg/L. Osmosewater is de veiligste keuze: het verwijdert PFAS, lood, nitraten en bacterien voor 95&ndash;99%. Kraanwater is in de meeste Nederlandse gemeenten ook geschikt, maar controleer altijd uw waterrapport. Kook water altijd tot minimaal 70&deg;C voor aanmaak van flesvoeding." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

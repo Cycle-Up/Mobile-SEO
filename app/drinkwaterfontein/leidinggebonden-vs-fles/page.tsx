@@ -3,17 +3,19 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
     title: 'Leidinggebonden vs flessenfontein: wat is beter?',
     description:
-      'Leidinggebonden vs flessenfontein vergeleken op kosten per liter, plaatsing, hygiene, duurzaamheid, capaciteit en onderhoud. Welke drinkwaterfontein past bij jouw situatie?',
+      'Leidinggebonden vs flessenfontein vergeleken op kosten per liter, plaatsing, hygiene, duurzaamheid, capaciteit en onderhoud. Welke drinkwaterfontein past bij',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/leidinggebonden-vs-fles' },
     openGraph: {
       title: 'Leidinggebonden vs flessenfontein: wat is beter?',
       description:
-        'Head-to-head: leidinggebonden (mains-fed) vs flessenfontein op kosten per liter, plaatsing, hygiene, duurzaamheid, capaciteit en onderhoud - met een duidelijke vergelijkingstabel.',
+        'Head-to-head: leidinggebonden (mains-fed) vs flessenfontein op kosten per liter, plaatsing, hygiene, duurzaamheid, capaciteit en onderhoud - met een',
       url: 'https://waterfilterplatform.nl/drinkwaterfontein/leidinggebonden-vs-fles',
       type: 'article',
       locale: 'nl_NL',
@@ -127,6 +129,8 @@ export default function LeidinggebondenVsFlesPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer
           question="Leidinggebonden of flessenfontein?"

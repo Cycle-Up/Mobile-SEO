@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Chloor uit Drinkwater Filteren: Smaak & Methoden',
@@ -65,8 +66,8 @@ export default function WaterfilterChloorPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Chloor</span>
         </nav>
 
@@ -171,33 +172,33 @@ export default function WaterfilterChloorPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/chloor-bijproducten" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Chloor-bijproducten in drinkwater</h3>
             <p className="text-sm text-gray-600">Trihalomethanen, bromaat en andere bijproducten van chloordesinfectie: risicos en normen.</p>
-          </a>
-          <a href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/actief-kool" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Actief koolfiltratie</h3>
             <p className="text-sm text-gray-600">Hoe actief kool werkt, welke stoffen het adsorbeert en hoe u het juiste filter kiest.</p>
-          </a>
-          <a href="/waterfilter/geur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/geur" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor geur</h3>
             <p className="text-sm text-gray-600">Onaangename geur uit kraanwater verwijderen: oorzaken en de beste filteroplossingen.</p>
-          </a>
-          <a href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/chloor-verwijderen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Chloor verwijderen</h3>
             <p className="text-sm text-gray-600">Vijf methoden om chloor uit kraanwater te verwijderen, inclusief vergelijking van effectiviteit.</p>
-          </a>
-          <a href="/koolstoffilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/koolstoffilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor chloor</h3>
             <p className="text-sm text-gray-600">Alles over koolstoffilters: types, kosten, NSF-certificering en installatie-opties.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">
-          Meer: <a href="/waterfilter/gezondheid" className="text-[#005F8A] underline">waterfilter en gezondheid</a> en <a href="/drinkwater/kwaliteit-test" className="text-[#005F8A] underline">drinkwaterkwaliteit testen</a>.
+          Meer: <Link href="/waterfilter/gezondheid" className="text-[#005F8A] underline">waterfilter en gezondheid</Link> en <Link href="/drinkwater/kwaliteit-test" className="text-[#005F8A] underline">drinkwaterkwaliteit testen</Link>.
         </p>
       </main>
     </>

@@ -4,6 +4,8 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Beste osmosefilter 2026: top 5 eerlijk vergeleken',
@@ -298,6 +300,16 @@ const tco5jaar = [
 export default function BesteOsmosefilter2026Page() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Beste osmosefilter 2026: top 5 eerlijk vergeleken',
+          description: 'Welk osmosefilter is het beste in 2026? Wij vergeleken 5 systemen op prijs, membraankwaliteit, filterstadia, tankgrootte en TCO. Met eerlijke reviews.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/beste-osmosefilter-2026',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"
@@ -366,6 +378,8 @@ export default function BesteOsmosefilter2026Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Het beste osmosefilter van 2026 is een 5-stadia onderbouwsysteem met remineralisatiefilter. Belangrijk: let op NSF/ANSI 58-certificering, een afvalwaterratio van 1:1 of beter, en een jaarlijkse filterwissel onder €100. Voor de meeste Nederlandse gezinnen is een systeem tussen €150 en €400 de beste prijs-kwaliteitskeuze." />
 
@@ -723,6 +737,11 @@ export default function BesteOsmosefilter2026Page() {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'Osmose filter kopen',
                 desc: 'Onze actuele koopgids met aanbevelingen per budget en situatie.',
+              },
+              {
+                href: '/the-source',
+                title: 'The Source 50 (PureAqua)',
+                desc: 'Stroomloos RO-systeem met NSF/ANSI 58 en circa 1:1 verhouding. Specificaties en kosten.',
               },
               {
                 href: '/kennisbank/osmose-water-apparaat',

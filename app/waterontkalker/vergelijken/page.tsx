@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Waterontkalker vergelijken: beste modellen 2026',
@@ -183,6 +185,8 @@ export default function WaterOntkalkerVergelijkenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="De beste waterontkalker voor een gemiddeld gezin is een vraaggestuurde single-tank ionenwisselaar van 15-20 liter harsvolume. Twin-tank modellen leveren continu zacht water maar kosten meer. Zoutloze systemen (TAC) beschermen leidingen maar maken water niet chemisch zacht. Osmose is de beste aanvulling voor drinkwater." />
 

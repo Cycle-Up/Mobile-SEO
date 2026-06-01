@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
 import { MethodologyBadge } from "@/components/MethodologyBadge";
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
     "Waterfilter keurmerken: NSF/ANSI 42/53/58/401, Kiwa 113, ACS en CE. Wat garanderen ze en welk keurmerk heeft u nodig voor osmose, koolfilter of UV?",
   alternates: { canonical: "https://waterfilterplatform.nl/keurmerken" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/keurmerken.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Waterfilter keurmerken: NSF, Kiwa, ACS en CE uitgelegd",
     description:
       "Waterfilter keurmerken: NSF/ANSI 42/53/58/401, Kiwa 113, ACS en CE. Wat garanderen ze en welk keurmerk heeft u nodig voor osmose, koolfilter of UV?",
@@ -58,6 +56,26 @@ export default function KeurmerkenPage() {
   const cluster = getCluster("keurmerken")!;
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Keurmerken en certificering',
+            url: 'https://waterfilterplatform.nl/keurmerken',
+            numberOfItems: 8,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'ACS keurmerk - Franse norm voor drinkwatercontact', url: 'https://waterfilterplatform.nl/keurmerken/acs' },
+            { '@type': 'ListItem', position: 2, name: 'CE-markering waterfilters - wat garandeert het wel en niet?', url: 'https://waterfilterplatform.nl/keurmerken/ce-markering' },
+            { '@type': 'ListItem', position: 3, name: 'Kiwa 113 - Nederlands keurmerk voor drinkwaterinstallaties', url: 'https://waterfilterplatform.nl/keurmerken/kiwa-113' },
+            { '@type': 'ListItem', position: 4, name: 'NSF/ANSI 401 - certificering voor opkomende stoffen', url: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-401' },
+            { '@type': 'ListItem', position: 5, name: 'NSF/ANSI 42 en 53 - keurmerken voor actief koolfilters', url: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-42-53' },
+            { '@type': 'ListItem', position: 6, name: 'NSF/ANSI 58 keurmerk - wat betekent het voor osmosefilters?', url: 'https://waterfilterplatform.nl/keurmerken/nsf-ansi-58' },
+            { '@type': 'ListItem', position: 7, name: 'Hoe controleer je of een waterfilter echt gecertificeerd is?', url: 'https://waterfilterplatform.nl/keurmerken/verificatie' },
+            { '@type': 'ListItem', position: 8, name: 'WRAS - Brits keurmerk voor drinkwaterinstallaties', url: 'https://waterfilterplatform.nl/keurmerken/wras' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[

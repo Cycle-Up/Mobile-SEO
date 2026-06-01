@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Arsenicum in drinkwater: risico\'s, hotspots en filtratie',
@@ -112,8 +114,8 @@ export default function WaterfilterArenicumPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Arsenicum</span>
         </nav>
 
@@ -128,6 +130,7 @@ export default function WaterfilterArenicumPage() {
           </p>
         </div>
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -279,7 +282,7 @@ export default function WaterfilterArenicumPage() {
             </div>
             <p className="text-gray-700 text-sm mb-2">
               Osmosefilters verwijderen 95–99% As(V) en 70–85% As(III) via het semipermeabele membraan. Ideale keuze als naast arsenicum ook andere verontreinigingen (nitraat, PFAS, lood, fluoride) aanwezig zijn. Bij As(III) de efficiëntie verhogen door oxidatie vóór het membraan. Zie ook{' '}
-              <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a>.
+              <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link>.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-gray-500">
               <span>As(V): ✓ 95–99%</span>
@@ -388,29 +391,29 @@ export default function WaterfilterArenicumPage() {
         </ul>
         <p className="text-gray-700 mb-6">
           Laboratoriumanalyse voor arsenicum kost €30–60 voor alleen As, of €100–200 voor een uitgebreid drinkwaterpakket inclusief ijzer, mangaan, nitraat en overige verontreinigingen. Bij overschrijding van 10 µg/L: gebruik tijdelijk bronwater en installeer een gecertificeerd filter. Zie ook onze pagina over{' '}
-          <a href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</a> en{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</a>.
+          <Link href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</Link> en{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</Link>.
         </p>
 
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
             <p className="text-sm text-gray-600">Welke zware metalen kunnen in drinkwater zitten en hoe filter je ze eruit?</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken: omgekeerde osmose</h3>
             <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en wat verwijdert het uit drinkwater?</p>
-          </a>
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
             <p className="text-sm text-gray-600">Wat zijn de wettelijke normen voor drinkwaterkwaliteit in Nederland en de EU?</p>
-          </a>
-          <a href="/waterfilter/arseen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/arseen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Arseen in drinkwater filteren</h3>
             <p className="text-sm text-gray-600">Wat zijn de risico's van arseen en welk waterfilter verwijdert het het best?</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -430,9 +433,9 @@ export default function WaterfilterArenicumPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</a>,{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</a> en{' '}
-          <a href="/waterfilter/mangaan" className="text-[#005F8A] underline">mangaan in water filteren</a>.
+          <Link href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</Link>,{' '}
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</Link> en{' '}
+          <Link href="/waterfilter/mangaan" className="text-[#005F8A] underline">mangaan in water filteren</Link>.
         </p>
       </main>
     </>

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/gemeenten';
+import { clampDescription } from '@/lib/seo';
+
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
@@ -22,7 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `Waterontkalker ${gemeente.naam}: zinvol bij ${gemeente.hardheid}°dH water?`;
   return {
     title: title.length > 70 ? title.slice(0, 67) + '...' : title,
-    description: `Is een waterontkalker zinvol in ${gemeente.naam}? Het water heeft ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}). Lees over magnetische ontkalkers, elektronische apparaten en TAC-systemen — en wanneer een waterontharder beter is.`,
+    description: clampDescription(`Is een waterontkalker zinvol in ${gemeente.naam}? Het water heeft ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}). Lees over magnetische ontkalkers, elektronische apparaten en TAC-systemen — en wanneer een waterontharder beter is.`),
     alternates: { canonical: `https://waterfilterplatform.nl/waterontkalker/${gemeente.slug}` },
     openGraph: {
       title: `Waterontkalker in ${gemeente.naam} bij ${gemeente.hardheid}°dH — zinvol?`,

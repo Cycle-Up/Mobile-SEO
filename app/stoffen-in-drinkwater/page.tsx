@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
 import { MethodologyBadge } from "@/components/MethodologyBadge";
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
     "Welke stoffen zitten in Nederlands drinkwater? Overzicht van PFAS, lood, pesticiden, kalk, hormonen en microplastics: normen, risico en filteradvies.",
   alternates: { canonical: "https://waterfilterplatform.nl/stoffen-in-drinkwater" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/stoffen-in-drinkwater.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Stoffen in drinkwater: overzicht, normen en wanneer filtreren?",
     description:
       "Welke stoffen zitten in Nederlands drinkwater? Overzicht van PFAS, lood, pesticiden, kalk, hormonen en microplastics: normen, risico en filteradvies.",
@@ -59,6 +57,27 @@ export default function StoffenInDrinkwaterPage() {
   return (
     <>
       <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Stoffen in drinkwater',
+            url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater',
+            numberOfItems: 9,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Chloor bijproducten in drinkwater -- THM en HAA', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/chloor-bijproducten' },
+            { '@type': 'ListItem', position: 2, name: 'Hormonen en medicijnresten in drinkwater -- wat weten we?', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/hormonen' },
+            { '@type': 'ListItem', position: 3, name: 'Kalk en mineralen in drinkwater -- calcium, magnesium en bicarbonaat', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/kalk-mineralen' },
+            { '@type': 'ListItem', position: 4, name: 'Microbiologische risicos in drinkwater -- bacterien, virussen en protozoen', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/microbiologisch' },
+            { '@type': 'ListItem', position: 5, name: 'Nitraat en nitriet in drinkwater -- norm, risicos en filteren', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/nitraat-nitriet' },
+            { '@type': 'ListItem', position: 6, name: 'Pesticiden in drinkwater -- glyfosaat, atrazine en MCPA', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/pesticiden' },
+            { '@type': 'ListItem', position: 7, name: 'PFAS in drinkwater -- PFOA, PFOS en de nieuwe EU-norm', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/pfas-overzicht' },
+            { '@type': 'ListItem', position: 8, name: 'Radioactieve stoffen in drinkwater -- radon, uranium en radium', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/radioactieve-stoffen' },
+            { '@type': 'ListItem', position: 9, name: 'Zware metalen in drinkwater -- lood, koper, chroom en arseen', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/zware-metalen' },
+            ],
+          },
+        ]}
+      />
+      <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: "Home", url: "https://waterfilterplatform.nl" },
@@ -87,7 +106,7 @@ export default function StoffenInDrinkwaterPage() {
             { name: "Lood (Pb)", description: "Zwaar metaal. NL-norm: 5 µg/L (per Drinkwaterbesluit). Risico bij huizen gebouwd voor 1960 met loden leidingen. Geen smaak of geur. RO verwijdert 97%.", url: "https://waterfilterplatform.nl/leidingwater/lood" },
             { name: "Nitraat (NO₃⁻)", description: "Landbouwgerelateerde verontreiniging. EU-norm: 50 mg/L. Risico voor zuigelingen (methemoglobinemie). RO verwijdert 85-95%.", url: "https://waterfilterplatform.nl/stoffen-in-drinkwater/nitraat-nitriet" },
             { name: "Waterhardheid (Ca²⁺/Mg²⁺)", description: "Opgeloste calcium- en magnesiumzouten. Uitgedrukt in °dH. Geen gezondheidsrisico maar veroorzaakt kalkafzetting. In Nederland 4-22 °dH.", url: "https://waterfilterplatform.nl/waterhardheid" },
-            { name: "Microplastics", description: "Plastic deeltjes 1-5000 µm. Geen wettelijke norm in drinkwater (2026). Ultrafiltratie en RO verwijderen effectief. WHO: beperkt bewijs van gezondheidsschade.", url: "https://waterfilterplatform.nl/stoffen-in-drinkwater/microplastics" },
+            { name: "Microplastics", description: "Plastic deeltjes 1-5000 µm. Geen wettelijke norm in drinkwater (2026). Ultrafiltratie en RO verwijderen effectief. WHO: beperkt bewijs van gezondheidsschade.", url: "https://waterfilterplatform.nl/drinkwater/microplastics" },
           ],
         }}
       />

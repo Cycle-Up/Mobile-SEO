@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -102,6 +103,7 @@ export default function WelkWaterFlesvoedingPage() {
 
         <QuickAnswer answer="Voor flesvoeding kiest u water met natrium &lt;20 mg/L en nitraat &lt;10 mg/L. Osmosewater is de beste keuze: natrium &lt;5 mg/L, nitraat &lt;1 mg/L, geen lood, &euro;0,02&ndash;0,05 per liter. Controleer kraanwater via uw waterrapport. Filterkan filtert geen nitraat. Kook altijd water tot minimaal 70&deg;C voor aanmaak van flesvoeding om Cronobacter te doden." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

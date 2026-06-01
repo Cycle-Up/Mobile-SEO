@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
   title: "Hormonen en medicijnen in drinkwater: risico's en oplossingen",
   description:
-    'Hormonen, antibiotica en pijnstillers worden aangetroffen in Nederlands drinkwater. Ontdek de risico\'s van medicijnenresten en welk waterfilter ze effectief verwijdert.',
+    'Hormonen, antibiotica en pijnstillers worden aangetroffen in Nederlands drinkwater. Ontdek de risico\'s van medicijnenresten en welk waterfilter ze effectief',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/hormonen-medicijnen' },
 };
 
@@ -120,6 +121,7 @@ export default function HormonenMedicijnenPage() {
 
         <QuickAnswer answer="In Nederlands drinkwater worden sporen van medicijnen aangetroffen: anti-epileptica, pijnstillers, diabetesmedicatie en antibiotica. Concentraties zijn ver onder therapeutische doses. Geen bewezen acuut risico, maar het voorzorgsbeginsel is van toepassing. Een omgekeerde osmose filter verwijdert 90-99% van alle medicijnenresten en hormonen." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

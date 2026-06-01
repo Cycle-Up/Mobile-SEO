@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
@@ -181,6 +183,16 @@ const redenenAlternatief = [
 export default function QuookerAlternatiefPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Wat is het beste Quooker alternatief? Vergelijking 2026',
+          description: 'Ontdek alternatieven voor Quooker met osmose filter en kokend water. Vergelijk prijs, functies en garantie van de beste merken naast Quooker.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/quooker-alternatief',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"
@@ -224,6 +236,8 @@ export default function QuookerAlternatiefPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Een goed Quooker alternatief biedt kokend water, gefilterd drinkwater en bruisend water voor €400–900 minder dan een Quooker Fusion + CUBE. De 4-in-1 kraan met osmosefilter is het meest complete alternatief: dezelfde functies, ingebouwde kalkverwijdering en lagere jaarlijkse filterkosten. Zelf te installeren in 2–3 uur." />
 

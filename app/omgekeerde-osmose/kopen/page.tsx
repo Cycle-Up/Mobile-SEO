@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde osmose filter kopen? Alles wat je moet weten',
@@ -128,6 +130,8 @@ export default function OsmoseKopenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <QuickAnswer answer="Een omgekeerde osmose filter kopen? Let op NSF/ANSI 58-certificering, een afvalwaterratio van minimaal 1:1 en een 5-stadia systeem met remineralisatiefilter. Prijzen lopen van €150 (basis onderbouw) tot €500 (premium met wifi-monitoring). Jaarlijks filteronderhoud kost €50–120." />
 
         {/* Sectie 1 */}

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Drinkwater voor Baby: Wat is Veilig voor Zuigelingen?',
@@ -65,8 +67,8 @@ export default function DrinkwaterBabyPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/drinkwater" className="hover:underline">Drinkwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/drinkwater" className="hover:underline">Drinkwater</Link> &rsaquo;{' '}
           <span>Baby</span>
         </nav>
 
@@ -77,6 +79,7 @@ export default function DrinkwaterBabyPage() {
           Baby&rsquo;s jonger dan 6 maanden zijn extra kwetsbaar voor verontreinigingen in water. Welk water is veilig voor het aanmaken van kunstvoeding? We zetten de feiten op een rij.
         </p>
 
+        <HealthDisclaimer />
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -158,13 +161,13 @@ export default function DrinkwaterBabyPage() {
           Osmosefilter voor babyvoeding
         </h2>
         <p className="text-gray-700 mb-4">
-          Een <a href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</a> verwijdert nagenoeg alles uit water: nitraat (85–95%), lood (95–99%), PFAS (90%+), bacteriën en virussen. Het is de meest complete oplossing voor ouders die maximale zekerheid willen.
+          Een <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</Link> verwijdert nagenoeg alles uit water: nitraat (85–95%), lood (95–99%), PFAS (90%+), bacteriën en virussen. Het is de meest complete oplossing voor ouders die maximale zekerheid willen.
         </p>
         <p className="text-gray-700 mb-4">
           Let op: voeg een remineralisatiepatroon toe aan het osmosesysteem als je het water voor babyvoeding gebruikt. Puur osmosewater heeft vrijwel geen mineralen; remineralisatie herstelt essentiële spoorelementen en zorgt voor een stabielere pH.
         </p>
         <p className="text-gray-700 mb-6">
-          Lees ook: <a href="/kennisbank/drinkwater-baby" className="text-[#005F8A] underline">Drinkwater voor baby: uitgebreide gids</a> en <a href="/drinkwater/zwangerschap" className="text-[#005F8A] underline">drinkwater tijdens zwangerschap</a>.
+          Lees ook: <Link href="/kennisbank/drinkwater-baby" className="text-[#005F8A] underline">Drinkwater voor baby: uitgebreide gids</Link> en <Link href="/drinkwater/zwangerschap" className="text-[#005F8A] underline">drinkwater tijdens zwangerschap</Link>.
         </p>
 
         <div className="space-y-4 mb-8">
@@ -182,22 +185,22 @@ export default function DrinkwaterBabyPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/babywater/osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/babywater/osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater voor baby</h3>
             <p className="text-sm text-gray-600">Is osmosewater geschikt voor de bereiding van babyvoeding?</p>
-          </a>
-          <a href="/babywater/welk-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/babywater/welk-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Welk water voor baby</h3>
             <p className="text-sm text-gray-600">Overzicht van de beste wateropties voor baby en zuigeling.</p>
-          </a>
-          <a href="/osmose-water/baby" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/osmose-water/baby" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en baby</h3>
             <p className="text-sm text-gray-600">Praktische gids voor het gebruik van osmosewater bij babyvoeding.</p>
-          </a>
-          <a href="/stoffen-in-drinkwater/nitraat-nitriet" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/stoffen-in-drinkwater/nitraat-nitriet" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Nitraat en nitriet in drinkwater</h3>
             <p className="text-sm text-gray-600">Risicos van nitraat voor baby en hoe u deze kunt verminderen.</p>
-          </a>
+          </Link>
         </div>
       </section>
 

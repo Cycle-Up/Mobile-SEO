@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/gemeenten';
+import { clampDescription } from '@/lib/seo';
+
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
@@ -24,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: truncated,
-    description: `Is een osmosefilter de juiste keuze voor ${gemeente.naam}? Leer wat omgekeerde osmose verwijdert uit ${gemeente.hardheid}°dH leidingwater van ${gemeente.waterbedrijf}, welk systeem past en wat het kost.`,
+    description: clampDescription(`Is een osmosefilter de juiste keuze voor ${gemeente.naam}? Leer wat omgekeerde osmose verwijdert uit ${gemeente.hardheid}°dH leidingwater van ${gemeente.waterbedrijf}, welk systeem past en wat het kost.`),
     alternates: { canonical: `https://waterfilterplatform.nl/osmose-filter/${gemeente.slug}` },
     openGraph: {
       title: `Osmose filter ${gemeente.naam} — geschikt bij ${gemeente.hardheid}°dH water?`,

@@ -66,8 +66,8 @@ export default function WaterOntharderAppartementPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterontharder" className="hover:underline">Waterontharder</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterontharder" className="hover:underline">Waterontharder</Link> &rsaquo;{' '}
           <span>Appartement</span>
         </nav>
 
@@ -111,7 +111,7 @@ export default function WaterOntharderAppartementPage() {
 
         <h3 className="text-xl font-semibold text-[#003F5C] mt-6 mb-3">2. Osmosefilter onder aanrecht</h3>
         <p className="text-gray-700 mb-4">
-          Een <a href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</a> past onder elk aanrecht en wordt aangesloten via flexibele slangetjes op de koudwaterkraan en de afvoer. Geen permanente leidingwijziging. Bij verhuizing meenemen in 30 minuten.
+          Een <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">osmosefilter</Link> past onder elk aanrecht en wordt aangesloten via flexibele slangetjes op de koudwaterkraan en de afvoer. Geen permanente leidingwijziging. Bij verhuizing meenemen in 30 minuten.
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-1">
           <li>Verwijdert 95%+ van kalk, chloor, lood, PFAS</li>
@@ -192,7 +192,7 @@ export default function WaterOntharderAppartementPage() {
         <CTABanner />
 
         <p className="text-gray-600 text-sm mt-6">
-          Lees ook: <a href="/kennisbank/waterontharder-appartement-huurwoning" className="text-[#005F8A] underline">Waterontharder in huurwoning: juridisch en praktisch</a> en <a href="/waterontharder/huren" className="text-[#005F8A] underline">waterontharder huren vs. kopen</a>.
+          Lees ook: <Link href="/kennisbank/waterontharder-appartement-huurwoning" className="text-[#005F8A] underline">Waterontharder in huurwoning: juridisch en praktisch</Link> en <Link href="/waterontharder/huren" className="text-[#005F8A] underline">waterontharder huren vs. kopen</Link>.
         </p>
       </main>
     </>

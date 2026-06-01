@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Gemeente } from '@/data/gemeenten';
+import { clampDescription } from '@/lib/seo';
+
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
@@ -28,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!gemeente) return {};
 
   const title = buildTitle(gemeente.naam);
-  const description = `Is het kraanwater in ${gemeente.naam} direct drinkbaar uit de kraan? Hardheid ${gemeente.hardheid}°dH via ${gemeente.waterbedrijf}. Wat zit erin, hoe smaakt het en wanneer kies je voor een filter?`;
+  const description = clampDescription(`Is het kraanwater in ${gemeente.naam} direct drinkbaar uit de kraan? Hardheid ${gemeente.hardheid}°dH via ${gemeente.waterbedrijf}. Wat zit erin, hoe smaakt het en wanneer kies je voor een filter?`);
 
   return {
     title,

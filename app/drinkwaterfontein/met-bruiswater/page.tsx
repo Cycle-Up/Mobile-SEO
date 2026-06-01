@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
     title: 'Drinkwaterfontein met bruiswater: hoe werkt het?',
     description:
-      'Hoe werkt een drinkwaterfontein met bruiswater? Uitleg over CO2-cilinder, koeling en toepassing in horeca en kantoor, met kosten-aandachtspunten en een vergelijking met losse oplossingen.',
+      'Hoe werkt een drinkwaterfontein met bruiswater? Uitleg over CO2-cilinder, koeling en toepassing in horeca en kantoor, met kosten-aandachtspunten en een',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/met-bruiswater' },
     openGraph: {
       title: 'Drinkwaterfontein met bruiswater: hoe werkt het?',
@@ -118,6 +120,8 @@ export default function DrinkwaterfonteinMetBruiswaterPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer
           question="Hoe werkt een drinkwaterfontein met bruiswater?"

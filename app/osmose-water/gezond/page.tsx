@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Is Osmosewater Gezond? Feiten & Fabels Onderzocht',
@@ -65,8 +67,8 @@ export default function OsmoseWaterGezondPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/omgekeerde-osmose" className="hover:underline">Omgekeerde osmose</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/omgekeerde-osmose" className="hover:underline">Omgekeerde osmose</Link> &rsaquo;{' '}
           <span>Is osmosewater gezond?</span>
         </nav>
 
@@ -80,32 +82,33 @@ export default function OsmoseWaterGezondPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/osmose-water/gezondheid" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater en gezondheid</h3>
             <p className="text-sm text-gray-600">Wat zegt de wetenschap over de gezondheidseffecten van osmosewater drinken?</p>
-          </a>
-          <a href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
             <p className="text-sm text-gray-600">Welke mineralen zitten in osmosewater en wat is de invloed op uw gezondheid?</p>
-          </a>
-          <a href="/osmose-water/gezondheidsvoordelen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/osmose-water/gezondheidsvoordelen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Gezondheidsvoordelen van osmosewater</h3>
             <p className="text-sm text-gray-600">De bewezen voordelen van het drinken van gefilterd osmosewater.</p>
-          </a>
-          <a href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater overzicht</h3>
             <p className="text-sm text-gray-600">Alles over osmosewater: toepassingen, gezondheid en kwaliteit.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
+        <HealthDisclaimer />
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
           Wat zit er niet meer in osmosewater?
         </h2>
         <p className="text-gray-700 mb-4">
-          Een <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde-osmosefilter</a> verwijdert nagenoeg alles uit water: mineralen, zware metalen, bacteriën, virussen, microplastics, medicijnresten en hormoonverstorende stoffen. Het resulterende water heeft een TDS (totaal opgeloste stoffen) van doorgaans 5–20 mg/L — versus 150–450 mg/L in normaal leidingwater.
+          Een <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde-osmosefilter</Link> verwijdert nagenoeg alles uit water: mineralen, zware metalen, bacteriën, virussen, microplastics, medicijnresten en hormoonverstorende stoffen. Het resulterende water heeft een TDS (totaal opgeloste stoffen) van doorgaans 5–20 mg/L — versus 150–450 mg/L in normaal leidingwater.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -144,7 +147,7 @@ export default function OsmoseWaterGezondPage() {
           Resultaat: TDS stijgt van 10 naar 50–80 mg/L, pH van 6,2 naar 7,0–7,5. Water smaakt ronder en minder vlak.
         </p>
         <p className="text-gray-700 mb-4">
-          Lees meer over dit proces in ons artikel over <a href="/osmose-water/remineralisatie" className="text-[#005F8A] underline">osmosewater remineralisatie</a>.
+          Lees meer over dit proces in ons artikel over <Link href="/osmose-water/remineralisatie" className="text-[#005F8A] underline">osmosewater remineralisatie</Link>.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -213,13 +216,13 @@ export default function OsmoseWaterGezondPage() {
           <p className="text-gray-700 mb-4">
             Onze 4-in-1 osmosekraan geeft direct schoon, gefilterd water — met optionele remineralisatie voor de perfecte smaak.
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk osmosefilters →
-          </a>
+          </Link>
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/kennisbank/osmose-water-gezond" className="text-[#005F8A] underline">Osmosewater en gezondheid: uitgebreide analyse</a> en <a href="/osmose-water/remineralisatie" className="text-[#005F8A] underline">osmosewater remineraliseren</a>.
+          Lees ook: <Link href="/kennisbank/osmose-water-gezond" className="text-[#005F8A] underline">Osmosewater en gezondheid: uitgebreide analyse</Link> en <Link href="/osmose-water/remineralisatie" className="text-[#005F8A] underline">osmosewater remineraliseren</Link>.
         </p>
       </main>
     </>

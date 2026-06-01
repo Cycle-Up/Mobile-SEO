@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     "Drinkwaternormen NL: Drinkwaterbesluit, EU-richtlijn 2020/2184, RIVM, ILT en 10 waterbedrijven. Alles over PFAS, lood, certificering en extra filtratie.",
   alternates: { canonical: "https://waterfilterplatform.nl/drinkwaternormen" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/drinkwaternormen.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Drinkwaternormen Nederland: wie bepaalt wat veilig drinkwater is?",
     description:
       "Drinkwaternormen NL: Drinkwaterbesluit, EU-richtlijn 2020/2184, RIVM, ILT en 10 waterbedrijven. Alles over PFAS, lood, certificering en extra filtratie.",
@@ -149,6 +148,31 @@ const clusters = [
 export default function DrinkwaternormenPage() {
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Drinkwaternormen',
+            url: 'https://waterfilterplatform.nl/drinkwaternormen',
+            numberOfItems: 13,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Chroom-6 norm drinkwater: EU 25 ug/L vs WHO 0,05 ug/L - groot verschil', url: 'https://waterfilterplatform.nl/drinkwaternormen/chroom-6' },
+            { '@type': 'ListItem', position: 2, name: 'Drinkwaterbedrijven Nederland: 10 bedrijven, gebieden en kwaliteit', url: 'https://waterfilterplatform.nl/drinkwaternormen/drinkwaterbedrijven' },
+            { '@type': 'ListItem', position: 3, name: 'Drinkwaterbesluit Nederland: normen, parameters en verplichtingen', url: 'https://waterfilterplatform.nl/drinkwaternormen/drinkwaterbesluit' },
+            { '@type': 'ListItem', position: 4, name: 'EU-drinkwaterrichtlijn 2020/2184: nieuwe PFAS-, lood- en microplasticsnormen', url: 'https://waterfilterplatform.nl/drinkwaternormen/eu-drinkwaterrichtlijn' },
+            { '@type': 'ListItem', position: 5, name: 'Kalk in drinkwater: waterhardheid normen, schade en oplossingen', url: 'https://waterfilterplatform.nl/drinkwaternormen/kalk-hard-water' },
+            { '@type': 'ListItem', position: 6, name: 'Kiwa 113 vs NSF/ANSI 58: welke certificering heeft uw osmosefilter nodig?', url: 'https://waterfilterplatform.nl/drinkwaternormen/kiwa-nsf-ansi' },
+            { '@type': 'ListItem', position: 7, name: 'Lood in drinkwater: EU-norm 2026, loden leidingen en osmose als bescherming', url: 'https://waterfilterplatform.nl/drinkwaternormen/lood' },
+            { '@type': 'ListItem', position: 8, name: 'Medicijnresten in drinkwater: meting, normen en filtermogelijkheden', url: 'https://waterfilterplatform.nl/drinkwaternormen/medicijnresten' },
+            { '@type': 'ListItem', position: 9, name: 'Microplastics in drinkwater: WHO-bevindingen, normen en filteropties', url: 'https://waterfilterplatform.nl/drinkwaternormen/microplastics' },
+            { '@type': 'ListItem', position: 10, name: 'PFAS in drinkwater: normen, hotspots in Nederland en osmose als oplossing', url: 'https://waterfilterplatform.nl/drinkwaternormen/pfas' },
+            { '@type': 'ListItem', position: 11, name: 'Omgekeerde osmose en drinkwaternormen: wanneer is extra filtratie zinvol?', url: 'https://waterfilterplatform.nl/drinkwaternormen/reverse-osmosis' },
+            { '@type': 'ListItem', position: 12, name: 'Waterfilter certificering: NSF, Kiwa en ACS keurmerken uitgelegd', url: 'https://waterfilterplatform.nl/drinkwaternormen/waterfilter-certificering' },
+            { '@type': 'ListItem', position: 13, name: 'Wie controleert drinkwater in Nederland? RIVM, ILT en waterbedrijven', url: 'https://waterfilterplatform.nl/drinkwaternormen/wie-controleert-drinkwater' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[

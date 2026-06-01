@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
@@ -94,6 +96,7 @@ const merken = [
   ['Viteau', 'Nederlandse aanbieder en installateur van waterontharders met landelijke service.', '/viteau-waterontharder'],
   ['Aquacell', 'Betaalbare ionenwisselaars uit het instap- en middensegment, veel online verkocht in Nederland.', '/aquacell-waterontharder'],
   ['Maxima', 'Op de Nederlandse markt veel verkocht waarde-/middensegment merk van ionenwisselaars.', '/maxima-waterontharder'],
+  ['JOEP', 'Nederlands merk van AquaSens (Joure); WRAS-gecertificeerde compacte ionenwisselaar met miniregeneratie en 20 jaar harsgarantie.', '/joep-waterontharder'],
 ];
 
 const picks = [
@@ -141,6 +144,16 @@ const tco5jaar = [
 export default function BesteWaterontharder2026Page() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Beste waterontharder 2026: koopgids en shortlist per situatie',
+          description: 'Beste waterontharder 2026: shortlist per situatie, bekende merken, zout vs zoutloos en kosten over 5 jaar. Welke waterontharder past bij jouw waterhardheid?',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/beste-waterontharder-2026',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"
@@ -204,6 +217,8 @@ export default function BesteWaterontharder2026Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer
           question="Wat is de beste waterontharder in 2026?"

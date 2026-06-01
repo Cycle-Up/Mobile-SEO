@@ -114,7 +114,7 @@ export default function RegenwaterPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
           <span>Regenwater filteren</span>
         </nav>
 
@@ -154,7 +154,7 @@ export default function RegenwaterPage() {
           <li><strong>Bacteriën en schimmels:</strong> Vogeldroppings, bladresten, mos en algen op het dak introduceren bacteriën en gisten. E.coli is bij onderzochte dakopvangbakken regelmatig aangetoond.</li>
           <li><strong>Atmosferische verontreiniging:</strong> Fijnstof, roet, stikstofoxiden en andere industrie-emissies worden meegenomen door de regen.</li>
           <li><strong>Dakmateriaal-lekking:</strong> Zinken dakgoten, koperen elementen en bitumen daken geven metalen en organische verbindingen af. Oud lood in goten is een bijzonder risico.</li>
-          <li><strong>PFAS:</strong> Onderzoek van het RIVM toont aan dat PFAS via atmosferische depositie in regenwater terechtkomen. Gebieden nabij industrie, vliegvelden en Chemours-fabriek (Dordrecht) hebben hogere PFAS-concentraties in regenwater. Zie ook onze pagina over <a href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</a>.</li>
+          <li><strong>PFAS:</strong> Onderzoek van het RIVM toont aan dat PFAS via atmosferische depositie in regenwater terechtkomen. Gebieden nabij industrie, vliegvelden en Chemours-fabriek (Dordrecht) hebben hogere PFAS-concentraties in regenwater. Zie ook onze pagina over <Link href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</Link>.</li>
           <li><strong>Microplastics:</strong> Aanwezig in regenwater in stedelijke omgevingen.</li>
         </ul>
 
@@ -182,7 +182,7 @@ export default function RegenwaterPage() {
             </div>
             <div className="flex items-start gap-3">
               <span className="flex-shrink-0 bg-[#005F8A] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">4</span>
-              <div><strong>5-traps osmosefilter + UV:</strong> <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">Omgekeerde osmose</a> verwijdert PFAS (95–99%), bacteriën, metalen en organische verbindingen. UV-eindstap elimineert resterende micro-organismen.</div>
+              <div><strong>5-traps osmosefilter + UV:</strong> <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">Omgekeerde osmose</Link> verwijdert PFAS (95–99%), bacteriën, metalen en organische verbindingen. UV-eindstap elimineert resterende micro-organismen.</div>
             </div>
           </div>
         </div>
@@ -253,11 +253,11 @@ export default function RegenwaterPage() {
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
           <li>Regenwater opvangen voor toilet, tuin en wasmachine (besparing 30–40% waterverbruik)</li>
-          <li>Leidingwater als primaire drinkwaterbron, gefilterd via een <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">osmosefilter</a> voor de beste kwaliteit</li>
+          <li>Leidingwater als primaire drinkwaterbron, gefilterd via een <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">osmosefilter</Link> voor de beste kwaliteit</li>
           <li>Leidingwater als noodback-up wanneer de regenwateropslagtank leeg is</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Wil je ook weten hoe putwater of bronwater veilig te gebruiken? Lees onze pagina over <a href="/putwater" className="text-[#005F8A] underline">putwater filteren</a> voor een vergelijkbare aanpak.
+          Wil je ook weten hoe putwater of bronwater veilig te gebruiken? Lees onze pagina over <Link href="/putwater" className="text-[#005F8A] underline">putwater filteren</Link> voor een vergelijkbare aanpak.
         </p>
 
         <div className="space-y-3 mb-8">
@@ -275,34 +275,34 @@ export default function RegenwaterPage() {
         <section className="mt-10">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Regenwater-toepassingen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/regenwater/filteren" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/regenwater/filteren" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Regenwater filteren</h3>
               <p className="text-sm text-gray-600">Filtervolgorde van dakvanger tot UV: welke stappen voor welk doel.</p>
-            </a>
-            <a href="/regenwater/drinken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/regenwater/drinken" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Regenwater drinken</h3>
               <p className="text-sm text-gray-600">Wettelijke status, behandelingsketen voor drinkwaterkwaliteit en risicos.</p>
-            </a>
-            <a href="/regenwater/tuin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/regenwater/tuin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Regenwater in de tuin</h3>
               <p className="text-sm text-gray-600">Kalkarm gieten zonder filter, opvang via regenton en hergebruikpercentages.</p>
-            </a>
-            <a href="/regenwater/wc-doorspoelen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/regenwater/wc-doorspoelen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">WC-doorspoelen</h3>
               <p className="text-sm text-gray-600">Separate leiding, 30-40% drinkwaterbesparing en gemeentelijke subsidies.</p>
-            </a>
-            <a href="/regenwater/wassen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/regenwater/wassen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Wasmachine</h3>
               <p className="text-sm text-gray-600">0 dH hardheid bespaart 50% wasmiddel; sedimentfilter 100 micron volstaat.</p>
-            </a>
-            <a href="/regenwater/opslagtank" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/regenwater/opslagtank" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Opslagtank kiezen</h3>
               <p className="text-sm text-gray-600">Beton vs HDPE, 1000-10000L en dakoppervlak-berekening.</p>
-            </a>
-            <a href="/regenwater/pfas" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/regenwater/pfas" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in regenwater</h3>
               <p className="text-sm text-gray-600">Atmosferische depositie, NL-meetwaarden en welke filters PFAS verwijderen.</p>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -331,7 +331,7 @@ export default function RegenwaterPage() {
         </section>
 
         <p className="text-gray-600 text-sm mt-6">
-          Meer lezen: <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</a>, <a href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</a> en <a href="/putwater" className="text-[#005F8A] underline">putwater filteren</a>.
+          Meer lezen: <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</Link>, <Link href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</Link> en <Link href="/putwater" className="text-[#005F8A] underline">putwater filteren</Link>.
         </p>
       </main>
     </>

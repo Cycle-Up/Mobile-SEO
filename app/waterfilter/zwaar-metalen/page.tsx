@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Zware metalen in water filteren: lood, koper, cadmium en meer',
@@ -112,8 +113,8 @@ export default function ZwaarMetalenPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Zware metalen</span>
         </nav>
 
@@ -349,34 +350,34 @@ export default function ZwaarMetalenPage() {
         </p>
         <ol className="list-decimal pl-6 text-gray-700 mb-6 space-y-2">
           <li><strong>Test uw water</strong> via een gecertificeerd laboratorium, met name als uw woning voor 1970 is gebouwd of als u in een industriegebied woont. Vraag om lood, koper, cadmium en nikkel als minimum panel.</li>
-          <li><strong>Als er lood of cadmium gevonden wordt:</strong> Een NSF/ANSI 58-gecertificeerd osmosefilter is de aanbevolen oplossing — zie ook onze pagina over <a href="/waterfilter/chloor-verwijderen" className="text-[#005F8A] underline">waterfilter typen vergelijken</a>.</li>
+          <li><strong>Als er lood of cadmium gevonden wordt:</strong> Een NSF/ANSI 58-gecertificeerd osmosefilter is de aanbevolen oplossing — zie ook onze pagina over <Link href="/waterfilter/chloor-verwijderen" className="text-[#005F8A] underline">waterfilter typen vergelijken</Link>.</li>
           <li><strong>Als er alleen lood of koper is:</strong> Een NSF/ANSI 53-gecertificeerd koolblokfilter kan volstaan en is goedkoper.</li>
           <li><strong>Tijdelijke maatregel:</strong> Laat de kraan 30–60 seconden doorstromen &apos;s ochtends om stilstaand water af te voeren. Dit verlaagt lood- en koperconcentraties significant.</li>
         </ol>
         <p className="text-gray-700 mb-6">
           Wil je meer weten over specifiek loodverwijdering? Lees ons gedetailleerde artikel over{' '}
-          <a href="/leidingwater/lood" className="text-[#005F8A] underline">lood in drinkwater filteren</a>.
+          <Link href="/leidingwater/lood" className="text-[#005F8A] underline">lood in drinkwater filteren</Link>.
         </p>
 
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/stoffen-in-drinkwater/zware-metalen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Zware metalen in drinkwater</h3>
               <p className="text-sm text-gray-600">Overzicht van alle zware metalen die in drinkwater kunnen voorkomen en de bijbehorende risicos.</p>
-            </a>
-            <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor lood</h3>
               <p className="text-sm text-gray-600">Lood in drinkwater: bronnen, risicos en welke waterfilters lood effectief verwijderen.</p>
-            </a>
-            <a href="/waterfilter/arseen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/waterfilter/arseen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor arseen</h3>
               <p className="text-sm text-gray-600">Arseen in drinkwater: waar het vandaan komt en hoe je het effectief filtert.</p>
-            </a>
-            <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose uitgelegd</h3>
               <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en waarom is het de meest effectieve methode voor zware metalen?</p>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -396,9 +397,9 @@ export default function ZwaarMetalenPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/waterfilter/tds" className="text-[#005F8A] underline">TDS meten in water</a>{' '}
+          <Link href="/waterfilter/tds" className="text-[#005F8A] underline">TDS meten in water</Link>{' '}
           en{' '}
-          <a href="/osmose-water/gezondheidsvoordelen" className="text-[#005F8A] underline">gezondheidsvoordelen van osmosewater</a>.
+          <Link href="/osmose-water/gezondheidsvoordelen" className="text-[#005F8A] underline">gezondheidsvoordelen van osmosewater</Link>.
         </p>
       </main>
     </>

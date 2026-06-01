@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Fluoride in drinkwater filteren: osmose vs andere methoden',
@@ -112,8 +114,8 @@ export default function DrinkwaterFluoridePage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/drinkwater" className="hover:underline">Drinkwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/drinkwater" className="hover:underline">Drinkwater</Link> &rsaquo;{' '}
           <span>Fluoride</span>
         </nav>
 
@@ -128,6 +130,7 @@ export default function DrinkwaterFluoridePage() {
           </p>
         </div>
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -210,7 +213,7 @@ export default function DrinkwaterFluoridePage() {
             </div>
             <p className="text-gray-700 text-sm mb-2">
               Osmosefilters verwijderen 95–99% van alle opgeloste ionen inclusief fluoride via een semipermeabele membraan met poriën van 0,0001 µm. Naast fluoride worden tegelijkertijd nitraat, lood, arsenicum, PFAS en andere verontreinigingen verwijderd. Voor Nederlandse leidingwater de meest complete filtratie-optie. Zie voor meer details onze pagina over{' '}
-              <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</a>.
+              <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</Link>.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-gray-500">
               <span>Fluoride: ✓ 95–99%</span>
@@ -327,8 +330,8 @@ export default function DrinkwaterFluoridePage() {
         </p>
         <p className="text-gray-700 mb-4">
           Heeft u andere redenen om te filteren — hard water, nitraat in putwater, PFAS of een algemene voorkeur voor zuiver drinkwater — dan is een osmosefilter een uitstekende keus die fluoride als bijproduct ook verwijdert. Lees meer over de{' '}
-          <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid in uw gemeente</a> of over{' '}
-          <a href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</a> als u een privéput heeft.
+          <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid in uw gemeente</Link> of over{' '}
+          <Link href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</Link> als u een privéput heeft.
         </p>
         <p className="text-gray-700 mb-6">
           Wilt u toch specifiek fluoride verwijderen: kies een osmosefilter als alles-in-één oplossing, of geactiveerd alumina als u uitsluitend fluoride wilt aanpakken. Gebruik nooit een gewoon actief-koolfilter in de veronderstelling dat het fluoride verwijdert — dat doet het niet.
@@ -337,22 +340,22 @@ export default function DrinkwaterFluoridePage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
             <p className="text-sm text-gray-600">Wettelijke normen voor fluoride en andere stoffen in drinkwater.</p>
-          </a>
-          <a href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/stoffen-in-drinkwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Stoffen in drinkwater</h3>
             <p className="text-sm text-gray-600">Overzicht van alle stoffen die in drinkwater kunnen voorkomen.</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
             <p className="text-sm text-gray-600">Hoe omgekeerde osmose fluoride en andere stoffen verwijdert.</p>
-          </a>
-          <a href="/waterfilter/fluor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/fluor" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor fluoride</h3>
             <p className="text-sm text-gray-600">Welke waterfilters fluoride effectief uit drinkwater verwijderen.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -372,9 +375,9 @@ export default function DrinkwaterFluoridePage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</a>,{' '}
-          <a href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</a> en{' '}
-          <a href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</a>.
+          <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose waterfilter</Link>,{' '}
+          <Link href="/waterhardheid" className="text-[#005F8A] underline">waterhardheid per gemeente</Link> en{' '}
+          <Link href="/putwater" className="text-[#005F8A] underline">putwater testen en zuiveren</Link>.
         </p>
       </main>
     </>

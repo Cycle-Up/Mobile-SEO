@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Beste waterfilter voor een studentenkamer — zonder installatie | WaterfilterPlatform',
@@ -84,6 +86,8 @@ export default function StudentenkamerPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-8">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Situatie: huurkamer, beperkt budget, geen toestemming nodig</h2>

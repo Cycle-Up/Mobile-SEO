@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
 
@@ -12,7 +11,6 @@ export const metadata: Metadata = {
     "Waterfilteroplossingen voor bedrijven: kantoor, horeca, industrie en appartementsgebouwen. Capaciteit, certificering, onderhoud en legionella-beheersplan.",
   alternates: { canonical: "https://waterfilterplatform.nl/zakelijk" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/zakelijk.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Zakelijke waterfilters: voor kantoor, horeca, industrie en VVE",
     description:
       "Waterfilteroplossingen voor bedrijven: kantoor, horeca, industrie en appartementsgebouwen. Capaciteit, certificering, onderhoud en legionella-beheersplan.",
@@ -52,6 +50,27 @@ export default function ZakelijkPage() {
   const cluster = getCluster("zakelijk")!;
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Zakelijke waterfilters',
+            url: 'https://waterfilterplatform.nl/zakelijk',
+            numberOfItems: 9,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Waterfilter voor appartementen en VvE: collectieve oplossingen', url: 'https://waterfilterplatform.nl/zakelijk/appartementen-vve' },
+            { '@type': 'ListItem', position: 2, name: 'Waterfilter voor horeca: koffie, ijs, koken en legionella-beheersplan', url: 'https://waterfilterplatform.nl/zakelijk/horeca' },
+            { '@type': 'ListItem', position: 3, name: 'Proceswater voor industrie: filtratie, ontzouting en kwaliteitsnormen', url: 'https://waterfilterplatform.nl/zakelijk/industrie-proceswater' },
+            { '@type': 'ListItem', position: 4, name: 'Waterfilter voor kantoor: drinkwater voor 10-200 medewerkers', url: 'https://waterfilterplatform.nl/zakelijk/kantoor' },
+            { '@type': 'ListItem', position: 5, name: 'Legionella-beheersplan voor bedrijven: wettelijke eisen & aanpak', url: 'https://waterfilterplatform.nl/zakelijk/legionella-beheersplan' },
+            { '@type': 'ListItem', position: 6, name: 'Waterfilter voor scholen en kinderopvang: veilig drinkwater voor kinderen', url: 'https://waterfilterplatform.nl/zakelijk/scholen-kinderopvang' },
+            { '@type': 'ListItem', position: 7, name: 'Waterfilter voor sportschool en wellness: hydratie, spa en Legionella', url: 'https://waterfilterplatform.nl/zakelijk/sportschool-wellness' },
+            { '@type': 'ListItem', position: 8, name: 'Waterkoeler vs waterfilter voor zakelijk gebruik: kosten en prestaties', url: 'https://waterfilterplatform.nl/zakelijk/waterkoeler-vs-filter' },
+            { '@type': 'ListItem', position: 9, name: 'Waterkwaliteitsanalyse voor bedrijven: lab-analyse aanvragen', url: 'https://waterfilterplatform.nl/zakelijk/waterkwaliteitsanalyse' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg
         schema={[
           {

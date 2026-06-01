@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
     title: 'Beste filterkan 2026: koopgids en shortlist per situatie',
     description:
-      'Beste waterfilterkan 2026: Brita, BWT en alternatieven vergeleken op filterprestatie, kosten per liter en smaak. Shortlist per huishouden en wanneer osmose beter is.',
+      'Beste waterfilterkan 2026: Brita, BWT en alternatieven vergeleken op filterprestatie, kosten per liter en smaak. Shortlist per huishouden.',
     alternates: { canonical: 'https://waterfilterplatform.nl/beste-filterkan-2026' },
     openGraph: {
       title: 'Beste filterkan 2026 - koopgids per situatie',
@@ -78,6 +80,16 @@ const picks = [
 export default function BesteFilterkan2026Page() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Beste filterkan 2026: koopgids en shortlist per situatie',
+          description: 'Beste waterfilterkan 2026: Brita, BWT en alternatieven vergeleken op filterprestatie, kosten per liter en smaak. Shortlist per huishouden.',
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: 'https://waterfilterplatform.nl/beste-filterkan-2026',
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"
@@ -121,6 +133,8 @@ export default function BesteFilterkan2026Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer
           question="Wat is de beste filterkan in 2026?"

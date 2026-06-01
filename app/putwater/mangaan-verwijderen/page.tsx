@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -106,6 +107,7 @@ export default function PutwaterMangaanVerwijderenPage() {
 
         <QuickAnswer answer="Mangaan in putwater (Mn2+) wordt verwijderd door oxidatie (beluchting of kaliumpermanganaat) gevolgd door filtratie via Greensand, pyrolusiet of MTM. De EU-norm is 50 microgram per liter (0,05 mg/L). Een mangaanfilter kost 700 tot 1500 euro; een combinatiefilter voor ijzer en mangaan tegelijk kost 800 tot 1800 euro. KMnO4-regeneratie elke 1-4 weken houdt Greensand-filters actief." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

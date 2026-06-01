@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor Baby: Veilig Water voor Zuigelingen',
@@ -65,8 +67,8 @@ export default function WaterfilterBabyPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Baby</span>
         </nav>
 
@@ -77,6 +79,7 @@ export default function WaterfilterBabyPage() {
           Baby&rsquo;s zijn kwetsbaarder dan volwassenen voor verontreinigingen in drinkwater. Een goed waterfilter geeft ouders de zekerheid dat het water voor flesvoeding en bijvoeding vrij is van nitraat, lood en bacteriën.
         </p>
 
+        <HealthDisclaimer />
         <CTABanner />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -177,34 +180,34 @@ export default function WaterfilterBabyPage() {
           <p className="text-gray-700 mb-4">
             Onze osmosefilters met optioneel remineralisatiepatroon zijn de veiligste keuze voor babyvoeding. Eenvoudig te installeren onder het aanrecht.
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk osmosefilters →
-          </a>
+          </Link>
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/drinkwater/baby" className="text-[#005F8A] underline">Drinkwater voor baby: welk water is veilig?</a> en <a href="/kennisbank/waterfilter-baby" className="text-[#005F8A] underline">waterfilter voor babyvoeding: complete gids</a>.
+          Lees ook: <Link href="/drinkwater/baby" className="text-[#005F8A] underline">Drinkwater voor baby: welk water is veilig?</Link> en <Link href="/kennisbank/waterfilter-baby" className="text-[#005F8A] underline">waterfilter voor babyvoeding: complete gids</Link>.
         </p>
 
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/keuzehulp/baby-gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/keuzehulp/baby-gezin" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp: waterfilter voor baby en gezin</h3>
             <p className="text-sm text-gray-600">Welk waterfilter is het veiligst voor een gezin met jonge kinderen?</p>
-          </a>
-          <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Filtertechnieken: omgekeerde osmose</h3>
             <p className="text-sm text-gray-600">Hoe werkt omgekeerde osmose en wat verwijdert het uit drinkwater?</p>
-          </a>
-          <a href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/lood" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Lood in drinkwater filteren</h3>
             <p className="text-sm text-gray-600">Hoe verwijder je lood uit drinkwater en welk filter is het meest effectief?</p>
-          </a>
-          <a href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/beste-waterfilter/appartement" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor appartement</h3>
             <p className="text-sm text-gray-600">Welk waterfilter past in een appartement zonder grote verbouwing?</p>
-          </a>
+          </Link>
         </div>
       </section>
       </main>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -106,6 +107,7 @@ export default function PutwaterNitraatPage() {
 
         <QuickAnswer answer="De EU-norm voor nitraat in drinkwater is 50 mg/L, voor babyvoeding 10 mg/L (WHO). Putwater in landbouwgebieden (Brabant, Achterhoek, Limburg) overschrijdt deze grens regelmatig door uitspoeling van meststoffen. Omgekeerde osmose verwijdert 85-95% van nitraat, ionenwisseling 95-99%. Test jaarlijks, vooral bij ondiepe putten en in landbouwregio&apos;s. Koken helpt niet: het concentreert juist nitraat." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

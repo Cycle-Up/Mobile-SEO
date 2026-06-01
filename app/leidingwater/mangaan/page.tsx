@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -132,6 +133,7 @@ export default function MangaanLeidingwaterPage() {
 
         <QuickAnswer answer="Mangaan in leidingwater herkent u aan zwarte aanslag in toilet en wasmachine en een metalige smaak. EU-norm is 50 microgram per liter. Bij normale leidingwaterniveaus geen gezondheidsrisico. Mangaanzeoliet filter of oxidatiefilter verwijdert 90-95%. Actief koolfilter werkt niet tegen mangaan." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

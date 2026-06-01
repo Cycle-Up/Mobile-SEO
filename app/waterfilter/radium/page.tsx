@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -135,6 +136,7 @@ export default function WaterfilterRadiumPage() {
 
         <QuickAnswer answer="Radium in drinkwater is een risico bij particuliere putten in uraniumhoudende gebieden zoals Noord-Brabant en Gelderland. De EU-norm is 0,1 Bq/L voor radium-226 en radium-228 samen. Leidingwater voldoet altijd aan de norm. Een osmosefilter verwijdert 95-99% van opgelost radium; radon vereist beluchting." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

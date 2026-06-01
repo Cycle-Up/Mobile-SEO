@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { CTABanner } from "@/components/CTABanner";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
 
@@ -12,7 +11,6 @@ export const metadata: Metadata = {
     "Welk waterfilter is het beste voor een appartement, huurwoning, ouder huis of gezin? Concrete aanbevelingen per woningtype en gebruik.",
   alternates: { canonical: "https://waterfilterplatform.nl/beste-waterfilter" },
   openGraph: {
-    images: [{ url: 'https://waterfilterplatform.nl/og/beste-waterfilter.svg', width: 1200, height: 630, alt: 'WaterfilterPlatform' }],
     title: "Beste waterfilter per situatie: welk filter past bij uw woning?",
     description:
       "Welk waterfilter is het beste voor een appartement, huurwoning, ouder huis of gezin? Concrete aanbevelingen per woningtype en gebruik.",
@@ -53,6 +51,28 @@ export default function BesteWaterfilterPage() {
   return (
     <>
       <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Beste waterfilter per situatie',
+            url: 'https://waterfilterplatform.nl/beste-waterfilter',
+            numberOfItems: 10,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'All-in-one waterfilter - osmose + kokend water + koolstoffilter in 1 systeem', url: 'https://waterfilterplatform.nl/beste-waterfilter/all-in-one' },
+            { '@type': 'ListItem', position: 2, name: 'Beste waterfilter voor een appartement: compacte opties vergeleken', url: 'https://waterfilterplatform.nl/beste-waterfilter/appartement' },
+            { '@type': 'ListItem', position: 3, name: 'Beste waterfilter onder EUR 100 - eerlijke vergelijking goedkope filters', url: 'https://waterfilterplatform.nl/beste-waterfilter/budget-onder-100' },
+            { '@type': 'ListItem', position: 4, name: 'Meest ecologisch waterfilter - milieuvoetafdruk vergeleken', url: 'https://waterfilterplatform.nl/beste-waterfilter/ecologisch' },
+            { '@type': 'ListItem', position: 5, name: 'Beste waterfilter voor hard water: kalk verwijderen of behandelen', url: 'https://waterfilterplatform.nl/beste-waterfilter/hard-water-gebied' },
+            { '@type': 'ListItem', position: 6, name: 'Beste waterfilter voor huurwoning: zonder boren of toestemming', url: 'https://waterfilterplatform.nl/beste-waterfilter/huurwoning' },
+            { '@type': 'ListItem', position: 7, name: 'Beste waterfilter voor koffie en thee: ideale TDS en waterhardheid', url: 'https://waterfilterplatform.nl/beste-waterfilter/koffie-thee' },
+            { '@type': 'ListItem', position: 8, name: 'Waterfilter voor ouder huis (voor 1960): lood in leidingen aanpakken', url: 'https://waterfilterplatform.nl/beste-waterfilter/ouder-huis' },
+            { '@type': 'ListItem', position: 9, name: 'Beste waterfilter voor een studentenkamer - zonder installatie', url: 'https://waterfilterplatform.nl/beste-waterfilter/studentenkamer' },
+            { '@type': 'ListItem', position: 10, name: 'Beste waterfilter voor een woonboot: unieke uitdagingen en oplossingen', url: 'https://waterfilterplatform.nl/beste-waterfilter/woonboot' },
+            ],
+          },
+        ]}
+      />
+      <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: "Home", url: "https://waterfilterplatform.nl" },
@@ -61,6 +81,16 @@ export default function BesteWaterfilterPage() {
             url: "https://waterfilterplatform.nl/beste-waterfilter",
           },
         ]}
+      />
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: "Beste waterfilter per situatie: welk filter past bij uw woning?",
+          description: "Welk waterfilter is het beste voor een appartement, huurwoning, ouder huis of gezin? Concrete aanbevelingen per woningtype en gebruik.",
+          datePublished: '2026-05-29',
+          dateModified: '2026-05-29',
+          url: "https://waterfilterplatform.nl/beste-waterfilter",
+        }}
       />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
@@ -135,6 +165,17 @@ export default function BesteWaterfilterPage() {
               <p className="mt-2 text-gray-700 text-sm">{item.answer}</p>
             </details>
           ))}
+        </section>
+      </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/beste-waterfilter/ecologisch" href="/beste-waterfilter/ecologisch" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Meest ecologisch waterfilter - milieuvoetafdruk vergeleken</p>
+              </Link>
+          </div>
         </section>
       </div>
     </>

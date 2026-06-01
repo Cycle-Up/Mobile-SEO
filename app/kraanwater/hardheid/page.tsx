@@ -114,8 +114,8 @@ export default function KraanwaterHardheidPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/kraanwater" className="hover:underline">Kraanwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/kraanwater" className="hover:underline">Kraanwater</Link> &rsaquo;{' '}
           <span>Hardheid kraanwater per regio</span>
         </nav>
 

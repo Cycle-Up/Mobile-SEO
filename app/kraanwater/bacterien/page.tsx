@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -106,8 +107,8 @@ export default function KraanwaterBacterienPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/kraanwater" className="hover:underline">Kraanwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/kraanwater" className="hover:underline">Kraanwater</Link> &rsaquo;{' '}
           <span>Bacterien in kraanwater</span>
         </nav>
 
@@ -124,6 +125,7 @@ export default function KraanwaterBacterienPage() {
 
         <QuickAnswer answer="Nederlands kraanwater is vrijwel altijd bacterievrij: waterbedrijven testen wekelijks op E. coli en enterokokken. Gevaar ontstaat bijna altijd in de huisinstallatie, met name door legionella in warmwaterboilers onder 60 graden C of bij stilstaand water na vakantie. Risicogroepen: 65-plussers, rokers en mensen met verzwakte immuniteit." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

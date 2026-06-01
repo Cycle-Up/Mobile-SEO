@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Gemeente } from '@/data/gemeenten';
+import { clampDescription } from '@/lib/seo';
+
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
@@ -28,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!gemeente) return {};
 
   const title = buildTitle(gemeente.naam);
-  const description = `Welk waterfilter past bij het water in ${gemeente.naam}? Hardheid ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}). Vergelijk filterkan, inline, osmose en kokendwaterkraan — en ontdek welk type het meest rendabel is.`;
+  const description = clampDescription(`Welk waterfilter past bij het water in ${gemeente.naam}? Hardheid ${gemeente.hardheid}°dH (${getHardheidLabel(gemeente.categorie).toLowerCase()}). Vergelijk filterkan, inline, osmose en kokendwaterkraan — en ontdek welk type het meest rendabel is.`);
 
   return {
     title,

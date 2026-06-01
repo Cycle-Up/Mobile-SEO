@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -140,6 +141,7 @@ export default function FluorPage() {
 
         <QuickAnswer answer="Nederland voegt geen fluor toe aan leidingwater (ondanks vroegere discussie). Het naturally occurring fluoride in Nederlands leidingwater is laag: 0,05-0,3 mg/L, ruim onder de WHO-norm van 1,5 mg/L. Een osmosefilter verwijdert 94-96% van fluoride. Fluoride-tekort is in Nederland geen probleem door gefluorideerde tandpasta." />
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

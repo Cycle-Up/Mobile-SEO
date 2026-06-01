@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Osmosewater Smaak Verbeteren: Remineralisatie & Tips',
@@ -65,8 +66,8 @@ export default function OsmoseWaterSmaakVerbeteringPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/omgekeerde-osmose" className="hover:underline">Omgekeerde osmose</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/omgekeerde-osmose" className="hover:underline">Omgekeerde osmose</Link> &rsaquo;{' '}
           <span>Smaak verbeteren</span>
         </nav>
 
@@ -80,22 +81,22 @@ export default function OsmoseWaterSmaakVerbeteringPage() {
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/osmose-water/smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/osmose-water/smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Smaak van osmosewater</h3>
               <p className="text-sm text-gray-600">Waarom osmosewater anders smaakt en wat de invloed is van mineralen en pH.</p>
-            </a>
-            <a href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/osmose-water/mineralen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Mineralen in osmosewater</h3>
               <p className="text-sm text-gray-600">Welke mineralen ontbreken na omgekeerde osmose en waarom dat ertoe doet.</p>
-            </a>
-            <a href="/koolstoffilter/geur-smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/koolstoffilter/geur-smaak" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Koolstoffilter voor geur en smaak</h3>
               <p className="text-sm text-gray-600">Hoe actief koolstof chloor, geur en smaakafwijkingen uit water verwijdert.</p>
-            </a>
-            <a href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/osmose-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Osmosewater uitleg</h3>
               <p className="text-sm text-gray-600">Alles over osmosewater: werking, kwaliteit en toepassingen.</p>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -183,7 +184,7 @@ export default function OsmoseWaterSmaakVerbeteringPage() {
           </table>
         </div>
         <p className="text-gray-700 mb-6">
-          Meer over de smaak van osmosewater: <a href="/osmose-water/smaak" className="text-[#005F8A] underline">osmosewater smaak en pH</a> of <a href="/osmose-water/remineralisatie" className="text-[#005F8A] underline">remineralisatie van osmosewater</a>.
+          Meer over de smaak van osmosewater: <Link href="/osmose-water/smaak" className="text-[#005F8A] underline">osmosewater smaak en pH</Link> of <Link href="/osmose-water/remineralisatie" className="text-[#005F8A] underline">remineralisatie van osmosewater</Link>.
         </p>
 
         <div className="space-y-4 mb-8">
@@ -203,9 +204,9 @@ export default function OsmoseWaterSmaakVerbeteringPage() {
           <p className="text-gray-700 mb-4">
             Onze osmosefilters zijn beschikbaar met optioneel remineralisatiepatroon voor de perfecte waterkwaliteit en smaak.
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk osmosefilters →
-          </a>
+          </Link>
         </div>
       </main>
     </>

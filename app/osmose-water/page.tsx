@@ -199,6 +199,32 @@ export default function OsmoseWaterPage() {
           </div>
         </section>
       </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/osmose-water/fermenteren" href="/osmose-water/fermenteren" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosewater voor fermenteren</p>
+              </Link>
+              <Link key="/osmose-water/ijssteen" href="/osmose-water/ijssteen" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosewater voor ijsblokjes</p>
+              </Link>
+              <Link key="/osmose-water/koolzuur" href="/osmose-water/koolzuur" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Bruisend osmosewater</p>
+              </Link>
+              <Link key="/osmose-water/wijn" href="/osmose-water/wijn" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosewater voor wijnmakers</p>
+              </Link>
+              <Link key="/osmose-water/zout-water" href="/osmose-water/zout-water" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosewater en zout koken</p>
+              </Link>
+              <Link key="/osmose-water/zwembad" href="/osmose-water/zwembad" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Osmosewater voor zwembad en spa</p>
+              </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

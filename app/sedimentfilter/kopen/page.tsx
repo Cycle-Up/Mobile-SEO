@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Sedimentfilter kopen: micronwaardes, types en koopgids 2026',
@@ -190,6 +192,8 @@ export default function SedimentfilterKopenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-8 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Sedimentfilter kopen: voor putwater kiest u 1–5 µm, voor leidingwater 10–20 µm, voor irrigatie 20–50 µm. Standaard 10-inch behuizing (€15–40) voor thuisgebruik; big blue 20-inch voor hoger debiet. Merken: Pentek, Watts, Aquafilter, Ecosoft. Jaarkosten: €8–60. Cartridges vervangen in 3–12 maanden afhankelijk van waterkwaliteit. Sedimentfilter altijd als pre-filter voor koolstof, UV of RO." />
 

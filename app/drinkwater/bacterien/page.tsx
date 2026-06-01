@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Bacteriën in drinkwater: risico\'s en hoe te verwijderen',
@@ -112,8 +114,8 @@ export default function DrinkwaterBacterienPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/drinkwater" className="hover:underline">Drinkwater</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/drinkwater" className="hover:underline">Drinkwater</Link> &rsaquo;{' '}
           <span>Bacteriën</span>
         </nav>
 
@@ -129,6 +131,7 @@ export default function DrinkwaterBacterienPage() {
           </p>
         </div>
 
+        <HealthDisclaimer />
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -256,22 +259,22 @@ export default function DrinkwaterBacterienPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/stoffen-in-drinkwater/microbiologisch" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Microbiologische waterkwaliteit</h3>
             <p className="text-sm text-gray-600">Achtergronden van microbiologische risicos en normen in drinkwater.</p>
-          </a>
-          <a href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/filtertechnieken/uv-sterilisatie" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">UV-sterilisatie</h3>
             <p className="text-sm text-gray-600">Hoe UV-licht bacterien en virussen effectief inactiveert.</p>
-          </a>
-          <a href="/waterfilter/legionella" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/legionella" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter voor legionella</h3>
             <p className="text-sm text-gray-600">Welke filteropties bescherming bieden tegen legionella-risicos.</p>
-          </a>
-          <a href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/drinkwaternormen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen</h3>
             <p className="text-sm text-gray-600">Wettelijke normen voor drinkwaterkwaliteit in Nederland.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -279,9 +282,9 @@ export default function DrinkwaterBacterienPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/drinkwater/lood" className="text-[#005F8A] underline">lood in drinkwater</a>{' '}
+          <Link href="/drinkwater/lood" className="text-[#005F8A] underline">lood in drinkwater</Link>{' '}
           en{' '}
-          <a href="/waterfilter/microplastics" className="text-[#005F8A] underline">microplastics filteren uit drinkwater</a>.
+          <Link href="/waterfilter/microplastics" className="text-[#005F8A] underline">microplastics filteren uit drinkwater</Link>.
         </p>
       </main>
     </>

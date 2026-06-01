@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'TDS meten in water: wat is het en wanneer filteren?',
@@ -112,8 +113,8 @@ export default function TDSWaterPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>TDS water meten</span>
         </nav>
 
@@ -340,28 +341,28 @@ export default function TDSWaterPage() {
           Een osmosefilter reduceert TDS met 90–99%, wat water oplevert met een TDS van 5–20 mg/L. Dit is bijzonder zuiver maar kan vlak smaken. Via <strong>remineralisatie</strong> wordt de TDS bewust verhoogd naar 50–80 mg/L door calciet- of magnesiumoxide-patronen toe te voegen.
         </p>
         <p className="text-gray-700 mb-6">
-          Met een TDS-meter kun je eenvoudig controleren of je osmosefilter goed werkt: na het RO-membraan zou de TDS ten minste 90% lager moeten zijn dan het ingaande water. Als dit niet het geval is, is het membraan mogelijk beschadigd of aan vervanging toe. Lees meer over dit principe in ons artikel over <a href="/osmose-water/gezondheidsvoordelen" className="text-[#005F8A] underline">gezondheidsvoordelen van osmosewater</a>.
+          Met een TDS-meter kun je eenvoudig controleren of je osmosefilter goed werkt: na het RO-membraan zou de TDS ten minste 90% lager moeten zijn dan het ingaande water. Als dit niet het geval is, is het membraan mogelijk beschadigd of aan vervanging toe. Lees meer over dit principe in ons artikel over <Link href="/osmose-water/gezondheidsvoordelen" className="text-[#005F8A] underline">gezondheidsvoordelen van osmosewater</Link>.
         </p>
 
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose filtertechniek</h3>
               <p className="text-sm text-gray-600">Hoe omgekeerde osmose TDS drastisch verlaagt en water ultrazuiver maakt.</p>
-            </a>
-            <a href="/waterhardheid/testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/waterhardheid/testen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Waterhardheid testen</h3>
               <p className="text-sm text-gray-600">Meet de hardheid van uw kraanwater en begrijp de relatie met TDS.</p>
-            </a>
-            <a href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/onderhoud/osmose-filter-vervangen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Osmosefilter vervangen</h3>
               <p className="text-sm text-gray-600">Wanneer en hoe u het membraan en filters van uw osmosesysteem vervangt.</p>
-            </a>
-            <a href="/waterfilter/hardheidstest" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+            </Link>
+            <Link href="/waterfilter/hardheidstest" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter hardheidstest</h3>
               <p className="text-sm text-gray-600">Test de hardheid van uw water en ontdek welk filter het beste past.</p>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -381,9 +382,9 @@ export default function TDSWaterPage() {
 
         <p className="text-gray-600 text-sm mt-6">
           Zie ook:{' '}
-          <a href="/waterfilter/zwaar-metalen" className="text-[#005F8A] underline">zware metalen in water filteren</a>{' '}
+          <Link href="/waterfilter/zwaar-metalen" className="text-[#005F8A] underline">zware metalen in water filteren</Link>{' '}
           en{' '}
-          <a href="/waterfilter/chloor-verwijderen" className="text-[#005F8A] underline">chloor verwijderen uit kraanwater</a>.
+          <Link href="/waterfilter/chloor-verwijderen" className="text-[#005F8A] underline">chloor verwijderen uit kraanwater</Link>.
         </p>
       </main>
     </>

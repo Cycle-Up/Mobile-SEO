@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor huurwoning: installeren zonder boren (2026)',
@@ -113,8 +114,8 @@ export default function WaterfilterHuurwoningPage() {
 
       <main className="max-w-3xl mx-auto px-4 py-8">
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/waterfilter" className="hover:underline">Waterfilter</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/waterfilter" className="hover:underline">Waterfilter</Link> &rsaquo;{' '}
           <span>Huurwoning</span>
         </nav>
 
@@ -141,7 +142,7 @@ export default function WaterfilterHuurwoningPage() {
           <li><strong>Risico op borg verlies:</strong> Bij oplevering moet de woning in originele staat zijn. Elk geboord gat of achtergelaten installatie telt mee.</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          De goede nieuws: er zijn vier uitstekende opties die volledig zonder toestemming of permanent werk werken. Lees ook onze algemene pagina over <a href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</a> voor meer achtergrond.
+          De goede nieuws: er zijn vier uitstekende opties die volledig zonder toestemming of permanent werk werken. Lees ook onze algemene pagina over <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</Link> voor meer achtergrond.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -214,7 +215,7 @@ export default function WaterfilterHuurwoningPage() {
           <li>Afvoerverbinding voor spoelwater</li>
         </ul>
         <p className="text-gray-700 mb-4">
-          Juridisch gezien is dit systeem bij vertrek volledig te verwijderen. Sluit de waterafsluiter terug aan, verwijder de tapkraan en dicht het gat met een roestvrijstalen afdekplaat (€5). Sommige verhuurders staan dit toe, zeker als je schriftelijk toestemming vraagt en de herstelverplichting documenteert. Bekijk ons overzicht van <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose systemen</a> voor meer informatie.
+          Juridisch gezien is dit systeem bij vertrek volledig te verwijderen. Sluit de waterafsluiter terug aan, verwijder de tapkraan en dicht het gat met een roestvrijstalen afdekplaat (€5). Sommige verhuurders staan dit toe, zeker als je schriftelijk toestemming vraagt en de herstelverplichting documenteert. Bekijk ons overzicht van <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose systemen</Link> voor meer informatie.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -348,34 +349,34 @@ export default function WaterfilterHuurwoningPage() {
           <p className="text-gray-700 mb-4">
             De PureAqua 4-in-1 osmose + kokend water kraan biedt ook in een huurwoning de best mogelijke waterkwaliteit. Counter-top uitvoering beschikbaar voor huurders zonder installatieruimte.
           </p>
-          <a href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk osmosefilters →
-          </a>
+          </Link>
         </div>
 
         <p className="text-gray-600 text-sm">
-          Lees ook: <a href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</a>, <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</a> en <a href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</a>.
+          Lees ook: <Link href="/waterfilter" className="text-[#005F8A] underline">waterfilters vergelijken</Link>, <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose uitleg</Link> en <Link href="/drinkwater" className="text-[#005F8A] underline">drinkwaterkwaliteit in Nederland</Link>.
         </p>
 
         <section className="mt-8">
         <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/keuzehulp/huurwoning" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          <Link href="/keuzehulp/huurwoning" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Keuzehulp huurwoning</h3>
             <p className="text-sm text-gray-600">Persoonlijk advies voor het kiezen van het juiste waterfilter als huurder.</p>
-          </a>
-          <a href="/beste-waterfilter/huurwoning" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/beste-waterfilter/huurwoning" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Beste waterfilter voor huurwoning</h3>
             <p className="text-sm text-gray-600">Rangschikking van de beste waterfilters speciaal geselecteerd voor huurders.</p>
-          </a>
-          <a href="/waterfilter/onder-aanrecht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/onder-aanrecht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter onder aanrecht</h3>
             <p className="text-sm text-gray-600">Alles over onder-aanrecht waterfilters: installatie, kosten en of het past in een huurwoning.</p>
-          </a>
-          <a href="/waterfilter/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+          </Link>
+          <Link href="/waterfilter/kopen" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
             <h3 className="font-semibold text-[#005F8A] mb-1">Waterfilter kopen</h3>
             <p className="text-sm text-gray-600">Praktische koopgids voor waterfilters: worauf je let bij prijs, kwaliteit en installatie.</p>
-          </a>
+          </Link>
         </div>
       </section>
       </main>

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export const metadata: Metadata = {
   title: 'Kokend Water Kraan Prijs 2026: Kosten & Vergelijking',
@@ -65,9 +67,11 @@ export default function KokendWaterKraanPrijsPage() {
       />
 
       <main className="max-w-3xl mx-auto px-4 py-8">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
         <nav className="text-sm text-gray-500 mb-6">
-          <a href="/" className="hover:underline">Home</a> &rsaquo;{' '}
-          <a href="/kokend-water-kraan" className="hover:underline">Kokend water kraan</a> &rsaquo;{' '}
+          <Link href="/" className="hover:underline">Home</Link> &rsaquo;{' '}
+          <Link href="/kokend-water-kraan" className="hover:underline">Kokend water kraan</Link> &rsaquo;{' '}
           <span>Prijs</span>
         </nav>
 
@@ -183,10 +187,10 @@ export default function KokendWaterKraanPrijsPage() {
           Waarom een 4-in-1 kraan extra waarde biedt
         </h2>
         <p className="text-gray-700 mb-4">
-          Een 4-in-1 kokend water kraan combineert kokend water met een geïntegreerd <a href="/omgekeerde-osmose" className="text-[#005F8A] underline">osmosefilter</a>. Naast kokend water heb je direct gefilterd drinkwater — vrij van kalk, chloor, lood en PFAS. Dit vervangt ook de behoefte aan een apart osmosefilter onder het aanrecht.
+          Een 4-in-1 kokend water kraan combineert kokend water met een geïntegreerd <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">osmosefilter</Link>. Naast kokend water heb je direct gefilterd drinkwater — vrij van kalk, chloor, lood en PFAS. Dit vervangt ook de behoefte aan een apart osmosefilter onder het aanrecht.
         </p>
         <p className="text-gray-700 mb-6">
-          Bekijk ons artikel over <a href="/kokend-water-kraan/4-in-1" className="text-[#005F8A] underline">4-in-1 kokend water kranen</a> voor een uitgebreide vergelijking.
+          Bekijk ons artikel over <Link href="/kokend-water-kraan/4-in-1" className="text-[#005F8A] underline">4-in-1 kokend water kranen</Link> voor een uitgebreide vergelijking.
         </p>
 
         <div className="space-y-4 mb-8">

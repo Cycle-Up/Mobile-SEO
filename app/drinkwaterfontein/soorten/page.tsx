@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
     title: 'Drinkwaterfontein soorten: types, koeling en bruiswater vergeleken',
     description:
-      'Welke soorten drinkwaterfonteinen zijn er? Leidinggebonden vs flessenfontein, met koeling, bruiswater of contactloos - vergeleken op gebruik, kosten en onderhoud.',
+      'Welke soorten drinkwaterfonteinen zijn er? Leidinggebonden vs flessenfontein, met koeling, bruiswater of contactloos - vergeleken op gebruik, kosten en',
     alternates: { canonical: 'https://waterfilterplatform.nl/drinkwaterfontein/soorten' },
     openGraph: {
       title: 'Drinkwaterfontein soorten: types vergeleken',
@@ -117,6 +119,8 @@ export default function DrinkwaterfonteinSoortenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer
           question="Welke soorten drinkwaterfonteinen zijn er?"

@@ -153,6 +153,49 @@ const kostentabel = [
 export default function WaterOntharderPage() {
   return (
     <>
+      <SchemaOrg
+        schema={[
+          {
+            '@type': 'ItemList',
+            name: 'Waterontharder',
+            url: 'https://waterfilterplatform.nl/waterontharder',
+            numberOfItems: 31,
+            itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Waterontharder in Appartement: Mag Dit & Welke Opties?', url: 'https://waterfilterplatform.nl/waterontharder/appartement' },
+            { '@type': 'ListItem', position: 2, name: 'Waterontharder en aquarium: natrium gevaarlijk voor vissen', url: 'https://waterfilterplatform.nl/waterontharder/aquarium' },
+            { '@type': 'ListItem', position: 3, name: 'Waterontharder bypass: instelling, mengklep en wanneer hard water gewenst', url: 'https://waterfilterplatform.nl/waterontharder/bypass' },
+            { '@type': 'ListItem', position: 4, name: 'Waterontharder capaciteit berekenen: hardheid, gezinsgrootte en harsvolume', url: 'https://waterfilterplatform.nl/waterontharder/capaciteit' },
+            { '@type': 'ListItem', position: 5, name: 'Elektrische waterontharder: werkt het echt?', url: 'https://waterfilterplatform.nl/waterontharder/elektrisch' },
+            { '@type': 'ListItem', position: 6, name: 'Elektromagnetische waterontharder: werking, effectiviteit en vergelijking', url: 'https://waterfilterplatform.nl/waterontharder/elektromagnetisch' },
+            { '@type': 'ListItem', position: 7, name: 'Waterontharder en gezondheid: is onthard water gezond?', url: 'https://waterfilterplatform.nl/waterontharder/gezondheid' },
+            { '@type': 'ListItem', position: 8, name: 'Harsbed waterontharder: ionenwisseling, levensduur en regeneratie', url: 'https://waterfilterplatform.nl/waterontharder/harsbed' },
+            { '@type': 'ListItem', position: 9, name: 'Hoe lang gaat een waterontharder mee? Levensduur en onderhoud', url: 'https://waterfilterplatform.nl/waterontharder/hoe-lang' },
+            { '@type': 'ListItem', position: 10, name: 'Waterontharder huren: voordelen, kosten en wanneer huren vs kopen', url: 'https://waterfilterplatform.nl/waterontharder/huren' },
+            { '@type': 'ListItem', position: 11, name: 'Waterontharder installeren: kosten, stappen en loodgieter vs zelf doen', url: 'https://waterfilterplatform.nl/waterontharder/installeren' },
+            { '@type': 'ListItem', position: 12, name: 'Waterontharder Kopen 2026: Complete Gids', url: 'https://waterfilterplatform.nl/waterontharder/kopen' },
+            { '@type': 'ListItem', position: 13, name: 'Waterontharder kosten: aanschaf, zout en totale eigendomskosten', url: 'https://waterfilterplatform.nl/waterontharder/kosten' },
+            { '@type': 'ListItem', position: 14, name: 'Waterontharder nadelen: de eerlijke keerzijde op een rij', url: 'https://waterfilterplatform.nl/waterontharder/nadelen' },
+            { '@type': 'ListItem', position: 15, name: 'Waterontharder onderhoud: jaarlijks schema, reiniging en hars', url: 'https://waterfilterplatform.nl/waterontharder/onderhoud' },
+            { '@type': 'ListItem', position: 16, name: 'Waterontharder Prijs: Kosten & Vergelijking 2026', url: 'https://waterfilterplatform.nl/waterontharder/prijs' },
+            { '@type': 'ListItem', position: 17, name: 'Waterontharder regeneratie uitgelegd: hoe vaak en hoeveel zout?', url: 'https://waterfilterplatform.nl/waterontharder/regeneratie' },
+            { '@type': 'ListItem', position: 18, name: 'Hoe lang duurt regeneratie waterontharder? Tijdgestuurde vs volumetrisch', url: 'https://waterfilterplatform.nl/waterontharder/regeneratie-tijd' },
+            { '@type': 'ListItem', position: 19, name: 'Waterontharder storingen: diagnose en oplossingen voor veelvoorkomende problemen', url: 'https://waterfilterplatform.nl/waterontharder/storingen' },
+            { '@type': 'ListItem', position: 20, name: 'Waterontharder storing: diagnose checklist en oplossingen', url: 'https://waterfilterplatform.nl/waterontharder/storingen-checklist' },
+            { '@type': 'ListItem', position: 21, name: 'Twin-tank waterontharder: continu zacht water met duplex systeem', url: 'https://waterfilterplatform.nl/waterontharder/twin-tank' },
+            { '@type': 'ListItem', position: 22, name: 'Waterontharder vergelijken: de beste modellen van 2026', url: 'https://waterfilterplatform.nl/waterontharder/vergelijken' },
+            { '@type': 'ListItem', position: 23, name: 'Waterontharder plaatsen als huurder: toestemming en rechten', url: 'https://waterfilterplatform.nl/waterontharder/verhuurder' },
+            { '@type': 'ListItem', position: 24, name: 'Waterontharder of osmosefilter: wanneer kies je wat?', url: 'https://waterfilterplatform.nl/waterontharder/vs-osmose' },
+            { '@type': 'ListItem', position: 25, name: 'Hoe Werkt een Waterontharder? Uitleg 2026', url: 'https://waterfilterplatform.nl/waterontharder/werking' },
+            { '@type': 'ListItem', position: 26, name: 'Zakelijke waterontharder: voor bedrijven, kantoren en industrie', url: 'https://waterfilterplatform.nl/waterontharder/zakelijk' },
+            { '@type': 'ListItem', position: 27, name: 'Waterontharder zout kopen: types en verbruik', url: 'https://waterfilterplatform.nl/waterontharder/zout' },
+            { '@type': 'ListItem', position: 28, name: 'Waterontharder zoutverbruik: optimaliseren, soorten zout en kosten', url: 'https://waterfilterplatform.nl/waterontharder/zout-gebruik' },
+            { '@type': 'ListItem', position: 29, name: 'Waterontharder zout: tablet, blok en grof zout vergelijken', url: 'https://waterfilterplatform.nl/waterontharder/zout-types' },
+            { '@type': 'ListItem', position: 30, name: 'Waterontharder zoutverbruik: berekening en bespaartips', url: 'https://waterfilterplatform.nl/waterontharder/zout-verbruik' },
+            { '@type': 'ListItem', position: 31, name: 'Zoutloze waterontharder: werkt het echt? (2026)', url: 'https://waterfilterplatform.nl/waterontharder/zoutloos' },
+            ],
+          },
+        ]}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="Article"
@@ -794,6 +837,7 @@ export default function WaterOntharderPage() {
               ['Culligan', '/culligan-waterontharder'],
               ['Kinetico', '/kinetico-waterontharder'],
               ['Erie', '/erie-waterontharder'],
+              ['JOEP', '/joep-waterontharder'],
             ].map(([naam, href]) => (
               <Link
                 key={href}
@@ -819,6 +863,14 @@ export default function WaterOntharderPage() {
             <Link href="/beste-waterontharder-2026" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Beste waterontharder 2026</p>
               <p className="text-sm text-gray-500">Koopgids met shortlist per situatie, bekende merken en kosten over 5 jaar.</p>
+            </Link>
+            <Link href="/waterontharder/nadelen" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Nadelen van een waterontharder</p>
+              <p className="text-sm text-gray-500">De eerlijke keerzijde: kosten, natrium, onderhoud en wanneer het niet zinvol is.</p>
+            </Link>
+            <Link href="/waterontharder/gezondheid" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterontharder en gezondheid</p>
+              <p className="text-sm text-gray-500">Is onthard water gezond? Natrium, mineralen en voor wie oplet - genuanceerd.</p>
             </Link>
             <Link href="/filtertechnieken/ionenwisseling" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Ionenwisseling: hoe werkt onthardering?</p>
@@ -858,6 +910,41 @@ export default function WaterOntharderPage() {
                 <p className="mt-3 text-gray-600 text-sm leading-relaxed">{item.answer}</p>
               </details>
             ))}
+          </div>
+        </section>
+      </div>
+      {/* orphan-fix: meer in dit cluster */}
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <section>
+          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Meer in dit cluster</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link key="/waterontharder/appartement" href="/waterontharder/appartement" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder in Appartement</p>
+              </Link>
+              <Link key="/waterontharder/aquarium" href="/waterontharder/aquarium" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder en aquarium</p>
+              </Link>
+              <Link key="/waterontharder/bypass" href="/waterontharder/bypass" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder bypass</p>
+              </Link>
+              <Link key="/waterontharder/elektrisch" href="/waterontharder/elektrisch" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Elektrische waterontharder</p>
+              </Link>
+              <Link key="/waterontharder/regeneratie-tijd" href="/waterontharder/regeneratie-tijd" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Hoe lang duurt regeneratie waterontharder? Tijdgestuurde</p>
+              </Link>
+              <Link key="/waterontharder/storingen-checklist" href="/waterontharder/storingen-checklist" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder storing</p>
+              </Link>
+              <Link key="/waterontharder/twin-tank" href="/waterontharder/twin-tank" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Twin-tank waterontharder</p>
+              </Link>
+              <Link key="/waterontharder/verhuurder" href="/waterontharder/verhuurder" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder plaatsen als huurder</p>
+              </Link>
+              <Link key="/waterontharder/zout-verbruik" href="/waterontharder/zout-verbruik" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder zoutverbruik</p>
+              </Link>
           </div>
         </section>
       </div>
