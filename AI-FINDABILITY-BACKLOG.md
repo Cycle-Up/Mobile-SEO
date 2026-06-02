@@ -28,7 +28,7 @@ Klaar wanneer: Organization-JSON-LD bevat sameAs/areaServed/knowsAbout, valideer
 - [ ] Unit-test voor `entitiesForSlug` (gezondheid/pfas/osmose -> juiste entiteiten).
 Klaar wanneer: een artikel toont `about`/`mentions` in de Article-JSON-LD; test groen; audit 0.
 
-### 3. Entiteit-pagina's voor topbegrippen met sameAs naar gezaghebbende bronnen
+### 3. [DONE] Entiteit-pagina's voor topbegrippen met sameAs naar gezaghebbende bronnen
 - [ ] Voor 8-10 kernbegrippen (PFAS, omgekeerde osmose, waterhardheid, ionenwisseling, actief kool, nitraat, lood, microplastics) DefinedTerm-secties met `sameAs` naar RIVM/EU/Wikipedia-Wikidata (alleen bestaande, juiste URL's).
 - [ ] Elk begrip 1 definitie-zin + canonieke interne link naar het diepteartikel.
 Klaar wanneer: begrippen hebben DefinedTerm met sameAs; check-links 0; audit 0.
@@ -47,27 +47,27 @@ Klaar wanneer: gate exit 0; toegevoegd aan `npm run verify`; test groen.
 
 ## Thema B - Answer-ready content (directe, citeerbare antwoorden)
 
-### 6. Zichtbaar "Kort antwoord"-blok bovenaan elk kennisbankartikel
+### 6. [DONE] Zichtbaar "Kort antwoord"-blok bovenaan elk kennisbankartikel
 - [ ] QuickAnswer-component zo renderen dat het altijd direct onder de H1 staat (al deels) en als eerste tekstblok crawlbaar is.
 - [ ] Borgen dat elk artikel een `quickAnswer` van 40-60 woorden heeft (gate uitbreiden in check-content).
 Klaar wanneer: 100% van de artikelen heeft een quickAnswer binnen lengtegrens; check-content groen.
 
-### 7. "Belangrijkste punten" (key takeaways) bullets per artikel
+### 7. [DONE] "Belangrijkste punten" (key takeaways) bullets per artikel
 - [ ] Frontmatter-veld `takeaways: string[]` ondersteunen + renderen als bullet-lijst direct na het kort antwoord.
 - [ ] Backfill-script dat ontbrekende takeaways markeert (niet verzint) voor redactionele aanvulling; minimaal toevoegen waar feitelijk afleidbaar uit de eigen tekst.
 Klaar wanneer: renderer toont takeaways wanneer aanwezig; gate telt dekking; build groen.
 
-### 8. Definition-first openingszin per definitie-artikel
+### 8. [DONE] Definition-first openingszin per definitie-artikel
 - [ ] Heuristiek/gate die controleert dat "wat is"-artikelen in de eerste 1-2 zinnen een directe definitie geven.
 - [ ] Lijst van artikelen die niet voldoen, en herschrijven van de opening (eigen content, geen nieuwe claims).
 Klaar wanneer: definitie-artikelen openen met een directe definitie; gate rapporteert 0 afwijkingen.
 
-### 9. Vraag-geformuleerde koppen waar de intent een vraag is
+### 9. [DONE] Vraag-geformuleerde koppen waar de intent een vraag is
 - [ ] Analyse-script dat H2/H3 detecteert die als vraag herschreven kunnen worden (bv. "Kosten" -> "Wat kost ...?").
 - [ ] Herschrijven waar het de leesbaarheid niet schaadt (people-first, niet geforceerd).
 Klaar wanneer: rapport toont verbeterde vraag-dekking; build + typografie groen.
 
-### 10. Gestandaardiseerd antwoordformat voor extractie (40-60 woorden)
+### 10. [DONE] Gestandaardiseerd antwoordformat voor extractie (40-60 woorden)
 - [ ] Stijlrichtlijn vastleggen in het handover/redactiedoc en als check toevoegen op quickAnswer-lengte + 1 kernzin.
 - [ ] Bestaande quickAnswers buiten de bandbreedte normaliseren.
 Klaar wanneer: alle quickAnswers binnen 40-60 woorden; check-content groen.

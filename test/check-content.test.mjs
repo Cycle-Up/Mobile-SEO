@@ -9,13 +9,16 @@ import {
   validateArticle,
 } from '../scripts/check-content.mjs';
 
-function makeArticle({ title, description, date = '2026-05-29', slug = 'test', body }) {
+const DEFAULT_QA = Array.from({ length: 45 }, (_, i) => `antwoordwoord${i}`).join(' ') + '.';
+
+function makeArticle({ title, description, date = '2026-05-29', slug = 'test', body, quickAnswer = DEFAULT_QA }) {
   const fm = [
     '---',
     `title: "${title}"`,
     `description: "${description}"`,
     `date: "${date}"`,
     `slug: "${slug}"`,
+    `quickAnswer: "${quickAnswer}"`,
     '---',
     '',
     body,
@@ -55,6 +58,26 @@ test('validateArticle: a well-formed article has no errors', () => {
   });
   const { errors } = validateArticle(raw);
   assert.deepEqual(errors, []);
+});
+
+test('validateArticle: missing quickAnswer is an error', () => {
+  const raw = makeArticle({ title: 'Titel', description: 'Net.', body: longBody, quickAnswer: '' })
+    .replace('quickAnswer: ""\n', '');
+  const { errors } = validateArticle(raw);
+  assert.ok(errors.some(e => /quickAnswer/.test(e)));
+});
+
+test('validateArticle: quickAnswer too short is an error', () => {
+  const raw = makeArticle({ title: 'Titel', description: 'Net.', body: longBody, quickAnswer: 'Te kort antwoord.' });
+  const { errors } = validateArticle(raw);
+  assert.ok(errors.some(e => /quickAnswer too short/.test(e)));
+});
+
+test('validateArticle: quickAnswer too long is an error', () => {
+  const long = Array.from({ length: 80 }, (_, i) => `w${i}`).join(' ');
+  const raw = makeArticle({ title: 'Titel', description: 'Net.', body: longBody, quickAnswer: long });
+  const { errors } = validateArticle(raw);
+  assert.ok(errors.some(e => /quickAnswer too long/.test(e)));
 });
 
 test('validateArticle: description over the limit is an error', () => {

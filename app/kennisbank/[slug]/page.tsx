@@ -121,6 +121,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
   if (!article) notFound();
 
   const { title, description, date, lastModified, quickAnswer, image, sources, methodologySources, lastReviewed } = article.data;
+  const takeaways: string[] = Array.isArray(article.data.takeaways) ? article.data.takeaways : [];
   const ymyl = isYmyl(slug, article.data);
   // Onderwerp-passende autoriteiten wanneer een artikel geen eigen bronnen meegeeft.
   const articleSources: string[] = sources?.length ? sources : sourcesForSlug(slug);
@@ -181,6 +182,16 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
         <MethodologyBadge sources={methodologySources} lastReviewed={lastReviewed ?? lastModified} />
         <AuthorBox datePublished={date} dateModified={lastModified} />
         {quickAnswer && <QuickAnswer answer={quickAnswer} question={title} />}
+        {takeaways.length > 0 && (
+          <section className="bg-gray-50 border border-gray-100 rounded-2xl p-5 my-6" aria-label="Belangrijkste punten">
+            <h2 className="text-sm font-semibold text-[#003F5C] mb-2 uppercase tracking-wide">Belangrijkste punten</h2>
+            <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm">
+              {takeaways.map((t, i) => (
+                <li key={i}>{t}</li>
+              ))}
+            </ul>
+          </section>
+        )}
         {ymyl && <HealthDisclaimer />}
         <article className="prose max-w-none">
           <MDXRemote source={article.content} />
