@@ -22,7 +22,8 @@ export function HealthDisclaimer() {
       role="note"
       aria-label="Gezondheidsdisclaimer"
     >
-      <strong className="text-amber-900">Gezondheidsdisclaimer:</strong> {HEALTH_DISCLAIMER_TEXT}
+      <strong className="text-amber-900">Gezondheidsdisclaimer:</strong> {HEALTH_DISCLAIMER_TEXT}{' '}
+      <a href="/methodologie" className="text-amber-900 underline">Lees onze methodologie en bronnen</a>.
     </aside>
   );
 }

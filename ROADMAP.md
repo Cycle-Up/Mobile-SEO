@@ -106,3 +106,7 @@ Twee long-tail kennisbank-rondes (8 MDX) + 2 vergelijkingen, elk kannibalisatie-
 - PureFilter-claims naar "bevestigd" (vereist bewijsdossier van fabrikant).
 - Strategische merkkeuzes: welke merken wel/niet een dieptecluster verdienen.
 - Sitemap-index via `generateSitemaps` (ronde 5 C7): uitgesteld. Vereist uitzoeken waarom Next `id` tijdens prerender niet als verwachte waarde doorgeeft; marginale winst bij <5k URL's. De huidige enkele sitemap werkt correct (4.514 URL's).
+- AEO-backlog ronde 6: 3 items principieel uitgesteld (vereisen externe input/keuze):
+  - Item 12 QAPage-schema: geen authentieke enkel-vraag-pagina's; Article+FAQPage is de juiste representatie.
+  - Item 32 Persoon-/reviewer-pagina's: geen echte benoemde auteurs; persona's verzinnen mag niet (redactie-team-Organization is de eerlijke keuze).
+  - Item 44 Lokale gemeente-FAQ: duplicate/thin-content-risico over ~350 pagina's; vereist GSC-data + editorial maatwerk.

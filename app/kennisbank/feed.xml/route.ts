@@ -28,7 +28,8 @@ function loadArticles() {
       return {
         slug: f.replace(/\.mdx$/, ''),
         title: String(data.title ?? f),
-        description: String(data.description ?? ''),
+        // Voorkeur voor het directe antwoord (quickAnswer) als samenvatting.
+        description: String(data.quickAnswer ?? data.description ?? ''),
         date: data.lastModified ?? data.date ?? null,
       };
     })

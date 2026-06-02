@@ -219,6 +219,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/over-ons" className="underline hover:text-white">over-ons</Link> pagina voor de volledige toelichting.
             </p>
             <div className="flex flex-wrap gap-4">
+              <Link href="/onderwerpen" className="hover:text-white">Alle onderwerpen</Link>
+              <Link href="/begrippenlijst" className="hover:text-white">Begrippenlijst</Link>
               <Link href="/over-ons" className="hover:text-white">Over ons</Link>
               <Link href="/methodologie" className="hover:text-white">Methodologie</Link>
               <Link href="/contact" className="hover:text-white">Contact</Link>

@@ -40,6 +40,8 @@ interface SchemaOrgProps {
     url: string;
     image?: string;
     sources?: string[];
+    about?: { name: string; url: string };
+    mentions?: { name: string; url: string }[];
   };
   breadcrumbs?: BreadcrumbItem[];
   howTo?: {

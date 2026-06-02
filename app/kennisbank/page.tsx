@@ -19,6 +19,27 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'gedeioniseerd-water',
+    titel: 'Gedeioniseerd water: wat is het en waar gebruik je het?',
+    samenvatting: 'Demiwater uitgelegd: hoe ionenwisseling het maakt, het verschil met gedestilleerd en osmosewater, en de toepassingen.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'microfiltratie',
+    titel: 'Microfiltratie: wat is het en wat verwijdert het?',
+    samenvatting: 'Poriegrootte, wat het wel en niet tegenhoudt, en het verschil met ultrafiltratie, nanofiltratie en omgekeerde osmose.',
+    categorie: 'Waterfilter',
+    datum: '31 mei 2026',
+  },
+  {
+    slug: 'brak-water',
+    titel: 'Brak water: wat is het en kun je het filteren?',
+    samenvatting: 'Wat brak water is, waar het in Nederland voorkomt, het zoutgehalte, en welke filtertechniek het drinkbaar maakt.',
+    categorie: 'Drinkwater',
+    datum: '31 mei 2026',
+  },
+  {
     slug: 'kraanwater-kefir-maken',
     titel: 'Kefir maken met kraanwater: chloor en de korrels',
     samenvatting: 'Hoe chloor en mineralen kefirkorrels (water- en melkkefir) beinvloeden en hoe je kraanwater voorbereidt met ontchloren of filteren.',

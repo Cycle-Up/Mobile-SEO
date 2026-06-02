@@ -22,6 +22,10 @@ export const RULES = {
   maxTitleLength: 70,
   minInternalLinks: 2,
   requiredFrontmatter: ['title', 'description', 'date', 'slug'],
+  // quickAnswer = directe, citeerbare AI-antwoordzin. Ondergrens voorkomt te dunne
+  // antwoorden; bovengrens voorkomt opgeblazen antwoorden (people-first, geen padding).
+  quickAnswerMinWords: 20,
+  quickAnswerMaxWords: 75,
 };
 
 export function parseFrontmatter(raw) {
@@ -79,6 +83,21 @@ export function validateArticle(raw, rules = RULES) {
   }
   if (!hasCta(body)) {
     warnings.push('No CTA detected (link to pureaqua or osmose/kopen page)');
+  }
+  // quickAnswer: aanwezig + binnen lengtegrens (AEO direct-answer-blok).
+  if (!fm.quickAnswer) {
+    errors.push('Missing frontmatter: quickAnswer');
+  } else {
+    const qaWords = fm.quickAnswer.split(/\s+/).filter(Boolean).length;
+    if (qaWords < rules.quickAnswerMinWords) {
+      errors.push(`quickAnswer too short: ${qaWords} words (min ${rules.quickAnswerMinWords})`);
+    } else if (qaWords > rules.quickAnswerMaxWords) {
+      errors.push(`quickAnswer too long: ${qaWords} words (max ${rules.quickAnswerMaxWords})`);
+    }
+    // Soft AEO-doel: 40-60 woorden is de sweet spot voor extractie.
+    if (qaWords < 40 || qaWords > 60) {
+      warnings.push(`quickAnswer outside 40-60 sweet spot: ${qaWords} words`);
+    }
   }
   return { errors, warnings, words, links };
 }

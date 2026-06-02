@@ -14,12 +14,29 @@ import { SourcesSection } from '@/components/SourcesSection';
 import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { isYmyl } from '@/lib/ymyl.mjs';
 import { sourcesForSlug } from '@/lib/article-sources.mjs';
+import { entitiesForSlug } from '@/lib/entities.mjs';
+import { pickRelated } from '@/lib/related.mjs';
+import { CiteBlock } from '@/components/CiteBlock';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
 const contentDir = path.join(process.cwd(), 'content/kennisbank');
+
+// Eenmalig (gecachet) alle artikel-meta inlezen voor "gerelateerde vragen".
+let _articleMeta: { slug: string; title: string }[] | null = null;
+function allArticleMeta(): { slug: string; title: string }[] {
+  if (_articleMeta) return _articleMeta;
+  if (!fs.existsSync(contentDir)) return (_articleMeta = []);
+  _articleMeta = fs.readdirSync(contentDir)
+    .filter(f => f.endsWith('.mdx') && !f.startsWith('_'))
+    .map(f => {
+      const fm = matter(fs.readFileSync(path.join(contentDir, f), 'utf-8')).data;
+      return { slug: f.replace(/\.mdx$/, ''), title: String(fm.title ?? f.replace(/\.mdx$/, '')) };
+    });
+  return _articleMeta;
+}
 
 function getArticle(slug: string) {
   const filePath = path.join(contentDir, `${slug}.mdx`);
@@ -120,9 +137,11 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
   if (!article) notFound();
 
   const { title, description, date, lastModified, quickAnswer, image, sources, methodologySources, lastReviewed } = article.data;
+  const takeaways: string[] = Array.isArray(article.data.takeaways) ? article.data.takeaways : [];
   const ymyl = isYmyl(slug, article.data);
   // Onderwerp-passende autoriteiten wanneer een artikel geen eigen bronnen meegeeft.
   const articleSources: string[] = sources?.length ? sources : sourcesForSlug(slug);
+  const { about: articleAbout, mentions: articleMentions } = entitiesForSlug(slug);
   const faqItems = extractFaqItems(article.content);
   const articleImage = articleImagePath(slug, image);
 
@@ -139,6 +158,8 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           url: `https://waterfilterplatform.nl/kennisbank/${slug}`,
           image: articleImage,
           sources: articleSources,
+          ...(articleAbout ? { about: articleAbout } : {}),
+          ...(articleMentions.length > 0 ? { mentions: articleMentions } : {}),
         }}
       />
       {faqItems.length >= 2 && (
@@ -167,7 +188,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           {date && (
             <p className="text-xs text-gray-400 mt-3">
               Gepubliceerd: {new Date(date).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}
-              {lastModified && ` · Bijgewerkt: ${new Date(lastModified).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}`}
+              {` · Laatst bijgewerkt: ${new Date(lastModified ?? date).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}`}
             </p>
           )}
         </div>
@@ -177,12 +198,75 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
         <MethodologyBadge sources={methodologySources} lastReviewed={lastReviewed ?? lastModified} />
         <AuthorBox datePublished={date} dateModified={lastModified} />
         {quickAnswer && <QuickAnswer answer={quickAnswer} question={title} />}
+        {takeaways.length > 0 && (
+          <section className="bg-gray-50 border border-gray-100 rounded-2xl p-5 my-6" aria-label="Belangrijkste punten">
+            <h2 className="text-sm font-semibold text-[#003F5C] mb-2 uppercase tracking-wide">Belangrijkste punten</h2>
+            <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm">
+              {takeaways.map((t, i) => (
+                <li key={i}>{t}</li>
+              ))}
+            </ul>
+          </section>
+        )}
         {ymyl && <HealthDisclaimer />}
         <article className="prose max-w-none">
           <MDXRemote source={article.content} />
         </article>
 
         <SourcesSection sources={articleSources} />
+
+        <CiteBlock
+          title={title}
+          url={`https://waterfilterplatform.nl/kennisbank/${slug}`}
+          updated={new Date(lastModified ?? date).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}
+        />
+
+        {(() => {
+          const related = pickRelated(slug, allArticleMeta(), 4);
+          if (related.length === 0) return null;
+          return (
+            <section className="mt-10">
+              <h2 className="text-lg font-bold text-[#003F5C] mb-4">Gerelateerde vragen</h2>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {related.map(r => (
+                  <li key={r.slug}>
+                    <Link
+                      href={`/kennisbank/${r.slug}`}
+                      className="block border border-gray-100 rounded-xl p-3 hover:border-[#005F8A] hover:shadow-sm transition-all text-sm font-medium text-gray-800 hover:text-[#005F8A]"
+                    >
+                      {r.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })()}
+
+        {(() => {
+          const all = [...allArticleMeta()].sort((a, b) => a.slug.localeCompare(b.slug));
+          const idx = all.findIndex(a => a.slug === slug);
+          if (idx < 0) return null;
+          const prev = idx > 0 ? all[idx - 1] : null;
+          const next = idx < all.length - 1 ? all[idx + 1] : null;
+          if (!prev && !next) return null;
+          return (
+            <nav className="mt-8 flex flex-col sm:flex-row gap-3 justify-between" aria-label="Meer artikelen">
+              {prev ? (
+                <Link href={`/kennisbank/${prev.slug}`} className="flex-1 border border-gray-100 rounded-xl p-3 hover:border-[#005F8A] transition-all text-sm">
+                  <span className="block text-xs text-gray-400">Vorige</span>
+                  <span className="text-gray-800 hover:text-[#005F8A] font-medium">{prev.title}</span>
+                </Link>
+              ) : <span className="flex-1" />}
+              {next ? (
+                <Link href={`/kennisbank/${next.slug}`} className="flex-1 border border-gray-100 rounded-xl p-3 hover:border-[#005F8A] transition-all text-sm sm:text-right">
+                  <span className="block text-xs text-gray-400">Volgende</span>
+                  <span className="text-gray-800 hover:text-[#005F8A] font-medium">{next.title}</span>
+                </Link>
+              ) : <span className="flex-1" />}
+            </nav>
+          );
+        })()}
 
         {(() => {
           const clusterLinks = getClusterLinks(slug);
