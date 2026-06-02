@@ -76,13 +76,13 @@ Klaar wanneer: alle quickAnswers binnen 40-60 woorden; check-content groen.
 
 ## Thema C - Structured data verbreden (ware representatie voor AI)
 
-### 11. HowTo-schema op onderhoud-/stappenartikelen
+### 11. [DONE] HowTo-schema op onderhoud-/stappenartikelen
 - [ ] Renderer/optie om HowTo-JSON-LD te genereren uit genummerde stappen die al zichtbaar zijn (ware representatie, niet voor Google-rich-results geforceerd).
 - [ ] Toepassen op onderhoud-cluster (filter vervangen, ontkalken, zout bijvullen).
 - [ ] Test dat stappen in HowTo overeenkomen met zichtbare stappen.
 Klaar wanneer: onderhoudspagina's tonen kloppende HowTo-JSON-LD; audit 0; test groen.
 
-### 12. QAPage-schema waar content feitelijk Q&A is
+### 12. [DEFER] QAPage-schema waar content feitelijk Q&A is
 - [ ] Identificeer pagina's met een dominante enkele vraag (keuzehulp-stappen, "is X veilig?").
 - [ ] QAPage-JSON-LD genereren uit de zichtbare vraag + geaccepteerd antwoord.
 Klaar wanneer: geselecteerde pagina's hebben valide QAPage; audit 0.
