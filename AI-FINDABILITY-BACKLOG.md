@@ -276,27 +276,27 @@ Klaar wanneer: rapport van te reviewen plekken; kerncijfers actueel; typografie 
 
 ## Thema I - Techniek voor AI-crawlers
 
-### 46. robots/AI-bot-toegang verifieren en borgen
+### 46. [DONE] robots/AI-bot-toegang verifieren en borgen
 - [ ] Gate die bevestigt dat relevante AI-bots (OAI-SearchBot, PerplexityBot/Perplexity-User, GPTBot indien gewenst, Google-Extended-beleid expliciet) correct geregeld zijn en sitemap/llms vermeld staan.
 - [ ] ai.txt en robots.ts kruislings valideren op consistentie; aan verify toevoegen.
 Klaar wanneer: gate exit 0; robots.ts consistent met ai.txt; test groen.
 
-### 47. Schone, JS-onafhankelijke HTML borgen (content zonder JS zichtbaar)
+### 47. [DONE] Schone, JS-onafhankelijke HTML borgen (content zonder JS zichtbaar)
 - [ ] Audit dat kerncontent (antwoord, body) in de statische HTML staat, niet client-only.
 - [ ] Steekproefscript over .next/server/app dat antwoord- en body-aanwezigheid telt.
 Klaar wanneer: steekproef bevestigt content in SSG-HTML; audit 0.
 
-### 48. Canonical-consistentie-audit
+### 48. [DONE] Canonical-consistentie-audit
 - [ ] Gate die controleert dat elke pagina precies 1 self-referential canonical heeft en er geen parameter-/dubbele varianten ontstaan.
 - [ ] Unit-test met goede/foute fixtures; aan `npm run verify` toevoegen.
 Klaar wanneer: gate exit 0; aan verify toegevoegd; test groen.
 
-### 49. 404-/linkhygiene (intern en uitgaand)
+### 49. [DONE] 404-/linkhygiene (intern en uitgaand)
 - [ ] check-links uitbreiden met optionele controle op uitgaande bron-links (formaat/awareness, geen netwerkcall in CI).
 - [ ] Dode interne links blijven 0.
 Klaar wanneer: check-links 0; uitgaande-link-rapport zonder duidelijke fouten.
 
-### 50. AEO-health monitoringgate (`check-aeo.mjs`) + SITE-HEALTH-uitbreiding
+### 50. [DONE] AEO-health monitoringgate (`check-aeo.mjs`) + SITE-HEALTH-uitbreiding
 - [ ] Script dat AEO-dekking meet: % artikelen met quickAnswer, takeaways, Article+citation, breadcrumbs, speakable; Organization sameAs aanwezig; llms/llms-full in sync.
 - [ ] Metrics opnemen in SITE-HEALTH.md; aan verify toevoegen.
 Klaar wanneer: check-aeo draait, rapporteert dekking, exit 1 bij regressie onder baseline; test groen.

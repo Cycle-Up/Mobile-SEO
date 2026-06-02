@@ -55,8 +55,14 @@ export function collectHealth(root = ROOT) {
 
   // mdx count
   const cDir = path.join(root, 'content', 'kennisbank');
-  const mdxCount = fs.existsSync(cDir)
-    ? fs.readdirSync(cDir).filter(f => f.endsWith('.mdx') && !f.startsWith('_')).length : 0;
+  const mdxFiles = fs.existsSync(cDir)
+    ? fs.readdirSync(cDir).filter(f => f.endsWith('.mdx') && !f.startsWith('_')) : [];
+  const mdxCount = mdxFiles.length;
+  // AEO: quickAnswer-dekking (directe antwoorden voor AI-extractie).
+  let qaCount = 0;
+  for (const f of mdxFiles) {
+    if (/^quickAnswer:/m.test(fs.readFileSync(path.join(cDir, f), 'utf-8'))) qaCount++;
+  }
 
   // page routes (app page files)
   let pageFiles = 0;
@@ -97,6 +103,7 @@ export function collectHealth(root = ROOT) {
     staticRoutes: staticRoutes.length,
     dynamicRoutes: index.dynamicRoutes.length,
     mdxCount,
+    qaCount,
     deadLinks,
     sitemapGaps,
     typographyTotal: typo.total,
@@ -121,6 +128,7 @@ Laatste run: ${date.toISOString().slice(0, 10)}.
 | Statische routes | ${stats.staticRoutes} | - |
 | Dynamische route-patronen | ${stats.dynamicRoutes} | - |
 | Kennisbank-artikelen (MDX) | ${stats.mdxCount} | - |
+| quickAnswer-dekking (AEO) | ${stats.qaCount}/${stats.mdxCount} | ${stats.qaCount === stats.mdxCount ? 'OK' : 'LET OP'} |
 | Dode interne links | ${stats.deadLinks} | ${ok(stats.deadLinks)} |
 | Orphan-pagina's | ${stats.orphans} | ${ok(stats.orphans)} |
 | Sitemap-gaten | ${stats.sitemapGaps} | ${ok(stats.sitemapGaps)} |
