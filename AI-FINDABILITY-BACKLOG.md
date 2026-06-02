@@ -92,12 +92,12 @@ Klaar wanneer: geselecteerde pagina's hebben valide QAPage; audit 0.
 - [ ] Per cluster-hub een mini-DefinedTermSet met 3-5 termen die naar de glossary linken.
 Klaar wanneer: glossary dekt kernbegrippen; cluster-hubs tonen DefinedTermSet; check-links 0.
 
-### 14. Article author/reviewedBy/citation consequent over alle artikeltypes
+### 14. [DONE] Article author/reviewedBy/citation consequent over alle artikeltypes
 - [ ] `reviewedBy` (reviewer-entiteit) toevoegen aan YMYL-artikelen naast bestaande `citation` (sourcesForSlug).
 - [ ] TSX-cluster Article-schema dezelfde author/citation-structuur geven als MDX.
 Klaar wanneer: YMYL-artikelen tonen author+reviewedBy+citation; audit 0; check-ymyl groen.
 
-### 15. Speakable-schema verbreden naar kennisbank quick answers
+### 15. [DONE] Speakable-schema verbreden naar kennisbank quick answers
 - [ ] Speakable-CSS-selector toevoegen voor het quickAnswer-blok in de kennisbank-renderer.
 - [ ] Borgen dat speakable alleen verwijst naar daadwerkelijk aanwezige, voorleesbare tekst.
 Klaar wanneer: kennisbankartikelen bevatten speakable die naar de quick answer wijst; audit 0.
@@ -117,12 +117,12 @@ Klaar wanneer: waterhardheid-overzicht heeft Dataset-schema + semantische tabel;
 - [ ] Breadcrumbs toevoegen aan de ontbrekende routes.
 Klaar wanneer: rapport toont 0 pagina's zonder breadcrumbs (m.u.v. home); audit 0.
 
-### 19. Consequente datum-/taal-/isPartOf-velden in alle Article-schema
+### 19. [DONE] Consequente datum-/taal-/isPartOf-velden in alle Article-schema
 - [ ] Borgen dat elk Article `inLanguage: nl-NL`, `isPartOf` (WebSite), `datePublished` en `dateModified` heeft.
 - [ ] dateModified uit git-historie afleiden (bestaande sitemap-dates-helper hergebruiken).
 Klaar wanneer: gate bevestigt volledige veldsdekking; audit 0.
 
-### 20. Schema-validatie-gate (`check-schema.mjs`)
+### 20. [DONE] Schema-validatie-gate (`check-schema.mjs`)
 - [ ] Post-build alle JSON-LD parsen en per @type minimale verplichte velden valideren.
 - [ ] Aan `npm run verify`/audit toevoegen; unit-test met goede/foute fixtures.
 Klaar wanneer: gate exit 0 in schone staat, exit 1 bij ontbrekend veld; test groen.
