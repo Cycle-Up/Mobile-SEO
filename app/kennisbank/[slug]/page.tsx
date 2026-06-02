@@ -14,6 +14,7 @@ import { SourcesSection } from '@/components/SourcesSection';
 import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { isYmyl } from '@/lib/ymyl.mjs';
 import { sourcesForSlug } from '@/lib/article-sources.mjs';
+import { entitiesForSlug } from '@/lib/entities.mjs';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -123,6 +124,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
   const ymyl = isYmyl(slug, article.data);
   // Onderwerp-passende autoriteiten wanneer een artikel geen eigen bronnen meegeeft.
   const articleSources: string[] = sources?.length ? sources : sourcesForSlug(slug);
+  const { about: articleAbout, mentions: articleMentions } = entitiesForSlug(slug);
   const faqItems = extractFaqItems(article.content);
   const articleImage = articleImagePath(slug, image);
 
@@ -139,6 +141,8 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           url: `https://waterfilterplatform.nl/kennisbank/${slug}`,
           image: articleImage,
           sources: articleSources,
+          ...(articleAbout ? { about: articleAbout } : {}),
+          ...(articleMentions.length > 0 ? { mentions: articleMentions } : {}),
         }}
       />
       {faqItems.length >= 2 && (

@@ -16,13 +16,13 @@ Legenda: elk item heeft autonome sub-items (`- [ ]`) en een meetbaar **Klaar wan
 
 ## Thema A - Entiteit- en kennisgraaf-helderheid (laat AI het platform begrijpen)
 
-### 1. Organization-entiteit compleet maken (sameAs, logo, contactPoint, areaServed)
+### 1. [DONE] Organization-entiteit compleet maken (sameAs, logo, contactPoint, areaServed)
 - [ ] `sameAs` toevoegen aan de Organization-JSON-LD (alleen echte, bestaande profielen/URL's; geen verzonnen accounts).
 - [ ] `logo` als ImageObject, `areaServed` = NL, `knowsAbout` met kernonderwerpen (waterfiltratie, drinkwaterkwaliteit, omgekeerde osmose).
 - [ ] `publisher`/`founder` consistent met /over-ons; `contactPoint` naar /contact.
 Klaar wanneer: Organization-JSON-LD bevat sameAs/areaServed/knowsAbout, valideert (audit-html 0), build groen.
 
-### 2. Entiteit-koppeling per kennisbankartikel (about/mentions)
+### 2. [DONE] Entiteit-koppeling per kennisbankartikel (about/mentions)
 - [ ] In de kennisbank-renderer `about` (hoofdentiteit) en `mentions` afleiden uit slug/onderwerp via een pure helper `entitiesForSlug` (lib).
 - [ ] Koppelen aan de canonieke begrip-URL's (/begrippenlijst#term of entiteit-pagina).
 - [ ] Unit-test voor `entitiesForSlug` (gezondheid/pfas/osmose -> juiste entiteiten).
@@ -33,12 +33,12 @@ Klaar wanneer: een artikel toont `about`/`mentions` in de Article-JSON-LD; test 
 - [ ] Elk begrip 1 definitie-zin + canonieke interne link naar het diepteartikel.
 Klaar wanneer: begrippen hebben DefinedTerm met sameAs; check-links 0; audit 0.
 
-### 4. WebSite SearchAction (potentialAction) toevoegen
+### 4. [DONE] WebSite SearchAction (potentialAction) toevoegen
 - [ ] Zoek-endpoint/route vaststellen of een eenvoudige client-side zoekroute (`/zoeken?q=`) toevoegen.
 - [ ] `potentialAction` SearchAction in de WebSite-JSON-LD met de query-template.
 Klaar wanneer: WebSite-JSON-LD bevat SearchAction die naar een bestaande route wijst; audit 0; build groen.
 
-### 5. Consistente entiteit-naamgeving (NAP/brand) over de hele site
+### 5. [DONE] Consistente entiteit-naamgeving (NAP/brand) over de hele site
 - [ ] Gate `check-entity.mjs`: controleert dat naam/beschrijving/URL van de Organization overal identiek zijn (layout, schema, llms.txt, footer).
 - [ ] Afwijkingen normaliseren naar 1 canonieke vorm.
 Klaar wanneer: gate exit 0; toegevoegd aan `npm run verify`; test groen.
