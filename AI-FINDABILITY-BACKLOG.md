@@ -131,27 +131,27 @@ Klaar wanneer: gate exit 0 in schone staat, exit 1 bij ontbrekend veld; test gro
 
 ## Thema D - llms.txt / AI-bestanden en markdown-mirrors
 
-### 21. llms.txt verrijken met kennisbank-categorie-index
+### 21. [DONE] llms.txt verrijken met kennisbank-categorie-index
 - [ ] Per categorie (Drinkwater/Waterfilter/Osmose/...) een beknopte lijst met canonieke URL's toevoegen, gegenereerd uit de kennisbank.
 - [ ] Generator + sync-gate uitbreiden zodat llms.txt niet veroudert.
 Klaar wanneer: llms.txt bevat categorie-index; check-llms groen; deterministisch herproduceerbaar.
 
-### 22. Sectie-anchors + per-cluster snippets in llms-full.txt
+### 22. [DONE] Sectie-anchors + per-cluster snippets in llms-full.txt
 - [ ] Per cluster een korte kernfeit-sectie met canonieke URL en 1-2 citeerbare feiten (uit eigen content).
 - [ ] In de generator opnemen onder de bestaande autogen-index.
 Klaar wanneer: llms-full bevat per-cluster snippets; check-llms-full groen.
 
-### 23. ai.txt uitbreiden met expliciet gebruik/citatiebeleid
+### 23. [DONE] ai.txt uitbreiden met expliciet gebruik/citatiebeleid
 - [ ] Toestemming per bot, voorkeurs-canonical, en citatie-aanwijzingen (naam + clickable canonical) verduidelijken.
 - [ ] Verwijzing naar llms.txt/llms-full.txt/sitemap consistent maken.
 Klaar wanneer: ai.txt is consistent met robots.ts en llms-bestanden; typografie groen.
 
-### 24. quickAnswer per artikel opnemen in llms-full.txt
+### 24. [DONE] quickAnswer per artikel opnemen in llms-full.txt
 - [ ] Generator uitbreiden zodat elk kennisbank-item zijn quickAnswer als citatie-klare regel meekrijgt.
 - [ ] Sync-gate uitbreiden om de quickAnswer-aanwezigheid te borgen.
 Klaar wanneer: llms-full toont per artikel een quickAnswer; check-llms-full groen.
 
-### 25. Markdown-mirror / schone tekst-export van kennisbankartikelen
+### 25. [DONE] Markdown-mirror / schone tekst-export van kennisbankartikelen
 - [ ] Route of build-artefact `/kennisbank/[slug].md` (of een gebundelde `.md`/JSON) met titel, quickAnswer, body zonder JSX.
 - [ ] Linken vanuit llms.txt zodat AI-crawlers schone tekst kunnen ophalen.
 Klaar wanneer: markdown-mirror bouwt voor alle artikelen; steekproef klopt; build groen.

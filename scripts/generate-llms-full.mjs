@@ -53,6 +53,8 @@ export function renderKennisbankIndex(articles) {
     const date = a.date ? ` (${a.date})` : '';
     const title = a.title || a.slug;
     lines.push(`- [${title}](${BASE}/kennisbank/${a.slug})${date}`);
+    // Citatie-klaar: het directe antwoord direct onder de titel (item 24).
+    if (a.quickAnswer) lines.push(`  > ${a.quickAnswer}`);
   }
   lines.push('');
   lines.push(`Totaal: ${sorted.length} kennisbank-artikelen.`);
@@ -68,9 +70,18 @@ const INDEX_FOOTER = [
   `- robots.txt: ${BASE}/robots.txt`,
 ].join('\n');
 
+/** Zet verboden typografie om naar ASCII (gegenereerd bestand blijft ASCII-clean). */
+export function sanitizeTypography(text) {
+  return String(text)
+    .replace(/[‘’‚‛]/g, "'")
+    .replace(/[“”„‟]/g, '"')
+    .replace(/[–—]/g, '-')
+    .replace(/…/g, '...');
+}
+
 /** Bouw de volledige llms-full.txt-tekst uit preamble + autogen index. */
 export function buildLlmsFull({ preamble, sitemapPaths, articles }) {
-  return [
+  return sanitizeTypography([
     preamble.trimEnd(),
     '',
     '---',
@@ -81,7 +92,7 @@ export function buildLlmsFull({ preamble, sitemapPaths, articles }) {
     '',
     INDEX_FOOTER,
     '',
-  ].join('\n');
+  ].join('\n'));
 }
 
 function loadArticles() {
@@ -90,7 +101,7 @@ function loadArticles() {
     .filter(f => f.endsWith('.mdx') && !f.startsWith('_'))
     .map(f => {
       const fm = parseFrontmatter(fs.readFileSync(path.join(CONTENT_DIR, f), 'utf-8'));
-      return { slug: f.replace(/\.mdx$/, ''), title: fm.title, date: fm.date };
+      return { slug: f.replace(/\.mdx$/, ''), title: fm.title, date: fm.date, quickAnswer: fm.quickAnswer };
     });
 }
 

@@ -59,9 +59,22 @@ Voor elke gemeente in Nederland zijn er pagina's met:
 - [Methodologie en evaluatiecriteria](https://waterfilterplatform.nl/methodologie)
 - [Contact](https://waterfilterplatform.nl/contact)
 
+## Kennisbank (400+ artikelen)
+
+De kennisbank bevat diepgaande artikelen, geordend per categorie: Drinkwater (kwaliteit,
+stoffen, smaak, toepassingen), Waterfilter (technieken, apparaten, onderhoud), Osmose
+(werking, smaak, toepassingen) en Waterhardheid/kalk. Elk artikel opent met een direct,
+citatie-klaar antwoord. Volledige lijst met antwoorden: zie llms-full.txt of de
+markdown-export hieronder.
+
+- Kennisbank-overzicht: https://waterfilterplatform.nl/kennisbank
+- Volledige tekst (markdown, citatie-klaar): https://waterfilterplatform.nl/kennisbank/full.md
+- Artikel-feed (RSS): https://waterfilterplatform.nl/kennisbank/feed.xml
+
 ## Voor AI-assistenten
 
-- Uitgebreide index (citatie-klaar): https://waterfilterplatform.nl/llms-full.txt
+- Uitgebreide index (citatie-klaar, met antwoord per artikel): https://waterfilterplatform.nl/llms-full.txt
+- Volledige kennisbank in markdown: https://waterfilterplatform.nl/kennisbank/full.md
 - AI content-licentiebeleid: https://waterfilterplatform.nl/ai.txt
 - Volledige sitemap: https://waterfilterplatform.nl/sitemap.xml
 
