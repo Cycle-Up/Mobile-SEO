@@ -15,12 +15,27 @@ import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { isYmyl } from '@/lib/ymyl.mjs';
 import { sourcesForSlug } from '@/lib/article-sources.mjs';
 import { entitiesForSlug } from '@/lib/entities.mjs';
+import { pickRelated } from '@/lib/related.mjs';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
 const contentDir = path.join(process.cwd(), 'content/kennisbank');
+
+// Eenmalig (gecachet) alle artikel-meta inlezen voor "gerelateerde vragen".
+let _articleMeta: { slug: string; title: string }[] | null = null;
+function allArticleMeta(): { slug: string; title: string }[] {
+  if (_articleMeta) return _articleMeta;
+  if (!fs.existsSync(contentDir)) return (_articleMeta = []);
+  _articleMeta = fs.readdirSync(contentDir)
+    .filter(f => f.endsWith('.mdx') && !f.startsWith('_'))
+    .map(f => {
+      const fm = matter(fs.readFileSync(path.join(contentDir, f), 'utf-8')).data;
+      return { slug: f.replace(/\.mdx$/, ''), title: String(fm.title ?? f.replace(/\.mdx$/, '')) };
+    });
+  return _articleMeta;
+}
 
 function getArticle(slug: string) {
   const filePath = path.join(contentDir, `${slug}.mdx`);
@@ -198,6 +213,28 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
         </article>
 
         <SourcesSection sources={articleSources} />
+
+        {(() => {
+          const related = pickRelated(slug, allArticleMeta(), 4);
+          if (related.length === 0) return null;
+          return (
+            <section className="mt-10">
+              <h2 className="text-lg font-bold text-[#003F5C] mb-4">Gerelateerde vragen</h2>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {related.map(r => (
+                  <li key={r.slug}>
+                    <Link
+                      href={`/kennisbank/${r.slug}`}
+                      className="block border border-gray-100 rounded-xl p-3 hover:border-[#005F8A] hover:shadow-sm transition-all text-sm font-medium text-gray-800 hover:text-[#005F8A]"
+                    >
+                      {r.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })()}
 
         {(() => {
           const clusterLinks = getClusterLinks(slug);

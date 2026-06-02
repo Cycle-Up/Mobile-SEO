@@ -165,12 +165,12 @@ Klaar wanneer: markdown-mirror bouwt voor alle artikelen; steekproef klopt; buil
 - [ ] Ontbrekende hub->spoke en spoke->hub links toevoegen.
 Klaar wanneer: rapport toont 0 ontbrekende hub-spoke-links; check-orphans 0.
 
-### 27. "Gerelateerde vragen" (PAA-stijl) blok per artikel
+### 27. [DONE] "Gerelateerde vragen" (PAA-stijl) blok per artikel
 - [ ] Pure helper die 3-4 gerelateerde artikel-vragen kiest op basis van cluster/onderwerp.
 - [ ] Renderen als interne-link-lijst onderaan; geen dode links.
 Klaar wanneer: artikelen tonen gerelateerde vragen; check-links 0; build groen.
 
-### 28. Cross-cluster semantische links verdichten (osmose <-> pfas <-> gezondheid)
+### 28. [DONE] Cross-cluster semantische links verdichten (osmose <-> pfas <-> gezondheid)
 - [ ] Linkkansen-analyse tussen verwante clusters; relevante contextuele links toevoegen.
 - [ ] Borgen dat links naar canonieke URL's wijzen.
 Klaar wanneer: meetbaar meer cross-cluster links; check-links 0; geen kannibalisatie.
