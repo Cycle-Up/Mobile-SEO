@@ -189,27 +189,27 @@ Klaar wanneer: 0 routes > 3 kliks (programmatische laag uitgezonderd/gedocumente
 
 ## Thema F - Versheid en E-E-A-T (vertrouwenssignalen voor AI)
 
-### 31. Zichtbare "Laatst bijgewerkt" + dateModified uit git overal
+### 31. [DONE] Zichtbare "Laatst bijgewerkt" + dateModified uit git overal
 - [ ] Bestaande git-date-helper toepassen op alle kennisbank- en clusterpagina's, zichtbaar + in schema.
 - [ ] Gate die ontbrekende/verouderde dateModified opspoort en aan `npm run verify` toevoegt.
 Klaar wanneer: elke artikel/cluster toont een echte laatst-bijgewerkt-datum; audit 0; gate groen.
 
-### 32. Auteur-/reviewer-entiteitspagina's met credentials
+### 32. [DEFER] Auteur-/reviewer-entiteitspagina's met credentials
 - [ ] /over-ons uitbreiden met reviewer-profielen (Person-entiteit, sameAs alleen indien echt).
 - [ ] AuthorBox koppelen aan die profielpagina's.
 Klaar wanneer: author/reviewer linken naar een Person-pagina met schema; check-links 0.
 
-### 33. SourcesSection verbreden naar TSX-clusterpagina's
+### 33. [DONE] SourcesSection verbreden naar TSX-clusterpagina's
 - [ ] sourcesForSlug-mapping toepassen op cluster-/merkpagina's die nu geen zichtbare bronnen tonen.
 - [ ] Script dat clusterpagina's zonder zichtbare bronnen opspoort en de lijst afwerken.
 Klaar wanneer: relevante clusterpagina's tonen bronnen + citation; audit 0; check-ymyl groen.
 
-### 34. Methodologie/transparantie cross-link vanaf elk YMYL-artikel
+### 34. [DONE] Methodologie/transparantie cross-link vanaf elk YMYL-artikel
 - [ ] Vaste link naar /methodologie + disclaimer-context op YMYL-artikelen borgen.
 - [ ] check-ymyl uitbreiden zodat het de methodologie-link per YMYL-pagina afdwingt.
 Klaar wanneer: 100% YMYL-artikelen linken naar methodologie; gate bevestigt; build groen.
 
-### 35. "Citeer deze pagina"-blok met kant-en-klare citatie
+### 35. [DONE] "Citeer deze pagina"-blok met kant-en-klare citatie
 - [ ] Component dat bron + canonical + datum toont in een copy-pasteklaar citatieformat.
 - [ ] Toevoegen aan kennisbankartikelen (verlaagt drempel voor AI/redacteuren om correct te citeren).
 Klaar wanneer: artikelen tonen een correct citatieblok met canonical; audit 0.

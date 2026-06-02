@@ -16,6 +16,7 @@ import { isYmyl } from '@/lib/ymyl.mjs';
 import { sourcesForSlug } from '@/lib/article-sources.mjs';
 import { entitiesForSlug } from '@/lib/entities.mjs';
 import { pickRelated } from '@/lib/related.mjs';
+import { CiteBlock } from '@/components/CiteBlock';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -187,7 +188,7 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
           {date && (
             <p className="text-xs text-gray-400 mt-3">
               Gepubliceerd: {new Date(date).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}
-              {lastModified && ` · Bijgewerkt: ${new Date(lastModified).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}`}
+              {` · Laatst bijgewerkt: ${new Date(lastModified ?? date).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}`}
             </p>
           )}
         </div>
@@ -213,6 +214,12 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
         </article>
 
         <SourcesSection sources={articleSources} />
+
+        <CiteBlock
+          title={title}
+          url={`https://waterfilterplatform.nl/kennisbank/${slug}`}
+          updated={new Date(lastModified ?? date).toLocaleDateString('nl-NL', { year: 'numeric', month: 'long', day: 'numeric' })}
+        />
 
         {(() => {
           const related = pickRelated(slug, allArticleMeta(), 4);
