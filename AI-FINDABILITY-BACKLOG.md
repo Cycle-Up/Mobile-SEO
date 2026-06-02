@@ -160,7 +160,7 @@ Klaar wanneer: markdown-mirror bouwt voor alle artikelen; steekproef klopt; buil
 
 ## Thema E - Topical authority en interne linkstructuur
 
-### 26. Hub-spoke dekkingsanalyse + ontbrekende links dichten
+### 26. [DONE] Hub-spoke dekkingsanalyse + ontbrekende links dichten
 - [ ] Script dat per cluster-hub controleert of alle spokes terug- en heen gelinkt zijn.
 - [ ] Ontbrekende hub->spoke en spoke->hub links toevoegen.
 Klaar wanneer: rapport toont 0 ontbrekende hub-spoke-links; check-orphans 0.
@@ -175,12 +175,12 @@ Klaar wanneer: artikelen tonen gerelateerde vragen; check-links 0; build groen.
 - [ ] Borgen dat links naar canonieke URL's wijzen.
 Klaar wanneer: meetbaar meer cross-cluster links; check-links 0; geen kannibalisatie.
 
-### 29. "Vorige/volgende in cluster"-navigatie
+### 29. [DONE] "Vorige/volgende in cluster"-navigatie
 - [ ] Cluster-volgorde afleiden en prev/next-links renderen op artikel- en clusterpagina's.
 - [ ] Pure helper voor de prev/next-berekening + unit-test (eerste/laatste/midden).
 Klaar wanneer: prev/next aanwezig binnen clusters; check-links 0; audit 0; test groen.
 
-### 30. Klikdiepte- en orphan-audit (alles <=3 kliks van home)
+### 30. [DONE] Klikdiepte- en orphan-audit (alles <=3 kliks van home)
 - [ ] Script dat kortste klikafstand vanaf home berekent per route.
 - [ ] Routes > 3 kliks dichterbij linken; aan verify toevoegen.
 Klaar wanneer: 0 routes > 3 kliks (programmatische laag uitgezonderd/gedocumenteerd); gate groen.

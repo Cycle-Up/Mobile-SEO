@@ -96,6 +96,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/boretti-alternatief`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/beste-waterontharder-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/begrippenlijst`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE}/onderwerpen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE}/fonteq-alternatief`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/waterdrop-alternatief`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/beste-filterkan-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },

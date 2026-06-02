@@ -237,6 +237,31 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
         })()}
 
         {(() => {
+          const all = [...allArticleMeta()].sort((a, b) => a.slug.localeCompare(b.slug));
+          const idx = all.findIndex(a => a.slug === slug);
+          if (idx < 0) return null;
+          const prev = idx > 0 ? all[idx - 1] : null;
+          const next = idx < all.length - 1 ? all[idx + 1] : null;
+          if (!prev && !next) return null;
+          return (
+            <nav className="mt-8 flex flex-col sm:flex-row gap-3 justify-between" aria-label="Meer artikelen">
+              {prev ? (
+                <Link href={`/kennisbank/${prev.slug}`} className="flex-1 border border-gray-100 rounded-xl p-3 hover:border-[#005F8A] transition-all text-sm">
+                  <span className="block text-xs text-gray-400">Vorige</span>
+                  <span className="text-gray-800 hover:text-[#005F8A] font-medium">{prev.title}</span>
+                </Link>
+              ) : <span className="flex-1" />}
+              {next ? (
+                <Link href={`/kennisbank/${next.slug}`} className="flex-1 border border-gray-100 rounded-xl p-3 hover:border-[#005F8A] transition-all text-sm sm:text-right">
+                  <span className="block text-xs text-gray-400">Volgende</span>
+                  <span className="text-gray-800 hover:text-[#005F8A] font-medium">{next.title}</span>
+                </Link>
+              ) : <span className="flex-1" />}
+            </nav>
+          );
+        })()}
+
+        {(() => {
           const clusterLinks = getClusterLinks(slug);
           if (clusterLinks.length === 0) return null;
           return (
