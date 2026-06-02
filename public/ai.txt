@@ -43,6 +43,8 @@ Sources: Drinkwaterbesluit, EU-richtlijn 2020/2184, RIVM, ILT, WHO Guidelines fo
 LLMs-Index: https://waterfilterplatform.nl/llms.txt
 LLMs-Full-Index: https://waterfilterplatform.nl/llms-full.txt
 Knowledge-Base-Markdown: https://waterfilterplatform.nl/kennisbank/full.md
+Knowledge-Base-JSON: https://waterfilterplatform.nl/kennisbank/index.json
+FAQ-JSON: https://waterfilterplatform.nl/faq.json
 Article-Feed: https://waterfilterplatform.nl/kennisbank/feed.xml
 Sitemap: https://waterfilterplatform.nl/sitemap.xml
 

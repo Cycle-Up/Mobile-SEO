@@ -218,27 +218,27 @@ Klaar wanneer: artikelen tonen een correct citatieblok met canonical; audit 0.
 
 ## Thema G - Machine-leesbaarheid en feeds
 
-### 36. JSON-feed van alle artikelen (`/kennisbank/index.json`)
+### 36. [DONE] JSON-feed van alle artikelen (`/kennisbank/index.json`)
 - [ ] Route die title/description/url/date/quickAnswer/categorie als JSON levert (force-static).
 - [ ] Linken vanuit llms.txt en kennisbank-head.
 Klaar wanneer: index.json bouwt en bevat alle artikelen; valide JSON; build groen.
 
-### 37. Sitemap-lastmod uit git voor alle routetypes
+### 37. [DONE] Sitemap-lastmod uit git voor alle routetypes
 - [ ] Bestaande gemeente/kennisbank-datumlogica uitbreiden naar statische routes waar zinvol.
 - [ ] check-sitemap uitbreiden met een lastmod-aanwezigheidscontrole.
 Klaar wanneer: sitemap toont realistische lastmod; check-sitemap 0; build groen.
 
-### 38. RSS uitbreiden (samenvatting + per-cluster feeds)
+### 38. [DONE] RSS uitbreiden (samenvatting + per-cluster feeds)
 - [ ] quickAnswer als `<description>` in de bestaande feed.
 - [ ] Per-cluster feed-routes genereren uit de clusterlijst en valideren als XML.
 Klaar wanneer: feed bevat samenvattingen; valide XML; check-links 0.
 
-### 39. Per-artikel dynamische OpenGraph/Twitter-metadata
+### 39. [DONE] Per-artikel dynamische OpenGraph/Twitter-metadata
 - [ ] generateMetadata in de kennisbank-renderer per artikel (titel/desc) i.p.v. uitsluitend site-breed.
 - [ ] og/twitter-description binnen lengtegrens borgen (clampDescription hergebruiken).
 Klaar wanneer: og:title/description per artikel uniek; audit 0.
 
-### 40. Doorzoekbare FAQ-export (alle FAQs als 1 JSON)
+### 40. [DONE] Doorzoekbare FAQ-export (alle FAQs als 1 JSON)
 - [ ] Alle FAQItems verzamelen in een statische `/faq.json` met vraag/antwoord/bron-URL.
 - [ ] Generator + sync-gate zodat faq.json niet veroudert; unit-test op de structuur.
 Klaar wanneer: faq.json bouwt en dekt de FAQ's; valide JSON; build groen; gate groen.
