@@ -257,7 +257,7 @@ Klaar wanneer: nieuwe definitie-artikelen check-content 100%; check-links 0; bui
 - [ ] Elke vergelijking met semantische `<table>` + scope-headers, QuickAnswer en Article-schema.
 Klaar wanneer: nieuwe vergelijkingen in sitemap+llms; 0 orphans; audit 0.
 
-### 43. Feitelijke/numerieke FAQ's consistent met bron
+### 43. [DONE] Feitelijke/numerieke FAQ's consistent met bron
 - [ ] Normen/waarden (PFAS 0,1 ug/L, loodnorm, dH-ranges) in FAQ's controleren op consistentie met eigen bronpagina's.
 - [ ] Gate die kerncijfers in FAQ vergelijkt met een centrale feiten-bron (lib/facts).
 Klaar wanneer: gate vindt 0 tegenstrijdige cijfers tussen FAQ en bronpagina; build groen.
@@ -267,7 +267,7 @@ Klaar wanneer: gate vindt 0 tegenstrijdige cijfers tussen FAQ en bronpagina; bui
 - [ ] Duplicate-content-check zodat de gemeente-FAQ's onderling voldoende verschillen.
 Klaar wanneer: geselecteerde gemeente-pagina's hebben unieke FAQ; audit 0; geen duplicate-content-stijging.
 
-### 45. Actuele onderwerpen up-to-date houden (PFAS-norm 2026)
+### 45. [DONE] Actuele onderwerpen up-to-date houden (PFAS-norm 2026)
 - [ ] Script dat verwijzingen naar normen/jaartallen detecteert en markeert voor review bij wijziging.
 - [ ] Centrale feiten-constanten (lib/facts) zodat een normwijziging op 1 plek doorwerkt.
 Klaar wanneer: rapport van te reviewen plekken; kerncijfers actueel; typografie groen.
