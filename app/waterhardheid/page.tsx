@@ -81,6 +81,24 @@ export default function WaterhardheidPage() {
               })),
             },
           },
+          {
+            '@type': 'Dataset',
+            name: 'Waterhardheid per gemeente in Nederland (dH)',
+            description:
+              'Indicatieve waterhardheid in Duitse hardheidsgraden (dH) per Nederlandse gemeente, gebaseerd op openbare gegevens van de drinkwaterbedrijven, met hardheidsklasse (zacht, gemiddeld, hard).',
+            url: 'https://waterfilterplatform.nl/waterhardheid',
+            inLanguage: 'nl-NL',
+            license: 'https://waterfilterplatform.nl/methodologie',
+            isAccessibleForFree: true,
+            creator: { '@id': 'https://waterfilterplatform.nl/#organization' },
+            spatialCoverage: { '@type': 'Place', name: 'Nederland' },
+            variableMeasured: {
+              '@type': 'PropertyValue',
+              name: 'Waterhardheid',
+              unitText: 'dH (Duitse hardheidsgraad)',
+            },
+            measurementTechnique: 'Openbare gegevens drinkwaterbedrijven, omgerekend naar dH',
+          },
         ]}
       />
 

@@ -87,7 +87,7 @@ Klaar wanneer: onderhoudspagina's tonen kloppende HowTo-JSON-LD; audit 0; test g
 - [ ] QAPage-JSON-LD genereren uit de zichtbare vraag + geaccepteerd antwoord.
 Klaar wanneer: geselecteerde pagina's hebben valide QAPage; audit 0.
 
-### 13. DefinedTermSet uitbreiden (centrale glossary + per-cluster mini-glossary)
+### 13. [DONE] DefinedTermSet uitbreiden (centrale glossary + per-cluster mini-glossary)
 - [ ] Begrippenlijst uitbreiden naar alle kernbegrippen met stabiele anchors (#term).
 - [ ] Per cluster-hub een mini-DefinedTermSet met 3-5 termen die naar de glossary linken.
 Klaar wanneer: glossary dekt kernbegrippen; cluster-hubs tonen DefinedTermSet; check-links 0.
@@ -102,17 +102,17 @@ Klaar wanneer: YMYL-artikelen tonen author+reviewedBy+citation; audit 0; check-y
 - [ ] Borgen dat speakable alleen verwijst naar daadwerkelijk aanwezige, voorleesbare tekst.
 Klaar wanneer: kennisbankartikelen bevatten speakable die naar de quick answer wijst; audit 0.
 
-### 16. ImageObject + betekenisvolle alt-teksten en figure-captions
+### 16. [DONE] ImageObject + betekenisvolle alt-teksten en figure-captions
 - [ ] Audit-script dat afbeeldingen zonder zinvolle alt opspoort.
 - [ ] Alt-teksten en (waar passend) `<figure><figcaption>` toevoegen; ImageObject-schema bij hero-afbeeldingen.
 Klaar wanneer: 0 lege/triviale alts in rapport; audit 0; build groen.
 
-### 17. Dataset/Table-schema voor waterhardheid-per-gemeente
+### 17. [DONE] Dataset/Table-schema voor waterhardheid-per-gemeente
 - [ ] De gemeente-hardheidsdata als Dataset-JSON-LD beschrijven (bron, eenheid dH, dekking NL).
 - [ ] Zichtbare datatabel met semantische `<table>` + scope-headers (machine-leesbaar).
 Klaar wanneer: waterhardheid-overzicht heeft Dataset-schema + semantische tabel; audit 0.
 
-### 18. BreadcrumbList op alle resterende pagina's zonder
+### 18. [DONE] BreadcrumbList op alle resterende pagina's zonder
 - [ ] Audit-script dat pagina's zonder BreadcrumbList-JSON-LD opspoort.
 - [ ] Breadcrumbs toevoegen aan de ontbrekende routes.
 Klaar wanneer: rapport toont 0 pagina's zonder breadcrumbs (m.u.v. home); audit 0.

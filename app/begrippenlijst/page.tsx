@@ -25,6 +25,16 @@ export function generateMetadata(): Metadata {
 
 const BASE = 'https://waterfilterplatform.nl';
 
+// Stabiel #anchor per begrip, zodat about/mentions en interne links naar een
+// specifieke definitie kunnen deeplinken (bv. /begrippenlijst#omgekeerde-osmose-ro).
+function termAnchor(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 const terms: { name: string; description: string; href: string }[] = [
   { name: 'Actief kool (GAC/CTO)', description: 'Adsorptiemateriaal dat chloor, geur, smaak en sommige organische stoffen uit water bindt. Verwijdert geen opgeloste ionen zoals kalk, nitraat of lood.', href: '/filtertechnieken/actief-kool' },
   { name: 'Afvalwater (concentraat)', description: 'Het waterstroompje met geconcentreerde verontreinigingen dat een osmosesysteem afvoert. Moderne systemen halen een verhouding van 1:1 of beter.', href: '/omgekeerde-osmose/afvalwater' },
@@ -103,7 +113,7 @@ export default function BegrippenlijstPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-5">Alle begrippen van A tot Z</h2>
           <dl className="space-y-4">
             {terms.map(t => (
-              <div key={t.name} className="border border-gray-100 rounded-xl p-4">
+              <div key={t.name} id={termAnchor(t.name)} className="border border-gray-100 rounded-xl p-4 scroll-mt-20">
                 <dt className="font-semibold text-gray-900 mb-1">
                   <Link href={t.href} className="hover:text-[#005F8A]">{t.name}</Link>
                 </dt>
