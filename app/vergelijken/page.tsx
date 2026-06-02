@@ -192,6 +192,12 @@ export default function VergelijkenPage() {
               <Link key="/vergelijken/waterontharder-vs-magneet" href="/vergelijken/waterontharder-vs-magneet" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Waterontharder vs magneet</p>
               </Link>
+              <Link key="/vergelijken/gedestilleerd-vs-osmose" href="/vergelijken/gedestilleerd-vs-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Gedestilleerd vs osmose</p>
+              </Link>
+              <Link key="/vergelijken/actief-kool-vs-osmose" href="/vergelijken/actief-kool-vs-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Actief kool vs osmose</p>
+              </Link>
           </div>
         </section>
       </div>

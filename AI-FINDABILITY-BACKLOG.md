@@ -247,12 +247,12 @@ Klaar wanneer: faq.json bouwt en dekt de FAQ's; valide JSON; build groen; gate g
 
 ## Thema H - Content-gaps gericht op AI-queries (geen thin content)
 
-### 41. Ontbrekende "Wat is X" definitie-artikelen
+### 41. [DONE] Ontbrekende "Wat is X" definitie-artikelen
 - [ ] Gap-analyse tegen begrippenlijst; 5-8 ontbrekende kernbegrippen als volwaardige artikelen (MDX-standaard, kannibalisatie-gecheckt).
 - [ ] Per nieuw begrip interne links naar het dieptecluster + opname in begrippenlijst en llms.
 Klaar wanneer: nieuwe definitie-artikelen check-content 100%; check-links 0; build groen.
 
-### 42. "X vs Y"-dekking uitbreiden met machine-leesbare tabellen
+### 42. [DONE] "X vs Y"-dekking uitbreiden met machine-leesbare tabellen
 - [ ] Witruimte-analyse voor vergelijkingen; 3-5 nieuwe vergelijkingen (kannibalisatie-gecheckt).
 - [ ] Elke vergelijking met semantische `<table>` + scope-headers, QuickAnswer en Article-schema.
 Klaar wanneer: nieuwe vergelijkingen in sitemap+llms; 0 orphans; audit 0.
@@ -262,7 +262,7 @@ Klaar wanneer: nieuwe vergelijkingen in sitemap+llms; 0 orphans; audit 0.
 - [ ] Gate die kerncijfers in FAQ vergelijkt met een centrale feiten-bron (lib/facts).
 Klaar wanneer: gate vindt 0 tegenstrijdige cijfers tussen FAQ en bronpagina; build groen.
 
-### 44. Lokale intent zonder thin content
+### 44. [DEFER] Lokale intent zonder thin content
 - [ ] Voor de grootste gemeenten een onderscheidende FAQ-sectie met echte lokale dH-waarde (geen duplicaten).
 - [ ] Duplicate-content-check zodat de gemeente-FAQ's onderling voldoende verschillen.
 Klaar wanneer: geselecteerde gemeente-pagina's hebben unieke FAQ; audit 0; geen duplicate-content-stijging.
