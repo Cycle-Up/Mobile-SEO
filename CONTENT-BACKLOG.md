@@ -345,52 +345,52 @@ Klaar wanneer: MDX-standaard.
 
 ## Thema 8 - Vergelijkingen (machine-leesbare tabellen)
 
-### 63. Vergelijking: filterkan vs kraanfilter
+### 63. [DONE] Vergelijking: filterkan vs kraanfilter
 - [ ] Slug + gap-check.
 - [ ] TSX-vergelijking met semantische tabel.
 Klaar wanneer: standaard, in sitemap+llms, 0 orphans.
 
-### 64. Vergelijking: onder-aanrecht osmose vs aanrecht-osmose
+### 64. [DONE] Vergelijking: onder-aanrecht osmose vs aanrecht-osmose
 - [ ] Slug + gap-check.
 - [ ] TSX-vergelijking.
 Klaar wanneer: standaard.
 
-### 65. Vergelijking: UV-filter vs osmose
+### 65. [DONE] Vergelijking: UV-filter vs osmose
 - [ ] Slug + gap-check.
 - [ ] TSX-vergelijking.
 Klaar wanneer: standaard.
 
-### 66. Vergelijking: nanofiltratie vs osmose
+### 66. [DONE-covered] Vergelijking: nanofiltratie vs osmose
 - [ ] Slug + gap-check.
 - [ ] TSX-vergelijking.
 Klaar wanneer: standaard.
 
-### 67. Vergelijking: ionenwisselaar vs osmose voor kalk
+### 67. [DONE] Vergelijking: ionenwisselaar vs osmose voor kalk
 - [ ] Slug + gap-check.
 - [ ] TSX-vergelijking.
 Klaar wanneer: standaard.
 
-### 68. Vergelijking: bronwater vs mineraalwater (fles)
+### 68. [DONE] Vergelijking: bronwater vs mineraalwater (fles)
 - [ ] Slug + gap-check (osmose-vs-bronwater + leidingwater-vs-bronwater bestaan; fles-fles distinct).
 - [ ] TSX-vergelijking.
 Klaar wanneer: standaard.
 
-### 69. Vergelijking: kokend water kraan vs waterkoker (TCO)
+### 69. [DONE] Vergelijking: kokend water kraan vs waterkoker (TCO)
 - [ ] Slug + gap-check.
 - [ ] TSX-vergelijking met kostentabel.
 Klaar wanneer: standaard.
 
-### 70. Vergelijking: zoutloze ontharder vs ionenwisselaar
+### 70. [DONE] Vergelijking: zoutloze ontharder vs ionenwisselaar
 - [ ] Slug + gap-check (zoutloze-vergelijken bestaat -> directe duel distinct).
 - [ ] TSX-vergelijking.
 Klaar wanneer: standaard.
 
-### 71. Vergelijking: 4-in-1 kraan vs aparte osmose + kokend
+### 71. [DONE] Vergelijking: 4-in-1 kraan vs aparte osmose + kokend
 - [ ] Slug + gap-check (4-in-1-kraan hub bestaat).
 - [ ] TSX-vergelijking.
 Klaar wanneer: standaard.
 
-### 72. Vergelijking: keramisch filter vs koolstoffilter
+### 72. [DONE] Vergelijking: keramisch filter vs koolstoffilter
 - [ ] Slug + gap-check (keramisch-filter + koolstoffilter hubs bestaan).
 - [ ] TSX-vergelijking.
 Klaar wanneer: standaard.

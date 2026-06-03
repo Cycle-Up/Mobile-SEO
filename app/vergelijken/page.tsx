@@ -198,6 +198,33 @@ export default function VergelijkenPage() {
               <Link key="/vergelijken/actief-kool-vs-osmose" href="/vergelijken/actief-kool-vs-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Actief kool vs osmose</p>
               </Link>
+              <Link key="/vergelijken/filterkan-vs-kraanfilter" href="/vergelijken/filterkan-vs-kraanfilter" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Filterkan vs kraanfilter</p>
+              </Link>
+              <Link key="/vergelijken/onderbouw-vs-opzet-osmose" href="/vergelijken/onderbouw-vs-opzet-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Onderbouw vs opzet-osmose</p>
+              </Link>
+              <Link key="/vergelijken/uv-vs-osmose" href="/vergelijken/uv-vs-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">UV vs osmose</p>
+              </Link>
+              <Link key="/vergelijken/ionenwisselaar-vs-osmose" href="/vergelijken/ionenwisselaar-vs-osmose" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Ionenwisselaar vs osmose</p>
+              </Link>
+              <Link key="/vergelijken/bronwater-vs-mineraalwater" href="/vergelijken/bronwater-vs-mineraalwater" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Bronwater vs mineraalwater</p>
+              </Link>
+              <Link key="/vergelijken/kokend-kraan-vs-waterkoker" href="/vergelijken/kokend-kraan-vs-waterkoker" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Kokend kraan vs waterkoker</p>
+              </Link>
+              <Link key="/vergelijken/zoutloos-vs-ionenwisselaar" href="/vergelijken/zoutloos-vs-ionenwisselaar" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Zoutloos vs ionenwisselaar</p>
+              </Link>
+              <Link key="/vergelijken/vier-in-een-vs-apart" href="/vergelijken/vier-in-een-vs-apart" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">4-in-1 kraan vs apart</p>
+              </Link>
+              <Link key="/vergelijken/keramisch-vs-koolstof" href="/vergelijken/keramisch-vs-koolstof" className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+                <p className="font-semibold text-gray-800 hover:text-[#005F8A]">Keramisch vs koolstoffilter</p>
+              </Link>
           </div>
         </section>
       </div>
