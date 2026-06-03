@@ -19,6 +19,13 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'tijdelijke-blijvende-hardheid',
+    titel: 'Tijdelijke en blijvende waterhardheid: wat is het verschil?',
+    samenvatting: 'Het verschil tussen carbonaat- en niet-carbonaathardheid, en wat het betekent voor kalkaanslag en ontharden.',
+    categorie: 'Waterontharder',
+    datum: '2 juni 2026',
+  },
+  {
     slug: 'osmose-installeren-stappen',
     titel: 'Osmosesysteem installeren onder het aanrecht: stappenplan',
     samenvatting: 'Stap voor stap aansluiten op de watertoevoer, kraan en afvoer, plus doorspoelen en lekcontrole.',

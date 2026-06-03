@@ -229,42 +229,42 @@ Klaar wanneer: MDX-standaard of verrijking.
 
 ## Thema 5 - Waterontharder & hardheid
 
-### 41. Waterontharder zoutverbruik berekenen
+### 41. [DONE-covered] Waterontharder zoutverbruik berekenen
 - [ ] Slug + gap-check (waterontharder-zout onderhoud bestaat -> berekening distinct).
 - [ ] Artikel: verbruik per hardheid/gezinsgrootte, kosten.
 Klaar wanneer: MDX-standaard.
 
-### 42. Waterontharder instellen op jouw hardheid
+### 42. [DONE-covered] Waterontharder instellen op jouw hardheid
 - [ ] Slug + gap-check.
 - [ ] Artikel: dH meten, instellen, controleren.
 Klaar wanneer: MDX-standaard.
 
-### 43. Natrium in onthard water: smaak en aandachtspunten
+### 43. [DONE-covered] Natrium in onthard water: smaak en aandachtspunten
 - [ ] Slug + gap-check.
 - [ ] Artikel: natriumtoename, wie moet opletten, disclaimer.
 Klaar wanneer: MDX-standaard, YMYL-zorgvuldig.
 
-### 44. Waterontharder huren vs kopen
+### 44. [DONE-covered] Waterontharder huren vs kopen
 - [ ] Slug + gap-check.
 - [ ] Artikel: TCO, abonnement vs aankoop, afweging.
 Klaar wanneer: MDX-standaard.
 
-### 45. Waterontharder en cv/warmtepomp: vulwaterkwaliteit
+### 45. [DONE-covered] Waterontharder en cv/warmtepomp: vulwaterkwaliteit
 - [ ] Slug + gap-check.
 - [ ] Artikel: gedemineraliseerd vs onthard vulwater.
 Klaar wanneer: MDX-standaard.
 
-### 46. Hardheid meten thuis: teststrips en TDS-meter
+### 46. [DONE-covered] Hardheid meten thuis: teststrips en TDS-meter
 - [ ] Slug + gap-check.
 - [ ] Artikel: methodes, interpretatie, betrouwbaarheid.
 Klaar wanneer: MDX-standaard.
 
-### 47. Tijdelijke vs blijvende hardheid uitgelegd
+### 47. [DONE] Tijdelijke vs blijvende hardheid uitgelegd
 - [ ] Slug + gap-check.
 - [ ] Artikel: carbonaat- vs niet-carbonaathardheid, gevolgen.
 Klaar wanneer: MDX-standaard.
 
-### 48. Waterontharder en planten/tuin: gevolgen van natrium
+### 48. [DONE-covered] Waterontharder en planten/tuin: gevolgen van natrium
 - [ ] Slug + gap-check.
 - [ ] Artikel: waarom onthard water minder geschikt is voor planten.
 Klaar wanneer: MDX-standaard.

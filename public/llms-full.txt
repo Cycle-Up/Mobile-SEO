@@ -721,6 +721,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Wat is TDS in water? Uitleg over Total Dissolved Solids, ppm vs mg/L, osmose versus kraanwater, hoe je meet en de ideale TDS per toepassing Je hebt misschien de term 'TDS' gezien op een waterfilter, in een aquariumforum, of in een artikel over koffiezetten.
 - [Welk water per theesoort? Temperatuur en hardheid (2026)](https://waterfilterplatform.nl/kennisbank/thee-soort-water) (2026-06-02)
   > Elke theesoort heeft een eigen ideale temperatuur: groene thee rond 70-80 graden, zwarte en kruidenthee rond 95-100 graden. Zacht, chloorvrij water laat de smaak het best doorkomen; hard water dempt aroma's en geeft een dof, soms olieachtig vliesje op de thee.
+- [Tijdelijke en blijvende waterhardheid: wat is het verschil? (2026)](https://waterfilterplatform.nl/kennisbank/tijdelijke-blijvende-hardheid) (2026-06-02)
+  > Tijdelijke hardheid komt van carbonaten (vooral calciumbicarbonaat) en verdwijnt deels bij koken, waarbij kalkaanslag ontstaat. Blijvende hardheid komt van andere zouten (sulfaten, chloriden) en verdwijnt niet door koken. Samen vormen ze de totale hardheid die je in dH meet.
 - [EU-drinkwaterrichtlijn: toegang tot kraanwater uitgelegd](https://waterfilterplatform.nl/kennisbank/toegang-tot-kraanwater-eu-richtlijn) (2026-05-29)
   > De EU-drinkwaterrichtlijn 2020/2184 verplicht lidstaten niet alleen tot kwaliteitsnormen, maar ook tot het bevorderen van toegang tot kraanwater. Denk aan watertappunten in de openbare ruimte en het stimuleren van kraanwater in de horeca, om de volksgezondheid te steunen en het gebruik van plastic flessen te verminderen.
 - [Uranium in drinkwater: van nature aanwezig en wat het betekent](https://waterfilterplatform.nl/kennisbank/uranium-drinkwater) (2026-05-18)
@@ -1128,7 +1130,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 428 kennisbank-artikelen.
+Totaal: 429 kennisbank-artikelen.
 
 ## Index
 
