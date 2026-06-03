@@ -46,27 +46,27 @@ Klaar wanneer: MDX-standaard.
 - [ ] Artikel: hardheid en kleurbehoud, zout, kooktijd.
 Klaar wanneer: MDX-standaard.
 
-### 6. Eieren koken in hard water: kalk op schaal en pan
+### 6. [DONE] Eieren koken in hard water: kalk op schaal en pan
 - [ ] Slug + gap-check.
 - [ ] Artikel: kalkaanslag, schil pellen, pan beschermen.
 Klaar wanneer: MDX-standaard.
 
-### 7. Pizzadeeg en gistdeeg: waterkwaliteit en gisting
+### 7. [DONE] Pizzadeeg en gistdeeg: waterkwaliteit en gisting
 - [ ] Slug + gap-check (zuurdesem-starter bestaat; gistdeeg distinct).
 - [ ] Artikel: chloor en gist, hardheid en glutenstructuur.
 Klaar wanneer: MDX-standaard.
 
-### 8. Water voor sportdrank/elektrolyten zelf maken
+### 8. [DONE] Water voor sportdrank/elektrolyten zelf maken
 - [ ] Slug + gap-check.
 - [ ] Artikel: basiswaterkeuze, smaak, mineralenbalans (geen gezondheidsclaims).
 Klaar wanneer: MDX-standaard, YMYL-zorgvuldig.
 
-### 9. Water voor koffiezetapparaat-recepten (espresso vs filter TDS)
+### 9. [DONE] Water voor koffiezetapparaat-recepten (espresso vs filter TDS)
 - [ ] Slug + gap-check (osmose-water-koffie* bestaat; dit is TDS-recept-angle).
 - [ ] Artikel: streef-TDS per methode, mengverhouding osmose+kraan.
 Klaar wanneer: MDX-standaard.
 
-### 10. Water voor thee per soort (groen/zwart/kruiden) en temperatuur
+### 10. [DONE] Water voor thee per soort (groen/zwart/kruiden) en temperatuur
 - [ ] Slug + gap-check (matcha + osmose-water-thee bestaan; per-soort distinct).
 - [ ] Artikel: hardheid per theesoort, temperatuur, smaak.
 Klaar wanneer: MDX-standaard.

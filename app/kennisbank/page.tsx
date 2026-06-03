@@ -19,6 +19,41 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'eieren-koken-kalk',
+    titel: 'Eieren koken in hard water: kalk op pan en schaal',
+    samenvatting: 'Hoe hard water kalkaanslag geeft bij het eieren koken, of het de schil beinvloedt, en hoe je pan en eieren schoon houdt.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'pizzadeeg-water-gist',
+    titel: 'Pizzadeeg en gistdeeg: welke rol speelt het water?',
+    samenvatting: 'Hoe chloor en waterhardheid de gisting en glutenstructuur beinvloeden, en wanneer gefilterd water helpt.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'sportdrank-zelf-maken',
+    titel: 'Sportdrank zelf maken: welk water en welke basis?',
+    samenvatting: 'De rol van water, smaak en mineralen bij een zelfgemaakte sportdrank, met praktische verhoudingen en aandachtspunten.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'koffie-water-tds-recept',
+    titel: 'Water voor koffie: streef-TDS en mengverhoudingen',
+    samenvatting: 'Welke TDS en mineralenbalans de beste koffie geven, met streefwaarden per zetmethode en osmose-kraanwater mengen.',
+    categorie: 'Osmose',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'thee-soort-water',
+    titel: 'Welk water per theesoort? Temperatuur en hardheid',
+    samenvatting: 'Groene, zwarte, witte, oolong en kruidenthee vragen elk om andere temperatuur en hardheid voor de beste kop.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
     slug: 'water-pasta-koken',
     titel: 'Pasta koken: welk water, hoeveel zout en wat doet hardheid?',
     samenvatting: 'Hoe zout en waterhardheid de smaak en textuur van pasta bepalen, en wanneer gefilterd water iets toevoegt.',
