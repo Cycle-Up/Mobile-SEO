@@ -471,52 +471,52 @@ Klaar wanneer: MDX-standaard, cijfers consistent (check-facts).
 
 ## Thema 11 - Content-verrijkingsprogramma's (bestaande artikelen)
 
-### 87. takeaways-backfill ronde 1 (50 artikelen)
+### 87. [DONE] takeaways-backfill ronde 1 (50 artikelen)
 - [ ] Selecteer 50 sterkste artikelen zonder takeaways.
 - [ ] Voeg inhoud-getrouwe takeaways toe (geen nieuwe claims).
 Klaar wanneer: check-aeo takeaways-metric stijgt met >=50; build groen.
 
-### 88. takeaways-backfill ronde 2 (50 artikelen)
+### 88. [DEFER] takeaways-backfill ronde 2 (50 artikelen)
 - [ ] Volgende 50 artikelen.
 - [ ] Inhoud-getrouwe takeaways.
 Klaar wanneer: takeaways-metric stijgt; build groen.
 
-### 89. FAQ-secties toevoegen aan artikelen zonder FAQ
+### 89. [DEFER] FAQ-secties toevoegen aan artikelen zonder FAQ
 - [ ] Detecteer MDX zonder `?`-FAQ-koppen.
 - [ ] Voeg 3-4 echte vraag-antwoord-koppen toe per artikel (batch).
 Klaar wanneer: rapport toont stijging FAQ-dekking; check-content 100%.
 
-### 90. Definition-first openingen verbeteren (niet-definitie-artikelen)
+### 90. [DONE] Definition-first openingen verbeteren (niet-definitie-artikelen)
 - [ ] Detecteer artikelen met zwakke opening.
 - [ ] Herschrijf opening naar direct antwoord (eigen content).
 Klaar wanneer: check-answer-ready-rapport verbetert; typografie groen.
 
-### 91. Interne-link-verrijking: +2 contextuele links per dunne-link-artikel
+### 91. [DONE] Interne-link-verrijking: +2 contextuele links per dunne-link-artikel
 - [ ] Detecteer artikelen met precies 2 interne links.
 - [ ] Voeg relevante contextuele links toe naar canonieke URL's.
 Klaar wanneer: check-links 0; gemiddeld aantal interne links stijgt.
 
-### 92. quickAnswer naar 40-60 woorden sweet-spot (outliers)
+### 92. [DEFER] quickAnswer naar 40-60 woorden sweet-spot (outliers)
 - [ ] Lijst quickAnswers buiten 40-60 (uit check-content-warnings).
 - [ ] Herschrijf de kortste/langste zonder padding.
 Klaar wanneer: sweet-spot-% stijgt; check-content 100%.
 
-### 93. Bron-/datumactualisatie van de 30 oudste YMYL-artikelen
+### 93. [DEFER] Bron-/datumactualisatie van de 30 oudste YMYL-artikelen
 - [ ] Selecteer oudste YMYL-artikelen.
 - [ ] Actualiseer lastModified + controleer cijfers tegen lib/facts.
 Klaar wanneer: check-facts review 0 echte fouten; build groen.
 
-### 94. Voorbeelden/case-uitleg toevoegen aan abstracte artikelen
+### 94. [DEFER] Voorbeelden/case-uitleg toevoegen aan abstracte artikelen
 - [ ] Detecteer artikelen zonder concreet voorbeeld.
 - [ ] Voeg een uitgewerkt praktijkvoorbeeld toe (geen verzonnen data).
 Klaar wanneer: check-content 100%; build groen.
 
-### 95. Semantische datatabellen toevoegen waar cijfers in proza staan
+### 95. [DEFER] Semantische datatabellen toevoegen waar cijfers in proza staan
 - [ ] Detecteer artikelen met opsommingen van waarden in tekst.
 - [ ] Zet om naar `<table>` met scope-headers (machine-leesbaar).
 Klaar wanneer: audit-html 0; tabellen valide.
 
-### 96. "Bijgewerkt 2026"-titels consistent maken
+### 96. [DONE] "Bijgewerkt 2026"-titels consistent maken
 - [ ] Detecteer titels met verouderd jaartal.
 - [ ] Normaliseer jaartal/format consistent met datum.
 Klaar wanneer: check-content 100%; geen titel-length-overschrijding.
