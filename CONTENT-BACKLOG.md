@@ -21,27 +21,27 @@ AuthorBox+MethodologyBadge, semantische tabel, in sitemap+llms, 0 orphans, audit
 
 ## Thema 1 - Water in de keuken: koken & recepten (long-tail use-cases)
 
-### 1. Water voor pasta koken: zout, hardheid en smaak
+### 1. [DONE] Water voor pasta koken: zout, hardheid en smaak
 - [ ] Slug + kannibalisatie-check (bestaat geen pasta-artikel).
 - [ ] Artikel: rol van hardheid/zout, wanneer gefilterd loont, kooktips.
 Klaar wanneer: MDX-standaard, check-content 100%, build groen.
 
-### 2. Water voor rijst en risotto: helderheid en kleefgedrag
+### 2. [DONE] Water voor rijst en risotto: helderheid en kleefgedrag
 - [ ] Slug + gap-check (rijstkoker bestaat; dit is kooktechniek, distinct).
 - [ ] Artikel: spoelen, hardheid, smaakverschil.
 Klaar wanneer: MDX-standaard, 100% check-content.
 
-### 3. Bouillon en fond trekken met gefilterd water
+### 3. [DONE] Bouillon en fond trekken met gefilterd water
 - [ ] Slug + gap-check (slowcooker bestaat; dit is bouillon-specifiek).
 - [ ] Artikel: pure smaak, indikken, zout/chloor-effect.
 Klaar wanneer: MDX-standaard, build groen.
 
-### 4. Water voor sauzen en jus: smaakbasis
+### 4. [DONE] Water voor sauzen en jus: smaakbasis
 - [ ] Slug + gap-check.
 - [ ] Artikel: reductie concentreert mineralen/chloor, advies.
 Klaar wanneer: MDX-standaard.
 
-### 5. Groente koken en blancheren: kleur en mineralen
+### 5. [DONE] Groente koken en blancheren: kleur en mineralen
 - [ ] Slug + gap-check.
 - [ ] Artikel: hardheid en kleurbehoud, zout, kooktijd.
 Klaar wanneer: MDX-standaard.

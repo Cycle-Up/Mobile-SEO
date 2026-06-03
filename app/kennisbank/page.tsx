@@ -19,6 +19,41 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'water-pasta-koken',
+    titel: 'Pasta koken: welk water, hoeveel zout en wat doet hardheid?',
+    samenvatting: 'Hoe zout en waterhardheid de smaak en textuur van pasta bepalen, en wanneer gefilterd water iets toevoegt.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'water-rijst-risotto',
+    titel: 'Rijst en risotto: welk water voor romigheid en kleefgedrag?',
+    samenvatting: 'Spoelen, hardheid en bouillon: hoe water het kleefgedrag van rijst en de romigheid van risotto beinvloedt.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'kraanwater-bouillon-trekken',
+    titel: 'Bouillon trekken: welk water voor een zuivere fond?',
+    samenvatting: 'Bij urenlang trekken concentreert alles in het water; hoe chloor en kalk de smaak bepalen en wanneer gefilterd water loont.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'water-saus-jus',
+    titel: 'Sauzen en jus: hoe water de smaakbasis bepaalt',
+    samenvatting: 'Inkoken concentreert het water; hoe chloor en kalk de smaak van delicate sauzen beinvloeden en wanneer gefilterd water loont.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'groente-koken-water',
+    titel: 'Groente koken en blancheren: kleur, textuur en water',
+    samenvatting: 'Hoe water, zout en blancheren de kleur en textuur van groente bepalen, en de rol van waterhardheid en gefilterd water.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
     slug: 'gedeioniseerd-water',
     titel: 'Gedeioniseerd water: wat is het en waar gebruik je het?',
     samenvatting: 'Demiwater uitgelegd: hoe ionenwisseling het maakt, het verschil met gedestilleerd en osmosewater, en de toepassingen.',

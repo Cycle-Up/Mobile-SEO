@@ -357,6 +357,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > In Nederland bestaat er geen algemene wettelijke plicht voor de horeca om gratis kraanwater te schenken, maar de EU-drinkwaterrichtlijn 2020/2184 verplicht lidstaten de toegang tot water te bevorderen. Veel zaken bieden kraanwater vrijwillig gratis of tegen een kleine vergoeding aan. Raadpleeg voor je eigen situatie altijd de actuele regelgeving en officiele bronnen.
 - [Gratis water en watertappunten op evenementen](https://waterfilterplatform.nl/kennisbank/gratis-water-evenement) (2026-05-29)
   > Steeds meer evenementen en festivals bieden gratis kraanwater via tijdelijke watertappunten, vaak vanuit gezondheid, veiligheid en het duurzaamheidsbeleid van de gemeente. Organisatoren huren mobiele tappunten of sluiten aan op de waterleiding. Controleer de exacte regels altijd bij uw gemeente en in de evenementenvergunning.
+- [Groente koken en blancheren: kleur, textuur en water (2026)](https://waterfilterplatform.nl/kennisbank/groente-koken-water) (2026-06-02)
+  > Felgroene groente houd je door kort te koken of te blancheren en daarna te koelen in ijswater. Zout helpt smaak en kleur; waterhardheid speelt een kleine rol. Voor de smaak van pure groente kan gefilterd water iets toevoegen, maar techniek telt het meest.
 - [Grondwater vs oppervlaktewater als drinkwaterbron: voor- en nadelen](https://waterfilterplatform.nl/kennisbank/grondwater-vs-oppervlaktewater) (2026-05-18)
   > Grondwater is beter beschermd tegen vervuiling en heeft stabielere kwaliteit; oppervlaktewater (rivieren, meren) vereist intensievere zuivering maar heeft hogere capaciteit. Nederland gebruikt beide bronnen.
 - [Hard water en haar: kalk, kleurverlies en droogheid](https://waterfilterplatform.nl/kennisbank/hard-water-effects-hair) (2026-04-03)
@@ -449,6 +451,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Kraanwater laten analyseren: bij welk lab, wat kost het (€50-300), COKZ-certificering, standaard vs uitgebreid pakket en resultaten lezen U wilt precies weten wat er in uw kraanwater zit. Misschien woont u in een oud huis met loden leidingen, heeft u een slecht ruikend of verkleurd water, wordt u binnenkort ouder of zwanger, of wilt u
 - [Kraanwater laten analyseren: laboratorium, kosten en aanpak](https://waterfilterplatform.nl/kennisbank/kraanwater-analyse-laboratorium) (2026-02-26)
   > Kraanwater laten analyseren door een gecertificeerd lab? Ontdek kosten, parameters, monsternameprocedure en wanneer een analyse zinvol is Kraanwater in Nederland is over het algemeen van hoge kwaliteit. Drinkwaterbedrijven analyseren het water continu en publiceren de resultaten openbaar.
+- [Bouillon trekken: welk water voor een zuivere fond? (2026)](https://waterfilterplatform.nl/kennisbank/kraanwater-bouillon-trekken) (2026-06-02)
+  > Bouillon trekt urenlang, waardoor smaken en ook chloor en kalk concentreren. In een verder neutrale fond proef je een chloortoon of kalksmaak sneller; gefilterd of laag-mineraal water geeft een zuiverdere basissmaak. Bij sterk gekruide bouillon valt het minder op.
 - [Kraanwater bruisend maken thuis: alle opties vergeleken](https://waterfilterplatform.nl/kennisbank/kraanwater-bruisend-maken) (2026-02-26)
   > Sodastream vs kraan-integratie: CO2-patronen, installatie, maandkosten en combinatie met osmosewater voor thuisgemaakt bruisend water Bruisend water drinken is populairder dan ooit. Nederlanders consumeren gemiddeld zo'n 15-20 liter bruisend water per persoon per jaar - en dat aandeel groeit.
 - [Kraanwater in het buitenland: wanneer veilig?](https://waterfilterplatform.nl/kennisbank/kraanwater-buitenland) (2026-04-08)
@@ -713,6 +717,12 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Wat doet koken met bacteriën, virussen, chloor, nitraten en zware metalen? Wanneer is koken genoeg en wanneer heeft u een waterfilter nodig? Water koken is de oudste methode ter wereld om drinkwater veilig te maken.
 - [Mineralen in water en gezondheid: wat draagt drinkwater bij?](https://waterfilterplatform.nl/kennisbank/water-mineralen-gezondheid) (2026-04-16)
   > Calcium, magnesium, natrium, fluoride en kalium in drinkwater. Wat draagt water bij aan je mineraalbehoefte en wanneer is mineraalarm water een zorg? Drinkwater is meer dan H₂O. Afhankelijk van de bron en de behandeling bevat leidingwater een reeks opgeloste mineralen.
+- [Pasta koken: welk water, hoeveel zout en wat doet hardheid? (2026)](https://waterfilterplatform.nl/kennisbank/water-pasta-koken) (2026-06-02)
+  > Pasta koken lukt prima met kraanwater. Zout bepaalt de smaak veel meer dan de waterkwaliteit: reken op ongeveer 10 gram zout per liter. Hard water maakt nauwelijks verschil voor de pasta zelf, maar laat wel kalk achter in de pan.
+- [Rijst en risotto: welk water voor romigheid en kleefgedrag? (2026)](https://waterfilterplatform.nl/kennisbank/water-rijst-risotto) (2026-06-02)
+  > Voor losse rijst telt vooral spoelen en de juiste water-rijstverhouding, niet de waterkwaliteit. Bij risotto bepaalt het zetmeel de romigheid; gebruik warme bouillon of water. Hard water maakt weinig verschil voor de smaak, maar laat kalk achter in de pan.
+- [Sauzen en jus: hoe water de smaakbasis bepaalt (2026)](https://waterfilterplatform.nl/kennisbank/water-saus-jus) (2026-06-02)
+  > Sauzen en jus koken in, waardoor het water en alles erin concentreert. Een chloortoon of kalksmaak valt daardoor sterker op in een verfijnde saus. Voor robuuste, gekruide sauzen maakt de waterkwaliteit weinig uit; voor delicate sauzen loont gefilterd water.
 - [Water voor thee: welke temperatuur en hardheid?](https://waterfilterplatform.nl/kennisbank/water-thee) (2026-04-17)
   > Welk water is het beste voor thee? Leer over watertemperatuur per theesoort, waterhardheid en hoe kalk uw theesmaak bederft Een goede kop thee staat of valt met het water. Theekenners en theemeesters zijn er eenstemmig over: het water is net zo belangrijk als de theeblaadjes zelf.
 - [Water zachter maken: 5 methoden vergeleken](https://waterfilterplatform.nl/kennisbank/water-zacht-maken) (2026-04-17)
@@ -1090,7 +1100,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 409 kennisbank-artikelen.
+Totaal: 414 kennisbank-artikelen.
 
 ## Index
 
