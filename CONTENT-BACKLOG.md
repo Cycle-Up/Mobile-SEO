@@ -439,32 +439,32 @@ Klaar wanneer: MDX-standaard.
 
 ## Thema 10 - Lokaal, seizoen & actueel
 
-### 81. Waterhardheid per provincie: overzicht
+### 81. [DONE] Waterhardheid per provincie: overzicht
 - [ ] Slug + gap-check (waterhardheid gemeente-laag bestaat -> provincie-aggregatie distinct).
 - [ ] Artikel met semantische tabel per provincie.
 Klaar wanneer: MDX-standaard.
 
-### 82. Drinkwater op vakantie/camping in NL
+### 82. [DONE-covered] Drinkwater op vakantie/camping in NL
 - [ ] Slug + gap-check (reisfilter hub bestaat -> NL-camping distinct).
 - [ ] Artikel: tappunten, veiligheid, filteren.
 Klaar wanneer: MDX-standaard.
 
-### 83. Water besparen in huis: praktische tips
+### 83. [DONE-covered] Water besparen in huis: praktische tips
 - [ ] Slug + gap-check.
 - [ ] Artikel: verbruik, osmose-afvalwater, gedrag.
 Klaar wanneer: MDX-standaard.
 
-### 84. Drinkwater bij hitte/droogte: kwaliteit en tips
+### 84. [DONE] Drinkwater bij hitte/droogte: kwaliteit en tips
 - [ ] Slug + gap-check.
 - [ ] Artikel: seizoenseffecten, bewaren, koelen.
 Klaar wanneer: MDX-standaard.
 
-### 85. Regenwater opvangen en gebruiken (niet drinken)
+### 85. [DONE-covered] Regenwater opvangen en gebruiken (niet drinken)
 - [ ] Slug + gap-check (regenwater cluster bestaat -> opvang/gebruik distinct).
 - [ ] Artikel: tuin/toilet, waarom niet drinken, PFAS-nuance.
 Klaar wanneer: MDX-standaard.
 
-### 86. PFAS-norm 2026: wat verandert er (actueel)
+### 86. [DONE-covered] PFAS-norm 2026: wat verandert er (actueel)
 - [ ] Slug + gap-check.
 - [ ] Artikel: actuele normwijziging, lib/facts als bron, bronnen.
 Klaar wanneer: MDX-standaard, cijfers consistent (check-facts).

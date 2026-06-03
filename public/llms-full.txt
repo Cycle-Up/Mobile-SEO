@@ -317,6 +317,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Hoe verschilt drinkwater in Duitsland, VK, Spanje en Scandinavië? Hardheid, nitraat, PFAS-hotspots en de EU Drinkwaterrichtlijn 2020/2184 per land Drinkwaterkwaliteit varieert enorm binnen Europa. Wie op vakantie gaat naar Spanje merkt de harde, kalkrijke smaak van het kraanwater.
 - [Fluoride in Nederlands drinkwater: feiten en filters](https://waterfilterplatform.nl/kennisbank/drinkwater-fluoride) (2026-01-07)
   > Wordt fluoride toegevoegd aan Nederlands drinkwater? Nee, al gestopt in 1973. Naturlijke fluoride, EU-norm 1,5 mg/L en welke filters het verwijderen Fluoride in drinkwater is een onderwerp dat regelmatig terugkeert in discussies over volksgezondheid, tandheelkunde en waterkwaliteit.
+- [Drinkwater bij hitte en droogte: kwaliteit en tips (2026)](https://waterfilterplatform.nl/kennisbank/drinkwater-hitte-droogte) (2026-06-02)
+  > Nederlands kraanwater blijft ook tijdens hitte en droogte veilig en gecontroleerd. Wel kan water dat in warme leidingen heeft stilgestaan lauw smaken; laat de kraan dan even doorlopen. Bewaar drinkwater afgedekt en koel, en drink voldoende. Dit is algemene informatie, geen medisch advies.
 - [Water en huid: speelt hard water een rol bij eczeem? (2026)](https://waterfilterplatform.nl/kennisbank/drinkwater-huid-eczeem) (2026-06-02)
   > Er zijn aanwijzingen dat hard water de huidbarriere licht kan irriteren en mogelijk samenhangt met eczeem, maar het bewijs is niet eenduidig. Zacht of gefilterd water kan voor sommige mensen prettiger aanvoelen. Dit is algemene informatie; bij huidklachten is een (huis)arts of dermatoloog leidend.
 - [Drinkwater bij een verzwakt immuunsysteem: voorzorg (2026)](https://waterfilterplatform.nl/kennisbank/drinkwater-immuunsysteem) (2026-06-02)
@@ -1023,6 +1025,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Nederlandse waterhardheid varieert van zacht (4-8 dH) in Friesland tot zeer hard (20-28 dH) in Limburg. Het landelijk gemiddelde ligt rond 15 dH. Hard water (>15 dH) komt voor in Noord-Brabant, Limburg, Utrecht en Zuid-Holland. Zachter water (<10 dH) is typisch voor Friesland, Groningen en delen van Drenthe.
 - [Waterhardheid meten: methoden, strips en TDS-meter](https://waterfilterplatform.nl/kennisbank/waterhardheid-meten) (2025-10-13)
   > Waterhardheid meten? Vergelijk teststrips, TDS-meter, druppeltest en labonderzoek. Met uitleg over °dH, °fH en ppm en een handige waardetabel Weet jij hoe hard het water bij jou thuis is? De kans is groot van niet - en dat terwijl het een grote invloed heeft op je apparaten, je zeepverbruik en zelfs de smaak van je
+- [Waterhardheid per provincie in Nederland: overzicht (2026)](https://waterfilterplatform.nl/kennisbank/waterhardheid-per-provincie) (2026-06-02)
+  > De waterhardheid verschilt per regio: kustprovincies als Zeeland en delen van Noord-Holland hebben vaak zachter water, terwijl delen van het oosten en zuiden harder water kennen. De hardheid hangt af van de bron en het drinkwaterbedrijf; voor een exacte waarde kijk je per gemeente.
 - [Waterhardheid en planten: welk water voor tuin en moestuin](https://waterfilterplatform.nl/kennisbank/waterhardheid-planten) (2026-03-24)
   > Welke waterhardheid willen moestuinplanten, azalea's en bloembollen? pH en waterhardheid, regenwater vs leidingwater vs osmose voor planten in de tuin Water is water - zo lijkt het. Maar voor planten maakt de kwaliteit en samenstelling van het gietwater een groot verschil.
 - [Waterhardheid verlagen: oorzaken, gevolgen en de beste oplossingen](https://waterfilterplatform.nl/kennisbank/waterhardheid-verlagen) (2026-02-15)
@@ -1138,7 +1142,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 433 kennisbank-artikelen.
+Totaal: 435 kennisbank-artikelen.
 
 ## Index
 

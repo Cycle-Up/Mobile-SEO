@@ -19,6 +19,20 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'waterhardheid-per-provincie',
+    titel: 'Waterhardheid per provincie in Nederland: overzicht',
+    samenvatting: 'Globaal overzicht van de waterhardheid per provincie, waarom die verschilt en hoe je de exacte dH per gemeente vindt.',
+    categorie: 'Waterontharder',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'drinkwater-hitte-droogte',
+    titel: 'Drinkwater bij hitte en droogte: kwaliteit en tips',
+    samenvatting: 'Wat hitte en droogte met je kraanwater doen, plus tips over smaak, koel bewaren en hygiene.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
     slug: 'permeaat-concentraat',
     titel: 'Permeaat en concentraat: wat betekenen deze osmose-termen?',
     samenvatting: 'Het gezuiverde water en de reststroom van een osmosesysteem uitgelegd, met de verhouding en wat ermee gebeurt.',
