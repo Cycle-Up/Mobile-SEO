@@ -19,6 +19,34 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'drinkwater-immuunsysteem',
+    titel: 'Drinkwater bij een verzwakt immuunsysteem: voorzorg',
+    samenvatting: 'Feitelijke uitleg over kraanwaterveiligheid, koken en filteren bij verminderde afweer, met bronnen en arts-advies.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'drinkwater-huid-eczeem',
+    titel: 'Water en huid: speelt hard water een rol bij eczeem?',
+    samenvatting: 'Genuanceerde uitleg over hard water, droge huid en eczeem, met praktische tips en de rol van arts of dermatoloog.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'drinkwater-medicijngebruik',
+    titel: 'Water innemen met medicijnen: waar let je op?',
+    samenvatting: 'Waarom water belangrijk is bij medicijninname, wat bijsluiters zeggen en wanneer arts of apotheker leidend is.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'mineraalarm-water-langdurig',
+    titel: 'Mineraalarm water langdurig drinken: wat weten we?',
+    samenvatting: 'De WHO-nuance over gedemineraliseerd water, de rol van voeding en remineralisatie, met bronnen.',
+    categorie: 'Osmose',
+    datum: '2 juni 2026',
+  },
+  {
     slug: 'eieren-koken-kalk',
     titel: 'Eieren koken in hard water: kalk op pan en schaal',
     samenvatting: 'Hoe hard water kalkaanslag geeft bij het eieren koken, of het de schil beinvloedt, en hoe je pan en eieren schoon houdt.',

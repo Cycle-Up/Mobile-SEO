@@ -73,52 +73,52 @@ Klaar wanneer: MDX-standaard.
 
 ## Thema 2 - Gezondheid & doelgroepen (YMYL, met disclaimer + bronnen)
 
-### 11. Drinkwater voor sporters en hydratatie
+### 11. [DONE-covered] Drinkwater voor sporters en hydratatie
 - [ ] Slug + gap-check.
 - [ ] Artikel: feitelijk, disclaimer, RIVM/WHO-bronnen, geen claims.
 Klaar wanneer: MDX-standaard, isYmyl detecteert -> disclaimer + >=3 bronnen.
 
-### 12. Drinkwater voor ouderen/senioren
+### 12. [DONE-covered] Drinkwater voor ouderen/senioren
 - [ ] Slug + gap-check.
 - [ ] Artikel: aandachtspunten, kwetsbare groepen, disclaimer.
 Klaar wanneer: MDX-standaard, YMYL-compliant.
 
-### 13. Water en nierstenen: wat zegt de wetenschap (genuanceerd)
+### 13. [DONE-covered] Water en nierstenen: wat zegt de wetenschap (genuanceerd)
 - [ ] Slug + gap-check (nierstenen-water-hardheid bestaat -> mogelijk enhancement i.p.v. nieuw).
 - [ ] Bij echte gap: artikel met nuance + bronnen; anders verrijk bestaand.
 Klaar wanneer: MDX-standaard of verrijking; YMYL-compliant.
 
-### 14. Drinkwater bij een verzwakt immuunsysteem
+### 14. [DONE] Drinkwater bij een verzwakt immuunsysteem
 - [ ] Slug + gap-check.
 - [ ] Artikel: voorzorg, koken/filteren, disclaimer + bronnen.
 Klaar wanneer: MDX-standaard, YMYL-compliant.
 
-### 15. Water en huidklachten/eczeem (hard water nuance)
+### 15. [DONE] Water en huidklachten/eczeem (hard water nuance)
 - [ ] Slug + gap-check (douche-huid-haar bestaat; drinkwater-angle distinct).
 - [ ] Artikel: feitelijk, geen medische claims, disclaimer.
 Klaar wanneer: MDX-standaard, YMYL-compliant.
 
-### 16. Drinkwater en zwangerschap: praktische gids (genuanceerd)
+### 16. [DONE-covered] Drinkwater en zwangerschap: praktische gids (genuanceerd)
 - [ ] Slug + gap-check (drinkwater/zwangerschap TSX bestaat -> kennisbank-verdieping distinct of enhancement).
 - [ ] Artikel/verrijking met bronnen + disclaimer.
 Klaar wanneer: MDX-standaard of verrijking, YMYL-compliant.
 
-### 17. Water voor zuigelingen/flesvoeding: koken vs filteren
+### 17. [DONE-covered] Water voor zuigelingen/flesvoeding: koken vs filteren
 - [ ] Slug + gap-check (babywater cluster bestaat -> enhancement waarschijnlijk).
 - [ ] Verrijk of nieuw artikel met duidelijke afweging + disclaimer.
 Klaar wanneer: MDX-standaard of verrijking.
 
-### 18. Drinkwater en medicijngebruik (algemeen, genuanceerd)
+### 18. [DONE] Drinkwater en medicijngebruik (algemeen, genuanceerd)
 - [ ] Slug + gap-check.
 - [ ] Artikel: feitelijk, verwijs naar arts/apotheker, disclaimer.
 Klaar wanneer: MDX-standaard, YMYL-compliant.
 
-### 19. Hoeveel water per dag: feiten vs mythes
+### 19. [DONE-covered] Hoeveel water per dag: feiten vs mythes
 - [ ] Slug + gap-check.
 - [ ] Artikel: nuance, bronnen, geen absolute claims.
 Klaar wanneer: MDX-standaard, YMYL-compliant.
 
-### 20. Mineraalarm water langdurig drinken: wat weten we
+### 20. [DONE] Mineraalarm water langdurig drinken: wat weten we
 - [ ] Slug + gap-check.
 - [ ] Artikel: WHO-nuance over demineralisatie, remineralisatie-advies, disclaimer.
 Klaar wanneer: MDX-standaard, YMYL-compliant.

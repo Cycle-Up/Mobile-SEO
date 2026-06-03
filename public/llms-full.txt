@@ -317,6 +317,12 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Hoe verschilt drinkwater in Duitsland, VK, Spanje en Scandinavië? Hardheid, nitraat, PFAS-hotspots en de EU Drinkwaterrichtlijn 2020/2184 per land Drinkwaterkwaliteit varieert enorm binnen Europa. Wie op vakantie gaat naar Spanje merkt de harde, kalkrijke smaak van het kraanwater.
 - [Fluoride in Nederlands drinkwater: feiten en filters](https://waterfilterplatform.nl/kennisbank/drinkwater-fluoride) (2026-01-07)
   > Wordt fluoride toegevoegd aan Nederlands drinkwater? Nee, al gestopt in 1973. Naturlijke fluoride, EU-norm 1,5 mg/L en welke filters het verwijderen Fluoride in drinkwater is een onderwerp dat regelmatig terugkeert in discussies over volksgezondheid, tandheelkunde en waterkwaliteit.
+- [Water en huid: speelt hard water een rol bij eczeem? (2026)](https://waterfilterplatform.nl/kennisbank/drinkwater-huid-eczeem) (2026-06-02)
+  > Er zijn aanwijzingen dat hard water de huidbarriere licht kan irriteren en mogelijk samenhangt met eczeem, maar het bewijs is niet eenduidig. Zacht of gefilterd water kan voor sommige mensen prettiger aanvoelen. Dit is algemene informatie; bij huidklachten is een (huis)arts of dermatoloog leidend.
+- [Drinkwater bij een verzwakt immuunsysteem: voorzorg (2026)](https://waterfilterplatform.nl/kennisbank/drinkwater-immuunsysteem) (2026-06-02)
+  > Nederlands kraanwater is wettelijk veilig en streng gecontroleerd, ook voor de meeste mensen met een verzwakt immuunsysteem. Bij sterk verminderde afweer kan extra voorzorg, zoals koken of een gecertificeerd filter, zinvol zijn. Dit is algemene informatie; overleg altijd met je behandelaar.
+- [Water innemen met medicijnen: waar let je op? (2026)](https://waterfilterplatform.nl/kennisbank/drinkwater-medicijngebruik) (2026-06-02)
+  > Medicijnen neem je doorgaans in met een ruim glas gewoon kraanwater, tenzij de bijsluiter iets anders zegt. Mineralen in kraanwater spelen zelden een rol; bij specifieke middelen kunnen interacties bestaan. Dit is algemene informatie; je arts of apotheker is altijd leidend.
 - [Drinkwater en het darmmicrobioom: wat zegt het onderzoek?](https://waterfilterplatform.nl/kennisbank/drinkwater-microbioom-darm) (2026-04-02)
   > Effect van chloor, microplastics en fluoride op het darmmicrobioom. Wat wetenschappelijk onderzoek zegt en tips voor probiotica-gebruikers Het darmmicrobioom - de gemeenschap van honderden miljarden bacteriën, schimmels en virussen die in je darm leven - staat de laatste jaren volop in de wetenschappelijke en publieke belangstelling.
 - [Mineralen in drinkwater: wat zit erin en waarom doet het ertoe?](https://waterfilterplatform.nl/kennisbank/drinkwater-mineralen) (2026-01-07)
@@ -535,6 +541,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Microplastics zijn aangetroffen in Nederlands drinkwater, maar in zeer lage concentraties. WHO (2022) concludeerde dat beschikbaar bewijs onvoldoende is om gezondheidsschade vast te stellen. Osmose verwijdert vrijwel alle deeltjes boven 0,001 micron.
 - [Microplastics en nanoplastics in het menselijk lichaam: wat zegt het onderzoek?](https://waterfilterplatform.nl/kennisbank/microplastics-menselijk-lichaam-onderzoek) (2026-05-17)
   > Microplastics en nanoplastics zijn aangetoond in menselijk bloed, longen, placenta en zelfs hartspiercellen. De gezondheidseffecten zijn nog onzeker en worden onderzocht. Wie blootstelling via drinkwater wil beperken, kan met omgekeerde osmose vrijwel alle deeltjes verwijderen.
+- [Mineraalarm water langdurig drinken: wat weten we? (2026)](https://waterfilterplatform.nl/kennisbank/mineraalarm-water-langdurig) (2026-06-02)
+  > Mineraalarm water (zoals osmose- of gedestilleerd water) bevat weinig calcium en magnesium. De WHO heeft hier aandacht voor gevraagd, maar in een normaal voedingspatroon komen mineralen vooral uit voeding, niet uit water. Remineralisatie kan smaak en mineraalinhoud herstellen. Dit is algemene informatie, geen medisch advies.
 - [Nierstenen en waterhardheid: helpt zacht water echt?](https://waterfilterplatform.nl/kennisbank/nierstenen-water-hardheid) (2026-05-18)
   > Calcium in hard water is geen bewezen oorzaak van nierstenen, en zacht of osmosewater biedt geen aangetoonde bescherming. Wat wel helpt is voldoende drinken (2-2,5 liter per dag) en dieetaanpassingen; overleg bij terugkerende stenen met een arts.
 - [Nitraat in drinkwater: risico's, normen en de beste oplossing (2026)](https://waterfilterplatform.nl/kennisbank/nitraat-drinkwater) (2026-04-20)
@@ -1110,7 +1118,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 419 kennisbank-artikelen.
+Totaal: 423 kennisbank-artikelen.
 
 ## Index
 
