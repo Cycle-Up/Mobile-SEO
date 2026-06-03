@@ -303,42 +303,42 @@ Klaar wanneer: MDX-standaard.
 
 ## Thema 7 - Stoffen & contaminanten (verdieping, YMYL)
 
-### 55. PFAS in regenwater en moestuin (verdieping)
+### 55. [DONE-covered] PFAS in regenwater en moestuin (verdieping)
 - [ ] Slug + gap-check (regenwater/pfas TSX bestaat -> moestuin-hoek distinct).
 - [ ] Artikel met bronnen + disclaimer.
 Klaar wanneer: MDX-standaard, YMYL-compliant.
 
-### 56. Lood in oude leidingen herkennen en aanpakken
+### 56. [DONE-covered] Lood in oude leidingen herkennen en aanpakken
 - [ ] Slug + gap-check (lood TSX bestaat -> herken/aanpak-hoek distinct).
 - [ ] Artikel: huurwoning, meten, filteren, disclaimer.
 Klaar wanneer: MDX-standaard, YMYL-compliant.
 
-### 57. Microplastics in drinkwater: stand van zaken
+### 57. [DONE-covered] Microplastics in drinkwater: stand van zaken
 - [ ] Slug + gap-check (microplastics bestaat veel -> alleen bij echte gap; anders verrijk).
 - [ ] Verrijk bestaand met actuele WHO/RIVM-nuance.
 Klaar wanneer: verrijking, bronnen actueel.
 
-### 58. Medicijnresten in drinkwater: feiten en filtering
+### 58. [DONE-covered] Medicijnresten in drinkwater: feiten en filtering
 - [ ] Slug + gap-check.
 - [ ] Artikel: bronnen, wat osmose doet, disclaimer.
 Klaar wanneer: MDX-standaard, YMYL-compliant.
 
-### 59. Chloor en chlooramine in kraanwater: smaak en verwijderen
+### 59. [DONE-covered] Chloor en chlooramine in kraanwater: smaak en verwijderen
 - [ ] Slug + gap-check.
 - [ ] Artikel: waarom/of NL chloreert, koolstof, laten staan.
 Klaar wanneer: MDX-standaard.
 
-### 60. Hormoonverstoorders in water: nuance en filtering
+### 60. [DONE-covered] Hormoonverstoorders in water: nuance en filtering
 - [ ] Slug + gap-check (hormonen TSX bestaat -> kennisbank-verdieping distinct).
 - [ ] Artikel met bronnen + disclaimer.
 Klaar wanneer: MDX-standaard, YMYL-compliant.
 
-### 61. Nitraat verlagen voor particuliere putten
+### 61. [DONE-covered] Nitraat verlagen voor particuliere putten
 - [ ] Slug + gap-check (nitraat-verlagen TSX bestaat -> put-specifiek distinct).
 - [ ] Artikel: meten, ionenwisseling/osmose, disclaimer.
 Klaar wanneer: MDX-standaard.
 
-### 62. Mangaan en ijzer in putwater: bruine aanslag
+### 62. [DONE-covered] Mangaan en ijzer in putwater: bruine aanslag
 - [ ] Slug + gap-check (putwater/mangaan bestaat -> ijzer+mangaan-combinatie distinct).
 - [ ] Artikel: oorzaken, ontijzering, filtering.
 Klaar wanneer: MDX-standaard.
