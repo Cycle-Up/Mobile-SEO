@@ -359,6 +359,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Gedeioniseerd water (demiwater) is water waaruit vrijwel alle opgeloste zouten en mineralen zijn verwijderd via ionenwisseling. Het lijkt op gedestilleerd water, maar wordt anders gemaakt en kan nog organische stoffen of micro-organismen bevatten.
 - [Gedestilleerd water: waarvoor gebruik je het en kun je het drinken?](https://waterfilterplatform.nl/kennisbank/gedestilleerd-water) (2026-05-18)
   > Gedestilleerd water is vrijwel zuiver H2O zonder mineralen, kalk of bacterien, gemaakt door verdamping en condensatie. Het is veilig te drinken maar smaakt vlak; voor dagelijks drinkwater thuis is omgekeerde osmose praktischer en goedkoper.
+- [Geleidbaarheid (EC) van water: wat is het en hoe meet je het? (2026)](https://waterfilterplatform.nl/kennisbank/geleidbaarheid-ec-water) (2026-06-02)
+  > De geleidbaarheid (EC) van water geeft aan hoe goed water elektriciteit geleidt, wat afhangt van de opgeloste zouten en mineralen. Hoe meer ionen, hoe hoger de EC. Het hangt direct samen met de TDS-waarde en wordt gemeten met een EC- of TDS-meter, uitgedrukt in microsiemens per centimeter.
 - [Glyfosaat in leidingwater Nederland: wat zegt het onderzoek en hoe filter je het?](https://waterfilterplatform.nl/kennisbank/glyfosaat-leidingwater-nederland) (2026-05-17)
   > Glyfosaat komt vooral via de Maas in beeld, maar Nederlands drinkwater voldoet aan de strenge norm van 0,1 ug/L per pesticide. Drinkwaterbedrijven verwijderen het bij de zuivering; thuis vangen actief kool en omgekeerde osmose eventuele resten af.
 - [Moet de horeca gratis kraanwater geven?](https://waterfilterplatform.nl/kennisbank/gratis-kraanwater-horeca) (2026-05-29)
@@ -555,6 +557,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Nitriet vs nitraat in drinkwater: NO2 vs NO3, bacteriële omzetting, methemoglobinemia bij zuigelingen, EU-norm 0,1 mg/L en wanneer osmose nodig is Nitriet in drinkwater is een minder bekende maar potentieel gevaarlijkere verontreiniging dan nitraat.
 - [Nitrieten en nitraten in drinkwater: risico's en filters](https://waterfilterplatform.nl/kennisbank/nitrieten-drinkwater) (2026-01-29)
   > Verschil tussen nitraat en nitriet in drinkwater, Nederlandse normen, gezondheidsrisico's voor baby's en zwangeren, en welke filters ze verwijderen Nitraten en nitrieten zijn stikstofverbindingen die van nature voorkomen in de bodem, maar waarvan de concentraties in drinkwater de afgelopen decennia zijn gestegen door intensieve landbouw.
+- [NSF/ANSI 42, 53 en 58: wat betekenen deze keurmerken? (2026)](https://waterfilterplatform.nl/kennisbank/nsf-ansi-keurmerken) (2026-06-02)
+  > NSF/ANSI-normen certificeren wat een waterfilter aantoonbaar doet. NSF/ANSI 42 gaat over smaak en esthetiek (zoals chloor), 53 over gezondheidsrelevante stoffen (zoals lood en bepaalde chemicalien), en 58 specifiek over omgekeerde-osmosesystemen. Een filter kan aan meerdere normen tegelijk voldoen.
 - [Omgekeerde osmose voor heel het huis: is het zinvol?](https://waterfilterplatform.nl/kennisbank/omgekeerde-osmose-huis) (2025-09-22)
   > Whole-house omgekeerde osmose vs point-of-use RO: kosten, installatie, waterverbruik en wanneer een whole-house systeem echt zinvol is Omgekeerde osmose is de meest effectieve methode om water te zuiveren: het verwijdert 95-99% van alle opgeloste stoffen, inclusief kalk, nitraten, PFAS, zware metalen, chloor en microplastics.
 - [Osmosefilter installeren: kosten, tijd en wat je nodig hebt](https://waterfilterplatform.nl/kennisbank/omgekeerde-osmose-installatie-kosten) (2026-04-09)
@@ -673,6 +677,10 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Osmosewater heeft een pH van 5,5-6,5. Wat betekent dat voor uw tanden, koffie en gezondheid? En hoe corrigeert u de zuurgraad met remineralisatie? Als u een omgekeerde osmose systeem installeert, ontdekt u al snel dat het geproduceerde water een lagere pH heeft dan gewoon kraanwater.
 - [Osmosefilter onderhoud checklist: filters wisselen, TDS meten, desinfecteren](https://waterfilterplatform.nl/kennisbank/osmosefilter-onderhoud-checklist) (2026-05-17)
   > Een osmosefilter heeft jaarlijks onderhoud nodig. Sediment- en koolfilters (pre-filters) wisselen elke 6-12 maanden. Het RO-membraan gaat 2-5 jaar mee. Meet maandelijks de TDS-ratio om membraankwaliteit te bewaken. Desinfectie van het systeem is aanbevolen bij lange stilstand of na vervanging.
+- [Osmotische druk: eenvoudig uitgelegd (2026)](https://waterfilterplatform.nl/kennisbank/osmotische-druk-uitleg) (2026-06-02)
+  > Osmose is de natuurlijke neiging van water om door een membraan naar de kant met meer opgeloste stoffen te stromen. De osmotische druk is de druk die dat aandrijft. Bij omgekeerde osmose pers je water met meer dan die druk de andere kant op, waardoor zuiver water achterblijft en de stoffen worden tegengehouden.
+- [Permeaat en concentraat: wat betekenen deze osmose-termen? (2026)](https://waterfilterplatform.nl/kennisbank/permeaat-concentraat) (2026-06-02)
+  > Permeaat is het gezuiverde water dat door het osmosemembraan komt; concentraat (ook afvalwater of brijn) is de reststroom met de tegengehouden stoffen. Samen vormen ze de twee uitgangen van elk osmosesysteem. De verhouding tussen beide bepaalt hoe efficient het systeem met water omgaat.
 - [PFAS in bloed Nederlanders: RIVM bloedwaardestudies 2025-2026](https://waterfilterplatform.nl/kennisbank/pfas-bloedwaarden-nederland) (2026-05-17)
   > Het RIVM meet PFAS in bloed van Nederlanders via de humane biomonitoringsstudies. De gemiddelde PFOS-bloedwaarden bij Nederlandse volwassenen liggen rond 3-5 ng/mL. Mensen in hotspot-gebieden (nabij vliegbases of industrieterreinen) hebben significant hogere waarden. Een osmosefilter thuis kan de blootstelling via drinkwater met 95-99% verminderen.
 - [PFAS in drinkwater: hoe erg is het & wat helpt?](https://waterfilterplatform.nl/kennisbank/pfas-drinkwater) (2026-02-11)
@@ -1130,7 +1138,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 429 kennisbank-artikelen.
+Totaal: 433 kennisbank-artikelen.
 
 ## Index
 

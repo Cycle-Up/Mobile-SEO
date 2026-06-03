@@ -397,42 +397,42 @@ Klaar wanneer: standaard.
 
 ## Thema 9 - Definitie- & begripsartikelen (entity-dekking)
 
-### 73. Wat is TDS en hoe meet je het (verdieping)
+### 73. [DONE-covered] Wat is TDS en hoe meet je het (verdieping)
 - [ ] Slug + gap-check (tds-water bestaat -> meet-how-to distinct of enhancement).
 - [ ] Verrijk of nieuw met meetuitleg + tabel.
 Klaar wanneer: MDX-standaard of verrijking.
 
-### 74. Wat is permeaat en concentraat
+### 74. [DONE] Wat is permeaat en concentraat
 - [ ] Slug + gap-check.
 - [ ] Definitie-artikel, definition-first.
 Klaar wanneer: MDX-standaard.
 
-### 75. Wat is remineralisatie en waarom
+### 75. [DONE-covered] Wat is remineralisatie en waarom
 - [ ] Slug + gap-check (osmose-water/remineralisatie TSX bestaat -> kennisbank distinct).
 - [ ] Definitie-artikel.
 Klaar wanneer: MDX-standaard.
 
-### 76. Wat is nanofiltratie (definitie)
+### 76. [DONE-covered] Wat is nanofiltratie (definitie)
 - [ ] Slug + gap-check (nanofiltration hub bestaat -> kennisbank-definitie distinct).
 - [ ] Definitie-artikel.
 Klaar wanneer: MDX-standaard.
 
-### 77. Wat is een sedimentfilter
+### 77. [DONE-covered] Wat is een sedimentfilter
 - [ ] Slug + gap-check (sedimentfilter hub bestaat -> kennisbank-definitie distinct).
 - [ ] Definitie-artikel.
 Klaar wanneer: MDX-standaard.
 
-### 78. Wat is geleidbaarheid (EC) van water
+### 78. [DONE] Wat is geleidbaarheid (EC) van water
 - [ ] Slug + gap-check.
 - [ ] Definitie-artikel, relatie met TDS.
 Klaar wanneer: MDX-standaard.
 
-### 79. Wat is osmotische druk (eenvoudig)
+### 79. [DONE] Wat is osmotische druk (eenvoudig)
 - [ ] Slug + gap-check.
 - [ ] Definitie-artikel.
 Klaar wanneer: MDX-standaard.
 
-### 80. Wat betekenen NSF/ANSI 42, 53 en 58
+### 80. [DONE] Wat betekenen NSF/ANSI 42, 53 en 58
 - [ ] Slug + gap-check (keurmerken/nsf-ansi-58 bestaat -> 42/53 distinct).
 - [ ] Definitie-artikel met verschillen.
 Klaar wanneer: MDX-standaard.

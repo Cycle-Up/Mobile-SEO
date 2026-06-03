@@ -19,6 +19,34 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'permeaat-concentraat',
+    titel: 'Permeaat en concentraat: wat betekenen deze osmose-termen?',
+    samenvatting: 'Het gezuiverde water en de reststroom van een osmosesysteem uitgelegd, met de verhouding en wat ermee gebeurt.',
+    categorie: 'Osmose',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'geleidbaarheid-ec-water',
+    titel: 'Geleidbaarheid (EC) van water: wat is het en hoe meet je het?',
+    samenvatting: 'Hoe EC samenhangt met TDS en mineralen, en hoe je het meet en interpreteert.',
+    categorie: 'Drinkwater',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'osmotische-druk-uitleg',
+    titel: 'Osmotische druk: eenvoudig uitgelegd',
+    samenvatting: 'Wat osmose en osmotische druk zijn, en waarom omgekeerde osmose omgekeerd heet.',
+    categorie: 'Osmose',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'nsf-ansi-keurmerken',
+    titel: 'NSF/ANSI 42, 53 en 58: wat betekenen deze keurmerken?',
+    samenvatting: 'Het verschil tussen smaak (42), gezondheid (53) en omgekeerde osmose (58), helder uitgelegd.',
+    categorie: 'Waterfilter',
+    datum: '2 juni 2026',
+  },
+  {
     slug: 'tijdelijke-blijvende-hardheid',
     titel: 'Tijdelijke en blijvende waterhardheid: wat is het verschil?',
     samenvatting: 'Het verschil tussen carbonaat- en niet-carbonaathardheid, en wat het betekent voor kalkaanslag en ontharden.',
