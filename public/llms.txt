@@ -38,6 +38,7 @@ Deze constructie wordt expliciet vermeld op /over-ons, /methodologie en in de fo
 - [Keurmerken en certificering](https://waterfilterplatform.nl/keurmerken): NSF, Kiwa, ACS, CE, WRAS
 - [Onderhoud](https://waterfilterplatform.nl/onderhoud): filters vervangen, storingen, kosten
 - [Zakelijke waterfilters](https://waterfilterplatform.nl/zakelijk): kantoor, horeca, industrie, VVE
+- Thema-hubs: /water-in-de-keuken, /water-en-gezondheid, /kalk-en-apparaten, /begrippen-en-technieken, /onderwerpen (complete index)
 
 ## Gemeente-specifieke pagina's (350 gemeenten)
 

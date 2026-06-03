@@ -1,15 +1,15 @@
 # SITE-HEALTH
 
 Automatisch gegenereerd door `scripts/site-health.mjs` (`node scripts/site-health.mjs`).
-Laatste run: 2026-06-02.
+Laatste run: 2026-06-03.
 
 | Metriek | Waarde | Status |
 |---|---|---|
-| Route-bestanden (app/**/page) | 592 | - |
-| Statische routes | 990 | - |
+| Route-bestanden (app/**/page) | 605 | - |
+| Statische routes | 1029 | - |
 | Dynamische route-patronen | 11 | - |
-| Kennisbank-artikelen (MDX) | 409 | - |
-| quickAnswer-dekking (AEO) | 409/409 | OK |
+| Kennisbank-artikelen (MDX) | 435 | - |
+| quickAnswer-dekking (AEO) | 435/435 | OK |
 | Dode interne links | 0 | OK |
 | Orphan-pagina's | 0 | OK |
 | Sitemap-gaten | 0 | OK |

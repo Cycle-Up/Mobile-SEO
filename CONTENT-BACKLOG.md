@@ -523,22 +523,22 @@ Klaar wanneer: check-content 100%; geen titel-length-overschrijding.
 
 ## Thema 12 - Nieuwe mini-clusters / hubs
 
-### 97. Hub: "Water in de keuken" (overzicht + spokes uit thema 1)
+### 97. [DONE] Hub: "Water in de keuken" (overzicht + spokes uit thema 1)
 - [ ] Hub-pagina met ItemList die de keuken-artikelen bundelt.
 - [ ] Spokes terug-linken naar de hub.
 Klaar wanneer: hub in sitemap+llms, ItemList valide, 0 orphans.
 
-### 98. Hub: "Water en gezondheid" (YMYL-overzicht + disclaimer)
+### 98. [DONE] Hub: "Water en gezondheid" (YMYL-overzicht + disclaimer)
 - [ ] Hub-pagina met disclaimer + ItemList naar gezondheidsartikelen.
 - [ ] Methodologie/bronnen-link prominent.
 Klaar wanneer: hub in sitemap+llms, YMYL-compliant, 0 orphans.
 
-### 99. Hub: "Kalk en apparaten" (overzicht uit thema 3)
+### 99. [DONE] Hub: "Kalk en apparaten" (overzicht uit thema 3)
 - [ ] Hub-pagina met ItemList naar apparaat/kalk-artikelen.
 - [ ] Cross-links naar waterontharder/waterhardheid.
 Klaar wanneer: hub in sitemap+llms, ItemList valide, 0 orphans.
 
-### 100. Hub: "Begrippen & technieken" (glossary + definitie-artikelen)
+### 100. [DONE] Hub: "Begrippen & technieken" (glossary + definitie-artikelen)
 - [ ] Hub die begrippenlijst + definitie-artikelen (thema 9) bundelt.
 - [ ] DefinedTermSet + ItemList, deeplinks naar #anchors.
 Klaar wanneer: hub in sitemap+llms, schema valide, 0 orphans.
