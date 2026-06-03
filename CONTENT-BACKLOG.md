@@ -271,32 +271,32 @@ Klaar wanneer: MDX-standaard.
 
 ## Thema 6 - Kokend & bruisend water kranen
 
-### 49. Kokend water kraan energieverbruik berekenen
+### 49. [DONE-covered] Kokend water kraan energieverbruik berekenen
 - [ ] Slug + gap-check (quooker-energieverbruik TSX bestaat -> algemeen/merk-neutraal distinct).
 - [ ] Artikel: standby-verbruik, kosten per jaar, besparing.
 Klaar wanneer: MDX-standaard.
 
-### 50. Kokend water kraan veiligheid met kinderen
+### 50. [DONE-covered] Kokend water kraan veiligheid met kinderen
 - [ ] Slug + gap-check (kokend-water-kraan/kinderveiligheid TSX bestaat -> kennisbank distinct of enhancement).
 - [ ] Artikel/verrijking met veiligheidstips + disclaimer.
 Klaar wanneer: MDX-standaard of verrijking.
 
-### 51. Bruisend water kraan vs SodaStream: kosten en gemak
+### 51. [DONE-covered] Bruisend water kraan vs SodaStream: kosten en gemak
 - [ ] Slug + gap-check (bruisend-water cluster + sodastream bestaan -> vergelijk-hoek; mogelijk TSX-vergelijking).
 - [ ] Vergelijking of artikel.
 Klaar wanneer: standaard, 0 orphans.
 
-### 52. CO2-cilinder bruiswater: verbruik en navullen
+### 52. [DONE-covered] CO2-cilinder bruiswater: verbruik en navullen
 - [ ] Slug + gap-check (sodastream-co2 bestaat -> algemeen distinct).
 - [ ] Artikel: verbruik, ruilen vs navullen, kosten.
 Klaar wanneer: MDX-standaard.
 
-### 53. Kokend water kraan installeren: aansluiting en eisen
+### 53. [DONE-covered] Kokend water kraan installeren: aansluiting en eisen
 - [ ] Slug + gap-check.
 - [ ] Artikel: stroom/water-eisen, onder-aanrecht, stappen.
 Klaar wanneer: MDX-standaard (eventueel HowTo).
 
-### 54. Kokend water kraan ontkalken en filter wisselen
+### 54. [DONE-covered] Kokend water kraan ontkalken en filter wisselen
 - [ ] Slug + gap-check (quooker-onderhoud/kalk TSX bestaan -> merk-neutraal distinct).
 - [ ] Artikel: onderhoudsroutine, filterpatroon.
 Klaar wanneer: MDX-standaard.
