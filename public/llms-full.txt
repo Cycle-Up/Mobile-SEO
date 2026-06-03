@@ -581,10 +581,14 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Osmose filter vergelijken op TDS-rejectie, flow rate, afvalwaterratio, filterkosten en garantie. Inclusief overzichtstabel en tips voor de beste keuze De markt voor omgekeerde osmose filters is de afgelopen jaren flink gegroeid. Naast klassieke 5-traps systemen onder het aanrecht zijn er nu compacte tafelmodellen, systemen met remineralisatie, en geïntegreerde 4-in-1 kranen die osmose combineren met kokend
 - [Vermogen en capaciteit osmosefilter: GPD uitgelegd](https://waterfilterplatform.nl/kennisbank/osmose-filter-vermogen) (2025-11-24)
   > Wat betekent 50 GPD of 100 GPD bij een osmosefilter? Leer hoe temperatuur, druk en TDS de werkelijke capaciteit beïnvloeden en bereken je behoefte Als je een omgekeerde osmose filter vergelijkt, zie je overal aanduidingen als '50 GPD', '75 GPD' of '400 GPD'.
+- [Osmosesysteem installeren onder het aanrecht: stappenplan (2026)](https://waterfilterplatform.nl/kennisbank/osmose-installeren-stappen) (2026-06-02)
+  > Een onder-aanrecht osmosesysteem sluit je aan op de koudwatertoevoer, een eigen kraan op het aanrecht en de afvoer voor het concentraat. Sluit de toevoer af, monteer de aftakkraan, plaats de unit, sluit de slangen aan en spoel het systeem door voor gebruik. Twijfel je, schakel een installateur in.
 - [Osmose membraan kopen: types, merken en prijzen (€20-100)](https://waterfilterplatform.nl/kennisbank/osmose-membraan-kopen) (2025-11-25)
   > Osmose membraan kopen: TFC, TFM of BW, GPD selectie, Filmtec vs Hydranautics vs CSM vs Vontron, compatibiliteit en wanneer direct of via dealer kopen Het membraan is het hart van elk omgekeerde osmose filter.
 - [Osmose membraan levensduur: hoe lang gaat het mee?](https://waterfilterplatform.nl/kennisbank/osmose-membraan-levensduur) (2025-12-01)
   > Een RO-membraan gaat 2-5 jaar mee. Leer welke factoren de levensduur verkorten, hoe je slijtage herkent en hoe je het membraan langer laat meegaan Het osmose membraan is het meest kritische en kostbaarste onderdeel van een omgekeerde-osmose systeem.
+- [Osmosesysteem sanitiseren: hygienisch houden (2026)](https://waterfilterplatform.nl/kennisbank/osmose-membraan-sanitiseren) (2026-06-02)
+  > Een osmosesysteem sanitiseer je het best tijdens de jaarlijkse filterwissel of na langere stilstand. Je spoelt de behuizingen en het voorraadvat met een toegestaan desinfectiemiddel volgens de handleiding, en spoelt daarna grondig na. Dit houdt het systeem hygienisch; het membraan zelf vervang je apart op tijd.
 - [Osmose membraan types: TFC, CTA en welke het beste is](https://waterfilterplatform.nl/kennisbank/osmose-membraan-types) (2025-09-23)
   > TFC of CTA membraan? Vergelijk zuiverheid, chloorbestendigheid, levensduur en kosten en ontdek welk type het beste past bij jouw situatie Het hart van elk omgekeerde osmose systeem is het membraan. Toch weten de meeste kopers niet dat er twee fundamenteel verschillende membraantypes bestaan: TFC (Thin Film Composite) en CTA (Cellulose Triacetate).
 - [Osmose membraan vervangen: wanneer en hoe doe je dat?](https://waterfilterplatform.nl/kennisbank/osmose-membraan-vervangen) (2025-12-01)
@@ -595,6 +599,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Uitleg van elk onderdeel van een omgekeerde osmose systeem: sedimentfilter, membraan, drukvat, TDS-meter, boosterpomp en meer. Met vervangtijden Een omgekeerde osmose systeem lijkt op het eerste gezicht een ingewikkeld geheel van buisjes, filters en reservoirs.
 - [Osmosesysteem vergelijken: 3, 5 of 6 traps?](https://waterfilterplatform.nl/kennisbank/osmose-systeem-vergelijken) (2025-12-04)
   > Verschil tussen 3-traps, 5-traps en 6-traps osmosesystemen uitgelegd. Wat doet elke fase, wanneer heb je extra trappen nodig en welke past bij jou? Als je op zoek bent naar een omgekeerde-osmose-systeem, loop je al snel tegen termen als '3-traps', '5-traps' of '6-traps' aan.
+- [Osmose voorraadvat: werking, druk en hygiene (2026)](https://waterfilterplatform.nl/kennisbank/osmose-voorraadvat) (2026-06-02)
+  > Het voorraadvat van een osmosesysteem slaat gefilterd water op onder druk, zodat er meteen water uit de kraan komt. Een luchtkamer met de juiste voordruk (vaak rond 0,4-0,6 bar leeg) duwt het water eruit. Tap het vat regelmatig leeg en houd het schoon om de waterkwaliteit goed te houden.
 - [Osmosewater vs bronwater: smaak, mineralen en kosten](https://waterfilterplatform.nl/kennisbank/osmose-vs-bronwater) (2025-12-04)
   > Osmosewater of bronwater: wat is beter? Vergelijk smaak, mineralengehalte, TDS, kosten per liter en milieu-impact. Welke keuze past bij jou? Osmosewater of bronwater: welk is gezonder, lekkerder en duurzamer? Het is een vraag die veel mensen stellen wanneer ze nadenken over hun drinkwaterkeuze.
 - [Osmosewater vs flessenwater: CO2-voetafdruk vergelijking](https://waterfilterplatform.nl/kennisbank/osmose-vs-flessenwater-milieu) (2026-05-17)
@@ -703,6 +709,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Houd spa- en jacuzziwater in balans met pH 7,2-7,6 en 1-3 mg/L chloor (of broom als alternatief). Door de hoge temperatuur groeien bacterien sneller, dus controleer vaker. Osmosewater als basis verbetert de waterkwaliteit en verlengt het filteronderhoud.
 - [Sportdrank zelf maken: welk water en welke basis? (2026)](https://waterfilterplatform.nl/kennisbank/sportdrank-zelf-maken) (2026-06-02)
   > Een sportdrank maak je eenvoudig zelf met water, een beetje suiker voor energie, een snuf zout en wat fruitsap voor smaak. Het water vormt de basis; gefilterd of zacht water geeft een frissere smaak. Dit is algemene informatie, geen medisch of voedingsadvies.
+- [Tankless vs tank-osmose: met of zonder voorraadvat? (2026)](https://waterfilterplatform.nl/kennisbank/tankless-vs-tank-osmose) (2026-06-02)
+  > Een osmosesysteem met voorraadvat slaat gefilterd water op zodat je meteen kunt tappen, maar neemt ruimte in en kent stilstaand water. Een tankless (doorstroom) systeem maakt water op het moment zelf, bespaart ruimte en voorkomt stilstand, maar vraagt meer membraancapaciteit en vaak meer druk.
 - [TDS meter gebruiken: water meten, interpreteren en waterfilter testen](https://waterfilterplatform.nl/kennisbank/tds-meter-gebruiken) (2026-05-01)
   > Een TDS-meter meet de totale opgeloste vaste stoffen in water in ppm (mg/L). Voor leidingwater is 100-500 ppm normaal. Osmosewater scoort 5-50 ppm. U kunt de rejectie van uw osmosefilter berekenen als: (1 - TDS_product / TDS_ingang) x 100%. Een goede meter kost 8-25 euro.
 - [TDS-meter kopen: hoe gebruik je het en wat meet je?](https://waterfilterplatform.nl/kennisbank/tds-meter-kopen) (2026-04-15)
@@ -1120,7 +1128,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 424 kennisbank-artikelen.
+Totaal: 428 kennisbank-artikelen.
 
 ## Index
 

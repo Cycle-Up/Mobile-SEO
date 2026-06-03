@@ -19,6 +19,34 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'osmose-installeren-stappen',
+    titel: 'Osmosesysteem installeren onder het aanrecht: stappenplan',
+    samenvatting: 'Stap voor stap aansluiten op de watertoevoer, kraan en afvoer, plus doorspoelen en lekcontrole.',
+    categorie: 'Osmose',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'osmose-voorraadvat',
+    titel: 'Osmose voorraadvat: werking, druk en hygiene',
+    samenvatting: 'Hoe het voorraadvat werkt, waarom de luchtdruk telt, en hoe je het schoon en gezond houdt.',
+    categorie: 'Osmose',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'osmose-membraan-sanitiseren',
+    titel: 'Osmosesysteem sanitiseren: hygienisch houden',
+    samenvatting: 'Waarom en hoe je een osmosesysteem periodiek desinfecteert, en het verschil met filters of membraan vervangen.',
+    categorie: 'Osmose',
+    datum: '2 juni 2026',
+  },
+  {
+    slug: 'tankless-vs-tank-osmose',
+    titel: 'Tankless vs tank-osmose: met of zonder voorraadvat?',
+    samenvatting: 'Snelheid, ruimte, hygiene, druk en kosten van osmosesystemen met voorraadvat versus doorstroom.',
+    categorie: 'Osmose',
+    datum: '2 juni 2026',
+  },
+  {
     slug: 'kranen-douchekop-ontkalken',
     titel: 'Kranen en douchekop ontkalken: zo doe je het',
     samenvatting: 'Hoe je kalkaanslag op kranen en douchekoppen veilig verwijdert met milde zuren en voorkomt met zacht water.',

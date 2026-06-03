@@ -177,52 +177,52 @@ Klaar wanneer: verrijking; check-content 100%.
 
 ## Thema 4 - Omgekeerde osmose verdieping
 
-### 31. Osmose afvalwater hergebruiken in huis en tuin
+### 31. [DONE-covered] Osmose afvalwater hergebruiken in huis en tuin
 - [ ] Slug + gap-check (afvalwater TSX bestaat -> hergebruik-hoek distinct).
 - [ ] Artikel: waar wel/niet voor gebruiken, zoutgehalte.
 Klaar wanneer: MDX-standaard.
 
-### 32. Osmose waterverbruik en -besparing (afvalwaterverhouding)
+### 32. [DONE-covered] Osmose waterverbruik en -besparing (afvalwaterverhouding)
 - [ ] Slug + gap-check.
 - [ ] Artikel: 1:1 vs 1:3, boosterpomp, kostenplaatje.
 Klaar wanneer: MDX-standaard.
 
-### 33. Osmose en waterdruk: minimale druk en oplossingen
+### 33. [DONE-covered] Osmose en waterdruk: minimale druk en oplossingen
 - [ ] Slug + gap-check (boosterpomp TSX bestaat -> druk-uitleg distinct).
 - [ ] Artikel: drukbereik, symptomen lage druk, oplossingen.
 Klaar wanneer: MDX-standaard.
 
-### 34. Osmosewater pH en zuurgraad uitgelegd
+### 34. [DONE-covered] Osmosewater pH en zuurgraad uitgelegd
 - [ ] Slug + gap-check (osmose-water/ph TSX bestaat -> kennisbank-verdieping of enhancement).
 - [ ] Verrijk of nieuw met meetuitleg.
 Klaar wanneer: MDX-standaard of verrijking.
 
-### 35. Osmose installeren: onder aanrecht stap-voor-stap (HowTo)
+### 35. [DONE] Osmose installeren: onder aanrecht stap-voor-stap (HowTo)
 - [ ] Slug + gap-check.
 - [ ] Artikel met genummerde stappen -> HowTo-schema (ware representatie).
 Klaar wanneer: MDX-standaard, HowTo valideert (check-schema 0).
 
-### 36. Osmose voorraadvat: werking, druk en hygiene
+### 36. [DONE] Osmose voorraadvat: werking, druk en hygiene
 - [ ] Slug + gap-check.
 - [ ] Artikel: tankdruk, doorstroming, reinigen.
 Klaar wanneer: MDX-standaard.
 
-### 37. Osmosemembraan levensduur en sanitiseren
+### 37. [DONE] Osmosemembraan levensduur en sanitiseren
 - [ ] Slug + gap-check (osmose-filter-vervangen onderhoud bestaat -> sanitiseren distinct).
 - [ ] Artikel: levensduur, spoelen, desinfecteren.
 Klaar wanneer: MDX-standaard.
 
-### 38. Tankless vs tank-osmose: verschil en keuze
+### 38. [DONE] Tankless vs tank-osmose: verschil en keuze
 - [ ] Slug + gap-check.
 - [ ] Artikel: doorstroomsysteem vs voorraadvat, voor/nadelen.
 Klaar wanneer: MDX-standaard.
 
-### 39. Osmose op kantoor/horeca: capaciteit en hygiene
+### 39. [DONE-covered] Osmose op kantoor/horeca: capaciteit en hygiene
 - [ ] Slug + gap-check (zakelijk cluster bestaat -> osmose-specifiek distinct).
 - [ ] Artikel: capaciteit, legionella-zorg, onderhoud.
 Klaar wanneer: MDX-standaard.
 
-### 40. Stroomloze osmose (The Source-type) uitgelegd
+### 40. [DONE-covered] Stroomloze osmose (The Source-type) uitgelegd
 - [ ] Slug + gap-check (the-source TSX bestaat -> techniek-uitleg distinct of enhancement).
 - [ ] Artikel/verrijking over werking zonder stroom.
 Klaar wanneer: MDX-standaard of verrijking.
