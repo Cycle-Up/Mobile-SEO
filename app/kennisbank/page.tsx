@@ -19,6 +19,13 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: 'kranen-douchekop-ontkalken',
+    titel: 'Kranen en douchekop ontkalken: zo doe je het',
+    samenvatting: 'Hoe je kalkaanslag op kranen en douchekoppen veilig verwijdert met milde zuren en voorkomt met zacht water.',
+    categorie: 'Waterontharder',
+    datum: '2 juni 2026',
+  },
+  {
     slug: 'drinkwater-immuunsysteem',
     titel: 'Drinkwater bij een verzwakt immuunsysteem: voorzorg',
     samenvatting: 'Feitelijke uitleg over kraanwaterveiligheid, koken en filteren bij verminderde afweer, met bronnen en arts-advies.',

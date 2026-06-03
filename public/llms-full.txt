@@ -513,6 +513,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Chloor in kraanwater kan de wilde gist en bacterien in een zuurdesem-starter remmen, vooral bij het opstarten. Ontchloor je water door het te laten staan of te filteren; een actieve starter is daarna minder gevoelig.
 - [Kraanwater tijdens zwangerschap: veilig en praktisch advies](https://waterfilterplatform.nl/kennisbank/kraanwater-zwangerschap) (2026-01-23)
   > Is kraanwater veilig tijdens de zwangerschap? Lood, PFAS en chloor uitgelegd voor zwangere vrouwen. RIVM-advies en praktische tips per trimester Zodra je zwanger bent, kijk je met andere ogen naar alles wat je binnenkrijgt. Voeding, supplementen, omgevingsfactoren - het wordt allemaal bewuster afgewogen.
+- [Kranen en douchekop ontkalken: zo doe je het (2026)](https://waterfilterplatform.nl/kennisbank/kranen-douchekop-ontkalken) (2026-06-02)
+  > Kalk op kranen en douchekoppen verwijder je met een mild zuur zoals verdunde schoonmaakazijn of citroenzuur. Laat de douchekop een uur weken of bind een zakje azijn om de kraan. Met zacht of gefilterd water komt de aanslag veel langzamer terug.
 - [Douchen met leidingwater: chloor en TTHM's voor gezondheid](https://waterfilterplatform.nl/kennisbank/leidingwater-douchen-gezond) (2026-04-08)
   > Chloor inademen tijdens douchen is 1,5-6x hoger dan via drinken. TTHMs via huid en inhalatie: feiten, risico's en hoe een douchefilter helpt We denken bij waterfilters vaak aan drinkwater. Logisch, want water dat je drinkt komt direct in je lichaam.
 - [Leidingwaterkwaliteit verbeteren: 5 maatregelen voor thuis](https://waterfilterplatform.nl/kennisbank/leidingwater-kwaliteit-verbeteren) (2026-05-16)
@@ -1118,7 +1120,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 423 kennisbank-artikelen.
+Totaal: 424 kennisbank-artikelen.
 
 ## Index
 

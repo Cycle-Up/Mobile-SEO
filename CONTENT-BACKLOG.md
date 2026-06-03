@@ -125,52 +125,52 @@ Klaar wanneer: MDX-standaard, YMYL-compliant.
 
 ## Thema 3 - Huishoudelijke apparaten & kalk
 
-### 21. Kalk in de vaatwasser: oorzaken en oplossingen
+### 21. [DONE-covered] Kalk in de vaatwasser: oorzaken en oplossingen
 - [ ] Slug + gap-check.
 - [ ] Artikel: regenereerzout, glansspoelmiddel, hardheid instellen.
 Klaar wanneer: MDX-standaard.
 
-### 22. Kalk in de wasmachine: gevolgen en preventie
+### 22. [DONE-covered] Kalk in de wasmachine: gevolgen en preventie
 - [ ] Slug + gap-check.
 - [ ] Artikel: verwarmingselement, wasmiddeldosering, ontharder.
 Klaar wanneer: MDX-standaard.
 
-### 23. Kalk op kranen en douchekop verwijderen
+### 23. [DONE] Kalk op kranen en douchekop verwijderen
 - [ ] Slug + gap-check.
 - [ ] Artikel: methodes, preventie met zacht water.
 Klaar wanneer: MDX-standaard.
 
-### 24. Kalk in de cv-ketel en warmtewisselaar
+### 24. [DONE-covered] Kalk in de cv-ketel en warmtewisselaar
 - [ ] Slug + gap-check.
 - [ ] Artikel: rendementsverlies, vulwater, onderhoud.
 Klaar wanneer: MDX-standaard.
 
-### 25. Waterkoker ontkalken: hoe vaak en waarmee
+### 25. [DONE-covered] Waterkoker ontkalken: hoe vaak en waarmee
 - [ ] Slug + gap-check.
 - [ ] Artikel: frequentie per hardheid, azijn/citroenzuur, preventie.
 Klaar wanneer: MDX-standaard.
 
-### 26. Strijkijzer en stoomstation: kalk en welk water
+### 26. [DONE-covered] Strijkijzer en stoomstation: kalk en welk water
 - [ ] Slug + gap-check (waterfilter-strijkijzer-stoom bestaat -> enhancement of distinct hoek).
 - [ ] Verrijk of nieuw met onderhoudshoek.
 Klaar wanneer: MDX-standaard of verrijking.
 
-### 27. Luchtbevochtiger: welk water en witte stofneerslag
+### 27. [DONE-covered] Luchtbevochtiger: welk water en witte stofneerslag
 - [ ] Slug + gap-check.
 - [ ] Artikel: mineralen en witte stof, gedemineraliseerd water.
 Klaar wanneer: MDX-standaard.
 
-### 28. Aquarium en osmosewater: zoetwater bijvullen (verdieping)
+### 28. [DONE-covered] Aquarium en osmosewater: zoetwater bijvullen (verdieping)
 - [ ] Slug + gap-check (osmose-water-aquarium* bestaat -> distinct bijvul-hoek of enhancement).
 - [ ] Verrijk of nieuw.
 Klaar wanneer: MDX-standaard of verrijking.
 
-### 29. Koffiemachine met bonen: ontkalken en filterpatroon
+### 29. [DONE-covered] Koffiemachine met bonen: ontkalken en filterpatroon
 - [ ] Slug + gap-check (kalk-koffiemachine bestaat -> onderhoud/patroon-hoek distinct).
 - [ ] Artikel/verrijking onderhoud + waterfilterpatroon.
 Klaar wanneer: MDX-standaard of verrijking.
 
-### 30. Stoomoven en combisteamer: ontkalken + welk water (verdieping)
+### 30. [DONE-covered] Stoomoven en combisteamer: ontkalken + welk water (verdieping)
 - [ ] Slug + gap-check (waterfilter-stoomoven bestaat -> ontkalkings-hoek).
 - [ ] Verrijk bestaand met onderhoudssectie.
 Klaar wanneer: verrijking; check-content 100%.
