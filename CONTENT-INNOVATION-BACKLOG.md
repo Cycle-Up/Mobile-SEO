@@ -208,42 +208,42 @@ Klaar wanneer: hub in sitemap+llms, 0 orphans.
 
 ## Thema E - Interactieve beslisbomen / keuzehulp-uitbreiding
 
-### 37. Beslisboom: "Welke waterfilter past bij mij?"
+### 37. [DONE] Beslisboom: "Welke waterfilter past bij mij?"
 - [ ] Client-stappenflow (doel -> situatie -> advies) met server-gerenderde fallback-tekst.
 - [ ] JSON-LD + links naar eindbestemmingen; geen dataverzameling.
 Klaar wanneer: flow werkt, fallback leesbaar zonder JS, audit 0.
 
-### 38. Beslisboom: "Heb ik omgekeerde osmose nodig?"
+### 38. [DONE] Beslisboom: "Heb ik omgekeerde osmose nodig?"
 - [ ] Vragen (PFAS/lood/nitraat/smaak) -> ja/nee-advies + uitleg.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: flow + fallback; build groen.
 
-### 39. Beslisboom: "Welke waterontharder past bij mij?"
+### 39. [DONE] Beslisboom: "Welke waterontharder past bij mij?"
 - [ ] Vragen (hardheid/gezin/zout-bezwaar) -> advies.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: flow + fallback.
 
-### 40. Beslisboom: "Heb ik een kokend water kraan nodig?"
+### 40. [DONE] Beslisboom: "Heb ik een kokend water kraan nodig?"
 - [ ] Vragen (gebruik/budget/ruimte) -> advies + link.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: flow + fallback.
 
-### 41. Beslisboom: "Filteren, ontharden of allebei?"
+### 41. [DONE] Beslisboom: "Filteren, ontharden of allebei?"
 - [ ] Onderscheidt doelen (drinkwater vs kalk) -> advies.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: flow + fallback.
 
-### 42. Beslisboom: "Welk filter voor mijn put-/bronwater?"
+### 42. [DONE] Beslisboom: "Welk filter voor mijn put-/bronwater?"
 - [ ] Vragen (bacterien/nitraat/ijzer) -> UV/osmose/ontijzering-advies.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: flow + fallback, YMYL-zorgvuldig.
 
-### 43. Beslisboom: "Welke filter voor onderweg/op reis?"
+### 43. [DONE] Beslisboom: "Welke filter voor onderweg/op reis?"
 - [ ] Vragen (bestemming/duur) -> reisfilter-advies.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: flow + fallback.
 
-### 44. Beslisbomen-hub (/beslishulp): index + uitleg methodologie
+### 44. [DONE] Beslisbomen-hub (/beslishulp): index + uitleg methodologie
 - [ ] Hub met ItemList; methodologie-link; inbound links (0 orphans).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: hub in sitemap+llms, 0 orphans.

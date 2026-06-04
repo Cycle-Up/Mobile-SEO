@@ -171,6 +171,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - **/babywater**: https://waterfilterplatform.nl/babywater, https://waterfilterplatform.nl/babywater/osmose, https://waterfilterplatform.nl/babywater/welk-water
 - **/begrippen-en-technieken**: https://waterfilterplatform.nl/begrippen-en-technieken
 - **/begrippenlijst**: https://waterfilterplatform.nl/begrippenlijst
+- **/beslishulp**: https://waterfilterplatform.nl/beslishulp, https://waterfilterplatform.nl/beslishulp/filteren-of-ontharden, https://waterfilterplatform.nl/beslishulp/kokend-kraan-nodig, https://waterfilterplatform.nl/beslishulp/osmose-nodig, https://waterfilterplatform.nl/beslishulp/putwater-filter, https://waterfilterplatform.nl/beslishulp/reisfilter, https://waterfilterplatform.nl/beslishulp/welke-waterfilter, https://waterfilterplatform.nl/beslishulp/welke-waterontharder
 - **/beste-filterkan-2026**: https://waterfilterplatform.nl/beste-filterkan-2026
 - **/beste-kokend-water-kraan-2026**: https://waterfilterplatform.nl/beste-kokend-water-kraan-2026
 - **/beste-osmosefilter-2026**: https://waterfilterplatform.nl/beste-osmosefilter-2026
