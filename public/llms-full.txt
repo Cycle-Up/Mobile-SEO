@@ -165,6 +165,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - Home: https://waterfilterplatform.nl/
 - **/4-in-1-kraan**: https://waterfilterplatform.nl/4-in-1-kraan
 - **/alkalisch-water**: https://waterfilterplatform.nl/alkalisch-water, https://waterfilterplatform.nl/alkalisch-water/gezondheid, https://waterfilterplatform.nl/alkalisch-water/ionisator, https://waterfilterplatform.nl/alkalisch-water/vs-osmose
+- **/antwoorden**: https://waterfilterplatform.nl/antwoorden, https://waterfilterplatform.nl/antwoorden/beste-manier-tegen-kalk, https://waterfilterplatform.nl/antwoorden/chloor-in-kraanwater, https://waterfilterplatform.nl/antwoorden/gefilterd-water-beter, https://waterfilterplatform.nl/antwoorden/hoe-vaak-filter-vervangen, https://waterfilterplatform.nl/antwoorden/is-kraanwater-veilig, https://waterfilterplatform.nl/antwoorden/is-osmosewater-ongezond, https://waterfilterplatform.nl/antwoorden/kosten-osmosesysteem-per-jaar, https://waterfilterplatform.nl/antwoorden/moet-ik-kraanwater-filteren, https://waterfilterplatform.nl/antwoorden/verwijdert-osmose-pfas
 - **/aquacell-waterontharder**: https://waterfilterplatform.nl/aquacell-waterontharder
 - **/aquatru-alternatief**: https://waterfilterplatform.nl/aquatru-alternatief
 - **/babywater**: https://waterfilterplatform.nl/babywater, https://waterfilterplatform.nl/babywater/osmose, https://waterfilterplatform.nl/babywater/welk-water

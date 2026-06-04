@@ -114,52 +114,52 @@ Klaar wanneer: JSON valide + schema; audit 0.
 
 ## Thema C - AEO-antwoordkaarten (canonieke fact-sheets, QAPage)
 
-### 19. Antwoordkaart: "Is Nederlands kraanwater veilig om te drinken?"
+### 19. [DONE] Antwoordkaart: "Is Nederlands kraanwater veilig om te drinken?"
 - [ ] Pagina met 1 dominante vraag + direct 40-60w antwoord + bron; QAPage-schema.
 - [ ] Korte onderbouwing + interne links naar diepte.
 Klaar wanneer: QAPage valideert (check-schema), audit 0, in llms.
 
-### 20. Antwoordkaart: "Verwijdert omgekeerde osmose PFAS?"
+### 20. [DONE] Antwoordkaart: "Verwijdert omgekeerde osmose PFAS?"
 - [ ] Dominante vraag + direct antwoord + bron; QAPage-schema.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: QAPage valide; build groen.
 
-### 21. Antwoordkaart: "Moet ik mijn kraanwater filteren in Nederland?"
+### 21. [DONE] Antwoordkaart: "Moet ik mijn kraanwater filteren in Nederland?"
 - [ ] Vraag + genuanceerd antwoord + verwijzing; QAPage-schema.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: QAPage valide.
 
-### 22. Antwoordkaart: "Is osmosewater ongezond?"
+### 22. [DONE] Antwoordkaart: "Is osmosewater ongezond?"
 - [ ] Vraag + genuanceerd YMYL-antwoord + disclaimer + bron; QAPage-schema.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: QAPage valide, YMYL-zorgvuldig.
 
-### 23. Antwoordkaart: "Hoe vaak moet ik mijn waterfilter vervangen?"
+### 23. [DONE] Antwoordkaart: "Hoe vaak moet ik mijn waterfilter vervangen?"
 - [ ] Vraag + beknopt antwoord met intervallen; QAPage-schema.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: QAPage valide.
 
-### 24. Antwoordkaart: "Wat is de beste manier om kalk tegen te gaan?"
+### 24. [DONE] Antwoordkaart: "Wat is de beste manier om kalk tegen te gaan?"
 - [ ] Vraag + antwoord (ontharder vs osmose) + links; QAPage-schema.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: QAPage valide.
 
-### 25. Antwoordkaart: "Zit er chloor in Nederlands kraanwater?"
+### 25. [DONE] Antwoordkaart: "Zit er chloor in Nederlands kraanwater?"
 - [ ] Vraag + feitelijk antwoord + bron; QAPage-schema.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: QAPage valide.
 
-### 26. Antwoordkaart: "Is gefilterd water beter dan kraanwater?"
+### 26. [DONE] Antwoordkaart: "Is gefilterd water beter dan kraanwater?"
 - [ ] Vraag + genuanceerd antwoord; QAPage-schema.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: QAPage valide.
 
-### 27. Antwoordkaart: "Hoeveel kost een osmosesysteem per jaar?"
+### 27. [DONE] Antwoordkaart: "Hoeveel kost een osmosesysteem per jaar?"
 - [ ] Vraag + indicatief kostenantwoord + link naar TCO-calculator (item 2/3).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: QAPage valide; interne link naar tool.
 
-### 28. Antwoordkaart-hub (/antwoorden): index van alle antwoordkaarten
+### 28. [DONE] Antwoordkaart-hub (/antwoorden): index van alle antwoordkaarten
 - [ ] Hubpagina met ItemList naar alle kaarten; in footer/onderwerpen voor 0 orphans.
 - [ ] Linkt elke antwoordkaart (inbound link) zodat geen orphan ontstaat.
 Klaar wanneer: hub in sitemap+llms, ItemList valide, 0 orphans.
