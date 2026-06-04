@@ -460,84 +460,84 @@ Klaar wanneer: hub in sitemap+llms, 0 orphans.
 
 ## Thema K - Entity-factsheets / glossary-as-data
 
-### 85. Entity-factsheet PFAS (definitie + kerncijfers + QAPage + DefinedTerm)
+### 85. [DONE] Entity-factsheet PFAS (definitie + kerncijfers + QAPage + DefinedTerm)
 - [ ] Compacte factsheet met canonieke definitie, norm (lib/facts), 3 kernvragen (QAPage), bron.
 - [ ] sameAs naar interne canonieke pagina; link vanuit begrippenlijst-anchor.
 Klaar wanneer: schema valide; cijfers consistent; audit 0.
 
-### 86. Entity-factsheet Omgekeerde osmose
+### 86. [DONE] Entity-factsheet Omgekeerde osmose
 - [ ] Factsheet + kernvragen + DefinedTerm.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: schema valide.
 
-### 87. Entity-factsheet Waterhardheid (dH)
+### 87. [DONE] Entity-factsheet Waterhardheid (dH)
 - [ ] Factsheet + klassegrenzen + kernvragen.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: schema valide.
 
-### 88. Entity-factsheet Lood in drinkwater
+### 88. [DONE] Entity-factsheet Lood in drinkwater
 - [ ] Factsheet + norm + YMYL-nuance + bron.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: schema valide, YMYL.
 
-### 89. Entity-factsheet Nitraat
+### 89. [DONE] Entity-factsheet Nitraat
 - [ ] Factsheet + norm + bron.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: schema valide.
 
-### 90. Entity-factsheet Microplastics
+### 90. [DONE] Entity-factsheet Microplastics
 - [ ] Factsheet + stand wetenschap + bron.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: schema valide.
 
-### 91. Entity-factsheet Actief kool
+### 91. [DONE] Entity-factsheet Actief kool
 - [ ] Factsheet + wat het wel/niet doet.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: schema valide.
 
-### 92. Entity-factsheets-hub (/factsheets): index + DefinedTermSet
+### 92. [DONE] Entity-factsheets-hub (/factsheets): index + DefinedTermSet
 - [ ] Hub met ItemList + DefinedTermSet; inbound links (0 orphans).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: hub in sitemap+llms, schema valide, 0 orphans.
 
 ## Thema L - Conversational/voice Q&A-clusters (PAA-hubs)
 
-### 93. "Alles over PFAS in 10 vragen" (vraag-clusterhub)
+### 93. [DONE] "Alles over PFAS in 10 vragen" (vraag-clusterhub)
 - [ ] Hub met 10 korte Q&A's (FAQPage) + links naar diepteartikelen; voice-vriendelijk.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: FAQPage valide, audit 0, in llms.
 
-### 94. "Alles over omgekeerde osmose in 10 vragen"
+### 94. [DONE] "Alles over omgekeerde osmose in 10 vragen"
 - [ ] Vraag-cluster FAQPage + links.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: FAQPage valide.
 
-### 95. "Alles over waterontharders in 10 vragen"
+### 95. [DONE] "Alles over waterontharders in 10 vragen"
 - [ ] Vraag-cluster FAQPage + links.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: FAQPage valide.
 
-### 96. "Alles over kalk in 10 vragen"
+### 96. [DONE] "Alles over kalk in 10 vragen"
 - [ ] Vraag-cluster FAQPage + links.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: FAQPage valide.
 
-### 97. "Alles over kokend water kranen in 10 vragen"
+### 97. [DONE] "Alles over kokend water kranen in 10 vragen"
 - [ ] Vraag-cluster FAQPage + links.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: FAQPage valide.
 
-### 98. "Alles over lood in drinkwater in 10 vragen"
+### 98. [DONE] "Alles over lood in drinkwater in 10 vragen"
 - [ ] Vraag-cluster FAQPage + links; YMYL-nuance.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: FAQPage valide.
 
-### 99. "Alles over kraanwater drinken in 10 vragen"
+### 99. [DONE] "Alles over kraanwater drinken in 10 vragen"
 - [ ] Vraag-cluster FAQPage + links.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: FAQPage valide.
 
-### 100. Vraag-clusters-hub (/vragen): index van alle Q&A-clusters
+### 100. [DONE] Vraag-clusters-hub (/vragen): index van alle Q&A-clusters
 - [ ] Hub met ItemList; inbound links (0 orphans); link vanuit /onderwerpen + footer.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: hub in sitemap+llms, 0 orphans.

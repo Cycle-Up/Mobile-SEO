@@ -41,6 +41,8 @@ Deze constructie wordt expliciet vermeld op /over-ons, /methodologie en in de fo
 - Thema-hubs: /water-in-de-keuken, /water-en-gezondheid, /kalk-en-apparaten, /begrippen-en-technieken, /onderwerpen (complete index)
 - Watergidsen per situatie (/gidsen): student, gezin, horeca, camper, B&B, kantoor, sportschool, kapsalon, moestuin
 - Rapporten en trends (/rapporten): staat van drinkwater, PFAS, normwijzigingen, filtertrends, verzilting
+- Factsheets (/factsheets): compacte kernbegrippen met definitie, kerncijfers en kernvragen: PFAS, omgekeerde osmose, waterhardheid, lood, nitraat, microplastics, actief kool
+- Vraag-clusters (/vragen): alles-over-thema in tien vragen: PFAS, omgekeerde osmose, waterontharders, kalk, kokend-water-kranen, lood, kraanwater drinken
 - Uitleg en matrices (/uitleg): filtertechnieken, poriegrootte, normen-tijdlijn, verontreinigingen, hardheidsklassen, kosten
 - Checklists (/checklists): onderhoud, aankoop en waterkwaliteit beoordelen
 - Beslishulp (/beslishulp): interactieve beslisbomen naar de juiste waterkeuze
