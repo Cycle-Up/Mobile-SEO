@@ -39,6 +39,8 @@ Deze constructie wordt expliciet vermeld op /over-ons, /methodologie en in de fo
 - [Onderhoud](https://waterfilterplatform.nl/onderhoud): filters vervangen, storingen, kosten
 - [Zakelijke waterfilters](https://waterfilterplatform.nl/zakelijk): kantoor, horeca, industrie, VVE
 - Thema-hubs: /water-in-de-keuken, /water-en-gezondheid, /kalk-en-apparaten, /begrippen-en-technieken, /onderwerpen (complete index)
+- Watergidsen per situatie (/gidsen): student, gezin, horeca, camper, B&B, kantoor, sportschool, kapsalon, moestuin
+- Rapporten en trends (/rapporten): staat van drinkwater, PFAS, normwijzigingen, filtertrends, verzilting
 - Uitleg en matrices (/uitleg): filtertechnieken, poriegrootte, normen-tijdlijn, verontreinigingen, hardheidsklassen, kosten
 - Checklists (/checklists): onderhoud, aankoop en waterkwaliteit beoordelen
 - Beslishulp (/beslishulp): interactieve beslisbomen naar de juiste waterkeuze

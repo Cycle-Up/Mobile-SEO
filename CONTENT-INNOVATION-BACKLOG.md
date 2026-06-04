@@ -334,126 +334,126 @@ Klaar wanneer: hub in sitemap+llms, 0 orphans.
 
 ## Thema H - "Wat betekent jouw getal" explainers
 
-### 61. Lees je waterkwaliteitsrapport van het drinkwaterbedrijf
+### 61. [DONE] Lees je waterkwaliteitsrapport van het drinkwaterbedrijf
 - [ ] Uitleg van de typische parameters/getallen; YMYL-nuance + bron.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX-standaard.
 
-### 62. Wat betekent jouw dH-waarde?
+### 62. [DONE] Wat betekent jouw dH-waarde?
 - [ ] Interpretatie per dH-bereik + advies; link naar omrekener (item 5).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX-standaard.
 
-### 63. Wat betekent jouw TDS-meting?
+### 63. [DONE] Wat betekent jouw TDS-meting?
 - [ ] Interpretatie per TDS-bereik + nuance (geen veiligheidsoordeel).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX-standaard.
 
-### 64. Hoe lees je een waterfilter-teststrip?
+### 64. [DONE] Hoe lees je een waterfilter-teststrip?
 - [ ] Stapuitleg + interpretatie + beperkingen; YMYL-nuance.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX-standaard.
 
-### 65. Wat betekent een PFAS-meetwaarde in microgram/L?
+### 65. [DONE] Wat betekent een PFAS-meetwaarde in microgram/L?
 - [ ] Uitleg eenheid + norm-context (lib/facts) + bron; YMYL.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: cijfers consistent (check-facts).
 
-### 66. Wat betekent de afvalwaterverhouding (1:1, 1:3)?
+### 66. [DONE] Wat betekent de afvalwaterverhouding (1:1, 1:3)?
 - [ ] Uitleg + impact op verbruik; link naar calculator (item 2).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX-standaard.
 
-### 67. Wat betekent NSF/ANSI op de verpakking?
+### 67. [DONE] Wat betekent NSF/ANSI op de verpakking?
 - [ ] Uitleg per nummer; link naar keurmerken-register (item 14).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX-standaard.
 
-### 68. Wat betekent de pH van je (osmose)water?
+### 68. [DONE] Wat betekent de pH van je (osmose)water?
 - [ ] Uitleg pH-bereik + remineralisatie; YMYL-nuance.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX-standaard.
 
 ## Thema I - Persona-/scenario-gidsen (complete, gestructureerde gidsen)
 
-### 69. Complete watergids voor studenten/kamerbewoners
+### 69. [DONE] Complete watergids voor studenten/kamerbewoners
 - [ ] Scenario-gids (huur, budget, geen installatie) met advies + interne links.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX/TSX-standaard, kannibalisatie-gecheckt.
 
-### 70. Complete watergids voor een jong gezin
+### 70. [DONE] Complete watergids voor een jong gezin
 - [ ] Scenario-gids (baby, veiligheid, kosten) + YMYL-nuance.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: standaard.
 
-### 71. Complete watergids voor een horecazaak
+### 71. [DONE] Complete watergids voor een horecazaak
 - [ ] Scenario-gids (capaciteit, kalk, smaak, regels gratis kraanwater).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: standaard.
 
-### 72. Complete watergids voor camper/boot
+### 72. [DONE] Complete watergids voor camper/boot
 - [ ] Scenario-gids (tank, hygiene, reisfilter).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: standaard.
 
-### 73. Complete watergids voor B&B/vakantiehuis
+### 73. [DONE] Complete watergids voor B&B/vakantiehuis
 - [ ] Scenario-gids (gasten, hardheid, onderhoud).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: standaard.
 
-### 74. Complete watergids voor een kantoor
+### 74. [DONE] Complete watergids voor een kantoor
 - [ ] Scenario-gids (waterpunt, legionella-zorg, kosten).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: standaard.
 
-### 75. Complete watergids voor een sportschool/sportclub
+### 75. [DONE] Complete watergids voor een sportschool/sportclub
 - [ ] Scenario-gids (tappunten, hydratatie, hygiene).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: standaard.
 
-### 76. Complete watergids voor een kapsalon
+### 76. [DONE] Complete watergids voor een kapsalon
 - [ ] Scenario-gids (hard water, apparatuur, kalk).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: standaard.
 
-### 77. Complete watergids voor de moestuin/kas
+### 77. [DONE] Complete watergids voor de moestuin/kas
 - [ ] Scenario-gids (hardheid, regenwater, PFAS-nuance).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: standaard.
 
-### 78. Persona-gidsen-hub (/gidsen): index
+### 78. [DONE] Persona-gidsen-hub (/gidsen): index
 - [ ] Hub met ItemList; inbound links (0 orphans).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: hub in sitemap+llms, 0 orphans.
 
 ## Thema J - Jaaroverzicht / trend-reports (data-driven, citeerbaar)
 
-### 79. "Staat van Nederlands drinkwater 2026" (datarapport)
+### 79. [DONE] "Staat van Nederlands drinkwater 2026" (datarapport)
 - [ ] Gestructureerd rapport met kerncijfers (lib/facts/normen) + bronnen; Article/Dataset-schema.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: cijfers consistent (check-facts), bronnen, audit 0.
 
-### 80. PFAS in Nederland: trendoverzicht en stand van zaken 2026
+### 80. [DONE] PFAS in Nederland: trendoverzicht en stand van zaken 2026
 - [ ] Gestructureerd overzicht + tijdlijn + bronnen; YMYL.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: cijfers consistent, bronnen.
 
-### 81. Normwijzigingen-overzicht (wat veranderde er recent?)
+### 81. [DONE] Normwijzigingen-overzicht (wat veranderde er recent?)
 - [ ] Chronologisch overzicht van norm-updates met bron.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: check-facts consistent.
 
-### 82. Trends in waterfilters: wat is er nieuw (tankless, lage afvalwaterverhouding)
+### 82. [DONE] Trends in waterfilters: wat is er nieuw (tankless, lage afvalwaterverhouding)
 - [ ] Feitelijk trendoverzicht zonder productclaims.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX-standaard.
 
-### 83. Verzilting en droogte: jaarlijkse context voor drinkwater
+### 83. [DONE] Verzilting en droogte: jaarlijkse context voor drinkwater
 - [ ] Feitelijk overzicht + bronnen.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: MDX-standaard.
 
-### 84. Trend-reports-hub (/rapporten): index
+### 84. [DONE] Trend-reports-hub (/rapporten): index
 - [ ] Hub met ItemList; inbound links (0 orphans).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: hub in sitemap+llms, 0 orphans.

@@ -26,6 +26,14 @@ const items: [string, string, string][] = [
   ['/uitleg/hardheidsklassen', 'Hardheidsklassen', 'Zacht, gemiddeld, hard'],
   ['/uitleg/kostenoverzicht-waterfilters', 'Kostenoverzicht', 'Aanschaf en jaarlijks'],
   ['/uitleg/energie-en-waterverbruik', 'Energie en verbruik', 'Per oplossing'],
+  ['/uitleg/waterrapport-lezen', 'Waterrapport lezen', 'Wat betekenen de waarden'],
+  ['/uitleg/wat-betekent-dh-waarde', 'Wat betekent jouw dH', 'Hardheid interpreteren'],
+  ['/uitleg/wat-betekent-tds-meting', 'Wat betekent jouw TDS', 'TDS interpreteren'],
+  ['/uitleg/teststrip-lezen', 'Teststrip lezen', 'Aflezen en beperkingen'],
+  ['/uitleg/pfas-meetwaarde-betekenis', 'PFAS-meetwaarde', 'microgram/L in context'],
+  ['/uitleg/afvalwaterverhouding-betekenis', 'Afvalwaterverhouding', '1:1 of 1:3'],
+  ['/uitleg/nsf-ansi-op-verpakking', 'NSF/ANSI op verpakking', 'Wat betekent het'],
+  ['/uitleg/ph-osmosewater-betekenis', 'pH van osmosewater', 'Licht zuur uitgelegd'],
 ];
 
 export default function UitlegHub() {
