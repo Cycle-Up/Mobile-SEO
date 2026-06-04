@@ -220,6 +220,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/onderwerpen" className="hover:text-white">Alle onderwerpen</Link>
+              <Link href="/hulpmiddelen" className="hover:text-white">Hulpmiddelen</Link>
               <Link href="/water-in-de-keuken" className="hover:text-white">Water in de keuken</Link>
               <Link href="/water-en-gezondheid" className="hover:text-white">Water en gezondheid</Link>
               <Link href="/kalk-en-apparaten" className="hover:text-white">Kalk en apparaten</Link>

@@ -20,52 +20,52 @@ sitemap + llms, 0 orphans. Interactieve tools zijn client-componenten met server
 
 ## Thema A - Interactieve rekentools (calculators)
 
-### 1. Waterontharder zout-kosten calculator
+### 1. [DONE] Waterontharder zout-kosten calculator
 - [ ] Client-tool: input hardheid (dH) + huishoudgrootte -> indicatief jaarlijks zoutverbruik en -kosten (transparante formule).
 - [ ] Server-gerenderde uitleg van de formule + aannames + bronverwijzing; HowTo/FAQ-schema.
 Klaar wanneer: route bouwt static, tool werkt, uitleg zonder JS leesbaar, in sitemap+llms, audit 0.
 
-### 2. Osmose afvalwater- en opbrengstcalculator
+### 2. [DONE] Osmose afvalwater- en opbrengstcalculator
 - [ ] Input: afvalwaterverhouding + dagelijks verbruik -> liters permeaat en concentraat per jaar.
 - [ ] Uitleg verhouding (1:1 vs 1:3) + besparingstip; schema + interne links.
 Klaar wanneer: tool + uitleg + schema; build groen; audit 0.
 
-### 3. Kokend water kraan energie- en TCO-calculator
+### 3. [DONE] Kokend water kraan energie- en TCO-calculator
 - [ ] Input: standby-vermogen + stroomprijs + aanschaf -> kosten per jaar en over 5/10 jaar.
 - [ ] Vergelijk met waterkoker-scenario; transparante aannames.
 Klaar wanneer: tool + uitleg; build groen.
 
-### 4. Flessenwater-vs-kraanwater besparing + CO2-indicator
+### 4. [DONE] Flessenwater-vs-kraanwater besparing + CO2-indicator
 - [ ] Input: flessen per week -> jaarlijkse euro- en (indicatieve) CO2/plastic-besparing met kraanwater.
 - [ ] Bronnen voor de aannames; geen overdreven claims.
 Klaar wanneer: tool + gelabelde aannames + bronnen; build groen.
 
-### 5. Waterhardheid eenheden-omrekener (dH / mmol/L / ppm / fH)
+### 5. [DONE] Waterhardheid eenheden-omrekener (dH / mmol/L / ppm / fH)
 - [ ] Tool die tussen hardheidseenheden omrekent met de standaard omrekenfactoren.
 - [ ] Uitleg van elke eenheid + tabel; DefinedTerm-koppeling.
 Klaar wanneer: omrekening klopt (unit-test op de pure conversie-helper), build groen.
 
-### 6. Filterpatroon levensduur- en vervangdatum-tool
+### 6. [DONE] Filterpatroon levensduur- en vervangdatum-tool
 - [ ] Input: installatiedatum + interval -> volgende vervangdatum + herinneringstekst.
 - [ ] Uitleg intervallen per filtertype; geen opslag (privacyvriendelijk).
 Klaar wanneer: tool + uitleg; build groen.
 
-### 7. Kalkaanslag-risico-indicator op basis van dH
+### 7. [DONE] Kalkaanslag-risico-indicator op basis van dH
 - [ ] Input dH -> hardheidsklasse + indicatief kalkrisico voor apparaten + advies.
 - [ ] Gebruikt dezelfde klassegrenzen als de site (lib); link naar ontharder/osmose.
 Klaar wanneer: klasse-logica getest (pure helper), build groen.
 
-### 8. Osmose membraan-rejectie calculator (TDS in/uit)
+### 8. [DONE] Osmose membraan-rejectie calculator (TDS in/uit)
 - [ ] Input: TDS toevoer + TDS permeaat -> rejectiepercentage + duiding (membraan ok/versleten).
 - [ ] Uitleg drempel (>50% permeaat-TDS = vervangen); link naar membraan-levensduur.
 Klaar wanneer: rejectie-berekening getest, build groen.
 
-### 9. Waterverbruik-per-huishouden schatter
+### 9. [DONE] Waterverbruik-per-huishouden schatter
 - [ ] Input: aantal personen + gewoonten -> indicatief dagelijks/jaarlijks verbruik.
 - [ ] Gelabelde aannames + besparingstips; link naar waterbesparing.
 Klaar wanneer: tool + uitleg; build groen.
 
-### 10. Zout-bijvul-interval calculator
+### 10. [DONE] Zout-bijvul-interval calculator
 - [ ] Input: zoutreservoir-capaciteit + verbruik -> hoe vaak bijvullen.
 - [ ] Uitleg + link naar zout-soorten; transparante formule.
 Klaar wanneer: tool + uitleg; build groen.

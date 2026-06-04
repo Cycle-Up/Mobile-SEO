@@ -203,6 +203,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - **/grunbeck-waterontharder**: https://waterfilterplatform.nl/grunbeck-waterontharder
 - **/harvey-waterontharder**: https://waterfilterplatform.nl/harvey-waterontharder
 - **/heet-water-kraan**: https://waterfilterplatform.nl/heet-water-kraan, https://waterfilterplatform.nl/heet-water-kraan/filter, https://waterfilterplatform.nl/heet-water-kraan/installeren, https://waterfilterplatform.nl/heet-water-kraan/kopen, https://waterfilterplatform.nl/heet-water-kraan/prijs, https://waterfilterplatform.nl/heet-water-kraan/vergelijken
+- **/hulpmiddelen**: https://waterfilterplatform.nl/hulpmiddelen, https://waterfilterplatform.nl/hulpmiddelen/filter-vervangdatum, https://waterfilterplatform.nl/hulpmiddelen/flessenwater-besparing, https://waterfilterplatform.nl/hulpmiddelen/kalkrisico, https://waterfilterplatform.nl/hulpmiddelen/kokend-water-kraan-kosten, https://waterfilterplatform.nl/hulpmiddelen/osmose-afvalwater, https://waterfilterplatform.nl/hulpmiddelen/osmose-rejectie, https://waterfilterplatform.nl/hulpmiddelen/waterhardheid-omrekenen, https://waterfilterplatform.nl/hulpmiddelen/waterontharder-zout-kosten, https://waterfilterplatform.nl/hulpmiddelen/waterverbruik, https://waterfilterplatform.nl/hulpmiddelen/zout-bijvul-interval
 - **/insinkerator**: https://waterfilterplatform.nl/insinkerator
 - **/insinkerator-alternatief**: https://waterfilterplatform.nl/insinkerator-alternatief
 - **/joep-waterontharder**: https://waterfilterplatform.nl/joep-waterontharder
