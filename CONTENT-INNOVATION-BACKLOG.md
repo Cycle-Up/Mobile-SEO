@@ -72,42 +72,42 @@ Klaar wanneer: tool + uitleg; build groen.
 
 ## Thema B - Machine-leesbare datasets (Dataset JSON-LD + downloadbare JSON)
 
-### 11. Drinkwaternormen-dataset (/data/normen.json + Dataset-pagina)
+### 11. [DONE] Drinkwaternormen-dataset (/data/normen.json + Dataset-pagina)
 - [ ] Route levert JSON: stof, norm, eenheid, bron (uit lib/facts + bestaande normpagina's).
 - [ ] Dataset-pagina met Dataset-JSON-LD + zichtbare semantische tabel.
 Klaar wanneer: JSON valide, Dataset-schema valideert (check-schema), in llms/ai.txt.
 
-### 12. Waterhardheid-per-gemeente dataset-download
+### 12. [DONE] Waterhardheid-per-gemeente dataset-download
 - [ ] Route levert de gemeente-dH-data als JSON (en eventueel CSV) met bronvermelding.
 - [ ] Dataset-pagina met Dataset-JSON-LD; link vanuit /waterhardheid.
 Klaar wanneer: JSON valide + Dataset-schema; audit 0.
 
-### 13. Filtertechniek-capaciteitenmatrix dataset
+### 13. [DONE] Filtertechniek-capaciteitenmatrix dataset
 - [ ] JSON + pagina: per techniek (RO/UF/NF/MF/kool/ionenwissel/UV) de poriegrootte en wat het aanpakt.
 - [ ] Semantische matrixtabel + Dataset-schema.
 Klaar wanneer: JSON valide + tabel + schema; build groen.
 
-### 14. Keurmerken-register dataset
+### 14. [DONE] Keurmerken-register dataset
 - [ ] JSON + pagina: NSF/ANSI 42/53/58, Kiwa, WRAS, ACS, CE met betekenis en scope.
 - [ ] Dataset/DefinedTermSet-schema; link vanuit /keurmerken.
 Klaar wanneer: JSON valide + schema; audit 0.
 
-### 15. Verwijdering-matrix dataset (filter x contaminant)
+### 15. [DONE] Verwijdering-matrix dataset (filter x contaminant)
 - [ ] JSON + matrixpagina: per filtertype indicatieve verwijdering van lood/nitraat/PFAS/kalk/microplastics (gelabeld indicatief, met bron).
 - [ ] Semantische tabel met scope-headers + Dataset-schema.
 Klaar wanneer: JSON valide + tabel; geen verzonnen exacte percentages zonder bron.
 
-### 16. Waterbedrijven-dataset
+### 16. [DONE] Waterbedrijven-dataset
 - [ ] JSON + pagina: de 10 NL-drinkwaterbedrijven met verzorgingsgebied (publieke info).
 - [ ] Dataset-schema; link vanuit /waterbedrijven.
 Klaar wanneer: JSON valide + schema; check-links 0.
 
-### 17. Poriegrootte-schaal dataset
+### 17. [DONE] Poriegrootte-schaal dataset
 - [ ] JSON + pagina: techniek -> poriegrootte in micrometer, oplopend gesorteerd.
 - [ ] Visuele/semantische schaal + Dataset-schema.
 Klaar wanneer: JSON valide + pagina; build groen.
 
-### 18. TDS/EC-referentiewaarden dataset
+### 18. [DONE] TDS/EC-referentiewaarden dataset
 - [ ] JSON + pagina: watertype (osmose/kraan/hard/zeewater) -> indicatief TDS/EC-bereik.
 - [ ] Dataset-schema + link naar TDS/EC-artikelen.
 Klaar wanneer: JSON valide + schema; audit 0.

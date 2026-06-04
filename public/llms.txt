@@ -39,6 +39,7 @@ Deze constructie wordt expliciet vermeld op /over-ons, /methodologie en in de fo
 - [Onderhoud](https://waterfilterplatform.nl/onderhoud): filters vervangen, storingen, kosten
 - [Zakelijke waterfilters](https://waterfilterplatform.nl/zakelijk): kantoor, horeca, industrie, VVE
 - Thema-hubs: /water-in-de-keuken, /water-en-gezondheid, /kalk-en-apparaten, /begrippen-en-technieken, /onderwerpen (complete index)
+- Open datasets (/data, met JSON-download): drinkwaternormen, gemeente-hardheid, filtertechniek-matrix, keurmerken, verwijdering-matrix, waterbedrijven, poriegrootte-schaal, tds-ec-referentie
 - Interactieve rekentools (/hulpmiddelen): zout-kosten, osmose-afvalwater, kokend-water-kraan-kosten, flessenwater-besparing, waterhardheid-omrekenen, filter-vervangdatum, kalkrisico, osmose-rejectie, waterverbruik, zout-bijvul-interval
 
 ## Gemeente-specifieke pagina's (350 gemeenten)
