@@ -166,42 +166,42 @@ Klaar wanneer: hub in sitemap+llms, ItemList valide, 0 orphans.
 
 ## Thema D - Feit of fabel (myth-busting, gestructureerd)
 
-### 29. Feit of fabel: "Kraanwater is minder gezond dan flessenwater"
+### 29. [DONE] Feit of fabel: "Kraanwater is minder gezond dan flessenwater"
 - [ ] Gestructureerd: claim -> verdict (fabel) -> uitleg + bron; FAQ/structured.
 - [ ] Interne links naar onderbouwende artikelen.
 Klaar wanneer: MDX/TSX-standaard, audit 0.
 
-### 30. Feit of fabel: "Osmosewater ontneemt je lichaam mineralen"
+### 30. [DONE] Feit of fabel: "Osmosewater ontneemt je lichaam mineralen"
 - [ ] Claim -> genuanceerd verdict + WHO-nuance + disclaimer.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: YMYL-zorgvuldig, bronnen.
 
-### 31. Feit of fabel: "Hard water is slecht voor je gezondheid"
+### 31. [DONE] Feit of fabel: "Hard water is slecht voor je gezondheid"
 - [ ] Claim -> verdict + bron + nuance.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: YMYL-zorgvuldig.
 
-### 32. Feit of fabel: "Magnetische ontkalkers werken net zo goed als een ontharder"
+### 32. [DONE] Feit of fabel: "Magnetische ontkalkers werken net zo goed als een ontharder"
 - [ ] Claim -> verdict (omstreden) + uitleg; link naar vergelijking.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: audit 0.
 
-### 33. Feit of fabel: "Koken haalt alle verontreinigingen uit water"
+### 33. [DONE] Feit of fabel: "Koken haalt alle verontreinigingen uit water"
 - [ ] Claim -> verdict (fabel) + wat koken wel/niet doet.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: audit 0.
 
-### 34. Feit of fabel: "Een TDS-meter meet hoe veilig je water is"
+### 34. [DONE] Feit of fabel: "Een TDS-meter meet hoe veilig je water is"
 - [ ] Claim -> verdict (fabel) + wat TDS wel zegt.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: audit 0.
 
-### 35. Feit of fabel: "Alkalisch/gestructureerd water is gezonder"
+### 35. [DONE] Feit of fabel: "Alkalisch/gestructureerd water is gezonder"
 - [ ] Claim -> nuance/verdict + bron; voorzichtig (YMYL/pseudowetenschap), geen claims overnemen.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: YMYL-zorgvuldig, geen misleidende claims.
 
-### 36. Feit of fabel-hub (/feit-of-fabel): index
+### 36. [DONE] Feit of fabel-hub (/feit-of-fabel): index
 - [ ] Hub met ItemList naar alle feit-of-fabel-pagina's; inbound links (0 orphans).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: hub in sitemap+llms, 0 orphans.
