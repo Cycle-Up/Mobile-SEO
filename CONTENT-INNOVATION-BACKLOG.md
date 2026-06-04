@@ -292,42 +292,42 @@ Klaar wanneer: hub in sitemap+llms, 0 orphans.
 
 ## Thema G - Data-/visuele explainers & matrices
 
-### 53. Grote filtertechniek-vergelijkingsmatrix (1 pagina, alle technieken)
+### 53. [DONE] Grote filtertechniek-vergelijkingsmatrix (1 pagina, alle technieken)
 - [ ] Semantische matrix (techniek x eigenschap) + uitleg; ItemList/Dataset-schema.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: tabel + schema; audit 0.
 
-### 54. Poriegrootte-schaal explainer (van zand tot ion)
+### 54. [DONE] Poriegrootte-schaal explainer (van zand tot ion)
 - [ ] Geschaalde, semantische weergave techniek -> micrometer; link naar dataset (item 17).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: pagina + schema.
 
-### 55. Tijdlijn: aanscherping drinkwaternormen (PFAS 2026, lood)
+### 55. [DONE] Tijdlijn: aanscherping drinkwaternormen (PFAS 2026, lood)
 - [ ] Chronologische, gestructureerde tijdlijn met bronnen; lib/facts als bron.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: pagina; cijfers consistent (check-facts).
 
-### 56. Verontreinigingen-overzicht: bron, risico, oplossing (1 matrix)
+### 56. [DONE] Verontreinigingen-overzicht: bron, risico, oplossing (1 matrix)
 - [ ] Semantische tabel stof -> herkomst -> filteroplossing; YMYL-nuance + bronnen.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: tabel + schema.
 
-### 57. Hardheidsklasse-legenda en kaartuitleg
+### 57. [DONE] Hardheidsklasse-legenda en kaartuitleg
 - [ ] Uitleg klassegrenzen + hoe de gemeentekaart te lezen; link naar /waterhardheid.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: pagina; check-links 0.
 
-### 58. Kostenoverzicht-matrix: aanschaf + jaarlijks per oplossing
+### 58. [DONE] Kostenoverzicht-matrix: aanschaf + jaarlijks per oplossing
 - [ ] Indicatieve TCO-matrix (filterkan/osmose/ontharder/kokend kraan) met aannames + bron.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: tabel; geen verzonnen prijzen zonder "indicatief".
 
-### 59. Energie-/waterverbruik-matrix per oplossing
+### 59. [DONE] Energie-/waterverbruik-matrix per oplossing
 - [ ] Indicatief verbruik per oplossing (standby, afvalwater, spoelen).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: tabel + aannames.
 
-### 60. Explainers-hub (/uitleg): index van matrices/explainers
+### 60. [DONE] Explainers-hub (/uitleg): index van matrices/explainers
 - [ ] Hub met ItemList; inbound links (0 orphans).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: hub in sitemap+llms, 0 orphans.
