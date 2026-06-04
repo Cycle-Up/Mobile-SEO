@@ -250,42 +250,42 @@ Klaar wanneer: hub in sitemap+llms, 0 orphans.
 
 ## Thema F - Checklists & onderhoudsschema's (gestructureerd, downloadbaar)
 
-### 45. Onderhoudsschema omgekeerde osmose (per maand/jaar)
+### 45. [DONE] Onderhoudsschema omgekeerde osmose (per maand/jaar)
 - [ ] Gestructureerde checklist (taak + interval) als semantische lijst + HowTo/ItemList.
 - [ ] Print-/kopieer-vriendelijk; link naar onderhoud-cluster.
 Klaar wanneer: pagina + schema; audit 0.
 
-### 46. Jaarchecklist waterontharder
+### 46. [DONE] Jaarchecklist waterontharder
 - [ ] Checklist (zout, hars, instellingen, lekcontrole) gestructureerd.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: pagina + schema.
 
-### 47. Aankoopchecklist waterfilter (waar op letten)
+### 47. [DONE] Aankoopchecklist waterfilter (waar op letten)
 - [ ] Checklist (certificering, capaciteit, kosten, ruimte) gestructureerd.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: pagina + schema.
 
-### 48. Checklist: zelf je waterkwaliteit thuis beoordelen
+### 48. [DONE] Checklist: zelf je waterkwaliteit thuis beoordelen
 - [ ] Stappen (teststrip/TDS/zintuiglijk/drinkwaterbedrijf) gestructureerd; YMYL-nuance.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: pagina + schema.
 
-### 49. Verhuis-/intrekchecklist water (kraan doorspoelen, hardheid opzoeken)
+### 49. [DONE] Verhuis-/intrekchecklist water (kraan doorspoelen, hardheid opzoeken)
 - [ ] Checklist voor nieuwe woning; link naar gemeente-hardheid.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: pagina + schema.
 
-### 50. Checklist: filter klaarmaken na vakantie/stilstand
+### 50. [DONE] Checklist: filter klaarmaken na vakantie/stilstand
 - [ ] Hygiene-stappen (doorspoelen, sanitiseren); YMYL-nuance.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: pagina + schema.
 
-### 51. Checklist: kokend water kraan veilig gebruiken met kinderen
+### 51. [DONE] Checklist: kokend water kraan veilig gebruiken met kinderen
 - [ ] Veiligheidschecklist; disclaimer.
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: pagina + schema.
 
-### 52. Checklists-hub (/checklists): index
+### 52. [DONE] Checklists-hub (/checklists): index
 - [ ] Hub met ItemList; inbound links (0 orphans).
 - [ ] Registreer de route in `app/sitemap.ts` + `public/llms.txt`, zorg voor een inkomende interne link (0 orphans) en valideer (build + audit-html/check-schema/check-a11y).
 Klaar wanneer: hub in sitemap+llms, 0 orphans.
