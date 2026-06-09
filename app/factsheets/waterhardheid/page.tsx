@@ -22,7 +22,7 @@ export default function WaterhardheidFactsheet() {
       <SchemaOrg type="DefinedTermSet" definedTerms={{
         name: "Waterhardheid - factsheet",
         url: 'https://waterfilterplatform.nl/factsheets/waterhardheid',
-        terms: [{ name: "Waterhardheid", description: "Waterhardheid is het gehalte aan calcium en magnesium in water, uitgedrukt in Duitse hardheidsgraden (dH).", url: "https://waterfilterplatform.nl/waterhardheid" }],
+        terms: [{ name: "Waterhardheid", description: "Waterhardheid is het gehalte aan calcium en magnesium in water, uitgedrukt in Duitse hardheidsgraden (dH).", url: "https://waterfilterplatform.nl/waterhardheid", sameAs: ["https://nl.wikipedia.org/wiki/Waterhardheid"] }],
       }} />
       <SchemaOrg type="BreadcrumbList" breadcrumbs={[
         { name: 'Home', url: 'https://waterfilterplatform.nl' },

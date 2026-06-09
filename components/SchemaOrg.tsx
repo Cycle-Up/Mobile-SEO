@@ -18,6 +18,7 @@ interface DefinedTerm {
   name: string;
   description: string;
   url?: string;
+  sameAs?: string[];
 }
 
 interface SchemaOrgProps {
@@ -40,8 +41,8 @@ interface SchemaOrgProps {
     url: string;
     image?: string;
     sources?: string[];
-    about?: { name: string; url: string };
-    mentions?: { name: string; url: string }[];
+    about?: { name: string; url: string; sameAs?: string[] };
+    mentions?: { name: string; url: string; sameAs?: string[] }[];
   };
   breadcrumbs?: BreadcrumbItem[];
   howTo?: {

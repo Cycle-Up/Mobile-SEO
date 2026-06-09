@@ -22,7 +22,7 @@ export default function ActiefKoolFactsheet() {
       <SchemaOrg type="DefinedTermSet" definedTerms={{
         name: "Actief kool - factsheet",
         url: 'https://waterfilterplatform.nl/factsheets/actief-kool',
-        terms: [{ name: "Actief kool", description: "Actief kool bindt via adsorptie chloor, smaak, geur en sommige organische stoffen, maar geen opgeloste zouten.", url: "https://waterfilterplatform.nl/filtertechnieken/actief-kool" }],
+        terms: [{ name: "Actief kool", description: "Actief kool bindt via adsorptie chloor, smaak, geur en sommige organische stoffen, maar geen opgeloste zouten.", url: "https://waterfilterplatform.nl/filtertechnieken/actief-kool", sameAs: ["https://nl.wikipedia.org/wiki/Actieve_kool"] }],
       }} />
       <SchemaOrg type="BreadcrumbList" breadcrumbs={[
         { name: 'Home', url: 'https://waterfilterplatform.nl' },

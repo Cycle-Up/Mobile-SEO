@@ -23,7 +23,7 @@ export default function LoodFactsheet() {
       <SchemaOrg type="DefinedTermSet" definedTerms={{
         name: "Lood in drinkwater - factsheet",
         url: 'https://waterfilterplatform.nl/factsheets/lood',
-        terms: [{ name: "Lood in drinkwater", description: "Lood in kraanwater komt vrijwel altijd uit oude loden leidingen, meestal in woningen van voor 1960.", url: "https://waterfilterplatform.nl/leidingwater/lood" }],
+        terms: [{ name: "Lood in drinkwater", description: "Lood in kraanwater komt vrijwel altijd uit oude loden leidingen, meestal in woningen van voor 1960.", url: "https://waterfilterplatform.nl/leidingwater/lood", sameAs: ["https://nl.wikipedia.org/wiki/Lood_(element)"] }],
       }} />
       <SchemaOrg type="BreadcrumbList" breadcrumbs={[
         { name: 'Home', url: 'https://waterfilterplatform.nl' },

@@ -22,7 +22,7 @@ export default function OmgekeerdeOsmoseFactsheet() {
       <SchemaOrg type="DefinedTermSet" definedTerms={{
         name: "Omgekeerde osmose - factsheet",
         url: 'https://waterfilterplatform.nl/factsheets/omgekeerde-osmose',
-        terms: [{ name: "Omgekeerde osmose", description: "Omgekeerde osmose perst water onder druk door een semi-permeabel membraan dat vrijwel alle opgeloste stoffen tegenhoudt.", url: "https://waterfilterplatform.nl/omgekeerde-osmose" }],
+        terms: [{ name: "Omgekeerde osmose", description: "Omgekeerde osmose perst water onder druk door een semi-permeabel membraan dat vrijwel alle opgeloste stoffen tegenhoudt.", url: "https://waterfilterplatform.nl/omgekeerde-osmose", sameAs: ["https://nl.wikipedia.org/wiki/Omgekeerde_osmose"] }],
       }} />
       <SchemaOrg type="BreadcrumbList" breadcrumbs={[
         { name: 'Home', url: 'https://waterfilterplatform.nl' },

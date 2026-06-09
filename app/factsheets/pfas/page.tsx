@@ -23,7 +23,7 @@ export default function PfasFactsheet() {
       <SchemaOrg type="DefinedTermSet" definedTerms={{
         name: "PFAS - factsheet",
         url: 'https://waterfilterplatform.nl/factsheets/pfas',
-        terms: [{ name: "PFAS", description: "PFAS is een groep zeer persistente fluorverbindingen (forever chemicals) die in het milieu en soms in water voorkomen.", url: "https://waterfilterplatform.nl/drinkwaternormen/pfas" }],
+        terms: [{ name: "PFAS", description: "PFAS is een groep zeer persistente fluorverbindingen (forever chemicals) die in het milieu en soms in water voorkomen.", url: "https://waterfilterplatform.nl/drinkwaternormen/pfas", sameAs: ["https://nl.wikipedia.org/wiki/Poly-_en_perfluoralkylstoffen"] }],
       }} />
       <SchemaOrg type="BreadcrumbList" breadcrumbs={[
         { name: 'Home', url: 'https://waterfilterplatform.nl' },
