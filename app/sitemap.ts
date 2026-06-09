@@ -140,6 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/vragen/kokend-water-kranen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE}/vragen/lood`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE}/vragen/kraanwater-drinken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${BASE}/zoeken`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.4 },
     { url: `${BASE}/uitleg/waterrapport-lezen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE}/uitleg/wat-betekent-dh-waarde`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE}/uitleg/wat-betekent-tds-meting`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },

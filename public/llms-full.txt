@@ -283,6 +283,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - **/waterzuivering**: https://waterfilterplatform.nl/waterzuivering, https://waterfilterplatform.nl/waterzuivering/grondwater, https://waterfilterplatform.nl/waterzuivering/oppervlaktewater, https://waterfilterplatform.nl/waterzuivering/stappen, https://waterfilterplatform.nl/waterzuivering/thuis
 - **/zakelijk**: https://waterfilterplatform.nl/zakelijk, https://waterfilterplatform.nl/zakelijk/appartementen-vve, https://waterfilterplatform.nl/zakelijk/horeca, https://waterfilterplatform.nl/zakelijk/industrie-proceswater, https://waterfilterplatform.nl/zakelijk/kantoor, https://waterfilterplatform.nl/zakelijk/legionella-beheersplan, https://waterfilterplatform.nl/zakelijk/scholen-kinderopvang, https://waterfilterplatform.nl/zakelijk/sportschool-wellness, https://waterfilterplatform.nl/zakelijk/waterkoeler-vs-filter, https://waterfilterplatform.nl/zakelijk/waterkwaliteitsanalyse
 - **/zerowater-alternatief**: https://waterfilterplatform.nl/zerowater-alternatief
+- **/zoeken**: https://waterfilterplatform.nl/zoeken
 
 ## Kennisbank-artikelen (volledige lijst)
 

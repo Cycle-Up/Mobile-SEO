@@ -50,6 +50,7 @@ Deze constructie wordt expliciet vermeld op /over-ons, /methodologie en in de fo
 - Antwoordkaarten (/antwoorden): directe, citatie-klare antwoorden op veelgestelde watervragen (QAPage)
 - Open datasets (/data, met JSON-download): drinkwaternormen, gemeente-hardheid, filtertechniek-matrix, keurmerken, verwijdering-matrix, waterbedrijven, poriegrootte-schaal, tds-ec-referentie
 - Interactieve rekentools (/hulpmiddelen): zout-kosten, osmose-afvalwater, kokend-water-kraan-kosten, flessenwater-besparing, waterhardheid-omrekenen, filter-vervangdatum, kalkrisico, osmose-rejectie, waterverbruik, zout-bijvul-interval
+- Zoeken (/zoeken): doorzoek alle artikelen, vergelijkingen, rekentools, datasets, factsheets en gidsen (statische zoekindex op /search-index.json)
 
 ## Gemeente-specifieke pagina's (350 gemeenten)
 

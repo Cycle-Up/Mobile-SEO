@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-content.mjs && next build",
+    "build": "node scripts/check-content.mjs && node scripts/generate-search-index.mjs && next build",
     "start": "next start",
+    "generate-search": "node scripts/generate-search-index.mjs",
     "lint": "eslint . --max-warnings=0",
     "check-content": "node scripts/check-content.mjs",
     "test": "node --test",

@@ -236,6 +236,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/kalk-en-apparaten" className="hover:text-white">Kalk en apparaten</Link>
               <Link href="/begrippen-en-technieken" className="hover:text-white">Begrippen en technieken</Link>
               <Link href="/begrippenlijst" className="hover:text-white">Begrippenlijst</Link>
+              <Link href="/zoeken" className="hover:text-white">Zoeken</Link>
               <Link href="/over-ons" className="hover:text-white">Over ons</Link>
               <Link href="/methodologie" className="hover:text-white">Methodologie</Link>
               <Link href="/contact" className="hover:text-white">Contact</Link>
