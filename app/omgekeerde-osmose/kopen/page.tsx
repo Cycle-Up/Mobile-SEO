@@ -5,6 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde osmose filter kopen? Alles wat je moet weten',
@@ -451,6 +452,15 @@ export default function OsmoseKopenPage() {
           </Link>
         </div>
       </section>
+
+        {/* Commerciele CTA naar partner-shop */}
+        <AffiliateCTA
+          destination="store"
+          campaign="omgekeerde-osmose"
+          content="osmose-kopen-shopcta"
+          title="Klaar om een osmosesysteem te kiezen?"
+          sub="Bekijk de osmose- en waterfiltersystemen bij onze partner PureAqua en vergelijk specificaties en prijzen."
+        />
 
         {/* CTA */}
         <CTABanner context="osmose" />
