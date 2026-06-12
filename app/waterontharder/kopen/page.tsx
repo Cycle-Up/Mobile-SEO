@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
@@ -593,6 +594,14 @@ export default function WaterontharderKopenPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="waterontharder-kopen-shopcta"
+          title="Klaar om een waterontharder te kiezen?"
+          sub="Bekijk het actuele aanbod waterontharders bij onze partner PureAqua en vergelijk capaciteit, type en prijs."
+        />
 
         <CTABanner context="waterhardheid" />
 
