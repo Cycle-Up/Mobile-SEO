@@ -5,7 +5,7 @@
  *
  * Bewaakt de commerciele koppeling naar de PureAqua Shopify-store, zodat de
  * eerlijkheids- en kwaliteitsstandaard nooit stilletjes wordt geschonden. Per
- * gebouwde HTML-pagina met een zichtbare shop-link (href naar shop.pureaqua.nl)
+ * gebouwde HTML-pagina met een zichtbare shop-link (href naar pureaqua.nl)
  * geldt:
  *   - de link heeft rel="...sponsored..." (affiliate-annotatie);
  *   - de link draagt utm_source=waterfilterplatform en utm_medium=affiliate;
@@ -28,7 +28,7 @@ const HTML_DIR = path.join(ROOT, '.next', 'server', 'app');
 /** Haal alle <a>-openingstags naar de shop uit een HTML-document. */
 export function extractShopAnchors(html) {
   const anchors = [];
-  const re = /<a\b[^>]*\bhref=("|')(https?:\/\/shop\.pureaqua\.nl[^"']*)\1[^>]*>/gi;
+  const re = /<a\b[^>]*\bhref=("|')(https?:\/\/pureaqua\.nl[^"']*)\1[^>]*>/gi;
   let m;
   while ((m = re.exec(html)) !== null) {
     anchors.push({ tag: m[0], href: m[2].replace(/&amp;/g, '&') });

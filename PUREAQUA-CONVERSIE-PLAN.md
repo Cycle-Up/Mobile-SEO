@@ -1,14 +1,14 @@
 # PUREAQUA-CONVERSIE-PLAN
 
 Hoe we de AI-vindbaarheidsmachine van Waterfilterplatform.nl koppelen aan de PureAqua
-Shopify-store (`shop.pureaqua.nl`) en omzetten in verkeer en conversies.
+Shopify-store (`pureaqua.nl`) en omzetten in verkeer en conversies.
 
 Status: plan (concept), opgesteld 2026-06-12. Nog niet uitgevoerd.
 
 ## Gekozen uitgangspunten (door gebruiker bevestigd)
 
 - **Integratiediepte:** slimme deep-links + UTM. Geen Shopify Storefront API; we bedraden
-  pagina's met getagde links naar de juiste collectie/product op `shop.pureaqua.nl`.
+  pagina's met getagde links naar de juiste collectie/product op `pureaqua.nl`.
 - **Relatie:** affiliate/partner. Dus `rel="sponsored"`, een zichtbare affiliate-disclosure
   conform ACM/Reclamecode, en linkkeuze die commissie-relevant is.
 - **Kanalen:** on-site funnel + Meta dynamische productadvertenties + e-mail/lead capture.
@@ -17,7 +17,7 @@ Status: plan (concept), opgesteld 2026-06-12. Nog niet uitgevoerd.
 
 We hebben een enorme top-of-funnel gebouwd (700+ routes, 435 artikelen, datasets, factsheets,
 rekentools, vraag-clusters) die uitstekend vindbaar is voor mensen en AI-zoeksystemen. Maar van
-al die pagina's linken er op dit moment maar ~3 daadwerkelijk door naar `shop.pureaqua.nl`. De
+al die pagina's linken er op dit moment maar ~3 daadwerkelijk door naar `pureaqua.nl`. De
 funnel eindigt op interne info-pagina's (`/omgekeerde-osmose/kopen`, `/waterfilter/vergelijken`,
 de CTABanner) die NIET doorverwijzen naar de winkel. Gevolg: aandacht en koopintentie lekken weg
 voordat ze de kassa bereiken.
@@ -39,7 +39,7 @@ Funnel-model:
 AI/zoek-verkeer  ->  informatieve content (TOFU)         ->  geen directe push, wel interne links
                      keuze/vergelijk/koopgids (MOFU)      ->  PureAqua-CTA naar collectie + lead magnet
                      review/product/rekentool-uitkomst    ->  PureAqua-CTA naar specifiek product (BOFU)
-                                                          ->  Shopify checkout (shop.pureaqua.nl)
+                                                          ->  Shopify checkout (pureaqua.nl)
             (verlaten verkeer)                            ->  Meta dynamic ads + e-mail nurturing
 ```
 
@@ -49,7 +49,7 @@ Alles loopt via een centrale, geteste configuratie zodat er nooit een verzonnen 
 in de site belandt en alle links consistent getagd en gelabeld zijn.
 
 ### 3.1 `lib/pureaqua.mjs` (single source of truth)
-- `STORE = 'https://shop.pureaqua.nl'`.
+- `STORE = 'https://pureaqua.nl'`.
 - `DESTINATIONS`: een allowlist van **geverifieerde** bestemmingen (collectie- en product-handles),
   elk met `{ key, label, url, type: 'collection'|'product', evidenceStatus }`. We starten met de
   reeds bekende, geverifieerde URL's (`/`, `/collections/waterontharders`, The Source) en breiden
@@ -83,7 +83,7 @@ Zo zie je in GA4/Shopify-analytics exact welke pagina en welk CTA-blok verkeer e
 
 ### 3.5 Guardrail-gate: `scripts/check-affiliate.mjs`
 Nieuw verify-onderdeel dat de standaard bewaakt:
-- elke link naar `shop.pureaqua.nl` in de gebouwde HTML heeft `rel="sponsored"`;
+- elke link naar `pureaqua.nl` in de gebouwde HTML heeft `rel="sponsored"`;
 - elke shop-link draagt de verplichte UTM-parameters;
 - elke shop-URL staat in de `DESTINATIONS`-allowlist (geen verzonnen/dode handles);
 - op elke pagina met een shop-link staat minstens een affiliate-disclosure.

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Geist } from 'next/font/google';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { AffiliateAnalytics } from '@/components/AffiliateAnalytics';
 import './globals.css';
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans', display: 'swap' });
@@ -109,6 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <SchemaOrg type="Organization" />
         <SchemaOrg type="WebSite" />
+        <AffiliateAnalytics />
         <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
           <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="font-bold text-[#005F8A] text-lg shrink-0">

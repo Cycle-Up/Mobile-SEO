@@ -108,7 +108,7 @@ Wijzigingen volgens `WATERFILTERPLATFORM_SEO_AI_SEARCH_HANDOVER.md`.
   - YMYL-nuance: RO verwijdert ook mineralen + "geen medisch advies"; afvalwaterverhouding "laag
     maar niet nul"; kraanwater is op zichzelf al veilig, RO is keuze geen noodzaak.
   - **Commerciele transparantie**: disclosure-blok dat WaterfilterPlatform aan PureAqua gelieerd is;
-    enige externe CTA met rel="sponsored nofollow" naar shop.pureaqua.nl; verder rustige interne CTAs.
+    enige externe CTA met rel="sponsored nofollow" naar pureaqua.nl; verder rustige interne CTAs.
 - Integratie: opgenomen in `app/sitemap.ts`, doorgelinkt vanuit de `/omgekeerde-osmose`-hub en de
   koopgids `/beste-osmosefilter-2026`, en toegevoegd aan `public/llms.txt`.
 - check-content 100%; build groen; `/the-source` als static gegenereerd.

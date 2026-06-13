@@ -1,10 +1,10 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { buildShopUrl, DESTINATIONS, STORE, allowedShopPaths, utmSlug } from '../lib/pureaqua.mjs';
+import { buildShopUrl, DESTINATIONS, STORE, allowedShopPaths, utmSlug, affiliateClickPayload } from '../lib/pureaqua.mjs';
 
 test('buildShopUrl tags every link with the fixed UTM scheme', () => {
   const url = new URL(buildShopUrl('waterontharders', { campaign: 'waterontharder', content: 'beste-waterontharder-2026-hero' }));
-  assert.equal(url.origin, 'https://shop.pureaqua.nl');
+  assert.equal(url.origin, 'https://pureaqua.nl');
   assert.equal(url.pathname, '/collections/waterontharders');
   assert.equal(url.searchParams.get('utm_source'), 'waterfilterplatform');
   assert.equal(url.searchParams.get('utm_medium'), 'affiliate');
@@ -38,4 +38,23 @@ test('allowedShopPaths exposes the verified paths for the gate', () => {
   const paths = allowedShopPaths();
   assert.ok(paths.includes('/'));
   assert.ok(paths.includes('/collections/waterontharders'));
+});
+
+test('affiliateClickPayload builds a dataLayer event from a shop URL', () => {
+  const href = buildShopUrl('waterontharders', { campaign: 'waterontharder', content: 'joep-productcta' });
+  const p = affiliateClickPayload(href);
+  assert.ok(p);
+  assert.equal(p.event, 'affiliate_click');
+  assert.equal(p.affiliate_partner, 'pureaqua');
+  assert.equal(p.destination, '/collections/waterontharders');
+  assert.equal(p.utm_source, 'waterfilterplatform');
+  assert.equal(p.utm_medium, 'affiliate');
+  assert.equal(p.utm_campaign, 'waterontharder');
+  assert.equal(p.utm_content, 'joep-productcta');
+});
+
+test('affiliateClickPayload ignores non-shop and invalid URLs', () => {
+  assert.equal(affiliateClickPayload('https://waterfilterplatform.nl/zoeken'), null);
+  assert.equal(affiliateClickPayload('https://example.com'), null);
+  assert.equal(affiliateClickPayload('not-a-url'), null);
 });

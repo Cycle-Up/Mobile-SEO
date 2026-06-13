@@ -18,7 +18,7 @@ Status: plan + backlog (concept), opgesteld 2026-06-13. Aanvulling op `PUREAQUA-
   Nederlandse zoekruimte rond waterfilters, omgekeerde osmose, waterontharders en kokend water.
 - **Het doel (KPI):** meer voor PureAqua.nl relevant verkeer en conversies. PureAqua.nl verkoopt
   4-in-1 osmosekranen, waterontharders, The Source (stroomloze RO) en PureFilter. WFP is
-  affiliate/partner (zie `/over-ons`); `shop.pureaqua.nl` is de Shopify-store.
+  affiliate/partner (zie `/over-ons`); `pureaqua.nl` is de Shopify-store.
 - **De spanning:** WFP's waarde voor AI-zoeksystemen en Google komt juist uit onafhankelijkheid,
   people-first en eerlijkheid. Als we WFP verbouwen tot een dunne verkooptrechter of alles naar
   een transactioneel shop-domein verhuizen, riskeren we de autoriteit die het waardevol maakt.

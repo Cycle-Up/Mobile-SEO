@@ -117,7 +117,7 @@ export default function TheSourcePage() {
               priceCurrency: 'EUR',
               price: '395.00',
               availability: 'https://schema.org/InStock',
-              url: 'https://shop.pureaqua.nl',
+              url: 'https://pureaqua.nl',
             },
           },
         ]}
