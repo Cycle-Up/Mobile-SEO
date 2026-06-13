@@ -40,6 +40,28 @@ test('allowedShopPaths exposes the verified paths for the gate', () => {
   assert.ok(paths.includes('/collections/waterontharders'));
 });
 
+test('the verified money pages from the briefing are in the allowlist', () => {
+  const paths = allowedShopPaths();
+  for (const p of [
+    '/collections/zuiver-water-kranen',
+    '/products/the-source',
+    '/products/pureaqua-4-in-1-kraan',
+    '/products/countertop-ro',
+    '/products/joep-waterontharder',
+    '/products/aquacell-waterontharder',
+    '/products/tds-meter-test-uw-waterkwaliteit',
+  ]) {
+    assert.ok(paths.includes(p), `allowlist mist ${p}`);
+  }
+});
+
+test('product destinations build a tagged product URL', () => {
+  const url = new URL(buildShopUrl('vierInEen', { campaign: 'kokend-water', content: 'quooker-alternatief-hero' }));
+  assert.equal(url.pathname, '/products/pureaqua-4-in-1-kraan');
+  assert.equal(url.searchParams.get('utm_campaign'), 'kokend-water');
+  assert.equal(DESTINATIONS.vierInEen.type, 'product');
+});
+
 test('affiliateClickPayload builds a dataLayer event from a shop URL', () => {
   const href = buildShopUrl('waterontharders', { campaign: 'waterontharder', content: 'joep-productcta' });
   const p = affiliateClickPayload(href);

@@ -455,11 +455,12 @@ export default function OsmoseKopenPage() {
 
         {/* Commerciele CTA naar partner-shop */}
         <AffiliateCTA
-          destination="store"
+          destination="zuiverWaterKranen"
           campaign="omgekeerde-osmose"
           content="osmose-kopen-shopcta"
+          label="Bekijk de osmosesystemen met kraan bij PureAqua"
           title="Klaar om een osmosesysteem te kiezen?"
-          sub="Bekijk de osmose- en waterfiltersystemen bij onze partner PureAqua en vergelijk specificaties en prijzen."
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua en vergelijk specificaties en prijzen."
         />
 
         {/* CTA */}

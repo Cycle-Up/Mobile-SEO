@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -251,6 +252,15 @@ export default function AquaTruAlternatiefPage() {
             <Link href="/beste-osmosefilter-2026" className="text-[#005F8A] underline">beste osmosefilters van 2026</Link>.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="countertopRo"
+          campaign="omgekeerde-osmose"
+          content="aquatru-alternatief-cta"
+          label="Bekijk de Countertop RO (osmose zonder installatie)"
+          title="Osmose zonder installatie?"
+          sub="De Countertop RO is een plug-and-play osmose-apparaat zonder installatie bij onze partner PureAqua, als alternatief voor AquaTru."
+        />
 
         <CTABanner context="osmose" />
 

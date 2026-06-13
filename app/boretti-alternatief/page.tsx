@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -203,6 +204,15 @@ export default function BorettiAlternatiefPage() {
             Prijzen indicatief op basis van publieke richtprijzen. Bijgewerkt mei 2026.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="boretti-alternatief-cta"
+          label="Bekijk de PureAqua 4-in-1 kraan"
+          title="Een 4-in-1 kraan als alternatief voor Boretti?"
+          sub="De PureAqua 4-in-1 kraan levert kokend en gefilterd water. Bekijken kan bij onze partner PureAqua."
+        />
 
         <CTABanner context="kokend" />
 

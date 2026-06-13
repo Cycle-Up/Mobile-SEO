@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -243,6 +244,15 @@ export default function GroheBlueAlternatiefPage() {
             <Link href="/kennisbank/bruisend-water-thuis" className="text-[#005F8A] underline">Lees onze gids over bruisend water thuis</Link>.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="grohe-blue-alternatief-cta"
+          label="PureAqua 4-in-1 kraan met kokend en gefilterd water"
+          title="Op zoek naar gefilterd water uit de kraan?"
+          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water. Bekijken kan bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
 

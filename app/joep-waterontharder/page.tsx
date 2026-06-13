@@ -223,7 +223,7 @@ export default function JoepWaterontharderPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <a
-              href={buildShopUrl('waterontharders', { campaign: 'waterontharder', content: 'joep-productcta' })}
+              href={buildShopUrl('joep', { campaign: 'waterontharder', content: 'joep-productcta' })}
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
               rel="sponsored"
             >
