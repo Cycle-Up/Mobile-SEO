@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
@@ -514,6 +515,15 @@ export default function InsinkeratorAlternatiefPage() {
             ))}
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="insinkerator-alternatief-cta"
+          label="Bekijk de PureAqua 4-in-1 kraan"
+          title="Liever kokend en gefilterd water uit een kraan?"
+          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+        />
 
         <CTABanner context="kokend" />
 

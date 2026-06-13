@@ -37,3 +37,21 @@ test('all entity URLs are canonical and internal', () => {
     assert.ok(e.name.length > 0);
   }
 });
+
+test('grounded entities link to a valid Dutch Wikipedia article via sameAs', () => {
+  const grounded = Object.values(ENTITIES).filter(e => e.sameAs);
+  // de geverifieerde concept-entiteiten zijn gegrond in de kennisgraaf
+  assert.ok(grounded.length >= 6, 'minstens 6 entiteiten zijn gegrond');
+  for (const e of grounded) {
+    assert.ok(Array.isArray(e.sameAs) && e.sameAs.length > 0);
+    for (const url of e.sameAs) {
+      assert.match(url, /^https:\/\/nl\.wikipedia\.org\/wiki\/\S+$/, `${e.name} sameAs is een nl.wikipedia-URL`);
+    }
+  }
+});
+
+test('PFAS about-entity carries the verified Wikipedia sameAs', () => {
+  const { about } = entitiesForSlug('pfas-drinkwater');
+  assert.ok(about.sameAs);
+  assert.equal(about.sameAs[0], 'https://nl.wikipedia.org/wiki/Poly-_en_perfluoralkylstoffen');
+});

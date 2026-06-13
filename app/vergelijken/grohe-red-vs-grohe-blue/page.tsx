@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -207,6 +208,15 @@ export default function GroheRedVsGroheBluePage() {
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan</Link>.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="vergelijken-grohe-red-vs-grohe-blue-cta"
+          label="PureAqua 4-in-1 kraan"
+          title="Liever kokend en gefilterd water uit een kraan?"
+          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+        />
 
         <CTABanner context="kokend" />
 

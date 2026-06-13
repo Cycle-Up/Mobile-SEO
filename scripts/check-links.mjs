@@ -107,6 +107,9 @@ export function normalizeLink(href) {
 export function isValidLink(href, index) {
   const p = normalizeLink(href);
   if (p === null) return true; // not an internal link we check (external/anchor)
+  // Bestandsroutes (route handlers / statische bestanden): .json/.xml/.md/.txt/.csv
+  // worden door route.ts of /public geserveerd en zijn geen page-routes.
+  if (/\.(json|xml|md|txt|csv)$/i.test(p)) return true;
   if (index.staticRoutes.has(p)) return true;
   const segs = p.split('/').filter(Boolean);
   return index.dynamicRoutes.some(tokens => matchDynamic(segs, tokens));

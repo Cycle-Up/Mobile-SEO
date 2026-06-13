@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -235,6 +236,15 @@ export default function PureFilterReviewPage() {
             <Link href="/methodologie" className="underline">methodologie</Link>.
           </p>
         </section>
+
+<AffiliateCTA
+          destination="theSource"
+          campaign="omgekeerde-osmose"
+          content="purefilter-review-cta"
+          label="Bekijk The Source: een RO-systeem met verifieerbare specificaties"
+          title="Liever een osmosesysteem met verifieerbare specificaties?"
+          sub="Waar wij de PureFilter-claims niet onafhankelijk konden bevestigen, is The Source van onze partner PureAqua een omgekeerde-osmosesysteem met NSF/ANSI 58 en transparante specs."
+        />
 
         <CTABanner context="algemeen" />
 

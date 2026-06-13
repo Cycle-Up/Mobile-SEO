@@ -5,6 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { buildShopUrl } from '@/lib/pureaqua.mjs';
 
 export function generateMetadata(): Metadata {
   return {
@@ -222,7 +223,7 @@ export default function JoepWaterontharderPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <a
-              href="https://shop.pureaqua.nl/collections/waterontharders"
+              href={buildShopUrl('joep', { campaign: 'waterontharder', content: 'joep-productcta' })}
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
               rel="sponsored"
             >
@@ -236,7 +237,7 @@ export default function JoepWaterontharderPage() {
               watervanjoep.nl
             </a>
           </div>
-          <p className="text-xs text-gray-400 mt-4">
+          <p data-affiliate-disclosure className="text-xs text-gray-400 mt-4">
             Transparantie: WaterfilterPlatform is gelieerd aan PureAqua en kan een vergoeding ontvangen
             wanneer je via onze links iets aanschaft. Dit beinvloedt onze redactionele beoordeling niet;
             de specificaties komen van de fabrikant. Lees onze{' '}

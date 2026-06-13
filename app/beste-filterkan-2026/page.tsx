@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -195,6 +196,15 @@ export default function BesteFilterkan2026Page() {
             <Link href="/beste-waterfilter/budget-onder-100" className="text-[#005F8A] underline">beste waterfilter onder 100 euro</Link>.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="beste-filterkan-2026-cta"
+          label="Meer dan een filterkan: bekijk de zuiver-water-kranen"
+          title="Klaar voor zuiver water uit de kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
 
         <CTABanner context="algemeen" />
 

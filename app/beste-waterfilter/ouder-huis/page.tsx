@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 
@@ -289,6 +290,15 @@ export default function OuderHuisPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="beste-waterfilter-ouder-huis-cta"
+          label="Bekijk een osmosesysteem met kraan"
+          title="Klaar voor zuiver water uit de kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
       </div>

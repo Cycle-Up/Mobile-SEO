@@ -34,6 +34,29 @@ test('Article produces valid JSON-LD with the expected core fields', () => {
   assert.equal(a.citation[0]['@type'], 'CreativeWork');
 });
 
+test('Article about/mentions carry sameAs knowledge-graph grounding when present', () => {
+  const out = emit({
+    type: 'Article',
+    article: {
+      title: 'PFAS',
+      description: 'Test.',
+      datePublished: '2026-05-31',
+      url: 'https://waterfilterplatform.nl/test',
+      about: { name: 'PFAS', url: 'https://waterfilterplatform.nl/drinkwaternormen/pfas', sameAs: ['https://nl.wikipedia.org/wiki/Poly-_en_perfluoralkylstoffen'] },
+      mentions: [
+        { name: 'Omgekeerde osmose', url: 'https://waterfilterplatform.nl/omgekeerde-osmose', sameAs: ['https://nl.wikipedia.org/wiki/Omgekeerde_osmose'] },
+        { name: 'Nitraat', url: 'https://waterfilterplatform.nl/stoffen-in-drinkwater/nitraat-nitriet' },
+      ],
+    },
+  });
+  const a = out[0];
+  assert.equal(a.about['@type'], 'Thing');
+  assert.deepEqual(a.about.sameAs, ['https://nl.wikipedia.org/wiki/Poly-_en_perfluoralkylstoffen']);
+  assert.deepEqual(a.mentions[0].sameAs, ['https://nl.wikipedia.org/wiki/Omgekeerde_osmose']);
+  // mention zonder sameAs krijgt het veld niet
+  assert.equal('sameAs' in a.mentions[1], false);
+});
+
 test('FAQPage maps each item to a Question/Answer', () => {
   const out = emit({
     type: 'FAQPage',

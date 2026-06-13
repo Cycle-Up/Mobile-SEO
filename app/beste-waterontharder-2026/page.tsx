@@ -5,6 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export function generateMetadata(): Metadata {
   return {
@@ -351,6 +352,14 @@ export default function BesteWaterontharder2026Page() {
             ))}
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="beste-waterontharder-2026-shopcta"
+          title="Een waterontharder uitkiezen?"
+          sub="Bekijk het actuele aanbod waterontharders bij onze partner PureAqua en vergelijk capaciteit en prijs."
+        />
 
         <section className="mt-2">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>

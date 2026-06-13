@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Geist } from 'next/font/google';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { AffiliateAnalytics } from '@/components/AffiliateAnalytics';
 import './globals.css';
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans', display: 'swap' });
@@ -109,6 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <SchemaOrg type="Organization" />
         <SchemaOrg type="WebSite" />
+        <AffiliateAnalytics />
         <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
           <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="font-bold text-[#005F8A] text-lg shrink-0">
@@ -220,7 +222,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/onderwerpen" className="hover:text-white">Alle onderwerpen</Link>
+              <Link href="/hulpmiddelen" className="hover:text-white">Hulpmiddelen</Link>
+              <Link href="/data" className="hover:text-white">Open data</Link>
+              <Link href="/antwoorden" className="hover:text-white">Antwoorden</Link>
+              <Link href="/feit-of-fabel" className="hover:text-white">Feit of fabel</Link>
+              <Link href="/beslishulp" className="hover:text-white">Beslishulp</Link>
+              <Link href="/checklists" className="hover:text-white">Checklists</Link>
+              <Link href="/uitleg" className="hover:text-white">Uitleg en matrices</Link>
+              <Link href="/gidsen" className="hover:text-white">Watergidsen</Link>
+              <Link href="/rapporten" className="hover:text-white">Rapporten</Link>
+              <Link href="/factsheets" className="hover:text-white">Factsheets</Link>
+              <Link href="/vragen" className="hover:text-white">Vraag-clusters</Link>
+              <Link href="/water-in-de-keuken" className="hover:text-white">Water in de keuken</Link>
+              <Link href="/water-en-gezondheid" className="hover:text-white">Water en gezondheid</Link>
+              <Link href="/kalk-en-apparaten" className="hover:text-white">Kalk en apparaten</Link>
+              <Link href="/begrippen-en-technieken" className="hover:text-white">Begrippen en technieken</Link>
               <Link href="/begrippenlijst" className="hover:text-white">Begrippenlijst</Link>
+              <Link href="/zoeken" className="hover:text-white">Zoeken</Link>
               <Link href="/over-ons" className="hover:text-white">Over ons</Link>
               <Link href="/methodologie" className="hover:text-white">Methodologie</Link>
               <Link href="/contact" className="hover:text-white">Contact</Link>

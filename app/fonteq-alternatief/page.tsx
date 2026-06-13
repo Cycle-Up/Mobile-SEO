@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -200,6 +201,15 @@ export default function FonteqAlternatiefPage() {
             Prijzen indicatief op basis van publieke richtprijzen. Bijgewerkt mei 2026.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="fonteq-alternatief-cta"
+          label="Een 4-in-1 kraan met kokend en gefilterd water"
+          title="Liever kokend en gefilterd water uit een kraan?"
+          sub="De PureAqua 4-in-1 kraan is een volwaardig alternatief met kokend en gefilterd water. Bekijken kan bij onze partner PureAqua."
+        />
 
         <CTABanner context="kokend" />
 

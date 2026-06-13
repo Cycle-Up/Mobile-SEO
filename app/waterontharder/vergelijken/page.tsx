@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
@@ -555,6 +556,15 @@ export default function WaterontharderVergelijkenPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="waterontharder-vergelijken-cta"
+          label="Bekijk het aanbod waterontharders"
+          title="Een waterontharder uitkiezen?"
+          sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
+        />
 
         <CTABanner context="waterhardheid" />
 

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -245,6 +246,15 @@ export default function EcologischPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="beste-waterfilter-ecologisch-cta"
+          label="Minder flessen: bekijk de zuiver-water-kranen"
+          title="Klaar voor zuiver water uit de kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
       </div>

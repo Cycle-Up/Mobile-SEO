@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -197,6 +198,15 @@ export default function WaterdropAlternatiefPage() {
             Prijzen indicatief op basis van publieke richtprijzen. Bijgewerkt mei 2026.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="theSource"
+          campaign="omgekeerde-osmose"
+          content="waterdrop-alternatief-cta"
+          label="Bekijk The Source RO-systeem voor thuis"
+          title="Op zoek naar een RO-systeem voor thuis?"
+          sub="The Source is het omgekeerde-osmosesysteem van onze partner PureAqua, een alternatief voor Waterdrop."
+        />
 
         <CTABanner context="osmose" />
 

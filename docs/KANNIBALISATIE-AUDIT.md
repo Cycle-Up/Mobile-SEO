@@ -218,7 +218,7 @@ https://pureaqua.nl/products/aquaflow-waterfilter-kraan
 https://pureaqua.nl/en/products/the-flow-3-weg-gefilterd-water-kraan
 https://pureaqua.nl/collections/kranen
 https://pureaqua.nl/en/pages/osmose-waterfilter
-https://shop.pureaqua.nl/products/the-flow-3-weg-gefilterd-water-kraan
+https://pureaqua.nl/products/the-flow-3-weg-gefilterd-water-kraan
 https://pureaqua.nl/products/the-dew
 https://pureaqua.nl/en/products/the-stream-3-weg-zuiver-water-kraan
 https://pureaqua.nl/en/collections/kokend-water-kranen
@@ -230,7 +230,7 @@ https://pureaqua.nl/en/blogs/nieuws/quooker-alternatief-7-slimme-opties-voor-dir
 https://pureaqua.nl/en/blogs/kennisbank/actieve-koolfilters-voordelen
 https://pureaqua.nl/en/blogs/kennisbank/hoe-kies-ik-het-juiste-waterfilter-voor-mijn-kraan
 https://pureaqua.nl/en/collections/unito-systemen
-https://shop.pureaqua.nl/products/kraan-naar-keuze-1-weg-of-3-weg
+https://pureaqua.nl/products/kraan-naar-keuze-1-weg-of-3-weg
 https://pureaqua.nl/en/products/joep-waterontharder
 https://pureaqua.nl/en/pages/waterontharders
 https://blog.pureaqua.nl/kennisbank/waterontharder-of-omgekeerde-osmose-wat-is-beter-voor-jouw-situatie
@@ -282,9 +282,9 @@ In de steekproef zijn drie subdomeinen aangetroffen die los van elkaar content p
 - `pureaqua.nl` (hoofd-shop)
 - `www.pureaqua.nl` (sommige legacy-pages, bijv. `/over-ons`, `/omgekeerde-osmose-systeem`, `/werking/...`, `/waterfiltersysteem/kranen`)
 - `blog.pureaqua.nl` (kennisbank-blog op apart subdomein)
-- `shop.pureaqua.nl` (productpagina-varianten, schijnbaar duplicaat)
+- `pureaqua.nl` (productpagina-varianten, schijnbaar duplicaat)
 
-**Observatie:** pureaqua heeft potentieel eigen interne kannibalisatie tussen `pureaqua.nl/products/the-flow-...` en `shop.pureaqua.nl/products/the-flow-...` en tussen `pureaqua.nl/en/blogs/kennisbank/*` en `blog.pureaqua.nl/kennisbank/*`. Buiten scope van dit rapport, maar relevant voor de funnel-strategie (welke pureaqua-URL is de canonical target voor WFP-outbound links?).
+**Observatie:** pureaqua heeft potentieel eigen interne kannibalisatie tussen `pureaqua.nl/products/the-flow-...` en `pureaqua.nl/products/the-flow-...` en tussen `pureaqua.nl/en/blogs/kennisbank/*` en `blog.pureaqua.nl/kennisbank/*`. Buiten scope van dit rapport, maar relevant voor de funnel-strategie (welke pureaqua-URL is de canonical target voor WFP-outbound links?).
 
 ---
 

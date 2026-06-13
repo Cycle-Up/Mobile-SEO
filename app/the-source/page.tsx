@@ -5,6 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { buildShopUrl } from '@/lib/pureaqua.mjs';
 
 export function generateMetadata(): Metadata {
   return {
@@ -116,7 +117,7 @@ export default function TheSourcePage() {
               priceCurrency: 'EUR',
               price: '395.00',
               availability: 'https://schema.org/InStock',
-              url: 'https://shop.pureaqua.nl',
+              url: 'https://pureaqua.nl',
             },
           },
         ]}
@@ -293,14 +294,14 @@ export default function TheSourcePage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <a
-              href="https://shop.pureaqua.nl"
+              href={buildShopUrl('theSource', { campaign: 'omgekeerde-osmose', content: 'the-source-productcta' })}
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
               rel="sponsored nofollow"
             >
               Bekijk The Source bij PureAqua
             </a>
           </div>
-          <p className="text-xs text-gray-400 mt-4">
+          <p data-affiliate-disclosure className="text-xs text-gray-400 mt-4">
             Transparantie: WaterfilterPlatform is gelieerd aan PureAqua en kan een vergoeding ontvangen
             wanneer je via onze links iets aanschaft. Dit beinvloedt onze redactionele beoordeling niet; de
             specificaties komen van de aanbieder. Lees onze{' '}

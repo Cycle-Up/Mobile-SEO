@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -264,6 +265,15 @@ export default function SelsiuzAlternatiefPage() {
             <Link href="/quooker-alternatief" className="text-[#005F8A] underline">alternatieven voor Quooker</Link>.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="selsiuz-alternatief-cta"
+          label="Bekijk de PureAqua 4-in-1 kraan (Selsiuz-alternatief)"
+          title="Liever direct kokend en gefilterd water uit een kraan?"
+          sub="De PureAqua 4-in-1 kraan levert kokend en gefilterd water en is een alternatief voor de Selsiuz. Bekijken kan bij onze partner PureAqua."
+        />
 
         <CTABanner context="kokend" />
 

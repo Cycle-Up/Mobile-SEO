@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
@@ -721,6 +722,15 @@ export default function BesteOsmosefilter2026Page() {
         </section>
 
         {/* CTA */}
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="beste-osmosefilter-2026-cta"
+          label="Bekijk de osmosesystemen met kraan bij PureAqua"
+          title="Klaar om een osmosesysteem te kiezen?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua en vergelijk specificaties en prijzen."
+        />
+
         <CTABanner context="osmose" />
 
         {/* Verder lezen */}
