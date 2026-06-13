@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -128,6 +129,15 @@ export default function KokendKraanVsWaterkokerPage() {
           </div>
           <p className="text-gray-700 leading-relaxed">Meer lezen? Bekijk <Link href="/kokend-water-kraan" className="text-[#005F8A] underline">kokend water kranen</Link>, <Link href="/kennisbank/kokend-water-kraan-kosten" className="text-[#005F8A] underline">de kosten</Link> of het <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan overzicht</Link>.</p>
         </section>
+
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="vergelijken-kokend-kraan-vs-waterkoker-cta"
+          label="Bekijk de PureAqua 4-in-1 kraan"
+          title="Liever kokend en gefilterd water uit een kraan?"
+          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+        />
 
         <CTABanner context="kokend" />
 

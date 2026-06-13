@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -129,6 +130,15 @@ export default function KeramischVsKoolstofPage() {
           </div>
           <p className="text-gray-700 leading-relaxed">Meer lezen? Bekijk <Link href="/keramisch-filter" className="text-[#005F8A] underline">keramische filters</Link>, <Link href="/koolstoffilter" className="text-[#005F8A] underline">koolstoffilters</Link> of de <Link href="/filtertechnieken" className="text-[#005F8A] underline">filtertechnieken</Link>.</p>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="vergelijken-keramisch-vs-koolstof-cta"
+          label="Liever osmose? Bekijk de zuiver-water-kranen"
+          title="Klaar voor zuiver water uit de kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
 
         <CTABanner context="algemeen" />
 

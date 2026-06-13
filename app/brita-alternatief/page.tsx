@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -252,6 +253,15 @@ export default function BritaAlternatiefPage() {
             <Link href="/waterfilter/onder-aanrecht" className="text-[#005F8A] underline">onder-aanrecht waterfilters</Link>.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="theSource"
+          campaign="omgekeerde-osmose"
+          content="brita-alternatief-cta"
+          label="Bekijk The Source RO-systeem voor thuis"
+          title="Op zoek naar een RO-systeem voor thuis?"
+          sub="The Source is het omgekeerde-osmosesysteem van onze partner PureAqua."
+        />
 
         <CTABanner context="algemeen" />
 

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -128,6 +129,15 @@ export default function UvVsOsmosePage() {
           </div>
           <p className="text-gray-700 leading-relaxed">Meer lezen? Bekijk <Link href="/waterfilter/uv-sterilisatie" className="text-[#005F8A] underline">UV-sterilisatie</Link>, <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link> of de <Link href="/filtertechnieken" className="text-[#005F8A] underline">filtertechnieken</Link>.</p>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="vergelijken-uv-vs-osmose-cta"
+          label="Bekijk de zuiver-water-kranen"
+          title="Klaar voor zuiver water uit de kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
 

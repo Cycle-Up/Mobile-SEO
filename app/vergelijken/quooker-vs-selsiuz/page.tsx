@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 
@@ -194,6 +195,15 @@ export default function QuookerVsSelsiuzPage() {
         </section>
 
         <div className="mt-10">
+          <AffiliateCTA
+            destination="vierInEen"
+            campaign="kokend-water"
+            content="vergelijken-quooker-vs-selsiuz-cta"
+            label="PureAqua 4-in-1 kraan met kokend en gefilterd water"
+            title="Liever kokend en gefilterd water uit een kraan?"
+            sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          />
+
           <CTABanner context="kokend" />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -291,6 +292,15 @@ export default function WaterontharderZakelijkPage() {
           starten vanaf EUR 100 voor kleinere zakelijke systemen. Dit is aantrekkelijk voor
           bedrijven met beperkt investeringsbudget of die flexibiliteit willen behouden.
         </p>
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="waterontharder-zakelijk-cta"
+          label="Bekijk de waterontharders bij PureAqua"
+          title="Een waterontharder uitkiezen?"
+          sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
 

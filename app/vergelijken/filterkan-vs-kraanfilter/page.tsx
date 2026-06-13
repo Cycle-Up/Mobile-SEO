@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -149,6 +150,15 @@ export default function FilterkanVsKraanfilterPage() {
             <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">een osmosesysteem kopen</Link>.
           </p>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="vergelijken-filterkan-vs-kraanfilter-cta"
+          label="Meer dan een filterkan: osmosesysteem met kraan"
+          title="Klaar voor zuiver water uit de kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
 
         <CTABanner context="algemeen" />
 

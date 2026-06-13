@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -128,6 +129,15 @@ export default function ZoutloosVsIonenwisselaarPage() {
           </div>
           <p className="text-gray-700 leading-relaxed">Meer lezen? Bekijk <Link href="/vergelijken/zoutloze-waterontharder-vergelijken" className="text-[#005F8A] underline">zoutloze waterontharders</Link>, <Link href="/vergelijken/waterontharder-vs-magneet" className="text-[#005F8A] underline">waterontharder vs magneet</Link> of <Link href="/waterontharder" className="text-[#005F8A] underline">waterontharders</Link>.</p>
         </section>
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="vergelijken-zoutloos-vs-ionenwisselaar-cta"
+          label="Bekijk het aanbod waterontharders"
+          title="Een waterontharder uitkiezen?"
+          sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
+        />
 
         <CTABanner context="waterhardheid" />
 

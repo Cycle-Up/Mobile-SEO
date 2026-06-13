@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -409,6 +410,15 @@ export default function WaterontharderHurenPage() {
           zakelijke waterbehandeling leest u op{' '}
           <Link href="/waterontharder/zakelijk" className="text-[#005F8A] underline">waterontharder zakelijk</Link>.
         </p>
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="waterontharder-huren-cta"
+          label="Bekijk de waterontharders bij PureAqua"
+          title="Een waterontharder uitkiezen?"
+          sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
 

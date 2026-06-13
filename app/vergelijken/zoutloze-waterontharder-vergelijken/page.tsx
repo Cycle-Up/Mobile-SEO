@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 
@@ -182,6 +183,15 @@ export default function ZoutlozeWaterontharderVergelijkenPage() {
         </section>
 
         <div className="mt-10">
+          <AffiliateCTA
+            destination="waterontharders"
+            campaign="waterontharder"
+            content="vergelijken-zoutloze-waterontharder-vergelijken-cta"
+            label="Bekijk de waterontharders bij PureAqua"
+            title="Een waterontharder uitkiezen?"
+            sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
+          />
+
           <CTABanner context="waterhardheid" />
         </div>
       </div>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 
@@ -310,6 +311,15 @@ export default function OsmoseVsBronwaterPage() {
         </section>
 
         <div className="mt-10">
+          <AffiliateCTA
+            destination="zuiverWaterKranen"
+            campaign="omgekeerde-osmose"
+            content="vergelijken-osmose-vs-bronwater-cta"
+            label="Bekijk de zuiver-water-kranen"
+            title="Klaar voor zuiver water uit de kraan?"
+            sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+          />
+
           <CTABanner context="osmose" />
         </div>
       </div>

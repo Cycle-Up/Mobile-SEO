@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -129,6 +130,15 @@ export default function BronwaterVsMineraalwaterPage() {
           </div>
           <p className="text-gray-700 leading-relaxed">Meer lezen? Bekijk <Link href="/vergelijken/kraanwater-vs-flessenwater" className="text-[#005F8A] underline">kraanwater vs flessenwater</Link>, <Link href="/vergelijken/osmose-vs-bronwater" className="text-[#005F8A] underline">osmose vs bronwater</Link> of <Link href="/drinkwaternormen" className="text-[#005F8A] underline">drinkwaternormen</Link>.</p>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="vergelijken-bronwater-vs-mineraalwater-cta"
+          label="Liever kraanwater filteren? Bekijk de zuiver-water-kranen"
+          title="Klaar voor zuiver water uit de kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
 
         <CTABanner context="algemeen" />
 
