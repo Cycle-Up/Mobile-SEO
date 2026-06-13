@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { DecisionTreeClient } from '@/components/DecisionTreeClient';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export const metadata: Metadata = {
   title: "Welke waterontharder past bij mij? Beslishulp",
@@ -35,6 +36,15 @@ export default function WelkeWaterontharderTree() {
 
       <div className="max-w-3xl mx-auto px-4 py-10">
         <DecisionTreeClient kind="welke-waterontharder" />
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="beslishulp-welke-waterontharder-cta"
+          label="Bekijk de waterontharders bij PureAqua"
+          title="Weet je welke kant je op wilt?"
+          sub="Bekijk het aanbod waterontharders bij onze partner PureAqua en vergelijk de opties."
+        />
 
         <section className="mt-8">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Heb je bezwaar tegen zout en onderhoud?</h2>

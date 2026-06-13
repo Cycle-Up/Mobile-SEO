@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -213,6 +214,15 @@ export default function BudgetOnder100Page() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="countertopRo"
+          campaign="omgekeerde-osmose"
+          content="beste-waterfilter-budget-onder-100-cta"
+          label="Bekijk de Countertop RO"
+          title="Osmose zonder installatie?"
+          sub="De Countertop RO is een plug-and-play osmose-apparaat zonder installatie bij onze partner PureAqua."
+        />
 
         <CTABanner context="algemeen" />
       </div>

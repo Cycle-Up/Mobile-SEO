@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export const metadata: Metadata = {
   title: "Jaarchecklist waterontharder (2026)",
@@ -74,6 +75,14 @@ export default function JaarchecklistWaterontharderChecklist() {
             </li>
         </ol>
         <p className="text-xs text-gray-400 mt-6">Raadpleeg de handleiding van je ontharder voor merk-specifieke stappen.</p>
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="jaarchecklist-waterontharder-cta"
+          label="Toe aan vervanging? Bekijk de waterontharders"
+          title="Is je ontharder aan vervanging toe?"
+          sub="Bekijk het actuele aanbod waterontharders bij onze partner PureAqua."
+        />
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerd</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

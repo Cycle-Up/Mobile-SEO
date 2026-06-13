@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 
@@ -300,6 +301,15 @@ export default function HuurwoningPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="countertopRo"
+          campaign="omgekeerde-osmose"
+          content="beste-waterfilter-huurwoning-cta"
+          label="Osmose zonder installatie (ideaal voor huur)"
+          title="Osmose zonder installatie?"
+          sub="De Countertop RO is een plug-and-play osmose-apparaat zonder installatie bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
       </div>

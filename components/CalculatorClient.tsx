@@ -5,6 +5,8 @@ import {
   saltCost, osmoseWaste, kokendTCO, bottledSavings, hardnessConvert,
   filterReplaceDate, kalkRisk, roRejection, householdUsage, saltRefillInterval,
 } from '@/lib/calculators.mjs';
+import { buildShopUrl } from '@/lib/pureaqua.mjs';
+import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 
 type Field = { name: string; label: string; type?: string; def: string; step?: string; options?: [string, string][] };
 type Result = { label: string; value: string };
@@ -139,12 +141,31 @@ const CONFIG: Record<string, { fields: Field[]; compute: (v: Record<string, stri
   },
 };
 
+// Per rekentool de meest passende PureAqua-bestemming (contextueel, na het resultaat).
+const CTA_MAP: Record<string, { dest: string; campaign: string; label: string }> = {
+  zout: { dest: 'joep', campaign: 'waterontharder', label: 'Bekijk de Joep waterontharder (zonder zout)' },
+  afvalwater: { dest: 'zuiverWaterKranen', campaign: 'omgekeerde-osmose', label: 'Bekijk een osmosesysteem met kraan' },
+  kokend: { dest: 'vierInEen', campaign: 'kokend-water', label: 'Bekijk de PureAqua 4-in-1 kraan' },
+  flessen: { dest: 'zuiverWaterKranen', campaign: 'omgekeerde-osmose', label: 'Stop met flessen: bekijk de zuiver-water-kranen' },
+  hardheid: { dest: 'waterontharders', campaign: 'waterontharder', label: 'Bekijk de waterontharders bij PureAqua' },
+  filterdatum: { dest: 'filtersets', campaign: 'omgekeerde-osmose', label: 'Bekijk de filtersets bij PureAqua' },
+  kalkrisico: { dest: 'waterontharders', campaign: 'waterontharder', label: 'Bekijk de waterontharders bij PureAqua' },
+  rejectie: { dest: 'zuiverWaterKranen', campaign: 'omgekeerde-osmose', label: 'Bekijk een osmosesysteem met kraan' },
+  verbruik: { dest: 'zuiverWaterKranen', campaign: 'omgekeerde-osmose', label: 'Bekijk de zuiver-water-kranen' },
+  zoutinterval: { dest: 'joep', campaign: 'waterontharder', label: 'Bekijk de Joep waterontharder (zonder zout)' },
+};
+
 export function CalculatorClient({ kind }: { kind: string }) {
   const cfg = CONFIG[kind];
   const [values, setValues] = useState<Record<string, string>>(
     () => Object.fromEntries((cfg?.fields ?? []).map(f => [f.name, f.def])),
   );
   if (!cfg) return null;
+
+  const m = CTA_MAP[kind];
+  const cta = m
+    ? { label: m.label, href: buildShopUrl(m.dest as Parameters<typeof buildShopUrl>[0], { campaign: m.campaign, content: `hulpmiddelen-${kind}-cta` }) }
+    : null;
 
   let results: Result[] = [];
   try {
@@ -192,6 +213,18 @@ export function CalculatorClient({ kind }: { kind: string }) {
       <p className="text-xs text-gray-400 mt-3">
         Indicatieve berekening op basis van je invoer en transparante aannames. Geen exacte meting.
       </p>
+      {cta && (
+        <div className="mt-4 bg-[#E0F2FE] border border-[#BAE6FD] rounded-xl p-4">
+          <a
+            href={cta.href}
+            rel="sponsored"
+            className="inline-flex items-center gap-1.5 bg-[#005F8A] text-white font-semibold text-sm px-4 py-2 rounded-lg hover:bg-[#003F5C] transition-colors"
+          >
+            {cta.label}
+          </a>
+          <AffiliateDisclosure className="mt-2" />
+        </div>
+      )}
     </div>
   );
 }

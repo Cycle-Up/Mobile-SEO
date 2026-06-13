@@ -17,6 +17,16 @@ import { sourcesForSlug } from '@/lib/article-sources.mjs';
 import { entitiesForSlug } from '@/lib/entities.mjs';
 import { pickRelated } from '@/lib/related.mjs';
 import { CiteBlock } from '@/components/CiteBlock';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
+
+// Beperkte allowlist: alleen duidelijk beslissings-/koopgerichte kennisbankartikelen
+// krijgen een PureAqua-CTA. Informatieve (TOFU) artikelen blijven bewust zonder harde CTA,
+// om de onafhankelijke/citatie-waarde te behouden.
+const KENNISBANK_CTA: Record<string, { destination: 'waterontharders' | 'zuiverWaterKranen'; campaign: string; label: string; title: string; sub: string }> = {
+  'magnetisch-waterontharder': { destination: 'waterontharders', campaign: 'waterontharder', label: 'Bekijk een echte waterontharder bij PureAqua', title: 'Liever een bewezen waterontharder?', sub: 'Bekijk het aanbod waterontharders bij onze partner PureAqua.' },
+  'omgekeerde-osmose-vs-waterontharder': { destination: 'waterontharders', campaign: 'waterontharder', label: 'Bekijk de waterontharders bij PureAqua', title: 'Een waterontharder uitkiezen?', sub: 'Bekijk het aanbod waterontharders bij onze partner PureAqua.' },
+  'ontkalker-vs-waterontharder': { destination: 'waterontharders', campaign: 'waterontharder', label: 'Bekijk de waterontharders bij PureAqua', title: 'Een waterontharder uitkiezen?', sub: 'Bekijk het aanbod waterontharders bij onze partner PureAqua.' },
+};
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -289,6 +299,19 @@ export default async function KennisbankArtikelPage({ params }: PageProps) {
             </section>
           );
         })()}
+
+        {KENNISBANK_CTA[slug] && (
+          <div className="mt-12">
+            <AffiliateCTA
+              destination={KENNISBANK_CTA[slug].destination}
+              campaign={KENNISBANK_CTA[slug].campaign}
+              content={`kennisbank-${slug}-cta`}
+              label={KENNISBANK_CTA[slug].label}
+              title={KENNISBANK_CTA[slug].title}
+              sub={KENNISBANK_CTA[slug].sub}
+            />
+          </div>
+        )}
 
         <div className="mt-12">
           <CTABanner context="osmose" />

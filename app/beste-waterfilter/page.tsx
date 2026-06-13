@@ -4,6 +4,7 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
+import { AffiliateCTA } from "@/components/AffiliateCTA";
 
 export const metadata: Metadata = {
   title: "Beste waterfilter per situatie: welk filter past bij uw woning?",
@@ -177,6 +178,16 @@ export default function BesteWaterfilterPage() {
               </Link>
           </div>
         </section>
+      </div>
+      <div className="max-w-3xl mx-auto px-4 pb-12">
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="beste-waterfilter-hub-cta"
+          label="Bekijk de zuiver-water-kranen bij PureAqua"
+          title="Klaar voor zuiver water uit de kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
       </div>
     </>
   );
