@@ -5,6 +5,7 @@ import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/
 import { clampDescription } from '@/lib/seo';
 
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
 
@@ -486,6 +487,15 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
         ) : (
           <CTABanner context="osmose" variant="compact" />
         )}
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="osmose-filter-gemeente-cta"
+          label="Bekijk een osmosesysteem met kraan"
+          title="Osmosewater uit je eigen kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
 
         {/* Interne links */}
         <section>

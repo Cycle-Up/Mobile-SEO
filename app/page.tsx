@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { HeroIllustration } from '@/components/HeroIllustration';
 
@@ -388,6 +389,15 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="max-w-3xl mx-auto px-4 py-10">
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="home-cta"
+          label="Bekijk de zuiver-water-kranen bij PureAqua"
+          title="Zuiver water uit je eigen kraan?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
+
         <CTABanner context="algemeen" />
       </section>
 

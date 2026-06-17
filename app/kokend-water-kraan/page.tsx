@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { KokendWaterKraanDiagram } from '@/components/KokendWaterKraanDiagram';
@@ -605,6 +606,15 @@ export default function KokendWaterKraanPage() {
         </section>
 
         {/* CTA Banner */}
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="kokend-water-kraan-cta"
+          label="Bekijk de PureAqua 4-in-1 kraan"
+          title="Een kokendwaterkraan kiezen?"
+          sub="Bekijk de PureAqua 4-in-1 kraan met kokend en gefilterd water bij onze partner PureAqua."
+        />
+
         <CTABanner context="kokend" />
 
         {/* Verder lezen */}
