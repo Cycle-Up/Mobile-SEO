@@ -6,6 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { buildShopUrl } from '@/lib/pureaqua.mjs';
+import { PRODUCTS, buildProductSchema } from '@/lib/pureaqua-products.mjs';
 
 export function generateMetadata(): Metadata {
   return {
@@ -88,7 +89,10 @@ export default function JoepWaterontharderPage() {
           { name: 'JOEP', url: 'https://waterfilterplatform.nl/joep-waterontharder' },
         ]}
       />
-      <SchemaOrg schema={[{ '@type': 'Brand', name: 'JOEP', description: 'Nederlandse ionenwisselaar-waterontharder van AquaSens (Joure), WRAS-gecertificeerd.' }]} />
+      <SchemaOrg schema={[
+        { '@type': 'Brand', name: 'JOEP', description: 'Nederlandse ionenwisselaar-waterontharder van AquaSens (Joure), WRAS-gecertificeerd.' },
+        buildProductSchema(PRODUCTS.find(p => p.key === 'joep')!),
+      ]} />
 
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-3xl mx-auto">

@@ -107,6 +107,21 @@ export default function KeuzehulpPage() {
       />
       <div className="max-w-4xl mx-auto px-4 pb-10">
         <MethodologyBadge lastReviewed="2026-05-22" />
+        <section className="mt-8 bg-[#E0F2FE] border border-[#BAE6FD] rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <h2 className="text-lg font-bold text-[#003F5C]">Weet je al wat je zoekt?</h2>
+            <p className="text-sm text-gray-600 mt-1">
+              Sla de vragen over en ga direct naar onze productaanbevelingen: osmose, kokend water,
+              waterontharders en de TDS-meter.
+            </p>
+          </div>
+          <Link
+            href="/aanbevolen"
+            className="shrink-0 inline-flex items-center bg-[#005F8A] text-white font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors"
+          >
+            Bekijk aanbevolen producten
+          </Link>
+        </section>
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

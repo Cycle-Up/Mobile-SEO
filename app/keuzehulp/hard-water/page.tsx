@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export const metadata: Metadata = {
   title: "Hard water en waterfilter: waterontharder of osmose?",
@@ -384,6 +385,15 @@ export default function HardWaterPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="keuzehulp-hard-water-cta"
+          label="Bekijk de waterontharders bij PureAqua"
+          title="Hard water aanpakken?"
+          sub="Een waterontharder verlaagt de hardheid structureel. Bekijk het aanbod bij onze partner PureAqua."
+        />
 
         <CTABanner context="waterhardheid" />
       </div>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { DecisionTreeClient } from '@/components/DecisionTreeClient';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export const metadata: Metadata = {
   title: "Heb ik een kokend water kraan nodig? Beslishulp",
@@ -35,6 +36,16 @@ export default function KokendKraanNodigTree() {
 
       <div className="max-w-3xl mx-auto px-4 py-10">
         <DecisionTreeClient kind="kokend-kraan-nodig" />
+
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="beslishulp-kokend-kraan-nodig-cta"
+          label="Bekijk de PureAqua 4-in-1 kraan"
+          title="Uitkomst: een kokendwaterkraan?"
+          sub="De PureAqua 4-in-1 kraan levert kokend en gefilterd water. Bekijken bij onze partner PureAqua."
+        />
+
 
         <section className="mt-8">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe vaak gebruik je kokend water?</h2>

@@ -34,6 +34,15 @@ test('Article produces valid JSON-LD with the expected core fields', () => {
   assert.equal(a.citation[0]['@type'], 'CreativeWork');
 });
 
+test('Organization declares the PureAqua partner relation truthfully as sponsor', () => {
+  const out = emit({ type: 'Organization' });
+  const org = out[0];
+  assert.equal(org.sponsor['@type'], 'Organization');
+  assert.equal(org.sponsor.name, 'PureAqua');
+  assert.equal(org.sponsor.url, 'https://pureaqua.nl');
+  assert.equal(org.sponsor['@id'], 'https://pureaqua.nl/#organization');
+});
+
 test('Article about/mentions carry sameAs knowledge-graph grounding when present', () => {
   const out = emit({
     type: 'Article',

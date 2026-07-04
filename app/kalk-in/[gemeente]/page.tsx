@@ -5,6 +5,7 @@ import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/
 import { clampDescription } from '@/lib/seo';
 
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
 
@@ -439,6 +440,15 @@ export default async function KalkInGemeentePage({ params }: PageProps) {
         ) : (
           <CTABanner context="waterhardheid" variant="compact" />
         )}
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="kalk-in-gemeente-cta"
+          label="Bekijk de waterontharders bij PureAqua"
+          title="Veel kalk in huis?"
+          sub="Een waterontharder verlaagt de hardheid. Bekijk het aanbod bij onze partner PureAqua."
+        />
 
         {/* Interne links kennisbank */}
         <section>

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/gemeenten';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
 
@@ -536,6 +537,15 @@ export default async function WaterOntharderGemeentePage({ params }: PageProps) 
         ) : (
           <CTABanner context="waterhardheid" variant="compact" />
         )}
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="waterontharder-gemeente-cta"
+          label="Bekijk het aanbod waterontharders"
+          title="Een waterontharder aanschaffen?"
+          sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
+        />
 
         {/* Interne links */}
         <section>

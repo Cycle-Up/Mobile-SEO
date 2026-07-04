@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -237,6 +238,15 @@ export default function GeurSmaakPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="keuzehulp-geur-smaak-cta"
+          label="Bekijk een osmosesysteem met kraan"
+          title="Klaar met een gek smaakje aan je water?"
+          sub="Een osmosesysteem met kraan filtert geur- en smaakstoffen. Bekijken kan bij onze partner PureAqua."
+        />
 
         <CTABanner context="algemeen" />
       </div>

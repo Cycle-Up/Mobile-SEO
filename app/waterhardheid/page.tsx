@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { gemeenten } from '@/data/gemeenten';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { WaterhardheidMapNL } from '@/components/WaterhardheidMapNL';
@@ -247,6 +248,15 @@ export default function WaterhardheidPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="waterontharders"
+          campaign="waterontharder"
+          content="waterhardheid-cta"
+          label="Bekijk de waterontharders bij PureAqua"
+          title="Last van hard water?"
+          sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
+        />
 
         <CTABanner context="waterhardheid" />
 

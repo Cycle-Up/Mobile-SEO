@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export const metadata: Metadata = {
   title: "PFAS of lood in drinkwater: wanneer is osmose de beste keuze?",
@@ -272,6 +273,15 @@ export default function PfasLoodPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="theSource"
+          campaign="omgekeerde-osmose"
+          content="keuzehulp-pfas-lood-cta"
+          label="Bekijk The Source (RO-systeem)"
+          title="Zorgen over PFAS of lood?"
+          sub="Omgekeerde osmose verwijdert PFAS en lood tot circa 99 procent. Bekijk The Source bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
       </div>

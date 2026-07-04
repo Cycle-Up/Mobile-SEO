@@ -5,6 +5,7 @@ import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/
 import { clampDescription } from '@/lib/seo';
 
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
 
@@ -421,6 +422,15 @@ export default async function KokendWaterKraanGemeentePage({ params }: PageProps
         ) : (
           <CTABanner context="kokend" variant="compact" />
         )}
+
+        <AffiliateCTA
+          destination="vierInEen"
+          campaign="kokend-water"
+          content="kokend-water-kraan-gemeente-cta"
+          label="Bekijk de PureAqua 4-in-1 kraan"
+          title="Kokend en gefilterd water uit een kraan?"
+          sub="Bekijk de PureAqua 4-in-1 kraan bij onze partner PureAqua."
+        />
 
         {/* Interne links */}
         <section>

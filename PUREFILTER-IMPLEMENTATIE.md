@@ -52,3 +52,22 @@ aanleggen. Verzamel het volgende bij de fabrikant/verkoper en update daarna de c
 
 Publicatieregel (uit het pakket): geen harde product- of certificeringsclaim live zonder
 `evidence_status=verified`. Tot die tijd blijft elke claim gemarkeerd als geclaimd-niet-bevestigd.
+
+## Statusupdate bewijsdossier (2026-06-24)
+
+Poging tot live verificatie van productclaims/prijzen op pureaqua.nl vanuit de
+werkomgeving: geblokkeerd door de netwerk-allowlist (curl en proxy-fetch beide
+geweigerd). Gevolg voor de entiteit-referenties-ronde:
+
+- Product-schema is uitgerold via `lib/pureaqua-products.mjs`, maar met Offers
+  UITSLUITEND waar de prijs al geverifieerd/gepubliceerd was: The Source
+  (vanaf EUR 395, zoals op /the-source) en de TDS-meter (EUR 5,95, uit de
+  PureAqua-linkbriefing van 2026-06-13). 4-in-1 kraan, Joep, AquaCell en
+  Countertop RO staan bewust ZONDER prijs/Offer.
+- Merken waarheidsgetrouw: JOEP en Aquacell als merk, PureAqua als seller.
+- Nog nodig van PureAqua om het dossier te sluiten (onveranderd):
+  actuele prijzen/voorraad (of Shopify-koppeling naar de PureAqua-store),
+  NSF/ANSI-listingnummers en testrapporten voor The Source/PureFilter.
+- PureFilter-claimtabel op /purefilter-review blijft "geclaimd-niet-bevestigd";
+  de publicatieregel (geen harde claim zonder evidence_status=verified) blijft
+  van kracht.

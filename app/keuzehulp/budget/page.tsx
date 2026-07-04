@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -236,6 +237,15 @@ export default function BudgetPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="tdsMeter"
+          campaign="water-testen"
+          content="keuzehulp-budget-cta"
+          label="Test eerst je water met een TDS-meter"
+          title="Eerst weten wat er in je water zit?"
+          sub="Met een TDS-meter (EUR 5,95) meet je in seconden hoeveel opgeloste stoffen je kraanwater bevat. Verkrijgbaar bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
       </div>

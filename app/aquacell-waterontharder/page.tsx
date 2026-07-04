@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { PRODUCTS, buildProductSchema } from '@/lib/pureaqua-products.mjs';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -69,7 +70,10 @@ export default function AquacellWaterontharderPage() {
           { name: 'Aquacell', url: 'https://waterfilterplatform.nl/aquacell-waterontharder' },
         ]}
       />
-      <SchemaOrg schema={[{ '@type': 'Brand', name: 'Aquacell', description: 'Merk van betaalbare ionenwisselaar-waterontharders, gericht op prijs-prestatie in het instap- tot middensegment.' }]} />
+      <SchemaOrg schema={[
+        { '@type': 'Brand', name: 'Aquacell', description: 'Merk van betaalbare ionenwisselaar-waterontharders, gericht op prijs-prestatie in het instap- tot middensegment.' },
+        buildProductSchema(PRODUCTS.find(p => p.key === 'aquacell')!),
+      ]} />
 
       <section className="bg-gradient-to-b from-[#E0F2FE] to-white py-10 px-4">
         <div className="max-w-3xl mx-auto">

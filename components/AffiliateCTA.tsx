@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { buildShopUrl, DESTINATIONS } from '@/lib/pureaqua.mjs';
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 
@@ -61,6 +62,11 @@ export function AffiliateCTA({ destination, campaign, content, label, title, sub
         {text}
         <Chevron />
       </a>
+      <p className="mt-3">
+        <Link href="/aanbevolen" className="text-sm text-[#005F8A] underline hover:no-underline">
+          Of bekijk alle aanbevolen producten
+        </Link>
+      </p>
       <AffiliateDisclosure className="mt-4" />
     </div>
   );

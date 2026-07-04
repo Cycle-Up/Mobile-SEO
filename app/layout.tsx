@@ -91,6 +91,7 @@ const dropdownNav = [
 
 const mobileLinks = [
   { href: '/keuzehulp', label: 'Keuzehulp' },
+  { href: '/aanbevolen', label: 'Aanbevolen' },
   { href: '/filtertechnieken', label: 'Filtertechnieken' },
   { href: '/vergelijken', label: 'Vergelijken' },
   { href: '/stoffen-in-drinkwater', label: 'Drinkwater' },
@@ -147,6 +148,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ))}
               <Link href="/kennisbank" className="px-3 py-4 text-gray-600 hover:text-[#005F8A] transition-colors text-sm">
                 Kennisbank
+              </Link>
+              <Link href="/aanbevolen" className="px-3 py-4 text-gray-600 hover:text-[#005F8A] transition-colors text-sm font-semibold">
+                Aanbevolen
               </Link>
             </nav>
 
@@ -239,6 +243,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/begrippen-en-technieken" className="hover:text-white">Begrippen en technieken</Link>
               <Link href="/begrippenlijst" className="hover:text-white">Begrippenlijst</Link>
               <Link href="/zoeken" className="hover:text-white">Zoeken</Link>
+              <Link href="/aanbevolen" className="hover:text-white">Aanbevolen producten</Link>
               <Link href="/over-ons" className="hover:text-white">Over ons</Link>
               <Link href="/methodologie" className="hover:text-white">Methodologie</Link>
               <Link href="/contact" className="hover:text-white">Contact</Link>
