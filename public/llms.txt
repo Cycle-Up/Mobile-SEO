@@ -51,6 +51,7 @@ Deze constructie wordt expliciet vermeld op /over-ons, /methodologie en in de fo
 - Open datasets (/data, met JSON-download): drinkwaternormen, gemeente-hardheid, filtertechniek-matrix, keurmerken, verwijdering-matrix, waterbedrijven, poriegrootte-schaal, tds-ec-referentie
 - Interactieve rekentools (/hulpmiddelen): zout-kosten, osmose-afvalwater, kokend-water-kraan-kosten, flessenwater-besparing, waterhardheid-omrekenen, filter-vervangdatum, kalkrisico, osmose-rejectie, waterverbruik, zout-bijvul-interval
 - Zoeken (/zoeken): doorzoek alle artikelen, vergelijkingen, rekentools, datasets, factsheets en gidsen (statische zoekindex op /search-index.json)
+- Aanbevolen producten (/aanbevolen): onze productaanbevelingen via partner PureAqua (4-in-1 kraan, The Source, Countertop RO, Joep, AquaCell, TDS-meter), met transparante disclosure
 
 ## Gemeente-specifieke pagina's (350 gemeenten)
 
