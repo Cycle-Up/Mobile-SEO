@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { DecisionTreeClient } from '@/components/DecisionTreeClient';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export const metadata: Metadata = {
   title: "Welke waterfilter past bij mij? Beslishulp",
@@ -35,6 +36,16 @@ export default function WelkeWaterfilterTree() {
 
       <div className="max-w-3xl mx-auto px-4 py-10">
         <DecisionTreeClient kind="welke-waterfilter" />
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="beslishulp-welke-waterfilter-cta"
+          label="Bekijk de zuiver-water-kranen bij PureAqua"
+          title="Weet je welk filter je zoekt?"
+          sub="Bekijk de zuiver-water-kranen bij onze partner PureAqua, of de Countertop RO als je niet wilt installeren."
+        />
+
 
         <section className="mt-8">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat wil je vooral aanpakken?</h2>

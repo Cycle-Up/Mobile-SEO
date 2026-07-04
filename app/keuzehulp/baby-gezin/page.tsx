@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { HealthDisclaimer } from "@/components/HealthDisclaimer";
 
 export const metadata: Metadata = {
@@ -352,6 +353,15 @@ export default function BabyGezinPage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="keuzehulp-baby-gezin-cta"
+          label="Bekijk de zuiver-water-kranen bij PureAqua"
+          title="Klaar om te kiezen voor je gezin?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
       </div>

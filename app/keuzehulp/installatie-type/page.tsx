@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -287,6 +288,15 @@ export default function InstallatieTypePage() {
             </Link>
           </div>
         </section>
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="keuzehulp-installatie-type-cta"
+          label="Bekijk de zuiver-water-kranen bij PureAqua"
+          title="Weet je welk installatietype past?"
+          sub="Bekijk de zuiver-water-kranen (inbouw) of vraag naar de Countertop RO (zonder installatie) bij onze partner PureAqua."
+        />
 
         <CTABanner context="osmose" />
       </div>

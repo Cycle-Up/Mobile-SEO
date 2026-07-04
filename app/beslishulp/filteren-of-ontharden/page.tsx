@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { DecisionTreeClient } from '@/components/DecisionTreeClient';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export const metadata: Metadata = {
   title: "Filteren, ontharden of allebei? Beslishulp",
@@ -35,6 +36,16 @@ export default function FilterenOfOnthardenTree() {
 
       <div className="max-w-3xl mx-auto px-4 py-10">
         <DecisionTreeClient kind="filteren-of-ontharden" />
+
+        <AffiliateCTA
+          destination="store"
+          campaign="algemeen"
+          content="beslishulp-filteren-of-ontharden-cta"
+          label="Bekijk het assortiment bij PureAqua"
+          title="Filteren, ontharden of allebei?"
+          sub="Bekijk waterontharders en osmosesystemen naast elkaar bij onze partner PureAqua."
+        />
+
 
         <section className="mt-8">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is je hoofddoel?</h2>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { DecisionTreeClient } from '@/components/DecisionTreeClient';
+import { AffiliateCTA } from '@/components/AffiliateCTA';
 
 export const metadata: Metadata = {
   title: "Heb ik omgekeerde osmose nodig? Beslishulp",
@@ -35,6 +36,16 @@ export default function OsmoseNodigTree() {
 
       <div className="max-w-3xl mx-auto px-4 py-10">
         <DecisionTreeClient kind="osmose-nodig" />
+
+        <AffiliateCTA
+          destination="zuiverWaterKranen"
+          campaign="omgekeerde-osmose"
+          content="beslishulp-osmose-nodig-cta"
+          label="Bekijk de osmosesystemen met kraan"
+          title="Uitkomst: osmose past bij jou?"
+          sub="Bekijk de zuiver-water-kranen (osmosesysteem met kraan) bij onze partner PureAqua."
+        />
+
 
         <section className="mt-8">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wil je lood, nitraat, PFAS of zeer zuiver water?</h2>
