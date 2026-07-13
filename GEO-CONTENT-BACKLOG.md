@@ -6,7 +6,16 @@ PureAqua-relevant verkeer te winnen. Aanvulling op de afgeronde CONTENT-BACKLOG 
 CONTENT-INNOVATION-BACKLOG (100); gebouwd op de GSC-week-1-signalen (13 juli 2026) + de gaten in
 de huidige corpus (435 kennisbankartikelen).
 
-Status: opgesteld 2026-07-13. Nog niet uitgevoerd.
+Status: opgesteld 2026-07-13. Uitvoering gestart 2026-07-13.
+
+## Voortgang
+- **2026-07-13 - Fase 1, eerste batch (9 nieuwe artikelen) opgeleverd + gepoort (groen):**
+  items 1, 2, 3, 4 (Thema 1) en 9, 11, 12, 13, 14 (Thema 2) als nieuwe kennisbankartikelen.
+  Alle >=700 woorden, quickAnswer 40-60, citeerbare tabellen, bronregel, interne links, CTA.
+  Poorten groen: `npm run verify`, `npm run build && npm run audit-html`, `npm test` (144/144).
+  Cannibalisatie voorkomen: cost-pagina's op "per jaar"-intentie (los van bestaande totaal-/
+  installatiekosten), TDS-3-weg los van tds-meter-gebruiken. Items 5, 6, 7, 8, 10, 15 blijken
+  al door bestaande pagina's gedekt -> verschuiven naar Thema 8-verrijking i.p.v. nieuwe URL.
 
 ## Waarom GEO net iets anders vraagt dan klassieke SEO
 AI-engines citeren content die: (a) de vraag letterlijk beantwoordt in de eerste 1-2 zinnen
@@ -34,23 +43,23 @@ deze backlog voegt de ONTBREKENDE citeerbare hoeken toe.
 ## Thema 1 - Statistiek-/cijferpagina's (AI citeert getallen met bron)
 Citaat-klaar cijfer bovenaan + bronregel; ideaal voor "hoeveel/wat kost"-prompts.
 
-1. `[AUTONOOM]` DATA/PAGE - "Wat kost een waterontharder per jaar?" (aanschaf + zout + onderhoud,
+1. `[DONE 2026-07-13]` DATA/PAGE - "Wat kost een waterontharder per jaar?" (aanschaf + zout + onderhoud,
    met de bestaande rekentools als bron; ranges, indicatief-label). -> waterontharders.
-2. `[AUTONOOM]` "Wat kost omgekeerde osmose per jaar?" (filters + waterverbruik + afvalwater). -> osmose.
-3. `[AUTONOOM]` "Hoeveel water verspilt een osmosesysteem?" (1:1 vs oude 3-4:1, met uitleg). -> The Source.
-4. `[AUTONOOM]` "Hoeveel kalk zit er in Nederlands kraanwater?" (dH-ranges per regio, bron Vewin/RIVM).
+2. `[DONE 2026-07-13]` "Wat kost omgekeerde osmose per jaar?" (filters + waterverbruik + afvalwater). -> osmose.
+3. `[DONE 2026-07-13]` "Hoeveel water verspilt een osmosesysteem?" (1:1 vs oude 3-4:1, met uitleg). -> The Source.
+4. `[DONE 2026-07-13]` "Hoeveel kalk zit er in Nederlands kraanwater?" (dH-ranges per regio, bron Vewin/RIVM).
 5. `[AUTONOOM]` "Hoeveel PFAS zit er in Nederlands drinkwater?" (norm 0,1 ug/L, meetkader; YMYL, bronnen).
 6. `[AUTONOOM]` "Wat kost een kokendwaterkraan per jaar aan stroom?" (standby-verbruik; rekentool-basis). -> 4-in-1.
 7. `[AUTONOOM]` "Hoeveel bespaar je met kraanwater t.o.v. flessenwater?" (per huishouden/jaar; CO2). -> osmose.
 8. `[AUTONOOM]` "Hoe lang gaat een RO-membraan mee?" (2-5 jaar; voorfilters 6-12 mnd) - HowTo/feit.
 
 ## Thema 2 - Nieuwe vergelijkingen met extraheerbare tabel (niet in de 33 bestaande)
-9. `[AUTONOOM]` "Osmosekraan vs Quooker: wat is het verschil?" (functies/kosten). -> 4-in-1.
-10. `[AUTONOOM]` "Waterontharder vs osmosefilter: welke voor welk probleem?" (verrijk/dedup bestaande vs-MDX). -> hubs.
-11. `[AUTONOOM]` "The Source vs klassieke onderbouw-osmose" (stroomloos vs pomp). -> The Source.
-12. `[AUTONOOM]` "Countertop RO vs onderbouw-osmose" (installatie/huur). -> Countertop RO.
-13. `[AUTONOOM]` "Joep vs klassieke zoutontharder" (compact/zout). -> Joep.
-14. `[AUTONOOM]` "TDS-meter vs teststrip vs laboratorium" (wat meet elk, kosten). -> TDS-meter.
+9. `[DONE 2026-07-13]` "Osmosekraan vs Quooker: wat is het verschil?" (functies/kosten). -> 4-in-1.
+10. `[COVERED - bestaande vs-pagina]` "Waterontharder vs osmosefilter: welke voor welk probleem?" (verrijk/dedup bestaande vs-MDX). -> hubs.
+11. `[DONE 2026-07-13]` "The Source vs klassieke onderbouw-osmose" (stroomloos vs pomp). -> The Source.
+12. `[DONE 2026-07-13]` "Countertop RO vs onderbouw-osmose" (installatie/huur). -> Countertop RO.
+13. `[DONE 2026-07-13]` "Joep vs klassieke zoutontharder" (compact/zout). -> Joep.
+14. `[DONE 2026-07-13]` "TDS-meter vs teststrip vs laboratorium" (wat meet elk, kosten). -> TDS-meter.
 15. `[AUTONOOM]` "Osmose vs waterkoker-ontkalken vs ontharder tegen kalk" (3-weg-tabel). -> hubs.
 
 ## Thema 3 - "Beste ... voor [persona/situatie]" (listicle, AI-extraheerbaar)

@@ -324,6 +324,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Chroom-6 in drinkwater: wat is het, wat speelde er in Dordrecht bij Chemours, wat zijn de gezondheidsrisico's en verwijdert osmose het effectief? Chroom-6 is een naam die bij veel Nederlanders een onaangenaam gevoel oproept - en niet zonder reden.
 - [CO2 patronen vergelijken: welke past bij jouw systeem?](https://waterfilterplatform.nl/kennisbank/co2-patronen-vergelijken) (2026-02-16)
   > CO2 patronen voor SodaStream, Philips GoZero of Aarke vergelijken? Prijs per liter, wisselservice vs navullen en de beste keuze voor jouw bubbelsysteem Bruisend water thuis maken is populairder dan ooit. Maar als je eenmaal een bruiswaterapparaat hebt, komen er al snel vragen: welke CO2 patroon heb ik nodig, wat kost bruisend water per liter eigenlijk,
+- [Countertop RO vs onderbouw-osmose](https://waterfilterplatform.nl/kennisbank/countertop-ro-vs-onderbouw) (2026-07-13)
+  > Een countertop RO staat los op het aanrecht en vraagt geen installatie in de leiding, ideaal voor huurwoningen. Een onderbouwsysteem zit vast onder het aanrecht op de waterleiding en geeft een opgeruimd beeld met een aparte drinkwaterkraan. Beide zuiveren via omgekeerde osmose met vergelijkbaar resultaat.
 - [Drinkwater voor baby's: kraanwater, fles of gefilterd?](https://waterfilterplatform.nl/kennisbank/drinkwater-baby) (2026-01-05)
   > Wanneer mag een baby water drinken? Kraanwater, flessenwater of osmosewater - lees wat veilig is voor zuigelingen en wanneer voorzichtigheid geboden is Welk water is veilig voor je baby? Het is een vraag die veel jonge ouders bezighoudt, en terecht: baby's zijn gevoeliger voor verontreinigingen in water dan volwassenen.
 - [Leidingwater voor baby veilig? Nitraat, lood en osmosewater](https://waterfilterplatform.nl/kennisbank/drinkwater-baby-veilig) (2026-05-01)
@@ -404,14 +406,20 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Waterhardheid berekenen en omrekenen: °dH, mmol/L, mg/L CaCO3, ppm, °fH en °eH. Met formules, voorbeeldberekeningen, equivalententabel en online tools Waterhardheid wordt uitgedrukt in meerdere eenheden, afhankelijk van het land en de context. Een waterontharder-leverancier gebruikt graden Duits (°dH), een laboratoriumrapport vermeldt milligram per liter CaCO₃ of mmol/L, een Amerikaanse bron spreekt over ppm of gpg.
 - [Hardwatergebieden Nederland: waar is het water hard?](https://waterfilterplatform.nl/kennisbank/hardwatergebied-nederland) (2025-09-09)
   > Overzicht van hardwatergebieden in Nederland per regio. Zie of jouw stad zachte of harde water heeft en wat je eraan kunt doen De hardheid van drinkwater verschilt sterk per regio in Nederland. In Amsterdam drink je relatief zacht water, terwijl in Eindhoven of Roermond het water bijna drie keer zo hard is.
+- [Hoeveel kalk zit er in Nederlands kraanwater?](https://waterfilterplatform.nl/kennisbank/hoeveel-kalk-kraanwater-nederland) (2026-07-13)
+  > De hardheid van Nederlands kraanwater loopt indicatief van ongeveer 5 dH (zacht) tot 19 dH (zeer hard), afhankelijk van je regio en waterbedrijf. Water onder 8 dH heet zacht, boven 14 dH hard. Brabant en Limburg zijn doorgaans hard; het noorden en westen vaak zachter.
 - [Hoeveel water per dag drinken? Richtlijn, factoren en praktisch advies](https://waterfilterplatform.nl/kennisbank/hoeveel-water-per-dag) (2026-05-18)
   > Volwassenen hebben volgens de Gezondheidsraad 1,5-2 liter vocht per dag uit dranken nodig, naast vocht uit voeding. Bij sport, warmte, zwangerschap of borstvoeding is meer nodig. Beter drinkbaar (gefilterd) water helpt veel mensen vanzelf meer te drinken.
+- [Hoeveel water verspilt een osmosesysteem?](https://waterfilterplatform.nl/kennisbank/hoeveel-water-verspilt-osmose) (2026-07-13)
+  > Oudere osmosesystemen verspillen ongeveer 3 tot 4 liter afvalwater (concentraat) per liter drinkwater, een verhouding van 1:3 tot 1:4. Moderne, efficiente systemen halen ongeveer 1:1, dus ongeveer 1 liter afvalwater per liter gezuiverd water. De verhouding bepaalt hoeveel water je extra verbruikt.
 - [Hormonen en medicijnresten in drinkwater: feiten en filteropties](https://waterfilterplatform.nl/kennisbank/hormonen-medicijnen-water) (2026-05-18)
   > Medicijnresten en hormonen (oestrogeen, antibiotica, pijnstillers) worden aangetroffen in oppervlaktewater en soms grondwater, maar in Nederlandse drinkwaternormen in zeer lage concentraties. Waterbedrijven verwijderen ze grotendeels via ozonisatie en actief kool. Osmose biedt aanvullende bescherming.
 - [Heldere ijsblokjes maken: waarom gefilterd water helpt](https://waterfilterplatform.nl/kennisbank/ijsblokjes-helder-maken) (2026-05-29)
   > Troebele ijsblokjes ontstaan door opgesloten luchtbelletjes en opgeloste mineralen die tijdens het bevriezen naar het midden worden geduwd. Helder ijs maak je door kalkarm water te gebruiken (gefilterd of osmosewater verlaagt de mineralen) en door directioneel te vriezen, zodat lucht en mineralen kunnen ontsnappen in plaats van ingesloten te raken.
 - [IJzer in drinkwater: herkennen, risico's en verwijderen](https://waterfilterplatform.nl/kennisbank/ijzer-drinkwater) (2026-01-14)
   > Oranje verkleuring en metaalsmaak zijn tekenen van ijzer in drinkwater. Leer de bronnen, gezondheidseffecten en effectieve verwijderingsmethoden Oranje of roestbruine vlekken in het toilet of de wastafel, een metaalachtige smaak in je drinkwater of oranjebruin verkleurde kleding na de was - dit zijn klassieke signalen van te veel ijzer in het leidingwater.
+- [Joep vs klassieke zoutontharder](https://waterfilterplatform.nl/kennisbank/joep-vs-zoutontharder) (2026-07-13)
+  > Joep is een compacte waterontharder die zich richt op eenvoudige installatie en een klein formaat. Een klassieke zoutontharder is vaak groter met een aparte zouttank en meer instelmogelijkheden. Beide ontharden water via ionenwisseling met zout; het verschil zit in formaat, gemak en capaciteit.
 - [Kalk in CV ketel: gevolgen, kosten en preventie](https://waterfilterplatform.nl/kennisbank/kalk-cv-ketel) (2025-10-20)
   > Kalkaanslag in je CV ketel verlaagt rendement en verhoogt stookkosten. Ontdek hoe erg het is, wanneer te ontkalken en hoe je het voorkomt Je cv-ketel werkt hard om je huis warm te houden. Maar als het water in je verwarmingssysteem kalk bevat, sloopt die kalk langzaam de efficiëntie van je installatie.
 - [Kalk in CV-leidingen: preventie en aanpak](https://waterfilterplatform.nl/kennisbank/kalk-cv-leidingen-preventie) (2026-04-06)
@@ -696,6 +704,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Osmosewater heeft een pH van 5,5-6,5. Wat betekent dat voor uw tanden, koffie en gezondheid? En hoe corrigeert u de zuurgraad met remineralisatie? Als u een omgekeerde osmose systeem installeert, ontdekt u al snel dat het geproduceerde water een lagere pH heeft dan gewoon kraanwater.
 - [Osmosefilter onderhoud checklist: filters wisselen, TDS meten, desinfecteren](https://waterfilterplatform.nl/kennisbank/osmosefilter-onderhoud-checklist) (2026-05-17)
   > Een osmosefilter heeft jaarlijks onderhoud nodig. Sediment- en koolfilters (pre-filters) wisselen elke 6-12 maanden. Het RO-membraan gaat 2-5 jaar mee. Meet maandelijks de TDS-ratio om membraankwaliteit te bewaken. Desinfectie van het systeem is aanbevolen bij lange stilstand of na vervanging.
+- [Osmosekraan vs Quooker: wat is het verschil?](https://waterfilterplatform.nl/kennisbank/osmosekraan-vs-quooker) (2026-07-13)
+  > Een osmosekraan levert gezuiverd drinkwater via een omgekeerd-osmosefilter; een Quooker is een merk kokendwaterkraan dat direct 100 graden water geeft. Ze lossen verschillende behoeften op: zuiver drinkwater versus direct kokend water. Een 4-in-1 kraan combineert beide functies in een systeem.
 - [Osmotische druk: eenvoudig uitgelegd (2026)](https://waterfilterplatform.nl/kennisbank/osmotische-druk-uitleg) (2026-06-02)
   > Osmose is de natuurlijke neiging van water om door een membraan naar de kant met meer opgeloste stoffen te stromen. De osmotische druk is de druk die dat aandrijft. Bij omgekeerde osmose pers je water met meer dan die druk de andere kant op, waardoor zuiver water achterblijft en de stoffen worden tegengehouden.
 - [Permeaat en concentraat: wat betekenen deze osmose-termen? (2026)](https://waterfilterplatform.nl/kennisbank/permeaat-concentraat) (2026-06-02)
@@ -742,10 +752,14 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Een TDS-meter meet de totale opgeloste vaste stoffen in water in ppm (mg/L). Voor leidingwater is 100-500 ppm normaal. Osmosewater scoort 5-50 ppm. U kunt de rejectie van uw osmosefilter berekenen als: (1 - TDS_product / TDS_ingang) x 100%. Een goede meter kost 8-25 euro.
 - [TDS-meter kopen: hoe gebruik je het en wat meet je?](https://waterfilterplatform.nl/kennisbank/tds-meter-kopen) (2026-04-15)
   > TDS-meter kopen voor drinkwater? Leer wat een TDS-meter meet, hoe je het gebruikt en wat normale waarden zijn voor kraanwater en osmosewater Een TDS-meter is een handig en goedkoop hulpmiddel om de kwaliteit van je drinkwater in kaart te brengen.
+- [TDS-meter vs teststrip vs laboratorium](https://waterfilterplatform.nl/kennisbank/tds-meter-vs-teststrip-vs-lab) (2026-07-13)
+  > Een TDS-meter meet alleen de totale hoeveelheid opgeloste stoffen (indicatief, snel en goedkoop). Teststrips geven een indicatie van meerdere parameters zoals hardheid en chloor. Een laboratoriumanalyse meet specifieke stoffen zoals lood of PFAS nauwkeurig, maar kost meer en duurt langer.
 - [TDS-waarde water: wat is het en wat is normaal?](https://waterfilterplatform.nl/kennisbank/tds-water) (2025-10-03)
   > Wat is TDS in drinkwater? Leer over de mg/L schaal, WHO-normen, het verschil met osmosewater en wanneer een lage TDS beter of slechter is Je hebt misschien weleens een TDS-meter zien liggen bij een waterfilterwinkel of online gezien hoe mensen hun kraanwater testen.
 - [TDS water uitleg voor beginners: alles over ppm](https://waterfilterplatform.nl/kennisbank/tds-water-uitleg) (2025-10-13)
   > Wat is TDS in water? Uitleg over Total Dissolved Solids, ppm vs mg/L, osmose versus kraanwater, hoe je meet en de ideale TDS per toepassing Je hebt misschien de term 'TDS' gezien op een waterfilter, in een aquariumforum, of in een artikel over koffiezetten.
+- [The Source vs klassieke onderbouw-osmose](https://waterfilterplatform.nl/kennisbank/the-source-vs-onderbouw-osmose) (2026-07-13)
+  > The Source is een pomploos onderbouw-osmosesysteem dat zonder stroom werkt en ongeveer 1:1 water verbruikt. Klassieke onderbouwsystemen gebruiken vaak een pomp en/of tank en verspillen meer water (tot 1:3 of 1:4). Beide zuiveren via omgekeerde osmose; het verschil zit in efficientie en installatiegemak.
 - [Welk water per theesoort? Temperatuur en hardheid (2026)](https://waterfilterplatform.nl/kennisbank/thee-soort-water) (2026-06-02)
   > Elke theesoort heeft een eigen ideale temperatuur: groene thee rond 70-80 graden, zwarte en kruidenthee rond 95-100 graden. Zacht, chloorvrij water laat de smaak het best doorkomen; hard water dempt aroma's en geeft een dof, soms olieachtig vliesje op de thee.
 - [Tijdelijke en blijvende waterhardheid: wat is het verschil? (2026)](https://waterfilterplatform.nl/kennisbank/tijdelijke-blijvende-hardheid) (2026-06-02)
@@ -762,6 +776,10 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Gefilterd water smaakt beter doordat het chloor wegneemt en kan PFAS, lood en andere verontreinigingen verwijderen, vaak goedkoper dan flessenwater. Filteren is vooral zinvol bij oude loden leidingen of specifieke zorgen; voor gemiddeld Nederlands kraanwater is het een comfort- en smaakkeuze.
 - [Warm water drinken: voordelen, nadelen en waterkwaliteit](https://waterfilterplatform.nl/kennisbank/warm-water-drinken) (2026-05-18)
   > Warm water van 40-60 graden kan de spijsvertering en ontspanning ondersteunen; boven 65 graden bestaat risico op verbranding. Drink nooit warm kraanwater rechtstreeks vanwege mogelijk lood en opwarming in de boiler; kook liever koud, gefilterd water op.
+- [Wat kost omgekeerde osmose per jaar?](https://waterfilterplatform.nl/kennisbank/wat-kost-omgekeerde-osmose-per-jaar) (2026-07-13)
+  > Een omgekeerd osmosesysteem kost indicatief 30 tot 90 euro per jaar aan terugkerende kosten: voorfilters (twee tot drie keer per jaar), het membraan (uitgesmeerd 15-40 euro per jaar) en wat extra water. Een pomploos systeem gebruikt geen stroom en houdt de jaarkosten laag.
+- [Wat kost een waterontharder per jaar?](https://waterfilterplatform.nl/kennisbank/wat-kost-waterontharder-per-jaar) (2026-07-13)
+  > Een waterontharder kost indicatief 60 tot 150 euro per jaar aan terugkerende kosten: zout (40-80 euro), spoelwater en stroom (samen 10-30 euro) en periodiek onderhoud (10-40 euro per jaar gemiddeld). De eenmalige aanschaf van 500-2000 euro staat daar los van.
 - [Water besparen thuis: tips en hoeveel kost je water?](https://waterfilterplatform.nl/kennisbank/water-besparen) (2026-04-15)
   > Gemiddeld waterverbruik Nederlander is 120-130 L/dag. Ontdek wat leidingwater kost, waar je het meeste verbruikt en 10 concrete bespaartips Water is goedkoop in Nederland - maar dat betekent niet dat we zuinig zijn. De gemiddelde Nederlander verbruikt 120 tot 130 liter leidingwater per dag, en dat telt op.
 - [Water en bloeddruk: invloed van mineralen, hardheid en zoutgehalte](https://waterfilterplatform.nl/kennisbank/water-bloeddruk-hart) (2026-05-18)
@@ -1159,7 +1177,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 435 kennisbank-artikelen.
+Totaal: 444 kennisbank-artikelen.
 
 ## Index
 
