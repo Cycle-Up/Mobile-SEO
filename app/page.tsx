@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { HeroIllustration } from '@/components/HeroIllustration';
+import { HubCrossLinks } from '@/components/HubCrossLinks';
 
 export const metadata: Metadata = {
   title: 'WaterfilterPlatform — kennisplatform over waterkwaliteit en waterfiltratie',
@@ -385,6 +386,11 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+      </section>
+
+      {/* Direct naar een oplossing (hub-cross-links) */}
+      <section className="max-w-5xl mx-auto px-4 py-6">
+        <HubCrossLinks heading="Direct naar een oplossing" />
       </section>
 
       {/* CTA */}

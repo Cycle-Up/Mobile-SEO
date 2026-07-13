@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { HubCrossLinks } from '@/components/HubCrossLinks';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -691,6 +692,8 @@ export default function WaterfilterPage() {
         </section>
 
         {/* CTA */}
+        <HubCrossLinks />
+
         <AffiliateCTA
           destination="zuiverWaterKranen"
           campaign="omgekeerde-osmose"

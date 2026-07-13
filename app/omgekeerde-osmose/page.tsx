@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { HubCrossLinks } from '@/components/HubCrossLinks';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { OsmoseIllustration } from '@/components/OsmoseIllustration';
@@ -788,6 +789,8 @@ export default function OmgekeerdeOsmosePage() {
         </section>
 
         {/* CTA */}
+        <HubCrossLinks exclude="omgekeerde-osmose" />
+
         <AffiliateCTA
           destination="zuiverWaterKranen"
           campaign="omgekeerde-osmose"
