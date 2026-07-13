@@ -17,6 +17,12 @@ Status: opgesteld 2026-07-13. Uitvoering gestart 2026-07-13.
   installatiekosten), TDS-3-weg los van tds-meter-gebruiken. Items 5, 6, 7, 8, 10, 15 blijken
   al door bestaande pagina's gedekt -> verschuiven naar Thema 8-verrijking i.p.v. nieuwe URL.
 
+- **2026-07-13 - Fase 2, batch 2 (6 nieuwe artikelen) opgeleverd + gepoort (groen):**
+  items 16, 17, 19, 21 (Thema 3 listicles), 26 (Thema 4 definitie), 34 (Thema 6 prompt).
+  Listicles zijn criteria-/type-gebaseerd (geen verzonnen productranglijsten of ratings).
+  Items 18, 20, 22-25, 27 blijken al door bestaande artikelen gedekt -> enrichment, geen nieuwe URL.
+  HowTo (Thema 7: meten/onderhoud/instellen/lood) grotendeels al gedekt door bestaande pagina's.
+
 ## Waarom GEO net iets anders vraagt dan klassieke SEO
 AI-engines citeren content die: (a) de vraag letterlijk beantwoordt in de eerste 1-2 zinnen
 (citaat-klaar), (b) concrete cijfers met bron bevat, (c) extraheerbare structuren heeft (tabellen,
@@ -63,20 +69,20 @@ Citaat-klaar cijfer bovenaan + bronregel; ideaal voor "hoeveel/wat kost"-prompts
 15. `[AUTONOOM]` "Osmose vs waterkoker-ontkalken vs ontharder tegen kalk" (3-weg-tabel). -> hubs.
 
 ## Thema 3 - "Beste ... voor [persona/situatie]" (listicle, AI-extraheerbaar)
-16. `[AUTONOOM]` "Beste waterontharder zonder zout" (verrijk/uniek t.o.v. zoutloos-vergelijken). -> waterontharders.
-17. `[AUTONOOM]` "Beste osmosesysteem zonder installatie" -> Countertop RO.
-18. `[AUTONOOM]` "Beste waterfilter voor een baby/gezin" (YMYL) -> zuiver-water-kranen.
-19. `[AUTONOOM]` "Beste oplossing tegen kalk in een huurwoning" -> Countertop RO / waterontharders.
-20. `[AUTONOOM]` "Beste waterfilter tegen PFAS" (YMYL, evidence) -> The Source.
-21. `[AUTONOOM]` "Beste kraan voor kokend en gefilterd water" -> 4-in-1.
+16. `[DONE 2026-07-13]` "Beste waterontharder zonder zout" (verrijk/uniek t.o.v. zoutloos-vergelijken). -> waterontharders.
+17. `[DONE 2026-07-13]` "Beste osmosesysteem zonder installatie" -> Countertop RO.
+18. `[COVERED - bestaande baby-artikelen]` "Beste waterfilter voor een baby/gezin" (YMYL) -> zuiver-water-kranen.
+19. `[DONE 2026-07-13]` "Beste oplossing tegen kalk in een huurwoning" -> Countertop RO / waterontharders.
+20. `[COVERED - bestaande pfas-waterfilter]` "Beste waterfilter tegen PFAS" (YMYL, evidence) -> The Source.
+21. `[DONE 2026-07-13]` "Beste kraan voor kokend en gefilterd water" -> 4-in-1.
 
 ## Thema 4 - Definitie-/entity-Q&A (1 alinea citaat-klaar, entiteit-rijk)
-22. `[AUTONOOM]` "Wat is TDS in water?" (+ streefwaarden) -> TDS-meter.
-23. `[AUTONOOM]` "Wat is remineralisatie van osmosewater?" -> osmose.
-24. `[AUTONOOM]` "Wat is een 4-in-1 kraan precies?" -> 4-in-1.
-25. `[AUTONOOM]` "Wat betekent NSF/ANSI 58?" (verrijk keurmerk-pagina) -> The Source.
-26. `[AUTONOOM]` "Wat is het verschil tussen ontharden en ontkalken?" -> waterontharders.
-27. `[AUTONOOM]` "Wat is permeaat en concentraat?" (verrijk bestaande definitie).
+22. `[COVERED - bestaande tds-water-uitleg]` "Wat is TDS in water?" (+ streefwaarden) -> TDS-meter.
+23. `[COVERED - bestaande osmose-remineralisatie]` "Wat is remineralisatie van osmosewater?" -> osmose.
+24. `[COVERED - bestaande 4-in-1-kraan]` "Wat is een 4-in-1 kraan precies?" -> 4-in-1.
+25. `[COVERED - bestaande nsf-ansi-keurmerken]` "Wat betekent NSF/ANSI 58?" (verrijk keurmerk-pagina) -> The Source.
+26. `[DONE 2026-07-13]` "Wat is het verschil tussen ontharden en ontkalken?" -> waterontharders.
+27. `[COVERED - bestaande permeaat-concentraat]` "Wat is permeaat en concentraat?" (verrijk bestaande definitie).
 
 ## Thema 5 - Actueel / 2026 (freshness = citatievoordeel)
 28. `[AUTONOOM]` "PFAS-normen 2026: wat verandert er?" (verrijk/actualiseer; YMYL, bronnen).
@@ -87,7 +93,7 @@ Citaat-klaar cijfer bovenaan + bronregel; ideaal voor "hoeveel/wat kost"-prompts
 
 ## Thema 6 - Prompt-style vraagpagina's (letterlijk aan AI gestelde vragen)
 33. `[AUTONOOM]` "Welke waterontharder past bij hard water in mijn regio?" (koppelt aan gemeente-cluster). -> waterontharders.
-34. `[AUTONOOM]` "Heb ik een waterfilter nodig in Nederland?" (eerlijk: meestal niet medisch nodig; wanneer wel).
+34. `[DONE 2026-07-13]` "Heb ik een waterfilter nodig in Nederland?" (eerlijk: meestal niet medisch nodig; wanneer wel).
 35. `[AUTONOOM]` "Is osmosewater gezond om te drinken?" (verrijk; YMYL, WHO/RIVM) -> osmose.
 36. `[AUTONOOM]` "Hoe verwijder ik PFAS uit mijn kraanwater?" (YMYL, evidence) -> The Source.
 37. `[AUTONOOM]` "Hoe pak ik kalk in mijn huis structureel aan?" -> waterontharders.

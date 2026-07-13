@@ -302,8 +302,16 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Hoe testen experts kokend water kranen? Temperatuurmeting, doorstroomsnelheid, wachttijd, energieverbruik en filtereffectiviteit uitgelegd Een kokend water kraan is een serieuze investering van €700 tot €1.500 of meer. Maar hoe weet je welke kraan écht goed presteert? Tijdschriften, consumentenpanels en technische reviewers hanteren verschillende testmethoden met uiteenlopende uitkomsten.
 - [Beste kokend water kraan 2026: top 5 vergeleken](https://waterfilterplatform.nl/kennisbank/beste-kokend-water-kraan-2026) (2026-04-01)
   > Welke kokend water kraan is de beste keuze in 2026? Top 5 vergeleken op prijs, filteropties, installatie en kosten over 5 jaar. Eerlijk advies De markt voor kokend water kranen is de afgelopen jaren sterk gegroeid.
+- [Beste kraan voor kokend en gefilterd water](https://waterfilterplatform.nl/kennisbank/beste-kraan-kokend-gefilterd-water) (2026-07-13)
+  > De beste kraan voor kokend en gefilterd water is een 4-in-1 kraan: die levert kokend, koud gefilterd, warm en vaak bruisend water uit een kraan. Let bij de keuze op het filtertype (osmose of koolstof), de veiligheid van de kokendwaterfunctie, het onderhoud en de totale kosten over meerdere jaren.
+- [Beste oplossing tegen kalk in een huurwoning](https://waterfilterplatform.nl/kennisbank/beste-oplossing-kalk-huurwoning) (2026-07-13)
+  > In een huurwoning kies je het best een oplossing zonder vaste installatie: een countertop-osmosesysteem voor drinkwater, een filterkan, of gerichte ontkalking van apparaten. Een vaste waterontharder mag meestal alleen met toestemming van de verhuurder. Kies verplaatsbare oplossingen die je meeneemt bij verhuizing.
+- [Beste osmosesysteem zonder installatie kiezen](https://waterfilterplatform.nl/kennisbank/beste-osmosesysteem-zonder-installatie) (2026-07-13)
+  > Het beste osmosesysteem zonder installatie is een countertop-systeem dat je los op het aanrecht plaatst en zonder ingreep in de leiding aansluit. Ideaal voor huurwoningen en studentenkamers, want je hoeft niet te boren en neemt het mee bij verhuizing. Let op capaciteit, waterverhouding en filtervervanging.
 - [Beste waterfilter 2026: vergelijking osmose, filterkan, ontharder en kraan](https://waterfilterplatform.nl/kennisbank/beste-waterfilter-2026) (2026-05-16)
   > Het beste waterfilter in 2026 hangt af van wat u wilt oplossen: voor PFAS, nitraat en zware metalen is een osmosefilter (200-600 euro) de beste keuze. Voor hard water een waterontharder (700-2000 euro). Voor chloor en smaak een filterkan (20-60 euro). Voor combinatieproblemen: osmose plus waterontharder.
+- [Beste waterontharder zonder zout: waar let je op?](https://waterfilterplatform.nl/kennisbank/beste-waterontharder-zonder-zout) (2026-07-13)
+  > De beste waterontharder zonder zout hangt af van je doel. Zoutloze systemen (fysische of elektronische kalkbehandeling) verlagen de hardheid niet echt, maar zorgen dat kalk minder hecht. Ze zijn onderhoudsarm en verbruiken geen zout, maar geven geen zacht water zoals een zoutontharder dat doet.
 - [Water voor bier brouwen: chemie, mineralen en filtratie](https://waterfilterplatform.nl/kennisbank/bier-brouwen-water) (2026-04-01)
   > Welk water gebruik je voor pilsner, stout of IPA? Leer over waterhardheid, gips, calciumchloride en wanneer osmose de meeste controle geeft Water is het meest overvloedige ingrediënt in bier - het maakt circa 93-95% van het eindproduct uit - maar krijgt van thuisbierbrouwers vaak de minste aandacht.
 - [Brak water: wat is het en kun je het filteren? (2026)](https://waterfilterplatform.nl/kennisbank/brak-water) (2026-05-31)
@@ -406,6 +414,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Waterhardheid berekenen en omrekenen: °dH, mmol/L, mg/L CaCO3, ppm, °fH en °eH. Met formules, voorbeeldberekeningen, equivalententabel en online tools Waterhardheid wordt uitgedrukt in meerdere eenheden, afhankelijk van het land en de context. Een waterontharder-leverancier gebruikt graden Duits (°dH), een laboratoriumrapport vermeldt milligram per liter CaCO₃ of mmol/L, een Amerikaanse bron spreekt over ppm of gpg.
 - [Hardwatergebieden Nederland: waar is het water hard?](https://waterfilterplatform.nl/kennisbank/hardwatergebied-nederland) (2025-09-09)
   > Overzicht van hardwatergebieden in Nederland per regio. Zie of jouw stad zachte of harde water heeft en wat je eraan kunt doen De hardheid van drinkwater verschilt sterk per regio in Nederland. In Amsterdam drink je relatief zacht water, terwijl in Eindhoven of Roermond het water bijna drie keer zo hard is.
+- [Heb ik een waterfilter nodig in Nederland?](https://waterfilterplatform.nl/kennisbank/heb-ik-waterfilter-nodig-nederland) (2026-07-13)
+  > In Nederland is een waterfilter medisch gezien meestal niet nodig: het kraanwater is veilig, streng gecontroleerd en van hoge kwaliteit. Een filter is vooral zinvol voor comfort of specifieke situaties, zoals kalkbestrijding, smaakverbetering, oude loden leidingen of persoonlijke voorkeur. Het is dus een keuze, geen noodzaak.
 - [Hoeveel kalk zit er in Nederlands kraanwater?](https://waterfilterplatform.nl/kennisbank/hoeveel-kalk-kraanwater-nederland) (2026-07-13)
   > De hardheid van Nederlands kraanwater loopt indicatief van ongeveer 5 dH (zacht) tot 19 dH (zeer hard), afhankelijk van je regio en waterbedrijf. Water onder 8 dH heet zacht, boven 14 dH hard. Brabant en Limburg zijn doorgaans hard; het noorden en westen vaak zachter.
 - [Hoeveel water per dag drinken? Richtlijn, factoren en praktisch advies](https://waterfilterplatform.nl/kennisbank/hoeveel-water-per-dag) (2026-05-18)
@@ -596,6 +606,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
   > Bij omgekeerde osmose wordt water onder druk (4-7 bar) door een semi-permeabel membraan geperst met porieen van 0,0001 micrometer. Watermoleculen (H2O, diameter 0,00028 micrometer) passen er net door, maar vrijwel alle opgeloste stoffen -- kalk, PFAS, nitraat, zware metalen -- zijn te groot en blijven achter als concentraat (afvalwater).
 - [Osmosefilter vs waterontharder: wanneer welk systeem kiezen?](https://waterfilterplatform.nl/kennisbank/omgekeerde-osmose-vs-waterontharder) (2026-05-01)
   > Een osmosefilter en waterontharder lossen beide hard water op, maar werken anders en hebben andere toepassingen. Een waterontharder onthardert al het water in huis via ionenwisseling. Een osmosefilter filtert drinkwater op een punt en verwijdert ook PFAS, nitraat en zware metalen. Veel huishoudens combineren beide systemen.
+- [Wat is het verschil tussen ontharden en ontkalken?](https://waterfilterplatform.nl/kennisbank/ontharden-vs-ontkalken) (2026-07-13)
+  > Ontharden betekent de hardheid van het water verlagen, meestal met een waterontharder, zodat er minder kalk ontstaat. Ontkalken betekent bestaande kalkaanslag verwijderen, bijvoorbeeld uit een waterkoker of koffiemachine. Ontharden voorkomt kalk aan de bron; ontkalken lost een probleem op dat er al is.
 - [Ontkalker vs waterontharder: wat is het verschil?](https://waterfilterplatform.nl/kennisbank/ontkalker-vs-waterontharder) (2026-03-02)
   > Ontkalker of waterontharder? Leer het echte verschil, welke problemen elk type oplost en wanneer welk systeem de juiste keuze is In winkels en op websites worden de termen 'ontkalker' en 'waterontharder' door elkaar gebruikt. Dat is verwarrend, want het gaat om fundamenteel andere technologieën die verschillende problemen oplossen.
 - [Afvalwater van omgekeerd osmosefilter: hoeveel en wat ermee?](https://waterfilterplatform.nl/kennisbank/osmose-filter-afvalwater) (2025-11-13)
@@ -1177,7 +1189,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 444 kennisbank-artikelen.
+Totaal: 450 kennisbank-artikelen.
 
 ## Index
 
