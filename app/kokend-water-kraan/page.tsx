@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { HubCrossLinks } from '@/components/HubCrossLinks';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { KokendWaterKraanDiagram } from '@/components/KokendWaterKraanDiagram';
@@ -606,6 +607,8 @@ export default function KokendWaterKraanPage() {
         </section>
 
         {/* CTA Banner */}
+        <HubCrossLinks exclude="kokend-water-kraan" />
+
         <AffiliateCTA
           destination="vierInEen"
           campaign="kokend-water"
