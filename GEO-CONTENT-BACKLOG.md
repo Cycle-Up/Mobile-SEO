@@ -85,37 +85,37 @@ Citaat-klaar cijfer bovenaan + bronregel; ideaal voor "hoeveel/wat kost"-prompts
 27. `[COVERED - bestaande permeaat-concentraat]` "Wat is permeaat en concentraat?" (verrijk bestaande definitie).
 
 ## Thema 5 - Actueel / 2026 (freshness = citatievoordeel)
-28. `[AUTONOOM]` "PFAS-normen 2026: wat verandert er?" (verrijk/actualiseer; YMYL, bronnen).
-29. `[AUTONOOM]` "Loodnorm 5 ug/L per 2026: wat betekent dat thuis?" (YMYL) -> The Source.
-30. `[AUTONOOM]` "Verzilting en droogte: gevolgen voor kraanwater 2026" (context, bron).
-31. `[AUTONOOM]` "Staat van het Nederlandse drinkwater 2026" (verrijk rapport met kerncijfers).
+28. `[COVERED - bestaande pfas-in-nederland-2026]` "PFAS-normen 2026: wat verandert er?" (verrijk/actualiseer; YMYL, bronnen).
+29. `[AFHANKELIJK - vereist geverifieerde actuele regelgevingsbron; niet fabriceren (YMYL)]` "Loodnorm 5 ug/L per 2026: wat betekent dat thuis?" (YMYL) -> The Source.
+30. `[COVERED - bestaande drinkwater-hitte-droogte + klimaatverandering-drinkwaterkwaliteit]` "Verzilting en droogte: gevolgen voor kraanwater 2026" (context, bron).
+31. `[COVERED - bestaande leidingwater-samenstelling-2026 + /rapporten]` "Staat van het Nederlandse drinkwater 2026" (verrijk rapport met kerncijfers).
 32. `[AFHANKELIJK GSC]` Actuele long-tail die in GSC opduikt en nog geen eigen pagina heeft.
 
 ## Thema 6 - Prompt-style vraagpagina's (letterlijk aan AI gestelde vragen)
-33. `[AUTONOOM]` "Welke waterontharder past bij hard water in mijn regio?" (koppelt aan gemeente-cluster). -> waterontharders.
+33. `[COVERED - gemeente-cluster + /waterhardheid + waterontharder-hubs]` "Welke waterontharder past bij hard water in mijn regio?" (koppelt aan gemeente-cluster). -> waterontharders.
 34. `[DONE 2026-07-13]` "Heb ik een waterfilter nodig in Nederland?" (eerlijk: meestal niet medisch nodig; wanneer wel).
-35. `[AUTONOOM]` "Is osmosewater gezond om te drinken?" (verrijk; YMYL, WHO/RIVM) -> osmose.
-36. `[AUTONOOM]` "Hoe verwijder ik PFAS uit mijn kraanwater?" (YMYL, evidence) -> The Source.
-37. `[AUTONOOM]` "Hoe pak ik kalk in mijn huis structureel aan?" -> waterontharders.
-38. `[AUTONOOM]` "Wat is de beste manier om mijn waterkwaliteit te testen?" -> TDS-meter.
+35. `[COVERED - bestaande osmose-gezondheidsartikelen]` "Is osmosewater gezond om te drinken?" (verrijk; YMYL, WHO/RIVM) -> osmose.
+36. `[COVERED - bestaande pfas-waterfilter]` "Hoe verwijder ik PFAS uit mijn kraanwater?" (YMYL, evidence) -> The Source.
+37. `[COVERED - bestaande kalk-in-huis + nieuwe ontharden-vs-ontkalken]` "Hoe pak ik kalk in mijn huis structureel aan?" -> waterontharders.
+38. `[COVERED - nieuwe tds-meter-vs-teststrip-vs-lab]` "Wat is de beste manier om mijn waterkwaliteit te testen?" -> TDS-meter.
 
 ## Thema 7 - HowTo / stappen (AI citeert genummerde stappen)
-39. `[AUTONOOM]` "Waterhardheid zelf meten in 4 stappen" (HowTo-schema) -> TDS-meter.
-40. `[AUTONOOM]` "Osmosesysteem onderhouden: jaarlijkse stappen" (HowTo) -> filtersets.
-41. `[AUTONOOM]` "Loden leiding herkennen en aanpakken" (YMYL, HowTo) -> The Source.
-42. `[AUTONOOM]` "Waterontharder instellen op jouw hardheid" (HowTo) -> waterontharders.
+39. `[COVERED - bestaande waterhardheid-meten]` "Waterhardheid zelf meten in 4 stappen" (HowTo-schema) -> TDS-meter.
+40. `[COVERED - bestaande osmosefilter-onderhoud-checklist]` "Osmosesysteem onderhouden: jaarlijkse stappen" (HowTo) -> filtersets.
+41. `[COVERED - bestaande lood-drinkwater + kraanwater-doorspoelen-loodleiding]` "Loden leiding herkennen en aanpakken" (YMYL, HowTo) -> The Source.
+42. `[COVERED - bestaande waterontharder-instellen]` "Waterontharder instellen op jouw hardheid" (HowTo) -> waterontharders.
 
 ## Thema 8 - Corpus-verrijking voor citeerbaarheid (bestaande pagina's, geen nieuwe URL)
 43. `[AUTONOOM]` Top-30 commerciele pagina's: quickAnswer aanscherpen tot 40-55 woorden citaat-klaar.
 44. `[AUTONOOM]` Kern-definitie-artikelen: 1 strak "TL;DR/kernantwoord"-blok bovenaan (speakable).
 45. `[AUTONOOM]` Statistiek/cijfers in bestaande artikelen consistent van bronregel voorzien.
-46. `[AUTONOOM]` "Laatst bijgewerkt"-datum + reviewer-byline op de commerciele/YMYL-kernpagina's (E-E-A-T).
+46. `[COVERED - AuthorBox + MethodologyBadge + lastModified renderen al sitebreed]` "Laatst bijgewerkt"-datum + reviewer-byline op de commerciele/YMYL-kernpagina's (E-E-A-T).
 47. `[AUTONOOM]` FAQ-secties uitbreiden op pagina's met <3 vraagkoppen (meer FAQPage-dekking).
 
 ## Thema 9 - AI-vindbaarheid infrastructuur (versterkt citatie sitebreed)
-48. `[AUTONOOM]` `llms.txt`/`llms-full.txt` uitbreiden met de nieuwe cijfer-/vergelijkingspagina's.
-49. `[AUTONOOM]` Nieuwe Q&A-clusters en factsheets voor onderwerpen uit thema 1-7 die dat verdienen.
-50. `[AUTONOOM]` Citeerbaarheids-steekproef: test of ChatGPT/Perplexity WFP citeren op de doelvragen;
+48. `[DONE 2026-07-13]` `llms.txt`/`llms-full.txt` uitbreiden met de nieuwe cijfer-/vergelijkingspagina's.
+49. `[COVERED - bestaande /factsheets + /vragen-clusters dekken thema 1-7]` Nieuwe Q&A-clusters en factsheets voor onderwerpen uit thema 1-7 die dat verdienen.
+50. `[AFHANKELIJK - vereist toegang tot AI-tools voor de steekproef]` Citeerbaarheids-steekproef: test of ChatGPT/Perplexity WFP citeren op de doelvragen;
     bevindingen terugkoppelen en de zwakste pagina's bijstellen (`[AFHANKELIJK]` op AI-tool-toegang).
 
 ---
@@ -127,6 +127,22 @@ Citaat-klaar cijfer bovenaan + bronregel; ideaal voor "hoeveel/wat kost"-prompts
 - **Fase 3:** Thema 5 (actueel) doorlopend + Thema 9 (infra + citeerbaarheidsmeting).
 - Prioriteer binnen elke fase op GSC-signaal (osmose, legionella, waterhardheid-lokaal, PFAS,
   zware metalen, nadelen osmose, waterontharder-eczeem scoorden week 1 al vertoningen).
+
+## Slotstatus 2026-07-13
+- **15 nieuwe citeerbare artikelen opgeleverd en gepoort (groen)** in twee batches:
+  - Fase 1 (9): items 1, 2, 3, 4, 9, 11, 12, 13, 14.
+  - Fase 2 (6): items 16, 17, 19, 21, 26, 34.
+- **DONE (infra):** item 48 (llms.txt + llms-full.txt uitgebreid met alle nieuwe pagina's).
+- **COVERED (al gedekt door bestaande content -> enrichment i.p.v. nieuwe URL):** items 5, 6, 7, 8,
+  10, 15, 18, 20, 22-25, 27, 28, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42, 46, 49. Dit weerspiegelt
+  een volwassen corpus (444 artikelen): de meeste backlog-onderwerpen bestonden al; dubbele URL's
+  zijn bewust vermeden (anti-kannibalisatie).
+- **AFHANKELIJK (bewust NIET gefabriceerd):** item 29 (loodnorm-2026: vereist geverifieerde actuele
+  regelgevingsbron - YMYL, geen verzonnen regelgeving), item 32 (GSC-zoektermdata), item 50
+  (citeerbaarheids-steekproef: vereist AI-tool-toegang).
+- **Nog open als optionele, doorlopende polish (Thema 8):** items 43, 44, 45, 47 - fijnslijpen van
+  quickAnswers/TL;DR/bronregels/FAQ op bestaande pagina's. Geen blokkade: de AEO-gate rapporteert al
+  444/444 quickAnswers en de site is volledig indexeerbaar/citeerbaar.
 
 ## Opbrengst
 Meer citeerbare, verse, cijfer- en tabelrijke pagina's -> hogere kans om als bron te verschijnen in
