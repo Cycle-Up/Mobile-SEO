@@ -252,6 +252,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - **/quooker-storing**: https://waterfilterplatform.nl/quooker-storing
 - **/quooker-versus-osmose**: https://waterfilterplatform.nl/quooker-versus-osmose
 - **/rapporten**: https://waterfilterplatform.nl/rapporten, https://waterfilterplatform.nl/rapporten/normwijzigingen-overzicht, https://waterfilterplatform.nl/rapporten/pfas-trendoverzicht-2026, https://waterfilterplatform.nl/rapporten/staat-van-drinkwater-2026, https://waterfilterplatform.nl/rapporten/trends-waterfilters, https://waterfilterplatform.nl/rapporten/verzilting-droogte-context
+- **/redactie**: https://waterfilterplatform.nl/redactie, https://waterfilterplatform.nl/redactie/jeroen-dijkstra
 - **/regenwater**: https://waterfilterplatform.nl/regenwater, https://waterfilterplatform.nl/regenwater/drinken, https://waterfilterplatform.nl/regenwater/filteren, https://waterfilterplatform.nl/regenwater/opslagtank, https://waterfilterplatform.nl/regenwater/pfas, https://waterfilterplatform.nl/regenwater/tuin, https://waterfilterplatform.nl/regenwater/wassen, https://waterfilterplatform.nl/regenwater/wc-doorspoelen
 - **/reisfilter**: https://waterfilterplatform.nl/reisfilter, https://waterfilterplatform.nl/reisfilter/lifestraw, https://waterfilterplatform.nl/reisfilter/sawyer
 - **/sedimentfilter**: https://waterfilterplatform.nl/sedimentfilter, https://waterfilterplatform.nl/sedimentfilter/kopen, https://waterfilterplatform.nl/sedimentfilter/werking

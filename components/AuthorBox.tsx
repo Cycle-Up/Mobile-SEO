@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { DEFAULT_AUTHOR } from '@/lib/authors.mjs';
 
 interface AuthorBoxProps {
   datePublished?: string;
@@ -18,8 +19,19 @@ function ChevronRight() {
   );
 }
 
+/** Initialen voor de avatar (bv. "JD"). */
+function initials(name: string) {
+  return name
+    .split(/\s+/)
+    .map(part => part[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase();
+}
+
 export function AuthorBox({ datePublished, dateModified }: AuthorBoxProps) {
   const displayDate = dateModified ?? datePublished;
+  const author = DEFAULT_AUTHOR;
 
   return (
     <div className="flex items-start gap-3 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl p-4 mb-6 text-sm shadow-sm">
@@ -28,25 +40,41 @@ export function AuthorBox({ datePublished, dateModified }: AuthorBoxProps) {
         className="shrink-0 w-10 h-10 rounded-full bg-[#005F8A] text-white flex items-center justify-center font-bold text-xs leading-none"
         aria-hidden="true"
       >
-        WP
+        {initials(author.name)}
       </div>
 
       {/* Content */}
       <div className="flex-1 min-w-0">
-        <p className="font-semibold text-gray-900 text-sm">WaterfilterPlatform Redactieteam</p>
+        <p className="font-semibold text-gray-900 text-sm">
+          <Link href={author.profilePath} className="hover:text-[#005F8A] transition-colors">
+            {author.name}
+          </Link>
+          <span className="font-normal text-gray-500"> - {author.role}</span>
+        </p>
         <p className="text-gray-500 text-xs mt-0.5 leading-relaxed">
-          Onze artikelen worden geschreven door drinkwaterspecialisten en gebaseerd op bronnen van RIVM, ILT en de Europese Unie.{' '}
-          <Link href="/methodologie" className="text-[#005F8A] hover:text-[#003F5C] inline-flex items-center gap-0.5 transition-colors">
-            Lees onze methodologie <ChevronRight />
+          {author.shortBio}{' '}
+          <Link href={author.profilePath} className="text-[#005F8A] hover:text-[#003F5C] inline-flex items-center gap-0.5 transition-colors">
+            Over de auteur <ChevronRight />
           </Link>
         </p>
-        {displayDate && (
-          <p className="text-gray-400 text-xs mt-1.5">
-            {dateModified && datePublished && dateModified !== datePublished
-              ? `Bijgewerkt op ${formatDate(dateModified)}`
-              : `Gepubliceerd op ${formatDate(datePublished)}`}
-          </p>
-        )}
+        <p className="text-gray-400 text-xs mt-1.5">
+          Gereviewd door de{' '}
+          <Link href="/redactie" className="text-[#005F8A] hover:text-[#003F5C] transition-colors">
+            redactie
+          </Link>
+          {' '}volgens onze{' '}
+          <Link href="/methodologie" className="text-[#005F8A] hover:text-[#003F5C] transition-colors">
+            methodologie
+          </Link>
+          {displayDate && (
+            <>
+              {' '}&middot;{' '}
+              {dateModified && datePublished && dateModified !== datePublished
+                ? `Bijgewerkt op ${formatDate(dateModified)}`
+                : `Gepubliceerd op ${formatDate(datePublished)}`}
+            </>
+          )}
+        </p>
       </div>
 
       {/* Trust badge — altijd zichtbaar */}
