@@ -245,6 +245,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/zoeken" className="hover:text-white">Zoeken</Link>
               <Link href="/aanbevolen" className="hover:text-white">Aanbevolen producten</Link>
               <Link href="/over-ons" className="hover:text-white">Over ons</Link>
+              <Link href="/redactie" className="hover:text-white">Redactie</Link>
               <Link href="/methodologie" className="hover:text-white">Methodologie</Link>
               <Link href="/contact" className="hover:text-white">Contact</Link>
             </div>

@@ -73,6 +73,8 @@ Voor elke gemeente in Nederland zijn er pagina's met:
 ## Redactionele informatie
 
 - [Over WaterfilterPlatform](https://waterfilterplatform.nl/over-ons)
+- [Redactie en werkwijze](https://waterfilterplatform.nl/redactie): wie schrijft en reviewt, redactioneel beleid, correctie- en actualiseringsbeleid
+- [Jeroen Dijkstra - initiatiefnemer en hoofdredacteur](https://waterfilterplatform.nl/redactie/jeroen-dijkstra): MSc Sustainable Entrepreneurship (RUG), Lean Six Sigma Black Belt, meerdere jaren actief in de waterbehandelingsmarkt
 - [Methodologie en evaluatiecriteria](https://waterfilterplatform.nl/methodologie)
 - [Contact](https://waterfilterplatform.nl/contact)
 
