@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 };
 
 const items: [string, string, string][] = [
+  ['/rapporten/waterhardheid-nederland-2026', 'Waterhardheid in Nederland 2026', 'Datarapport per gemeente, provincie en waterbedrijf'],
   ['/rapporten/staat-van-drinkwater-2026', 'Staat van drinkwater 2026', 'Kerncijfers en aandachtspunten'],
   ['/rapporten/pfas-trendoverzicht-2026', 'PFAS-trendoverzicht 2026', 'Norm, aanpak en filters'],
   ['/rapporten/normwijzigingen-overzicht', 'Normwijzigingen-overzicht', 'Wat veranderde er'],
