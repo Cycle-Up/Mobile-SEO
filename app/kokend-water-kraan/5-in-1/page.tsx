@@ -101,11 +101,11 @@ const kostenVergelijking = [
   },
   {
     optie: '5-in-1 kraan met osmose',
-    aanschaf: '€ 949',
-    jaarlijks: '€ 130 (filter + CO₂)',
-    vijfJaar: '€ 1.599',
-    opmerking: 'Alle vijf functies inclusief warm bruisend water',
-    highlight: true,
+    aanschaf: 'Geen gecontroleerde prijs',
+    jaarlijks: 'Filter + CO₂',
+    vijfJaar: 'Onbekend',
+    opmerking: 'Wij vonden geen aanbod dat we konden controleren; vraag specificaties en testrapport op',
+    highlight: false,
   },
   {
     optie: 'Quooker Flex PRO3 + CUBE',
@@ -336,7 +336,7 @@ export default function VijfInEenKraanPage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-3 text-xs text-gray-400">Indicatief: € 949–1.099</p>
+              <p className="mt-3 text-xs text-gray-400">Prijs: geen gecontroleerd aanbod gevonden (september 2026).</p>
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed mt-5">
@@ -586,10 +586,10 @@ export default function VijfInEenKraanPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="rounded-xl border border-gray-100 bg-white p-4">
-              <h3 className="font-bold text-gray-900 mb-3">Quooker Fusion + CUBE</h3>
+              <h3 className="font-bold text-gray-900 mb-3">Quooker Flex PRO3 + CUBE</h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 {[
-                  ['Aanschaf', '€ 2.200–2.800'],
+                  ['Aanschaf', '€ 2.240 (bij PureAqua)'],
                   ['Osmosefilter', 'Nee (koolstoffilter in CUBE)'],
                   ['Installatie', 'Via dealer aanbevolen'],
                   ['Garantie', 'Meerjarig via dealer'],
@@ -604,15 +604,15 @@ export default function VijfInEenKraanPage() {
               </ul>
             </div>
             <div className="rounded-xl border border-[#005F8A] bg-[#E0F2FE] p-4">
-              <h3 className="font-bold text-gray-900 mb-3">5-in-1 kraan met osmose <span className="text-xs bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full ml-1">Beste waarde</span></h3>
+              <h3 className="font-bold text-gray-900 mb-3">5-in-1 kraan met osmose</h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 {[
-                  ['Aanschaf', '€ 949–1.099'],
-                  ['Osmosefilter', 'Standaard inbegrepen'],
-                  ['Installatie', 'Zelf of installateur'],
-                  ['Garantie', '2–5 jaar'],
-                  ['CO₂-cilinder', 'Standaard 425 g (breed verkrijgbaar)'],
-                  ['Service', 'Nederlands, directe support'],
+                  ['Aanschaf', 'Geen gecontroleerd aanbod'],
+                  ['Osmosefilter', 'Volgens de omschrijving inbegrepen'],
+                  ['Installatie', 'Installateur aanbevolen'],
+                  ['Garantie', 'Per aanbieder navragen'],
+                  ['CO₂-cilinder', 'Per aanbieder navragen'],
+                  ['Bewijs', 'Vraag een testrapport op'],
                 ].map(([k, v]) => (
                   <li key={k} className="flex justify-between gap-2">
                     <span className="text-gray-600">{k}</span>
@@ -624,9 +624,10 @@ export default function VijfInEenKraanPage() {
           </div>
           <p className="text-gray-700 leading-relaxed mt-5">
             <strong className="text-[#003F5C]">Onze conclusie:</strong> de Quooker CUBE is een uitstekend product
-            met uitstekende naam- en merkwaarde. Maar voor wie de beste prijs-kwaliteitverhouding zoekt —
-            inclusief osmosefilter en breed verkrijgbare CO₂-cilinders — biedt een 5-in-1 kraan met osmose meer voor minder.
-            Het prijsverschil over vijf jaar bedraagt meer dan € 1.400.
+            met een sterke naam, maar filtert met actieve kool en niet met osmose. Een 5-in-1 kraan met osmose
+            combineert op papier alles, maar wij vonden geen aanbod waarvan we prijs en prestaties konden controleren.
+            Wil je osmose plus zeer heet en gekoeld water en kun je bruisend missen, dan is de PureAqua 4-in-1 volgens ons
+            de sterkste keuze (1.948 euro).
           </p>
         </section>
 

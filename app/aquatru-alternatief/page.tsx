@@ -55,12 +55,21 @@ const faqItems = [
 
 const topAlternatieven = [
   {
+    naam: 'PureAqua Water zuiver apparaat (onze keuze)',
+    prijs: 'EUR 495',
+    filtering: 'Osmose met 7-in-1-cartridge en remineralisatie',
+    capaciteit: 'Circa 12 liter per uur; tank circa 3,2 liter',
+    ruimte: 'Op het werkblad (circa 30 x 22 x 35 cm)',
+    highlight: true,
+    notitie: 'Net als de AquaTru zonder installatie, maar met zes temperatuurstanden tot 95 graden. AquaTru Classic: EUR 475, zonder verwarming. Verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.',
+  },
+  {
     naam: 'Onder-aanrecht osmose',
     prijs: 'EUR 200-500',
     filtering: 'Breed (osmose 95-99%)',
     capaciteit: 'Hoog, continu',
     ruimte: 'Verborgen onder aanrecht',
-    highlight: true,
+    highlight: false,
     notitie: 'Zelfde filtering als AquaTru, maar uit het zicht en lager per liter.',
   },
   {

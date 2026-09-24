@@ -783,8 +783,8 @@ const artikelen = [
   },
   {
     slug: 'best-kokend-water-kraan-test',
-    titel: 'Best kokend water kraan test: onafhankelijke resultaten',
-    samenvatting: 'Onafhankelijke testresultaten van de populairste kokend water kranen: temperatuur, filterkwaliteit, gebruiksgemak en kosten vergeleken.',
+    titel: 'Kokend water kraan test: zo beoordelen experts kwaliteit',
+    samenvatting: 'Hoe testen experts kokend water kranen? Temperatuur, doorstroom, wachttijd, energieverbruik en filtereffectiviteit uitgelegd.',
     categorie: 'Vergelijken',
     datum: '13 mei 2026',
   },
@@ -1147,7 +1147,7 @@ const artikelen = [
   },
   {
     slug: '4-in-1-kraan',
-    titel: '4-in-1 kraan: kokend, koud, warm en bruisend water',
+    titel: '4-in-1 kraan: kokend, gekoeld en gefilterd water uit één kraan',
     samenvatting: 'Alles over de 4-in-1 kraan: hoe het werkt, welke merken het aanbieden, kosten en of het de investering waard is voor jouw keuken.',
     categorie: 'Toepassingen',
     datum: '13 mei 2026',

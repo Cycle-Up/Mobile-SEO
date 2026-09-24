@@ -425,7 +425,7 @@ export default function KokendWaterKraan4In1Page() {
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'RO-systeem kopen',
-                desc: 'Onafhankelijke vergelijking van de beste osmose systemen voor thuisgebruik.',
+                desc: 'Vergelijking van de beste osmose systemen voor thuisgebruik.',
               },
               {
                 href: '/kokend-water-kraan',

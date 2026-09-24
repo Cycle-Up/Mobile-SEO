@@ -816,7 +816,7 @@ export default function OmgekeerdeOsmosePage() {
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'Osmose filter kopen',
-                desc: 'Welk systeem past bij jou? Onafhankelijke vergelijking van de beste osmose filters.',
+                desc: 'Welk systeem past bij jou? Vergelijking van de beste osmose filters.',
               },
               {
                 href: '/omgekeerde-osmose/wat-is-osmose-water',

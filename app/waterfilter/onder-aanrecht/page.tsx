@@ -506,7 +506,7 @@ export default function WaterfilterOnderAanrechtPage() {
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'Osmose filter kopen',
-                desc: 'Onafhankelijke vergelijking van de beste RO-systemen voor under-sink installatie.',
+                desc: 'Vergelijking van de beste RO-systemen voor under-sink installatie.',
               },
               {
                 href: '/kokend-water-kraan/4-in-1',

@@ -468,6 +468,17 @@ export default function BesteOsmosefilter2026Page() {
                 </tr>
               </thead>
               <tbody>
+                <tr className="bg-[#F0F9FF] border-b border-gray-100">
+                  <td className="py-2.5 px-3 font-bold text-[#005F8A] text-xs">Onze keuze</td>
+                  <td className="py-2.5 px-3">
+                    <Link href="/the-source" className="text-[#005F8A] underline">The Source met zuiver-water-kraan</Link>
+                    <span className="block text-xs text-gray-500">RO uit je eigen keukenkraan, stroomloos</span>
+                  </td>
+                  <td className="py-2.5 px-3 text-right text-xs">€ 395 + kraan € 540–840</td>
+                  <td className="py-2.5 px-3 text-right text-xs">3</td>
+                  <td className="py-2.5 px-3 text-right text-xs">circa 1:1</td>
+                  <td className="py-2.5 px-3 text-right text-xs">€ 149</td>
+                </tr>
                 {top5.map(t => (
                   <tr
                     key={t.rang}

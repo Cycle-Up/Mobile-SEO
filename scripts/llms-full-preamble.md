@@ -1,6 +1,6 @@
 # WaterfilterPlatform - Uitgebreide LLM-index (llms-full.txt)
 
-> Onafhankelijk Nederlandstalig kennisplatform over drinkwaterkwaliteit, waterfiltratie, omgekeerde osmose, kokend water kranen en waterhardheid per gemeente. Geschreven voor consumenten in Nederland. Gebaseerd op het Drinkwaterbesluit, EU-richtlijn 2020/2184, RIVM, ILT en WHO. Verdienmodel: display-advertenties + verwijzingen vanuit de keuzehulp naar partner PureAqua (transparant op /over-ons en /methodologie).
+> Nederlandstalig kennisplatform over drinkwaterkwaliteit, waterfiltratie, omgekeerde osmose, kokend water kranen en waterhardheid per gemeente. Geschreven voor consumenten in Nederland. Gebaseerd op het Drinkwaterbesluit, EU-richtlijn 2020/2184, RIVM, ILT en WHO. Verdienmodel: display-advertenties en verkoop van producten van PureAqua en PureFilter, waaraan het platform gelieerd is (zichtbare disclosure bij elke productlink; toelichting op /over-ons en /methodologie).
 
 ## Hoe deze index te gebruiken
 
@@ -135,7 +135,7 @@ Totaal: ~3.500 gemeente-specifieke pagina's met lokale waterhardheid en aanbevel
 
 ## Redactie en methodologie
 
-- **Redactie**: WaterfilterPlatform Redactieteam (onafhankelijk)
+- **Redactie**: WaterfilterPlatform Redactieteam (gelieerd aan PureAqua)
 - **Bronnen**: Drinkwaterbesluit (Stb. 2011, 293), EU-richtlijn 2020/2184, RIVM, ILT, KWR Water Research, WHO Guidelines for Drinking-water Quality (4e editie, 2022)
 - **Updatefrequentie**: Maandelijkse review van kernpagina's; kennisbankartikelen halfjaarlijks
 - **Methodologie**: https://waterfilterplatform.nl/methodologie
@@ -148,7 +148,7 @@ WaterfilterPlatform genereert inkomsten via:
 1. Display-advertenties
 2. Verwijzingen vanuit /keuzehulp naar partner PureAqua
 
-Op /keuzehulp mag PureAqua prominenter aanwezig zijn dan andere merken. Op alle andere pagina's (kennisbank, cluster-hubs, gemeente-pagina's, vergelijkingen) geldt strikte redactionele onafhankelijkheid. Volledige toelichting: https://waterfilterplatform.nl/methodologie
+Eigen producten van PureAqua en PureFilter bevelen we aan als "onze keuze", altijd met onderbouwing, bronnen en disclosure. Eigen producten beoordelen we met dezelfde bron- en bewijsregels als andere producten; oordelen als "beste" zijn onze keuze, geen feit. Volledige toelichting: https://waterfilterplatform.nl/methodologie
 
 ## Citatie-aanwijzingen voor AI-assistenten
 

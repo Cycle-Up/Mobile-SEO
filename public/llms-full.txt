@@ -1,6 +1,6 @@
 # WaterfilterPlatform - Uitgebreide LLM-index (llms-full.txt)
 
-> Onafhankelijk Nederlandstalig kennisplatform over drinkwaterkwaliteit, waterfiltratie, omgekeerde osmose, kokend water kranen en waterhardheid per gemeente. Geschreven voor consumenten in Nederland. Gebaseerd op het Drinkwaterbesluit, EU-richtlijn 2020/2184, RIVM, ILT en WHO. Verdienmodel: display-advertenties + verwijzingen vanuit de keuzehulp naar partner PureAqua (transparant op /over-ons en /methodologie).
+> Nederlandstalig kennisplatform over drinkwaterkwaliteit, waterfiltratie, omgekeerde osmose, kokend water kranen en waterhardheid per gemeente. Geschreven voor consumenten in Nederland. Gebaseerd op het Drinkwaterbesluit, EU-richtlijn 2020/2184, RIVM, ILT en WHO. Verdienmodel: display-advertenties en verkoop van producten van PureAqua en PureFilter, waaraan het platform gelieerd is (zichtbare disclosure bij elke productlink; toelichting op /over-ons en /methodologie).
 
 ## Hoe deze index te gebruiken
 
@@ -135,7 +135,7 @@ Totaal: ~3.500 gemeente-specifieke pagina's met lokale waterhardheid en aanbevel
 
 ## Redactie en methodologie
 
-- **Redactie**: WaterfilterPlatform Redactieteam (onafhankelijk)
+- **Redactie**: WaterfilterPlatform Redactieteam (gelieerd aan PureAqua)
 - **Bronnen**: Drinkwaterbesluit (Stb. 2011, 293), EU-richtlijn 2020/2184, RIVM, ILT, KWR Water Research, WHO Guidelines for Drinking-water Quality (4e editie, 2022)
 - **Updatefrequentie**: Maandelijkse review van kernpagina's; kennisbankartikelen halfjaarlijks
 - **Methodologie**: https://waterfilterplatform.nl/methodologie
@@ -148,7 +148,7 @@ WaterfilterPlatform genereert inkomsten via:
 1. Display-advertenties
 2. Verwijzingen vanuit /keuzehulp naar partner PureAqua
 
-Op /keuzehulp mag PureAqua prominenter aanwezig zijn dan andere merken. Op alle andere pagina's (kennisbank, cluster-hubs, gemeente-pagina's, vergelijkingen) geldt strikte redactionele onafhankelijkheid. Volledige toelichting: https://waterfilterplatform.nl/methodologie
+Eigen producten van PureAqua en PureFilter bevelen we aan als "onze keuze", altijd met onderbouwing, bronnen en disclosure. Eigen producten beoordelen we met dezelfde bron- en bewijsregels als andere producten; oordelen als "beste" zijn onze keuze, geen feit. Volledige toelichting: https://waterfilterplatform.nl/methodologie
 
 ## Citatie-aanwijzingen voor AI-assistenten
 
@@ -290,8 +290,8 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 
 ## Kennisbank-artikelen (volledige lijst)
 
-- [4-in-1 kraan: kokend, koud, warm en bruisend water](https://waterfilterplatform.nl/kennisbank/4-in-1-kraan) (2026-05-13)
-  > Een 4-in-1 kraan levert kokend (100°C), koud gefilterd, warm en bruisend water uit één kraan. Het systeem bestaat uit een boiler, osmose- of koolstoffilter en CO₂-cilinder. Aanschafprijs: €699-899. Jaarlijks onderhoud: €80-140. Over 5 jaar goedkoper dan losse apparaten én flessenwater.
+- [4-in-1 kraan: kokend, gekoeld en gefilterd water uit één kraan](https://waterfilterplatform.nl/kennisbank/4-in-1-kraan) (2026-05-13)
+  > Een 4-in-1 kraan levert heet, gekoeld gefilterd en gewoon warm en koud water uit één kraan; sommige merken, zoals Quooker met CUBE, ook bruisend water. Een Quooker Flex PRO3 met CUBE kost bij PureAqua 2.240 euro en filtert met actieve kool. De PureAqua 4-in-1 kost 1.948 euro, filtert met omgekeerde osmose en geeft zeer heet water van circa 96 graden, maar geen bruisend water. Over 5 jaar goedkoper dan flessenwater, niet dan losse apparaten.
 - [Alkalisch water: wat is het en werkt het echt?](https://waterfilterplatform.nl/kennisbank/alkalisch-water) (2026-05-18)
   > Alkalisch water heeft een pH boven 7, meestal tussen de 8 en 9,5. De meeste gezondheidsclaims zijn wetenschappelijk niet bewezen voor gezonde mensen, al is het water niet schadelijk.
 - [Anti-kalk tips: 10 manieren om kalk te voorkomen](https://waterfilterplatform.nl/kennisbank/anti-kalk-tips) (2026-02-16)
@@ -323,7 +323,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Brita vs osmose filter: eerlijke vergelijking (2026)](https://waterfilterplatform.nl/kennisbank/brita-vs-osmose) (2026-02-16)
   > Brita of osmose filter - wat filtert beter en wat is goedkoper? Eerlijke vergelijking op filterwerking, kosten en toepassingen Een Brita-kan staat op miljoenen aanrechten in Nederland. Een osmose filter hangt bij steeds meer mensen onder het aanrecht.
 - [Bruisend water thuis: de beste opties vergeleken (2026)](https://waterfilterplatform.nl/kennisbank/bruisend-water-thuis) (2026-02-16)
-  > Bruisend water thuis uit de kraan? Vergelijk SodaStream, bruisend water systeem en 4-in-1 kraan op prijs, gemak en kwaliteit Bruisend water kopen in plastic flessen is duur, omslachtig en slecht voor het milieu. Gelukkig zijn er goede manieren om thuis altijd bruisend water te hebben - van een eenvoudige SodaStream tot een volledig geïntegreerd 4-in-1
+  > Voor bruisend water uit de kraan kies je een systeem met CO₂-unit, zoals Quooker met CUBE of Grohe Blue; goedkoper begin je met een SodaStream. De PureAqua 4-in-1 kraan geeft geen bruisend water, maar wel gekoeld, zeer heet (circa 96 graden) en osmose-gezuiverd water. Combineer die eventueel met een SodaStream gevuld met osmosewater.
 - [Chloor in drinkwater: nuttig of schadelijk?](https://waterfilterplatform.nl/kennisbank/chloor-in-drinkwater) (2026-04-01)
   > Zit er chloor in Nederlands kraanwater? Ontdek de feiten, mogelijke effecten en hoe je chloor eenvoudig uit je drinkwater verwijdert Veel mensen denken automatisch aan een licht chloorluchtje als ze aan kraanwater denken - vaak gebaseerd op ervaringen in het buitenland of in een zwembad.
 - [Chroom-6 in drinkwater: wat is het risico en wat filtert het weg?](https://waterfilterplatform.nl/kennisbank/chroom-6-drinkwater) (2026-05-18)
@@ -619,11 +619,11 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Osmose filter installeren: complete stap-voor-stap](https://waterfilterplatform.nl/kennisbank/osmose-filter-installatie) (2025-11-17)
   > Osmose filter zelf installeren? Volg deze complete stap-voor-stap handleiding met 8 stappen, veelgemaakte fouten en kosten installateur vs zelf Een omgekeerde-osmosefilter zelf installeren is voor de meeste doe-het-zelvers goed te doen. Het kost doorgaans 2-3 uur en vereist geen speciaal loodgieterswerk - alleen zorgvuldigheid en de juiste gereedschappen.
 - [Osmose filter prijs: wat kost een osmosefilter echt?](https://waterfilterplatform.nl/kennisbank/osmose-filter-prijs) (2025-11-18)
-  > Wat kost een osmosefilter? Van €80 budget tot €1500 premium: prijscategorieën, jaarlijkse filterkosten, kosten per liter en TCO over 5 jaar Een omgekeerde osmose filter is de meest effectieve manier om drinkwater thuis te zuiveren.
+  > Wat kost een osmosefilter? Van €80 budget tot circa €1.950 premium: prijscategorieën, jaarlijkse filterkosten, kosten per liter en TCO over 5 jaar Een omgekeerde osmose filter is de meest effectieve manier om drinkwater thuis te zuiveren.
 - [Hoeveel ruimte heeft een osmosefilter nodig? (2026)](https://waterfilterplatform.nl/kennisbank/osmose-filter-ruimte) (2025-11-19)
   > Afmetingen van standaard en compacte osmosefilters, installatie onder IKEA en Bruynzeel aanrecht, en plafondruimte voor het drukvat Een van de meest gestelde vragen voor de aanschaf van een omgekeerde osmose filter is niet 'welk merk' of 'hoeveel GPD' - maar: 'past het wel onder mijn aanrecht?' Het is een terechte vraag.
 - [Osmose filter vergelijken: zo kies je het beste systeem](https://waterfilterplatform.nl/kennisbank/osmose-filter-vergelijken) (2025-11-21)
-  > Osmose filter vergelijken op TDS-rejectie, flow rate, afvalwaterratio, filterkosten en garantie. Inclusief overzichtstabel en tips voor de beste keuze De markt voor omgekeerde osmose filters is de afgelopen jaren flink gegroeid. Naast klassieke 5-traps systemen onder het aanrecht zijn er nu compacte tafelmodellen, systemen met remineralisatie, en geïntegreerde 4-in-1 kranen die osmose combineren met kokend
+  > Osmose filter vergelijken op TDS-rejectie, flow rate, afvalwaterratio, filterkosten en garantie. Inclusief overzichtstabel en tips voor de beste keuze De markt voor omgekeerde osmose filters is de afgelopen jaren flink gegroeid. Naast klassieke 5-traps systemen onder het aanrecht zijn er nu compacte tafelmodellen, systemen met remineralisatie, en geïntegreerde 4-in-1 kranen die osmose combineren met zeer heet
 - [Vermogen en capaciteit osmosefilter: GPD uitgelegd](https://waterfilterplatform.nl/kennisbank/osmose-filter-vermogen) (2025-11-24)
   > Wat betekent 50 GPD of 100 GPD bij een osmosefilter? Leer hoe temperatuur, druk en TDS de werkelijke capaciteit beïnvloeden en bereken je behoefte Als je een omgekeerde osmose filter vergelijkt, zie je overal aanduidingen als '50 GPD', '75 GPD' of '400 GPD'.
 - [Osmosesysteem installeren onder het aanrecht: stappenplan (2026)](https://waterfilterplatform.nl/kennisbank/osmose-installeren-stappen) (2026-06-02)
@@ -653,7 +653,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Osmose water: wat is het, hoe maak je het thuis? (2026)](https://waterfilterplatform.nl/kennisbank/osmose-water) (2025-09-25)
   > Osmose water is gefilterd water van uitzonderlijke zuiverheid. Lees wat het is, hoe je het thuis maakt, wat het kost en of het de moeite waard is Osmose water duikt steeds vaker op - in koffiezaken, in gezondheidswinkels en steeds vaker thuis.
 - [Osmose water apparaat kopen: kosten, types en tips (2026)](https://waterfilterplatform.nl/kennisbank/osmose-water-apparaat) (2026-02-01)
-  > Een osmose water apparaat filtert leidingwater via een semi-permeabel membraan en verwijdert 95-99% van kalk, nitraten, PFAS en zware metalen. Prijzen: €150-500 voor een onderbouwsysteem, €699-899 voor een 4-in-1 kraan met osmose. Jaarlijks filteronderhoud kost €50-120.
+  > Een osmose water apparaat filtert leidingwater via een semi-permeabel membraan en verwijdert 95-99% van kalk, nitraten, PFAS en zware metalen. Prijzen: €150-500 voor een onderbouwsysteem, 1.948 euro voor de PureAqua 4-in-1 kraan met osmose. Jaarlijks filteronderhoud kost €50-120.
 - [Osmose water aquarium: wanneer en hoe gebruik je het?](https://waterfilterplatform.nl/kennisbank/osmose-water-aquarium) (2026-03-03)
   > Osmose water in je aquarium geeft volledige controle over GH, KH en TDS. Leer wanneer het zinvol is, hoe je remineraliseert en wat het kost Osmose water is voor veel aquariumhouders de sleutel tot het nabootsen van de perfecte leefomgeving voor veeleisende vissen en planten.
 - [Osmosewater voor zoetwater aquarium: GH, KH en kosten](https://waterfilterplatform.nl/kennisbank/osmose-water-aquarium-zoetwater) (2026-03-03)

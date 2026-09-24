@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'fs';
 import path from 'path';
-import { FOUR_IN_ONE, THREE_WAY, findBlockedKraanClaims, findBlockedSourceClaims } from '../lib/kranen.mjs';
+import { FOUR_IN_ONE, THREE_WAY, findBlockedKraanClaims } from '../lib/kranen.mjs';
 import { DESTINATIONS } from '../lib/pureaqua.mjs';
 
 test('kraan facts match the verified shop destinations', () => {
@@ -20,15 +20,15 @@ test('blocked kraan claims are detected', () => {
   assert.equal(findBlockedKraanClaims('De PureAqua 4-in-1 kraan geeft gekoeld water, maar geen bruisend water.').length, 0);
 });
 
-// Sitebrede scan dekt voorlopig The Source; 4-in-1-scan volgt na de 4-in-1-opschoning.
-test('no page, component or article makes a blocked The Source claim', () => {
+// Sitebrede scan: 4-in-1 en The Source (na de 4-in-1-opschoning van september 2026).
+test('no page, component or article makes a blocked kraan claim', () => {
   const offenders = [];
   const walk = dir => {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
       const p = path.join(dir, e.name);
       if (e.isDirectory()) walk(p);
       else if (/\.(tsx|mdx|ts)$/.test(e.name)) {
-        const hits = findBlockedSourceClaims(fs.readFileSync(p, 'utf-8'));
+        const hits = findBlockedKraanClaims(fs.readFileSync(p, 'utf-8'));
         if (hits.length) offenders.push(`${p}: ${hits.join(', ')}`);
       }
     }

@@ -10,7 +10,7 @@ import { MethodologyBadge } from '@/components/MethodologyBadge';
 export const metadata: Metadata = {
   title: "Grohe Blue vs Grohe Red: wat is het verschil?",
   description:
-    "Grohe Blue vs Grohe Red vergeleken: Blue geeft gekoeld en bruisend gefilterd water, Red geeft kokend water. Plus de 4-in-1 osmosekraan met gekoeld en zeer heet water (zonder bruis).",
+    "Grohe Blue vs Grohe Red: Blue geeft gekoeld en bruisend gefilterd water, Red kokend water. Plus de 4-in-1 osmosekraan: gekoeld en zeer heet, zonder bruis.",
   alternates: { canonical: "https://waterfilterplatform.nl/vergelijken/grohe-blue-vs-grohe-red" },
   openGraph: {
     title: "Grohe Blue vs Grohe Red: wat is het verschil?",

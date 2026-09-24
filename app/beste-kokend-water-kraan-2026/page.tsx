@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
@@ -325,6 +326,8 @@ export default function BesteKokendWaterKraan2026Page() {
         <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Onze keuze voor 2026 is de PureAqua 4-in-1 kraan met ingebouwd osmosefilter. Die geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, plus gewoon warm en koud water, uit één kraan. Bruisend water zit er niet op. Prijs: 1.948 euro, installatie optioneel voor 299 euro. Een Quooker Flex PRO3 met CUBE kost bij PureAqua 2.240 euro en filtert met actieve kool." />
+
+        <FourInOneRecommendation content="beste-kokend-water-kraan-2026-aanbeveling" />
 
         {/* Inleiding: waarom kiezen voor een kokend water kraan */}
         <section>

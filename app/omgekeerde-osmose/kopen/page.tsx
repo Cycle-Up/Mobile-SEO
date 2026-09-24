@@ -502,7 +502,7 @@ export default function OsmoseKopenPage() {
               {
                 href: '/omgekeerde-osmose/vergelijken',
                 title: 'Osmose filters vergelijken',
-                desc: 'Onafhankelijke vergelijking van de beste osmosefilters op de markt.',
+                desc: 'Vergelijking van de beste osmosefilters op de markt.',
               },
               {
                 href: '/beste-osmosefilter-2026',

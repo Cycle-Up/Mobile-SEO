@@ -249,7 +249,7 @@ export default function DrinkwaterfonteinKopenPage() {
           </div>
           <div className="border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-1">PureAqua / Waterdrop / APEC</h3>
-            <p className="text-gray-700 text-sm">Consumentensegment, verkrijgbaar via online winkels. POU RO-systemen voor thuis, NSF 58 gecertificeerd. Prijs &euro;200-600, beste prijs-kwaliteitsverhouding voor RO-filtratie.</p>
+            <p className="text-gray-700 text-sm">Consumentensegment, verkrijgbaar via online winkels. POU RO-systemen voor thuis. Certificering verschilt per model: controleer de NSF-listing van het exacte model. Prijs &euro;200-600. PureAqua is gelieerd aan WaterfilterPlatform.</p>
           </div>
         </div>
 

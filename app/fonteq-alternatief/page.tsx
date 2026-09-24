@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Fonteq alternatief: kokend water kraan met osmose (2026)',
     description:
-      'Zoek je een alternatief voor de Fonteq kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en osmose-gezuiverd water geeft.',
+      'Alternatief voor de Fonteq kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en gezuiverd water geeft.',
     alternates: { canonical: 'https://waterfilterplatform.nl/fonteq-alternatief' },
     openGraph: {
       title: 'Fonteq alternatief vergelijken - beste opties 2026',
@@ -84,7 +84,7 @@ export default function FonteqAlternatiefPage() {
         type="Article"
         article={{
           title: 'Fonteq alternatief: kokend water kraan met osmose (2026)',
-          description: 'Zoek je een alternatief voor de Fonteq kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en osmose-gezuiverd water geeft.',
+          description: 'Alternatief voor de Fonteq kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en gezuiverd water geeft.',
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
           url: 'https://waterfilterplatform.nl/fonteq-alternatief',

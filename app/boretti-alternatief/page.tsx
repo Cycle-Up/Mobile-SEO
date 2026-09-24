@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Boretti alternatief: kokend water kraan met osmose (2026)',
     description:
-      'Zoek je een alternatief voor de Boretti kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en osmose-gezuiverd water geeft.',
+      'Alternatief voor de Boretti kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en gezuiverd water geeft.',
     alternates: { canonical: 'https://waterfilterplatform.nl/boretti-alternatief' },
     openGraph: {
       title: 'Boretti alternatief vergelijken - beste opties 2026',
@@ -84,7 +84,7 @@ export default function BorettiAlternatiefPage() {
         type="Article"
         article={{
           title: 'Boretti alternatief: kokend water kraan met osmose (2026)',
-          description: 'Zoek je een alternatief voor de Boretti kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en osmose-gezuiverd water geeft.',
+          description: 'Alternatief voor de Boretti kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en gezuiverd water geeft.',
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
           url: 'https://waterfilterplatform.nl/boretti-alternatief',
