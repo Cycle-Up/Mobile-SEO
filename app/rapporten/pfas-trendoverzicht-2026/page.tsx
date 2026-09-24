@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RapportenPfasTrendoverzicht2026Page() {
   return (
     <>
-      <SchemaOrg type="Article" article={{ title: "PFAS in Nederland: trendoverzicht en stand van zaken 2026", description: "Trendoverzicht van PFAS in Nederlands drinkwater in 2026: de norm, de aanpak en wat filters doen, met bronnen en nuance.", datePublished: '2026-06-03', dateModified: '2026-06-03', url: 'https://waterfilterplatform.nl/rapporten/pfas-trendoverzicht-2026' }} />
+      <SchemaOrg type="Article" article={{ title: "PFAS in Nederland: trendoverzicht en stand van zaken 2026", description: "Trendoverzicht van PFAS in Nederlands drinkwater in 2026: de norm, de aanpak en wat filters doen, met bronnen en nuance.", datePublished: '2026-06-03', dateModified: '2026-09-24', url: 'https://waterfilterplatform.nl/rapporten/pfas-trendoverzicht-2026' }} />
       <SchemaOrg type="BreadcrumbList" breadcrumbs={[
         { name: 'Home', url: 'https://waterfilterplatform.nl' },
         { name: 'Rapporten', url: 'https://waterfilterplatform.nl/rapporten' },
@@ -39,7 +39,12 @@ export default function RapportenPfasTrendoverzicht2026Page() {
         <section className="mb-6">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-3">De norm</h2>
           <p className="text-gray-700 leading-relaxed mb-3">De EU-richtlijn 2020/2184 hanteert een somnorm van 0,1 microgram per liter voor PFAS in drinkwater, volledig van kracht in 2026.</p>
-          <p className="text-gray-700 leading-relaxed mb-3">Er is geen algemeen erkende veilige drempel voor PFAS, daarom is de norm streng.</p>
+          <p className="text-gray-700 leading-relaxed mb-3">Het RIVM adviseert sinds 2022 een veel strengere gezondheidskundige richtwaarde van 4,4 nanogram per liter (PFOA-equivalenten). Die advieswaarde is ruim twintig keer strenger dan de wettelijke norm, maar niet wettelijk bindend.</p>
+        </section>
+        <section className="mb-6">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-3">Actueel: september 2026</h2>
+          <p className="text-gray-700 leading-relaxed mb-3">Op 22 september 2026 publiceerde Greenpeace een postcodechecker op basis van meetgegevens van alle tien waterbedrijven. Bij ruim een derde van de bevolking ligt de PFAS-waarde in kraanwater boven de RIVM-advieswaarde; rond Zaandam en IJmuiden ruim drie keer, in Amsterdam ruim twee keer. Het water voldoet aan de wettelijke norm.</p>
+          <p className="text-gray-700 leading-relaxed mb-3">Op 11 september 2026 waarschuwde de ILT dat jaarlijks ten minste 21.000 kilo TFA vrijkomt door bestrijdingsmiddelen met PFAS, en dat diep grondwater binnen twintig jaar boven de RIVM-advieswaarde kan uitkomen als er niets verandert. Duiding en handelingsperspectief: <Link href="/kennisbank/pfas-kraanwater-boven-rivm-advieswaarde" className="text-[#005F8A] underline hover:text-[#003F5C]">PFAS in kraanwater boven de RIVM-advieswaarde</Link>.</p>
         </section>
         <section className="mb-6">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-3">Aanpak en monitoring</h2>

@@ -86,7 +86,7 @@ const articleSchema = {
   description:
     "PFAS in Nederlands drinkwater: wat zijn PFAS, EU-norm, risicogebieden, gezondheidsrisico's en welke filters PFAS verwijderen.",
   datePublished: '2026-04-01',
-  dateModified: '2026-04-01',
+  dateModified: '2026-09-24',
   url: 'https://waterfilterplatform.nl/pfas-water',
   publisher: {
     '@type': 'Organization',
@@ -125,6 +125,18 @@ export default function PfasWaterPage() {
         <div className="bg-[#E0F2FE] border-l-4 border-[#005F8A] rounded-lg p-4 mb-6">
           <p className="text-gray-700 text-sm font-medium">
             <strong>Samenvatting:</strong> PFAS (&ldquo;forever chemicals&rdquo;) zijn meer dan 4.700 synthetische stoffen die zich ophopen in het lichaam en milieu. In Nederland gelden strenge EU-normen (0,10 µg/L som-20 PFAS) voor drinkwater. Omgekeerde osmose is de meest effectieve manier om PFAS uit drinkwater te verwijderen (95–99%).
+          </p>
+        </div>
+
+        <div className="border border-amber-200 bg-amber-50 rounded-lg p-4 mb-6">
+          <p className="text-sm text-gray-800">
+            <strong>Actueel (september 2026):</strong> bij ruim een derde van de Nederlanders zit meer PFAS in het
+            kraanwater dan de RIVM-advieswaarde van 4,4 nanogram per liter, vooral in Noord- en Zuid-Holland. Het
+            water voldoet wel aan de wettelijke norm. De ILT waarschuwt daarnaast voor TFA uit bestrijdingsmiddelen.{' '}
+            <Link href="/kennisbank/pfas-kraanwater-boven-rivm-advieswaarde" className="text-[#005F8A] underline hover:text-[#003F5C]">
+              Lees wat dit voor jou betekent
+            </Link>
+            .
           </p>
         </div>
 

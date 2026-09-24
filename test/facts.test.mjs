@@ -21,3 +21,13 @@ test('all facts have value and label', () => {
     assert.ok(f.value && f.label, `${k} complete`);
   }
 });
+
+test('RIVM PFAS advisory value in microgram is flagged', () => {
+  const issues = findContradictions('De RIVM-richtwaarde voor PFAS is 4,4 microgram per liter.');
+  assert.ok(issues.some(i => /pfasRivmAdvieswaarde/.test(i)));
+});
+
+test('RIVM PFAS advisory value in nanogram passes', () => {
+  const issues = findContradictions('De RIVM-advieswaarde voor PFAS is 4,4 nanogram per liter.');
+  assert.ok(!issues.some(i => /pfasRivmAdvieswaarde/.test(i)));
+});
