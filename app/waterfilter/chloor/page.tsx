@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import Link from 'next/link';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'Chloor uit Drinkwater Filteren: Smaak & Methoden',
@@ -194,6 +195,8 @@ export default function WaterfilterChloorPage() {
           </Link>
         </div>
       </section>
+
+        <PureFilterCTA context="smaak" content="waterfilter-chloor-purefilter" />
 
         <CTABanner />
 

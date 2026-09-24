@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import Link from 'next/link';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'PFAS in drinkwater: risico\'s, normen en hoe te filteren (2026)',
@@ -282,6 +283,8 @@ export default function PfasWaterPage() {
             </details>
           ))}
         </div>
+
+        <PureFilterCTA context="pfas" content="pfas-water-purefilter" />
 
         <CTABanner context="osmose" />
 

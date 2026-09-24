@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'Waterfilter per budget — wat kunt u verwachten voor EUR 50, EUR 200 en EUR 500+? | WaterfilterPlatform',
@@ -237,6 +238,8 @@ export default function BudgetPage() {
             </Link>
           </div>
         </section>
+
+        <PureFilterCTA context="algemeen" content="keuzehulp-budget-purefilter" />
 
         <AffiliateCTA
           destination="tdsMeter"

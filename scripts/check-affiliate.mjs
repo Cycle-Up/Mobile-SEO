@@ -3,9 +3,9 @@
  * Affiliate-guardrail voor WaterfilterPlatform (post-build).
  * Run: npm run build (eerst), dan: node scripts/check-affiliate.mjs
  *
- * Bewaakt de commerciele koppeling naar de PureAqua Shopify-store, zodat de
+ * Bewaakt de commerciele koppeling naar de PureAqua- en PureFilter-winkels, zodat de
  * eerlijkheids- en kwaliteitsstandaard nooit stilletjes wordt geschonden. Per
- * gebouwde HTML-pagina met een zichtbare shop-link (href naar pureaqua.nl)
+ * gebouwde HTML-pagina met een zichtbare shop-link (href naar pureaqua.nl of purefilter.nl)
  * geldt:
  *   - de link heeft rel="...sponsored..." (affiliate-annotatie);
  *   - de link draagt utm_source=waterfilterplatform en utm_medium=affiliate;
@@ -19,7 +19,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
-import { allowedShopPaths } from '../lib/pureaqua.mjs';
+import { allowedShopUrls } from '../lib/pureaqua.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -28,7 +28,7 @@ const HTML_DIR = path.join(ROOT, '.next', 'server', 'app');
 /** Haal alle <a>-openingstags naar de shop uit een HTML-document. */
 export function extractShopAnchors(html) {
   const anchors = [];
-  const re = /<a\b[^>]*\bhref=("|')(https?:\/\/pureaqua\.nl[^"']*)\1[^>]*>/gi;
+  const re = /<a\b[^>]*\bhref=("|')(https?:\/\/(?:pureaqua|purefilter)\.nl[^"']*)\1[^>]*>/gi;
   let m;
   while ((m = re.exec(html)) !== null) {
     anchors.push({ tag: m[0], href: m[2].replace(/&amp;/g, '&') });
@@ -44,9 +44,9 @@ export function extractShopHrefs(html) {
 /**
  * Controleer een HTML-document. Retourneert een lijst met overtredingen (strings).
  * @param {string} html
- * @param {string[]} [allowed] geverifieerde shop-paden
+ * @param {string[]} [allowed] geverifieerde shop-URL's (origin + pad, zonder query)
  */
-export function analyzeAffiliate(html, allowed = allowedShopPaths()) {
+export function analyzeAffiliate(html, allowed = allowedShopUrls()) {
   const violations = [];
   const anchors = extractShopAnchors(html);
   if (anchors.length === 0) return violations;
@@ -63,9 +63,9 @@ export function analyzeAffiliate(html, allowed = allowedShopPaths()) {
       violations.push(`onparseerbare shop-URL: ${href}`);
       continue;
     }
-    const pathOnly = url.pathname || '/';
-    if (!allowed.includes(pathOnly)) {
-      violations.push(`shop-pad niet in allowlist (mogelijk verzonnen/dood): ${pathOnly}`);
+    const target = url.origin + (url.pathname || '/');
+    if (!allowed.includes(target)) {
+      violations.push(`shop-pad niet in allowlist (mogelijk verzonnen/dood): ${target}`);
     }
     if (url.searchParams.get('utm_source') !== 'waterfilterplatform' || url.searchParams.get('utm_medium') !== 'affiliate') {
       violations.push(`shop-link mist verplichte UTM (source/medium): ${href}`);
@@ -90,7 +90,7 @@ function runCli() {
     console.error('Geen .next/server/app gevonden. Draai eerst: npm run build');
     process.exit(1);
   }
-  const allowed = allowedShopPaths();
+  const allowed = allowedShopUrls();
   let pages = 0;
   let pagesWithShop = 0;
   const byType = new Map();
@@ -108,7 +108,7 @@ function runCli() {
   });
 
   console.log('\nAffiliate-guardrail - WaterfilterPlatform\n');
-  console.log(`Pagina's gescand: ${pages} | met PureAqua shop-link: ${pagesWithShop}`);
+  console.log(`Pagina's gescand: ${pages} | met PureAqua/PureFilter shop-link: ${pagesWithShop}`);
   console.log(`Geverifieerde allowlist-paden: ${allowed.join(', ')}`);
 
   const total = [...byType.values()].reduce((n, arr) => n + arr.length, 0);

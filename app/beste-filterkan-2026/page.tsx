@@ -6,6 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export function generateMetadata(): Metadata {
   return {
@@ -196,6 +197,8 @@ export default function BesteFilterkan2026Page() {
             <Link href="/beste-waterfilter/budget-onder-100" className="text-[#005F8A] underline">beste waterfilter onder 100 euro</Link>.
           </p>
         </section>
+
+        <PureFilterCTA context="filterkan" content="beste-filterkan-purefilter" />
 
         <AffiliateCTA
           destination="zuiverWaterKranen"

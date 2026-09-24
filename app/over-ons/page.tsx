@@ -3,9 +3,9 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 
 export function generateMetadata(): Metadata {
-  const title = "Over WaterfilterPlatform — redactie, missie en onafhankelijkheid";
+  const title = "Over WaterfilterPlatform: redactie, missie en commerciele relatie";
   const description =
-    "Wie maakt WaterfilterPlatform? Onze missie, redactionele werkwijze en hoe we onafhankelijk advies geven over waterfilters in Nederland.";
+    "Wie maakt WaterfilterPlatform? Onze missie, redactionele werkwijze, bronnenbeleid en een eerlijke uitleg van onze band met PureAqua en PureFilter.";
 
   return {
     title,
@@ -37,7 +37,7 @@ export default function OverOnsPage() {
             "@type": "AboutPage",
             "name": "Over WaterfilterPlatform",
             "url": "https://waterfilterplatform.nl/over-ons",
-            "description": "Redactie, missie en onafhankelijkheidsverklaring van WaterfilterPlatform.",
+            "description": "Redactie, missie, werkwijze en commerciele relatie van WaterfilterPlatform.",
             "publisher": {
               "@type": "Organization",
               "name": "WaterfilterPlatform",
@@ -61,7 +61,7 @@ export default function OverOnsPage() {
             Over WaterfilterPlatform
           </h1>
           <p className="text-gray-700 text-lg leading-relaxed">
-            WaterfilterPlatform is een onafhankelijk informatieplatform over waterfilters en drinkwaterkwaliteit in Nederland. Wij zijn geen webshop en verkopen geen producten: onze enige taak is heldere, feitelijk onderbouwde informatie bieden zodat u zelf een weloverwogen keuze kunt maken.
+            WaterfilterPlatform is een informatieplatform over waterfilters en drinkwaterkwaliteit in Nederland. Het platform zelf is geen webshop, maar is wel gelieerd aan PureAqua, dat waterfilters verkoopt via PureAqua.nl en PureFilter.nl. Onze taak is heldere, feitelijk onderbouwde informatie bieden zodat u zelf een weloverwogen keuze kunt maken; hoe we met die commerciele band omgaan, leest u hieronder.
           </p>
         </div>
       </section>
@@ -73,10 +73,10 @@ export default function OverOnsPage() {
             WaterfilterPlatform is opgericht omdat de zoekresultaten voor "waterfilter kopen" vrijwel volledig worden gedomineerd door webshops en affiliate-sites. Die paginas prijzen producten aan, maar bieden zelden neutrale context: wanneer is een filter nuttig? Welke techniek past bij welk waterprobleem? Wanneer volstaat gewoon kraanwater?
           </p>
           <p>
-            Onze missie is eenvoudig: onafhankelijke, op feiten gebaseerde informatie bieden over drinkwaterkwaliteit en thuisfiltratie. Wij willen dat consumenten een weloverwogen keuze kunnen maken — ook als die keuze inhoudt dat ze helemaal geen filter nodig hebben.
+            Onze missie is eenvoudig: controleerbare, op feiten gebaseerde informatie bieden over drinkwaterkwaliteit en thuisfiltratie. Wij willen dat consumenten een weloverwogen keuze kunnen maken — ook als die keuze inhoudt dat ze helemaal geen filter nodig hebben.
           </p>
           <p>
-            Nederlands kraanwater behoort tot de beste ter wereld. Toch zijn er situaties waarin filtratie zinvol is: oude loden leidingen, verhoogde PFAS-concentraties in bepaalde regio's, of een sterke voorkeur voor kalkvrij water voor koffie en thee. Wij leggen die nuance uit, zonder een product te hoeven verkopen.
+            Nederlands kraanwater behoort tot de beste ter wereld. Toch zijn er situaties waarin filtratie zinvol is: oude loden leidingen, verhoogde PFAS-concentraties in bepaalde regio's, of een sterke voorkeur voor kalkvrij water voor koffie en thee. Wij leggen die nuance uit, ook als de conclusie is dat u geen filter nodig heeft.
           </p>
         </div>
       </section>
@@ -118,13 +118,13 @@ export default function OverOnsPage() {
 
       <section className="bg-[#E0F2FE] py-10 px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Onafhankelijkheid en commerciele relatie</h2>
+          <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Onze commerciele relatie met PureAqua en PureFilter</h2>
           <div className="bg-white rounded-2xl border border-blue-100 p-6 space-y-4 text-gray-700 leading-relaxed">
             <p>
-              Wij willen hier transparant over zijn. Sommige paginas op WaterfilterPlatform bevatten verwijzingen naar producten van PureAqua.nl, een Nederlandse aanbieder van onder andere 4-in-1 osmosekranen. WaterfilterPlatform ontvangt hiervoor een vergoeding wanneer een bezoeker via een dergelijke link een aankoop doet.
+              Wij willen hier volledig transparant over zijn. WaterfilterPlatform is gelieerd aan PureAqua. PureAqua verkoopt onder meer osmosesystemen, 4-in-1-kranen en waterontharders via PureAqua.nl, en het inline-waterfilter PureFilter Mineral+ via PureFilter.nl. Onze hoofdredacteur is medeoprichter van PureAqua (zie de <Link href="/redactie" className="underline">redactiepagina</Link>). Sommige paginas verwijzen naar producten van PureAqua of PureFilter; koopt u via zo&apos;n link, dan verdient PureAqua daaraan.
             </p>
             <p>
-              Deze commerciele relatie heeft geen invloed op onze inhoudelijke beoordeling van technieken en producten. Wij benoemen ook de nadelen van elk systeem. Wij adviseren actief wanneer een goedkopere oplossing beter past bij de situatie van de bezoeker. Een eenvoudige filterkan kan voor sommige huishoudens een betere keuze zijn dan een osmose-installatie van enkele honderden euros — en dat schrijven wij dan ook.
+              Juist daarom hanteren wij voor eigen producten dezelfde bron- en bewijsregels als voor andere merken: een claim die niet onafhankelijk is aangetoond, presenteren wij als geclaimd en niet als feit, en wij noemen de beperkingen erbij. Wij benoemen ook de nadelen van elk systeem. Wij adviseren actief wanneer een goedkopere oplossing beter past bij de situatie van de bezoeker. Een eenvoudige filterkan kan voor sommige huishoudens een betere keuze zijn dan een osmose-installatie van enkele honderden euros — en dat schrijven wij dan ook.
             </p>
             <p>
               Paginas met een commerciele link zijn herkenbaar: wij vermelden dit expliciet bij de betreffende productaanbevelingen. Puur informatieve paginas — zoals onze uitleg over drinkwaternormen, filtertechnieken of waterhardheid per gemeente — bevatten geen gelieerde links.

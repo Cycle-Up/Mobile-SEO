@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'Geur uit leidingwater verwijderen: chloor, aards en H2S waterfilter',
@@ -428,6 +429,8 @@ export default function WaterfilterGeurPage() {
           </Link>
         </div>
       </section>
+
+        <PureFilterCTA context="smaak" content="waterfilter-geur-purefilter" />
 
         <CTABanner context="osmose" />
 

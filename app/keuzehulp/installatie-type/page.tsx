@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'Welk type waterfilter past bij uw keuken? Aanrecht, onderkast of inbouw | WaterfilterPlatform',
@@ -288,6 +289,8 @@ export default function InstallatieTypePage() {
             </Link>
           </div>
         </section>
+
+        <PureFilterCTA context="onder-aanrecht" content="keuzehulp-installatie-type-purefilter" />
 
         <AffiliateCTA
           destination="zuiverWaterKranen"

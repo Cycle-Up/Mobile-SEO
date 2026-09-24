@@ -5,6 +5,7 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { HubCrossLinks } from '@/components/HubCrossLinks';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'Welk waterfilter past bij u? Types & vergelijking 2026',
@@ -694,6 +695,8 @@ export default function WaterfilterPage() {
         {/* CTA */}
         <HubCrossLinks />
 
+        <PureFilterCTA context="algemeen" content="waterfilter-hub-purefilter" />
+
         <AffiliateCTA
           destination="zuiverWaterKranen"
           campaign="omgekeerde-osmose"
@@ -753,7 +756,7 @@ export default function WaterfilterPage() {
               {
                 href: '/purefilter-review',
                 title: 'PureFilter Mineral+ review',
-                desc: 'Claims naast de bewijsstatus: wat is geclaimd en wat nog niet bevestigd.',
+                desc: 'Inline filter onder het aanrecht: labtest met 83-85% minder PFAS, kosten en grenzen.',
               },
             ].map(l => (
               <Link

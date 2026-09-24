@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'Wat is een koolstoffilter? Werking, types en kosten 2026',
@@ -541,6 +542,8 @@ export default function KoolstoffilterPage() {
             voor een volledige vergelijking.
           </div>
         </section>
+
+        <PureFilterCTA context="smaak" content="koolstoffilter-purefilter" />
 
         <CTABanner context="algemeen" />
 
