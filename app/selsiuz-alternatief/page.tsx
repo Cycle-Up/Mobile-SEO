@@ -9,7 +9,7 @@ import { MethodologyBadge } from '@/components/MethodologyBadge';
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Selsiuz alternatief: goedkoper met osmosefilter? (2026)',
+    title: 'Selsiuz alternatief: kokend water plus osmosefilter? (2026)',
     description:
       'Zoek je een alternatief voor de Selsiuz kokend water kraan? Vergelijk prijs, functies en kosten met een 4-in-1 osmosekraan, Quooker en meer in 2026.',
     alternates: { canonical: 'https://waterfilterplatform.nl/selsiuz-alternatief' },
@@ -106,7 +106,7 @@ export default function SelsiuzAlternatiefPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'Selsiuz alternatief: goedkoper met osmosefilter? (2026)',
+          title: 'Selsiuz alternatief: kokend water plus osmosefilter? (2026)',
           description: 'Zoek je een alternatief voor de Selsiuz kokend water kraan? Vergelijk prijs, functies en kosten met een 4-in-1 osmosekraan, Quooker en meer in 2026.',
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
@@ -130,7 +130,7 @@ export default function SelsiuzAlternatiefPage() {
             <span>Selsiuz alternatief</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Selsiuz alternatief: meer functies voor minder geld?
+            Selsiuz alternatief: welke kraan past beter bij jou?
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             De <strong>Selsiuz</strong> is een populaire Nederlandse kokend water kraan met een strak
@@ -334,7 +334,7 @@ export default function SelsiuzAlternatiefPage() {
             {[
               ['/kokend-water-kraan', 'Kokend water kraan', 'Complete gids over kokend water kranen'],
               ['/quooker-alternatief', 'Quooker alternatief', 'Vergelijk de opties naast Quooker'],
-              ['/grohe-red-alternatief', 'Grohe Red alternatief', 'Goedkoper met meer functies'],
+              ['/grohe-red-alternatief', 'Grohe Red alternatief', 'Meer functies, met osmosefilter'],
               ['/omgekeerde-osmose/kopen', 'Osmosesysteem kopen', 'Wat moet je weten voor aanschaf'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">

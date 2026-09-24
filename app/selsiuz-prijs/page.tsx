@@ -194,7 +194,7 @@ export default function SelsiuzPrijsPage() {
             {[
               ['/selsiuz', 'Over Selsiuz', 'Werking, modellen en onderhoud'],
               ['/selsiuz-onderhoud', 'Selsiuz onderhoud', 'Ontkalken, filter en levensduur'],
-              ['/selsiuz-alternatief', 'Selsiuz alternatief', 'Meer functies voor minder geld?'],
+              ['/selsiuz-alternatief', 'Selsiuz alternatief', 'Alternatieven met osmosefilter'],
               ['/kokend-water-kraan', 'Kokend water kraan', 'Complete gids over de categorie'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">

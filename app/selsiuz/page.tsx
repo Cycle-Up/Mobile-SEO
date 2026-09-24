@@ -210,7 +210,7 @@ export default function SelsiuzPage() {
             {[
               ['/kokend-water-kraan', 'Kokend water kraan', 'Complete gids over kokend water kranen'],
               ['/vergelijken/quooker-vs-selsiuz', 'Quooker vs Selsiuz', 'Twee grootste NL-merken vergeleken'],
-              ['/selsiuz-alternatief', 'Selsiuz alternatief', 'Meer functies voor minder geld?'],
+              ['/selsiuz-alternatief', 'Selsiuz alternatief', 'Alternatieven met osmosefilter'],
               ['/omgekeerde-osmose/kopen', 'Osmosesysteem kopen', 'Wat moet je weten voor aanschaf'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">

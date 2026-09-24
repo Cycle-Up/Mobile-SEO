@@ -190,7 +190,7 @@ export default function OmgekeerdeOsmoseVergelijkenPage() {
             <div className="border border-[#005F8A]/20 rounded-xl p-5 bg-[#E0F2FE]/30">
               <h3 className="font-semibold text-[#005F8A] mb-2">Kokend water wens erbij</h3>
               <p className="text-sm text-gray-700">
-                Kies een 4-in-1 kransysteem (zoals Quooker Cube met osmose of Grohe Blue Home Pure).
+                Kies een 4-in-1 kransysteem (zoals een Quooker met CUBE, die met actieve kool filtert, of een Grohe Blue Home).
                 Duur in aanschaf maar combineert gefilterd, gekoeld, heet en soms bruisend water in
                 &eacute;&eacute;n kraan. De PureAqua 4-in-1 (1.948 euro) geeft zeer heet (circa 96 graden),
                 gekoeld en osmose-gezuiverd water, maar geen bruisend water.

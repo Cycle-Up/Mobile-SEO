@@ -65,17 +65,27 @@ const faqItems = [
 
 const modellen = [
   {
-    naam: 'AquaSoft Twin Pro',
+    naam: 'JOEP waterontharder',
+    type: 'Compacte ionenwisselaar met zout (48 x 27 x 48,5 cm)',
+    capaciteitL: 'tot 5 m3 per uur',
+    zoutMaand: '0,9-1,5 kg per regeneratie',
+    aanschaf: '€1.699 (€1.998 geïnstalleerd)',
+    prijsJaar: 'zout naar verbruik',
+    highlight: true,
+    label: 'Onze keuze',
+  },
+  {
+    naam: 'Twin-tank ontharder',
     type: 'Twin-tank continu',
     capaciteitL: '40-60 L/dag (18 °dH)',
     zoutMaand: '12-16 kg',
     aanschaf: '€1.300-1.800',
     prijsJaar: '€280-420',
-    highlight: true,
-    label: 'Beste keuze',
+    highlight: false,
+    label: '',
   },
   {
-    naam: 'EcoSoft Compact 15',
+    naam: 'Compacte single-tank ontharder',
     type: 'Single-tank vraaggestuurd',
     capaciteitL: '25-45 L/dag',
     zoutMaand: '10-15 kg',
@@ -85,7 +95,7 @@ const modellen = [
     label: '',
   },
   {
-    naam: 'WaterPlus Verhuur Pro',
+    naam: 'Huurontharder',
     type: 'Verhuurmodel (all-in)',
     capaciteitL: '30-50 L/dag',
     zoutMaand: '10-18 kg',
@@ -95,7 +105,7 @@ const modellen = [
     label: 'Huuroptie',
   },
   {
-    naam: 'SaltFree TAC 200',
+    naam: 'Zoutloos TAC-systeem',
     type: 'Zoutloos elektrisch TAC',
     capaciteitL: '30-60 L/dag',
     zoutMaand: '0 kg (geen zout)',
@@ -105,7 +115,7 @@ const modellen = [
     label: 'Zoutloos',
   },
   {
-    naam: 'NanoSoft NF-25',
+    naam: 'Nanofiltratie',
     type: 'Nano-technologie filter',
     capaciteitL: '20-35 L/dag',
     zoutMaand: '0 kg (geen zout)',
@@ -115,11 +125,11 @@ const modellen = [
     label: '',
   },
   {
-    naam: 'OsmoPure 4-in-1 Combi',
-    type: 'Osmose + ontkalker combi',
+    naam: 'Osmosefilter (alleen drinkwater)',
+    type: 'Omgekeerde osmose aan de keukenkraan',
     capaciteitL: '8-15 L/dag (drinkwater)',
     zoutMaand: '0 kg',
-    aanschaf: '€800-1.200',
+    aanschaf: '€300-800',
     prijsJaar: '€100-160 (filters)',
     highlight: false,
     label: 'Drinkwater',
@@ -142,7 +152,7 @@ export default function WaterOntkalkerVergelijkenPage() {
         article={{
           title: 'Waterontkalker vergelijken: beste modellen 2026',
           description:
-            'Vergelijk de beste waterontkalkers van 2026 op capaciteit, zoutverbruik, prijs en type. Inclusief vergelijkingstabel met 6 modellen.',
+            'Vergelijk de beste waterontkalkers van 2026 op capaciteit, zoutverbruik, prijs en type. Inclusief vergelijkingstabel per systeemtype en onze keuze.',
           datePublished: '2026-05-01',
           dateModified: '2026-05-16',
           url: 'https://waterfilterplatform.nl/waterontkalker/vergelijken',
@@ -241,17 +251,18 @@ export default function WaterOntkalkerVergelijkenPage() {
         {/* Vergelijkingstabel */}
         <section id="vergelijking">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            6 modellen vergeleken: capaciteit, zout en prijs
+            Systemen vergeleken: capaciteit, zout en prijs
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Hieronder vergelijken we zes representatieve modellen die het huidige marktaanbod weerspiegelen.
-            Prijzen zijn richtprijzen exclusief installatie.
+            Hieronder vergelijken we de gangbare systeemtypen met richtprijzen exclusief installatie, plus onze
+            keuze: de <Link href="/joep-waterontharder" className="text-[#005F8A] underline">JOEP waterontharder</Link>{' '}
+            (verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is; prijzen door PureAqua bevestigd).
           </p>
           <div className="overflow-x-auto -mx-4 px-4 mb-6">
             <table className="w-full min-w-[640px] text-sm border-collapse">
               <thead>
                 <tr className="bg-[#003F5C] text-white">
-                  <th className="text-left py-2.5 px-3 font-semibold">Model</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Systeem</th>
                   <th className="py-2.5 px-3 font-semibold text-left">Type</th>
                   <th className="py-2.5 px-3 font-semibold text-right">Zout/maand</th>
                   <th className="py-2.5 px-3 font-semibold text-right">Aanschaf</th>
