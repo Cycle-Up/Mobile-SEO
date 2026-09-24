@@ -43,7 +43,7 @@ const faqSchema = {
       name: 'Welk merk kokend water kraan verbruikt het minste energie?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Op basis van fabrikantspecificaties verbruiken de Quooker Cube 2.2 en Grohe Red II de minste standby-energie: circa 10 Watt. De ZIP HydroTap zit op 15 Watt. PureAqua 4-in-1 modellen vermelden 12 Watt. Budget- en private-label merken (Action, MaxiFilter) vermelden vaak 18-25 Watt. Let bij aankoop op het opgegeven standby-vermogen in de specificaties.',
+        text: 'Op basis van fabrikantspecificaties verbruiken de Quooker Cube 2.2 en Grohe Red II de minste standby-energie: circa 10 Watt. De ZIP HydroTap zit op 15 Watt. Voor de PureAqua 4-in-1 is geen fabrieksopgave bekend; die houdt naast heet water ook gekoeld water op temperatuur. Budget- en private-label merken (Action, MaxiFilter) vermelden vaak 18-25 Watt. Let bij aankoop op het opgegeven standby-vermogen in de specificaties.',
       },
     },
     {
@@ -271,8 +271,8 @@ export default function KokendWaterKraanEnergiePage() {
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2 font-medium">PureAqua 4-in-1</td>
-                <td className="border border-gray-300 px-3 py-2">12W</td>
-                <td className="border border-gray-300 px-3 py-2">ca. &euro;37</td>
+                <td className="border border-gray-300 px-3 py-2">Geen opgave</td>
+                <td className="border border-gray-300 px-3 py-2">Onbekend</td>
               </tr>
               <tr>
                 <td className="border border-gray-300 px-3 py-2 font-medium">Budget-merken (gemiddeld)</td>

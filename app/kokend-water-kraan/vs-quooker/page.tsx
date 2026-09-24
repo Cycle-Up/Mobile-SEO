@@ -47,7 +47,7 @@ const faqItems = [
   {
     question: 'Hoeveel energie verbruikt een Quooker versus een 4-in-1 kraan?',
     answer:
-      'Een Quooker verbruikt in standbymodus 3–5 watt per uur om het water op temperatuur te houden — circa €13–22 per jaar aan extra elektriciteitskosten. Een PureAqua 4-in-1 kraan heeft een vergelijkbaar standbyverbruik van 3–5 watt. Beide systemen zijn energiezuiniger dan een waterkoker die dagelijks meerdere malen volledig wordt gekookt.',
+      'Een Quooker verbruikt in standbymodus 3–5 watt per uur om het water op temperatuur te houden — circa €13–22 per jaar aan extra elektriciteitskosten. Voor de PureAqua 4-in-1 kraan is geen fabrieksopgave van het standbyverbruik bekend. Hij houdt zowel een heetwatertank als een koelunit op temperatuur, dus reken op meer dan een Quooker zonder CUBE.',
   },
   {
     question: 'Kan ik een Quooker zelf installeren?',
@@ -72,7 +72,7 @@ const vergelijkCriteria = [
   { criterium: 'Kalk verwijderd', quooker: 'Nee', vierin1: 'Ja (osmose)' },
   { criterium: 'Aanschafprijs', quooker: '€2.240 (Flex PRO3 met CUBE)', vierin1: '€1.948' },
   { criterium: 'Filterkosten per jaar', quooker: '€39–49 (CUBE-filter circa jaarlijks)', vierin1: '€80–150 (filters jaarlijks, membraan 2-jaarlijks)' },
-  { criterium: 'Energieverbruik standby', quooker: '3–5 W', vierin1: '3–5 W' },
+  { criterium: 'Energieverbruik standby', quooker: '3–5 W', vierin1: 'Geen fabrieksopgave (heet én koelen)' },
   { criterium: 'Installatie door professional', quooker: 'Sterk aanbevolen', vierin1: 'Aanbevolen (PureAqua: €299)' },
 ];
 
@@ -362,8 +362,8 @@ export default function VsQuookerPage() {
             <div className="bg-[#E0F2FE] border border-[#005F8A]/30 rounded-xl p-4">
               <p className="font-semibold text-[#003F5C] mb-2">PureAqua 4-in-1 energieverbruik</p>
               <ul className="space-y-1.5 text-sm text-gray-700">
-                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Standby: 3–5 watt continu</li>
-                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Jaarlijkse standbykosten: ca. €13–22</li>
+                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Standby: geen fabrieksopgave bekend</li>
+                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Houdt heet water én gekoeld water op temperatuur</li>
                 <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Osmosepomp: kortstondig actief bij tappen</li>
                 <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Vergelijkbaar energieprofiel met Quooker</li>
               </ul>
