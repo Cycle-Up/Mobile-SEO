@@ -29,13 +29,13 @@ function copyFor(context: Context, plaats?: string, dH?: number) {
       };
     case 'vergelijken':
       return {
-        title: 'Onze aanbeveling: de JOEP waterontharder',
-        sub: `JOEP: compacte ionenwisselaar met zout, ${JOEP.flow}, miniregeneratie bij hoog verbruik en 20 jaar fabrieksgarantie op de hars. ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd.`,
+        title: 'Onze keuze als beste waterontharder 2026: JOEP',
+        sub: `JOEP: zeer compacte ionenwisselaar met zout, gemaakt in ${JOEP.madeIn}, ${JOEP.flow}, miniregeneratie bij hoog verbruik en 20 jaar fabrieksgarantie op de hars. ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd.`,
       };
     case 'merk':
       return {
-        title: 'Onze aanbeveling in deze prijsklasse: JOEP',
-        sub: `Compacte waterontharder van AquaSens (Joure) met zout, ${JOEP.flow} en 20 jaar fabrieksgarantie op de hars. Bij PureAqua ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd.`,
+        title: 'Onze keuze als beste waterontharder 2026: JOEP',
+        sub: `Zeer compacte waterontharder met zout, gemaakt in ${JOEP.madeIn} en ook verkocht via AquaCell, ${JOEP.flow} en 20 jaar fabrieksgarantie op de hars. Bij PureAqua ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd.`,
       };
     default:
       return {

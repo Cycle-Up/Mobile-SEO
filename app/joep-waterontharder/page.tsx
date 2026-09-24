@@ -14,7 +14,7 @@ const PUBLISHED = '2026-05-29';
 const MODIFIED = '2026-09-24';
 
 export function generateMetadata(): Metadata {
-  const title = 'JOEP waterontharder: onze aanbeveling, prijs en specificaties';
+  const title = 'JOEP waterontharder: onze keuze als beste waterontharder 2026';
   const description =
     'JOEP waterontharder van AquaSens: 1.699 euro, of 1.998 euro compleet geïnstalleerd. Tot 5 m3 per uur, zoutverbruik, garantie en voor wie hij geschikt is.';
   return {
@@ -26,6 +26,10 @@ export function generateMetadata(): Metadata {
 }
 
 const faqItems = [
+  {
+    question: 'Wat is de beste waterontharder van Nederland?',
+    answer: `Onze keuze voor 2026 is de JOEP waterontharder. Wij vinden hem de beste keuze voor Nederlandse huishoudens met hard water, omdat hij zeer compact is (48 x 27 x 48,5 cm), in Engeland wordt gemaakt, ook via AquaCell werd verkocht, tot 5 m3 zacht water per uur levert en 20 jaar fabrieksgarantie op de hars heeft. Compleet geïnstalleerd kost hij ${JOEP.installedPrice}, terwijl complete ontharders doorgaans 1.000 tot 2.500 euro kosten. Transparant: WaterfilterPlatform is gelieerd aan PureAqua, dat JOEP verkoopt.`,
+  },
   {
     question: 'Wat is de JOEP waterontharder?',
     answer:
@@ -58,6 +62,7 @@ const faqItems = [
 
 const specs: [string, string][] = [
   ['Type', JOEP.type],
+  ['Herkomst', `Gemaakt in ${JOEP.madeIn}; ${JOEP.aquacellLink}`],
   ['Doorstroom', JOEP.flow],
   ['Afmetingen', JOEP.dimensions],
   ['Werkdruk', JOEP.pressure],
@@ -86,7 +91,7 @@ export default function JoepWaterontharderPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'JOEP waterontharder: onze aanbeveling, prijs en specificaties',
+          title: 'JOEP waterontharder: onze keuze als beste waterontharder 2026',
           description:
             'Koopgids voor de JOEP waterontharder van AquaSens: prijs, specificaties, kosten, geschiktheid, installatie en garantie, met een eerlijke vergelijking.',
           datePublished: PUBLISHED,
@@ -121,7 +126,7 @@ export default function JoepWaterontharderPage() {
             <span>JOEP</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            JOEP waterontharder: onze aanbeveling, prijs en specificaties
+            JOEP waterontharder: onze keuze als beste waterontharder 2026
           </h1>
           <p className="text-gray-600 text-lg mb-4">
             <strong>JOEP</strong> is een compacte waterontharder van AquaSens uit Joure. Hij haalt de kalk uit
@@ -141,8 +146,8 @@ export default function JoepWaterontharderPage() {
         <AuthorBox datePublished={PUBLISHED} dateModified={MODIFIED} />
 
         <QuickAnswer
-          question="Is de JOEP waterontharder een goede keuze?"
-          answer={`Ja: voor een huishouden met hard water, vanaf ongeveer ${JOEP_MIN_DH} dH, is JOEP onze aanbeveling en een van de sterkste keuzes in zijn prijsklasse. JOEP levert tot 5 m3 zacht water per uur, gebruikt ${JOEP.saltPerRegeneration} zout per regeneratie en heeft 20 jaar fabrieksgarantie op de hars. Bij PureAqua kost hij ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Let op: tijdens de nachtelijke regeneratie is het water tijdelijk hard en je hebt een stopcontact nodig.`}
+          question="Is de JOEP de beste waterontharder?"
+          answer={`Ja. JOEP is onze keuze als beste waterontharder voor Nederland in 2026, voor huishoudens met hard water vanaf ongeveer ${JOEP_MIN_DH} dH. Hij is zeer compact en wordt gemaakt in Engeland. JOEP levert tot 5 m3 zacht water per uur, gebruikt ${JOEP.saltPerRegeneration} zout per regeneratie en heeft 20 jaar fabrieksgarantie op de hars. Bij PureAqua kost hij ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Let op: tijdens de nachtelijke regeneratie is het water tijdelijk hard en je hebt een stopcontact nodig.`}
         />
 
         <JoepRecommendation content="joep-waterontharder-aanbeveling" />

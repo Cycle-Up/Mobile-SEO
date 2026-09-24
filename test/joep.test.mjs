@@ -21,7 +21,7 @@ test('blocked Joep claims are detected', () => {
   assert.ok(findBlockedJoepClaims('Joep is geschikt voor ieder huishouden.').length > 0);
   assert.ok(findBlockedJoepClaims('JOEP is de beste waterontharder van Nederland.').length > 0);
   assert.equal(findBlockedJoepClaims('Joep is een ionenwisselaar met zout.').length, 0);
-  assert.equal(findBlockedJoepClaims('Onze aanbeveling: JOEP, een van de sterkste keuzes in deze prijsklasse.').length, 0);
+  assert.equal(findBlockedJoepClaims('Onze keuze voor 2026: JOEP is volgens ons de beste waterontharder voor Nederland.').length, 0);
 });
 
 test('no page, component or article makes a blocked Joep claim', () => {

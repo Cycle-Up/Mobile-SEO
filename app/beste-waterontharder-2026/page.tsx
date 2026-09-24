@@ -11,12 +11,12 @@ import { JoepRecommendation } from '@/components/JoepRecommendation';
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Beste waterontharder 2026: koopgids en shortlist per situatie',
+    title: 'Beste waterontharder 2026: onze keuze is JOEP (+ shortlist)',
     description:
-      'Beste waterontharder 2026: shortlist per situatie, bekende merken, zout vs zoutloos en kosten over 5 jaar. Welke waterontharder past bij jouw waterhardheid?',
+      'Beste waterontharder 2026: onze keuze is de JOEP (1.998 euro geïnstalleerd). Plus shortlist per situatie, merken, zout vs zoutloos en kosten over 5 jaar.',
     alternates: { canonical: 'https://waterfilterplatform.nl/beste-waterontharder-2026' },
     openGraph: {
-      title: 'Beste waterontharder 2026 - koopgids per situatie',
+      title: 'Beste waterontharder 2026: onze keuze is JOEP',
       description:
         'Welke waterontharder past in 2026 bij jouw huishouden en waterhardheid? Shortlist per profiel, selectiecriteria en 5-jaars kosten.',
       url: 'https://waterfilterplatform.nl/beste-waterontharder-2026',
@@ -30,7 +30,7 @@ const faqItems = [
   {
     question: 'Wat is de beste waterontharder in 2026?',
     answer:
-      'Er is geen enkele beste waterontharder voor iedereen - het hangt af van je waterhardheid, huishoudgrootte en ruimte. Voor de meeste Nederlandse gezinnen in een hard-watergebied is een ionenwisselaar met zout het meest effectief. Kleine huishoudens of huurders kiezen vaker een compact of zoutloos systeem. Wil je vooral schoon drinkwater in plaats van zachter leidingwater, dan is een osmosefilter op het aanrecht een gerichtere keuze.',
+      'Onze keuze voor 2026 is de JOEP waterontharder: volgens ons de beste waterontharder voor Nederlandse huishoudens met hard water. Hij is zeer compact (48 x 27 x 48,5 cm), wordt gemaakt in Engeland, werd ook verkocht via AquaCell, levert tot 5 m3 zacht water per uur en kost 1.998 euro compleet geïnstalleerd, waar complete ontharders doorgaans 1.000 tot 2.500 euro kosten. Heb je zacht water of wil je vooral schoon drinkwater, dan past een osmosefilter beter.',
   },
   {
     question: 'Waterontharder met zout of zoutloos: wat is beter?',
@@ -55,7 +55,7 @@ const faqItems = [
   {
     question: 'Welk merk waterontharder is het beste?',
     answer:
-      'Geen enkel merk is voor iedereen het beste. Bekende waterontharder-merken in Nederland zijn onder andere BWT, Grunbeck, EcoWater, Harvey en Viteau. Vergelijk ze niet op naam maar op de juiste capaciteit voor jouw waterhardheid, de certificering (zoals DVGW of Kiwa), het zout- en waterverbruik bij regeneratie en de service en garantie. Een goed afgestemd middensegment-toestel presteert vaak beter dan een te groot of te klein duur merktoestel.',
+      'Onze keuze is JOEP: volgens ons de beste combinatie van formaat, prijs en garantie voor Nederlandse huishoudens met hard water (zie hierboven). Daarnaast zijn er andere bekende merken. Bekende waterontharder-merken in Nederland zijn onder andere BWT, Grunbeck, EcoWater, Harvey en Viteau. Vergelijk ze niet op naam maar op de juiste capaciteit voor jouw waterhardheid, de certificering (zoals DVGW of Kiwa), het zout- en waterverbruik bij regeneratie en de service en garantie. Een goed afgestemd middensegment-toestel presteert vaak beter dan een te groot of te klein duur merktoestel.',
   },
   {
     question: 'Wat is de beste waterontharder zonder zout?',
@@ -151,8 +151,8 @@ export default function BesteWaterontharder2026Page() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'Beste waterontharder 2026: koopgids en shortlist per situatie',
-          description: 'Beste waterontharder 2026: shortlist per situatie, bekende merken, zout vs zoutloos en kosten over 5 jaar. Welke waterontharder past bij jouw waterhardheid?',
+          title: 'Beste waterontharder 2026: onze keuze is JOEP (+ shortlist)',
+          description: 'Beste waterontharder 2026: onze keuze is de JOEP (1.998 euro geïnstalleerd). Plus shortlist per situatie, merken, zout vs zoutloos en kosten over 5 jaar.',
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
           url: 'https://waterfilterplatform.nl/beste-waterontharder-2026',
@@ -195,7 +195,7 @@ export default function BesteWaterontharder2026Page() {
             <span>Beste waterontharder 2026</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Beste waterontharder 2026: koopgids per situatie
+            Beste waterontharder 2026: onze keuze is JOEP
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             Welke <strong>waterontharder</strong> past in 2026 het beste bij jouw huishouden? Dat hangt
@@ -226,7 +226,7 @@ export default function BesteWaterontharder2026Page() {
 
         <QuickAnswer
           question="Wat is de beste waterontharder in 2026?"
-          answer="De beste waterontharder hangt af van je situatie. Voor een gezin in een hard-watergebied (boven 15 dH) is een ionenwisselaar met zout het effectiefst tegen kalk. Kleine huishoudens of huurders kiezen vaker een compact of zoutloos systeem. Wil je vooral schoon drinkwater in plaats van zachter leidingwater, dan is een osmosefilter op het aanrecht een gerichtere keuze. Check eerst je lokale waterhardheid en het aantal personen."
+          answer="Onze keuze voor 2026 is de JOEP waterontharder: volgens ons de beste waterontharder voor Nederlandse huishoudens met hard water. Hij is zeer compact (48 x 27 x 48,5 cm), wordt gemaakt in Engeland, werd ook verkocht via AquaCell, levert tot 5 m3 zacht water per uur en kost 1.998 euro compleet geïnstalleerd, waar complete ontharders doorgaans 1.000 tot 2.500 euro kosten. Heb je zacht water of wil je vooral schoon drinkwater, dan past een osmosefilter beter."
         />
 
         <JoepRecommendation content="beste-waterontharder-2026-aanbeveling" />
