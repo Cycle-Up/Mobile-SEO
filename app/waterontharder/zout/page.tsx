@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder zout kopen: types en verbruik | 2026',
@@ -359,6 +360,8 @@ export default function WaterontharderZoutPage() {
         </section>
 
         {/* CTA */}
+        <JoepCTA context="kosten" content="waterontharder-zout-joep" />
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

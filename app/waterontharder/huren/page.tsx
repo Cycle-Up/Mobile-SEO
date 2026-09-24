@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder huren: voordelen, kosten en wanneer huren vs kopen',
@@ -410,6 +411,8 @@ export default function WaterontharderHurenPage() {
           zakelijke waterbehandeling leest u op{' '}
           <Link href="/waterontharder/zakelijk" className="text-[#005F8A] underline">waterontharder zakelijk</Link>.
         </p>
+
+        <JoepCTA context="algemeen" content="waterontharder-huren-joep" />
 
         <AffiliateCTA
           destination="waterontharders"

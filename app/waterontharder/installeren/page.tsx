@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder installeren: kosten, stappen en loodgieter vs zelf doen',
@@ -277,6 +278,8 @@ export default function WaterontharderInstallerenPage() {
         <p className="text-gray-700 mb-6">
           Over een periode van tien jaar bedragen de totale kosten &euro;4.000-8.000, inclusief aanschaf en jaarlijks zout. De besparing op kalkschade (cv-ketel, vaatwasser, boiler) kan hiertegenover staan.
         </p>
+
+        <JoepCTA context="algemeen" content="waterontharder-installeren-joep" />
 
         <CTABanner context="osmose" />
 

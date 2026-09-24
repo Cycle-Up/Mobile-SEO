@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: "Waterontharder zoutverbruik: berekening en bespaartips",
@@ -140,6 +141,8 @@ export default function ZoutVerbruikPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <JoepCTA context="kosten" content="waterontharder-zout-verbruik-joep" />
+
         <CTABanner context="osmose" />
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-10 mb-4">

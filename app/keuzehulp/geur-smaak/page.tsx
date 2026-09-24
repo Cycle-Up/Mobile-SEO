@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor geur en smaak — chloor, chloramine en metaalindruk | WaterfilterPlatform',
@@ -238,6 +239,8 @@ export default function GeurSmaakPage() {
             </Link>
           </div>
         </section>
+
+        <PureFilterCTA context="smaak" content="keuzehulp-geur-smaak-purefilter" />
 
         <AffiliateCTA
           destination="zuiverWaterKranen"

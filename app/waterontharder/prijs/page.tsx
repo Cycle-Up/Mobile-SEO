@@ -5,6 +5,7 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder Prijs: Kosten & Vergelijking 2026',
@@ -622,6 +623,8 @@ export default function WaterOntharderPrijsPage() {
             voor een uitgebreide analyse inclusief regio-specifieke berekeningen.
           </p>
         </section>
+
+        <JoepCTA context="kosten" content="waterontharder-prijs-joep" />
 
         <AffiliateCTA
           destination="waterontharders"

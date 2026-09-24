@@ -5,6 +5,7 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export function generateMetadata(): Metadata {
   return {
@@ -155,7 +156,7 @@ const filterTypen = [
   },
   {
     naam: 'Inline keukenkraan filter',
-    voorbeelden: 'Pentair, BWT Inline, Aquasana',
+    voorbeelden: 'PureFilter Mineral+, Pentair, BWT Inline, Aquasana',
     hoeHetWerkt:
       'Een compact filterpatroon wordt direct in de waterleiding of onder het aanrecht geplaatst. Water stroomt via een actief koolstoffilter voordat het de kraan verlaat. Geen drukvat of separate kraan nodig.',
     filtert: 'Chloor, smaak, geur, sediment. Afhankelijk van het filtertype ook bepaalde metalen.',
@@ -445,6 +446,8 @@ export default function BesteWaterfilter2026Page() {
             ))}
           </div>
         </section>
+
+        <PureFilterCTA context="onder-aanrecht" content="beste-waterfilter-2026-purefilter" />
 
         {/* Voor wie welk filter */}
         <section>

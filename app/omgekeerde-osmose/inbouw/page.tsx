@@ -121,7 +121,7 @@ export default function OsmoseInbouwPage() {
           Wat is een inbouw osmosefilter?
         </h2>
         <p className="text-gray-700 mb-4">
-          Een inbouw osmosefilter (ook wel onderbouwmodel of under-sink systeem genoemd) wordt volledig verborgen geinstalleerd in de onderkast van uw gootsteen. Het systeem bestaat uit twee tot vier filterhuizen, een RO-membraanhouder, een drukvat en een aparte osmosekraan die u in het aanrechtblad boort. Het water wordt gefilterd, opgeslagen in het drukvat en via de aparte kraan getapt.
+          Een inbouw osmosefilter (ook wel onderbouwmodel of under-sink systeem genoemd) wordt volledig verborgen geïnstalleerd in de onderkast van uw gootsteen. Het systeem bestaat uit twee tot vier filterhuizen, een RO-membraanhouder, een drukvat en een aparte osmosekraan die u in het aanrechtblad boort. Het water wordt gefilterd, opgeslagen in het drukvat en via de aparte kraan getapt.
         </p>
         <p className="text-gray-700 mb-6">
           Dit onderscheidt het inbouwmodel van een aanrechtmodel (dat zichtbaar op het aanrecht staat) en van inline filters (die ingebouwd zijn in specifieke apparaten zoals koelkasten of ijsmakers). Het inbouwmodel is voor de meeste Nederlandse huishoudens de beste keuze vanwege de onzichtbare installatie en het gemak van een dedicated osmosekraan.

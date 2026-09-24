@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Hoe Werkt een Waterontharder? Uitleg 2026',
@@ -584,6 +585,8 @@ export default function WaterOntharderWerkingPage() {
         </section>
 
         {/* CTA */}
+        <JoepCTA context="algemeen" content="waterontharder-werking-joep" />
+
         <CTABanner context="osmose" />
 
         {/* Verder lezen */}

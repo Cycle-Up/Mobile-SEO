@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder in Appartement: Mag Dit & Welke Opties?',
@@ -77,6 +78,8 @@ export default function WaterOntharderAppartementPage() {
         <p className="text-lg text-gray-700 mb-6">
           Hard water is een probleem in heel Nederland, ook in appartementen. Maar een klassieke waterontharder installeren is in een huurwoning vaak niet toegestaan zonder toestemming. Gelukkig zijn er slimme alternatieven.
         </p>
+
+        <JoepCTA context="algemeen" content="waterontharder-appartement-joep" />
 
         <CTABanner />
 

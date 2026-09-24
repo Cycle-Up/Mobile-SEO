@@ -20,7 +20,7 @@ const faqItems = [
   {
     question: 'Is het leidingwater in Dordrecht veilig om te drinken?',
     answer:
-      'Drinkwaterbedrijf Oasen heeft aanvullende zuivering geinstalleerd voor het bronwater in de Dordrecht-regio. Het geleverde leidingwater voldoet aan de EU-PFAS-norm (0,10 µg/L sum-20). Particuliere putten in het gebied zijn een ander verhaal: die worden niet gemonitord en kunnen nog altijd verhoogde GenX-waarden hebben.',
+      'Drinkwaterbedrijf Oasen heeft aanvullende zuivering geïnstalleerd voor het bronwater in de Dordrecht-regio. Het geleverde leidingwater voldoet aan de EU-PFAS-norm (0,10 µg/L sum-20). Particuliere putten in het gebied zijn een ander verhaal: die worden niet gemonitord en kunnen nog altijd verhoogde GenX-waarden hebben.',
   },
   {
     question: 'Wat doet Schiphol met PFAS in het grondwater?',

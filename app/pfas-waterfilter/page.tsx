@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'PFAS waterfilter: de complete gids voor 2026',
@@ -256,6 +257,8 @@ export default function PfasWaterfilterPage() {
         </section>
 
         <HealthDisclaimer />
+        <PureFilterCTA context="pfas" content="pfas-waterfilter-purefilter" />
+
         <CTABanner context="osmose" />
 
         {/* Subpagina links */}

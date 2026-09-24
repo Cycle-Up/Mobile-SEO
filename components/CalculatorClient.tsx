@@ -143,7 +143,7 @@ const CONFIG: Record<string, { fields: Field[]; compute: (v: Record<string, stri
 
 // Per rekentool de meest passende PureAqua-bestemming (contextueel, na het resultaat).
 const CTA_MAP: Record<string, { dest: string; campaign: string; label: string }> = {
-  zout: { dest: 'joep', campaign: 'waterontharder', label: 'Bekijk de Joep waterontharder (zonder zout)' },
+  zout: { dest: 'joep', campaign: 'waterontharder', label: 'Bekijk de Joep waterontharder' },
   afvalwater: { dest: 'zuiverWaterKranen', campaign: 'omgekeerde-osmose', label: 'Bekijk een osmosesysteem met kraan' },
   kokend: { dest: 'vierInEen', campaign: 'kokend-water', label: 'Bekijk de PureAqua 4-in-1 kraan' },
   flessen: { dest: 'zuiverWaterKranen', campaign: 'omgekeerde-osmose', label: 'Stop met flessen: bekijk de zuiver-water-kranen' },
@@ -152,7 +152,7 @@ const CTA_MAP: Record<string, { dest: string; campaign: string; label: string }>
   kalkrisico: { dest: 'waterontharders', campaign: 'waterontharder', label: 'Bekijk de waterontharders bij PureAqua' },
   rejectie: { dest: 'zuiverWaterKranen', campaign: 'omgekeerde-osmose', label: 'Bekijk een osmosesysteem met kraan' },
   verbruik: { dest: 'zuiverWaterKranen', campaign: 'omgekeerde-osmose', label: 'Bekijk de zuiver-water-kranen' },
-  zoutinterval: { dest: 'joep', campaign: 'waterontharder', label: 'Bekijk de Joep waterontharder (zonder zout)' },
+  zoutinterval: { dest: 'joep', campaign: 'waterontharder', label: 'Bekijk de Joep waterontharder' },
 };
 
 export function CalculatorClient({ kind }: { kind: string }) {

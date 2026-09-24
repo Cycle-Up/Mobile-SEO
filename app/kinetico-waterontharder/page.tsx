@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export function generateMetadata(): Metadata {
   return {
@@ -28,7 +28,7 @@ const faqItems = [
   {
     question: 'Is een Kinetico waterontharder een goede keuze?',
     answer:
-      'Kinetico is bekend van non-electric twin-tank waterontharders die continu zacht water leveren en regenereren op basis van werkelijk verbruik in plaats van een timer. Dat maakt ze premium en betrouwbaar, maar ook hoger geprijsd en doorgaans via een dealer geinstalleerd. Het is een goede keuze als je geen stroompunt bij de aansluiting hebt of een onderhoudsarme oplossing wilt; vergelijk capaciteit, zoutverbruik en certificering altijd met andere merken.',
+      'Kinetico is bekend van non-electric twin-tank waterontharders die continu zacht water leveren en regenereren op basis van werkelijk verbruik in plaats van een timer. Dat maakt ze premium en betrouwbaar, maar ook hoger geprijsd en doorgaans via een dealer geïnstalleerd. Het is een goede keuze als je geen stroompunt bij de aansluiting hebt of een onderhoudsarme oplossing wilt; vergelijk capaciteit, zoutverbruik en certificering altijd met andere merken.',
   },
   {
     question: 'Welke waterontharders maakt Kinetico?',
@@ -38,7 +38,7 @@ const faqItems = [
   {
     question: 'Wat kost een Kinetico waterontharder?',
     answer:
-      'Kinetico zit in het premium prijssegment en wordt doorgaans via een dealer geleverd en geinstalleerd. Reken naast de aanschaf op zoutkosten en periodiek onderhoud. Beoordeel altijd de totale kosten over vijf jaar (aanschaf, installatie, zout, water en service) in plaats van alleen de aanschafprijs, en vraag een offerte op maat bij de dealer.',
+      'Kinetico zit in het premium prijssegment en wordt doorgaans via een dealer geleverd en geïnstalleerd. Reken naast de aanschaf op zoutkosten en periodiek onderhoud. Beoordeel altijd de totale kosten over vijf jaar (aanschaf, installatie, zout, water en service) in plaats van alleen de aanschafprijs, en vraag een offerte op maat bij de dealer.',
   },
   {
     question: 'Wat is het beste alternatief voor Kinetico?',
@@ -112,7 +112,7 @@ export default function KineticoWaterontharderPage() {
 
         <QuickAnswer
           question="Is een Kinetico waterontharder een goede keuze?"
-          answer="Kinetico levert non-electric twin-tank waterontharders die continu zacht water leveren en regenereren op basis van werkelijk verbruik in plaats van een timer. Dat maakt ze premium en betrouwbaar, maar ook hoger geprijsd en doorgaans via een dealer geinstalleerd. Het is een goede keuze als je geen stroompunt bij de aansluiting hebt of een onderhoudsarme oplossing wilt - vergelijk capaciteit, zoutverbruik en certificering met andere merken."
+          answer="Kinetico levert non-electric twin-tank waterontharders die continu zacht water leveren en regenereren op basis van werkelijk verbruik in plaats van een timer. Dat maakt ze premium en betrouwbaar, maar ook hoger geprijsd en doorgaans via een dealer geïnstalleerd. Het is een goede keuze als je geen stroompunt bij de aansluiting hebt of een onderhoudsarme oplossing wilt - vergelijk capaciteit, zoutverbruik en certificering met andere merken."
         />
 
         <section>
@@ -129,7 +129,7 @@ export default function KineticoWaterontharderPage() {
               ['Non-electric werking', 'Waterdruk-gedreven systeem zonder stroomaansluiting of timer.'],
               ['Twin-tank opzet', 'Twee tanks leveren continu zacht water; de ene regenereert terwijl de andere doorlevert.'],
               ['Regenereert op verbruik', 'Regeneratie gebeurt op basis van werkelijk waterverbruik in plaats van op een vast tijdstip.'],
-              ['Premium en dealer-installatie', 'Hoger prijssegment; doorgaans geleverd en geinstalleerd via een dealer.'],
+              ['Premium en dealer-installatie', 'Hoger prijssegment; doorgaans geleverd en geïnstalleerd via een dealer.'],
             ].map(([t, d]) => (
               <div key={t} className="flex gap-3">
                 <span className="text-[#005F8A] font-bold">-</span>
@@ -162,14 +162,7 @@ export default function KineticoWaterontharderPage() {
           </div>
         </section>
 
-        <AffiliateCTA
-          destination="joep"
-          campaign="waterontharder"
-          content="kinetico-waterontharder-cta"
-          label="Bekijk de Joep waterontharder"
-          title="Een compacte waterontharder zonder gedoe?"
-          sub="Bekijk de Joep waterontharder bij onze partner PureAqua."
-        />
+        <JoepCTA context="merk" content="kinetico-waterontharder-cta" />
 
         <CTABanner context="waterhardheid" />
 

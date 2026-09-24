@@ -250,7 +250,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/contact" className="hover:text-white">Contact</Link>
             </div>
             <p>
-              &copy; {new Date().getFullYear()} WaterfilterPlatform.nl &mdash; Onafhankelijk vergelijkingsplatform.
+              &copy; {new Date().getFullYear()} WaterfilterPlatform.nl &middot; Informatie- en vergelijkingsplatform over drinkwater, gelieerd aan PureAqua.
             </p>
           </div>
         </footer>

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { buildShopUrl, DESTINATIONS, STORE, allowedShopPaths, utmSlug, affiliateClickPayload } from '../lib/pureaqua.mjs';
+import { buildShopUrl, DESTINATIONS, STORES, allowedShopPaths, allowedShopUrls, utmSlug, affiliateClickPayload } from '../lib/pureaqua.mjs';
 
 test('buildShopUrl tags every link with the fixed UTM scheme', () => {
   const url = new URL(buildShopUrl('waterontharders', { campaign: 'waterontharder', content: 'beste-waterontharder-2026-hero' }));
@@ -22,9 +22,9 @@ test('campaign defaults to algemeen and content is optional', () => {
   assert.equal(url.searchParams.has('utm_content'), false);
 });
 
-test('all destinations point to the verified PureAqua store', () => {
+test('all destinations point to a verified store (PureAqua or PureFilter)', () => {
   for (const d of Object.values(DESTINATIONS)) {
-    assert.ok(d.url.startsWith(STORE), `${d.key} hoort onder de geverifieerde store te vallen`);
+    assert.ok(STORES.includes(new URL(d.url).origin), `${d.key} hoort onder een geverifieerde store te vallen`);
     assert.equal(d.evidenceStatus, 'verified');
   }
 });
@@ -79,4 +79,18 @@ test('affiliateClickPayload ignores non-shop and invalid URLs', () => {
   assert.equal(affiliateClickPayload('https://waterfilterplatform.nl/zoeken'), null);
   assert.equal(affiliateClickPayload('https://example.com'), null);
   assert.equal(affiliateClickPayload('not-a-url'), null);
+});
+
+test('PureFilter Mineral+ is a verified destination on purefilter.nl', () => {
+  const url = new URL(buildShopUrl('purefilterMineral', { campaign: 'purefilter', content: 'test' }));
+  assert.equal(url.origin, 'https://purefilter.nl');
+  assert.equal(url.pathname, '/products/purefilter-mineral-waterfilter');
+  assert.equal(url.searchParams.get('utm_medium'), 'affiliate');
+  assert.ok(allowedShopUrls().includes('https://purefilter.nl/products/purefilter-mineral-waterfilter'));
+});
+
+test('affiliateClickPayload labels PureFilter clicks with their own partner', () => {
+  const p = affiliateClickPayload('https://purefilter.nl/products/purefilter-mineral-waterfilter?utm_source=waterfilterplatform&utm_medium=affiliate&utm_campaign=pfas');
+  assert.equal(p.affiliate_partner, 'purefilter');
+  assert.equal(p.destination, '/products/purefilter-mineral-waterfilter');
 });

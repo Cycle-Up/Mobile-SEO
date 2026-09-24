@@ -164,7 +164,7 @@ export default function DrinkwaterfonteinThuisPage() {
             </p>
             <ul className="text-sm text-gray-600 space-y-1 list-disc pl-5">
               <li>Onzichtbaar onder aanrecht</li>
-              <li>Permanent geinstalleerd tapkraantje</li>
+              <li>Permanent geïnstalleerd tapkraantje</li>
               <li>Filterwissel 1x per jaar</li>
               <li>Geschikt voor gezin van 2-6 personen</li>
             </ul>

@@ -12,16 +12,16 @@ test('every product maps to a verified allowlist destination', () => {
   }
 });
 
-test('offers only exist for products with a verified price, with PureAqua as seller', () => {
+test('offers only exist for products with a verified price, with the right shop as seller', () => {
   for (const p of PRODUCTS) {
     const s = buildProductSchema(p);
     assert.equal(s['@type'], 'Product');
-    assert.ok(s.url.startsWith('https://pureaqua.nl'));
+    assert.ok(s.url.startsWith('https://pureaqua.nl') || s.url.startsWith('https://purefilter.nl'));
     assert.ok(s.subjectOf.url.startsWith('https://waterfilterplatform.nl/'));
     if (p.price) {
       assert.equal(s.offers.price, p.price);
       assert.equal(s.offers.priceCurrency, 'EUR');
-      assert.equal(s.offers.seller.name, 'PureAqua');
+      assert.equal(s.offers.seller.name, p.shopName || 'PureAqua');
     } else {
       assert.equal('offers' in s, false, `${p.name} zonder geverifieerde prijs krijgt geen Offer`);
     }
@@ -41,8 +41,19 @@ test('The Source carries the published price and availability; unpriced products
   assert.equal(source.offers.price, '395.00');
   assert.equal(source.offers.availability, 'https://schema.org/InStock');
   const joep = buildProductSchema(PRODUCTS.find(p => p.key === 'joep'));
-  assert.equal('offers' in joep, false);
+  assert.equal(joep.offers.price, '1699.00', 'Joep: bevestigde prijs zonder installatie');
+  assert.equal(joep.offers.seller.name, 'PureAqua');
+  const aquacell = buildProductSchema(PRODUCTS.find(p => p.key === 'aquacell'));
+  assert.equal('offers' in aquacell, false, 'AquaCell: prijsconflict, dus geen Offer');
   const tds = buildProductSchema(PRODUCTS.find(p => p.key === 'tdsMeter'));
   assert.equal(tds.offers.price, '5.95');
   assert.equal('availability' in tds.offers, false, 'geen onbevestigde voorraadclaim');
+});
+
+test('PureFilter Mineral+ is sold by PureFilter.nl under its own brand', () => {
+  const s = buildProductSchema(PRODUCTS.find(p => p.key === 'purefilterMineral'));
+  assert.equal(s.brand.name, 'PureFilter');
+  assert.equal(s.offers.seller.name, 'PureFilter.nl');
+  assert.equal(s.offers.price, '149.00');
+  assert.ok(s.url.startsWith('https://purefilter.nl/products/'));
 });

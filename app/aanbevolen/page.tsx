@@ -5,6 +5,7 @@ import { ProductCard } from '@/components/ProductCard';
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 import { PRODUCTS, buildProductSchema } from '@/lib/pureaqua-products.mjs';
 import { ENTITIES } from '@/lib/entities.mjs';
+import { JoepRecommendation } from '@/components/JoepRecommendation';
 
 const BASE = 'https://waterfilterplatform.nl';
 
@@ -16,7 +17,7 @@ const relatedEntities = [...new Set(PRODUCTS.map(p => p.relatedEntity))]
   .map(e => ({ '@type': 'Thing', name: e.name, url: e.url, ...(e.sameAs ? { sameAs: e.sameAs } : {}) }));
 
 export const metadata: Metadata = {
-  title: 'Aanbevolen waterfilters en waterontharders (via PureAqua)',
+  title: 'Aanbevolen waterfilters en waterontharders (via PureAqua en PureFilter)',
   description:
     'De producten die wij aanraden via partner PureAqua: 4-in-1 kraan, The Source osmosesysteem, Countertop RO, Joep en AquaCell waterontharders en de TDS-meter.',
   alternates: { canonical: `${BASE}/aanbevolen` },
@@ -65,9 +66,10 @@ export default function AanbevolenPage() {
             Aanbevolen producten
           </h1>
           <p className="text-gray-600 text-lg mb-3">
-            De snelste route van vraag naar oplossing: per situatie het product dat wij via onze
-            partner PureAqua aanraden. Kokend en gefilterd water, osmose met of zonder installatie,
-            hard water aanpakken of eerst je eigen water testen.
+            De snelste route van vraag naar oplossing: per situatie het product dat wij aanraden uit
+            het assortiment van PureAqua en PureFilter. Een compact filter onder het aanrecht, kokend
+            en gefilterd water, osmose met of zonder installatie, hard water aanpakken of eerst je
+            eigen water testen.
           </p>
           <AffiliateDisclosure />
         </div>
@@ -80,20 +82,23 @@ export default function AanbevolenPage() {
           ))}
         </div>
 
+        <JoepRecommendation content="aanbevolen-joep-aanbeveling" />
+
         <section className="mt-12">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe wij aanbevelen</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            WaterfilterPlatform is een onafhankelijk informatieplatform. Onze uitleg, vergelijkingen
-            en reviews schrijven we op basis van openbare bronnen en specificaties, los van
-            commerciele afspraken. Voor wie na het lezen wil kopen, verwijzen we naar onze partner
-            PureAqua; daarvoor kunnen wij een vergoeding ontvangen. Twijfel je nog welk type bij je
+            WaterfilterPlatform is gelieerd aan PureAqua, dat ook PureFilter verkoopt. Onze uitleg,
+            vergelijkingen en reviews schrijven we op basis van openbare bronnen, specificaties en
+            labrapporten, met voor eigen producten dezelfde bewijsregels als voor andere merken. Voor
+            wie na het lezen wil kopen, verwijzen we naar PureAqua.nl of PureFilter.nl; PureAqua
+            verdient aan die aankopen. Twijfel je nog welk type bij je
             past? Begin dan bij de <Link href="/keuzehulp" className="text-[#005F8A] underline">keuzehulp</Link>,
             de <Link href="/beslishulp" className="text-[#005F8A] underline">beslishulp</Link> of
             de <Link href="/hulpmiddelen" className="text-[#005F8A] underline">rekentools</Link>.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Prijzen tonen we alleen als ze bij publicatie geverifieerd zijn; de actuele prijs en
-            voorraad zie je altijd bij PureAqua zelf. Lees ook onze{' '}
+            voorraad zie je altijd in de betreffende webshop. Lees ook onze{' '}
             <Link href="/methodologie" className="text-[#005F8A] underline">methodologie</Link>.
           </p>
         </section>

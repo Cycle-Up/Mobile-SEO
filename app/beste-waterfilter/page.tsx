@@ -5,6 +5,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { ClusterHub } from "@/components/ClusterHub";
 import { getCluster } from "@/data/clusters";
 import { AffiliateCTA } from "@/components/AffiliateCTA";
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: "Beste waterfilter per situatie: welk filter past bij uw woning?",
@@ -180,6 +181,8 @@ export default function BesteWaterfilterPage() {
         </section>
       </div>
       <div className="max-w-3xl mx-auto px-4 pb-12">
+        <PureFilterCTA context="onder-aanrecht" content="beste-waterfilter-purefilter" />
+
         <AffiliateCTA
           destination="zuiverWaterKranen"
           campaign="omgekeerde-osmose"

@@ -238,7 +238,7 @@ export default function PfasWaterfilterTestenPage() {
                 urgentie: 'Hoog',
               },
               {
-                situatie: 'U wilt een geinstalleerd filter valideren',
+                situatie: 'U wilt een geïnstalleerd filter valideren',
                 uitleg: 'Na installatie van een osmosefilter kunt u met een laboratoriumtest bevestigen dat het membraan functioneert. Meet het gefilterde water en vergelijk met onbehandeld water.',
                 urgentie: 'Aanbevolen',
               },

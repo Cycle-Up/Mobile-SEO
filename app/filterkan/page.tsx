@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'Wat is een waterfilterkan? Brita, BWT en alternatieven vergelijken 2026',
@@ -505,6 +506,8 @@ export default function FilterkanPage() {
         </section>
 
         {/* CTA */}
+        <PureFilterCTA context="filterkan" content="filterkan-purefilter" />
+
         <CTABanner context="osmose" />
 
         {/* FAQ */}

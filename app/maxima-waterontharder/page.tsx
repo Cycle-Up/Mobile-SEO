@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export function generateMetadata(): Metadata {
   return {
@@ -161,14 +161,7 @@ export default function MaximaWaterontharderPage() {
           </div>
         </section>
 
-        <AffiliateCTA
-          destination="joep"
-          campaign="waterontharder"
-          content="maxima-waterontharder-cta"
-          label="Joep waterontharder als alternatief"
-          title="Een compacte waterontharder zonder gedoe?"
-          sub="Bekijk de Joep waterontharder bij onze partner PureAqua."
-        />
+        <JoepCTA context="merk" content="maxima-waterontharder-cta" />
 
         <CTABanner context="waterhardheid" />
 

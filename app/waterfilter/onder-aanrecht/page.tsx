@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: 'Waterfilter onder aanrecht: types, installatie en prijzen | 2026',
@@ -463,6 +464,8 @@ export default function WaterfilterOnderAanrechtPage() {
       </section>
 
         {/* CTA */}
+        <PureFilterCTA context="onder-aanrecht" content="onder-aanrecht-purefilter" />
+
         <CTABanner context="osmose" />
 
         {/* Gerelateerde pagina's */}
@@ -493,7 +496,7 @@ export default function WaterfilterOnderAanrechtPage() {
               {
                 href: '/purefilter-review',
                 title: 'PureFilter Mineral+ review',
-                desc: 'Eerlijke beoordeling van de claims van dit gemineraliseerde filter.',
+                desc: 'Compact inline filter zonder osmose: labtest, kosten per jaar en voor wie het past.',
               },
             ].map(l => (
               <Link

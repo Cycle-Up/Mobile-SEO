@@ -325,7 +325,7 @@ export default function WaterfilterRadiumPage() {
           Voor huishoudens met een particuliere put in een risicogebied is een{' '}
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">osmosefilter</Link> de
           meest praktische keuze voor radiumverwijdering. Radon vereist aanvullend een beluchtingssysteem
-          of ontgassingsunit, die door een gespecialiseerde waterbehandelaar worden geinstalleerd.
+          of ontgassingsunit, die door een gespecialiseerde waterbehandelaar worden geïnstalleerd.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

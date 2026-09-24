@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { analyzeAffiliate, extractShopHrefs } from '../scripts/check-affiliate.mjs';
 
-const allowed = ['/', '/collections/waterontharders'];
+const allowed = ['https://pureaqua.nl/', 'https://pureaqua.nl/collections/waterontharders'];
 
 const goodAnchor = '<a href="https://pureaqua.nl/collections/waterontharders?utm_source=waterfilterplatform&amp;utm_medium=affiliate&amp;utm_campaign=waterontharder" rel="sponsored">Bekijk</a>';
 const disclosure = '<p data-affiliate-disclosure>Transparantie...</p>';
@@ -40,4 +40,14 @@ test('pages without shop links produce no violations and JSON-LD url is ignored'
   const html = '<html><script type="application/ld+json">{"url":"https://pureaqua.nl"}</script></html>';
   assert.equal(extractShopHrefs(html).length, 0);
   assert.deepEqual(analyzeAffiliate(html, allowed), []);
+});
+
+test('a compliant PureFilter link passes', () => {
+  const html = `<html><a href="https://purefilter.nl/products/purefilter-mineral-waterfilter?utm_source=waterfilterplatform&amp;utm_medium=affiliate&amp;utm_campaign=pfas" rel="sponsored">x</a>${disclosure}</html>`;
+  assert.deepEqual(analyzeAffiliate(html), []);
+});
+
+test('a shop path on the wrong domain is flagged', () => {
+  const html = `<html><a href="https://pureaqua.nl/products/purefilter-mineral-waterfilter?utm_source=waterfilterplatform&utm_medium=affiliate" rel="sponsored">x</a>${disclosure}</html>`;
+  assert.ok(analyzeAffiliate(html).some(x => /allowlist/.test(x)));
 });

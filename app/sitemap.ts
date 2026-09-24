@@ -51,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/waterfilter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/kennisbank`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE}/over-ons`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${BASE}/rapporten/waterhardheid-nederland-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/redactie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE}/redactie/jeroen-dijkstra`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${BASE}/methodologie`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.6 },

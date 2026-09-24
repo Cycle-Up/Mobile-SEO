@@ -251,7 +251,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - **/quooker-prijs**: https://waterfilterplatform.nl/quooker-prijs
 - **/quooker-storing**: https://waterfilterplatform.nl/quooker-storing
 - **/quooker-versus-osmose**: https://waterfilterplatform.nl/quooker-versus-osmose
-- **/rapporten**: https://waterfilterplatform.nl/rapporten, https://waterfilterplatform.nl/rapporten/normwijzigingen-overzicht, https://waterfilterplatform.nl/rapporten/pfas-trendoverzicht-2026, https://waterfilterplatform.nl/rapporten/staat-van-drinkwater-2026, https://waterfilterplatform.nl/rapporten/trends-waterfilters, https://waterfilterplatform.nl/rapporten/verzilting-droogte-context
+- **/rapporten**: https://waterfilterplatform.nl/rapporten, https://waterfilterplatform.nl/rapporten/normwijzigingen-overzicht, https://waterfilterplatform.nl/rapporten/pfas-trendoverzicht-2026, https://waterfilterplatform.nl/rapporten/staat-van-drinkwater-2026, https://waterfilterplatform.nl/rapporten/trends-waterfilters, https://waterfilterplatform.nl/rapporten/verzilting-droogte-context, https://waterfilterplatform.nl/rapporten/waterhardheid-nederland-2026
 - **/redactie**: https://waterfilterplatform.nl/redactie, https://waterfilterplatform.nl/redactie/jeroen-dijkstra
 - **/regenwater**: https://waterfilterplatform.nl/regenwater, https://waterfilterplatform.nl/regenwater/drinken, https://waterfilterplatform.nl/regenwater/filteren, https://waterfilterplatform.nl/regenwater/opslagtank, https://waterfilterplatform.nl/regenwater/pfas, https://waterfilterplatform.nl/regenwater/tuin, https://waterfilterplatform.nl/regenwater/wassen, https://waterfilterplatform.nl/regenwater/wc-doorspoelen
 - **/reisfilter**: https://waterfilterplatform.nl/reisfilter, https://waterfilterplatform.nl/reisfilter/lifestraw, https://waterfilterplatform.nl/reisfilter/sawyer
@@ -726,9 +726,11 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [PFAS in bloed Nederlanders: RIVM bloedwaardestudies 2025-2026](https://waterfilterplatform.nl/kennisbank/pfas-bloedwaarden-nederland) (2026-05-17)
   > Het RIVM meet PFAS in bloed van Nederlanders via de humane biomonitoringsstudies. De gemiddelde PFOS-bloedwaarden bij Nederlandse volwassenen liggen rond 3-5 ng/mL. Mensen in hotspot-gebieden (nabij vliegbases of industrieterreinen) hebben significant hogere waarden. Een osmosefilter thuis kan de blootstelling via drinkwater met 95-99% verminderen.
 - [PFAS in drinkwater: hoe erg is het & wat helpt?](https://waterfilterplatform.nl/kennisbank/pfas-drinkwater) (2026-02-11)
-  > PFAS in drinkwater: wat zegt RIVM, wat zijn de EU-normen sinds 2026 en welke filters helpen écht? Praktisch, nuchter en op feiten gebaseerd PFAS - de zogenoemde 'forever chemicals' - staan al jaren in het nieuws.
+  > Nederlands kraanwater voldoet aan de EU-norm van 0,1 microgram (100 nanogram) per liter voor de som van 20 PFAS. Het RIVM adviseert een veel strengere waarde van 4,4 nanogram per liter; die wordt in delen van West-Nederland overschreden. Het water is veilig te drinken, maar wie de inname wil verlagen kan kiezen voor omgekeerde osmose of een goed koolstoffilter.
 - [PFAS in Nederlands drinkwater 2026: hotspots, normen en waterfilter](https://waterfilterplatform.nl/kennisbank/pfas-in-nederland-2026) (2026-05-16)
-  > PFAS worden steeds strenger genormeerd. De EU-norm voor de som van 20 PFAS in drinkwater is 100 nanogram per liter (ng/L) vanaf 2026. In Nederland voldoet het leidingwater vrijwel overal aan deze norm, maar in hotspotgebieden (zoals rond defensie-oefenterreinen en industriegebieden) worden extra maatregelen getroffen. Een osmosefilter verwijdert 95-99% van PFAS.
+  > Sinds 12 januari 2026 geldt een EU-norm van 100 nanogram per liter voor de som van 20 PFAS in drinkwater. Nederlands kraanwater voldoet daaraan, maar zit bij ruim een derde van de bevolking boven de strengere RIVM-advieswaarde van 4,4 nanogram per liter, vooral in Noord- en Zuid-Holland. Een osmosefilter verwijdert het grootste deel van de PFAS.
+- [PFAS in kraanwater boven de RIVM-advieswaarde: wat betekent het?](https://waterfilterplatform.nl/kennisbank/pfas-kraanwater-boven-rivm-advieswaarde) (2026-09-24)
+  > Kraanwater in Nederland voldoet aan de wettelijke PFAS-norm van 100 nanogram per liter, maar bij ruim een derde van de bevolking ligt het boven de strengere RIVM-advieswaarde van 4,4 nanogram per liter. Vooral Noord- en Zuid-Holland scoren hoog. Het water is volgens waterbedrijven veilig, maar de PFAS-belasting moet op termijn omlaag.
 - [PFAS-lozingen in Nederland: hotspots, bedrijven en waterrisico's](https://waterfilterplatform.nl/kennisbank/pfas-lozingen-nederland) (2026-05-18)
   > De grootste PFAS-bronnen in Nederland zijn Chemours (Dordrecht), defensieoefenterreinen (blusschuim) en industrieterreinen langs de Rijn. Grondwater en oppervlaktewater in deze regio's kunnen boven de EU-drempelwaarde van 0,1 µg/L totaal-PFAS komen.
 - [PFAS in Nederland: risicogebieden en kaart 2024](https://waterfilterplatform.nl/kennisbank/pfas-nederland-kaart) (2026-02-12)
@@ -1190,7 +1192,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Zeoliet waterfilter: hoe werkt het en wat filtert het?](https://waterfilterplatform.nl/kennisbank/zeoliet-waterfilter) (2026-05-18)
   > Zeoliet is een poreus aluminosilicaat-mineraal dat via ionenwisseling ammonium, sommige zware metalen en hardheid uit water haalt. Het is nuttig als aanvullend medium, maar verwijdert geen chloor, PFAS of bacterien; voor brede drinkwaterzuivering zijn actief kool en omgekeerde osmose effectiever.
 
-Totaal: 450 kennisbank-artikelen.
+Totaal: 451 kennisbank-artikelen.
 
 ## Index
 
