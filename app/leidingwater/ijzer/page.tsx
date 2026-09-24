@@ -155,7 +155,7 @@ export default function LeidingwaterIjzerPage() {
           <div className="border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-1">1. Inwendige leidingroest</h3>
             <p className="text-gray-700 text-sm">
-              De meest voorkomende oorzaak in woningen. Gietijzeren of stalen leidingen, geinstalleerd voor 1970, roesten van binnenuit als de beschermende oxidelaag beschadigd is. Hoe ouder de leidingen, hoe meer roest. Vervanging is de enige structurele oplossing.
+              De meest voorkomende oorzaak in woningen. Gietijzeren of stalen leidingen, geïnstalleerd voor 1970, roesten van binnenuit als de beschermende oxidelaag beschadigd is. Hoe ouder de leidingen, hoe meer roest. Vervanging is de enige structurele oplossing.
             </p>
           </div>
           <div className="border border-gray-200 rounded-lg p-4">

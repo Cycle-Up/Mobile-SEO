@@ -57,7 +57,7 @@ const faqSchema = {
       name: 'Verwijdert een osmosefilter natrium uit het water?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, een omgekeerde osmose (RO) filter verwijdert 85-95% van alle opgeloste stoffen inclusief natrium. Bij ingangswater van 100 mg/L natrium bevat het geproduceerde osmosewater 5-15 mg/L. Dit maakt een osmosefilter de meest effectieve methode om natrium uit drinkwater te verwijderen, ook voor mensen op een strikt natriumarm dieet. Een RO-systeem wordt typisch geinstalleerd onder het aanrecht als drinkwaterfilter, terwijl de waterontharder het overige huishoudwater behandelt.',
+        text: 'Ja, een omgekeerde osmose (RO) filter verwijdert 85-95% van alle opgeloste stoffen inclusief natrium. Bij ingangswater van 100 mg/L natrium bevat het geproduceerde osmosewater 5-15 mg/L. Dit maakt een osmosefilter de meest effectieve methode om natrium uit drinkwater te verwijderen, ook voor mensen op een strikt natriumarm dieet. Een RO-systeem wordt typisch geïnstalleerd onder het aanrecht als drinkwaterfilter, terwijl de waterontharder het overige huishoudwater behandelt.',
       },
     },
     {

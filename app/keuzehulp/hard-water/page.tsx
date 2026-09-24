@@ -5,6 +5,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { JoepCTA } from '@/components/JoepCTA';
+import { JoepRecommendation } from '@/components/JoepRecommendation';
 
 export const metadata: Metadata = {
   title: "Hard water en waterfilter: waterontharder of osmose?",
@@ -111,6 +112,8 @@ export default function HardWaterPage() {
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         <CTABanner context="waterhardheid" />
+
+        <JoepRecommendation content="keuzehulp-hard-water-aanbeveling" />
 
         <section className="mt-10 prose prose-blue max-w-none">
           <h2 className="text-2xl font-bold text-[#003F5C] mt-8 mb-4">

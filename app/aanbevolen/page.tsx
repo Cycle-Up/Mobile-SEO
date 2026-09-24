@@ -5,6 +5,7 @@ import { ProductCard } from '@/components/ProductCard';
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 import { PRODUCTS, buildProductSchema } from '@/lib/pureaqua-products.mjs';
 import { ENTITIES } from '@/lib/entities.mjs';
+import { JoepRecommendation } from '@/components/JoepRecommendation';
 
 const BASE = 'https://waterfilterplatform.nl';
 
@@ -80,6 +81,8 @@ export default function AanbevolenPage() {
             <ProductCard key={p.key} product={p} content={`aanbevolen-${p.key.toLowerCase()}`} />
           ))}
         </div>
+
+        <JoepRecommendation content="aanbevolen-joep-aanbeveling" />
 
         <section className="mt-12">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe wij aanbevelen</h2>

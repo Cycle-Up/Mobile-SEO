@@ -41,7 +41,7 @@ test('The Source carries the published price and availability; unpriced products
   assert.equal(source.offers.price, '395.00');
   assert.equal(source.offers.availability, 'https://schema.org/InStock');
   const joep = buildProductSchema(PRODUCTS.find(p => p.key === 'joep'));
-  assert.equal(joep.offers.price, '1799.00', 'Joep: geverifieerde apparaatprijs, geen opleverprijs');
+  assert.equal(joep.offers.price, '1699.00', 'Joep: bevestigde prijs zonder installatie');
   assert.equal(joep.offers.seller.name, 'PureAqua');
   const aquacell = buildProductSchema(PRODUCTS.find(p => p.key === 'aquacell'));
   assert.equal('offers' in aquacell, false, 'AquaCell: prijsconflict, dus geen Offer');

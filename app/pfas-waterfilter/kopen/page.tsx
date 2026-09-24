@@ -38,7 +38,7 @@ const faqItems = [
   {
     question: 'Kan ik zelf een PFAS waterfilter installeren?',
     answer:
-      'Onderbouw-osmosesystemen worden geleverd met installatie-instructies en kunnen door een doe-het-zelver met basiskennis van loodgieterij geinstalleerd worden. Aansluitingen zijn meestal 3/8" of 1/2". Professionele installatie is aan te raden bij oudere leidingen of wanneer u ook een kokend-waterboiler wilt koppelen.',
+      'Onderbouw-osmosesystemen worden geleverd met installatie-instructies en kunnen door een doe-het-zelver met basiskennis van loodgieterij geïnstalleerd worden. Aansluitingen zijn meestal 3/8" of 1/2". Professionele installatie is aan te raden bij oudere leidingen of wanneer u ook een kokend-waterboiler wilt koppelen.',
   },
   {
     question: 'Hoe vaak moet ik het filter vervangen bij PFAS-verontreiniging?',

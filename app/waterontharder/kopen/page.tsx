@@ -6,6 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { JoepCTA } from '@/components/JoepCTA';
+import { JoepRecommendation } from '@/components/JoepRecommendation';
 
 export const metadata: Metadata = {
   title: 'Waterontharder Kopen 2026: Complete Gids',
@@ -235,6 +236,8 @@ export default function WaterontharderKopenPage() {
         </section>
 
         {/* Soorten */}
+        <JoepRecommendation content="waterontharder-kopen-aanbeveling" />
+
         <section id="soorten">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
             Soorten waterontharders: ionenwisselaar, TAC en kali-zout

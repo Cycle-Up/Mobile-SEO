@@ -20,27 +20,27 @@ function copyFor(context: Context, plaats?: string, dH?: number) {
     case 'hard-water':
       return {
         title: plaats && dH ? `${dH} dH in ${plaats}: kalk in het hele huis aanpakken` : 'Hard water in het hele huis aanpakken',
-        sub: `De JOEP waterontharder van AquaSens ontkalkt al het water in huis via ionenwisseling met zout, tot ${JOEP.flow.replace('maximaal ', '')}. Compact (${JOEP.dimensions}), apparaat vanaf ${JOEP.devicePrice} bij PureAqua; installatie optioneel.`,
+        sub: `De JOEP waterontharder van AquaSens ontkalkt al het water in huis via ionenwisseling met zout, tot ${JOEP.flow.replace('maximaal ', '')}. Compact formaat: ${JOEP.dimensions}. Bij PureAqua ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd.`,
       };
     case 'kosten':
       return {
         title: 'Wat kost de JOEP waterontharder?',
-        sub: `Apparaat vanaf ${JOEP.devicePrice} bij PureAqua, installatie optioneel. Per regeneratie ${JOEP.saltPerRegeneration} zout en ${JOEP.waterPerRegeneration} water; fabrieksgarantie van 20 jaar op de hars.`,
+        sub: `Bij PureAqua ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Per regeneratie ${JOEP.saltPerRegeneration} zout en ${JOEP.waterPerRegeneration} water; fabrieksgarantie van 20 jaar op de hars.`,
       };
     case 'vergelijken':
       return {
-        title: 'De ontharder die PureAqua als eerste aanbiedt',
-        sub: `JOEP: compacte ionenwisselaar met zout, ${JOEP.flow}, miniregeneratie bij hoog verbruik en 20 jaar fabrieksgarantie op de hars. Apparaat vanaf ${JOEP.devicePrice}.`,
+        title: 'Onze aanbeveling: de JOEP waterontharder',
+        sub: `JOEP: compacte ionenwisselaar met zout, ${JOEP.flow}, miniregeneratie bij hoog verbruik en 20 jaar fabrieksgarantie op de hars. ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd.`,
       };
     case 'merk':
       return {
-        title: 'Ook het vergelijken waard: JOEP',
-        sub: `Compacte waterontharder van AquaSens (Joure) met zout, ${JOEP.flow} en 20 jaar fabrieksgarantie op de hars. Apparaat vanaf ${JOEP.devicePrice} bij PureAqua.`,
+        title: 'Onze aanbeveling in deze prijsklasse: JOEP',
+        sub: `Compacte waterontharder van AquaSens (Joure) met zout, ${JOEP.flow} en 20 jaar fabrieksgarantie op de hars. Bij PureAqua ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd.`,
       };
     default:
       return {
         title: 'Kalkvrij water in het hele huis',
-        sub: `De JOEP waterontharder: compact, ${JOEP.flow}, apparaat vanaf ${JOEP.devicePrice} bij PureAqua. Zinvol vanaf ongeveer 12 dH.`,
+        sub: `De JOEP waterontharder: compact, ${JOEP.flow}. Bij PureAqua ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Zinvol vanaf ongeveer 12 dH.`,
       };
   }
 }

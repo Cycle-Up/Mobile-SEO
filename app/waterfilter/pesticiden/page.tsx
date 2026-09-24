@@ -249,7 +249,7 @@ export default function WaterfilterPesticidenPage() {
         <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
           <li>
             <strong>Actief kool (GAC):</strong> verwijdert &gt;90% van de meeste pesticiden.
-            Brabant Water heeft extra koolfiltratie geinstalleerd specifiek voor
+            Brabant Water heeft extra koolfiltratie geïnstalleerd specifiek voor
             desphenyl-chloridazon.
           </li>
           <li>

@@ -7,6 +7,7 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { JoepCTA } from '@/components/JoepCTA';
+import { JoepRecommendation } from '@/components/JoepRecommendation';
 
 export const metadata: Metadata = {
   title: "Waterontharder vergelijken: zoutgebaseerd, zoutloos en osmose",
@@ -91,6 +92,8 @@ export default function WaterOntharderVergelijkenPage() {
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
         <AuthorBox datePublished="2026-05-29" />
         <CTABanner context="osmose" />
+
+        <JoepRecommendation content="waterontharder-vergelijken-aanbeveling" />
 
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mt-8 mb-4">Drie categorie&euml;n kalkbehandeling vergeleken</h2>

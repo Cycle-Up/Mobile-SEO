@@ -5,6 +5,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { JoepCTA } from '@/components/JoepCTA';
+import { JoepRecommendation } from '@/components/JoepRecommendation';
 import { PRODUCTS, buildProductSchema } from '@/lib/pureaqua-products.mjs';
 import { JOEP, JOEP_MIN_DH } from '@/lib/joep.mjs';
 
@@ -13,9 +14,9 @@ const PUBLISHED = '2026-05-29';
 const MODIFIED = '2026-09-24';
 
 export function generateMetadata(): Metadata {
-  const title = 'JOEP waterontharder: prijs, specificaties en voor wie geschikt';
+  const title = 'JOEP waterontharder: onze aanbeveling, prijs en specificaties';
   const description =
-    'JOEP waterontharder van AquaSens: apparaat vanaf 1.799 euro, tot 5 m3 per uur, zoutverbruik, installatie en garantie. Plus voor wie hij wel en niet geschikt is.';
+    'JOEP waterontharder van AquaSens: 1.699 euro, of 1.998 euro compleet geïnstalleerd. Tot 5 m3 per uur, zoutverbruik, garantie en voor wie hij geschikt is.';
   return {
     title,
     description,
@@ -32,7 +33,7 @@ const faqItems = [
   },
   {
     question: 'Wat kost de JOEP waterontharder?',
-    answer: `Bij PureAqua kost het apparaat vanaf ${JOEP.devicePrice}; installatie is een aparte, optionele keuze. Daarnaast betaal je voor zout (per regeneratie ${JOEP.saltPerRegeneration}, volgens de fabrikant theoretisch circa 15 kg per persoon per jaar bij 8 dH) en een beetje water en stroom voor de regeneratie. De fabrikant biedt vanaf het tweede jaar een optioneel serviceabonnement van 8,49 euro per maand. Controleer de actuele prijzen en voorwaarden bij de verkoper.`,
+    answer: `Bij PureAqua kost JOEP ${JOEP.devicePrice} zonder installatie, of ${JOEP.installedPrice} compleet geïnstalleerd. Daarnaast betaal je voor zout (per regeneratie ${JOEP.saltPerRegeneration}, volgens de fabrikant theoretisch circa 15 kg per persoon per jaar bij 8 dH) en een beetje water en stroom voor de regeneratie. De fabrikant biedt vanaf het tweede jaar een optioneel serviceabonnement van 8,49 euro per maand. Controleer de actuele prijzen en voorwaarden bij de verkoper.`,
   },
   {
     question: 'Gebruikt JOEP zout en stroom?',
@@ -67,7 +68,7 @@ const specs: [string, string][] = [
   ['Zoutbak', JOEP.saltTank],
   ['Stroom', JOEP.power],
   ['Fabrieksgarantie', JOEP.manufacturerWarranty],
-  ['Prijs apparaat', `vanaf ${JOEP.devicePrice} bij PureAqua (installatie optioneel)`],
+  ['Prijs bij PureAqua', `${JOEP.devicePrice} zonder installatie; ${JOEP.installedPrice} inclusief installatie`],
 ];
 
 const compare: [string, string, string, string][] = [
@@ -85,7 +86,7 @@ export default function JoepWaterontharderPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'JOEP waterontharder: prijs, specificaties en voor wie geschikt',
+          title: 'JOEP waterontharder: onze aanbeveling, prijs en specificaties',
           description:
             'Koopgids voor de JOEP waterontharder van AquaSens: prijs, specificaties, kosten, geschiktheid, installatie en garantie, met een eerlijke vergelijking.',
           datePublished: PUBLISHED,
@@ -120,7 +121,7 @@ export default function JoepWaterontharderPage() {
             <span>JOEP</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            JOEP waterontharder: prijs, specificaties en voor wie geschikt
+            JOEP waterontharder: onze aanbeveling, prijs en specificaties
           </h1>
           <p className="text-gray-600 text-lg mb-4">
             <strong>JOEP</strong> is een compacte waterontharder van AquaSens uit Joure. Hij haalt de kalk uit
@@ -141,8 +142,10 @@ export default function JoepWaterontharderPage() {
 
         <QuickAnswer
           question="Is de JOEP waterontharder een goede keuze?"
-          answer={`Voor een huishouden in een hardwatergebied, vanaf ongeveer ${JOEP_MIN_DH} dH, dat kalk in het hele huis wil aanpakken met een compact apparaat: ja. JOEP levert tot 5 m3 zacht water per uur, gebruikt ${JOEP.saltPerRegeneration} zout per regeneratie en heeft 20 jaar fabrieksgarantie op de hars. Het apparaat kost vanaf ${JOEP.devicePrice} bij PureAqua; installatie is optioneel. Let op: tijdens de nachtelijke regeneratie is het water tijdelijk hard en je hebt een stopcontact nodig.`}
+          answer={`Ja: voor een huishouden met hard water, vanaf ongeveer ${JOEP_MIN_DH} dH, is JOEP onze aanbeveling en een van de sterkste keuzes in zijn prijsklasse. JOEP levert tot 5 m3 zacht water per uur, gebruikt ${JOEP.saltPerRegeneration} zout per regeneratie en heeft 20 jaar fabrieksgarantie op de hars. Bij PureAqua kost hij ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Let op: tijdens de nachtelijke regeneratie is het water tijdelijk hard en je hebt een stopcontact nodig.`}
         />
+
+        <JoepRecommendation content="joep-waterontharder-aanbeveling" />
 
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Kort oordeel</h2>
@@ -154,7 +157,7 @@ export default function JoepWaterontharderPage() {
                 <li>Hoge doorstroom, tot 5 m3 per uur</li>
                 <li>Miniregeneratie bij hoog verbruik</li>
                 <li>20 jaar fabrieksgarantie op de hars</li>
-                <li>Zelf te installeren of via de installatie-optie van PureAqua</li>
+                <li>Zelf te installeren, of compleet geïnstalleerd voor {JOEP.installedPrice}</li>
               </ul>
             </div>
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
@@ -226,8 +229,8 @@ export default function JoepWaterontharderPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat kost JOEP in aanschaf en gebruik?</h2>
           <ul className="space-y-2 text-gray-700 list-disc pl-5">
-            <li><strong>Apparaat:</strong> vanaf {JOEP.devicePrice} bij PureAqua.</li>
-            <li><strong>Installatie:</strong> zelf met de handleiding, of als aparte optie via PureAqua. De prijs hangt af van je situatie.</li>
+            <li><strong>Aanschaf:</strong> {JOEP.devicePrice} zonder installatie bij PureAqua.</li>
+            <li><strong>Compleet geïnstalleerd:</strong> {JOEP.installedPrice} bij PureAqua. Installeer je zelf met de handleiding, dan betaal je alleen het apparaat.</li>
             <li><strong>Zout:</strong> {JOEP.saltPerRegeneration} per regeneratie; de fabrikant rekent theoretisch met circa 15 kg per persoon per jaar bij 8 dH. Bij harder water en meer verbruik is dat meer.</li>
             <li><strong>Water en stroom:</strong> {JOEP.waterPerRegeneration} per regeneratie en het beperkte verbruik van de besturing.</li>
             <li><strong>Service:</strong> {JOEP.serviceSubscription}.</li>
@@ -282,7 +285,7 @@ export default function JoepWaterontharderPage() {
           <p className="text-gray-700 leading-relaxed mb-3">
             Voor JOEP heb je drie dingen nodig: een aansluiting op de hoofdleiding na de watermeter, een afvoer voor
             het spoelwater en een stopcontact. Handige doe-het-zelvers kunnen hem met de handleiding zelf plaatsen;
-            PureAqua biedt installatie ook als aparte optie. Stel het apparaat na installatie in op de hardheid van
+            Wil je het uit handen geven, dan installeert PureAqua hem; compleet geïnstalleerd kost JOEP {JOEP.installedPrice}. Stel het apparaat na installatie in op de hardheid van
             jouw kraanwater. Let op: registreer het apparaat binnen 30 dagen om de fabrieksgarantie te behouden.
           </p>
           <p className="text-gray-700 leading-relaxed">

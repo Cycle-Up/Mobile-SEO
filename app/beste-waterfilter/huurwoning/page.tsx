@@ -187,7 +187,7 @@ export default function HuurwoningPage() {
             nieuwe woning direct kunt beginnen met gefilterd water op optimale prestaties.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Als u een onderbouw osmosefilter heeft geinstalleerd met toestemming, verwijdert
+            Als u een onderbouw osmosefilter heeft geïnstalleerd met toestemming, verwijdert
             u dit bij vertrek. Sluit het kraangat af met een blindplug (kosten: 5-10 euro) en
             sluit de wateraansluitingen onder het aanrecht terug aan op de originele
             configuratie. Documenteer dit met foto's bij oplevering.

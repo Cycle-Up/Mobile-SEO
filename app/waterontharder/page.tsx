@@ -7,6 +7,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { JoepCTA } from '@/components/JoepCTA';
+import { JoepRecommendation } from '@/components/JoepRecommendation';
 
 export const metadata: Metadata = {
   title: 'Heb ik een waterontharder nodig? Werking, kosten & advies',
@@ -277,6 +278,8 @@ export default function WaterOntharderPage() {
         </section>
 
         {/* Wat is een waterontharder */}
+        <JoepRecommendation content="waterontharder-hub-aanbeveling" />
+
         <section id="wat-is">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is een waterontharder?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">

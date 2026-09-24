@@ -112,7 +112,7 @@ export default function BudgetPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Niveau 2: EUR 100-500 — onderkastfilter</h2>
           <p className="text-gray-700 mb-4">
-            In dit prijssegment vindt u de beste prijs-kwaliteitverhouding voor de meeste huishoudens. Een professioneel geinstalleerd onderkastfilter biedt hogere capaciteit, betere filtratie en langere filterintervallen.
+            In dit prijssegment vindt u de beste prijs-kwaliteitverhouding voor de meeste huishoudens. Een professioneel geïnstalleerd onderkastfilter biedt hogere capaciteit, betere filtratie en langere filterintervallen.
           </p>
           <p className="text-gray-700 mb-4">
             Onderkastfilters worden onder het aanrecht geplaatst met een eigen kleine kraan of via het bestaande kraanmengsel. Een installateur plaatst het systeem in 1-2 uur. Er zijn twee hoofdvarianten:

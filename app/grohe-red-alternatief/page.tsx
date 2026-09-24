@@ -253,7 +253,7 @@ export default function GroheRedAlternatiefPage() {
             <div className="flex gap-3">
               <span className="text-[#005F8A] font-bold">•</span>
               <p className="text-gray-700">
-                <strong>Installatie via dealer</strong> — Grohe Red wordt doorgaans geinstalleerd via een
+                <strong>Installatie via dealer</strong> — Grohe Red wordt doorgaans geïnstalleerd via een
                 erkende dealer of installateur, wat de totaalprijs verhoogt.
               </p>
             </div>

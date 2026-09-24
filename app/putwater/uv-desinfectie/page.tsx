@@ -184,7 +184,7 @@ export default function UVDesinfectiePutwaterPage() {
         </h2>
         <h3 className="text-xl font-semibold text-[#005F8A] mt-4 mb-2">Installatie</h3>
         <p className="text-gray-700 mb-4">
-          De UV-reactor wordt na de hydrofoor en pre-filters geinstalleerd, voor de aftakking naar de woning. Horizontaal of verticaal monteren is mogelijk; volg fabrikantvoorschriften. De UV-controller heeft een vaste 230V-aansluiting nodig. Reken op 2 tot 4 uur werk voor een loodgieter (150 tot 300 euro arbeidskosten).
+          De UV-reactor wordt na de hydrofoor en pre-filters geïnstalleerd, voor de aftakking naar de woning. Horizontaal of verticaal monteren is mogelijk; volg fabrikantvoorschriften. De UV-controller heeft een vaste 230V-aansluiting nodig. Reken op 2 tot 4 uur werk voor een loodgieter (150 tot 300 euro arbeidskosten).
         </p>
         <h3 className="text-xl font-semibold text-[#005F8A] mt-4 mb-2">Jaarlijks onderhoud</h3>
         <p className="text-gray-700 mb-4">

@@ -182,7 +182,7 @@ export default function TotaaloplossigPage() {
             <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline font-medium">
               osmosefilter
             </Link>{" "}
-            is de laatste en meest geavanceerde trap, geinstalleerd onder het aanrecht voor een apart
+            is de laatste en meest geavanceerde trap, geïnstalleerd onder het aanrecht voor een apart
             drinkwaterkraantje. Via een semi-permeabel membraan met porieen van 0,0001 micron worden
             95-99% van alle opgeloste stoffen verwijderd: PFAS, nitraten, nitriet, zware metalen,
             fluoride, farmaceutische resten, bacterien en parasieten zoals Cryptosporidium.
