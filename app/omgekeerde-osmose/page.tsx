@@ -8,6 +8,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { OsmoseIllustration } from '@/components/OsmoseIllustration';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { CountertopCTA } from '@/components/CountertopCTA';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 
 export const metadata: Metadata = {
   title: 'Wat is omgekeerde osmose? Uitleg & RO filter kopen 2026',
@@ -254,6 +255,8 @@ export default function OmgekeerdeOsmosePage() {
         </section>
 
         {/* Wat is omgekeerde osmose */}
+        <ThreeWayRecommendation content="omgekeerde-osmose-3weg-aanbeveling" />
+
         <section id="wat-is">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is omgekeerde osmose?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
@@ -828,7 +831,7 @@ export default function OmgekeerdeOsmosePage() {
               {
                 href: '/the-source',
                 title: 'The Source 50 (PureAqua)',
-                desc: 'Stroomloos osmosesysteem, NSF/ANSI 58, circa 1:1 verhouding. Specificaties en kosten.',
+                desc: 'Stroomloos osmosesysteem, circa 1:1 verhouding. Specificaties en kosten.',
               },
               {
                 href: '/kokend-water-kraan/met-filter',

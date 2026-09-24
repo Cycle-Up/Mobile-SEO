@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 
 export const metadata: Metadata = {
   title: 'Osmose Filter: Hoe Werkt Het & Wat Kost Het?',
@@ -272,6 +273,8 @@ export default function OsmoseFilterPage() {
         </section>
 
         {/* Wat is een osmose filter */}
+        <ThreeWayRecommendation content="osmose-filter-3weg-aanbeveling" />
+
         <section id="wat-is">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is een osmose filter?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">

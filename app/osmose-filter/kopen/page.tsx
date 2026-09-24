@@ -6,6 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { CountertopRecommendation } from '@/components/CountertopRecommendation';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 
 export const metadata: Metadata = {
   title: 'Osmose Filter Kopen 2026: Beste Keuze & Prijzen',
@@ -174,6 +175,8 @@ export default function OsmoseFilterKopenPage() {
         <AuthorBox datePublished="2026-05-29" />
 
         {/* Introductie */}
+        <ThreeWayRecommendation content="osmose-filter-kopen-3weg-aanbeveling" />
+
         <CountertopRecommendation content="osmose-filter-kopen-countertop-aanbeveling" />
 
         <section>

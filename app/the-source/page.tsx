@@ -6,17 +6,18 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { buildShopUrl } from '@/lib/pureaqua.mjs';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 
 export function generateMetadata(): Metadata {
   return {
     title: 'The Source 50 (PureAqua): stroomloze osmose, kosten en review',
     description:
-      'The Source 50 van PureAqua: stroomloos omgekeerde-osmosesysteem, NSF/ANSI 58, circa 1:1 verhouding, vanaf 395 euro. Specificaties, kosten en eerlijke afweging.',
+      'The Source 50 van PureAqua: omgekeerde osmose onder het aanrecht met een 3-weg-kraan, circa 1:1 verhouding, vanaf 395 euro. Specificaties, kosten en afweging.',
     alternates: { canonical: 'https://waterfilterplatform.nl/the-source' },
     openGraph: {
       title: 'The Source 50 (PureAqua): stroomloze osmose, kosten en review',
       description:
-        'Wat biedt The Source 50, wat kost het en voor wie is het geschikt? Stroomloze RO, NSF/ANSI 58, circa 1:1 verhouding en een eerlijke mineralen-nuance.',
+        'Wat biedt The Source 50, wat kost het en voor wie is het geschikt? Stroomloze RO, circa 1:1 verhouding, filterkosten en een eerlijke mineralen-nuance.',
       url: 'https://waterfilterplatform.nl/the-source',
       type: 'article',
       locale: 'nl_NL',
@@ -28,7 +29,7 @@ const faqItems = [
   {
     question: 'Wat is The Source 50?',
     answer:
-      'The Source 50 is een omgekeerde-osmosesysteem (RO) van PureAqua dat onder het aanrecht wordt geplaatst en via een aparte kraan gezuiverd drinkwater levert. Het verwijdert tot circa 99 procent van verontreinigingen zoals PFAS, microplastics, medicijnresten en zware metalen, werkt zonder stroom op de waterleidingdruk en is gecertificeerd volgens NSF/ANSI 58. Het is geschikt voor huishoudens tot ongeveer vier personen en kost vanaf 395 euro.',
+      'The Source 50 is een omgekeerde-osmosesysteem (RO) van PureAqua dat onder het aanrecht wordt geplaatst en via een aparte kraan gezuiverd drinkwater levert. Een osmosemembraan houdt het grootste deel van de opgeloste stoffen tegen; het systeem werkt zonder stroom op de waterleidingdruk. Het is geschikt voor huishoudens tot ongeveer vier personen en kost vanaf 395 euro.',
   },
   {
     question: 'Heeft The Source stroom nodig?',
@@ -48,12 +49,12 @@ const faqItems = [
   {
     question: 'Wat kost The Source 50 en wat zijn de jaarlijkse kosten?',
     answer:
-      'The Source 50 kost vanaf 395 euro als eenmalige aanschaf. De jaarlijkse filterset kost ongeveer 89 euro, omgerekend nog geen 7,50 euro per maand. Er is ook een gespreide optie via een abonnement (volgens de aanbieder circa 299 euro startkosten en 29 euro per maand, minimaal twaalf maanden). Voor veel huishoudens liggen de jaarlijkse kosten lager dan wat aan flessenwater wordt uitgegeven; de exacte terugverdientijd hangt af van je verbruik.',
+      'The Source 50 kost vanaf 395 euro als eenmalige aanschaf. De jaarlijkse set van drie filters kost 149 euro, omgerekend ruim 12 euro per maand. Er is ook een gespreide optie via een abonnement (volgens de aanbieder circa 299 euro startkosten en 29 euro per maand, minimaal twaalf maanden). Voor veel huishoudens liggen de jaarlijkse kosten lager dan wat aan flessenwater wordt uitgegeven; de exacte terugverdientijd hangt af van je verbruik.',
   },
   {
     question: 'Hoe vaak moet ik de filters wisselen?',
     answer:
-      'Ongeveer eens per jaar. Dankzij het click-on systeem doe je dat zelf in een paar minuten, zonder gereedschap en zonder loodgieter. De jaarlijkse filterset kost ongeveer 89 euro. Dat is meteen het enige onderhoud waar je aan moet denken.',
+      'Ongeveer eens per jaar. Dankzij het click-on systeem doe je dat zelf in een paar minuten, zonder gereedschap en zonder loodgieter. De jaarlijkse set van drie filters kost 149 euro. Dat is meteen het enige onderhoud waar je aan moet denken.',
   },
   {
     question: 'Voor wie is The Source geschikt en voor wie minder?',
@@ -64,17 +65,16 @@ const faqItems = [
 
 const specs = [
   ['Type', 'Omgekeerde osmose (RO), onder het aanrecht'],
-  ['Verwijdering', 'Tot circa 99% van verontreinigingen (o.a. PFAS, microplastics, medicijnresten, zware metalen)'],
+  ['Filtratie', 'Omgekeerde osmose met voor- en nafilter (set van drie filters)'],
   ['Energie', 'Stroomloos; werkt op waterleidingdruk'],
   ['Afvalwaterverhouding', 'Circa 1:1 (oudere systemen vaak 3:1 tot 4:1)'],
   ['Geschikt voor', 'Huishoudens tot circa 4 personen'],
   ['Onderhoud', 'Filterset circa 1x per jaar, click-on, circa 5 minuten zonder gereedschap'],
-  ['Filterkosten', 'Circa 89 euro per jaar'],
+  ['Filterkosten', '149 euro per jaar (set van drie filters)'],
   ['Aanschafprijs', 'Vanaf 395 euro (eenmalig)'],
   ['Proefperiode', '100 dagen thuis uitproberen'],
   ['Garantie', '2 jaar all-in'],
   ['Optie', 'Uit te breiden met remineralisatiestap'],
-  ['Certificering', 'NSF/ANSI 58 (internationale RO-standaard)'],
   ['Herkomst', 'Oorspronkelijk in de VS ontwikkeld, beproefd RO-ontwerp'],
   ['Aanbieder', 'PureAqua'],
 ];
@@ -87,7 +87,7 @@ export default function TheSourcePage() {
         article={{
           title: 'The Source 50 (PureAqua): stroomloze osmose, kosten en review',
           description:
-            'Een eerlijke uitleg over The Source 50 van PureAqua: stroomloze omgekeerde osmose, NSF/ANSI 58, circa 1:1 verhouding, kosten en de mineralen-nuance.',
+            'Een eerlijke uitleg over The Source 50 van PureAqua: stroomloze omgekeerde osmose, circa 1:1 verhouding, kosten en de mineralen-nuance.',
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
           url: 'https://waterfilterplatform.nl/the-source',
@@ -104,12 +104,12 @@ export default function TheSourcePage() {
       />
       <SchemaOrg
         schema={[
-          { '@type': 'Brand', name: 'The Source', description: 'Stroomloos omgekeerde-osmosesysteem van PureAqua, NSF/ANSI 58-gecertificeerd.' },
+          { '@type': 'Brand', name: 'The Source', description: 'Stroomloos omgekeerde-osmosesysteem van PureAqua voor onder het aanrecht.' },
           {
             '@type': 'Product',
             name: 'The Source 50',
             description:
-              'Stroomloos omgekeerde-osmosesysteem dat tot circa 99% van verontreinigingen verwijdert, werkt op waterleidingdruk met een verhouding van circa 1:1 en geschikt is voor huishoudens tot 4 personen.',
+              'Stroomloos omgekeerde-osmosesysteem voor onder het aanrecht dat op waterleidingdruk werkt, met een verhouding van circa 1:1, geschikt voor huishoudens tot 4 personen.',
             brand: { '@type': 'Brand', name: 'PureAqua' },
             countryOfOrigin: 'US',
             offers: {
@@ -137,8 +137,8 @@ export default function TheSourcePage() {
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             <strong>The Source 50</strong> is een omgekeerde-osmosesysteem van PureAqua dat onder je
-            aanrecht zuiver drinkwater levert. Het werkt zonder stroom, verspilt nauwelijks water en is
-            NSF/ANSI 58-gecertificeerd. Hieronder de specificaties, sterke punten, kosten en een eerlijke
+            aanrecht zuiver drinkwater levert. Het werkt zonder stroom en gebruikt ongeveer een
+            liter spoelwater per liter zuiver water. Hieronder de specificaties, sterke punten, kosten en een eerlijke
             afweging - met bronvermelding en zonder verzonnen testoordelen.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -159,13 +159,15 @@ export default function TheSourcePage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['Fabrikant / PureAqua', 'NSF/ANSI 58', 'RIVM', 'Vewin']} />
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['Fabrikant / PureAqua', 'RIVM', 'Vewin']} />
         <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer
           question="Wat is The Source 50 en is het een goede keuze?"
-          answer="The Source 50 is een omgekeerde-osmosesysteem van PureAqua dat tot circa 99 procent van verontreinigingen verwijdert. Het werkt stroomloos op de waterleidingdruk, gebruikt een afvalwaterverhouding van ongeveer 1 op 1, is NSF/ANSI 58-gecertificeerd en geschikt voor huishoudens tot vier personen. Het kost vanaf 395 euro met circa 89 euro per jaar aan filters. Of het de beste keuze is hangt af van je behoefte, huishoudgrootte en budget - Nederlands kraanwater is op zichzelf al veilig, dus RO is een keuze voor extra zuiverheid en smaak, geen noodzaak."
+          answer="The Source 50 is een omgekeerde-osmosesysteem van PureAqua voor onder het aanrecht. Het werkt stroomloos op de waterleidingdruk, gebruikt een afvalwaterverhouding van ongeveer 1 op 1 en is geschikt voor huishoudens tot vier personen. Het kost vanaf 395 euro met 149 euro per jaar aan filters. Of het de beste keuze is hangt af van je behoefte, huishoudgrootte en budget - Nederlands kraanwater is op zichzelf al veilig, dus RO is een keuze voor extra zuiverheid en smaak, geen noodzaak."
         />
+
+        <ThreeWayRecommendation content="the-source-3weg-aanbeveling" />
 
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Specificaties</h2>
@@ -193,7 +195,6 @@ export default function TheSourcePage() {
             {[
               ['Werkt zonder stroom', 'Draait op de druk in je waterleiding: geen stopcontact, geen pomp die kan stukgaan, geen energieverbruik en zelfs zuiver water tijdens een stroomstoring.'],
               ['Zuinig met water (circa 1:1)', 'Voor elke liter zuiver water gaat er ruwweg een liter afvalwater doorheen, waar oudere systemen vaak 3 tot 4 liter wegspoelen.'],
-              ['Onafhankelijk gecertificeerd', 'NSF/ANSI 58 is de internationale standaard specifiek voor omgekeerde-osmosesystemen, getoetst door een onafhankelijke partij.'],
               ['Eenvoudig onderhoud', 'Filterset circa eens per jaar wisselen via een click-on systeem, in een paar minuten en zonder gereedschap.'],
               ['Uit te breiden met mineralen', 'Een optionele remineralisatiestap voegt na de zuivering gecontroleerd mineralen weer toe.'],
               ['Zonder risico proberen', '100 dagen proefperiode thuis en een all-in garantie van 2 jaar.'],
@@ -234,7 +235,7 @@ export default function TheSourcePage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat kost zuiver water met The Source?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             De aanschaf begint bij 395 euro voor een systeem dat jarenlang meegaat. Daarna betaal je nog
-            geen 90 euro per jaar aan filters (ongeveer 89 euro), omgerekend nog geen 7,50 euro per maand voor
+            149 euro per jaar aan een set van drie filters, omgerekend ruim 12 euro per maand voor
             onbeperkt zuiver water uit je kraan. Wie de kosten liever spreidt, kan volgens de aanbieder
             kiezen voor een abonnement (circa 299 euro startkosten en 29 euro per maand, minimaal twaalf
             maanden).
@@ -273,7 +274,7 @@ export default function TheSourcePage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             Een RO-systeem koop je voor jaren. Let bij het vergelijken op zeven punten: de
             afvalwaterverhouding, of het op stroom of waterdruk werkt, onafhankelijke certificering
-            (NSF/ANSI 58), hoe het omgaat met mineralen, het gemak en de kosten van het onderhoud, voor
+            en testrapporten, hoe het omgaat met mineralen, het gemak en de kosten van het onderhoud, voor
             welk huishouden het geschikt is, en de garantie en proefperiode. The Source vinkt deze punten
             af, maar dezelfde checklist helpt je elk merk objectief te beoordelen.
           </p>

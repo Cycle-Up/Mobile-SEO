@@ -6,6 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde osmose filter kopen? Alles wat je moet weten',
@@ -136,6 +137,8 @@ export default function OsmoseKopenPage() {
         <QuickAnswer answer="Een omgekeerde osmose filter kopen? Let op NSF/ANSI 58-certificering, een afvalwaterratio van minimaal 1:1 en een 5-stadia systeem met remineralisatiefilter. Prijzen lopen van €150 (basis onderbouw) tot €500 (premium met wifi-monitoring). Jaarlijks filteronderhoud kost €50–120." />
 
         {/* Sectie 1 */}
+        <ThreeWayRecommendation content="omgekeerde-osmose-kopen-3weg-aanbeveling" />
+
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
             Waar moet je op letten bij het kopen van een osmosefilter?

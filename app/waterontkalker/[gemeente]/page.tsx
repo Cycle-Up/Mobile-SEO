@@ -5,9 +5,11 @@ import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/
 import { clampDescription } from '@/lib/seo';
 
 import { CTABanner } from '@/components/CTABanner';
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
+import { JoepCTA } from '@/components/JoepCTA';
+import { JOEP_MIN_DH } from '@/lib/joep.mjs';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 interface PageProps {
   params: Promise<{ gemeente: string }>;
@@ -442,14 +444,11 @@ export default async function WaterOntkalkerGemeentePage({ params }: PageProps) 
           <CTABanner context="algemeen" variant="compact" />
         )}
 
-        <AffiliateCTA
-          destination="waterontharders"
-          campaign="waterontharder"
-          content="waterontkalker-gemeente-cta"
-          label="Bekijk de waterontharders bij PureAqua"
-          title="Kalk aanpakken bij de bron?"
-          sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
-        />
+        {gemeente.hardheid >= JOEP_MIN_DH ? (
+          <JoepCTA context="hard-water" content="waterontkalker-gemeente-joep" plaats={gemeente.naam} dH={gemeente.hardheid} />
+        ) : (
+          <PureFilterCTA context="smaak" content="waterontkalker-gemeente-purefilter" />
+        )}
 
         {/* Interne links */}
         <section>
