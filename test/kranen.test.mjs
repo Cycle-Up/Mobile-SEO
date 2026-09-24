@@ -17,6 +17,7 @@ test('blocked kraan claims are detected', () => {
   assert.ok(findBlockedKraanClaims('De PureAqua 4-in-1 kraan is het beste Quooker-alternatief.').length > 0);
   assert.equal(findBlockedKraanClaims('Onze keuze: de PureAqua 4-in-1 kraan is volgens ons het beste Quooker-alternatief met zuiver water.').length, 0);
   assert.equal(findBlockedKraanClaims('De PureAqua 4-in-1 kraan geeft water van circa 96 graden.').length, 0);
+  assert.equal(findBlockedKraanClaims('De PureAqua 4-in-1 kraan geeft gekoeld water, maar geen bruisend water.').length, 0);
 });
 
 // Sitebrede scan dekt voorlopig The Source; 4-in-1-scan volgt na de 4-in-1-opschoning.

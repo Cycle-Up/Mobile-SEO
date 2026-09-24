@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { FactCard } from '@/components/FactCard';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { CountertopRecommendation } from '@/components/CountertopRecommendation';
@@ -128,6 +129,8 @@ export default function CountertopOsmosePage() {
           question="Wat is de beste countertop osmose?"
           answer={`Onze keuze voor 2026 is het ${COUNTERTOP.name}: volgens ons de beste countertop-osmose voor Nederland. Het filtert met omgekeerde osmose zonder installatie, voegt daarna mineralen toe en verwarmt in zes standen tot ${COUNTERTOP.maxTemp}. Het kost ${COUNTERTOP.price}, 20 euro meer dan een AquaTru Classic die niet verwarmt.`}
         />
+
+        <FactCard id="countertop" />
 
         <CountertopRecommendation content="countertop-osmose-aanbeveling" />
 

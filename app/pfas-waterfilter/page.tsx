@@ -5,6 +5,8 @@ import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { PureFilterCTA } from '@/components/PureFilterCTA';
+import { PUREFILTER } from '@/lib/purefilter.mjs';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
   title: 'PFAS waterfilter: de complete gids voor 2026',
@@ -63,6 +65,26 @@ const filterData = [
   { methode: 'Actief kool (GAC granulaat)', langketen: '70-90%', kortketen: '30-60%', kosten: 'EUR 30-100', aanbevolen: false },
   { methode: 'Filterkraan (Brita-type)', langketen: 'Onbekend', kortketen: 'Onbekend', kosten: 'EUR 50-100', aanbevolen: false },
   { methode: 'UV-lamp', langketen: '0%', kortketen: '0%', kosten: 'EUR 30-150', aanbevolen: false },
+];
+
+// Eigen producten met een gemeten labresultaat (lib/purefilter.mjs en lib/kranen.mjs). PureAqua-producten; zie disclosure.
+const productData = [
+  {
+    methode: 'PureFilter Mineral+ (kraanfilter met koolblok)',
+    href: '/purefilter-review',
+    langketen: `PFOA en PFOS ${PUREFILTER.pfasReduction}`,
+    kortketen: `PFHxA en PFBS ${PUREFILTER.pfasReduction}`,
+    kosten: `EUR 149`,
+    bron: 'Equinox Labs, nieuw filter, gespiked water',
+  },
+  {
+    methode: 'PureAqua 4-in-1 kraan (osmose)',
+    href: '/4-in-1-kraan',
+    langketen: `PFOS ${FOUR_IN_ONE.lab.PFOS}, PFOA ${FOUR_IN_ONE.lab.PFOA}`,
+    kortketen: 'Niet apart gemeten',
+    kosten: `EUR 1.948`,
+    bron: 'SGS, nieuw systeem',
+  },
 ];
 
 export default function PfasWaterfilterPage() {
@@ -213,7 +235,38 @@ export default function PfasWaterfilterPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-gray-400 mb-6">Indicatieve verwijderingspercentages op basis van gepubliceerde laboratoriumdata en NSF/ANSI testresultaten. Bijgewerkt mei 2026.</p>
+          <p className="text-xs text-gray-400 mb-6">Indicatieve verwijderingspercentages op basis van gepubliceerde laboratoriumdata en NSF/ANSI testresultaten. Bijgewerkt september 2026.</p>
+          <h3 className="text-lg font-bold text-[#003F5C] mb-3">Gemeten: producten met een eigen PFAS-labtest</h3>
+          <div className="overflow-x-auto -mx-4 px-4 mb-3">
+            <table className="w-full min-w-[560px] text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#003F5C] text-white">
+                  <th className="text-left py-2.5 px-3 font-semibold text-xs">Product</th>
+                  <th className="py-2 px-2 font-semibold text-center text-xs">Langketenige PFAS</th>
+                  <th className="py-2 px-2 font-semibold text-center text-xs">Kortketenige PFAS</th>
+                  <th className="py-2 px-2 font-semibold text-center text-xs">Prijs</th>
+                  <th className="py-2 px-2 font-semibold text-center text-xs">Bron</th>
+                </tr>
+              </thead>
+              <tbody>
+                {productData.map((row, i) => (
+                  <tr key={row.methode} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                    <td className="py-2.5 px-3 font-medium text-xs">
+                      <Link href={row.href} className="text-[#005F8A] underline">{row.methode}</Link>
+                    </td>
+                    <td className="py-2.5 px-2 text-center text-xs text-gray-700">{row.langketen}</td>
+                    <td className="py-2.5 px-2 text-center text-xs text-gray-700">{row.kortketen}</td>
+                    <td className="py-2.5 px-2 text-center text-xs text-gray-600">{row.kosten}</td>
+                    <td className="py-2.5 px-2 text-center text-xs text-gray-600">{row.bron}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-500 mb-6">
+            Beide producten zijn van PureAqua, waaraan WaterfilterPlatform gelieerd is. De cijfers gelden voor de
+            geteste stoffen en een nieuw filter of systeem; ze zeggen niets over alle PFAS of over een oud filter.
+          </p>
         </section>
 
         {/* Waarom osmose de goudstandaard is */}

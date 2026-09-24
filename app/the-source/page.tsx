@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { FactCard } from '@/components/FactCard';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { buildShopUrl } from '@/lib/pureaqua.mjs';
@@ -166,6 +167,8 @@ export default function TheSourcePage() {
           question="Wat is The Source 50 en is het een goede keuze?"
           answer="The Source 50 is een omgekeerde-osmosesysteem van PureAqua voor onder het aanrecht. Het werkt stroomloos op de waterleidingdruk, gebruikt een afvalwaterverhouding van ongeveer 1 op 1 en is geschikt voor huishoudens tot vier personen. Het kost vanaf 395 euro met 149 euro per jaar aan filters. Of het de beste keuze is hangt af van je behoefte, huishoudgrootte en budget - Nederlands kraanwater is op zichzelf al veilig, dus RO is een keuze voor extra zuiverheid en smaak, geen noodzaak."
         />
+
+        <FactCard id="theSource" />
 
         <ThreeWayRecommendation content="the-source-3weg-aanbeveling" />
 

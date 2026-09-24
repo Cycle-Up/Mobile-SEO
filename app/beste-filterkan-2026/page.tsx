@@ -168,7 +168,7 @@ export default function BesteFilterkan2026Page() {
           </div>
           <p className="text-xs text-gray-400 mt-3">
             Prijzen indicatief op basis van publieke richtprijzen. Bijgewerkt mei 2026. WaterfilterPlatform
-            is onafhankelijk; lees onze{' '}
+            is gelieerd aan PureAqua; lees onze{' '}
             <Link href="/methodologie" className="underline">methodologie</Link>.
           </p>
         </section>

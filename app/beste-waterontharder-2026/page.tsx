@@ -89,6 +89,7 @@ const ranking = [
 ];
 
 const merken = [
+  ['JOEP (onze keuze)', 'Merk van AquaSens, gemaakt in Engeland en ook verkocht via AquaCell. Zeer compacte ionenwisselaar met zout (48 x 27 x 48,5 cm), tot 5 m3 per uur en 20 jaar fabrieksgarantie op de hars. Bij PureAqua 1.699 euro, of 1.998 euro compleet geïnstalleerd.', '/joep-waterontharder'],
   ['BWT', 'Oostenrijks merk met een breed assortiment ionenwisselaars, bekend van de AQA Perla-lijn met magnesiumtechnologie.', '/bwt-waterontharder'],
   ['Grunbeck', 'Duits premium-merk; de softliQ-serie biedt zuinige regeneratie en app-besturing.', '/grunbeck-waterontharder'],
   ['EcoWater', 'Internationaal merk met ionenwisselaars en uitgebreide monitoring van zout- en waterverbruik.', '/ecowater-waterontharder'],
@@ -99,7 +100,6 @@ const merken = [
   ['Viteau', 'Nederlandse aanbieder en installateur van waterontharders met landelijke service.', '/viteau-waterontharder'],
   ['Aquacell', 'Betaalbare ionenwisselaars uit het instap- en middensegment, veel online verkocht in Nederland.', '/aquacell-waterontharder'],
   ['Maxima', 'Op de Nederlandse markt veel verkocht waarde-/middensegment merk van ionenwisselaars.', '/maxima-waterontharder'],
-  ['JOEP', 'Nederlands merk van AquaSens (Joure); compacte ionenwisselaar met zout, tot 5 m3 per uur, miniregeneratie en 20 jaar fabrieksgarantie op de hars.', '/joep-waterontharder'],
 ];
 
 const picks = [
@@ -113,8 +113,8 @@ const picks = [
   },
   {
     profiel: 'Gezin in hard-watergebied',
-    type: 'Ionenwisselaar met zout',
-    prijs: 'EUR 1.000-2.500 geïnstalleerd',
+    type: 'Ionenwisselaar met zout, onze keuze: JOEP',
+    prijs: 'JOEP: EUR 1.998 geïnstalleerd (markt EUR 1.000-2.500)',
     capaciteit: 'Midden-hoog (3-5 personen)',
     notitie: 'Meest effectief tegen kalkaanslag bij hardheid boven 15 dH. Onze aanbeveling: de JOEP waterontharder, 1.998 euro compleet geïnstalleerd.',
     highlight: true,
@@ -132,7 +132,7 @@ const picks = [
     type: 'Osmosefilter op aanrecht',
     prijs: 'EUR 200-899',
     capaciteit: 'Drinkwater (keukenkraan)',
-    notitie: 'Geen huisbrede ontharding, maar verwijdert kalk en verontreinigingen aan het tappunt.',
+    notitie: 'Geen huisbrede ontharding, maar verwijdert kalk en verontreinigingen aan het tappunt. Onze keuze op het aanrecht: het Water zuiver apparaat (495 euro, met verwarming tot 95 graden).',
     highlight: false,
   },
 ];
@@ -142,7 +142,7 @@ const tco5jaar = [
   { set: 'Budget-ionenwisselaar (zout)', aanschaf: 'EUR 900', installatie: 'EUR 200', jaarlijks: 'EUR 70 (zout)', totaal5jaar: 'circa EUR 1.450' },
   { set: 'Zoutloos systeem', aanschaf: 'EUR 450', installatie: 'EUR 100', jaarlijks: 'EUR 15', totaal5jaar: 'circa EUR 625' },
   { set: 'Twin-tank', aanschaf: 'EUR 1.400', installatie: 'EUR 250', jaarlijks: 'EUR 80', totaal5jaar: 'circa EUR 2.050' },
-  { set: 'Osmose op aanrecht', aanschaf: 'EUR 799', installatie: 'EUR 0 (zelf)', jaarlijks: 'EUR 90 (filters)', totaal5jaar: 'circa EUR 1.249' },
+  { set: 'Osmose op aanrecht (drinkwater, geen ontharding)', aanschaf: 'EUR 475-799', installatie: 'EUR 0 (geen aansluiting)', jaarlijks: 'EUR 90 (filters)', totaal5jaar: 'circa EUR 925-1.250' },
 ];
 
 export default function BesteWaterontharder2026Page() {
@@ -255,8 +255,8 @@ export default function BesteWaterontharder2026Page() {
             ))}
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            Prijzen indicatief op basis van publieke richtprijzen. Bijgewerkt mei 2026. WaterfilterPlatform
-            is onafhankelijk; lees onze{' '}
+            Prijzen indicatief op basis van publieke richtprijzen; JOEP-prijzen door PureAqua bevestigd. Bijgewerkt september 2026. WaterfilterPlatform
+            is gelieerd aan PureAqua; lees onze{' '}
             <Link href="/methodologie" className="underline">methodologie</Link>.
           </p>
         </section>

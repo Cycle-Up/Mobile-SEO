@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 // Site-wide social share image (1200x630 PNG) generated via next/og.
 // Applies to every route that does not define its own opengraph-image.
-export const alt = 'WaterfilterPlatform - onafhankelijke waterfilter informatie';
+export const alt = 'WaterfilterPlatform: waterfilters en drinkwater vergeleken';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -44,7 +44,7 @@ export default function OpengraphImage() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div style={{ fontSize: '64px', fontWeight: 800, lineHeight: 1.1 }}>
-            Onafhankelijke waterfilter informatie
+            Waterfilters en drinkwater vergeleken
           </div>
           <div style={{ fontSize: '32px', color: '#BAE6FD' }}>
             Keuzehulp, filtertechnieken, drinkwaternormen en waterhardheid per gemeente

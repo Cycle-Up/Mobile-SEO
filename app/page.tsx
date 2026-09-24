@@ -9,11 +9,11 @@ import { HubCrossLinks } from '@/components/HubCrossLinks';
 export const metadata: Metadata = {
   title: 'WaterfilterPlatform — kennisplatform over waterkwaliteit en waterfiltratie',
   description:
-    'Alles over drinkwaterkwaliteit, waterfiltratie en waterhardheid in Nederland. Onafhankelijke informatie over stoffen in leidingwater, filtertechnieken en',
+    'Alles over drinkwaterkwaliteit, waterfiltratie en waterhardheid in Nederland. Informatie met bronnen over stoffen in leidingwater, filtertechnieken en',
   alternates: { canonical: 'https://waterfilterplatform.nl' },
   openGraph: {
     title: 'WaterfilterPlatform — kennisplatform over waterkwaliteit en waterfiltratie',
-    description: 'Onafhankelijke informatie over drinkwaterkwaliteit, filtertechnieken, waterhardheid per gemeente en stoffen in Nederlands leidingwater.',
+    description: 'Informatie met bronnen over drinkwaterkwaliteit, filtertechnieken, waterhardheid per gemeente en stoffen in Nederlands leidingwater.',
   },
 };
 
@@ -183,13 +183,13 @@ export default function HomePage() {
           {/* Left: Text */}
           <div>
             <p className="text-[#005F8A] text-sm font-semibold uppercase tracking-wide mb-3">
-              Onafhankelijk kennisplatform
+              Kennisplatform over drinkwater
             </p>
             <h1 className="text-3xl md:text-5xl font-bold text-[#003F5C] leading-tight mb-4">
               Alles over waterkwaliteit en waterfiltratie
             </h1>
             <p className="text-gray-600 text-lg mb-8">
-              WaterfilterPlatform is het onafhankelijke kennisplatform voor iedereen die wil begrijpen wat er in drinkwater zit, hoe waterfilters werken en wat waterhardheid betekent voor hun situatie.
+              WaterfilterPlatform is het kennisplatform voor iedereen die wil begrijpen wat er in drinkwater zit, hoe waterfilters werken en wat waterhardheid betekent voor hun situatie.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
@@ -268,8 +268,8 @@ export default function HomePage() {
                   <path d="M9 12L11 14L15 10" stroke="#1D4ED8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               ),
-              title: 'Onafhankelijke redactie',
-              desc: 'Geen adverteerdersinvloed op de inhoud. Artikelen zijn gebaseerd op RIVM-rapporten, EU-richtlijnen en wetenschappelijke literatuur.',
+              title: 'Open over onze band met PureAqua',
+              desc: 'We zijn gelieerd aan PureAqua en zeggen dat bij elke productlink. Artikelen zijn gebaseerd op RIVM-rapporten, EU-richtlijnen en wetenschappelijke literatuur.',
             },
             {
               icon: (
