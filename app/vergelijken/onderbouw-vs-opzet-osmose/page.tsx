@@ -6,6 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopRecommendation } from '@/components/CountertopRecommendation';
 
 export function generateMetadata(): Metadata {
   return {
@@ -84,6 +85,8 @@ export default function OnderbouwVsOpzetOsmosePage() {
         <AuthorBox datePublished="2026-06-02" />
 
         <QuickAnswer question="Onderbouw of opzet-osmose?" answer="Een onderbouwsysteem zit vast onder het aanrecht met een eigen kraan en is uit het zicht, maar vraagt installatie en kastruimte. Een opzetsysteem zet je los op het aanrecht zonder installatie, ideaal voor huurders of tijdelijke situaties, maar het neemt werkbladruimte in. De zuivering is bij beide vergelijkbaar; de keuze gaat vooral over installatie en ruimte." />
+
+        <CountertopRecommendation content="vergelijken-onderbouw-vs-opzet-osmose-countertop-aanbeveling" />
 
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Naast elkaar</h2>

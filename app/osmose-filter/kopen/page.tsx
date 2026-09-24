@@ -5,6 +5,7 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopRecommendation } from '@/components/CountertopRecommendation';
 
 export const metadata: Metadata = {
   title: 'Osmose Filter Kopen 2026: Beste Keuze & Prijzen',
@@ -173,6 +174,8 @@ export default function OsmoseFilterKopenPage() {
         <AuthorBox datePublished="2026-05-29" />
 
         {/* Introductie */}
+        <CountertopRecommendation content="osmose-filter-kopen-countertop-aanbeveling" />
+
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom een osmose filter kopen?</h2>
           <p className="text-gray-600 mb-4 leading-relaxed">

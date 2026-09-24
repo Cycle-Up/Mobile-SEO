@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { CountertopCTA } from '@/components/CountertopCTA';
 
 export const metadata: Metadata = {
   title: 'Waterzuivering: hoe wordt drinkwater gemaakt in Nederland?',
@@ -292,6 +293,8 @@ export default function WaterzuiveringPage() {
         <p className="text-gray-700 mb-6">
           Meer over wanneer thuiszuivering zinvol is: zie <Link href="/waterzuivering/thuis" className="text-[#005F8A] underline">thuiszuivering</Link>.
         </p>
+
+        <CountertopCTA context="algemeen" content="waterzuivering-countertop" />
 
         <CTABanner context="osmose" />
 

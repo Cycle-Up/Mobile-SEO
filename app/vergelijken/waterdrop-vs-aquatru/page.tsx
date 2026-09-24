@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopCTA } from '@/components/CountertopCTA';
 
 export function generateMetadata(): Metadata {
   return {
@@ -210,14 +210,7 @@ export default function WaterdropVsAquaTruPage() {
           </p>
         </section>
 
-        <AffiliateCTA
-          destination="countertopRo"
-          campaign="omgekeerde-osmose"
-          content="vergelijken-waterdrop-vs-aquatru-cta"
-          label="Bekijk de Countertop RO (osmose zonder installatie)"
-          title="Osmose zonder installatie?"
-          sub="De Countertop RO is een plug-and-play osmose-apparaat zonder installatie bij onze partner PureAqua."
-        />
+        <CountertopCTA context="alternatief" content="vergelijken-waterdrop-vs-aquatru-cta" />
 
         <CTABanner context="osmose" />
 

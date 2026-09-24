@@ -3,9 +3,10 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopCTA } from '@/components/CountertopCTA';
+import { CountertopRecommendation } from '@/components/CountertopRecommendation';
 
 export const metadata: Metadata = {
   title: "Beste waterfilter voor huurwoning: zonder boren of toestemming",
@@ -103,6 +104,8 @@ export default function HuurwoningPage() {
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
         <AuthorBox datePublished="2026-05-29" />
         <CTABanner context="osmose" />
+
+        <CountertopRecommendation content="beste-waterfilter-huurwoning-countertop-aanbeveling" />
 
         <section className="mt-10">
           <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -302,14 +305,7 @@ export default function HuurwoningPage() {
           </div>
         </section>
 
-        <AffiliateCTA
-          destination="countertopRo"
-          campaign="omgekeerde-osmose"
-          content="beste-waterfilter-huurwoning-cta"
-          label="Osmose zonder installatie (ideaal voor huur)"
-          title="Osmose zonder installatie?"
-          sub="De Countertop RO is een plug-and-play osmose-apparaat zonder installatie bij onze partner PureAqua."
-        />
+        <CountertopCTA context="huur" content="beste-waterfilter-huurwoning-cta" />
 
         <CTABanner context="osmose" />
       </div>

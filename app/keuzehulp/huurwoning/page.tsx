@@ -3,7 +3,8 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
-import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { CountertopCTA } from '@/components/CountertopCTA';
+import { CountertopRecommendation } from '@/components/CountertopRecommendation';
 
 export const metadata: Metadata = {
   title: "Waterfilter in huurwoning: welke opties zonder boren of installatie?",
@@ -92,6 +93,8 @@ export default function HuurwoningPage() {
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         <CTABanner context="osmose" />
+
+        <CountertopRecommendation content="keuzehulp-huurwoning-countertop-aanbeveling" />
 
         <section className="mt-10">
           <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -280,14 +283,7 @@ export default function HuurwoningPage() {
           </div>
         </section>
 
-        <AffiliateCTA
-          destination="countertopRo"
-          campaign="omgekeerde-osmose"
-          content="keuzehulp-huurwoning-cta"
-          label="Bekijk de Countertop RO (geen installatie)"
-          title="Filteren zonder te klussen?"
-          sub="De Countertop RO is plug-and-play, zonder installatie, en verhuist gewoon met je mee. Bekijken bij onze partner PureAqua."
-        />
+        <CountertopCTA context="huur" content="keuzehulp-huurwoning-cta" />
 
         <CTABanner context="osmose" />
       </div>
