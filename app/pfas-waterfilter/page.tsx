@@ -74,7 +74,7 @@ const productData = [
     href: '/purefilter-review',
     langketen: `PFOA en PFOS ${PUREFILTER.pfasReduction}`,
     kortketen: `PFHxA en PFBS ${PUREFILTER.pfasReduction}`,
-    kosten: `EUR 149`,
+    kosten: `EUR 149, navulfilter ${PUREFILTER.cartridgePrice}`,
     bron: 'Equinox Labs, nieuw filter, gespiked water',
   },
   {

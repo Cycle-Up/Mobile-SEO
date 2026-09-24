@@ -46,6 +46,9 @@ export function FourInOneRecommendation({ content }: FourInOneRecommendationProp
         <Link href={FOUR_IN_ONE.reviewPath} className="text-sm text-[#005F8A] underline hover:no-underline">
           Alles over de 4-in-1 kraan
         </Link>
+        <a href={FOUR_IN_ONE.labReport.url} rel="noopener" className="text-sm text-[#005F8A] underline hover:no-underline">
+          SGS-testrapport (pdf)
+        </a>
       </div>
       <AffiliateDisclosure className="mt-4" />
     </section>

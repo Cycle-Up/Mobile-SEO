@@ -153,3 +153,21 @@ met structured data. Aantal en recentheid tellen voor AI mee.
 3. Wie de correcties op pureaqua.nl en purefilter.nl doorvoert.
 4. Toestemming om de SGS- en Equinox-resultaten te citeren.
 5. De actuele navulprijs van PureFilter (purefilter.nl noemt 65 euro, oudere copy 49,90 euro).
+
+## 8. Voortgang (bijgewerkt 24 september 2026, avond)
+
+| Actie | Status |
+|---|---|
+| 4-in-1-feiten op het platform gelijktrekken (circa 140 pagina's) | Klaar, live sinds 24-09 (PR #12) |
+| Producten in geciteerde tabellen (JOEP, Water zuiver apparaat, The Source, PureFilter, 4-in-1) | Klaar, live |
+| Feitenkaarten op productpagina's en in `llms.txt` | Klaar, live; nu met links naar de testrapporten |
+| Onafhankelijkheidsclaims vervangen door eerlijke vermelding band met PureAqua | Klaar, live |
+| IndexNow na productiedeploy | Klaar; eerste run geslaagd na de deploy van PR #12 |
+| Nulmeting met 20 vragen | Klaar: `docs/ai-meting/resultaten/2026-09.md` |
+| Maandelijkse AI-meting | Routine ingepland (1e van de maand); connector koppelen in claude.ai door Jeroen |
+| Navulprijs PureFilter | Opgelost: 65 euro (duo 115 euro), platform gelijkgetrokken |
+| SGS- en Equinox-rapport citeren | Toestemming 24-09; SGS-resultatenblok met rapportlink op 4-in-1-pagina's, bronlinks in feitenkaarten en `llms.txt` |
+| Filterkosten 4-in-1 | Fabrikantprijzen (Tapure) als indicatie: gemiddeld circa 150 euro per jaar; PureAqua-verkoopprijzen voor filters nog op de shop zetten |
+| Shopcorrecties purefilter.nl en pureaqua.nl | Teksten klaar in Drive (twee documenten); uitvoering door het team |
+| Bing Webmaster Tools | Stappen in Drive; vraagt Jeroens inlog (import vanuit Search Console) |
+| Spoor 5 (vergelijkers, bol.com, data-PR) | Materiaal klaar in Drive; uitvoering door het team |
