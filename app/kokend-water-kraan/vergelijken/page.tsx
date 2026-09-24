@@ -38,7 +38,7 @@ const faqItems = [
   {
     question: 'Hoe lang gaan de filters van een kokend water kraan mee?',
     answer:
-      'Dat verschilt per systeem. Bij de PureAqua 4-in-1 vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar (indicatief ~€89/jaar). Een Quooker CUBE-filter vervang je circa jaarlijks. Grohe Blue Home filters gaan ongeveer 3 maanden mee; dat loopt over 3 jaar op tot honderden euro\'s aan filterkosten.',
+      'Dat verschilt per systeem. Bij de PureAqua 4-in-1 vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar (gemiddeld circa €150 per jaar, fabrikantprijzen omgerekend). Een Quooker CUBE-filter vervang je circa jaarlijks. Grohe Blue Home filters gaan ongeveer 3 maanden mee; dat loopt over 3 jaar op tot honderden euro\'s aan filterkosten.',
   },
   {
     question: 'Verwijdert een kokend water kraan ook kalk?',
@@ -76,11 +76,11 @@ const tcoData = [
   {
     naam: '4-in-1 kraan met osmose',
     aanschaf: 1948,
-    filters3jr: 267,
+    filters3jr: 410,
     installatie: 299,
-    totaal: 2514,
+    totaal: 2657,
     highlight: true,
-    notitie: 'Voor- en remineralisatiefilter jaarlijks, membraan 2-jaarlijks',
+    notitie: 'Voor- en remineralisatiefilter jaarlijks, membraan 2-jaarlijks; filters gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend)',
   },
   {
     naam: 'Quooker Combi+',
@@ -149,7 +149,7 @@ export default function VergelijkenPage() {
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
         <AuthorBox datePublished="2026-05-29" />
 
-        <QuickAnswer answer="Kokend water kranen vergelijken? De 4-in-1 kraan met osmose is volgens ons de beste prijs-kwaliteit voor wie zuiver water wil (€1.948, filtert kalk, geen bruisend water). Quooker Combi+ is premium (€1.500–2.000, geen filter). Quooker Fusion + CUBE heeft wel bruisend water, filtert niet met osmose en kost over 3 jaar circa €250 meer dan een 4-in-1 alternatief. Grohe Blue Home heeft geen kokend water." />
+        <QuickAnswer answer="Kokend water kranen vergelijken? De 4-in-1 kraan met osmose is volgens ons de beste prijs-kwaliteit voor wie zuiver water wil (€1.948, filtert kalk, geen bruisend water). Quooker Combi+ is premium (€1.500–2.000, geen filter). Quooker Fusion + CUBE heeft wel bruisend water, filtert niet met osmose en kost over 3 jaar circa €110 meer dan een 4-in-1 alternatief. Grohe Blue Home heeft geen kokend water." />
 
         {/* Comparison table */}
         <section>
@@ -257,7 +257,7 @@ export default function VergelijkenPage() {
           <div className="mt-6 bg-blue-50 border border-[#005F8A]/20 rounded-xl p-4">
             <p className="text-sm text-gray-700 font-medium mb-1">Conclusie TCO</p>
             <p className="text-sm text-gray-600">
-              Een 4-in-1 kraan met osmose is in dit overzicht de enige optie die zeer heet water, gekoeld water én osmosefiltratie combineert, voor circa €2.500 over 3 jaar inclusief installatie. De Quooker Fusion + CUBE kost over dezelfde periode circa €250 meer en geeft wel bruisend water, maar filtert niet met osmose.
+              Een 4-in-1 kraan met osmose is in dit overzicht de enige optie die zeer heet water, gekoeld water én osmosefiltratie combineert, voor circa €2.660 over 3 jaar inclusief installatie. De Quooker Fusion + CUBE kost over dezelfde periode circa €110 meer en geeft wel bruisend water, maar filtert niet met osmose.
             </p>
           </div>
         </section>

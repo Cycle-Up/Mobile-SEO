@@ -109,9 +109,9 @@ const tco5jaar = [
     set: '4-in-1 kraan met osmose',
     aanschaf: '€ 1.948',
     installatie: '€ 299 (optioneel)',
-    filters: '€ 90/jaar',
+    filters: 'circa € 150 (gemiddeld)',
     energie: '± € 35/jaar',
-    totaal5jaar: '± € 2.872',
+    totaal5jaar: '± € 3.137',
     highlight: true,
   },
   {
@@ -446,7 +446,7 @@ export default function GroheRedAlternatiefPage() {
               {
                 titel: 'Je zoekt een lagere totaalprijs',
                 tekst:
-                  'Een InSinkErator is over 5 jaar goedkoper dan een Grohe Red Duo. De 4-in-1 kraan met osmose is niet goedkoper, maar geeft voor een vergelijkbaar bedrag ook gekoeld en osmose-gezuiverd water.',
+                  'Een InSinkErator is over 5 jaar goedkoper dan een Grohe Red Duo. De 4-in-1 kraan met osmose is niet goedkoper: over 5 jaar ben je er circa 700 euro meer aan kwijt dan aan een Grohe Red Duo, vooral door de filters (gemiddeld circa 150 euro per jaar, fabrikantprijzen omgerekend). Daarvoor krijg je ook gekoeld en osmose-gezuiverd water.',
               },
               {
                 titel: 'Je wilt gekoeld water uit de kraan',
@@ -527,7 +527,7 @@ export default function GroheRedAlternatiefPage() {
           <p className="text-gray-700 leading-relaxed mb-3">
             De Grohe Red is een kwalitatief hoogstaand product voor wie design en merkvertrouwen prioriteit geeft.
             Maar voor huishoudens die ook puur gefilterd of gekoeld water willen, biedt een <strong>4-in-1 kraan met osmosefilter</strong> volgens ons
-            een completer pakket voor een vergelijkbaar bedrag. Wie bruisend water wil, kiest een Quooker met CUBE; wie vooral
+            een completer pakket voor een vergelijkbare aanschafprijs; over 5 jaar ben je door de filters wel meer kwijt. Wie bruisend water wil, kiest een Quooker met CUBE; wie vooral
             op budget let, een InSinkErator. Het is geen inferieure keuze, het is een andere afweging.
           </p>
           <p className="text-gray-700 leading-relaxed">

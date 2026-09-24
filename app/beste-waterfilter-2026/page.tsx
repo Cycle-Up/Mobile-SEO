@@ -38,7 +38,7 @@ const faqItems = [
   {
     question: 'Wat zijn de kosten van een waterfilter per jaar?',
     answer:
-      'De jaarlijkse filterkosten variëren sterk per type. Een Brita-filterkan kost circa 40–80 euro per jaar aan vervangingsfilters. Een onderaanrecht osmose systeem kost 80–150 euro per jaar aan filters (afhankelijk van gebruik en waterhardheid). Een 4-in-1 kraan met osmose kost vergelijkbaar. Een inline keukenkraan filter kost 30–60 euro per jaar. Vergeet niet dat een filterkan ook aankoopkosten voor water vermijdt — maar mineraalwater flesjes nog meer.',
+      'De jaarlijkse filterkosten variëren sterk per type. Een Brita-filterkan kost circa 40–80 euro per jaar aan vervangingsfilters. Een onderaanrecht osmose systeem kost 80–150 euro per jaar aan filters (afhankelijk van gebruik en waterhardheid). Voor de PureAqua 4-in-1 kraan met osmose zijn de filters gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend). Een inline keukenkraan filter kost 30–60 euro per jaar. Vergeet niet dat een filterkan ook aankoopkosten voor water vermijdt — maar mineraalwater flesjes nog meer.',
   },
   {
     question: 'Wat is het verschil tussen een filterkan en omgekeerde osmose?',
@@ -66,7 +66,7 @@ const top5Filters = [
     installatie: 'Installateur aanbevolen (€ 299)',
     onderhoud: 'Laag (filters jaarlijks, membraan om de 2 jaar)',
     ruimte: 'Onderbouw aanrecht',
-    jaarKosten: '± € 90/jaar',
+    jaarKosten: 'circa € 150/jaar (gemiddeld)',
     totaalScore: '9.5/10',
     highlight: true,
     samenvatting: 'Meest complete oplossing: zeer heet, gekoeld, gezuiverd en gewoon warm en koud water uit één kraan. Geen bruisend water.',
@@ -175,7 +175,7 @@ const filterTypen = [
       'De PureAqua 4-in-1 kraan combineert omgekeerde osmose in drie stappen met zeer heet water (circa 96 graden), gekoeld en gezuiverd water en gewoon warm en koud water uit één kraanpunt. Onder de spoelbak staan twee apparaten: een heet-/koelunit en een osmose-unit. Bruisend water zit er niet op.',
     filtert: 'Kalk, chloor, nitraten, pesticiden, zware metalen, microplastics (tot 99%) — identiek aan standalone osmose.',
     filtertNiet: 'Gasvormige stoffen als radon (beperkt). Zelfde beperkingen als osmose.',
-    kosten: 'Aanschaf € 1.948, installatie optioneel € 299. Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar.',
+    kosten: 'Aanschaf € 1.948, installatie optioneel € 299. Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar; filters gemiddeld circa € 150 per jaar (fabrikantprijzen omgerekend).',
     pros: [
       '4 functies uit één kraan',
       'Hoogste zuiveringsgraad',

@@ -85,9 +85,9 @@ const prijsCategorieen = [
   {
     label: '4-in-1 met osmose',
     aanschaf: '€ 1.948',
-    filterJaar: '€ 70–100',
+    filterJaar: 'circa € 150 (gemiddeld)',
     energie: '€ 40–60',
-    totaal5jr: '€ 2.498–2.748',
+    totaal5jr: '€ 2.863–2.963',
     highlight: true,
   },
 ];
@@ -313,7 +313,7 @@ export default function KokendWaterKraanMetFilterPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 shrink-0 mt-0.5">~</span>
-                  Filterkosten €70–100/jaar
+                  Filters gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend)
                 </li>
               </ul>
             </div>
@@ -439,7 +439,7 @@ export default function KokendWaterKraanMetFilterPage() {
             <p>
               <strong className="text-[#003F5C]">Vergelijking flessenwater:</strong> Een gezin van
               4 dat uitsluitend flessenwater koopt, betaalt gemiddeld €600 per jaar. Ook een 4-in-1 kraan
-              met osmose (circa €2.500 tot €2.750 over 5 jaar) is dan goedkoper.
+              met osmose (circa €2.860 tot €2.960 over 5 jaar) is dan net iets goedkoper.
             </p>
           </div>
         </section>

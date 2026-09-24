@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { SgsResults } from '@/components/SgsResults';
 import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
@@ -120,9 +121,9 @@ const tco = [
     set: '4-in-1 kraan met osmose',
     aanschaf: '€ 1.948',
     installatie: '€ 299 (optioneel)',
-    filters: 'Voorfilter en remineralisatie jaarlijks, membraan elke 2 jaar',
+    filters: 'circa € 150 (gemiddeld)',
     energie: '± € 35/jaar',
-    totaal5jaar: '± € 2.425 plus filters',
+    totaal5jaar: '± € 3.137',
     highlight: false,
   },
   {
@@ -244,6 +245,8 @@ export default function QuookerAlternatiefPage() {
         <QuickAnswer answer="Een goed Quooker alternatief hangt af van wat je wilt: design, een lagere prijs of gefilterd water. Wil je osmose-gezuiverd water, dan is de PureAqua 4-in-1 kraan volgens ons het sterkste alternatief: zeer heet (circa 96 graden), gekoeld en gezuiverd water uit één kraan voor 1.948 euro, circa 300 euro minder dan een Quooker Flex PRO3 met CUBE (2.240 euro). Bruisend water geeft hij niet. Installatie door een installateur is aanbevolen (PureAqua: 299 euro)." />
 
         <FourInOneRecommendation content="quooker-alternatief-aanbeveling" />
+
+        <SgsResults />
 
         {/* Waarom mensen zoeken naar alternatieven */}
         <section>
@@ -536,7 +539,7 @@ export default function QuookerAlternatiefPage() {
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            Indicatieve cijfers gebaseerd op publieke richtprijzen, gemiddeld gebruik (4 personen huishouden) en een energieprijs van € 0,30/kWh. Filterkosten variëren per merk en gebruik.
+            Indicatieve cijfers gebaseerd op publieke richtprijzen, gemiddeld gebruik (4 personen huishouden) en een energieprijs van € 0,30/kWh. Filterkosten variëren per merk en gebruik; voor de 4-in-1 zijn het fabrikantprijzen omgerekend (voorfilter en remineralisatie jaarlijks, membraan elke 2 jaar).
           </p>
         </section>
 

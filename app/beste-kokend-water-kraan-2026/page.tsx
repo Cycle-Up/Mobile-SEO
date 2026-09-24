@@ -721,8 +721,8 @@ export default function BesteKokendWaterKraan2026Page() {
                   {
                     scenario: '4-in-1 kraan met osmose',
                     aanschaf: '€ 1.948',
-                    perJaar: '≈ € 95',
-                    totaal: '€ 2.233',
+                    perJaar: 'circa € 150 filters (gemiddeld) + stroom',
+                    totaal: '± € 2.358 + stroom',
                     highlight: true,
                   },
                   {
@@ -773,8 +773,9 @@ export default function BesteKokendWaterKraan2026Page() {
           </p>
           <p className="text-gray-700 mt-4 leading-relaxed">
             Een 4-in-1 kraan met osmose heeft een hogere aanschaf dan een 3-in-1 basic kraan, maar vervangt
-            ook de waterkoker en het flessenwater. Op 3 jaar ligt de totale kostenpost in dezelfde orde als
-            waterkoker + flessenwater; daarna ben je in dit rekenvoorbeeld goedkoper uit. Wil je weten welke 4-in-1 kraan het beste bij jouw
+            ook de waterkoker en het flessenwater. Op 3 jaar ben je iets duurder uit dan met
+            waterkoker + flessenwater; omdat de jaarkosten veel lager liggen, ben je daarna in dit rekenvoorbeeld goedkoper uit.
+            Filters 4-in-1: gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend). Wil je weten welke 4-in-1 kraan het beste bij jouw
             keuken past? Bekijk{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
               ons overzicht van 4-in-1 kranen

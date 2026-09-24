@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { SgsResults } from '@/components/SgsResults';
 import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
@@ -72,7 +73,7 @@ const vergelijkCriteria = [
   { criterium: 'Nitraten en lood', quooker: 'Nee', vierin1: 'Ja (SGS: lood &gt;99,8%)' },
   { criterium: 'Kalk verwijderd', quooker: 'Nee', vierin1: 'Ja (osmose)' },
   { criterium: 'Aanschafprijs', quooker: '€2.240 (Flex PRO3 met CUBE)', vierin1: '€1.948' },
-  { criterium: 'Filterkosten per jaar', quooker: '€39–49 (CUBE-filter circa jaarlijks)', vierin1: '€80–150 (filters jaarlijks, membraan 2-jaarlijks)' },
+  { criterium: 'Filterkosten per jaar', quooker: '€39–49 (CUBE-filter circa jaarlijks)', vierin1: 'circa €150 gemiddeld (fabrikantprijzen omgerekend; filters jaarlijks, membraan 2-jaarlijks)' },
   { criterium: 'Energieverbruik standby', quooker: '3–5 W', vierin1: 'Geen fabrieksopgave (heet én koelen)' },
   { criterium: 'Installatie door professional', quooker: 'Sterk aanbevolen', vierin1: 'Aanbevolen (PureAqua: €299)' },
 ];
@@ -140,6 +141,8 @@ export default function VsQuookerPage() {
         <QuickAnswer answer="Quooker (categorieleider) geeft direct kokend water maar heeft geen osmosefilter: PFAS, nitraten en lood blijven aanwezig. PureAqua 4-in-1 combineert osmose + zeer heet (circa 96°C) + gekoeld + warm en koud voor €1.948, zonder bruisend water. Een Quooker Flex PRO3 met CUBE kost bij PureAqua €2.240 en filtert met actieve kool, niet met osmose. Kies Quooker voor merktrouw; kies 4-in-1 voor filterkwaliteit en prijs." />
 
         <FourInOneRecommendation content="kokend-water-kraan-vs-quooker-aanbeveling" />
+
+        <SgsResults />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -276,9 +279,9 @@ export default function VsQuookerPage() {
                   { post: 'All-in aanschafprijs', quooker: '€ 2.640–2.840', vierin1: '€ 1.948' },
                   { post: 'Installatie (professional)', quooker: '€ 200–300', vierin1: '€ 299 (optioneel)' },
                   { post: 'Filterkosten/jaar (CUBE circa jaarlijks)', quooker: '€ 39–49', vierin1: '—' },
-                  { post: 'Osmosefilterkosten/jaar', quooker: '€ 60–100 (apart)', vierin1: '€ 80–150' },
-                  { post: 'Totale kosten jaar 1', quooker: '€ 2.939–3.289', vierin1: '€ 2.327–2.397' },
-                  { post: 'Totale kosten 3 jaar', quooker: '€ 3.137–3.587', vierin1: '€ 2.487–2.697' },
+                  { post: 'Osmosefilterkosten/jaar', quooker: '€ 60–100 (apart)', vierin1: 'circa € 150 (gemiddeld)' },
+                  { post: 'Totale kosten jaar 1', quooker: '€ 2.939–3.289', vierin1: '± € 2.352' },
+                  { post: 'Totale kosten 3 jaar', quooker: '€ 3.137–3.587', vierin1: '± € 2.657' },
                 ].map((r, i) => (
                   <tr
                     key={r.post}

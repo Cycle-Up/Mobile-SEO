@@ -28,7 +28,7 @@ const faqItems = [
   {
     question: 'Hoeveel kost een osmosefilter per jaar aan onderhoud?',
     answer:
-      'De jaarlijkse onderhoudskosten bestaan voornamelijk uit filtervervanging: sedimentfilter (€10–20/jaar), koolstoffilter (€15–30/jaar) en RO-membraan (€40–80 per 2–3 jaar). In totaal rekent u op €50–120 per jaar voor een standaard onderbouwsysteem. Bij een 4-in-1 kraan vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar (circa €80–150 per jaar).',
+      'De jaarlijkse onderhoudskosten bestaan voornamelijk uit filtervervanging: sedimentfilter (€10–20/jaar), koolstoffilter (€15–30/jaar) en RO-membraan (€40–80 per 2–3 jaar). In totaal rekent u op €50–120 per jaar voor een standaard onderbouwsysteem. Bij een 4-in-1 kraan vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar; bij de PureAqua 4-in-1 kost dat gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend).',
   },
   {
     question: 'Wat kost installatie van een omgekeerde osmose filter?',
@@ -87,7 +87,7 @@ const systeemPrijzen = [
   {
     naam: '4-in-1 kokend water kraan',
     aanschaf: '€ 1.948',
-    filterkosten: '€ 80 – 150 / jaar',
+    filterkosten: 'circa € 150 / jaar (gemiddeld)',
     installatie: 'Installateur aanbevolen (PureAqua: €299)',
     membraanType: 'Geïntegreerd 75–100 GPD',
     rejection: '97–99%',
@@ -138,13 +138,13 @@ const tcoData = [
   {
     naam: '4-in-1 kokend water kraan',
     aanschaf: 1948,
-    jaarFilterkosten: 115,
+    jaarFilterkosten: 150,
     installatie: 0,
-    jaar1: 2063,
-    jaar2: 2178,
-    jaar3: 2293,
-    jaar4: 2408,
-    jaar5: 2523,
+    jaar1: 2053,
+    jaar2: 2253,
+    jaar3: 2358,
+    jaar4: 2558,
+    jaar5: 2663,
     highlight: true,
   },
 ];
@@ -297,7 +297,7 @@ export default function OsmosePrijsPage() {
                   { filter: 'RO-membraan', interval: '2–3 jaar', basis: '€ 40–70', premium: '€ 50–80', vierin1: 'Inbegrepen' },
                   { filter: 'Koolstof nafilter', interval: '12 maanden', basis: '€ 15–25', premium: '€ 15–30', vierin1: 'Inbegrepen' },
                   { filter: 'Remineralisatiefilter', interval: '12 maanden', basis: 'Nvt', premium: '€ 20–35', vierin1: 'Inbegrepen' },
-                  { filter: 'Totaal per jaar', interval: 'Geschat gemiddeld', basis: '€ 50–80', premium: '€ 60–100', vierin1: '€ 80–150' },
+                  { filter: 'Totaal per jaar', interval: 'Geschat gemiddeld', basis: '€ 50–80', premium: '€ 60–100', vierin1: 'circa € 150 (gemiddeld)' },
                 ].map((r, i) => (
                   <tr
                     key={r.filter}
@@ -367,14 +367,14 @@ export default function OsmosePrijsPage() {
           </div>
           <p className="text-xs text-gray-400 mb-4">
             Cumulatieve kosten inclusief aanschafprijs en gemiddelde jaarlijkse filterkosten.
-            Membraanwissel in jaar 3 inbegrepen in schatting. Installatiekosten niet inbegrepen.
+            Membraanwissel in jaar 3 inbegrepen in schatting; bij de 4-in-1 kraan vallen de membraanwissels in jaar 2 en 4. Installatiekosten niet inbegrepen.
           </p>
           <div className="bg-[#E0F2FE] rounded-xl p-4 text-sm text-gray-700">
             <p className="font-semibold text-[#003F5C] mb-2">Wat de tabel laat zien:</p>
             <ul className="space-y-1.5">
               <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>Het basismodel is het goedkoopst in jaar 1, maar het verschil met premium systemen loopt snel terug door lage meerkosten bij premium.</li>
               <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>De 4-in-1 kraan heeft hogere aanvangsinvestering maar vervangt ook waterkoker en eventuele Brita-kan — die kosten zijn hierboven niet meegenomen.</li>
-              <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>Over 5 jaar liggen de losse osmosesystemen tussen €625 en €1.150; de 4-in-1 kraan komt uit op circa €2.520. Allemaal een fractie van de kosten van flessenwater.</li>
+              <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>Over 5 jaar liggen de losse osmosesystemen tussen €625 en €1.150; de 4-in-1 kraan komt uit op circa €2.660 (filters gemiddeld circa €150 per jaar, fabrikantprijzen omgerekend). Allemaal een fractie van de kosten van flessenwater.</li>
             </ul>
           </div>
         </section>

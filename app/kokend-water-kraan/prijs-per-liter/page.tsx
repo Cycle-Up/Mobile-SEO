@@ -56,7 +56,7 @@ const faqItems = [
   {
     question: "Zijn de kosten per liter lager bij een 4-in-1 kraan met osmosefilter?",
     answer:
-      "Bij een PureAqua of vergelijkbaar 4-in-1 systeem liggen de kosten per liter iets hoger (0,12-0,20 euro) vanwege het osmosemembraan en extra filtertrappen. Maar je krijgt er ook puur drinkwater bij inbegrepen. Als je flessenwater (0,40-1,50 euro/liter) vervangt, is de totale besparing aanzienlijk.",
+      "Bij een PureAqua of vergelijkbaar 4-in-1 systeem liggen de kosten per liter hoger (circa 0,17-0,25 euro bij 4 tot 6 liter per dag) vanwege de hogere aanschaf, het osmosemembraan en extra filtertrappen; bij de PureAqua 4-in-1 kosten de filters gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend). Maar je krijgt er ook puur drinkwater bij inbegrepen. Als je flessenwater (0,40-1,50 euro/liter) vervangt, is de totale besparing aanzienlijk.",
   },
 ];
 
@@ -238,7 +238,7 @@ export default function KokendWaterKraanPrijsPerLiterPage() {
                 </tr>
                 <tr className="border-b border-gray-200 bg-gray-50">
                   <td className="p-3 text-gray-700">Kokendwaterkraan + RO (PureAqua)</td>
-                  <td className="p-3 text-right text-gray-700">0,12-0,20 euro</td>
+                  <td className="p-3 text-right text-gray-700">0,17-0,25 euro</td>
                   <td className="p-3 text-right text-gray-700">0 sec</td>
                   <td className="p-3 text-center text-gray-700">Ja</td>
                 </tr>
@@ -294,7 +294,7 @@ export default function KokendWaterKraanPrijsPerLiterPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4 mt-10">PureAqua 4-in-1: osmosewater inbegrepen</h2>
           <p className="text-gray-700 mb-4">
             Bij een 4-in-1 kraan zoals die van PureAqua zijn zeer heet water (circa 96 graden), gekoeld water en osmosefiltratie gecombineerd.
-            De kosten per liter liggen met 0,12-0,20 euro iets hoger, maar je krijgt er ook puur
+            De kosten per liter liggen met circa 0,17-0,25 euro hoger (filters gemiddeld circa 150 euro per jaar, fabrikantprijzen omgerekend), maar je krijgt er ook puur
             drinkwater bij. Als je het osmosewater meerekent als vervanging van mineraalwater of
             flessenwater, verandert het kostenplaatje significant.
           </p>

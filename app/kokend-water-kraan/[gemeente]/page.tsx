@@ -387,8 +387,8 @@ export default async function KokendWaterKraanGemeentePage({ params }: PageProps
                   <td className="p-3 text-right text-gray-500 font-mono">{isHardWater ? '€40 – €120' : '€10 – €50'}/jr</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
-                  <td className="p-3 text-gray-700">Filterwissel (bij osmose)</td>
-                  <td className="p-3 text-right text-gray-500 font-mono">€60 – €150/jr</td>
+                  <td className="p-3 text-gray-700">Filterwissel PureAqua 4-in-1 (fabrikantprijzen omgerekend)</td>
+                  <td className="p-3 text-right text-gray-500 font-mono">circa €150/jr (gemiddeld)</td>
                 </tr>
               </tbody>
             </table>

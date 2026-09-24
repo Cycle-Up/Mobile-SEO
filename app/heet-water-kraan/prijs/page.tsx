@@ -54,7 +54,7 @@ const faqItems = [
   {
     question: 'Wat kost de 5-jaars TCO van een heet water kraan?',
     answer:
-      'Budget model (150 euro aanschaf, 0 euro installatie, 20 euro/jaar energie): circa 250 euro over 5 jaar. Premium model (500 euro aanschaf, 150 euro installatie, 40 euro/jaar): circa 850 euro. PureAqua 4-in-1 (1.948 euro aanschaf, 299 euro installatie, circa 115 euro/jaar energie + filters): circa 2.800 euro, maar inclusief osmosefiltratie, gekoeld water en vervanging van waterkoker, filterkan en mengkraan.',
+      'Budget model (150 euro aanschaf, 0 euro installatie, 20 euro/jaar energie): circa 250 euro over 5 jaar. Premium model (500 euro aanschaf, 150 euro installatie, 40 euro/jaar): circa 850 euro. PureAqua 4-in-1 (1.948 euro aanschaf, 299 euro installatie, circa 195 euro/jaar energie + filters, waarvan filters gemiddeld circa 150 euro per jaar volgens fabrikantprijzen omgerekend): circa 3.200 euro, maar inclusief osmosefiltratie, gekoeld water en vervanging van waterkoker, filterkan en mengkraan.',
   },
   {
     question: 'Zijn er verborgen kosten bij een heet water kraan?',
@@ -136,10 +136,10 @@ const tcoData = [
     aanschaf: 1948,
     installatie: 299,
     energieJaar: 45,
-    onderhoudJaar: 70,
-    tco5jaar: 2822,
+    onderhoudJaar: 150,
+    tco5jaar: 3222,
     highlight: true,
-    notitie: 'Inclusief osmosefilter en gekoeld water, vervangt waterkoker (50 euro) + filterkan (150 euro) + mengkraan (200 euro). Installatie (299 euro) is optioneel maar aanbevolen.',
+    notitie: 'Onderhoud: filters gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend). Inclusief osmosefilter en gekoeld water, vervangt waterkoker (50 euro) + filterkan (150 euro) + mengkraan (200 euro). Installatie (299 euro) is optioneel maar aanbevolen.',
   },
 ];
 
@@ -373,8 +373,8 @@ export default function HeetWaterKraanPrijsPage() {
               },
               {
                 post: 'Osmosefilter vervanging (4-in-1)',
-                kosten: '60 - 100 euro/jaar',
-                details: 'Voorfilter en remineralisatiefilter circa jaarlijks, osmosemembraan circa elke twee jaar.',
+                kosten: 'circa 150 euro/jaar (gemiddeld)',
+                details: 'Fabrikantprijzen omgerekend. Voorfilter en remineralisatiefilter circa jaarlijks, osmosemembraan circa elke twee jaar.',
               },
               {
                 post: 'Verwarmingselement vervanging (na 5-8 jaar)',
@@ -443,7 +443,7 @@ export default function HeetWaterKraanPrijsPage() {
           <p className="text-xs text-gray-500 mt-2">
             TCO = aanschaf + installatie + (energie + onderhoud) x 5. PureAqua 4-in-1 vervangt
             waterkoker (50 euro) + filterkan (150 euro) + mengkraan (200 euro) = 400 euro vervangte waarde.
-            Netto TCO PureAqua na aftrek van die vervangende apparaten: circa 2.420 euro.
+            Netto TCO PureAqua na aftrek van die vervangende apparaten: circa 2.820 euro.
           </p>
           {tcoData.find(r => r.notitie) && (
             <div className="bg-[#E0F2FE] rounded-xl p-4 mt-3">

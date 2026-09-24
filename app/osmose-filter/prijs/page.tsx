@@ -28,7 +28,7 @@ const faqItems = [
   {
     question: 'Wat zijn de jaarlijkse kosten van een osmosefilter?',
     answer:
-      'Jaarlijkse filterkosten bedragen €50–150 afhankelijk van het systeem. Instapmodellen hebben losse patronen voor €15–30 per stuk (3–4 stuks per jaar). Bij de PureAqua 4-in-1 vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar (circa €80–150 per jaar). Voeg €5–20 toe voor extra waterverbruik en een paar euro voor eventuele pomp-elektriciteit.',
+      'Jaarlijkse filterkosten bedragen €50–150 afhankelijk van het systeem. Instapmodellen hebben losse patronen voor €15–30 per stuk (3–4 stuks per jaar). Bij de PureAqua 4-in-1 vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar; dat kost gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend). Voeg €5–20 toe voor extra waterverbruik en een paar euro voor eventuele pomp-elektriciteit.',
   },
   {
     question: 'Is een duur osmosefilter beter dan een goedkoop systeem?',
@@ -43,7 +43,7 @@ const faqItems = [
   {
     question: 'Hoeveel bespaar je op flessenwater met een osmosefilter?',
     answer:
-      'Een gemiddeld gezin van 4 personen dat overstapt van flessenwater naar osmosewater bespaart €400–600 per jaar. Bij een investering van €300 (instap) tot €1.948 (4-in-1 kraan) is de terugverdientijd 1–5 jaar. Daarna is elk jaar pure besparing, inclusief minder plastic afval.',
+      'Een gemiddeld gezin van 4 personen dat overstapt van flessenwater naar osmosewater bespaart €400–600 per jaar. Bij een instapmodel van €300 is de terugverdientijd circa 1 jaar; bij de 4-in-1 kraan (€1.948, filters gemiddeld circa €150 per jaar) circa 4 tot 8 jaar. Daarna is elk jaar pure besparing, inclusief minder plastic afval.',
   },
   {
     question: 'Wat is het prijsverschil tussen een tankloze en een tank-osmosefilter?',
@@ -80,7 +80,7 @@ const prijsklassen = [
   {
     klasse: '4-in-1 kraan met osmose',
     prijs: '€ 1.948',
-    jaarKosten: '€ 100–150',
+    jaarKosten: 'gemiddeld circa € 150',
     kenmerken: ['RO + zeer heet + gekoeld (geen bruisend)', 'Één elegante kraan aan het aanrecht', 'Filters jaarlijks, membraan circa 2-jaarlijks', 'Heet-/koelunit en osmose-unit onder het aanrecht', 'Installatie aanbevolen (PureAqua: €299)'],
     ideal: 'Wie het maximale comfort wil + geen extra kraan',
     highlight: false,
@@ -116,9 +116,9 @@ const tcoVergelijking = [
     optie: '4-in-1 kraan met osmose',
     aanschaf: '€ 1.948',
     installatieKosten: '€ 299',
-    jaarFilters: '€ 130',
-    jaarKosten: '€ 150',
-    vijfJaar: '€ 2.997',
+    jaarFilters: 'circa € 150 (gemiddeld)',
+    jaarKosten: 'circa € 170',
+    vijfJaar: '€ 3.062',
   },
 ];
 
@@ -284,7 +284,8 @@ export default function OsmoseFilterPrijsPage() {
                   { type: 'Pre-koolstoffilter', interval: '6–12 mnd', prijs: '€ 10–20', jaar: '€ 10–40' },
                   { type: 'RO-membraan', interval: '2–4 jaar', prijs: '€ 30–80', jaar: '€ 10–40' },
                   { type: 'Post-koolstoffilter', interval: '12 mnd', prijs: '€ 10–20', jaar: '€ 10–20' },
-                  { type: '4-in-1 voor- en remineralisatiefilter', interval: '12 mnd', prijs: '€ 100–150', jaar: '€ 100–150' },
+                  { type: '4-in-1 voor- en remineralisatiefilter', interval: '12 mnd', prijs: 'circa € 105 (set)', jaar: 'circa € 105' },
+                  { type: '4-in-1 osmosemembraan', interval: 'circa 24 mnd', prijs: 'circa € 95', jaar: 'circa € 45' },
                 ].map((r, i) => (
                   <tr key={r.type} className={i % 2 === 0 ? 'bg-white border-b border-gray-100' : 'bg-gray-50 border-b border-gray-100'}>
                     <td className="py-2.5 px-3 font-medium text-gray-800">{r.type}</td>
@@ -297,7 +298,7 @@ export default function OsmoseFilterPrijsPage() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-3">
-            Prijzen zijn richtprijzen voor originele of kwalitatieve compatibele patronen. Merkgebonden
+            Prijzen zijn richtprijzen voor originele of kwalitatieve compatibele patronen. De 4-in-1 filters zijn fabrikantprijzen omgerekend (gemiddeld circa € 150 per jaar). Merkgebonden
             patronen van premium merken liggen doorgaans aan de bovenkant van het bereik.
           </p>
         </section>
@@ -361,7 +362,7 @@ export default function OsmoseFilterPrijsPage() {
           <p className="text-gray-700 mt-4 text-sm leading-relaxed">
             <strong>Conclusie:</strong> zelfs een instap osmosefilter is na 5 jaar meer dan
             vijf keer goedkoper dan structureel flessenwater kopen. Een 4-in-1 kraan met osmose
-            is qua totale prijs vergelijkbaar met flessenwater — maar levert oneindig meer comfort,
+            is over 5 jaar vergelijkbaar met of iets duurder dan flessenwater, maar levert oneindig meer comfort,
             geen plastic afval en zeer heet en gekoeld water inbegrepen.
           </p>
         </section>

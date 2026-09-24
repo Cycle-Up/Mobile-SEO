@@ -330,7 +330,7 @@ export default function QuookerCubePage() {
                   { criterium: 'Heet water', cube: '✓ kokend (via Quooker)', osmose: '✓ zeer heet (circa 96°C)' },
                   { criterium: 'Gekoeld water', cube: '✓ (4°C)', osmose: '✓ (circa 5°C)' },
                   { criterium: 'Aanschafprijs totaal', cube: '€2.240 (Flex PRO3 met CUBE, PureAqua)', osmose: '€1.948 (PureAqua 4-in-1)' },
-                  { criterium: 'Jaarlijkse kosten', cube: '€110–175', osmose: 'Voorfilter en remineralisatie jaarlijks, membraan elke 2 jaar' },
+                  { criterium: 'Jaarlijkse kosten', cube: '€110–175', osmose: 'Filters gemiddeld circa €150 (fabrikantprijzen omgerekend): voorfilter en remineralisatie jaarlijks, membraan elke 2 jaar' },
                   { criterium: 'Geschikt voor hard water', cube: '✗ Nee', osmose: '✓ Ja' },
                   { criterium: 'Installatie', cube: 'Via Quooker-dealer', osmose: 'Installateur aanbevolen (PureAqua: €299)' },
                 ].map((r, i) => (

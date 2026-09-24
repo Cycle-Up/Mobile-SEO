@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
+import { SgsResults } from '@/components/SgsResults';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
@@ -58,7 +60,7 @@ const faqItems = [
   {
     question: 'Wat kost een 4-in-1 kraan per jaar aan onderhoud?',
     answer:
-      'Bij de PureAqua 4-in-1 kraan met RO-filtratie vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar (of eerder bij hoog gebruik). Reken op circa €60–100 per jaar voor verbruiksfilters. Omdat het hete water al osmose-gezuiverd is, hoeft de boiler niet ontkalkt te worden.',
+      'Bij de PureAqua 4-in-1 kraan met RO-filtratie vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar (of eerder bij hoog gebruik). Reken voor de filters op gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend): circa 105 euro in een jaar zonder membraan, circa 200 euro in een jaar met membraan. Omdat het hete water al osmose-gezuiverd is, hoeft de boiler niet ontkalkt te worden.',
   },
 ];
 
@@ -156,6 +158,8 @@ export default function KokendWaterKraan4In1Page() {
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
         <AuthorBox datePublished="2026-05-29" />
+        <FourInOneRecommendation content="kokend-water-kraan-4-in-1-aanbeveling" />
+        <SgsResults />
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
@@ -351,7 +355,7 @@ export default function KokendWaterKraan4In1Page() {
                 <li>Voorfilter en remineralisatiefilter circa jaarlijks</li>
                 <li>Osmosemembraan circa elke twee jaar</li>
                 <li>Geen ontkalkingsbeurt dankzij RO-water</li>
-                <li>Kosten filter: €60–100 per jaar</li>
+                <li>Kosten filters: gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend)</li>
               </ul>
             </div>
           </div>
@@ -392,7 +396,7 @@ export default function KokendWaterKraan4In1Page() {
                 <tr className="border-b border-gray-100">
                   <td className="py-2.5 px-3">Onderhoud / filter</td>
                   <td className="py-2.5 px-3 text-right">€ 10–20/jr</td>
-                  <td className="py-2.5 px-3 text-right">€ 60–100/jr</td>
+                  <td className="py-2.5 px-3 text-right">circa € 150 (gemiddeld)</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-2.5 px-3">Ontkalker</td>
@@ -402,15 +406,15 @@ export default function KokendWaterKraan4In1Page() {
                 <tr className="bg-[#E0F2FE] font-semibold">
                   <td className="py-2.5 px-3">Totaal na 5 jaar</td>
                   <td className="py-2.5 px-3 text-right">€ 2.200–3.300</td>
-                  <td className="py-2.5 px-3 text-right text-[#005F8A]">€ 2.250–2.450</td>
+                  <td className="py-2.5 px-3 text-right text-[#005F8A]">± € 2.663</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-sm text-gray-600 mt-3 leading-relaxed">
             Bij een gezin dat flessenwater drinkt, is de terugverdientijd van een 4-in-1+RO
-            systeem (PureAqua: € 1.948, installatie optioneel € 299) in dit rekenvoorbeeld circa 3,5 tot 5 jaar.
-            Daarna is het jaarlijkse kostenvoordeel circa €350–€550 ten opzichte van de flessenwater + waterkoker combinatie.
+            systeem (PureAqua: € 1.948, installatie optioneel € 299) in dit rekenvoorbeeld circa 3,5 tot 7 jaar.
+            Daarna is het jaarlijkse kostenvoordeel circa €280 tot €510 ten opzichte van de flessenwater + waterkoker combinatie.
           </p>
         </section>
 

@@ -103,9 +103,9 @@ const tco5jaar = [
     set: '4-in-1 kraan met osmose',
     aanschaf: '€ 1.948',
     installatie: '€ 299 (optioneel)',
-    filters: '€ 90/jaar',
+    filters: 'circa € 150 (gemiddeld)',
     energie: '± € 35/jaar',
-    totaal5jaar: '± € 2.872',
+    totaal5jaar: '± € 3.137',
     highlight: true,
   },
   {
@@ -474,7 +474,7 @@ export default function InsinkeratorAlternatiefPage() {
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            Indicatieve cijfers, 4-persoonshuishouden, energieprijs € 0,30/kWh. Filterkosten bij InSinkErator exclusief eventueel apart osmose systeem.
+            Indicatieve cijfers, 4-persoonshuishouden, energieprijs € 0,30/kWh. Filters 4-in-1: gemiddeld circa € 150 per jaar (fabrikantprijzen omgerekend). Filterkosten bij InSinkErator exclusief eventueel apart osmose systeem.
           </p>
         </section>
 
