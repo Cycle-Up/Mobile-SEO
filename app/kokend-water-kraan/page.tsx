@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { HubCrossLinks } from '@/components/HubCrossLinks';
 import { SchemaOrg } from '@/components/SchemaOrg';
@@ -245,6 +246,8 @@ export default function KokendWaterKraanPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
         <QuickAnswer answer="Een kokend water kraan levert direct 100°C heet water via een geïsoleerde boiler onder het aanrecht. De beste modellen combineren kokend, koud, warm en bruisend water in één kraanpunt. Een 4-in-1 uitvoering met osmosefilter beschermt bovendien de boiler tegen kalkafzetting en geeft gefilterd drinkwater." />
+
+        <FourInOneRecommendation content="kokend-water-kraan-aanbeveling" />
 
         <figure>
           <KokendWaterKraanDiagram className="w-full h-auto rounded-2xl shadow-sm bg-white" />

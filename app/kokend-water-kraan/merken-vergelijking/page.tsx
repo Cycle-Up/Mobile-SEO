@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan merken vergelijking: Quooker vs Grohe vs Franke vs PureAqua',
@@ -147,6 +148,8 @@ export default function MerkenVergelijkingPage() {
             Kokend water kraan merken vergelijking: Quooker, Grohe, Franke, PureAqua
           </h1>
           <QuickAnswer answer="De vier grote merken kokend water kranen zijn Quooker, Grohe Blue Pure, Franke Vital en PureAqua. Quooker is marktleider maar heeft geen ingebouwd osmosefilter. PureAqua combineert als enige van deze vier zeer heet (circa 96 graden) en gekoeld water met omgekeerde osmosefiltratie in een 4-in-1 systeem. Bruisend water heeft de PureAqua 4-in-1 niet." />
+
+          <FourInOneRecommendation content="kokend-water-kraan-merken-vergelijking-aanbeveling" />
         </div>
       </section>
 

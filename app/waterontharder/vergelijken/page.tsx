@@ -66,6 +66,20 @@ const faqItems = [
 
 const modellen = [
   {
+    naam: 'JOEP waterontharder',
+    type: 'Compacte ionenwisselaar met zout (48 x 27 x 48,5 cm)',
+    capaciteitL: 'tot 5 m3 per uur',
+    zoutPerJaar: '0,9–1,5 kg per regeneratie',
+    stroomverbruik: 'Stopcontact (12V-transformator)',
+    nsf44: false,
+    smart: false,
+    aanschaf: '€ 1.699 (€ 1.998 geïnstalleerd)',
+    garantie: '20 jaar op de hars',
+    beste_voor: 'Onze keuze: huishoudens met hard water die een compacte, complete ontharder zoeken. Gemaakt in Engeland, ook verkocht via AquaCell',
+    highlight: true,
+    badge: 'Onze keuze',
+  },
+  {
     naam: 'Kinetico Premier Compact',
     type: 'Twin-tank, non-elektrisch',
     capaciteitL: '30–50 L/dag (harde zones)',
@@ -76,7 +90,7 @@ const modellen = [
     aanschaf: '€ 1.100 – 1.600',
     garantie: '10 jaar',
     beste_voor: 'Gezinnen met continu zacht water, energiebewust',
-    highlight: true,
+    highlight: false,
   },
   {
     naam: 'Harvey Mini Classic',
@@ -146,6 +160,13 @@ const modellen = [
 ];
 
 const tcoTabel = [
+  {
+    model: 'JOEP waterontharder (onze keuze)',
+    aanschafInstallatie: '€ 1.998',
+    zoutElektraJaar: 'zout naar verbruik',
+    tco5jr: '€ 1.998 + zout',
+    tco10jr: '€ 1.998 + zout',
+  },
   {
     model: 'Budget (tijdgestuurd)',
     aanschafInstallatie: '€ 650',
@@ -378,8 +399,8 @@ export default function WaterontharderVergelijkenPage() {
                   >
                     <td className="py-2.5 px-3 font-medium text-gray-900">
                       {m.naam}
-                      {m.highlight && (
-                        <span className="ml-2 text-xs bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full">Top</span>
+                      {'badge' in m && m.badge && (
+                        <span className="ml-2 text-xs bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full">{m.badge}</span>
                       )}
                     </td>
                     <td className="py-2.5 px-3 text-gray-600 text-xs">{m.type}</td>
@@ -394,7 +415,7 @@ export default function WaterontharderVergelijkenPage() {
             </table>
           </div>
           <p className="text-xs text-gray-400 mb-6">
-            Aanschafprijzen zijn richtprijzen exclusief installatie (€150–350 via erkend loodgieter). NSF 44 = gecertificeerd door NSF International of equivalent.
+            Aanschafprijzen zijn richtprijzen exclusief installatie (€150–350 via erkend loodgieter); JOEP-prijzen door PureAqua bevestigd (september 2026). De JOEP wordt verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is. NSF 44 = gecertificeerd door NSF International of equivalent.
           </p>
           <div className="space-y-4">
             {modellen.map(m => (
@@ -498,7 +519,7 @@ export default function WaterontharderVergelijkenPage() {
                 {tcoTabel.map((r, i) => (
                   <tr
                     key={r.model}
-                    className={`border-b border-gray-100 ${i === 3 ? 'bg-[#E0F2FE]/50 font-medium' : i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
+                    className={`border-b border-gray-100 ${r.model.startsWith('JOEP') ? 'bg-[#E0F2FE]/50 font-medium' : i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                   >
                     <td className="py-2.5 px-3">{r.model}</td>
                     <td className="py-2.5 px-3 text-right">{r.aanschafInstallatie}</td>

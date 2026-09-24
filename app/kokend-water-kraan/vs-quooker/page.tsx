@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -137,6 +138,8 @@ export default function VsQuookerPage() {
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
         <QuickAnswer answer="Quooker (categorieleider) geeft direct kokend water maar heeft geen osmosefilter: PFAS, nitraten en lood blijven aanwezig. PureAqua 4-in-1 combineert osmose + zeer heet (circa 96°C) + gekoeld + warm en koud voor €1.948, zonder bruisend water. Een Quooker Flex PRO3 met CUBE kost bij PureAqua €2.240 en filtert met actieve kool, niet met osmose. Kies Quooker voor merktrouw; kies 4-in-1 voor filterkwaliteit en prijs." />
+
+        <FourInOneRecommendation content="kokend-water-kraan-vs-quooker-aanbeveling" />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">

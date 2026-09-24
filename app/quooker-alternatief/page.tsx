@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
@@ -241,6 +242,8 @@ export default function QuookerAlternatiefPage() {
         <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="Een goed Quooker alternatief hangt af van wat je wilt: design, een lagere prijs of gefilterd water. Wil je osmose-gezuiverd water, dan is de PureAqua 4-in-1 kraan volgens ons het sterkste alternatief: zeer heet (circa 96 graden), gekoeld en gezuiverd water uit één kraan voor 1.948 euro, circa 300 euro minder dan een Quooker Flex PRO3 met CUBE (2.240 euro). Bruisend water geeft hij niet. Installatie door een installateur is aanbevolen (PureAqua: 299 euro)." />
+
+        <FourInOneRecommendation content="quooker-alternatief-aanbeveling" />
 
         {/* Waarom mensen zoeken naar alternatieven */}
         <section>

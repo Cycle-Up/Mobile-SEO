@@ -71,6 +71,14 @@ const filtertypes = [
     highlight: false,
   },
   {
+    type: 'PureFilter Mineral+ (inline koolblok, onze keuze zonder osmose)',
+    prijs: '€ 149',
+    verwijdering: 'Chloor, smaak; labtest: 83–85% minder van vijf PFAS (nieuw filter)',
+    onderhoud: 'Navulfilter na 15.000–20.000 liter',
+    ruimte: 'Klein, geen tank of afvoer',
+    highlight: false,
+  },
+  {
     type: 'Meerfasig koolstof',
     prijs: '€ 100–300',
     verwijdering: '+ organische verbindingen',
@@ -85,6 +93,14 @@ const filtertypes = [
     onderhoud: 'Jaarlijks',
     ruimte: 'Gemiddeld–groot',
     highlight: true,
+  },
+  {
+    type: 'The Source + 3-weg-kraan (onze keuze: RO uit de eigen kraan)',
+    prijs: '€ 395 + kraan € 540–840',
+    verwijdering: 'RO, gezuiverd water uit je gewone keukenkraan',
+    onderhoud: 'Set van drie filters per jaar (€ 149)',
+    ruimte: 'Gemiddeld, afvoer nodig',
+    highlight: false,
   },
   {
     type: 'RO + UV-desinfectie',
@@ -184,7 +200,7 @@ export default function WaterfilterOnderAanrechtPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Typen under-sink waterfilters</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             De term &ldquo;waterfilter onder aanrecht&rdquo; dekt een breed spectrum van systemen.
-            Hieronder een overzicht van de vijf meest voorkomende types, van eenvoudig naar uitgebreid.
+            Hieronder een overzicht van de meest voorkomende types, van eenvoudig naar uitgebreid, met de systemen die wij aanraden. PureFilter, The Source en de 4-in-1 worden verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.
           </p>
           <div className="overflow-x-auto -mx-4 px-4">
             <table className="w-full min-w-[540px] text-sm border-collapse">
@@ -405,11 +421,25 @@ export default function WaterfilterOnderAanrechtPage() {
         <section id="top-picks">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Top picks voor 2026</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Op basis van onafhankelijke gebruikerservaringen, membraankwaliteit en serviceniveau
-            zijn dit de meest aanbevolen systemen in Nederland.
+            Onze keuzes per situatie. De eerste drie worden verkocht door PureAqua, waaraan WaterfilterPlatform
+            gelieerd is; de feiten staan op de gelinkte pagina&apos;s.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              {
+                naam: 'The Source met zuiver-water-kraan',
+                prijsklasse: '€ 395 + kraan € 540–840',
+                voor: 'Osmosewater uit je eigen keukenkraan',
+                pros: 'Geen extra tapkraantje, keuze uit 15 kraanmodellen, filterset € 149 per jaar, installatie optioneel € 299',
+                href: '/the-source',
+              },
+              {
+                naam: 'PureFilter Mineral+',
+                prijsklasse: '€ 149',
+                voor: 'PFAS en chloor verminderen zonder osmose',
+                pros: 'Geen tank, stroom of afvalwater; labtest 83–85% minder van vijf PFAS (nieuw filter)',
+                href: '/purefilter-review',
+              },
               {
                 naam: '4-in-1 kraan met osmose',
                 prijsklasse: '€ 1.948',
