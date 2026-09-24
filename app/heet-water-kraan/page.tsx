@@ -21,7 +21,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil tussen een heet water kraan en een kokend water kraan?',
     answer:
-      'Een heet water kraan levert water van 60–80°C — heet genoeg voor thee, pasta, babyvoeding en soep, maar niet kokend. Een kokend water kraan (zoals de Quooker of een 4-in-1 kraan met osmose) levert water van 100°C en vervangt volledig de waterkoker. Voor de meeste dagelijkse toepassingen volstaat een heet water kraan, maar wie écht 100°C wil voor espresso of sterilisatie, kiest voor een kokend water systeem.',
+      'Een heet water kraan levert water van 60–80°C: heet genoeg voor thee, pasta, babyvoeding en soep, maar niet kokend. Een kokend water kraan (zoals de Quooker) levert water van 100°C en vervangt volledig de waterkoker; een 4-in-1 kraan met osmose geeft zeer heet water van circa 96°C. Voor de meeste dagelijkse toepassingen volstaat een heet water kraan, maar wie écht 100°C wil voor espresso of sterilisatie, kiest voor een kokend water systeem.',
   },
   {
     question: 'Is een instant warm water kraan energiezuinig?',
@@ -31,7 +31,7 @@ const faqItems = [
   {
     question: 'Kan een heet water kraan ook filteren?',
     answer:
-      'Dat hangt af van het systeem. Eenvoudige instant water heaters hebben geen filter ingebouwd — ze verwarmen gewoon leidingwater. Systemen gebaseerd op een 4-in-1 kraan met omgekeerde osmose filteren het water wél via een RO-membraan en leveren naast warm ook kokend, koud gefilterd en bruisend water. Voor wie zowel heet water als waterfiltratie wil, is een volledig 4-in-1 systeem de meest complete keuze.',
+      'Dat hangt af van het systeem. Eenvoudige instant water heaters hebben geen filter ingebouwd; ze verwarmen gewoon leidingwater. Systemen gebaseerd op een 4-in-1 kraan met omgekeerde osmose filteren het water wél via een RO-membraan en leveren naast warm ook zeer heet (circa 96°C), gekoeld en gezuiverd water (geen bruisend water). Voor wie zowel heet water als waterfiltratie wil, is een volledig 4-in-1 systeem de meest complete keuze.',
   },
   {
     question: 'Welke temperatuur heeft een heet water kraan?',
@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: 'Hoeveel kost een heet water kraan installeren?',
     answer:
-      'Een eenvoudige under-sink instant water heater kost €100–300 aanschaf en kan zelf worden geïnstalleerd in 30–60 minuten (aansluiting op koud water en stroom). Een complete heet water kraan met aparte tank kost €300–700 en vereist mogelijk een elektricien voor een extra wandcontactdoos. Een 4-in-1 kraan met osmosefilter kost €699–899 en is zelf te installeren in 1–2 uur.',
+      'Een eenvoudige under-sink instant water heater kost €100–300 aanschaf en kan zelf worden geïnstalleerd in 30–60 minuten (aansluiting op koud water en stroom). Een complete heet water kraan met aparte tank kost €300–700 en vereist mogelijk een elektricien voor een extra wandcontactdoos. De PureAqua 4-in-1 kraan met osmosefilter kost €1.948; installatie door een installateur is aanbevolen en kost bij PureAqua €299.',
   },
 ];
 
@@ -89,13 +89,13 @@ const systeemTypes = [
   },
   {
     naam: '4-in-1 kraan (kokend + warm + koud + osmose)',
-    temp: '100°C + warm + koud',
-    prijs: '€ 699–900',
-    installatie: 'Zelf, 1–2 uur',
+    temp: 'Circa 96°C + gekoeld + warm + koud',
+    prijs: '€ 1.948',
+    installatie: 'Installateur aanbevolen (€ 299)',
     filter: true,
     highlight: true,
     beschrijving:
-      'De meest complete oplossing: combineert een geïntegreerd osmosefilter met vier waterfuncties — kokend (100°C), warm, koud gefilterd en bruisend water. Dit type systeem vervangt zowel de waterkoker als alle losse filtersystemen. Één jaarlijkse filterwissel. Beste prijs-kwaliteitverhouding voor complete wateroplossingen.',
+      'De meest complete oplossing: de PureAqua 4-in-1 kraan combineert omgekeerde osmose in drie stappen met zeer heet (circa 96°C), gekoeld en gezuiverd water plus gewoon warm en koud water. Bruisend water zit er niet op. Dit type systeem vervangt zowel de waterkoker als losse filtersystemen. Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar.',
   },
 ];
 
@@ -245,11 +245,11 @@ export default function HeetWaterKraanPage() {
               <p className="text-sm text-gray-700 leading-relaxed">
                 Water van exact 100°C is nodig om pasta echt te koken (niet voorkoken), om te
                 steriliseren, en voor espressoapparaten die boiling-point water vereisen. Echte kokend
-                water kranen — zoals de Quooker, GROHE Red of de{' '}
+                water kranen, zoals de Quooker of GROHE Red, zijn duurder maar leveren maximale flexibiliteit. De{' '}
                 <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
                   4-in-1 kraan met osmose
                 </Link>{' '}
-                — zijn duurder maar leveren maximale flexibiliteit.
+                geeft zeer heet water van circa 96°C, plus gekoeld en gezuiverd water.
               </p>
             </div>
           </div>
@@ -263,7 +263,7 @@ export default function HeetWaterKraanPage() {
               <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
                 4-in-1 kraan
               </Link>{' '}
-              de meest complete keuze.
+              volgens ons de meest complete keuze (circa 96°C, plus gekoeld en gezuiverd water).
             </p>
           </div>
         </section>
@@ -439,9 +439,9 @@ export default function HeetWaterKraanPage() {
             Installatie van een heet water kraan: stap voor stap
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            De meeste heet water systemen zijn zelf te installeren zonder loodgieter. Hieronder de vijf
-            stappen die voor nagenoeg alle systemen gelden — van eenvoudige doorstromers tot
-            complete 4-in-1 kranen.
+            De meeste eenvoudige heet water systemen zijn zelf te installeren zonder loodgieter. Hieronder de vijf
+            stappen die voor nagenoeg alle systemen gelden. Bij een complete 4-in-1 kraan komen er twee apparaten
+            onder de spoelbak; daar is een installateur aanbevolen.
           </p>
           <div className="space-y-4 mb-6">
             {installatieTips.map(s => (
@@ -500,7 +500,7 @@ export default function HeetWaterKraanPage() {
               },
               {
                 situatie: 'Ik wil pasta koken of water echt aan de kook brengen',
-                advies: 'Kokend water kraan (100°C) is noodzakelijk — overweeg een 4-in-1 systeem',
+                advies: 'Kokend water kraan (100°C) is noodzakelijk; een 4-in-1 systeem geeft circa 96°C',
                 type: 'kokend',
               },
               {
@@ -515,7 +515,7 @@ export default function HeetWaterKraanPage() {
               },
               {
                 situatie: 'Ik wil ook bruisend water en heb hard leidingwater',
-                advies: '4-in-1 kraan met osmose — kokend, koud, gefilterd en bruisend in één systeem',
+                advies: 'Kraan met CO2, zoals Quooker CUBE, of een 4-in-1 kraan met osmose plus losse SodaStream (de 4-in-1 heeft geen bruisfunctie)',
                 type: 'compleet',
               },
               {
@@ -547,17 +547,17 @@ export default function HeetWaterKraanPage() {
                   <th className="text-left py-2.5 px-3 font-semibold">Criterium</th>
                   <th className="py-2.5 px-3 font-semibold text-center">Heet (60–80°C)</th>
                   <th className="py-2.5 px-3 font-semibold text-center">Kokend (100°C)</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">4-in-1 (alles)</th>
+                  <th className="py-2.5 px-3 font-semibold text-center">4-in-1 met osmose</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { criterium: 'Prijs aanschaf', heet: '€ 100–500', kokend: '€ 500–2.800', alles: '€ 699–900' },
+                  { criterium: 'Prijs aanschaf', heet: '€ 100–500', kokend: '€ 500–2.800', alles: '€ 1.948' },
                   { criterium: 'Thee en soep', heet: '✓', kokend: '✓', alles: '✓' },
-                  { criterium: 'Pasta koken', heet: '~', kokend: '✓', alles: '✓' },
+                  { criterium: 'Pasta koken', heet: '~', kokend: '✓', alles: '~ (circa 96°C)' },
                   { criterium: 'Waterfilter ingebouwd', heet: '✗', kokend: 'Optioneel', alles: '✓ (osmose)' },
-                  { criterium: 'Bruisend water', heet: '✗', kokend: 'Optioneel', alles: '✓' },
-                  { criterium: 'Zelf installeren', heet: '✓', kokend: '~', alles: '✓' },
+                  { criterium: 'Bruisend water', heet: '✗', kokend: 'Optioneel', alles: '✗' },
+                  { criterium: 'Zelf installeren', heet: '✓', kokend: '~', alles: '✗ (installateur aanbevolen)' },
                   { criterium: 'Energieverbruik/jr', heet: 'Laag', kokend: 'Laag–matig', alles: 'Laag' },
                 ].map(r => (
                   <tr key={r.criterium} className="border-b border-gray-100">
@@ -685,10 +685,10 @@ export default function HeetWaterKraanPage() {
                 <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
                   4-in-1 kraan
                 </Link>{' '}
-                heeft een geïntegreerd osmosefilter en levert kokend (100°C), warm, koud gefilterd
-                en bruisend water uit één kraan. Geen aparte units, geen losse filtersystemen.
-                Dit is de meest ruimtebesparende en complete oplossing voor wie zowel heet water
-                als zuiver drinkwater wil.
+                heeft een geïntegreerd osmosefilter en levert zeer heet (circa 96°C), gekoeld en
+                gezuiverd water plus gewoon warm en koud water uit één kraan. Geen losse filtersystemen;
+                onder de spoelbak staan een heet-/koelunit en een osmose-unit. Dit is volgens ons de meest
+                complete oplossing voor wie zowel heet water als zuiver drinkwater wil. Bruisend water zit er niet op.
               </p>
             </div>
           </div>
@@ -715,7 +715,7 @@ export default function HeetWaterKraanPage() {
               {
                 href: '/4-in-1-kraan',
                 title: '4-in-1 kraan met osmose',
-                desc: 'Kokend, koud, warm en bruisend met ingebouwde osmosefilter.',
+                desc: 'Zeer heet, gekoeld, warm en koud met ingebouwde osmosefilter.',
               },
               {
                 href: '/omgekeerde-osmose/kopen',

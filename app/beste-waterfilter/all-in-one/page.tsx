@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     question: 'Wat doet een 4-in-1 watersysteem precies?',
-    answer: 'Een 4-in-1 systeem levert via een enkel kraantje vier watertemperaturen: (1) gefilterd koud drinkwater via het osmosemembaan, (2) koud kraanwater zonder filtering, (3) warm water, en (4) kokend water direct op 100 graden Celsius. De filterketen bestaat uit een sedimentfilter, pre-koolstoffilter, RO-membraan en post-koolstoffilter. De geintegreerde boiler houdt een reservoir (1-3 liter) permanent op kooktemperatuur. Dit vervangt zowel de waterkoker als alle losse waterfilters.',
+    answer: 'Een 4-in-1 systeem levert via een enkel kraantje vier watertemperaturen: (1) gefilterd koud drinkwater via het osmosemembaan, (2) koud kraanwater zonder filtering, (3) warm water, en (4) kokend of zeer heet water (98 tot 100 graden; bij de PureAqua 4-in-1 kraan circa 96 graden). Sommige systemen, zoals de PureAqua 4-in-1, geven daarnaast gekoeld gezuiverd water. De filterketen bestaat uit een sedimentfilter, pre-koolstoffilter, RO-membraan en post-koolstoffilter. De geintegreerde boiler houdt een reservoir (1-3 liter) permanent op kooktemperatuur. Dit vervangt zowel de waterkoker als alle losse waterfilters.',
   },
   {
     question: 'Is een 4-in-1 systeem goedkoper dan losse componenten?',
@@ -103,7 +103,7 @@ export default function AllInOnePage() {
             <li><strong>Pre-koolstoffilter (CTO):</strong> verwijdert chloor, chloramine en organische stoffen die het RO-membraan beschadigen</li>
             <li><strong>RO-membraan (0,0001 micron):</strong> verwijdert PFAS (95-99%), nitraat (85-95%), lood, bacterien, virussen, medicijnen en kalk</li>
             <li><strong>Post-koolstoffilter:</strong> verfijnt smaak en geur van het gefiltreerde water</li>
-            <li><strong>Kokendwaterboiler:</strong> houdt 1,5-3 liter water permanent op 100 graden Celsius</li>
+            <li><strong>Kokendwaterboiler:</strong> houdt 1,5-3 liter water permanent op of net onder kooktemperatuur (bij de PureAqua 4-in-1 kraan circa 96 graden)</li>
           </ol>
           <p className="text-gray-700 mt-4">
             Meer achtergrondinformatie over PFAS-verwijdering door osmose: <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="text-[#005F8A] hover:underline font-medium">PFAS in drinkwater: verwijdering door osmose</Link>.
@@ -187,7 +187,7 @@ export default function AllInOnePage() {
           <ul className="list-disc pl-6 text-gray-700 space-y-2 text-sm">
             <li><strong>EUR 800-1200:</strong> Basismodellen met compacte boiler (1-1,5 liter), standaard RO-membraan, adequate filterketen voor gezin van 2-4 personen</li>
             <li><strong>EUR 1200-1800:</strong> Middenklasse met grotere boiler (2-3 liter), hogere RO-productiecapaciteit, betere pompstilheid, remineralisatiefilter inbegrepen</li>
-            <li><strong>EUR 1800-2500:</strong> Premium systemen (PureAqua, Quooker Cube + osmose) met geintegreerd filtersysteem, app-bediening, uitgebreidere garantie</li>
+            <li><strong>EUR 1800-2500:</strong> Premium systemen, zoals de PureAqua 4-in-1 kraan (EUR 1.948: zeer heet, gekoeld en osmose-gezuiverd water met remineralisatie, geen bruisend water) of een Quooker CUBE naast een losse osmose-unit</li>
           </ul>
         </section>
 

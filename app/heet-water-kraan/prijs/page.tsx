@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: 'Wat kost een heet water kraan gemiddeld?',
     answer:
-      'Een heet water kraan kost gemiddeld 150-600 euro voor het apparaat zelf. Budget doorstroom-modellen beginnen bij 150 euro, middenklasse mini-boilers kosten 250-450 euro en premium gecertificeerde modellen 450-600 euro. Een 4-in-1 kraan met osmosefilter kost 699-900 euro maar vervangt meerdere losse apparaten.',
+      'Een heet water kraan kost gemiddeld 150-600 euro voor het apparaat zelf. Budget doorstroom-modellen beginnen bij 150 euro, middenklasse mini-boilers kosten 250-450 euro en premium gecertificeerde modellen 450-600 euro. De PureAqua 4-in-1 kraan met osmosefilter kost 1.948 euro (installatie optioneel 299 euro) maar vervangt meerdere losse apparaten.',
   },
   {
     question: 'Wat zijn de jaarlijkse energiekosten van een heet water kraan?',
@@ -54,7 +54,7 @@ const faqItems = [
   {
     question: 'Wat kost de 5-jaars TCO van een heet water kraan?',
     answer:
-      'Budget model (150 euro aanschaf, 0 euro installatie, 20 euro/jaar energie): circa 250 euro over 5 jaar. Premium model (500 euro aanschaf, 150 euro installatie, 40 euro/jaar): circa 850 euro. PureAqua 4-in-1 (800 euro aanschaf, 0 euro installatie DIY, 50 euro/jaar energie + filter): circa 1.050 euro maar inclusief osmosefiltratie en complete vervanging van waterkoker, filterkan en mengkraan.',
+      'Budget model (150 euro aanschaf, 0 euro installatie, 20 euro/jaar energie): circa 250 euro over 5 jaar. Premium model (500 euro aanschaf, 150 euro installatie, 40 euro/jaar): circa 850 euro. PureAqua 4-in-1 (1.948 euro aanschaf, 299 euro installatie, circa 115 euro/jaar energie + filters): circa 2.800 euro, maar inclusief osmosefiltratie, gekoeld water en vervanging van waterkoker, filterkan en mengkraan.',
   },
   {
     question: 'Zijn er verborgen kosten bij een heet water kraan?',
@@ -93,11 +93,11 @@ const prijsklassen = [
   },
   {
     segment: 'Compleet',
-    bereik: '699 - 900 euro',
+    bereik: '1.948 euro',
     type: 'PureAqua 4-in-1 met osmose',
-    geschikt: 'Wie alles wil: heet, kokend, gefilterd, bruisend',
-    pro: 'Vervangt waterkoker + filterkan + mengkraan, osmosefiltratie, 100 graden Celsius',
-    con: 'Hogere aanschaf dan losse heet water kraan',
+    geschikt: 'Wie zeer heet, gekoeld en osmose-gezuiverd water uit één kraan wil',
+    pro: 'Vervangt waterkoker + filterkan + mengkraan, osmosefiltratie, zeer heet water (circa 96 graden)',
+    con: 'Duidelijk hogere aanschaf dan losse heet water kraan; geen bruisend water',
     kleur: 'border-[#005F8A]',
     highlight: true,
   },
@@ -133,13 +133,13 @@ const tcoData = [
   },
   {
     model: 'PureAqua 4-in-1 met osmose',
-    aanschaf: 800,
-    installatie: 0,
+    aanschaf: 1948,
+    installatie: 299,
     energieJaar: 45,
     onderhoudJaar: 70,
-    tco5jaar: 1375,
+    tco5jaar: 2822,
     highlight: true,
-    notitie: 'Inclusief osmosefilter, vervangt waterkoker (50 euro) + filterkan (150 euro) + mengkraan (200 euro)',
+    notitie: 'Inclusief osmosefilter en gekoeld water, vervangt waterkoker (50 euro) + filterkan (150 euro) + mengkraan (200 euro). Installatie (299 euro) is optioneel maar aanbevolen.',
   },
 ];
 
@@ -227,7 +227,7 @@ export default function HeetWaterKraanPrijsPage() {
 
         {/* Quick Answer */}
         <section>
-          <QuickAnswer answer="Een heet water kraan kost 150-600 euro aanschaf plus 0-300 euro installatie. Jaarlijkse kosten: 20-50 euro energie plus 0-100 euro onderhoud. Over 5 jaar kost een budget model circa 250 euro, een premium model circa 1.200 euro. De PureAqua 4-in-1 met osmose kost meer maar vervangt waterkoker, filterkan en mengkraan tegelijk." />
+          <QuickAnswer answer="Een heet water kraan kost 150-600 euro aanschaf plus 0-300 euro installatie. Jaarlijkse kosten: 20-50 euro energie plus 0-100 euro onderhoud. Over 5 jaar kost een budget model circa 250 euro, een premium model circa 1.200 euro. De PureAqua 4-in-1 met osmose kost 1.948 euro, duidelijk meer, maar vervangt waterkoker, filterkan en mengkraan tegelijk en geeft ook gekoeld water." />
         </section>
 
         {/* Prijsklassen */}
@@ -292,7 +292,7 @@ export default function HeetWaterKraanPrijsPage() {
               { scenario: 'Inclusief nieuw kraangat (hout)', kosten: '100 - 180 euro', details: 'Inclusief boren en afwerking kraagatrand' },
               { scenario: 'Inclusief nieuw kraangat (graniet/composiet)', kosten: '200 - 350 euro', details: 'Steenhouwer vereist, speciaal gereedschap' },
               { scenario: 'Inclusief nieuw stopcontact', kosten: '160 - 300 euro', details: 'Elektricien + installateur of gecombineerd' },
-              { scenario: '4-in-1 met osmose, complete installatie', kosten: '0 - 300 euro', details: 'DIY mogelijk in 60-90 min, of installateur voor optimaal resultaat' },
+              { scenario: '4-in-1 met osmose, complete installatie', kosten: '299 euro', details: 'Installatie door een installateur aanbevolen: twee apparaten en twee stopcontacten onder de spoelbak. PureAqua biedt dit aan voor 299 euro.' },
             ].map(r => (
               <div key={r.scenario} className="flex gap-4 items-start border border-gray-100 rounded-xl p-3">
                 <span className="font-semibold text-[#005F8A] text-sm shrink-0 w-36">{r.kosten}</span>
@@ -374,7 +374,7 @@ export default function HeetWaterKraanPrijsPage() {
               {
                 post: 'Osmosefilter vervanging (4-in-1)',
                 kosten: '60 - 100 euro/jaar',
-                details: 'Jaarlijkse filterwissel voor osmosemembraan + pre- en postfilters. Inclusief bij servicepakket PureAqua.',
+                details: 'Voorfilter en remineralisatiefilter circa jaarlijks, osmosemembraan circa elke twee jaar.',
               },
               {
                 post: 'Verwarmingselement vervanging (na 5-8 jaar)',
@@ -443,7 +443,7 @@ export default function HeetWaterKraanPrijsPage() {
           <p className="text-xs text-gray-500 mt-2">
             TCO = aanschaf + installatie + (energie + onderhoud) x 5. PureAqua 4-in-1 vervangt
             waterkoker (50 euro) + filterkan (150 euro) + mengkraan (200 euro) = 400 euro vervangte waarde.
-            Netto TCO PureAqua inclusief vervangende apparaten: circa 975 euro.
+            Netto TCO PureAqua na aftrek van die vervangende apparaten: circa 2.420 euro.
           </p>
           {tcoData.find(r => r.notitie) && (
             <div className="bg-[#E0F2FE] rounded-xl p-4 mt-3">

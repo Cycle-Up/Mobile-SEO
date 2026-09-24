@@ -202,6 +202,7 @@ export default function SodaStreamVsKraanPage() {
           <li>Incidenteel gebruik: niet elke dag bruisend water</li>
           <li>Geen behoefte aan gefilterd of kokend water uit dezelfde kraan</li>
           <li>Kleinere huishoudens (1&ndash;2 personen)</li>
+          <li>U heeft een osmosekraan zonder bruisfunctie, zoals de PureAqua 4-in-1 kraan, en wilt dat water af en toe bruisend maken</li>
         </ul>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -231,7 +232,7 @@ export default function SodaStreamVsKraanPage() {
             </Link>
             <Link href="/bruisend-water/kraan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">4-in-1 bruisend waterkraan</h3>
-              <p className="text-sm text-gray-600">Vergelijking van 4-in-1 kranen: Quooker, Grohe Blue, Zip HydroTap en PureAqua.</p>
+              <p className="text-sm text-gray-600">Vergelijking van kranen met bruisend water (Quooker, Grohe Blue, Zip HydroTap) en de PureAqua 4-in-1 zonder bruisfunctie.</p>
             </Link>
             <Link href="/vergelijken/kraanwater-vs-flessenwater" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Kraanwater vs flessenwater</h3>

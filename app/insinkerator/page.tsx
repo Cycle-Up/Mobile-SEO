@@ -42,12 +42,12 @@ const faqItems = [
   {
     question: 'Heeft een InsinkErator een waterfilter?',
     answer:
-      'De kokend water kranen richten zich op temperatuur, niet op filtratie; een volledig osmosefilter zit er niet standaard in. Wil je naast heet water ook gefilterd, koud of bruisend water, dan biedt een 4-in-1 kraan met ingebouwd osmosefilter een completer pakket uit een kraan.',
+      'De kokend water kranen richten zich op temperatuur, niet op filtratie; een volledig osmosefilter zit er niet standaard in. Wil je naast heet water ook gefilterd en gekoeld water, dan biedt een 4-in-1 kraan met ingebouwd osmosefilter een completer pakket uit een kraan (zonder bruisend water).',
   },
   {
     question: 'Is InsinkErator een goede keuze?',
     answer:
-      'Voor wie een betrouwbare kokendwaterkraan of een afvalvermaler van een gevestigd merk zoekt, is InsinkErator een serieuze optie. Of het de beste keuze is, hangt af van je wensen en budget. Zoek je vooral gefilterd plus kokend en bruisend water, vergelijk dan met een 4-in-1 osmosekraan; dat lees je op InsinkErator alternatief.',
+      'Voor wie een betrouwbare kokendwaterkraan of een afvalvermaler van een gevestigd merk zoekt, is InsinkErator een serieuze optie. Of het de beste keuze is, hangt af van je wensen en budget. Zoek je vooral gefilterd plus heet en gekoeld water, vergelijk dan met een 4-in-1 osmosekraan; dat lees je op InsinkErator alternatief.',
   },
 ];
 
@@ -116,7 +116,7 @@ export default function InsinkEratorPage() {
 
         <QuickAnswer
           question="Wat moet je weten over InsinkErator?"
-          answer="InsinkErator maakt vooral kokend water kranen (instant heet/kokend water uit een tank onder het aanrecht) en keukenafvalvermalers. De kokendwaterkranen richten zich op temperatuur, niet op filtratie: een osmosefilter zit er niet standaard in. Ze zitten in het premium segment, met installatie en lopende kosten (stroom, ontkalken). Wil je naast heet water ook gefilterd, koud en bruisend water, dan is een 4-in-1 osmosekraan een completer alternatief."
+          answer="InsinkErator maakt vooral kokend water kranen (instant heet/kokend water uit een tank onder het aanrecht) en keukenafvalvermalers. De kokendwaterkranen richten zich op temperatuur, niet op filtratie: een osmosefilter zit er niet standaard in. Ze zitten in het premium segment, met installatie en lopende kosten (stroom, ontkalken). Wil je naast heet water ook gefilterd en gekoeld water, dan is een 4-in-1 osmosekraan een completer alternatief (zonder bruisend water)."
         />
 
         <section>
@@ -146,8 +146,8 @@ export default function InsinkEratorPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">InsinkErator versus een 4-in-1 osmosekraan</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Een InsinkErator kokendwaterkraan is sterk voor wie vooral heet of kokend water wil. Wie ook
-            puur gefilterd, koud en bruisend water wil, vindt een 4-in-1 kraan met ingebouwd osmosefilter
-            vaak completer: kokend, koud gefilterd, warm en bruisend water uit een kraan, inclusief een{' '}
+            puur gefilterd en gekoeld water wil, vindt een 4-in-1 kraan met ingebouwd osmosefilter
+            vaak completer: zeer heet (circa 96 graden), gekoeld en gezuiverd water plus gewoon warm en koud water uit een kraan (geen bruisend water), inclusief een{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose installatie</Link>.
             De volledige afweging lees je op{' '}
             <Link href="/insinkerator-alternatief" className="text-[#005F8A] underline">InsinkErator alternatief</Link>.
@@ -177,7 +177,7 @@ export default function InsinkEratorPage() {
             {[
               ['/kokend-water-kraan', 'Kokend water kraan', 'Complete gids over de categorie'],
               ['/insinkerator-alternatief', 'InsinkErator alternatief', 'Meer functies met een 4-in-1 osmosekraan'],
-              ['/4-in-1-kraan', '4-in-1 kraan', 'Kokend, gefilterd en bruisend uit een kraan'],
+              ['/4-in-1-kraan', '4-in-1 kraan', 'Zeer heet, gekoeld en gezuiverd uit een kraan'],
               ['/vergelijken/kokend-water-kraan-merken', 'Merken vergelijken', 'Kokend water kraan merken naast elkaar'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">

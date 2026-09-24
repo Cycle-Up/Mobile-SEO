@@ -362,7 +362,7 @@ export default function DrinkwaterkwaliteitPage() {
               },
               {
                 situatie: 'U wilt kokend én gefilterd water',
-                uitleg: 'Een 4-in-1 kraan met osmose filter combineert kokend water, bruisend water en puur gefilterd water in één systeem — ideaal als u meerdere verbeteringen tegelijk wilt.',
+                uitleg: 'Een 4-in-1 kraan met osmose filter combineert zeer heet, gekoeld en osmose-gezuiverd water in één systeem, handig als u meerdere verbeteringen tegelijk wilt. Bruisend water zit er niet op.',
               },
               {
                 situatie: 'U ervaart chloor- of aardgeur',
@@ -422,7 +422,7 @@ export default function DrinkwaterkwaliteitPage() {
         <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
           <h2 className="text-xl md:text-2xl font-bold mb-2">Wilt u uw drinkwater verbeteren?</h2>
           <p className="text-blue-100 mb-5 max-w-lg mx-auto">
-            Een 4-in-1 kraan met omgekeerde osmose filtert via RO en levert tegelijk kokend, koud, warm en bruisend water.
+            Een 4-in-1 kraan met omgekeerde osmose filtert via RO en levert zeer heet (circa 96 graden), gekoeld en gezuiverd water, plus gewoon warm en koud water.
             Ideaal voor harde waterregio&rsquo;s of iedereen die puur, lekker water wil.
           </p>
           <Link

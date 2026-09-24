@@ -34,7 +34,7 @@ const faqItems = [
   },
   {
     q: 'Kan ik een CO2-systeem koppelen aan mijn osmosefilter?',
-    a: 'Ja, dit is de meest professionele thuissetup. Een omgekeerde osmosefilter zuivert het water volledig (verwijdert PFAS, lood, nitraten, medicijnresten), waarna het CO2-systeem het gezuiverde water carboniseert. U koppelt de osmose-uitlaat aan een drukvat of dispensertank, waaruit u de carbonatiefles vult. Sommige 4-in-1 waterkranen (zoals PureAqua Pro) hebben dit geintegreerd. Bij een losse setup plaatst u het osmosefilter onder de gootsteen met een eigen afnamekraan en vult u vandaar de carbonatiefles.',
+    a: 'Ja, dit is de meest professionele thuissetup. Een omgekeerde osmosefilter zuivert het water volledig (verwijdert PFAS, lood, nitraten, medicijnresten), waarna het CO2-systeem het gezuiverde water carboniseert. U koppelt de osmose-uitlaat aan een drukvat of dispensertank, waaruit u de carbonatiefles vult. Kranen met ingebouwde CO2-functie, zoals de Quooker met CUBE of Grohe Blue, filteren met actieve kool en niet met osmose. De PureAqua 4-in-1 kraan geeft wel osmosewater, maar heeft geen CO2-functie: dat water carboniseer je dan met een losse carbonatiefles of SodaStream. Bij een losse setup plaatst u het osmosefilter onder de gootsteen met een eigen afnamekraan en vult u vandaar de carbonatiefles.',
   },
   {
     q: 'Hoeveel liter bruisend water geeft een 6kg CO2-cilinder?',
@@ -225,7 +225,7 @@ export default function CO2SysteemPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link href="/bruisend-water/kraan" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">4-in-1 bruisend waterkraan</h3>
-              <p className="text-sm text-gray-600">Vergelijking van 4-in-1 kranen: Quooker, Grohe Blue, Zip HydroTap en PureAqua.</p>
+              <p className="text-sm text-gray-600">Vergelijking van kranen met bruisend water (Quooker, Grohe Blue, Zip HydroTap) en de PureAqua 4-in-1 zonder bruisfunctie.</p>
             </Link>
             <Link href="/bruisend-water/sodastream" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">SodaStream vs bruisend waterkraan</h3>

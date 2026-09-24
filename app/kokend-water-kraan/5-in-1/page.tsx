@@ -22,7 +22,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil tussen een 4-in-1 en een 5-in-1 kraan?',
     answer:
-      'Een 4-in-1 kraan levert kokend water, koud gefilterd water, warm water en koud bruisend water. Een 5-in-1 kraan voegt daar één extra functie aan toe: warm bruisend water (ook wel "spa warm" of "pétillant chaud" genoemd). Dit is bruisend water op drinktemperatuur van circa 35–50°C — populair voor mensen die geen ijskoud bruisend water willen, maar toch koolzuur in hun glas. Qua prijs zit een 5-in-1 systeem doorgaans € 100–300 hoger dan een vergelijkbare 4-in-1 setup.',
+      'Welke vier functies een 4-in-1 kraan heeft, verschilt per merk. Een Quooker met CUBE geeft kokend, gekoeld en koud bruisend water; de PureAqua 4-in-1 kraan geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, maar geen bruisend water. Een 5-in-1 kraan voegt aan de bruisvariant één extra functie toe: warm bruisend water (ook wel "spa warm" of "pétillant chaud" genoemd). Dit is bruisend water op drinktemperatuur van circa 35–50°C, populair voor mensen die geen ijskoud bruisend water willen, maar toch koolzuur in hun glas. Vergelijk prijzen altijd per model; de PureAqua 4-in-1 kraan kost 1.948 euro.',
   },
   {
     question: 'Hoe werkt de CO₂-cilinder in een 5-in-1 kraan?',
@@ -92,11 +92,11 @@ const kostenVergelijking = [
     opmerking: 'Geen filter, geen kokend water, ruimte op aanrecht',
   },
   {
-    optie: '4-in-1 kraan met osmose',
-    aanschaf: '€ 799',
-    jaarlijks: '€ 120 (filter + CO₂)',
-    vijfJaar: '€ 1.399',
-    opmerking: 'Kokend + gefilterd + koud bruisend; geen warm bruisend',
+    optie: 'PureAqua 4-in-1 kraan (osmose)',
+    aanschaf: '€ 1.948',
+    jaarlijks: 'Filters (geen CO₂)',
+    vijfJaar: '€ 1.948 + filters',
+    opmerking: 'Zeer heet + gekoeld + gezuiverd; geen bruisend water (koud of warm)',
     highlight: false,
   },
   {
@@ -108,10 +108,10 @@ const kostenVergelijking = [
     highlight: true,
   },
   {
-    optie: 'Quooker Fusion + CUBE (5-in-1)',
-    aanschaf: '€ 2.500',
-    jaarlijks: '€ 100 (CO₂ + scale)',
-    vijfJaar: '€ 3.000',
+    optie: 'Quooker Flex PRO3 + CUBE',
+    aanschaf: '€ 2.240',
+    jaarlijks: '€ 100 (CO₂ + CUBE-filter)',
+    vijfJaar: '€ 2.740',
     opmerking: 'Premium merk, hogere aanschaf, geen osmosefilter standaard',
     highlight: false,
   },
@@ -178,7 +178,7 @@ const gebruiksProfielen = [
     profiel: 'Kleine huishoudens (1–2 personen)',
     match: false,
     reden:
-      'De meerprijs van een 5-in-1 vs 4-in-1 kraan verdien je moeilijker terug bij laag dagelijks verbruik. Een 4-in-1 kraan of zelfs een 3-in-1 met losse SodaStream kan hier voordeliger zijn.',
+      'Bij laag dagelijks verbruik van bruisend water verdien je een CO₂-systeem in de kraan moeilijk terug. Een losse SodaStream naast een 3-in-1 of een 4-in-1 kraan zonder bruisfunctie kan hier voordeliger zijn.',
   },
   {
     profiel: 'Huurwoning zonder ruime onderkast',
@@ -228,8 +228,9 @@ export default function VijfInEenKraanPage() {
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
             Een <strong>5-in-1 kokend water kraan</strong> levert vijf waterfuncties uit één kraanlichaam: kokend water,
             koud gefilterd water, warm water, koud bruisend water én warm bruisend water. Die vijfde functie — warm
-            koolzuurhoudend water op drinktemperatuur — maakt het verschil met een{' '}
-            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">4-in-1 kraan</Link>.
+            koolzuurhoudend water op drinktemperatuur, maakt het verschil met een{' '}
+            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">4-in-1 kraan</Link>
+            {' '}(de PureAqua 4-in-1 geeft zelfs helemaal geen bruisend water).
             In deze gids leggen we uit hoe het systeem werkt, wat de CO₂-integratie inhoudt, wat het kost en voor
             welke huishoudens de upgrade de meerprijs waard is.
           </p>
@@ -258,7 +259,7 @@ export default function VijfInEenKraanPage() {
           <p className="text-gray-700 leading-relaxed mb-5">
             Waar een{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">4-in-1 kraan</Link>{' '}
-            stopt bij vier functies, voegt de 5-in-1 variant een vijfde toe: warm bruisend water. Alle vijf functies
+            stopt bij vier functies (bij de PureAqua 4-in-1: zeer heet, gekoeld en gezuiverd water plus warm en koud, zonder bubbels), combineert de 5-in-1 variant kokend en gefilterd water met koud én warm bruisend water. Alle vijf functies
             worden bediend via één kraanlichaam met afzonderlijke standen of een combinatiegreep. Hieronder een
             overzicht van wat je uit de kraan kunt halen.
           </p>
@@ -292,8 +293,8 @@ export default function VijfInEenKraanPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             Een{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">4-in-1 kraan</Link>{' '}
-            biedt al kokend water, gefilterd koud water, warm water en koud bruisend water — een compleet pakket
-            voor de meeste gezinnen. De 5-in-1 variant breidt dit uit met warm bruisend water. Dat klinkt als een
+            zoals de PureAqua 4-in-1 biedt zeer heet water (circa 96 graden), gekoeld en osmose-gezuiverd water en
+            gewoon warm en koud water, maar geen bruisend water. De 5-in-1 variant voegt koud én warm bruisend water toe. Dat klinkt als een
             kleine stap, maar de techniek die erachter zit is iets complexer: het systeem moet het CO₂-gas
             mengen met water op een hogere temperatuur zonder dat het koolzuur direct verdampt. Dat vereist
             een nauwkeuriger druk-temperatuurregeling in de CO₂-unit.
@@ -303,21 +304,21 @@ export default function VijfInEenKraanPage() {
               <h3 className="font-semibold text-[#003F5C] mb-3">4-in-1 kraan</h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 {[
-                  'Kokend water (100°C)',
-                  'Koud gefilterd water (osmose)',
-                  'Warm water (normaal gebruik)',
-                  'Koud bruisend water',
+                  'Zeer heet water (circa 96°C)',
+                  'Gekoeld gezuiverd water (osmose)',
+                  'Warm en koud kraanwater',
+                  'Gezuiverd water op kamertemperatuur',
                   '—',
                 ].map((f, i) => (
                   <li key={i} className="flex gap-2 items-start">
                     <span className={i < 4 ? 'text-green-600 font-bold mt-0.5' : 'text-gray-300'}>
                       {i < 4 ? '✓' : '✗'}
                     </span>
-                    <span className={i === 4 ? 'text-gray-400 italic' : ''}>{i === 4 ? 'Warm bruisend' : f}</span>
+                    <span className={i === 4 ? 'text-gray-400 italic' : ''}>{i === 4 ? 'Bruisend (koud of warm)' : f}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-3 text-xs text-gray-400">Indicatief: € 799–999</p>
+              <p className="mt-3 text-xs text-gray-400">PureAqua 4-in-1: € 1.948</p>
             </div>
             <div className="bg-[#E0F2FE] rounded-xl p-4 border border-[#005F8A]">
               <h3 className="font-semibold text-[#003F5C] mb-3">5-in-1 kraan</h3>
@@ -339,10 +340,9 @@ export default function VijfInEenKraanPage() {
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed mt-5">
-            De extra meerprijs van een 5-in-1 ten opzichte van een 4-in-1 ligt doorgaans tussen de € 100 en € 300,
-            afhankelijk van het merk en het model. Het verschil in jaarlijkse onderhoudskosten is minimaal: het
-            CO₂-verbruik neemt licht toe als je ook warm bruisend water gebruikt, maar de filterkosten blijven
-            hetzelfde.
+            Het belangrijkste verschil zit in de CO₂-unit: een 5-in-1 kraan heeft er een, de PureAqua 4-in-1
+            niet. Daardoor heb je bij een 5-in-1 ook CO₂-kosten, terwijl je bij de 4-in-1 alleen filters vervangt.
+            Vergelijk aanschafprijzen altijd per model.
           </p>
         </section>
 
@@ -391,7 +391,7 @@ export default function VijfInEenKraanPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             De meest gestelde vraag bij de 5-in-1 kraan: is warm bruisend water het extra bedrag waard? Dat hangt
             van twee factoren af — hoe vaak je de 5e functie daadwerkelijk gebruikt, en hoe dat afsteekt tegen
-            het alternatief (een losse SodaStream of een 4-in-1 kraan).
+            het alternatief (een losse SodaStream, eventueel naast een 4-in-1 kraan zonder bruisfunctie).
           </p>
           <div className="overflow-x-auto -mx-4 px-4 mb-4">
             <table className="w-full min-w-[540px] text-sm border-collapse">
@@ -430,16 +430,16 @@ export default function VijfInEenKraanPage() {
             Indicatief, 4-persoonshuishouden, energiekosten € 0,30/kWh, gebruik mei 2026.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De conclusie: als je al een{' '}
+            De conclusie: overweeg je een{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">4-in-1 kraan</Link>{' '}
-            overweegt en dagelijks bruisend water drinkt — zowel koud als warm — betaal je voor de 5-in-1 variant
-            slechts € 150–200 meer over vijf jaar. Vergeleken met een SodaStream erbij is de 5-in-1 duidelijk
-            aantrekkelijker: minder ruimte, minder handelingen, beter gefilterd water.
+            zoals de PureAqua 4-in-1, weet dan dat die geen bruisend water geeft. Drink je dagelijks bruisend water,
+            zowel koud als warm, dan is een kraan met CO₂-functie handiger; drink je het af en toe, dan volstaat een
+            losse SodaStream met osmosewater uit de 4-in-1.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            <strong className="text-[#003F5C]">Vergelijking met Quooker:</strong> een Quooker Fusion + CUBE biedt
-            ook warm en koud bruisend water, maar kost al snel € 2.500 of meer in aanschaf, zonder osmosefilter
-            standaard inbegrepen. Over vijf jaar is het kostenverschil met een 5-in-1 osmose kraan meer dan € 1.400.
+            <strong className="text-[#003F5C]">Vergelijking met Quooker:</strong> een Quooker Flex PRO3 met CUBE
+            geeft kokend, gekoeld en bruisend water en kost bij PureAqua € 2.240 (september 2026). Hij filtert met
+            actieve kool, niet met omgekeerde osmose.
             Lees het gedetailleerde overzicht op de{' '}
             <Link href="/kokend-water-kraan/vergelijken" className="text-[#005F8A] underline hover:no-underline">
               vergelijkpagina
@@ -453,9 +453,9 @@ export default function VijfInEenKraanPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Installatie: complexer dan 3-in-1 of 4-in-1?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Een 5-in-1 kraan is iets complexer te installeren dan een 3-in-1 — puur vanwege het extra component:
-            de CO₂-cilinder. Ten opzichte van een 4-in-1 kraan is het verschil echter minimaal, omdat een
-            4-in-1 ook al een CO₂-eenheid heeft. Het installatieproces volgt zeven logische stappen en is
-            door de meeste doe-het-zelvers te doen in twee tot drie uur.
+            de CO₂-cilinder. De PureAqua 4-in-1 kraan heeft geen CO₂-eenheid, maar wel twee apparaten onder de
+            spoelbak; daarvoor is een installateur aanbevolen (PureAqua: € 299). Het installatieproces volgt zeven
+            logische stappen.
           </p>
           <div className="space-y-3">
             {installatieStappen.map(s => (
@@ -525,8 +525,8 @@ export default function VijfInEenKraanPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Onderhoud van een 5-in-1 kraan</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Het onderhoud van een 5-in-1 kraan verschilt nauwelijks van een 4-in-1. Er zijn drie terugkerende
-            taken: filterwissels, CO₂-navulling en jaarlijkse controle van aansluitingen.
+            Het onderhoud van een 5-in-1 kraan bestaat uit drie terugkerende taken: filterwissels, CO₂-navulling
+            en jaarlijkse controle van aansluitingen. Bij de PureAqua 4-in-1 vervalt de CO₂-navulling.
           </p>
           <div className="space-y-3">
             {[
@@ -571,8 +571,8 @@ export default function VijfInEenKraanPage() {
           </div>
           <p className="text-gray-700 leading-relaxed mt-4">
             Jaarlijkse onderhoudskosten voor een 5-in-1 kraan met gemiddeld gebruik: € 100–150 (filter + CO₂).
-            Dat is vergelijkbaar met een 4-in-1 kraan — het CO₂-gebruik neemt licht toe als de vijfde functie
-            regelmatig wordt gebruikt.
+            Het CO₂-gebruik neemt licht toe als de vijfde functie regelmatig wordt gebruikt. De PureAqua 4-in-1
+            heeft geen CO₂-kosten.
           </p>
         </section>
 
@@ -580,7 +580,7 @@ export default function VijfInEenKraanPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Quooker CUBE vs 5-in-1 kraan met osmose: een eerlijk beeld</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De bekendste 5-in-1 variant op de Nederlandse markt is de Quooker Fusion met CUBE-module — de combinatie
+            De bekendste variant met bruisend water op de Nederlandse markt is de Quooker met CUBE-module, de combinatie
             die warm en koud bruisend water, kokend water én de standaard kraan combineert. Een 5-in-1 kraan met osmose
             biedt hetzelfde functiepakket en voegt daar een volledig osmosefilter aan toe als standaard onderdeel.
           </p>

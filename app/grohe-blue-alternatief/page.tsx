@@ -11,12 +11,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Grohe Blue alternatief: osmose en kokend water (2026)',
     description:
-      'Zoek je een alternatief voor de Grohe Blue? Vergelijk gefilterd en bruisend water met een 4-in-1 osmosekraan die ook kokend water levert.',
+      'Zoek je een alternatief voor de Grohe Blue? Vergelijk hem met een 4-in-1 osmosekraan die ook zeer heet water levert, maar geen bruisend water.',
     alternates: { canonical: 'https://waterfilterplatform.nl/grohe-blue-alternatief' },
     openGraph: {
       title: 'Grohe Blue alternatief vergelijken - beste opties 2026',
       description:
-        'Grohe Blue geeft gekoeld, gefilterd en bruisend water via een koolfilter. Een 4-in-1 osmosekraan voegt kokend water en diepere osmosefiltratie toe.',
+        'Grohe Blue geeft gekoeld, gefilterd en bruisend water via een koolfilter. Een 4-in-1 osmosekraan geeft gekoeld en zeer heet osmosewater, maar geen bruisend water.',
       url: 'https://waterfilterplatform.nl/grohe-blue-alternatief',
       type: 'article',
       locale: 'nl_NL',
@@ -28,12 +28,12 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor de Grohe Blue?',
     answer:
-      'Het sterkste alternatief voor de Grohe Blue is een 4-in-1 kraan met osmosefilter. De Grohe Blue levert gekoeld, gefilterd en bruisend water via een koolfilter, maar geen kokend water en geen volledige osmosefiltratie. Een 4-in-1 osmosekraan biedt kokend, koud gefilterd, warm en bruisend water in een kraan, met een osmosesysteem dat dieper filtert dan een koolpatroon.',
+      'Dat hangt af van wat je wilt houden. De Grohe Blue levert gekoeld, gefilterd en bruisend water via een koolfilter, maar geen kokend water en geen osmosefiltratie. Wil je bruisend en kokend water, kijk dan naar een Quooker met CUBE. Vind je zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water belangrijker dan bubbels, dan is de PureAqua 4-in-1 kraan volgens ons het sterkste alternatief. Bubbels voeg je dan eventueel toe met een losse SodaStream.',
   },
   {
     question: 'Wat is het verschil tussen Grohe Blue en Grohe Red?',
     answer:
-      'De Grohe Blue levert gekoeld, gefilterd en bruisend water (geen kokend water). De Grohe Red levert juist kokend water (geen koeling of bruis). Wil je beide functies in een kraan, plus diepere filtratie, dan combineert een 4-in-1 osmosekraan kokend, koud gefilterd en bruisend water in een enkel systeem.',
+      'De Grohe Blue levert gekoeld, gefilterd en bruisend water (geen kokend water). De Grohe Red levert juist kokend water (geen koeling of bruis). Wil je kokend en bruisend water in een kraan, dan past een Quooker met CUBE. Wil je gekoeld en zeer heet water met osmosefiltratie, dan combineert de PureAqua 4-in-1 kraan die functies; bubbels zitten daar niet bij.',
   },
   {
     question: 'Filtert de Grohe Blue net zo goed als omgekeerde osmose?',
@@ -43,24 +43,24 @@ const faqItems = [
   {
     question: 'Is er een goedkoper alternatief dan Grohe Blue?',
     answer:
-      'Ja. Een Grohe Blue set kost doorgaans 1.000 tot 2.000 euro, plus jaarlijkse koolfilters en CO2. Een 4-in-1 kraan met osmosefilter levert kokend, gefilterd en bruisend water vanaf 699 tot 899 euro, met een osmosesysteem inbegrepen. Reken altijd de filter- en CO2-kosten over meerdere jaren mee.',
+      'Een Grohe Blue set kost doorgaans 1.000 tot 2.000 euro, plus jaarlijkse koolfilters en CO2. Goedkoper met bruisend water is een SodaStream met filterkan. De PureAqua 4-in-1 kraan kost 1.948 euro en geeft zeer heet, gekoeld en osmose-gezuiverd water, maar geen bubbels; dat is dus geen goedkopere vervanger. Reken altijd de filter- en CO2-kosten over meerdere jaren mee.',
   },
   {
     question: 'Kan ik bruisend water houden met een Grohe Blue alternatief?',
     answer:
-      'Ja. Een 4-in-1 osmosekraan levert standaard bruisend water via een ingebouwde of meegeleverde CO2-module, net als de Grohe Blue. Het verschil is dat het bruiswater op osmosebasis wordt gemaakt, wat een neutrale, zuivere smaak geeft.',
+      'Met een Quooker met CUBE wel: die geeft kokend, gekoeld en bruisend water. De PureAqua 4-in-1 kraan heeft geen CO2-module en geeft dus geen bubbels. Wil je die toch, dan maak je osmosewater uit de 4-in-1 bruisend met een losse SodaStream.',
   },
 ];
 
 const topAlternatieven = [
   {
     naam: '4-in-1 kraan met osmose',
-    prijs: 'EUR 699-899',
-    kokend: 'Ja (100 graden)',
-    gefilterd: 'Osmose (diep)',
-    bruisend: 'Ja, standaard',
+    prijs: 'EUR 1.948',
+    kokend: 'Zeer heet (circa 96 graden)',
+    gefilterd: 'Osmose (3 stappen)',
+    bruisend: 'Nee',
     highlight: true,
-    notitie: 'Combineert kokend, koud gefilterd en bruisend water met diepe osmosefiltratie.',
+    notitie: 'PureAqua 4-in-1: zeer heet, gekoeld en osmose-gezuiverd water; geen bubbels, wel diepere filtratie.',
   },
   {
     naam: 'Grohe Blue (referentie)',
@@ -72,10 +72,10 @@ const topAlternatieven = [
     notitie: 'Gekoeld, gefilterd en bruisend water; geen kokend water, koolfilter i.p.v. osmose.',
   },
   {
-    naam: 'Quooker + CUBE',
-    prijs: 'EUR 1.800-3.000',
+    naam: 'Quooker Flex PRO3 + CUBE',
+    prijs: 'EUR 2.240',
     kokend: 'Ja (100 graden)',
-    gefilterd: 'Beperkt',
+    gefilterd: 'Actieve kool',
     bruisend: 'Met CUBE module',
     highlight: false,
     notitie: 'Kokend plus bruisend via losse module; geen volledig osmosefilter.',
@@ -98,9 +98,9 @@ export default function GroheBlueAlternatiefPage() {
         type="Article"
         article={{
           title: 'Grohe Blue alternatief: osmose en kokend water (2026)',
-          description: 'Zoek je een alternatief voor de Grohe Blue? Vergelijk gefilterd en bruisend water met een 4-in-1 osmosekraan die ook kokend water levert.',
+          description: 'Zoek je een alternatief voor de Grohe Blue? Vergelijk hem met een 4-in-1 osmosekraan die ook zeer heet water levert, maar geen bruisend water.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-09-24',
           url: 'https://waterfilterplatform.nl/grohe-blue-alternatief',
         }}
       />
@@ -121,7 +121,7 @@ export default function GroheBlueAlternatiefPage() {
             <span>Grohe Blue alternatief</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Grohe Blue alternatief: ook kokend water en diepere filtratie
+            Grohe Blue alternatief: ook heet water en diepere filtratie
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             De <strong>Grohe Blue</strong> levert gekoeld, gefilterd en bruisend water uit de kraan.
@@ -152,7 +152,7 @@ export default function GroheBlueAlternatiefPage() {
 
         <QuickAnswer
           question="Wat is het beste Grohe Blue alternatief?"
-          answer="Het beste Grohe Blue alternatief is een 4-in-1 kraan met osmosefilter. De Grohe Blue geeft gekoeld, gefilterd en bruisend water via een koolfilter, maar geen kokend water. Een 4-in-1 osmosekraan biedt kokend, koud gefilterd en bruisend water in een kraan, met osmose die ook lood, nitraat, PFAS en microplastics verwijdert - vaak voor een lagere prijs."
+          answer="Dat hangt af van bubbels. De Grohe Blue geeft gekoeld, gefilterd en bruisend water via een koolfilter, maar geen kokend water. Wil je bruisend en kokend water, kies dan een Quooker met CUBE. Vind je zeer heet, gekoeld en osmose-gezuiverd water belangrijker dan bubbels, dan is de PureAqua 4-in-1 kraan (1.948 euro) volgens ons het sterkste alternatief; bruisend water zit daar niet op."
         />
 
         <section>
@@ -176,8 +176,8 @@ export default function GroheBlueAlternatiefPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Wil je naast gefilterd en bruisend water ook kokend water en een diepere filtratie, dan
-            biedt een 4-in-1 osmosekraan een completer pakket. Lees hoe{' '}
+            Wil je naast gefilterd water ook zeer heet water en een diepere filtratie, dan
+            biedt een 4-in-1 osmosekraan meer, al lever je dan de bubbels in. Lees hoe{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link>{' '}
             zich verhoudt tot een koolfilter.
           </p>
@@ -230,8 +230,8 @@ export default function GroheBlueAlternatiefPage() {
             {[
               ['Koolfilter (Grohe Blue)', 'Chloor, smaak, geur en deels kalk. Laat lood, nitraat, PFAS en microplastics grotendeels door.'],
               ['Omgekeerde osmose', 'Verwijdert 90-99% van opgeloste stoffen, inclusief lood, nitraat, PFAS en microplastics.'],
-              ['Bruiswaterkwaliteit', 'Bruis op osmosebasis heeft een neutrale, zuivere smaak als vertrekpunt.'],
-              ['Kokend water erbij', 'Alleen de 4-in-1 osmosekraan combineert dit met instant kokend water.'],
+              ['Bruiswaterkwaliteit', 'Bruis op osmosebasis (bijvoorbeeld osmosewater in een SodaStream) heeft een neutrale, zuivere smaak als vertrekpunt.'],
+              ['Heet water erbij', 'De 4-in-1 osmosekraan combineert osmose met zeer heet water (circa 96 graden), maar heeft geen bruisfunctie.'],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold text-gray-800 mb-1">{t}</p>
@@ -249,9 +249,9 @@ export default function GroheBlueAlternatiefPage() {
           destination="vierInEen"
           campaign="kokend-water"
           content="grohe-blue-alternatief-cta"
-          label="PureAqua 4-in-1 kraan met kokend en gefilterd water"
+          label="PureAqua 4-in-1 kraan met heet en gefilterd water"
           title="Op zoek naar gefilterd water uit de kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="osmose" />
@@ -259,9 +259,10 @@ export default function GroheBlueAlternatiefPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Conclusie</h2>
           <p className="text-gray-700 leading-relaxed">
-            De Grohe Blue is een fraaie keuze voor gekoeld en bruisend gefilterd water. Maar wie ook
-            kokend water wil, of een diepere filtratie dan een koolpatroon, vindt in een{' '}
-            <strong>4-in-1 kraan met osmosefilter</strong> een completer en vaak goedkoper systeem.
+            De Grohe Blue is een fraaie keuze voor gekoeld en bruisend gefilterd water. Wie ook
+            zeer heet water wil, of een diepere filtratie dan een koolpatroon, en bubbels kan missen, vindt in een{' '}
+            <strong>4-in-1 kraan met osmosefilter</strong> volgens ons een sterk alternatief (1.948 euro).
+            Wil je bubbels én kokend water, kijk dan naar een Quooker met CUBE.
             Vergelijk verder met{' '}
             <Link href="/grohe-red-alternatief" className="text-[#005F8A] underline">het Grohe Red alternatief</Link>{' '}
             of bekijk de{' '}

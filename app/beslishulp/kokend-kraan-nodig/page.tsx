@@ -43,7 +43,7 @@ export default function KokendKraanNodigTree() {
           content="beslishulp-kokend-kraan-nodig-cta"
           label="Bekijk de PureAqua 4-in-1 kraan"
           title="Uitkomst: een kokendwaterkraan?"
-          sub="De PureAqua 4-in-1 kraan levert kokend en gefilterd water. Bekijken bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan levert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. Bekijken bij onze partner PureAqua."
         />
 
 
@@ -61,8 +61,8 @@ export default function KokendKraanNodigTree() {
               <Link href="/vergelijken/kokend-kraan-vs-waterkoker" className="text-sm text-[#005F8A] underline mt-1 inline-block">Lees meer</Link>
             </div>
             <div className="border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-800">Ik wil ook gefilterd/bruisend</p>
-              <p className="text-sm text-gray-600 mt-1"><strong>4-in-1 kraan.</strong> Combineert kokend, gefilterd en bruisend water.</p>
+              <p className="font-semibold text-gray-800">Ik wil ook gefilterd/gekoeld</p>
+              <p className="text-sm text-gray-600 mt-1"><strong>4-in-1 kraan.</strong> Combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. Bruisend water zit er niet op.</p>
               <Link href="/4-in-1-kraan" className="text-sm text-[#005F8A] underline mt-1 inline-block">Lees meer</Link>
             </div>
           </div>

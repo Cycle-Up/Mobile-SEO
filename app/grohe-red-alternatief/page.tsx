@@ -28,22 +28,22 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor de Grohe Red?',
     answer:
-      'De beste alternatieven voor de Grohe Red zijn een 4-in-1 kraan met osmosefilter, Quooker, InSinkErator en Franke Vital. Grohe Red is een kwaliteitsmerk met strak Duits design en betrouwbare kokendwaterfunctie. Wie echter ook een ingebouwd waterfilter, bruisend water of een lager prijspunt zoekt, vindt een 4-in-1 kraan met osmose een completer pakket voor minder geld.',
+      'Serieuze alternatieven voor de Grohe Red zijn een 4-in-1 kraan met osmosefilter, Quooker, InSinkErator en Franke Vital. Grohe Red is een kwaliteitsmerk met strak Duits design en betrouwbare kokendwaterfunctie. Wie ook gekoeld en osmose-gezuiverd water wil, vindt volgens ons in de PureAqua 4-in-1 kraan (1.948 euro) een completer pakket. Wie bruisend water zoekt, kijkt beter naar een Quooker met CUBE; wie vooral een lager prijspunt zoekt, naar InSinkErator.',
   },
   {
     question: 'Is er een goedkoper alternatief dan Grohe Red?',
     answer:
-      'Ja. De Grohe Red Duo kost al snel tussen de 1.200 en 2.000 euro inclusief installatie. Een 4-in-1 kraan met osmosefilter biedt kokend, koud, warm en bruisend gefilterd water voor 699 tot 899 euro. Daarmee is de aanschafprijs aanzienlijk lager, terwijl het functiepakket groter is door het standaard ingebouwde omgekeerde osmose filter.',
+      'De Grohe Red Duo kost al snel tussen de 1.200 en 2.000 euro inclusief installatie. Een InSinkErator is vaak goedkoper. De PureAqua 4-in-1 kraan kost 1.948 euro en zit daarmee in dezelfde prijsklasse, maar het functiepakket is groter: zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. Bruisend water zit er niet op.',
   },
   {
     question: 'Wat zijn de voornaamste verschillen tussen Grohe Red en een 4-in-1 kraan met osmose?',
     answer:
-      'Grohe Red levert kokend water en heeft optioneel een filterpatroon voor kalkbehandeling, maar heeft geen standaard osmose filter en geen bruisend water. Een 4-in-1 kraan met osmosefilter combineert kokend, koud gefilterd, warm en bruisend water in één kraan met een ingebouwde omgekeerde osmose installatie. De prijs ligt bovendien aanzienlijk lager dan een vergelijkbare Grohe Red setup.',
+      'Grohe Red levert kokend water en heeft optioneel een filterpatroon voor kalkbehandeling, maar heeft geen standaard osmose filter en geen gekoeld water. De PureAqua 4-in-1 kraan combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water met gewoon warm en koud water in één kraan, met omgekeerde osmose in drie stappen. Qua prijs (1.948 euro) zit hij in dezelfde klasse als een Grohe Red Duo. Geen van beide geeft bruisend water.',
   },
   {
     question: 'Kun je een alternatief voor Grohe Red zelf installeren?',
     answer:
-      'Bij Grohe Red wordt installatie via een erkende dealer aanbevolen en is soms vereist voor garantie. Een 4-in-1 kraan met osmosefilter en InSinkErator zijn in de meeste gevallen zelf te installeren met standaardaansluitingen onder het aanrecht. De meeste 4-in-1 systemen worden geleverd met een Nederlandstalige installatiehandleiding. Zo bespaar je op installatiekosten.',
+      'Bij Grohe Red wordt installatie via een erkende dealer aanbevolen en is soms vereist voor garantie. Een InSinkErator kan een handige klusser soms zelf plaatsen. Voor een 4-in-1 kraan met osmosefilter is installatie door een installateur aanbevolen: onder de spoelbak komen twee apparaten en twee stopcontacten. PureAqua biedt installatie aan voor 299 euro.',
   },
   {
     question: 'Heeft Grohe Red een waterfilter ingebouwd?',
@@ -60,14 +60,14 @@ const faqItems = [
 const topAlternatieven = [
   {
     naam: '4-in-1 kraan met osmose',
-    prijs: '€ 699–899',
-    kokend: 'Ja (100°C)',
+    prijs: '€ 1.948',
+    kokend: 'Zeer heet (circa 96°C)',
     gefilterd: 'Ja (osmose ingebouwd)',
-    bruisend: 'Ja, standaard',
+    bruisend: 'Nee',
     garantie: '2 jaar',
-    installatie: 'Zelf installeerbaar',
+    installatie: 'Installateur aanbevolen (PureAqua: € 299)',
     highlight: true,
-    notitie: 'Meest complete pakket voor de laagste prijs, met ingebouwde osmose filter',
+    notitie: 'PureAqua 4-in-1: onze keuze voor zeer heet, gekoeld en osmose-gezuiverd water uit één kraan',
   },
   {
     naam: 'Grohe Red (referentie)',
@@ -107,11 +107,11 @@ const topAlternatieven = [
 const tco5jaar = [
   {
     set: '4-in-1 kraan met osmose',
-    aanschaf: '€ 799',
-    installatie: '€ 0 (zelf)',
+    aanschaf: '€ 1.948',
+    installatie: '€ 299 (optioneel)',
     filters: '€ 90/jaar',
     energie: '± € 35/jaar',
-    totaal5jaar: '± € 1.424',
+    totaal5jaar: '± € 2.872',
     highlight: true,
   },
   {
@@ -124,12 +124,12 @@ const tco5jaar = [
     highlight: false,
   },
   {
-    set: 'Quooker Combi + CUBE',
-    aanschaf: '€ 2.500',
+    set: 'Quooker Flex PRO3 + CUBE',
+    aanschaf: '€ 2.240',
     installatie: '€ 250',
     filters: '± € 60/jaar',
     energie: '± € 35/jaar',
-    totaal5jaar: '± € 3.225',
+    totaal5jaar: '± € 2.965',
     highlight: false,
   },
   {
@@ -152,7 +152,7 @@ export default function GroheRedAlternatiefPage() {
           title: 'Wat is het beste Grohe Red alternatief? Opties 2026',
           description: 'Op zoek naar een goedkoper alternatief voor de Grohe Red? Vergelijk prijs, functies en kosten van de beste opties naast Grohe Red in 2026.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-09-24',
           url: 'https://waterfilterplatform.nl/grohe-red-alternatief',
         }}
       />
@@ -174,12 +174,12 @@ export default function GroheRedAlternatiefPage() {
             <span>Grohe Red alternatief</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Grohe Red alternatief: goedkoper met meer functies?
+            Grohe Red alternatief: meer functies uit één kraan?
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             De <strong>Grohe Red</strong> is een kwaliteitskraan met een verdiende reputatie in het hogere segment.
-            Toch zoeken steeds meer mensen naar een <strong>alternatief voor Grohe Red</strong> — omdat ze naast
-            kokend water ook een waterfilter of bruisend water willen, of simpelweg een{' '}
+            Toch zoeken steeds meer mensen naar een <strong>alternatief voor Grohe Red</strong>, omdat ze naast
+            kokend water ook een waterfilter, gekoeld of bruisend water willen, of simpelweg een{' '}
             <strong>goedkoper alternatief voor Grohe Red</strong> zoeken met een vergelijkbaar functiepakket.
             We zetten de vier serieuze opties naast elkaar.
           </p>
@@ -204,7 +204,7 @@ export default function GroheRedAlternatiefPage() {
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
         <AuthorBox datePublished="2026-05-29" />
 
-        <QuickAnswer answer="Een Grohe Red alternatief levert kokend kraanwater voor €300–600 minder. De beste alternatieven zijn 4-in-1 kranen met ingebouwde osmose: die bieden extra gefilterd koud en bruisend water dat Grohe Red niet heeft. Grohe Red heeft geen waterfilter — bij hard water slijt de boiler sneller zonder extra filtering." />
+        <QuickAnswer answer="Een Grohe Red alternatief kan kokend kraanwater goedkoper leveren (bijvoorbeeld InSinkErator) of meer functies bieden. Onze keuze voor meer functies is de PureAqua 4-in-1 kraan met ingebouwde osmose (1.948 euro): die geeft ook gekoeld en osmose-gezuiverd water dat Grohe Red niet heeft, maar geen bruisend water. Grohe Red heeft geen osmosefilter; bij hard water slijt de boiler sneller zonder extra filtering." />
 
         {/* Grohe Red functies uitleg */}
         <section>
@@ -260,8 +260,8 @@ export default function GroheRedAlternatiefPage() {
           </div>
           <p className="text-gray-700 leading-relaxed">
             De Grohe Red is kortom een sterk product voor wie primair kokend water zoekt met een Duits design.
-            Maar voor wie ook puur gefilterd water of bruisend water wil, of een lagere totaalprijs, zijn er
-            alternatieven die meer bieden voor minder geld. Lees meer over <Link href="/heet-water-kraan" className="text-[#005F8A] underline">heet water kranen</Link> in
+            Maar voor wie ook puur gefilterd, gekoeld of bruisend water wil, of een lagere totaalprijs, zijn er
+            alternatieven die meer bieden of minder kosten. Lees meer over <Link href="/heet-water-kraan" className="text-[#005F8A] underline">heet water kranen</Link> in
             het algemeen om de categorie beter te begrijpen.
           </p>
         </section>
@@ -329,33 +329,33 @@ export default function GroheRedAlternatiefPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Is een 4-in-1 kraan met osmose het meest complete alternatief?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Van de vier alternatieven is de 4-in-1 kraan met osmosefilter het enige systeem dat standaard kokend water, koud gefilterd
-            water, warm water én bruisend water combineert in één kraan — inclusief een ingebouwde{' '}
+            Van de vier alternatieven is de 4-in-1 kraan met osmosefilter het enige systeem dat zeer heet water (circa 96 graden), gekoeld
+            gezuiverd water en gewoon warm en koud water combineert in één kraan, inclusief een ingebouwde{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose installatie</Link>.
             Dat maakt het voor veel huishoudens een aantrekkelijker alternatief dan de Grohe Red, zeker als
-            je ook puur drinkwater of bruisend water wilt.
+            je ook puur of gekoeld drinkwater wilt. Bruisend water zit er niet op.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
             {[
               {
                 titel: '4-in-1 functies standaard',
                 tekst:
-                  'Kokend water, koud gefilterd water, warm water en bruisend water uit één kraan. Geen extra module of losse carbonator nodig.',
+                  'Zeer heet water, gekoeld en gezuiverd water en gewoon warm en koud water uit één kraan. Geen bruisend water; daarvoor heb je een losse SodaStream of een Quooker met CUBE nodig.',
               },
               {
                 titel: 'Omgekeerde osmose filter ingebouwd',
                 tekst:
-                  'Het osmose systeem verwijdert kalk, chloor, nitraten en microplastics. Dit zit standaard in het pakket, niet als dure optie.',
+                  'Omgekeerde osmose in drie stappen (voorfilter, membraan, remineralisatie). Een SGS-test op een nieuw systeem mat PFOS meer dan 99,6%, PFOA 99,5% en lood meer dan 99,8% minder.',
               },
               {
-                titel: 'Significant lagere prijs',
+                titel: 'Vergelijkbare prijsklasse',
                 tekst:
-                  'Een complete 4-in-1 set kost 699–899 euro. Een Grohe Red Duo met installatiekosten komt al snel boven de 2.000 euro uit.',
+                  'De PureAqua 4-in-1 kraan kost 1.948 euro, installatie optioneel 299 euro. Een Grohe Red Duo met installatiekosten komt al snel rond de 2.000 euro uit.',
               },
               {
-                titel: 'Zelf te installeren',
+                titel: 'Installatie door een installateur',
                 tekst:
-                  'Met standaard aansluitingen onder het aanrecht plaats je de kraan zelf binnen enkele uren. Geen verplichte installateur, dat scheelt.',
+                  'Onder de spoelbak komen twee apparaten (heet-/koelunit en osmose-unit) en twee stopcontacten. Installatie door een installateur is aanbevolen; PureAqua biedt dat aan voor 299 euro.',
               },
               {
                 titel: '2 jaar fabrieksgarantie',
@@ -436,22 +436,22 @@ export default function GroheRedAlternatiefPage() {
               {
                 titel: 'Je wilt ook bruisend water',
                 tekst:
-                  'Grohe Red biedt geen bruisend water. Wil je bruisend kraanwater uit dezelfde kraan, dan moet je een ander systeem kiezen. Een 4-in-1 kraan met osmosefilter heeft dit standaard inbegrepen. Lees meer over bruisend water thuis.',
+                  'Grohe Red biedt geen bruisend water. Wil je bruisend kraanwater uit dezelfde kraan, dan moet je een ander systeem kiezen, zoals een Quooker met CUBE. De PureAqua 4-in-1 kraan heeft geen bruisfunctie. Lees meer over bruisend water thuis.',
               },
               {
                 titel: 'Je wilt puur gefilterd water via osmose',
                 tekst:
-                  'Het optionele filterpatroon van Grohe Red verwijdert geen chloor, nitraten of microplastics. Een volledig osmose systeem — standaard ingebouwd bij een 4-in-1 kraan — doet dat wel, zonder meerprijs.',
+                  'Het optionele filterpatroon van Grohe Red verwijdert geen chloor, nitraten of microplastics. Een volledig osmose systeem, standaard ingebouwd bij de 4-in-1 kraan, doet dat wel.',
               },
               {
                 titel: 'Je zoekt een lagere totaalprijs',
                 tekst:
-                  'Over 5 jaar betaal je voor een Grohe Red Duo inclusief installatie, filterpatronen en energie bijna het dubbele van wat een 4-in-1 kraan met osmose kost. Dat prijsverschil kan oplopen tot meer dan 1.000 euro.',
+                  'Een InSinkErator is over 5 jaar goedkoper dan een Grohe Red Duo. De 4-in-1 kraan met osmose is niet goedkoper, maar geeft voor een vergelijkbaar bedrag ook gekoeld en osmose-gezuiverd water.',
               },
               {
-                titel: 'Je wilt zelf installeren',
+                titel: 'Je wilt gekoeld water uit de kraan',
                 tekst:
-                  'Grohe Red vereist doorgaans een installateur. Een 4-in-1 kraan met osmosefilter is zelf te installeren met standaard aansluitingen, wat direct honderden euros scheelt.',
+                  'Grohe Red koelt niet. De PureAqua 4-in-1 kraan geeft gezuiverd water gekoeld tot circa 5 graden, naast zeer heet water.',
               },
               {
                 titel: 'Je wilt vergelijken met Quooker',
@@ -502,7 +502,7 @@ export default function GroheRedAlternatiefPage() {
                     <td className="py-2.5 px-3 font-semibold text-gray-800">
                       {r.set}
                       {r.highlight && (
-                        <span className="ml-2 text-[10px] bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full align-middle">Laagste TCO</span>
+                        <span className="ml-2 text-[10px] bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full align-middle">Onze keuze</span>
                       )}
                     </td>
                     <td className="py-2.5 px-3 text-gray-700">{r.aanschaf}</td>
@@ -526,9 +526,9 @@ export default function GroheRedAlternatiefPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Conclusie: welk alternatief past bij jou?</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
             De Grohe Red is een kwalitatief hoogstaand product voor wie design en merkvertrouwen prioriteit geeft.
-            Maar voor de meeste huishoudens die ook puur gefilterd of bruisend water willen, of die
-            slimmer willen omgaan met hun budget, biedt een <strong>4-in-1 kraan met osmosefilter</strong> een completer pakket
-            voor minder geld. Het is geen inferieure keuze — het is een andere afweging.
+            Maar voor huishoudens die ook puur gefilterd of gekoeld water willen, biedt een <strong>4-in-1 kraan met osmosefilter</strong> volgens ons
+            een completer pakket voor een vergelijkbaar bedrag. Wie bruisend water wil, kiest een Quooker met CUBE; wie vooral
+            op budget let, een InSinkErator. Het is geen inferieure keuze, het is een andere afweging.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Wil je verder vergelijken? Lees onze gids over{' '}
@@ -567,9 +567,9 @@ export default function GroheRedAlternatiefPage() {
           destination="vierInEen"
           campaign="kokend-water"
           content="grohe-red-alternatief-cta"
-          label="PureAqua 4-in-1 kraan met kokend water"
+          label="PureAqua 4-in-1 kraan met heet en gekoeld water"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />

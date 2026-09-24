@@ -28,7 +28,7 @@ const faqItems = [
   {
     question: 'Wat is het beste osmosefilter voor thuis in 2026?',
     answer:
-      'Dat hangt af van je situatie. Als je op zoek bent naar de meest complete oplossing — osmose filtratie gecombineerd met kokend, koud, warm en bruisend water uit één kraan — is een 4-in-1 kraan met geïntegreerde RO de beste keuze. Wil je een puur under-sink osmose-systeem zonder extra functies, dan zijn de APEC ROES-50 en de iSpring RCC7AK uitstekende opties op prijs-kwaliteitsverhouding.',
+      'Dat hangt af van je situatie. Als je op zoek bent naar de meest complete oplossing, osmose filtratie gecombineerd met zeer heet (circa 96 graden), gekoeld, warm en koud water uit één kraan, is volgens ons de PureAqua 4-in-1 kraan met geïntegreerde RO de beste keuze. Bruisend water zit daar niet op. Wil je een puur under-sink osmose-systeem zonder extra functies, dan zijn de APEC ROES-50 en de iSpring RCC7AK uitstekende opties op prijs-kwaliteitsverhouding.',
   },
   {
     question: 'Hoeveel filterstadia heeft een goed osmosefilter?',
@@ -48,7 +48,7 @@ const faqItems = [
   {
     question: 'Kan ik een osmosefilter zelf installeren?',
     answer:
-      'Ja. De meeste under-sink osmose-systemen zijn ontworpen voor doe-het-zelf installatie. Je sluit het systeem aan op de koudwaterleiding via een aanboorkraan, verbindt de afvoerslang met de afvoer en installeert een aparte osmose-kraan op het aanrecht. Totale installatietijd: 30 tot 90 minuten. Een 4-in-1 kraan met RO vereist iets meer installatietijd vanwege de elektrische aansluiting, maar ook dat is in de meeste gevallen zelf te doen.',
+      'Ja. De meeste under-sink osmose-systemen zijn ontworpen voor doe-het-zelf installatie. Je sluit het systeem aan op de koudwaterleiding via een aanboorkraan, verbindt de afvoerslang met de afvoer en installeert een aparte osmose-kraan op het aanrecht. Totale installatietijd: 30 tot 90 minuten. Voor een 4-in-1 kraan met RO is installatie door een installateur aanbevolen: er komen twee apparaten onder de spoelbak die elk een stopcontact nodig hebben. PureAqua biedt installatie aan voor 299 euro.',
   },
   {
     question: 'Wat zijn de totale kosten van een osmosefilter over 5 jaar?',
@@ -62,27 +62,28 @@ const top5 = [
     rang: 1,
     naam: '4-in-1 kraan met geïntegreerde RO',
     type: '4-in-1 kraan met geïntegreerd RO',
-    prijs: '€ 699 – 899',
-    filterstadia: 5,
+    prijs: '€ 1.948',
+    filterstadia: 3,
     membraantype: 'TFC Polyamide RO',
-    tankCapaciteit: '2,5 liter boiler + RO-reservoir',
+    tankCapaciteit: '2,3 liter heetwatertank + koelunit',
     afvalwaterRatio: '1:1 (met permeaatpomp)',
     jaarlijkseKosten: '€ 80 – 150',
     garantie: '5 jaar',
     highlight: true,
     pros: [
-      'Alles-in-één: osmose + kokend + koud + warm + bruisend',
-      'Geen losse waterkoker of bruisend water-abo meer',
-      'Eén jaarlijkse filterwissel voor het complete systeem',
-      'Zelf te installeren (1–2 uur)',
-      '5 jaar garantie — langste in de vergelijking',
+      'Alles-in-één: osmose + zeer heet (circa 96 graden) + gekoeld + warm + koud',
+      'Geen losse waterkoker of kan in de koelkast meer',
+      'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar',
+      'SGS-labtest op een nieuw systeem: PFOS meer dan 99,6%, PFOA 99,5% en lood meer dan 99,8% minder',
+      'Remineralisatie na de osmose en lekdetectie',
     ],
     cons: [
-      'Hogere aanschafprijs dan losse osmose-systemen',
-      'Vereist elektrische aansluiting (WCD) naast waterkraan',
+      'Hogere aanschafprijs dan losse osmose-systemen (1.948 euro)',
+      'Twee apparaten onder de spoelbak en twee stopcontacten; installateur aanbevolen (PureAqua: 299 euro)',
+      'Geen bruisend water',
     ],
     oordeel:
-      'Een 4-in-1 kraan met geïntegreerde RO is de beste keuze voor wie een complete keukenwateroplossing wil. Het combineert de hoogste filterkwaliteit (RO) met alle waterfuncties die een moderne keuken nodig heeft. De aanschafprijs is hoger dan een puur under-sink systeem, maar op 3–5 jaar totale kosten is het concurrerend doordat je de waterkoker (€30–70/jr energie) en flessenwater bruisend (€100–200/jr) vervangt.',
+      'Volgens ons is de PureAqua 4-in-1 kraan met geïntegreerde RO de beste keuze voor wie een complete keukenwateroplossing wil. Hij combineert omgekeerde osmose met zeer heet en gekoeld water uit één kraan. De aanschafprijs is duidelijk hoger dan een puur under-sink systeem; daar staat tegenover dat je geen waterkoker en geen flessenwater meer nodig hebt. Bruisend water zit er niet op.',
   },
   {
     rang: 2,
@@ -197,7 +198,7 @@ const onderdelenVergelijking = [
   },
   {
     onderdeel: 'Filterstadia',
-    pureaqua: '5 (+ boiler)',
+    pureaqua: '3 (+ heet-/koelunit)',
     apec: '5',
     ispring: '6 (+ remin.)',
     aquamedic: '4',
@@ -205,7 +206,7 @@ const onderdelenVergelijking = [
   },
   {
     onderdeel: 'Tankcapaciteit',
-    pureaqua: '2,5L boiler',
+    pureaqua: '2,3L heetwatertank',
     apec: '3,2L drukvat',
     ispring: '3,2L drukvat',
     aquamedic: '3L drukvat',
@@ -229,7 +230,7 @@ const onderdelenVergelijking = [
   },
   {
     onderdeel: 'Kokend water',
-    pureaqua: 'Ja (100°C)',
+    pureaqua: 'Zeer heet (circa 96 graden)',
     apec: 'Nee',
     ispring: 'Nee',
     aquamedic: 'Nee',
@@ -240,13 +241,13 @@ const onderdelenVergelijking = [
 const tco5jaar = [
   {
     systeem: '4-in-1 kraan met RO',
-    aanschaf: '€ 799',
+    aanschaf: '€ 1.948',
     jr1: '€ 100',
-    jr2: '€ 100',
-    jr3: '€ 180',
-    jr4: '€ 100',
-    jr5: '€ 180',
-    totaal: '€ 1.459',
+    jr2: '€ 180',
+    jr3: '€ 100',
+    jr4: '€ 180',
+    jr5: '€ 100',
+    totaal: '€ 2.608',
   },
   {
     systeem: 'APEC ROES-50',
@@ -618,7 +619,7 @@ export default function BesteOsmosefilter2026Page() {
                 profiel: 'Gezin dat alles in één kraan wil',
                 aanbeveling: '4-in-1 kraan met RO',
                 reden:
-                  'Één systeem voor osmose-drinkwater, kokend water (thee, koffie, pasta), bruisend water en warm. Vervangt waterkoker en flessenwater. De hogere investering verdient zich terug.',
+                  'Één systeem voor osmose-drinkwater, zeer heet water (thee, koffie, pasta), gekoeld water en warm. Vervangt waterkoker en flessenwater. Geen bruisend water; de investering is duidelijk hoger dan een losse osmosefilter.',
               },
               {
                 profiel: 'Budgetbewust gezin, alleen schoon drinkwater',
@@ -713,11 +714,12 @@ export default function BesteOsmosefilter2026Page() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-3">
-            Jaar 3 en 5 zijn hoger vanwege membraanvervanging (€60–100). Bij de 4-in-1 kraan met RO zijn jaar 3/5 hoger vanwege membraan + boilerservice. Flessenwater: 0,5L per persoon per dag × 4 personen × €0,69 gemiddeld.
+            Jaar 3 en 5 zijn hoger vanwege membraanvervanging (€60–100). Bij de 4-in-1 kraan met RO zijn jaar 2 en 4 hoger vanwege de membraanwissel (circa elke twee jaar). Flessenwater: 0,5L per persoon per dag × 4 personen × €0,69 gemiddeld.
           </p>
           <p className="text-gray-700 mt-4 leading-relaxed">
-            Zelfs het duurste osmose-systeem (de 4-in-1 kraan met RO, €1.459 over 5 jaar) is aanzienlijk goedkoper dan
-            flessenwater (€2.500 over 5 jaar). De Aqua Medic Easy Line is het meest economisch over 5 jaar met
+            Het duurste osmose-systeem (de 4-in-1 kraan met RO, €2.608 over 5 jaar) kost ongeveer evenveel als
+            flessenwater (€2.500 over 5 jaar), maar geeft ook zeer heet en gekoeld water. De losse osmose-systemen zijn
+            aanzienlijk goedkoper dan flessenwater. De Aqua Medic Easy Line is het meest economisch over 5 jaar met
             €620 totaal. Wil je meer weten over de waterhardheid in jouw regio — een factor die de
             filterlevensduur beïnvloedt? Bekijk de{' '}
             <Link href="/waterhardheid" className="text-[#005F8A] underline hover:no-underline">

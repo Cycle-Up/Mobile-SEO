@@ -18,7 +18,7 @@ const faqSchema = {
       name: 'Welke drinkwaterfontein is het beste voor thuis?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Voor de meeste gezinnen is een compact tafelmodel of POU onderbouwmodel de beste keuze. Het tafelmodel is eenvoudig te installeren en filtert en koelt het leidingwater direct. Voor hogere kwaliteitseisen (PFAS, nitraten, kalk) is een POU onderbouwmodel met RO-filter de beste optie. Als u ook warm of bruisend water wilt, dan is een 4-in-1 osmosekraan de meest complete oplossing, al is de aanschafprijs hoger (€500-1.200).',
+        text: 'Voor de meeste gezinnen is een compact tafelmodel of POU onderbouwmodel de beste keuze. Het tafelmodel is eenvoudig te installeren en filtert en koelt het leidingwater direct. Voor hogere kwaliteitseisen (PFAS, nitraten, kalk) is een POU onderbouwmodel met RO-filter de beste optie. Als u ook zeer heet water wilt, dan is een 4-in-1 osmosekraan de meest complete oplossing, al is de aanschafprijs hoger (PureAqua 4-in-1 kraan: €1.948). Die geeft geen bruisend water.',
       },
     },
     {
@@ -42,7 +42,7 @@ const faqSchema = {
       name: 'Kan ik ook bruisend water uit een thuisfontein halen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Sommige tafelmodellen en onderbouwmodellen zijn voorzien van een CO2-carbonatatiefunctie. U sluit een CO2-cartridge aan en het apparaat voegt CO2 toe aan het water voordat het wordt getapt. Een CO2-cartridge van 60 gram (huishoudformaat) levert circa 60 liter bruisend water voor €5-10. Alternatief is de 4-in-1 osmosekraan die ook bruisend water levert via een aparte CO2-aansluiting.',
+        text: 'Ja. Sommige tafelmodellen en onderbouwmodellen zijn voorzien van een CO2-carbonatatiefunctie. U sluit een CO2-cartridge aan en het apparaat voegt CO2 toe aan het water voordat het wordt getapt. Een CO2-cartridge van 60 gram (huishoudformaat) levert circa 60 liter bruisend water voor €5-10. Een kraan met CO2-functie, zoals de Quooker CUBE, is een ander alternatief. De PureAqua 4-in-1 osmosekraan heeft geen bruisfunctie.',
       },
     },
     {
@@ -58,7 +58,7 @@ const faqSchema = {
       name: 'Wat is het verschil tussen een drinkwaterfontein en een kokend water kraan?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Een drinkwaterfontein levert gefilterd, gekoeld water (en soms warm water). Een kokend water kraan levert water van 100 graden voor thee, koffie en koken, en combineert dit vaak met koud en warm kraanwater. De 4-in-1 osmosekraan combineert beide functies: koud, warm, kokend en bruisend water uit een kraan. Als u uitsluitend gekoeld drinkwater wilt, is een fontein de eenvoudigste oplossing. Als u ook kokend water nodig heeft, is een 4-in-1 kraan de meest complete keuze.',
+        text: 'Een drinkwaterfontein levert gefilterd, gekoeld water (en soms warm water). Een kokend water kraan levert kokend water voor thee, koffie en koken, en combineert dit vaak met koud en warm kraanwater. De 4-in-1 osmosekraan combineert beide functies: gekoeld, zeer heet (circa 96 graden) en osmose-gezuiverd water plus gewoon warm en koud water uit een kraan, zonder bruisend water. Als u uitsluitend gekoeld drinkwater wilt, is een fontein de eenvoudigste oplossing. Als u ook kokend water nodig heeft, is een 4-in-1 kraan de meest complete keuze.',
       },
     },
     {
@@ -115,7 +115,7 @@ export default function DrinkwaterfonteinThuisPage() {
           Drinkwaterfontein voor thuis: gekoeld gefilterd water altijd klaar
         </h1>
 
-        <QuickAnswer answer="Een drinkwaterfontein voor thuis filtert en koelt uw leidingwater tot 4-12 graden. Compact tafelmodel vanaf €150, POU onderbouwmodel met RO-filter €300-700, 4-in-1 osmosekraan €500-1.200. Goedkoper dan flessenwater: break-even doorgaans binnen 6-12 maanden bij een gezin van vier personen." />
+        <QuickAnswer answer="Een drinkwaterfontein voor thuis filtert en koelt uw leidingwater tot 4-12 graden. Compact tafelmodel vanaf €150, POU onderbouwmodel met RO-filter €300-700, 4-in-1 osmosekraan €1.948. Goedkoper dan flessenwater: break-even doorgaans binnen 6-12 maanden bij een gezin van vier personen." />
 
         <CTABanner context="osmose" />
 
@@ -175,15 +175,15 @@ export default function DrinkwaterfonteinThuisPage() {
               <span className="bg-[#003F5C] text-white text-xs font-bold px-2 py-1 rounded-full">3</span>
               <h3 className="font-semibold text-[#003F5C] text-lg">4-in-1 osmosekraan</h3>
               <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">Meest compleet</span>
-              <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-semibold">&euro;500-1.200</span>
+              <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-semibold">&euro;1.948</span>
             </div>
             <p className="text-gray-700 text-sm mb-3">
-              Combineert koud gefilterd, warm, kokend (100&deg;C) en bruisend water via een enkele kraan met RO-filtratie. Geintegreerd RO-systeem verwijdert kalk, PFAS, nitraten, zware metalen. Aparte boiler voor kokend water (vergelijkbaar met Quooker). Duurste optie, maar meest veelzijdig voor gezinnen die ook thee, koffie en bruisend water willen.
+              Combineert gekoeld (circa 5&deg;C), zeer heet (circa 96&deg;C) en osmose-gezuiverd water plus gewoon warm en koud water via een enkele kraan. De PureAqua 4-in-1 kraan filtert in drie stappen (voorfilter, osmosemembraan, remineralisatie); een SGS-labtest op een nieuw systeem mat voor PFOS meer dan 99,6%, voor PFOA 99,5% en voor lood meer dan 99,8% minder. Onder de spoelbak staan een heet-/koelunit en een osmose-unit. Duurste optie, maar meest veelzijdig voor gezinnen die ook thee en koffie willen zetten. Bruisend water zit er niet op.
             </p>
             <ul className="text-sm text-gray-600 space-y-1 list-disc pl-5">
-              <li>Koud + warm + kokend + bruisend uit 1 kraan</li>
-              <li>RO-filter: 90-99% verwijdering verontreinigingen</li>
-              <li>Inclusief CO2-aansluiting voor bruisend water</li>
+              <li>Gekoeld + zeer heet + gezuiverd + warm + koud uit 1 kraan</li>
+              <li>Omgekeerde osmose in drie stappen</li>
+              <li>Geen CO2-aansluiting: geen bruisend water</li>
               <li>Vervangt bestaande keukenkraan</li>
             </ul>
           </div>
@@ -234,7 +234,7 @@ export default function DrinkwaterfonteinThuisPage() {
               </tr>
               <tr>
                 <td className="border border-gray-300 px-3 py-2">4-in-1 osmosekraan</td>
-                <td className="border border-gray-300 px-3 py-2">&euro;800</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;1.948</td>
                 <td className="border border-gray-300 px-3 py-2">&euro;80 (filter)</td>
                 <td className="border border-gray-300 px-3 py-2">Onbeperkt</td>
               </tr>

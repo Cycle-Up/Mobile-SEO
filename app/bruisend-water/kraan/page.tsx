@@ -14,23 +14,23 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     q: 'Welke bruisend waterkraan is het beste?',
-    a: 'Voor de meeste huishoudens is de PureAqua Pro 4-in-1 de beste prijs-kwaliteitskeuze: ingebouwde RO-osmosefiltratie (verwijdert PFAS, lood, nitraten), alle vier functies (kokend, koud, gefilterd, bruisend) en een prijs van €800–1.500. De Quooker CUBE is premium in design en betrouwbaarheid maar duurder (€2.500–3.200) en heeft geen osmosefiltratie standaard. De Grohe Blue heeft geen kokendwaterfunctie.',
+    a: 'Wil je kokend en bruisend water uit één kraan, dan is volgens ons de Quooker Flex PRO3 met CUBE de meest complete keuze (bij PureAqua €2.240, september 2026). Die filtert met actieve kool, niet met osmose. Zonder kokend water is de Grohe Blue Home Duo een goedkopere optie. De PureAqua 4-in-1 kraan (€1.948) heeft geen bruisfunctie, maar is een alternatief voor wie zeer heet, gekoeld en osmose-gezuiverd water belangrijker vindt dan bubbels, eventueel samen met een losse SodaStream.',
   },
   {
     q: 'Wat kost een 4-in-1 waterkraan?',
-    a: 'Een 4-in-1 bruisend waterkraan kost aanschaf €700–3.200 afhankelijk van het merk en model. Quooker CUBE: €2.500–3.200 (excl. installatie). Zip HydroTap Arc: €2.000–3.000. PureAqua Pro: €800–1.500. Grohe Blue Home Duo: €700–1.200 (geen kokend water). Installatie door een loodgieter kost doorgaans €150–300 extra. Jaarlijkse onderhoudskosten (filter, CO2): €80–150.',
+    a: 'Een 4-in-1 bruisend waterkraan kost aanschaf €700–3.200 afhankelijk van het merk en model. Quooker Flex PRO3 met CUBE: €2.240 (PureAqua-prijs, september 2026). Zip HydroTap Arc: €2.000–3.000. Grohe Blue Home Duo: €700–1.200 (geen kokend water). De PureAqua 4-in-1 kraan (€1.948) geeft zeer heet, gekoeld en osmose-gezuiverd water, maar geen bubbels. Installatie door een loodgieter kost doorgaans €150–300 extra. Jaarlijkse onderhoudskosten (filter, CO2): €80–150.',
   },
   {
     q: 'Hoe lang gaat een CO2-cilinder mee in een waterkraan?',
-    a: 'Een standaard 60L CO2-cilinder (zoals de SodaStream-cilinder) gaat mee voor 60 liter bruisend water. Bij een gezin van 4 personen dat dagelijks circa 500 ml bruisend water per persoon drinkt (2 liter/dag), duurt een cilinder circa 30 dagen. Bij de meeste 4-in-1 kranen (Quooker CUBE, PureAqua) wordt een 60L cilinder gebruikt die u kunt omruilen bij de supermarkt of fabrikant.',
+    a: 'Een standaard 60L CO2-cilinder (zoals de SodaStream-cilinder) gaat mee voor 60 liter bruisend water. Bij een gezin van 4 personen dat dagelijks circa 500 ml bruisend water per persoon drinkt (2 liter/dag), duurt een cilinder circa 30 dagen. Bij de meeste bruisend waterkranen (zoals Quooker CUBE) wordt een 60L cilinder gebruikt die u kunt omruilen bij de supermarkt of fabrikant.',
   },
   {
-    q: 'Is een Quooker beter dan een PureAqua bruisend waterkraan?',
-    a: 'Dat hangt af van uw prioriteiten. Quooker CUBE: uitstekend design, bewezen betrouwbaarheid, sterk merk, €2.500–3.200, geen ingebouwde osmosefiltratie. PureAqua Pro: ingebouwde RO-osmosefiltratie (verwijdert PFAS, lood, nitraten), lagere aanschafprijs €800–1.500, minder premium uitstraling. Als waterkwaliteit (PFAS-zone, loodleidingen) een issue is, wint PureAqua. Voor luxe keuken en designprioriteit: Quooker.',
+    q: 'Is een Quooker CUBE beter dan de PureAqua 4-in-1 kraan?',
+    a: 'Dat hangt af van uw prioriteiten. Quooker Flex PRO3 met CUBE: kokend, gekoeld en bruisend water, actieve kool, sterk merk, bij PureAqua €2.240. PureAqua 4-in-1 kraan: omgekeerde osmose in drie stappen, zeer heet (circa 96 graden) en gekoeld water, €1.948, maar geen bubbels. Wilt u bruisend water uit de kraan, kies dan de Quooker. Staat waterkwaliteit (PFAS-zone, loodleidingen) voorop, dan past de PureAqua 4-in-1 beter, eventueel met een losse SodaStream.',
   },
   {
     q: 'Filtert een bruisend waterkraan ook het water?',
-    a: 'Dit verschilt per model. Grohe Blue en Quooker CUBE gebruiken een koolstoffilter (verwijdert chloor en geur, deels lood). PureAqua Pro gebruikt een volledig RO-osmose membraan (verwijdert PFAS, lood, nitraten, bacterien, medicijnresten voor 95–99%). Zip HydroTap gebruikt koolstof + UV. Als u in een PFAS-zone woont of een oud huis heeft met loodleidingen, kiest u voor een model met osmosefiltratie.',
+    a: 'Dit verschilt per model. Grohe Blue en Quooker CUBE gebruiken een koolstoffilter (verwijdert chloor en geur, deels lood). Zip HydroTap gebruikt koolstof + UV. De PureAqua 4-in-1 kraan heeft geen bruisfunctie, maar gebruikt omgekeerde osmose in drie stappen; een SGS-test op een nieuw systeem mat PFOS meer dan 99,6%, PFOA 99,5% en lood meer dan 99,8% minder. Als u in een PFAS-zone woont of een oud huis heeft met loodleidingen, kiest u voor osmosefiltratie en voegt u bubbels eventueel toe met een losse SodaStream.',
   },
   {
     q: 'Kan ik een bruisend waterkraan in een huurwoning installeren?',
@@ -57,7 +57,7 @@ const articleSchema = {
   description:
     'Een bruisend waterkraan geeft kokend, koud, gefilterd en bruisend water uit 1 kraan. Vergelijking van 4-in-1 kraanmodellen.',
   datePublished: '2026-05-01',
-  dateModified: '2026-05-01',
+  dateModified: '2026-09-24',
   url: 'https://waterfilterplatform.nl/bruisend-water/kraan',
   publisher: {
     '@type': 'Organization',
@@ -100,7 +100,7 @@ export default function BruisendWaterKraanPage() {
           </p>
         </div>
 
-        <QuickAnswer answer="Een 4-in-1 bruisend waterkraan geeft kokend (100&deg;C), koud gefilterd en bruisend water uit &eacute;&eacute;n kraan. Topmodellen: Quooker CUBE (&euro;2.500&ndash;3.200, koolstoffilter), PureAqua Pro (&euro;800&ndash;1.500, RO-osmose), Grohe Blue Duo (&euro;700&ndash;1.200, geen kokend). Voor PFAS-zones: kies model met osmosefiltratie. Jaarlijkse CO2+filterkosten: &euro;80&ndash;150." />
+        <QuickAnswer answer="Een 4-in-1 bruisend waterkraan geeft kokend (100&deg;C), koud gefilterd en bruisend water uit &eacute;&eacute;n kraan. Topmodellen: Quooker Flex PRO3 met CUBE (&euro;2.240, koolstoffilter), Zip HydroTap Arc (&euro;2.000&ndash;3.000), Grohe Blue Duo (&euro;700&ndash;1.200, geen kokend). Voor PFAS-zones: kies osmosefiltratie. De PureAqua 4-in-1 kraan (&euro;1.948) heeft osmose maar geen bruisfunctie; combineer die eventueel met een SodaStream. Jaarlijkse CO2+filterkosten: &euro;80&ndash;150." />
 
         <CTABanner context="osmose" />
 
@@ -114,10 +114,10 @@ export default function BruisendWaterKraanPage() {
           <li><strong>Boiler</strong>: geeft kokend water op 100&deg;C, thermisch gesoleerd om standby-warmteverlies te minimaliseren</li>
           <li><strong>Chiller</strong>: koelt water tot 4&ndash;8&deg;C voor koud gefilterd drinkwater</li>
           <li><strong>CO2-tank</strong>: carboniseert het gekoelde gefilterde water tot bruisend water</li>
-          <li><strong>Waterfilter</strong>: actief kool (basis) of RO-osmose (premium) zuivert het water voor de chiller en CO2-lijn</li>
+          <li><strong>Waterfilter</strong>: meestal actief kool, soms aangevuld met UV, zuivert het water voor de chiller en CO2-lijn</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Met een handgreepbeweging of knop op de kraan selecteert u de gewenste watersoort. Sommige modellen (Zip HydroTap, PureAqua) werken met een drukknop per functie; andere (Quooker) gebruiken een push-en-draai veiligheidssysteem voor het kokende water.
+          Met een handgreepbeweging of knop op de kraan selecteert u de gewenste watersoort. Sommige modellen (zoals Zip HydroTap) werken met een drukknop per functie; andere (Quooker) gebruiken een push-en-draai veiligheidssysteem voor het kokende water.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -140,7 +140,7 @@ export default function BruisendWaterKraanPage() {
               <tr>
                 <td className="border border-gray-300 px-3 py-2 font-medium">Quooker</td>
                 <td className="border border-gray-300 px-3 py-2">CUBE</td>
-                <td className="border border-gray-300 px-3 py-2">&euro;2.500&ndash;3.200</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;2.240 (Flex PRO3 + CUBE)</td>
                 <td className="border border-gray-300 px-3 py-2">Kokend+koud+bruisend</td>
                 <td className="border border-gray-300 px-3 py-2">Actief kool</td>
                 <td className="border border-gray-300 px-3 py-2">60L cilinder</td>
@@ -163,11 +163,11 @@ export default function BruisendWaterKraanPage() {
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2 font-medium">PureAqua</td>
-                <td className="border border-gray-300 px-3 py-2">4-in-1 Pro</td>
-                <td className="border border-gray-300 px-3 py-2">&euro;800&ndash;1.500</td>
-                <td className="border border-gray-300 px-3 py-2">Kokend+koud+gefilterd+bruisend</td>
-                <td className="border border-gray-300 px-3 py-2">RO-osmose</td>
-                <td className="border border-gray-300 px-3 py-2">60L</td>
+                <td className="border border-gray-300 px-3 py-2">4-in-1 kraan</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;1.948</td>
+                <td className="border border-gray-300 px-3 py-2">Zeer heet (circa 96&deg;C)+gekoeld+gezuiverd, geen bubbels</td>
+                <td className="border border-gray-300 px-3 py-2">RO-osmose (3 stappen)</td>
+                <td className="border border-gray-300 px-3 py-2">Geen</td>
               </tr>
             </tbody>
           </table>
@@ -180,7 +180,7 @@ export default function BruisendWaterKraanPage() {
           De Quooker CUBE is het meest verkochte premium model in Nederland. Sterke punten: uitstekend design, bewezen betrouwbaarheid na jaren op de markt, sterk servicenetwerk. Beperkingen: de standaard CUBE-filter is een koolstoffilter, geen osmosefiltratie. Voor PFAS-verwijdering of bij loodleidingen is een externe osmoseunit nodig (extra kosten).
         </p>
         <p className="text-gray-700 mb-6">
-          De PureAqua Pro heeft ingebouwde RO-osmosefiltratie die PFAS, lood, nitraten, medicijnresten en bacterien voor 95&ndash;99% verwijdert. De aanschafprijs is &euro;800&ndash;1.500 lager dan de Quooker. Nadeel: minder bekende merknaam en kleiner servicenetwerk. Als waterkwaliteit prioriteit heeft (u woont in PFAS-zone of heeft een oud huis), is PureAqua de betere keuze.
+          Bruisend water geeft de PureAqua 4-in-1 kraan niet. Hij geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, met omgekeerde osmose in drie stappen. Een SGS-labtest op een nieuw systeem mat voor PFOS meer dan 99,6%, voor PFOA 99,5% en voor lood meer dan 99,8% minder. De prijs is &euro;1.948, circa &euro;300 minder dan een Quooker Flex PRO3 met CUBE bij PureAqua (&euro;2.240). Wilt u bubbels uit de kraan, dan is de Quooker CUBE de logische keuze. Vindt u gekoeld, zeer heet en gezuiverd water belangrijker dan bubbels, dan is de PureAqua 4-in-1 een alternatief, eventueel met een losse SodaStream.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

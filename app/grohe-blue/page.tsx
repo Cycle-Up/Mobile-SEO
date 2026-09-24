@@ -47,7 +47,7 @@ const faqItems = [
   {
     question: 'Is de Grohe Blue een goede keuze?',
     answer:
-      'Voor wie gekoeld en bruisend gefilterd water uit de kraan wil met een premium uitstraling, is de Grohe Blue sterk. Houd rekening met de lopende kosten van filters en CO2. Wil je ook kokend water of een bredere filtering, of een lagere totaalprijs, vergelijk dan met een 4-in-1 osmosekraan.',
+      'Voor wie gekoeld en bruisend gefilterd water uit de kraan wil met een premium uitstraling, is de Grohe Blue sterk. Houd rekening met de lopende kosten van filters en CO2. Wil je ook zeer heet water of een bredere filtering en kun je bubbels missen, vergelijk dan met een 4-in-1 osmosekraan.',
   },
 ];
 
@@ -123,7 +123,7 @@ export default function GroheBluePage() {
 
         <QuickAnswer
           question="Wat moet je weten over de Grohe Blue?"
-          answer="De Grohe Blue is een keukenkraan voor gefilterd water; de Home-uitvoering levert ook gekoeld en bruisend water via een koeler en CO2-cilinder onder het aanrecht. Hij gebruikt een filterpatroon (actieve kool, soms met magnesium), geen osmosefilter. De aanschaf ligt indicatief tussen 800 en 1.800 euro exclusief installatie, met lopende kosten voor filters en CO2. Sterk voor wie gekoeld bruisend gefilterd water wil; voor kokend water, bredere filtering of een lagere prijs is een 4-in-1 osmosekraan het overwegen waard."
+          answer="De Grohe Blue is een keukenkraan voor gefilterd water; de Home-uitvoering levert ook gekoeld en bruisend water via een koeler en CO2-cilinder onder het aanrecht. Hij gebruikt een filterpatroon (actieve kool, soms met magnesium), geen osmosefilter. De aanschaf ligt indicatief tussen 800 en 1.800 euro exclusief installatie, met lopende kosten voor filters en CO2. Sterk voor wie gekoeld bruisend gefilterd water wil; voor zeer heet water en bredere filtering, zonder bubbels, is een 4-in-1 osmosekraan het overwegen waard."
         />
 
         <section>
@@ -177,9 +177,9 @@ export default function GroheBluePage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Grohe Blue versus een 4-in-1 osmosekraan</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De Grohe Blue is sterk in gekoeld en bruisend gefilterd water. Wil je daarnaast kokend water of
-            een bredere filtering, dan biedt een 4-in-1 kraan met ingebouwd osmosefilter vaak een completer
-            pakket: kokend, koud gefilterd, warm en bruisend water uit een kraan, inclusief een{' '}
+            De Grohe Blue is sterk in gekoeld en bruisend gefilterd water. Wil je daarnaast zeer heet water of
+            een bredere filtering, dan biedt een 4-in-1 kraan met ingebouwd osmosefilter een ander
+            pakket: zeer heet (circa 96 graden), gekoeld en gezuiverd water plus gewoon warm en koud, maar geen bruisend water. De PureAqua 4-in-1 kraan kost 1.948 euro, inclusief een{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose installatie</Link>.
             De volledige afweging lees je op{' '}
             <Link href="/grohe-blue-alternatief" className="text-[#005F8A] underline">Grohe Blue alternatief</Link>.

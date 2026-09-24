@@ -53,12 +53,12 @@ const faqItems = [
   {
     question: 'Kan ik een 4-in-1 kraan zelf installeren?',
     answer:
-      'Gedeeltelijk. Het mechanische deel (wateraansluiting, filter plaatsen) is in principe doe-het-zelf. De elektrische aansluiting van de boiler (230 V) moet echter worden uitgevoerd door een gecertificeerd elektricien of installateur, conform de Nederlandse Bouwnorm NEN 1010.',
+      'Gedeeltelijk. Het mechanische deel (wateraansluiting, filter plaatsen) is in principe doe-het-zelf. De elektrische aansluiting van de boiler (230 V) moet echter worden uitgevoerd door een gecertificeerd elektricien of installateur, conform de Nederlandse Bouwnorm NEN 1010. Bij de PureAqua 4-in-1 kraan (twee apparaten en twee stopcontacten onder de spoelbak) is installatie door een installateur aanbevolen; PureAqua biedt dat aan voor 299 euro.',
   },
   {
     question: 'Wat kost een 4-in-1 kraan per jaar aan onderhoud?',
     answer:
-      'Bij een 4-in-1 systeem met RO-filtratie bestaat het onderhoud uit één jaarlijkse filterwissel van het complete filterpakket. Kosten: €60–100 per jaar voor verbruiksfilters. Geen losse koolstofpatronen, geen apart membraanwissel — alles in één handeling. Dit is significant eenvoudiger dan een losstaand RO-systeem met meerdere filterstappen.',
+      'Bij de PureAqua 4-in-1 kraan met RO-filtratie vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar (of eerder bij hoog gebruik). Reken op circa €60–100 per jaar voor verbruiksfilters. Omdat het hete water al osmose-gezuiverd is, hoeft de boiler niet ontkalkt te worden.',
   },
 ];
 
@@ -86,9 +86,9 @@ const vergelijkingTypes = [
   },
   {
     type: '4-in-1 + RO',
-    functies: 'Kokend + koud + warm + heet + gefilterd',
+    functies: 'Zeer heet (circa 96 °C) + gekoeld + gezuiverd + warm + koud',
     filtratie: 'RO ingebouwd',
-    prijs: '€ 799–1.499',
+    prijs: '€ 1.948 (PureAqua)',
     ideaal: 'Complete wateroplossing thuis',
   },
 ];
@@ -302,15 +302,15 @@ export default function KokendWaterKraan4In1Page() {
                 },
                 {
                   kenmerk: 'Je wilt altijd gefilterd water',
-                  detail: 'Alle vier functies gefilterd via osmose membraan — geen aparte kraantje of kan nodig.',
+                  detail: 'Heet, gekoeld en kamertemperatuur drinkwater gefilterd via osmose, zonder apart kraantje of kan.',
                 },
                 {
-                  kenmerk: 'Eenvoudig onderhoud',
-                  detail: 'Één jaarlijkse filterwissel voor het complete systeem — geen losse patronen per fase.',
+                  kenmerk: 'Voorspelbaar onderhoud',
+                  detail: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar; geen ontkalken.',
                 },
                 {
                   kenmerk: 'Geen waterkoker meer',
-                  detail: 'Instant kokend water elimineert de waterkoker van het aanrecht.',
+                  detail: 'Zeer heet water (circa 96 °C) direct uit de kraan vervangt de waterkoker op het aanrecht.',
                 },
               ].map(k => (
                 <div key={k.kenmerk} className="flex gap-2 items-start">
@@ -338,19 +338,18 @@ export default function KokendWaterKraan4In1Page() {
             <div>
               <p className="font-semibold text-[#003F5C] mb-2 text-sm">Installatievereisten</p>
               <ul className="text-sm text-gray-600 space-y-1 list-disc list-inside">
-                <li>Geaard stopcontact onder aanrecht (230V)</li>
+                <li>Geaard stopcontact onder aanrecht (230V); bij de PureAqua 4-in-1 twee stuks</li>
                 <li>Aansluiting op koudwaterleiding</li>
                 <li>Afvoeraansluiting voor RO-spoelwater</li>
                 <li>Gat in aanrecht voor de kraan (∅ 35–38 mm)</li>
-                <li>Minimale kastruimte: 30 × 30 × 40 cm</li>
+                <li>Kastruimte voor twee apparaten (PureAqua 4-in-1: circa 23 × 44 × 40 cm en 15 × 38 × 47 cm)</li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold text-[#003F5C] mb-2 text-sm">Jaarlijks onderhoud</p>
+              <p className="font-semibold text-[#003F5C] mb-2 text-sm">Onderhoud</p>
               <ul className="text-sm text-gray-600 space-y-1 list-disc list-inside">
-                <li>Één filterwissel (alles-in-één patroon)</li>
-                <li>Duur: circa 15 minuten doe-het-zelf</li>
-                <li>Geen losse patronen, geen gereedschap nodig</li>
+                <li>Voorfilter en remineralisatiefilter circa jaarlijks</li>
+                <li>Osmosemembraan circa elke twee jaar</li>
                 <li>Geen ontkalkingsbeurt dankzij RO-water</li>
                 <li>Kosten filter: €60–100 per jaar</li>
               </ul>
@@ -383,7 +382,7 @@ export default function KokendWaterKraan4In1Page() {
                 <tr className="border-b border-gray-100">
                   <td className="py-2.5 px-3">Aanschaf</td>
                   <td className="py-2.5 px-3 text-right">€ 30–150</td>
-                  <td className="py-2.5 px-3 text-right">€ 799–1.299</td>
+                  <td className="py-2.5 px-3 text-right">€ 1.948</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-2.5 px-3">Flessenwater (gezin)</td>
@@ -403,15 +402,15 @@ export default function KokendWaterKraan4In1Page() {
                 <tr className="bg-[#E0F2FE] font-semibold">
                   <td className="py-2.5 px-3">Totaal na 5 jaar</td>
                   <td className="py-2.5 px-3 text-right">€ 2.200–3.300</td>
-                  <td className="py-2.5 px-3 text-right text-[#005F8A]">€ 1.100–1.800</td>
+                  <td className="py-2.5 px-3 text-right text-[#005F8A]">€ 2.250–2.450</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-sm text-gray-600 mt-3 leading-relaxed">
             Bij een gezin dat flessenwater drinkt, is de terugverdientijd van een 4-in-1+RO
-            systeem doorgaans 2 tot 3 jaar. Daarna is het jaarlijkse kostenvoordeel
-            €300–€500 ten opzichte van de flessenwater + waterkoker combinatie.
+            systeem (PureAqua: € 1.948, installatie optioneel € 299) in dit rekenvoorbeeld circa 3,5 tot 5 jaar.
+            Daarna is het jaarlijkse kostenvoordeel circa €350–€550 ten opzichte van de flessenwater + waterkoker combinatie.
           </p>
         </section>
 
