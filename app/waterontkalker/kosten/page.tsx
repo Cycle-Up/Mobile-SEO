@@ -92,12 +92,12 @@ const tcoTabel = [
   },
   {
     optie: 'Osmose 4-in-1 (drinkwater)',
-    aanschaf: '€850',
-    installatie: '€150',
+    aanschaf: '€1.948',
+    installatie: '€299',
     zoutJaar: '€0',
     onderhoudJaar: '€150',
-    tco5: '€1.750',
-    tco10: '€2.500',
+    tco5: '€2.997',
+    tco10: '€3.747',
   },
   {
     optie: 'Niets doen (kalkschade)',

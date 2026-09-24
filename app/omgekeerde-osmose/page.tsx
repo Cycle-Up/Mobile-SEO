@@ -8,6 +8,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { OsmoseIllustration } from '@/components/OsmoseIllustration';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { CountertopCTA } from '@/components/CountertopCTA';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 
 export const metadata: Metadata = {
   title: 'Wat is omgekeerde osmose? Uitleg & RO filter kopen 2026',
@@ -47,7 +48,7 @@ const faqItems = [
   {
     question: 'Hoe vaak moet ik de filters vervangen?',
     answer:
-      'Een vuistregel: sediment- en koolstof voorfilters elke 6–12 maanden, het RO-membraan elke 2–3 jaar, en de post-koolstof na 12 maanden. Hard water of veel sediment in het leidingnet kan deze intervallen verkorten. Een complete 4-in-1 kraan met osmose heeft één jaarlijkse filterwissel.',
+      'Een vuistregel: sediment- en koolstof voorfilters elke 6–12 maanden, het RO-membraan elke 2–3 jaar, en de post-koolstof na 12 maanden. Hard water of veel sediment in het leidingnet kan deze intervallen verkorten. Bij een 4-in-1 kraan met osmose zoals de PureAqua 4-in-1 vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar.',
   },
   {
     question: 'Wat is het verschil tussen omgekeerde osmose en een Brita filterkan?',
@@ -254,6 +255,8 @@ export default function OmgekeerdeOsmosePage() {
         </section>
 
         {/* Wat is omgekeerde osmose */}
+        <ThreeWayRecommendation content="omgekeerde-osmose-3weg-aanbeveling" />
+
         <section id="wat-is">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is omgekeerde osmose?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
@@ -732,8 +735,8 @@ export default function OmgekeerdeOsmosePage() {
             ))}
           </div>
           <p className="text-gray-700 mt-4 leading-relaxed">
-            Bij een geïntegreerd 4-in-1 systeem met osmose combineer je alles in
-            één jaarlijkse filterwissel — geen losse patronen meer. Lees meer over deze optie op
+            Bij een geïntegreerd 4-in-1 systeem met osmose wissel je voorfilter en remineralisatiefilter
+            circa jaarlijks en het membraan circa elke twee jaar, allemaal in één systeem. Lees meer over deze optie op
             de pagina <Link href="/omgekeerde-osmose/voor-thuis" className="text-[#005F8A] underline hover:no-underline">osmose apparaat voor thuis</Link>.
           </p>
         </section>
@@ -813,7 +816,7 @@ export default function OmgekeerdeOsmosePage() {
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'Osmose filter kopen',
-                desc: 'Welk systeem past bij jou? Onafhankelijke vergelijking van de beste osmose filters.',
+                desc: 'Welk systeem past bij jou? Vergelijking van de beste osmose filters.',
               },
               {
                 href: '/omgekeerde-osmose/wat-is-osmose-water',
@@ -828,7 +831,7 @@ export default function OmgekeerdeOsmosePage() {
               {
                 href: '/the-source',
                 title: 'The Source 50 (PureAqua)',
-                desc: 'Stroomloos osmosesysteem, NSF/ANSI 58, circa 1:1 verhouding. Specificaties en kosten.',
+                desc: 'Stroomloos osmosesysteem, circa 1:1 verhouding. Specificaties en kosten.',
               },
               {
                 href: '/kokend-water-kraan/met-filter',

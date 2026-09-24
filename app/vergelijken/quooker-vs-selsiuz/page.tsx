@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: "Wat is een alternatief voor zowel Quooker als Selsiuz?",
     answer:
-      "Een 4-in-1 kraan met osmosefilter combineert kokend, koud gefilterd, warm en bruisend water in een kraan, inclusief een ingebouwd osmosesysteem. Dat is interessant voor wie naast kokend water ook puur drinkwater en bruisend water wil, vaak voor een lagere totaalprijs dan een vergelijkbare Quooker- of Selsiuz-opstelling met losse modules.",
+      "De PureAqua 4-in-1 kraan met osmosefilter combineert gewoon warm en koud kraanwater met gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) in een kraan, inclusief een ingebouwd osmosesysteem. Dat is interessant voor wie naast heet water ook puur en gekoeld drinkwater wil. Bruisend water zit er niet in. Met 1.948 euro is hij duurder dan een Selsiuz, maar circa 300 euro goedkoper dan een Quooker Flex PRO3 met CUBE (2.240 euro bij PureAqua).",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function QuookerVsSelsiuzPage() {
           </h1>
           <QuickAnswer
             question="Quooker of Selsiuz?"
-            answer="Quooker en Selsiuz leveren beide instant kokend water. Quooker is marktleider met het grootste servicenetwerk en uitbreidingsmodules; Selsiuz biedt vergelijkbare functies vaak tegen een lagere prijs. Geen van beide heeft standaard een osmosefilter. Wil je ook puur gefilterd en bruisend water, dan is een 4-in-1 osmosekraan een completer alternatief."
+            answer="Quooker en Selsiuz leveren beide instant kokend water. Quooker is marktleider met het grootste servicenetwerk en uitbreidingsmodules; Selsiuz biedt vergelijkbare functies vaak tegen een lagere prijs. Geen van beide heeft standaard een osmosefilter. Wil je ook puur gefilterd en gekoeld water, dan is een 4-in-1 osmosekraan een completer alternatief; bruisend water geeft de PureAqua 4-in-1 niet."
           />
         </div>
       </section>
@@ -119,11 +119,11 @@ export default function QuookerVsSelsiuzPage() {
               </thead>
               <tbody>
                 {[
-                  ["Kokend water", "Ja (100 graden)", "Ja (100 graden)", "Ja (100 graden)"],
-                  ["Prijsindicatie", "EUR 1.500-2.800", "EUR 1.000-1.700", "EUR 699-899"],
-                  ["Bruisend water", "Met CUBE module", "Niet standaard", "Ja, standaard"],
+                  ["Kokend water", "Ja (100 graden)", "Ja (100 graden)", "Zeer heet (circa 96 graden)"],
+                  ["Prijsindicatie", "EUR 1.500-2.800", "EUR 1.000-1.700", "EUR 1.948 (PureAqua)"],
+                  ["Bruisend water", "Met CUBE module", "Niet standaard", "Nee"],
                   ["Osmosefilter", "Nee (optioneel scale)", "Nee", "Ja, ingebouwd"],
-                  ["Servicenetwerk", "Zeer groot", "Beperkter", "Zelf installeerbaar"],
+                  ["Servicenetwerk", "Zeer groot", "Beperkter", "Installatie via PureAqua (299 euro)"],
                   ["Design", "Breed aanbod", "Strak, eigen lijn", "Modern, chroom/zwart"],
                 ].map(([eig, q, s, v], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
@@ -154,9 +154,9 @@ export default function QuookerVsSelsiuzPage() {
 
           <h2 className="text-2xl font-bold text-[#005F8A] mt-8 mb-4">Wanneer is een 4-in-1 osmosekraan beter?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Wil je naast kokend water ook puur gefilterd water en bruisend water uit dezelfde kraan,
-            dan biedt een 4-in-1 kraan met osmose het meest complete pakket, meestal voor een lagere
-            totaalprijs. Lees meer over{" "}
+            Wil je naast heet water ook puur gefilterd en gekoeld water uit dezelfde kraan, dan biedt
+            een 4-in-1 kraan met osmose volgens ons het meest complete pakket. Bruisend water zit er
+            niet in. Lees meer over{" "}
             <Link href="/selsiuz-alternatief" className="text-[#005F8A] hover:underline font-medium">het Selsiuz alternatief</Link>{" "}
             of bekijk de volledige{" "}
             <Link href="/vergelijken/kokend-water-kraan-merken" className="text-[#005F8A] hover:underline font-medium">merkvergelijking</Link>.
@@ -199,9 +199,9 @@ export default function QuookerVsSelsiuzPage() {
             destination="vierInEen"
             campaign="kokend-water"
             content="vergelijken-quooker-vs-selsiuz-cta"
-            label="PureAqua 4-in-1 kraan met kokend en gefilterd water"
+            label="PureAqua 4-in-1 kraan met zeer heet en gefilterd water"
             title="Liever kokend en gefilterd water uit een kraan?"
-            sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+            sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
           />
 
           <CTABanner context="kokend" />

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan merken vergelijking: Quooker vs Grohe vs Franke vs PureAqua',
@@ -21,7 +22,7 @@ const faqItems = [
   {
     question: 'Welk kokend water kraan merk is het beste voor dagelijks gebruik?',
     answer:
-      'Voor dagelijks gebruik in een gemiddeld gezin is een 4-in-1 systeem zoals PureAqua de meest complete keuze: het combineert kokend, koud gefilterd, warm en bruisend water in een kraan met ingebouwd osmosefilter. Quooker scoort het hoogst op merkreputatie en premium afwerking, maar mist de osmosefiltering tenzij je een dure extra aanschaft.',
+      'Voor dagelijks gebruik in een gemiddeld gezin is een 4-in-1 systeem zoals PureAqua volgens ons de meest complete keuze: het combineert gewoon warm en koud kraanwater met gekoeld en zeer heet (circa 96 graden) osmosewater in een kraan. Bruisend water zit er niet in. Quooker scoort het hoogst op merkreputatie en premium afwerking, maar mist de osmosefiltering tenzij je een dure extra aanschaft.',
   },
   {
     question: 'Is Quooker beter dan Grohe Blue Pure?',
@@ -36,12 +37,12 @@ const faqItems = [
   {
     question: 'Welk merk heeft een ingebouwd osmosefilter in de kraan?',
     answer:
-      'Van de vier grote merken is PureAqua de enige die standaard een omgekeerde-osmosefilter integreert in de kraan. Dit systeem filtert 95-99% van alle opgeloste stoffen, inclusief PFAS, lood, nitraat, kalk en chloor. Quooker, Grohe en Franke bieden geen RO-filter als onderdeel van hun standaard kokend water kraan.',
+      'Van de vier grote merken is PureAqua de enige die standaard een omgekeerde-osmosefilter integreert in de kraan. Een SGS-labtest op een nieuw systeem mat meer dan 99,6% minder PFOS, 99,5% minder PFOA en meer dan 99,8% minder lood. Quooker, Grohe en Franke bieden geen RO-filter als onderdeel van hun standaard kokend water kraan.',
   },
   {
     question: 'Wat zijn de totale kosten van een Quooker over 5 jaar?',
     answer:
-      'Een Quooker Fusion kost circa 1.800 euro inclusief installatie door een loodgieter. Tel daar jaarlijkse energiekosten (ongeveer 50 euro), eventuele CUBE-aanschaf voor bruisend water (250-400 euro extra) en CO2-cilinders bij. Over 5 jaar zit je al snel op 2.300 tot 2.600 euro totaal. Een PureAqua 4-in-1 systeem is inclusief alle filterkosten over 5 jaar ruwweg 900 euro goedkoper.',
+      'Een Quooker Fusion kost circa 1.800 euro inclusief installatie door een loodgieter. Tel daar jaarlijkse energiekosten (ongeveer 50 euro), eventuele CUBE-aanschaf voor bruisend water (250-400 euro extra) en CO2-cilinders bij. Over 5 jaar zit je al snel op 2.300 tot 2.600 euro totaal. Ter vergelijking: bij PureAqua kost een Quooker Flex PRO3 met CUBE 2.240 euro en de PureAqua 4-in-1 1.948 euro (plus optioneel 299 euro installatie). In aanschaf scheelt dat circa 300 euro, maar de 4-in-1 heeft geen bruisend water.',
   },
   {
     question: 'Waarom is een osmosefilter in de kraan belangrijk?',
@@ -51,12 +52,12 @@ const faqItems = [
   {
     question: 'Kan ik een Quooker zelf installeren?',
     answer:
-      'Quooker adviseert installatie door een erkend loodgieter. De aansluitingen zijn technisch niet overdreven complex, maar de garantie vervalt bij zelf-installatie. Reken op 150 tot 300 euro installatiekosten bovenop de aanschafprijs. PureAqua en in beperkte mate Grohe Blue Pure zijn ontworpen voor doe-het-zelf installatie met push-fit aansluitingen.',
+      'Quooker adviseert installatie door een erkend loodgieter. De aansluitingen zijn technisch niet overdreven complex, maar de garantie vervalt bij zelf-installatie. Reken op 150 tot 300 euro installatiekosten bovenop de aanschafprijs. Grohe Blue Pure is in beperkte mate geschikt voor doe-het-zelf installatie. Voor de PureAqua 4-in-1 is installatie door een installateur aanbevolen; PureAqua biedt dat aan voor 299 euro.',
   },
   {
     question: 'Hoe lang gaan de filters van een kokend water kraan mee?',
     answer:
-      'Bij een PureAqua 4-in-1 met osmose vervang je het pre-filter en postfilter eenmaal per jaar (circa 50-70 euro per set). Het RO-membraan gaat 2-3 jaar mee. Bij Grohe Blue Pure wissel je het koolstoffilterpatroon elke 6-12 maanden. Quooker zonder filter heeft geen filterwissel nodig, maar ontkalking is bij hard water wel regelmatig vereist.',
+      'Bij een PureAqua 4-in-1 met osmose vervang je het voorfilter en het remineralisatiefilter circa jaarlijks (circa 50-70 euro per set). Het osmosemembraan vervang je circa elke twee jaar. Bij Grohe Blue Pure wissel je het koolstoffilterpatroon elke 6-12 maanden. Quooker zonder filter heeft geen filterwissel nodig, maar ontkalking is bij hard water wel regelmatig vereist.',
   },
 ];
 
@@ -94,21 +95,21 @@ const merkenData = [
   {
     merk: 'PureAqua',
     model: '4-in-1',
-    prijs: '~2.200',
-    kokend: 'Ja (100°C)',
+    prijs: '1.948',
+    kokend: 'Zeer heet (circa 96°C)',
     osmose: 'Ja (RO)',
-    koudGefilterd: 'Ja (gefilterd koud)',
-    installatie: 'Loodgieter',
+    koudGefilterd: 'Ja (gekoeld, circa 5°C)',
+    installatie: 'Installateur (optioneel 299 euro)',
     highlight: true,
   },
 ];
 
 const tcoData = [
-  { post: 'Aanschaf + installatie', pureaqua: '~2.200', quooker: '~1.800', grohe: '~1.200', franke: '~1.100' },
+  { post: 'Aanschaf + installatie', pureaqua: '~2.250', quooker: '~1.800', grohe: '~1.200', franke: '~1.100' },
   { post: 'Energie 5 jaar (EUR 50/jr)', pureaqua: '250', quooker: '250', grohe: '200', franke: '200' },
   { post: 'Filterkosten 5 jaar', pureaqua: '~300', quooker: '0', grohe: '~200', franke: '~150' },
-  { post: 'Onderhoud / ontkalking', pureaqua: 'Minimaal', quooker: 'Jaarlijks', grohe: 'Jaarlijks', franke: 'Jaarlijks' },
-  { post: 'Totaal 5 jaar (indicatief)', pureaqua: '~2.750', quooker: '~2.300', grohe: '~1.600', franke: '~1.450' },
+  { post: 'Onderhoud / ontkalking', pureaqua: 'Filters jaarlijks, membraan 2-jaarlijks', quooker: 'Jaarlijks', grohe: 'Jaarlijks', franke: 'Jaarlijks' },
+  { post: 'Totaal 5 jaar (indicatief)', pureaqua: '~2.800', quooker: '~2.300', grohe: '~1.600', franke: '~1.450' },
 ];
 
 export default function MerkenVergelijkingPage() {
@@ -146,7 +147,9 @@ export default function MerkenVergelijkingPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Kokend water kraan merken vergelijking: Quooker, Grohe, Franke, PureAqua
           </h1>
-          <QuickAnswer answer="De vier grote merken kokend water kranen zijn Quooker, Grohe Blue Pure, Franke Vital en PureAqua. Quooker is marktleider maar heeft geen ingebouwd osmosefilter. PureAqua combineert als enige kokend water met omgekeerde osmosefiltratie in een 4-in-1 systeem, wat het uniek maakt." />
+          <QuickAnswer answer="De vier grote merken kokend water kranen zijn Quooker, Grohe Blue Pure, Franke Vital en PureAqua. Quooker is marktleider maar heeft geen ingebouwd osmosefilter. PureAqua combineert als enige van deze vier zeer heet (circa 96 graden) en gekoeld water met omgekeerde osmosefiltratie in een 4-in-1 systeem. Bruisend water heeft de PureAqua 4-in-1 niet." />
+
+          <FourInOneRecommendation content="kokend-water-kraan-merken-vergelijking-aanbeveling" />
         </div>
       </section>
 
@@ -277,24 +280,24 @@ export default function MerkenVergelijkingPage() {
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">PureAqua 4-in-1: de enige met omgekeerde osmose ingebouwd</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            PureAqua onderscheidt zich fundamenteel van de drie andere merken: het is de enige kokend water kraan op de Nederlandse markt die standaard een <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">omgekeerde osmosefilter</Link> integreert. Het systeem levert kokend water (100 graden), koud gefilterd water via RO, warm water en bruisend water, allemaal vanuit een enkel kraanpunt.
+            PureAqua onderscheidt zich fundamenteel van de drie andere merken: het is in deze vergelijking de enige kraan die standaard een <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">omgekeerde osmosefilter</Link> integreert. Het systeem levert gewoon warm en koud kraanwater, plus osmosewater op kamertemperatuur, gekoeld (circa 5 graden) en zeer heet (circa 96 graden), allemaal vanuit een enkel kraanpunt. Bruisend water zit er niet in. Onder de spoelbak staan twee apparaten (heet-/koelunit en osmose-unit) op twee stopcontacten.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Het RO-membraan filtert 95-99% van alle opgeloste stoffen: kalk, chloor, PFAS, lood, nitraat, hormonen, microplastics en pesticides worden vrijwel volledig verwijderd. Dit betekent dat het water uit de PureAqua smaakneutraal, zacht en chemisch zo puur mogelijk is. Bovendien beschermt het osmosewater de boilertank tegen kalkaanslag, wat de levensduur van de installatie aanzienlijk verlengt.
+            De filtratie gaat in drie stappen: voorfilter, osmosemembraan en remineralisatie. Een SGS-labtest op een nieuw systeem mat meer dan 99,6% minder PFOS, 99,5% minder PFOA en meer dan 99,8% minder lood. Bovendien beschermt het osmosewater de boilertank tegen kalkaanslag, wat de levensduur van de installatie aanzienlijk verlengt.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De aanschafprijs van circa 2.200 euro (inclusief installatie) is hoger dan Quooker Fusion, maar de totale eigendomskosten over 5 jaar zijn vergelijkbaar of lager zodra je de filterkosten en de bruisend-water-opties van Quooker meerekent. Zie de TCO-tabel hieronder voor een concreet overzicht.
+            De aanschafprijs is 1.948 euro, plus optioneel 299 euro installatie. Dat is hoger dan een Quooker Fusion zonder CUBE. Bij PureAqua kost een Quooker Flex PRO3 met CUBE (kokend, gekoeld en bruisend, met actieve kool in plaats van osmose) 2.240 euro; daarbij vergeleken is de 4-in-1 circa 300 euro goedkoper, maar zonder bruisend water. Zie de TCO-tabel hieronder voor een concreet overzicht.
           </p>
           <div className="bg-[#E0F2FE] border border-[#005F8A]/30 rounded-2xl p-5 my-4">
             <p className="font-bold text-[#003F5C] mb-2">Waarom PureAqua uniek is:</p>
             <ul className="space-y-1.5 text-sm text-gray-700">
               {[
                 'Enige merk met RO-osmosefilter standaard ingebouwd in de kraan',
-                'Verwijdert PFAS, lood, nitraat, hormonen en microplastics',
-                'Kokend water levert echte 100 graden Celsius',
+                'SGS-labtest: meer dan 99,6% minder PFOS en meer dan 99,8% minder lood',
+                'Zeer heet (circa 96 graden) en gekoeld (circa 5 graden) osmosewater',
                 'Beschermt de boilertank tegen kalkaanslag',
-                'Bruisend water inbegrepen zonder aparte CUBE of CO2-unit',
-                'Totale 5-jaars kosten vergelijkbaar met Quooker ondanks hogere aanschaf',
+                'Remineralisatie na de osmose',
+                'Circa 300 euro goedkoper dan een Quooker Flex PRO3 met CUBE (PureAqua-prijzen september 2026)',
               ].map((punt) => (
                 <li key={punt} className="flex items-start gap-2">
                   <span className="text-[#005F8A] font-bold mt-0.5">+</span>
@@ -364,7 +367,7 @@ export default function MerkenVergelijkingPage() {
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-2">
-            Indicatieve bedragen, gebaseerd op gemiddeld gebruik (2-4 personen) en prijzen mei 2026. PureAqua inclusief osmosefiltervervanging; Quooker exclusief CUBE (bruisend) die 250-400 euro extra kost.
+            Indicatieve bedragen, gebaseerd op gemiddeld gebruik (2-4 personen). PureAqua: 1.948 euro plus optioneel 299 euro installatie (september 2026), inclusief osmosefiltervervanging; Quooker exclusief CUBE (bruisend) die 250-400 euro extra kost.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
             Grohe en Franke scoren het laagst op totale kosten door de lagere aanschafprijs, maar leveren ook de minste filterfunctionaliteit. PureAqua heeft de hoogste aanschafprijs maar voegt de meeste waarde toe qua waterkwaliteit. Quooker zit qua totaalkosten hoger dan zijn aanschafprijs doet vermoeden door de hogere onderhoudskosten en optionele bruisend-water-unit.
@@ -410,7 +413,7 @@ export default function MerkenVergelijkingPage() {
                 kleur: 'border-[#005F8A] bg-[#E0F2FE]',
                 punten: [
                   'Waterkwaliteit je hoogste prioriteit is (PFAS, lood, nitraat)',
-                  'Je een compleet systeem wilt: kokend + RO + koud gefilterd + bruisend',
+                  'Je een compleet systeem wilt: zeer heet + gekoeld + RO-gezuiverd water (bruisend zit er niet in)',
                   'Je in een gebied met hard water woont en kalkaanslag wilt voorkomen',
                   'Je de totale 5-jaars kosten wilt vergelijken in plaats van alleen aanschafprijs',
                   'Je een gecombineerde oplossing zoekt zonder losse osmose-installatie',

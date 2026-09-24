@@ -28,7 +28,7 @@ const faqSchema = {
       name: 'Hoe duur is een drinkwaterfontein?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Aanschafprijzen varieren sterk: een eenvoudige flessenfontein begint bij €100-150, een tafelmodel mains-fed bij €200-300, een onderbouw POU-model bij €400-700 en een 4-in-1 osmosekraan bij €600-1.200. Professionele kantoormodellen kosten €800-2.000 of meer. Daarnaast zijn er maandelijkse kosten voor filters (€10-30 per maand) en eventueel stroom (€5-15 per maand). Huurmodellen kosten €40-200 per maand inclusief onderhoud.',
+        text: 'Aanschafprijzen varieren sterk: een eenvoudige flessenfontein begint bij €100-150, een tafelmodel mains-fed bij €200-300, een onderbouw POU-model bij €400-700 en een 4-in-1 osmosekraan zoals de PureAqua 4-in-1 kraan voor €1.948. Professionele kantoormodellen kosten €800-2.000 of meer. Daarnaast zijn er maandelijkse kosten voor filters (€10-30 per maand) en eventueel stroom (€5-15 per maand). Huurmodellen kosten €40-200 per maand inclusief onderhoud.',
       },
     },
     {
@@ -151,7 +151,7 @@ export default function DrinkwaterfonteinKopenPage() {
             <li className="flex gap-3">
               <span className="bg-[#003F5C] text-white text-xs font-bold px-2 py-1 rounded-full h-fit mt-0.5">3</span>
               <div>
-                <strong>Functies nodig?</strong> Alleen koud: goedkoopste optie. Koud + warm: standaard mains-fed. Koud + warm + bruisend: model met CO2-integratie. Koud + warm + kokend + bruisend: 4-in-1 osmosekraan.
+                <strong>Functies nodig?</strong> Alleen koud: goedkoopste optie. Koud + warm: standaard mains-fed. Koud + warm + bruisend: model met CO2-integratie. Koud + warm + kokend + bruisend: kraan met CO2, zoals Quooker CUBE. Gekoeld + zeer heet + osmose-gezuiverd (zonder bruisend): 4-in-1 osmosekraan.
               </div>
             </li>
             <li className="flex gap-3">
@@ -198,8 +198,8 @@ export default function DrinkwaterfonteinKopenPage() {
                 <td className="border border-gray-300 px-3 py-2">Thuis met kwaliteitswensen</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-3 py-2">&euro;900-1.500</td>
-                <td className="border border-gray-300 px-3 py-2">4-in-1 met RO + kokend + bruisend</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;900-2.000</td>
+                <td className="border border-gray-300 px-3 py-2">4-in-1 met RO + zeer heet + gekoeld (PureAqua: &euro;1.948, geen bruisend)</td>
                 <td className="border border-gray-300 px-3 py-2">Volledig comfort thuis</td>
               </tr>
               <tr>
@@ -249,7 +249,7 @@ export default function DrinkwaterfonteinKopenPage() {
           </div>
           <div className="border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-1">PureAqua / Waterdrop / APEC</h3>
-            <p className="text-gray-700 text-sm">Consumentensegment, verkrijgbaar via online winkels. POU RO-systemen voor thuis, NSF 58 gecertificeerd. Prijs &euro;200-600, beste prijs-kwaliteitsverhouding voor RO-filtratie.</p>
+            <p className="text-gray-700 text-sm">Consumentensegment, verkrijgbaar via online winkels. POU RO-systemen voor thuis. Certificering verschilt per model: controleer de NSF-listing van het exacte model. Prijs &euro;200-600. PureAqua is gelieerd aan WaterfilterPlatform.</p>
           </div>
         </div>
 

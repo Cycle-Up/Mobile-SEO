@@ -34,7 +34,7 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor Waterdrop?',
     answer:
-      'Goede alternatieven voor een Waterdrop osmosefilter zijn andere tankless RO-systemen en een 4-in-1 kraan met ingebouwde osmose. Een 4-in-1 kraan combineert kokend, koud gefilterd en bruisend water met osmose in een kraan, terwijl een los Waterdrop-systeem alleen gefilterd drinkwater levert. Welke beter past hangt af van of je ook kokend of bruisend water wilt.',
+      'Goede alternatieven voor een Waterdrop osmosefilter zijn andere tankless RO-systemen en een 4-in-1 kraan met ingebouwde osmose. Een 4-in-1 kraan zoals de PureAqua 4-in-1 combineert osmose-gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) in een kraan, terwijl een los Waterdrop-systeem alleen gefilterd drinkwater levert. Bruisend water geeft de PureAqua 4-in-1 niet. Welke beter past hangt af van of je ook heet of gekoeld water wilt.',
   },
   {
     question: 'Wat kost een Waterdrop osmosefilter per jaar?',
@@ -44,18 +44,18 @@ const faqItems = [
   {
     question: 'Waterdrop of een 4-in-1 osmosekraan: wat is beter?',
     answer:
-      'Een Waterdrop systeem is gericht op puur drinkwater via een aparte kraan of bestaande kraan. Een 4-in-1 osmosekraan levert daarnaast kokend en bruisend water uit dezelfde kraan. Wil je alleen schoon drinkwater, dan is een tankless RO-systeem prima; wil je een complete keukenoplossing, dan biedt een 4-in-1 kraan met osmose meer.',
+      'Een Waterdrop systeem is gericht op puur drinkwater via een aparte kraan of bestaande kraan. Een 4-in-1 osmosekraan zoals de PureAqua 4-in-1 levert daarnaast zeer heet en gekoeld water uit dezelfde kraan (geen bruisend water). Wil je alleen schoon drinkwater, dan is een tankless RO-systeem prima; wil je een complete keukenoplossing, dan biedt een 4-in-1 kraan met osmose meer.',
   },
 ];
 
 const topAlternatieven = [
   {
     naam: '4-in-1 kraan met osmose',
-    prijs: 'EUR 699-899',
+    prijs: 'EUR 1.948 (PureAqua)',
     type: 'Kraan + osmose',
-    extra: 'Kokend + bruisend',
+    extra: 'Zeer heet + gekoeld',
     highlight: true,
-    notitie: 'Osmose plus kokend, koud gefilterd en bruisend water uit een kraan.',
+    notitie: 'Osmose plus zeer heet (circa 96 graden) en gekoeld water uit een kraan; geen bruisend water.',
   },
   {
     naam: 'Waterdrop tankless RO (referentie)',
@@ -135,7 +135,7 @@ export default function WaterdropAlternatiefPage() {
 
         <QuickAnswer
           question="Wat is het beste Waterdrop alternatief?"
-          answer="Waterdrop maakt compacte tankless osmosefilters met goede TDS-reductie. Een sterk alternatief is een 4-in-1 kraan met ingebouwde osmose: die levert naast puur drinkwater ook kokend en bruisend water uit een kraan. Let bij elke osmose-aankoop op NSF/ANSI 58-certificering en de jaarlijkse filterkosten; die bepalen samen met de aanschaf de echte prijs."
+          answer="Waterdrop maakt compacte tankless osmosefilters met goede TDS-reductie. Een sterk alternatief is een 4-in-1 kraan met ingebouwde osmose: die levert naast puur drinkwater ook zeer heet en gekoeld water uit een kraan, maar geen bruisend water. Let bij elke osmose-aankoop op NSF/ANSI 58-certificering en de jaarlijkse filterkosten; die bepalen samen met de aanschaf de echte prijs."
         />
 
         <CountertopRecommendation content="waterdrop-alternatief-countertop-aanbeveling" />
@@ -220,7 +220,7 @@ export default function WaterdropAlternatiefPage() {
               ['Certificering', 'Kies een systeem met NSF/ANSI 58 voor geverifieerde TDS-, lood- en arseenreductie.'],
               ['Filterkosten per jaar', 'De jaarlijkse vervangfilters bepalen mede de totale kosten; reken over 5 jaar.'],
               ['Ruimte en tank', 'Tankless bespaart ruimte; een systeem met drukvat is goedkoper maar groter.'],
-              ['Extra functies', 'Wil je ook kokend of bruisend water, dan is een 4-in-1 osmosekraan completer.'],
+              ['Extra functies', 'Wil je ook zeer heet of gekoeld water, dan is een 4-in-1 osmosekraan completer (geen bruisend water).'],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold text-gray-800 mb-1">{t}</p>
@@ -238,7 +238,7 @@ export default function WaterdropAlternatiefPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Conclusie</h2>
           <p className="text-gray-700 leading-relaxed">
             Waterdrop is een solide keuze voor wie een compact, los osmosesysteem zoekt. Wil je naast
-            puur drinkwater ook kokend en bruisend water, dan biedt een{' '}
+            puur drinkwater ook zeer heet en gekoeld water, dan biedt een{' '}
             <strong>4-in-1 kraan met osmosefilter</strong> een completere keukenoplossing. Bekijk de
             opties in onze{' '}
             <Link href="/beste-osmosefilter-2026" className="text-[#005F8A] underline">osmosefilter-koopgids</Link>{' '}

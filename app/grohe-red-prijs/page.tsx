@@ -42,12 +42,12 @@ const faqItems = [
   {
     question: 'Is een Grohe Red duur vergeleken met alternatieven?',
     answer:
-      'De Grohe Red zit in het premium segment. Een 4-in-1 kraan met ingebouwd osmosefilter levert kokend, koud gefilterd, warm en bruisend water indicatief voor 699 tot 899 euro plus 100 tot 200 euro installatie - vaak onder een vergelijkbare Grohe Red-opstelling, en met een volwaardig osmosefilter erbij.',
+      'De Grohe Red zit in het premium segment. De PureAqua 4-in-1 kraan met ingebouwd osmosefilter kost 1.948 euro (installatie optioneel 299 euro) en zit daarmee in dezelfde prijsklasse als een Grohe Red Duo. Daarvoor krijg je zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water plus gewoon warm en koud water, maar geen bruisend water.',
   },
   {
     question: 'Is de Grohe Red de prijs waard?',
     answer:
-      'Voor wie kokend water uit een premium Grohe-kraan met strak design wil, kan de Grohe Red de investering waard zijn. Houd rekening met installatie, stroom en filter. Wil je ook gefilterd of bruisend water of een lagere totaalprijs, dan biedt een 4-in-1 osmosekraan meer functies voor minder geld.',
+      'Voor wie kokend water uit een premium Grohe-kraan met strak design wil, kan de Grohe Red de investering waard zijn. Houd rekening met installatie, stroom en filter. Wil je ook gefilterd en gekoeld water, dan biedt een 4-in-1 osmosekraan meer functies voor een vergelijkbaar bedrag (PureAqua: 1.948 euro).',
   },
 ];
 
@@ -124,7 +124,7 @@ export default function GroheRedPrijsPage() {
 
         <QuickAnswer
           question="Wat kost een Grohe Red?"
-          answer="De aanschaf ligt indicatief tussen 1.200 en 2.000 euro: Grohe Red Mono aan de onderkant, Duo met grote boiler aan de bovenkant, exclusief installatie (circa 150 tot 400 euro). Daar komen lopende kosten bij voor elektriciteit (boiler op temperatuur) en een filterpatroon tegen kalk. Een 4-in-1 osmosekraan biedt kokend, gefilterd en bruisend water vaak voor een lagere totaalprijs. Bedragen zijn indicatief; controleer actuele prijzen bij de verkoper."
+          answer="De aanschaf ligt indicatief tussen 1.200 en 2.000 euro: Grohe Red Mono aan de onderkant, Duo met grote boiler aan de bovenkant, exclusief installatie (circa 150 tot 400 euro). Daar komen lopende kosten bij voor elektriciteit (boiler op temperatuur) en een filterpatroon tegen kalk. Een 4-in-1 osmosekraan (PureAqua: 1.948 euro) biedt zeer heet, gekoeld en osmose-gezuiverd water in dezelfde prijsklasse, zonder bruisend water. Bedragen zijn indicatief; controleer actuele prijzen bij de verkoper."
         />
 
         <section>
@@ -164,8 +164,8 @@ export default function GroheRedPrijsPage() {
             <Link href="/grohe-red-filter" className="text-[#005F8A] underline">Grohe Red filter</Link>.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Een 4-in-1 kraan met osmosefilter heeft ook filters, maar biedt daarnaast gefilterd en bruisend
-            water. De volledige afweging staat op{' '}
+            Een 4-in-1 kraan met osmosefilter heeft ook filters, maar biedt daarnaast osmose-gezuiverd en gekoeld
+            water (geen bruisend water). De volledige afweging staat op{' '}
             <Link href="/grohe-red-alternatief" className="text-[#005F8A] underline">Grohe Red alternatief</Link>.
           </p>
         </section>

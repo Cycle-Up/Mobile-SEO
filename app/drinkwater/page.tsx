@@ -513,8 +513,8 @@ export default function DrinkwaterPage() {
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">
               omgekeerde osmose
             </Link>{' '}
-            de aangewezen keuze. Wil je bovendien kokend en bruisend water uit één kraan? Dan is
-            een 4-in-1 kraan met ingebouwde osmose de meest volledige oplossing.
+            de aangewezen keuze. Wil je bovendien zeer heet en gekoeld water uit één kraan? Dan is
+            een 4-in-1 kraan met ingebouwde osmose de meest volledige oplossing (bruisend water zit daar niet op).
           </p>
           <Link
             href="/omgekeerde-osmose/kopen"

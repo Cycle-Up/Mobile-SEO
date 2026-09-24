@@ -5,12 +5,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Beste waterfilter 2026: getest en vergeleken (grote gids)',
+  title: 'Beste waterfilter 2026: vergeleken per categorie (grote gids)',
   description:
     'Welk waterfilter is de beste keuze in 2026? Onze methodologie, categorie-winnaars, uitgebreide vergelijkingstabel (5 × 8 criteria), rode vlaggen in marketing.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/best-getest-2026' },
   openGraph: {
-    title: 'Beste waterfilter 2026: getest en vergeleken (grote gids)',
+    title: 'Beste waterfilter 2026: vergeleken per categorie (grote gids)',
     description:
       'BWT Penguin (filterkan), Ecosoft FMV3ECO (koolstof), Steripen Ultra (UV), PureAqua 4-in-1 (osmose) en Brita Maxtra Pro (budget) — 5 winnaars per categorie.',
     url: 'https://waterfilterplatform.nl/waterfilter/best-getest-2026',
@@ -22,12 +22,12 @@ const faqItems = [
   {
     question: 'Welk waterfilter is de beste keuze in 2026?',
     answer:
-      'De beste waterfilter hangt af van uw situatie. Algemeen winnaar is de PureAqua 4-in-1 kokend water kraan met osmose: het combineert maximale filtratie (99%), direct kokend water en lage jaarkosten per liter. Voor budget: Brita Maxtra Pro filterkan. Voor koolstoffilter onderbouw: Ecosoft FMV3ECO. Voor UV: Steripen Ultra. Voor filterkan premium: BWT Penguin.',
+      'De beste waterfilter hangt af van uw situatie. Onze algehele keuze is de PureAqua 4-in-1 kraan met osmose: die combineert omgekeerde osmose (SGS-labtest op een nieuw systeem: PFOS meer dan 99,6%, PFOA 99,5% en lood meer dan 99,8% minder) met zeer heet (circa 96 graden) en gekoeld water uit één kraan. Voor budget: Brita Maxtra Pro filterkan. Voor koolstoffilter onderbouw: Ecosoft FMV3ECO. Voor UV: Steripen Ultra. Voor filterkan premium: BWT Penguin.',
   },
   {
-    question: 'Hoe hebben jullie de waterfilters getest en vergeleken?',
+    question: 'Hoe hebben jullie de waterfilters vergeleken?',
     answer:
-      'Wij vergeleken waterfilters op: (1) filtratieeffectiviteit voor de belangrijkste verontreinigingen (kalk, nitraten, zware metalen, PFAS, bacteriën), (2) gemak van installatie, (3) jaarlijkse kosten inclusief filtervervanging, (4) onderhoudsvriendelijkheid, (5) gebruikersbeoordelingen, (6) NSF/ANSI-certificeringen en (7) beschikbaarheid van vervangende filters in Nederland.',
+      'Wij vergeleken waterfilters op: (1) filtratieeffectiviteit voor de belangrijkste verontreinigingen (kalk, nitraten, zware metalen, PFAS, bacteriën), (2) gemak van installatie, (3) jaarlijkse kosten inclusief filtervervanging, (4) onderhoudsvriendelijkheid, (5) gebruikersbeoordelingen, (6) NSF/ANSI-certificeringen of een onafhankelijk labrapport en (7) beschikbaarheid van vervangende filters in Nederland. Wij testen niet zelf in een laboratorium.',
   },
   {
     question: 'Wat is NSF/ANSI certificering voor waterfilters?',
@@ -37,7 +37,7 @@ const faqItems = [
   {
     question: 'Welk waterfilter verwijdert PFAS het beste?',
     answer:
-      'Omgekeerde osmose (RO) is de meest effectieve technologie voor PFAS-verwijdering: &gt;95% voor de meest voorkomende PFAS-verbindingen. De PureAqua 4-in-1 met ingebouwde RO is daarmee de beste keuze voor PFAS-bezorgde consumenten. Koolstoffilters en filterkannen verwijderen PFAS slechts gedeeltelijk of niet aantoonbaar. NSF/ANSI 58 gecertificeerde RO-filters zijn het meest betrouwbaar.',
+      'Omgekeerde osmose (RO) is de meest effectieve technologie voor PFAS-verwijdering: &gt;95% voor de meest voorkomende PFAS-verbindingen. De PureAqua 4-in-1 met ingebouwde RO is daarmee volgens ons de beste keuze voor PFAS-bezorgde consumenten: in een SGS-labtest op een nieuw systeem daalden PFOS met meer dan 99,6% en PFOA met 99,5%. Koolstoffilters en filterkannen verwijderen PFAS slechts gedeeltelijk of niet aantoonbaar. NSF/ANSI 58 gecertificeerde RO-filters zijn het meest betrouwbaar.',
   },
   {
     question: 'Welke rode vlaggen moet ik herkennen in waterfiltermarketing?',
@@ -52,12 +52,12 @@ const faqItems = [
   {
     question: 'Welk waterfilter is het beste voor een gezin van 4?',
     answer:
-      'Voor een gezin van 4 met hoog waterverbruik (6–10 L/dag) is de PureAqua 4-in-1 de beste keuze: hoge capaciteit, maximale filtratie, geen handmatig bijvullen en direct kokend water voor koken. Een filterkan wordt te snel leeg en heeft te hoge jaarlijkse filterkosten per liter. Een onderbouw osmose zonder kraan is een goed alternatief voor wie geen kookfunctie nodig heeft.',
+      'Voor een gezin van 4 met hoog waterverbruik (6–10 L/dag) is de PureAqua 4-in-1 volgens ons de beste keuze: brede osmosefiltratie, geen handmatig bijvullen en direct zeer heet (circa 96 graden) en gekoeld water. Een filterkan wordt te snel leeg en heeft te hoge jaarlijkse filterkosten per liter. Een onderbouw osmose zonder kraan is een goed alternatief voor wie geen kookfunctie nodig heeft.',
   },
   {
     question: 'Welke waterfilter werkt het beste bij hard water in Nederland?',
     answer:
-      'In hardwatergebieden (boven Gelderse Vallei, Twente, Zeeland: &gt;15 °dH) is een omgekeerde osmose filter noodzakelijk om kalk effectief te verwijderen. Koolstoffilters en UV-filters verwijderen géén kalk. De PureAqua 4-in-1 verwijdert &gt;97% van calcium en magnesium en heeft daarmee de hoogste kalkaanpak van alle systemen in deze vergelijking.',
+      'In hardwatergebieden (boven Gelderse Vallei, Twente, Zeeland: &gt;15 °dH) is een omgekeerde osmose filter noodzakelijk om kalk effectief te verwijderen. Koolstoffilters en UV-filters verwijderen géén kalk. De PureAqua 4-in-1 verwijdert met omgekeerde osmose het grootste deel van de kalk en is daarmee volgens ons de sterkste kalkaanpak van de systemen in deze vergelijking.',
   },
 ];
 
@@ -87,11 +87,11 @@ const categorieWinnaars = [
     highlight: false,
   },
   {
-    categorie: 'Beste osmosefilter / algeheel winnaar',
+    categorie: 'Onze keuze osmosefilter',
     winnaar: 'PureAqua 4-in-1',
-    prijs: '€ 800–1.200',
-    sterkste: 'Maximale filtratie (99%), kokend + koud + warm, één filterwisseling/jaar',
-    minste: 'Hoogste aanschafprijs, boorgat aanrechtblad nodig',
+    prijs: '€ 1.948',
+    sterkste: 'Osmose (SGS: PFOS meer dan 99,6%, lood meer dan 99,8% minder), zeer heet + gekoeld + warm/koud uit één kraan',
+    minste: 'Hoogste aanschafprijs, twee apparaten en twee stopcontacten onder de spoelbak, installateur aanbevolen',
     highlight: true,
   },
   {
@@ -105,14 +105,14 @@ const categorieWinnaars = [
 ];
 
 const vergelijkMatrix = [
-  { criterium: 'Aanschafprijs', bwt: '€ 35–50', ecosoft: '€ 80–130', steripen: '€ 90–130', pureaqua: '€ 800–1.200', brita: '€ 20–35' },
-  { criterium: 'Onderhoud/jaar', bwt: '€ 70–120', ecosoft: '€ 30–60', steripen: '€ 40–70', pureaqua: '€ 80–150', brita: '€ 60–100' },
+  { criterium: 'Aanschafprijs', bwt: '€ 35–50', ecosoft: '€ 80–130', steripen: '€ 90–130', pureaqua: '€ 1.948', brita: '€ 20–35' },
+  { criterium: 'Onderhoud/jaar', bwt: '€ 70–120', ecosoft: '€ 30–60', steripen: '€ 40–70', pureaqua: 'Filters jaarlijks, membraan elke 2 jaar', brita: '€ 60–100' },
   { criterium: 'Chloor & smaak', bwt: 'Ja', ecosoft: 'Ja', steripen: 'Nee', pureaqua: 'Ja', brita: 'Ja' },
-  { criterium: 'Kalk verwijderd', bwt: 'Gedeeltelijk', ecosoft: 'Nee', steripen: 'Nee', pureaqua: '&gt;97%', brita: 'Gedeeltelijk' },
+  { criterium: 'Kalk verwijderd', bwt: 'Gedeeltelijk', ecosoft: 'Nee', steripen: 'Nee', pureaqua: 'Ja (osmose)', brita: 'Gedeeltelijk' },
   { criterium: 'Zware metalen', bwt: 'Gedeeltelijk', ecosoft: 'Ja (NSF53)', steripen: 'Nee', pureaqua: 'Ja', brita: 'Gedeeltelijk' },
   { criterium: 'Nitraten & PFAS', bwt: 'Nee', ecosoft: 'Nee', steripen: 'Nee', pureaqua: 'Ja', brita: 'Nee' },
   { criterium: 'Bacteriën/virussen', bwt: 'Nee', ecosoft: 'Nee', steripen: '99,9%', pureaqua: 'Beperkt', brita: 'Nee' },
-  { criterium: 'Installatiegemak', bwt: 'Geen', ecosoft: 'Eenvoudig', steripen: 'Eenvoudig', pureaqua: 'Gemiddeld', brita: 'Geen' },
+  { criterium: 'Installatiegemak', bwt: 'Geen', ecosoft: 'Eenvoudig', steripen: 'Eenvoudig', pureaqua: 'Installateur aanbevolen', brita: 'Geen' },
 ];
 
 export default function BestGetest2026Page() {
@@ -130,7 +130,7 @@ export default function BestGetest2026Page() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'Beste waterfilter 2026: getest en vergeleken (grote gids)',
+          title: 'Beste waterfilter 2026: vergeleken per categorie (grote gids)',
           description:
             'Categorie-winnaars, 5×8 vergelijkingstabel, rode vlaggen in marketing en NSF/ANSI certificeringen — de complete gids voor de beste waterfilter van 2026.',
           datePublished: '2026-04-18',
@@ -149,7 +149,7 @@ export default function BestGetest2026Page() {
             <span>Best getest 2026</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Beste waterfilter 2026: getest en vergeleken (grote gids)
+            Beste waterfilter 2026: vergeleken per categorie (grote gids)
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
             Welk <strong>waterfilter</strong> presteert het beste in 2026? We vergeleken de vijf meest
@@ -176,13 +176,13 @@ export default function BestGetest2026Page() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
-        <QuickAnswer answer="Beste waterfilter 2026: PureAqua 4-in-1 is algeheel winnaar (osmose + kokend, 99% filtratie). Beste filterkan: BWT Penguin. Beste koolstoffilter onderbouw: Ecosoft FMV3ECO. Beste UV: Steripen Ultra. Beste budget: Brita Maxtra Pro. Kies op basis van welke verontreinigingen u wilt aanpakken — niet alle filters filteren hetzelfde." />
+        <QuickAnswer answer="Beste waterfilter 2026: onze algehele keuze is de PureAqua 4-in-1 (osmose plus zeer heet en gekoeld water). Beste filterkan: BWT Penguin. Beste koolstoffilter onderbouw: Ecosoft FMV3ECO. Beste UV: Steripen Ultra. Beste budget: Brita Maxtra Pro. Kies op basis van welke verontreinigingen u wilt aanpakken — niet alle filters filteren hetzelfde." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
           <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
-            <li><a href="#methodologie" className="hover:underline">Onze testmethodologie</a></li>
+            <li><a href="#methodologie" className="hover:underline">Onze beoordelingsmethode</a></li>
             <li><a href="#winnaars" className="hover:underline">Categorie-winnaars tabel</a></li>
             <li><a href="#winnaars-detail" className="hover:underline">Detailbespreking per winnaar</a></li>
             <li><a href="#vergelijkmatrix" className="hover:underline">5 × 8 vergelijkingstabel</a></li>
@@ -196,7 +196,7 @@ export default function BestGetest2026Page() {
         {/* Methodologie */}
         <section id="methodologie">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Hoe hebben wij getest en vergeleken?
+            Hoe hebben wij vergeleken?
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
             Onze vergelijking is gebaseerd op zeven criteria die wij voor elke categorie consistent hebben
@@ -233,7 +233,7 @@ export default function BestGetest2026Page() {
               {
                 nr: 6,
                 titel: 'NSF/ANSI certificeringen',
-                tekst: 'Alleen filters met onafhankelijke certificering (NSF, KWR, Kiwa) worden als volwaardig beschouwd. Ongecertificeerde producten worden vermeld maar niet als winnaar aanbevolen.',
+                tekst: 'We kijken naar onafhankelijke certificering (NSF, KWR, Kiwa) op het verkochte model. Heeft een product die niet, dan noemen we het alleen met een onafhankelijk labrapport en zeggen we dat erbij. Dat geldt ook voor de PureAqua 4-in-1 (SGS-labtest, geen NSF-certificering).',
               },
               {
                 nr: 7,
@@ -278,7 +278,7 @@ export default function BestGetest2026Page() {
                     <p className="font-bold text-[#005F8A]">{w.prijs}</p>
                     {w.highlight && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-[#005F8A] text-white">
-                        Algeheel winnaar
+                        Onze keuze
                       </span>
                     )}
                   </div>
@@ -349,21 +349,26 @@ export default function BestGetest2026Page() {
             </div>
 
             <div className="border-l-4 border-[#005F8A] pl-5">
-              <h3 className="text-xl font-bold text-[#003F5C] mb-2">PureAqua 4-in-1 — beste osmosefilter en algeheel winnaar</h3>
+              <h3 className="text-xl font-bold text-[#003F5C] mb-2">PureAqua 4-in-1: onze keuze als osmosefilter</h3>
               <p className="text-gray-700 leading-relaxed mb-3">
-                De PureAqua 4-in-1 is de meest complete waterfilteroplossing op de Nederlandse markt in 2026.
-                Het systeem combineert omgekeerde osmose filtratie (99% verwijdering van kalk, nitraten, PFAS,
-                zware metalen en microplastics) met direct kokend water (100°C), koud gefilterd water en warm
-                water uit één elegante kraan. U vervangt filters eenmaal per jaar voor €80–150.
+                De PureAqua 4-in-1 is volgens ons de meest complete waterfilteroplossing in deze vergelijking.
+                Het systeem combineert omgekeerde osmose in drie stappen (voorfilter, membraan en
+                remineralisatie) met gewoon warm en koud kraanwater, gezuiverd water op kamertemperatuur,
+                gekoeld water (circa 5 graden) en zeer heet water (circa 96 graden) uit één kraan. In een
+                SGS-labtest op een nieuw systeem daalden PFOS met meer dan 99,6%, PFOA met 99,5% en lood met
+                meer dan 99,8%. Het voorfilter en remineralisatiefilter vervangt u circa jaarlijks, het membraan
+                circa elke twee jaar.
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
-                De aanschafprijs (€800–1.200) is de hoogste in onze vergelijking, maar de kraan vervangt
-                ook een waterkoker (€40–80), Brita-kan (€25–50) en losse osmosekraantje (€50–100). Over 5
-                jaar zijn de totale eigendomskosten lager dan een Quooker + apart osmosesysteem.
+                De aanschafprijs (€1.948, installatie optioneel €299) is de hoogste in onze vergelijking.
+                Daarvoor vervangt de kraan ook een waterkoker, filterkan en los osmosekraantje. Onder de
+                spoelbak staan wel twee apparaten (heet-/koelunit en osmose-unit) en u heeft twee
+                stopcontacten nodig. Ter vergelijking: een Quooker Flex PRO3 met CUBE kost bij PureAqua €2.240
+                en filtert met actieve kool, niet met osmose.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Wij beoordelen de PureAqua 4-in-1 als algeheel winnaar op basis van: maximale filtratiedekking,
-                laagste kosten per gefilterd liter op lange termijn, gebruiksgemak (één kraan voor alles)
+                Volgens ons is de PureAqua 4-in-1 de sterkste osmosekeuze op basis van: brede filtratie (SGS-labtest, geen NSF-certificering),
+                gebruiksgemak (één kraan voor heet, gekoeld en gezuiverd water)
                 en de groeiende relevantie van PFAS-filtratie in Nederland.
               </p>
             </div>
@@ -458,7 +463,7 @@ export default function BestGetest2026Page() {
               {
                 profiel: 'Gezin met PFAS/nitraat bezorgdheid of hard water',
                 winnaar: 'PureAqua 4-in-1',
-                reden: 'Enige categorie die PFAS (&gt;95%), nitraten (&gt;90%) en kalk (&gt;97%) tegelijk aanpakt. Inclusief kokend water voor dagelijks gebruik.',
+                reden: 'Omgekeerde osmose pakt PFAS (SGS op een nieuw systeem: PFOS meer dan 99,6%, PFOA 99,5%), nitraat en kalk tegelijk aan. Inclusief zeer heet en gekoeld water voor dagelijks gebruik.',
               },
             ].map(g => (
               <div key={g.profiel} className="border border-gray-100 rounded-xl p-4 bg-white">

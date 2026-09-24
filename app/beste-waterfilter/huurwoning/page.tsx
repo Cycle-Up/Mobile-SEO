@@ -220,9 +220,19 @@ export default function HuurwoningPage() {
                   <td className="border border-gray-300 px-3 py-2 text-red-600">Nee</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">Ja</td>
                 </tr>
+                <tr className="bg-[#F0F9FF]">
+                  <td className="border border-gray-300 px-3 py-2 font-medium">
+                    <Link href="/countertop-osmose" className="text-[#005F8A] underline">Water zuiver apparaat</Link> (onze keuze, 495 euro)
+                  </td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Geen: stekker erin, tank vullen</td>
+                  <td className="border border-gray-300 px-3 py-2">Filter tot 1.200 liter of 12 maanden</td>
+                  <td className="border border-gray-300 px-3 py-2">Osmose; geen eigen labtest</td>
+                  <td className="border border-gray-300 px-3 py-2">Osmose; geen eigen labtest</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Ja, plus verwarming tot 95 graden</td>
+                </tr>
                 <tr className="bg-gray-50">
                   <td className="border border-gray-300 px-3 py-2 font-medium">Aanrechtfilter (countertop RO)</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">Kraanadapter, geen boren</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Geen boren (tank vullen of kraanadapter)</td>
                   <td className="border border-gray-300 px-3 py-2">90-180 euro</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">90-99%</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">95-99%</td>

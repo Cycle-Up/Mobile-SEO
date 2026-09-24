@@ -400,7 +400,7 @@ export default function WaterfilterVoorAquariumPage() {
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'RO-systeem kopen',
-                desc: 'Onafhankelijke vergelijking van de beste osmose systemen voor thuis en aquarium.',
+                desc: 'Vergelijking van de beste osmose systemen voor thuis en aquarium.',
               },
               {
                 href: '/omgekeerde-osmose/membraan',

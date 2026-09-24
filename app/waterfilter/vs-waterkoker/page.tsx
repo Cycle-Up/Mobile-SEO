@@ -66,7 +66,7 @@ const faqSchema = {
       name: 'Kan een waterfilter een waterkoker vervangen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Een standaard osmosefilter vervangt de waterkoker niet voor het maken van thee of koffie, omdat het gefilterde water koud is. Een 4-in-1 kokend water kraan (zoals een Quooker-alternatief met osmosefilter) combineert beide: het levert koud gefilterd osmosewater en kookend water uit dezelfde kraan. Dit is de ideale combinatie voor wie zowel schoon drinkwater als kokend water wil zonder aparte apparaten.',
+        text: 'Een standaard osmosefilter vervangt de waterkoker niet voor het maken van thee of koffie, omdat het gefilterde water koud is. Een 4-in-1 kraan met osmosefilter (een Quooker-alternatief) combineert beide: het levert gekoeld gefilterd osmosewater en zeer heet water van circa 96 graden uit dezelfde kraan. Dit is de ideale combinatie voor wie zowel schoon drinkwater als kokend water wil zonder aparte apparaten.',
       },
     },
     {
@@ -307,7 +307,7 @@ export default function WaterfilterVsWaterkokerPage() {
         <p className="text-gray-700 mb-6">
           Overweegt u een stap verder? Een{' '}
           <Link href="/waterfilter" className="text-[#005F8A] underline">4-in-1 kokend water kraan</Link>{' '}
-          met ingebouwd osmosefilter levert tegelijk koud gefilterd water en kookend water uit dezelfde kraan,
+          met osmosefilter levert tegelijk gekoeld gefilterd water en zeer heet water (circa 96 graden) uit dezelfde kraan,
           waardoor u de aparte waterkoker overbodig maakt.
         </p>
 

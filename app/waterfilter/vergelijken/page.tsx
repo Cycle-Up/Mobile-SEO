@@ -69,7 +69,7 @@ const itemListSchema = {
     },
     {
       '@type': 'ListItem', position: 4,
-      item: { '@type': 'Product', name: 'Geïntegreerde 4-in-1 kokend water kraan met RO', description: 'Kokend, koud, warm en bruisend gefilterd water uit één kraanpunt met ingebouwde osmose.', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '699', highPrice: '899', offerCount: '1' } },
+      item: { '@type': 'Product', name: 'PureAqua 4-in-1 kraan', description: 'Warm en koud kraanwater plus osmose-gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) uit één kraan.', offers: { '@type': 'Offer', priceCurrency: 'EUR', price: '1948.00', url: 'https://pureaqua.nl/products/pureaqua-4-in-1-kraan' } },
     },
     {
       '@type': 'ListItem', position: 5,
@@ -141,20 +141,20 @@ const filterTypes = [
   },
   {
     naam: 'Geïntegreerde 4-in-1 kokend water kraan',
-    prijs: '€ 700 – 1.000',
+    prijs: '€ 1.948',
     onderhoud: '€ 80 – 150 / jaar',
     verwijdert: ['Zware metalen', 'Nitraten', 'Pesticiden', 'Farmaceutische residuen', 'Microplastics', 'Kalk (95–99%)', 'Chloor & geur', 'Sediment'],
     verwijdertNiet: ['Bacteriën (zonder UV-module)', 'Vluchtige organische stoffen (beperkt)'],
-    installatie: 'Matig (boortje in aanrechtblad)',
+    installatie: 'Installateur aanbevolen (PureAqua: optioneel 299 euro)',
     moeilijkheid: 'Gemiddeld',
-    voetafdruk: 'Onder aanrecht + één elegante kraan',
+    voetafdruk: 'Twee apparaten onder aanrecht + één kraan',
     highlight: true,
     badge: 'Premium alles-in-één',
   },
 ];
 
 const vergelijkMatrix = [
-  { spec: 'Aanschafprijs', koolstof: '€ 50–150', kan: '€ 20–80', roOnderbouw: '€ 150–500', roAanrecht: '€ 100–350', uv: '€ 80–250', vierin1: '€ 700–1.000' },
+  { spec: 'Aanschafprijs', koolstof: '€ 50–150', kan: '€ 20–80', roOnderbouw: '€ 150–500', roAanrecht: '€ 100–350', uv: '€ 80–250', vierin1: '€ 1.948' },
   { spec: 'Onderhoud/jaar', koolstof: '€ 30–60', kan: '€ 60–120', roOnderbouw: '€ 50–120', roAanrecht: '€ 40–100', uv: '€ 30–80', vierin1: '€ 80–150' },
   { spec: 'Chloor & geur', koolstof: 'Ja', kan: 'Ja', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
   { spec: 'Kalk verwijderd', koolstof: 'Nee', kan: 'Gedeeltelijk', roOnderbouw: '95–99%', roAanrecht: '95–99%', uv: 'Nee', vierin1: '95–99%' },
@@ -163,8 +163,8 @@ const vergelijkMatrix = [
   { spec: 'Bacteriën', koolstof: 'Nee', kan: 'Nee', roOnderbouw: 'Beperkt', roAanrecht: 'Beperkt', uv: 'Ja', vierin1: 'Beperkt' },
   { spec: 'Pesticiden', koolstof: 'Gedeeltelijk', kan: 'Nee', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
   { spec: 'Microplastics', koolstof: 'Gedeeltelijk', kan: 'Nee', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
-  { spec: 'Kokend water', koolstof: 'Nee', kan: 'Nee', roOnderbouw: 'Nee', roAanrecht: 'Nee', uv: 'Nee', vierin1: 'Ja' },
-  { spec: 'Installatiegemak', koolstof: 'Eenvoudig', kan: 'Geen', roOnderbouw: 'Gemiddeld', roAanrecht: 'Eenvoudig', uv: 'Gemiddeld', vierin1: 'Gemiddeld' },
+  { spec: 'Kokend water', koolstof: 'Nee', kan: 'Nee', roOnderbouw: 'Nee', roAanrecht: 'Nee', uv: 'Nee', vierin1: 'Zeer heet (circa 96 °C)' },
+  { spec: 'Installatiegemak', koolstof: 'Eenvoudig', kan: 'Geen', roOnderbouw: 'Gemiddeld', roAanrecht: 'Eenvoudig', uv: 'Gemiddeld', vierin1: 'Installateur' },
   { spec: 'Geschikt huurwoning', koolstof: 'Ja', kan: 'Ja', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Ja', vierin1: 'Met toestemming' },
 ];
 
@@ -202,7 +202,7 @@ const scenarios = [
   {
     situatie: 'Kookwater ook filteren & kokend water direct',
     beste: '4-in-1 kokend water kraan',
-    reden: 'De 4-in-1 kraan levert direct kokend water (100°C) én gefilterd koud water via RO. Geen waterkoker meer nodig. Ideaal voor gezinnen die zowel drinkwater als kookwater willen filteren én de luxe willen van direct kokend water voor thee, koffie of pasta.',
+    reden: 'De 4-in-1 kraan levert direct zeer heet water (circa 96 graden) én gekoeld en gezuiverd water via RO. Geen waterkoker meer nodig. Past bij gezinnen die zowel drinkwater als kookwater willen filteren én direct heet water willen voor thee, koffie of pasta.',
     link: '/4-in-1-kraan',
   },
 ];
@@ -533,9 +533,9 @@ export default function WaterfilterVergelijkenPage() {
           <p className="text-gray-700 mb-5 leading-relaxed">
             De <strong>geïntegreerde 4-in-1 kokend water kraan</strong> is de meest complete oplossing
             in deze vergelijking. Het systeem combineert een volledig osmose filtersysteem met een
-            geïntegreerde boiler voor direct kokend water, koud gefilterd water, warm water en bij
-            sommige modellen ook bruisend water. Alles uit één elegante kraan, geïnstalleerd naast
-            uw bestaande keukenkraan.
+            heet-/koelunit voor zeer heet water (circa 96 graden), gekoeld gefilterd water en gewoon
+            warm en koud water. Sommige andere merken leveren ook bruisend water; de PureAqua 4-in-1
+            niet. Alles uit één kraan, die uw bestaande keukenkraan vervangt.
           </p>
           <div className="bg-[#E0F2FE] rounded-2xl p-5 mb-5">
             <p className="font-semibold text-[#003F5C] mb-3">Wat de 4-in-1 kraan vervangt</p>
@@ -554,9 +554,9 @@ export default function WaterfilterVergelijkenPage() {
             </div>
           </div>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De hogere aanschafprijs (€700–1.000) wordt deels gecompenseerd door wat het vervangt.
-            Bovendien betaalt u maar één keer voor installatie en hebt u slechts één jaarlijkse
-            filterwisseling in plaats van meerdere losse systemen. Een 4-in-1 kraan met omgekeerde osmose is het
+            De hogere aanschafprijs (1.948 euro voor de PureAqua 4-in-1, installatie optioneel 299 euro)
+            wordt maar voor een klein deel gecompenseerd door wat het vervangt. Filters wissel je circa
+            jaarlijks, het membraan circa elke twee jaar. Een 4-in-1 kraan met omgekeerde osmose is volgens ons het
             meest complete systeem dat momenteel op de Nederlandse markt beschikbaar is.
           </p>
           <div className="bg-white border border-gray-100 rounded-xl p-4 text-sm text-gray-700">
@@ -604,7 +604,7 @@ export default function WaterfilterVergelijkenPage() {
                   { type: 'Aanrecht RO', aanschaf: '€ 225', onderhoud: '€ 70/jaar', totaal: '€ 435', highlight: false },
                   { type: 'Onderbouw RO', aanschaf: '€ 325', onderhoud: '€ 85/jaar', totaal: '€ 580', highlight: false },
                   { type: 'UV-filter', aanschaf: '€ 165', onderhoud: '€ 55/jaar', totaal: '€ 330', highlight: false },
-                  { type: '4-in-1 kraan', aanschaf: '€ 850', onderhoud: '€ 115/jaar', totaal: '€ 1.195', highlight: true },
+                  { type: '4-in-1 kraan', aanschaf: '€ 1.948', onderhoud: '€ 115/jaar', totaal: '€ 2.293', highlight: true },
                 ].map((r, i) => (
                   <tr key={r.type} className={r.highlight ? 'bg-[#E0F2FE] font-semibold text-[#003F5C]' : i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                     <td className="py-2.5 px-3">{r.type}</td>
@@ -618,10 +618,10 @@ export default function WaterfilterVergelijkenPage() {
           </div>
           <div className="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-gray-700">
             <strong className="text-amber-900">Kanttekening bij de 4-in-1 kraan:</strong> De 3-jaar
-            totaalkosten van €1.195 zijn inclusief aanschaf maar exclusief de vervanging die de kraan
-            biedt voor een waterkoker (€30–80), Brita-kan (€20–50) en losse osmosesystemen. Als u
-            deze componenten optelt bij de concurrerende systemen, nadert de totale kostenvergelijking
-            veel dichter bij elkaar.
+            totaalkosten van €2.293 zijn inclusief aanschaf maar exclusief wat de kraan vervangt: een
+            waterkoker (€30–80), Brita-kan (€20–50) en een los osmosesysteem. Ook als u die optelt bij
+            de andere systemen, blijft de 4-in-1 duidelijk de duurste optie. U betaalt vooral voor gemak
+            en de extra functies: gekoeld en zeer heet water uit dezelfde kraan.
           </div>
         </section>
 
@@ -654,8 +654,8 @@ export default function WaterfilterVergelijkenPage() {
           </h2>
           <p className="text-blue-100 mb-5 max-w-lg mx-auto text-sm leading-relaxed">
             Een 4-in-1 kraan met omgekeerde osmose combineert alle technologieën: RO-filtratie,
-            direct kokend water, koud gefilterd water en warm water uit één elegante kraan.
-            Één jaarlijkse filterwissel.
+            zeer heet water (circa 96 graden), gekoeld gefilterd water en gewoon warm en koud water uit
+            één kraan. Filters circa jaarlijks, membraan circa elke twee jaar.
           </p>
           <Link
             href="/omgekeerde-osmose/kopen"

@@ -125,10 +125,10 @@ const methoden = [
   {
     nr: '6',
     naam: 'PureAqua 4-in-1 kraan (osmose)',
-    verwijdert: 'Alles van osmose + kokend + koud + bruisend water uit één kraan',
-    verwijdertNiet: 'Gassen — remineralisatie beschikbaar',
-    kostenJaar: 'Eenmalig systeem incl. osmose + boiler',
-    onderhoud: 'Zelfde als osmose',
+    verwijdert: 'Alles van osmose + zeer heet, gekoeld, warm en koud water uit één kraan (geen bruisend)',
+    verwijdertNiet: 'Gassen — remineralisatie inbegrepen',
+    kostenJaar: 'Eenmalig 1.948 euro (osmose-unit + heet-/koelunit)',
+    onderhoud: 'Filters circa jaarlijks, membraan circa 2-jaarlijks',
     voor: 'Totaaloplossing voor drinken én koken',
     kleur: 'bg-[#003F5C]/5 border-[#003F5C]/20',
     badge: 'Complete oplossing',
@@ -142,7 +142,7 @@ const vergelijkingsTabel = [
   { methode: 'UV-filter', verwijdert: 'Bacteriën, virussen', kostenJaar: '€100–200', onderhoud: 'Jaarlijks (lamp)', voor: 'Eigen put/bron' },
   { methode: 'Waterontharder', verwijdert: 'Calcium, magnesium', kostenJaar: '€500–1500 + zout', onderhoud: 'Zout bijvullen', voor: 'Hard water totaal huis' },
   { methode: 'Osmose systeem', verwijdert: 'Vrijwel alles', kostenJaar: '€60–120', onderhoud: 'Halfjaarlijks/2-jaarlijks', voor: 'PFAS, nitraat, lood, alles' },
-  { methode: 'PureAqua 4-in-1', verwijdert: 'Alles + kokend/bruisend', kostenJaar: 'Zelfde als osmose', onderhoud: 'Zelfde als osmose', voor: 'Totale keukenoplossing' },
+  { methode: 'PureAqua 4-in-1', verwijdert: 'Osmose + zeer heet/gekoeld water', kostenJaar: 'Zelfde als osmose', onderhoud: 'Filters jaarlijks, membraan 2-jaarlijks', voor: 'Totale keukenoplossing' },
 ];
 
 export default function LeidingwaterKwaliteitVerberenPage() {
@@ -208,7 +208,7 @@ export default function LeidingwaterKwaliteitVerberenPage() {
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
         {/* QuickAnswer */}
-        <QuickAnswer answer="De beste methode hangt af van uw specifieke probleem: voor smaak/chloor is een koolstoffilter (€80–150/jaar) de beste keuze. Voor hard water een waterontharder of osmose. Voor PFAS, nitraten of lood is omgekeerde osmose (€60–120/jaar) de enige bewezen oplossing. Een PureAqua 4-in-1 kraan combineert osmose met kokend en bruisend water." />
+        <QuickAnswer answer="De beste methode hangt af van uw specifieke probleem: voor smaak/chloor is een koolstoffilter (€80–150/jaar) de beste keuze. Voor hard water een waterontharder of osmose. Voor PFAS, nitraten of lood is omgekeerde osmose (€60–120/jaar) de enige bewezen oplossing. Een PureAqua 4-in-1 kraan combineert osmose met zeer heet en gekoeld water (geen bruisend water)." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -424,7 +424,7 @@ export default function LeidingwaterKwaliteitVerberenPage() {
               },
               {
                 situatie: 'Ik wil de complete oplossing voor drinken én koken',
-                advies: 'PureAqua 4-in-1 kraan met ingebouwde omgekeerde osmose, kokend water functie en optioneel bruisend water. Één systeem vervangt waterkoker, britta-kan en geeft puur gefilterd water.',
+                advies: 'PureAqua 4-in-1 kraan met ingebouwde omgekeerde osmose, zeer heet water (circa 96 graden) en gekoeld water, maar geen bruisend water. Één systeem vervangt waterkoker, britta-kan en geeft puur gefilterd water.',
                 kleur: 'border-[#005F8A]/30 bg-[#E0F2FE]/40',
               },
             ].map(s => (

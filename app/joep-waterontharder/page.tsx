@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { FactCard } from '@/components/FactCard';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { JoepCTA } from '@/components/JoepCTA';
@@ -149,6 +150,8 @@ export default function JoepWaterontharderPage() {
           question="Is de JOEP de beste waterontharder?"
           answer={`Ja. JOEP is onze keuze als beste waterontharder voor Nederland in 2026, voor huishoudens met hard water vanaf ongeveer ${JOEP_MIN_DH} dH. Hij is zeer compact en wordt gemaakt in Engeland. JOEP levert tot 5 m3 zacht water per uur, gebruikt ${JOEP.saltPerRegeneration} zout per regeneratie en heeft 20 jaar fabrieksgarantie op de hars. Bij PureAqua kost hij ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Let op: tijdens de nachtelijke regeneratie is het water tijdelijk hard en je hebt een stopcontact nodig.`}
         />
+
+        <FactCard id="joep" />
 
         <JoepRecommendation content="joep-waterontharder-aanbeveling" />
 

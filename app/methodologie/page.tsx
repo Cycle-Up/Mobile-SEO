@@ -5,7 +5,7 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 export function generateMetadata(): Metadata {
   const title = "Onze methodologie — hoe beoordeelt WaterfilterPlatform waterfilters?";
   const description =
-    "Hoe komt ons filteradvies tot stand? Beoordelingscriteria, bronnen, onafhankelijkheidsprotocol en hoe we technische claims verifieren.";
+    "Hoe komt ons filteradvies tot stand? Beoordelingscriteria, bronnen, onze band met PureAqua en hoe we technische claims verifieren.";
 
   return {
     title,
@@ -37,7 +37,7 @@ export default function MethodologiePage() {
             "@type": "AboutPage",
             "name": "Methodologie WaterfilterPlatform",
             "url": "https://waterfilterplatform.nl/methodologie",
-            "description": "Beoordelingscriteria, bronnen en onafhankelijkheidsprotocol van WaterfilterPlatform.",
+            "description": "Beoordelingscriteria, bronnen, eigen producten en claimverificatie van WaterfilterPlatform.",
             "publisher": {
               "@type": "Organization",
               "name": "WaterfilterPlatform",
@@ -196,11 +196,33 @@ export default function MethodologiePage() {
       </section>
 
       <section className="max-w-3xl mx-auto px-4 py-10">
+        <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Eigen producten en &ldquo;onze keuze&rdquo;</h2>
+        <div className="space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            WaterfilterPlatform is gelieerd aan PureAqua, dat via PureAqua.nl en PureFilter.nl onder meer osmosesystemen,
+            kranen, waterfilters en waterontharders verkoopt. Een aantal van die producten bevelen wij aan als &ldquo;onze
+            keuze&rdquo; in hun categorie. Dat oordeel is van ons en presenteren we nooit als objectief feit.
+          </p>
+          <p>
+            Voor eigen producten gelden dezelfde regels als voor andere merken. Prijzen en specificaties komen uit
+            gecontroleerde feitenbestanden met een peildatum. Labresultaten noemen we alleen met laboratorium, testopzet en
+            beperkingen. Een certificering noemen we alleen als die op het verkochte model staat. Wat niet onafhankelijk is
+            aangetoond, noemen we geclaimd of laten we weg. Bij elke productlink staat een zichtbare disclosure en de link
+            heeft rel=&ldquo;sponsored&rdquo;.
+          </p>
+          <p>
+            Bij elke aanbeveling staan de criteria waarop we kiezen en de kanttekeningen, bijvoorbeeld wanneer een ander
+            product of geen filter beter past.
+          </p>
+        </div>
+      </section>
+
+      <section className="max-w-3xl mx-auto px-4 py-10">
         <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Wat wij NIET doen</h2>
         <ul className="space-y-3 text-gray-700">
           <li className="flex gap-3 items-start">
             <span className="text-[#005F8A] font-bold shrink-0 mt-0.5">•</span>
-            <span>Wij publiceren geen "beste waterfilter"-ranglijsten op basis van commissie of betaalde plaatsing</span>
+            <span>Wij verkopen geen plaatsing aan andere merken en verbergen onze band met PureAqua niet</span>
           </li>
           <li className="flex gap-3 items-start">
             <span className="text-[#005F8A] font-bold shrink-0 mt-0.5">•</span>

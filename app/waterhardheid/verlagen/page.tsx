@@ -458,7 +458,7 @@ export default function WaterhardheidVerlagenPage() {
             ))}
           </div>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            Een <strong>4-in-1 kraan met osmose</strong> combineert een omgekeerde osmose filter met een kokendwaterkraan, koud water, warm water en bruisend water — alles in één design kraan. Inclusief NSF-gecertificeerde membranen en eenvoudige filterwissel zonder gereedschap.
+            Een <strong>4-in-1 kraan met osmose</strong> combineert omgekeerde osmose (voorfilter, membraan en remineralisatie) met zeer heet water van circa 96 graden, gekoeld water en gewoon warm en koud water uit één kraan. Bruisend water zit er niet in. Voorfilter en remineralisatiefilter wissel je circa jaarlijks, het membraan circa elke twee jaar.
           </p>
           <Link
             href="/omgekeerde-osmose/kopen"

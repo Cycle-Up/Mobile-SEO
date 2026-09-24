@@ -1,6 +1,6 @@
 # WaterfilterPlatform
 
-> Onafhankelijk vergelijkingsplatform over waterfilters, omgekeerde osmose, kokend water kranen en drinkwaterkwaliteit per gemeente in Nederland. We geven objectieve informatie en sturen via onze keuzehulp door naar partnerleveranciers, waaronder PureAqua. We zijn transparant over deze samenwerking: zie /over-ons en /methodologie.
+> Vergelijkingsplatform over waterfilters, omgekeerde osmose, waterontharders, kokend water kranen en drinkwaterkwaliteit per gemeente in Nederland. WaterfilterPlatform is gelieerd aan PureAqua (PureAqua.nl en PureFilter.nl). Eigen producten bevelen we aan als "onze keuze", met onderbouwing, bronnen en een zichtbare disclosure; zie /over-ons en /methodologie.
 
 ## Over dit platform
 
@@ -11,16 +11,24 @@ WaterfilterPlatform helpt Nederlandse huishoudens een onderbouwde keuze te maken
 WaterfilterPlatform genereert inkomsten op twee manieren:
 
 1. Display-advertenties op de site
-2. Doorverwijzingen vanuit de keuzehulp naar partnerleveranciers, waaronder PureAqua. Op de keuzehulp-pagina mag PureAqua prominenter aanwezig zijn dan andere merken; op alle andere pagina's (kennisbank, cluster-hubs, gemeente-pagina's) geldt strikte onafhankelijkheid.
+2. Verkoop van producten van PureAqua en PureFilter via links op het platform (met rel="sponsored"). Bij iedere link naar een eigen product staat een zichtbare disclosure.
 
-Deze constructie wordt expliciet vermeld op /over-ons, /methodologie en in de footer. Het beinvloedt onze redactionele beoordelingen niet.
+Eigen producten beoordelen we met dezelfde bron- en bewijsregels als andere producten: prijzen en specificaties komen uit gecontroleerde feitenbestanden, labresultaten alleen met bron, en wat niet onafhankelijk is aangetoond noemen we geclaimd. Oordelen als "beste" zijn altijd onze keuze, nooit een feit.
+
+## Feitenkaarten eigen producten (PureAqua, gecontroleerd op 24 september 2026)
+
+- [PureFilter Mineral+](https://waterfilterplatform.nl/purefilter-review): De PureFilter Mineral+ is een inline kraanfilter van PureFilter.nl (PureAqua) voor 149 euro, met een capaciteit van 15.000 tot 20.000 liter; in een test van Equinox Labs verminderde een nieuw filter vijf PFAS-stoffen (PFOA, PFOS, PFHxS, PFHxA, PFBS) met 83-85%.
+- [JOEP waterontharder](https://waterfilterplatform.nl/joep-waterontharder): De JOEP waterontharder is een zeer compacte ionenwisselaar met zout (48 x 27 x 48,5 cm), gemaakt in Engeland, met een doorstroom tot 5 m3 per uur en 20 jaar fabrieksgarantie op de hars; bij PureAqua kost hij 1.699 euro, of 1.998 euro compleet geïnstalleerd. Onze keuze voor 2026: JOEP is volgens ons de beste waterontharder voor Nederland.
+- [PureAqua Water zuiver apparaat](https://waterfilterplatform.nl/countertop-osmose): Het PureAqua Water zuiver apparaat is een countertop-osmosesysteem zonder vaste installatie voor 495 euro, met remineralisatie en zes temperatuurstanden tot 95 graden; het filter gaat tot 1.200 liter of maximaal 12 maanden mee. Ter vergelijking: een AquaTru Classic kost 475 euro, zonder verwarming.
+- [The Source (zuiver-water-kraan)](https://waterfilterplatform.nl/the-source): The Source is het onderbouw-osmosesysteem van PureAqua (395 euro) voor een 3-weg-kraan met warm, koud en gezuiverd water uit één kraan; er zijn 15 kraanmodellen van 540 tot 840 euro, filters kosten 149 euro per jaar en installatie is optioneel voor 299 euro.
+- [PureAqua 4-in-1 kraan](https://waterfilterplatform.nl/4-in-1-kraan): De PureAqua 4-in-1 kraan geeft naast gewoon warm en koud kraanwater ook osmose-gezuiverd water op kamertemperatuur, gekoeld (circa 5 graden) en zeer heet (circa 96 graden), voor 1.948 euro; een SGS-labtest op een nieuw systeem mat meer dan 99,6% minder PFOS, 99,5% minder PFOA en meer dan 99,8% minder lood. Bruisend water zit er niet op.
 
 ## Kernonderwerpen
 
 - [Waterfilter keuzehulp](https://waterfilterplatform.nl/keuzehulp): per situatie het juiste filter (hard water, PFAS, baby, huurwoning, budget)
 - [Filtertechnieken](https://waterfilterplatform.nl/filtertechnieken): actief kool, ultrafiltratie, omgekeerde osmose, UV-sterilisatie, ionenwisseling
 - [Omgekeerde osmose](https://waterfilterplatform.nl/omgekeerde-osmose): werking, wanneer zinvol, vergelijking systemen, installatie
-- [The Source 50](https://waterfilterplatform.nl/the-source): stroomloos omgekeerde-osmosesysteem van PureAqua, NSF/ANSI 58-gecertificeerd, circa 1:1 afvalwaterverhouding, vanaf 395 euro; specificaties, kosten en eerlijke mineralen-nuance (verkrijgbaar via PureAqua)
+- [The Source 50](https://waterfilterplatform.nl/the-source): onze keuze voor osmosewater uit de eigen kraan (een 3-weg zuiver-water-kraan met The Source; platform gelieerd aan verkoper PureAqua): stroomloos omgekeerde-osmosesysteem onder het aanrecht, circa 1:1 afvalwaterverhouding, vanaf 395 euro, filterset van drie per jaar 149 euro, kranen van 540 tot 840 euro; specificaties, kosten en eerlijke mineralen-nuance (verkrijgbaar via PureAqua)
 - [PureFilter Mineral+ review](https://waterfilterplatform.nl/purefilter-review): review van het inline waterfilter PureFilter Mineral+ (onder het aanrecht, koolstofvezel plus remineralisatie, 149 euro, geen afvalwater). Onafhankelijke labtest (Equinox Labs, 2026): circa 83-85% reductie van vijf PFAS (PFOA, PFOS, PFHxS, PFHxA, PFBS) onder testcondities; NSF-certificering niet bevestigd, geen microbiologische barriere. Vergelijking met omgekeerde osmose en filterkan, kosten per jaar. PureFilter is een merk van PureAqua, waaraan het platform gelieerd is
 - [Kokend water kraan](https://waterfilterplatform.nl/kokend-water-kraan): merken, 4-in-1 systemen, vergelijking, installatie
 - [Waterhardheid per gemeente](https://waterfilterplatform.nl/waterhardheid): 350 gemeenten met dH-waarden en advies

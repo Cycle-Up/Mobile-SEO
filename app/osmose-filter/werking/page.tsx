@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: 'Hoe verschilt een ingebouwd osmosefilter in een 4-in-1 kraan van een losstaand systeem?',
     answer:
-      'Een losstaand onderbouwsysteem heeft een aparte druktank (3–12 liter) voor wateropslag en een apart osmosekraantje naast uw gewone kraan. Een 4-in-1 kokend water kraan integreert het osmosemembraan in het systeem onder het aanrecht en combineert gefilterd koud water, warm water, kokend water (100°C) en soms bruisend water uit één elegante kraan. De 4-in-1 heeft geen aparte tank — het membraan produceert water direct on-demand of via een kleine interne buffer. Dit maakt het systeem compacter en hygiënischer.',
+      'Een losstaand onderbouwsysteem heeft een aparte druktank (3–12 liter) voor wateropslag en een apart osmosekraantje naast uw gewone kraan. Een 4-in-1 kokend water kraan integreert het osmosemembraan in het systeem onder het aanrecht en combineert gewoon warm en koud kraanwater met osmosewater op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) uit één elegante kraan; bruisend water zit er bij de PureAqua 4-in-1 niet in. De 4-in-1 heeft geen aparte druktank: het membraan produceert water direct on-demand of via een kleine interne buffer. Onder het aanrecht staan wel twee apparaten (heet-/koelunit en osmose-unit).',
   },
 ];
 
@@ -594,8 +594,8 @@ export default function OsmoseFilterWerkingPage() {
           <p className="text-gray-700 mb-5 leading-relaxed">
             De meest geavanceerde toepassing van omgekeerde osmose in de huishoudelijke markt is de
             integratie in een <strong>4-in-1 kokend water kraan</strong>. Dit systeem combineert het
-            osmosefilter met een geïsoleerde boiler en levert vier watertypen uit één elegante kraan:
-            gefilterd koud water, warm water, kokend water (100°C) en optioneel bruisend gefilterd water.
+            osmosefilter met een geïsoleerde boiler en een koelunit, en levert uit één elegante kraan gewoon warm en koud
+            kraanwater plus osmosewater op kamertemperatuur, gekoeld en zeer heet (circa 96°C). Bruisend water zit er niet in.
           </p>
 
           <h3 className="text-lg font-bold text-[#003F5C] mb-3">Hoe het verschilt van een losstaand systeem</h3>
@@ -614,26 +614,26 @@ export default function OsmoseFilterWerkingPage() {
             <div className="bg-[#E0F2FE] border border-[#005F8A] rounded-xl p-4">
               <p className="font-semibold text-[#003F5C] mb-3 text-sm">4-in-1 kokend water kraan</p>
               <ul className="space-y-2 text-xs text-gray-700">
-                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Geen aparte druktank — compactere installatie</li>
+                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Geen aparte druktank, wel twee apparaten (heet-/koelunit en osmose-unit)</li>
                 <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Één elegante kraan vervangt meerdere apparaten</li>
-                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Gefilterd koud, warm en kokend water direct beschikbaar</li>
+                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Gefilterd gekoeld en zeer heet water direct beschikbaar</li>
                 <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Geen losse waterkoker meer nodig</li>
-                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Aanschafprijs: €700–1.000 (all-in systeem)</li>
-                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Één jaarlijkse filterset: €80–150</li>
+                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Aanschafprijs: €1.948 (PureAqua 4-in-1)</li>
+                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Filters circa jaarlijks, membraan circa 2-jaarlijks: €80–150/jaar</li>
               </ul>
             </div>
           </div>
 
           <h3 className="text-lg font-bold text-[#003F5C] mb-3">Het filtratiesysteem in de 4-in-1 kraan</h3>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Het osmosefilter in een 4-in-1 kraan werkt op hetzelfde principe als een losstaand systeem:
-            sedimentfilter → koolstoffilter → RO-membraan → nafilter. Het gefilterde water gaat
+            Het osmosefilter in een 4-in-1 kraan werkt op hetzelfde principe als een losstaand systeem.
+            Bij de PureAqua 4-in-1 gaat dat in drie stappen: voorfilter → osmosemembraan → remineralisatie. Het gefilterde water gaat
             vervolgens naar een kleine ingebouwde buffer of direct naar de kraan. Een geïntegreerde
             boostpomp zorgt voor constante filtratiedruk, ook bij variabele leidingwaterdruk.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De kokendwaterfunctie werkt via een compacte geïsoleerde boiler (1–2 liter) die het
-            <em> gefilterde</em> water verwarmt tot 100°C. Doordat het water al door het osmosefilter
+            De heetwaterfunctie werkt via een geïsoleerde tank (bij de PureAqua 4-in-1 2,3 liter, circa 1,2 liter direct beschikbaar) die het
+            <em> gefilterde</em> water verwarmt tot circa 96°C. Doordat het water al door het osmosefilter
             is gegaan voordat het de boiler in gaat, bevat het nauwelijks kalk — wat scaling en
             slijtage van het verwarmingselement tot een minimum beperkt. Dit is een belangrijk
             verschil met gewone waterkokers die op ongefilterd leidingwater werken.
@@ -654,11 +654,11 @@ export default function OsmoseFilterWerkingPage() {
             <div className="bg-white border border-gray-100 rounded-xl p-4">
               <p className="font-semibold text-gray-900 mb-2 text-sm">Energieverbruik van de boiler</p>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Een compacte boiler van 1–2 liter in een 4-in-1 kraan verbruikt 800–1500 watt tijdens
-                het opwarmen en 10–25 watt in stand-by (geïsoleerde tank). Het energieverbruik per
-                dag is vergelijkbaar met een traditionele waterkoker — bij intensief gebruik (8+
-                koppen thee per dag) kan een 4-in-1 systeem zelfs zuiniger zijn doordat het water
-                niet herhaaldelijk opnieuw wordt gekookt in een te grote koker.
+                Een heetwatertank in een 4-in-1 kraan verbruikt 800–1500 watt tijdens het opwarmen
+                en 10–25 watt in stand-by (geïsoleerde tank); bij de PureAqua 4-in-1 komt daar de
+                koelunit voor gekoeld water bij. Het energieverbruik per dag hangt sterk af van je
+                gebruik. Ga er dus niet vanuit dat een 4-in-1 systeem zuiniger is dan een
+                waterkoker.
               </p>
             </div>
           </div>

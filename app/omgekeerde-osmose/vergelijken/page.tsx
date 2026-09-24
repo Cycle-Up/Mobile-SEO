@@ -65,7 +65,7 @@ const itemListSchema = {
     },
     {
       '@type': 'ListItem', position: 3,
-      item: { '@type': 'Product', name: 'Geïntegreerde 4-in-1 Kokend Water Kraan met Osmose', description: 'Premium alles-in-één systeem: kokend, koud, warm en bruisend water met ingebouwde omgekeerde osmose', offers: { '@type': 'AggregateOffer', priceCurrency: 'EUR', lowPrice: '699', highPrice: '899', offerCount: '1' } },
+      item: { '@type': 'Product', name: 'Geïntegreerde 4-in-1 Kokend Water Kraan met Osmose', description: 'Premium alles-in-één systeem: warm en koud kraanwater plus gekoeld en zeer heet (circa 96 graden) osmosewater; geen bruisend water', offers: { '@type': 'Offer', priceCurrency: 'EUR', price: '1948.00' } },
     },
   ],
 };
@@ -100,13 +100,13 @@ const systemen = [
   {
     naam: 'Geïntegreerde 4-in-1 Kokend Water Kraan',
     subtitel: 'Premium alles-in-één systeem',
-    prijs: '€ 699 – 899',
+    prijs: '€ 1.948',
     doorstroom: '150–250 L/uur',
     afvalratio: 'Geoptimaliseerd 1:1 of beter',
-    tankinhoud: '3–8 liter gefilterd + heet waterreservoir',
-    filterstappen: '5–7 stappen (incl. remineralisatie)',
-    filterkosten: '€ 80 – 150 / jaar (1 jaarlijkse wissel)',
-    installatie: 'Onder aanrecht + boortje in aanrechtblad; ± 1–2 uur',
+    tankinhoud: 'Heetwatertank 2,3 liter (circa 1,2 liter direct beschikbaar)',
+    filterstappen: '3 stappen (voorfilter, osmosemembraan, remineralisatie)',
+    filterkosten: '€ 80 – 150 / jaar (filters jaarlijks, membraan 2-jaarlijks)',
+    installatie: 'Twee apparaten onder aanrecht, twee stopcontacten; installateur aanbevolen (PureAqua: € 299)',
     highlight: true,
     badge: 'Premium & Aanbevolen',
   },
@@ -115,13 +115,13 @@ const systemen = [
 const vergelijkingSpec = [
   { spec: 'Doorstroomsnelheid', onderbouw: '100–200 L/u (m. pomp)', aanrecht: '50–100 L/u', geintegreerd: '150–250 L/u' },
   { spec: 'Afvalwaterratio', onderbouw: '1:2 tot 1:5', aanrecht: '1:2 tot 1:4', geintegreerd: '1:1 of beter' },
-  { spec: 'Tankvolume', onderbouw: '3–12 L', aanrecht: '1–3 L', geintegreerd: '3–8 L' },
-  { spec: 'Aantal filterstappen', onderbouw: '4–7', aanrecht: '3–5', geintegreerd: '5–7' },
-  { spec: 'Aanschafprijs', onderbouw: '€ 150 – 500', aanrecht: '€ 100 – 350', geintegreerd: '€ 699 – 899' },
+  { spec: 'Tankvolume', onderbouw: '3–12 L', aanrecht: '1–3 L', geintegreerd: '2,3 L (heet)' },
+  { spec: 'Aantal filterstappen', onderbouw: '4–7', aanrecht: '3–5', geintegreerd: '3' },
+  { spec: 'Aanschafprijs', onderbouw: '€ 150 – 500', aanrecht: '€ 100 – 350', geintegreerd: '€ 1.948' },
   { spec: 'Filterkosten / jaar', onderbouw: '€ 50 – 120', aanrecht: '€ 40 – 100', geintegreerd: '€ 80 – 150' },
-  { spec: 'Kokend water', onderbouw: 'Nee', aanrecht: 'Nee', geintegreerd: 'Ja' },
-  { spec: 'Bruisend water', onderbouw: 'Nee', aanrecht: 'Nee', geintegreerd: 'Ja (bij sommige modellen)' },
-  { spec: 'Installatiegemak', onderbouw: 'Matig (loodgieter handig)', aanrecht: 'Eenvoudig', geintegreerd: 'Matig (boortje nodig)' },
+  { spec: 'Kokend water', onderbouw: 'Nee', aanrecht: 'Nee', geintegreerd: 'Zeer heet (circa 96°C)' },
+  { spec: 'Bruisend water', onderbouw: 'Nee', aanrecht: 'Nee', geintegreerd: 'Nee' },
+  { spec: 'Installatiegemak', onderbouw: 'Matig (loodgieter handig)', aanrecht: 'Eenvoudig', geintegreerd: 'Installateur aanbevolen (twee stopcontacten)' },
   { spec: 'Geschikt voor huurwoning', onderbouw: 'Ja', aanrecht: 'Ja', geintegreerd: 'Ja (met toestemming)' },
 ];
 
@@ -137,7 +137,7 @@ const gebruikerssituaties = [
     situatie: 'Kleine keuken, weinig aanrechtruimte',
     beste: 'Onderbouw RO',
     reden:
-      'Alle componenten onder het aanrecht — vrijstaand aanrechtmodel neemt kostbare werkruimte in beslag. Een onderbouwsysteem met apart kraantje houdt het aanrecht vrij. Een 4-in-1 kraan is ook compact zichtbaar maar vereist één boortje in het aanrechtblad.',
+      'Alle componenten onder het aanrecht — vrijstaand aanrechtmodel neemt kostbare werkruimte in beslag. Een onderbouwsysteem met apart kraantje houdt het aanrecht vrij. Bij een 4-in-1 kraan zie je alleen de kraan, maar onder het aanrecht staan twee apparaten en er is één boortje in het aanrechtblad nodig.',
     link: null,
   },
   {
@@ -158,7 +158,7 @@ const gebruikerssituaties = [
     situatie: 'Gezin dat kookwater wil besparen',
     beste: 'Geïntegreerde 4-in-1 kokend water kraan',
     reden:
-      'Een 4-in-1 kraan levert direct 100°C kokend water — geen waterkoker meer nodig, geen wachttijd. In combinatie met osmose gefilterd water krijgt je het beste van beide werelden: kalkvrij én meteen heet.',
+      'Een 4-in-1 kraan levert direct zeer heet water (circa 96°C) en gekoeld water: geen waterkoker meer nodig, geen wachttijd. In combinatie met osmose gefilterd water krijgt je het beste van beide werelden: kalkvrij én meteen heet.',
     link: '/4-in-1-kraan',
   },
 ];
@@ -219,7 +219,7 @@ export default function OsmoseVergelijkenPage() {
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
         <AuthorBox datePublished="2026-05-29" />
 
-        <QuickAnswer answer="Er zijn drie typen osmosesystemen: onderbouw RO (€150–500, meest complete), aanrechtmodel (€100–350, makkelijkst te installeren) en geïntegreerde 4-in-1 kokend water kraan (€699–899, alles-in-één). Voor een gezin van 4 in een hard-watergebied is een onderbouw RO of 4-in-1 systeem de beste keuze." />
+        <QuickAnswer answer="Er zijn drie typen osmosesystemen: onderbouw RO (€150–500, meest complete), aanrechtmodel (€100–350, makkelijkst te installeren) en geïntegreerde 4-in-1 kokend water kraan (€1.948, alles-in-één). Voor een gezin van 4 in een hard-watergebied is een onderbouw RO of 4-in-1 systeem de beste keuze." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -405,8 +405,8 @@ export default function OsmoseVergelijkenPage() {
                 uitleg: `De jaarlijkse filterkosten worden vaak vergeten bij de vergelijking, maar zijn
                   cruciaal voor de total cost of ownership. Goedkope systemen met dure of veel filters
                   kunnen duurder uitvallen dan kwalitatieve systemen met één jaarlijkse wissel. De
-                  geïntegreerde 4-in-1 kraan met osmose is ontworpen voor één jaarlijkse filtervervanging — eenvoudig
-                  en voorspelbaar in kosten. Vraag bij aanschaf altijd naar de specifieke
+                  geïntegreerde 4-in-1 kraan met osmose vervang je voorfilter en remineralisatiefilter circa jaarlijks
+                  en het membraan circa elke twee jaar: voorspelbaar in kosten. Vraag bij aanschaf altijd naar de specifieke
                   filterreplacement kosten en hoe frequent de filters vervangen moeten worden.`,
               },
             ].map((s, i) => (
@@ -429,18 +429,18 @@ export default function OsmoseVergelijkenPage() {
             Is de geïntegreerde 4-in-1 kokend water kraan de premium all-in-one keuze?
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De <strong>geïntegreerde 4-in-1 kokend water kraan met osmose filtratie</strong> is de
-            meest complete wateroplossing voor de keuken. Het systeem combineert vier functies in één
-            elegante kraan: kokend water (100°C), gefilterd koud water via omgekeerde osmose,
-            warm water en bij sommige modellen ook bruisend water. Alles gefilterd. Alles uit één kraan.
+            De <strong>geïntegreerde 4-in-1 kokend water kraan met osmose filtratie</strong> is volgens ons de
+            meest complete wateroplossing voor de keuken. Het systeem combineert in één
+            elegante kraan gewoon warm en koud kraanwater met osmosewater op kamertemperatuur,
+            gekoeld (circa 5°C) en zeer heet (circa 96°C). Bruisend water zit er niet in.
           </p>
           <div className="bg-[#E0F2FE] rounded-2xl p-5 mb-5">
             <p className="font-semibold text-[#003F5C] mb-3">Waarom een 4-in-1 systeem?</p>
             <div className="space-y-2">
               {[
-                'Geen aparte waterkoker meer nodig — direct 100°C kokend water',
+                'Geen aparte waterkoker meer nodig: direct zeer heet water (circa 96°C)',
                 'Omgekeerde osmose filtratie voor alle drinkwater en kookwater',
-                'Één jaarlijkse filtervervanging in plaats van meerdere losse filters',
+                'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar',
                 'Geoptimaliseerde afvalwaterratio — milieuvriendelijker dan basismodellen',
                 'Eén installatie vervangt waterkoker, Brita-kan en aparte osmosekraan',
                 'Strak design — één kraan in plaats van meerdere apparaten op het aanrecht',
@@ -456,18 +456,18 @@ export default function OsmoseVergelijkenPage() {
             <div className="bg-white border border-gray-100 rounded-xl p-4">
               <p className="font-semibold text-gray-900 mb-2 text-sm">Voordelen ten opzichte van losse systemen</p>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li className="flex gap-2"><span className="text-green-600">✓</span>Minder rommel onder het aanrecht</li>
+                <li className="flex gap-2"><span className="text-green-600">✓</span>Eén kraan voor alle functies</li>
                 <li className="flex gap-2"><span className="text-green-600">✓</span>Lagere totale filterkosten (één systeem)</li>
                 <li className="flex gap-2"><span className="text-green-600">✓</span>Hogere doorstroomsnelheid door geïntegreerde pomp</li>
-                <li className="flex gap-2"><span className="text-green-600">✓</span>Kokend water bespaart energie (geen stand-by waterkoker)</li>
+                <li className="flex gap-2"><span className="text-green-600">✓</span>Gekoeld osmosewater zonder fles in de koelkast</li>
               </ul>
             </div>
             <div className="bg-white border border-gray-100 rounded-xl p-4">
               <p className="font-semibold text-gray-900 mb-2 text-sm">Aandachtspunten</p>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li className="flex gap-2"><span className="text-amber-500">!</span>Hogere aanschafprijs (€699–899)</li>
+                <li className="flex gap-2"><span className="text-amber-500">!</span>Hogere aanschafprijs (€1.948)</li>
                 <li className="flex gap-2"><span className="text-amber-500">!</span>Boortje nodig in aanrechtblad voor de kraan</li>
-                <li className="flex gap-2"><span className="text-amber-500">!</span>Reservoirtank en filters onder aanrecht</li>
+                <li className="flex gap-2"><span className="text-amber-500">!</span>Twee apparaten en twee stopcontacten onder het aanrecht</li>
                 <li className="flex gap-2"><span className="text-amber-500">!</span>Optioneel: huurder vraagt toestemming voor boortje</li>
               </ul>
             </div>
@@ -570,12 +570,12 @@ export default function OsmoseVergelijkenPage() {
         <section className="bg-gradient-to-br from-[#005F8A] to-[#003F5C] text-white rounded-2xl p-6 md:p-8 text-center">
           <p className="text-blue-200 text-sm mb-1">Klaar met vergelijken?</p>
           <h2 className="text-xl md:text-2xl font-bold mb-3">
-            Bekijk de 4-in-1 kraan met osmose — gefilterd, kokend én koud
+            Bekijk de 4-in-1 kraan met osmose: gefilterd, zeer heet én gekoeld
           </h2>
           <p className="text-blue-100 mb-5 max-w-lg mx-auto text-sm leading-relaxed">
             Een 4-in-1 kraan met osmose combineert alles wat je nodig hebt: omgekeerde osmose filtratie,
-            kokend water, koud gefilterd water en warm water — uit één elegante kraan. Één jaarlijkse
-            filterwissel.
+            zeer heet (circa 96°C) en gekoeld water plus gewoon warm en koud water, uit één elegante kraan.
+            Bruisend water zit er niet in.
           </p>
           <Link
             href="/omgekeerde-osmose/kopen"

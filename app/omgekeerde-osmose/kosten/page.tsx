@@ -67,7 +67,7 @@ const faqSchema = {
       name: 'Wat is het verschil in kosten tussen budget- en premium osmosesystemen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Budgetsystemen (250-400 euro) zoals IcePure en Aquatrio leveren functioneel gefilterd water maar hebben soms minder duurzame onderdelen en hogere afvalwaterverhouding (4:1 of slechter). Mid-range systemen (400-700 euro) zoals Aqua Elegant en WaterDrop bieden betere recovery (2:1 of 3:1), stille pomp en langere garantie. Premium systemen (700-1.500 euro) zoals PureAqua 4-in-1 of Pentair omvatten een geintegreerde kokend- of koud-warm-kraanoplossing. Op vijfjaarsbasis zijn de totale eigendomskosten van budget en mid-range systemen echter vergelijkbaar.',
+        text: 'Budgetsystemen (250-400 euro) zoals IcePure en Aquatrio leveren functioneel gefilterd water maar hebben soms minder duurzame onderdelen en hogere afvalwaterverhouding (4:1 of slechter). Mid-range systemen (400-700 euro) zoals Aqua Elegant en WaterDrop bieden betere recovery (2:1 of 3:1), stille pomp en langere garantie. Premium systemen (700-1.500 euro) zoals Pentair bieden extra functies of capaciteit; een 4-in-1 kraan met osmose zoals de PureAqua 4-in-1 kost 1.948 euro en geeft ook gekoeld en zeer heet water. Op vijfjaarsbasis zijn de totale eigendomskosten van budget en mid-range systemen echter vergelijkbaar.',
       },
     },
     {
@@ -170,7 +170,7 @@ export default function OsmoseKostenPage() {
               <tr>
                 <td className="border border-gray-300 px-3 py-2 font-medium">Premium</td>
                 <td className="border border-gray-300 px-3 py-2">&euro;700&ndash;1.500</td>
-                <td className="border border-gray-300 px-3 py-2">PureAqua 4-in-1, Everpure, Pentair</td>
+                <td className="border border-gray-300 px-3 py-2">Everpure, Pentair (PureAqua 4-in-1: &euro;1.948)</td>
               </tr>
             </tbody>
           </table>
@@ -190,8 +190,8 @@ export default function OsmoseKostenPage() {
         </p>
         <p className="text-gray-700 mb-6">
           <strong>Premiumsystemen</strong> (700&ndash;1.500 euro) combineren osmosezuivering met
-          extra functies: een geintegreerde 4-in-1 kraan die zowel kokend, koud, warm als gefilterd
-          water levert (PureAqua 4-in-1), of professionele merken als Everpure en Pentair die
+          extra functies: een geintegreerde 4-in-1 kraan die naast gewoon warm en koud water ook gekoeld,
+          zeer heet (circa 96 graden) en gefilterd water levert (PureAqua 4-in-1, met 1.948 euro boven deze prijsklasse), of professionele merken als Everpure en Pentair die
           worden gebruikt in de horeca en door waterexperts.
         </p>
 
@@ -335,10 +335,10 @@ export default function OsmoseKostenPage() {
               </tr>
               <tr>
                 <td className="border border-gray-300 px-3 py-2 font-medium">4-in-1 kraan (PureAqua)</td>
-                <td className="border border-gray-300 px-3 py-2">&euro;1.200</td>
-                <td className="border border-gray-300 px-3 py-2">&euro;200</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;1.948</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;299</td>
                 <td className="border border-gray-300 px-3 py-2">&euro;550</td>
-                <td className="border border-gray-300 px-3 py-2 font-bold">&euro;1.950</td>
+                <td className="border border-gray-300 px-3 py-2 font-bold">&euro;2.797</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2 font-medium">Filterkan (gezin 3 pers.)</td>

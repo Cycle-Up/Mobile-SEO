@@ -5,6 +5,7 @@ import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { CountertopCTA } from '@/components/CountertopCTA';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 
 export const metadata: Metadata = {
   title: 'PFAS verwijderen met omgekeerde osmose: 95-99% reductie',
@@ -98,6 +99,8 @@ export default function PfasOsmosePage() {
       <div className="max-w-4xl mx-auto px-4 py-10">
         <HealthDisclaimer />
         <CTABanner context="osmose" />
+
+        <ThreeWayRecommendation content="pfas-waterfilter-osmose-3weg-aanbeveling" />
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">

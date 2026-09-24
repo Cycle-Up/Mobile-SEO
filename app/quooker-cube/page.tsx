@@ -48,7 +48,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil tussen Quooker CUBE en een 4-in-1 osmose kraan?',
     answer:
-      'Het grootste verschil zit in de filtermethode. De CUBE gebruikt een geactiveerde koolstoffilter — geschikt voor chloor en smaakverbetering, maar geen omgekeerde osmose. Een 4-in-1 osmose kraan heeft een RO-membraan dat 95–99% van nitraat, PFAS, kalk, zware metalen en microplastics verwijdert. Bovendien is de aanschafprijs van een complete 4-in-1 osmose set (€699–899) doorgaans lager dan een Quooker plus CUBE (samen €1.300–2.000). De Quooker biedt wél een vertrouwde gebruikservaring met dealer-installatie.',
+      'Het grootste verschil zit in de filtermethode. De CUBE gebruikt een geactiveerde koolstoffilter — geschikt voor chloor en smaakverbetering, maar geen omgekeerde osmose. Een 4-in-1 osmose kraan heeft een RO-membraan dat 95–99% van nitraat, PFAS, kalk, zware metalen en microplastics verwijdert. De PureAqua 4-in-1 kost 1.948 euro, circa 300 euro minder dan een Quooker Flex PRO3 met CUBE (2.240 euro bij PureAqua), maar geeft geen bruisend water: wel zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. De Quooker biedt wél bruisend water en een vertrouwde gebruikservaring met dealer-installatie.',
   },
   {
     question: 'Kan ik de CUBE retourneren en een ander systeem installeren?',
@@ -58,7 +58,7 @@ const faqItems = [
   {
     question: 'Is de Quooker CUBE de moeite waard?',
     answer:
-      'Dat hangt sterk af van je bruisend waterverbruik. Voor een huishouden dat dagelijks een liter of meer bruisend water drinkt, is de CUBE financieel interessanter dan een losse SodaStream plus een apart koolstoffilter — zeker als je die combinatie ook nog regelmatig hoeft bij te vullen met CO₂-cylinders en patronen. Drink je zelden bruisend water, of vind je de jaarlijkse CO₂-kosten een bezwaar, dan is de CUBE minder aantrekkelijk. Een 4-in-1 osmose kraan biedt dan dezelfde functies én betere filtratie voor een lagere totaalprijs.',
+      'Dat hangt sterk af van je bruisend waterverbruik. Voor een huishouden dat dagelijks een liter of meer bruisend water drinkt, is de CUBE financieel interessanter dan een losse SodaStream plus een apart koolstoffilter — zeker als je die combinatie ook nog regelmatig hoeft bij te vullen met CO₂-cylinders en patronen. Drink je zelden bruisend water, of vind je de jaarlijkse CO₂-kosten een bezwaar, dan is de CUBE minder aantrekkelijk. Een 4-in-1 osmose kraan zoals de PureAqua 4-in-1 biedt dan gekoeld en zeer heet water met osmosefiltratie, zonder bruisend water en zonder CO₂-kosten.',
   },
 ];
 
@@ -306,7 +306,7 @@ export default function QuookerCubePage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Quooker CUBE versus 4-in-1 osmose kraan: de vergelijking</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
-            De <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 osmose kraan</Link> is het voornaamste alternatief voor wie kokend, koud, warm én bruisend water wil — maar dan met volledige RO-filtratie.
+            De <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 osmose kraan</Link> is het voornaamste alternatief voor wie gekoeld en zeer heet water wil met volledige RO-filtratie. Bruisend water geeft de PureAqua 4-in-1 niet; daarvoor blijft de CUBE (of een losse SodaStream) nodig.
             Hieronder de directe vergelijking op de meest relevante criteria.
           </p>
 
@@ -324,15 +324,15 @@ export default function QuookerCubePage() {
                   { criterium: 'Filtermethode', cube: 'Actief kool', osmose: 'Omgekeerde osmose (RO)' },
                   { criterium: 'Verwijdert chloor', cube: '✓ 90–95%', osmose: '✓ 95–99%' },
                   { criterium: 'Verwijdert nitraat', cube: '✗ Nee', osmose: '✓ 85–95%' },
-                  { criterium: 'Verwijdert PFAS', cube: '✗ Nee', osmose: '✓ 95–99%' },
+                  { criterium: 'Verwijdert PFAS', cube: '✗ Nee', osmose: '✓ PFOS >99,6%, PFOA 99,5% (SGS, nieuw systeem)' },
                   { criterium: 'Verwijdert kalk', cube: '✗ Nee', osmose: '✓ 95–99%' },
-                  { criterium: 'Bruisend water', cube: '✓ (CO₂)', osmose: '✓ (CO₂, 4-in-1)' },
-                  { criterium: 'Kokend water (100°C)', cube: '✓', osmose: '✓' },
-                  { criterium: 'Gekoeld water (4°C)', cube: '✓', osmose: '✓ (bij sommige modellen)' },
-                  { criterium: 'Aanschafprijs totaal', cube: '€1.300–2.000 (Quooker + CUBE)', osmose: '€699–899' },
-                  { criterium: 'Jaarlijkse kosten', cube: '€110–175', osmose: '€80–120' },
+                  { criterium: 'Bruisend water', cube: '✓ (CO₂)', osmose: '✗ Nee (PureAqua 4-in-1)' },
+                  { criterium: 'Heet water', cube: '✓ kokend (via Quooker)', osmose: '✓ zeer heet (circa 96°C)' },
+                  { criterium: 'Gekoeld water', cube: '✓ (4°C)', osmose: '✓ (circa 5°C)' },
+                  { criterium: 'Aanschafprijs totaal', cube: '€2.240 (Flex PRO3 met CUBE, PureAqua)', osmose: '€1.948 (PureAqua 4-in-1)' },
+                  { criterium: 'Jaarlijkse kosten', cube: '€110–175', osmose: 'Voorfilter en remineralisatie jaarlijks, membraan elke 2 jaar' },
                   { criterium: 'Geschikt voor hard water', cube: '✗ Nee', osmose: '✓ Ja' },
-                  { criterium: 'Installatie', cube: 'Via Quooker-dealer', osmose: 'Vaak zelf installeerbaar' },
+                  { criterium: 'Installatie', cube: 'Via Quooker-dealer', osmose: 'Installateur aanbevolen (PureAqua: €299)' },
                 ].map((r, i) => (
                   <tr key={r.criterium} className={`border-b border-gray-100 ${i % 2 === 0 ? '' : 'bg-gray-50/50'}`}>
                     <td className="py-2.5 px-3 font-semibold text-gray-700">{r.criterium}</td>
@@ -368,7 +368,7 @@ export default function QuookerCubePage() {
                 <li className="flex gap-2"><span className="text-gray-400 font-bold shrink-0">→</span> Je nog géén Quooker hebt en van scratch begint</li>
                 <li className="flex gap-2"><span className="text-gray-400 font-bold shrink-0">→</span> Je puur, kalkvrij of nitraatarm water nodig hebt</li>
                 <li className="flex gap-2"><span className="text-gray-400 font-bold shrink-0">→</span> Je hard water hebt (boven 20°dH)</li>
-                <li className="flex gap-2"><span className="text-gray-400 font-bold shrink-0">→</span> Je totaalkosten wilt beperken (&lt; €900 inclusief installatie)</li>
+                <li className="flex gap-2"><span className="text-gray-400 font-bold shrink-0">→</span> Je gekoeld, zeer heet en gezuiverd water belangrijker vindt dan bubbels</li>
                 <li className="flex gap-2"><span className="text-gray-400 font-bold shrink-0">→</span> Je PFAS of nitraat wilt verwijderen</li>
               </ul>
             </div>

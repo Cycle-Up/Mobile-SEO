@@ -483,8 +483,8 @@ export default function KraanwaterPage() {
             <p className="text-sm text-gray-700 mb-3 leading-relaxed">
               Voor smaakverbetering volstaat een koolstoffilter. Voor bredere zuivering (kalk,
               nitraten, PFAS, microplastics) is omgekeerde osmose de beste keuze. Wil je
-              bovendien kokend en bruisend water? Dan is een 4-in-1 kraan met ingebouwde osmose
-              de meest complete oplossing.
+              bovendien gekoeld en zeer heet water uit dezelfde kraan? Dan is een 4-in-1 kraan met ingebouwde osmose
+              volgens ons de meest complete oplossing (bruisend water zit er niet in).
             </p>
             <div className="flex flex-wrap gap-2">
               <Link

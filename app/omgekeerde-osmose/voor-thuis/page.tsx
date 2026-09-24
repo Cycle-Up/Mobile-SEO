@@ -60,7 +60,7 @@ const typesTabel = [
   },
   {
     type: '4-in-1 kraan met RO',
-    aanschafprijs: '€ 699 – 899',
+    aanschafprijs: '€ 1.948',
     installatietijd: '2–4 uur',
     dagcapaciteit: '150–300 L/dag',
     jaarkostenFilter: '€ 89–100',
@@ -123,7 +123,7 @@ const situatieAdvies = [
   {
     situatie: 'Wil ook kokend water',
     keuze: '4-in-1 kraan met osmose',
-    reden: 'Vervangt waterkoker, levert kokend én gefilterd koud en bruisend water uit één kraan.',
+    reden: 'Vervangt waterkoker, levert zeer heet (circa 96°C), gekoeld en gefilterd water uit één kraan; geen bruisend water.',
   },
   {
     situatie: 'Budget onder €200',
@@ -240,7 +240,7 @@ export default function OsmoseVoorThuisPage() {
                 <span className="text-xs bg-[#005F8A] text-white px-2 py-0.5 rounded-full shrink-0">Meest compleet</span>
               </div>
               <p className="text-sm text-gray-700 leading-relaxed">
-                De meest complete oplossing. De kraan levert kokend (100°C), koud gefilterd, warm gefilterd en bruisend gefilterd water. Het osmosefilter is ingebouwd in de boiler onder het aanrecht. Hogere aanschafprijs, maar vervangt tegelijkertijd de waterkoker en eventueel een bruisend water-abonnement. Één jaarlijkse filterwissel voor alle stappen.
+                Volgens ons de meest complete oplossing. De kraan levert gewoon warm en koud kraanwater plus osmosewater op kamertemperatuur, gekoeld (circa 5°C) en zeer heet (circa 96°C); bruisend water zit er niet in. Onder het aanrecht staan twee apparaten: een heet-/koelunit en een osmose-unit. Hogere aanschafprijs (€1.948), maar vervangt tegelijkertijd de waterkoker. Voorfilter en remineralisatiefilter wissel je circa jaarlijks, het membraan circa elke twee jaar.
               </p>
             </div>
           </div>
@@ -298,7 +298,7 @@ export default function OsmoseVoorThuisPage() {
           </div>
           <div className="bg-[#E0F2FE] rounded-2xl p-5 text-sm text-gray-700">
             <strong className="text-[#003F5C]">Gemiddelde installatietijd: 2–4 uur.</strong>{' '}
-            Voor de meeste onderbouwsystemen is geen loodgieter nodig. Alleen bij een 4-in-1 kraan waarbij zowel koud- als warmwateraansluiting nodig is, kan professionele hulp (€80–150) tijdwinst opleveren. Meer detail vindt u op de pagina{' '}
+            Voor de meeste onderbouwsystemen is geen loodgieter nodig. Bij een 4-in-1 kraan met osmose is installatie door een installateur aanbevolen (twee apparaten, twee stopcontacten); PureAqua biedt dat aan voor €299. Meer detail vindt u op de pagina{' '}
             <Link href="/osmose-filter/installatie" className="text-[#005F8A] underline hover:no-underline">
               osmose filter installatie
             </Link>.

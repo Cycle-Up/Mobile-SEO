@@ -10,12 +10,12 @@ import { MethodologyBadge } from '@/components/MethodologyBadge';
 export const metadata: Metadata = {
   title: "Grohe Blue vs Grohe Red: wat is het verschil?",
   description:
-    "Grohe Blue vs Grohe Red vergeleken: Blue geeft gekoeld en bruisend gefilterd water, Red geeft kokend water. Plus de 4-in-1 osmosekraan die beide combineert.",
+    "Grohe Blue vs Grohe Red: Blue geeft gekoeld en bruisend gefilterd water, Red kokend water. Plus de 4-in-1 osmosekraan: gekoeld en zeer heet, zonder bruis.",
   alternates: { canonical: "https://waterfilterplatform.nl/vergelijken/grohe-blue-vs-grohe-red" },
   openGraph: {
     title: "Grohe Blue vs Grohe Red: wat is het verschil?",
     description:
-      "Grohe Blue (gekoeld/bruisend/gefilterd) vs Grohe Red (kokend) eerlijk vergeleken, met de 4-in-1 osmosekraan als alternatief dat beide combineert.",
+      "Grohe Blue (gekoeld/bruisend/gefilterd) vs Grohe Red (kokend) eerlijk vergeleken, met de 4-in-1 osmosekraan (gekoeld en zeer heet, geen bruis) als alternatief.",
     type: "article",
   },
 };
@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: "Kan ik Grohe Blue en Grohe Red combineren?",
     answer:
-      "Technisch kun je beide systemen installeren, maar dat betekent twee aparte units en twee keer de kosten en het onderhoud. Wie zowel kokend als gekoeld en bruisend gefilterd water wil, kiest praktischer voor een 4-in-1 kraan met osmose die deze functies in een kraan combineert.",
+      "Technisch kun je beide systemen installeren, maar dat betekent twee aparte units en twee keer de kosten en het onderhoud. Wie zowel heet als gekoeld gefilterd water wil, kan ook kiezen voor een 4-in-1 kraan met osmose die dat in een kraan combineert. Bruisend water geeft de PureAqua 4-in-1 niet; daarvoor blijft de Grohe Blue de betere keuze.",
   },
   {
     question: "Welke filtert beter, Grohe Blue of een osmosesysteem?",
@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: "Wat is een alternatief dat kokend en bruisend water combineert?",
     answer:
-      "Een 4-in-1 kraan met osmosefilter levert kokend, koud gefilterd, warm en bruisend water uit een kraan, met osmose die dieper filtert dan een koolpatroon. Dat combineert de functies van Grohe Red en Grohe Blue in een systeem, vaak voor een lagere totaalprijs dan beide Grohe-units samen.",
+      "Een Quooker met CUBE combineert kokend, gekoeld en bruisend water (Flex PRO3 met CUBE: 2.240 euro bij PureAqua), met een koolfilter. De PureAqua 4-in-1 kraan met osmosefilter levert gewoon warm en koud kraanwater, plus gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden), met osmose die dieper filtert dan een koolpatroon. Dat combineert het hete water van de Grohe Red en het gekoelde water van de Grohe Blue in een systeem voor 1.948 euro. Bruisend water zit er niet in.",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function GroheBlueVsGroheRedPage() {
         type="Article"
         article={{
           title: "Grohe Blue vs Grohe Red: wat is het verschil?",
-          description: "Grohe Blue vs Grohe Red vergeleken: Blue geeft gekoeld en bruisend gefilterd water, Red geeft kokend water. Plus de 4-in-1 osmosekraan die beide combineert.",
+          description: "Grohe Blue vs Grohe Red vergeleken: Blue geeft gekoeld en bruisend gefilterd water, Red geeft kokend water. Plus de 4-in-1 osmosekraan met gekoeld en zeer heet water (zonder bruis).",
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
           url: "https://waterfilterplatform.nl/vergelijken/grohe-blue-vs-grohe-red",
@@ -79,7 +79,7 @@ export default function GroheBlueVsGroheRedPage() {
           </h1>
           <QuickAnswer
             question="Grohe Blue of Grohe Red?"
-            answer="De Grohe Blue geeft gekoeld, gefilterd en bruisend water via een koolfilter; de Grohe Red geeft instant kokend water. Het zijn complementaire producten, geen concurrenten. Wil je beide functies plus diepere filtratie in een kraan, dan combineert een 4-in-1 osmosekraan kokend, koud gefilterd en bruisend water - vaak goedkoper dan beide Grohe-units samen."
+            answer="De Grohe Blue geeft gekoeld, gefilterd en bruisend water via een koolfilter; de Grohe Red geeft instant kokend water. Het zijn complementaire producten, geen concurrenten. Wil je heet en gekoeld water plus diepere filtratie in een kraan, dan combineert een 4-in-1 osmosekraan zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, maar zonder bruisend water."
           />
         </div>
       </section>
@@ -102,7 +102,7 @@ export default function GroheBlueVsGroheRedPage() {
             Wie alles wil - kokend, koud gefilterd en bruisend water - zou beide moeten kopen, met
             dubbele aanschaf en onderhoud. Een{" "}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] hover:underline font-medium">omgekeerde osmose</Link>{" "}
-            4-in-1 kraan combineert die functies juist in een systeem.
+            4-in-1 kraan combineert heet, gekoeld en gezuiverd water in een systeem, maar geen bruisend water.
           </p>
 
           <h2 className="text-2xl font-bold text-[#005F8A] mt-8 mb-4">Vergelijkingstabel</h2>
@@ -118,12 +118,12 @@ export default function GroheBlueVsGroheRedPage() {
               </thead>
               <tbody>
                 {[
-                  ["Kokend water", "Nee", "Ja (100 graden)", "Ja (100 graden)"],
-                  ["Gekoeld water", "Ja", "Nee", "Koud gefilterd"],
-                  ["Bruisend water", "Ja (CO2)", "Nee", "Ja, standaard"],
+                  ["Kokend water", "Nee", "Ja (100 graden)", "Zeer heet (circa 96 graden)"],
+                  ["Gekoeld water", "Ja", "Nee", "Ja (circa 5 graden)"],
+                  ["Bruisend water", "Ja (CO2)", "Nee", "Nee"],
                   ["Filtratie", "Koolfilter", "Optioneel kalkpatroon", "Omgekeerde osmose"],
-                  ["PFAS / lood / nitraat", "Niet effectief", "Niet effectief", "90-99% reductie"],
-                  ["Prijsindicatie", "EUR 1.000-2.000", "EUR 1.200-2.000", "EUR 699-899"],
+                  ["PFAS / lood / nitraat", "Niet effectief", "Niet effectief", "PFOS >99,6%, lood >99,8% (SGS)"],
+                  ["Prijsindicatie", "EUR 1.000-2.000", "EUR 1.200-2.000", "EUR 1.948 (PureAqua)"],
                 ].map(([eig, b, r, v], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                     <td className="px-4 py-3 font-medium text-gray-700 border border-gray-200">{eig}</td>
@@ -153,9 +153,9 @@ export default function GroheBlueVsGroheRedPage() {
 
           <h2 className="text-2xl font-bold text-[#005F8A] mt-8 mb-4">Wanneer is een 4-in-1 osmosekraan logischer?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Wil je zowel kokend als koud gefilterd en bruisend water, en bovendien een diepere
-            filtratie die lood, nitraat, PFAS en microplastics aanpakt, dan combineert een 4-in-1
-            kraan met osmose dat in een systeem. Lees meer over{" "}
+            Wil je zowel zeer heet als gekoeld gefilterd water, en bovendien een diepere filtratie die
+            lood, nitraat, PFAS en microplastics aanpakt, dan combineert een 4-in-1 kraan met osmose dat
+            in een systeem. Is bruisend water voor jou onmisbaar, dan blijft de Grohe Blue nodig. Lees meer over{" "}
             <Link href="/grohe-blue-alternatief" className="text-[#005F8A] hover:underline font-medium">het Grohe Blue alternatief</Link>{" "}
             en{" "}
             <Link href="/grohe-red-alternatief" className="text-[#005F8A] hover:underline font-medium">het Grohe Red alternatief</Link>.
@@ -200,7 +200,7 @@ export default function GroheBlueVsGroheRedPage() {
             content="vergelijken-grohe-blue-vs-grohe-red-cta"
             label="Bekijk de PureAqua 4-in-1 kraan"
             title="Liever kokend en gefilterd water uit een kraan?"
-            sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+            sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
           />
 
           <CTABanner context="osmose" />

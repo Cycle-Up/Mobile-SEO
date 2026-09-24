@@ -56,7 +56,7 @@ const faqItems = [
   {
     question: 'Hoe combineer je osmose water met een kokend water kraan voor thee?',
     answer:
-      'Een 4-in-1 osmosekraan levert gefilterd osmose water direct op elke gewenste temperatuur. Stel de kraan in op 80°C voor groene thee, 95°C voor zwarte thee. Geen waterkoker, geen wachttijd, geen kalksporen in je ketel. De combinatie van osmose filtratie (geen chloor, geen kalk) met nauwkeurige temperatuurcontrole is de optimale thee-setup voor theeliefhebbers die de smaak van hun thee maximaal willen benutten.',
+      'Een 4-in-1 kraan met osmose, zoals de PureAqua 4-in-1, geeft osmose-gezuiverd water dat zeer heet is (circa 96 graden), gekoeld of op kamertemperatuur. Voor zwarte thee en pu-erh gebruik je het hete water direct. Voor groene of witte thee laat je het even afkoelen of meng je het met een scheut osmosewater op kamertemperatuur. Geen waterkoker, geen kalksporen in je ketel. De combinatie van osmose filtratie (geen chloor, geen kalk) met direct heet water is volgens ons een prettige thee-setup voor wie de smaak van zijn thee maximaal wil benutten.',
   },
 ];
 
@@ -385,7 +385,7 @@ export default function OsmoseWaterTheePage() {
           <div className="bg-[#E0F2FE] rounded-xl p-5">
             <h3 className="font-semibold text-[#003F5C] mb-2">Kokend water kraan: de ideale thee-setup</h3>
             <p className="text-sm text-gray-700 mb-3 leading-relaxed">
-              Een 4-in-1 osmosekraan combineert osmose filtratie met nauwkeurig geregeld heet water. Stel de temperatuur in op 80°C voor groene thee, 95°C voor zwarte thee. Geen waterkoker, geen wachttijd, geen kalkringlater in de ketel. Het water is gefilterd osmose water — geen chloor, geen kalk, geen theeschuim.
+              Een 4-in-1 osmosekraan combineert osmose filtratie met zeer heet water van circa 96 graden. Dat is direct goed voor zwarte thee; voor groene thee laat je het een minuut of twee afkoelen of meng je het met osmosewater op kamertemperatuur. Geen waterkoker, geen kalkringlater in de ketel. Het water is gefilterd osmose water — geen chloor, geen kalk, geen theeschuim.
             </p>
             <Link
               href="/omgekeerde-osmose/kopen"
@@ -496,10 +496,10 @@ export default function OsmoseWaterTheePage() {
         {/* CTA */}
         <section className="bg-gradient-to-br from-[#E0F2FE] to-white border border-[#005F8A]/20 rounded-2xl p-6">
           <h2 className="text-xl font-bold text-[#003F5C] mb-3">
-            PureAqua 4-in-1: osmose water op de perfecte theetemperatuur
+            PureAqua 4-in-1: zeer heet osmosewater voor je thee
           </h2>
           <p className="text-gray-700 text-sm leading-relaxed mb-4">
-            De combinatie van een omgekeerde osmose filter en een kokend water kraan is de ideale thee-setup. Osmose filtratie elimineert chloor en kalk; nauwkeurige temperatuurregeling voorkomt bitterheid bij delicate teeën. Alles uit één kraan — geen waterkoker, geen kalkaanslag, geen theeschuim.
+            De combinatie van een omgekeerde osmose filter en een kokend water kraan is de ideale thee-setup. Osmose filtratie elimineert chloor en kalk; zeer heet water (circa 96 graden) is direct klaar voor zwarte thee, en voor delicate teeën laat je het kort afkoelen om bitterheid te voorkomen. Alles uit één kraan — geen waterkoker, geen kalkaanslag, geen theeschuim.
           </p>
           <p className="text-gray-700 text-sm leading-relaxed mb-4">
             Meer over osmose water voor andere dranken en toepassingen lees je op onze{' '}

@@ -447,7 +447,7 @@ export default function KokendWaterKraanBoilerPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { href: '/kokend-water-kraan', label: 'Kokend water kraan — complete gids' },
-              { href: '/4-in-1-kraan', label: '4-in-1 kraan met osmose en bruisend water' },
+              { href: '/4-in-1-kraan', label: '4-in-1 kraan met osmose, gekoeld en zeer heet water' },
               { href: '/kokend-water-kraan/installeren', label: 'Zelf installeren: stap-voor-stap gids' },
               { href: '/omgekeerde-osmose/kopen', label: 'Osmosefilter kopen — aanbevelingen' },
               { href: '/kennisbank/kokend-water-kraan-boiler', label: 'Kennisbank: boiler techniek verdieping' },

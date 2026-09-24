@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: "Wat is het verschil tussen Quooker en PureAqua?",
     answer:
-      "Het grootste verschil is het filtersysteem. Een Quooker levert heet of kokend water maar heeft geen ingebouwde waterfilter — een externe Quooker CUBE-eenheid voegt bruiswater toe maar filtert niet op PFAS of lood. PureAqua 4-in-1 heeft een ingebouwd osmosefilter: het water wordt gefilterd op moleculair niveau voordat het verhit wordt. Quooker werkt met een vacuüm boilertank (ca. 3 liter); PureAqua maakt gebruik van direct heating of een kleinere boiler gecombineerd met RO-membraan.",
+      "Het grootste verschil is het filtersysteem. Een Quooker levert heet of kokend water maar heeft geen ingebouwde waterfilter — een externe Quooker CUBE-eenheid voegt bruiswater toe maar filtert niet op PFAS of lood. PureAqua 4-in-1 heeft een ingebouwd osmosefilter: het water wordt gefilterd op moleculair niveau voordat het verhit of gekoeld wordt. Quooker werkt met een vacuüm boilertank (ca. 3 liter) en levert kokend water; de PureAqua 4-in-1 heeft een heet-/koelunit met een tank van 2,3 liter en levert zeer heet water van circa 96 graden, plus gekoeld water (circa 5 graden). Bruisend water geeft de PureAqua 4-in-1 niet.",
   },
   {
     question: "Hoe lang gaat een kokend water kraan mee?",
@@ -44,7 +44,7 @@ const faqItems = [
   {
     question: "Hoe vervang ik het filter van mijn kokend water kraan?",
     answer:
-      "Bij Quooker CUBE (bruiswater-eenheid) wordt het koolstoffilter jaarlijks vervangen; dit is een eenvoudige handeling die zelf te doen is. Bij systemen met osmosefilter (PureAqua, Grohe Blue met osmose) wisselt u het pre-filter elke 6-12 maanden, het osmosemembraan elke 2-3 jaar en het post-filter jaarlijks. De meeste fabrikanten leveren een vervangingspakket per post. Gebruik een TDS-meter om de membraanprestaties te monitoren.",
+      "Bij Quooker CUBE (bruiswater-eenheid) wordt het koolstoffilter jaarlijks vervangen; dit is een eenvoudige handeling die zelf te doen is. Bij systemen met osmosefilter wisselt u doorgaans het pre-filter elke 6-12 maanden, het osmosemembraan elke 2-3 jaar en het post-filter jaarlijks. Bij de PureAqua 4-in-1 vervangt u het voorfilter en het remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar. De meeste fabrikanten leveren een vervangingspakket per post. Gebruik een TDS-meter om de membraanprestaties te monitoren.",
   },
 ];
 
@@ -111,14 +111,14 @@ export default function KokendWaterKraanMerkenPage() {
               </thead>
               <tbody>
                 {[
-                  ["Aanschafprijs", "900-1.400 euro", "700-1.100 euro", "800-1.600 euro", "500-900 euro"],
-                  ["Jaarlijkse kosten", "100-180 euro (filter + energie)", "80-150 euro", "150-250 euro (RO-filters)", "60-120 euro"],
-                  ["Capaciteit", "7 liter/uur", "5-6 liter/uur", "4-6 liter/uur (RO beperkt snelheid)", "~6 liter/uur"],
-                  ["Technologie", "Vacuüm boiler (110°C)", "Boiler (150-210°C standby)", "Direct heating + RO", "Direct heating"],
+                  ["Aanschafprijs", "900-1.400 euro", "700-1.100 euro", "1.948 euro (installatie optioneel 299 euro)", "500-900 euro"],
+                  ["Jaarlijkse kosten", "100-180 euro (filter + energie)", "80-150 euro", "Voor- en remineralisatiefilter jaarlijks, membraan elke 2 jaar", "60-120 euro"],
+                  ["Capaciteit", "7 liter/uur", "5-6 liter/uur", "Circa 1,2 liter heet direct beschikbaar (tank 2,3 liter); gekoeld tot 20 liter/uur", "~6 liter/uur"],
+                  ["Technologie", "Vacuüm boiler (110°C)", "Boiler (150-210°C standby)", "Heet-/koelunit (circa 96°C en circa 5°C) + RO", "Direct heating"],
                   ["Ingebouwde waterfilter", "Nee (CUBE optioneel)", "Nee", "Ja, osmose (RO)", "Nee (optioneel)"],
-                  ["Installatievereisten", "230V, gat aanrecht, 1/4\"", "230V, gat aanrecht, 1/4\"", "230V, 2 gaten, 1/4\" + afvoer", "230V, gat aanrecht, 1/4\""],
+                  ["Installatievereisten", "230V, gat aanrecht, 1/4\"", "230V, gat aanrecht, 1/4\"", "2 stopcontacten, 2 apparaten onder de spoelbak, afvoer", "230V, gat aanrecht, 1/4\""],
                   ["Garantie", "2 jaar (fabrikant)", "2 jaar (fabrikant)", "2-3 jaar", "2 jaar"],
-                  ["Standby energie (dag)", "10-25 Wh/dag", "15-30 Wh/dag", "5-15 Wh/dag (kleine tank)", "0 Wh (geen standby)"],
+                  ["Standby energie (dag)", "10-25 Wh/dag", "15-30 Wh/dag", "Geen fabrieksopgave (heet en gekoeld)", "0 Wh (geen standby)"],
                 ].map(([eigenschap, quooker, grohe, pureaqua, insinkerator], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                     <td className="px-4 py-3 font-medium text-gray-700 border border-gray-200">{eigenschap}</td>
@@ -148,7 +148,7 @@ export default function KokendWaterKraanMerkenPage() {
             continu energieverbruik, ook &apos;s nachts of tijdens vakanties.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Direct heating systemen</strong> (InSinkErator, sommige PureAqua-modellen) verwarmen
+            <strong>Direct heating systemen</strong> (zoals InSinkErator) verwarmen
             water alleen op het moment dat de gebruiker de kraan opent, via een elektrisch
             verwarmingselement direct in de waterweg. Er is geen opslagtank vereist, wat ruimte
             bespaart. Het standby-energieverbruik is nul. Het nadeel: er is een korte aanlooptijd
@@ -169,11 +169,11 @@ export default function KokendWaterKraanMerkenPage() {
             stellen, is een apart osmosefilter nodig. Grohe Red heeft geen standaard filter.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            PureAqua 4-in-1 systemen integreren een volledig osmosefiltratiesysteem in de
-            ondersink-eenheid. Het water wordt eerst door een sedimentfilter, dan een koolstoffilter,
-            dan het RO-membraan en een post-koolfilter geleid — en pas dan verhit. Dit betekent
-            dat het kokende water dat uit de kraan komt ook vrij is van PFAS, lood, nitraat en
-            microplastics. Het nadeel: RO-filters beperken de doorstroomsnelheid, waardoor de
+            De PureAqua 4-in-1 integreert een volledig osmosefiltratiesysteem in een aparte osmose-unit
+            onder de spoelbak. Het water gaat in drie stappen door een voorfilter, het osmosemembraan en
+            een remineralisatiefilter, en wordt daarna verhit tot circa 96 graden of gekoeld. In een
+            SGS-labtest op een nieuw systeem daalden PFOS met meer dan 99,6%, PFOA met 99,5% en lood met
+            meer dan 99,8%. Het nadeel: RO-filters beperken de doorstroomsnelheid, waardoor de
             capaciteit in liters per uur lager is dan bij systemen zonder filter.
           </p>
           <p className="text-gray-700 mt-4">Zie ook: <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] hover:underline font-medium">Omgekeerde osmose filtertechniek</Link>.</p>
@@ -198,7 +198,7 @@ export default function KokendWaterKraanMerkenPage() {
                   ["Quooker COMBI+", "0,010-0,025 kWh", "3,7-9 kWh", "1,10-2,70 euro"],
                   ["Quooker PRO3 COMBI+", "0,015-0,030 kWh", "5-11 kWh", "1,50-3,30 euro"],
                   ["Grohe Red Duo", "0,015-0,030 kWh", "5-11 kWh", "1,50-3,30 euro"],
-                  ["PureAqua 4-in-1 (boiler)", "0,005-0,015 kWh", "1,8-5,5 kWh", "0,55-1,65 euro"],
+                  ["PureAqua 4-in-1 (heet + gekoeld)", "Geen fabrieksopgave", "Geen fabrieksopgave", "Hoger dan alleen heet door de koeling"],
                   ["InSinkErator 3N1", "0 kWh (geen standby)", "0 kWh", "0 euro standby"],
                 ].map(([merk, dag, jaar, kosten], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
@@ -228,8 +228,9 @@ export default function KokendWaterKraanMerkenPage() {
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
             <li>
               <strong>Ruimte onder aanrecht:</strong> minimaal 30-40 cm hoogte voor de boilertank
-              (Quooker: ca. 33 cm hoog, 13 cm doorsnede). PureAqua 4-in-1 met osmose heeft
-              aanvullend een RO-unit nodig van ca. 35-45 cm hoog.
+              (Quooker: ca. 33 cm hoog, 13 cm doorsnede). De PureAqua 4-in-1 heeft twee apparaten onder
+              de spoelbak: een heet-/koelunit (ca. 23 x 44 x 40 cm) en een osmose-unit (ca. 15 x 38 x 47 cm),
+              met twee stopcontacten.
             </li>
             <li>
               <strong>Geaard stopcontact (230V):</strong> verplicht aanwezig of te plaatsen door
@@ -308,7 +309,7 @@ export default function KokendWaterKraanMerkenPage() {
             content="vergelijken-kokend-water-kraan-merken-cta"
             label="Bekijk de PureAqua 4-in-1 kraan"
             title="Liever kokend en gefilterd water uit een kraan?"
-            sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+            sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
           />
 
           <CTABanner context="osmose" />

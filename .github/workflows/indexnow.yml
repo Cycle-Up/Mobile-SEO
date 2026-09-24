@@ -1,0 +1,25 @@
+name: IndexNow na productiedeploy
+
+# Vercel meldt deploys aan GitHub als deployment_status. Na een geslaagde productiedeploy
+# melden we de gewijzigde pagina's bij IndexNow, zodat Bing (en daarmee ChatGPT en Copilot)
+# de nieuwe versie snel ophaalt.
+on:
+  deployment_status:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Gewijzigde URL's melden
+        run: node scripts/indexnow-changed.mjs "${{ github.event.deployment.sha }}~1" "${{ github.event.deployment.sha }}"

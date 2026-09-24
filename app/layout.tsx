@@ -10,11 +10,11 @@ const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans', display
 export const metadata: Metadata = {
   metadataBase: new URL('https://waterfilterplatform.nl'),
   title: {
-    default: 'WaterfilterPlatform — onafhankelijke waterfilter informatie',
+    default: 'WaterfilterPlatform: waterfilters en drinkwater vergeleken',
     template: '%s | WaterfilterPlatform',
   },
   description:
-    'Alles over waterfilters voor thuis: keuzehulp, filtertechnieken, drinkwaternormen en waterhardheid per gemeente. Onafhankelijke informatie.',
+    'Alles over waterfilters voor thuis: keuzehulp, filtertechnieken, drinkwaternormen en waterhardheid per gemeente. Met bronnen en een openbare methodologie.',
   openGraph: {
     siteName: 'WaterfilterPlatform',
     locale: 'nl_NL',
@@ -183,7 +183,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <p className="font-bold mb-3">WaterfilterPlatform</p>
               <p className="text-blue-200 text-xs leading-relaxed">
-                Onafhankelijke informatie over waterfilters en waterkwaliteit in Nederland.
+                Informatie over waterfilters en waterkwaliteit in Nederland, met bronnen.
               </p>
             </div>
             <div>
@@ -219,8 +219,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
           <div className="max-w-5xl mx-auto px-4 mt-6 pt-6 border-t border-blue-800 text-xs text-blue-300 space-y-3">
             <p className="leading-relaxed">
-              Dit kennisplatform is gelieerd aan PureAqua. We ontvangen vergoeding via onze keuzehulp, maar dat
-              beinvloedt onze redactionele beoordelingen niet. Lees onze{' '}
+              Dit kennisplatform is gelieerd aan PureAqua. Koop je via onze links een product van PureAqua of PureFilter,
+              dan verdient PureAqua daaraan. Eigen producten beoordelen we met dezelfde bron- en bewijsregels als andere producten. Lees onze{' '}
               <Link href="/methodologie" className="underline hover:text-white">methodologie</Link> en{' '}
               <Link href="/over-ons" className="underline hover:text-white">over-ons</Link> pagina voor de volledige toelichting.
             </p>

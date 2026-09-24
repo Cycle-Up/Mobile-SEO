@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'WaterfilterPlatform',
     short_name: 'Waterfilter',
     description:
-      'Onafhankelijke informatie over waterfilters, omgekeerde osmose, kokend water kranen en waterhardheid per gemeente in Nederland.',
+      'Informatie met bronnen over waterfilters, omgekeerde osmose, kokend water kranen en waterhardheid per gemeente in Nederland.',
     start_url: '/',
     display: 'standalone',
     lang: 'nl-NL',

@@ -293,13 +293,13 @@ export default function KokendWaterKraanPrijsPerLiterPage() {
 
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4 mt-10">PureAqua 4-in-1: osmosewater inbegrepen</h2>
           <p className="text-gray-700 mb-4">
-            Bij een 4-in-1 kraan zoals de PureAqua-serie zijn kokend water en osmosefiltratie gecombineerd.
+            Bij een 4-in-1 kraan zoals die van PureAqua zijn zeer heet water (circa 96 graden), gekoeld water en osmosefiltratie gecombineerd.
             De kosten per liter liggen met 0,12-0,20 euro iets hoger, maar je krijgt er ook puur
             drinkwater bij. Als je het osmosewater meerekent als vervanging van mineraalwater of
             flessenwater, verandert het kostenplaatje significant.
           </p>
           <p className="text-gray-700 mb-4">
-            Een PureAqua-systeem produceert zowel kokend water als koud gefilterd osmosewater. Wie
+            Een PureAqua 4-in-1 geeft zowel zeer heet als gekoeld osmosewater. Wie
             dagelijks 2 liter flessenwater koopt en 2 liter kokend water gebruikt, kan bij overstap
             naar een 4-in-1 systeem al snel honderden euros per jaar besparen.
           </p>

@@ -42,7 +42,7 @@ const faqItems = [
   {
     question: 'Welke heet water kraan heeft een ingebouwd osmosefilter?',
     answer:
-      'De PureAqua 4-in-1 is het enige systeem dat een volledig omgekeerde osmose filter combineert met zowel heet (60-98 graden) als kokend (100 graden) water in e&eacute;n kraan. Andere merken zoals Quooker en Grohe Red bieden koolstoffilters als optie maar geen RO-membraan. Een losse RO-unit kan wel achter de meeste heet water boilers worden geschakeld.',
+      'De PureAqua 4-in-1 kraan combineert omgekeerde osmose in drie stappen (voorfilter, membraan, remineralisatie) met zeer heet water van circa 96 graden en gekoeld water in e&eacute;n kraan. Quooker en Grohe Red bieden koolstoffilters als optie maar geen RO-membraan. Een losse RO-unit kan wel achter de meeste heet water boilers worden geschakeld.',
   },
   {
     question: 'Hoe vaak moet het filter van een heet water kraan worden vervangen?',
@@ -57,7 +57,7 @@ const faqItems = [
   {
     question: 'Kan ik een los osmosefilter koppelen aan mijn bestaande heet water kraan?',
     answer:
-      'Ja, een losse omgekeerde osmose-unit (150-400 euro) kan worden aangesloten voor de heet water boiler. U sluit de permeaatuitgang van het RO-systeem aan op de koudwaterinlaat van de boiler via een 1/4 inch Quick Connect aansluiting. Zo verwarmt u altijd gefilterd water. Nadeel: meer onderdelen, meer ruimte onder aanrecht en twee aparte kranen. De PureAqua 4-in-1 integreert dit in e&eacute;n systeem.',
+      'Ja, een losse omgekeerde osmose-unit (150-400 euro) kan worden aangesloten voor de heet water boiler. U sluit de permeaatuitgang van het RO-systeem aan op de koudwaterinlaat van de boiler via een 1/4 inch Quick Connect aansluiting. Zo verwarmt u altijd gefilterd water. Nadeel: meer onderdelen, meer ruimte onder aanrecht en twee aparte kranen. De PureAqua 4-in-1 kraan combineert dit in e&eacute;n kraan, met een heet-/koelunit en een osmose-unit onder de spoelbak.',
   },
 ];
 
@@ -150,7 +150,7 @@ export default function HeetWaterKraanFilterPage() {
           <p className="text-gray-700 mb-6 leading-relaxed">
             Op deze pagina vergelijken we drie filteropties (kalkfilter, koolstoffilter, osmose),
             leggen we uit waarom een filter ook het apparaat beschermt en bespreken we de PureAqua
-            4-in-1 als enige kraan die echt osmosefiltratie combineert met 100&deg;C kokend water.
+            4-in-1 kraan, die osmosefiltratie combineert met zeer heet water van circa 96&deg;C.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -178,7 +178,7 @@ export default function HeetWaterKraanFilterPage() {
             <li><a href="#waarom-filter" className="hover:underline">Waarom filter bij heet water?</a></li>
             <li><a href="#filteropties" className="hover:underline">Drie filteropties vergeleken</a></li>
             <li><a href="#osmose-voordelen" className="hover:underline">Wat osmose extra biedt</a></li>
-            <li><a href="#pureaqua" className="hover:underline">PureAqua 4-in-1: osmose + 100&deg;C</a></li>
+            <li><a href="#pureaqua" className="hover:underline">PureAqua 4-in-1: osmose + circa 96&deg;C</a></li>
             <li><a href="#onderhoud" className="hover:underline">Onderhoudschema filter + boiler</a></li>
             <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
           </ol>
@@ -186,7 +186,7 @@ export default function HeetWaterKraanFilterPage() {
 
         {/* Quick Answer */}
         <section>
-          <QuickAnswer answer="Een kalkfilter beschermt het verwarmingselement maar filtert geen PFAS of nitraten. Een koolstoffilter verbetert de smaak. Alleen omgekeerde osmose verwijdert 95-99% van alle verontreinigingen inclusief PFAS, nitraten en medicijnresten. De PureAqua 4-in-1 is het enige systeem dat osmosefiltratie combineert met 100 graden Celsius en heet water in e&eacute;n kraan." />
+          <QuickAnswer answer="Een kalkfilter beschermt het verwarmingselement maar filtert geen PFAS of nitraten. Een koolstoffilter verbetert de smaak. Alleen omgekeerde osmose verwijdert 95-99% van alle verontreinigingen inclusief PFAS, nitraten en medicijnresten. De PureAqua 4-in-1 kraan combineert osmosefiltratie met zeer heet water (circa 96 graden) en gekoeld water in e&eacute;n kraan." />
         </section>
 
         {/* Waarom filter */}
@@ -335,35 +335,35 @@ export default function HeetWaterKraanFilterPage() {
         {/* PureAqua */}
         <section id="pureaqua">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            PureAqua 4-in-1: de enige kraan met osmose en 100&deg;C
+            PureAqua 4-in-1: osmose en zeer heet water (circa 96&deg;C)
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De PureAqua 4-in-1 combineert als enige systeem op de markt een volledig omgekeerde
-            osmose filter met zowel heet water (60-98&deg;C) als kokend water (100&deg;C) in
-            e&eacute;n kraan. Alle andere merken bieden osmosefiltratie alleen als losse unit of
-            helemaal niet.
+            De PureAqua 4-in-1 kraan combineert omgekeerde osmose in drie stappen met zeer heet water
+            (circa 96&deg;C) en gekoeld water (circa 5&deg;C) in e&eacute;n kraan. Een SGS-labtest op een
+            nieuw systeem mat voor PFOS meer dan 99,6%, voor PFOA 99,5% en voor lood meer dan 99,8% minder.
+            De prijs is 1.948 euro; installatie is optioneel voor 299 euro.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
             {[
               {
                 titel: 'Osmosefiltratie geintegreerd',
                 tekst:
-                  'Het osmosemembraan en de pre- en postfilters zijn intern gemonteerd in het onderkastsysteem. Geen losse unit, geen extra aansluiting, e&eacute;n compacte installatie.',
+                  'Voorfilter, osmosemembraan en remineralisatiefilter zitten in de osmose-unit onder de spoelbak. Daarnaast staat een heet-/koelunit; samen hebben ze twee stopcontacten nodig. Installatie door een installateur is aanbevolen.',
               },
               {
                 titel: 'Vier waterfuncties uit e&eacute;n kraan',
                 tekst:
-                  'Kokend (100&deg;C), heet (60-98&deg;C), koud gefilterd en bruisend gefilterd water, allemaal via osmose voorgefilterd. Alle functies gebruiken osmosewater.',
+                  'Zeer heet (circa 96&deg;C), gekoeld en kamertemperatuur osmosewater, plus gewoon warm en koud kraanwater. Bruisend water zit er niet op.',
               },
               {
-                titel: 'Vervangt vier losse apparaten',
+                titel: 'Vervangt drie losse apparaten',
                 tekst:
-                  'Waterkoker (50-80 euro), filterkan (30-150 euro), mengkraan (100-300 euro) en sodastream-apparaat (80-120 euro) zijn alle vier niet meer nodig.',
+                  'Waterkoker (50-80 euro), filterkan (30-150 euro) en mengkraan (100-300 euro) zijn niet meer nodig. Voor bruisend water blijft een SodaStream nodig.',
               },
               {
-                titel: 'Jaarlijkse filterwissel eenvoudig',
+                titel: 'Filterwissel',
                 tekst:
-                  'Het volledige filterset (pre-filter, membraan, post-filter) is in minder dan 10 minuten zelf te vervangen zonder gereedschap. Kosten: 60-100 euro per jaar.',
+                  'Voorfilter en remineralisatiefilter vervang je circa jaarlijks, het osmosemembraan circa elke twee jaar (of eerder bij hoog gebruik).',
               },
             ].map(v => (
               <div key={v.titel} className="bg-[#E0F2FE] rounded-xl p-4">

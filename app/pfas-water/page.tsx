@@ -222,6 +222,14 @@ export default function PfasWaterPage() {
                 <td className="border border-gray-300 px-3 py-2">€50–120</td>
                 <td className="border border-gray-300 px-3 py-2">Meest effectief, incl. kortketens</td>
               </tr>
+              <tr className="bg-[#F0F9FF]">
+                <td className="border border-gray-300 px-3 py-2 font-medium">
+                  <Link href="/purefilter-review" className="text-[#005F8A] underline">PureFilter Mineral+</Link> (kraanfilter, 149 euro)
+                </td>
+                <td className="border border-gray-300 px-3 py-2 text-green-700 font-medium">83-85% (gemeten)</td>
+                <td className="border border-gray-300 px-3 py-2">Navulfilter, 15.000 tot 20.000 liter</td>
+                <td className="border border-gray-300 px-3 py-2">Equinox Labs: PFOA, PFOS, PFHxS, PFHxA en PFBS, nieuw filter. PureAqua-product</td>
+              </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2 font-medium">Nanofiltration (NF)</td>
                 <td className="border border-gray-300 px-3 py-2 text-green-700 font-medium">90–99%</td>

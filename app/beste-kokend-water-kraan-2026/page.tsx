@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { TrustBar } from '@/components/TrustBar';
@@ -29,12 +30,12 @@ const faqItems = [
   {
     question: 'Welke kokend water kraan is de beste in 2026?',
     answer:
-      'De beste kokend water kraan in 2026 is de 4-in-1 kraan met geïntegreerde omgekeerde osmose. Deze combineert kokend water (100°C), koud gefilterd water, warm water en bruisend water uit één kraanpunt — terwijl het osmose filter tegelijkertijd kalk, chloor, nitraten en microplastics verwijdert. Voor wie geen filter nodig heeft, is een 3-in-1 kraan of Quooker-stijl boiler een goede tweede keuze.',
+      'Onze keuze voor 2026 is de PureAqua 4-in-1 kraan met omgekeerde osmose. Die geeft gewoon warm en koud kraanwater, plus gezuiverd water op kamertemperatuur, gekoeld (circa 5 graden) en zeer heet (circa 96 graden). Het osmosesysteem werkt in drie stappen: voorfilter, membraan en remineralisatie. Bruisend water zit er niet op. De prijs is 1.948 euro. Voor wie geen filter nodig heeft, is een 3-in-1 kraan of Quooker-stijl boiler een goede tweede keuze.',
   },
   {
     question: 'Wat is het verschil tussen een 3-in-1 en 4-in-1 kokend water kraan?',
     answer:
-      'Een 3-in-1 kraan levert kokend, koud en warm water uit één kraan. Een 4-in-1 kraan voegt een vierde functie toe: gefilterd water of bruisend water. Bij een 4-in-1 kraan met osmose is het vierde element een volledig omgekeerde osmose filtersysteem dat het water zuivert vóór het de kraan verlaat. Dat betekent dat je niet alleen kokend water hebt, maar ook de hoogst mogelijke waterkwaliteit.',
+      'Een 3-in-1 kraan levert kokend, koud en warm water uit één kraan. Een 4-in-1 kraan voegt een vierde functie toe: gefilterd, gekoeld of bruisend water, afhankelijk van het merk. Bij de PureAqua 4-in-1 kraan is dat een omgekeerde osmose filtersysteem dat het water zuivert vóór het de kraan verlaat, plus gekoeld water. Bubbels heeft deze kraan niet. Dat betekent dat je niet alleen kokend water hebt, maar ook de hoogst mogelijke waterkwaliteit.',
   },
   {
     question: 'Heeft een kokend water kraan een filter nodig?',
@@ -49,7 +50,7 @@ const faqItems = [
   {
     question: 'Kan ik een kokend water kraan zelf installeren?',
     answer:
-      'Ja, de meeste kokend water kranen zijn ontworpen voor doe-het-zelf installatie. De boiler wordt onder het aanrecht geplaatst en aangesloten op de koudwaterleiding. Je hebt een standaard kraaninboring nodig (35–40 mm) en een stopcontact (WCD) in de kast. Een 4-in-1 kraan met osmose wordt geleverd met een uitgebreide Nederlandstalige installatiehandleiding en de meeste installaties zijn in 2–3 uur klaar. Installeer je ook een osmose systeem, reken dan op een aanboorkraan voor de afvoer.',
+      'Een eenvoudige kokend water kraan kan een handige klusser vaak zelf plaatsen. De boiler wordt onder het aanrecht geplaatst en aangesloten op de koudwaterleiding. Je hebt een standaard kraaninboring nodig (35–40 mm) en een stopcontact (WCD) in de kast. Bij de PureAqua 4-in-1 kraan komen er twee apparaten onder de spoelbak (heet-/koelunit en osmose-unit) met twee stopcontacten en een afvoeraansluiting; daar is installatie door een installateur aanbevolen. PureAqua biedt dat aan voor 299 euro.',
   },
 ];
 
@@ -57,27 +58,27 @@ const top5Kranen = [
   {
     rang: 1,
     naam: '4-in-1 kraan met osmose filter',
-    voorbeeld: 'Geïntegreerde 4-in-1 osmosekraan',
-    temperatuur: '100°C kokend',
+    voorbeeld: 'PureAqua 4-in-1 kraan',
+    temperatuur: 'Circa 96 graden (zeer heet) + circa 5 graden gekoeld',
     doorstroom: '4–6 L/min gefilterd',
-    filterGeintegreerd: 'Ja — omgekeerde osmose (5-stadia)',
-    prijsRange: '€ 699 – 899',
+    filterGeintegreerd: 'Ja, omgekeerde osmose (3 stappen)',
+    prijsRange: '€ 1.948',
     energieVerbruik: '≈ 7–10 W standby',
     highlight: true,
     pros: [
-      'Kokend, koud, warm én bruisend water uit één kraanpunt',
-      'Ingebouwde omgekeerde osmose: 95–99% zuiverheid',
-      'Geen aparte waterkoker of bruisend water abonnement',
+      'Zeer heet (circa 96 graden), gekoeld en gezuiverd water, plus gewoon warm en koud, uit één kraanpunt',
+      'SGS-labtest op een nieuw systeem: PFOS meer dan 99,6%, PFOA 99,5% en lood meer dan 99,8% minder',
+      'Geen aparte waterkoker of kan in de koelkast nodig',
       'Voorkomt ketelsteen in boiler en kraan',
-      '5 jaar garantie — langste in het segment',
+      'Remineralisatie na de osmose en lekdetectie',
     ],
     cons: [
-      'Hogere aanschafprijs dan ongefilterde kokend water kranen',
-      'Vereist elektra (WCD) naast waterkraan',
-      'Installatie 2–3 uur — iets meer dan een eenvoudige 3-in-1 kraan',
+      'Hoogste aanschafprijs in deze vergelijking (1.948 euro)',
+      'Geen bruisend water',
+      'Twee apparaten onder de spoelbak en twee stopcontacten nodig; installatie door een installateur aanbevolen (PureAqua: 299 euro)',
     ],
     oordeel:
-      'Een 4-in-1 kraan met osmosefilter is de meest complete kokend water kraan in 2026. De combinatie van osmose-gefilterd kokend, koud, warm en bruisend water maakt het uniek. De aanschafprijs is hoger, maar op 3–5 jaar zijn de totale kosten concurrerend: geen waterkoker-energie, geen flessenwater, geen onthardingssysteem voor de ketel.',
+      'Volgens ons is de PureAqua 4-in-1 kraan de meest complete keuze voor wie osmose-gezuiverd water wil: zeer heet, gekoeld en gezuiverd water uit één kraan. De aanschafprijs is hoger, maar je hebt geen waterkoker, geen flessenwater en geen onthardingssysteem voor de ketel nodig. Wil je bruisend water, dan past een Quooker met CUBE of Grohe Blue beter.',
   },
   {
     rang: 2,
@@ -118,12 +119,12 @@ const top5Kranen = [
       'Uitgebreid servicenetwerk in Nederland',
     ],
     cons: [
-      'Hoogste aanschafprijs in de vergelijking',
+      'Hoge aanschafprijs',
       'Filter is een dure abonnementsoptie — niet standaard inbegrepen',
       'Losse kraanmodule + boiler vereist twee installatiepunten',
     ],
     oordeel:
-      'De Quooker Fusion en vergelijkbare premium boilerkranen zijn de keuze voor wie kwaliteit en designafwerking het zwaarst laat wegen. De standby-energie is door vacuümisolatie laag. Op prijs-kwaliteitsverhouding verliest dit segment van de 4-in-1 met osmose, maar op premium uitstraling wint het.',
+      'De Quooker Fusion en vergelijkbare premium boilerkranen zijn de keuze voor wie kwaliteit en designafwerking het zwaarst laat wegen. De standby-energie is door vacuümisolatie laag. Wie osmose-gezuiverd water wil, kiest volgens ons eerder de 4-in-1 met osmose; op premium uitstraling wint dit segment.',
   },
   {
     rang: 4,
@@ -176,7 +177,7 @@ const top5Kranen = [
 const vergelijkingsTabel = [
   {
     kenmerk: 'Temperatuur',
-    pureaqua: '100°C kokend',
+    pureaqua: 'Circa 96 graden',
     basic3in1: '100°C kokend',
     quooker: '100°C kokend',
     koolstof: '98–100°C',
@@ -200,7 +201,7 @@ const vergelijkingsTabel = [
   },
   {
     kenmerk: 'Prijsrange',
-    pureaqua: '€ 699–899',
+    pureaqua: '€ 1.948',
     basic3in1: '€ 350–700',
     quooker: '€ 800–1.400',
     koolstof: '€ 400–700',
@@ -216,7 +217,7 @@ const vergelijkingsTabel = [
   },
   {
     kenmerk: 'Bruisend water',
-    pureaqua: 'Ja',
+    pureaqua: 'Nee',
     basic3in1: 'Nee (basis)',
     quooker: 'Premium versie',
     koolstof: 'Nee',
@@ -324,7 +325,9 @@ export default function BesteKokendWaterKraan2026Page() {
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
         <AuthorBox datePublished="2026-05-29" />
 
-        <QuickAnswer answer="De beste kokend water kraan van 2026 is een 4-in-1 systeem met ingebouwd osmosefilter. Het combineert kokend, koud gefilterd, warm en bruisend water in één kraanpunt en vervangt waterkoker en bruiswater-abonnement. Prijs: €699–899. Quooker is de bekendste merknaam maar significant duurder bij gelijke functionaliteit." />
+        <QuickAnswer answer="Onze keuze voor 2026 is de PureAqua 4-in-1 kraan met ingebouwd osmosefilter. Die geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, plus gewoon warm en koud water, uit één kraan. Bruisend water zit er niet op. Prijs: 1.948 euro, installatie optioneel voor 299 euro. Een Quooker Flex PRO3 met CUBE kost bij PureAqua 2.240 euro en filtert met actieve kool." />
+
+        <FourInOneRecommendation content="beste-kokend-water-kraan-2026-aanbeveling" />
 
         {/* Inleiding: waarom kiezen voor een kokend water kraan */}
         <section>
@@ -456,17 +459,17 @@ export default function BesteKokendWaterKraan2026Page() {
           <div className="rounded-2xl border-2 border-[#005F8A] bg-[#E0F2FE] p-5 md:p-7">
             <div className="flex items-center gap-3 mb-3">
               <span className="bg-[#005F8A] text-white text-sm font-bold px-3 py-1 rounded-full">
-                #1 Beste keuze 2026
+                #1 Onze keuze 2026
               </span>
             </div>
             <h2 className="text-2xl font-bold text-[#003F5C] mb-2">
               4-in-1 kokend water kraan met osmose filter
             </h2>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Een 4-in-1 kraan met osmosefilter is onze absolute topkeuze voor 2026. Geen andere kokend water kraan
-              combineert gefilterd kokend water, koud gefilterd water, warm water én bruisend water
-              met een volledig omgekeerde osmose filtersysteem in één compact kraanpunt. Dit is wat de
-              kraan onderscheidt van alle alternatieven:
+              De PureAqua 4-in-1 kraan met osmosefilter is onze keuze voor 2026. Hij combineert zeer heet
+              water (circa 96 graden), gekoeld en gezuiverd water en gewoon warm en koud water met een
+              omgekeerde osmose filtersysteem in drie stappen. Bruisend water zit er niet op. Dit is wat
+              de kraan onderscheidt van de alternatieven:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
               <div>
@@ -524,18 +527,18 @@ export default function BesteKokendWaterKraan2026Page() {
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Bij een 4-in-1 kraan met osmose is er een extra stap: het leidingwater gaat eerst door het
-            osmose membraan (5 stadia), daarna wordt het gefilterde water naar de boiler en naar de
-            koelunit gestuurd. Zo is al het water dat je tapat — heet, koud, warm of bruisend — osmose
-            gefilterd.
+            osmosesysteem (voorfilter, membraan en remineralisatie), daarna gaat het gezuiverde water naar
+            de heet-/koelunit. Zo is het hete, gekoelde en kamertemperatuur drinkwater osmose-gezuiverd;
+            het gewone warme en koude kraanwater niet.
           </p>
           <div className="bg-gray-50 rounded-xl p-5">
             <p className="font-semibold text-gray-800 mb-3">Werkingsprincipe per functie</p>
             <div className="space-y-2">
               {[
                 {
-                  functie: 'Kokend water (100°C)',
+                  functie: 'Kokend of zeer heet water',
                   uitleg:
-                    'Boiler houdt 2,5–3 liter water continu op 100°C. Wordt onttrokken via speciaal veilig kraanmechanisme.',
+                    'Boiler houdt water continu op temperatuur (98 tot 100 graden bij kokendwaterkranen, circa 96 graden bij de PureAqua 4-in-1). Wordt onttrokken via speciaal veilig kraanmechanisme.',
                 },
                 {
                   functie: 'Koud gefilterd water',
@@ -545,12 +548,12 @@ export default function BesteKokendWaterKraan2026Page() {
                 {
                   functie: 'Warm water',
                   uitleg:
-                    'Mengwater: combineert gefilterd koud en warm water via thermostaat. Vervangt de hete-kraan functie.',
+                    'Gewoon warm leidingwater via de mengkraanfunctie.',
                 },
                 {
                   functie: 'Bruisend water',
                   uitleg:
-                    'CO₂-tank carboniseert gefilterd koud water. Instelbare bubbelintensiteit bij premium modellen.',
+                    'Alleen bij kranen met CO₂-tank, zoals Quooker CUBE of Grohe Blue. De PureAqua 4-in-1 heeft geen bruisfunctie.',
                 },
               ].map(f => (
                 <div key={f.functie} className="flex gap-3 text-sm">
@@ -717,9 +720,9 @@ export default function BesteKokendWaterKraan2026Page() {
                 {[
                   {
                     scenario: '4-in-1 kraan met osmose',
-                    aanschaf: '€ 799',
+                    aanschaf: '€ 1.948',
                     perJaar: '≈ € 95',
-                    totaal: '€ 1.084',
+                    totaal: '€ 2.233',
                     highlight: true,
                   },
                   {
@@ -770,8 +773,8 @@ export default function BesteKokendWaterKraan2026Page() {
           </p>
           <p className="text-gray-700 mt-4 leading-relaxed">
             Een 4-in-1 kraan met osmose heeft een hogere aanschaf dan een 3-in-1 basic kraan, maar vervangt
-            ook de waterkoker en het flessenwater. Op 3 jaar is de totale kostenpost lager dan
-            waterkoker + flessenwater aankopen. Wil je weten welke 4-in-1 kraan het beste bij jouw
+            ook de waterkoker en het flessenwater. Op 3 jaar ligt de totale kostenpost in dezelfde orde als
+            waterkoker + flessenwater; daarna ben je in dit rekenvoorbeeld goedkoper uit. Wil je weten welke 4-in-1 kraan het beste bij jouw
             keuken past? Bekijk{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
               ons overzicht van 4-in-1 kranen
@@ -784,8 +787,8 @@ export default function BesteKokendWaterKraan2026Page() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Installatie: wat heb je nodig?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De meeste kokend water kranen zijn voor een doe-het-zelver te installeren. Hier is wat je
-            nodig hebt en wat je kunt verwachten bij de installatie van een 4-in-1 kraan met osmose filter.
+            Een eenvoudige kokend water kraan kan een handige klusser vaak zelf plaatsen. Bij een 4-in-1
+            kraan met osmose filter is een installateur aanbevolen. Hier is wat er nodig is.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
             {[
@@ -802,7 +805,7 @@ export default function BesteKokendWaterKraan2026Page() {
               {
                 stap: '3. Elektra',
                 tekst:
-                  'Stopcontact (WCD) in het kastje onder het aanrecht nodig voor de boiler. Bij een 4-in-1 ook voor de CO₂-unit als die elektrisch is.',
+                  'Stopcontact (WCD) in het kastje onder het aanrecht nodig voor de boiler. De PureAqua 4-in-1 heeft twee apparaten (heet-/koelunit en osmose-unit) en dus twee stopcontacten nodig.',
               },
               {
                 stap: '4. Afvoer (bij osmose)',
@@ -819,9 +822,9 @@ export default function BesteKokendWaterKraan2026Page() {
           <div className="bg-[#E0F2FE] rounded-xl p-4">
             <p className="font-semibold text-[#003F5C] mb-1 text-sm">Installatietijd</p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              Een 3-in-1 kraan zonder filter: 45–90 minuten. Een 4-in-1 kraan met osmose filter:
-              2–3 uur voor een doe-het-zelver. Een 4-in-1 kraan met osmose wordt geleverd met een
-              Nederlandstalige installatiehandleiding en videotutorial. Lees meer in onze gids{' '}
+              Een 3-in-1 kraan zonder filter: 45–90 minuten. Een 4-in-1 kraan met osmose filter kost
+              meer tijd, omdat er twee apparaten onder de spoelbak komen. Installatie door een installateur
+              is aanbevolen; PureAqua biedt dat aan voor 299 euro. Lees meer in onze gids{' '}
               <Link href="/kokend-water-kraan" className="text-[#005F8A] underline hover:no-underline">
                 kokend water kraan installeren
               </Link>
@@ -889,7 +892,7 @@ export default function BesteKokendWaterKraan2026Page() {
           content="beste-kokend-water-kraan-2026-cta"
           label="Bekijk de PureAqua 4-in-1 kraan"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />

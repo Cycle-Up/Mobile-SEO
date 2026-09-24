@@ -24,12 +24,12 @@ const faqItems = [
   {
     question: 'Welke heet water kraan is het beste in 2026?',
     answer:
-      'De beste heet water kraan hangt af van uw situatie. Voor pure heetwaterfunctie scoort de Grohe Red II hoog op bouwkwaliteit. Voor de beste prijs-kwaliteitverhouding inclusief filtratie wint de PureAqua 4-in-1 op vrijwel alle criteria: lagere prijs per liter, osmosefiltratie ingebouwd en 100 graden Celsius beschikbaar naast heet en koud.',
+      'De beste heet water kraan hangt af van uw situatie. Voor pure heetwaterfunctie scoort de Grohe Red II hoog op bouwkwaliteit. Wil je ook filtratie, dan is de PureAqua 4-in-1 kraan volgens ons de meest complete keuze: osmosefiltratie ingebouwd, zeer heet water van circa 96 graden en gekoeld water. Met 1.948 euro is hij wel duurder dan een losse heet water kraan.',
   },
   {
     question: 'Is de Quooker beter dan een gewone heet water kraan?',
     answer:
-      'De Quooker levert 100 graden Celsius en heeft een sterke reputatie in Nederland. Als pure heet water kraan is de Quooker echter overwaardig en duur: een Quooker PRO3 kost 900-1.200 euro voor alleen heet en kokend water zonder osmosefiltratie. Een PureAqua 4-in-1 levert hetzelfde plus osmosefilter voor 699-900 euro.',
+      'De Quooker levert 100 graden Celsius en heeft een sterke reputatie in Nederland. Als pure heet water kraan is de Quooker echter overwaardig en duur: een Quooker Flex PRO3 kost bij PureAqua 1.220 euro voor alleen kokend water zonder osmosefiltratie. De PureAqua 4-in-1 kraan kost 1.948 euro en geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water.',
   },
   {
     question: 'Wat is het verschil tussen de Grohe Red en een goedkope heet water kraan?',
@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: 'Kan ik een heet water kraan vervangen door een 4-in-1 kraan?',
     answer:
-      'Ja, een 4-in-1 kraan vervangt de bestaande mengkraan en het extra kraangat voor de heet water kraan is niet nodig. U installeert de 4-in-1 in hetzelfde gat als de bestaande mengkraan. Daarmee verliest u geen aanrechtruimte en wint u functies: kokend, heet, koud gefilterd en bruisend.',
+      'Ja, een 4-in-1 kraan vervangt de bestaande mengkraan en het extra kraangat voor de heet water kraan is niet nodig. U installeert de 4-in-1 in hetzelfde gat als de bestaande mengkraan. Daarmee verliest u geen aanrechtruimte en wint u functies: zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. Bruisend water zit er niet op, en onder de spoelbak komen twee apparaten.',
   },
   {
     question: 'Hoe vergelijk ik het energieverbruik van heet water kranen?',
@@ -131,16 +131,16 @@ const modellen = [
   },
   {
     naam: 'PureAqua 4-in-1 met osmose',
-    temp: '100&deg;C + 60-98&deg;C',
-    capaciteit: '8-10 l/u',
+    temp: 'Circa 96&deg;C + gekoeld circa 5&deg;C',
+    capaciteit: '1,2 l direct, na 3-4 min weer heet',
     standby: '10-15W',
-    prijs: '699 - 900 euro',
+    prijs: '1.948 euro',
     filter: 'Omgekeerde osmose ingebouwd',
     vierInEen: true,
     osmose: true,
     highlight: true,
-    pro: 'Alles-in-een: kokend, heet, koud gefilterd, bruisend + osmose',
-    con: 'Hogere aanschafprijs dan budget modellen',
+    pro: 'Alles-in-een: zeer heet, gekoeld en gezuiverd water + osmose',
+    con: 'Hoogste aanschafprijs in deze vergelijking; geen bruisend water; installateur aanbevolen',
   },
 ];
 
@@ -182,16 +182,16 @@ export default function HeetWaterKraanVergelijkenPage() {
             Heet water kraan vergelijken: modellen en merken 2026
           </h1>
           <p className="text-gray-700 text-lg mb-4 leading-relaxed">
-            Welk model past het beste bij uw keuken? We vergelijken zes <strong>heet water kranen</strong>
-            &mdash; van budget doorstromers tot de PureAqua 4-in-1 met osmose &mdash; op temperatuur,
+            Welk model past het beste bij uw keuken? We vergelijken zes <strong>heet water kranen</strong>,
+            van budget doorstromers tot de PureAqua 4-in-1 met osmose, op temperatuur,
             capaciteit, energieverbruik, prijs en filteropties. Met een eerlijke conclusie over welk
             systeem de beste waarde biedt.
           </p>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Spoiler: de{' '}
             <strong>beste heet water kraan</strong> is niet altijd de goedkoopste of de bekendste
-            merknaam. De PureAqua 4-in-1 wint op prijs per liter en biedt als enige echt
-            osmosefiltratie gecombineerd met 100&deg;C.
+            merknaam. De PureAqua 4-in-1 is in deze vergelijking het enige model met ingebouwde
+            osmosefiltratie, gecombineerd met zeer heet water van circa 96&deg;C en gekoeld water.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -227,7 +227,7 @@ export default function HeetWaterKraanVergelijkenPage() {
 
         {/* Quick Answer */}
         <section>
-          <QuickAnswer answer="De PureAqua 4-in-1 wint de vergelijking: lagere prijs per liter dan Quooker en Grohe Red, als enige model met ingebouwde osmosefiltratie, en biedt zowel heet (60-98 graden) als kokend (100 graden) water. Budget-keuze is de generieke instant boiler, maar zonder filter en certificering." />
+          <QuickAnswer answer="Onze keuze is de PureAqua 4-in-1 kraan: in deze vergelijking het enige model met ingebouwde osmosefiltratie, met zeer heet (circa 96 graden) en gekoeld water. Hij kost 1.948 euro en is daarmee het duurst. Budget-keuze is de generieke instant boiler, maar zonder filter en certificering." />
         </section>
 
         {/* Vergelijkingstabel */}
@@ -348,11 +348,11 @@ export default function HeetWaterKraanVergelijkenPage() {
           </p>
           <div className="space-y-3 mb-6">
             <div className="bg-[#E0F2FE] rounded-xl p-4 border-l-4 border-[#005F8A]">
-              <p className="font-semibold text-[#003F5C] mb-1">Beste algehele keuze: PureAqua 4-in-1</p>
+              <p className="font-semibold text-[#003F5C] mb-1">Onze keuze: PureAqua 4-in-1</p>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Wint op prijs per liter, enig model met ingebouwde osmosefiltratie, levert zowel
-                heet (98&deg;C) als kokend (100&deg;C) water, en vervangt mengkraan, waterkoker en
-                filterkan in e&eacute;n installatie.
+                Enig model in deze vergelijking met ingebouwde osmosefiltratie, levert zeer heet
+                (circa 96&deg;C) en gekoeld water, en vervangt mengkraan, waterkoker en filterkan in
+                e&eacute;n installatie. Wel de hoogste prijs (1.948 euro) en geen bruisend water.
               </p>
             </div>
             <div className="bg-white border border-gray-100 rounded-xl p-4">

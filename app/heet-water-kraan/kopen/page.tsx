@@ -30,7 +30,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil tussen een heet water kraan en een kokend water kraan?',
     answer:
-      'Een heet water kraan levert water tot maximaal 98 graden Celsius. Een kokend water kraan levert echt 100 graden Celsius, wat nodig is voor het daadwerkelijk koken van pasta, steriliseren en toepassingen die exact kookpunt vereisen. Voor thee, soep en babyvoeding volstaat een heet water kraan. Voor wie ook 100 graden wil, is een 4-in-1 kraan met osmose de complete keuze.',
+      'Een heet water kraan levert water tot maximaal 98 graden Celsius. Een kokend water kraan levert echt 100 graden Celsius, wat nodig is voor het daadwerkelijk koken van pasta, steriliseren en toepassingen die exact kookpunt vereisen. Voor thee, soep en babyvoeding volstaat een heet water kraan. Wie echt 100 graden wil, kiest een kokend water kraan. Een 4-in-1 kraan met osmose geeft zeer heet water van circa 96 graden, plus gekoeld en osmose-gezuiverd water.',
   },
   {
     question: 'Welke temperatuur is instelbaar bij een heet water kraan?',
@@ -40,7 +40,7 @@ const faqItems = [
   {
     question: 'Hoeveel kost een heet water kraan aanschaffen?',
     answer:
-      'Budget modellen (eenvoudige instant water heater) beginnen bij circa 150 euro. Middenklasse kranen met instelbare temperatuur kosten 250-450 euro. Premium modellen met digitale bediening en grotere tankinhoud kosten 450-600 euro. Een 4-in-1 kraan met osmosefilter kost 699-900 euro maar biedt kokend, heet, koud en gefilterd water in één systeem.',
+      'Budget modellen (eenvoudige instant water heater) beginnen bij circa 150 euro. Middenklasse kranen met instelbare temperatuur kosten 250-450 euro. Premium modellen met digitale bediening en grotere tankinhoud kosten 450-600 euro. De PureAqua 4-in-1 kraan met osmosefilter kost 1.948 euro (installatie optioneel 299 euro) en biedt zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water plus gewoon warm en koud water in één systeem.',
   },
   {
     question: 'Wat zijn de installatiekosten van een heet water kraan?',
@@ -58,9 +58,9 @@ const faqItems = [
       'Een doorstroom instant water heater levert 4-8 liter per minuut, maar de opwarmcapaciteit begrenst de effectieve heetwater-output op 2-4 liter per minuut bij 80 graden. Mini-boiler systemen van 3-5 liter zijn direct volledig beschikbaar maar moeten daarna opwarmen. Voor een gezin van 4 personen volstaat een boiler van 3 liter normaal gezien ruim.',
   },
   {
-    question: 'Waarom is een 4-in-1 kraan beter dan een losse heet water kraan?',
+    question: 'Wat biedt een 4-in-1 kraan meer dan een losse heet water kraan?',
     answer:
-      'Een 4-in-1 kraan met osmose levert kokend water (100 graden), heet water, koud gefilterd water en bruisend water uit één kraan. U hebt geen aparte waterkoker, geen losse filterkan en geen sodastream-fles meer nodig. Het osmosefilter verwijdert PFAS, nitraten, kalk en medicijnresten. De totale prijs over 5 jaar is lager dan een losse heet water kraan plus waterkoker plus filterkan.',
+      'De PureAqua 4-in-1 kraan levert zeer heet water (circa 96 graden), gekoeld en osmose-gezuiverd water en gewoon warm en koud water uit één kraan. U hebt geen aparte waterkoker en geen losse filterkan meer nodig; bruisend water zit er niet op. Een SGS-labtest op een nieuw systeem mat voor PFOS meer dan 99,6%, voor PFOA 99,5% en voor lood meer dan 99,8% minder. Met 1.948 euro is hij wel duurder dan een losse heet water kraan plus waterkoker plus filterkan.',
   },
 ];
 
@@ -276,7 +276,7 @@ export default function HeetWaterKraanKopenPage() {
                   { segment: 'Budget (doorstroom, vaste temp.)', prijs: '150 - 250 euro', desc: 'Eenvoudige instant water heater, 1 temperatuurstand, geen display' },
                   { segment: 'Midden (instelbaar, digitaal)', prijs: '250 - 450 euro', desc: 'Instelbare temperatuur 40-98 graden, LED display, 3-5 liter tank' },
                   { segment: 'Premium (merk, certificering)', prijs: '450 - 600 euro', desc: 'WRAS/NSF gecertificeerd, hoogwaardig materiaal, langere garantie' },
-                  { segment: '4-in-1 met osmose (aanbevolen)', prijs: '699 - 900 euro', desc: 'Kokend + heet + koud + gefilterd, osmosefilter ingebouwd, alles-in-een' },
+                  { segment: '4-in-1 met osmose (aanbevolen)', prijs: '1.948 euro', desc: 'Zeer heet (circa 96 graden) + gekoeld + gezuiverd + warm en koud, osmosefilter ingebouwd; installatie optioneel 299 euro' },
                 ].map(r => (
                   <div key={r.segment} className="flex gap-3 items-start text-sm">
                     <span className="font-semibold text-[#005F8A] shrink-0 w-36">{r.prijs}</span>
@@ -396,10 +396,10 @@ export default function HeetWaterKraanKopenPage() {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
             {[
-              { functie: 'Kokend', temp: '100&deg;C', kleur: 'bg-red-50 border-red-200' },
-              { functie: 'Heet', temp: '60-98&deg;C', kleur: 'bg-amber-50 border-amber-200' },
-              { functie: 'Koud gefilterd', temp: 'Osmose', kleur: 'bg-[#E0F2FE] border-[#005F8A]/30' },
-              { functie: 'Bruisend', temp: 'Gefilterd', kleur: 'bg-green-50 border-green-200' },
+              { functie: 'Zeer heet', temp: 'Circa 96&deg;C', kleur: 'bg-red-50 border-red-200' },
+              { functie: 'Gekoeld', temp: 'Circa 5&deg;C', kleur: 'bg-amber-50 border-amber-200' },
+              { functie: 'Gezuiverd', temp: 'Osmose', kleur: 'bg-[#E0F2FE] border-[#005F8A]/30' },
+              { functie: 'Warm en koud', temp: 'Kraanwater', kleur: 'bg-green-50 border-green-200' },
             ].map(f => (
               <div key={f.functie} className={`rounded-xl border p-3 text-center ${f.kleur}`}>
                 <p className="font-bold text-[#003F5C] text-sm">{f.functie}</p>
@@ -412,11 +412,10 @@ export default function HeetWaterKraanKopenPage() {
             <ul className="space-y-2">
               {[
                 'Geen aparte waterkoker meer nodig (ruimte besparing op aanrecht)',
-                'Osmosefilter verwijdert PFAS, nitraten, kalk, medicijnresten en zware metalen (95-99%)',
+                'SGS-labtest op een nieuw systeem: PFOS meer dan 99,6%, PFOA 99,5% en lood meer dan 99,8% minder',
                 'Gefiltreerd koud water direct uit de kraan, geen filterkan meer nodig',
-                'Bruisend water zonder CO2-flessen of sodastream-apparaat',
-                'Eenmalige installatie voor alle functies tegelijk',
-                'TCO over 5 jaar lager dan losse heet water kraan + waterkoker + filterkan',
+                'Gekoeld gezuiverd water (circa 5 graden) zonder kan in de koelkast',
+                'Eenmalige installatie voor alle functies tegelijk (installateur aanbevolen, PureAqua: 299 euro)',
               ].map(v => (
                 <li key={v} className="flex gap-2 items-start text-sm text-gray-700">
                   <span className="text-[#005F8A] font-bold shrink-0">+</span>
@@ -426,8 +425,9 @@ export default function HeetWaterKraanKopenPage() {
             </ul>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            De PureAqua 4-in-1 is het enige systeem dat echte omgekeerde osmose-filtratie combineert
-            met 100&deg;C kokend water, heet water en bruisend water in e&eacute;n compacte kraan.
+            De PureAqua 4-in-1 kraan combineert omgekeerde osmose in drie stappen met zeer heet
+            (circa 96&deg;C) en gekoeld water in e&eacute;n kraan. Onder de spoelbak staan twee apparaten.
+            Bruisend water zit er niet op; de prijs is 1.948 euro.
             Lees de volledige vergelijking op onze{' '}
             <Link href="/heet-water-kraan/vergelijken" className="text-[#005F8A] underline hover:no-underline">
               heet water kraan vergelijken pagina
@@ -509,7 +509,7 @@ export default function HeetWaterKraanKopenPage() {
           content="heet-water-kraan-kopen-cta"
           label="Een kraan met kokend en gefilterd water"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="osmose" />

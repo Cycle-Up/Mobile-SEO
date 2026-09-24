@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
@@ -28,17 +29,17 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor een Quooker?',
     answer:
-      'Er zijn verschillende serieuze alternatieven voor Quooker: 4-in-1 kranen met ingebouwd osmose filter (kokend, koud gefilterd, warm en bruisend), Grohe Red (kokend water, Duits design), Insinkerator (Amerikaans, breed assortiment) en Franke Vital/Mondial. Welke het beste past hangt af van of je een filter wilt, welk design je zoekt en wat je budget is.',
+      'Er zijn verschillende serieuze alternatieven voor Quooker: 4-in-1 kranen met ingebouwd osmose filter (warm en koud kraanwater plus gezuiverd, gekoeld en zeer heet water), Grohe Red (kokend water, Duits design), Insinkerator (Amerikaans, breed assortiment) en Franke Vital/Mondial. Welke het beste past hangt af van of je een filter wilt, welk design je zoekt en wat je budget is.',
   },
   {
     question: 'Is er een goedkoper alternatief dan Quooker?',
     answer:
-      'Ja. Een Quooker met CUBE (voor bruisend water) komt al snel boven de 2.000 euro inclusief installatie. Er zijn alternatieven die een vergelijkbaar functiepakket (kokend, koud, warm en bruisend water met osmose filter) bieden voor 600 tot 1.000 euro. Ook Insinkerator en Grohe Red kennen modellen onder de 1.500 euro voor uitsluitend kokend water.',
+      'Ja. Een Quooker Flex PRO3 met CUBE (kokend, gekoeld en bruisend water) kost bij PureAqua 2.240 euro. De PureAqua 4-in-1 kraan met osmose kost 1.948 euro, circa 300 euro minder; die geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, maar geen bruisend water. Ook Insinkerator en Grohe Red kennen modellen onder de 1.500 euro voor uitsluitend kokend water.',
   },
   {
     question: 'Wat is het verschil tussen Quooker en een 4-in-1 kraan met osmose?',
     answer:
-      'Quooker richt zich primair op kokend water, met optioneel bruisend water via de aparte CUBE-module. Een 4-in-1 kraan met ingebouwd osmose filter combineert standaard vier functies in één kraan: kokend, koud gefilterd, warm en bruisend water. De prijs van zo\'n combinatie ligt doorgaans onder die van een Quooker met CUBE, en het osmose filter zit standaard meegeleverd.',
+      'Quooker richt zich primair op kokend water, met optioneel bruisend water via de aparte CUBE-module. Een 4-in-1 kraan met ingebouwd osmose filter, zoals de PureAqua 4-in-1, geeft gewoon warm en koud kraanwater, plus osmose-gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden). Bruisend water zit er niet in. Met 1.948 euro is hij circa 300 euro goedkoper dan een Quooker Flex PRO3 met CUBE (2.240 euro), en de omgekeerde osmose zit standaard ingebouwd; de CUBE filtert met actieve kool.',
   },
   {
     question: 'Welk alternatief voor Quooker heeft een ingebouwd waterfilter?',
@@ -48,7 +49,7 @@ const faqItems = [
   {
     question: 'Kan ik een alternatief voor Quooker zelf installeren?',
     answer:
-      'Veel alternatieven zijn zelf te installeren als je standaard aansluitingen onder je aanrecht hebt. Bij Quooker komt vrijwel altijd een installateur langs, wat de totale prijs verhoogt. Bij Grohe Red en Insinkerator is dat sterk afhankelijk van de dealer. Controleer altijd de installatievereisten van het specifieke model dat je overweegt.',
+      'Veel alternatieven zijn zelf te installeren als je standaard aansluitingen onder je aanrecht hebt. Bij Quooker komt vrijwel altijd een installateur langs, wat de totale prijs verhoogt. Bij Grohe Red en Insinkerator is dat sterk afhankelijk van de dealer. Voor een 4-in-1 kraan met osmose raden we een installateur aan; PureAqua biedt installatie aan voor 299 euro. Controleer altijd de installatievereisten van het specifieke model dat je overweegt.',
   },
   {
     question: 'Welke garantie krijg ik bij een alternatief voor Quooker?',
@@ -70,14 +71,14 @@ const faqItems = [
 const topAlternatieven = [
   {
     naam: '4-in-1 kraan met osmose',
-    prijs: '€ 600–1.000',
-    kokend: 'Ja (100°C)',
+    prijs: '€ 1.948 (PureAqua)',
+    kokend: 'Zeer heet (circa 96°C)',
     gefilterd: 'Ja (osmose ingebouwd)',
-    bruisend: 'Ja, standaard',
+    bruisend: 'Nee',
     garantie: 'Per fabrikant',
-    installatie: 'Veelal zelf installeerbaar',
+    installatie: 'Installateur aanbevolen (PureAqua: € 299)',
     highlight: false,
-    notitie: 'Meest complete functieset: osmose + kokend + bruisend in één systeem',
+    notitie: 'Osmose + zeer heet + gekoeld water in één systeem; geen bruisend water',
   },
   {
     naam: 'Quooker (referentie)',
@@ -117,11 +118,11 @@ const topAlternatieven = [
 const tco = [
   {
     set: '4-in-1 kraan met osmose',
-    aanschaf: '€ 600–1.000',
-    installatie: '€ 0–100',
-    filters: '€ 80–120/jaar',
+    aanschaf: '€ 1.948',
+    installatie: '€ 299 (optioneel)',
+    filters: 'Voorfilter en remineralisatie jaarlijks, membraan elke 2 jaar',
     energie: '± € 35/jaar',
-    totaal5jaar: '± € 1.200–1.700',
+    totaal5jaar: '± € 2.425 plus filters',
     highlight: false,
   },
   {
@@ -240,7 +241,9 @@ export default function QuookerAlternatiefPage() {
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
         <AuthorBox datePublished="2026-05-29" />
 
-        <QuickAnswer answer="Een goed Quooker alternatief biedt kokend water, gefilterd drinkwater en bruisend water voor €400–900 minder dan een Quooker Fusion + CUBE. De 4-in-1 kraan met osmosefilter is het meest complete alternatief: dezelfde functies, ingebouwde kalkverwijdering en lagere jaarlijkse filterkosten. Zelf te installeren in 2–3 uur." />
+        <QuickAnswer answer="Een goed Quooker alternatief hangt af van wat je wilt: design, een lagere prijs of gefilterd water. Wil je osmose-gezuiverd water, dan is de PureAqua 4-in-1 kraan volgens ons het sterkste alternatief: zeer heet (circa 96 graden), gekoeld en gezuiverd water uit één kraan voor 1.948 euro, circa 300 euro minder dan een Quooker Flex PRO3 met CUBE (2.240 euro). Bruisend water geeft hij niet. Installatie door een installateur is aanbevolen (PureAqua: 299 euro)." />
+
+        <FourInOneRecommendation content="quooker-alternatief-aanbeveling" />
 
         {/* Waarom mensen zoeken naar alternatieven */}
         <section>
@@ -363,29 +366,29 @@ export default function QuookerAlternatiefPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is een 4-in-1 kraan met osmose filter?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Een 4-in-1 kraan combineert kokend, koud gefilterd, warm en bruisend water in één systeem — met een ingebouwd omgekeerde osmose filter. Dit type is het meest complete alternatief voor een Quooker als je naast kokend water ook puur, kalkvrij drinkwater wilt.
+            Een 4-in-1 kraan met osmose, zoals de PureAqua 4-in-1, geeft gewoon warm en koud kraanwater, plus gezuiverd water op kamertemperatuur, gekoeld (circa 5 graden) en zeer heet (circa 96 graden), met ingebouwde omgekeerde osmose in drie stappen. Bruisend water zit er niet in. Volgens ons is dit het meest complete alternatief voor een Quooker als je naast heet water ook puur, kalkvrij drinkwater wilt.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
             {[
               {
                 titel: '4 functies in één kraan',
                 tekst:
-                  'Kokend, koud gefilterd, warm en bruisend water uit één kraan — geen aparte CUBE-module of losse koolfiltermachine nodig.',
+                  'Warm en koud kraanwater, plus gezuiverd water op kamertemperatuur, gekoeld en zeer heet uit één kraan. Onder de spoelbak staan wel twee apparaten (heet-/koelunit en osmose-unit) met twee stopcontacten.',
               },
               {
                 titel: 'Osmose filter ingebouwd',
                 tekst:
-                  'Een omgekeerde osmose systeem verwijdert kalk, chloor, nitraten en microplastics — standaard ingebouwd, geen losse installatie.',
+                  'Omgekeerde osmose in drie stappen: voorfilter, membraan en remineralisatie. In een SGS-labtest op een nieuw systeem daalden PFOS met meer dan 99,6%, PFOA met 99,5% en lood met meer dan 99,8%.',
               },
               {
-                titel: 'Lagere aanschafprijs',
+                titel: 'Iets lagere aanschafprijs',
                 tekst:
-                  'Een complete set ligt doorgaans tussen € 600–1.000. Een Quooker met CUBE plus filter komt vaak ruim boven de € 2.000 inclusief installatie.',
+                  'De PureAqua 4-in-1 kost € 1.948. Een Quooker Flex PRO3 met CUBE kost bij PureAqua € 2.240 en filtert met actieve kool, niet met osmose.',
               },
               {
-                titel: 'Zelf installeerbaar',
+                titel: 'Installatie en onderhoud',
                 tekst:
-                  'Veel modellen zijn zelf te plaatsen met standaard aansluitingen onder het aanrecht, zonder verplichte installateur.',
+                  'Installatie door een installateur is aanbevolen; PureAqua biedt dat aan voor € 299. Voorfilter en remineralisatiefilter vervang je circa jaarlijks, het membraan circa elke twee jaar.',
               },
             ].map(b => (
               <div key={b.titel} className="bg-gray-50 rounded-xl p-4">
@@ -458,9 +461,9 @@ export default function QuookerAlternatiefPage() {
                   'Heb je hard water, wil je kalk- en chloorvrij drinkwater of liever geen plasticresten in je glas? Dan is een kraan met ingebouwd omgekeerde osmose systeem een echte upgrade — een functie die Quooker standaard niet biedt.',
               },
               {
-                titel: 'Je zoekt een betere prijs voor hetzelfde functiepakket',
+                titel: 'Je zoekt gezuiverd en gekoeld water voor minder',
                 tekst:
-                  'Voor kokend, koud, warm én bruisend water samen met osmose betaal je bij alternatieven doorgaans honderden tot duizend euro minder dan voor een vergelijkbare Quooker + CUBE + filter combinatie.',
+                  'Voor zeer heet, gekoeld en osmose-gezuiverd water betaal je bij de PureAqua 4-in-1 (€ 1.948) circa € 300 minder dan voor een Quooker Flex PRO3 met CUBE (€ 2.240). Wil je per se bruisend water, dan heb je wel een Quooker CUBE, Grohe Blue of losse SodaStream nodig.',
               },
               {
                 titel: 'Een ander design past beter bij je keuken',
@@ -470,7 +473,7 @@ export default function QuookerAlternatiefPage() {
               {
                 titel: 'Je wilt zelf installeren',
                 tekst:
-                  'Ben je technisch onderlegd en wil je geen installateur betalen? Veel alternatieven zijn met de standaardaansluitingen onder je aanrecht prima zelf te plaatsen.',
+                  'Ben je technisch onderlegd en wil je geen installateur betalen? Sommige kokend-waterkranen zijn met de standaardaansluitingen onder je aanrecht zelf te plaatsen. Voor een 4-in-1 kraan met osmose raden we wel een installateur aan.',
               },
               {
                 titel: 'Je wilt een breder waterconcept thuis',
@@ -542,8 +545,8 @@ export default function QuookerAlternatiefPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Samenvatting: welk alternatief past bij jou?</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
             Quooker is geen verkeerde keuze — het merk heeft zijn positie in Nederland terecht verdiend. Maar het is
-            niet voor iedereen de meest logische keuze. Wie standaard een osmose filter wil, een lager prijspunt zoekt
-            of zelf wil installeren, kijkt beter naar een 4-in-1 systeem met ingebouwde osmose.
+            niet voor iedereen de meest logische keuze. Wie standaard een osmose filter wil en gekoeld en zeer heet
+            gezuiverd water belangrijker vindt dan bubbels, kijkt beter naar een 4-in-1 systeem met ingebouwde osmose.
             Wie hecht aan een specifieke Quooker-vorm of dealer-installatie blijft bij Quooker.
             Grohe Red is sterk in design, Insinkerator biedt veel keuze in modellen.
           </p>
@@ -585,7 +588,7 @@ export default function QuookerAlternatiefPage() {
           content="quooker-alternatief-cta"
           label="Bekijk de PureAqua 4-in-1 kraan (Quooker-alternatief)"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />

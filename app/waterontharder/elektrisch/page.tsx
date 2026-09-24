@@ -449,7 +449,7 @@ export default function ElektrischeWaterOnthardPage() {
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'Osmosefilter kopen',
-                desc: 'Onafhankelijke vergelijking van de beste RO-systemen voor puur drinkwater thuis.',
+                desc: 'Vergelijking van de beste RO-systemen voor puur drinkwater thuis.',
               },
               {
                 href: '/waterontharder',

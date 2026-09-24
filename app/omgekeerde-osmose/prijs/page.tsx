@@ -23,17 +23,17 @@ const faqItems = [
   {
     question: 'Wat kost een omgekeerde osmose filter gemiddeld?',
     answer:
-      'Een basismodel osmosefilter (4-traps) kost €150–300. Een premium 5-traps systeem met boostpomp kost €300–500. Tankloze systemen liggen op €500–800 en een complete 4-in-1 kokend water kraan met ingebouwd osmosefilter kost €700–1000. Daarboven komen jaarlijkse filterkosten van €50–150.',
+      'Een basismodel osmosefilter (4-traps) kost €150–300. Een premium 5-traps systeem met boostpomp kost €300–500. Tankloze systemen liggen op €500–800 en een complete 4-in-1 kokend water kraan met ingebouwd osmosefilter kost €1.948 (PureAqua 4-in-1). Daarboven komen jaarlijkse filterkosten van €50–150.',
   },
   {
     question: 'Hoeveel kost een osmosefilter per jaar aan onderhoud?',
     answer:
-      'De jaarlijkse onderhoudskosten bestaan voornamelijk uit filtervervanging: sedimentfilter (€10–20/jaar), koolstoffilter (€15–30/jaar) en RO-membraan (€40–80 per 2–3 jaar). In totaal rekent u op €50–120 per jaar voor een standaard onderbouwsysteem. Een 4-in-1 kraan heeft één jaarlijkse filterwissel van €80–150.',
+      'De jaarlijkse onderhoudskosten bestaan voornamelijk uit filtervervanging: sedimentfilter (€10–20/jaar), koolstoffilter (€15–30/jaar) en RO-membraan (€40–80 per 2–3 jaar). In totaal rekent u op €50–120 per jaar voor een standaard onderbouwsysteem. Bij een 4-in-1 kraan vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar (circa €80–150 per jaar).',
   },
   {
     question: 'Wat kost installatie van een omgekeerde osmose filter?',
     answer:
-      'Zelfinstallatie is haalbaar voor de meeste systemen: materiaalkosten zijn nihil en het duurt gemiddeld 30–60 minuten. Professionele installatie door een loodgieter kost €75–150 per uur, inclusief een bezoekje doorgaans €100–200. Een 4-in-1 kraan met boortje in het aanrechtblad vereist soms vakmanschap: reken op €150–250 voor professionele plaatsing.',
+      'Zelfinstallatie is haalbaar voor de meeste systemen: materiaalkosten zijn nihil en het duurt gemiddeld 30–60 minuten. Professionele installatie door een loodgieter kost €75–150 per uur, inclusief een bezoekje doorgaans €100–200. Voor een 4-in-1 kraan met osmose is installatie door een installateur aanbevolen; PureAqua biedt dat aan voor €299.',
   },
   {
     question: 'Is een osmosefilter goedkoper dan flessenwater?',
@@ -86,9 +86,9 @@ const systeemPrijzen = [
   },
   {
     naam: '4-in-1 kokend water kraan',
-    aanschaf: '€ 700 – 1.000',
+    aanschaf: '€ 1.948',
     filterkosten: '€ 80 – 150 / jaar',
-    installatie: '€ 0 (zelf) / €150–250 (pro)',
+    installatie: 'Installateur aanbevolen (PureAqua: €299)',
     membraanType: 'Geïntegreerd 75–100 GPD',
     rejection: '97–99%',
     flow: '150–250 L/uur',
@@ -137,14 +137,14 @@ const tcoData = [
   },
   {
     naam: '4-in-1 kokend water kraan',
-    aanschaf: 850,
+    aanschaf: 1948,
     jaarFilterkosten: 115,
     installatie: 0,
-    jaar1: 965,
-    jaar2: 1080,
-    jaar3: 1195,
-    jaar4: 1310,
-    jaar5: 1425,
+    jaar1: 2063,
+    jaar2: 2178,
+    jaar3: 2293,
+    jaar4: 2408,
+    jaar5: 2523,
     highlight: true,
   },
 ];
@@ -223,7 +223,7 @@ export default function OsmosePrijsPage() {
           <p className="text-gray-700 mb-6 leading-relaxed">
             De aanschafprijzen voor omgekeerde osmose systemen lopen sterk uiteen. De vier hoofdcategorieën
             zijn basismodellen (€150–300), premium systemen met boostpomp (€300–500), tankloze systemen
-            (€500–800) en complete 4-in-1 kokend water kranen (€700–1.000). Hieronder een overzicht per
+            (€500–800) en complete 4-in-1 kokend water kranen (€1.948 bij PureAqua). Hieronder een overzicht per
             categorie inclusief de belangrijkste technische specificaties die de prijs rechtvaardigen.
           </p>
           <div className="space-y-5">
@@ -374,7 +374,7 @@ export default function OsmosePrijsPage() {
             <ul className="space-y-1.5">
               <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>Het basismodel is het goedkoopst in jaar 1, maar het verschil met premium systemen loopt snel terug door lage meerkosten bij premium.</li>
               <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>De 4-in-1 kraan heeft hogere aanvangsinvestering maar vervangt ook waterkoker en eventuele Brita-kan — die kosten zijn hierboven niet meegenomen.</li>
-              <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>Over 5 jaar liggen alle systemen tussen €625 en €1.425 — een fractie van de kosten van flessenwater.</li>
+              <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>Over 5 jaar liggen de losse osmosesystemen tussen €625 en €1.150; de 4-in-1 kraan komt uit op circa €2.520. Allemaal een fractie van de kosten van flessenwater.</li>
             </ul>
           </div>
         </section>
@@ -461,7 +461,7 @@ export default function OsmosePrijsPage() {
               <p className="font-semibold text-gray-900 mb-3">Professionele installatie</p>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>Vakkundige uitvoering, garantie op installatie</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>Aanbevolen voor 4-in-1 kranen (boortje aanrechtblad)</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>Aanbevolen voor 4-in-1 kranen (twee apparaten, twee stopcontacten)</li>
                 <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>Handig bij lage waterdruk (aanpassing nodig)</li>
                 <li className="flex gap-2"><span className="text-amber-500 font-bold">!</span>Kosten: €75–150/uur (loodgieter)</li>
                 <li className="flex gap-2"><span className="text-amber-500 font-bold">!</span>Voorrijkosten: €30–50 extra</li>
@@ -472,8 +472,7 @@ export default function OsmosePrijsPage() {
           <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-sm text-gray-700">
             <strong className="text-[#005F8A]">Advies:</strong> Voor basismodellen en standaard
             onderbouwsystemen is zelfinstallatie goed te doen. Voor een 4-in-1 kokend water kraan
-            waarbij u een boorgat in het graniet of composiet aanrechtblad nodig hebt, is een
-            professional aan te raden. Een foutje kost daar meer dan de besparing op installatiekosten.
+            is een installateur aan te raden (PureAqua biedt dat aan voor €299), zeker als u een boorgat in het graniet of composiet aanrechtblad nodig hebt. Een foutje kost daar meer dan de besparing op installatiekosten.
           </div>
         </section>
 
@@ -511,7 +510,7 @@ export default function OsmosePrijsPage() {
               {
                 nr: 5,
                 titel: 'Extra functies: kokend water, bruisend water en smart features',
-                tekst: 'De 4-in-1 kokend water kraan combineert osmose filtering met een geïntegreerde boiler voor direct kokend water (100°C). Sommige modellen bieden ook bruisend gefilterd water. Smart-functies zoals filterverbruiksmonitoring via app of LED-indicatoren voor filtervervangingstijd verhogen de gebruiksvriendelijkheid maar ook de prijs. Weeg de meerwaarde af tegen uw specifieke gebruikspatroon.',
+                tekst: 'De 4-in-1 kokend water kraan combineert osmose filtering met een geïntegreerde boiler voor direct zeer heet water (bij de PureAqua 4-in-1 circa 96°C) en gekoeld water. Sommige andere kranen bieden ook bruisend water; de PureAqua 4-in-1 niet. Smart-functies zoals filterverbruiksmonitoring via app of LED-indicatoren voor filtervervangingstijd verhogen de gebruiksvriendelijkheid maar ook de prijs. Weeg de meerwaarde af tegen uw specifieke gebruikspatroon.',
               },
             ].map(f => (
               <div key={f.nr} className="flex gap-4 items-start">

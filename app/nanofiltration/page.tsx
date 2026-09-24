@@ -417,7 +417,7 @@ export default function NanofiltrationPage() {
                   'PFAS een zorg is in jouw regio',
                   'Je kant-en-klare producten wil met service en garantie',
                   'Je het schoonste water wil ongeacht mineralengehalte',
-                  'Je een systeem wil combineren met kokend/bruisend water (4-in-1 kraan)',
+                  'Je een systeem wil combineren met zeer heet en gekoeld water (4-in-1 kraan)',
                 ].map(item => (
                   <li key={item} className="flex gap-2 text-sm text-gray-700">
                     <span className="text-green-600 font-bold shrink-0">✓</span>

@@ -42,12 +42,12 @@ const faqItems = [
   {
     question: 'Is een Selsiuz goedkoper dan een Quooker?',
     answer:
-      'Vaak ligt de Selsiuz iets onder een vergelijkbare Quooker-opstelling, maar beide zitten in het premium segment. Geen van beide bevat standaard een osmosefilter. Een 4-in-1 kraan met ingebouwd osmosefilter levert kokend, koud gefilterd, warm en bruisend water vaak voor een lagere totaalprijs. De directe merkvergelijking lees je op Quooker vs Selsiuz.',
+      'Vaak ligt de Selsiuz iets onder een vergelijkbare Quooker-opstelling, maar beide zitten in het premium segment. Geen van beide bevat standaard een osmosefilter. De PureAqua 4-in-1 kraan met ingebouwd osmosefilter kost 1.948 euro en geeft naast warm en koud kraanwater ook gezuiverd, gekoeld en zeer heet water (circa 96 graden), maar geen bruisend water. De directe merkvergelijking lees je op Quooker vs Selsiuz.',
   },
   {
     question: 'Is een Selsiuz de prijs waard?',
     answer:
-      'Dat hangt af van wat je zoekt. Voor wie design, een gevestigd Nederlands merk en een betrouwbare kokendwaterfunctie belangrijk vindt, is een Selsiuz de investering vaak waard. Wil je ook gefilterd of bruisend water of de laagste totaalprijs, dan biedt een 4-in-1 osmosekraan meer functies voor minder geld.',
+      'Dat hangt af van wat je zoekt. Voor wie design, een gevestigd Nederlands merk en een betrouwbare kokendwaterfunctie belangrijk vindt, is een Selsiuz de investering vaak waard. Wil je ook osmose-gezuiverd en gekoeld water, dan biedt een 4-in-1 osmosekraan meer functies, al is de PureAqua 4-in-1 met 1.948 euro niet goedkoper.',
   },
 ];
 
@@ -123,7 +123,7 @@ export default function SelsiuzPrijsPage() {
 
         <QuickAnswer
           question="Wat kost een Selsiuz?"
-          answer="Een Selsiuz set met combi-boiler kost indicatief 1.000 tot 1.700 euro exclusief installatie (circa 150 tot 400 euro). Daar komen jaarlijkse kosten bij voor elektriciteit om de boiler op temperatuur te houden en periodiek ontkalken, vooral in een hard-watergebied. Een Selsiuz heeft geen standaard osmosefilter. Een 4-in-1 osmosekraan biedt kokend, gefilterd en bruisend water vaak voor een lagere totaalprijs. Bedragen zijn indicatief; controleer actuele prijzen bij de verkoper."
+          answer="Een Selsiuz set met combi-boiler kost indicatief 1.000 tot 1.700 euro exclusief installatie (circa 150 tot 400 euro). Daar komen jaarlijkse kosten bij voor elektriciteit om de boiler op temperatuur te houden en periodiek ontkalken, vooral in een hard-watergebied. Een Selsiuz heeft geen standaard osmosefilter. De PureAqua 4-in-1 osmosekraan kost 1.948 euro en biedt zeer heet, gekoeld en osmose-gezuiverd water, maar geen bruisend water. Bedragen zijn indicatief; controleer actuele prijzen bij de verkoper."
         />
 
         <section>
@@ -158,9 +158,10 @@ export default function SelsiuzPrijsPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Selsiuz versus een 4-in-1 osmosekraan qua kosten</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Een complete Selsiuz-opstelling komt all-in (inclusief installatie) al snel boven de 1.200 euro
-            uit. Een 4-in-1 kraan met ingebouwd osmosefilter kost indicatief 699 tot 899 euro plus 100 tot
-            200 euro installatie - en levert daarbij ook puur gefilterd en bruisend water. Voor wie meer wil
-            dan alleen kokend water is dat vaak een gunstiger verhouding tussen prijs en functies.
+            uit. De PureAqua 4-in-1 kraan met ingebouwd osmosefilter kost 1.948 euro, plus optioneel 299 euro
+            installatie. Dat is meer, maar je krijgt naast warm en koud kraanwater ook gezuiverd water op
+            kamertemperatuur, gekoeld en zeer heet (circa 96 graden). Bruisend water zit er niet in. Voor wie
+            meer wil dan alleen kokend water kan dat een betere verhouding tussen prijs en functies zijn.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Lees de volledige afweging op{' '}
@@ -193,7 +194,7 @@ export default function SelsiuzPrijsPage() {
             {[
               ['/selsiuz', 'Over Selsiuz', 'Werking, modellen en onderhoud'],
               ['/selsiuz-onderhoud', 'Selsiuz onderhoud', 'Ontkalken, filter en levensduur'],
-              ['/selsiuz-alternatief', 'Selsiuz alternatief', 'Meer functies voor minder geld?'],
+              ['/selsiuz-alternatief', 'Selsiuz alternatief', 'Alternatieven met osmosefilter'],
               ['/kokend-water-kraan', 'Kokend water kraan', 'Complete gids over de categorie'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">

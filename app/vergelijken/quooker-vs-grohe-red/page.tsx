@@ -48,19 +48,19 @@ const faqItems = [
   {
     question: 'Is er een goedkoper alternatief voor Quooker en Grohe Red?',
     answer:
-      'Ja. Een 4-in-1 kraan met ingebouwd osmosefilter levert kokend, koud gefilterd, warm en bruisend water indicatief voor 699 tot 899 euro plus installatie - meestal onder een vergelijkbare Quooker- of Grohe Red-opstelling, en met een volwaardig osmosefilter erbij.',
+      'Voor alleen kokend water zijn instapmodellen van Quooker en Grohe Red het goedkoopst. Wil je ook gekoeld en gefilterd water, dan is de PureAqua 4-in-1 kraan met ingebouwd osmosefilter (1.948 euro, installatie optioneel 299 euro) circa 300 euro goedkoper dan een Quooker Flex PRO3 met CUBE (2.240 euro bij PureAqua). De 4-in-1 geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, maar geen bruisend water.',
   },
 ];
 
 const vergelijking = [
   {
     naam: '4-in-1 osmosekraan',
-    prijs: 'EUR 699-899',
-    kokend: 'Ja (100 graden)',
-    extra: 'Koud gefilterd + bruisend',
+    prijs: 'EUR 1.948 (PureAqua)',
+    kokend: 'Zeer heet (circa 96 graden)',
+    extra: 'Gekoeld + osmose-gezuiverd, geen bruisend',
     filter: 'Osmose ingebouwd',
     highlight: true,
-    notitie: 'Meest complete pakket met osmose, vaak de laagste totaalprijs.',
+    notitie: 'Heet, gekoeld en osmose-gezuiverd water uit een kraan; installatie optioneel 299 euro.',
   },
   {
     naam: 'Quooker',
@@ -146,7 +146,7 @@ export default function QuookerVsGroheRedPage() {
 
         <QuickAnswer
           question="Quooker of Grohe Red?"
-          answer="Beide leveren direct kokend water en zijn kwaliteitsmerken in het premium segment. Quooker heeft het grootste dealernetwerk in Nederland en met de CUBE ook gekoeld en bruisend water; Grohe Red biedt strak Duits design. Geen van beide heeft standaard een volledig osmosefilter. Wil je naast kokend water ook puur gefilterd en bruisend water, vaak voor een lagere totaalprijs, dan is een 4-in-1 osmosekraan het overwegen waard. Prijzen indicatief; controleer bij de verkoper."
+          answer="Beide leveren direct kokend water en zijn kwaliteitsmerken in het premium segment. Quooker heeft het grootste dealernetwerk in Nederland en met de CUBE ook gekoeld en bruisend water; Grohe Red biedt strak Duits design. Geen van beide heeft standaard een volledig osmosefilter. Wil je naast heet water ook osmose-gezuiverd en gekoeld water, dan is een 4-in-1 osmosekraan het overwegen waard; bruisend water geeft de PureAqua 4-in-1 niet. Prijzen indicatief; controleer bij de verkoper."
         />
 
         <section>
@@ -192,7 +192,7 @@ export default function QuookerVsGroheRedPage() {
               ['Kies Quooker als...', 'Je waarde hecht aan het grootste dealernetwerk, naamsbekendheid en de optie van gekoeld/bruisend water via de CUBE.'],
               ['Kies Grohe Red als...', 'Je een strak Duits design uit het premium sanitairsegment wilt en kokend water je hoofddoel is.'],
               ['Kies geen van beide als...', 'Je ook een volwaardig osmosefilter wilt voor breder gefilterd water - dat zit bij geen van beide standaard.'],
-              ['Kies een 4-in-1 osmose als...', 'Je kokend, gefilterd en bruisend water wilt combineren, vaak voor een lagere totaalprijs.'],
+              ['Kies een 4-in-1 osmose als...', 'Je zeer heet, gekoeld en osmose-gezuiverd water wilt combineren en bruisend water niet nodig hebt.'],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold text-gray-800 mb-1">{t}</p>
@@ -215,7 +215,7 @@ export default function QuookerVsGroheRedPage() {
           content="vergelijken-quooker-vs-grohe-red-cta"
           label="Bekijk de PureAqua 4-in-1 kraan"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />

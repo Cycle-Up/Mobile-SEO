@@ -3,11 +3,11 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/gemeenten';
 import { CTABanner } from '@/components/CTABanner';
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { JoepCTA } from '@/components/JoepCTA';
 import { JOEP_MIN_DH } from '@/lib/joep.mjs';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 interface PageProps {
   params: Promise<{ gemeente: string }>;
@@ -548,14 +548,7 @@ export default async function WaterOntharderGemeentePage({ params }: PageProps) 
             dH={gemeente.hardheid}
           />
         ) : (
-          <AffiliateCTA
-            destination="waterontharders"
-            campaign="waterontharder"
-            content="waterontharder-gemeente-cta"
-            label="Bekijk het aanbod waterontharders"
-            title="Een waterontharder aanschaffen?"
-            sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
-          />
+          <PureFilterCTA context="smaak" content="waterontharder-gemeente-purefilter" />
         )}
 
         {/* Interne links */}

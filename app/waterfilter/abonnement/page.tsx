@@ -558,7 +558,7 @@ export default function WaterfilterAbonnementPage() {
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'Osmose filter kopen',
-                desc: 'De beste RO-systemen om zelf te kopen — onafhankelijke vergelijking.',
+                desc: 'De beste RO-systemen om zelf te kopen, met kosten en onderhoud.',
               },
               {
                 href: '/waterfilter/keuken-installatie',

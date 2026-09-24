@@ -459,7 +459,7 @@ export default function OsmoseFilterPage() {
               'Minder ruimte onder het aanrecht: geen aparte opslagtank van 5-10 liter',
               'Altijd vers gefilterd water — geen stagnant water in een opslagtank',
               'De boiler ontvangt kalkvrij water waardoor ontkalken overbodig wordt',
-              'Eén systeem voor kokend, koud gefilterd en (optioneel) bruisend water',
+              'Eén systeem voor (bijna) kokend en gekoeld gefilterd water',
               'Filtervervanging op één locatie in plaats van verdeeld over meerdere behuizingen',
             ].map(t => (
               <li key={t} className="flex gap-2 items-start">
@@ -469,7 +469,7 @@ export default function OsmoseFilterPage() {
             ))}
           </ul>
           <p className="text-gray-700 leading-relaxed">
-            Een 4-in-1 kraan met geïntegreerd osmosefilter is een voorbeeld van dit concept. Wie naast gefilterd water ook kokend en bruisend water wil, vindt in een dergelijke gecombineerde oplossing de meest compacte en kostenefficiënte aanpak. Meer informatie over dit type systeem leest u op de <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">kooppagina voor osmosefilters</Link>.
+            Een 4-in-1 kraan met geïntegreerd osmosefilter is een voorbeeld van dit concept. Wie naast gefilterd water ook zeer heet en gekoeld water wil, vindt in een dergelijke gecombineerde oplossing een overzichtelijke aanpak. Let op: de PureAqua 4-in-1 heeft geen bruisend water en gebruikt onder de spoelbak twee apparaten (heet-/koelunit en osmose-unit) op twee stopcontacten. Meer informatie over dit type systeem leest u op de <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">kooppagina voor osmosefilters</Link>.
           </p>
         </section>
 

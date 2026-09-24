@@ -11,12 +11,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Boretti alternatief: kokend water kraan met osmose (2026)',
     description:
-      'Zoek je een alternatief voor de Boretti kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gefilterd en bruisend water geeft.',
+      'Alternatief voor de Boretti kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en gezuiverd water geeft.',
     alternates: { canonical: 'https://waterfilterplatform.nl/boretti-alternatief' },
     openGraph: {
       title: 'Boretti alternatief vergelijken - beste opties 2026',
       description:
-        'Boretti levert kokend water met een designkraan. Een 4-in-1 osmosekraan voegt gefilterd en bruisend water toe, vaak voor minder geld.',
+        'Boretti levert kokend water met een designkraan. Een 4-in-1 osmosekraan voegt gekoeld en osmose-gezuiverd water toe.',
       url: 'https://waterfilterplatform.nl/boretti-alternatief',
       type: 'article',
       locale: 'nl_NL',
@@ -28,7 +28,7 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor de Boretti kokend water kraan?',
     answer:
-      'Het sterkste alternatief voor de Boretti kokend water kraan is een 4-in-1 kraan met ingebouwd osmosefilter. Boretti staat bekend om design-keukenapparatuur en levert een betrouwbare kokendwaterkraan. Wie naast kokend water ook puur gefilterd en bruisend water wil, vindt een 4-in-1 osmosekraan een completer pakket, doorgaans voor een lagere prijs.',
+      'Volgens ons is het sterkste alternatief voor de Boretti kokend water kraan een 4-in-1 kraan met ingebouwd osmosefilter. Boretti staat bekend om design-keukenapparatuur en levert een betrouwbare kokendwaterkraan. Wie naast heet water ook gekoeld en osmose-gezuiverd water wil, vindt volgens ons in de PureAqua 4-in-1 kraan een completer pakket. Goedkoper is die niet: de 4-in-1 kost 1.948 euro. Bruisend water zit er niet op.',
   },
   {
     question: 'Heeft de Boretti kraan een osmosefilter?',
@@ -38,24 +38,24 @@ const faqItems = [
   {
     question: 'Is er een goedkoper alternatief dan Boretti?',
     answer:
-      'Ja. Een Boretti kokend water kraan met boiler kost al snel meer dan 1.000 euro. Een 4-in-1 kraan met osmosefilter levert kokend, koud gefilterd, warm en bruisend water vanaf 699 tot 899 euro, met osmosesysteem inbegrepen. Reken installatie- en filterkosten over meerdere jaren altijd mee.',
+      'Een Boretti kokend water kraan met boiler kost al snel meer dan 1.000 euro. De PureAqua 4-in-1 kraan kost 1.948 euro en is dus niet goedkoper, maar geeft naast zeer heet water (circa 96 graden) ook gekoeld en osmose-gezuiverd water. Zoek je vooral een goedkopere kokendwaterkraan, kijk dan naar een 3-in-1 basismodel. Reken installatie- en filterkosten over meerdere jaren altijd mee.',
   },
   {
     question: 'Kun je een Boretti alternatief zelf installeren?',
     answer:
-      'Een 4-in-1 kraan met osmosefilter is in de meeste gevallen zelf te installeren met standaard aansluitingen onder het aanrecht en een Nederlandstalige handleiding. Daarmee bespaar je op installatiekosten die bij designmerken vaak via een dealer lopen.',
+      'Voor een 4-in-1 kraan met osmosefilter is installatie door een installateur aanbevolen: onder de spoelbak komen twee apparaten (heet-/koelunit en osmose-unit) en twee stopcontacten. PureAqua biedt installatie aan voor 299 euro.',
   },
 ];
 
 const topAlternatieven = [
   {
     naam: '4-in-1 kraan met osmose',
-    prijs: 'EUR 699-899',
-    kokend: 'Ja (100 graden)',
+    prijs: 'EUR 1.948',
+    kokend: 'Zeer heet (circa 96 graden)',
     gefilterd: 'Ja (osmose ingebouwd)',
-    bruisend: 'Ja, standaard',
+    bruisend: 'Nee',
     highlight: true,
-    notitie: 'Meest complete pakket met ingebouwd osmosefilter, voor de laagste prijs.',
+    notitie: 'PureAqua 4-in-1: zeer heet, gekoeld en osmose-gezuiverd water uit één kraan; installatie optioneel EUR 299.',
   },
   {
     naam: 'Boretti (referentie)',
@@ -84,7 +84,7 @@ export default function BorettiAlternatiefPage() {
         type="Article"
         article={{
           title: 'Boretti alternatief: kokend water kraan met osmose (2026)',
-          description: 'Zoek je een alternatief voor de Boretti kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gefilterd en bruisend water geeft.',
+          description: 'Alternatief voor de Boretti kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en gezuiverd water geeft.',
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
           url: 'https://waterfilterplatform.nl/boretti-alternatief',
@@ -107,12 +107,12 @@ export default function BorettiAlternatiefPage() {
             <span>Boretti alternatief</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Boretti alternatief: meer functies voor minder geld?
+            Boretti alternatief: meer functies uit één kraan?
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             De <strong>Boretti</strong> kokend water kraan past bij design-keukens. Toch zoeken veel
-            mensen een <strong>alternatief voor Boretti</strong> dat naast kokend water ook gefilterd
-            of bruisend water levert - of simpelweg een{' '}
+            mensen een <strong>alternatief voor Boretti</strong> dat naast kokend water ook gefilterd,
+            gekoeld of bruisend water levert, of simpelweg een{' '}
             <strong>goedkoper alternatief voor Boretti</strong>. We zetten de opties naast elkaar.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -138,7 +138,7 @@ export default function BorettiAlternatiefPage() {
 
         <QuickAnswer
           question="Wat is het beste Boretti alternatief?"
-          answer="Een Boretti alternatief levert dezelfde kokendwaterfunctie, vaak goedkoper en met meer mogelijkheden. De beste keuze is een 4-in-1 kraan met ingebouwd osmosefilter: die biedt ook gefilterd koud en bruisend water dat de Boretti niet standaard heeft. De Boretti bevat geen volwaardig osmosefilter; een osmosesysteem beschermt de kraan bij hard water en verbetert de smaak."
+          answer="Een Boretti alternatief levert dezelfde heetwaterfunctie, soms met meer mogelijkheden. Onze keuze is de PureAqua 4-in-1 kraan met ingebouwd osmosefilter (1.948 euro): die geeft ook gekoeld en osmose-gezuiverd water, maar geen bruisend water. De Boretti bevat geen volwaardig osmosefilter; een osmosesysteem beschermt de kraan bij hard water en verbetert de smaak."
         />
 
         <section>
@@ -163,8 +163,8 @@ export default function BorettiAlternatiefPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Voor wie ook puur gefilterd of bruisend water wil, of een lagere totaalprijs, zijn er
-            alternatieven die meer bieden. Begrijp eerst de categorie via onze gids over{' '}
+            Voor wie ook puur gefilterd, gekoeld of bruisend water wil, of een lagere totaalprijs, zijn er
+            alternatieven die meer bieden. Voor bruisend water kijk je naar een Quooker met CUBE; de 4-in-1 kraan geeft gekoeld en gezuiverd water. Begrijp eerst de categorie via onze gids over{' '}
             <Link href="/heet-water-kraan" className="text-[#005F8A] underline">heet water kranen</Link>.
           </p>
         </section>
@@ -211,7 +211,7 @@ export default function BorettiAlternatiefPage() {
           content="boretti-alternatief-cta"
           label="Bekijk de PureAqua 4-in-1 kraan"
           title="Een 4-in-1 kraan als alternatief voor Boretti?"
-          sub="De PureAqua 4-in-1 kraan levert kokend en gefilterd water. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan levert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />
@@ -220,9 +220,9 @@ export default function BorettiAlternatiefPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Conclusie</h2>
           <p className="text-gray-700 leading-relaxed">
             Boretti is een sterke keuze voor wie design en kokend water vooropstelt. Maar voor de
-            meeste huishoudens die ook gefilterd of bruisend water willen, of slimmer met hun budget
-            omgaan, biedt een <strong>4-in-1 kraan met osmosefilter</strong> een completer pakket voor
-            minder geld. Vergelijk verder met{' '}
+            huishoudens die ook gekoeld en osmose-gezuiverd water willen, biedt een <strong>4-in-1 kraan
+            met osmosefilter</strong> volgens ons een completer pakket, al is die met 1.948 euro niet goedkoper. Wil je
+            vooral bruisend water, dan past een Quooker met CUBE beter. Vergelijk verder met{' '}
             <Link href="/quooker-alternatief" className="text-[#005F8A] underline">het Quooker alternatief</Link>{' '}
             of de{' '}
             <Link href="/vergelijken/kokend-water-kraan-merken" className="text-[#005F8A] underline">merkvergelijking</Link>.

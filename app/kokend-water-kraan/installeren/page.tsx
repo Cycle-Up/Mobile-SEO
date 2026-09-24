@@ -22,7 +22,7 @@ const faqItems = [
   {
     question: 'Kan ik een kokend water kraan zelf installeren?',
     answer:
-      'Ja, de meeste kokend water kranen zijn ontworpen voor doe-het-zelf installatie. Zolang er al een koudwaterleiding en een geaard stopcontact (230V) onder het aanrecht aanwezig zijn, is een basisinstallatie in 1–2 uur te doen zonder loodgieter. Heb je geen aanrecht-stopcontact, moet er nieuw leidingwerk worden aangelegd of heb je een 4-in-1 kraan met ingebouwde osmose die ook een afvoeraansluiting nodig heeft? Dan is een loodgieter of installateur aan te raden.',
+      'Ja, de meeste kokend water kranen zijn ontworpen voor doe-het-zelf installatie. Zolang er al een koudwaterleiding en een geaard stopcontact (230V) onder het aanrecht aanwezig zijn, is een basisinstallatie in 1–2 uur te doen zonder loodgieter. Heb je geen aanrecht-stopcontact, moet er nieuw leidingwerk worden aangelegd of heb je een 4-in-1 kraan met ingebouwde osmose die ook een afvoeraansluiting nodig heeft? Dan is een loodgieter of installateur aan te raden. Voor de PureAqua 4-in-1 biedt PureAqua installatie aan voor 299 euro.',
   },
   {
     question: 'Welke tools heb ik nodig voor de installatie?',
@@ -42,7 +42,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil bij installatie van een 4-in-1 kraan met osmose?',
     answer:
-      'Een 4-in-1 kraan met ingebouwde omgekeerde osmose heeft een extra stap: het osmosemodule moet worden aangesloten op de koudwatertoevoer en op een afvoerleiding (voor het spoelwater van het membraan). Het spoelwater (ca. 0,5–2 liter per dag) moet naar het sifon of de afvoer worden geleid. Verder is de boiler van een 4-in-1 combinatiesysteem groter dan bij een eenvoudige kokendwaterboiler, en moet hij goed worden bevestigd aan de kast of muur.',
+      'Een 4-in-1 kraan met ingebouwde omgekeerde osmose heeft een extra stap: het osmosemodule moet worden aangesloten op de koudwatertoevoer en op een afvoerleiding (voor het spoelwater van het membraan). Het spoelwater (ca. 0,5–2 liter per dag) moet naar het sifon of de afvoer worden geleid. Verder staan er bij de PureAqua 4-in-1 twee apparaten onder de spoelbak (een heet-/koelunit en een osmose-unit), die samen twee stopcontacten nodig hebben. Installatie door een installateur is aanbevolen; PureAqua biedt dat aan voor 299 euro.',
   },
 ];
 
@@ -180,7 +180,7 @@ const osmoseExtra = [
   {
     stap: 'Osmosemodule plaatsen',
     beschrijving:
-      'Bij een 4-in-1 kraan met ingebouwde omgekeerde osmose is er naast de boiler ook een osmosemodule (of het filterhuis met membraan). Plaats de module in de kast onder het aanrecht. Zorg voor voldoende ruimte: het filterpatroon moet jaarlijks verwisselbaar zijn zonder dat u alle andere aansluitingen hoeft te verplaatsen. Sommige compacte systemen combineren boiler en osmosefilter in één behuizing voor maximale compactheid.',
+      'Bij een 4-in-1 kraan met ingebouwde omgekeerde osmose is er naast de boiler ook een osmosemodule (of het filterhuis met membraan). Plaats de module in de kast onder het aanrecht. Zorg voor voldoende ruimte: het filterpatroon moet jaarlijks verwisselbaar zijn zonder dat u alle andere aansluitingen hoeft te verplaatsen. Bij de PureAqua 4-in-1 zijn dat twee aparte apparaten (heet-/koelunit en osmose-unit), elk met een eigen stekker: reken op twee stopcontacten en voldoende ruimte in het keukenkastje.',
   },
   {
     stap: 'Afvoerleiding voor spoelwater',
@@ -254,11 +254,11 @@ const moeilijkheidsRating = [
     kleur: 'yellow',
   },
   {
-    scenario: '4-in-1 met osmose, incl. afvoerleiding + stopcontact aanwezig',
-    moeilijkheid: 'Gemiddeld',
+    scenario: '4-in-1 met osmose, incl. afvoerleiding + twee stopcontacten aanwezig',
+    moeilijkheid: 'Installateur aanbevolen',
     tijd: '90–120 minuten',
-    diy: true,
-    kleur: 'yellow',
+    diy: false,
+    kleur: 'red',
   },
   {
     scenario: 'Nieuw kraangat in graniet/steen aanrecht',
@@ -463,10 +463,10 @@ export default function KokendWaterKraanInstallerenPage() {
             4-in-1 met osmose: extra installatiestappen
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Een <strong>4-in-1 kraan met omgekeerde osmose</strong> combineert een kokendwaterfunctie met een ingebouwd osmose filtratie systeem. Dit
-            geeft u naast kokend water ook puur gefilterd water (vrij van kalk, chloor, nitraten
+            Een <strong>4-in-1 kraan met omgekeerde osmose</strong> combineert zeer heet water (circa 96 graden) en gekoeld water met een osmose filtratie systeem. Dit
+            geeft u naast gewoon warm en koud kraanwater ook gefilterd water (met sterk verminderde kalk, chloor, nitraat
             en PFAS) uit dezelfde kraan. De installatie heeft een paar aanvullende stappen ten
-            opzichte van een eenvoudige kokend water kraan:
+            opzichte van een eenvoudige kokend water kraan. Installatie door een installateur is aanbevolen; PureAqua biedt dat voor de 4-in-1 aan voor 299 euro:
           </p>
           <div className="space-y-4 mb-5">
             {osmoseExtra.map((o, i) => (
@@ -614,8 +614,8 @@ export default function KokendWaterKraanInstallerenPage() {
             <p className="text-sm text-gray-700 leading-relaxed">
               Een loodgieter rekent doorgaans €60–100 per uur voor installatiewerk. Een standaard
               installatie inclusief kraangat boren en aansluiting duurt 1–2 uur — reken op
-              €100–200 arbeidskosten. Een complete installatie van een 4-in-1 kraan met osmose
-              door een installateur kost typisch €150–350 inclusief materialen. Vraag altijd
+              €100–200 arbeidskosten. Voor de PureAqua 4-in-1 kraan met osmose
+              biedt PureAqua installatie aan voor €299. Vraag altijd
               meerdere offertes aan en controleer of de installateur ervaring heeft met
               kokend water kraan systemen.
             </p>
@@ -653,12 +653,12 @@ export default function KokendWaterKraanInstallerenPage() {
               {
                 href: '/4-in-1-kraan',
                 title: '4-in-1 kraan: alles wat u moet weten',
-                desc: 'Kokend, koud, warm en bruisend uit één kraan — met ingebouwde osmosefiltratie.',
+                desc: 'Warm en koud kraanwater plus gekoeld en zeer heet osmosewater uit één kraan (geen bruisend water).',
               },
               {
                 href: '/omgekeerde-osmose/kopen',
                 title: 'Osmosefilter vergelijken',
-                desc: 'Complete 4-in-1 kraan met osmosefilter, kokend water en bruisend water.',
+                desc: 'Van losse osmosefilters tot een 4-in-1 kraan met gekoeld en zeer heet osmosewater.',
               },
               {
                 href: '/kennisbank/kokend-water-kraan-installeren',

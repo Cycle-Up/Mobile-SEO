@@ -64,7 +64,7 @@ const osmoseContent: Record<Hardheid, OsmoseContent> = {
       `${waterbedrijf} levert het leidingwater in ${naam} met een gemeten hardheid van ${dH}°dH. Dat is aanzienlijk hoger dan het nationale gemiddelde van circa 10°dH. Het water bevat daarmee een hoge concentratie calcium (Ca²⁺) en magnesium (Mg²⁺) — uitstekend voor de botten, maar verantwoordelijk voor de dagelijkse kalkoverlast in uw keuken en badkamer. Naast hardheid bevat het water, zoals bij alle Nederlandse waterbedrijven, ook chloorresten, nitraten en mogelijk microplastics.`,
     verwijdertStorendeStof: 'Met name kalkmineralen (hoge concentratie)',
     systeemAdvies: (naam, dH) =>
-      `Bij ${dH}°dH in ${naam} wordt een 5-traps RO-systeem met remineralisatiestap aanbevolen. Door de hoge mineraalbelasting raakt een standaard 3-traps membraan sneller verzadigd — een hoger-gespecificeerd systeem met grotere membraancapaciteit gaat langer mee. Een populaire keuze voor ${naam}-bewoners is de geïntegreerde 4-in-1 kraan met osmose, die ook kokend en bruisend water levert.`,
+      `Bij ${dH}°dH in ${naam} wordt een 5-traps RO-systeem met remineralisatiestap aanbevolen. Door de hoge mineraalbelasting raakt een standaard 3-traps membraan sneller verzadigd — een hoger-gespecificeerd systeem met grotere membraancapaciteit gaat langer mee. Een populaire keuze voor ${naam}-bewoners is de geïntegreerde 4-in-1 kraan met osmose, die ook zeer heet en gekoeld water levert (geen bruisend water).`,
     ctaTekst: (naam, dH) =>
       `Bij ${dH}°dH in ${naam} is een osmosefilter geen luxe, maar een praktische noodzaak. Bespaar op ontkalkers, bescherm uw apparaten en geniet van puur drinkwater.`,
     faqExtra: [
@@ -90,7 +90,7 @@ const osmoseContent: Record<Hardheid, OsmoseContent> = {
       `${waterbedrijf} levert water in ${naam} met ${dH}°dH hardheid — duidelijk boven het nationale gemiddelde. Dit hard water bevat hoge concentraties calcium en magnesium die zichtbaar zijn als witte aanslag op kranen, douchewanden en glas. Daarnaast bevat het leidingwater de gebruikelijke desinfectiemiddelen (chloor of chlooramine), nitraten, en in sommige regio's sporenhoeveelheden van gewasbeschermingsmiddelen of PFAS.`,
     verwijdertStorendeStof: 'Calciumhardheid (merkbaar niveau)',
     systeemAdvies: (naam, dH) =>
-      `Een standaard 4-traps RO-systeem werkt uitstekend voor ${naam} bij ${dH}°dH. U kunt kiezen tussen een losse osmose-unit onder het aanrecht (met een aparte spoeltap) of een geïntegreerd 4-in-1 systeem waarbij ook kokend en bruisend water via dezelfde kraan komt. Bij harde watergebieden zoals ${naam} is de 4-in-1 kraan populair vanwege het totaalgemak.`,
+      `Een standaard 4-traps RO-systeem werkt uitstekend voor ${naam} bij ${dH}°dH. U kunt kiezen tussen een losse osmose-unit onder het aanrecht (met een aparte spoeltap) of een geïntegreerd 4-in-1 systeem waarbij ook zeer heet en gekoeld water via dezelfde kraan komt. Bij harde watergebieden zoals ${naam} is de 4-in-1 kraan populair vanwege het totaalgemak.`,
     ctaTekst: (naam, dH) =>
       `Met ${dH}°dH leidingwater in ${naam} bespaart een osmosefilter u jarenlang op ontkalkers, verlengt de levensduur van uw apparaten en levert u dagelijks puur, zacht drinkwater.`,
     faqExtra: [
@@ -102,7 +102,7 @@ const osmoseContent: Record<Hardheid, OsmoseContent> = {
       {
         question: (naam) => `Wat is het verschil tussen een losse osmose-unit en een 4-in-1 kraan voor ${naam}?`,
         answer: (naam) =>
-          `Een losse osmose-unit in ${naam} filtert het drinkwater via een aparte kleine tap naast de gewone kraan. Een 4-in-1 kraan combineert osmosefiltering met kokend, koud en warm water (en soms bruisend) uit één kraanuitloop. De 4-in-1 variant vervangt uw gewone kokend-waterkraan en osmosesysteem tegelijk — minder kraangaten in het aanrecht, één systeem om bij te houden.`,
+          `Een losse osmose-unit in ${naam} filtert het drinkwater via een aparte kleine tap naast de gewone kraan. Een 4-in-1 kraan combineert osmosefiltering met zeer heet, gekoeld en gewoon warm en koud water uit één kraanuitloop (bruisend water zit er bij de PureAqua 4-in-1 niet in). De 4-in-1 variant vervangt uw gewone kokend-waterkraan en osmosesysteem tegelijk — minder kraangaten in het aanrecht, één systeem om bij te houden.`,
       },
     ],
   },
@@ -212,7 +212,6 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
 
   // Kosten tabel — schalen op hardheid
   const aanschafLaag = 249;
-  const aanschafHoog = 799;
   const onderhoudPerJaar = gemeente.categorie === 'zeer hard' ? 80
     : gemeente.categorie === 'hard' ? 65
     : gemeente.categorie === 'matig hard' ? 50
@@ -232,11 +231,11 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
     },
     {
       question: `Welk osmose systeem is geschikt voor ${gemeente.naam}?`,
-      answer: `${content.systeemAdvies(gemeente.naam, gemeente.hardheid)} Aandachtspunt bij de keuze: een geïntegreerde 4-in-1 kraan met osmose combineert osmosefiltering met kokend, koud en warm water uit één kraanuitloop — ideaal voor keukens in ${gemeente.naam} met beperkt ruimte onder het aanrecht of weinig kraangaten.`,
+      answer: `${content.systeemAdvies(gemeente.naam, gemeente.hardheid)} Aandachtspunt bij de keuze: een geïntegreerde 4-in-1 kraan met osmose combineert osmosefiltering met zeer heet, gekoeld, warm en koud water uit één kraanuitloop, handig voor keukens in ${gemeente.naam} met weinig kraangaten. Reken wel op twee apparaten en twee stopcontacten onder het aanrecht.`,
     },
     {
       question: `Wat kost een osmose filter in ${gemeente.naam} aan aanschaf en onderhoud?`,
-      answer: `Een osmosefilter voor ${gemeente.naam} kost bij aanschaf tussen €${aanschafLaag} en €${aanschafHoog} afhankelijk van het systeem (losse unit of 4-in-1 kraan). Het jaarlijkse filteronderhoud bedraagt circa €${onderhoudPerJaar}–€${onderhoudPerJaar + 30} voor voorfilters en membraanvervanging. Bij ${gemeente.hardheid}°dH in ${gemeente.naam} verdient de investering zich doorgaans terug in ${terugverdienJaar}–${terugverdienJaar + 1} jaar door besparing op flessenwater, ontkalkers en verlengde apparaatlevensduur.`,
+      answer: `Een osmosefilter voor ${gemeente.naam} kost bij aanschaf tussen €${aanschafLaag} en €450 voor een losse unit; een 4-in-1 kraan met osmose (PureAqua) kost €1.948. Het jaarlijkse filteronderhoud bedraagt circa €${onderhoudPerJaar}–€${onderhoudPerJaar + 30} voor voorfilters en membraanvervanging. Bij ${gemeente.hardheid}°dH in ${gemeente.naam} verdient de investering zich doorgaans terug in ${terugverdienJaar}–${terugverdienJaar + 1} jaar door besparing op flessenwater, ontkalkers en verlengde apparaatlevensduur.`,
     },
     ...content.faqExtra.map(f => ({
       question: f.question(gemeente.naam),
@@ -244,7 +243,7 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
     })),
     {
       question: `Hoe installeer ik een osmose filter onder het aanrecht in ${gemeente.naam}?`,
-      answer: `Installatie van een osmosefilter onder het aanrecht in ${gemeente.naam} vereist: (1) een kraangat in het aanrechtblad voor de spoeltap of 4-in-1 kraan (diameter 35–40 mm), (2) aansluiting op de koude watertoevoer via een T-stuk of aanboorzadel, (3) een afvoerslang naar de sifon van het spoelrek. De meeste systemen kunnen door een handige doe-het-zelver worden geplaatst; een loodgieter is aanbevolen als u nog geen kraangat heeft of als het aanrecht van graniet of composiet is.`,
+      answer: `Installatie van een osmosefilter onder het aanrecht in ${gemeente.naam} vereist: (1) een kraangat in het aanrechtblad voor de spoeltap of 4-in-1 kraan (diameter 35–40 mm), (2) aansluiting op de koude watertoevoer via een T-stuk of aanboorzadel, (3) een afvoerslang naar de sifon van het spoelrek. De meeste losse systemen kunnen door een handige doe-het-zelver worden geplaatst. Voor een 4-in-1 kraan is een installateur aanbevolen (PureAqua biedt dat aan voor €299), en ook bij losse systemen is een loodgieter aanbevolen als u nog geen kraangat heeft of als het aanrecht van graniet of composiet is.`,
     },
   ];
 
@@ -373,12 +372,12 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
                 Populairste keuze
               </span>
               <h3 className="font-semibold text-gray-800 mb-1">Geïntegreerde 4-in-1 kraan</h3>
-              <p className="text-xs text-gray-500 mb-3">Osmose + kokend + koud + warm uit één kraan</p>
+              <p className="text-xs text-gray-500 mb-3">Osmose + zeer heet + gekoeld + warm en koud uit één kraan</p>
               <ul className="space-y-1.5 text-sm text-gray-700">
-                <li className="flex gap-2"><span className="text-[#005F8A]">✓</span><span>Alles in één: osmose én kokend water</span></li>
+                <li className="flex gap-2"><span className="text-[#005F8A]">✓</span><span>Alles in één: osmose, zeer heet en gekoeld water</span></li>
                 <li className="flex gap-2"><span className="text-[#005F8A]">✓</span><span>Slechts één kraangat nodig</span></li>
                 <li className="flex gap-2"><span className="text-[#005F8A]">✓</span><span>Vervangt waterkoker én filter</span></li>
-                <li className="flex gap-2"><span className="text-gray-400">–</span><span>Hogere aanschafprijs (€450–€{aanschafHoog})</span></li>
+                <li className="flex gap-2"><span className="text-gray-400">–</span><span>Hogere aanschafprijs (€1.948)</span></li>
               </ul>
             </div>
           </div>
@@ -402,7 +401,7 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
                 <tr>
                   <td className="py-2.5 pr-4 text-gray-700">Aanschaf</td>
                   <td className="py-2.5 pr-4 font-mono text-gray-600">€{aanschafLaag}–€450</td>
-                  <td className="py-2.5 font-mono text-gray-600">€450–€{aanschafHoog}</td>
+                  <td className="py-2.5 font-mono text-gray-600">€1.948</td>
                 </tr>
                 <tr>
                   <td className="py-2.5 pr-4 text-gray-700">Filteronderhoud / jaar</td>
@@ -417,7 +416,7 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
                 <tr>
                   <td className="py-2.5 pr-4 text-gray-700">Terugverdientijd</td>
                   <td className="py-2.5 pr-4 font-mono text-gray-600">{terugverdienJaar}–{terugverdienJaar + 1} jaar</td>
-                  <td className="py-2.5 font-mono text-gray-600">{terugverdienJaar + 1}–{terugverdienJaar + 2} jaar</td>
+                  <td className="py-2.5 font-mono text-gray-600">Langer (hogere aanschaf)</td>
                 </tr>
               </tbody>
             </table>
@@ -441,7 +440,7 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
               { stap: 'Aanboorzadel op de koude waterleiding', uitleg: 'Kleine T-koppeling waarmee het osmosesysteem water afneemt van de bestaande leidingwatertoevoer onder het aanrecht.' },
               { stap: 'Afvoerslang naar sifon', uitleg: 'De RO-unit spoelt geconcentreerd afvalwater af — een dunne slangetje sluit aan op de sifon van uw spoelbak.' },
               { stap: 'Opslagtank (bij losse unit)', uitleg: 'De meeste units worden geleverd met een opslagvat van 6–10 liter voor gefilterd water, dat onder het aanrecht past.' },
-              { stap: 'Stroomaansluiting (bij 4-in-1 kraan)', uitleg: 'Een geïntegreerde 4-in-1 kraan heeft een stroomaansluiting nodig voor het verwarmingselement. Een stopcontact onder het aanrecht is vereist.' },
+              { stap: 'Stroomaansluiting (bij 4-in-1 kraan)', uitleg: 'Een geïntegreerde 4-in-1 kraan heeft twee apparaten onder het aanrecht (heet-/koelunit en osmose-unit) en daarom twee stopcontacten nodig.' },
             ].map((item, i) => (
               <li key={i} className="flex gap-3">
                 <span className="shrink-0 w-6 h-6 rounded-full bg-[#005F8A] text-white text-xs font-bold flex items-center justify-center mt-0.5">
@@ -467,7 +466,7 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
             </p>
             <p className={`${urgentie.text} opacity-85 text-sm mb-4`}>
               Een 4-in-1 osmosekraan is speciaal geschikt voor hard water in regio&apos;s zoals {gemeente.naam}.
-              Kokend water, bruisend water en osmose-gefilterd drinkwater uit één kraanuitloop.
+              Zeer heet water (circa 96 graden), gekoeld water en osmose-gefilterd drinkwater uit één kraanuitloop; bruisend water zit er niet in.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -530,7 +529,7 @@ export default async function OsmoseFilterGemeentePage({ params }: PageProps) {
               {
                 href: '/kokend-water-kraan/met-filter',
                 label: 'Kokend water kraan met filter',
-                desc: 'De 4-in-1 variant combineert kokend water met osmose',
+                desc: 'De 4-in-1 variant combineert zeer heet en gekoeld water met osmose',
               },
             ].map(l => (
               <Link

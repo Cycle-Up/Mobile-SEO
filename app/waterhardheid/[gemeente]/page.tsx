@@ -4,11 +4,11 @@ import Link from 'next/link';
 import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/gemeenten';
 import { WaterhardheidCard } from '@/components/WaterhardheidCard';
 import { CTABanner } from '@/components/CTABanner';
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { JoepCTA } from '@/components/JoepCTA';
 import { JOEP_MIN_DH } from '@/lib/joep.mjs';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 interface PageProps {
   params: Promise<{ gemeente: string }>;
@@ -321,14 +321,7 @@ export default async function GemeentePage({ params }: PageProps) {
             dH={gemeente.hardheid}
           />
         ) : (
-          <AffiliateCTA
-            destination="waterontharders"
-            campaign="waterontharder"
-            content="waterhardheid-gemeente-cta"
-            label="Bekijk de waterontharders bij PureAqua"
-            title="Last van hard water?"
-            sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
-          />
+          <PureFilterCTA context="smaak" content="waterhardheid-gemeente-purefilter" />
         )}
 
         {/* Interne links kennisbank */}

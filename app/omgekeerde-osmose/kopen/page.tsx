@@ -6,6 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde osmose filter kopen? Alles wat je moet weten',
@@ -136,6 +137,8 @@ export default function OsmoseKopenPage() {
         <QuickAnswer answer="Een omgekeerde osmose filter kopen? Let op NSF/ANSI 58-certificering, een afvalwaterratio van minimaal 1:1 en een 5-stadia systeem met remineralisatiefilter. Prijzen lopen van €150 (basis onderbouw) tot €500 (premium met wifi-monitoring). Jaarlijks filteronderhoud kost €50–120." />
 
         {/* Sectie 1 */}
+        <ThreeWayRecommendation content="omgekeerde-osmose-kopen-3weg-aanbeveling" />
+
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
             Waar moet je op letten bij het kopen van een osmosefilter?
@@ -303,9 +306,9 @@ export default function OsmoseKopenPage() {
             <div className="rounded-2xl border border-gray-100 bg-white p-5">
               <h3 className="font-bold text-gray-900 mb-2">4-in-1 kokend water kraan</h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                De meest complete oplossing: osmose + kokend water + koud gefilterd water +
-                bruisend water uit één kraan. Hogere aanschafprijs (€700–1000) maar alles in één,
-                één jaarlijkse filterwissel en een elegant uiterlijk. Lees meer op onze pagina
+                Volgens ons de meest complete oplossing: osmose + zeer heet water (circa 96 graden) + gekoeld
+                water + gewoon warm en koud water uit één kraan, maar geen bruisend water. Hogere aanschafprijs (€1.948 bij PureAqua) maar alles in één;
+                voorfilter en remineralisatiefilter wissel je circa jaarlijks, het membraan circa elke twee jaar. Lees meer op onze pagina
                 over <Link href="/osmose-filter" className="text-[#005F8A] underline hover:no-underline">osmose filter</Link>.
               </p>
             </div>
@@ -499,7 +502,7 @@ export default function OsmoseKopenPage() {
               {
                 href: '/omgekeerde-osmose/vergelijken',
                 title: 'Osmose filters vergelijken',
-                desc: 'Onafhankelijke vergelijking van de beste osmosefilters op de markt.',
+                desc: 'Vergelijking van de beste osmosefilters op de markt.',
               },
               {
                 href: '/beste-osmosefilter-2026',

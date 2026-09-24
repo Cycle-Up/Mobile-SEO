@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kokend water kraan vs Quooker: welke is beter in 2026?',
     description:
-      'Quooker Fusion €900–1.200 + CUBE €300 + osmose €400 = €1.600–1.900 totaal. PureAqua 4-in-1 €800–1.200 all-in. Vergelijk eerlijk op filterkwaliteit, PFAS en.',
+      'Een Quooker Flex PRO3 met CUBE kost bij PureAqua €2.240, de PureAqua 4-in-1 €1.948 (zonder bruisend water). Vergelijk eerlijk op functies, filterkwaliteit, PFAS en kosten.',
     url: 'https://waterfilterplatform.nl/kokend-water-kraan/vs-quooker',
     type: 'article',
   },
@@ -22,7 +23,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil tussen een Quooker en een 4-in-1 kokend water kraan?',
     answer:
-      'Een Quooker is een merknaam voor een kokendwaterkraan zonder ingebouwde osmosefiltratie. Een 4-in-1 kraan zoals de PureAqua combineert omgekeerde osmose (verwijdert PFAS, nitraten, lood, kalk) met kokend water, koud gefilterd water en warm water in één kraan. De Quooker Fusion met CUBE biedt bruisend water maar filtert geen zware metalen of nitraten.',
+      'Een Quooker is een merknaam voor een kokendwaterkraan zonder ingebouwde osmosefiltratie. Een 4-in-1 kraan zoals de PureAqua combineert omgekeerde osmose (vermindert PFAS, nitraten, lood en kalk) met zeer heet (circa 96 graden), gekoeld en gewoon warm en koud water in één kraan. Bruisend water heeft de PureAqua 4-in-1 niet. De Quooker Fusion met CUBE biedt bruisend water maar filtert geen zware metalen of nitraten.',
   },
   {
     question: 'Verwijdert een Quooker ook PFAS en nitraten?',
@@ -32,12 +33,12 @@ const faqItems = [
   {
     question: 'Wat kost een Quooker in totaal versus een 4-in-1 osmose kraan?',
     answer:
-      'Een Quooker Fusion + CUBE kost €900–1.200 aanschaf plus €300 voor de CUBE. Wilt u ook osmosefiltratie? Dan komt er nog eens €400–600 bij voor een apart osmosesysteem: totaal €1.600–2.100. Een PureAqua 4-in-1 kost €800–1.200 all-in, inclusief osmosefiltratie. Dat is €400–900 goedkoper voor meer functies.',
+      'Bij PureAqua kost een Quooker Flex PRO3 met CUBE €2.240 (kokend, gekoeld en bruisend, met actieve kool). Wilt u ook osmosefiltratie? Dan komt er nog eens €400–600 bij voor een apart osmosesysteem. Een PureAqua 4-in-1 kost €1.948, inclusief osmosefiltratie. Dat is in aanschaf circa €300 goedkoper dan de Quooker met CUBE, maar zonder bruisend water.',
   },
   {
     question: 'Wat doet de Quooker CUBE?',
     answer:
-      'De Quooker CUBE voegt bruisend water en gekoeld water toe aan de Quooker Fusion kraan. De CUBE bevat een koolstoffilter die de smaak verbetert. De CUBE is geen osmosefilter: het verwijdert geen zware metalen, nitraten of PFAS. De filterpatronen van de CUBE moeten elke 3 maanden worden vervangen voor circa €39–49 per kwartaal.',
+      'De Quooker CUBE voegt bruisend water en gekoeld water toe aan de Quooker Fusion kraan. De CUBE bevat een koolstoffilter die de smaak verbetert. De CUBE is geen osmosefilter: het verwijdert geen zware metalen, nitraten of PFAS. Het CUBE-filter vervangt u circa jaarlijks (circa €39–49).',
   },
   {
     question: 'Is een Quooker geschikt als ik PFAS in mijn drinkwater heb?',
@@ -47,33 +48,33 @@ const faqItems = [
   {
     question: 'Hoeveel energie verbruikt een Quooker versus een 4-in-1 kraan?',
     answer:
-      'Een Quooker verbruikt in standbymodus 3–5 watt per uur om het water op temperatuur te houden — circa €13–22 per jaar aan extra elektriciteitskosten. Een PureAqua 4-in-1 kraan heeft een vergelijkbaar standbyverbruik van 3–5 watt. Beide systemen zijn energiezuiniger dan een waterkoker die dagelijks meerdere malen volledig wordt gekookt.',
+      'Een Quooker verbruikt in standbymodus 3–5 watt per uur om het water op temperatuur te houden — circa €13–22 per jaar aan extra elektriciteitskosten. Voor de PureAqua 4-in-1 kraan is geen fabrieksopgave van het standbyverbruik bekend. Hij houdt zowel een heetwatertank als een koelunit op temperatuur, dus reken op meer dan een Quooker zonder CUBE.',
   },
   {
     question: 'Kan ik een Quooker zelf installeren?',
     answer:
-      'Quooker adviseert installatie door een erkend installateur, wat €150–250 extra kost. Een 4-in-1 kraan met osmose is ook zelf te installeren als u handig bent met wateraansluitingen. Voor beide systemen is een boorgat in het aanrechtblad nodig als er nog geen extra kraanpositie beschikbaar is.',
+      'Quooker adviseert installatie door een erkend installateur, wat €150–250 extra kost. Ook voor een 4-in-1 kraan met osmose is installatie door een installateur aanbevolen; PureAqua biedt dat aan voor €299. Voor beide systemen is een boorgat in het aanrechtblad nodig als er nog geen extra kraanpositie beschikbaar is.',
   },
   {
     question: 'Wie moet een Quooker kiezen en wie kiest beter voor een 4-in-1 osmose kraan?',
     answer:
-      'Kies Quooker als: u specifiek de Quooker-merknaam belangrijk vindt, u bruisend water wilt (via CUBE) zonder osmosefiltratie, of u in een watergebied woont waar waterkwaliteit geen zorg is. Kies een 4-in-1 osmose kraan als: u PFAS/nitraten/lood wilt filteren, u kokend + gefilterd water in één wilt, u budget-bewust bent, of u een all-in-one oplossing zonder extra osmoseinstallatie wilt.',
+      'Kies Quooker als: u specifiek de Quooker-merknaam belangrijk vindt, u bruisend water wilt (via CUBE) zonder osmosefiltratie, of u in een watergebied woont waar waterkwaliteit geen zorg is. Kies een 4-in-1 osmose kraan als: u PFAS/nitraten/lood wilt filteren, u zeer heet, gekoeld en gefilterd water in één kraan wilt, u bruisend water niet nodig hebt, of u een all-in-one oplossing zonder extra osmoseinstallatie wilt.',
   },
 ];
 
 const vergelijkCriteria = [
-  { criterium: 'Kokend water (100°C)', quooker: 'Ja', vierin1: 'Ja' },
-  { criterium: 'Koud gefilterd water', quooker: 'Alleen met CUBE', vierin1: 'Ja' },
+  { criterium: 'Kokend of zeer heet water', quooker: 'Ja, kokend (100°C)', vierin1: 'Zeer heet (circa 96°C)' },
+  { criterium: 'Gekoeld gefilterd water', quooker: 'Alleen met CUBE', vierin1: 'Ja (osmose, circa 5°C)' },
   { criterium: 'Warm water', quooker: 'Via bestaande mengkraan', vierin1: 'Ja' },
-  { criterium: 'Bruisend water', quooker: 'Alleen met CUBE (+€300)', vierin1: 'Ja (bij meeste modellen)' },
+  { criterium: 'Bruisend water', quooker: 'Alleen met CUBE', vierin1: 'Nee' },
   { criterium: 'Osmosefiltratie', quooker: 'Nee (apart systeem nodig)', vierin1: 'Ja (ingebouwd)' },
-  { criterium: 'PFAS verwijdering', quooker: 'Nee', vierin1: 'Ja (RO-membraan)' },
-  { criterium: 'Nitraten en lood', quooker: 'Nee', vierin1: 'Ja (&gt;95%)' },
-  { criterium: 'Kalk verwijderd', quooker: 'Nee', vierin1: 'Ja (&gt;97%)' },
-  { criterium: 'Aanschafprijs (all-in)', quooker: '€1.600–2.100', vierin1: '€800–1.200' },
-  { criterium: 'Filterkosten per jaar', quooker: '€156–196 (CUBE elke 3 mnd)', vierin1: '€80–150 (1×/jaar)' },
-  { criterium: 'Energieverbruik standby', quooker: '3–5 W', vierin1: '3–5 W' },
-  { criterium: 'Installatie door professional', quooker: 'Sterk aanbevolen', vierin1: 'Aanbevolen (boorgat)' },
+  { criterium: 'PFAS verwijdering', quooker: 'Nee', vierin1: 'Ja (SGS: PFOS &gt;99,6%, PFOA 99,5%)' },
+  { criterium: 'Nitraten en lood', quooker: 'Nee', vierin1: 'Ja (SGS: lood &gt;99,8%)' },
+  { criterium: 'Kalk verwijderd', quooker: 'Nee', vierin1: 'Ja (osmose)' },
+  { criterium: 'Aanschafprijs', quooker: '€2.240 (Flex PRO3 met CUBE)', vierin1: '€1.948' },
+  { criterium: 'Filterkosten per jaar', quooker: '€39–49 (CUBE-filter circa jaarlijks)', vierin1: '€80–150 (filters jaarlijks, membraan 2-jaarlijks)' },
+  { criterium: 'Energieverbruik standby', quooker: '3–5 W', vierin1: 'Geen fabrieksopgave (heet én koelen)' },
+  { criterium: 'Installatie door professional', quooker: 'Sterk aanbevolen', vierin1: 'Aanbevolen (PureAqua: €299)' },
 ];
 
 export default function VsQuookerPage() {
@@ -114,7 +115,7 @@ export default function VsQuookerPage() {
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
             Quooker is het bekendste merk op de markt voor <strong>kokend water kranen</strong>, maar de PureAqua
-            4-in-1 biedt meer functies voor minder geld. In dit artikel vergelijken we beide opties eerlijk:
+            4-in-1 biedt osmosefiltratie en gekoeld water voor minder geld dan een Quooker met CUBE, al zonder bruisend water. In dit artikel vergelijken we beide opties eerlijk:
             functies, filterkwaliteit, aanschafprijs, jaarlijkse kosten en wie welke keuze het beste past.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -136,7 +137,9 @@ export default function VsQuookerPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
-        <QuickAnswer answer="Quooker (categorieleider) geeft direct kokend water maar heeft geen osmosefilter: PFAS, nitraten en lood blijven aanwezig. PureAqua 4-in-1 combineert osmose + kokend + koud + warm voor €800–1.200 all-in, terwijl Quooker Fusion + CUBE + osmose apart €1.600–2.100 kost. Kies Quooker voor merktrouw; kies 4-in-1 voor filterkwaliteit en prijs." />
+        <QuickAnswer answer="Quooker (categorieleider) geeft direct kokend water maar heeft geen osmosefilter: PFAS, nitraten en lood blijven aanwezig. PureAqua 4-in-1 combineert osmose + zeer heet (circa 96°C) + gekoeld + warm en koud voor €1.948, zonder bruisend water. Een Quooker Flex PRO3 met CUBE kost bij PureAqua €2.240 en filtert met actieve kool, niet met osmose. Kies Quooker voor merktrouw; kies 4-in-1 voor filterkwaliteit en prijs." />
+
+        <FourInOneRecommendation content="kokend-water-kraan-vs-quooker-aanbeveling" />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -158,7 +161,7 @@ export default function VsQuookerPage() {
             Wat Quooker en de 4-in-1 osmose kraan allebei doen
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            Zowel een Quooker als een PureAqua 4-in-1 kraan geven direct kokend water (100°C) via een geïsoleerd
+            Zowel een Quooker (kokend, 100°C) als een PureAqua 4-in-1 kraan (zeer heet, circa 96°C) geven direct heet water via een geïsoleerd
             boilersysteem onder het aanrecht. U kunt water voor thee, pasta, koffie of sterilisatie direct tappen
             zonder waterkoker. Beide systemen hebben een veiligheidsventiel dat brandwonden voorkomt en een slim
             reservoir dat energie-efficiënt water op temperatuur houdt.
@@ -172,7 +175,7 @@ export default function VsQuookerPage() {
                   'WRAS-gecertificeerd veiligheidssysteem',
                   'Stijlvol kraandesign in meerdere afwerkingen',
                   'Compatibel met bestaande mengkraan',
-                  'Bruisend water via CUBE-uitbreiding (+€300)',
+                  'Bruisend en gekoeld water via CUBE-uitbreiding',
                   'Koolstoffilter in CUBE verbetert smaak/geur',
                 ].map(p => (
                   <li key={p} className="flex gap-2"><span className="text-green-600 font-bold shrink-0">✓</span>{p}</li>
@@ -183,12 +186,12 @@ export default function VsQuookerPage() {
               <p className="font-semibold text-[#003F5C] mb-3">PureAqua 4-in-1 (met osmose)</p>
               <ul className="space-y-1.5 text-sm text-gray-700">
                 {[
-                  'Direct kokend water (100°C)',
-                  'Veiligheidssysteem voor kokend water',
+                  'Direct zeer heet water (circa 96°C)',
+                  'Veiligheidssysteem voor heet water',
                   'Slank kraandesign, één kraanpunt',
-                  'Koud gefilterd osmosewater',
+                  'Gekoeld osmosewater (circa 5°C)',
                   'Warm water (mengfunctie)',
-                  'Bruisend gefilterd water (meeste modellen)',
+                  'Osmosewater op kamertemperatuur (geen bruisend water)',
                   'Ingebouwde omgekeerde osmose filtratie',
                 ].map(p => (
                   <li key={p} className="flex gap-2"><span className="text-green-600 font-bold shrink-0">✓</span>{p}</li>
@@ -199,8 +202,8 @@ export default function VsQuookerPage() {
           <p className="text-gray-700 leading-relaxed">
             Het cruciale verschil zit in de filtratie. Een Quooker geeft direct kokend <em>kraanwater</em> — wat in
             Nederland van hoge kwaliteit is, maar bepaalde verontreinigingen als PFAS, nitraten en lood (uit
-            huisleidingen) nog steeds kan bevatten. Een 4-in-1 kraan met osmose filtert het water eerst volledig
-            voordat het wordt verwarmd.
+            huisleidingen) nog steeds kan bevatten. Een 4-in-1 kraan met osmose filtert het water eerst met osmose
+            voordat het wordt verwarmd of gekoeld.
           </p>
         </section>
 
@@ -242,8 +245,8 @@ export default function VsQuookerPage() {
           </div>
           <div className="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-gray-700">
             <strong className="text-amber-900">Wilt u toch een Quooker én osmosefiltratie?</strong> Dan heeft u
-            een apart onderbouw-osmosesysteem nodig (€300–600) dat uw Quooker voedt. De totale investering
-            wordt daarmee €1.600–2.100 — terwijl de PureAqua 4-in-1 dit alles al combineert voor €800–1.200.
+            een apart onderbouw-osmosesysteem nodig (€300–600) dat uw Quooker voedt. Met een Quooker Flex PRO3 met CUBE
+            (€2.240 bij PureAqua) komt de investering daarmee op circa €2.540–2.840. De PureAqua 4-in-1 combineert zeer heet water, gekoeld water en osmose voor €1.948, maar zonder bruisend water.
           </div>
         </section>
 
@@ -253,30 +256,29 @@ export default function VsQuookerPage() {
             Prijsvergelijking all-in: Quooker vs. 4-in-1 osmose kraan
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            Een eerlijke kostenvergelijking kijkt naar de totale aanschafkosten voor <em>dezelfde</em> functies.
-            Wilt u kokend water, gefilterd koud water, bruisend water én osmosefiltratie? Dan zijn dit de
-            werkelijke kosten:
+            Een eerlijke kostenvergelijking kijkt naar de totale aanschafkosten voor <em>vergelijkbare</em> functies.
+            Wilt u (bijna) kokend water, gekoeld gefilterd water én osmosefiltratie? Dan zijn dit de
+            indicatieve kosten (de Quooker geeft daarbij ook bruisend water, de 4-in-1 niet):
           </p>
           <div className="overflow-x-auto -mx-4 px-4 mb-5">
             <table className="w-full min-w-[500px] text-sm border-collapse">
               <thead>
                 <tr className="bg-[#003F5C] text-white">
                   <th className="text-left py-2.5 px-3 font-semibold">Kostenpost</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Quooker Fusion + CUBE + osmose</th>
+                  <th className="py-2.5 px-3 font-semibold text-center">Quooker Flex PRO3 + CUBE + osmose</th>
                   <th className="py-2.5 px-3 font-semibold text-center bg-[#005F8A]">PureAqua 4-in-1</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { post: 'Aanschaf kraan', quooker: '€ 900–1.200', vierin1: '—' },
-                  { post: 'Quooker CUBE (bruisend)', quooker: '€ 300', vierin1: '—' },
-                  { post: 'Apart osmosesysteem', quooker: '€ 400–600', vierin1: '—' },
-                  { post: 'All-in aanschafprijs', quooker: '€ 1.600–2.100', vierin1: '€ 800–1.200' },
-                  { post: 'Installatie (professional)', quooker: '€ 200–300', vierin1: '€ 150–250' },
-                  { post: 'Filterkosten/jaar (CUBE q3mnd)', quooker: '€ 156–196', vierin1: '€ 80–150' },
-                  { post: 'Osmosefilterkosten/jaar', quooker: '€ 60–100 (apart)', vierin1: 'Inbegrepen' },
-                  { post: 'Totale kosten jaar 1', quooker: '€ 2.016–2.596', vierin1: '€ 1.030–1.600' },
-                  { post: 'Totale kosten 3 jaar', quooker: '€ 2.648–3.484', vierin1: '€ 1.270–2.050' },
+                  { post: 'Aanschaf kraan met CUBE', quooker: '€ 2.240', vierin1: '€ 1.948' },
+                  { post: 'Apart osmosesysteem', quooker: '€ 400–600', vierin1: 'Ingebouwd' },
+                  { post: 'All-in aanschafprijs', quooker: '€ 2.640–2.840', vierin1: '€ 1.948' },
+                  { post: 'Installatie (professional)', quooker: '€ 200–300', vierin1: '€ 299 (optioneel)' },
+                  { post: 'Filterkosten/jaar (CUBE circa jaarlijks)', quooker: '€ 39–49', vierin1: '—' },
+                  { post: 'Osmosefilterkosten/jaar', quooker: '€ 60–100 (apart)', vierin1: '€ 80–150' },
+                  { post: 'Totale kosten jaar 1', quooker: '€ 2.939–3.289', vierin1: '€ 2.327–2.397' },
+                  { post: 'Totale kosten 3 jaar', quooker: '€ 3.137–3.587', vierin1: '€ 2.487–2.697' },
                 ].map((r, i) => (
                   <tr
                     key={r.post}
@@ -295,9 +297,9 @@ export default function VsQuookerPage() {
             </table>
           </div>
           <div className="bg-green-50 border border-green-100 rounded-xl p-4 text-sm text-gray-700">
-            <strong className="text-green-900">Besparing over 3 jaar:</strong> Een PureAqua 4-in-1 biedt
-            dezelfde functies (kokend + bruisend + gefilterd + osmose) voor <strong>€1.378–€1.434 minder</strong>
-            {' '}over 3 jaar dan een Quooker Fusion + CUBE gecombineerd met een apart osmosesysteem.
+            <strong className="text-green-900">Wat scheelt het?</strong> In aanschaf is de PureAqua 4-in-1
+            <strong> circa €300 goedkoper</strong> dan een Quooker Flex PRO3 met CUBE (PureAqua-prijzen september 2026).
+            {' '}Wilt u bij de Quooker ook osmosefiltratie, dan komt daar een apart osmosesysteem bij. De Quooker met CUBE geeft wel bruisend water, de 4-in-1 niet.
           </div>
         </section>
 
@@ -315,7 +317,7 @@ export default function VsQuookerPage() {
               <thead>
                 <tr className="bg-[#003F5C] text-white">
                   <th className="text-left py-2.5 px-3 font-semibold">Criterium</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Quooker Fusion + CUBE</th>
+                  <th className="py-2.5 px-3 font-semibold text-center">Quooker Flex PRO3 + CUBE</th>
                   <th className="py-2.5 px-3 font-semibold text-center bg-[#005F8A]">PureAqua 4-in-1</th>
                 </tr>
               </thead>
@@ -335,7 +337,7 @@ export default function VsQuookerPage() {
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-2">
-            Quooker: combinatie Fusion + CUBE zonder apart osmosesysteem. PureAqua 4-in-1: inclusief ingebouwde RO. Bijgewerkt mei 2026.
+            Quooker: Flex PRO3 met CUBE zonder apart osmosesysteem (PureAqua-prijzen september 2026). PureAqua 4-in-1: inclusief ingebouwde RO. SGS-waarden gemeten op een nieuw systeem.
           </p>
         </section>
 
@@ -363,8 +365,8 @@ export default function VsQuookerPage() {
             <div className="bg-[#E0F2FE] border border-[#005F8A]/30 rounded-xl p-4">
               <p className="font-semibold text-[#003F5C] mb-2">PureAqua 4-in-1 energieverbruik</p>
               <ul className="space-y-1.5 text-sm text-gray-700">
-                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Standby: 3–5 watt continu</li>
-                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Jaarlijkse standbykosten: ca. €13–22</li>
+                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Standby: geen fabrieksopgave bekend</li>
+                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Houdt heet water én gekoeld water op temperatuur</li>
                 <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Osmosepomp: kortstondig actief bij tappen</li>
                 <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Vergelijkbaar energieprofiel met Quooker</li>
               </ul>
@@ -391,10 +393,10 @@ export default function VsQuookerPage() {
               <ul className="space-y-2 text-sm">
                 {[
                   'U PFAS, nitraten, lood of microplastics wilt filteren',
-                  'U kokend + gefilterd + warm + bruisend water in één kraan wilt',
-                  'U budget-bewust bent en de laagste totale kosten wilt over 3 jaar',
+                  'U zeer heet, gekoeld en osmose-gefilterd water plus gewoon warm en koud water in één kraan wilt',
+                  'U osmosefiltratie wilt voor minder dan een Quooker met CUBE kost',
                   'U geen apart osmosesysteem naast uw Quooker wilt installeren',
-                  'U minder filteronderhoud wilt: één jaarlijkse wisseling in plaats van kwartaal',
+                  'U bruisend water niet nodig hebt (of een losse SodaStream gebruikt)',
                   'U in een hardwatergebied woont of PFAS-gerelateerde zorgen heeft',
                 ].map(p => (
                   <li key={p} className="flex gap-2"><span className="shrink-0">✓</span>{p}</li>
@@ -409,7 +411,7 @@ export default function VsQuookerPage() {
                   'U bruisend water specifiek via het Quooker CUBE-systeem wilt',
                   'Waterkwaliteitsfiltratie voor u geen prioriteit is',
                   'U kiest voor een uitgebreider assortiment kraanafwerkingen',
-                  'Budget geen rol speelt en u bereid bent €1.600+ te investeren',
+                  'Budget geen rol speelt en u bereid bent €2.240+ te investeren',
                 ].map(p => (
                   <li key={p} className="flex gap-2"><span className="shrink-0">•</span>{p}</li>
                 ))}

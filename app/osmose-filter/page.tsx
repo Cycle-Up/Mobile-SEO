@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 
 export const metadata: Metadata = {
   title: 'Osmose Filter: Hoe Werkt Het & Wat Kost Het?',
@@ -37,12 +38,12 @@ const faqItems = [
   {
     question: 'Hoe vaak moet het osmose membraan worden vervangen?',
     answer:
-      'Het RO-membraan heeft een levensduur van 2–3 jaar bij normaal huishoudelijk gebruik (2–4 personen). Pre-filters (sediment en koolstof) moeten elke 6–12 maanden worden vervangen om het membraan te beschermen. De post-koolstoffilter (polishing filter) wordt jaarlijks vervangen. Bij een 4-in-1 geïntegreerde kraan vervangt één jaarpatroon doorgaans de pre- en post-filters in één handeling.',
+      'Het RO-membraan heeft een levensduur van 2–3 jaar bij normaal huishoudelijk gebruik (2–4 personen). Pre-filters (sediment en koolstof) moeten elke 6–12 maanden worden vervangen om het membraan te beschermen. De post-koolstoffilter (polishing filter) wordt jaarlijks vervangen. Bij de PureAqua 4-in-1 vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar.',
   },
   {
     question: 'Wat kost een osmose filter?',
     answer:
-      'Een standalone omgekeerde osmose systeem onder het aanrecht kost €150–400 in aanschaf, plus €60–150 per jaar aan filters en membraanvervanging. Een 4-in-1 geïntegreerde kraan met ingebouwd osmose systeem kost €800–1.500 aanschaf, maar vervangt ook de waterkoker en bruisend water-abonnement. Over 5 jaar zijn de totale kosten van een 4-in-1 kraan vaak lager dan de combinatie van aparte waterkoker, los osmose systeem en bruisend water.',
+      'Een standalone omgekeerde osmose systeem onder het aanrecht kost €150–400 in aanschaf, plus €60–150 per jaar aan filters en membraanvervanging. Een 4-in-1 kraan met ingebouwd osmose systeem zoals de PureAqua 4-in-1 kost €1.948 en vervangt ook de waterkoker; bruisend water geeft hij niet. Over 5 jaar blijft de 4-in-1 duurder dan een los osmose systeem, maar je krijgt er zeer heet en gekoeld water bij.',
   },
   {
     question: 'Wat is het verschil tussen 4-traps en 5-traps osmose?',
@@ -153,9 +154,9 @@ const prijsOverzicht = [
   },
   {
     type: '4-in-1 kraan met geïntegreerd osmose',
-    aanschaf: '€ 800 – 1.500',
+    aanschaf: '€ 1.948',
     perjaar: '€ 50 – 150',
-    kenmerken: 'Kokend + koud + warm + bruisend, osmose ingebouwd, 1 kraangat',
+    kenmerken: 'Zeer heet + gekoeld + warm en koud, osmose ingebouwd, 1 kraangat',
     highlight: true,
   },
 ];
@@ -272,6 +273,8 @@ export default function OsmoseFilterPage() {
         </section>
 
         {/* Wat is een osmose filter */}
+        <ThreeWayRecommendation content="osmose-filter-3weg-aanbeveling" />
+
         <section id="wat-is">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is een osmose filter?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
@@ -479,14 +482,14 @@ export default function OsmoseFilterPage() {
               <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
                 4-in-1 kokend water kraan
               </Link>
-              . De kraan levert dan vier soorten water uit één uitloop: kokend (100°C), koud
-              gefilterd, warm gefilterd en bruisend gefilterd water. Dit type 4-in-1 kraan met osmose is de meest complete optie voor thuis.
+              . De kraan levert dan gewoon warm en koud kraanwater plus osmosewater op kamertemperatuur,
+              gekoeld en zeer heet (circa 96°C) uit één uitloop. Bruisend water zit er niet in. Dit type 4-in-1 kraan met osmose is volgens ons de meest complete optie voor thuis.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
               Voordelen ten opzichte van een standalone systeem: geen aparte kleine kraan op het
-              aanrecht, geen losse waterkoker, geen aparte bruisend water-installatie, en slechts
-              één jaarlijkse filterwissel voor alle stappen. Nadeel: hogere aanschafprijs (€800–1.500
-              vs €150–400 voor standalone).
+              aanrecht, geen losse waterkoker, en onderhoud aan één systeem (filters circa jaarlijks,
+              membraan circa elke twee jaar). Nadeel: hogere aanschafprijs (€1.948
+              vs €150–400 voor standalone) en twee apparaten onder het aanrecht.
             </p>
           </div>
           <div className="overflow-x-auto -mx-4 px-4">
@@ -638,7 +641,7 @@ export default function OsmoseFilterPage() {
         {/* Prijs overzicht */}
         <section id="prijs">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Prijsoverzicht: standalone €150–400 vs 4-in-1 geïntegreerd €800–1.500
+            Prijsoverzicht: standalone €150–400 vs 4-in-1 geïntegreerd €1.948
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             De aanschafprijs varieert sterk afhankelijk van de uitvoering. Hieronder een eerlijk
@@ -667,16 +670,16 @@ export default function OsmoseFilterPage() {
                 </span>
               </div>
               <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm mb-3">
-                <div><span className="text-gray-500">Aanschaf:</span> <span className="text-gray-800 font-medium">€ 800 – 1.500</span></div>
-                <div><span className="text-gray-500">Jaarlijks filterpatroon:</span> <span className="text-gray-800 font-medium">€ 50 – 150</span></div>
-                <div><span className="text-gray-500">Membraan (2-3jr):</span> <span className="text-gray-800 font-medium">€ 40 – 80</span></div>
+                <div><span className="text-gray-500">Aanschaf:</span> <span className="text-gray-800 font-medium">€ 1.948</span></div>
+                <div><span className="text-gray-500">Voor- en remineralisatiefilter (jaarlijks):</span> <span className="text-gray-800 font-medium">€ 50 – 150</span></div>
+                <div><span className="text-gray-500">Membraan (circa 2 jr):</span> <span className="text-gray-800 font-medium">€ 40 – 80</span></div>
                 <div><span className="text-gray-500">Totaal per jaar:</span> <span className="text-gray-800 font-medium">€ 50 – 150</span></div>
               </div>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Vervangt tegelijk de waterkoker (€20–80/jr aan energie + slijtage), losse
-                bruisend water-abonnement (€100–200/jr) en het losse osmose kraantje. Over 5 jaar
-                zijn de totale kosten van een 4-in-1 kraan daardoor concurrerend met de combinatie
-                van losse apparaten. Bekijk de{' '}
+                Vervangt tegelijk de waterkoker (€20–80/jr aan energie + slijtage) en het losse osmose
+                kraantje, en geeft ook gekoeld water. Bruisend water zit er niet in. Over 5 jaar
+                blijft een 4-in-1 kraan duurder dan losse apparaten, maar je krijgt er meer functies
+                voor terug. Bekijk de{' '}
                 <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">
                   4-in-1 kraan met osmose
                 </Link>
@@ -699,8 +702,8 @@ export default function OsmoseFilterPage() {
                 <tbody>
                   {[
                     { scenario: 'Standalone osmose', aanschaf: '€ 250', verbruik: '€ 450', totaal: '€ 700' },
-                    { scenario: '4-in-1 kraan + osmose', aanschaf: '€ 999', verbruik: '€ 500', totaal: '€ 1.499' },
-                    { scenario: '4-in-1 + besparing waterkoker/bruisend', aanschaf: '€ 999', verbruik: '€ 200', totaal: '€ 1.199' },
+                    { scenario: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', verbruik: '€ 500', totaal: '€ 2.448' },
+                    { scenario: '4-in-1 + besparing waterkoker', aanschaf: '€ 1.948', verbruik: '€ 250', totaal: '€ 2.198' },
                     { scenario: 'Flessenwater (gezin van 4)', aanschaf: '€ 0', verbruik: '€ 2.500', totaal: '€ 2.500' },
                   ].map(r => (
                     <tr key={r.scenario} className="border-b border-gray-100">
@@ -714,8 +717,8 @@ export default function OsmoseFilterPage() {
               </table>
             </div>
             <p className="text-xs text-gray-500 mt-2">
-              Indicatief voor een gezin van 2–4 personen. De besparing op waterkoker en bruisend
-              water bij de 4-in-1 kraan is geschat op €150/jr.
+              Indicatief voor een gezin van 2–4 personen. De besparing op de waterkoker bij de 4-in-1
+              kraan is geschat op €50/jr.
             </p>
           </div>
         </section>
@@ -741,7 +744,7 @@ export default function OsmoseFilterPage() {
               {
                 href: '/4-in-1-kraan',
                 title: '4-in-1 kokend water kraan',
-                desc: 'Kokend, koud, warm en bruisend water — allemaal via osmose gefilterd uit één kraan.',
+                desc: 'Warm en koud kraanwater plus gekoeld en zeer heet osmosewater uit één kraan.',
               },
               {
                 href: '/kennisbank/osmose-water',

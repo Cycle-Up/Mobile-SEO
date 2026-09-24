@@ -399,7 +399,7 @@ export default function WaterfilterVoorHardWaterPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Verder lezen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/omgekeerde-osmose/kopen', title: 'Osmose filter kopen', desc: 'Onafhankelijke vergelijking van de beste RO-systemen voor thuis.' },
+              { href: '/omgekeerde-osmose/kopen', title: 'Osmose filter kopen', desc: 'Vergelijking van de beste RO-systemen voor thuis.' },
               { href: '/waterontharder', title: 'Waterontharder gids', desc: 'Alles over ionenwisselaars, zoutverbruik en installatie.' },
               { href: '/waterontharder/zout', title: 'Waterontharder zout kopen', desc: 'Tabletzout, blokzout of granulaat — wat is het voordeligst?' },
               { href: '/waterhardheid', title: 'Waterhardheid per gemeente', desc: 'Zoek de actuele hardheid op voor jouw woonplaats.' },

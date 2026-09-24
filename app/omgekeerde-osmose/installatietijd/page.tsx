@@ -15,7 +15,7 @@ const faqItems = [
   {
     question: 'Hoe lang duurt het installeren van een osmosefilter?',
     answer:
-      'De installatietijd hangt af van uw ervaring en het type systeem. Een standaard onderbouw RO-systeem kost een doe-het-zelver met basis loodgieterskennis 2-4 uur. Een loodgieter installeert hetzelfde systeem in 1-2 uur. Een countertop osmosefilter is in 15 minuten klaar zonder gereedschap. Een 4-in-1 kokend water kraan met osmose kost een doe-het-zelver 3-5 uur vanwege de extra elektra-aansluiting.',
+      'De installatietijd hangt af van uw ervaring en het type systeem. Een standaard onderbouw RO-systeem kost een doe-het-zelver met basis loodgieterskennis 2-4 uur. Een loodgieter installeert hetzelfde systeem in 1-2 uur. Een countertop osmosefilter is in 15 minuten klaar zonder gereedschap. Voor een 4-in-1 kokend water kraan met osmose is installatie door een installateur aanbevolen (reken op 2-3 uur); PureAqua biedt dat aan voor 299 euro.',
   },
   {
     question: 'Kan ik een osmosefilter zelf installeren?',
@@ -25,7 +25,7 @@ const faqItems = [
   {
     question: 'Heb ik een loodgieter nodig voor een osmosefilter?',
     answer:
-      'Niet per se. De meeste doe-het-zelvers installeren een standaard RO-systeem zelfstandig. Een loodgieter is aan te raden bij: koperen leidingen ouder dan 1960, loodleidingen (nooit zelf aanraken), beperkte ruimte onder het aanrecht of als u er niet zeker van bent hoe u de koudwateraftakking moet maken. Voor een 4-in-1 kokend water kraan is ook een elektricien nodig voor de elektra-aansluiting als er geen stopcontact aanwezig is.',
+      'Niet per se. De meeste doe-het-zelvers installeren een standaard RO-systeem zelfstandig. Een loodgieter is aan te raden bij: koperen leidingen ouder dan 1960, loodleidingen (nooit zelf aanraken), beperkte ruimte onder het aanrecht of als u er niet zeker van bent hoe u de koudwateraftakking moet maken. Voor een 4-in-1 kokend water kraan is installatie door een installateur aanbevolen, en een elektricien nodig als er geen twee stopcontacten onder het aanrecht aanwezig zijn.',
   },
   {
     question: 'Wat heb ik nodig om een osmosefilter te installeren?',
@@ -157,7 +157,7 @@ export default function InstallatietijdPage() {
                 <td className="border border-gray-300 px-3 py-2">Geen (loodgieter regelt alles)</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-3 py-2">4-in-1 kokend water kraan (zelf)</td>
+                <td className="border border-gray-300 px-3 py-2">4-in-1 kokend water kraan (zelf, niet aanbevolen)</td>
                 <td className="border border-gray-300 px-3 py-2 font-medium">3-5 uur</td>
                 <td className="border border-gray-300 px-3 py-2">Loodgieters + elektra</td>
               </tr>
@@ -270,16 +270,17 @@ export default function InstallatietijdPage() {
             <strong>Beperkte ruimte onder het aanrecht</strong> of ingewikkelde leidingloop.
           </li>
           <li>
-            <strong>4-in-1 kokend water kraan:</strong> naast het loodgieterswerk is een geaard
-            stopcontact nodig voor het verwarmingselement. Laat dit door een elektricien verzorgen
-            als dit ontbreekt.
+            <strong>4-in-1 kokend water kraan:</strong> naast het loodgieterswerk zijn twee geaarde
+            stopcontacten nodig: de PureAqua 4-in-1 heeft onder de spoelbak een heet-/koelunit en een osmose-unit.
+            Laat ontbrekende stopcontacten door een elektricien verzorgen. Installatie door een installateur is aanbevolen;
+            PureAqua biedt dat aan voor &euro;299.
           </li>
         </ul>
         <p className="text-gray-700 mb-6">
           Kosten voor een loodgieter: reken op &euro;75-150 per uur. Een complete installatie
           van een standaard onderbouw RO kost inclusief materiaal doorgaans &euro;150-400. Voor
-          een 4-in-1 kraan met elektra-aansluiting loopt dit op tot &euro;300-600 inclusief
-          installateur en elektricien.
+          de PureAqua 4-in-1 biedt PureAqua installatie aan voor &euro;299; ontbreken de stopcontacten,
+          dan komt daar een elektricien bij.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">

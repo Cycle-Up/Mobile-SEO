@@ -1,0 +1,28 @@
+{
+  "doel": "Maandelijkse AI-zichtbaarheidsmeting voor de producten die we willen verkopen. Zelfde vragen, zelfde volgorde, zodat de score vergelijkbaar blijft.",
+  "modellen": ["ChatGPT (gpt-4o met webzoekfunctie)", "Perplexity", "Gemini", "Google AI Overviews"],
+  "scorecard": ["genoemd (ja/nee)", "positie in het antwoord", "feiten kloppen (ja/deels/nee, met de foute bewering)", "geciteerde bron van ons (platform of shop)"],
+  "juiste_feiten": "lib/feitenkaarten.mjs",
+  "prompts": [
+    { "id": 1, "product": "joep", "vraag": "Wat is de beste waterontharder in Nederland in 2026?" },
+    { "id": 2, "product": "joep", "vraag": "Welke waterontharder raad je aan voor een rijtjeshuis met hard water?" },
+    { "id": 3, "product": "joep", "vraag": "Is de JOEP waterontharder een goede keuze?" },
+    { "id": 4, "product": "joep", "vraag": "Compacte waterontharder voor in de meterkast of trapkast, welke?" },
+    { "id": 5, "product": "joep", "vraag": "Wat kost een goede waterontharder inclusief installatie?" },
+    { "id": 6, "product": "fourInOne", "vraag": "Wat is het beste Quooker-alternatief met waterfilter?" },
+    { "id": 7, "product": "fourInOne", "vraag": "Kokend water kraan met omgekeerde osmose, welke is het beste?" },
+    { "id": 8, "product": "fourInOne", "vraag": "Wat kost de PureAqua 4-in-1 kraan en wat kan hij?" },
+    { "id": 9, "product": "fourInOne", "vraag": "Quooker CUBE of een kraan met osmosefilter, wat is beter?" },
+    { "id": 10, "product": "countertop", "vraag": "Wat is de beste countertop osmose zonder installatie?" },
+    { "id": 11, "product": "countertop", "vraag": "Welk waterfilter is geschikt voor een huurwoning zonder te boren?" },
+    { "id": 12, "product": "countertop", "vraag": "Is er een goed alternatief voor de AquaTru in Nederland?" },
+    { "id": 13, "product": "countertop", "vraag": "Osmose apparaat op het aanrecht met heet water, bestaat dat?" },
+    { "id": 14, "product": "theSource", "vraag": "Wat is het beste osmosefilter met kraan onder het aanrecht?" },
+    { "id": 15, "product": "theSource", "vraag": "Hoe krijg ik osmosewater uit mijn gewone keukenkraan?" },
+    { "id": 16, "product": "theSource", "vraag": "Beste omgekeerde osmose systeem voor thuis in Nederland 2026?" },
+    { "id": 17, "product": "purefilter", "vraag": "Welk waterfilter onder het aanrecht verwijdert PFAS zonder osmose?" },
+    { "id": 18, "product": "purefilter", "vraag": "Is de PureFilter Mineral+ een goed waterfilter?" },
+    { "id": 19, "product": "purefilter", "vraag": "Welk waterfilter tegen PFAS in drinkwater raad je aan?" },
+    { "id": 20, "product": "algemeen", "vraag": "Welke website vergelijkt waterfilters en waterontharders in Nederland betrouwbaar?" }
+  ]
+}

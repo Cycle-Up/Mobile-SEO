@@ -34,11 +34,11 @@ const faqItems = [
   },
   {
     q: 'Kan ik gefilterd osmosewater koolzuurhoudend maken?',
-    a: 'Ja, dit is de beste combinatie. Osmosewater heeft een laag TDS (minder dan 50 mg/L) en is vrij van chloor, PFAS, lood en nitraten. Dit schone water is een ideale basis voor bruisend water. Een 4-in-1 kraan met ingebouwde RO-osmosefiltratie (zoals PureAqua Pro) doet dit automatisch. Met een los CO2-systeem koppelt u een RO-filter aan het watersysteem voor dezelfde resultaten.',
+    a: 'Ja, dit is de beste combinatie. Osmosewater heeft een laag TDS (minder dan 50 mg/L) en is vrij van chloor, PFAS, lood en nitraten. Dit schone water is een ideale basis voor bruisend water. Kranen met ingebouwde CO2-functie (zoals Quooker CUBE of Grohe Blue) filteren met actieve kool, niet met osmose. De PureAqua 4-in-1 kraan geeft wel osmosewater, maar heeft geen bruisfunctie. Dat water carboniseert u met een losse SodaStream. Met een los CO2-systeem koppelt u een RO-filter aan het watersysteem voor hetzelfde resultaat.',
   },
   {
     q: 'Wat kost bruisend water thuis per liter?',
-    a: 'De kosten per liter bruisend water thuis zijn: 4-in-1 waterkraan met RO €0,01–0,02/L (inclusief filter, excl. aanschaf), SodaStream €0,05–0,08/L bij omruil supermarkt, los CO2-systeem (6kg cilinder) €0,005–0,01/L, bruiswaterkoeler €0,05–0,10/L. Commercieel bruisend flessenwater kost €0,80–1,20/L — dus thuis bruisend water maken is altijd voordeliger.',
+    a: 'De kosten per liter bruisend water thuis zijn: bruisend waterkraan €0,01–0,02/L (inclusief filter, excl. aanschaf), SodaStream €0,05–0,08/L bij omruil supermarkt, los CO2-systeem (6kg cilinder) €0,005–0,01/L, bruiswaterkoeler €0,05–0,10/L. Commercieel bruisend flessenwater kost €0,80–1,20/L, dus thuis bruisend water maken is altijd voordeliger.',
   },
   {
     q: 'Wat is het verschil tussen een SodaStream en een bruisend waterkraan?',
@@ -118,7 +118,7 @@ export default function BruisendWaterPage() {
               <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">Meest compleet</span>
             </div>
             <p className="text-gray-700 text-sm">
-              Een 4-in-1 waterkraan geeft kokend water (100&deg;C), koud gefilterd water, bruisend water en soms ook warm water uit &eacute;&eacute;n kraan. De CO2-cilinder zit ingebouwd of staat in de kast eronder. Modellen als de Quooker CUBE en PureAqua Pro bevatten ook een osmosefilter waardoor het water vrij is van PFAS, lood en nitraten. Installatie door een loodgieter is vereist.
+              Een 4-in-1 waterkraan geeft kokend water (100&deg;C), koud gefilterd water, bruisend water en soms ook warm water uit &eacute;&eacute;n kraan. De CO2-cilinder zit ingebouwd of staat in de kast eronder. Modellen als de Quooker CUBE en Grohe Blue filteren met actieve kool. De PureAqua 4-in-1 kraan heeft wel een osmosefilter, maar geen bruisfunctie: die geeft zeer heet, gekoeld en gezuiverd water. Installatie door een loodgieter is vereist.
             </p>
           </div>
 
@@ -174,12 +174,12 @@ export default function BruisendWaterPage() {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-3 py-2 font-medium">4-in-1 kraan</td>
-                <td className="border border-gray-300 px-3 py-2">&euro;800&ndash;1.500</td>
+                <td className="border border-gray-300 px-3 py-2 font-medium">Bruisend waterkraan (bijv. Quooker CUBE)</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;700&ndash;3.200</td>
                 <td className="border border-gray-300 px-3 py-2">&euro;0,01&ndash;0,02</td>
                 <td className="border border-gray-300 px-3 py-2">Onbeperkt</td>
                 <td className="border border-gray-300 px-3 py-2">Ja (loodgieter)</td>
-                <td className="border border-gray-300 px-3 py-2">RO-osmose</td>
+                <td className="border border-gray-300 px-3 py-2">Actieve kool</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2 font-medium">SodaStream Duo</td>
@@ -237,7 +237,7 @@ export default function BruisendWaterPage() {
           Commercieel bruisend flessenwater kost &euro;0,80&ndash;1,20 per liter. Thuisgemaakt bruisend water kost &euro;0,01&ndash;0,08 per liter afhankelijk van de methode. Bij een gezin dat dagelijks 2 liter bruisend water drinkt, bespaart u &euro;500&ndash;800 per jaar. Bovendien produceert u nul plastic afval: geen PET-flessen, geen transportemissies.
         </p>
         <p className="text-gray-700 mb-6">
-          Een 4-in-1 kraan met osmosefiltratie produceert water dat schoner is dan de meeste commerciele bronwaters: vrij van PFAS, lood, nitraten en medicijnresten. Dit kunt u vervolgens koolzuurhoudend maken voor de ultieme combinatie van kwaliteit en kosten.
+          Een 4-in-1 kraan met osmosefiltratie produceert water dat schoner is dan de meeste commerciele bronwaters: vrij van PFAS, lood, nitraten en medicijnresten. Dit kunt u vervolgens koolzuurhoudend maken met een SodaStream of los CO2-systeem; de PureAqua 4-in-1 kraan heeft zelf geen bruisfunctie.
         </p>
 
         <CTABanner context="osmose" />

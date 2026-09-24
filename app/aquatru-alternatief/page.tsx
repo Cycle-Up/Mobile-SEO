@@ -55,12 +55,21 @@ const faqItems = [
 
 const topAlternatieven = [
   {
+    naam: 'PureAqua Water zuiver apparaat (onze keuze)',
+    prijs: 'EUR 495',
+    filtering: 'Osmose met 7-in-1-cartridge en remineralisatie',
+    capaciteit: 'Circa 12 liter per uur; tank circa 3,2 liter',
+    ruimte: 'Op het werkblad (circa 30 x 22 x 35 cm)',
+    highlight: true,
+    notitie: 'Net als de AquaTru zonder installatie, maar met zes temperatuurstanden tot 95 graden. AquaTru Classic: EUR 475, zonder verwarming. Verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.',
+  },
+  {
     naam: 'Onder-aanrecht osmose',
     prijs: 'EUR 200-500',
     filtering: 'Breed (osmose 95-99%)',
     capaciteit: 'Hoog, continu',
     ruimte: 'Verborgen onder aanrecht',
-    highlight: true,
+    highlight: false,
     notitie: 'Zelfde filtering als AquaTru, maar uit het zicht en lager per liter.',
   },
   {
@@ -74,12 +83,12 @@ const topAlternatieven = [
   },
   {
     naam: '4-in-1 osmosekraan',
-    prijs: 'EUR 699-899',
-    filtering: 'Breed (osmose) + kokend/bruisend',
+    prijs: 'EUR 1.948',
+    filtering: 'Breed (osmose) + zeer heet (circa 96 graden) en gekoeld',
     capaciteit: 'Hoog, continu',
     ruimte: 'Verborgen, een kraan',
     highlight: false,
-    notitie: 'Osmose plus kokend en bruisend water uit een kraan; completer pakket.',
+    notitie: 'PureAqua 4-in-1: osmose plus zeer heet en gekoeld water uit een kraan (zonder bubbels); installatie optioneel voor EUR 299.',
   },
   {
     naam: 'Onder-aanrecht koolstoffilter',
@@ -249,7 +258,7 @@ export default function AquaTruAlternatiefPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Wil je naast osmose ook kokend of bruisend water uit dezelfde kraan? Bekijk dan een{' '}
+            Wil je naast osmose ook zeer heet of gekoeld water uit dezelfde kraan? Bekijk dan een{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan</Link>{' '}
             of vergelijk de{' '}
             <Link href="/beste-osmosefilter-2026" className="text-[#005F8A] underline">beste osmosefilters van 2026</Link>.

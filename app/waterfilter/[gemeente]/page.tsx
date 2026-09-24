@@ -379,7 +379,7 @@ export default async function WaterfilterPage({ params }: PageProps) {
                 </span>
               </div>
               <p className="text-sm text-gray-700 mb-2">
-                Een 4-in-1 kokend water kraan combineert kokend, koud, warm en bruisend water met een ingebouwd osmosefilter. Ideaal als je ook van thee, koffie of pasta koken wil profiteren van gefilterd, ontharder water.
+                Een 4-in-1 kraan met osmose geeft gewoon warm en koud kraanwater, plus osmose-gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden). Ideaal als je ook van thee, koffie of pasta koken wil profiteren van gefilterd, ontharder water.
               </p>
               <p className="text-sm font-medium text-gray-800">
                 Advies voor {gemeente.naam}:{' '}

@@ -7,12 +7,12 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kokend water kraan met filter: wat zijn de opties?',
   description:
-    'Kokend water kraan met filter: vergelijk koolstoffilter, osmosefilter en 4-in-1 systemen. Wat verwijdert elk filter? Prijzen van €300 tot €900.',
+    'Kokend water kraan met filter: vergelijk koolstoffilter, osmosefilter en 4-in-1 systemen. Wat verwijdert elk filter? Prijzen van €300 tot €1.948.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/met-filter' },
   openGraph: {
     title: 'Kokend water kraan met filter — vergelijking & koopgids 2026',
     description:
-      'Kokend water kraan met filter: vergelijk koolstoffilter, osmosefilter en 4-in-1 systemen. Wat verwijdert elk filter? Prijzen van €300 tot €900.',
+      'Kokend water kraan met filter: vergelijk koolstoffilter, osmosefilter en 4-in-1 systemen. Wat verwijdert elk filter? Prijzen van €300 tot €1.948.',
     url: 'https://waterfilterplatform.nl/kokend-water-kraan/met-filter',
     type: 'article',
   },
@@ -84,10 +84,10 @@ const prijsCategorieen = [
   },
   {
     label: '4-in-1 met osmose',
-    aanschaf: '€ 699–899',
+    aanschaf: '€ 1.948',
     filterJaar: '€ 70–100',
     energie: '€ 40–60',
-    totaal5jr: '€ 1.049–1.479',
+    totaal5jr: '€ 2.498–2.748',
     highlight: true,
   },
 ];
@@ -167,7 +167,7 @@ export default function KokendWaterKraanMetFilterPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
-        <QuickAnswer answer="Een kokend water kraan met filter geeft direct heet water én filtert kalk, chloor en verontreinigingen. De meest complete optie is een 4-in-1 systeem met ingebouwd osmosefilter (€699–899): verwijdert 99% inclusief kalk, PFAS en nitraten. Goedkopere koolstoffilter-varianten (€300–500) verbeteren smaak maar verwijderen geen kalk." />
+        <QuickAnswer answer="Een kokend water kraan met filter geeft direct heet water én filtert kalk, chloor en verontreinigingen. De meest complete optie is volgens ons een 4-in-1 kraan met osmose (PureAqua, 1.948 euro): een SGS-labtest mat meer dan 99,6% minder PFOS en meer dan 99,8% minder lood, en osmose haalt ook kalk en nitraat grotendeels weg. Goedkopere koolstoffilter-varianten (€300–500) verbeteren smaak maar verwijderen geen kalk." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -224,7 +224,7 @@ export default function KokendWaterKraanMetFilterPage() {
                 Een semi-permeabel membraan met poriën van 0,0001 micron filtert 95–99% van alle
                 opgeloste stoffen. Dit omvat kalk (calcium, magnesium), chloor, nitraten, PFAS,
                 lood en microplastics. Een 4-in-1 kraan met ingebouwd osmosesysteem combineert dit
-                met directe levering van kokend, koud gefilterd, warm gefilterd en bruisend water.
+                met gekoeld en zeer heet (circa 96 graden) gefilterd water, naast gewoon warm en koud kraanwater. Bruisend water zit er niet in.
               </p>
             </div>
           </div>
@@ -309,7 +309,7 @@ export default function KokendWaterKraanMetFilterPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 shrink-0 mt-0.5">~</span>
-                  Hogere aanschafprijs (€699–899)
+                  Hogere aanschafprijs (€1.948)
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 shrink-0 mt-0.5">~</span>
@@ -349,9 +349,9 @@ export default function KokendWaterKraanMetFilterPage() {
             {[
               {
                 situatie: 'Hard water + wil maximale zuivering',
-                keuze: '4-in-1 met osmose (€699–899)',
+                keuze: '4-in-1 met osmose (€1.948)',
                 reden:
-                  'Verwijdert kalk, PFAS, nitraten en chloor volledig. Voorkomt kalkafzetting in boiler en kraanuitloop.',
+                  'Verwijdert kalk, PFAS, nitraten en chloor grotendeels. Voorkomt kalkafzetting in boiler en kraanuitloop.',
               },
               {
                 situatie: 'Zacht water + alleen smaakverbetering',
@@ -438,8 +438,8 @@ export default function KokendWaterKraanMetFilterPage() {
             </p>
             <p>
               <strong className="text-[#003F5C]">Vergelijking flessenwater:</strong> Een gezin van
-              4 dat uitsluitend flessenwater koopt, betaalt gemiddeld €600 per jaar. Zelfs de duurste
-              4-in-1 kraan met osmose is over 5 jaar goedkoper.
+              4 dat uitsluitend flessenwater koopt, betaalt gemiddeld €600 per jaar. Ook een 4-in-1 kraan
+              met osmose (circa €2.500 tot €2.750 over 5 jaar) is dan goedkoper.
             </p>
           </div>
         </section>
@@ -541,7 +541,7 @@ export default function KokendWaterKraanMetFilterPage() {
               {
                 href: '/4-in-1-kraan',
                 title: '4-in-1 kraan met osmose',
-                desc: 'Kokend, koud, warm en bruisend — allemaal gefilterd uit één kraan.',
+                desc: 'Warm en koud kraanwater plus gekoeld en zeer heet osmosewater uit één kraan.',
               },
               {
                 href: '/omgekeerde-osmose/kopen',

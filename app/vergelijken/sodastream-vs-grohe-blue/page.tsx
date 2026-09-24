@@ -48,19 +48,19 @@ const faqItems = [
   {
     question: 'Is er een kraan die gefilterd, kokend en bruisend water combineert?',
     answer:
-      'Ja. Een 4-in-1 kraan met ingebouwd osmosefilter levert kokend, koud gefilterd, warm en bruisend water uit een kraan. Dat is interessant als je niet wilt kiezen tussen filtering, heet en bruisend water, vaak voor een lagere totaalprijs dan losse oplossingen naast elkaar.',
+      'Ja. Een Quooker met CUBE combineert kokend, gekoeld en gefilterd bruisend water (Flex PRO3 met CUBE: 2.240 euro bij PureAqua), met een koolfilter. De PureAqua 4-in-1 kraan met ingebouwd osmosefilter (1.948 euro) combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, maar geen bruisend water. Wil je osmosewater en bubbels, dan kun je die 4-in-1 combineren met een losse SodaStream.',
   },
 ];
 
 const vergelijking = [
   {
     naam: '4-in-1 osmosekraan',
-    type: 'Kraan: gefilterd + kokend + bruisend',
+    type: 'Kraan: osmose-gezuiverd + gekoeld + zeer heet',
     filtering: 'Osmose (breed)',
-    bruisend: 'Ja',
-    installatie: 'Eenmalig',
+    bruisend: 'Nee (combineer met SodaStream)',
+    installatie: 'Eenmalig, installateur aanbevolen',
     highlight: true,
-    notitie: 'Combineert filtering, kokend en bruisend water uit een kraan.',
+    notitie: 'Osmosefiltering, gekoeld en zeer heet water uit een kraan; geen bruisend water.',
   },
   {
     naam: 'SodaStream',
@@ -121,8 +121,8 @@ export default function SodaStreamVsGroheBluePage() {
           <p className="text-gray-600 text-lg mb-6">
             <strong>SodaStream</strong> en <strong>Grohe Blue</strong> maken allebei bruisend water, maar
             op een heel andere manier: een los toestel op het aanrecht versus een vaste, gefilterde
-            bruiswaterkraan. We vergelijken ze eerlijk op gemak, filtering en kosten - en laten zien wanneer
-            een 4-in-1 kraan beide overtreft.
+            bruiswaterkraan. We vergelijken ze eerlijk op gemak, filtering en kosten en laten zien wanneer
+            een 4-in-1 kraan met osmose (zonder bruis) een logische aanvulling is.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -147,7 +147,7 @@ export default function SodaStreamVsGroheBluePage() {
 
         <QuickAnswer
           question="SodaStream of Grohe Blue?"
-          answer="Kies een SodaStream als je goedkoop en zonder installatie af en toe bruiswater wilt maken; filtering heb je er niet bij en je vult zelf flessen. Kies een Grohe Blue als je gekoeld en gefilterd bruiswater direct uit de kraan wilt, tegen een hogere aanschaf en installatie. Wil je daarbovenop ook kokend water en bredere (osmose)filtering, dan combineert een 4-in-1 osmosekraan dat in een kraan, vaak voor een lagere totaalprijs. Prijzen indicatief; controleer bij de verkoper."
+          answer="Kies een SodaStream als je goedkoop en zonder installatie af en toe bruiswater wilt maken; filtering heb je er niet bij en je vult zelf flessen. Kies een Grohe Blue als je gekoeld en gefilterd bruiswater direct uit de kraan wilt, tegen een hogere aanschaf en installatie. Wil je zeer heet water en bredere (osmose)filtering, dan combineert een 4-in-1 osmosekraan dat met gekoeld water in een kraan, maar zonder bruisend water; die combineer je eventueel met een SodaStream. Prijzen indicatief; controleer bij de verkoper."
         />
 
         <section>
@@ -192,7 +192,7 @@ export default function SodaStreamVsGroheBluePage() {
             {[
               ['Kies SodaStream als...', 'Je goedkoop en zonder installatie bruiswater wilt maken en geen filtering nodig hebt.'],
               ['Kies Grohe Blue als...', 'Je gekoeld en gefilterd bruiswater direct uit de kraan wilt en installatie geen bezwaar is.'],
-              ['Wil je ook kokend water?', 'Geen van beide levert kokend water; een 4-in-1 osmosekraan wel.'],
+              ['Wil je ook heet water?', 'Geen van beide levert heet water; een 4-in-1 osmosekraan wel (circa 96 graden), maar die geeft geen bruisend water.'],
               ['Wil je brede filtering?', 'SodaStream filtert niet, Grohe Blue koolstof; osmose filtert breder (lood, PFAS).'],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
@@ -214,9 +214,9 @@ export default function SodaStreamVsGroheBluePage() {
           destination="vierInEen"
           campaign="kokend-water"
           content="vergelijken-sodastream-vs-grohe-blue-cta"
-          label="Een 4-in-1 kraan met kokend en gefilterd water"
+          label="Een 4-in-1 kraan met zeer heet en gefilterd water"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan (geen bruisend water). Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="algemeen" />
@@ -243,7 +243,7 @@ export default function SodaStreamVsGroheBluePage() {
               ['/bruisend-water', 'Bruisend water', 'Alle opties voor bruisend water thuis'],
               ['/vergelijken/grohe-blue-vs-grohe-red', 'Grohe Blue vs Grohe Red', 'Gefilterd/bruisend versus kokend'],
               ['/sodastream', 'Over SodaStream', 'Werking, modellen en kosten'],
-              ['/4-in-1-kraan', '4-in-1 kraan', 'Gefilterd, kokend en bruisend uit een kraan'],
+              ['/4-in-1-kraan', '4-in-1 kraan', 'Gezuiverd, gekoeld en zeer heet uit een kraan'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">{t}</p>

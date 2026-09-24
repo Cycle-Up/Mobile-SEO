@@ -34,7 +34,7 @@ const faqSchema = {
       name: 'Hoeveel kost een waterfilter voor een kantoor?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Counter-top osmose (1–10 personen): €200–400 aanschaf + €60–100/jaar onderhoud. Onder-aanrecht osmose (10–30 personen): €400–800 inclusief installatie + €100–150/jaar. 4-in-1 osmose + kokend water kraan: €800–1.500 inclusief installatie. Centrale waterfiltratie (50+ personen): €2.000–6.000 inclusief installatie + servicecontract. Waterkoeler (huur): €30–80/maand inclusief onderhoud. Losse flessenwater voor 50 medewerkers: €3/persoon/dag × 220 werkdagen = €33.000/jaar.',
+        text: 'Counter-top osmose (1–10 personen): €200–400 aanschaf + €60–100/jaar onderhoud. Onder-aanrecht osmose (10–30 personen): €400–800 inclusief installatie + €100–150/jaar. 4-in-1 kraan met osmose (PureAqua): 1.948 euro, installatie optioneel voor 299 euro. Centrale waterfiltratie (50+ personen): €2.000–6.000 inclusief installatie + servicecontract. Waterkoeler (huur): €30–80/maand inclusief onderhoud. Losse flessenwater voor 50 medewerkers: €3/persoon/dag × 220 werkdagen = €33.000/jaar.',
       },
     },
     {
@@ -66,7 +66,7 @@ const faqSchema = {
       name: 'Kan ik een kokend water kraan installeren op een kantoor?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Een 4-in-1 kokend water kraan is een uitstekende kantooroplossing: één aansluiting levert kokend water (voor thee, koffie), gefilterd koud water en gewoon koud/warm water. Vervangt de waterkoeler, het waterreservoir én de waterkoker. Ideaal voor kantoren tot 30 personen aan één watertappunt. Grotere kantoren kunnen meerdere units plaatsen bij verschillende koffiehoeken.',
+        text: 'Ja. Een 4-in-1 kraan met osmose is een goede kantooroplossing: één kraan levert zeer heet water van circa 96 graden (voor thee, koffie), gekoeld en gezuiverd water en gewoon koud/warm water. Vervangt de waterkoeler, het waterreservoir én de waterkoker. Er is circa 1,2 liter heet water direct beschikbaar, dus het past vooral bij een kleiner team per watertappunt. Onder de spoelbak zijn ruimte en twee stopcontacten nodig. Grotere kantoren kunnen meerdere units plaatsen bij verschillende koffiehoeken.',
       },
     },
     {
@@ -177,11 +177,11 @@ export default function WaterfilterKantoorPage() {
 
         <h3 className="text-xl font-semibold text-[#003F5C] mt-6 mb-3">Middelgrote kantoren: 10–50 personen</h3>
         <p className="text-gray-700 mb-3">
-          Bij 10–50 medewerkers is een vaste installatie met onder-aanrecht osmose + tapkraan de beste keuze, eventueel gecombineerd met een 4-in-1 kokend water kraan:
+          Bij 10–50 medewerkers is een vaste installatie met onder-aanrecht osmose + tapkraan de beste keuze, eventueel gecombineerd met een 4-in-1 kraan met osmose:
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-1">
           <li><strong>Onder-aanrecht osmose + tapkraan:</strong> €400–800 installatie. Levert 150–300L/dag, voldoende voor 30 personen.</li>
-          <li><strong>4-in-1 kokend water kraan:</strong> €800–1.500. Vervangt waterkoeler en waterkoker. Levert kokend, koud gefilterd en normaal water via één elegant punt.</li>
+          <li><strong>4-in-1 kraan met osmose:</strong> 1.948 euro (PureAqua 4-in-1), installatie optioneel voor 299 euro. Vervangt waterkoeler en waterkoker. Levert zeer heet (circa 96 graden), gekoeld en gezuiverd water en normaal water via één kraan.</li>
           <li><strong>Aansluitpunt waterkoeler (aangevuld met RO-filter):</strong> Bestaande waterkoeler vervangen door één met ingebouwde osmosemembraan eliminateert flessenlogistiek.</li>
         </ul>
 
@@ -236,9 +236,9 @@ export default function WaterfilterKantoorPage() {
                 <td className="border border-gray-300 px-3 py-2 text-yellow-700">Loodgieter</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-3 py-2 font-medium">4-in-1 kokend water kraan</td>
+                <td className="border border-gray-300 px-3 py-2 font-medium">4-in-1 kraan met osmose</td>
                 <td className="border border-gray-300 px-3 py-2">10–30</td>
-                <td className="border border-gray-300 px-3 py-2">€800–1.500</td>
+                <td className="border border-gray-300 px-3 py-2">€1.948</td>
                 <td className="border border-gray-300 px-3 py-2">€120–200/jr</td>
                 <td className="border border-gray-300 px-3 py-2">~5.000/jr</td>
                 <td className="border border-gray-300 px-3 py-2 text-yellow-700">Loodgieter</td>
@@ -361,7 +361,7 @@ export default function WaterfilterKantoorPage() {
         <div className="bg-[#E0F2FE] rounded-xl p-6 mb-8">
           <h3 className="text-lg font-semibold text-[#003F5C] mb-2">Gezond water voor jouw team — direct geregeld</h3>
           <p className="text-gray-700 mb-4">
-            De PureAqua 4-in-1 osmose + kokend water kraan is de complete kantooroplossing: osmosekwaliteit drinkwater, direct kokend water voor thee en koffie, nul plastic flessen. Terugverdientijd bij 10+ medewerkers: &lt;6 maanden.
+            De PureAqua 4-in-1 kraan combineert osmosekwaliteit drinkwater, gekoeld water en zeer heet water (circa 96 graden) voor thee en koffie, zonder plastic flessen. Prijs: 1.948 euro, installatie optioneel voor 299 euro. Hoe snel je dat terugverdient, hangt af van wat je nu aan flessenwater uitgeeft.
           </p>
           <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk kantooroplossingen →

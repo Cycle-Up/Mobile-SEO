@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { FactCard } from '@/components/FactCard';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { HealthDisclaimer } from '@/components/HealthDisclaimer';
@@ -172,6 +173,8 @@ export default function PureFilterReviewPage() {
           question="Is PureFilter Mineral+ een goede koop?"
           answer={`Voor wie een flinke PFAS-reductie en beter smakend water wil zonder osmose, tank of afvalwater: ja. In een onafhankelijke labtest verminderde het filter vijf PFAS met circa ${PUREFILTER.pfasReduction}. Het kost ${PUREFILTER.price} inclusief eerste cartridge en je installeert het zelf. Wil je de hoogst haalbare reductie, dan is omgekeerde osmose sterker. NSF-certificering konden we niet bevestigen.`}
         />
+
+        <FactCard id="purefilter" />
 
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Kort oordeel</h2>

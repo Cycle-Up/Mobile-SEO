@@ -47,7 +47,7 @@ const faqItems = [
   {
     question: 'Is de Grohe Red een goede keuze?',
     answer:
-      'Voor wie kokend water uit een premium kraan met strak Duits design wil, is de Grohe Red sterk. Of het de beste keuze is, hangt af van je wensen en budget. Wil je ook gefilterd of bruisend water of een lagere totaalprijs, vergelijk dan met een 4-in-1 osmosekraan; dat lees je op Grohe Red alternatief.',
+      'Voor wie kokend water uit een premium kraan met strak Duits design wil, is de Grohe Red sterk. Of het de beste keuze is, hangt af van je wensen en budget. Wil je ook gefilterd of gekoeld water, vergelijk dan met een 4-in-1 osmosekraan; dat lees je op Grohe Red alternatief.',
   },
 ];
 
@@ -123,7 +123,7 @@ export default function GroheRedPage() {
 
         <QuickAnswer
           question="Wat moet je weten over de Grohe Red?"
-          answer="De Grohe Red is een kokend water kraan van Grohe met een geisoleerde boiler onder het aanrecht; de kokendwater-tegenhanger van de Grohe Blue. Er zijn Mono- en Duo-uitvoeringen en boilermaten (M/L). Een filterpatroon beschermt vooral de boiler tegen kalk; het is geen osmosefilter. De aanschaf ligt indicatief tussen 1.200 en 2.000 euro exclusief installatie, plus stroom en filter/ontkalken. Sterk voor wie kokend water en premium design wil; voor gefilterd of bruisend water of een lagere prijs is een 4-in-1 osmosekraan het overwegen waard."
+          answer="De Grohe Red is een kokend water kraan van Grohe met een geisoleerde boiler onder het aanrecht; de kokendwater-tegenhanger van de Grohe Blue. Er zijn Mono- en Duo-uitvoeringen en boilermaten (M/L). Een filterpatroon beschermt vooral de boiler tegen kalk; het is geen osmosefilter. De aanschaf ligt indicatief tussen 1.200 en 2.000 euro exclusief installatie, plus stroom en filter/ontkalken. Sterk voor wie kokend water en premium design wil; voor gefilterd en gekoeld water is een 4-in-1 osmosekraan het overwegen waard."
         />
 
         <section>
@@ -177,8 +177,8 @@ export default function GroheRedPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Grohe Red versus een 4-in-1 osmosekraan</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             De Grohe Red is sterk in kokend water met premium design. Wil je daarnaast puur gefilterd of
-            bruisend water, dan biedt een 4-in-1 kraan met ingebouwd osmosefilter vaak een completer pakket:
-            kokend, koud gefilterd, warm en bruisend water uit een kraan, inclusief een{' '}
+            gekoeld water, dan biedt een 4-in-1 kraan met ingebouwd osmosefilter vaak een completer pakket:
+            zeer heet (circa 96 graden), gekoeld en gezuiverd water plus gewoon warm en koud water uit een kraan (geen bruisend water), inclusief een{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose installatie</Link>.
             De volledige afweging lees je op{' '}
             <Link href="/grohe-red-alternatief" className="text-[#005F8A] underline">Grohe Red alternatief</Link>.
@@ -209,7 +209,7 @@ export default function GroheRedPage() {
               ['/kokend-water-kraan', 'Kokend water kraan', 'Complete gids over de categorie'],
               ['/vergelijken/grohe-red-vs-grohe-blue', 'Grohe Red vs Grohe Blue', 'Kokend versus gefilterd/bruisend'],
               ['/grohe-red-alternatief', 'Grohe Red alternatief', 'Meer functies voor minder geld?'],
-              ['/4-in-1-kraan', '4-in-1 kraan', 'Kokend, gefilterd en bruisend uit een kraan'],
+              ['/4-in-1-kraan', '4-in-1 kraan', 'Zeer heet, gekoeld en gezuiverd uit een kraan'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">{t}</p>

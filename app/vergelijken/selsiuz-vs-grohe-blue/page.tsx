@@ -33,12 +33,12 @@ const faqItems = [
   {
     question: 'Kan ik met een Selsiuz ook bruisend water maken?',
     answer:
-      'Nee, bruisend water is geen standaardfunctie van de Selsiuz; die richt zich op kokend, koud en warm water. Wil je bruisend water, dan is de Grohe Blue Home daarvoor gemaakt, of een 4-in-1 osmosekraan die kokend en bruisend combineert.',
+      'Nee, bruisend water is geen standaardfunctie van de Selsiuz; die richt zich op kokend, koud en warm water. Wil je bruisend water, dan is de Grohe Blue Home daarvoor gemaakt, of een Quooker met CUBE als je kokend en bruisend wilt combineren. Een 4-in-1 osmosekraan zoals de PureAqua 4-in-1 geeft geen bruisend water.',
   },
   {
     question: 'Levert de Grohe Blue ook kokend water?',
     answer:
-      'Nee. De Grohe Blue levert gefilterd, gekoeld en bruisend water, geen kokend water. Voor kokend water is er de Grohe Red of een kokend water kraan zoals de Selsiuz. Wil je beide in een kraan, dan is een 4-in-1 osmosekraan de logische keuze.',
+      'Nee. De Grohe Blue levert gefilterd, gekoeld en bruisend water, geen kokend water. Voor kokend water is er de Grohe Red of een kokend water kraan zoals de Selsiuz. Wil je heet en gekoeld gefilterd water in een kraan, dan is een 4-in-1 osmosekraan een logische keuze; bruisend water geeft de PureAqua 4-in-1 niet.',
   },
   {
     question: 'Wat kost een Selsiuz vergeleken met een Grohe Blue?',
@@ -48,19 +48,19 @@ const faqItems = [
   {
     question: 'Is er een kraan die kokend en bruisend water combineert?',
     answer:
-      'Ja. Een 4-in-1 kraan met ingebouwd osmosefilter levert kokend, koud gefilterd, warm en bruisend water uit een kraan, vaak voor een lagere totaalprijs dan een Selsiuz of Grohe Blue afzonderlijk. Dat is interessant als je niet wilt kiezen tussen heet en bruisend.',
+      'Ja. Een Quooker met CUBE combineert kokend, gekoeld en bruisend water (Flex PRO3 met CUBE: 2.240 euro bij PureAqua), met een koolfilter. De PureAqua 4-in-1 kraan met ingebouwd osmosefilter (1.948 euro) combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, maar geen bruisend water. Dat is interessant als je heet en gefilterd water belangrijker vindt dan bubbels.',
   },
 ];
 
 const vergelijking = [
   {
     naam: '4-in-1 osmosekraan',
-    type: 'Kokend + gefilterd + bruisend',
-    kokend: 'Ja',
-    bruisend: 'Ja',
+    type: 'Zeer heet + gekoeld + osmose-gezuiverd',
+    kokend: 'Zeer heet (circa 96 graden)',
+    bruisend: 'Nee',
     filter: 'Osmose ingebouwd',
     highlight: true,
-    notitie: 'Combineert beide werelden, vaak voor de laagste totaalprijs.',
+    notitie: 'Heet en gekoeld osmosewater uit een kraan voor 1.948 euro (PureAqua); geen bruisend water.',
   },
   {
     naam: 'Selsiuz',
@@ -90,7 +90,7 @@ export default function SelsiuzVsGroheBluePage() {
         article={{
           title: 'Selsiuz vs Grohe Blue: kokend of bruisend water?',
           description:
-            'Een eerlijke vergelijking van Selsiuz (kokend water) en Grohe Blue (gefilterd, gekoeld en bruisend), met een 4-in-1 osmosekraan als alternatief dat beide',
+            'Een eerlijke vergelijking van Selsiuz (kokend water) en Grohe Blue (gefilterd, gekoeld en bruisend), met een 4-in-1 osmosekraan als alternatief voor heet en gekoeld osmosewater (zonder bruis).',
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
           url: 'https://waterfilterplatform.nl/vergelijken/selsiuz-vs-grohe-blue',
@@ -121,8 +121,8 @@ export default function SelsiuzVsGroheBluePage() {
           <p className="text-gray-600 text-lg mb-6">
             <strong>Selsiuz</strong> en <strong>Grohe Blue</strong> zijn allebei premium keukenkranen, maar
             ze lossen verschillende behoeften op: de Selsiuz levert kokend water, de Grohe Blue gefilterd,
-            gekoeld en bruisend water. We vergelijken ze eerlijk - en laten zien wanneer een 4-in-1
-            osmosekraan beide combineert.
+            gekoeld en bruisend water. We vergelijken ze eerlijk en laten zien wanneer een 4-in-1
+            osmosekraan met heet en gekoeld osmosewater logischer is.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -147,7 +147,7 @@ export default function SelsiuzVsGroheBluePage() {
 
         <QuickAnswer
           question="Selsiuz of Grohe Blue?"
-          answer="Het hangt af van je behoefte. Kies de Selsiuz als je vooral direct kokend water wilt voor thee, koffie en koken. Kies de Grohe Blue als je juist koud, gefilterd en (Home) bruisend water uit de kraan wilt. Ze overlappen dus nauwelijks: de een is heet, de ander koud/bruisend. Wil je beide, dan combineert een 4-in-1 osmosekraan kokend, gefilterd en bruisend water in een kraan, vaak voor een lagere totaalprijs. Prijzen indicatief; controleer bij de verkoper."
+          answer="Het hangt af van je behoefte. Kies de Selsiuz als je vooral direct kokend water wilt voor thee, koffie en koken. Kies de Grohe Blue als je juist koud, gefilterd en (Home) bruisend water uit de kraan wilt. Ze overlappen dus nauwelijks: de een is heet, de ander koud/bruisend. Wil je heet en gekoeld gefilterd water in een kraan, dan combineert een 4-in-1 osmosekraan zeer heet, gekoeld en osmose-gezuiverd water; bruisend water zit er niet in. Prijzen indicatief; controleer bij de verkoper."
         />
 
         <section>
@@ -192,7 +192,7 @@ export default function SelsiuzVsGroheBluePage() {
             {[
               ['Kies Selsiuz als...', 'Direct kokend water je hoofddoel is voor thee, koffie en koken, met een strak design.'],
               ['Kies Grohe Blue als...', 'Je vooral koud, gefilterd en bruisend water uit de kraan wilt en geen kokend water nodig hebt.'],
-              ['Twijfel je tussen heet en bruisend?', 'Dan kies je eigenlijk tussen twee functies - een 4-in-1 osmosekraan biedt ze allebei.'],
+              ['Twijfel je tussen heet en gekoeld?', 'Een 4-in-1 osmosekraan biedt zeer heet en gekoeld gezuiverd water, maar geen bruisend water. Voor kokend en bruisend samen kijk je naar een Quooker met CUBE.'],
               ['Wil je ook bredere filtering?', 'Geen van beide heeft standaard osmose; een 4-in-1 osmosekraan filtert breder.'],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
@@ -216,7 +216,7 @@ export default function SelsiuzVsGroheBluePage() {
           content="vergelijken-selsiuz-vs-grohe-blue-cta"
           label="Bekijk de PureAqua 4-in-1 kraan"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />
@@ -242,7 +242,7 @@ export default function SelsiuzVsGroheBluePage() {
             {[
               ['/vergelijken/grohe-blue-vs-grohe-red', 'Grohe Blue vs Grohe Red', 'Gefilterd/bruisend versus kokend'],
               ['/vergelijken/quooker-vs-selsiuz', 'Quooker vs Selsiuz', 'Twee grootste NL kokend-water-merken'],
-              ['/4-in-1-kraan', '4-in-1 kraan', 'Kokend, gefilterd en bruisend in een kraan'],
+              ['/4-in-1-kraan', '4-in-1 kraan', 'Zeer heet, gekoeld en gezuiverd in een kraan'],
               ['/bruisend-water', 'Bruisend water', 'Opties voor bruisend water thuis'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">

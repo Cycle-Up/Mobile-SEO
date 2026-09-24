@@ -11,12 +11,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Fonteq alternatief: kokend water kraan met osmose (2026)',
     description:
-      'Zoek je een alternatief voor de Fonteq kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gefilterd en bruisend water geeft.',
+      'Alternatief voor de Fonteq kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en gezuiverd water geeft.',
     alternates: { canonical: 'https://waterfilterplatform.nl/fonteq-alternatief' },
     openGraph: {
       title: 'Fonteq alternatief vergelijken - beste opties 2026',
       description:
-        'Fonteq is een betaalbare kokend water kraan. Een 4-in-1 osmosekraan voegt gefilterd en bruisend water toe, met een ingebouwd osmosefilter.',
+        'Fonteq is een betaalbare kokend water kraan. Een 4-in-1 osmosekraan voegt gekoeld en gezuiverd water toe, met een ingebouwd osmosefilter.',
       url: 'https://waterfilterplatform.nl/fonteq-alternatief',
       type: 'article',
       locale: 'nl_NL',
@@ -28,7 +28,7 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor de Fonteq kokend water kraan?',
     answer:
-      'Het sterkste alternatief voor de Fonteq is een 4-in-1 kraan met ingebouwd osmosefilter. Fonteq is een betaalbaar merk dat zich richt op kokend water. Wie naast kokend water ook puur gefilterd en bruisend water wil, krijgt met een 4-in-1 osmosekraan een completer pakket - met osmose die ook lood, nitraat, PFAS en microplastics verwijdert.',
+      'Volgens ons is het sterkste alternatief voor de Fonteq een 4-in-1 kraan met ingebouwd osmosefilter. Fonteq is een betaalbaar merk dat zich richt op kokend water. Wie naast heet water ook gekoeld en osmose-gezuiverd water wil, krijgt met de PureAqua 4-in-1 kraan een completer pakket, met osmose die in een SGS-test op een nieuw systeem PFOS met meer dan 99,6% en lood met meer dan 99,8% verminderde. Bruisend water zit er niet op.',
   },
   {
     question: 'Heeft de Fonteq een waterfilter ingebouwd?',
@@ -38,24 +38,24 @@ const faqItems = [
   {
     question: 'Is een 4-in-1 osmosekraan duurder dan een Fonteq?',
     answer:
-      'Fonteq is een van de goedkopere kokendwaterkranen (vaak rond 400-800 euro). Een 4-in-1 kraan met osmosefilter kost 699-899 euro, maar daarbij zit een volwaardig osmosesysteem inbegrepen plus koud gefilterd en bruisend water. Reken filter- en installatiekosten over meerdere jaren mee om de echte kosten te vergelijken.',
+      'Ja. Fonteq is een van de goedkopere kokendwaterkranen (vaak rond 400-800 euro). De PureAqua 4-in-1 kraan kost 1.948 euro, maar daarbij zit een volwaardig osmosesysteem inbegrepen plus gekoeld en zeer heet (circa 96 graden) gezuiverd water. Bruisend water zit er niet op. Reken filter- en installatiekosten over meerdere jaren mee om de echte kosten te vergelijken.',
   },
   {
     question: 'Kun je een Fonteq alternatief zelf installeren?',
     answer:
-      'Een 4-in-1 kraan met osmosefilter is in de meeste gevallen zelf te installeren met standaard aansluitingen onder het aanrecht en een Nederlandstalige handleiding. Daarmee bespaar je op installatiekosten.',
+      'Voor een 4-in-1 kraan met osmosefilter is installatie door een installateur aanbevolen: onder de spoelbak komen twee apparaten (heet-/koelunit en osmose-unit) en twee stopcontacten. PureAqua biedt installatie aan voor 299 euro.',
   },
 ];
 
 const topAlternatieven = [
   {
     naam: '4-in-1 kraan met osmose',
-    prijs: 'EUR 699-899',
-    kokend: 'Ja (100 graden)',
+    prijs: 'EUR 1.948',
+    kokend: 'Zeer heet (circa 96 graden)',
     gefilterd: 'Ja (osmose ingebouwd)',
-    bruisend: 'Ja, standaard',
+    bruisend: 'Nee',
     highlight: true,
-    notitie: 'Compleet pakket met ingebouwd osmosefilter, koud gefilterd en bruisend water.',
+    notitie: 'PureAqua 4-in-1: ingebouwd osmosefilter, gekoeld en zeer heet gezuiverd water; installatie optioneel EUR 299.',
   },
   {
     naam: 'Fonteq (referentie)',
@@ -84,7 +84,7 @@ export default function FonteqAlternatiefPage() {
         type="Article"
         article={{
           title: 'Fonteq alternatief: kokend water kraan met osmose (2026)',
-          description: 'Zoek je een alternatief voor de Fonteq kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gefilterd en bruisend water geeft.',
+          description: 'Alternatief voor de Fonteq kokend water kraan? Vergelijk prijs en functies met een 4-in-1 osmosekraan die ook gekoeld en gezuiverd water geeft.',
           datePublished: '2026-05-29',
           dateModified: '2026-05-29',
           url: 'https://waterfilterplatform.nl/fonteq-alternatief',
@@ -107,11 +107,11 @@ export default function FonteqAlternatiefPage() {
             <span>Fonteq alternatief</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Fonteq alternatief: meer functies voor een vergelijkbare prijs?
+            Fonteq alternatief: meer functies uit één kraan?
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             De <strong>Fonteq</strong> is een betaalbare kokend water kraan. Toch zoeken veel mensen een{' '}
-            <strong>alternatief voor Fonteq</strong> dat naast kokend water ook gefilterd of bruisend
+            <strong>alternatief voor Fonteq</strong> dat naast kokend water ook gefilterd, gekoeld of bruisend
             water levert. We zetten de serieuze opties naast elkaar, inclusief de 4-in-1 osmosekraan.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -137,7 +137,7 @@ export default function FonteqAlternatiefPage() {
 
         <QuickAnswer
           question="Wat is het beste Fonteq alternatief?"
-          answer="Een Fonteq alternatief levert dezelfde kokendwaterfunctie, vaak met meer mogelijkheden. De beste keuze is een 4-in-1 kraan met ingebouwd osmosefilter: die biedt ook gefilterd koud en bruisend water dat de Fonteq niet standaard heeft. De Fonteq bevat geen volwaardig osmosefilter; een osmosesysteem beschermt de kraan bij hard water en verbetert de smaak."
+          answer="Een Fonteq alternatief levert dezelfde heetwaterfunctie, vaak met meer mogelijkheden. Onze keuze is de PureAqua 4-in-1 kraan met ingebouwd osmosefilter (1.948 euro): die geeft ook gekoeld en osmose-gezuiverd water, maar geen bruisend water. De Fonteq bevat geen volwaardig osmosefilter; een osmosesysteem beschermt de kraan bij hard water en verbetert de smaak."
         />
 
         <section>
@@ -160,7 +160,7 @@ export default function FonteqAlternatiefPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Voor wie ook puur gefilterd of bruisend water wil, zijn er alternatieven die meer bieden.
+            Voor wie ook puur gefilterd, gekoeld of bruisend water wil, zijn er alternatieven die meer bieden. Voor bruisend water kijk je naar een Quooker met CUBE; de 4-in-1 kraan geeft gekoeld en gezuiverd water.
             Begrijp eerst de categorie via onze gids over{' '}
             <Link href="/heet-water-kraan" className="text-[#005F8A] underline">heet water kranen</Link>.
           </p>
@@ -208,7 +208,7 @@ export default function FonteqAlternatiefPage() {
           content="fonteq-alternatief-cta"
           label="Een 4-in-1 kraan met kokend en gefilterd water"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan is een volwaardig alternatief met kokend en gefilterd water. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan is een alternatief met zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />
@@ -217,8 +217,8 @@ export default function FonteqAlternatiefPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Conclusie</h2>
           <p className="text-gray-700 leading-relaxed">
             Fonteq is een scherp geprijsde keuze voor wie alleen kokend water zoekt. Maar voor wie ook
-            gefilterd of bruisend water wil, biedt een <strong>4-in-1 kraan met osmosefilter</strong> een
-            completer pakket. Vergelijk verder met{' '}
+            gekoeld en osmose-gezuiverd water wil, biedt een <strong>4-in-1 kraan met osmosefilter</strong> volgens ons een
+            completer pakket, tegen een duidelijk hogere prijs (1.948 euro). Wil je bruisend water, kijk dan naar een Quooker met CUBE. Vergelijk verder met{' '}
             <Link href="/selsiuz-alternatief" className="text-[#005F8A] underline">het Selsiuz alternatief</Link>{' '}
             of de{' '}
             <Link href="/vergelijken/kokend-water-kraan-merken" className="text-[#005F8A] underline">merkvergelijking</Link>.

@@ -42,12 +42,12 @@ const faqItems = [
   {
     question: 'Is een Grohe Blue duur vergeleken met alternatieven?',
     answer:
-      'De Grohe Blue zit in het premium segment, zeker de Home met koeling en bruisend water, plus de lopende kosten van filters en CO2. Een 4-in-1 kraan met ingebouwd osmosefilter levert kokend, koud gefilterd, warm en bruisend water indicatief voor 699 tot 899 euro plus installatie. Voor wie meer functies wil, is dat vaak een gunstiger verhouding tussen prijs en functies.',
+      'De Grohe Blue zit in het premium segment, zeker de Home met koeling en bruisend water, plus de lopende kosten van filters en CO2. De PureAqua 4-in-1 kraan met ingebouwd osmosefilter kost 1.948 euro (installatie optioneel 299 euro) en levert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water plus gewoon warm en koud water, maar geen bruisend water. Wie bubbels wil, blijft bij de Grohe Blue Home of een Quooker met CUBE beter uit.',
   },
   {
     question: 'Is een Grohe Blue de prijs waard?',
     answer:
-      'Voor wie gekoeld en bruisend gefilterd water uit een strakke kraan wil, kan de Grohe Blue de investering waard zijn. Houd wel rekening met de terugkerende kosten van filters en CO2. Wil je ook kokend water, een bredere filtering of een lagere totaalprijs, dan biedt een 4-in-1 osmosekraan meer functies voor minder geld.',
+      'Voor wie gekoeld en bruisend gefilterd water uit een strakke kraan wil, kan de Grohe Blue de investering waard zijn. Houd wel rekening met de terugkerende kosten van filters en CO2. Wil je ook zeer heet water en een bredere filtering en kun je bubbels missen, dan is een 4-in-1 osmosekraan (PureAqua: 1.948 euro) het vergelijken waard. Voor een lagere totaalprijs met bubbels is een SodaStream met filterkan goedkoper.',
   },
 ];
 
@@ -124,7 +124,7 @@ export default function GroheBluePrijsPage() {
 
         <QuickAnswer
           question="Wat kost een Grohe Blue?"
-          answer="De aanschaf ligt indicatief tussen 800 en 1.800 euro: Grohe Blue Pure (gefilterd) aan de onderkant, Grohe Blue Home (gefilterd, gekoeld en bruisend) aan de bovenkant, exclusief installatie (circa 150 tot 400 euro). Daar komen terugkerende kosten bij voor filterpatronen en, bij Home, CO2-cilinders. Een 4-in-1 osmosekraan biedt kokend, gefilterd en bruisend water vaak voor een lagere totaalprijs. Bedragen zijn indicatief; controleer actuele prijzen bij de verkoper."
+          answer="De aanschaf ligt indicatief tussen 800 en 1.800 euro: Grohe Blue Pure (gefilterd) aan de onderkant, Grohe Blue Home (gefilterd, gekoeld en bruisend) aan de bovenkant, exclusief installatie (circa 150 tot 400 euro). Daar komen terugkerende kosten bij voor filterpatronen en, bij Home, CO2-cilinders. Een 4-in-1 osmosekraan (PureAqua: 1.948 euro) geeft zeer heet, gekoeld en osmose-gezuiverd water, maar geen bubbels. Bedragen zijn indicatief; controleer actuele prijzen bij de verkoper."
         />
 
         <section>
@@ -165,8 +165,8 @@ export default function GroheBluePrijsPage() {
             <Link href="/grohe-blue-filter" className="text-[#005F8A] underline">Grohe Blue filter</Link>.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Een 4-in-1 kraan met ingebouwd osmosefilter heeft ook filters, maar geen losse CO2 nodig voor
-            bruisend water en biedt daarnaast kokend water. De volledige afweging staat op{' '}
+            Een 4-in-1 kraan met ingebouwd osmosefilter heeft ook filters, maar geen CO2: die geeft geen
+            bruisend water, wel zeer heet (circa 96 graden) en gekoeld water. De volledige afweging staat op{' '}
             <Link href="/grohe-blue-alternatief" className="text-[#005F8A] underline">Grohe Blue alternatief</Link>.
           </p>
         </section>
