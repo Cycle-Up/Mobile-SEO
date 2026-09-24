@@ -155,8 +155,9 @@ export default function SodaStreamCo2Page() {
           <p className="text-gray-700 leading-relaxed">
             Overweeg je in plaats van losse cilinders een vaste oplossing met gefilterd bruiswater? Lees{' '}
             <Link href="/sodastream-alternatief" className="text-[#005F8A] underline">SodaStream alternatief</Link>{' '}
-            of bekijk de{' '}
-            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan</Link>.
+            Vind je gekoeld, zeer heet en osmose-gezuiverd water belangrijker dan bubbels, bekijk dan de{' '}
+            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan</Link>{' '}
+            (die geeft geen bruisend water, maar werkt prima samen met een SodaStream met osmosewater).
           </p>
         </section>
 

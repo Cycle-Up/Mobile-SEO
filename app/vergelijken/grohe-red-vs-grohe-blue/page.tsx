@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Grohe Red vs Grohe Blue - kokend versus gefilterd/bruisend (2026)',
       description:
-        'Een eerlijke vergelijking van Grohe Red (kokend) en Grohe Blue (gefilterd/gekoeld/bruisend), met het 4-in-1 alternatief dat beide combineert.',
+        'Een eerlijke vergelijking van Grohe Red (kokend) en Grohe Blue (gefilterd/gekoeld/bruisend), met het 4-in-1 alternatief voor heet en gekoeld osmosewater (zonder bruis).',
       url: 'https://waterfilterplatform.nl/vergelijken/grohe-red-vs-grohe-blue',
       type: 'article',
       locale: 'nl_NL',
@@ -33,12 +33,12 @@ const faqItems = [
   {
     question: 'Kan een Grohe Red ook bruisend of gefilterd water maken?',
     answer:
-      'Nee. De Grohe Red richt zich op kokend water; het filterpatroon beschermt vooral de boiler tegen kalk en is geen osmose. Voor gekoeld, gefilterd of bruisend water is de Grohe Blue bedoeld, of een 4-in-1 osmosekraan die kokend en bruisend combineert.',
+      'Nee. De Grohe Red richt zich op kokend water; het filterpatroon beschermt vooral de boiler tegen kalk en is geen osmose. Voor gekoeld, gefilterd of bruisend water is de Grohe Blue bedoeld. Een 4-in-1 osmosekraan combineert zeer heet en gekoeld osmose-gezuiverd water, maar geen bruisend water.',
   },
   {
     question: 'Levert de Grohe Blue ook kokend water?',
     answer:
-      'Nee. De Grohe Blue levert gefilterd, gekoeld en bruisend water, geen kokend water. Voor kokend water is er de Grohe Red. Wil je beide functies in een kraan, dan is een 4-in-1 osmosekraan de logische keuze.',
+      'Nee. De Grohe Blue levert gefilterd, gekoeld en bruisend water, geen kokend water. Voor kokend water is er de Grohe Red. Wil je heet en gekoeld gefilterd water in een kraan, dan is een 4-in-1 osmosekraan een logische keuze; bruisend water geeft de PureAqua 4-in-1 niet.',
   },
   {
     question: 'Wat kost een Grohe Red vergeleken met een Grohe Blue?',
@@ -48,19 +48,19 @@ const faqItems = [
   {
     question: 'Is er een kraan die kokend en bruisend water combineert?',
     answer:
-      'Ja. Een 4-in-1 kraan met ingebouwd osmosefilter levert kokend, koud gefilterd, warm en bruisend water uit een kraan, vaak voor een lagere totaalprijs dan een Grohe Red en Grohe Blue afzonderlijk. Interessant als je niet wilt kiezen tussen heet en bruisend/gefilterd.',
+      'Ja. Een Quooker met CUBE combineert kokend, gekoeld en bruisend water (Flex PRO3 met CUBE: 2.240 euro bij PureAqua), met een koolfilter. De PureAqua 4-in-1 kraan met ingebouwd osmosefilter (1.948 euro) combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, maar geen bruisend water. Interessant als je heet en gefilterd water belangrijker vindt dan bubbels.',
   },
 ];
 
 const vergelijking = [
   {
     naam: '4-in-1 osmosekraan',
-    type: 'Kokend + gefilterd + bruisend',
-    kokend: 'Ja',
-    bruisend: 'Ja',
+    type: 'Zeer heet + gekoeld + osmose-gezuiverd',
+    kokend: 'Zeer heet (circa 96 graden)',
+    bruisend: 'Nee',
     filter: 'Osmose (breed)',
     highlight: true,
-    notitie: 'Combineert beide werelden, vaak voor de laagste totaalprijs.',
+    notitie: 'Heet en gekoeld osmosewater uit een kraan voor 1.948 euro (PureAqua); geen bruisend water.',
   },
   {
     naam: 'Grohe Red',
@@ -90,7 +90,7 @@ export default function GroheRedVsGroheBluePage() {
         article={{
           title: 'Grohe Red vs Grohe Blue: kokend of gefilterd/bruisend?',
           description:
-            'Een eerlijke vergelijking van Grohe Red (kokend) en Grohe Blue (gefilterd/gekoeld/bruisend), met een 4-in-1 osmosekraan als alternatief dat beide combineert.',
+            'Een eerlijke vergelijking van Grohe Red (kokend) en Grohe Blue (gefilterd/gekoeld/bruisend), met een 4-in-1 osmosekraan (heet en gekoeld osmosewater, zonder bruis) als alternatief.',
           datePublished: '2026-05-30',
           dateModified: '2026-05-30',
           url: 'https://waterfilterplatform.nl/vergelijken/grohe-red-vs-grohe-blue',
@@ -121,7 +121,7 @@ export default function GroheRedVsGroheBluePage() {
           <p className="text-gray-600 text-lg mb-6">
             <strong>Grohe Red</strong> en <strong>Grohe Blue</strong> komen uit dezelfde familie, maar
             doen iets compleet anders: de Red levert kokend water, de Blue gefilterd, gekoeld en bruisend
-            water. We vergelijken ze eerlijk - en laten zien wanneer een 4-in-1 kraan beide combineert.
+            water. We vergelijken ze eerlijk en laten zien wanneer een 4-in-1 kraan met heet en gekoeld osmosewater logischer is.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -146,7 +146,7 @@ export default function GroheRedVsGroheBluePage() {
 
         <QuickAnswer
           question="Grohe Red of Grohe Blue?"
-          answer="Kies de Grohe Red als je direct kokend water wilt voor thee, koffie en koken. Kies de Grohe Blue als je koud, gefilterd en (Home) bruisend water uit de kraan wilt; kokend water levert die niet. Ze overlappen dus nauwelijks: Red is heet, Blue is koud/gefilterd/bruisend. Wil je beide, dan combineert een 4-in-1 osmosekraan kokend, gefilterd en bruisend water in een kraan, vaak voor een lagere totaalprijs. Prijzen indicatief; controleer bij de verkoper."
+          answer="Kies de Grohe Red als je direct kokend water wilt voor thee, koffie en koken. Kies de Grohe Blue als je koud, gefilterd en (Home) bruisend water uit de kraan wilt; kokend water levert die niet. Ze overlappen dus nauwelijks: Red is heet, Blue is koud/gefilterd/bruisend. Wil je heet en gekoeld gefilterd water in een kraan, dan combineert een 4-in-1 osmosekraan zeer heet, gekoeld en osmose-gezuiverd water; bruisend water zit er niet in. Prijzen indicatief; controleer bij de verkoper."
         />
 
         <section>
@@ -191,7 +191,7 @@ export default function GroheRedVsGroheBluePage() {
             {[
               ['Kies Grohe Red als...', 'Direct kokend water je hoofddoel is voor thee, koffie en koken.'],
               ['Kies Grohe Blue als...', 'Je vooral koud, gefilterd en bruisend water uit de kraan wilt.'],
-              ['Twijfel je tussen heet en bruisend?', 'Dan kies je eigenlijk tussen twee functies - een 4-in-1 osmosekraan biedt ze allebei.'],
+              ['Twijfel je tussen heet en gekoeld?', 'Een 4-in-1 osmosekraan biedt zeer heet en gekoeld gezuiverd water, maar geen bruisend water. Voor kokend en bruisend samen kijk je naar een Quooker met CUBE.'],
               ['Wil je bredere filtering?', 'Beide gebruiken geen osmose; een 4-in-1 osmosekraan filtert breder (lood, PFAS).'],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
@@ -215,7 +215,7 @@ export default function GroheRedVsGroheBluePage() {
           content="vergelijken-grohe-red-vs-grohe-blue-cta"
           label="PureAqua 4-in-1 kraan"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />
@@ -242,7 +242,7 @@ export default function GroheRedVsGroheBluePage() {
               ['/vergelijken/quooker-vs-grohe-red', 'Quooker vs Grohe Red', 'Twee kokend-water kranen'],
               ['/vergelijken/selsiuz-vs-grohe-blue', 'Selsiuz vs Grohe Blue', 'Kokend versus gefilterd/bruisend'],
               ['/grohe-red', 'Over Grohe Red', 'Werking, modellen en prijs'],
-              ['/4-in-1-kraan', '4-in-1 kraan', 'Kokend, gefilterd en bruisend uit een kraan'],
+              ['/4-in-1-kraan', '4-in-1 kraan', 'Zeer heet, gekoeld en gezuiverd uit een kraan'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">{t}</p>

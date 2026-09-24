@@ -47,7 +47,7 @@ const faqItems = [
   {
     question: 'Is een bruiswaterkraan op termijn voordeliger dan een SodaStream?',
     answer:
-      'Een bruiswaterkraan of 4-in-1 kraan heeft een hogere aanschaf en installatie, maar levert gekoeld en vaak gefilterd bruiswater zonder flessen vullen. Of dat op termijn voordeliger is, hangt af van je verbruik en of je ook gefilterd of kokend water wilt. Voor wie veel bruiswater drinkt en gemak zoekt, kan de kraan aantrekkelijk zijn; voor incidenteel gebruik is de SodaStream goedkoper.',
+      'Een bruiswaterkraan (zoals een Quooker met CUBE of Grohe Blue) heeft een hogere aanschaf en installatie, maar levert gekoeld en vaak gefilterd bruiswater zonder flessen vullen. Let op: niet elke 4-in-1 kraan geeft bruisend water; de PureAqua 4-in-1 bijvoorbeeld niet. Of dat op termijn voordeliger is, hangt af van je verbruik en of je ook gefilterd of kokend water wilt. Voor wie veel bruiswater drinkt en gemak zoekt, kan de kraan aantrekkelijk zijn; voor incidenteel gebruik is de SodaStream goedkoper.',
   },
 ];
 
@@ -166,8 +166,9 @@ export default function SodaStreamPrijsPage() {
             Wil je gefilterd en gekoeld bruiswater zonder flessen vullen, vergelijk dan met een vaste kraan
             op{' '}
             <Link href="/sodastream-alternatief" className="text-[#005F8A] underline">SodaStream alternatief</Link>{' '}
-            of bekijk de{' '}
-            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan</Link>.
+            Vind je gekoeld, zeer heet en osmose-gezuiverd water belangrijker dan bubbels, bekijk dan de{' '}
+            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan</Link>{' '}
+            (geen bruisend water, wel te combineren met je SodaStream).
           </p>
         </section>
 

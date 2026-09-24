@@ -47,7 +47,7 @@ const faqItems = [
   {
     question: 'Is Selsiuz een goede keuze?',
     answer:
-      'Selsiuz is een gevestigd Nederlands merk met degelijke kokendwaterkranen en strak design. Of het de beste keuze is, hangt af van je wensen: zoek je alleen kokend water met een premium uitstraling, dan is Selsiuz sterk. Wil je ook gefilterd of bruisend water of een lagere totaalprijs, vergelijk dan met alternatieven zoals een 4-in-1 osmosekraan.',
+      'Selsiuz is een gevestigd Nederlands merk met degelijke kokendwaterkranen en strak design. Of het de beste keuze is, hangt af van je wensen: zoek je alleen kokend water met een premium uitstraling, dan is Selsiuz sterk. Wil je ook osmose-gezuiverd en gekoeld water, vergelijk dan met alternatieven zoals een 4-in-1 osmosekraan.',
   },
 ];
 
@@ -123,7 +123,7 @@ export default function SelsiuzPage() {
 
         <QuickAnswer
           question="Wat moet je weten over de Selsiuz kokend water kraan?"
-          answer="Selsiuz is een Nederlands merk van kokend water kranen met een combi-boiler en strak design. Een Selsiuz levert kokend, koud en warm water, maar heeft geen standaard osmosefilter. De aanschaf ligt indicatief tussen 1.000 en 1.700 euro exclusief installatie, plus lopende kosten voor stroom en onderhoud. Sterk voor wie kokend water en design zoekt; wil je ook gefilterd of bruisend water of een lagere prijs, vergelijk dan met een 4-in-1 osmosekraan."
+          answer="Selsiuz is een Nederlands merk van kokend water kranen met een combi-boiler en strak design. Een Selsiuz levert kokend, koud en warm water, maar heeft geen standaard osmosefilter. De aanschaf ligt indicatief tussen 1.000 en 1.700 euro exclusief installatie, plus lopende kosten voor stroom en onderhoud. Sterk voor wie kokend water en design zoekt; wil je ook osmose-gezuiverd en gekoeld water, vergelijk dan met een 4-in-1 osmosekraan."
         />
 
         <section>
@@ -177,10 +177,10 @@ export default function SelsiuzPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Selsiuz versus een 4-in-1 osmosekraan</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Selsiuz is sterk voor wie primair kokend water en design zoekt. Wie ook puur gefilterd of
-            bruisend water wil, of een lagere totaalprijs, vindt een 4-in-1 kraan met ingebouwd
-            osmosefilter vaak een completer pakket: kokend, koud gefilterd, warm en bruisend water uit een
-            kraan, inclusief een{' '}
+            Selsiuz is sterk voor wie primair kokend water en design zoekt. Wie ook osmose-gezuiverd en
+            gekoeld water wil, vindt een 4-in-1 kraan met ingebouwd osmosefilter vaak een completer pakket:
+            gewoon warm en koud kraanwater, plus gezuiverd water op kamertemperatuur, gekoeld en zeer heet
+            (circa 96 graden) uit een kraan, inclusief een{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose installatie</Link>.
             De volledige afweging lees je op{' '}
             <Link href="/selsiuz-alternatief" className="text-[#005F8A] underline">Selsiuz alternatief</Link>.

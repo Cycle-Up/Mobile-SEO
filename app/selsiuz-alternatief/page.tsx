@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Selsiuz alternatief vergelijken - beste opties 2026',
       description:
-        'Selsiuz levert kokend water in strak design. Maar een 4-in-1 kraan met osmose biedt ook gefilterd en bruisend water, vaak voor minder geld.',
+        'Selsiuz levert kokend water in strak design. Een 4-in-1 kraan met osmose biedt daarnaast gekoeld en osmose-gezuiverd water uit dezelfde kraan.',
       url: 'https://waterfilterplatform.nl/selsiuz-alternatief',
       type: 'article',
       locale: 'nl_NL',
@@ -28,12 +28,12 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor de Selsiuz kokend water kraan?',
     answer:
-      'De sterkste alternatieven voor de Selsiuz zijn een 4-in-1 kraan met ingebouwd osmosefilter, de Quooker en de Grohe Red. Selsiuz is een Nederlands merk met strak design en een betrouwbare kokendwaterfunctie. Wie naast kokend water ook puur gefilterd en bruisend water wil, vindt een 4-in-1 osmosekraan een completer pakket - meestal voor een lagere prijs.',
+      'De sterkste alternatieven voor de Selsiuz zijn een 4-in-1 kraan met ingebouwd osmosefilter, de Quooker en de Grohe Red. Selsiuz is een Nederlands merk met strak design en een betrouwbare kokendwaterfunctie. Wie naast heet water ook osmose-gezuiverd en gekoeld water wil, vindt een 4-in-1 osmosekraan een completer pakket. Goedkoper is die niet: de PureAqua 4-in-1 kost 1.948 euro.',
   },
   {
     question: 'Is er een goedkoper alternatief dan Selsiuz?',
     answer:
-      'Ja. Een Selsiuz set met combi-boiler kost doorgaans tussen de 1.000 en 1.700 euro. Een 4-in-1 kraan met osmosefilter levert kokend, koud gefilterd, warm en bruisend water voor 699 tot 899 euro. De aanschafprijs ligt daarmee lager terwijl er een volwaardig osmosesysteem bij zit.',
+      'Een Selsiuz set met combi-boiler kost doorgaans tussen de 1.000 en 1.700 euro. Zoek je alleen kokend water voor minder, kijk dan naar instapmodellen van andere merken. De PureAqua 4-in-1 kraan met osmosefilter is niet goedkoper: die kost 1.948 euro (installatie optioneel 299 euro). Daarvoor krijg je naast warm en koud kraanwater ook gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) uit een volwaardig osmosesysteem. Bruisend water zit er niet in.',
   },
   {
     question: 'Heeft de Selsiuz een waterfilter ingebouwd?',
@@ -43,12 +43,12 @@ const faqItems = [
   {
     question: 'Selsiuz of Quooker - wat is beter?',
     answer:
-      'Beide zijn kwaliteitsmerken voor kokend water. Quooker heeft het grootste dealernetwerk en naamsbekendheid in Nederland; Selsiuz biedt vergelijkbare functies vaak tegen een iets lagere prijs. Geen van beide bevat standaard een osmosefilter. Zoek je gefilterd plus bruisend water in een kraan, dan is een 4-in-1 osmosekraan een logischer keuze dan beide.',
+      'Beide zijn kwaliteitsmerken voor kokend water. Quooker heeft het grootste dealernetwerk en naamsbekendheid in Nederland; Selsiuz biedt vergelijkbare functies vaak tegen een iets lagere prijs. Geen van beide bevat standaard een osmosefilter. Zoek je osmose-gezuiverd en gekoeld water uit een kraan, dan is een 4-in-1 osmosekraan een logischer keuze dan beide. Wil je bruisend water, kijk dan naar een Quooker met CUBE of een Grohe Blue.',
   },
   {
     question: 'Kun je een Selsiuz alternatief zelf installeren?',
     answer:
-      'Een 4-in-1 kraan met osmosefilter is in de meeste gevallen zelf te installeren met standaard aansluitingen onder het aanrecht, inclusief Nederlandstalige handleiding. Daarmee bespaar je op installatiekosten die bij merken als Selsiuz en Quooker vaak via een dealer lopen.',
+      'Voor een 4-in-1 kraan met osmosefilter raden we installatie door een installateur aan. Onder de spoelbak komen twee apparaten (heet-/koelunit en osmose-unit) en je hebt twee stopcontacten nodig. PureAqua biedt installatie aan voor 299 euro. Bij merken als Selsiuz en Quooker loopt installatie vaak via een dealer.',
   },
   {
     question: 'Is Selsiuz een betrouwbaar merk?',
@@ -60,13 +60,13 @@ const faqItems = [
 const topAlternatieven = [
   {
     naam: '4-in-1 kraan met osmose',
-    prijs: 'EUR 699-899',
-    kokend: 'Ja (100 graden)',
+    prijs: 'EUR 1.948 (PureAqua)',
+    kokend: 'Zeer heet (circa 96 graden)',
     gefilterd: 'Ja (osmose ingebouwd)',
-    bruisend: 'Ja, standaard',
-    installatie: 'Zelf installeerbaar',
+    bruisend: 'Nee',
+    installatie: 'Installateur aanbevolen (PureAqua: 299 euro)',
     highlight: true,
-    notitie: 'Meest complete pakket voor de laagste prijs, met ingebouwd osmosefilter.',
+    notitie: 'Zeer heet, gekoeld en osmose-gezuiverd water uit een kraan; geen bruisend water.',
   },
   {
     naam: 'Selsiuz (referentie)',
@@ -162,7 +162,7 @@ export default function SelsiuzAlternatiefPage() {
 
         <QuickAnswer
           question="Wat is het beste Selsiuz alternatief?"
-          answer="Een Selsiuz alternatief levert dezelfde kokendwaterfunctie, vaak goedkoper. De beste alternatieven zijn 4-in-1 kranen met ingebouwd osmosefilter: die bieden ook gefilterd koud en bruisend water dat de Selsiuz niet standaard heeft. Selsiuz en Quooker hebben geen volwaardig osmosefilter; bij hard water beschermt een osmosesysteem de kraan en verbetert het de smaak."
+          answer="Een Selsiuz alternatief levert vergelijkbaar heet water, soms goedkoper. Wil je ook gezuiverd water, dan vinden wij een 4-in-1 kraan met ingebouwd osmosefilter het sterkste alternatief: die geeft ook gekoeld en osmose-gezuiverd water dat de Selsiuz niet standaard heeft, maar geen bruisend water, en de PureAqua 4-in-1 kost met 1.948 euro meer dan een Selsiuz. Selsiuz en Quooker hebben geen volwaardig osmosefilter; bij hard water beschermt een osmosesysteem de kraan en verbetert het de smaak."
         />
 
         <section>
@@ -188,8 +188,7 @@ export default function SelsiuzAlternatiefPage() {
           </div>
           <p className="text-gray-700 leading-relaxed">
             De Selsiuz is sterk voor wie primair kokend water zoekt. Maar voor wie ook puur
-            gefilterd of bruisend water wil, of een lagere totaalprijs, zijn er alternatieven die
-            meer bieden. Lees meer over{' '}
+            gefilterd of bruisend water wil, zijn er alternatieven die meer bieden. Lees meer over{' '}
             <Link href="/heet-water-kraan" className="text-[#005F8A] underline">heet water kranen</Link> om
             de categorie beter te begrijpen.
           </p>
@@ -238,19 +237,19 @@ export default function SelsiuzAlternatiefPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom een 4-in-1 osmosekraan het meest complete alternatief is</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom wij een 4-in-1 osmosekraan het meest complete alternatief vinden</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Van alle alternatieven is de 4-in-1 kraan met osmosefilter het enige systeem dat kokend
-            water, koud gefilterd water, warm water en bruisend water combineert in een kraan -
+            De PureAqua 4-in-1 kraan met osmosefilter combineert gewoon warm en koud kraanwater met
+            gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) in een kraan,
             inclusief een ingebouwde{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose installatie</Link>.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
             {[
-              ['4-in-1 functies standaard', 'Kokend, koud gefilterd, warm en bruisend water uit een kraan. Geen losse carbonator nodig.'],
-              ['Osmosefilter ingebouwd', 'Verwijdert kalk, chloor, nitraat en microplastics. Standaard in het pakket, niet als dure optie.'],
-              ['Lagere prijs', 'Een complete set kost 699-899 euro, ruim onder een vergelijkbare Selsiuz- of Quooker-opstelling.'],
-              ['Zelf te installeren', 'Met standaard aansluitingen plaats je de kraan zelf, zonder verplichte dealer.'],
+              ['4-in-1 functies standaard', 'Warm en koud kraanwater plus gezuiverd, gekoeld en zeer heet water uit een kraan. Bruisend water zit er niet in.'],
+              ['Osmosefilter ingebouwd', 'Osmose in drie stappen. SGS-labtest op een nieuw systeem: PFOS meer dan 99,6%, PFOA 99,5% en lood meer dan 99,8% minder.'],
+              ['Prijs', 'De PureAqua 4-in-1 kost 1.948 euro. Dat is meer dan een Selsiuz, maar circa 300 euro minder dan een Quooker Flex PRO3 met CUBE (2.240 euro bij PureAqua).'],
+              ['Installatie en onderhoud', 'Installateur aanbevolen (PureAqua: 299 euro). Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar.'],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold text-gray-800 mb-1">{t}</p>
@@ -272,7 +271,7 @@ export default function SelsiuzAlternatiefPage() {
           content="selsiuz-alternatief-cta"
           label="Bekijk de PureAqua 4-in-1 kraan (Selsiuz-alternatief)"
           title="Liever direct kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan levert kokend en gefilterd water en is een alternatief voor de Selsiuz. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan levert zeer heet, gekoeld en osmose-gezuiverd water en is een alternatief voor de Selsiuz. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />
@@ -300,9 +299,9 @@ export default function SelsiuzAlternatiefPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Conclusie: welk alternatief past bij jou?</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
             Selsiuz is een kwalitatief sterk product voor wie design en kokend water vooropstelt.
-            Maar voor de meeste huishoudens die ook puur gefilterd of bruisend water willen, of die
-            slimmer met hun budget omgaan, biedt een <strong>4-in-1 kraan met osmosefilter</strong> een
-            completer pakket voor minder geld.
+            Maar voor huishoudens die ook osmose-gezuiverd en gekoeld water willen, biedt een{' '}
+            <strong>4-in-1 kraan met osmosefilter</strong> volgens ons een completer pakket. Goedkoper is
+            die niet, en bruisend water zit er niet in.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Verder vergelijken? Lees over{' '}

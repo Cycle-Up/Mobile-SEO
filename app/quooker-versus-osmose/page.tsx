@@ -35,7 +35,7 @@ const faqItems = [
   {
     question: 'Wat is goedkoper: Quooker of osmose?',
     answer:
-      'Een standalone osmose filter kost €150–500 inclusief installatie. Een Quooker kost €1.000–1.800 en levert primair kokend water. De systemen zijn functioneel niet direct vergelijkbaar: een Quooker geeft kokend water, een osmose filter geeft puur drinkwater. Wil je zowel kokend als gefilterd water, vergelijk dan een Quooker + osmose combinatie (€1.500–2.500) met een 4-in-1 osmose kraan (€700–1.000). Die laatste combinatie is doorgaans goedkoper voor hetzelfde functiepakket.',
+      'Een standalone osmose filter kost €150–500 inclusief installatie. Een Quooker kost €1.000–1.800 en levert primair kokend water. De systemen zijn functioneel niet direct vergelijkbaar: een Quooker geeft kokend water, een osmose filter geeft puur drinkwater. Wil je zowel heet als gefilterd water, vergelijk dan een Quooker + osmose combinatie (€1.500–2.500) met een 4-in-1 osmose kraan zoals de PureAqua 4-in-1 (€1.948, installatie optioneel €299). Die geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water uit één kraan, maar geen bruisend water.',
   },
   {
     question: 'Welk systeem kies ik bij hard water?',
@@ -50,7 +50,7 @@ const faqItems = [
   {
     question: 'Is een 4-in-1 osmose kraan een Quooker-alternatief?',
     answer:
-      'Ja. Een 4-in-1 osmose kraan levert kokend, koud gefilterd, warm en bruisend water uit één kraan — met een ingebouwd RO-filter. De aanschafprijs is doorgaans €600–1.000, aanzienlijk minder dan een vergelijkbare Quooker met CUBE. Bovendien zit volledige RO-filtratie standaard ingebouwd. Voor wie vanaf nul begint én zowel kokend als gefilterd water wil, is de 4-in-1 osmose kraan het meest complete en kostenefficiënte alternatief.',
+      'Ja. De PureAqua 4-in-1 osmose kraan levert gewoon warm en koud kraanwater, plus gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) uit één kraan, met ingebouwde omgekeerde osmose. Bruisend water geeft hij niet. Hij kost €1.948, circa €300 minder dan een Quooker Flex PRO3 met CUBE (€2.240 bij PureAqua), die met actieve kool filtert in plaats van osmose. Voor wie vanaf nul begint en zowel heet als osmose-gezuiverd water wil, is de 4-in-1 volgens ons een sterk alternatief.',
   },
   {
     question: 'Wat is beter voor babyvoeding: Quooker of osmose water?',
@@ -196,8 +196,8 @@ export default function QuookerVersusOsmosePage() {
                   { criterium: 'Microplastics', quooker: '✗', osmose: '✓ (RO-membraan <0,0001 µm)' },
                   { criterium: 'Zware metalen', quooker: '✗', osmose: '✓ 95–99%' },
                   { criterium: 'Kokend water (100°C)', quooker: '✓', osmose: '✗ (apart systeem nodig)' },
-                  { criterium: 'Bruisend water', quooker: '✓ (met CUBE)', osmose: '✓ (bij 4-in-1 kraan)' },
-                  { criterium: 'Gekoeld water (4°C)', quooker: '✓ (met CUBE)', osmose: '✓ (bij sommige 4-in-1 systemen)' },
+                  { criterium: 'Bruisend water', quooker: '✓ (met CUBE)', osmose: '✗ (ook niet bij de PureAqua 4-in-1)' },
+                  { criterium: 'Gekoeld water', quooker: '✓ (met CUBE, 4°C)', osmose: '✓ (bij de PureAqua 4-in-1, circa 5°C)' },
                   { criterium: 'Aanschafprijs', quooker: '€1.000–1.800', osmose: '€150–500' },
                   { criterium: 'Jaarlijkse kosten', quooker: '€110–175 (incl. CUBE)', osmose: '€60–110' },
                   { criterium: 'Geschikt voor hard water', quooker: '✗', osmose: '✓' },
@@ -382,27 +382,27 @@ export default function QuookerVersusOsmosePage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">De 4-in-1 osmose kraan als alternatief voor Quooker</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Wie zowel kokend als gefilterd water wil zonder de Quooker-prijs, kiest steeds vaker voor een{' '}
+            Wie zowel heet als osmose-gezuiverd water wil, kiest steeds vaker voor een{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 osmose kraan</Link>.
-            Dit type combineert vier functies — kokend, koud gefilterd (RO), warm en bruisend — in één systeem met ingebouwde RO-filtratie.
+            De PureAqua 4-in-1 geeft gewoon warm en koud kraanwater, plus gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden), met ingebouwde RO-filtratie. Bruisend water zit er niet in.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
             {[
               {
-                titel: 'Zelfde functies als Quooker + CUBE',
-                tekst: 'Kokend, koud gefilterd, warm én bruisend water uit één kraan — identiek aan het functiepakket van de Quooker Fusion met CUBE.',
+                titel: 'Heet, gekoeld en gezuiverd uit één kraan',
+                tekst: 'Zeer heet (circa 96 graden), gekoeld (circa 5 graden) en osmose-gezuiverd water. Anders dan een Quooker met CUBE geen bruisend water.',
               },
               {
                 titel: 'Volledige RO-filtratie ingebouwd',
-                tekst: 'Kalk, nitraat, PFAS, zware metalen en microplastics worden 95–99% verwijderd. Standaard ingebouwd, geen losse osmose-installatie nodig.',
+                tekst: 'Osmose in drie stappen (voorfilter, membraan, remineralisatie). SGS-labtest op een nieuw systeem: PFOS meer dan 99,6%, PFOA 99,5% en lood meer dan 99,8% minder.',
               },
               {
-                titel: 'Lagere aanschafprijs',
-                tekst: 'Complete 4-in-1 set: €699–899. Quooker Fusion FILTER + CUBE: €1.500–2.200 exclusief installatie.',
+                titel: 'Iets lagere aanschafprijs',
+                tekst: 'PureAqua 4-in-1: €1.948. Quooker Flex PRO3 met CUBE: €2.240 (prijzen PureAqua, september 2026).',
               },
               {
-                titel: 'Veelal zelf installeerbaar',
-                tekst: 'Met standaard koudwateraansluitingen onder het aanrecht plaatsen veel huishoudens een 4-in-1 set zelf, zonder installateur.',
+                titel: 'Installatie en ruimte',
+                tekst: 'Onder de spoelbak komen twee apparaten (heet-/koelunit en osmose-unit) en je hebt twee stopcontacten nodig. Installatie door een installateur is aanbevolen; PureAqua biedt dat aan voor €299.',
               },
             ].map(b => (
               <div key={b.titel} className="bg-gray-50 rounded-xl p-4">

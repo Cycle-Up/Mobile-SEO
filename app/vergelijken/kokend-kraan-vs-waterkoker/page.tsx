@@ -119,7 +119,7 @@ export default function KokendKraanVsWaterkokerPage() {
               ["Kies een waterkoker als...", "Budget voorop staat en je af en toe heet water nodig hebt."],
               ["Kies een kokend water kraan als...", "Je dagelijks vaak kokend water gebruikt en comfort en ruimte belangrijk vindt."],
               ["Reken de TCO...", "Tel aanschaf, energie en levensduur over meerdere jaren bij elkaar op."],
-              ["Overweeg 4-in-1...", "Een 4-in-1 kraan combineert kokend, gefilterd en bruisend water."],
+              ["Overweeg 4-in-1...", "Een 4-in-1 kraan met osmose combineert zeer heet (circa 96 graden), gekoeld en gezuiverd water."],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold text-gray-800 mb-1">{t}</p>
@@ -136,7 +136,7 @@ export default function KokendKraanVsWaterkokerPage() {
           content="vergelijken-kokend-kraan-vs-waterkoker-cta"
           label="Bekijk de PureAqua 4-in-1 kraan"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />
@@ -162,7 +162,7 @@ export default function KokendKraanVsWaterkokerPage() {
             {[
               ["/kokend-water-kraan", "Kokend water kranen", "Merken en werking"],
               ["/kennisbank/kokend-water-kraan-kosten", "Kosten kokend water kraan", "Aanschaf en energie"],
-              ["/4-in-1-kraan", "4-in-1 kraan", "Kokend, gefilterd, bruisend"],
+              ["/4-in-1-kraan", "4-in-1 kraan", "Zeer heet, gekoeld, gezuiverd"],
               ["/vergelijken/kokend-water-kraan-merken", "Merken vergelijken", "Alle merken op een rij"],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">

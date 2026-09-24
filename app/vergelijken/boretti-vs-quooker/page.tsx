@@ -48,19 +48,19 @@ const faqItems = [
   {
     question: 'Is er een goedkoper alternatief voor Boretti en Quooker?',
     answer:
-      'Ja. Een 4-in-1 kraan met ingebouwd osmosefilter levert kokend, koud gefilterd, warm en bruisend water indicatief voor 699 tot 899 euro plus installatie - meestal onder een vergelijkbare Boretti- of Quooker-opstelling, en met een volwaardig osmosefilter erbij.',
+      'Voor alleen kokend water zijn instapmodellen van Boretti en Quooker het goedkoopst. Wil je ook gekoeld en gefilterd water, dan is de PureAqua 4-in-1 kraan met ingebouwd osmosefilter (1.948 euro, installatie optioneel 299 euro) circa 300 euro goedkoper dan een Quooker Flex PRO3 met CUBE (2.240 euro bij PureAqua). De 4-in-1 geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, maar geen bruisend water.',
   },
 ];
 
 const vergelijking = [
   {
     naam: '4-in-1 osmosekraan',
-    prijs: 'EUR 699-899',
-    kokend: 'Ja (100 graden)',
-    extra: 'Koud gefilterd + bruisend',
+    prijs: 'EUR 1.948 (PureAqua)',
+    kokend: 'Zeer heet (circa 96 graden)',
+    extra: 'Gekoeld + osmose-gezuiverd, geen bruisend',
     filter: 'Osmose ingebouwd',
     highlight: true,
-    notitie: 'Meest complete pakket met osmose, vaak de laagste totaalprijs.',
+    notitie: 'Heet, gekoeld en osmose-gezuiverd water uit een kraan; installatie optioneel 299 euro.',
   },
   {
     naam: 'Boretti',
@@ -146,7 +146,7 @@ export default function BorettiVsQuookerPage() {
 
         <QuickAnswer
           question="Boretti of Quooker?"
-          answer="Beide leveren direct kokend water uit een premium kraan. Quooker heeft het grootste dealer- en servicenetwerk in Nederland en met de CUBE ook gekoeld en bruisend water; Boretti is vaak scherper geprijsd. Geen van beide heeft standaard een volledig osmosefilter. Wil je naast kokend water ook puur gefilterd en bruisend water, vaak voor een lagere totaalprijs, dan is een 4-in-1 osmosekraan het overwegen waard. Prijzen indicatief; controleer bij de verkoper."
+          answer="Beide leveren direct kokend water uit een premium kraan. Quooker heeft het grootste dealer- en servicenetwerk in Nederland en met de CUBE ook gekoeld en bruisend water; Boretti is vaak scherper geprijsd. Geen van beide heeft standaard een volledig osmosefilter. Wil je naast heet water ook osmose-gezuiverd en gekoeld water, dan is een 4-in-1 osmosekraan het overwegen waard; bruisend water geeft de PureAqua 4-in-1 niet. Prijzen indicatief; controleer bij de verkoper."
         />
 
         <section>
@@ -192,7 +192,7 @@ export default function BorettiVsQuookerPage() {
               ['Kies Boretti als...', 'Je een scherpere prijs zoekt binnen een keukenmerk en kokend water je hoofddoel is.'],
               ['Kies Quooker als...', 'Je waarde hecht aan het grootste dealer-/servicenetwerk en de optie van gekoeld/bruisend via de CUBE.'],
               ['Kies geen van beide als...', 'Je een volwaardig osmosefilter wilt - dat zit bij beide niet standaard.'],
-              ['Kies een 4-in-1 osmose als...', 'Je kokend, gefilterd en bruisend water wilt combineren, vaak voor een lagere totaalprijs.'],
+              ['Kies een 4-in-1 osmose als...', 'Je zeer heet, gekoeld en osmose-gezuiverd water wilt combineren en bruisend water niet nodig hebt.'],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold text-gray-800 mb-1">{t}</p>
@@ -215,7 +215,7 @@ export default function BorettiVsQuookerPage() {
           content="vergelijken-boretti-vs-quooker-cta"
           label="Bekijk de PureAqua 4-in-1 kraan"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />

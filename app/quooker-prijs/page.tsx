@@ -50,7 +50,7 @@ const faqItems = [
   {
     question: 'Is een Quooker duur vergeleken met alternatieven?',
     answer:
-      'Een Quooker PRO3 zonder extras is all-in (inclusief installatie) beschikbaar voor €1.000 tot €1.500. Een complete Quooker met FILTER en CUBE loopt op tot €2.700 of meer. Een 4-in-1 kraan met ingebouwd osmosefilter biedt vergelijkbare functies (kokend, koud gefilterd, warm, bruisend) voor €699 tot €899 plus €100 tot €200 installatie — totaal €800 tot €1.100 all-in. Dat is €500 tot €1.600 minder voor een vergelijkbaar functiepakket.',
+      'Een Quooker PRO3 zonder extras is all-in (inclusief installatie) beschikbaar voor €1.000 tot €1.500. Een complete Quooker met FILTER en CUBE loopt op tot €2.700 of meer. Bij PureAqua kost een Quooker Flex PRO3 met CUBE (kokend, gekoeld en bruisend) €2.240. De PureAqua 4-in-1 kraan met ingebouwd osmosefilter kost €1.948, plus optioneel €299 installatie. Die geeft warm en koud kraanwater plus gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden), maar geen bruisend water. Het prijsverschil met een Flex PRO3 met CUBE is dus circa €300.',
   },
   {
     question: 'Wat kost het Quooker serviceabonnement?',
@@ -98,11 +98,11 @@ const tcoData = [
     totaal5jaar: '€2.549–3.124',
   },
   {
-    systeem: '4-in-1 osmose kraan',
-    aanschaf: '€699–899',
-    installatie: '€100–200',
-    onderhoud: '€80–120/jaar',
-    totaal5jaar: '€1.199–1.699',
+    systeem: '4-in-1 osmose kraan (PureAqua)',
+    aanschaf: '€1.948',
+    installatie: '€299 (optioneel)',
+    onderhoud: 'Voor- en remineralisatiefilter jaarlijks, membraan elke 2 jaar',
+    totaal5jaar: '€1.948–2.247 plus filters en stroom',
   },
   {
     systeem: 'Waterkoker + sodamaker + osmose',
@@ -196,7 +196,7 @@ export default function QuookerPrijsPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
 
-        <QuickAnswer answer="Een Quooker kost €849–2.299 afhankelijk van het model. Daarbij komen installatiekosten (€150–400), jaarlijkse filterpatronen (€20–25) en servicekosten. De totale 5-jaarskosten liggen op €1.400–3.500. Een 4-in-1 kokend waterfilter kraan met osmose biedt vergelijkbare functies met betere waterfiltratie vanaf €699–899 all-in." />
+        <QuickAnswer answer="Een Quooker kost €849–2.299 afhankelijk van het model. Daarbij komen installatiekosten (€150–400), jaarlijkse filterpatronen (€20–25) en servicekosten. De totale 5-jaarskosten liggen op €1.400–3.500. De PureAqua 4-in-1 kraan met osmose kost €1.948 (installatie optioneel €299) en geeft zeer heet, gekoeld en osmose-gezuiverd water, maar geen bruisend water." />
 
         {/* Prijsoverzicht alle modellen */}
         <section>
@@ -434,7 +434,7 @@ export default function QuookerPrijsPage() {
                 </li>
                 <li className="flex gap-2">
                   <span className="text-gray-500 shrink-0">→</span>
-                  Het budget maximaal €1.100–1.500 all-in is voor kokend + bruisend + gefilterd
+                  Je gekoeld, zeer heet en osmose-gezuiverd water wilt en bruisend water niet nodig hebt
                 </li>
                 <li className="flex gap-2">
                   <span className="text-gray-500 shrink-0">→</span>
@@ -446,7 +446,7 @@ export default function QuookerPrijsPage() {
                 </li>
                 <li className="flex gap-2">
                   <span className="text-gray-500 shrink-0">→</span>
-                  Een 4-in-1 kraan meer functies voor minder geld biedt in jouw situatie
+                  Een 4-in-1 kraan met osmose beter aansluit bij wat je uit de kraan wilt
                 </li>
               </ul>
             </div>

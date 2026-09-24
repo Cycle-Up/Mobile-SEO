@@ -216,7 +216,7 @@ export default function PfasWaterfilterKopenPage() {
                 nr: '5',
                 titel: 'Combineer PFAS-filter met kokend water',
                 tekst:
-                  'De meest praktische oplossing voor Nederlandse huishoudens is een 4-in-1 kokend-water-kraan met geintegreerde omgekeerde osmose. U krijgt koud, warm, kokend en gefilterd water uit één kraan, terwijl het osmosemembraan alle PFAS verwijdert. Installatie is eenmalig en onderhoud is minimaal.',
+                  'Een praktische oplossing voor veel Nederlandse huishoudens is een 4-in-1 kraan met omgekeerde osmose. U krijgt gewoon warm en koud kraanwater, plus gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) uit één kraan. In een SGS-labtest op een nieuw systeem van de PureAqua 4-in-1 daalde PFOS met meer dan 99,6% en PFOA met 99,5%. Installatie door een installateur is aanbevolen; het voorfilter en remineralisatiefilter vervangt u circa jaarlijks, het membraan circa elke twee jaar.',
               },
             ].map(item => (
               <div key={item.nr} className="flex gap-4 items-start">

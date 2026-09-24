@@ -48,7 +48,7 @@ const faqItems = [
   {
     question: 'Is er een alternatief dat osmose met kokend en bruisend water combineert?',
     answer:
-      'Ja. Een 4-in-1 kraan met ingebouwd osmosefilter levert kokend, koud gefilterd, warm en bruisend water uit een kraan. Dat is interessant als je naast osmosewater ook heet en bruisend water wilt zonder losse apparaten. Voor puur osmosewater blijven onder-aanrecht systemen of een werkblad-unit prima keuzes.',
+      'Deels. De PureAqua 4-in-1 kraan met ingebouwd osmosefilter levert gewoon warm en koud kraanwater, plus osmose-gezuiverd water op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) uit een kraan. Bruisend water geeft hij niet; daarvoor combineer je hem met bijvoorbeeld een SodaStream. Dat is interessant als je naast osmosewater ook heet en gekoeld water wilt uit een kraan. Voor puur osmosewater blijven onder-aanrecht systemen of een werkblad-unit prima keuzes.',
   },
 ];
 
@@ -76,9 +76,9 @@ const vergelijking = [
     plaatsing: 'Verborgen, een kraan',
     installatie: 'Eenmalig',
     capaciteit: 'Hoog, continu',
-    filters: 'Osmose + kokend/bruisend',
+    filters: 'Osmose + zeer heet/gekoeld',
     highlight: true,
-    notitie: 'Osmose plus kokend en bruisend water uit een kraan.',
+    notitie: 'Osmose plus zeer heet en gekoeld water uit een kraan; geen bruisend water.',
   },
 ];
 
@@ -146,7 +146,7 @@ export default function WaterdropVsAquaTruPage() {
 
         <QuickAnswer
           question="Waterdrop of AquaTru?"
-          answer="Beide gebruiken omgekeerde osmose met vergelijkbare filtering (circa 95 tot 99 procent van opgeloste stoffen). Kies Waterdrop onder-aanrecht als je het systeem uit het zicht wilt, met een eigen kraan en hoger doorlopend volume. Kies AquaTru als je geen installatie wilt: een werkblad-unit, handig in een huurwoning, maar met beperkt tankvolume en vaak proprietaire filters. Beoordeel per model de verifieerbare certificering en de filterkosten over meerdere jaren. Wil je osmose plus kokend en bruisend water, dan is een 4-in-1 osmosekraan het overwegen waard."
+          answer="Beide gebruiken omgekeerde osmose met vergelijkbare filtering (circa 95 tot 99 procent van opgeloste stoffen). Kies Waterdrop onder-aanrecht als je het systeem uit het zicht wilt, met een eigen kraan en hoger doorlopend volume. Kies AquaTru als je geen installatie wilt: een werkblad-unit, handig in een huurwoning, maar met beperkt tankvolume en vaak proprietaire filters. Beoordeel per model de verifieerbare certificering en de filterkosten over meerdere jaren. Wil je osmose plus zeer heet en gekoeld water uit een kraan, dan is een 4-in-1 osmosekraan het overwegen waard (bruisend water geeft de PureAqua 4-in-1 niet)."
         />
 
         <section>
@@ -193,7 +193,7 @@ export default function WaterdropVsAquaTruPage() {
               ['Kies Waterdrop als...', 'Je het systeem uit het zicht wilt onder de gootsteen, met een eigen kraan en meer volume.'],
               ['Kies AquaTru als...', 'Je niet wilt of kunt installeren; plug-and-play op het werkblad, handig tijdelijk of bij huur.'],
               ['Let bij beide op...', 'Verifieerbare NSF/ANSI-certificering per contaminant en de filterkosten over meerdere jaren.'],
-              ['Wil je meer dan osmose?', 'Een 4-in-1 osmosekraan combineert osmose met kokend en bruisend water.'],
+              ['Wil je meer dan osmose?', 'Een 4-in-1 osmosekraan combineert osmose met zeer heet en gekoeld water (geen bruisend).'],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold text-gray-800 mb-1">{t}</p>
@@ -236,7 +236,7 @@ export default function WaterdropVsAquaTruPage() {
               ['/omgekeerde-osmose', 'Omgekeerde osmose', 'Werking, kosten, voordelen en nadelen'],
               ['/waterdrop', 'Over Waterdrop', 'Osmosesystemen en filters van het merk'],
               ['/beste-osmosefilter-2026', 'Beste osmosefilter 2026', 'Koopgids met shortlist en criteria'],
-              ['/4-in-1-kraan', '4-in-1 kraan', 'Osmose plus kokend en bruisend water'],
+              ['/4-in-1-kraan', '4-in-1 kraan', 'Osmose plus zeer heet en gekoeld water'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">{t}</p>

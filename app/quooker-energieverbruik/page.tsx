@@ -43,7 +43,7 @@ const faqItems = [
   {
     question: 'Hoe verhoudt de Quooker zich qua energieverbruik met een 4-in-1 kraan?',
     answer:
-      'Een 4-in-1 osmose kraan heeft ook een boiler voor kokend water en verbruikt daarvoor vergelijkbaar 10–20W in stand-by. Sommige modellen met actief koelen (voor gekoeld en bruisend water) voegen 5–10W toe voor de compressor. Per saldo is het jaarlijkse energieverbruik van een 4-in-1 kraan vergelijkbaar met een Quooker PRO3 zonder CUBE: circa 88–149 kWh/jaar. Het grote verschil zit in de filterwerkzaamheid — een 4-in-1 osmose kraan filtert via een RO-membraan — niet in het energieverbruik.',
+      'Een 4-in-1 osmose kraan heeft ook een boiler, bij de PureAqua 4-in-1 voor zeer heet water van circa 96 graden, en verbruikt daarvoor in stand-by vergelijkbaar 10–20W. Omdat de PureAqua 4-in-1 ook water koelt (tot circa 5 graden), komt daar stroom voor de koeling bij. Het jaarlijkse verbruik ligt daardoor eerder in de buurt van een Quooker met CUBE dan van een Quooker PRO3 zonder CUBE. Het grote verschil zit in de filterwerkzaamheid — een 4-in-1 osmose kraan filtert via een RO-membraan — niet in het energieverbruik.',
   },
   {
     question: 'Verbruikt een Quooker meer energie bij kalk?',

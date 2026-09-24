@@ -25,16 +25,16 @@ export function generateMetadata(): Metadata {
 const faqItems = [
   {
     question: "Wat is voordeliger: 4-in-1 of aparte systemen?",
-    answer: "Dat hangt af van de opstelling. Vergelijk de totale kosten inclusief installatie en filters. Een 4-in-1 bespaart ruimte; aparte systemen geven meer flexibiliteit.",
+    answer: "Dat hangt af van de opstelling. Vergelijk de totale kosten inclusief installatie en filters. De PureAqua 4-in-1 kost 1.948 euro (installatie optioneel 299 euro). Een 4-in-1 bespaart een extra kraan op het aanrecht; aparte systemen geven meer flexibiliteit.",
   },
   {
     question: "Kan ik onderdelen los vervangen bij een 4-in-1?",
-    answer: "Beperkter dan bij aparte systemen, omdat functies in een toestel zitten. Bij losse systemen vervang of upgrade je elk onderdeel apart.",
+    answer: "De filters wel: bij de PureAqua 4-in-1 vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar. De kraan, heet-/koelunit en osmose-unit horen wel bij elkaar. Bij losse systemen vervang of upgrade je elk onderdeel apart.",
   },
 ];
 
 const vergelijking = [
-  { naam: "4-in-1 kraan", c1: "Kokend + gefilterd + bruisend", c2: "Compact, een kraan", c3: "Alles in een", highlight: true },
+  { naam: "4-in-1 kraan", c1: "Zeer heet + gekoeld + gefilterd (PureAqua: geen bruisend)", c2: "Een kraan; onder de spoelbak twee apparaten en twee stopcontacten", c3: "Alles in een kraan", highlight: true },
   { naam: "Aparte systemen", c1: "Per toestel een functie", c2: "Meer ruimte", c3: "Los te vervangen" },
 ];
 
@@ -71,7 +71,7 @@ export default function VierInEenVsApartPage() {
             <span>4-in-1 kraan vs apart</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">4-in-1 kraan vs aparte osmose en kokend water</h1>
-          <p className="text-gray-600 text-lg mb-6">Een <strong>4-in-1 kraan</strong> combineert kokend, koud gefilterd, warm en bruisend water; <strong>aparte systemen</strong> doen elk een ding. We vergelijken functies, ruimte en prijs.</p>
+          <p className="text-gray-600 text-lg mb-6">Een <strong>4-in-1 kraan</strong> met osmose combineert gewoon warm en koud kraanwater met gezuiverd, gekoeld en zeer heet water; <strong>aparte systemen</strong> doen elk een ding. We vergelijken functies, ruimte en prijs.</p>
           <div className="flex flex-wrap gap-3">
             <Link href="/4-in-1-kraan" className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm">4-in-1 kraan overzicht</Link>
             <Link href="/omgekeerde-osmose/kopen" className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors text-sm">Osmosesysteem kopen</Link>
@@ -83,7 +83,7 @@ export default function VierInEenVsApartPage() {
         <MethodologyBadge lastReviewed="2026-06-02" sources={['RIVM', 'KWR Water Research Institute', 'NSF/ANSI normen']} />
         <AuthorBox datePublished="2026-06-02" />
 
-        <QuickAnswer question="4-in-1 kraan of aparte systemen?" answer="Een 4-in-1 kraan bundelt kokend, gefilterd, warm en vaak bruisend water in een toestel en kraan, wat ruimte en bedieningsgemak oplevert. Aparte systemen (bijvoorbeeld een osmosesysteem plus een kokend water kraan) geven meer flexibiliteit en zijn los te vervangen, maar vragen meer ruimte en aansluitingen. De keuze hangt af van ruimte, budget en hoeveel functies je echt gebruikt." />
+        <QuickAnswer question="4-in-1 kraan of aparte systemen?" answer="Een 4-in-1 kraan bundelt heet, gefilterd en warm water (bij sommige merken ook bruisend, bij de PureAqua 4-in-1 niet) in een kraan, wat aanrechtruimte en bedieningsgemak oplevert. Onder de spoelbak staan bij de PureAqua 4-in-1 wel twee apparaten. Aparte systemen (bijvoorbeeld een osmosesysteem plus een kokend water kraan) geven meer flexibiliteit en zijn los te vervangen, maar vragen meer ruimte en aansluitingen. De keuze hangt af van ruimte, budget en hoeveel functies je echt gebruikt." />
 
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Naast elkaar</h2>
@@ -116,10 +116,10 @@ export default function VierInEenVsApartPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wanneer kies je wat?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
             {[
-              ["Kies 4-in-1 als...", "Je meerdere functies in een compacte, nette opstelling wilt."],
+              ["Kies 4-in-1 als...", "Je meerdere functies uit een kraan wilt en onder de spoelbak ruimte hebt voor twee apparaten."],
               ["Kies apart als...", "Je maximale flexibiliteit wilt en onderdelen los wilt kunnen vervangen."],
               ["Let op de prijs...", "Vergelijk de totale opstelling inclusief installatie en filters."],
-              ["Let op onderhoud...", "Bij een 4-in-1 zit alles in een toestel; bij apart onderhoud je per systeem."],
+              ["Let op onderhoud...", "Bij een 4-in-1 onderhoud je een samenhangend systeem (filters jaarlijks, membraan elke twee jaar); bij apart onderhoud je per systeem."],
             ].map(([t, d]) => (
               <div key={t} className="bg-gray-50 rounded-xl p-4">
                 <p className="font-semibold text-gray-800 mb-1">{t}</p>
@@ -136,7 +136,7 @@ export default function VierInEenVsApartPage() {
           content="vergelijken-vier-in-een-vs-apart-cta"
           label="Bekijk de PureAqua 4-in-1 kraan"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="osmose" />
@@ -160,7 +160,7 @@ export default function VierInEenVsApartPage() {
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              ["/4-in-1-kraan", "4-in-1 kraan", "Kokend, gefilterd, bruisend"],
+              ["/4-in-1-kraan", "4-in-1 kraan", "Zeer heet, gekoeld, gezuiverd"],
               ["/omgekeerde-osmose", "Omgekeerde osmose", "Zuiver drinkwater"],
               ["/kokend-water-kraan", "Kokend water kraan", "Merken en werking"],
               ["/vergelijken/kokend-kraan-vs-waterkoker", "Kraan vs waterkoker", "Kosten en gemak"],

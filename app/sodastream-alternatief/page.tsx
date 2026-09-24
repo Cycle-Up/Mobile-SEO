@@ -27,17 +27,17 @@ const faqItems = [
   {
     question: 'Wat is het beste alternatief voor SodaStream?',
     answer:
-      'Het beste alternatief voor SodaStream hangt af van je gebruik en budget. Voor mensen die veel bruisend water drinken en ook gefilterd of kokend water willen, is een 4-in-1 kraan met onderbouwde carbonator de meest complete oplossing. Dit type kraan levert bruisend, koud gefilterd, warm en kokend water uit één punt. Over drie jaar is dat doorgaans goedkoper dan continu CO2-patronen kopen.',
+      'Het beste alternatief voor SodaStream hangt af van je gebruik en budget. Voor mensen die veel bruisend water drinken en ook kokend of gekoeld water willen, is een bruiswaterkraan met onderbouwde carbonator, zoals een Quooker met CUBE of een Grohe Blue, de meest complete oplossing. Goedkoper dan een SodaStream is dat niet: een Quooker Flex PRO3 met CUBE kost bij PureAqua 2.240 euro. Let op: niet elke 4-in-1 kraan geeft bruisend water; de PureAqua 4-in-1 bijvoorbeeld niet.',
   },
   {
     question: 'Is een alternatief voor SodaStream goedkoper?',
     answer:
-      'Op lange termijn meestal wel. Een SodaStream-apparaat kost 60 tot 130 euro, maar de CO2-patronen (60 liter per patroon, prijs circa 10–15 euro) stapelen snel op. Bij intensief gebruik zijn de jaarlijkse patronenkosten 40 tot 80 euro of meer. Een 4-in-1 kransysteem heeft hogere aanschafkosten, maar het CO2-systeem in de carbonator levert meer liter per vulling en de totale kosten per liter bruisend water liggen lager na circa twee jaar.',
+      'Op lange termijn meestal wel. Een SodaStream-apparaat kost 60 tot 130 euro, maar de CO2-patronen (60 liter per patroon, prijs circa 10–15 euro) stapelen snel op. Bij intensief gebruik zijn de jaarlijkse patronenkosten 40 tot 80 euro of meer. Een bruiswaterkraan heeft veel hogere aanschafkosten (een Quooker Flex PRO3 met CUBE kost 2.240 euro). Het CO2-systeem levert meer liter per vulling, maar alleen op bruiswater verdien je die aanschaf in de praktijk niet terug.',
   },
   {
     question: 'Kan ik SodaStream vervangen door een kraan met bruisend water?',
     answer:
-      'Ja. Een onderbouwde carbonator die is gekoppeld aan een 4-in-1 kraan maakt bruisend water direct aan het aanrecht. Je hoeft geen fles te vullen, te schudden of te wisselen — je draait gewoon de kraan open. Bovendien is het water al gefilterd via omgekeerde osmose voordat het wordt gecarboniseerd, wat resulteert in schoner en frisser bruisend water dan SodaStream met gewoon kraanwater.',
+      'Ja. Een onderbouwde carbonator die is gekoppeld aan een bruiswaterkraan, zoals een Quooker met CUBE of een Grohe Blue, maakt bruisend water direct aan het aanrecht. Je hoeft geen fles te vullen, te schudden of te wisselen; je draait gewoon de kraan open. Deze systemen filteren met actieve kool, niet met omgekeerde osmose. De PureAqua 4-in-1 kraan geeft wel osmose-gezuiverd water, maar geen bruisend water.',
   },
   {
     question: 'Wat zijn de nadelen van SodaStream?',
@@ -45,9 +45,9 @@ const faqItems = [
       'De voornaamste nadelen van SodaStream zijn: je moet patronen retourneren of kopen, de CO2-patronen zijn duurder per liter dan onderbouwde systemen, je hebt een aparte machine nodig op het aanrecht, je moet flessen vullen en omdraaien, en het water is ongefilterd tenzij je apart filtert. Bij een kransysteem vervalt al die handeling.',
   },
   {
-    question: 'Is bruisend water uit een 4-in-1 kraan beter dan SodaStream?',
+    question: 'Is bruisend water uit een kraan beter dan SodaStream?',
     answer:
-      'Op meerdere punten wel. Een 4-in-1 kraan met ingebouwd osmose filter gebruikt gefilterd water als basis voor het bruisende water. SodaStream gebruikt standaard ongefilterd leidingwater. Bovendien is het carbonisatieniveau bij een kraansysteem consistent instelbaar en hoef je geen flessen te hanteren. De initiële investering is hoger, maar het gebruiksgemak en de kwaliteit zijn doorgaans beter.',
+      'Qua gemak wel. Een bruiswaterkraan zoals een Quooker met CUBE of een Grohe Blue filtert het water met actieve kool voordat het bruisend wordt. SodaStream gebruikt standaard ongefilterd leidingwater. Bij een kraansysteem hoef je geen flessen te hanteren. De investering is wel veel hoger. Een 4-in-1 kraan met osmose, zoals de PureAqua 4-in-1, geeft geen bruisend water; wel kun je osmosewater uit die kraan in een SodaStream gebruiken.',
   },
 ];
 
@@ -63,13 +63,13 @@ const vergelijkingData = [
     highlight: false,
   },
   {
-    systeem: '4-in-1 kraan met carbonator',
-    aanschaf: '€ 699–899',
-    co2kosten: 'Groot CO2-cilinder (± € 30 per vulling, ~300–500 L)',
-    gefilterd: 'Ja (osmose ingebouwd)',
-    kokend: 'Ja (100°C)',
+    systeem: 'Bruiswaterkraan (bijv. Quooker met CUBE)',
+    aanschaf: '€ 2.240 (Quooker Flex PRO3 met CUBE)',
+    co2kosten: 'CO2-cilinder (± € 60–100 per jaar)',
+    gefilterd: 'Ja (actieve kool, geen osmose)',
+    kokend: 'Ja (bij Quooker)',
     gebruiksgemak: 'Uitstekend (direct uit kraan)',
-    jaarKosten: '± € 30–60/jaar CO2 + filters',
+    jaarKosten: '± € 80–125/jaar CO2 + filter',
     highlight: true,
   },
   {
@@ -120,8 +120,8 @@ export default function SodaStreamAlternatiefPage() {
           <p className="text-gray-600 text-lg mb-6">
             SodaStream is een handige manier om thuis bruisend water te maken. Maar wie dagelijks veel bruisend
             water drinkt, merkt dat de CO2-patronen snel oplopen in kosten en gedoe. Er zijn serieuze
-            <strong> alternatieven voor SodaStream</strong> die goedkoper zijn, gefilterd water gebruiken
-            en geen flessen wisselen vereisen. We leggen de opties naast elkaar.
+            <strong> alternatieven voor SodaStream</strong> die gefilterd water gebruiken en geen flessen
+            wisselen vereisen, al zijn die in aanschaf flink duurder. We leggen de opties naast elkaar.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -203,8 +203,8 @@ export default function SodaStreamAlternatiefPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Alternatieven voor SodaStream</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
-            Er zijn twee hoofdcategorieën van alternatieven: onderbouwde carbonators gekoppeld aan een 4-in-1
-            kraan, en het kopen van bruisend water in flessen. We bespreken beide opties eerlijk.
+            Er zijn twee hoofdcategorieën van alternatieven: onderbouwde carbonators gekoppeld aan een
+            bruiswaterkraan, en het kopen van bruisend water in flessen. We bespreken beide opties eerlijk.
           </p>
 
           <div className="space-y-5">
@@ -212,27 +212,30 @@ export default function SodaStreamAlternatiefPage() {
             <div className="border border-[#005F8A] bg-[#E0F2FE] rounded-2xl p-5">
               <div className="flex items-start gap-3 mb-3">
                 <span className="bg-[#005F8A] text-white text-xs font-bold px-2.5 py-1 rounded-full shrink-0 mt-0.5">Optie 1</span>
-                <h3 className="font-bold text-gray-900 text-lg">4-in-1 kraan met onderbouwde carbonator</h3>
+                <h3 className="font-bold text-gray-900 text-lg">Bruiswaterkraan met onderbouwde carbonator</h3>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                De meest complete oplossing is een 4-in-1 kraan met een geïntegreerde onderbouwde carbonator.
+                De meest complete oplossing is een bruiswaterkraan met een onderbouwde carbonator, zoals een
+                Quooker met CUBE of een Grohe Blue.
                 Het CO2-systeem zit onder het aanrecht, gekoppeld aan een grotere CO2-cilinder (doorgaans
                 400–600 gram). Dat levert 300 tot 500 liter bruisend water per vulling — veel meer dan de
                 60 liter van een SodaStream-patroon.
               </p>
               <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                Dit type systeem combineert dit met een{' '}
-                <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose filter</Link>,
-                kokend water en warm water in dezelfde kraan. Je hebt dus geen apart SodaStream-apparaat,
-                geen flessen op het aanrecht en geen retourpunten meer nodig. Alles vanuit één kraanpunt.
+                Een Quooker met CUBE combineert dit met een koolfilter, kokend en gekoeld water in dezelfde
+                kraan. Je hebt dus geen apart SodaStream-apparaat, geen flessen op het aanrecht en geen
+                retourpunten meer nodig. Wil je{' '}
+                <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link>,
+                dan is een 4-in-1 kraan met osmose zoals de PureAqua 4-in-1 een optie, maar die geeft
+                geen bruisend water.
               </p>
               <div className="grid grid-cols-2 gap-2 text-xs text-gray-700">
-                <div className="bg-white rounded-lg p-2.5">+ Bruisend, gefilterd, kokend en warm water in één</div>
+                <div className="bg-white rounded-lg p-2.5">+ Bruisend, gefilterd, kokend en gekoeld water in één</div>
                 <div className="bg-white rounded-lg p-2.5">+ Geen flessen wisselen of retourneren</div>
-                <div className="bg-white rounded-lg p-2.5">+ Lager kostprijs per liter bruisend water</div>
-                <div className="bg-white rounded-lg p-2.5">+ Gefilterd water via osmose als basis</div>
-                <div className="bg-white rounded-lg p-2.5">- Hogere aanschafprijs</div>
-                <div className="bg-white rounded-lg p-2.5">- Installatie nodig (zelf mogelijk)</div>
+                <div className="bg-white rounded-lg p-2.5">+ Grotere CO2-cilinder dan een SodaStream</div>
+                <div className="bg-white rounded-lg p-2.5">+ Gefilterd water (actieve kool) als basis</div>
+                <div className="bg-white rounded-lg p-2.5">- Veel hogere aanschafprijs</div>
+                <div className="bg-white rounded-lg p-2.5">- Installatie nodig</div>
               </div>
             </div>
 
@@ -323,14 +326,14 @@ export default function SodaStreamAlternatiefPage() {
                 noot: 'Op basis van 12 patronen per jaar bij dagelijks gebruik door 2 personen.',
               },
               {
-                naam: '4-in-1 kraan met carbonator',
-                aanschaf: '€ 700–1.000',
-                jaar1: '€ 850 + ± € 90 filters + ± € 30 CO2 = € 970',
-                jaar2: '± € 90 filters + ± € 30 CO2 = € 120',
-                jaar3: '± € 90 filters + ± € 30 CO2 = € 120',
-                totaal3jaar: '± € 1.159',
+                naam: 'Bruiswaterkraan (Quooker Flex PRO3 met CUBE)',
+                aanschaf: '€ 2.240',
+                jaar1: '€ 2.240 + ± € 100 CO2 en filter = € 2.340',
+                jaar2: '± € 100 CO2 en filter',
+                jaar3: '± € 100 CO2 en filter',
+                totaal3jaar: '± € 2.540',
                 highlight: true,
-                noot: 'Inclusief osmose filters. CO2-cilinder levert 300–500 L per vulling.',
+                noot: 'PureAqua-prijs september 2026, exclusief installatie. Je krijgt er ook kokend en gekoeld water bij.',
               },
               {
                 naam: 'Bruisend water in flessen (supermarkt)',
@@ -363,9 +366,10 @@ export default function SodaStreamAlternatiefPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed mt-4 text-sm">
-            Let op: de 4-in-1 kran is in jaar 1 de duurste keuze door de aanschafkosten. Vanaf jaar 2 liggen
-            de lopende kosten lager dan SodaStream bij intensief gebruik. Bovendien krijg je er gefilterd
-            drinkwater en kokend water bij — functies die SodaStream niet heeft.
+            Let op: de bruiswaterkraan is over drie jaar de duurste keuze. Alleen op bruiswater verdien je
+            hem niet terug; je betaalt voor gemak en voor gefilterd, kokend en gekoeld water, functies die
+            SodaStream niet heeft. Wil je vooral osmose-gezuiverd, gekoeld en zeer heet water, dan kun je
+            ook een 4-in-1 kraan met osmose (zonder bruisend) combineren met een losse SodaStream.
           </p>
         </section>
 
@@ -391,7 +395,7 @@ export default function SodaStreamAlternatiefPage() {
               {
                 titel: 'Je budget is beperkt',
                 tekst:
-                  'De aanschafprijs van een SodaStream begint bij circa 60 euro. Een complete 4-in-1 kraan kost aanmerkelijk meer. Wie nu niet kan of wil investeren, kan overwegen later over te stappen.',
+                  'De aanschafprijs van een SodaStream begint bij circa 60 euro. Een bruiswaterkraan kost aanmerkelijk meer. Wie nu niet kan of wil investeren, kan overwegen later over te stappen.',
               },
             ].map(s => (
               <div key={s.titel} className="bg-gray-50 rounded-xl p-4 flex gap-3">
@@ -407,9 +411,9 @@ export default function SodaStreamAlternatiefPage() {
 
         {/* Wanneer 4-in-1 kraan */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wanneer is een 4-in-1 kraan het betere alternatief?</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wanneer is een bruiswaterkraan het betere alternatief?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Een 4-in-1 kraan met carbonator is een significante upgrade ten opzichte van SodaStream als
+            Een bruiswaterkraan met carbonator is een significante upgrade ten opzichte van SodaStream als
             één of meer van de volgende punten voor jou gelden.
           </p>
           <div className="space-y-3">
@@ -417,17 +421,17 @@ export default function SodaStreamAlternatiefPage() {
               {
                 titel: 'Je drinkt dagelijks bruisend water',
                 tekst:
-                  'Twee of meer personen die dagelijks bruisend water drinken? Dan zijn de lopende kosten van SodaStream-patronen hoger dan bij een kraansysteem. Over twee tot drie jaar verdient een 4-in-1 kraan zich terug.',
+                  'Twee of meer personen die dagelijks bruisend water drinken? Dan is het gemak van bruisend water uit de kraan het grootst. Terugverdienen op CO2-kosten alleen doe je een kraan van ruim 2.000 euro niet.',
               },
               {
                 titel: 'Je wilt ook gefilterd drinkwater',
                 tekst:
-                  'Een 4-in-1 kraan met ingebouwde omgekeerde osmose filter levert gefilterd, kalkvrij water voor drinken en koken. SodaStream carboniseert ongefilterd kraanwater. De kwaliteit en smaak van het bruisende water zijn bij een gefilterd systeem doorgaans beter.',
+                  'Een bruiswaterkraan filtert het water (bij Quooker CUBE met actieve kool) voordat het bruisend wordt. SodaStream carboniseert ongefilterd kraanwater. Wil je osmose-gezuiverd, kalkvrij water, dan is een 4-in-1 kraan met osmose zoals de PureAqua 4-in-1 sterker, maar die geeft geen bruisend water; osmosewater uit die kraan kun je wel in een SodaStream gebruiken.',
               },
               {
                 titel: 'Je wilt ook kokend water',
                 tekst:
-                  'Naast bruisend water wil je ook instant kokend water voor thee, koffie of pasta? Een 4-in-1 kraan levert dat uit hetzelfde kraanpunt. Met SodaStream heb je daar een aparte oplossing voor nodig.',
+                  'Naast bruisend water wil je ook instant kokend water voor thee, koffie of pasta? Een Quooker met CUBE levert dat uit hetzelfde kraanpunt. Met SodaStream heb je daar een aparte oplossing voor nodig.',
               },
               {
                 titel: 'Je wilt geen gedoe meer met patronen',
@@ -437,7 +441,7 @@ export default function SodaStreamAlternatiefPage() {
               {
                 titel: 'Je wilt minder plastic',
                 tekst:
-                  'Zowel SodaStream-patronen als flessen genereren afval. Een 4-in-1 kraan heeft geen wegwerpverpakkingen. Alleen de CO2-cilinder wordt eens per periode bijgevuld of omgewisseld.',
+                  'Zowel SodaStream-patronen als flessen genereren afval. Een bruiswaterkraan heeft geen wegwerpverpakkingen. Alleen de CO2-cilinder wordt eens per periode bijgevuld of omgewisseld.',
               },
             ].map(s => (
               <div key={s.titel} className="bg-gray-50 rounded-xl p-4 flex gap-3">
@@ -450,7 +454,7 @@ export default function SodaStreamAlternatiefPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed mt-4">
-            Meer lezen over de 4-in-1 kraan? Bekijk onze gids over{' '}
+            Meer lezen over kranen met filter? Bekijk onze gids over{' '}
             <Link href="/kokend-water-kraan/met-filter" className="text-[#005F8A] underline">kokend water kraan met filter</Link>{' '}
             en lees de vergelijking met{' '}
             <Link href="/quooker-alternatief" className="text-[#005F8A] underline">alternatieven voor Quooker</Link>.
@@ -485,9 +489,9 @@ export default function SodaStreamAlternatiefPage() {
           destination="vierInEen"
           campaign="kokend-water"
           content="sodastream-alternatief-cta"
-          label="Een 4-in-1 kraan met kokend en gefilterd water"
-          title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          label="Een 4-in-1 kraan met zeer heet en gefilterd water"
+          title="Liever zeer heet, gekoeld en gefilterd water uit een kraan?"
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en osmose-gezuiverd water uit een kraan (geen bruisend water). Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="algemeen" />

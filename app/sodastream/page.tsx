@@ -42,12 +42,12 @@ const faqItems = [
   {
     question: 'Filtert een SodaStream het water?',
     answer:
-      'Nee. Een SodaStream voegt alleen koolzuur toe; het verwijdert geen kalk, chloor of verontreinigingen. Wil je naast bruisend water ook gefilterd water, dan heb je een filter of een gefilterde bruiswaterkraan nodig. Een 4-in-1 kraan combineert bijvoorbeeld gefilterd, kokend en bruisend water uit een kraan.',
+      'Nee. Een SodaStream voegt alleen koolzuur toe; het verwijdert geen kalk, chloor of verontreinigingen. Wil je naast bruisend water ook gefilterd water, dan heb je een filter of een gefilterde bruiswaterkraan nodig. Een Quooker met CUBE of een Grohe Blue geeft bijvoorbeeld gefilterd bruisend water uit de kraan. Een 4-in-1 kraan met osmose, zoals de PureAqua 4-in-1, geeft osmose-gezuiverd water maar geen bruisend water; dat water kun je wel in je SodaStream gebruiken.',
   },
   {
     question: 'SodaStream of een bruiswaterkraan?',
     answer:
-      'Een SodaStream is goedkoop in aanschaf, vraagt geen installatie en is ideaal om laagdrempelig bruiswater te maken. Een vaste bruiswaterkraan (zoals Grohe Blue of een 4-in-1 kraan) levert gekoeld en gefilterd bruiswater direct uit de kraan zonder flessen te vullen, maar kost meer en vraagt installatie. De keuze hangt af van gebruik, budget en of je ook gefilterd of kokend water wilt.',
+      'Een SodaStream is goedkoop in aanschaf, vraagt geen installatie en is ideaal om laagdrempelig bruiswater te maken. Een vaste bruiswaterkraan (zoals Grohe Blue of een Quooker met CUBE) levert gekoeld en gefilterd bruiswater direct uit de kraan zonder flessen te vullen, maar kost meer en vraagt installatie. De keuze hangt af van gebruik, budget en of je ook gefilterd of kokend water wilt.',
   },
 ];
 
@@ -122,7 +122,7 @@ export default function SodaStreamPage() {
 
         <QuickAnswer
           question="Wat moet je weten over SodaStream?"
-          answer="Een SodaStream voegt koolzuur toe aan kraanwater en maakt zo bruisend water, zonder stroom of wateraansluiting. Het filtert niet: kalk en chloor blijven in het water. De belangrijkste lopende kosten zijn de CO2-cilinders, die je via een ruilsysteem vervangt; per liter is dat doorgaans goedkoper dan flessen bruiswater. Wil je ook gefilterd of gekoeld bruiswater uit de kraan, dan is een bruiswaterkraan of 4-in-1 kraan het overwegen waard."
+          answer="Een SodaStream voegt koolzuur toe aan kraanwater en maakt zo bruisend water, zonder stroom of wateraansluiting. Het filtert niet: kalk en chloor blijven in het water. De belangrijkste lopende kosten zijn de CO2-cilinders, die je via een ruilsysteem vervangt; per liter is dat doorgaans goedkoper dan flessen bruiswater. Wil je ook gefilterd of gekoeld bruiswater uit de kraan, dan is een bruiswaterkraan zoals een Quooker met CUBE of een Grohe Blue het overwegen waard."
         />
 
         <section>
@@ -175,10 +175,11 @@ export default function SodaStreamPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">SodaStream versus een bruiswaterkraan</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Een SodaStream is laagdrempelig en goedkoop in aanschaf. Wil je gekoeld en gefilterd bruiswater
-            direct uit de kraan, zonder flessen te vullen, dan biedt een vaste bruiswaterkraan of een 4-in-1
-            kraan meer gemak. Een{' '}
+            direct uit de kraan, zonder flessen te vullen, dan biedt een vaste bruiswaterkraan zoals een
+            Quooker met CUBE of een Grohe Blue meer gemak. Een{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan</Link>{' '}
-            combineert gefilterd, kokend en bruisend water. De volledige afweging lees je op{' '}
+            met osmose geeft gezuiverd, gekoeld en zeer heet water, maar geen bruisend water; die combineer je
+            eventueel met je SodaStream. De volledige afweging lees je op{' '}
             <Link href="/sodastream-alternatief" className="text-[#005F8A] underline">SodaStream alternatief</Link>.
           </p>
         </section>
@@ -207,7 +208,7 @@ export default function SodaStreamPage() {
               ['/bruisend-water', 'Bruisend water', 'Alle opties voor bruisend water thuis'],
               ['/sodastream-co2', 'SodaStream CO2', 'Cilinders ruilen, kosten en compatibiliteit'],
               ['/sodastream-alternatief', 'SodaStream alternatief', 'Bruiswaterkraan of 4-in-1 vergeleken'],
-              ['/4-in-1-kraan', '4-in-1 kraan', 'Gefilterd, kokend en bruisend uit een kraan'],
+              ['/4-in-1-kraan', '4-in-1 kraan', 'Gezuiverd, gekoeld en zeer heet water uit een kraan'],
             ].map(([href, t, d]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
                 <p className="font-semibold text-gray-800 hover:text-[#005F8A]">{t}</p>
