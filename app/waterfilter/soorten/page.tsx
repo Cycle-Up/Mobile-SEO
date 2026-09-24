@@ -866,7 +866,7 @@ export default function WaterfilterSoortenPage() {
                       {r.type}
                       {'highlight' in r && r.highlight && (
                         <span className="ml-2 text-[10px] bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full align-middle">
-                          Aanbevolen
+                          Onze keuze
                         </span>
                       )}
                     </td>
