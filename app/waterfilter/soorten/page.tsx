@@ -859,7 +859,7 @@ export default function WaterfilterSoortenPage() {
                   { type: 'UV-filter', aanschaf: '€ 80–300', jaar: '€ 30–60', vijfJaar: '€ 230–600' },
                   { type: 'Ionenwisselaar / waterontharder', aanschaf: '€ 400–1.500', jaar: '€ 30–80', vijfJaar: '€ 550–1.900' },
                   { type: 'Omgekeerde osmose (los systeem)', aanschaf: '€ 200–500', jaar: '€ 60–110', vijfJaar: '€ 500–1.050' },
-                  { type: '4-in-1 kraan met osmose (RO + zeer heet + gekoeld)', aanschaf: '€ 1.948', jaar: '€ 120', vijfJaar: '€ 2.548', highlight: true },
+                  { type: '4-in-1 kraan met osmose (RO + zeer heet + gekoeld)', aanschaf: '€ 1.948', jaar: 'circa € 150 (gemiddeld)', vijfJaar: 'circa € 2.663', highlight: true },
                 ].map(r => (
                   <tr key={r.type} className={`border-b border-gray-100 ${'highlight' in r && r.highlight ? 'bg-[#E0F2FE]/40 font-medium' : ''}`}>
                     <td className="py-2.5 px-3 text-gray-800">
@@ -879,7 +879,7 @@ export default function WaterfilterSoortenPage() {
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            Indicatieve bedragen, 4-persoonshuishouden, mei 2026. Kosten variëren per waterhardheid en gebruik.
+            Indicatieve bedragen, 4-persoonshuishouden, mei 2026. Kosten variëren per waterhardheid en gebruik. 4-in-1: filterkosten volgens fabrikantprijzen omgerekend (september 2026).
           </p>
         </section>
 

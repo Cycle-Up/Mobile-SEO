@@ -142,7 +142,7 @@ const filterTypes = [
   {
     naam: 'Geïntegreerde 4-in-1 kokend water kraan',
     prijs: '€ 1.948',
-    onderhoud: '€ 80 – 150 / jaar',
+    onderhoud: 'gemiddeld circa € 150 / jaar (fabrikantprijzen omgerekend)',
     verwijdert: ['Zware metalen', 'Nitraten', 'Pesticiden', 'Farmaceutische residuen', 'Microplastics', 'Kalk (95–99%)', 'Chloor & geur', 'Sediment'],
     verwijdertNiet: ['Bacteriën (zonder UV-module)', 'Vluchtige organische stoffen (beperkt)'],
     installatie: 'Installateur aanbevolen (PureAqua: optioneel 299 euro)',
@@ -155,7 +155,7 @@ const filterTypes = [
 
 const vergelijkMatrix = [
   { spec: 'Aanschafprijs', koolstof: '€ 50–150', kan: '€ 20–80', roOnderbouw: '€ 150–500', roAanrecht: '€ 100–350', uv: '€ 80–250', vierin1: '€ 1.948' },
-  { spec: 'Onderhoud/jaar', koolstof: '€ 30–60', kan: '€ 60–120', roOnderbouw: '€ 50–120', roAanrecht: '€ 40–100', uv: '€ 30–80', vierin1: '€ 80–150' },
+  { spec: 'Onderhoud/jaar', koolstof: '€ 30–60', kan: '€ 60–120', roOnderbouw: '€ 50–120', roAanrecht: '€ 40–100', uv: '€ 30–80', vierin1: 'circa € 150 (gemiddeld)' },
   { spec: 'Chloor & geur', koolstof: 'Ja', kan: 'Ja', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
   { spec: 'Kalk verwijderd', koolstof: 'Nee', kan: 'Gedeeltelijk', roOnderbouw: '95–99%', roAanrecht: '95–99%', uv: 'Nee', vierin1: '95–99%' },
   { spec: 'Zware metalen', koolstof: 'Nee', kan: 'Gedeeltelijk', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
@@ -604,7 +604,7 @@ export default function WaterfilterVergelijkenPage() {
                   { type: 'Aanrecht RO', aanschaf: '€ 225', onderhoud: '€ 70/jaar', totaal: '€ 435', highlight: false },
                   { type: 'Onderbouw RO', aanschaf: '€ 325', onderhoud: '€ 85/jaar', totaal: '€ 580', highlight: false },
                   { type: 'UV-filter', aanschaf: '€ 165', onderhoud: '€ 55/jaar', totaal: '€ 330', highlight: false },
-                  { type: '4-in-1 kraan', aanschaf: '€ 1.948', onderhoud: '€ 115/jaar', totaal: '€ 2.293', highlight: true },
+                  { type: '4-in-1 kraan', aanschaf: '€ 1.948', onderhoud: 'circa € 150 (gemiddeld)', totaal: 'circa € 2.358', highlight: true },
                 ].map((r, i) => (
                   <tr key={r.type} className={r.highlight ? 'bg-[#E0F2FE] font-semibold text-[#003F5C]' : i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                     <td className="py-2.5 px-3">{r.type}</td>
@@ -618,7 +618,7 @@ export default function WaterfilterVergelijkenPage() {
           </div>
           <div className="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-gray-700">
             <strong className="text-amber-900">Kanttekening bij de 4-in-1 kraan:</strong> De 3-jaar
-            totaalkosten van €2.293 zijn inclusief aanschaf maar exclusief wat de kraan vervangt: een
+            totaalkosten van circa €2.358 (filters circa €410, fabrikantprijzen omgerekend) zijn inclusief aanschaf maar exclusief wat de kraan vervangt: een
             waterkoker (€30–80), Brita-kan (€20–50) en een los osmosesysteem. Ook als u die optelt bij
             de andere systemen, blijft de 4-in-1 duidelijk de duurste optie. U betaalt vooral voor gemak
             en de extra functies: gekoeld en zeer heet water uit dezelfde kraan.

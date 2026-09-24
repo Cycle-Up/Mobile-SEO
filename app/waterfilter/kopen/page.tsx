@@ -101,7 +101,7 @@ const filtertypes = [
     nr: 5,
     naam: '4-in-1 kraan (zeer heet + gekoeld + koud + warm + osmose)',
     prijs: '€ 1.948',
-    jaarkosten: '€ 50–150',
+    jaarkosten: 'gemiddeld circa € 150',
     zuiverheid: 'Zeer hoog (95–99% via RO)',
     onderhoud: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke 2 jaar',
     installatiegemak: 'Installateur aanbevolen (optioneel 299 euro)',
@@ -372,7 +372,7 @@ export default function WaterfilterKopenPage() {
                   { type: 'Koolstoffilter kraan', aanschaf: '€ 30–100', jaar: '€ 30–80', zuiver: 'Matig', inst: 'Zelf, eenvoudig', hl: false },
                   { type: 'Omgekeerde osmose', aanschaf: '€ 150–500', jaar: '€ 60–150', zuiver: '95–99%', inst: 'Zelf, 30–60 min', hl: true },
                   { type: 'Waterontharder', aanschaf: '€ 500–1.500', jaar: '€ 85–240', zuiver: 'Alleen kalk', inst: 'Installateur', hl: false },
-                  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', jaar: '€ 50–150', zuiver: '95–99%', inst: 'Installateur aanbevolen', hl: true },
+                  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', jaar: 'circa € 150 (gemiddeld)', zuiver: '95–99%', inst: 'Installateur aanbevolen', hl: true },
                 ].map(r => (
                   <tr
                     key={r.type}
@@ -424,7 +424,7 @@ export default function WaterfilterKopenPage() {
                   { type: 'Filterkan', aanschaf: '€ 30', drieJr: '€ 210', tco: '€ 240' },
                   { type: 'Koolstoffilter kraan', aanschaf: '€ 60', drieJr: '€ 165', tco: '€ 225' },
                   { type: 'Osmose (under-sink)', aanschaf: '€ 250', drieJr: '€ 330', tco: '€ 580' },
-                  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', drieJr: '€ 240', tco: '€ 2.188' },
+                  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', drieJr: 'circa € 410', tco: 'circa € 2.358' },
                   { type: 'Flessenwater (gezin 4 pers.)', aanschaf: '€ 0', drieJr: '€ 1.500', tco: '€ 1.500' },
                 ].map(r => (
                   <tr key={r.type} className="border-b border-gray-100">
@@ -439,7 +439,7 @@ export default function WaterfilterKopenPage() {
           </div>
           <p className="text-xs text-gray-500 mb-5">
             Flessenwater: 2 liter/dag voor een gezin van 4 @ €0,70/liter. Jaar 3 osmose is hoger door
-            membraanvervanging (~€100). De 4-in-1 vervangt ook de waterkoker.
+            membraanvervanging (~€100). De 4-in-1 vervangt ook de waterkoker; de filterkosten zijn fabrikantprijzen omgerekend.
           </p>
 
           {/* Budget adviezen */}

@@ -50,7 +50,7 @@ const faqItems = [
   {
     question: 'Wat kost een waterfilter per jaar?',
     answer:
-      'Een filterkan kost €40–90 per jaar aan filterpatronen. Een koolstoffilter op de kraan kost €30–80 per jaar. Een osmose-systeem kost €60–150 per jaar aan filters en membraanvervanging. Een 4-in-1 kraan met osmose heeft vergelijkbare kosten van €50–150 per jaar. Alle opties zijn aanzienlijk goedkoper dan flessenwater kopen: een gezin van 4 personen geeft daar snel €400–600 per jaar aan uit.',
+      'Een filterkan kost €40–90 per jaar aan filterpatronen. Een koolstoffilter op de kraan kost €30–80 per jaar. Een osmose-systeem kost €60–150 per jaar aan filters en membraanvervanging. Bij de PureAqua 4-in-1 kraan met osmose kosten de filters gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend). Alle opties zijn aanzienlijk goedkoper dan flessenwater kopen: een gezin van 4 personen geeft daar snel €400–600 per jaar aan uit.',
   },
   {
     question: 'Hoe installeer ik een waterfilter in de keuken?',
@@ -116,7 +116,7 @@ const filtertypes = [
   {
     nr: '5',
     naam: '4-in-1 kraan (zeer heet + gekoeld + koud + warm + osmose)',
-    prijs: '€ 1.948 aanschaf + €50–150/jr',
+    prijs: '€ 1.948 aanschaf + filters gemiddeld circa €150/jr',
     zuiverheid: 'Zeer hoog (95–99% via RO)',
     onderhoud: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke 2 jaar',
     ruimte: 'Twee apparaten onder aanrecht + 1 kraangat',
@@ -212,7 +212,7 @@ const kostentabel3jaar = [
   { type: 'Filterkan', aanschaf: '€ 30', jr1: '€ 90', jr2: '€ 90', jr3: '€ 90', totaal: '€ 300' },
   { type: 'Koolstoffilter kraan', aanschaf: '€ 60', jr1: '€ 60', jr2: '€ 60', jr3: '€ 60', totaal: '€ 240' },
   { type: 'Osmose (under-sink)', aanschaf: '€ 250', jr1: '€ 100', jr2: '€ 100', jr3: '€ 150', totaal: '€ 600' },
-  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', jr1: '€ 80', jr2: '€ 80', jr3: '€ 80', totaal: '€ 2.188' },
+  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', jr1: 'circa € 105', jr2: 'circa € 200', jr3: 'circa € 105', totaal: 'circa € 2.358' },
   { type: 'Flessenwater (gezin)', aanschaf: '€ 0', jr1: '€ 500', jr2: '€ 500', jr3: '€ 500', totaal: '€ 1.500' },
 ];
 
@@ -610,7 +610,7 @@ export default function WaterfilterPage() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-3">
-            Bedragen zijn indicatieve gemiddelden. Jaar 3 osmose is hoger vanwege membraanvervanging (€80–100).
+            Bedragen zijn indicatieve gemiddelden. Jaar 3 osmose is hoger vanwege membraanvervanging (€80–100). 4-in-1: fabrikantprijzen omgerekend, membraan circa elke twee jaar.
             Flessenwater: €500/jr voor een gezin van 4 personen (0,5L per persoon per dag à €0,70).
           </p>
           <p className="text-gray-700 mt-4 leading-relaxed">
