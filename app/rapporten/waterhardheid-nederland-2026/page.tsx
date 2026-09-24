@@ -301,7 +301,9 @@ export default function WaterhardheidNederland2026Page() {
             Hoe harder je water, hoe sneller je kalkaanslag ziet op kranen, in de waterkoker en in
             apparaten. In het zuiden en oosten (vaak boven 14 dH) loont het eerder om kalk structureel aan
             te pakken met een{' '}
-            <Link href="/waterontharder" className="text-[#005F8A] underline hover:text-[#003F5C]">waterontharder</Link>;
+            <Link href="/waterontharder" className="text-[#005F8A] underline hover:text-[#003F5C]">waterontharder</Link>{' '}
+            (bijvoorbeeld een compact model als de{' '}
+            <Link href="/joep-waterontharder" className="text-[#005F8A] underline hover:text-[#003F5C]">JOEP waterontharder</Link>);
             in het zachtere noorden en westen is regelmatig ontkalken van apparaten meestal voldoende. Wat
             hardheid precies betekent lees je in{' '}
             <Link href="/kennisbank/hoeveel-kalk-kraanwater-nederland" className="text-[#005F8A] underline hover:text-[#003F5C]">

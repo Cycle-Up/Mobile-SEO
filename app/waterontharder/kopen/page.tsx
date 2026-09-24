@@ -5,6 +5,7 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder Kopen 2026: Complete Gids',
@@ -594,6 +595,8 @@ export default function WaterontharderKopenPage() {
             </Link>
           </div>
         </section>
+
+        <JoepCTA context="algemeen" content="waterontharder-kopen-joep" />
 
         <AffiliateCTA
           destination="waterontharders"

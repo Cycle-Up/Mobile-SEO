@@ -4,6 +4,7 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: "Hard water en waterfilter: waterontharder of osmose?",
@@ -385,6 +386,8 @@ export default function HardWaterPage() {
             </Link>
           </div>
         </section>
+
+        <JoepCTA context="hard-water" content="keuzehulp-hard-water-joep" />
 
         <AffiliateCTA
           destination="waterontharders"

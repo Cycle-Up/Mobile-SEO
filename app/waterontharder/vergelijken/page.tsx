@@ -5,6 +5,7 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder vergelijken: de beste modellen van 2026',
@@ -556,6 +557,8 @@ export default function WaterontharderVergelijkenPage() {
             </Link>
           </div>
         </section>
+
+        <JoepCTA context="vergelijken" content="waterontharder-vergelijken-joep" />
 
         <AffiliateCTA
           destination="waterontharders"

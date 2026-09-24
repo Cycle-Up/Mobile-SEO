@@ -6,6 +6,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export function generateMetadata(): Metadata {
   return {
@@ -97,7 +98,7 @@ const merken = [
   ['Viteau', 'Nederlandse aanbieder en installateur van waterontharders met landelijke service.', '/viteau-waterontharder'],
   ['Aquacell', 'Betaalbare ionenwisselaars uit het instap- en middensegment, veel online verkocht in Nederland.', '/aquacell-waterontharder'],
   ['Maxima', 'Op de Nederlandse markt veel verkocht waarde-/middensegment merk van ionenwisselaars.', '/maxima-waterontharder'],
-  ['JOEP', 'Nederlands merk van AquaSens (Joure); WRAS-gecertificeerde compacte ionenwisselaar met miniregeneratie en 20 jaar harsgarantie.', '/joep-waterontharder'],
+  ['JOEP', 'Nederlands merk van AquaSens (Joure); compacte ionenwisselaar met zout, tot 5 m3 per uur, miniregeneratie en 20 jaar fabrieksgarantie op de hars.', '/joep-waterontharder'],
 ];
 
 const picks = [
@@ -352,6 +353,8 @@ export default function BesteWaterontharder2026Page() {
             ))}
           </div>
         </section>
+
+        <JoepCTA context="vergelijken" content="beste-waterontharder-2026-joep" />
 
         <AffiliateCTA
           destination="waterontharders"

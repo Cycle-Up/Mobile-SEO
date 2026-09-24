@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder kosten: aanschaf, zout en totale eigendomskosten',
@@ -342,6 +343,8 @@ export default function WaterontharderKostenPage() {
           Voor installatie-informatie zie{' '}
           <Link href="/waterontharder/installeren" className="text-[#005F8A] underline">waterontharder installeren</Link>.
         </p>
+
+        <JoepCTA context="kosten" content="waterontharder-kosten-joep" />
 
         <AffiliateCTA
           destination="waterontharders"

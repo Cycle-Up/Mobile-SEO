@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder onderhoud: jaarlijks schema, reiniging en hars',
@@ -336,6 +337,8 @@ export default function WaterontharderOnderhoudPage() {
           Lees dan onze vergelijking van{' '}
           <Link href="/waterontharder/vs-osmose" className="text-[#005F8A] underline">waterontharder versus osmosefilter</Link>.
         </p>
+
+        <JoepCTA context="algemeen" content="waterontharder-onderhoud-joep" />
 
         <CTABanner context="osmose" />
 

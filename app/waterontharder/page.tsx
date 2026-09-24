@@ -6,6 +6,7 @@ import { HubCrossLinks } from '@/components/HubCrossLinks';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Heb ik een waterontharder nodig? Werking, kosten & advies',
@@ -750,6 +751,8 @@ export default function WaterOntharderPage() {
 
         {/* CTA */}
         <HubCrossLinks exclude="waterontharder" />
+
+        <JoepCTA context="algemeen" content="waterontharder-joep" />
 
         <AffiliateCTA
           destination="waterontharders"

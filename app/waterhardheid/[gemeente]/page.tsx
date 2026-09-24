@@ -5,6 +5,8 @@ import { gemeenten, getGemeente, getHardheidLabel, type Hardheid } from '@/data/
 import { WaterhardheidCard } from '@/components/WaterhardheidCard';
 import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { JoepCTA } from '@/components/JoepCTA';
+import { JOEP_MIN_DH } from '@/lib/joep.mjs';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { GemeenteLinks } from '@/components/GemeenteLinks';
 
@@ -311,14 +313,23 @@ export default async function GemeentePage({ params }: PageProps) {
           <CTABanner context="waterhardheid" variant="compact" />
         )}
 
-        <AffiliateCTA
-          destination="waterontharders"
-          campaign="waterontharder"
-          content="waterhardheid-gemeente-cta"
-          label="Bekijk de waterontharders bij PureAqua"
-          title="Last van hard water?"
-          sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
-        />
+        {gemeente.hardheid >= JOEP_MIN_DH ? (
+          <JoepCTA
+            context="hard-water"
+            content="waterhardheid-gemeente-joep"
+            plaats={gemeente.naam}
+            dH={gemeente.hardheid}
+          />
+        ) : (
+          <AffiliateCTA
+            destination="waterontharders"
+            campaign="waterontharder"
+            content="waterhardheid-gemeente-cta"
+            label="Bekijk de waterontharders bij PureAqua"
+            title="Last van hard water?"
+            sub="Bekijk het aanbod waterontharders bij onze partner PureAqua."
+          />
+        )}
 
         {/* Interne links kennisbank */}
         <section>

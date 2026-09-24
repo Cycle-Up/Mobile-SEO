@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: 'Waterontharder regeneratie uitgelegd: hoe vaak en hoeveel zout?',
@@ -359,6 +360,8 @@ export default function WaterontharderRegeneratiePage() {
             waterontkalker vs. waterontharder
           </Link>.
         </p>
+
+        <JoepCTA context="algemeen" content="waterontharder-regeneratie-joep" />
 
         <CTABanner context="osmose" />
 

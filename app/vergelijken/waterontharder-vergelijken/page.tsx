@@ -6,6 +6,7 @@ import { CTABanner } from "@/components/CTABanner";
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { JoepCTA } from '@/components/JoepCTA';
 
 export const metadata: Metadata = {
   title: "Waterontharder vergelijken: zoutgebaseerd, zoutloos en osmose",
@@ -367,6 +368,8 @@ export default function WaterOntharderVergelijkenPage() {
         </section>
 
         <div className="mt-10">
+          <JoepCTA context="vergelijken" content="vergelijken-waterontharder-vergelijken-joep" />
+
           <AffiliateCTA
             destination="waterontharders"
             campaign="waterontharder"
