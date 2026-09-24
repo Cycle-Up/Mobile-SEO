@@ -265,7 +265,7 @@ const filterTypes = [
     vormen:
       'Systeem onder het aanrecht met meerdere filterstadia (sediment → koolstof → RO-membraan → nafilter). Vaak gecombineerd met een apart kraantje of een 4-in-1 kraan.',
     kosten:
-      'Aanschaf € 200–900 (systeem); jaarlijks € 60–110 (voorfilter + membraan). Membraan gaat 1–3 jaar mee. Beste waarde via een geïntegreerde 4-in-1 kraan.',
+      'Aanschaf € 200–900 (systeem); jaarlijks € 60–110 (voorfilter + membraan). Membraan gaat 1–3 jaar mee. Wil je er ook heet en gekoeld water bij, kijk dan naar een geïntegreerde 4-in-1 kraan.',
     wanneer:
       'Wanneer je het meest complete waterfilter wilt: hard water, nitraat, lood, PFAS of gewoon het schoonste drinkwater ongeacht de probleemstof. De beste keuze voor gezinnen die willen weten dat hun water echt schoon is.',
   },
@@ -448,11 +448,11 @@ const filterTypes = [
   {
     id: 'geintegreerd',
     naam: 'Geïntegreerd Systeem (4-in-1 Kraan + RO)',
-    geschiktVoor: 'Alles in één — kokend, koud, gefilterd, bruisend',
+    geschiktVoor: 'Alles in één: zeer heet, gekoeld, gezuiverd',
     hubUrl: null,
     hubLabel: null,
     samenvatting:
-      'Een geïntegreerd systeem combineert meerdere filterstadia én een intelligente kraan in één product. Het meest volledige voorbeeld is een 4-in-1 kraan met ingebouwde omgekeerde osmose: sedimentfilter, koolstoffilter, RO-membraan en nafilter zijn al op elkaar afgestemd. Bovendien levert de kraan ook kokend water en — bij 4-in-1 of 5-in-1 modellen — bruisend water.',
+      'Een geïntegreerd systeem combineert meerdere filterstadia én een intelligente kraan in één product. Het meest volledige voorbeeld is een 4-in-1 kraan met ingebouwde omgekeerde osmose: sedimentfilter, koolstoffilter, RO-membraan en nafilter zijn al op elkaar afgestemd. Bovendien levert de kraan ook zeer heet water en, afhankelijk van het model, gekoeld of bruisend water. De PureAqua 4-in-1 geeft zeer heet (circa 96 graden) en gekoeld water, geen bruisend water.',
     watVerwijdert: [
       'Alles wat RO verwijdert (kalk, nitraat, PFAS, lood, chloor, microplastics)',
       'Bacteriën en grote virussen',
@@ -463,11 +463,11 @@ const filterTypes = [
       'Opgeloste gassen (CO₂ — maar dit is geen probleem bij normaal leidingwater)',
     ],
     vormen:
-      '4-in-1 of 5-in-1 kraan met alles-in-één installatie onder het aanrecht. Meest complete optie voor het Nederlandse huishouden.',
+      '4-in-1 of 5-in-1 kraan met de techniek onder het aanrecht (bij de PureAqua 4-in-1 twee apparaten en twee stopcontacten). Meest complete optie voor het Nederlandse huishouden.',
     kosten:
-      'Aanschaf € 699–899 (4-in-1 kraan met osmose); jaarlijks € 90–120 (filter + CO₂). Over vijf jaar de goedkoopste totaaloplossing.',
+      'Aanschaf 1.948 euro (PureAqua 4-in-1 kraan met osmose), installatie optioneel 299 euro. Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar.',
     wanneer:
-      'Wanneer je één systeem wilt dat alle waterproblemen oplost én ook kokend en bruisend water levert. De aanbevolen oplossing voor gezinnen die willen upgraden van losse waterkoker, SodaStream en waterfilter.',
+      'Wanneer je één kraan wilt voor gezuiverd, gekoeld en zeer heet water. Past bij gezinnen die de losse waterkoker en waterfilter willen vervangen. Wil je ook bruisend water, dan heb je een model met CO₂-unit of een losse SodaStream nodig.',
   },
 ];
 
@@ -776,7 +776,7 @@ export default function WaterfilterSoortenPage() {
               Dan is een geïntegreerde{' '}
               <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">4-in-1 kraan</Link>{' '}
               met omgekeerde osmose de aanbevolen all-in-one oplossing. Je hebt dan automatisch het breedste
-              filterpakket — en als bonus ook kokend en bruisend water uit één kraan.
+              filterpakket, en daarbij ook zeer heet en gekoeld water uit één kraan.
             </p>
           </div>
         </section>
@@ -821,8 +821,8 @@ export default function WaterfilterSoortenPage() {
             Dit vierstaps schema — sediment, koolstof, RO-membraan, nafilter — is precies hoe een
             professioneel omgekeerde osmose systeem is opgebouwd. Een geïntegreerde{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">4-in-1 kraan</Link>{' '}
-            combineert dit filterpakket met een kokend water boiler en een CO₂-unit voor bruisend water —
-            alles in één installatie onder het aanrecht.
+            combineert osmosefiltratie met een heet-/koelunit voor zeer heet (circa 96 graden) en gekoeld
+            water; onder het aanrecht staan dan twee apparaten.
           </p>
           <p className="text-gray-700 leading-relaxed mt-3">
             Wil je meer weten over hoe het osmoseproces precies werkt? Lees onze{' '}
@@ -859,7 +859,7 @@ export default function WaterfilterSoortenPage() {
                   { type: 'UV-filter', aanschaf: '€ 80–300', jaar: '€ 30–60', vijfJaar: '€ 230–600' },
                   { type: 'Ionenwisselaar / waterontharder', aanschaf: '€ 400–1.500', jaar: '€ 30–80', vijfJaar: '€ 550–1.900' },
                   { type: 'Omgekeerde osmose (los systeem)', aanschaf: '€ 200–500', jaar: '€ 60–110', vijfJaar: '€ 500–1.050' },
-                  { type: '4-in-1 kraan met osmose (RO + kokend + bruisend)', aanschaf: '€ 799', jaar: '€ 120', vijfJaar: '€ 1.399', highlight: true },
+                  { type: '4-in-1 kraan met osmose (RO + zeer heet + gekoeld)', aanschaf: '€ 1.948', jaar: '€ 120', vijfJaar: '€ 2.548', highlight: true },
                 ].map(r => (
                   <tr key={r.type} className={`border-b border-gray-100 ${'highlight' in r && r.highlight ? 'bg-[#E0F2FE]/40 font-medium' : ''}`}>
                     <td className="py-2.5 px-3 text-gray-800">

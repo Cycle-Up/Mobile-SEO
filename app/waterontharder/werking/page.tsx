@@ -566,7 +566,7 @@ export default function WaterOntharderWerkingPage() {
                 <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">
                   4-in-1 kraan met osmose
                 </Link>
-                {' '}als je kiest voor gefilterd én kokend water uit één kraan.
+                {' '}als je kiest voor gefilterd, gekoeld én zeer heet water uit één kraan.
               </p>
             </div>
           </div>

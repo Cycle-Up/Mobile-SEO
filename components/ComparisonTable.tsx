@@ -12,19 +12,19 @@ interface Product {
 
 const producten: Product[] = [
   {
-    naam: '4-in-1 kraan met osmose',
-    prijs: '€ 600 – 1.000',
+    naam: 'PureAqua 4-in-1 kraan (osmose)',
+    prijs: '€ 1.948',
     osmoseFilter: true,
     kokendWater: true,
     koudWater: true,
-    bruisendWater: true,
-    filterLevensduur: '12 maanden',
-    installatie: 'Eenvoudig, onder aanrecht',
+    bruisendWater: false,
+    filterLevensduur: '12 maanden (membraan 24)',
+    installatie: 'Installateur aanbevolen (optioneel € 299)',
     highlight: false,
   },
   {
-    naam: 'Quooker Combi+',
-    prijs: '€ 1.500 – 2.000',
+    naam: 'Quooker Flex PRO3',
+    prijs: '€ 1.220',
     osmoseFilter: false,
     kokendWater: true,
     koudWater: false,
@@ -34,13 +34,13 @@ const producten: Product[] = [
     highlight: false,
   },
   {
-    naam: 'Quooker Fusion + CUBE',
-    prijs: '€ 2.200 – 2.800',
+    naam: 'Quooker Flex PRO3 + CUBE',
+    prijs: '€ 2.240',
     osmoseFilter: false,
     kokendWater: true,
     koudWater: true,
     bruisendWater: true,
-    filterLevensduur: '3 maanden',
+    filterLevensduur: '12 maanden',
     installatie: 'Professionele monteur',
     highlight: false,
   },
@@ -74,7 +74,7 @@ export function ComparisonTable() {
             <th className="text-left py-3 px-4 font-semibold text-[#003F5C]">Kraan</th>
             <th className="py-3 px-3 font-semibold text-[#003F5C]">Prijs</th>
             <th className="py-3 px-3 font-semibold text-[#003F5C]">Osmose</th>
-            <th className="py-3 px-3 font-semibold text-[#003F5C]">Kokend</th>
+            <th className="py-3 px-3 font-semibold text-[#003F5C]">Kokend / zeer heet</th>
             <th className="py-3 px-3 font-semibold text-[#003F5C]">Koud</th>
             <th className="py-3 px-3 font-semibold text-[#003F5C]">Bruisend</th>
             <th className="py-3 px-3 font-semibold text-[#003F5C]">Filter</th>
@@ -112,7 +112,7 @@ export function ComparisonTable() {
           ))}
         </tbody>
       </table>
-      <p className="text-xs text-gray-400 mt-2">Prijzen indicatief, inclusief installatie. Bijgewerkt mei 2026.</p>
+      <p className="text-xs text-gray-400 mt-2">PureAqua- en Quooker-prijzen zoals bij PureAqua in september 2026, exclusief installatie; Grohe indicatief. De PureAqua 4-in-1 geeft zeer heet water van circa 96 °C.</p>
     </div>
   );
 }

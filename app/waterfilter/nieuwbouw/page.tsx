@@ -26,7 +26,7 @@ const faqSchema = {
       name: 'Welk waterfilter is het meest geschikt voor nieuwbouw?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Voor nieuwbouw zijn er drie topkeuzes: (1) Pre-piped osmosefilter onder het aanrecht — ideaal als de aannemer de leidingen al meelegt. (2) Kokend water kraan (4-in-1: kokend, gefilterd, koud, warm) — integreert osmosefilter en boiler in één systeem, perfect voor nieuwe keukens. (3) Huis-breed waterontharder aan de hoofdleiding bij harde watertregio\'s. Combineer osmose onder het aanrecht met een kokend water kraan voor de complete oplossing.',
+        text: 'Voor nieuwbouw zijn er drie topkeuzes: (1) Pre-piped osmosefilter onder het aanrecht — ideaal als de aannemer de leidingen al meelegt. (2) Een 4-in-1 kraan met osmose (zeer heet, gekoeld en gezuiverd, koud en warm water): een osmose-unit en een heet-/koelunit onder het aanrecht, met twee stopcontacten, goed mee te plannen in een nieuwe keuken. (3) Huis-breed waterontharder aan de hoofdleiding bij harde watertregio\'s. Combineer osmose onder het aanrecht met een kokend water kraan voor de complete oplossing.',
       },
     },
     {
@@ -42,7 +42,7 @@ const faqSchema = {
       name: 'Kan ik een kokend water kraan laten inbouwen in nieuwbouw?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, en nieuwbouw is het ideale moment. De aannemer kan bij de keukenmontage direct de juiste kraangat boren (typisch 35mm), de onderboiler plaatsen en het stopcontact onder het aanrecht meenemen. Een 4-in-1 kokend water kraan combineert osmosefiltratie, boiler en tapkraan in één elegant systeem. Kosten in nieuwbouw: €800–1.500 inclusief installatie (vs €1.200–2.000 achteraf bij keukenrenovatie).',
+        text: 'Ja, en nieuwbouw is het ideale moment. De aannemer kan bij de keukenmontage direct de juiste kraangat boren (typisch 35mm), de onderboiler plaatsen en de stopcontacten onder het aanrecht meenemen. Een 4-in-1 kraan met osmose combineert osmosefiltratie, een heet-/koelunit en de tapkraan; onder de spoelbak komen twee apparaten en zijn twee stopcontacten nodig. De PureAqua 4-in-1 kost 1.948 euro, installatie optioneel voor 299 euro. Achteraf kost vooral het extra leiding- en elektrawerk meer.',
       },
     },
     {
@@ -58,7 +58,7 @@ const faqSchema = {
       name: 'Wat kost een waterfilter laten installeren in nieuwbouw?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Osmosefilter tijdens bouw (door aannemer/installateur): €400–800 alles-inclusief. Osmosefilter bij oplevering (installateur): €500–900. Osmosefilter achteraf (na intrek): €600–1.200 inclusief wegwerk. 4-in-1 kokend water kraan + osmose tijdens bouw: €900–1.600. Huis-breed waterontharder tijdens bouw: €1.200–2.500. De extra kosten achteraf zitten hoofdzakelijk in loodgieterswerk en herstelwerkzaamheden.',
+        text: 'Osmosefilter tijdens bouw (door aannemer/installateur): €400–800 alles-inclusief. Osmosefilter bij oplevering (installateur): €500–900. Osmosefilter achteraf (na intrek): €600–1.200 inclusief wegwerk. 4-in-1 kraan met osmose (PureAqua): 1.948 euro, plus optionele installatie van 299 euro. Huis-breed waterontharder tijdens bouw: €1.200–2.500. De extra kosten achteraf zitten hoofdzakelijk in loodgieterswerk en herstelwerkzaamheden.',
       },
     },
     {
@@ -126,7 +126,7 @@ export default function WaterfilterNieuwbouwPage() {
           Een nieuwbouwwoning is de ideale gelegenheid om een waterfilter of osmosesysteem te integreren. De muren zijn nog open, de aannemer werkt nog aan het leidingwerk en een kokend water kraan of osmosefilter is aanzienlijk goedkoper in te bouwen dan achteraf. In dit artikel lees je hoe je dit slim aanpakt.
         </p>
 
-        <QuickAnswer answer="In nieuwbouw is een waterfilter installeren 40–60% goedkoper dan achteraf. Vraag de aannemer om leidingvoorbereiding onder het aanrecht, een stopcontact en afvoerpunt. De beste keuze: een 4-in-1 osmose kokend water kraan tijdens de keukenmontage, voor de laagste totaalprijs en beste integratie." />
+        <QuickAnswer answer="In nieuwbouw is een waterfilter installeren 40–60% goedkoper dan achteraf. Vraag de aannemer om leidingvoorbereiding onder het aanrecht, een stopcontact en afvoerpunt. Onze keuze als je ook heet en gekoeld water wilt: een 4-in-1 kraan met osmose, ingebouwd tijdens de keukenmontage." />
 
         <CTABanner context="osmose" />
 
@@ -152,7 +152,7 @@ export default function WaterfilterNieuwbouwPage() {
         <div className="space-y-4 mb-8">
           <div className="border-l-4 border-[#005F8A] pl-4">
             <h3 className="font-semibold text-[#003F5C] mb-1">Tijdens de bouw (goedkoopst)</h3>
-            <p className="text-gray-700 text-sm mb-2">De aannemer legt leidingen en stopcontacten mee in het bestaande loodgieterswerk. Kosten voor de filtereenheid plus installatie: €400–800 voor osmose, €900–1.600 voor 4-in-1 kokend water kraan systeem. Bespaart 40–60% ten opzichte van achteraf.</p>
+            <p className="text-gray-700 text-sm mb-2">De aannemer legt leidingen en stopcontacten mee in het bestaande loodgieterswerk. Kosten voor de filtereenheid plus installatie: €400–800 voor osmose, 1.948 euro plus installatie voor een 4-in-1 kraan met osmose. Bespaart 40–60% ten opzichte van achteraf.</p>
             <p className="text-xs text-gray-500">Ideaal wanneer: je al weet welk systeem je wilt vóór de keukenplaatsing</p>
           </div>
 
@@ -184,15 +184,15 @@ export default function WaterfilterNieuwbouwPage() {
           <li>Onderhoud: filters jaarlijks, membraan elke 2–3 jaar</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-[#003F5C] mt-6 mb-3">2. 4-in-1 kokend water kraan (smart home integratie)</h3>
+        <h3 className="text-xl font-semibold text-[#003F5C] mt-6 mb-3">2. 4-in-1 kraan met osmose (zeer heet, gekoeld en gezuiverd)</h3>
         <p className="text-gray-700 mb-3">
-          De meest elegante oplossing voor nieuwbouw: één kraan vervangt de traditionele mengkraan, waterkoker en aparte drinkwaterkraan. De PureAqua 4-in-1 levert kokend water (100°C on demand), koud gefilterd water, warm water en koud leidingwater via één tapkraan.
+          Een elegante oplossing voor nieuwbouw: één kraan vervangt de traditionele mengkraan, waterkoker en aparte drinkwaterkraan. De PureAqua 4-in-1 levert zeer heet water (circa 96 graden), gekoeld en gezuiverd water, gezuiverd water op kamertemperatuur, warm water en koud leidingwater via één tapkraan.
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-1">
-          <li>Osmosefiltratie ingebouwd — geen aparte filter unit nodig</li>
-          <li>Boiler (2,4–4L) onder het aanrecht, bijna onhoorbaar</li>
+          <li>Omgekeerde osmose in drie stappen: voorfilter, osmosemembraan en remineralisatie</li>
+          <li>Twee apparaten onder het aanrecht (heet-/koelunit en osmose-unit) en twee stopcontacten</li>
           <li>Bespaar ruimte op het aanrecht (geen waterkoker meer)</li>
-          <li>Smart home integratie via app voor temperatuur en filterstand</li>
+          <li>Onderhoud: voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar</li>
           <li>Ideaal moment: kraan inbouwen bij keukenmontage door aannemer</li>
         </ul>
 
@@ -230,7 +230,7 @@ export default function WaterfilterNieuwbouwPage() {
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2 font-medium">4-in-1 kraan — bij keuken</td>
                 <td className="border border-gray-300 px-3 py-2">Keukenmontage</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">€900–1.600</td>
+                <td className="border border-gray-300 px-3 py-2 text-green-700">€1.948 + installatie</td>
                 <td className="border border-gray-300 px-3 py-2 text-green-700">Geen</td>
               </tr>
               <tr>
@@ -354,7 +354,7 @@ export default function WaterfilterNieuwbouwPage() {
         <div className="bg-[#E0F2FE] rounded-xl p-6 mb-8">
           <h3 className="text-lg font-semibold text-[#003F5C] mb-2">Plan je waterfilter mee met de bouw</h3>
           <p className="text-gray-700 mb-4">
-            De PureAqua 4-in-1 osmose + kokend water kraan is de perfecte keuze voor nieuwbouw: één systeem voor gefilterd drinkwater en kokend water op aanvraag, volledig te integreren bij de keukenmontage.
+            De PureAqua 4-in-1 kraan past goed bij nieuwbouw: gezuiverd drinkwater, gekoeld water en zeer heet water (circa 96 graden) uit één kraan. Plan de twee apparaten en twee stopcontacten onder de spoelbak mee bij de keukenmontage.
           </p>
           <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
             Bekijk PureAqua systemen →

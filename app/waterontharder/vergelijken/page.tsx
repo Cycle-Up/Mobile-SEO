@@ -169,10 +169,10 @@ const tcoTabel = [
   },
   {
     model: 'Osmose 4-in-1 (alternatief)',
-    aanschafInstallatie: '€ 900',
+    aanschafInstallatie: '€ 2.247',
     zoutElektraJaar: '€ 100',
-    tco5jr: '€ 1.400',
-    tco10jr: '€ 1.900',
+    tco5jr: '€ 2.747',
+    tco10jr: '€ 3.247',
   },
 ];
 
@@ -546,8 +546,9 @@ export default function WaterontharderVergelijkenPage() {
             <p className="font-semibold text-[#003F5C] mb-2">De complete drinkwateroplossing</p>
             <p className="text-sm text-gray-700 mb-4 leading-relaxed">
               Als smaak, filtratie én hardheid allemaal een rol spelen, overweeg dan een 4-in-1 osmosekraan.
-              Deze combineert omgekeerde osmose filtratie met kokend, koud, warm en bruisend water — alles
-              uit één kraan. Ideaal voor appartementen en kleine huishoudens.
+              Deze combineert omgekeerde osmose filtratie met zeer heet (circa 96 graden), gekoeld, warm
+              en koud water uit één kraan. De PureAqua 4-in-1 kost 1.948 euro; onder de spoelbak zijn
+              ruimte voor twee apparaten en twee stopcontacten nodig.
             </p>
             <Link
               href="/omgekeerde-osmose/kopen"

@@ -25,7 +25,7 @@ const faqItems = [
   {
     question: 'Welk waterfilter is het beste voor thuis?',
     answer:
-      'Het beste waterfilter hangt af van je doel. Wil je alleen chloor en smaak verbeteren? Dan volstaat een activekoolfilter of filterkan. Wil je ook nitraten, pesticiden, PFAS, zware metalen en microplastics verwijderen? Dan is omgekeerde osmose de beste keuze — het verwijdert 95–99% van alle opgeloste stoffen. Voor wie bovendien kalk, warm en bruisend water wil combineren, is een 4-in-1 kraan met ingebouwde osmose de meest complete oplossing.',
+      'Het beste waterfilter hangt af van je doel. Wil je alleen chloor en smaak verbeteren? Dan volstaat een activekoolfilter of filterkan. Wil je ook nitraten, pesticiden, PFAS, zware metalen en microplastics verwijderen? Dan is omgekeerde osmose de beste keuze — het verwijdert 95–99% van alle opgeloste stoffen. Wil je daarnaast gekoeld en zeer heet water uit dezelfde kraan, dan is een 4-in-1 kraan met osmose de meest complete oplossing (de PureAqua 4-in-1 geeft geen bruisend water).',
   },
   {
     question: 'Wat filtert een waterfilter precies?',
@@ -55,7 +55,7 @@ const faqItems = [
   {
     question: 'Hoe installeer ik een waterfilter in de keuken?',
     answer:
-      'Een filterkan is direct te gebruiken. Een koolstoffilter op de kraan schroef je eenvoudig op de bestaande kraan. Een under-sink osmose-systeem koppel je aan de koudwaterleiding, afvoer en een extra kraantje op het aanrecht — dat duurt 30–60 minuten. Een 4-in-1 kraan met osmose vervangt de bestaande keukenkraan en vereist aansluiting op water en stroom; zelfs dit is door een handig persoon zelf te installeren in 1–2 uur.',
+      'Een filterkan is direct te gebruiken. Een koolstoffilter op de kraan schroef je eenvoudig op de bestaande kraan. Een under-sink osmose-systeem koppel je aan de koudwaterleiding, afvoer en een extra kraantje op het aanrecht — dat duurt 30–60 minuten. Een 4-in-1 kraan met osmose vervangt de bestaande keukenkraan, plaatst twee apparaten onder de spoelbak en vraagt twee stopcontacten; hiervoor raden we een installateur aan (PureAqua biedt installatie aan voor 299 euro).',
   },
   {
     question: 'Welk waterfilter vergelijken is het meest zinvol?',
@@ -115,15 +115,15 @@ const filtertypes = [
   },
   {
     nr: '5',
-    naam: '4-in-1 kraan (kokend + koud + warm + osmose)',
-    prijs: '€ 699–900 aanschaf + €50–150/jr',
+    naam: '4-in-1 kraan (zeer heet + gekoeld + koud + warm + osmose)',
+    prijs: '€ 1.948 aanschaf + €50–150/jr',
     zuiverheid: 'Zeer hoog (95–99% via RO)',
-    onderhoud: 'Jaarlijks filterpatroon',
-    ruimte: 'Onder aanrecht + 1 kraangat',
-    installatiegemak: 'Zelf te installeren (1–2 uur)',
+    onderhoud: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke 2 jaar',
+    ruimte: 'Twee apparaten onder aanrecht + 1 kraangat',
+    installatiegemak: 'Installateur aanbevolen (optioneel 299 euro)',
     highlight: true,
     beschrijving:
-      'De 4-in-1 kraan combineert een geïntegreerd osmose-systeem met kokend (100°C), koud gefilterd, warm en bruisend water — allemaal uit één kraan. Dit is de meest complete en ruimtebesparende oplossing. Eén jaarlijkse filterwissel vervangt alle losse patronen.',
+      'De 4-in-1 kraan combineert omgekeerde osmose (voorfilter, membraan, remineralisatie) met zeer heet (circa 96 °C), gekoeld en gezuiverd water, plus gewoon warm en koud water uit één kraan. Dit is de meest complete oplossing op het aanrecht; onder de spoelbak staan wel twee apparaten. Geen bruisend water.',
   },
 ];
 
@@ -166,11 +166,11 @@ const vergelijkingstabel = [
   },
   {
     type: '4-in-1 kraan + osmose',
-    prijs: '€ 699–900',
+    prijs: '€ 1.948',
     zuiverheid: '95–99%',
-    onderhoud: 'Jaarlijks',
-    ruimte: 'Onder aanrecht',
-    installatie: 'Zelf, 1–2 uur',
+    onderhoud: 'Jaarlijks (membraan 2 jaar)',
+    ruimte: 'Onder aanrecht (2 apparaten)',
+    installatie: 'Installateur aanbevolen',
     highlight: true,
   },
 ];
@@ -197,7 +197,7 @@ const situatieTabel = [
     link: '/waterontharder',
   },
   {
-    doel: 'Alles in één: filter + kokend + bruisend',
+    doel: 'Alles in één: filter + zeer heet + gekoeld',
     advies: '4-in-1 kraan met osmose',
     link: '/kokend-water-kraan/met-filter',
   },
@@ -212,7 +212,7 @@ const kostentabel3jaar = [
   { type: 'Filterkan', aanschaf: '€ 30', jr1: '€ 90', jr2: '€ 90', jr3: '€ 90', totaal: '€ 300' },
   { type: 'Koolstoffilter kraan', aanschaf: '€ 60', jr1: '€ 60', jr2: '€ 60', jr3: '€ 60', totaal: '€ 240' },
   { type: 'Osmose (under-sink)', aanschaf: '€ 250', jr1: '€ 100', jr2: '€ 100', jr3: '€ 150', totaal: '€ 600' },
-  { type: '4-in-1 kraan + osmose', aanschaf: '€ 799', jr1: '€ 80', jr2: '€ 80', jr3: '€ 80', totaal: '€ 1.039' },
+  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', jr1: '€ 80', jr2: '€ 80', jr3: '€ 80', totaal: '€ 2.188' },
   { type: 'Flessenwater (gezin)', aanschaf: '€ 0', jr1: '€ 500', jr2: '€ 500', jr3: '€ 500', totaal: '€ 1.500' },
 ];
 
@@ -491,8 +491,8 @@ export default function WaterfilterPage() {
             </p>
             <p className="text-gray-700 leading-relaxed">
               De jaarlijkse kosten (€60–150) zijn lager dan flessenwater kopen. Installatie is zelf te doen in
-              30–60 minuten. Wil je zowel osmose als kokend en bruisend water? Dan is een 4-in-1 kraan de
-              meest complete oplossing — zie hieronder.
+              30–60 minuten. Wil je osmose én gekoeld en zeer heet water uit één kraan? Dan is een 4-in-1 kraan de
+              meest complete oplossing, zie hieronder.
             </p>
           </div>
 
@@ -522,16 +522,16 @@ export default function WaterfilterPage() {
           <div className="mb-4">
             <h3 className="text-xl font-semibold text-[#003F5C] mb-3">5. 4-in-1 kraan met osmose</h3>
             <p className="text-gray-700 mb-3 leading-relaxed">
-              De 4-in-1 kraan combineert een geïntegreerd omgekeerde osmose systeem met vier
-              waterfuncties: kokend (100°C), koud gefilterd, warm en bruisend water. Dit is de meest
-              complete waterfilter-oplossing voor in de keuken, en combineert alle functies in één elegant kraanontwerp.
+              De 4-in-1 kraan combineert omgekeerde osmose in drie stappen met gewoon warm en koud
+              kraanwater, plus gezuiverd water op kamertemperatuur, gekoeld (circa 5 graden) en zeer heet
+              (circa 96 graden). Bruisend water zit er niet in. Onder de spoelbak staan twee apparaten
+              (heet-/koelunit en osmose-unit) die elk een stopcontact nodig hebben.
             </p>
             <p className="text-gray-700 mb-3 leading-relaxed">
-              Voordelen: één jaarlijkse filterwissel voor alles, geen aparte waterkoker meer, geen losse
-              osmose-tap, geen bruisend water in plastic flessen. De aanschafprijs (€699–900) is hoger dan
-              een losse osmose-installatie, maar de totale kosten over 3–5 jaar zijn concurrerend doordat
-              je ook de waterkoker (€20–100/jr aan energie) en bruisend water-abonnement (€100–200/jr)
-              vervangt. Lees meer op de pagina{' '}
+              Voordelen: geen aparte waterkoker meer, geen losse osmose-tap en geen flessenwater. Filters
+              wissel je circa jaarlijks, het membraan circa elke twee jaar. De PureAqua 4-in-1 kost 1.948
+              euro (installatie optioneel voor 299 euro), duidelijk meer dan een losse osmose-installatie.
+              Daar staat tegenover dat hij ook de waterkoker vervangt. Lees meer op de pagina{' '}
               <Link href="/kokend-water-kraan/met-filter" className="text-[#005F8A] underline hover:no-underline">
                 kokend water kraan met filter
               </Link>
@@ -617,7 +617,7 @@ export default function WaterfilterPage() {
             De filterkan is het goedkoopst in aanschaf, maar na 3 jaar zijn de totale kosten (€300) hoger dan
             een koolstoffilter (€240). Een osmose-systeem kost over 3 jaar €600 — aanzienlijk minder dan
             flessenwater (€1.500). De 4-in-1 kraan heeft de hoogste aanschaf, maar biedt ook de meeste functies
-            en vervangt de waterkoker en het bruisend water-abonnement. Zie ook{' '}
+            en vervangt de waterkoker. Zie ook{' '}
             <Link href="/beste-waterfilter-2026" className="text-[#005F8A] underline hover:no-underline">
               beste waterfilter 2026
             </Link>{' '}
@@ -671,9 +671,8 @@ export default function WaterfilterPage() {
               {
                 type: '4-in-1 kraan + osmose',
                 acties: [
-                  'Jaarlijks filterpatroon wisselen (één patroon, alles-in-één)',
-                  'RO-membraan elke 2–3 jaar vervangen',
-                  'CO₂-cilinder bijvullen of verwisselen elke 2–4 maanden (voor bruisend water)',
+                  'Voorfilter en remineralisatiefilter circa jaarlijks wisselen',
+                  'Osmosemembraan circa elke twee jaar vervangen (eerder bij hoog gebruik)',
                 ],
               },
             ].map(m => (

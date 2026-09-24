@@ -95,11 +95,11 @@ const filtertypes = [
     highlight: false,
   },
   {
-    type: 'RO + kokend water (4-in-1)',
-    prijs: '€ 700–1.500',
-    verwijdering: 'RO + kokend/warm water',
-    onderhoud: 'Jaarlijks (alles-in-1)',
-    ruimte: 'Gemiddeld',
+    type: 'RO + heet en gekoeld water (4-in-1)',
+    prijs: '€ 1.948',
+    verwijdering: 'RO + zeer heet (circa 96 °C) en gekoeld water',
+    onderhoud: 'Filters circa jaarlijks, membraan circa elke 2 jaar',
+    ruimte: 'Groot (twee apparaten)',
     highlight: false,
   },
 ];
@@ -145,7 +145,7 @@ export default function WaterfilterOnderAanrechtPage() {
             Een under-sink waterfilter filtert onzichtbaar en stilletjes onder het aanrecht.
             Van een eenvoudig carbon block filter tot een volledig RO-systeem met UV-bestraling
             of geïntegreerde kokendwaterkraan — in dit overzicht leggen we alle types uit,
-            vergelijken we prijzen (€150–€1.500) en geven we praktische installatietips.
+            vergelijken we prijzen (€150–€2.250) en geven we praktische installatietips.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -173,7 +173,7 @@ export default function WaterfilterOnderAanrechtPage() {
             <li><a href="#ruimte" className="hover:underline">Benodigde ruimte</a></li>
             <li><a href="#kraan" className="hover:underline">Dedicated tap vs omleidingsventiel</a></li>
             <li><a href="#installatie" className="hover:underline">Installatie stap voor stap</a></li>
-            <li><a href="#prijs" className="hover:underline">Prijsoverzicht €150–€1.500</a></li>
+            <li><a href="#prijs" className="hover:underline">Prijsoverzicht €150–€2.250</a></li>
             <li><a href="#top-picks" className="hover:underline">Top picks</a></li>
             <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
           </ol>
@@ -234,8 +234,8 @@ export default function WaterfilterOnderAanrechtPage() {
                 tekst: 'Combineert de chemische filtratie van RO met ultraviolet licht dat bacteriën en virussen inactiveert. Nuttig in gebieden met incidentele microbiologische verontreinigingen of na lange stilstand van de waterleiding. UV-lamp jaarlijks vervangen.',
               },
               {
-                titel: 'RO + kokend water (4-in-1)',
-                tekst: 'De meest complete oplossing: een geïntegreerd systeem dat osmose filtratie combineert met een kokend-, warm- en koudwatertank. Één kraan op het aanrecht vervangt de reguliere mengkraan en levert altijd gefilterd water op de gewenste temperatuur. Meer info op de 4-in-1 kraan pagina.',
+                titel: 'RO + heet en gekoeld water (4-in-1)',
+                tekst: 'De meest complete oplossing: osmosefiltratie gecombineerd met een heet-/koelunit (zeer heet water van circa 96 graden en gekoeld water). Eén kraan op het aanrecht vervangt de reguliere mengkraan en levert ook gewoon warm en koud water. Onder de spoelbak staan dan twee apparaten met elk een stopcontact. Meer info op de 4-in-1 kraan pagina.',
               },
             ].map(v => (
               <div key={v.titel} className="border-l-4 border-[#005F8A] pl-4">
@@ -375,7 +375,7 @@ export default function WaterfilterOnderAanrechtPage() {
 
         {/* Prijs */}
         <section id="prijs">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Prijsoverzicht: €150–€1.500</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Prijsoverzicht: €150–€2.250</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Het budget bepaalt grotendeels welk type systeem haalbaar is. Hieronder een realistische
             prijsverdeling per categorie, inclusief installatiekosten.
@@ -386,7 +386,7 @@ export default function WaterfilterOnderAanrechtPage() {
               { range: '€ 150–300', type: 'Basisniveau RO-systeem', toelichting: 'Volledig 4-staps RO, simpele dedicated tap, drukvat. Goede keuze voor de budgetbewuste koper.' },
               { range: '€ 300–500', type: 'Mid-range RO met boosterpomp', toelichting: 'Hogere productiecapaciteit, efficiëntere membranen, minder spoelwater. Ideaal voor gezinnen.' },
               { range: '€ 500–800', type: 'RO + UV of premium merk', toelichting: 'UV-lamp voor extra microbiologische zekerheid, betere behuizing, langere garantie.' },
-              { range: '€ 800–1.500', type: 'Geïntegreerde 4-in-1 kraan + RO', toelichting: 'Kokend, warm, koud en gefilterd uit één kraan. Inclusief boiler, RO-systeem en designkraan.' },
+              { range: '€ 1.948–2.247', type: 'Geïntegreerde 4-in-1 kraan + RO', toelichting: 'Zeer heet (circa 96 °C), gekoeld, warm, koud en gezuiverd water uit één kraan. PureAqua 4-in-1: 1.948 euro, installatie optioneel 299 euro. Twee apparaten en twee stopcontacten onder de spoelbak.' },
             ].map(r => (
               <div key={r.range} className="flex gap-3 items-start border border-gray-100 rounded-xl p-3">
                 <div className="bg-[#E0F2FE] rounded-lg px-3 py-1.5 text-[#003F5C] font-bold text-sm shrink-0 min-w-[90px] text-center">
@@ -412,9 +412,9 @@ export default function WaterfilterOnderAanrechtPage() {
             {[
               {
                 naam: '4-in-1 kraan met osmose',
-                prijsklasse: '€ 799–1.299',
+                prijsklasse: '€ 1.948',
                 voor: 'Gezinnen die alles-in-één willen',
-                pros: 'Kokend + RO + warm + koud, één jaarlijkse filterwissel, strak design',
+                pros: 'Zeer heet (circa 96 °C) + gekoeld + RO + warm + koud, filters circa jaarlijks en membraan circa elke 2 jaar',
                 href: '/kokend-water-kraan/4-in-1',
               },
               {

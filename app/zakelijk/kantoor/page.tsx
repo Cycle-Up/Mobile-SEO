@@ -161,7 +161,7 @@ export default function KantoorPage() {
           </div>
           <div className="border border-gray-200 rounded-xl p-4">
             <h3 className="font-semibold text-[#005F8A] mb-1">Kokend-koud-koolzuur unit</h3>
-            <p className="text-sm text-gray-700">4-in-1 unit: gefilterd koud, gefilterd warm, kokend en bruisend water. Vervangt waterkoker en waterkoeler tegelijk. Kosten: 1.200-3.000 euro aanschaf. Merken: PureAqua, Quooker Pro, Grohe Blue Professional.</p>
+            <p className="text-sm text-gray-700">4-in-1 unit: gefilterd koud, gefilterd warm, kokend en bruisend water. Vervangt waterkoker en waterkoeler tegelijk. Kosten: 1.200-3.000 euro aanschaf. Merken met bruisend water: Quooker Pro (met CUBE), Grohe Blue Professional. De PureAqua 4-in-1 (1.948 euro) geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, maar geen bruisend water.</p>
           </div>
           <div className="border border-gray-200 rounded-xl p-4">
             <h3 className="font-semibold text-[#005F8A] mb-1">Bottleless waterkoeler (mains-fed)</h3>

@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: 'Welk waterfilter moet ik kopen voor thuis?',
     answer:
-      'Dat hangt af van je doel. Wil je alleen chloor en smaak verbeteren? Een actieve koolstoffilter (€30–100) is voldoende. Wil je ook nitraten, PFAS, zware metalen en kalk verwijderen? Dan is omgekeerde osmose de enige effectieve optie. Wil je alles in één — filter, kokend en bruisend water? Dan is een 4-in-1 kraan met osmose de meest complete keuze voor €699–899.',
+      'Dat hangt af van je doel. Wil je alleen chloor en smaak verbeteren? Een actieve koolstoffilter (€30–100) is voldoende. Wil je ook nitraten, PFAS, zware metalen en kalk verwijderen? Dan is omgekeerde osmose de enige effectieve optie. Wil je alles in één: osmosefilter, gekoeld en zeer heet water uit één kraan? Dan is een 4-in-1 kraan met osmose een complete keuze. De PureAqua 4-in-1 kost 1.948 euro (geen bruisend water).',
   },
   {
     question: 'Wat is het verschil tussen een waterfilter kopen en een waterontharder kopen?',
@@ -44,7 +44,7 @@ const faqItems = [
   {
     question: 'Kan ik een waterfilter zelf installeren?',
     answer:
-      'Ja, de meeste filtertypen zijn zelf te installeren. Een filterkan is direct te gebruiken. Een koolstoffilter op de kraan schroef je vast in 5 minuten. Een under-sink osmose-systeem installeer je zelf in 30–60 minuten met een aftakventiel op de koudwaterleiding en een kleine extra kraan. Een 4-in-1 kraan vervangt de bestaande mengkraan en is zelf te installeren in 1–2 uur. Alleen een waterontharder op de hoofdleiding vereist doorgaans een loodgieter.',
+      'Ja, de meeste filtertypen zijn zelf te installeren. Een filterkan is direct te gebruiken. Een koolstoffilter op de kraan schroef je vast in 5 minuten. Een under-sink osmose-systeem installeer je zelf in 30–60 minuten met een aftakventiel op de koudwaterleiding en een kleine extra kraan. Een 4-in-1 kraan vervangt de bestaande mengkraan en plaatst twee apparaten onder de spoelbak; daarvoor raden we een installateur aan (PureAqua biedt installatie aan voor 299 euro). Alleen een waterontharder op de hoofdleiding vereist doorgaans een loodgieter.',
   },
 ];
 
@@ -99,15 +99,15 @@ const filtertypes = [
   },
   {
     nr: 5,
-    naam: '4-in-1 kraan (kokend + koud + warm + osmose)',
-    prijs: '€ 699–900',
+    naam: '4-in-1 kraan (zeer heet + gekoeld + koud + warm + osmose)',
+    prijs: '€ 1.948',
     jaarkosten: '€ 50–150',
     zuiverheid: 'Zeer hoog (95–99% via RO)',
-    onderhoud: 'Jaarlijks één filterpatroon',
-    installatiegemak: 'Zelf, 1–2 uur',
+    onderhoud: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke 2 jaar',
+    installatiegemak: 'Installateur aanbevolen (optioneel 299 euro)',
     highlight: true,
-    voor: 'Alles-in-één: filter + kokend + koud + warm + bruisend water',
-    tegen: 'Hogere aanschaf; vervangt bestaande mengkraan',
+    voor: 'Alles-in-één: osmosefilter + zeer heet (circa 96 °C) + gekoeld + koud + warm water',
+    tegen: 'Hogere aanschaf; twee apparaten en twee stopcontacten onder de spoelbak; geen bruisend water',
   },
 ];
 
@@ -372,7 +372,7 @@ export default function WaterfilterKopenPage() {
                   { type: 'Koolstoffilter kraan', aanschaf: '€ 30–100', jaar: '€ 30–80', zuiver: 'Matig', inst: 'Zelf, eenvoudig', hl: false },
                   { type: 'Omgekeerde osmose', aanschaf: '€ 150–500', jaar: '€ 60–150', zuiver: '95–99%', inst: 'Zelf, 30–60 min', hl: true },
                   { type: 'Waterontharder', aanschaf: '€ 500–1.500', jaar: '€ 85–240', zuiver: 'Alleen kalk', inst: 'Installateur', hl: false },
-                  { type: '4-in-1 kraan + osmose', aanschaf: '€ 699–900', jaar: '€ 50–150', zuiver: '95–99%', inst: 'Zelf, 1–2 uur', hl: true },
+                  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', jaar: '€ 50–150', zuiver: '95–99%', inst: 'Installateur aanbevolen', hl: true },
                 ].map(r => (
                   <tr
                     key={r.type}
@@ -424,7 +424,7 @@ export default function WaterfilterKopenPage() {
                   { type: 'Filterkan', aanschaf: '€ 30', drieJr: '€ 210', tco: '€ 240' },
                   { type: 'Koolstoffilter kraan', aanschaf: '€ 60', drieJr: '€ 165', tco: '€ 225' },
                   { type: 'Osmose (under-sink)', aanschaf: '€ 250', drieJr: '€ 330', tco: '€ 580' },
-                  { type: '4-in-1 kraan + osmose', aanschaf: '€ 799', drieJr: '€ 240', tco: '€ 1.039' },
+                  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', drieJr: '€ 240', tco: '€ 2.188' },
                   { type: 'Flessenwater (gezin 4 pers.)', aanschaf: '€ 0', drieJr: '€ 1.500', tco: '€ 1.500' },
                 ].map(r => (
                   <tr key={r.type} className="border-b border-gray-100">
@@ -439,7 +439,7 @@ export default function WaterfilterKopenPage() {
           </div>
           <p className="text-xs text-gray-500 mb-5">
             Flessenwater: 2 liter/dag voor een gezin van 4 @ €0,70/liter. Jaar 3 osmose is hoger door
-            membraanvervanging (~€100). TCO 4-in-1 vervangt ook waterkoker en bruisend water.
+            membraanvervanging (~€100). De 4-in-1 vervangt ook de waterkoker.
           </p>
 
           {/* Budget adviezen */}
@@ -456,14 +456,14 @@ export default function WaterfilterKopenPage() {
                 link: '/omgekeerde-osmose/kopen',
               },
               {
-                budget: 'Budget €700–1.000',
-                advies: '4-in-1 kraan met osmose: osmosefilter + kokend + koud + bruisend water. Vervangt waterkoker en bruisend water-abonnement — op termijn kostenefficiënt.',
-                link: '/omgekeerde-osmose/kopen',
-              },
-              {
                 budget: 'Budget boven €1.000',
                 advies: 'Combineer een waterontharder (voor de hele woning) met een osmose-systeem of 4-in-1 kraan op de keukentap. Beste totaaloplossing voor harde-watergebieden.',
                 link: null,
+              },
+              {
+                budget: 'Budget rond €2.000',
+                advies: '4-in-1 kraan met osmose: osmosefilter + zeer heet (circa 96 °C) + gekoeld + koud en warm water. Vervangt de waterkoker. De PureAqua 4-in-1 kost 1.948 euro, installatie optioneel 299 euro.',
+                link: '/omgekeerde-osmose/kopen',
               },
             ].map(b => (
               <div key={b.budget} className="border border-gray-100 rounded-xl p-4">
@@ -534,12 +534,12 @@ export default function WaterfilterKopenPage() {
               },
               {
                 type: '4-in-1 kraan met osmose',
-                moeilijkheid: 'Matig',
+                moeilijkheid: 'Installateur aanbevolen',
                 vereisten: [
                   'Vervangt bestaande mengkraan (zelfde kraangat)',
                   'Verbinding op koud- en warmwaterleiding',
                   'Afvoerverbinding voor osmose-concentraat',
-                  'Geaard stopcontact in de onderkast vereist (230V)',
+                  'Ruimte voor twee apparaten (heet-/koelunit en osmose-unit) en twee geaarde stopcontacten (230V) in de onderkast',
                 ],
                 tijd: '1–2 uur',
               },
@@ -674,9 +674,9 @@ export default function WaterfilterKopenPage() {
                 prijs: '€ 150–500',
               },
               {
-                profiel: 'Wie alles-in-één wil: filter + kokend + bruisend',
-                advies: '4-in-1 kraan met osmose (€699–899). Vervangt waterkoker, bruisend water-abonnement en waterfilter in één systeem.',
-                prijs: '€ 699–899',
+                profiel: 'Wie alles-in-één wil: filter + zeer heet + gekoeld',
+                advies: '4-in-1 kraan met osmose (PureAqua, 1.948 euro). Vervangt waterkoker en waterfilter in één systeem. Geen bruisend water.',
+                prijs: '€ 1.948',
               },
               {
                 profiel: 'Eigenaar met kalkoverlast in heel het huis',

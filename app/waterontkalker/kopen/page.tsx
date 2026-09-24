@@ -340,7 +340,7 @@ export default function WaterOntkalkerKopenPage() {
               'U volgt een natriumbeperkt dieet (ontkalker via ionenwisseling voegt natrium toe aan water).',
               'U wilt naast kalk ook chloor, nitraten, PFAS en pesticiden verwijderen uit uw drinkwater.',
               'U heeft een klein huishouden van 1-2 personen waarbij de kosten van een ontkalker niet opwegen.',
-              'U wilt een 4-in-1 kraan met kokend, koud, koel en gefilterd water direct aan tafel.',
+              'U wilt een 4-in-1 kraan met zeer heet, gekoeld en gefilterd water uit één kraan.',
             ].map(r => (
               <div key={r} className="flex gap-3 items-start border border-gray-100 rounded-xl p-3">
                 <span className="text-[#005F8A] font-bold shrink-0 mt-0.5">&rarr;</span>
@@ -351,9 +351,11 @@ export default function WaterOntkalkerKopenPage() {
           <div className="bg-[#E0F2FE] border border-[#005F8A]/20 rounded-2xl p-5">
             <p className="font-semibold text-[#003F5C] mb-2">PureAqua 4-in-1: de complete drinkwateroplossing</p>
             <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-              De PureAqua 4-in-1 osmosekraan combineert omgekeerde osmose filtratie met kokend, koud en
-              warm water. Geen ontkalker nodig voor drinkwater — het osmosemembraan verwijdert 99% van
-              alle kalk, chloor en verontreinigingen. Ideaal voor appartementen en kleine huishoudens.
+              De PureAqua 4-in-1 osmosekraan combineert omgekeerde osmose in drie stappen met zeer heet
+              (circa 96 graden), gekoeld en gewoon warm en koud water. Voor drinkwater heb je dan geen
+              ontkalker nodig: het osmosemembraan houdt kalk tegen. In een SGS-labtest op een nieuw
+              systeem daalden PFOS met meer dan 99,6%, PFOA met 99,5% en lood met meer dan 99,8%. De
+              kraan kost 1.948 euro; onder de spoelbak zijn twee apparaten en twee stopcontacten nodig.
             </p>
             <Link
               href="/omgekeerde-osmose/kopen"

@@ -46,7 +46,7 @@ const faqItems = [
   {
     question: 'Wanneer is omgekeerde osmose beter dan een waterontharder?',
     answer:
-      'Omgekeerde osmose is beter als je (1) in een appartement of huurwoning woont, (2) een kleiner huishouden hebt (1–2 personen), (3) naast kalk ook chloor, nitraten, PFAS of microplastics wilt verwijderen, of (4) geen ruimte hebt voor een ontharder in de meterkast of garage. Osmose filtert uitsluitend het drinkwater aan de keukenkraan en is goedkoper in aanschaf (€150–899). Een waterontharder onthardt het volledige huishoudelijk water inclusief douche- en waswater.',
+      'Omgekeerde osmose is beter als je (1) in een appartement of huurwoning woont, (2) een kleiner huishouden hebt (1–2 personen), (3) naast kalk ook chloor, nitraten, PFAS of microplastics wilt verwijderen, of (4) geen ruimte hebt voor een ontharder in de meterkast of garage. Osmose filtert uitsluitend het drinkwater aan de keukenkraan en is goedkoper in aanschaf (vanaf circa €150). Een waterontharder onthardt het volledige huishoudelijk water inclusief douche- en waswater.',
   },
 ];
 
@@ -480,17 +480,18 @@ export default function WaterontharderKopenPage() {
             <div className="bg-white border border-gray-100 rounded-xl p-4">
               <p className="font-semibold text-gray-900 mb-2 text-sm">Vergelijking: osmose systeem (10 jaar)</p>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>Aanschaf (4-in-1 kraan): € 799</li>
+                <li>Aanschaf (4-in-1 kraan): € 1.948</li>
                 <li>Filterkosten (€ 100 × 10 jr): € 1.000</li>
-                <li>Vervanging membraan (2×): € 200</li>
-                <li className="font-bold text-[#005F8A] border-t border-gray-100 pt-1 mt-1">Totaal 10 jaar: ± € 1.999</li>
+                <li>Vervanging membraan (circa elke 2 jaar, 4×): € 400</li>
+                <li className="font-bold text-[#005F8A] border-t border-gray-100 pt-1 mt-1">Totaal 10 jaar: ± € 3.348</li>
               </ul>
             </div>
           </div>
           <p className="text-gray-700 mt-4 leading-relaxed">
-            Let op: bovenstaande vergelijking toont dat een osmose systeem voor het drinkwater op de
-            lange termijn goedkoper kan zijn — maar een waterontharder onthardt ook het douche-,
-            was- en apparatenwater. De keuze hangt af van je prioriteiten.
+            Let op: met een 4-in-1 kraan ben je over 10 jaar niet goedkoper uit dan met een
+            waterontharder, maar je krijgt er wel gekoeld en zeer heet gezuiverd water bij. Een
+            eenvoudig osmosesysteem onder het aanrecht is wel goedkoper. Een waterontharder onthardt
+            bovendien ook het douche-, was- en apparatenwater. De keuze hangt af van je prioriteiten.
           </p>
         </section>
 
@@ -555,7 +556,7 @@ export default function WaterontharderKopenPage() {
               {
                 situatie: '1 of 2 persoons huishouden',
                 uitleg:
-                  'Voor kleine huishoudens zijn de kosten van een volledige ionenwisselaar (€650–1.850 inclusief installatie) moeilijk te rechtvaardigen. Een osmose filter voor €150–899 geeft je schoon, kalkarm drinkwater voor één fractie van de prijs. De waterontharder onthardt ook douche- en waswater, maar voor kleine huishoudens zijn die kosten doorgaans niet noemenswaardig.',
+                  'Voor kleine huishoudens zijn de kosten van een volledige ionenwisselaar (€650–1.850 inclusief installatie) moeilijk te rechtvaardigen. Een osmosefilter vanaf circa €150 geeft je schoon, kalkarm drinkwater voor één fractie van de prijs. De waterontharder onthardt ook douche- en waswater, maar voor kleine huishoudens zijn die kosten doorgaans niet noemenswaardig.',
               },
               {
                 situatie: 'Je wilt ook chloor, pesticiden en PFAS verwijderen',
@@ -582,8 +583,8 @@ export default function WaterontharderKopenPage() {
               Kleinere huishoudens of huurders: osmose is vaak slimmer
             </p>
             <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-              Een 4-in-1 osmose kraan combineert omgekeerde osmose filtratie met kokend, koud, warm
-              en bruisend water — alles uit één keukenkraan. Dit is de meest complete drinkwateroplossing
+              Een 4-in-1 osmose kraan combineert omgekeerde osmose filtratie met zeer heet (circa 96
+              graden), gekoeld, warm en koud water uit één keukenkraan. Dit is de meest complete drinkwateroplossing
               voor appartementen en kleine huishoudens. Bekijk het aanbod op onze{' '}
               <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">
                 osmose filter kopen pagina
