@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopCTA } from '@/components/CountertopCTA';
 
 export const metadata: Metadata = {
   title: 'Beste waterfilter onder EUR 100 — eerlijke vergelijking goedkope filters | WaterfilterPlatform',
@@ -215,14 +215,7 @@ export default function BudgetOnder100Page() {
           </div>
         </section>
 
-        <AffiliateCTA
-          destination="countertopRo"
-          campaign="omgekeerde-osmose"
-          content="beste-waterfilter-budget-onder-100-cta"
-          label="Bekijk de Countertop RO"
-          title="Osmose zonder installatie?"
-          sub="De Countertop RO is een plug-and-play osmose-apparaat zonder installatie bij onze partner PureAqua."
-        />
+        <CountertopCTA context="huur" content="beste-waterfilter-budget-onder-100-cta" />
 
         <CTABanner context="algemeen" />
       </div>

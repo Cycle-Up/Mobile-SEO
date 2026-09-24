@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { CountertopCTA } from '@/components/CountertopCTA';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan in huurwoning: mag dat en hoe vraag je toestemming?',
@@ -321,6 +322,8 @@ export default function HuurwoningPage() {
           </Link>
           .
         </p>
+
+        <CountertopCTA context="huur" content="kokend-water-kraan-huurwoning-countertop" />
 
         <CTABanner context="osmose" />
 

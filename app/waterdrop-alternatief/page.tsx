@@ -6,6 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopRecommendation } from '@/components/CountertopRecommendation';
 
 export function generateMetadata(): Metadata {
   return {
@@ -136,6 +137,8 @@ export default function WaterdropAlternatiefPage() {
           question="Wat is het beste Waterdrop alternatief?"
           answer="Waterdrop maakt compacte tankless osmosefilters met goede TDS-reductie. Een sterk alternatief is een 4-in-1 kraan met ingebouwde osmose: die levert naast puur drinkwater ook kokend en bruisend water uit een kraan. Let bij elke osmose-aankoop op NSF/ANSI 58-certificering en de jaarlijkse filterkosten; die bepalen samen met de aanschaf de echte prijs."
         />
+
+        <CountertopRecommendation content="waterdrop-alternatief-countertop-aanbeveling" />
 
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat biedt Waterdrop?</h2>

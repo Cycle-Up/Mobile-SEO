@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { CountertopCTA } from '@/components/CountertopCTA';
 
 export const metadata: Metadata = {
   title: 'PFAS verwijderen met omgekeerde osmose: 95-99% reductie',
@@ -253,6 +254,8 @@ export default function PfasOsmosePage() {
             in detail.
           </p>
         </section>
+
+        <CountertopCTA context="pfas" content="pfas-waterfilter-osmose-countertop" />
 
         <CTABanner context="osmose" />
 

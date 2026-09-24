@@ -3,9 +3,9 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopCTA } from '@/components/CountertopCTA';
 
 export const metadata: Metadata = {
   title: "Beste waterfilter voor een woonboot: unieke uitdagingen en oplossingen",
@@ -359,14 +359,7 @@ export default function WoonbootPage() {
           </div>
         </section>
 
-        <AffiliateCTA
-          destination="countertopRo"
-          campaign="omgekeerde-osmose"
-          content="beste-waterfilter-woonboot-cta"
-          label="Osmose zonder vaste installatie"
-          title="Osmose zonder installatie?"
-          sub="De Countertop RO is een plug-and-play osmose-apparaat zonder installatie bij onze partner PureAqua."
-        />
+        <CountertopCTA context="huur" content="beste-waterfilter-woonboot-cta" />
 
         <CTABanner context="osmose" />
       </div>

@@ -46,7 +46,7 @@ test('the verified money pages from the briefing are in the allowlist', () => {
     '/collections/zuiver-water-kranen',
     '/products/the-source',
     '/products/pureaqua-4-in-1-kraan',
-    '/products/countertop-ro',
+    '/products/water-zuiver-apparaat',
     '/products/joep-waterontharder',
     '/products/aquacell-waterontharder',
     '/products/tds-meter-test-uw-waterkwaliteit',

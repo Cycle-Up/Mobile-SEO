@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopCTA } from '@/components/CountertopCTA';
+import { CountertopRecommendation } from '@/components/CountertopRecommendation';
 
 export const metadata: Metadata = {
   title: 'Beste waterfilter voor een studentenkamer — zonder installatie | WaterfilterPlatform',
@@ -89,6 +90,8 @@ export default function StudentenkamerPage() {
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-8">
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
         <AuthorBox datePublished="2026-05-29" />
+
+        <CountertopRecommendation content="beste-waterfilter-studentenkamer-countertop-aanbeveling" />
 
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Situatie: huurkamer, beperkt budget, geen toestemming nodig</h2>
@@ -236,14 +239,7 @@ export default function StudentenkamerPage() {
           </div>
         </section>
 
-        <AffiliateCTA
-          destination="countertopRo"
-          campaign="omgekeerde-osmose"
-          content="beste-waterfilter-studentenkamer-cta"
-          label="Plug-and-play osmose-apparaat"
-          title="Osmose zonder installatie?"
-          sub="De Countertop RO is een plug-and-play osmose-apparaat zonder installatie bij onze partner PureAqua."
-        />
+        <CountertopCTA context="huur" content="beste-waterfilter-studentenkamer-cta" />
 
         <CTABanner context="algemeen" />
       </div>

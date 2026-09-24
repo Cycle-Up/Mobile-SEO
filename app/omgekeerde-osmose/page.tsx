@@ -7,6 +7,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { OsmoseIllustration } from '@/components/OsmoseIllustration';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopCTA } from '@/components/CountertopCTA';
 
 export const metadata: Metadata = {
   title: 'Wat is omgekeerde osmose? Uitleg & RO filter kopen 2026',
@@ -790,6 +791,8 @@ export default function OmgekeerdeOsmosePage() {
 
         {/* CTA */}
         <HubCrossLinks exclude="omgekeerde-osmose" />
+
+        <CountertopCTA context="algemeen" content="omgekeerde-osmose-countertop" />
 
         <AffiliateCTA
           destination="zuiverWaterKranen"

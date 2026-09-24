@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
-import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopCTA } from '@/components/CountertopCTA';
+import { CountertopRecommendation } from '@/components/CountertopRecommendation';
 
 export function generateMetadata(): Metadata {
   return {
@@ -156,6 +157,8 @@ export default function AquaTruAlternatiefPage() {
           answer="Het sterkste alternatief is een onder-aanrecht omgekeerde-osmosesysteem. Dat filtert net zo breed als de AquaTru - beide gebruiken osmose - maar verdwijnt uit het zicht, levert water continu uit een aparte kraan en kost doorgaans minder per liter dankzij standaard filters. AquaTru blijft handig als je osmosewater wilt zonder iets te installeren, bijvoorbeeld in een huurwoning."
         />
 
+        <CountertopRecommendation content="aquatru-alternatief-countertop-aanbeveling" />
+
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat doet de AquaTru precies?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -253,14 +256,7 @@ export default function AquaTruAlternatiefPage() {
           </p>
         </section>
 
-        <AffiliateCTA
-          destination="countertopRo"
-          campaign="omgekeerde-osmose"
-          content="aquatru-alternatief-cta"
-          label="Bekijk de Countertop RO (osmose zonder installatie)"
-          title="Osmose zonder installatie?"
-          sub="De Countertop RO is een plug-and-play osmose-apparaat zonder installatie bij onze partner PureAqua, als alternatief voor AquaTru."
-        />
+        <CountertopCTA context="alternatief" content="aquatru-alternatief-cta" />
 
         <CTABanner context="osmose" />
 

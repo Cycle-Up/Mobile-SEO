@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { CountertopCTA } from '@/components/CountertopCTA';
 
 export const metadata: Metadata = {
   title: 'Waterfilter voor tiny house: compacte oplossingen zonder vaste aansluiting',
@@ -277,6 +278,8 @@ export default function WaterfilterTinyHousePage() {
             </Link>
           </div>
         </section>
+
+        <CountertopCTA context="huur" content="waterfilter-tiny-house-countertop" />
 
         <CTABanner context="osmose" />
 

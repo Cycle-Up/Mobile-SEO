@@ -6,6 +6,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { CountertopCTA } from '@/components/CountertopCTA';
 
 export const metadata: Metadata = {
   title: 'PFAS waterfilter kopen: beste modellen die PFAS verwijderen (2026)',
@@ -364,6 +365,8 @@ export default function PfasWaterfilterKopenPage() {
             </Link>
           </div>
         </section>
+
+        <CountertopCTA context="pfas" content="pfas-waterfilter-kopen-countertop" />
 
         <AffiliateCTA
           destination="zuiverWaterKranen"
