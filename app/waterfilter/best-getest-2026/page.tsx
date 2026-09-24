@@ -5,12 +5,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: 'Beste waterfilter 2026: getest en vergeleken (grote gids)',
+  title: 'Beste waterfilter 2026: vergeleken per categorie (grote gids)',
   description:
     'Welk waterfilter is de beste keuze in 2026? Onze methodologie, categorie-winnaars, uitgebreide vergelijkingstabel (5 × 8 criteria), rode vlaggen in marketing.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/best-getest-2026' },
   openGraph: {
-    title: 'Beste waterfilter 2026: getest en vergeleken (grote gids)',
+    title: 'Beste waterfilter 2026: vergeleken per categorie (grote gids)',
     description:
       'BWT Penguin (filterkan), Ecosoft FMV3ECO (koolstof), Steripen Ultra (UV), PureAqua 4-in-1 (osmose) en Brita Maxtra Pro (budget) — 5 winnaars per categorie.',
     url: 'https://waterfilterplatform.nl/waterfilter/best-getest-2026',
@@ -25,9 +25,9 @@ const faqItems = [
       'De beste waterfilter hangt af van uw situatie. Onze algehele keuze is de PureAqua 4-in-1 kraan met osmose: die combineert omgekeerde osmose (SGS-labtest op een nieuw systeem: PFOS meer dan 99,6%, PFOA 99,5% en lood meer dan 99,8% minder) met zeer heet (circa 96 graden) en gekoeld water uit één kraan. Voor budget: Brita Maxtra Pro filterkan. Voor koolstoffilter onderbouw: Ecosoft FMV3ECO. Voor UV: Steripen Ultra. Voor filterkan premium: BWT Penguin.',
   },
   {
-    question: 'Hoe hebben jullie de waterfilters getest en vergeleken?',
+    question: 'Hoe hebben jullie de waterfilters vergeleken?',
     answer:
-      'Wij vergeleken waterfilters op: (1) filtratieeffectiviteit voor de belangrijkste verontreinigingen (kalk, nitraten, zware metalen, PFAS, bacteriën), (2) gemak van installatie, (3) jaarlijkse kosten inclusief filtervervanging, (4) onderhoudsvriendelijkheid, (5) gebruikersbeoordelingen, (6) NSF/ANSI-certificeringen en (7) beschikbaarheid van vervangende filters in Nederland.',
+      'Wij vergeleken waterfilters op: (1) filtratieeffectiviteit voor de belangrijkste verontreinigingen (kalk, nitraten, zware metalen, PFAS, bacteriën), (2) gemak van installatie, (3) jaarlijkse kosten inclusief filtervervanging, (4) onderhoudsvriendelijkheid, (5) gebruikersbeoordelingen, (6) NSF/ANSI-certificeringen of een onafhankelijk labrapport en (7) beschikbaarheid van vervangende filters in Nederland. Wij testen niet zelf in een laboratorium.',
   },
   {
     question: 'Wat is NSF/ANSI certificering voor waterfilters?',
@@ -87,7 +87,7 @@ const categorieWinnaars = [
     highlight: false,
   },
   {
-    categorie: 'Onze keuze osmosefilter / algeheel winnaar',
+    categorie: 'Onze keuze osmosefilter',
     winnaar: 'PureAqua 4-in-1',
     prijs: '€ 1.948',
     sterkste: 'Osmose (SGS: PFOS meer dan 99,6%, lood meer dan 99,8% minder), zeer heet + gekoeld + warm/koud uit één kraan',
@@ -130,7 +130,7 @@ export default function BestGetest2026Page() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'Beste waterfilter 2026: getest en vergeleken (grote gids)',
+          title: 'Beste waterfilter 2026: vergeleken per categorie (grote gids)',
           description:
             'Categorie-winnaars, 5×8 vergelijkingstabel, rode vlaggen in marketing en NSF/ANSI certificeringen — de complete gids voor de beste waterfilter van 2026.',
           datePublished: '2026-04-18',
@@ -149,7 +149,7 @@ export default function BestGetest2026Page() {
             <span>Best getest 2026</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Beste waterfilter 2026: getest en vergeleken (grote gids)
+            Beste waterfilter 2026: vergeleken per categorie (grote gids)
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
             Welk <strong>waterfilter</strong> presteert het beste in 2026? We vergeleken de vijf meest
@@ -182,7 +182,7 @@ export default function BestGetest2026Page() {
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
           <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
-            <li><a href="#methodologie" className="hover:underline">Onze testmethodologie</a></li>
+            <li><a href="#methodologie" className="hover:underline">Onze beoordelingsmethode</a></li>
             <li><a href="#winnaars" className="hover:underline">Categorie-winnaars tabel</a></li>
             <li><a href="#winnaars-detail" className="hover:underline">Detailbespreking per winnaar</a></li>
             <li><a href="#vergelijkmatrix" className="hover:underline">5 × 8 vergelijkingstabel</a></li>
@@ -196,7 +196,7 @@ export default function BestGetest2026Page() {
         {/* Methodologie */}
         <section id="methodologie">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Hoe hebben wij getest en vergeleken?
+            Hoe hebben wij vergeleken?
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
             Onze vergelijking is gebaseerd op zeven criteria die wij voor elke categorie consistent hebben
@@ -233,7 +233,7 @@ export default function BestGetest2026Page() {
               {
                 nr: 6,
                 titel: 'NSF/ANSI certificeringen',
-                tekst: 'Alleen filters met onafhankelijke certificering (NSF, KWR, Kiwa) worden als volwaardig beschouwd. Ongecertificeerde producten worden vermeld maar niet als winnaar aanbevolen.',
+                tekst: 'We kijken naar onafhankelijke certificering (NSF, KWR, Kiwa) op het verkochte model. Heeft een product die niet, dan noemen we het alleen met een onafhankelijk labrapport en zeggen we dat erbij. Dat geldt ook voor de PureAqua 4-in-1 (SGS-labtest, geen NSF-certificering).',
               },
               {
                 nr: 7,
@@ -278,7 +278,7 @@ export default function BestGetest2026Page() {
                     <p className="font-bold text-[#005F8A]">{w.prijs}</p>
                     {w.highlight && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-[#005F8A] text-white">
-                        Algeheel winnaar
+                        Onze keuze
                       </span>
                     )}
                   </div>
@@ -349,7 +349,7 @@ export default function BestGetest2026Page() {
             </div>
 
             <div className="border-l-4 border-[#005F8A] pl-5">
-              <h3 className="text-xl font-bold text-[#003F5C] mb-2">PureAqua 4-in-1: onze keuze als osmosefilter en algeheel winnaar</h3>
+              <h3 className="text-xl font-bold text-[#003F5C] mb-2">PureAqua 4-in-1: onze keuze als osmosefilter</h3>
               <p className="text-gray-700 leading-relaxed mb-3">
                 De PureAqua 4-in-1 is volgens ons de meest complete waterfilteroplossing in deze vergelijking.
                 Het systeem combineert omgekeerde osmose in drie stappen (voorfilter, membraan en
@@ -367,7 +367,7 @@ export default function BestGetest2026Page() {
                 en filtert met actieve kool, niet met osmose.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Wij beoordelen de PureAqua 4-in-1 als algeheel winnaar op basis van: maximale filtratiedekking,
+                Volgens ons is de PureAqua 4-in-1 de sterkste osmosekeuze op basis van: brede filtratie (SGS-labtest, geen NSF-certificering),
                 gebruiksgemak (één kraan voor heet, gekoeld en gezuiverd water)
                 en de groeiende relevantie van PFAS-filtratie in Nederland.
               </p>
