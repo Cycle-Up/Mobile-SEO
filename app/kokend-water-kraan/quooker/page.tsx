@@ -34,7 +34,7 @@ const faqSchema = {
       name: 'Wat is het verschil tussen Quooker en PureAqua?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Quooker is de premiumkeuze met sterker merk, hoger prijskaartje en koolstoffiltratie. PureAqua heeft ingebouwde omgekeerde osmose (RO) waardoor ook PFAS, lood en nitraat worden verwijderd. PureAqua is 300 tot 700 euro goedkoper dan vergelijkbare Quooker CUBE-configuraties. Voor veiligheidsbewuste kopers in PFAS-gebieden of huizen met oudere leidingen biedt PureAqua betere filterbescherming.',
+        text: 'Quooker is de premiumkeuze met sterker merk, hoger prijskaartje en koolstoffiltratie. De PureAqua 4-in-1 heeft omgekeerde osmose (RO); een SGS-labtest op een nieuw systeem mat meer dan 99,6% minder PFOS en meer dan 99,8% minder lood. De PureAqua 4-in-1 kost 1.948 euro; een Quooker Flex PRO3 met CUBE kost bij PureAqua 2.240 euro, dus circa 300 euro meer. Die Quooker geeft wel bruisend water, de 4-in-1 niet. Voor veiligheidsbewuste kopers in PFAS-gebieden of huizen met oudere leidingen biedt PureAqua betere filterbescherming.',
       },
     },
     {
@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'Welke kokend water kraan heeft de beste filterkwaliteit?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'PureAqua 4-in-1 heeft de beste filterkwaliteit door de ingebouwde RO-osmosefilter: verwijdert PFAS, lood, nitraat, medicijnresten en vrijwel alle opgeloste stoffen. Zip HydroTap combineert koolstoffilter met UV-desinfectie voor microbiologische veiligheid. Quooker CUBE en Grohe Red gebruiken koolstoffilters die voornamelijk smaak en chloor verbeteren maar geen PFAS of zware metalen verwijderen.',
+        text: 'Van deze vier heeft de PureAqua 4-in-1 volgens ons de beste filterkwaliteit door de ingebouwde RO-osmosefilter: een SGS-labtest op een nieuw systeem mat meer dan 99,6% minder PFOS, 99,5% minder PFOA en meer dan 99,8% minder lood. Zip HydroTap combineert koolstoffilter met UV-desinfectie voor microbiologische veiligheid. Quooker CUBE en Grohe Red gebruiken koolstoffilters die voornamelijk smaak en chloor verbeteren maar geen PFAS of zware metalen verwijderen.',
       },
     },
     {
@@ -129,7 +129,7 @@ export default function QuookerVergelijkingPage() {
           </p>
         </div>
 
-        <QuickAnswer answer="Quooker is marktleider in Nederland met premium design maar hoge prijs. PureAqua biedt ingebouwde osmosefiltratie (incl. PFAS) voor 300-700 euro minder. Grohe Red Duo is het goedkoopste volwaardige alternatief vanaf 700 euro. Quooker CUBE-koolstoffilter verwijdert geen PFAS of nitraat." />
+        <QuickAnswer answer="Quooker is marktleider in Nederland met premium design maar hoge prijs. De PureAqua 4-in-1 biedt osmosefiltratie (incl. PFAS) voor circa 300 euro minder dan een Quooker Flex PRO3 met CUBE, maar zonder bruisend water. Grohe Red Duo is het goedkoopste volwaardige alternatief vanaf 700 euro. Quooker CUBE-koolstoffilter verwijdert geen PFAS of nitraat." />
 
         <CTABanner context="osmose" />
 
@@ -203,8 +203,8 @@ export default function QuookerVergelijkingPage() {
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2 font-medium">PureAqua 4-in-1</td>
-                <td className="border border-gray-300 px-3 py-2">Kokend + koud + osmose + bruisend</td>
-                <td className="border border-gray-300 px-3 py-2">&euro;800&ndash;1.500</td>
+                <td className="border border-gray-300 px-3 py-2">Zeer heet (circa 96&deg;C) + gekoeld + osmose, geen bruisend</td>
+                <td className="border border-gray-300 px-3 py-2">&euro;1.948</td>
                 <td className="border border-gray-300 px-3 py-2">RO-osmose</td>
                 <td className="border border-gray-300 px-3 py-2">Ja</td>
               </tr>
@@ -240,7 +240,7 @@ export default function QuookerVergelijkingPage() {
           Quooker scoort op design, merkwaarde en premium kwaliteitsgevoel. De CUBE-versie biedt gefilterd koud en bruisend water via een koolstoffilter die chloor, smaak en sommige organische stoffen aanpakt.
         </p>
         <p className="text-gray-700 mb-4">
-          PureAqua heeft ingebouwde omgekeerde osmose. Dit betekent dat ook PFAS (voor- en eeuwigdurende chemicalien), lood, nitraat en medicijnresten worden verwijderd. Voor bewoners in PFAS-belaste gebieden of huizen gebouwd voor 1960 (mogelijke loodleidingen) is dit een wezenlijk verschil.
+          PureAqua heeft ingebouwde omgekeerde osmose. Dit betekent dat ook PFAS (voor- en eeuwigdurende chemicalien), lood en nitraat sterk worden verminderd; een SGS-labtest op een nieuw systeem mat meer dan 99,6% minder PFOS en meer dan 99,8% minder lood. Voor bewoners in PFAS-belaste gebieden of huizen gebouwd voor 1960 (mogelijke loodleidingen) is dit een wezenlijk verschil.
         </p>
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6">
           <p className="text-amber-800 font-semibold text-sm">Belangrijk: Quooker CUBE filtert geen PFAS</p>

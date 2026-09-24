@@ -44,7 +44,7 @@ const faqItems = [
   {
     question: 'Is een losse osmose filter of een 4-in-1 kraan slimmer?',
     answer:
-      'Een losse osmose filter is goedkoper in aanschaf (€150–400) maar vereist een apart kraantje en biedt alleen koud gefilterd water. Een 4-in-1 kraan met osmose integreert osmosefiltratie met kokend, koud, warm en bruisend water in één elegant apparaat. Op de lange termijn is de 4-in-1 kraan voordeliger als je ook een kokendwaterfunctie wilt.',
+      'Een losse osmose filter is goedkoper in aanschaf (€150–400) maar vereist een apart kraantje en biedt alleen koud gefilterd water. Een 4-in-1 kraan met osmose (PureAqua, €1.948) integreert osmosefiltratie met zeer heet (circa 96 graden), gekoeld en gewoon warm en koud water in één kraan; bruisend water zit er niet in. Wil je ook een kokendwaterfunctie, dan vervangt de 4-in-1 kraan twee losse systemen.',
   },
 ];
 
@@ -80,16 +80,16 @@ const filterTypes = [
   },
   {
     type: '4-in-1 kraan met osmose (geïntegreerd)',
-    prijs: '€ 699 – 899',
+    prijs: '€ 1.948',
     geschiktVoor: 'Complete keukeninstallatie',
     voordelen: [
-      'Osmosefilter + kokend + koud + warm + bruisend',
+      'Osmosefilter + zeer heet + gekoeld + warm en koud',
       'Één kraantje, alles in één',
       'Tankless, altijd vers gefilterd water',
-      'Één jaarlijkse filterwissel',
+      'Filters circa jaarlijks, membraan circa elke twee jaar',
       'Strak design, geen extra kraantje nodig',
     ],
-    nadelen: ['Hogere aanschafprijs', 'Vereist stopcontact'],
+    nadelen: ['Hogere aanschafprijs', 'Twee apparaten en twee stopcontacten onder het aanrecht', 'Geen bruisend water'],
     aanbevolen: true,
   },
 ];
@@ -132,9 +132,9 @@ const priceTiers = [
     wat: 'Hoge capaciteit, 5–6 filterstappen, mineralisatie, laag stroomverbruik, smart-monitoring via app mogelijk. Geschikt voor gezinnen met 3+ personen.',
   },
   {
-    range: '€ 699 – 899',
+    range: '€ 1.948',
     label: '4-in-1 integratie',
-    wat: 'Complete keukenoplossing: osmosefilter + kokend + koud + warm + bruisend. Geen losse filters te kopen, één jaarabonnement. Best value als je ook kokend water wilt.',
+    wat: 'Complete keukenoplossing: osmosefilter + zeer heet + gekoeld + warm en koud water (geen bruisend). Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar. Volgens ons de beste waarde als je ook kokend water wilt.',
   },
 ];
 
@@ -380,18 +380,18 @@ export default function OsmoseFilterKopenPage() {
                 <span className="text-xs bg-[#005F8A] text-white px-2 py-0.5 rounded-full">Aanbevolen</span>
               </div>
               <p className="text-sm text-gray-700 mb-3 leading-relaxed">
-                Combineert een osmosefilter, kokend water (100°C), koud gefilterd water, warm water én bruisend water in één elegante keukenkraan. Één filterset per jaar, geen losse apparaten.
+                Combineert een osmosefilter met zeer heet water (circa 96°C), gekoeld water en gewoon warm en koud water in één elegante keukenkraan. Bruisend water zit er niet in. Onder het aanrecht staan twee apparaten.
               </p>
               <ul className="text-sm space-y-1">
-                <li className="text-green-700">✓ Alles in één — osmose + kokend water</li>
-                <li className="text-green-700">✓ Één jaarlijkse filterwissel</li>
+                <li className="text-green-700">✓ Alles in één kraan: osmose, zeer heet en gekoeld water</li>
+                <li className="text-green-700">✓ Filters circa jaarlijks, membraan circa 2-jaarlijks</li>
                 <li className="text-green-700">✓ Strak design, geen extra kraantjes</li>
                 <li className="text-green-700">✓ Bespaart op waterkoker & filter apart</li>
               </ul>
             </div>
           </div>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Als je overweegt ook een kokend water kraan aan te schaffen, dan is de 4-in-1 oplossing vrijwel altijd voordeliger op de lange termijn. Bekijk ons volledige overzicht op de{' '}
+            Als je overweegt ook een kokend water kraan aan te schaffen, dan is de 4-in-1 oplossing vaak de logische keuze: één kraan in plaats van twee systemen. Bekijk ons volledige overzicht op de{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] hover:underline">4-in-1 kraan pagina</Link>.
           </p>
         </section>
@@ -418,7 +418,7 @@ export default function OsmoseFilterKopenPage() {
             <div className="bg-gray-50 rounded-xl p-4">
               <h3 className="font-bold text-gray-800 mb-2">Professionele installatie</h3>
               <p className="text-sm text-gray-600 mb-3 leading-relaxed">
-                Aangeraden als je geen ervaring hebt met wateraansluitingen, als je een oudere woning hebt met verouderde leidingen, of als je een 4-in-1 kraan met heet-water-boiler installeert. Kosten: €80–150 voor een loodgieter of installateur.
+                Aangeraden als je geen ervaring hebt met wateraansluitingen, als je een oudere woning hebt met verouderde leidingen, of als je een 4-in-1 kraan met heet-water-boiler installeert (PureAqua biedt installatie van de 4-in-1 aan voor €299). Kosten voor een los systeem: €80–150 voor een loodgieter of installateur.
               </p>
               <p className="text-sm font-semibold text-gray-700">Wanneer professioneel?</p>
               <ul className="text-sm text-gray-600 mt-1 space-y-1">
@@ -513,8 +513,8 @@ export default function OsmoseFilterKopenPage() {
             Als je alleen schoon drinkwater wilt filteren en budget beperkt is, is een 4-traps under-counter tanksysteem (€150–250) een prima keuze. Zoek naar minimaal 95% TDS-reductie, een afvalwater ratio van maximaal 2:1, en een filterbudget van €30–60 per jaar.
           </p>
           <p className="text-gray-600 text-sm leading-relaxed mb-3">
-            Wil je ook kokend water, of zoek je een complete keukenoplossing zonder losse apparaten? Dan is de{' '}
-            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">4-in-1 kraan met osmose</Link> de slimste investering. Je betaalt meer upfront, maar bespaart op een waterkoker, apart filter-kraantje, en meerdere filtersets per jaar.
+            Wil je ook kokend water, of zoek je een complete keukenoplossing zonder losse apparaten op het aanrecht? Dan is de{' '}
+            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">4-in-1 kraan met osmose</Link> de slimste investering. Je betaalt meer upfront (€1.948), maar hebt geen waterkoker en apart filter-kraantje meer nodig.
           </p>
           <p className="text-gray-600 text-sm leading-relaxed">
             Bekijk ook onze{' '}

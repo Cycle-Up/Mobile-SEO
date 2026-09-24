@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: "Hoe bereid je babymelk met osmosewater?",
     answer:
-      "Kook het osmosewater eerst (ook al is het al gefilterd) en laat het afkoelen tot 70 graden Celsius voordat u het melkpoeder toevoegt. De reden: melkpoeder is niet steriel en kan bacterien als Cronobacter sakazakii bevatten. Water van 70 graden doodt deze bacterie. Een 4-in-1 kokend-water-kraan met osmose geeft direct water van 70-100 graden, ideaal voor babymelkbereiding. Laat de fles daarna snel afkoelen onder koud water.",
+      "Kook het osmosewater eerst (ook al is het al gefilterd) en laat het afkoelen tot 70 graden Celsius voordat u het melkpoeder toevoegt. De reden: melkpoeder is niet steriel en kan bacterien als Cronobacter sakazakii bevatten. Water van 70 graden doodt deze bacterie. Een 4-in-1 kraan met osmose geeft direct zeer heet water (bij de PureAqua 4-in-1 circa 96 graden), ruim boven de 70 graden die nodig is. Laat de fles daarna snel afkoelen onder koud water.",
   },
   {
     question: "Is remineralisatie van osmosewater nodig voor babyvoeding?",
@@ -51,7 +51,7 @@ const faqItems = [
   {
     question: "Is een 4-in-1 kokend-water-kraan geschikt voor babymelkbereiding?",
     answer:
-      "Ja, een combinatie van osmosefilter en 4-in-1 kokend-water-kraan is ideaal voor babymelkbereiding. De kraan levert direct water op de gewenste temperatuur (70-100 graden), het osmosefilter zorgt voor zuiver water zonder nitraat, lood en andere verontreinigingen, en het systeem elimineert de noodzaak van afzonderlijk koken en afkoelen. Zorg dat de kraan is ingesteld op ten minste 70 graden voor gebruik bij flesvoeding.",
+      "Ja, een combinatie van osmosefilter en 4-in-1 kokend-water-kraan is praktisch voor babymelkbereiding. De PureAqua 4-in-1 levert direct zeer heet water van circa 96 graden, ruim boven de 70 graden die nodig is om melkpoeder veilig aan te lengen, en het osmosefilter vermindert nitraat, lood en andere verontreinigingen sterk. Controleer de temperatuur en volg altijd de bereidingsinstructies op de verpakking en het advies van het consultatiebureau.",
   },
   {
     question: "Kunnen we ook bronwater of mineraalwater gebruiken voor flesvoeding?",
@@ -315,21 +315,21 @@ export default function BabyFlesvoedingOsmosePage() {
             4-in-1 kokend-water-kraan: ideaal voor flesvoedingbereiding
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Een 4-in-1 kokend-water-kraan met ingebouwd osmosefilter is de meest
+            Een 4-in-1 kokend-water-kraan met ingebouwd osmosefilter is een
             praktische oplossing voor ouders die dagelijks flesvoeding bereiden.
             Het systeem biedt:
           </p>
           <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
             <li>
-              <strong>Osmosefiltratie:</strong> verwijdert nitraat, lood, PFAS, pesticiden
-              en microplastics
+              <strong>Osmosefiltratie:</strong> vermindert nitraat, lood, PFAS en microplastics sterk
+              (SGS-labtest op een nieuwe PureAqua 4-in-1: meer dan 99,8% minder lood, meer dan 99,6% minder PFOS)
             </li>
             <li>
-              <strong>Instant warm water op 70-100 graden:</strong> voldoet direct aan
-              de WHO-eis voor sterilisatie van het melkpoeder
+              <strong>Direct zeer heet water (circa 96 graden):</strong> ruim boven de 70 graden
+              die de WHO adviseert voor het aanlengen van melkpoeder
             </li>
             <li>
-              <strong>Koude osmosewaterkraan:</strong> voor doorspoelen en afkoelen
+              <strong>Gekoeld osmosewater:</strong> voor doorspoelen en afkoelen
             </li>
             <li>
               <strong>Tijdsbesparing:</strong> geen ketels of pannen nodig voor dagelijkse

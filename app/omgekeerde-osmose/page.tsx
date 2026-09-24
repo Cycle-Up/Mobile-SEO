@@ -48,7 +48,7 @@ const faqItems = [
   {
     question: 'Hoe vaak moet ik de filters vervangen?',
     answer:
-      'Een vuistregel: sediment- en koolstof voorfilters elke 6–12 maanden, het RO-membraan elke 2–3 jaar, en de post-koolstof na 12 maanden. Hard water of veel sediment in het leidingnet kan deze intervallen verkorten. Een complete 4-in-1 kraan met osmose heeft één jaarlijkse filterwissel.',
+      'Een vuistregel: sediment- en koolstof voorfilters elke 6–12 maanden, het RO-membraan elke 2–3 jaar, en de post-koolstof na 12 maanden. Hard water of veel sediment in het leidingnet kan deze intervallen verkorten. Bij een 4-in-1 kraan met osmose zoals de PureAqua 4-in-1 vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar.',
   },
   {
     question: 'Wat is het verschil tussen omgekeerde osmose en een Brita filterkan?',
@@ -735,8 +735,8 @@ export default function OmgekeerdeOsmosePage() {
             ))}
           </div>
           <p className="text-gray-700 mt-4 leading-relaxed">
-            Bij een geïntegreerd 4-in-1 systeem met osmose combineer je alles in
-            één jaarlijkse filterwissel — geen losse patronen meer. Lees meer over deze optie op
+            Bij een geïntegreerd 4-in-1 systeem met osmose wissel je voorfilter en remineralisatiefilter
+            circa jaarlijks en het membraan circa elke twee jaar, allemaal in één systeem. Lees meer over deze optie op
             de pagina <Link href="/omgekeerde-osmose/voor-thuis" className="text-[#005F8A] underline hover:no-underline">osmose apparaat voor thuis</Link>.
           </p>
         </section>

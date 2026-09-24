@@ -35,7 +35,7 @@ const faqSchema = {
       name: 'Is een Quooker duurder dan alternatieven?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, een Quooker is het meest premium merk: aanschafprijs €1.800–2.500 plus installatie. Alternatieven als Grohe Red (€1.200–1.800) of een 4-in-1 kraan met osmosefilter (€1.500–2.000) bieden vergelijkbare functionaliteit voor minder. De 4-in-1 kraan voegt ook een osmosefilter toe voor gefilterd drinkwater.',
+        text: 'Ja, een Quooker is het meest premium merk: aanschafprijs €1.800–2.500 plus installatie. Alternatieven als Grohe Red (€1.200–1.800) of een 4-in-1 kraan met osmosefilter (€1.948) bieden vergelijkbare functionaliteit voor minder. De 4-in-1 kraan voegt ook een osmosefilter toe voor gefilterd drinkwater.',
       },
     },
     {
@@ -43,7 +43,7 @@ const faqSchema = {
       name: 'Wat kost installatie van een kokend water kraan?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Installatiekosten bedragen doorgaans €150–300 voor een standaard installateur. Dit omvat aansluiting op koud water, afvoer voor condenswater, en elektrische aansluiting (geaard stopcontact onder aanrecht). Bij een 4-in-1 kraan met osmosefilter rekenen installateurs €200–400 vanwege het extra filterpakket.',
+        text: 'Installatiekosten bedragen doorgaans €150–300 voor een standaard installateur. Dit omvat aansluiting op koud water, afvoer voor condenswater, en elektrische aansluiting (geaard stopcontact onder aanrecht). Voor de PureAqua 4-in-1 kraan met osmosefilter biedt PureAqua installatie aan voor €299; onder de spoelbak komen dan twee apparaten op twee stopcontacten.',
       },
     },
   ],
@@ -120,8 +120,8 @@ export default function KokendWaterKraanPrijsPage() {
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2">4-in-1 osmose</td>
                 <td className="border border-gray-300 px-3 py-2">4-in-1 kraan met osmose</td>
-                <td className="border border-gray-300 px-3 py-2">€1.500–2.200</td>
-                <td className="border border-gray-300 px-3 py-2">Kokend + osmosefilter + koud</td>
+                <td className="border border-gray-300 px-3 py-2">€1.948</td>
+                <td className="border border-gray-300 px-3 py-2">Zeer heet + gekoeld + osmosefilter</td>
               </tr>
             </tbody>
           </table>
@@ -146,13 +146,13 @@ export default function KokendWaterKraanPrijsPage() {
                 <td className="border border-gray-300 px-3 py-2">Aanschaf</td>
                 <td className="border border-gray-300 px-3 py-2">€550</td>
                 <td className="border border-gray-300 px-3 py-2">€1.400</td>
-                <td className="border border-gray-300 px-3 py-2">€1.800</td>
+                <td className="border border-gray-300 px-3 py-2">€1.948</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2">Installatie</td>
                 <td className="border border-gray-300 px-3 py-2">€150</td>
                 <td className="border border-gray-300 px-3 py-2">€200</td>
-                <td className="border border-gray-300 px-3 py-2">€300</td>
+                <td className="border border-gray-300 px-3 py-2">€299</td>
               </tr>
               <tr>
                 <td className="border border-gray-300 px-3 py-2">Energie (10 jaar)</td>
@@ -176,7 +176,7 @@ export default function KokendWaterKraanPrijsPage() {
                 <td className="border border-gray-300 px-3 py-2">TCO netto</td>
                 <td className="border border-gray-300 px-3 py-2 text-green-700">−€1.550</td>
                 <td className="border border-gray-300 px-3 py-2 text-green-700">−€400</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">−€1.550</td>
+                <td className="border border-gray-300 px-3 py-2 text-green-700">−€1.403</td>
               </tr>
             </tbody>
           </table>
@@ -187,7 +187,7 @@ export default function KokendWaterKraanPrijsPage() {
           Waarom een 4-in-1 kraan extra waarde biedt
         </h2>
         <p className="text-gray-700 mb-4">
-          Een 4-in-1 kokend water kraan combineert kokend water met een geïntegreerd <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">osmosefilter</Link>. Naast kokend water heb je direct gefilterd drinkwater — vrij van kalk, chloor, lood en PFAS. Dit vervangt ook de behoefte aan een apart osmosefilter onder het aanrecht.
+          Een 4-in-1 kokend water kraan combineert zeer heet water (circa 96 graden) en gekoeld water met een geïntegreerd <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">osmosefilter</Link>. Je hebt direct gefilterd drinkwater met veel minder kalk, chloor, lood en PFAS; een SGS-labtest op een nieuw systeem mat meer dan 99,8% minder lood en meer dan 99,6% minder PFOS. Dit vervangt ook de behoefte aan een apart osmosefilter onder het aanrecht.
         </p>
         <p className="text-gray-700 mb-6">
           Bekijk ons artikel over <Link href="/kokend-water-kraan/4-in-1" className="text-[#005F8A] underline">4-in-1 kokend water kranen</Link> voor een uitgebreide vergelijking.

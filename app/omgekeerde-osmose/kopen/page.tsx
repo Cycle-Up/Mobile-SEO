@@ -306,9 +306,9 @@ export default function OsmoseKopenPage() {
             <div className="rounded-2xl border border-gray-100 bg-white p-5">
               <h3 className="font-bold text-gray-900 mb-2">4-in-1 kokend water kraan</h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                De meest complete oplossing: osmose + kokend water + koud gefilterd water +
-                bruisend water uit één kraan. Hogere aanschafprijs (€700–1000) maar alles in één,
-                één jaarlijkse filterwissel en een elegant uiterlijk. Lees meer op onze pagina
+                Volgens ons de meest complete oplossing: osmose + zeer heet water (circa 96 graden) + gekoeld
+                water + gewoon warm en koud water uit één kraan, maar geen bruisend water. Hogere aanschafprijs (€1.948 bij PureAqua) maar alles in één;
+                voorfilter en remineralisatiefilter wissel je circa jaarlijks, het membraan circa elke twee jaar. Lees meer op onze pagina
                 over <Link href="/osmose-filter" className="text-[#005F8A] underline hover:no-underline">osmose filter</Link>.
               </p>
             </div>

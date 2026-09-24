@@ -52,7 +52,7 @@ const kokendContent: Record<Hardheid, KokendContent> = {
     waarom: (naam, dH) =>
       `In ${naam} is een kokend water kraan een slimme maar veeleisende investering. Met ${dH}°dH behoort het leidingwater tot de hardste in Nederland — dat betekent dat kalkaanslag in een kokend water kraan razendsnel ontstaat. Tegelijkertijd is de koolzuurkraan juist hier erg nuttig: je hoeft geen waterkoker meer te gebruiken (die raakt bij dit hardheidsniveau snel verstopt), en de kraan levert direct heet of bruisend gefilterd water.`,
     typeAdvies: (naam, dH) =>
-      `Bij ${dH}°dH in ${naam} is een kokend water kraan mét geïntegreerd osmosefilter (4-in-1 of 5-in-1 systeem) verreweg de verstandigste keuze. Een standaard 3-in-1 kraan zonder filter geeft je weliswaar kokend water, maar het harde water tast het verwarmingselement aan binnen enkele maanden. Een 4-in-1 systeem combineert osmosezuivering met de koolzuuroptie: het verwarmingselement werkt altijd op zacht water, waardoor kalkaanslag vrijwel verdwijnt.`,
+      `Bij ${dH}°dH in ${naam} is een kokend water kraan mét geïntegreerd osmosefilter (4-in-1 of 5-in-1 systeem) verreweg de verstandigste keuze. Een standaard 3-in-1 kraan zonder filter geeft je weliswaar kokend water, maar het harde water tast het verwarmingselement aan binnen enkele maanden. Een 4-in-1 systeem combineert osmosezuivering met zeer heet water: het verwarmingselement werkt altijd op zacht water, waardoor kalkaanslag vrijwel verdwijnt.`,
     onderhoud: 'elke 4 tot 6 weken',
     ontkalkFrequentie: 'maandelijks',
     ontkalkTekst: (naam, dH) =>
@@ -63,8 +63,8 @@ const kokendContent: Record<Hardheid, KokendContent> = {
     urgentieKleur: 'red',
     urgentieLabel: 'Kalk-alert: osmosefilter sterk aanbevolen',
     typeOpties: [
-      { naam: '4-in-1 osmose kraan', uitleg: 'Koud, warm, kokend én osmose-gefilterd water. Verwarmingselement werkt op zacht water — ideaal bij zeer hard water.', aanbevolen: true },
-      { naam: '5-in-1 met bruisend', uitleg: 'Voegt bruisend water toe aan de 4-in-1. Meest complete oplossing, hogere aanschafprijs.', aanbevolen: true },
+      { naam: '4-in-1 osmose kraan', uitleg: 'Koud, warm, zeer heet (circa 96 graden), gekoeld én osmose-gefilterd water. Verwarmingselement werkt op zacht water, ideaal bij zeer hard water.', aanbevolen: true },
+      { naam: '5-in-1 met bruisend', uitleg: 'Voegt bruisend water toe; de PureAqua 4-in-1 heeft geen bruisend water. Hogere aanschafprijs.', aanbevolen: true },
       { naam: '3-in-1 met waterfilter', uitleg: 'Koud, warm en kokend — met inline kalkfilter. Bruikbaar, maar filterwissel vaker nodig bij hard water.', aanbevolen: false },
       { naam: 'Standaard 3-in-1', uitleg: 'Geen filter — niet aanbevolen bij zeer hard water. Kalkschade aan verwarmingselement binnen maanden.', aanbevolen: false },
     ],
@@ -375,8 +375,8 @@ export default async function KokendWaterKraanGemeentePage({ params }: PageProps
                   <td className="p-3 text-right text-gray-500 font-mono">€180 – €450</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
-                  <td className="p-3 text-gray-700">Aanschaf 4-in-1 osmose systeem</td>
-                  <td className="p-3 text-right text-gray-500 font-mono">€450 – €900</td>
+                  <td className="p-3 text-gray-700">Aanschaf PureAqua 4-in-1 kraan met osmose</td>
+                  <td className="p-3 text-right text-gray-500 font-mono">€1.948</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="p-3 text-gray-700">Installatie (loodgieter)</td>
@@ -402,7 +402,7 @@ export default async function KokendWaterKraanGemeentePage({ params }: PageProps
               Bij {gemeente.hardheid}°dH in {gemeente.naam}: kies een osmose-kraan
             </p>
             <p className={`${urgentie.text} opacity-90 text-sm mb-4`}>
-              Met hard water beschadigt kalk een onbeschermd verwarmingselement binnen maanden. Een 4-in-1 osmose-kraan combineert 99% kalkreductie met direct kokend, koud en gefilterd water — ideaal voor hard water zoals in {gemeente.naam}.
+              Met hard water beschadigt kalk een onbeschermd verwarmingselement binnen maanden. Een 4-in-1 kraan met osmose filtert de kalk vrijwel volledig uit het water en geeft zeer heet (circa 96 graden), gekoeld en gefilterd water. Dat past goed bij hard water zoals in {gemeente.naam}.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link

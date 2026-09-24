@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: 'Wat kost een kokend water kraan inclusief installatie?',
     answer:
-      'De kraan zelf kost €200–€1.500 afhankelijk van type en merk. Installatiekosten door een loodgieter liggen op €80–€200 (1–3 uur werk). Reken voor een complete installatie van een kwalitatief systeem op €400–€900 totaal. Een 4-in-1 systeem met ingebouwde filter vraagt iets meer vanwege de elektrische aansluiting voor de boiler.',
+      'De kraan zelf kost €200–€1.500 afhankelijk van type en merk. Installatiekosten door een loodgieter liggen op €80–€200 (1–3 uur werk). Reken voor een complete installatie van een kwalitatief systeem op €400–€900 totaal. Een 4-in-1 kraan met osmose zoals de PureAqua 4-in-1 kost 1.948 euro, met optionele installatie voor 299 euro; onder de spoelbak zijn dan twee stopcontacten nodig.',
   },
   {
     question: 'Hoeveel liter kokend water heeft een gemiddeld gezin per dag nodig?',
@@ -34,7 +34,7 @@ const faqItems = [
   {
     question: 'Is een 3-in-1 of 4-in-1 kraan het beste?',
     answer:
-      'Een 3-in-1 kraan (kokend, koud, warm) is ideaal als je simpelweg de standaard mengkraan wilt vervangen. Een 4-in-1 kraan voegt bruisend water toe — ideaal als je de sodastream-fles wilt vervangen. Een 5-in-1 voegt RO-gefilterd koud water toe als aparte functie. De 4-in-1 met ingebouwde RO is het meest complete systeem voor wie kwaliteit én gemak wil.',
+      'Een 3-in-1 kraan (kokend, koud, warm) is ideaal als je simpelweg de standaard mengkraan wilt vervangen. Bij veel merken voegt een 4-in-1 kraan bruisend water toe, handig als je de sodastream-fles wilt vervangen. Een 4-in-1 kraan met osmose, zoals de PureAqua 4-in-1, geeft in plaats daarvan gekoeld en zeer heet osmosewater en heeft geen bruisend water. Een 5-in-1 voegt RO-gefilterd koud water toe als aparte functie. Wie waterkwaliteit én gemak wil, is volgens ons het best uit met een 4-in-1 met ingebouwde RO.',
   },
   {
     question: 'Hoe veilig zijn kokend water kranen voor kinderen?',
@@ -80,10 +80,10 @@ const typesTabel = [
   },
   {
     type: '4-in-1 met RO-filter',
-    functies: 'Kokend, heet, osmosewater koud, bruisend',
-    prijsRange: '€ 600–1.500',
-    boiler: '2,4 liter',
-    filter: 'Omgekeerde osmose ingebouwd',
+    functies: 'Warm, koud, plus osmosewater gekoeld en zeer heet (circa 96°C); geen bruisend',
+    prijsRange: '€ 1.948 (PureAqua)',
+    boiler: '2,3 liter',
+    filter: 'Omgekeerde osmose in drie stappen',
     geschiktVoor: 'Maximale waterkwaliteit én comfort',
     highlight: true,
   },
@@ -93,7 +93,7 @@ const merkOverzicht = [
   { merk: 'Quooker', type: '3-in-1 / 4-in-1', prijsRange: '€ 750–1.500', sterk: 'Marktleider NL, sterke garantie, groot dealernetwerk', minpunt: 'Premium prijs' },
   { merk: 'Grohe Red', type: '3-in-1', prijsRange: '€ 500–900', sterk: 'Uitstekende bouw, Europees merk', minpunt: 'Geen 4-in-1 met bruisend' },
   { merk: 'InSinkErator', type: '3-in-1', prijsRange: '€ 350–700', sterk: 'Betaalbaar, breed leverbaar', minpunt: 'Beperkt filteropties' },
-  { merk: '4-in-1 kraan met osmose', type: '4-in-1 met RO', prijsRange: '€ 600–900', sterk: 'RO-filter ingebouwd, complete oplossing', minpunt: 'Hogere aanschafprijs' },
+  { merk: '4-in-1 kraan met osmose', type: '4-in-1 met RO', prijsRange: '€ 1.948', sterk: 'RO-filter ingebouwd, gekoeld en zeer heet osmosewater', minpunt: 'Geen bruisend water, twee apparaten onder de spoelbak' },
   { merk: 'Billi', type: '3-in-1 / 4-in-1', prijsRange: '€ 800–1.400', sterk: 'Australisch premium, stille boiler', minpunt: 'Beperkte NL service' },
 ];
 
@@ -247,7 +247,7 @@ export default function KokendWaterKraanKopenPage() {
           </div>
           <p className="text-xs text-gray-500 mt-3">
             Bij een 4-in-1 systeem met bruisend water heb je ook een CO₂-cilinder nodig (60–400 liter
-            bruisend per cilinder, €10–€30 navulling).
+            bruisend per cilinder, €10–€30 navulling). De PureAqua 4-in-1 met osmose heeft geen bruisend water en dus geen cilinder.
           </p>
         </section>
 
@@ -316,8 +316,8 @@ export default function KokendWaterKraanKopenPage() {
             {[
               { bereik: '€ 200–400', segment: 'Budget', voor: 'Eenvoudige 2-in-1 kranen, voldoende voor kleine huishoudens of als aanvulling op bestaande mengkraan.' },
               { bereik: '€ 400–700', segment: 'Middenklasse', voor: '3-in-1 systemen van bekende merken (InSinkErator, instapmodellen Quooker). Goede kwaliteit, gangbare functionaliteit.' },
-              { bereik: '€ 700–1.000', segment: 'Premium', voor: '4-in-1 systemen met bruisend water of ingebouwde koolstoffilter. Een 4-in-1 systeem met RO valt hier.' },
-              { bereik: '€ 1.000–1.500', segment: 'Topsegment', voor: 'Quooker PRO series, Billi, Grohe Red II Duo. Maximale bouwkwaliteit, uitgebreide garantie.' },
+              { bereik: '€ 700–1.000', segment: 'Premium', voor: '4-in-1 systemen met bruisend water of ingebouwde koolstoffilter.' },
+              { bereik: '€ 1.000–1.500', segment: 'Topsegment', voor: 'Quooker PRO series, Billi, Grohe Red II Duo. Maximale bouwkwaliteit, uitgebreide garantie. De PureAqua 4-in-1 met osmose zit met 1.948 euro net boven dit bereik.' },
             ].map(r => (
               <div key={r.bereik} className="flex gap-4 items-start border border-gray-100 rounded-xl p-4">
                 <div className="text-center shrink-0">
@@ -341,9 +341,9 @@ export default function KokendWaterKraanKopenPage() {
           <div className="bg-[#E0F2FE] rounded-2xl p-4 text-sm text-gray-700">
             <p className="font-semibold text-[#003F5C] mb-2">Kooptip voor 4-in-1 met RO-filter</p>
             <p>
-              <strong>Een 4-in-1 kraan met osmose</strong> combineert kokend, koud, heet en bruisend water
-              met een ingebouwde omgekeerde osmose filtratie. Dit type systeem is zelf te installeren en
-              inclusief installatiemateriaal leverbaar.
+              <strong>Een 4-in-1 kraan met osmose</strong> combineert gewoon warm en koud kraanwater met gekoeld en zeer heet (circa 96°C)
+              osmosewater; bruisend water zit er niet in. Onder de spoelbak komen twee apparaten en je hebt twee stopcontacten nodig.
+              Installatie door een installateur is aanbevolen; PureAqua biedt dat aan voor 299 euro.
             </p>
           </div>
         </section>
@@ -355,7 +355,7 @@ export default function KokendWaterKraanKopenPage() {
           content="kokend-water-kraan-kopen-cta"
           label="Bekijk de PureAqua 4-in-1 kraan"
           title="Liever kokend en gefilterd water uit een kraan?"
-          sub="De PureAqua 4-in-1 kraan combineert kokend en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
+          sub="De PureAqua 4-in-1 kraan combineert zeer heet, gekoeld en gefilterd water uit een kraan. Bekijken kan bij onze partner PureAqua."
         />
 
         <CTABanner context="kokend" />

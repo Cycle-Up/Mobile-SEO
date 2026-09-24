@@ -767,9 +767,9 @@ export default function LeidingwaterPage() {
               Een omgekeerde osmose systeem verwijdert in één stap kalk, nitraten, PFAS,
               microplastics, lood, chloor en vrijwel alle andere opgeloste stoffen. Het geeft
               je leidingwater de kwaliteit van gedestilleerd water, aangevuld met de mineralen
-              die je wil behouden via een remineralisatiefilter. Wil je bovendien kokend
-              en bruisend water? Dan is een 4-in-1 kraan met ingebouwde osmose de meest
-              complete huishoudoplossing.
+              die je wil behouden via een remineralisatiefilter. Wil je bovendien gekoeld
+              en zeer heet water uit dezelfde kraan? Dan is een 4-in-1 kraan met ingebouwde osmose volgens ons de meest
+              complete huishoudoplossing (bruisend water zit er niet in).
             </p>
             <div className="flex flex-wrap gap-2">
               <Link
