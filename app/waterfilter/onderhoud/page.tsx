@@ -34,7 +34,7 @@ const faqItems = [
   {
     question: 'Hoeveel kost waterfilter onderhoud per jaar?',
     answer:
-      'Een eenvoudig koolstoffilter verwissel je voor €15–30 per jaar. Een RO-systeem kost €40–120 per jaar aan filters (sediment + koolstof + membraan eens per 2–3 jaar). Een UV-lamp kost €20–50 per jaar. Een 4-in-1 kraan met osmose gebruikt één jaarlijkse filterset van circa €80–120.',
+      'Een eenvoudig koolstoffilter verwissel je voor €15–30 per jaar. Een RO-systeem kost €40–120 per jaar aan filters (sediment + koolstof + membraan eens per 2–3 jaar). Een UV-lamp kost €20–50 per jaar. Bij een 4-in-1 kraan met osmose (PureAqua) vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar; dat kost gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend).',
   },
   {
     question: 'Hoe weet ik of mijn RO-membraan aan vervanging toe is?',
@@ -133,8 +133,8 @@ const kostenPerType = [
   },
   {
     systeem: '4-in-1 kraan met osmose',
-    jaarkosten: '€ 80–120',
-    details: 'Één jaarlijkse filterset. Geen losse filters; alles inbegrepen. Eenvoudigst te onderhouden.',
+    jaarkosten: 'circa € 150 (gemiddeld)',
+    details: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar (fabrikantprijzen omgerekend).',
   },
 ];
 
@@ -501,8 +501,8 @@ export default function WaterfilterOnderhoudPage() {
             Regelmatig onderhoud is de sleutel tot effectief en veilig gefilterd drinkwater. Vervang sedimentfilters elke 3–6 maanden, koolstoffilters elke 6–12 maanden, UV-lampen jaarlijks en RO-membranen elke 2–3 jaar. Meet maandelijks de TDS van je gefilterd water als je een osmosesysteem hebt.
           </p>
           <p className="text-gray-600 text-sm leading-relaxed mb-3">
-            Wil je het onderhoud zo eenvoudig mogelijk houden? De{' '}
-            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">Een 4-in-1 kraan met osmose</Link> gebruikt één jaarlijkse filterset — geen losse componenten, één moment per jaar, klaar. Ideaal voor drukke huishoudens die gewoon schoon water willen zonder gedoe.
+            Wil je het onderhoud zo eenvoudig mogelijk houden? Bij een{' '}
+            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline">4-in-1 kraan met osmose</Link> vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar. Ideaal voor drukke huishoudens die gewoon schoon water willen zonder gedoe.
           </p>
           <p className="text-gray-600 text-sm leading-relaxed">
             Heb je vragen over jouw specifieke systeem? Raadpleeg onze{' '}

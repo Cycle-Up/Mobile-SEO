@@ -57,7 +57,7 @@ const faqItems = [
   {
     question: 'Hoe lang gaan de filters van een kokend water kraan mee?',
     answer:
-      'Bij een PureAqua 4-in-1 met osmose vervang je het voorfilter en het remineralisatiefilter circa jaarlijks (circa 50-70 euro per set). Het osmosemembraan vervang je circa elke twee jaar. Bij Grohe Blue Pure wissel je het koolstoffilterpatroon elke 6-12 maanden. Quooker zonder filter heeft geen filterwissel nodig, maar ontkalking is bij hard water wel regelmatig vereist.',
+      'Bij een PureAqua 4-in-1 met osmose vervang je het voorfilter en het remineralisatiefilter circa jaarlijks (samen circa 105 euro). Het osmosemembraan vervang je circa elke twee jaar; gemiddeld kosten de filters circa 150 euro per jaar (fabrikantprijzen omgerekend). Bij Grohe Blue Pure wissel je het koolstoffilterpatroon elke 6-12 maanden. Quooker zonder filter heeft geen filterwissel nodig, maar ontkalking is bij hard water wel regelmatig vereist.',
   },
 ];
 
@@ -107,9 +107,9 @@ const merkenData = [
 const tcoData = [
   { post: 'Aanschaf + installatie', pureaqua: '~2.250', quooker: '~1.800', grohe: '~1.200', franke: '~1.100' },
   { post: 'Energie 5 jaar (EUR 50/jr)', pureaqua: '250', quooker: '250', grohe: '200', franke: '200' },
-  { post: 'Filterkosten 5 jaar', pureaqua: '~300', quooker: '0', grohe: '~200', franke: '~150' },
+  { post: 'Filterkosten 5 jaar', pureaqua: '~715', quooker: '0', grohe: '~200', franke: '~150' },
   { post: 'Onderhoud / ontkalking', pureaqua: 'Filters jaarlijks, membraan 2-jaarlijks', quooker: 'Jaarlijks', grohe: 'Jaarlijks', franke: 'Jaarlijks' },
-  { post: 'Totaal 5 jaar (indicatief)', pureaqua: '~2.800', quooker: '~2.300', grohe: '~1.600', franke: '~1.450' },
+  { post: 'Totaal 5 jaar (indicatief)', pureaqua: '~3.200', quooker: '~2.300', grohe: '~1.600', franke: '~1.450' },
 ];
 
 export default function MerkenVergelijkingPage() {
@@ -367,7 +367,7 @@ export default function MerkenVergelijkingPage() {
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-2">
-            Indicatieve bedragen, gebaseerd op gemiddeld gebruik (2-4 personen). PureAqua: 1.948 euro plus optioneel 299 euro installatie (september 2026), inclusief osmosefiltervervanging; Quooker exclusief CUBE (bruisend) die 250-400 euro extra kost.
+            Indicatieve bedragen, gebaseerd op gemiddeld gebruik (2-4 personen). PureAqua: 1.948 euro plus optioneel 299 euro installatie (september 2026), inclusief osmosefiltervervanging (filters gemiddeld circa 150 euro per jaar, fabrikantprijzen omgerekend); Quooker exclusief CUBE (bruisend) die 250-400 euro extra kost.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
             Grohe en Franke scoren het laagst op totale kosten door de lagere aanschafprijs, maar leveren ook de minste filterfunctionaliteit. PureAqua heeft de hoogste aanschafprijs maar voegt de meeste waarde toe qua waterkwaliteit. Quooker zit qua totaalkosten hoger dan zijn aanschafprijs doet vermoeden door de hogere onderhoudskosten en optionele bruisend-water-unit.

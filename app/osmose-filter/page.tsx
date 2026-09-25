@@ -671,9 +671,9 @@ export default function OsmoseFilterPage() {
               </div>
               <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm mb-3">
                 <div><span className="text-gray-500">Aanschaf:</span> <span className="text-gray-800 font-medium">€ 1.948</span></div>
-                <div><span className="text-gray-500">Voor- en remineralisatiefilter (jaarlijks):</span> <span className="text-gray-800 font-medium">€ 50 – 150</span></div>
-                <div><span className="text-gray-500">Membraan (circa 2 jr):</span> <span className="text-gray-800 font-medium">€ 40 – 80</span></div>
-                <div><span className="text-gray-500">Totaal per jaar:</span> <span className="text-gray-800 font-medium">€ 50 – 150</span></div>
+                <div><span className="text-gray-500">Voor- en remineralisatiefilter (jaarlijks):</span> <span className="text-gray-800 font-medium">circa € 105</span></div>
+                <div><span className="text-gray-500">Membraan (circa 2 jr):</span> <span className="text-gray-800 font-medium">circa € 95</span></div>
+                <div><span className="text-gray-500">Totaal per jaar:</span> <span className="text-gray-800 font-medium">circa € 150 (gemiddeld, fabrikantprijzen omgerekend)</span></div>
               </div>
               <p className="text-sm text-gray-700 leading-relaxed">
                 Vervangt tegelijk de waterkoker (€20–80/jr aan energie + slijtage) en het losse osmose
@@ -702,8 +702,8 @@ export default function OsmoseFilterPage() {
                 <tbody>
                   {[
                     { scenario: 'Standalone osmose', aanschaf: '€ 250', verbruik: '€ 450', totaal: '€ 700' },
-                    { scenario: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', verbruik: '€ 500', totaal: '€ 2.448' },
-                    { scenario: '4-in-1 + besparing waterkoker', aanschaf: '€ 1.948', verbruik: '€ 250', totaal: '€ 2.198' },
+                    { scenario: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', verbruik: '€ 715', totaal: '€ 2.663' },
+                    { scenario: '4-in-1 + besparing waterkoker', aanschaf: '€ 1.948', verbruik: '€ 465', totaal: '€ 2.413' },
                     { scenario: 'Flessenwater (gezin van 4)', aanschaf: '€ 0', verbruik: '€ 2.500', totaal: '€ 2.500' },
                   ].map(r => (
                     <tr key={r.scenario} className="border-b border-gray-100">
@@ -718,7 +718,7 @@ export default function OsmoseFilterPage() {
             </div>
             <p className="text-xs text-gray-500 mt-2">
               Indicatief voor een gezin van 2–4 personen. De besparing op de waterkoker bij de 4-in-1
-              kraan is geschat op €50/jr.
+              kraan is geschat op €50/jr. Filters 4-in-1: gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend).
             </p>
           </div>
         </section>

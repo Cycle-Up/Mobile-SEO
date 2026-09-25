@@ -10,7 +10,7 @@ type Context = 'pfas' | 'smaak' | 'onder-aanrecht' | 'filterkan' | 'algemeen';
 const COPY: Record<Context, { title: string; sub: string }> = {
   pfas: {
     title: 'Minder PFAS zonder osmosesysteem?',
-    sub: `PureFilter Mineral+ verminderde in een onafhankelijke labtest vijf PFAS met circa ${PUREFILTER.pfasReduction}, zonder afvalwater of tank. Wil je de maximale reductie, dan blijft omgekeerde osmose sterker.`,
+    sub: `PureFilter Mineral+ verminderde in een onafhankelijke labtest van Equinox Labs vijf PFAS met circa ${PUREFILTER.pfasReduction}, zonder afvalwater of tank. Wil je de maximale reductie, dan blijft omgekeerde osmose sterker.`,
   },
   smaak: {
     title: 'Chloorsmaak kwijt, mineralen behouden',
@@ -22,7 +22,7 @@ const COPY: Record<Context, { title: string; sub: string }> = {
   },
   filterkan: {
     title: 'Klaar met bijvullen?',
-    sub: `Met PureFilter Mineral+ komt gefilterd water direct uit je kraan. Eenmalig ${PUREFILTER.price}, daarna een cartridge per 6 tot 12 maanden; labtest: circa ${PUREFILTER.pfasReduction} minder van vijf PFAS.`,
+    sub: `Met PureFilter Mineral+ komt gefilterd water direct uit je kraan. Eenmalig ${PUREFILTER.price}, daarna een navulfilter van ${PUREFILTER.cartridgePrice} per 6 tot 12 maanden; labtest: circa ${PUREFILTER.pfasReduction} minder van vijf PFAS.`,
   },
   algemeen: {
     title: 'Gefilterd water direct uit je kraan',
@@ -59,6 +59,9 @@ export function PureFilterCTA({ context, content }: PureFilterCTAProps) {
         <Link href={PUREFILTER.reviewPath} className="text-sm text-[#005F8A] underline hover:no-underline">
           Lees eerst onze review met labtest
         </Link>
+        <a href={PUREFILTER.labReportUrl} rel="noopener" className="text-sm text-[#005F8A] underline hover:no-underline">
+          Equinox-testrapport (pdf)
+        </a>
       </div>
       <AffiliateDisclosure className="mt-4" />
     </div>

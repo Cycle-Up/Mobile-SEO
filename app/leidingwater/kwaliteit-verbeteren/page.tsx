@@ -127,7 +127,7 @@ const methoden = [
     naam: 'PureAqua 4-in-1 kraan (osmose)',
     verwijdert: 'Alles van osmose + zeer heet, gekoeld, warm en koud water uit één kraan (geen bruisend)',
     verwijdertNiet: 'Gassen — remineralisatie inbegrepen',
-    kostenJaar: 'Eenmalig 1.948 euro (osmose-unit + heet-/koelunit)',
+    kostenJaar: 'Eenmalig 1.948 euro (osmose-unit + heet-/koelunit), filters gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend)',
     onderhoud: 'Filters circa jaarlijks, membraan circa 2-jaarlijks',
     voor: 'Totaaloplossing voor drinken én koken',
     kleur: 'bg-[#003F5C]/5 border-[#003F5C]/20',
@@ -142,7 +142,7 @@ const vergelijkingsTabel = [
   { methode: 'UV-filter', verwijdert: 'Bacteriën, virussen', kostenJaar: '€100–200', onderhoud: 'Jaarlijks (lamp)', voor: 'Eigen put/bron' },
   { methode: 'Waterontharder', verwijdert: 'Calcium, magnesium', kostenJaar: '€500–1500 + zout', onderhoud: 'Zout bijvullen', voor: 'Hard water totaal huis' },
   { methode: 'Osmose systeem', verwijdert: 'Vrijwel alles', kostenJaar: '€60–120', onderhoud: 'Halfjaarlijks/2-jaarlijks', voor: 'PFAS, nitraat, lood, alles' },
-  { methode: 'PureAqua 4-in-1', verwijdert: 'Osmose + zeer heet/gekoeld water', kostenJaar: 'Zelfde als osmose', onderhoud: 'Filters jaarlijks, membraan 2-jaarlijks', voor: 'Totale keukenoplossing' },
+  { methode: 'PureAqua 4-in-1', verwijdert: 'Osmose + zeer heet/gekoeld water', kostenJaar: 'circa €150 (gemiddeld)', onderhoud: 'Filters jaarlijks, membraan 2-jaarlijks', voor: 'Totale keukenoplossing' },
 ];
 
 export default function LeidingwaterKwaliteitVerberenPage() {

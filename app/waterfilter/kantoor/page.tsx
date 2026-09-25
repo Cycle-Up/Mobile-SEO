@@ -239,7 +239,7 @@ export default function WaterfilterKantoorPage() {
                 <td className="border border-gray-300 px-3 py-2 font-medium">4-in-1 kraan met osmose</td>
                 <td className="border border-gray-300 px-3 py-2">10–30</td>
                 <td className="border border-gray-300 px-3 py-2">€1.948</td>
-                <td className="border border-gray-300 px-3 py-2">€120–200/jr</td>
+                <td className="border border-gray-300 px-3 py-2">circa 150 euro (gemiddeld)</td>
                 <td className="border border-gray-300 px-3 py-2">~5.000/jr</td>
                 <td className="border border-gray-300 px-3 py-2 text-yellow-700">Loodgieter</td>
               </tr>

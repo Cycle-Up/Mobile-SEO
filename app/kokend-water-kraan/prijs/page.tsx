@@ -164,7 +164,7 @@ export default function KokendWaterKraanPrijsPage() {
                 <td className="border border-gray-300 px-3 py-2">Filters (10 jaar)</td>
                 <td className="border border-gray-300 px-3 py-2">€400</td>
                 <td className="border border-gray-300 px-3 py-2">€700</td>
-                <td className="border border-gray-300 px-3 py-2">€600</td>
+                <td className="border border-gray-300 px-3 py-2">circa €1.520</td>
               </tr>
               <tr>
                 <td className="border border-gray-300 px-3 py-2">Besparing flessenwater</td>
@@ -176,12 +176,12 @@ export default function KokendWaterKraanPrijsPage() {
                 <td className="border border-gray-300 px-3 py-2">TCO netto</td>
                 <td className="border border-gray-300 px-3 py-2 text-green-700">−€1.550</td>
                 <td className="border border-gray-300 px-3 py-2 text-green-700">−€400</td>
-                <td className="border border-gray-300 px-3 py-2 text-green-700">−€1.403</td>
+                <td className="border border-gray-300 px-3 py-2 text-green-700">−€483</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p className="text-gray-600 text-sm mb-6">*Besparing flessenwater berekend bij 2L/dag à €0,60 voor reguliere kraan, €1,00 voor gefilterd water bij 4-in-1.</p>
+        <p className="text-gray-600 text-sm mb-6">*Besparing flessenwater berekend bij 2L/dag à €0,60 voor reguliere kraan, €1,00 voor gefilterd water bij 4-in-1. Filters 4-in-1: gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend).</p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
           Waarom een 4-in-1 kraan extra waarde biedt

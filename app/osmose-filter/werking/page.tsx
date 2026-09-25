@@ -619,7 +619,7 @@ export default function OsmoseFilterWerkingPage() {
                 <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Gefilterd gekoeld en zeer heet water direct beschikbaar</li>
                 <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Geen losse waterkoker meer nodig</li>
                 <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Aanschafprijs: €1.948 (PureAqua 4-in-1)</li>
-                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Filters circa jaarlijks, membraan circa 2-jaarlijks: €80–150/jaar</li>
+                <li className="flex gap-2"><span className="text-[#005F8A] shrink-0">→</span>Filters circa jaarlijks, membraan circa 2-jaarlijks: gemiddeld circa €150/jaar (fabrikantprijzen omgerekend)</li>
               </ul>
             </div>
           </div>

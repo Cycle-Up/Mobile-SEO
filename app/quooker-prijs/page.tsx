@@ -101,8 +101,8 @@ const tcoData = [
     systeem: '4-in-1 osmose kraan (PureAqua)',
     aanschaf: '€1.948',
     installatie: '€299 (optioneel)',
-    onderhoud: 'Voor- en remineralisatiefilter jaarlijks, membraan elke 2 jaar',
-    totaal5jaar: '€1.948–2.247 plus filters en stroom',
+    onderhoud: 'Filters gemiddeld circa €150/jaar (fabrikantprijzen omgerekend)',
+    totaal5jaar: '€2.663–2.962 plus stroom',
   },
   {
     systeem: 'Waterkoker + sodamaker + osmose',

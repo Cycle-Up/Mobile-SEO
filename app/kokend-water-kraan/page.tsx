@@ -47,7 +47,7 @@ const faqItems = [
   {
     question: 'Wat kost een kokend water kraan inclusief installatie?',
     answer:
-      'Een eenvoudige kokend water kraan kost € 500-1.000 inclusief installatie. Een 4-in-1 kraan met osmosefilter zoals de PureAqua 4-in-1 kost € 1.948; installatie door een installateur is aanbevolen en kost bij PureAqua € 299. Quooker-modellen variëren van € 1.500 tot € 2.800 inclusief loodgieterkosten. Reken daarnaast op € 30-80 per jaar voor filters en energie.',
+      'Een eenvoudige kokend water kraan kost € 500-1.000 inclusief installatie. Een 4-in-1 kraan met osmosefilter zoals de PureAqua 4-in-1 kost € 1.948; installatie door een installateur is aanbevolen en kost bij PureAqua € 299. Quooker-modellen variëren van € 1.500 tot € 2.800 inclusief loodgieterkosten. Reken daarnaast op € 30-80 per jaar voor filters en energie; bij de PureAqua 4-in-1 kosten alleen de filters al gemiddeld circa € 150 per jaar (fabrikantprijzen omgerekend).',
   },
   {
     question: 'Hoe lang gaat een kokend water kraan mee?',
@@ -137,9 +137,9 @@ const vergelijking = [
 const tcoTabel = [
   { item: 'Aanschaf kraan', pureaqua: '€ 1.948', quooker: '€ 2.240' },
   { item: 'Energie (5 jaar à € 50/jr)', pureaqua: '€ 250', quooker: '€ 250' },
-  { item: 'Filterpatronen / onderhoud', pureaqua: '€ 250 (5x € 50)', quooker: 'CUBE-filter circa jaarlijks' },
+  { item: 'Filterpatronen / onderhoud', pureaqua: '± € 715 (gemiddeld circa € 150 per jaar)', quooker: 'CUBE-filter circa jaarlijks' },
   { item: 'Bruisend water / CO₂', pureaqua: 'n.v.t. (geen bruisend water)', quooker: '€ 250 (CUBE-cilinders)' },
-  { item: 'Totale eigendomskosten 5 jaar', pureaqua: '€ 2.448', quooker: '€ 2.740 + CUBE-filters' },
+  { item: 'Totale eigendomskosten 5 jaar', pureaqua: '± € 2.913', quooker: '€ 2.740 + CUBE-filters' },
 ];
 
 const voordelen = [
@@ -507,7 +507,7 @@ export default function KokendWaterKraanPage() {
             Bedragen indicatief, gebaseerd op gemiddeld huishoudgebruik (2-4 personen) en PureAqua-prijzen september 2026.
           </p>
           <p className="text-gray-700 leading-relaxed mt-4">
-            In aanschaf is een 4-in-1 kraan met osmose circa € 300 goedkoper dan een Quooker Flex PRO3 met CUBE; de Quooker geeft wel bruisend water, de 4-in-1 niet. Belangrijker dan het absolute bedrag is wat je terugkrijgt: een 4-in-1 systeem met osmose-filtering levert water met veel minder kalk en chloor, terwijl de CUBE met actieve kool filtert en geen osmose heeft.
+            In aanschaf is een 4-in-1 kraan met osmose circa € 300 goedkoper dan een Quooker Flex PRO3 met CUBE; de Quooker geeft wel bruisend water, de 4-in-1 niet. Belangrijker dan het absolute bedrag is wat je terugkrijgt: een 4-in-1 systeem met osmose-filtering levert water met veel minder kalk en chloor, terwijl de CUBE met actieve kool filtert en geen osmose heeft. Over 5 jaar liggen beide in dezelfde orde, omdat de osmosefilters van de 4-in-1 duurder zijn (fabrikantprijzen omgerekend).
           </p>
         </section>
 
@@ -547,7 +547,7 @@ export default function KokendWaterKraanPage() {
             <div className="border border-gray-100 rounded-xl p-4">
               <p className="font-semibold text-[#003F5C] mb-1">Filterwissel</p>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Bij een 4-in-1 met osmose vervang je voorfilter en remineralisatiefilter circa jaarlijks (€ 40-60). Het membraan vervang je circa elke twee jaar. De kraan geeft vaak een visuele indicatie wanneer het tijd is. Bij koolstoffilters (Grohe, InSinkErator) is wisseling elke 6-12 maanden. Lees meer over <Link href="/kennisbank/waterfilter-keuken" className="text-[#005F8A] underline hover:no-underline">waterfilters in de keuken</Link>.
+                Bij een 4-in-1 met osmose vervang je voorfilter en remineralisatiefilter circa jaarlijks en het membraan circa elke twee jaar; bij de PureAqua 4-in-1 kost dat gemiddeld circa € 150 per jaar (fabrikantprijzen omgerekend). De kraan geeft vaak een visuele indicatie wanneer het tijd is. Bij koolstoffilters (Grohe, InSinkErator) is wisseling elke 6-12 maanden. Lees meer over <Link href="/kennisbank/waterfilter-keuken" className="text-[#005F8A] underline hover:no-underline">waterfilters in de keuken</Link>.
               </p>
             </div>
             <div className="border border-gray-100 rounded-xl p-4">

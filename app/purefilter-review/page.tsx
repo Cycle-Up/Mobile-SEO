@@ -52,7 +52,7 @@ const faqItems = [
   {
     question: 'Wat kost PureFilter Mineral+ per jaar?',
     answer:
-      `De aanschaf is ${PUREFILTER.price} inclusief de eerste cartridge. Een cartridge gaat bij 1 tot 3 personen tot 12 maanden mee en bij 4 of meer personen ongeveer 6 maanden, of tot ${PUREFILTER.capacity}, wat het eerst komt. Een vervangcartridge kost volgens opgave rond ${PUREFILTER.cartridgePrice}; controleer de actuele prijs bij PureFilter.nl. Bij volledige capaciteit komt dat neer op minder dan een halve cent per liter.`,
+      `De aanschaf is ${PUREFILTER.price} inclusief de eerste cartridge. Een cartridge gaat bij 1 tot 3 personen tot 12 maanden mee en bij 4 of meer personen ongeveer 6 maanden, of tot ${PUREFILTER.capacity}, wat het eerst komt. Een vervangcartridge kost ${PUREFILTER.cartridgePrice}, of ${PUREFILTER.cartridgeDuoPrice} voor twee (PureFilter.nl, september 2026). Bij volledige capaciteit komt dat neer op minder dan een halve cent per liter.`,
   },
   {
     question: 'Is PureFilter Mineral+ NSF-gecertificeerd?',
@@ -75,7 +75,7 @@ const specs = [
   ['Type', 'Inline filter onder het aanrecht, op de koude leiding naar de kraan'],
   ['Filteropbouw', '5 lagen: non-woven stof, koolstofvezel (2 lagen), Swedish Mineral Rock, afsluitende pad'],
   ['Prijs', `${PUREFILTER.price} inclusief eerste cartridge (PureFilter.nl, september 2026)`],
-  ['Vervangcartridge', `rond ${PUREFILTER.cartridgePrice} volgens opgave`],
+  ['Vervangcartridge', `${PUREFILTER.cartridgePrice} (duo ${PUREFILTER.cartridgeDuoPrice})`],
   ['Capaciteit', PUREFILTER.capacity],
   ['Filterduur', '1-3 personen tot 12 maanden, 4+ personen circa 6 maanden'],
   ['Aansluiting', 'standaard 3/8" en 1/2", adapters meegeleverd'],
@@ -336,7 +336,7 @@ export default function PureFilterReviewPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat kost het per jaar?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Je betaalt eenmalig {PUREFILTER.price}, inclusief de eerste cartridge. Daarna vervang je de cartridge
-            elke 6 tot 12 maanden, afhankelijk van je huishouden, voor rond {PUREFILTER.cartridgePrice}. Een
+            elke 6 tot 12 maanden, afhankelijk van je huishouden, voor {PUREFILTER.cartridgePrice} (twee voor {PUREFILTER.cartridgeDuoPrice}). Een
             cartridge filtert {PUREFILTER.capacity}. Bij volledig gebruik kost gefilterd water daarmee minder dan
             een halve cent per liter. Ter vergelijking: een huishouden dat dagelijks flessenwater koopt, is al snel
             honderden euro&apos;s per jaar kwijt.

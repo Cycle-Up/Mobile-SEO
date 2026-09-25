@@ -337,8 +337,8 @@ export default function OsmoseKostenPage() {
                 <td className="border border-gray-300 px-3 py-2 font-medium">4-in-1 kraan (PureAqua)</td>
                 <td className="border border-gray-300 px-3 py-2">&euro;1.948</td>
                 <td className="border border-gray-300 px-3 py-2">&euro;299</td>
-                <td className="border border-gray-300 px-3 py-2">&euro;550</td>
-                <td className="border border-gray-300 px-3 py-2 font-bold">&euro;2.797</td>
+                <td className="border border-gray-300 px-3 py-2">circa &euro;715</td>
+                <td className="border border-gray-300 px-3 py-2 font-bold">&euro;2.962</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-3 py-2 font-medium">Filterkan (gezin 3 pers.)</td>

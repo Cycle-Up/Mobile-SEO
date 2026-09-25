@@ -242,12 +242,12 @@ const tco5jaar = [
   {
     systeem: '4-in-1 kraan met RO',
     aanschaf: '€ 1.948',
-    jr1: '€ 100',
-    jr2: '€ 180',
-    jr3: '€ 100',
-    jr4: '€ 180',
-    jr5: '€ 100',
-    totaal: '€ 2.608',
+    jr1: '± € 105',
+    jr2: '± € 200',
+    jr3: '± € 105',
+    jr4: '± € 200',
+    jr5: '± € 105',
+    totaal: '± € 2.663',
   },
   {
     systeem: 'APEC ROES-50',
@@ -725,10 +725,10 @@ export default function BesteOsmosefilter2026Page() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-3">
-            Jaar 3 en 5 zijn hoger vanwege membraanvervanging (€60–100). Bij de 4-in-1 kraan met RO zijn jaar 2 en 4 hoger vanwege de membraanwissel (circa elke twee jaar). Flessenwater: 0,5L per persoon per dag × 4 personen × €0,69 gemiddeld.
+            Jaar 3 en 5 zijn hoger vanwege membraanvervanging (€60–100). Bij de 4-in-1 kraan met RO zijn jaar 2 en 4 hoger vanwege de membraanwissel (circa elke twee jaar); de filters kosten gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend). Flessenwater: 0,5L per persoon per dag × 4 personen × €0,69 gemiddeld.
           </p>
           <p className="text-gray-700 mt-4 leading-relaxed">
-            Het duurste osmose-systeem (de 4-in-1 kraan met RO, €2.608 over 5 jaar) kost ongeveer evenveel als
+            Het duurste osmose-systeem (de 4-in-1 kraan met RO, circa €2.663 over 5 jaar) kost iets meer dan
             flessenwater (€2.500 over 5 jaar), maar geeft ook zeer heet en gekoeld water. De losse osmose-systemen zijn
             aanzienlijk goedkoper dan flessenwater. De Aqua Medic Easy Line is het meest economisch over 5 jaar met
             €620 totaal. Wil je meer weten over de waterhardheid in jouw regio — een factor die de

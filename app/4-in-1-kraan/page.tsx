@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
+import { SgsResults } from '@/components/SgsResults';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
+import { FactCard } from '@/components/FactCard';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
@@ -52,7 +55,7 @@ const faqItems = [
   {
     question: 'Wat kost het onderhoud van een 4-in-1 kraan per jaar?',
     answer:
-      'De terugkerende kosten zijn filterwissels en stroom. Bij de PureAqua 4-in-1 kraan vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar (of eerder bij hoog gebruik). Er is geen CO₂-cilinder, dus ook geen navulkosten. Bekijk de actuele filterprijzen bij PureAqua.',
+      'De terugkerende kosten zijn filterwissels en stroom. Bij de PureAqua 4-in-1 kraan vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar (of eerder bij hoog gebruik). De filters kosten gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend): circa 105 euro in een jaar met alleen voorfilter en remineralisatiefilter, circa 200 euro in een jaar met ook een nieuw membraan. Er is geen CO₂-cilinder, dus ook geen navulkosten.',
   },
   {
     question: 'Is een 4-in-1 kraan ook geschikt voor hard water?',
@@ -70,7 +73,7 @@ const voordelen = [
   {
     aspect: 'Prijs over 5 jaar',
     losseApparaten: 'Koffiewaterkraan € 250 + waterkoker € 60 + SodaStream € 100 + mengkraan € 200 = € 610 aanschaf + jaarlijks kosten',
-    vierInEen: 'PureAqua 4-in-1: € 1.948 aanschaf, installatie optioneel € 299, plus filters en stroom',
+    vierInEen: 'PureAqua 4-in-1: € 1.948 aanschaf, installatie optioneel € 299, filters gemiddeld circa € 150 per jaar (fabrikantprijzen omgerekend), plus stroom',
     winnaar: 'Losse apparaten goedkoper',
   },
   {
@@ -157,9 +160,9 @@ const tco5jaar = [
     set: 'PureAqua 4-in-1 kraan',
     aanschaf: '€ 1.948',
     installatie: '€ 299 (optioneel)',
-    filtersCO2: 'Filters (geen CO₂)',
+    filtersCO2: 'circa € 150 (gemiddeld, geen CO₂)',
     energie: 'Afhankelijk van gebruik',
-    totaal5jaar: '€ 2.247 plus filters en stroom',
+    totaal5jaar: '± € 2.962 plus stroom',
     highlight: true,
   },
   {
@@ -252,6 +255,12 @@ export default function VierInEenKraanPage() {
         <AuthorBox datePublished="2026-05-29" />
 
         <QuickAnswer answer="De PureAqua 4-in-1 kraan geeft gewoon warm en koud kraanwater, plus osmose-gezuiverd water op kamertemperatuur, gekoeld (circa 5 graden) en zeer heet (circa 96 graden). Onder de spoelbak staan een heet-/koelunit en een osmose-unit. Bruisend water zit er niet op. De prijs is 1.948 euro; installatie is optioneel voor 299 euro." />
+
+        <FactCard id="fourInOne" />
+
+        <FourInOneRecommendation content="4-in-1-kraan-aanbeveling" />
+
+        <SgsResults />
 
         {/* Wat is een 4-in-1 kraan */}
         <section>

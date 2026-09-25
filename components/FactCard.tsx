@@ -20,6 +20,11 @@ export function FactCard({ id }: { id: FactCardId }) {
           </div>
         ))}
       </dl>
+      {'source' in card && card.source && (
+        <p className="text-sm mt-4">
+          <a href={card.source.url} rel="noopener" className="text-[#005F8A] underline">{card.source.label}</a>
+        </p>
+      )}
       <p className="text-xs text-gray-400 mt-4">Gecontroleerd op {FACT_CARDS_CHECKED_AT}. Verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.</p>
     </section>
   );
