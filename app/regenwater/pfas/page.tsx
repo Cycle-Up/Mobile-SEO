@@ -23,7 +23,7 @@ const faqItems = [
   },
   {
     q: 'Welke filter verwijdert PFAS uit regenwater?',
-    a: 'Omgekeerde osmose (RO) is de meest effectieve techniek: verwijdert meer dan 95% van alle PFAS-verbindingen, inclusief korte-keten PFAS zoals GenX en PFBS. Actief-koolfilter (granular activated carbon, GAC) is een goedkoper alternatief: verwijdert 60 tot 90% van lange-keten PFAS (PFOS, PFOA) maar slechts 20 tot 50% van korte-keten PFAS. Ionenwisselaars met selectief PFAS-hars verwijderen 95 tot 99% maar zijn duur. Voor regenwaterzuivering wordt doorgaans een combinatie aanbevolen: actief kool als voorfilter en omgekeerde osmose voor finalisering.',
+    a: 'Omgekeerde osmose (RO) verwijdert meer dan 95% van alle PFAS-verbindingen, inclusief korte-keten PFAS zoals GenX en PFBS. Actief-koolfilter (granular activated carbon, GAC) is een goedkoper alternatief: verwijdert 60 tot 90% van lange-keten PFAS (PFOS, PFOA) maar slechts 20 tot 50% van korte-keten PFAS. Ionenwisselaars met selectief PFAS-hars verwijderen 95 tot 99% maar zijn duur. Voor regenwaterzuivering wordt doorgaans een combinatie aanbevolen: actief kool als voorfilter en omgekeerde osmose voor finalisering.',
   },
   {
     q: 'Hoe komt PFAS in regenwater terecht?',
@@ -35,7 +35,7 @@ const faqItems = [
   },
   {
     q: 'Kan ik regenwater drinken na PFAS-filtratie?',
-    a: 'Met geschikte filtering (actief kool plus omgekeerde osmose) kan PFAS uit regenwater worden verwijderd tot onder detectiegrens. Echter, regenwater drinken wordt zelden aanbevolen, omdat naast PFAS ook andere risicos bestaan: microbiele besmetting (E. coli, Legionella), zware metalen (lood van oudere dakgoten, koper), zuurgraad (pH circa 5) en organisch materiaal. Drinken vereist actief kool plus omgekeerde osmose plus UV-sterilisatie plus pH-correctie &mdash; samen ruim 1500 tot 3000 euro extra naast de tankinstallatie. Kraanwater met huishoudelijke RO-filter is een veel praktischere en goedkopere oplossing voor PFAS-arm drinkwater.',
+    a: 'Met geschikte filtering (actief kool plus omgekeerde osmose) kan PFAS uit regenwater worden verwijderd tot onder detectiegrens. Echter, regenwater drinken wordt zelden aanbevolen, omdat naast PFAS ook andere risicos bestaan: microbiele besmetting (E. coli, Legionella), zware metalen (lood van oudere dakgoten, koper), zuurgraad (pH circa 5) en organisch materiaal. Drinken vereist actief kool plus omgekeerde osmose plus UV-sterilisatie plus pH-correctie, samen ruim 1500 tot 3000 euro extra naast de tankinstallatie. Kraanwater met huishoudelijke RO-filter is een veel praktischere en goedkopere oplossing voor PFAS-arm drinkwater.',
   },
   {
     q: 'Hoeveel PFAS verwijdert actief kool uit regenwater?',
@@ -117,7 +117,7 @@ export default function RegenwaterPfasPage() {
           PFAS (poly- en perfluoralkylstoffen) zijn synthetische chemicalien die wereldwijd worden gebruikt in antiaanbaklagen, waterafstotende coatings, brandblusschuim en industriele toepassingen. Ze worden vrijgesteld bij productie, gebruik en verbranding, en verspreiden zich vervolgens via de atmosfeer. PFAS-moleculen binden aan stofdeeltjes en aerosolen die hoog in de atmosfeer worden getransporteerd, vaak duizenden kilometers ver van de bron.
         </p>
         <p className="text-gray-700 mb-4">
-          Met regen, sneeuw en mist slaan deze PFAS-deeltjes neer op land en water &mdash; ook in gebieden ver van industriele bronnen. Onderzoek door Cousins et al. (2022, Environmental Science &amp; Technology) toont aan dat geen enkele plaats op aarde nog PFAS-vrij regenwater kent, inclusief afgelegen gebieden zoals Antarctica en het Tibetaans Plateau. De EPA-drinkwaternorm voor PFOS plus PFOA (4 ng/L) wordt vrijwel overal in regenwater wereldwijd overschreden.
+          Met regen, sneeuw en mist slaan deze PFAS-deeltjes neer op land en water, ook in gebieden ver van industriele bronnen. Onderzoek door Cousins et al. (2022, Environmental Science &amp; Technology) toont aan dat geen enkele plaats op aarde nog PFAS-vrij regenwater kent, inclusief afgelegen gebieden zoals Antarctica en het Tibetaans Plateau. De EPA-drinkwaternorm voor PFOS plus PFOA (4 ng/L) wordt vrijwel overal in regenwater wereldwijd overschreden.
         </p>
         <p className="text-gray-700 mb-6">
           Lees ook ons <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="text-[#005F8A] underline">PFAS-overzicht voor drinkwater</Link> voor een complete uitleg over PFAS-typen, gezondheidseffecten en regelgeving.
@@ -140,7 +140,7 @@ export default function RegenwaterPfasPage() {
           De bekendste PFAS-hotspot in Nederland is de omgeving van Dordrecht, rond de Chemours-fabriek (voorheen DuPont). De fabriek produceert sinds de jaren 1960 PFOA en sinds 2012 GenX, met aantoonbare verhoogde PFAS-concentraties in bodem, oppervlaktewater, gewassen en lucht in een straal van 15 tot 25 kilometer. Het RIVM publiceerde in 2024 dat inwoners binnen deze zone aantoonbaar verhoogde PFAS-niveaus in hun bloed hebben.
         </p>
         <p className="text-gray-700 mb-6">
-          De Schiphol-regio kent verhoogde PFAS-waarden door het gebruik van PFOS-houdend brandblusschuim voor brandbestrijdingsoefeningen tot 2020. Andere hotspots zijn de Brainport-regio Eindhoven (verschillende industriele bronnen), delen van West-Brabant en de Westerschelde-zone in Zeeland (3M Antwerpen via lucht en water). Voor specifieke regionale advies, zie onze <Link href="/waterfilter/pfas" className="text-[#005F8A] underline">PFAS-waterfilter-pagina</Link> per gebied.
+          De Schiphol-regio kent verhoogde PFAS-waarden door het gebruik van PFOS-houdend brandblusschuim voor brandbestrijdingsoefeningen tot 2020. Andere hotspots zijn de Brainport-regio Eindhoven (verschillende industriele bronnen), delen van West-Brabant en de Westerschelde-zone in Zeeland (3M Antwerpen via lucht en water). Welke filters PFAS tegenhouden, lees je op <Link href="/pfas-waterfilter" className="text-[#005F8A] underline">PFAS waterfilter: welke filters werken echt</Link>. Welk filter past bij jouw regio en waterbron, lees je op <Link href="/pfas-waterfilter/gebieden-nederland" className="text-[#005F8A] underline">PFAS-filter per regio en waterbron</Link>.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -187,7 +187,7 @@ export default function RegenwaterPfasPage() {
         </div>
 
         <p className="text-gray-700 mb-4">
-          Omgekeerde osmose is de meest effectieve techniek tegen alle PFAS-verbindingen, inclusief de moeilijk te verwijderen korte-keten PFAS zoals GenX, PFBS en PFBA. De semi-permeabele RO-membraan houdt moleculen groter dan circa 0,0001 micron tegen, waardoor vrijwel alle PFAS worden afgevangen ongeacht ketenlengte. Meer over deze techniek leest u op <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose werking</Link>.
+          Omgekeerde osmose houdt meer dan 95% van alle PFAS-verbindingen tegen, inclusief de moeilijk te verwijderen korte-keten PFAS zoals GenX, PFBS en PFBA. De semi-permeabele RO-membraan houdt moleculen groter dan circa 0,0001 micron tegen, waardoor vrijwel alle PFAS worden afgevangen ongeacht ketenlengte. Meer over deze techniek lees je op <Link href="/filtertechnieken/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose werking</Link>.
         </p>
         <p className="text-gray-700 mb-6">
           Actief kool is een goedkoper alternatief maar minder volledig. Lange-keten PFAS (PFOS, PFOA) binden goed aan het kooloppervlak waardoor 60 tot 90% verwijdering haalbaar is. Korte-keten PFAS zijn kleiner en polairder, binden minder sterk en worden slechts voor 20 tot 50% verwijderd. Voor regenwater met onbekende PFAS-mix biedt enkel actief kool dus geen sluitende garantie. Combineer altijd actief kool als voorfilter met omgekeerde osmose voor zekerheid.

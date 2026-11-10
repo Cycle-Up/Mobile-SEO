@@ -1,6 +1,14 @@
 import Link from 'next/link';
 import { buildShopUrl } from '@/lib/pureaqua.mjs';
-import { JOEP, JOEP_MARKET, JOEP_RECOMMENDATION_CRITERIA, JOEP_MIN_DH, JOEP_VERDICT } from '@/lib/joep.mjs';
+import {
+  JOEP,
+  JOEP_MARKET,
+  JOEP_MIN_DH,
+  JOEP_NO_FUSS,
+  JOEP_POSITIONING,
+  JOEP_RECOMMENDATION_CRITERIA,
+  JOEP_VERDICT,
+} from '@/lib/joep.mjs';
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 
 interface JoepRecommendationProps {
@@ -10,8 +18,9 @@ interface JoepRecommendationProps {
 
 /**
  * Redactionele keuze voor de JOEP waterontharder, met transparante criteria,
- * marktvergelijking, eerlijke kanttekeningen en disclosure. Het oordeel "beste" is
- * altijd toegeschreven aan het platform (JOEP_VERDICT), nooit als kaal feit.
+ * marktvergelijking, eerlijke kanttekeningen en disclosure. De oordelen "beste" en
+ * "slimste betaalbare" zijn altijd toegeschreven aan het platform (JOEP_VERDICT,
+ * JOEP_POSITIONING) en onderbouwd met controleerbare punten (JOEP_NO_FUSS).
  */
 export function JoepRecommendation({ content }: JoepRecommendationProps) {
   const href = buildShopUrl('joep', { campaign: 'waterontharder', content });
@@ -21,20 +30,31 @@ export function JoepRecommendation({ content }: JoepRecommendationProps) {
         Onze keuze 2026
       </span>
       <h2 className="text-xl md:text-2xl font-bold text-[#003F5C] mt-3 mb-2">{JOEP_VERDICT}</h2>
+      <p className="font-semibold text-[#003F5C] mb-2">{JOEP_POSITIONING}</p>
       <p className="text-gray-700 leading-relaxed mb-4">
-        Voor huishoudens met hard water (vanaf ongeveer {JOEP_MIN_DH} dH) raden wij de JOEP waterontharder aan. Hij
-        is zeer compact, wordt gemaakt in {JOEP.madeIn} en {JOEP.aquacellLink}. Compleet geïnstalleerd kost hij{' '}
-        {JOEP.installedPrice}; zelf installeren kan voor{' '}
-        {JOEP.devicePrice}. Complete ontharders kosten doorgaans {JOEP_MARKET.typicalInstalledRange}, en een
-        vergelijkbaar compact merkmodel als de {JOEP_MARKET.comparable.name} kost circa{' '}
-        {JOEP_MARKET.comparable.installedPrice} geïnstalleerd.
+        Voor huishoudens met hard water (vanaf ongeveer {JOEP_MIN_DH} dH) raden wij de JOEP waterontharder aan.
+        Complete ontharders kosten doorgaans {JOEP_MARKET.typicalInstalledRange}, en een vergelijkbaar compact
+        merkmodel als de {JOEP_MARKET.comparable.name} kost circa {JOEP_MARKET.comparable.installedPrice}{' '}
+        geïnstalleerd.
       </p>
-      <p className="font-semibold text-gray-800 text-sm mb-2">Waarom JOEP onze keuze is:</p>
-      <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
-        {JOEP_RECOMMENDATION_CRITERIA.map(c => (
-          <li key={c}>{c}</li>
-        ))}
-      </ul>
+      <div className="grid md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <p className="font-semibold text-gray-800 text-sm mb-2">Zonder poespas, concreet:</p>
+          <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
+            {JOEP_NO_FUSS.map(c => (
+              <li key={c}>{c}</li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p className="font-semibold text-gray-800 text-sm mb-2">Waarom JOEP verder onze keuze is:</p>
+          <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
+            {JOEP_RECOMMENDATION_CRITERIA.map(c => (
+              <li key={c}>{c}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
       <p className="text-sm text-gray-600 mb-5">
         <strong>Goed om te weten:</strong> tijdens de nachtelijke regeneratie is het water circa een uur hard,
         JOEP heeft zout en een stopcontact nodig, en bij een groot huishouden of hoog piekverbruik laat je vooraf

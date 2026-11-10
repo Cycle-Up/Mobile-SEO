@@ -2,116 +2,116 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { CTABanner } from "@/components/CTABanner";
+import { HealthDisclaimer } from "@/components/HealthDisclaimer";
+import { AuthorBox } from "@/components/AuthorBox";
+import { SourcesSection } from "@/components/SourcesSection";
+
+// Regionale invalshoek: "pfas in leidingwater per regio / hotspots". Geen filterintentie in
+// title/H1/meta; filterkeuze staat op /pfas-waterfilter, algemene uitleg op /pfas-water.
+const PAGE_URL = "https://waterfilterplatform.nl/leidingwater/pfas";
+const PAGE_TITLE = "PFAS in leidingwater per regio: hotspots in Nederland";
+const PAGE_DESCRIPTION =
+  "PFAS in leidingwater verschilt sterk per regio. Waar de waarden het hoogst zijn, welke bronnen en waterbedrijven het betreft en hoe je jouw adres opzoekt.";
+const DATE_PUBLISHED = "2026-05-01";
+const DATE_MODIFIED = "2026-11-10";
 
 export const metadata: Metadata = {
-  title: "PFAS in leidingwater Nederland: hotspots, normen en filteradvies",
-  description:
-    "PFAS in NL leidingwater: Chemours Dordrecht, blusschuim op vliegvelden. EU-norm 0,1 ug/L per 2023. Osmosefilter verwijdert 90-99% PFAS thuis.",
-  alternates: { canonical: "https://waterfilterplatform.nl/leidingwater/pfas" },
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
 };
 
-const faqItems = [
-  {
-    question: "Wat zijn PFAS precies?",
-    answer:
-      "PFAS (per- en polyfluoralkylstoffen) zijn een groep van meer dan 10.000 synthetische chemicalien die gekenmerkt worden door zeer sterke koolstof-fluor bindingen. Hierdoor breken ze niet of nauwelijks af in het milieu en worden ze 'eeuwigdurende chemicalien' (forever chemicals) genoemd. Ze worden gebruikt in antiaanbaklagen, waterafstotende kleding, blusschuim, voedselverpakkingen en vele industriele processen.",
-  },
-  {
-    question: "Hoe komen PFAS in Nederlands leidingwater terecht?",
-    answer:
-      "PFAS bereiken leidingwater via twee hoofdroutes: industriele lozingen (zoals Chemours in Dordrecht die GenX loosde in de Westerschelde en de Nieuwe Waterweg) en het gebruik van AFFF-blusschuim op vliegvelden en brandweeroefenterreinen. Dit PFAS-houdende blusschuim sijpelt in de bodem en verontreinigt grondwater. Drinkwaterbedrijven die grondwater of oppervlaktewater uit besmette gebieden winnen, kunnen PFAS in hun bronwater aantreffen.",
-  },
-  {
-    question: "Wat is de GenX-affaire in Dordrecht?",
-    answer:
-      "GenX is een specifieke PFAS-verbinding (ammoniumzout van hexafluoropropyleenoxide-dimerzuur) die Chemours (voorheen DuPont) jarenlang loosde in de Nieuwe Waterweg bij Dordrecht. Onderzoek uit 2016-2018 toonde aan dat bewoners rondom de fabriek verhoogde bloedwaarden hadden. Drinkwaterbedrijf Evides, dat oppervlaktewater uit dit gebied gebruikt, moet extra zuivering toepassen. De GenX-affaire leidde tot aanscherping van de PFAS-normen in de EU-drinkwaterrichtlijn van 2020.",
-  },
-  {
-    question: "Welke PFAS-normen gelden in Nederland?",
-    answer:
-      "Sinds de implementatie van de EU-drinkwaterrichtlijn 2020/2184 in 2023 gelden in Nederland twee PFAS-normen: maximaal 0,1 microgram per liter (ug/L) voor de som van 20 geprioriteerde PFAS (inclusief PFOS, PFOA, GenX), en maximaal 0,5 ug/L voor de totaalsom van alle gedetecteerde PFAS. Ter vergelijking: de VS EPA stelde in 2024 een norm van 0,004 ug/L voor PFOA en PFOS afzonderlijk, factor 25 strenger dan de EU-norm.",
-  },
-  {
-    question: "Is leidingwater in Nederland veilig ondanks PFAS?",
-    answer:
-      "Ja, conform de huidige normen is leidingwater in Nederland veilig. De drinkwaterbedrijven zijn verplicht te voldoen aan de grenswaarden van het Drinkwaterbesluit. In de meeste regio's liggen de PFAS-waarden ruim onder de norm. Nabij hotspots (Dordrecht, Eindhoven, Volkel) zijn concentraties hoger maar drinkwaterbedrijven passen extra zuivering toe. Bezorgde consumenten kunnen kiezen voor extra zekerheid via een osmosefilter.",
-  },
-  {
-    question: "Welk waterfilter verwijdert PFAS effectief?",
-    answer:
-      "Omgekeerde osmose (RO) is de meest effectieve huishoudelijke methode en verwijdert 90-99% van alle PFAS-verbindingen. Actief koolstoffiltratie (GAC of blokfilter) verwijdert langketenige PFAS (zoals PFOS en PFOA) deels effectief (60-90%), maar kortketenige PFAS en GenX worden minder goed verwijderd. Standaard filterkansen en sedimentfilters hebben geen effect op PFAS. Voor maximale bescherming is omgekeerde osmose de aanbevolen keuze.",
-  },
-  {
-    question: "Wat zijn de gezondheidsrisicos van PFAS in drinkwater?",
-    answer:
-      "PFAS stapelen zich op in het lichaam (bio-accumulatie). Langdurige blootstelling aan hoge concentraties is geassocieerd met: verhoogd cholesterol, verminderde immuunrespons (inclusief verminderd effect van vaccinaties), schildklieraandoeningen, verhoogd risico op bepaalde kankers (nierkanker, zaadbalkanker) en vertraagde ontwikkeling bij kinderen. PFOS en PFOA zijn geclassificeerd als mogelijk kankerverwekkend (IARC groep 2B). De effecten op de lange termijn bij lagere blootstelling worden nog onderzocht.",
-  },
-  {
-    question: "Hoe lees ik het waterkwaliteitsrapport van mijn waterbedrijf?",
-    answer:
-      "Elk drinkwaterbedrijf publiceert jaarlijks een waterkwaliteitsrapport op hun website. Zoek in dit rapport naar de tabel met gemeten parameters. PFAS staat vermeld onder individuele verbindingen (PFOS, PFOA, GenX, PFNA etc.) of als 'som 20 PFAS'. Vergelijk de gevonden waarden met de normen: 0,1 ug/L voor de som van 20 prioritaire PFAS. Als de waarden niet vermeld staan, kan dat betekenen dat ze onder de detectiegrens lagen of dat het bedrijf niet op die locatie meet.",
-  },
-  {
-    question: "Hoeveel PFAS verwijdert een osmosefilter precies?",
-    answer:
-      "Een goed osmosefilter met een semipermeabele membraan van 0,0001 micrometer verwijdert doorgaans 90-99% van alle PFAS-verbindingen. De exacte verwijderingsefficiency hangt af van de molecuulgrootte van de PFAS-verbinding, de kwaliteit van het membraan, de watertemperatuur en -druk, en de ouderdom van het membraan. Kortketenige PFAS worden iets minder efficiënt verwijderd dan langketenige. Jaarlijkse vervanging van het membraan is essentieel voor behoud van effectiviteit.",
-  },
-  {
-    question: "Voor wie is een PFAS-filter extra belangrijk?",
-    answer:
-      "Extra voorzorg via een osmosefilter is met name zinvol voor: zwangere vrouwen (PFAS passeren de placenta), zuigelingen en jonge kinderen (hogere lichaamsbelasting per kg), mensen met immuunaandoeningen of schildklierproblemen, en bewoners in de nabijheid van Chemours Dordrecht, vliegvelden (Eindhoven Airport, vliegbasis Volkel, Schiphol) en industrieterreinen. Ook personen met een al verhoogde PFAS-bloedwaarde profiteren van verlaging van de inname via water.",
-  },
-  {
-    question: "Welke waterbedrijven gebruiken besmette bronnen?",
-    answer:
-      "Evides (Zeeland, Zuid-Holland) staat het meest bloot via oppervlaktewater uit de Westerschelde en Nieuwe Waterweg, beinvloed door Chemours. Brabant Water heeft te maken met grondwaterverontreiniging nabij vliegbasis Volkel (PFOS-blusschuim). Vitens meet verhoogde waarden in grondwater rondom Eindhoven Airport. Alle betrokken bedrijven passen extra zuivering (actieve kool, nanofiltration of omgekeerde osmose op schaal) toe om aan de normen te voldoen.",
-  },
-  {
-    question: "Wat regelt de nieuwe EU-drinkwaterrichtlijn over PFAS?",
-    answer:
-      "De EU-drinkwaterrichtlijn 2020/2184 (van kracht in Nederland vanaf 2023) is de eerste Europese wetgeving die specifieke PFAS-grenswaarden voor drinkwater vastlegt: 0,1 ug/L voor de som van 20 prioritaire PFAS en 0,5 ug/L voor alle PFAS gecombineerd. Eerder waren er geen specifieke PFAS-normen in de Europese drinkwaterrichtlijn. De richtlijn verplicht ook een risicogebaseerde beoordeling van waterwingebieden en extra monitoring in gebieden met bekende PFAS-bronnen.",
-  },
+const QUICK_ANSWER =
+  "Hoeveel PFAS er in je leidingwater zit, hangt vooral af van de bron van je waterbedrijf. Water uit rivieren en meren, zoals in het westen, bevat doorgaans meer PFAS dan diep grondwater in het oosten en noorden. Volgens een analyse van Greenpeace (september 2026) ligt bij ongeveer een derde van de Nederlanders de PFAS-waarde boven de RIVM-advieswaarde van 4,4 nanogram per liter. In Noord-Holland geldt dat voor circa 95 procent van de inwoners, met ruim drie keer de advieswaarde in Zaandam en IJmuiden. Overal voldoet het leidingwater aan de wettelijke norm van 100 nanogram per liter voor de som van 20 PFAS.";
+
+const regioData = [
+  { regio: "Nederland totaal", uitkomst: "Bij ongeveer een derde van de bevolking boven de advieswaarde" },
+  { regio: "Noord-Holland", uitkomst: "Circa 95 procent van de inwoners boven de advieswaarde" },
+  { regio: "Zaandam en IJmuiden", uitkomst: "Ruim drie keer de advieswaarde" },
+  { regio: "Alkmaar en Den Helder", uitkomst: "Circa tweeënhalf keer de advieswaarde" },
+  { regio: "Amsterdam", uitkomst: "Ruim twee keer de advieswaarde" },
+  { regio: "Limburg", uitkomst: "Circa een op de vijf inwoners boven de advieswaarde" },
 ];
 
 const waterbedrijvenData = [
   {
-    bedrijf: "Evides",
-    bron: "Oppervlaktewater Westerschelde / Nieuwe Waterweg",
-    detectie: "Ja - GenX, PFOS",
-    situatie: "Extra actieve koolstofbehandeling; waarden onder norm",
-  },
-  {
-    bedrijf: "Brabant Water",
-    bron: "Grondwater Noord-Brabant (o.a. nabij Volkel)",
-    detectie: "Ja - PFOS (blusschuim)",
-    situatie: "Extra zuiveringsstap; monitoring uitgebreid",
-  },
-  {
-    bedrijf: "Vitens (Brabant/Gelderland)",
-    bron: "Grondwater; bronnen nabij Eindhoven Airport",
-    detectie: "Sporadisch - PFOS",
-    situatie: "Bronbeheer; alternatieve winlocaties",
-  },
-  {
-    bedrijf: "Dunea",
-    bron: "Geïnfiltreerd Rijnwater via duinen",
-    detectie: "Lage concentraties",
-    situatie: "Duinpassage biedt extra zuivering; waarden laag",
-  },
-  {
-    bedrijf: "PWN",
-    bron: "Duinwater, IJsselmeer",
-    detectie: "Zeer laag of onder detectiegrens",
-    situatie: "Geen bijzondere maatregelen nodig",
+    bedrijf: "PWN (Noord-Holland)",
+    bron: "IJsselmeerwater en rivierwater uit de Lek",
+    situatie:
+      "Hoogste waarden in de Greenpeace-analyse. PWN bevestigt de cijfers en meldt dat het water aan alle wettelijke eisen voldoet.",
   },
   {
     bedrijf: "Waternet (Amsterdam)",
-    bron: "Oppervlaktewater Bethunepolder",
-    detectie: "Laag",
-    situatie: "Normale monitoring; waarden ruim onder norm",
+    bron: "Lekkanaalwater via de duinen en water uit de Bethunepolder",
+    situatie: "Ruim twee keer de advieswaarde. De cijfers komen uit eigen metingen van Waternet.",
+  },
+  {
+    bedrijf: "Dunea (Den Haag, Leiden)",
+    bron: "Rivierwater, gezuiverd via de duinen",
+    situatie: "Volgens Dunea ruim binnen de EU-norm en dicht bij, maar niet altijd onder de advieswaarde.",
+  },
+  {
+    bedrijf: "Evides (Zeeland, regio Rotterdam)",
+    bron: "Vooral rivierwater uit de Maas (Biesbosch)",
+    situatie: "De bestaande zuivering haalt volgens Evides ongeveer 30 tot 50 procent van de PFAS weg.",
+  },
+  {
+    bedrijf: "WML (Limburg)",
+    bron: "Grondwater en Maaswater",
+    situatie: "Circa een op de vijf inwoners boven de advieswaarde.",
+  },
+  {
+    bedrijf: "Grondwaterbedrijven in oost en noord",
+    bron: "Vooral grondwater, deels uit diepe lagen",
+    situatie:
+      "Diep grondwater is doorgaans beter beschermd en bevat minder PFAS. De ILT ziet TFA wel als groeiend risico voor diep grondwater.",
   },
 ];
+
+const faqItems = [
+  {
+    question: "In welke regio's zit de meeste PFAS in het leidingwater?",
+    answer:
+      "Volgens de Greenpeace-analyse van september 2026 zijn de waarden het hoogst in Noord-Holland: bij circa 95 procent van de inwoners ligt de PFAS-waarde boven de RIVM-advieswaarde, met ruim drie keer de advieswaarde in Zaandam en IJmuiden, circa tweeënhalf keer in Alkmaar en Den Helder en ruim twee keer in Amsterdam. Ook delen van Zuid-Holland scoren hoog. In Limburg ligt circa een op de vijf inwoners boven de advieswaarde. Overal voldoet het water aan de wettelijke norm.",
+  },
+  {
+    question: "Waarom zit er in het westen meer PFAS in het leidingwater dan in het oosten?",
+    answer:
+      "Waterbedrijven in het westen maken een groot deel van hun drinkwater uit oppervlaktewater, zoals het IJsselmeer en de Rijn en Maas. Rivieren voeren PFAS aan uit industrie in binnen- en buitenland, en de gangbare zuivering haalt daar maar een deel van weg. In grote delen van het oosten en noorden komt drinkwater uit grondwater, vaak uit diepe lagen die beter beschermd zijn.",
+  },
+  {
+    question: "Hoe vind ik de PFAS-waarde van het leidingwater op mijn adres?",
+    answer:
+      "Kijk op de website van je eigen drinkwaterbedrijf: alle Nederlandse drinkwaterbedrijven publiceren hun meetgegevens, meestal per leveringsgebied. Zoek naar PFAS, de som van 20 PFAS of naar losse stoffen zoals PFOS en PFOA. Greenpeace bracht in september 2026 ook een postcodechecker uit op basis van diezelfde openbare meetgegevens van 183 winlocaties.",
+  },
+  {
+    question: "Is leidingwater boven de RIVM-advieswaarde nog veilig?",
+    answer:
+      "Het leidingwater voldoet aan de wettelijke norm en de waterbedrijven noemen het veilig. Er is geen acuut gevaar en geen advies om te stoppen met kraanwater drinken. De advieswaarde van 4,4 nanogram per liter is een streefwaarde voor de lange termijn, omdat PFAS zich in het lichaam ophopen. Drinkwater is maar een deel van je totale inname; voedsel speelt voor de meeste mensen een grotere rol.",
+  },
+  {
+    question: "Wat betekent PFAS langs de kust voor het drinkwater?",
+    answer:
+      "Dat wordt nu onderzocht. Op 30 oktober 2026 werd bekend dat Noord-Holland, Zuid-Holland en Zeeland samen met het ministerie van Infrastructuur en Waterstaat en de drinkwaterbedrijven uitzoeken wat PFAS langs de kust betekent voor de winning van drinkwater. Juist in deze provincies komt een groot deel van het drinkwater uit oppervlaktewater en duingebieden.",
+  },
+  {
+    question: "Wat is er aan de hand bij Chemours in Dordrecht?",
+    answer:
+      "De fabriek van Chemours (voorheen DuPont) aan de Merwede bij Dordrecht heeft decennialang PFAS uitgestoten en geloosd, eerst PFOA en later de vervanger GenX. RIVM-onderzoek liet verhoogde PFAS-waarden in het bloed van omwonenden zien. Voor omwonenden gaat de zorg vooral over PFAS in lucht, bodem en voedsel; daarnaast draagt de lozing bij aan PFAS in het rivierwater benedenstrooms.",
+  },
+  {
+    question: "Waarom maakt de ILT zich zorgen over TFA in drinkwater?",
+    answer:
+      "TFA is een zeer kleine, zeer mobiele PFAS-stof die onder meer vrijkomt uit bestrijdingsmiddelen met PFAS. In september 2026 waarschuwde de Inspectie Leefomgeving en Transport dat TFA sneller doordringt naar diep grondwater dan andere PFAS. Daardoor kan ook grondwater, nu nog de best beschermde bron voor drinkwater, op termijn meer PFAS bevatten.",
+  },
+  {
+    question: "Mijn regio zit boven de advieswaarde. Wat kan ik zelf doen?",
+    answer:
+      "Kijk eerst wat er uit jouw kraan komt via de meetgegevens van je waterbedrijf. Wil je daarna de inname via water verlagen, kies dan een filter dat aantoonbaar werkt tegen PFAS: omgekeerde osmose vermindert PFAS het sterkst, een goed koolstoffilter vooral de langere ketens. In onze koopgids over het PFAS-waterfilter vergelijken we de opties.",
+  },
+];
+
+const linkClass = "text-[#005F8A] underline hover:no-underline";
 
 export default function PFASLeidingwaterPage() {
   return (
@@ -121,18 +121,18 @@ export default function PFASLeidingwaterPage() {
         breadcrumbs={[
           { name: "Home", url: "https://waterfilterplatform.nl" },
           { name: "Leidingwater", url: "https://waterfilterplatform.nl/leidingwater" },
-          { name: "PFAS", url: "https://waterfilterplatform.nl/leidingwater/pfas" },
+          { name: "PFAS per regio", url: PAGE_URL },
         ]}
       />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="Article"
         article={{
-          title: "PFAS in leidingwater Nederland: hotspots, normen en filteradvies",
-          description:
-            "PFAS in NL leidingwater: Chemours Dordrecht, blusschuim op vliegvelden. EU-norm 0,1 ug/L per 2023. Osmosefilter verwijdert 90-99% PFAS thuis.",
-          datePublished: "2026-05-01",
-          url: "https://waterfilterplatform.nl/leidingwater/pfas",
+          title: PAGE_TITLE,
+          description: PAGE_DESCRIPTION,
+          datePublished: DATE_PUBLISHED,
+          dateModified: DATE_MODIFIED,
+          url: PAGE_URL,
         }}
       />
 
@@ -143,72 +143,76 @@ export default function PFASLeidingwaterPage() {
             <span className="mx-2">/</span>
             <Link href="/leidingwater" className="hover:text-[#005F8A]">Leidingwater</Link>
             <span className="mx-2">/</span>
-            <span>PFAS</span>
+            <span>PFAS per regio</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            PFAS in leidingwater Nederland: hotspots, normen en filteradvies
+            PFAS in leidingwater per regio: waar ligt het hoger?
           </h1>
-          <QuickAnswer answer="PFAS zitten in laag concentraties in een deel van het Nederlandse leidingwater, met name nabij Chemours in Dordrecht en vliegvelden zoals Volkel en Eindhoven. De EU-norm is 0,1 ug/L voor de som van 20 PFAS (van kracht since 2023). Leidingwater is conform norm veilig. Een osmosefilter verwijdert 90-99% van alle PFAS voor extra zekerheid." />
+          <AuthorBox datePublished={DATE_PUBLISHED} dateModified={DATE_MODIFIED} />
+          <QuickAnswer question="In welke regio's zit meer PFAS in het leidingwater?" answer={QUICK_ANSWER} />
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <CTABanner context="osmose" />
-
-        <section className="mt-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat zijn PFAS in leidingwater?</h2>
+        <section>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">PFAS per regio: wat de metingen laten zien</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            PFAS (per- en polyfluoralkylstoffen) vormen een verzameling van meer dan 10.000 synthetische verbindingen die gekenmerkt worden door uitzonderlijk sterke koolstof-fluor bindingen. Door die chemische stabiliteit breken ze in het milieu niet of vrijwel niet af, wat hen de bijnaam <strong>forever chemicals</strong> heeft opgeleverd. Ze worden al decennia lang gebruikt in antiaanbaklagen, waterafstotende kleding (GORE-TEX), blusschuim, voedselverpakkingen en talloze industriele processen.
+            Op 22 september 2026 publiceerde Greenpeace een analyse van de openbare PFAS-metingen van alle Nederlandse
+            drinkwaterbedrijven, gemeten bij 183 winlocaties en beoordeeld met de rekenmethode van het RIVM. De
+            uitkomsten per regio, vergeleken met de RIVM-advieswaarde van 4,4 nanogram per liter:
           </p>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            De route van PFAS van industriele bron naar uw kraanwater verloopt in meerdere stappen. Industriele lozingen en het gebruik van blusschuim zorgen voor PFAS in bodem en oppervlaktewater. Via regen en grondwaterstroming verspreiden de stoffen zich verder. Waterwingebieden in de buurt van bronnen raken besmet. Drinkwaterbedrijven verwijderen PFAS via actieve koolstoffiltratie, nanofiltration of omgekeerde osmose op schaal, maar kunnen niet altijd tot nul reduceren. Het eindresultaat is dat sporen van PFAS in sommige regio's aantoonbaar zijn in het kraanwater, zij het in concentraties die de geldende normen niet overschrijden.
-          </p>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Er bestaat een belangrijk onderscheid tussen <strong>industriele PFAS</strong> (chemische productie, blusschuim op vliegvelden) en <strong>landbouw-PFAS</strong> (PFAS-houdend slib als meststof). Beide routes dragen bij aan grondwaterverontreiniging, maar de industriele hotspots zijn in Nederland de dominante bron voor verhoogde concentraties in drinkwater.
+          <div className="overflow-x-auto -mx-4 px-4 mb-3">
+            <table className="w-full min-w-[480px] text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#003F5C] text-white">
+                  <th className="text-left py-2.5 px-3 font-semibold">Regio</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Uitkomst ten opzichte van de RIVM-advieswaarde</th>
+                </tr>
+              </thead>
+              <tbody>
+                {regioData.map((r, i) => (
+                  <tr
+                    key={r.regio}
+                    className={i % 2 === 0 ? "bg-white border-b border-gray-100" : "bg-[#E0F2FE]/30 border-b border-gray-100"}
+                  >
+                    <td className="py-2.5 px-3 font-medium">{r.regio}</td>
+                    <td className="py-2.5 px-3 text-gray-700">{r.uitkomst}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-500 mb-4">
+            Bron: Greenpeace-analyse van 22 september 2026, zoals gemeld door de{" "}
+            <a href="https://nos.nl/artikel/2632030" rel="noopener" className="underline">NOS</a>. Overal voldoet het
+            water aan de wettelijke norm van 100 nanogram per liter voor de som van 20 PFAS.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Lees meer over de technische achtergrond van waterverontreinigingen op de pagina{" "}
-            <Link href="/drinkwaternormen" className="text-[#005F8A] underline hover:no-underline">drinkwaternormen in Nederland</Link>.
+            Wat het verschil tussen norm en advieswaarde precies inhoudt, leggen we uit op{" "}
+            <Link href="/pfas-water" className={linkClass}>PFAS in drinkwater</Link>. Een visueel overzicht vind je op
+            de <Link href="/kennisbank/pfas-nederland-kaart" className={linkClass}>PFAS-kaart van Nederland</Link>.
           </p>
         </section>
 
         <section className="mt-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hotspots voor PFAS in Nederland</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom het westen hoger scoort dan het oosten</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Nederland kent een beperkt aantal bekende hotspots waar PFAS-concentraties in grondwater of oppervlaktewater significant hoger zijn dan elders. De drie belangrijkste zijn:
+            Het verschil per regio heeft vooral met de bron te maken. Waterbedrijven in het westen maken een groot deel
+            van hun drinkwater uit oppervlaktewater: het IJsselmeer en water uit Rijn en Maas. Die rivieren voeren PFAS
+            aan uit industrie in binnen- en buitenland. In grote delen van het oosten en noorden komt het drinkwater uit
+            grondwater, vaak uit diepe lagen die beter beschermd zijn.
           </p>
-
-          <div className="space-y-4 mb-6">
-            <div className="border-l-4 border-red-400 bg-red-50 rounded-r-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-2">Chemours / DuPont in Dordrecht (GenX-affaire)</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                De chemische fabriek van Chemours (voorheen DuPont) in Dordrecht loost al decennialang PFAS in de Nieuwe Waterweg, waaronder de PFAS-variant GenX. Onderzoek van RIVM en IRAS (Universiteit Utrecht) toonde verhoogde bloedwaarden aan bij omwonenden. Drinkwaterbedrijf Evides, dat oppervlaktewater uit dit gebied gebruikt voor de drinkwaterproductie voor Zeeland en delen van Zuid-Holland, moest extra zuiveringsstappen implementeren. De lozing van GenX vormde een directe aanleiding voor de aanscherping van PFAS-normen in de EU-drinkwaterrichtlijn.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-orange-400 bg-orange-50 rounded-r-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-2">Vliegbasis Volkel en Eindhoven Airport (AFFF-blusschuim)</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                Militaire en civiele vliegvelden gebruikten jarenlang AFFF-blusschuim (Aqueous Film Forming Foam) dat hoge concentraties PFOS en PFOA bevat. Bij brandoefeningen en incidenten sijpelt dit blusschuim in de bodem. Rondom vliegbasis Volkel en Eindhoven Airport zijn verhoogde PFOS-concentraties aangetoond in grondwater, wat drinkwaterbedrijven Brabant Water en Vitens dwingt tot aanvullende monitoring en in sommige gevallen alternatieve bronkeuze. Dezelfde problematiek speelt rondom Schiphol Airport.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-yellow-400 bg-yellow-50 rounded-r-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-2">Westerschelde-zone</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                De Westerschelde, die door Zeeland stroomt richting de Noordzee, ontvangt PFAS via de Belgische industrie (3M in Zwijndrecht) en via de Nieuwe Waterweg. Evides wint oppervlaktewater langs dit traject en moet dit uitgebreid behandelen. Historisch onderzoek toonde aan dat vissen, schelpdieren en oevers langs de Westerschelde verhoogde PFAS-waarden bevatten, maar de drinkwaterkwaliteit voldoet na zuivering aan de normen.
-              </p>
-            </div>
-          </div>
-
-          <div className="overflow-x-auto -mx-4 px-4 mb-6">
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            De gangbare zuivering haalt maar een deel van de PFAS weg. Waterbedrijven onderzoeken extra
+            zuiveringsstappen, maar benadrukken dat aanpak bij de bron goedkoper en effectiever is dan achteraf zuiveren.
+          </p>
+          <div className="overflow-x-auto -mx-4 px-4 mb-3">
             <table className="w-full min-w-[560px] text-sm border-collapse">
               <thead>
                 <tr className="bg-[#003F5C] text-white">
                   <th className="text-left py-2.5 px-3 font-semibold">Waterbedrijf</th>
-                  <th className="text-left py-2.5 px-3 font-semibold">Bron</th>
-                  <th className="text-left py-2.5 px-3 font-semibold">PFAS-detectie gemeld</th>
-                  <th className="text-left py-2.5 px-3 font-semibold">Situatie</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Belangrijkste bron</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Wat bekend is over PFAS</th>
                 </tr>
               </thead>
               <tbody>
@@ -219,129 +223,155 @@ export default function PFASLeidingwaterPage() {
                   >
                     <td className="py-2.5 px-3 font-medium">{r.bedrijf}</td>
                     <td className="py-2.5 px-3 text-gray-600 text-xs">{r.bron}</td>
-                    <td className="py-2.5 px-3 text-xs">{r.detectie}</td>
-                    <td className="py-2.5 px-3 text-gray-600 text-xs">{r.situatie}</td>
+                    <td className="py-2.5 px-3 text-gray-700 text-xs">{r.situatie}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
           <p className="text-xs text-gray-500">
-            Bron: RIVM-rapportages en jaarverslagen drinkwaterbedrijven 2023-2025. Situatie kan wijzigen; controleer altijd het actuele kwaliteitsrapport van uw eigen waterbedrijf.
+            Bron: Greenpeace-analyse (september 2026) en reacties van PWN, Waternet, Dunea en Evides (september 2026).
+            De situatie kan veranderen; controleer altijd de actuele cijfers van je eigen waterbedrijf.
           </p>
         </section>
 
         <section className="mt-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">PFAS-normen: Nederland, EU en VS vergeleken</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Sinds de implementatie van de herziene EU-drinkwaterrichtlijn in 2023 gelden in Nederland voor het eerst specifieke wettelijke normen voor PFAS in drinkwater. Het{" "}
-            <Link href="/drinkwaternormen/pfas" className="text-[#005F8A] underline hover:no-underline">Drinkwaterbesluit</Link> stelt twee grenswaarden:
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            <div className="bg-[#E0F2FE] rounded-2xl p-4 text-center">
-              <p className="text-2xl font-bold text-[#005F8A]">0,1 ug/L</p>
-              <p className="text-sm text-gray-700 mt-1">Som van 20 prioritaire PFAS</p>
-              <p className="text-xs text-gray-500 mt-1">EU-norm, van kracht 2023</p>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Bekende PFAS-hotspots in Nederland</h2>
+          <div className="space-y-4">
+            <div className="border-l-4 border-red-400 bg-red-50 rounded-r-xl p-4">
+              <h3 className="font-semibold text-[#003F5C] mb-2">Noord-Holland, delen van Zuid-Holland en de kust</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                In Noord-Holland en delen van Zuid-Holland liggen de hoogste waarden uit de Greenpeace-analyse, met
+                Zaandam en IJmuiden als uitschieters. Daarnaast werd op 30 oktober 2026 bekend dat Noord-Holland,
+                Zuid-Holland en Zeeland samen met het ministerie van Infrastructuur en Waterstaat en de
+                drinkwaterbedrijven onderzoeken wat PFAS langs de kust betekent voor de drinkwaterwinning (bron:{" "}
+                <a
+                  href="https://www.rd.nl/a/onderzoek-gevolgen-pfas-in-kustgebied-voor-winning-drinkwater"
+                  rel="noopener"
+                  className="underline"
+                >
+                  Reformatorisch Dagblad
+                </a>
+                ). Uitkomsten van dat onderzoek zijn er nog niet.
+              </p>
             </div>
-            <div className="bg-[#E0F2FE] rounded-2xl p-4 text-center">
-              <p className="text-2xl font-bold text-[#005F8A]">0,5 ug/L</p>
-              <p className="text-sm text-gray-700 mt-1">Totaalsom alle gedetecteerde PFAS</p>
-              <p className="text-xs text-gray-500 mt-1">EU-norm, van kracht 2023</p>
+
+            <div className="border-l-4 border-orange-400 bg-orange-50 rounded-r-xl p-4">
+              <h3 className="font-semibold text-[#003F5C] mb-2">Dordrecht en omgeving (Chemours)</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                De fabriek van Chemours (voorheen DuPont) aan de Merwede heeft decennialang PFAS uitgestoten en geloosd,
+                eerst PFOA en later de vervanger GenX. RIVM-onderzoek liet verhoogde PFAS-waarden in het bloed van
+                omwonenden zien. Voor hen gaat de zorg vooral over lucht, bodem en voedsel; de lozingen dragen daarnaast
+                bij aan PFAS in het rivierwater benedenstrooms.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-yellow-400 bg-yellow-50 rounded-r-xl p-4">
+              <h3 className="font-semibold text-[#003F5C] mb-2">Vliegvelden en oefenterreinen (blusschuim)</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Op vliegvelden, defensieterreinen en brandweeroefenterreinen werd jarenlang PFAS-houdend blusschuim
+                (AFFF) gebruikt. Daardoor kan PFOS in de bodem en het grondwater rond zulke terreinen terechtkomen.
+                Drinkwaterbedrijven houden winningen in de buurt van zulke locaties extra in de gaten. Meer over deze
+                bronnen lees je bij{" "}
+                <Link href="/kennisbank/pfas-lozingen-nederland" className={linkClass}>PFAS-lozingen in Nederland</Link>.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-gray-300 bg-gray-50 rounded-r-xl p-4">
+              <h3 className="font-semibold text-[#003F5C] mb-2">Landelijk: TFA in diep grondwater</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                De Inspectie Leefomgeving en Transport waarschuwde in september 2026 dat TFA, een zeer kleine PFAS-stof
+                uit onder meer bestrijdingsmiddelen, een groeiend risico vormt voor drinkwater (bron:{" "}
+                <a href="https://nos.nl/artikel/2630617" rel="noopener" className="underline">NOS</a>). TFA dringt
+                snel door naar diep grondwater, waardoor ook regio&apos;s die nu laag scoren op termijn geraakt kunnen
+                worden.
+              </p>
             </div>
           </div>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Ter vergelijking: de Amerikaanse EPA stelde in april 2024 nieuwe normen vast van slechts <strong>0,004 ug/L voor PFOA en PFOS afzonderlijk</strong> — een factor 25 strenger dan de EU-norm voor de som van alle prioritaire PFAS. Het verschil in aanpak (EU werkt met sommen, VS met individuele stoffen) maakt directe vergelijking complex, maar de VS-norm geeft aan dat sommige wetenschappers de EU-norm nog niet stringent genoeg vinden.
-          </p>
+        </section>
+
+        <section className="mt-10">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke PFAS-norm geldt voor leidingwater?</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div className="bg-[#E0F2FE] rounded-2xl p-4 text-center">
+              <p className="text-2xl font-bold text-[#005F8A]">100 ng/L</p>
+              <p className="text-sm text-gray-700 mt-1">Som van 20 PFAS</p>
+              <p className="text-xs text-gray-500 mt-1">Wettelijke EU-norm sinds 12 januari 2026</p>
+            </div>
+            <div className="bg-[#E0F2FE] rounded-2xl p-4 text-center">
+              <p className="text-2xl font-bold text-[#005F8A]">4,4 ng/L</p>
+              <p className="text-sm text-gray-700 mt-1">PFOA-equivalenten</p>
+              <p className="text-xs text-gray-500 mt-1">RIVM-advieswaarde, geen wet</p>
+            </div>
+          </div>
           <p className="text-gray-700 leading-relaxed">
-            De WHO heeft in haar drinkwaterrichtlijnen van 2022 advieswaarden opgesteld van 0,1 ug/L voor PFOS en 0,004 ug/L voor PFOA, wat dichter bij de VS-aanpak ligt dan de EU-norm. De EU-norm is een compromis tussen het voorzorgsprincipe en de technische haalbaarheid voor drinkwaterbedrijven.
+            Alle Nederlandse drinkwaterbedrijven voldoen aan de wettelijke norm. De regionale verschillen gaan over de
+            veel strengere advieswaarde. Een rechtstreekse vergelijking van de twee getallen gaat niet op: de
+            advieswaarde weegt stoffen naar hun schadelijkheid, de norm telt 20 stoffen ongewogen op. Meer over de
+            wetgeving lees je bij{" "}
+            <Link href="/drinkwaternormen/pfas" className={linkClass}>PFAS-normen voor drinkwater</Link>.
           </p>
         </section>
 
         <section className="mt-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Uw waterkwaliteitsrapport lezen op PFAS</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">De PFAS-waarde voor jouw adres opzoeken</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Elk drinkwaterbedrijf in Nederland is wettelijk verplicht de meetresultaten van het geleverde water publiek beschikbaar te stellen. Via de pagina{" "}
-            <Link href="/leidingwater/waterkwaliteitsrapport" className="text-[#005F8A] underline hover:no-underline">waterkwaliteitsrapport</Link> leest u hoe u deze rapporten kunt vinden en interpreteren. Voor PFAS specifiek geldt:
+            Elk drinkwaterbedrijf maakt zijn meetresultaten openbaar. Op de pagina{" "}
+            <Link href="/leidingwater/waterkwaliteitsrapport" className={linkClass}>waterkwaliteitsrapport</Link> lees
+            je hoe je zo&apos;n rapport vindt en leest. Voor PFAS specifiek:
           </p>
           <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2 text-sm">
-            <li>Zoek in het rapport naar de sectie over organische microverontreinigingen of PFAS/PFOS/PFOA specifiek.</li>
-            <li>Controleer of de som van de 20 geprioriteerde PFAS wordt gerapporteerd, of alleen individuele stoffen.</li>
-            <li>Als een stof vermeld staat als &quot;nd&quot; (not detected) of &quot;&lt;detectiegrens&quot;, betekent dit niet dat er geen PFAS aanwezig is, maar dat de concentratie te laag is om te meten met de gebruikte methode.</li>
-            <li>Vergelijk de gerapporteerde waarden met de normen: 0,1 ug/L voor som 20 PFAS en 0,5 ug/L totaalsom.</li>
-            <li>Bij twijfel kunt u contact opnemen met uw drinkwaterbedrijf en vragen om een specificatie per leveringsgebied of zelfs per meetpunt.</li>
+            <li>Zoek naar PFAS, de som van 20 PFAS of naar losse stoffen zoals PFOS, PFOA en GenX.</li>
+            <li>
+              Let op de eenheid: 100 nanogram per liter is hetzelfde als 0,1 microgram per liter. De RIVM-advieswaarde
+              wordt uitgedrukt in PFOA-equivalenten, een rekenmethode die stoffen weegt naar hun schadelijkheid. Hoe je
+              een meetwaarde interpreteert, staat bij{" "}
+              <Link href="/uitleg/pfas-meetwaarde-betekenis" className={linkClass}>wat een PFAS-meetwaarde betekent</Link>.
+            </li>
+            <li>
+              &quot;Niet aangetoond&quot; of &quot;kleiner dan de detectiegrens&quot; betekent dat de concentratie te
+              laag was om te meten, niet dat er zeker niets in zit.
+            </li>
+            <li>Twijfel je, vraag dan je drinkwaterbedrijf om de waarden voor jouw leveringsgebied.</li>
           </ul>
-          <p className="text-gray-700 leading-relaxed">
-            Drinkwaterinfo.nl biedt een centraal overzicht van kwaliteitsdata per postcode voor een deel van de waterbedrijven.
-          </p>
         </section>
 
         <section className="mt-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat helpt tegen PFAS in leidingwater?</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Woon je in een regio boven de advieswaarde?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Voor de meeste Nederlanders geldt: leidingwater drinken is veilig conform de geldende normen. Extra filtering is een persoonlijke keuze op basis van voorzorg, met name in risicogebieden of voor kwetsbare groepen.
+            Dan is er geen reden voor paniek en geen advies om te stoppen met kraanwater drinken. De advieswaarde is een
+            doel voor de lange termijn. Drinkwater is bovendien maar een deel van je PFAS-inname; voor de meeste mensen
+            komt een groter deel uit voedsel. Wil je je inname verlagen, dan kun je letten op je voeding en eventueel
+            water filteren. Ben je zwanger of geef je flesvoeding en twijfel je, vraag dan advies aan je huisarts,
+            verloskundige of het consultatiebureau.
           </p>
-          <div className="space-y-4 mb-6">
-            <div className="border border-green-200 bg-green-50 rounded-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-1">Omgekeerde osmose: 90-99% PFAS-verwijdering</h3>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                Een{" "}
-                <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">omgekeerde osmose systeem</Link>{" "}
-                dwingt water door een membraan met porieen van 0,0001 micrometer, kleiner dan elk PFAS-molecuul. Dit verwijdert 90-99% van alle PFAS-verbindingen, inclusief kortketenige GenX-varianten. Het is de meest effectieve huishoudelijke technologie voor{" "}
-                <Link href="/waterfilter/pfas" className="text-[#005F8A] underline hover:no-underline">PFAS-filtratie</Link>.
-              </p>
-            </div>
-            <div className="border border-yellow-200 bg-yellow-50 rounded-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-1">Actief koolfilter: deels effectief</h3>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                Actieve koolstoffilters (blok- of granulaatfilter) adsorbeert langketenige PFAS zoals PFOS en PFOA redelijk goed (60-90%), maar kortketenige verbindingen en GenX worden minder effectief verwijderd. De capaciteit neemt af naarmate het filter ouder wordt; regelmatige vervanging is cruciaal. Actief kool is minder betrouwbaar dan osmose voor PFAS-specifieke bescherming.
-              </p>
-            </div>
-            <div className="border border-gray-200 bg-gray-50 rounded-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-1">Kraanwater drinken: veilig conform norm</h3>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                In Nederland is kraanwater conform de drinkwaterwetgeving veilig te drinken. Extra filtering is geen medische noodzaak voor de algemene bevolking, maar kan een redelijke voorzorgsmaatregel zijn voor kwetsbare groepen of bewoners nabij bekende PFAS-hotspots. De keuze voor extra filtratie is dan ook een persoonlijke afweging.
-              </p>
-            </div>
+          <HealthDisclaimer />
+        </section>
+
+        <section className="mt-6 border-2 border-[#005F8A] bg-[#F0F9FF] rounded-2xl p-5 md:p-6">
+          <h2 className="text-xl md:text-2xl font-bold text-[#003F5C] mb-2">Wil je zelf iets doen?</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Deze pagina gaat over de verschillen per regio. Wil je weten welk filter PFAS uit je kraanwater haalt, wat
+            het kost en wat labtests laten zien, lees dan onze koopgids. Hoe de techniek per filtertype werkt, leggen we
+            apart uit.
+          </p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+            <Link
+              href="/pfas-waterfilter"
+              className="inline-flex justify-center items-center bg-[#005F8A] text-white font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors"
+            >
+              Naar de PFAS-waterfilter koopgids
+            </Link>
+            <Link href="/waterfilter/pfas" className={`text-sm ${linkClass}`}>
+              Zo werkt een PFAS-filter per filtertype
+            </Link>
           </div>
         </section>
 
         <section className="mt-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Risicogroepen: wie heeft extra reden voor een osmosefilter?</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Hoewel leidingwater voor de algemene bevolking veilig is, zijn er groepen voor wie de extra zekerheid van een osmosefilter bijzonder gerechtvaardigd is:
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            <div className="bg-[#E0F2FE]/60 rounded-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-2">Zwangere vrouwen</h3>
-              <p className="text-sm text-gray-700">PFAS passeren de placentabarriere en kunnen invloed hebben op de foetale ontwikkeling. RIVM adviseert voorzorg bij verhoogde blootstelling.</p>
-            </div>
-            <div className="bg-[#E0F2FE]/60 rounded-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-2">Zuigelingen en jonge kinderen</h3>
-              <p className="text-sm text-gray-700">Door hun geringe lichaamsgewicht is de relatieve PFAS-belasting per kg hoger. PFAS kunnen de immuunontwikkeling beinvloeden en het effect van vaccinaties verminderen.</p>
-            </div>
-            <div className="bg-[#E0F2FE]/60 rounded-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-2">Immuungecompromitteerden</h3>
-              <p className="text-sm text-gray-700">Mensen met auto-immuunziekten, na orgaantransplantatie of in chemotherapie hebben een verhoogde gevoeligheid voor stoffen die het immuunsysteem beinvloeden.</p>
-            </div>
-            <div className="bg-[#E0F2FE]/60 rounded-xl p-4">
-              <h3 className="font-semibold text-[#003F5C] mb-2">Bewoners nabij hotspots</h3>
-              <p className="text-sm text-gray-700">Omwonenden van Chemours Dordrecht, vliegbasis Volkel, Eindhoven Airport of andere bekende PFAS-bronnen hebben al een hogere achtergrondblootstelling via lucht en voedsel.</p>
-            </div>
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            Meer informatie over de juiste filterkeuze voor uw situatie vindt u op{" "}
-            <Link href="/drinkwaternormen/pfas" className="text-[#005F8A] underline hover:no-underline">drinkwaternormen PFAS</Link>{" "}en de vergelijkingspagina{" "}
-            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">osmosefilter kopen</Link>.
-          </p>
-          <p className="text-gray-700 mt-4">
-            Verdiep uw kennis: <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="text-[#005F8A] hover:underline font-medium">PFAS als stofgroep in drinkwater: overzicht en filteradvies</Link>.
-          </p>
-        </section>
-
-        <section className="mt-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen</h2>
-          {faqItems.map((item, i) => (
-            <details key={i} className="mb-4 border border-gray-200 rounded-lg p-4">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over PFAS in leidingwater</h2>
+          {faqItems.map(item => (
+            <details key={item.question} className="mb-4 border border-gray-200 rounded-lg p-4">
               <summary className="font-semibold text-[#005F8A] cursor-pointer">{item.question}</summary>
               <p className="mt-2 text-gray-700">{item.answer}</p>
             </details>
@@ -351,26 +381,35 @@ export default function PFASLeidingwaterPage() {
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in drinkwater: overzicht</h3>
-              <p className="text-sm text-gray-600">Wetenschappelijk overzicht van PFAS-stoffen en hun aanwezigheid in drinkwater.</p>
+            <Link href="/pfas-water" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS in drinkwater</h3>
+              <p className="text-sm text-gray-600">De feiten over PFAS in kraanwater, normen en het laatste nieuws.</p>
             </Link>
             <Link href="/pfas-waterfilter" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">PFAS waterfilter</h3>
-              <p className="text-sm text-gray-600">Vergelijking van waterfilters die PFAS effectief uit drinkwater verwijderen.</p>
+              <p className="text-sm text-gray-600">Koopgids: welke filters PFAS aantoonbaar verminderen.</p>
             </Link>
-            <Link href="/drinkwaternormen/pfas" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">Drinkwaternormen voor PFAS</h3>
-              <p className="text-sm text-gray-600">Actuele Europese en Nederlandse normen en grenswaarden voor PFAS in drinkwater.</p>
+            <Link href="/kennisbank/pfas-kraanwater-boven-rivm-advieswaarde" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">Boven de RIVM-advieswaarde</h3>
+              <p className="text-sm text-gray-600">Wat de Greenpeace-cijfers van september 2026 betekenen.</p>
             </Link>
-            <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose</h3>
-              <p className="text-sm text-gray-600">Hoe omgekeerde osmose PFAS en andere persistente stoffen effectief verwijdert.</p>
+            <Link href="/kennisbank/pfas-lozingen-nederland" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <h3 className="font-semibold text-[#005F8A] mb-1">PFAS-lozingen in Nederland</h3>
+              <p className="text-sm text-gray-600">Waar PFAS vandaan komen: industrie, blusschuim en landbouw.</p>
             </Link>
           </div>
         </section>
 
-        <CTABanner context="osmose" />
+        <SourcesSection
+          sources={[
+            "NOS, Greenpeace-analyse PFAS in drinkwater (22 september 2026): nos.nl/artikel/2632030",
+            "NOS, ILT-rapport over TFA uit bestrijdingsmiddelen (september 2026): nos.nl/artikel/2630617",
+            "Reformatorisch Dagblad, onderzoek gevolgen PFAS in kustgebied voor drinkwaterwinning (30 oktober 2026)",
+            "Reacties van PWN, Waternet, Dunea en Evides op de Greenpeace-analyse (september 2026)",
+            "RIVM, PFAS in drinkwater en de advieswaarde van 4,4 ng/L PFOA-equivalenten",
+            "Europese Drinkwaterrichtlijn 2020/2184/EU, PFAS-parameters van kracht per 12 januari 2026",
+          ]}
+        />
       </div>
     </>
   );

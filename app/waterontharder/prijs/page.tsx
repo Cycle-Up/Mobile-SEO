@@ -5,161 +5,112 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { QuickAnswer } from '@/components/QuickAnswer';
 import { JoepCTA } from '@/components/JoepCTA';
+import { JOEP, JOEP_MARKET, JOEP_MIN_DH, JOEP_NO_FUSS, JOEP_POSITIONING } from '@/lib/joep.mjs';
+
+const URL = 'https://waterfilterplatform.nl/waterontharder/prijs';
+const PUBLISHED = '2026-05-29';
+const MODIFIED = '2026-11-10';
+const TITLE = 'Waterontharder prijs 2026: marktprijzen en goedkope opties';
+const DESCRIPTION = `Wat kost een waterontharder in 2026? Compleet geïnstalleerd doorgaans ${JOEP_MARKET.typicalInstalledRange}. Plus: waar je op let bij een goedkope ontharder.`;
+
+const euro = (n: number) => `${Math.round(n).toLocaleString('nl-NL')} euro`;
+const fmtYears = (n: number) => n.toLocaleString('nl-NL', { maximumFractionDigits: 1 });
+const INSTALLED = Number(JOEP.installedPriceSchema);
+const INSTALLATION = euro(INSTALLED - Number(JOEP.devicePriceSchema));
+const [MARKET_LOW, MARKET_HIGH] = (JOEP_MARKET.typicalInstalledRange.match(/\d[\d.]*/g) ?? []).map(s =>
+  Number(s.replace(/\./g, '')),
+);
+// Gangbare huurprijs, gelijk aan /waterontharder/huren en /waterontharder/kosten.
+const HUUR_RANGE = '15 tot 35 euro';
+// Rekenvoorbeeld binnen die bandbreedte, in euro per maand.
+const HUUR_EXAMPLE = 25;
+const HUUR_PER_YEAR = HUUR_EXAMPLE * 12;
 
 export const metadata: Metadata = {
-  title: 'Waterontharder Prijs: Kosten & Vergelijking 2026',
-  description:
-    'Wat kost een waterontharder? Aanschafprijs, jaarlijkse zout- en onderhoudskosten, huur vs. koop en TCO over 5 jaar. Vergelijking met osmosefilter en niets.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/prijs' },
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: URL },
   openGraph: {
-    title: 'Waterontharder Prijs: Kosten & Vergelijking 2026',
-    description:
-      'Aanschafprijs €300–4000, zoutkosten €30–120/jaar. Vergelijk de totale kosten van een waterontharder over 5 jaar — inclusief huur vs.',
-    url: 'https://waterfilterplatform.nl/waterontharder/prijs',
+    title: TITLE,
+    description: DESCRIPTION,
+    url: URL,
     type: 'article',
+    locale: 'nl_NL',
   },
 };
+
+const QUICK_ANSWER = `Een complete waterontharder met zout kost in 2026 doorgaans ${JOEP_MARKET.typicalInstalledRange} inclusief installatie. Voor een kwaliteitssysteem voor een gemiddeld huishouden betaal je vaak ${JOEP_MARKET.typicalQualityRange}, het topsegment zit rond ${JOEP_MARKET.topRange}. Daarna betaal je vooral zout. Onze keuze, de JOEP waterontharder, kost ${JOEP.installedPrice} compleet geïnstalleerd of ${JOEP.devicePrice} als je zelf installeert. Een goedkope ontharder is pas echt goedkoop als ook het zout, het onderhoud en de installatie meevallen.`;
 
 const faqItems = [
   {
     question: 'Wat kost een waterontharder gemiddeld?',
-    answer:
-      'Een compacte waterontharder (single-tap of appartement) kost €300–600. Een model voor een klein huishouden (1–2 personen) kost €600–1000. Een familieontharder (3–4 personen) kost €1000–2000. Premium modellen met twin-tank of volumetrische regeneratie kosten €2000–4000. Daarboven komen jaarlijkse lopende kosten voor zout (€30–120), water voor regeneratie en eventueel onderhoud.',
+    answer: `Een complete ionenwisselaar met zout kost doorgaans ${JOEP_MARKET.typicalInstalledRange} inclusief installatie (bronnen: ${JOEP_MARKET.rangeSources.join(' en ')}). Een kwaliteitssysteem voor een gemiddeld huishouden kost vaak ${JOEP_MARKET.typicalQualityRange}; het topsegment ${JOEP_MARKET.topRange}. Daar komen jaarlijkse kosten bij voor zout, wat water en stroom voor de regeneratie en eventueel onderhoud.`,
   },
   {
-    question: 'Hoeveel kost een waterontharder per jaar aan zout?',
-    answer:
-      'Het jaarlijkse zoutverbruik hangt af van de waterhardheid in uw regio en het waterverbruik van uw huishouden. Bij zacht tot matig hard water (8–15 °dH) verbruikt een gemiddeld gezin 30–60 kg zout per jaar. Bij hard water (15–21 °dH) loopt dat op naar 80–120 kg. Onthardingszout kost €0,20–0,40 per kg, wat neerkomt op €10–50 per jaar voor lichte hardheid en €30–120 per jaar voor harde watergebieden.',
+    question: 'Wat is een goede goedkope waterontharder?',
+    answer: 'Een goedkope waterontharder is goed als hij echt onthardt (een ionenwisselaar met zout), regenereert op verbruik in plaats van op een vaste klok, past bij je waterhardheid en huishouden, en een duidelijke garantie op de hars heeft. Tel installatie, bypass, zout en onderhoud mee: een lage aanschafprijs met hoog zoutverbruik of dure service is over vijf jaar vaak duurder dan een iets duurder, zuiniger apparaat. Zoutloze apparaten zijn goedkoop, maar verlagen de hardheid niet.',
   },
   {
-    question: 'Is een waterontharder huren goedkoper dan kopen?',
-    answer:
-      'Huren kost doorgaans €15–40 per maand (€180–480/jaar), inclusief installatie, onderhoud en eventuele reparaties. Kopen inclusief installatie kost eenmalig €700–2350. De break-even voor huren versus kopen ligt bij een maandhuur van €25 op 5–7 jaar. Voor langdurig gebruik (eigenaar koopwoning) is kopen op termijn goedkoper. Huren is aantrekkelijk bij onzekerheid over de woonduur of als u geen grote eenmalige investering wilt doen.',
+    question: 'Wat kost de JOEP waterontharder?',
+    answer: `Bij PureAqua kost JOEP ${JOEP.devicePrice} zonder installatie, of ${JOEP.installedPrice} compleet geïnstalleerd. Daarnaast betaal je zout: per regeneratie ${JOEP.saltPerRegeneration}, volgens de fabrikant ${JOEP.saltPerYear}. Het serviceabonnement is optioneel: ${JOEP.serviceSubscription}. Transparant: WaterfilterPlatform is gelieerd aan PureAqua.`,
   },
   {
     question: 'Wat zijn de verborgen kosten van een waterontharder?',
-    answer:
-      'Naast de aanschafprijs zijn er installatiekosten (€200–400 voor een professional), de prijs van de eerste zoutvulling (€15–30), een eventuele bypass-klep (€30–80) en jaarlijkse onderhoudskosten (€50–100). Bij oudere woningen kunnen extra loodgieterswerkzaamheden nodig zijn voor het aansluiten op de hoofdleiding. Vraag altijd om een totaalofferte inclusief installatie.',
+    answer: `Naast de aanschafprijs zijn er installatiekosten (bij JOEP ${INSTALLATION}, het verschil tussen de prijs met en zonder installatie; bij andere aanbieders hangt het af van je woning), de eerste zoutvulling, soms een losse bypass-klep en eventueel een servicebeurt. In oudere woningen kan extra leidingwerk of een afvoer voor het spoelwater nodig zijn. Vraag altijd om een totaalprijs inclusief installatie.`,
   },
   {
-    question: 'Is een waterontharder duurder dan een osmose filter?',
-    answer:
-      'Een waterontharder is doorgaans duurder in aanschaf (€700–2000+ inclusief installatie) dan een onderbouw osmosefilter (€150–500 aanschaf, zelf te installeren). Bovendien heeft een waterontharder hogere jaarlijkse kosten: €85–240/jaar voor zout en onderhoud versus €50–150/jaar voor osmose filterkosten. Een osmosefilter filtert ook bredere contaminanten (nitraten, pesticiden, PFAS) waar een waterontharder alleen kalk aanpakt. Voor kleine huishoudens of huurders is een osmosefilter daarmee een kostenefficiënter alternatief.',
+    question: 'Is een waterontharder duurder dan een osmosefilter?',
+    answer: `Ja, in aanschaf meestal wel. Een complete waterontharder kost doorgaans ${JOEP_MARKET.typicalInstalledRange} inclusief installatie, een osmosefilter voor drinkwater vaak een paar honderd euro. Maar ze doen iets anders: een ontharder haalt kalk uit al het water in huis, een osmosefilter zuivert alleen je drinkwater aan één kraan. Voor kleine huishoudens of huurders die vooral beter drinkwater willen, is osmose vaak de goedkopere route.`,
   },
 ];
 
-const prijsTiers = [
-  {
-    naam: 'Compact / single-tap',
-    aanschaf: '€ 300 – 600',
-    doelgroep: 'Appartement, 1–2 personen',
-    capaciteit: '5–10 L/min',
-    regeneratie: 'Tijdgestuurd',
-    zoutVerbruik: '30–60 kg/jaar',
-    aanbevolen: false,
-    badge: '',
-  },
-  {
-    naam: 'Klein huishouden',
-    aanschaf: '€ 600 – 1.000',
-    doelgroep: '1–2 personen, matig hard water',
-    capaciteit: '10–15 L/min',
-    regeneratie: 'Vraaggestuurd',
-    zoutVerbruik: '50–80 kg/jaar',
-    aanbevolen: false,
-    badge: 'Beste instapper',
-  },
-  {
-    naam: 'Gezinsontharder',
-    aanschaf: '€ 1.000 – 2.000',
-    doelgroep: '3–5 personen, hard water',
-    capaciteit: '15–25 L/min',
-    regeneratie: 'Vraaggestuurd',
-    zoutVerbruik: '80–120 kg/jaar',
-    aanbevolen: true,
-    badge: 'Meest gekozen',
-  },
-  {
-    naam: 'Premium / twin-tank',
-    aanschaf: '€ 2.000 – 4.000',
-    doelgroep: 'Groot gezin, continu zacht water',
-    capaciteit: '25–40 L/min',
-    regeneratie: 'Continu beschikbaar',
-    zoutVerbruik: '100–180 kg/jaar',
-    aanbevolen: false,
-    badge: 'Geen downtime',
-  },
+const prijsFactoren: [string, string][] = [
+  ['Een of twee harstanks', 'Een ontharder met een harstank is eenvoudiger; tijdens de regeneratie loopt het water dan tijdelijk via de bypass. Een tweecellige (twin-tank) ontharder levert ook tijdens de regeneratie zacht water, maar is groter en zit meestal in een hogere prijsklasse. Vraag voor zo\'n systeem een offerte.'],
+  ['Regeneratie op verbruik of op tijd', 'Goedkope modellen regenereren soms op een vaste klok, ook als dat niet nodig is. Een model dat op werkelijk verbruik regenereert, gebruikt doorgaans minder zout en spoelwater.'],
+  ['Capaciteit', 'Meer harsinhoud en doorstroom kost meer. Te klein kiezen is wel duur in gebruik: het apparaat regenereert dan vaker en verbruikt meer zout en water.'],
+  ['Merk, dealer en service', 'Bij dealermerken betaal je vaak ook voor advies, installatie en een servicenetwerk. Bij een webshop is de apparaatprijs vaak lager, maar regel je installatie en onderhoud zelf of los.'],
+  ['Installatie', `De aansluiting op de hoofdleiding komt meestal bovenop de apparaatprijs. Bij JOEP is dat ${INSTALLATION}: ${JOEP.devicePrice} zonder en ${JOEP.installedPrice} met installatie. In oudere woningen kan extra leidingwerk of een afvoer voor het spoelwater nodig zijn.`],
 ];
 
-const tcoData = [
-  {
-    naam: 'Compact (€450 aanschaf)',
-    aanschaf: 450,
-    installatie: 250,
-    jaarlijks: 100,
-    jaar1: 800,
-    jaar2: 900,
-    jaar3: 1000,
-    jaar4: 1100,
-    jaar5: 1200,
-    highlight: false,
-  },
-  {
-    naam: 'Klein huishouden (€800)',
-    aanschaf: 800,
-    installatie: 300,
-    jaarlijks: 120,
-    jaar1: 1220,
-    jaar2: 1340,
-    jaar3: 1460,
-    jaar4: 1580,
-    jaar5: 1700,
-    highlight: false,
-  },
-  {
-    naam: 'Gezinsontharder (€1500)',
-    aanschaf: 1500,
-    installatie: 350,
-    jaarlijks: 160,
-    jaar1: 2010,
-    jaar2: 2170,
-    jaar3: 2330,
-    jaar4: 2490,
-    jaar5: 2650,
-    highlight: true,
-  },
-  {
-    naam: 'Premium twin-tank (€3000)',
-    aanschaf: 3000,
-    installatie: 400,
-    jaarlijks: 220,
-    jaar1: 3620,
-    jaar2: 3840,
-    jaar3: 4060,
-    jaar4: 4280,
-    jaar5: 4500,
-    highlight: false,
-  },
+const marktPrijzen: [string, string, string][] = [
+  ['Complete ontharder met zout, inclusief installatie', JOEP_MARKET.typicalInstalledRange, 'Gangbare marktprijs'],
+  ['Kwaliteitssysteem voor een gemiddeld huishouden', JOEP_MARKET.typicalQualityRange, 'Gangbare marktprijs'],
+  ['Topsegment', JOEP_MARKET.topRange, 'Gangbare marktprijs'],
+  [`${JOEP_MARKET.comparable.name} (vergelijkbaar compact merkmodel)`, `circa ${JOEP_MARKET.comparable.installedPrice}`, 'Inclusief installatie'],
+  ['JOEP waterontharder (onze keuze)', JOEP.installedPrice, `Inclusief installatie; ${JOEP.devicePrice} als je zelf installeert`],
 ];
 
-const huurData = [
-  { tier: 'Compact', maand: '€ 15 – 20', jaar: '€ 180 – 240', inbegrepen: 'Installatie, jaarlijks onderhoud' },
-  { tier: 'Klein huishouden', maand: '€ 20 – 30', jaar: '€ 240 – 360', inbegrepen: 'Installatie, onderhoud, reparaties' },
-  { tier: 'Gezinsontharder', maand: '€ 25 – 40', jaar: '€ 300 – 480', inbegrepen: 'Installatie, volledige service, zout kortingen' },
-  { tier: 'Premium twin-tank', maand: '€ 35 – 55', jaar: '€ 420 – 660', inbegrepen: 'Alles inclusief, 24/7 service' },
+const goedkoopChecks: [string, string][] = [
+  ['Onthardt hij echt?', 'Alleen een ionenwisselaar met zout haalt de hardheid uit het water. Zoutloze of magnetische apparaten zijn goedkoper, maar verlagen de hardheid niet.'],
+  ['Regenereert hij op verbruik?', 'Een goedkoop model met een vaste klok regenereert ook als het niet nodig is. Dat kost meer zout en water, jaar na jaar.'],
+  ['Past de capaciteit?', 'Te klein gekozen betekent vaker regenereren: meer zout, meer spoelwater en sneller slijtage. Check je waterhardheid en huishoudgrootte.'],
+  ['Zit installatie in de prijs?', 'Een lage webshopprijs is vaak zonder installatie, bypass en afvoer. Vraag een totaalprijs, of reken uit wat zelf installeren je kost.'],
+  ['Wat is de garantie op de hars?', 'De hars is het hart van de ontharder. Een korte of vage garantie maakt een goedkoop apparaat duurder als het misgaat.'],
+  ['Ben je vast aan een abonnement?', 'Sommige aanbieders maken de aanschaf goedkoop en verdienen aan een verplicht onderhoudscontract. Kijk wat je per jaar verplicht betaalt.'],
 ];
 
 export default function WaterOntharderPrijsPage() {
   return (
     <>
+      <SchemaOrg
+        type="Article"
+        article={{
+          title: TITLE,
+          description: DESCRIPTION,
+          datePublished: PUBLISHED,
+          dateModified: MODIFIED,
+          url: URL,
+        }}
+      />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: 'Home', url: 'https://waterfilterplatform.nl' },
           { name: 'Waterontharder', url: 'https://waterfilterplatform.nl/waterontharder' },
-          { name: 'Prijs', url: 'https://waterfilterplatform.nl/waterontharder/prijs' },
+          { name: 'Prijs', url: URL },
         ]}
       />
 
@@ -174,20 +125,19 @@ export default function WaterOntharderPrijsPage() {
             <span>Prijs</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Waterontharder Prijs: Kosten &amp; Vergelijking 2026
+            Waterontharder prijs 2026: marktprijzen en goedkope opties
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Wat kost een <strong>waterontharder</strong> echt — aanschaf, installatie, zout, onderhoud en
-            alles daartussenin? Op deze pagina vergelijken we alle kostenposten voor de vier
-            prijscategorieën, berekenen we de 5-jaar TCO en leggen we uit wanneer huren goedkoper is
-            dan kopen.
+            Een complete <strong>waterontharder</strong> kost doorgaans {JOEP_MARKET.typicalInstalledRange}{' '}
+            inclusief installatie. Hieronder zie je de marktprijzen, wat de prijs bepaalt, waar je op let bij
+            een goedkope waterontharder en wanneer huren een optie is.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="#prijsoverzicht"
+              href="#marktprijzen"
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              Naar prijsoverzicht →
+              Naar de marktprijzen
             </Link>
             <Link
               href="/waterontharder/kopen"
@@ -200,281 +150,204 @@ export default function WaterOntharderPrijsPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge
+          lastReviewed={MODIFIED}
+          sources={[...JOEP_MARKET.rangeSources, 'robvanwijck.nl (dealerprijs BWT)', 'PureAqua (JOEP-prijs)']}
+        />
+        <AuthorBox datePublished={PUBLISHED} dateModified={MODIFIED} />
+
+        <QuickAnswer question="Wat kost een waterontharder?" answer={QUICK_ANSWER} />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
           <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
-            <li><a href="#prijsoverzicht" className="hover:underline">Aanschafprijs per categorie</a></li>
-            <li><a href="#lopende-kosten" className="hover:underline">Jaarlijkse lopende kosten</a></li>
-            <li><a href="#tco" className="hover:underline">5-jaar TCO vergelijking</a></li>
-            <li><a href="#huur-vs-koop" className="hover:underline">Huren vs. kopen</a></li>
+            <li><a href="#marktprijzen" className="hover:underline">Marktprijzen 2026</a></li>
+            <li><a href="#joep" className="hover:underline">JOEP: onze keuze en prijs</a></li>
+            <li><a href="#goedkoop" className="hover:underline">Goedkope waterontharder: waar let je op</a></li>
+            <li><a href="#prijsoverzicht" className="hover:underline">Wat bepaalt de prijs</a></li>
+            <li><a href="#lopende-kosten" className="hover:underline">Lopende kosten in het kort</a></li>
+            <li><a href="#huur-vs-koop" className="hover:underline">Huren of kopen</a></li>
             <li><a href="#verborgen-kosten" className="hover:underline">Verborgen kosten</a></li>
-            <li><a href="#vergelijking" className="hover:underline">Waterontharder vs. osmose vs. niets doen</a></li>
+            <li><a href="#vergelijking" className="hover:underline">Ontharder, osmose of niets doen</a></li>
             <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
           </ol>
         </section>
 
-        {/* Prijsoverzicht */}
-        <section id="prijsoverzicht">
+        {/* Marktprijzen */}
+        <section id="marktprijzen">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Aanschafprijs per categorie: wat kost een waterontharder?
+            Marktprijzen 2026: wat kost een complete waterontharder?
           </h2>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            Waterontharders worden onderverdeeld in vier prijscategorieën op basis van capaciteit,
-            doelgroep en regeneratiemethode. De aanschafprijs zegt echter niet alles: een goedkoop model
-            met tijdgestuurde regeneratie kan op jaarbasis meer zout verbruiken dan een duurder
-            vraaggestuurd model. Hieronder de vier categorieën met de belangrijkste kenmerken.
+          <p className="text-gray-700 mb-5 leading-relaxed">
+            De prijs die telt is de prijs inclusief installatie: zonder aansluiting op de hoofdleiding,
+            bypass en afvoer werkt een ontharder niet. Dit zijn de gangbare bedragen voor een
+            ionenwisselaar met zout, de enige soort die de hardheid echt uit het water haalt.
           </p>
-          <div className="space-y-5">
-            {prijsTiers.map(s => (
-              <div
-                key={s.naam}
-                className={`rounded-2xl border p-5 ${s.aanbevolen ? 'border-[#005F8A] bg-[#E0F2FE]' : 'border-gray-100 bg-white'}`}
-              >
-                <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-lg">{s.naam}</h3>
-                    <p className="text-sm text-gray-500">{s.doelgroep}</p>
-                  </div>
-                  <div className="text-right shrink-0">
-                    <p className="font-bold text-[#005F8A] text-lg">{s.aanschaf}</p>
-                    {s.badge && (
-                      <span className={`text-xs px-2 py-0.5 rounded-full ${s.aanbevolen ? 'bg-[#005F8A] text-white' : 'bg-gray-100 text-gray-600'}`}>
-                        {s.badge}
-                      </span>
-                    )}
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
-                  {[
-                    { label: 'Capaciteit', value: s.capaciteit },
-                    { label: 'Regeneratie', value: s.regeneratie },
-                    { label: 'Zoutverbruik', value: s.zoutVerbruik },
-                  ].map(spec => (
-                    <div key={spec.label} className="bg-white/70 rounded-lg p-2">
-                      <p className="text-gray-400 text-xs mb-0.5">{spec.label}</p>
-                      <p className="font-medium text-gray-800 text-xs">{spec.value}</p>
-                    </div>
-                  ))}
-                </div>
+          <div className="overflow-x-auto -mx-4 px-4 mb-3">
+            <table className="w-full min-w-[520px] text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#003F5C] text-white">
+                  <th className="text-left py-2.5 px-3 font-semibold">Wat</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Prijs</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Toelichting</th>
+                </tr>
+              </thead>
+              <tbody>
+                {marktPrijzen.map(([wat, prijs, toelichting], i) => (
+                  <tr key={wat} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                    <th scope="row" className="py-2.5 px-3 text-left font-medium">{wat}</th>
+                    <td className="py-2.5 px-3 font-semibold text-[#005F8A]">{prijs}</td>
+                    <td className="py-2.5 px-3 text-xs text-gray-600">{toelichting}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-400">
+            Bronnen: {JOEP_MARKET.rangeSources.join(' en ')} (prijsklassen), {JOEP_MARKET.comparable.source}{' '}
+            en PureAqua (JOEP, prijzen bevestigd op 24 september 2026). Prijzen inclusief btw. Bijgewerkt
+            november 2026.
+          </p>
+        </section>
+
+        {/* JOEP */}
+        <section id="joep">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
+            JOEP: betaalbaar zonder poespas (onze keuze)
+          </h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            {JOEP_POSITIONING} Voor de prijs betekent dat: compleet geïnstalleerd kost JOEP{' '}
+            {JOEP.installedPrice}, binnen de gangbare marktprijs van {JOEP_MARKET.typicalInstalledRange}{' '}
+            en onder de circa {JOEP_MARKET.comparable.installedPrice} voor de{' '}
+            {JOEP_MARKET.comparable.name}. Installeer je zelf, dan betaal je {JOEP.devicePrice}.
+          </p>
+          <p className="font-semibold text-gray-800 text-sm mb-2">Wat wij bedoelen met &apos;zonder poespas&apos;:</p>
+          <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700 mb-4">
+            {JOEP_NO_FUSS.map(p => (
+              <li key={p}>{p}</li>
+            ))}
+          </ul>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            <strong>Eerlijk erbij:</strong> JOEP is een ontharder met zout, dus je koopt jaarlijks zout bij.
+            Tijdens de regeneratie ({JOEP.regenerationTime}) is het water tijdelijk hard en je hebt een
+            stopcontact nodig. Een ontharder voor het hele huis is doorgaans pas zinvol vanaf ongeveer{' '}
+            {JOEP_MIN_DH} dH. Alle specificaties staan in onze{' '}
+            <Link href="/joep-waterontharder" className="text-[#005F8A] underline hover:no-underline">JOEP-koopgids</Link>.
+          </p>
+        </section>
+
+        <JoepCTA context="kosten" content="waterontharder-prijs-joep" />
+
+        {/* Goedkoop */}
+        <section id="goedkoop">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
+            Goedkope waterontharder: waar let je op?
+          </h2>
+          <p className="text-gray-700 mb-5 leading-relaxed">
+            Een goedkope waterontharder kan prima zijn, maar goedkoop in aanschaf is niet hetzelfde als
+            goedkoop in gebruik. Een ontharder gaat vaak tien jaar of langer mee, dus zout, spoelwater,
+            onderhoud en reparaties wegen over de jaren zwaar mee. Volgens ons zijn dit de zes vragen die
+            bepalen of een lage prijs ook echt een goede koop is:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+            {goedkoopChecks.map(([vraag, uitleg]) => (
+              <div key={vraag} className="bg-gray-50 rounded-xl p-4">
+                <p className="font-semibold text-gray-800 mb-1">{vraag}</p>
+                <p className="text-sm text-gray-600 leading-relaxed">{uitleg}</p>
               </div>
             ))}
           </div>
-          <div className="mt-5 bg-blue-50 border border-blue-100 rounded-xl p-4 text-sm text-gray-700">
-            <strong className="text-[#005F8A]">Let op:</strong> De aanschafprijs is exclusief installatie.
-            Professionele installatie door een loodgieter kost doorgaans{' '}
-            <strong>€200–400 extra</strong>, afhankelijk van de complexiteit van de aansluiting op de
-            hoofdwaterleiding. Vraag altijd om een totaalofferte inclusief installatie en eerste zoutvulling.
+          <div className="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-gray-700">
+            <strong className="text-amber-900">Onze vuistregel:</strong> vergelijk nooit alleen de
+            aanschafprijs, maar de totale kosten over vijf jaar: aanschaf, installatie, zout en eventueel
+            service. Die rekenen we voor je uit op{' '}
+            <Link href="/waterontharder/kosten" className="text-[#005F8A] underline hover:no-underline">waterontharder kosten</Link>.
+            Wil je zonder zout ontkalken, lees dan eerst wat een{' '}
+            <Link href="/waterontharder/zoutloos" className="text-[#005F8A] underline hover:no-underline">zoutloze waterontharder</Link>{' '}
+            wel en niet doet.
+          </div>
+        </section>
+
+        {/* Wat bepaalt de prijs */}
+        <section id="prijsoverzicht">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
+            Wat bepaalt de prijs van een waterontharder?
+          </h2>
+          <p className="text-gray-700 mb-5 leading-relaxed">
+            Waar een ontharder binnen de marktprijzen van hierboven uitkomt, hangt vooral af van deze vijf
+            dingen. Wij noemen bewust geen vaste prijs per type: die verschilt sterk per merk en aanbieder,
+            en daar hebben we geen betrouwbare bron voor. Vraag bij twijfel altijd een totaalofferte
+            inclusief installatie.
+          </p>
+          <div className="space-y-3">
+            {prijsFactoren.map(([titel, uitleg]) => (
+              <div key={titel} className="rounded-xl border border-gray-100 bg-white p-4">
+                <h3 className="font-bold text-gray-900 mb-1">{titel}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{uitleg}</p>
+              </div>
+            ))}
           </div>
         </section>
 
         {/* Lopende kosten */}
         <section id="lopende-kosten">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Jaarlijkse lopende kosten: zout, water en onderhoud
+            Lopende kosten in het kort
           </h2>
-          <p className="text-gray-700 mb-5 leading-relaxed">
-            De aanschapprijs is maar een deel van het verhaal. Een waterontharder heeft drie categorieën
-            aan terugkerende kosten: zout voor regeneratie, water dat tijdens de spoelcyclus verbruikt
-            wordt en servicekosten voor periodiek onderhoud. Hieronder een gedetailleerd overzicht.
-          </p>
-
-          {/* Zoutkosten */}
-          <h3 className="text-lg font-bold text-[#003F5C] mb-3">Zoutkosten: €30–120 per jaar</h3>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Zout is de grootste terugkerende kostenpost voor een waterontharder. Het zoutverbruik hangt
-            af van drie factoren: de waterhardheid in uw regio, het dagelijkse waterverbruik van uw
-            huishouden en de instelling van de regeneratiefrequentie. Moderne vraaggestuurde ontharders
-            regenereren alleen als het nodig is — dit bespaart 30–50% zout ten opzichte van
-            tijdgestuurde modellen.
+            Na de aanschaf betaal je vooral zout, plus wat water en stroom voor de regeneratie en eventueel
+            een servicebeurt. Hoeveel zout je nodig hebt, hangt af van je waterhardheid, je huishouden en
+            hoe zuinig het apparaat regenereert: een model dat op verbruik regenereert, gebruikt doorgaans
+            minder zout dan een model met een vaste klok. Voor JOEP rekent de fabrikant {JOEP.saltPerYear};
+            bij harder water is het meer.
           </p>
-          <div className="overflow-x-auto -mx-4 px-4 mb-5">
-            <table className="w-full min-w-[500px] text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#003F5C] text-white">
-                  <th className="text-left py-2.5 px-3 font-semibold">Waterhardheid</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Zout/jaar (2 pers.)</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Zout/jaar (4 pers.)</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Kosten/jaar</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { hardheid: 'Matig (8–12 °dH)', twee: '20–35 kg', vier: '35–60 kg', kosten: '€ 10 – 25' },
-                  { hardheid: 'Hard (12–18 °dH)', twee: '35–60 kg', vier: '60–100 kg', kosten: '€ 25 – 50' },
-                  { hardheid: 'Zeer hard (18–25 °dH)', twee: '60–80 kg', vier: '100–150 kg', kosten: '€ 30 – 65' },
-                  { hardheid: 'Extreem hard (>25 °dH)', twee: '80–100 kg', vier: '150–200 kg', kosten: '€ 50 – 120' },
-                ].map((r, i) => (
-                  <tr key={r.hardheid} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="py-2.5 px-3 font-medium">{r.hardheid}</td>
-                    <td className="py-2.5 px-3 text-center text-xs">{r.twee}</td>
-                    <td className="py-2.5 px-3 text-center text-xs">{r.vier}</td>
-                    <td className="py-2.5 px-3 text-center text-xs font-semibold text-[#005F8A]">{r.kosten}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-gray-400 mb-6">
-            Gebaseerd op een gemiddeld zoutprijsvan €0,30/kg. Vraaggestuurde ontharder verondersteld.
-            Tijdgestuurde modellen verbruiken 30–50% meer zout.
-          </p>
-
-          {/* Water voor regeneratie */}
-          <h3 className="text-lg font-bold text-[#003F5C] mb-3">Water voor regeneratie: €5–20 per jaar</h3>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Elke regeneratiecyclus verbruikt 50–150 liter spoelwater (pekeloplossing + naspoeling).
-            Bij een gezin van 4 in een hard-watergebied zijn 1–3 regeneraties per week realistisch,
-            wat neerkomt op 5.000–22.000 liter extra waterverbruik per jaar. Tegen een waterprijs van
-            €0,80–1,20 per m³ zijn dat extra kosten van €4–22 per jaar — een beperkte post maar wel
-            een die de milieuvoetprint vergroot.
-          </p>
-
-          {/* Elektriciteit */}
-          <h3 className="text-lg font-bold text-[#003F5C] mb-3">Elektriciteitsverbruik: €5–15 per jaar</h3>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Een moderne waterontharder verbruikt weinig elektriciteit: het motorventiel en de
-            regeleenheid verbruiken samen 3–10 watt in stand-by. Over een jaar betekent dat
-            26–87 kWh, ofwel €5–17 bij een stroomprijs van €0,20/kWh. Dit is een verwaarloosbare post.
-          </p>
-
-          {/* Onderhoud */}
-          <h3 className="text-lg font-bold text-[#003F5C] mb-3">Onderhoud en service: €50–100 per jaar</h3>
           <p className="text-gray-700 leading-relaxed">
-            De meeste fabrikanten en installateurs adviseren een jaarlijkse servicebeurt waarbij het
-            apparaat wordt gecontroleerd op lekken, de regeneratieprogrammering wordt geoptimaliseerd
-            en het zouttankcompartiment wordt gereinigd. Kosten liggen op €50–100 per beurt. Sommige
-            huurcontracten en onderhoudsabonnementen dekken deze kosten. Na 8–12 jaar is harsbedvervanging
-            nodig: reken op €150–300 exclusief arbeid.
+            Wat dat per jaar en over 5 en 10 jaar kost, rekenen we stap voor stap uit op{' '}
+            <Link href="/waterontharder/kosten" className="text-[#005F8A] underline hover:no-underline">waterontharder kosten</Link>.
           </p>
-        </section>
-
-        {/* TCO */}
-        <section id="tco">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            5-jaar totale eigendomskosten (TCO): welke categorie is het voordeligst?
-          </h2>
-          <p className="text-gray-700 mb-5 leading-relaxed">
-            Om een eerlijke vergelijking te maken, berekenen we de cumulatieve kosten over 5 jaar voor
-            elke prijscategorie. Dit omvat de aanschafprijs, installatie en jaarlijkse lopende kosten
-            (zout, water, elektriciteit, onderhoud). Voor een gezin van 4 personen in een hard-watergebied
-            (gemiddeld 18 °dH).
-          </p>
-          <div className="overflow-x-auto -mx-4 px-4 mb-4">
-            <table className="w-full min-w-[540px] text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#003F5C] text-white">
-                  <th className="text-left py-2.5 px-3 font-semibold">Categorie</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Jaar 1</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Jaar 2</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Jaar 3</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Jaar 4</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Jaar 5</th>
-                </tr>
-              </thead>
-              <tbody>
-                {tcoData.map((r, i) => (
-                  <tr
-                    key={r.naam}
-                    className={r.highlight ? 'bg-[#E0F2FE] font-semibold text-[#003F5C]' : i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
-                  >
-                    <td className="py-2.5 px-3">{r.naam}</td>
-                    <td className="py-2.5 px-3 text-center text-xs">€ {r.jaar1.toLocaleString('nl-NL')}</td>
-                    <td className="py-2.5 px-3 text-center text-xs">€ {r.jaar2.toLocaleString('nl-NL')}</td>
-                    <td className="py-2.5 px-3 text-center text-xs">€ {r.jaar3.toLocaleString('nl-NL')}</td>
-                    <td className="py-2.5 px-3 text-center text-xs">€ {r.jaar4.toLocaleString('nl-NL')}</td>
-                    <td className="py-2.5 px-3 text-center text-xs">€ {r.jaar5.toLocaleString('nl-NL')}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-gray-400 mb-5">
-            Cumulatieve kosten inclusief aanschap, installatie en gemiddelde jaarlijkse kosten (zout, water,
-            onderhoud). Hard-watergebied (18 °dH), gezin van 4 personen, vraaggestuurde ontharder.
-          </p>
-          <div className="bg-[#E0F2FE] rounded-xl p-4 text-sm text-gray-700">
-            <p className="font-semibold text-[#003F5C] mb-2">Wat de tabel laat zien:</p>
-            <ul className="space-y-1.5">
-              <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>Het compacte model heeft de laagste aanloopkosten maar is beperkt in capaciteit — bij meer dan 2 personen of hard water raakt het systeem snel overbelast.</li>
-              <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>De gezinsontharder (€1000–2000) biedt de beste balans: hoge capaciteit, efficiënte vraaggestuurde regeneratie en lage kosten per liter onthaard water.</li>
-              <li className="flex gap-2"><span className="text-[#005F8A] font-bold shrink-0">→</span>De premium twin-tank rechtvaardigt zijn hogere prijs pas echt bij grote gezinnen (5+ personen) of woningen waar continu zacht water vereist is zonder enige downtime tijdens regeneratie.</li>
-            </ul>
-          </div>
         </section>
 
         {/* Huren vs kopen */}
         <section id="huur-vs-koop">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Waterontharder huren of kopen: voor- en nadelen op een rij
+            Waterontharder huren of kopen?
           </h2>
-          <p className="text-gray-700 mb-5 leading-relaxed">
-            Veel installateurs en fabrikanten bieden naast koop ook huur- of leaseconstructies aan.
-            Bij huur betaalt u een vast maandelijks bedrag dat doorgaans installatie, jaarlijks onderhoud
-            en reparaties dekt. Hieronder de maandelijkse en jaarlijkse huurkosten per categorie, gevolgd
-            door een break-even analyse.
-          </p>
-
-          {/* Huurkosten tabel */}
-          <div className="overflow-x-auto -mx-4 px-4 mb-6">
-            <table className="w-full min-w-[500px] text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#003F5C] text-white">
-                  <th className="text-left py-2.5 px-3 font-semibold">Categorie</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Per maand</th>
-                  <th className="py-2.5 px-3 font-semibold text-center">Per jaar</th>
-                  <th className="py-2.5 px-3 font-semibold text-left">Inbegrepen</th>
-                </tr>
-              </thead>
-              <tbody>
-                {huurData.map((r, i) => (
-                  <tr key={r.tier} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="py-2.5 px-3 font-medium">{r.tier}</td>
-                    <td className="py-2.5 px-3 text-center text-xs font-semibold text-[#005F8A]">{r.maand}</td>
-                    <td className="py-2.5 px-3 text-center text-xs">{r.jaar}</td>
-                    <td className="py-2.5 px-3 text-xs text-gray-500">{r.inbegrepen}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Break-even */}
-          <h3 className="text-lg font-bold text-[#003F5C] mb-3">Break-even: wanneer is kopen goedkoper?</h3>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Bij een maandelijkse huurprijs van €25 en een aankoopprijs van €1500 (inclusief installatie
-            van €350) betaalt u bij huur op jaarbasis €300. Na <strong>6 jaar</strong> heeft u bij huur
-            evenveel betaald als bij koop — daarna is koop goedkoper. Bij een huurprijs van €35/maand
-            (€420/jaar) is de break-even al na <strong>4,4 jaar</strong> bereikt.
+            Veel installateurs bieden naast koop ook huur of lease aan. Huren kost doorgaans {HUUR_RANGE} per
+            maand, vaak inclusief installatie en onderhoud maar meestal exclusief zout. Het omslagpunt reken je
+            zelf uit: deel de koopprijs inclusief installatie door wat je per jaar aan huur betaalt. Bij{' '}
+            {HUUR_EXAMPLE} euro per maand ({euro(HUUR_PER_YEAR)} per jaar) is JOEP compleet geïnstalleerd
+            ({JOEP.installedPrice}) na ongeveer <strong>{fmtYears(INSTALLED / HUUR_PER_YEAR)} jaar</strong>{' '}
+            goedkoper dan huren. Met koopprijzen van {JOEP_MARKET.typicalInstalledRange} ligt dat omslagpunt
+            tussen {fmtYears(MARKET_LOW / HUUR_PER_YEAR)} en {fmtYears(MARKET_HIGH / HUUR_PER_YEAR)} jaar.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
             <div className="bg-white border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-900 mb-3">Huren is voordelig als…</p>
+              <p className="font-semibold text-gray-900 mb-3">Huren past als je:</p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>U niet zeker weet hoe lang u in de woning blijft</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>U geen grote eenmalige investering wilt doen</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>Installatie, onderhoud en reparaties volledig gedekt moeten zijn</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>U een nieuw model wilt zodra betere technologie beschikbaar is</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>niet weet hoe lang je in de woning blijft</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>geen grote eenmalige uitgave wilt doen</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>installatie, onderhoud en reparaties uit handen wilt geven</li>
               </ul>
             </div>
             <div className="bg-white border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-900 mb-3">Kopen is voordelig als…</p>
+              <p className="font-semibold text-gray-900 mb-3">Kopen past als je:</p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>U eigenaar bent van de woning en langdurig wilt ontharden</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>U zelf onderhoud kunt uitvoeren (zout bijvullen, reinigen)</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>U de totale eigendomskosten over 5–10 jaar wilt minimaliseren</li>
-                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>U een verhoogde woningwaarde als bijkomend voordeel ziet</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>eigenaar bent van de woning en lang wilt ontharden</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>het kleine onderhoud zelf doet (zout bijvullen, zoutbak schoonmaken)</li>
+                <li className="flex gap-2"><span className="text-green-600 font-bold">✓</span>de totale kosten over 5 tot 10 jaar zo laag mogelijk wilt houden</li>
               </ul>
             </div>
           </div>
           <div className="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-gray-700">
-            <strong className="text-amber-900">Let op bij huurcontracten:</strong> Controleer altijd de
-            minimumduur (vaak 2–5 jaar), de opzegtermijn, wat er bij verhuizing gebeurt en of u het
-            apparaat kunt overnemen. Sommige contracten bevatten indexeringsclausules waardoor de
-            maandhuur jaarlijks stijgt.
+            <strong className="text-amber-900">Let op bij huurcontracten:</strong> controleer altijd de
+            minimale looptijd, de opzegtermijn, wat er bij verhuizing gebeurt en of je het apparaat kunt
+            overnemen. Sommige contracten hebben een jaarlijkse prijsindexatie. De volledige vergelijking
+            over 5 jaar, met zout en het optionele serviceabonnement, staat op{' '}
+            <Link href="/waterontharder/kosten" className="text-[#005F8A] underline hover:no-underline">waterontharder kosten</Link>;
+            contractvoorwaarden lees je op{' '}
+            <Link href="/waterontharder/huren" className="text-[#005F8A] underline hover:no-underline">waterontharder huren</Link>.
           </div>
         </section>
 
@@ -484,36 +357,35 @@ export default function WaterOntharderPrijsPage() {
             Verborgen kosten: wat staat er niet in de advertentieprijs?
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            De geadverteerde aanschafprijs van een waterontharder is zelden de werkelijke totaalprijs.
-            Hieronder de kostenposten die verkopers niet altijd proactief noemen maar die uw uiteindelijke
-            investering aanzienlijk kunnen verhogen.
+            De geadverteerde prijs van een waterontharder is zelden de totaalprijs. Dit zijn de posten die
+            niet altijd vooraf worden genoemd, maar je uiteindelijke uitgave wel verhogen.
           </p>
           <div className="space-y-4">
             {[
               {
                 nr: 1,
-                titel: 'Professionele installatie: €200–400',
-                tekst: 'Een waterontharder moet worden aangesloten op de hoofdwaterleiding, vóór de aftakking naar de rest van de woning. Dit vereist altijd een erkend loodgieter. In nieuwbouw is de aansluiting eenvoudig; in oudere woningen met gegoten ijzeren leidingen of complexe leidingkasten kan de installatie meer tijd (en geld) kosten. Inclusief voorrijkosten, materiaal en arbeid rekent u realistisch op €200–400.',
+                titel: `Installatie: bij JOEP ${INSTALLATION}`,
+                tekst: `Een waterontharder wordt aangesloten op de hoofdwaterleiding, na de watermeter en voor de aftakkingen naar de rest van de woning. Bij JOEP is de installatie het verschil tussen ${JOEP.devicePrice} zonder en ${JOEP.installedPrice} met installatie. Bij andere aanbieders hangt het bedrag af van je woning: in nieuwbouw is aansluiten meestal eenvoudig, in oudere woningen of krappe meterkasten kost het meer tijd. Ben je handig, dan kun je sommige apparaten zelf installeren.`,
               },
               {
                 nr: 2,
-                titel: 'Bypass-klep: €30–80',
-                tekst: 'Een bypass-klep is een driewegsklep die u toelaat de waterontharder te omzeilen zonder de watertoevoer te onderbreken — essentieel bij onderhoud of storing. Bij veel (goedkopere) modellen zit de bypass-klep niet standaard in de set. Vraag altijd of de bypass inbegrepen is.',
+                titel: 'Bypass-klep',
+                tekst: 'Met een bypass kun je de ontharder omzeilen zonder het water af te sluiten, handig bij onderhoud of een storing. Bij sommige goedkope modellen zit hij niet standaard in de set. Vraag altijd of de bypass is inbegrepen.',
               },
               {
                 nr: 3,
-                titel: 'Eerste zoutvulling: €15–30',
-                tekst: 'Bij levering van een nieuwe waterontharder is het zouttankcompartiment leeg. Onthardingszout (tabletten of blokken) moet u zelf aanschaffen. Voor een eerste vulling heeft u doorgaans 15–25 kg nodig, afhankelijk van de tankgrootte. Zout kost €0,25–0,40 per kg — een kleine post maar niet onbelangrijk.',
+                titel: 'Eerste zoutvulling',
+                tekst: 'Bij levering is de zoutbak leeg. Onthardingszout in tabletten of blokken koop je zelf; voor de eerste vulling heb je een of meer zakken nodig, afhankelijk van de grootte van de zoutbak.',
               },
               {
                 nr: 4,
-                titel: 'Extra loodgieterswerkzaamheden bij oudere woningen',
-                tekst: 'In woningen gebouwd vóór 1970 kunnen loodzinken of ijzeren leidingen problemen geven bij het aansluiten van de ontharder. Soms is vervanging van een leidstuik nodig, wat de installatiekosten met €100–300 kan verhogen. Laat altijd een inspectie uitvoeren voordat u een offerte accepteert.',
+                titel: 'Extra leidingwerk in oudere woningen',
+                tekst: 'In oudere woningen kan het leidingwerk bij de meterkast aanpassing nodig hebben voordat de ontharder erop kan. Laat de situatie vooraf bekijken voordat je een offerte accepteert.',
               },
               {
                 nr: 5,
-                titel: 'Drainagepunt voor spoelwater',
-                tekst: 'Het afvalwater van de regeneratiecyclus (gezouten spoelwater) moet worden afgevoerd naar de riolering. Als er geen drainageaansluiting nabij de installatielocatie is, zijn extra afvoerwerkzaamheden nodig: reken op €50–150 extra.',
+                titel: 'Afvoer voor spoelwater',
+                tekst: 'Het spoelwater van de regeneratie moet naar het riool. Is er geen afvoer in de buurt van de installatieplek, dan moet die worden aangelegd.',
               },
             ].map(f => (
               <div key={f.nr} className="flex gap-4 items-start border border-gray-100 rounded-xl p-4">
@@ -527,64 +399,48 @@ export default function WaterOntharderPrijsPage() {
               </div>
             ))}
           </div>
-          <div className="mt-5 bg-[#E0F2FE] rounded-xl p-4 text-sm text-gray-700">
-            <p className="font-semibold text-[#003F5C] mb-1">Realistisch totaal bij aankoop (gezinsontharder):</p>
-            <ul className="space-y-1">
-              <li className="flex justify-between"><span>Aanschap ontharder</span><span className="font-semibold">€ 1.000 – 2.000</span></li>
-              <li className="flex justify-between"><span>Installatie loodgieter</span><span className="font-semibold">€ 200 – 400</span></li>
-              <li className="flex justify-between"><span>Bypass-klep (indien apart)</span><span className="font-semibold">€ 30 – 80</span></li>
-              <li className="flex justify-between"><span>Eerste zoutvulling</span><span className="font-semibold">€ 15 – 30</span></li>
-              <li className="flex justify-between border-t border-[#005F8A]/20 pt-2 font-bold text-[#003F5C]">
-                <span>Totaal startkosten</span><span>€ 1.245 – 2.510</span>
-              </li>
-            </ul>
-          </div>
         </section>
 
         {/* Vergelijking */}
         <section id="vergelijking">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Waterontharder vs. osmosefilter vs. niets doen: de kostenvergelijking
+            Waterontharder, osmosefilter of niets doen: wat kost het?
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            Een veelgehoorde vraag is: wat kost het eigenlijk om niets te doen en gewoon met hard water
-            te blijven leven? Kalkschade aan apparaten, verhoogd energieverbruik en eerder afgeschreven
-            verwarmingselementen tellen ook op. Hieronder een eerlijke vergelijking van de drie opties
-            over 5 jaar voor een gezin van 4 personen in een hard-watergebied.
+            Een veelgehoorde vraag: wat kost het om niets te doen en met hard water te blijven leven?
+            Kalkaanslag op apparaten, ontkalkmiddelen en eerder vervangen verwarmingselementen tellen ook
+            op. Hieronder de drie opties naast elkaar, voor een huishouden in een hardwatergebied.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
                 optie: 'Waterontharder (gezinsmodel)',
-                startkosten: '€ 1.300 – 2.350',
-                jaarlijks: '€ 160 – 240 / jaar',
-                vijfJaar: '€ 2.100 – 3.550',
-                beschermt: 'CV-ketel, leidingen, wasmachine, vaatwasser, tegels',
-                nadelen: 'Voegt natrium toe; milieu-impact zout; regelmatig onderhoud',
+                startkosten: JOEP_MARKET.typicalInstalledRange,
+                jaarlijks: 'vooral zout, plus eventueel service',
+                beschermt: 'Cv-ketel, leidingen, wasmachine, vaatwasser, tegels',
+                nadelen: 'Voegt natrium toe; zout en spoelwater; zout bijvullen',
                 kleur: 'border-[#005F8A] bg-[#E0F2FE]',
               },
               {
-                optie: 'Osmosefilter (onderbouw premium)',
-                startkosten: '€ 400 – 800',
-                jaarlijks: '€ 80 – 120 / jaar',
-                vijfJaar: '€ 800 – 1.400',
-                beschermt: 'Drinkwaterkwaliteit: kalk, chloor, nitraten, PFAS',
-                nadelen: 'Beschermt alleen drinkwater, niet leidingen en apparaten',
+                optie: 'Osmosefilter (drinkwater)',
+                startkosten: 'enkele honderden euro',
+                jaarlijks: 'vervangfilters',
+                beschermt: 'Alleen je drinkwater aan één kraan: minder kalk en veel andere stoffen',
+                nadelen: 'Beschermt leidingen en apparaten niet',
                 kleur: 'border-gray-200 bg-white',
               },
               {
                 optie: 'Niets doen (hard water accepteren)',
-                startkosten: '€ 0',
-                jaarlijks: '€ 200 – 600 / jaar (schade)',
-                vijfJaar: '€ 1.000 – 3.000',
+                startkosten: '0 euro',
+                jaarlijks: 'ontkalkmiddelen en kalkschade',
                 beschermt: 'Geen bescherming',
-                nadelen: 'Ontkalkmiddelen, eerder afgeschreven apparaten, verhoogd energieverbruik ketel',
+                nadelen: 'Vaker ontkalken, apparaten eerder vervangen, kalk in de cv-ketel',
                 kleur: 'border-amber-100 bg-amber-50',
               },
             ].map(o => (
               <div key={o.optie} className={`rounded-2xl border p-5 ${o.kleur}`}>
                 <h3 className="font-bold text-gray-900 text-base mb-3">{o.optie}</h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm mb-3">
+                <div className="grid grid-cols-2 gap-3 text-sm mb-3">
                   <div>
                     <p className="text-gray-400 text-xs mb-0.5">Startkosten</p>
                     <p className="font-semibold text-gray-800">{o.startkosten}</p>
@@ -592,10 +448,6 @@ export default function WaterOntharderPrijsPage() {
                   <div>
                     <p className="text-gray-400 text-xs mb-0.5">Jaarlijks</p>
                     <p className="font-semibold text-gray-800">{o.jaarlijks}</p>
-                  </div>
-                  <div>
-                    <p className="text-gray-400 text-xs mb-0.5">5-jaar totaal</p>
-                    <p className="font-semibold text-gray-800">{o.vijfJaar}</p>
                   </div>
                 </div>
                 <p className="text-xs text-gray-600 mb-1"><strong>Beschermt:</strong> {o.beschermt}</p>
@@ -605,26 +457,24 @@ export default function WaterOntharderPrijsPage() {
           </div>
 
           <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-sm text-gray-700">
-            <strong className="text-[#005F8A]">Conclusie:</strong> Voor kleine huishoudens of huurders
-            is een <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">osmosefilter</Link>{' '}
-            de kostenefficiëntste oplossing voor zuiver drinkwater. Wie de volledige woning wil
-            beschermen (leidingen, cv-ketel, wasmachine) en beschikt over een koopwoning met hard water,
-            maakt met een gezinsontharder op termijn de juiste keuze. Kalkschade door &apos;niets
-            doen&apos; loopt op de lange termijn op tot vergelijkbare bedragen als een ontharder — zonder
-            de voordelen van zacht water.
+            <strong className="text-[#005F8A]">Onze conclusie:</strong> voor kleine huishoudens of huurders
+            die vooral beter drinkwater willen, is een{' '}
+            <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">osmosefilter</Link>{' '}
+            de goedkoopste oplossing. Wie de hele woning wil beschermen (leidingen, cv-ketel, wasmachine) en
+            in een koopwoning met hard water woont, maakt met een waterontharder volgens ons op termijn de
+            betere keuze.
           </div>
 
           <p className="text-gray-700 mt-5 leading-relaxed">
-            Meer weten over de details van wateronthardingskosten over een langere periode? Lees ons
-            kennisbankartikel over{' '}
+            Wil je de kosten per jaar precies doorrekenen? Op{' '}
+            <Link href="/waterontharder/kosten" className="text-[#005F8A] underline hover:no-underline">waterontharder kosten</Link>{' '}
+            rekenen we het zoutverbruik en de totaalkosten voor JOEP voor je uit. Een bredere analyse staat
+            in ons kennisbankartikel{' '}
             <Link href="/kennisbank/waterontharder-kosten" className="text-[#005F8A] underline hover:no-underline">
-              waterontharder kosten
-            </Link>{' '}
-            voor een uitgebreide analyse inclusief regio-specifieke berekeningen.
+              waterontharder kosten uitgelegd
+            </Link>.
           </p>
         </section>
-
-        <JoepCTA context="kosten" content="waterontharder-prijs-joep" />
 
         <AffiliateCTA
           destination="waterontharders"
@@ -642,8 +492,10 @@ export default function WaterOntharderPrijsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { href: '/waterontharder', label: 'Waterontharder: werking en soorten' },
-              { href: '/waterontharder/kopen', label: 'Waterontharder kopen — welk model?' },
-              { href: '/kennisbank/waterontharder-kosten', label: 'Kennisbank: waterontharder kosten uitgelegd' },
+              { href: '/waterontharder/kopen', label: 'Waterontharder kopen: welk model?' },
+              { href: '/waterontharder/kosten', label: 'Waterontharder kosten per jaar en in totaal' },
+              { href: '/beste-waterontharder-2026', label: 'Beste waterontharder 2026: onze keuze' },
+              { href: '/joep-waterontharder', label: 'JOEP waterontharder: specificaties en prijs' },
               { href: '/omgekeerde-osmose/kopen', label: 'Osmosefilter als alternatief voor kleine huishoudens' },
             ].map(l => (
               <Link
@@ -660,7 +512,7 @@ export default function WaterOntharderPrijsPage() {
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">
-            Veelgestelde vragen over waterontharder prijs
+            Veelgestelde vragen over de prijs van een waterontharder
           </h2>
           <div className="space-y-3">
             {faqItems.map(item => (
@@ -680,15 +532,14 @@ export default function WaterOntharderPrijsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link href="/keuzehulp/budget" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Budget keuzehulp waterontharder</h3>
-              <p className="text-sm text-gray-600">Welke prijsklasse past bij uw behoefte en welke functies extra kosten rechtvaardigen.</p>
+              <p className="text-sm text-gray-600">Welke prijsklasse past bij je situatie en welke functies de meerprijs waard zijn.</p>
             </Link>
             <Link href="/filtertechnieken/ionenwisseling" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Ionenwisseling: prijs versus kwaliteit</h3>
-              <p className="text-sm text-gray-600">Wat ionenwisselhars en regelautomaten kosten bij verschillende prijsklassen.</p>
+              <p className="text-sm text-gray-600">Wat hars en regelklep betekenen voor de prijs en het zoutverbruik.</p>
             </Link>
           </div>
         </section>
-
       </div>
     </>
   );

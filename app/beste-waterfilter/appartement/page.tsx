@@ -6,9 +6,11 @@ import { CTABanner } from "@/components/CTABanner";
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { CountertopCTA } from '@/components/CountertopCTA';
+import { COUNTERTOP } from '@/lib/countertop.mjs';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
-  title: "Beste waterfilter voor een appartement: compacte opties vergeleken",
+  title: "Beste waterfilter voor een appartement: compacte opties",
   description:
     "Appartement met beperkte ruimte? Aanrechtfilter, onderbouw osmose of filterkan: welk filter past het beste zonder verbouwing.",
   alternates: {
@@ -41,7 +43,7 @@ const faqItems = [
   {
     question: "Filtert een aanrechtfilter ook PFAS?",
     answer:
-      "Ja, als het systeem een RO-membraan bevat. Een countertop osmosefilter met RO-membraan verwijdert PFAS voor 90-99%, vergelijkbaar met een onderbouw osmosefilter. Let op: een eenvoudig aanrechtfilter met alleen koolstoffilter (zonder RO-membraan) filtert PFAS niet betrouwbaar. Controleer altijd of het systeem een RO-membraan bevat en of het NSF/ANSI 58 gecertificeerd is.",
+      "Een aanrechtfilter met een RO-membraan wel: omgekeerde osmose vermindert PFAS in het algemeen sterk, ook in een countertop-uitvoering. Hoeveel precies verschilt per apparaat en per PFAS-stof. Voor het PureAqua Water zuiver apparaat is geen eigen PFAS-labtest gepubliceerd, dus noemen we daarvoor geen percentage. Een eenvoudig aanrechtfilter met alleen koolstof (zonder RO-membraan) filtert PFAS minder betrouwbaar. Vraag bij elk apparaat naar een onafhankelijk labrapport per stof.",
   },
   {
     question: "Hoeveel water produceert een aanrechtfilter per dag?",
@@ -75,7 +77,7 @@ export default function AppartementPage() {
           description:
             "Appartement met beperkte ruimte? Aanrechtfilter, onderbouw osmose of filterkan: welk filter past het beste zonder verbouwing.",
           datePublished: "2026-05-17",
-          dateModified: "2026-11-03",
+          dateModified: "2026-11-10",
           url: "https://waterfilterplatform.nl/beste-waterfilter/appartement",
         }}
       />
@@ -96,13 +98,13 @@ export default function AppartementPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Beste waterfilter voor een appartement
           </h1>
-          <QuickAnswer answer="Voor een appartement is een aanrechtfilter (countertop RO) meestal de handigste keuze: geen boorwerk, geen aansluiting op het leidingwerk en het apparaat verhuist mee. Past er een compacte onderbouw osmose in de onderkast, dan tapt u gefilterd water uit een aparte kraan (extra kraangat) of een 3-weg-kraan; overleg dat vooraf met verhuurder of VvE. Een filterkan is goedkoper maar filtert geen PFAS of lood." />
+          <QuickAnswer answer="Voor een appartement is een aanrechtfilter (countertop RO) meestal de handigste keuze: geen boorwerk, geen aansluiting op het leidingwerk en het apparaat verhuist mee. Past er een compacte onderbouw osmose in de onderkast, dan tapt u gefilterd water uit een aparte kraan (extra kraangat) of een 3-weg-kraan; overleg dat vooraf met verhuurder of VvE. Een filterkan is goedkoper, maar vermindert PFAS en lood hooguit beperkt." />
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <MethodologyBadge lastReviewed="2026-11-03" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
+        <MethodologyBadge lastReviewed="2026-11-10" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-10" />
         <CTABanner context="osmose" />
 
         <section className="mt-10">
@@ -135,11 +137,20 @@ export default function AppartementPage() {
             toestemming nodig.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De aanschafprijs bedraagt 200-350 euro. Jaarlijkse filterkosten (sedimentfilter,
-            koolblok en RO-membraan) liggen op 60-120 euro. De filterprestaties zijn volledig
-            vergelijkbaar met een onderbouw osmosefilter: PFAS-verwijdering 90-99%,
-            loodverwijdering 95-99%, nitraat 85-95%. Het systeem is volledig verplaatsbaar bij
-            verhuizing. Meer informatie over het kopen van een osmosefilter vindt u op de pagina{" "}
+            De aanschafprijs ligt doorgaans tussen 200 en 500 euro; het{" "}
+            <Link href="/countertop-osmose" className="text-[#005F8A] hover:underline font-medium">
+              PureAqua Water zuiver apparaat
+            </Link>{" "}
+            kost {COUNTERTOP.price}. Jaarlijkse filterkosten (sedimentfilter, koolblok en
+            RO-membraan) liggen op 60-120 euro. Omgekeerde osmose vermindert PFAS en lood in het
+            algemeen sterk, ook in een countertop-uitvoering. Hoeveel precies verschilt per
+            apparaat en per stof: voor het Water zuiver apparaat is geen eigen PFAS-labtest
+            gepubliceerd. Wil je vooral PFAS aanpakken, lees dan onze{" "}
+            <Link href="/pfas-waterfilter" className="text-[#005F8A] hover:underline font-medium">
+              PFAS-filtergids
+            </Link>
+            . Het systeem is volledig verplaatsbaar bij verhuizing. Meer informatie over het
+            kopen van een osmosefilter vindt u op de pagina{" "}
             <Link
               href="/omgekeerde-osmose/kopen"
               className="text-[#005F8A] hover:underline font-medium"
@@ -179,8 +190,8 @@ export default function AppartementPage() {
             4-6 weken een nieuwe filterpatroon.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De beperkingen zijn aanzienlijk: een filterkan verwijdert geen PFAS betrouwbaar,
-            geen lood, geen nitraat en biedt geen microbiologische bescherming. Voor wie alleen
+            De beperkingen zijn aanzienlijk: een filterkan vermindert PFAS en lood hooguit beperkt
+            en niet betrouwbaar, verwijdert geen nitraat en biedt geen microbiologische bescherming. Voor wie alleen
             de chloorstand of de smaak wil verbeteren, volstaat een filterkan. Wie bescherming
             zoekt tegen specifieke verontreinigingen, heeft een betere optie nodig.
           </p>
@@ -205,28 +216,34 @@ export default function AppartementPage() {
                   <td className="border border-gray-300 px-3 py-2 font-medium">Filterkan</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">Geen</td>
                   <td className="border border-gray-300 px-3 py-2">&lt;50 euro</td>
-                  <td className="border border-gray-300 px-3 py-2 text-red-600">Nee</td>
-                  <td className="border border-gray-300 px-3 py-2 text-red-600">Nee</td>
+                  <td className="border border-gray-300 px-3 py-2 text-red-600">Beperkt</td>
+                  <td className="border border-gray-300 px-3 py-2 text-red-600">Beperkt</td>
                   <td className="border border-gray-300 px-3 py-2">Aanrecht</td>
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="border border-gray-300 px-3 py-2 font-medium">Aanrechtfilter (countertop RO)</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">Adapter of tank vullen</td>
-                  <td className="border border-gray-300 px-3 py-2">100-200 euro</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">90-99%</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">95-99%</td>
+                  <td className="border border-gray-300 px-3 py-2">60-120 euro</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Sterk*</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Sterk*</td>
                   <td className="border border-gray-300 px-3 py-2">Aanrecht</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-300 px-3 py-2 font-medium">Onderbouw osmose</td>
                   <td className="border border-gray-300 px-3 py-2 text-yellow-600">Kraangat of 3-weg-kraan, vooraf overleggen</td>
                   <td className="border border-gray-300 px-3 py-2">80-150 euro</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">90-99%</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">95-99%</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Sterk*</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Sterk*</td>
                   <td className="border border-gray-300 px-3 py-2">Onderkast (25+ cm)</td>
                 </tr>
               </tbody>
             </table>
+            <p className="text-xs text-gray-500 mt-2">
+              * Omgekeerde osmose vermindert PFAS en lood in het algemeen sterk; exacte percentages
+              verschillen per apparaat en per stof. Gemeten per stof bij de PureAqua 4-in-1 (SGS, nieuw
+              systeem): PFOS {FOUR_IN_ONE.lab.PFOS} en PFOA {FOUR_IN_ONE.lab.PFOA} minder. Voor het
+              Water zuiver apparaat is geen eigen PFAS-labtest gepubliceerd.
+            </p>
           </div>
         </section>
 

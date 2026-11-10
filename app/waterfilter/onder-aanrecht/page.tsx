@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
-  title: 'Waterfilter onder aanrecht: types, installatie en prijzen | 2026',
+  title: 'Waterfilter onder aanrecht: types, installatie en prijzen',
   description:
     'Alles over waterfilters onder aanrecht: carbon block, RO, UV-combinaties, benodigde ruimte, dedicated tap vs omleidingsventiel en prijzen €150–1500.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/onder-aanrecht' },
@@ -37,12 +37,12 @@ const faqItems = [
   {
     question: 'Heb ik een extra kraan nodig voor een under-sink filter?',
     answer:
-      'Dat hangt af van het type systeem. Een RO-systeem levert langzaam water en vereist altijd een aparte kraan of een geïntegreerde kraan met eigen aftappunt. Bij een carbon block inline-filter kun je kiezen: een apart aftapkraantje boren of een omleidingsventiel op de bestaande mengkraan. Dat laatste is de makkelijkste installatie maar vergt een kompatibele kraan.',
+      'Dat hangt af van het type systeem. Een onderbouw RO-systeem heeft een eigen tappunt nodig, maar dat hoeft geen extra kraan te zijn: het kan een aparte osmosekraan zijn (extra kraangat), een 3-weg-kraan die je mengkraan vervangt en warm, koud en gezuiverd water geeft, of een 4-in-1 kraan die daarnaast gekoeld en zeer heet gezuiverd water levert. Een osmoseapparaat op het aanrecht heeft helemaal geen kraan nodig. Bij een carbon block inline-filter kun je kiezen: een apart aftapkraantje boren of een omleidingsventiel op de bestaande mengkraan. Dat laatste is de makkelijkste installatie maar vergt een compatibele kraan.',
   },
   {
     question: 'Kan ik een under-sink filter zelf installeren?',
     answer:
-      'Een eenvoudig inline carbon block filter is een typisch doe-het-zelf klusje (15–30 minuten). Een volledig RO-systeem vergt wat meer: aanboorkraan monteren, gat in het aanrecht boren voor de extra kraan en afvoer aansluiten. De meeste huishoudens lukt dit in 60–90 minuten. Bij een kokendwaterkraan met RO is vanwege de elektrische aansluiting een installateur aan te raden.',
+      'Een eenvoudig inline carbon block filter is een typisch doe-het-zelf klusje (15–30 minuten). Een volledig RO-systeem vergt wat meer: aanboorkraan monteren, afvoer aansluiten en, bij een aparte osmosekraan, een gat in het aanrecht boren. Met een 3-weg-kraan op de plek van je mengkraan is dat gat niet nodig. De meeste huishoudens lukt dit in 60–90 minuten. Bij een kokendwaterkraan met RO is vanwege de elektrische aansluiting een installateur aan te raden.',
   },
   {
     question: 'Hoe lang gaan under-sink filters mee?',
@@ -131,7 +131,7 @@ export default function WaterfilterOnderAanrechtPage() {
           description:
             'Overzicht van alle under-sink filtertypes van carbon block tot RO en UV, installatietips en prijsvergelijking €150–1500.',
           datePublished: '2025-09-01',
-          dateModified: '2026-05-14',
+          dateModified: '2026-11-10',
           url: 'https://waterfilterplatform.nl/waterfilter/onder-aanrecht',
         }}
       />
@@ -243,7 +243,7 @@ export default function WaterfilterOnderAanrechtPage() {
               },
               {
                 titel: 'Omgekeerde osmose (RO)',
-                tekst: 'Het meest complete systeem voor huishoudelijk gebruik. Vier of vijf filterstappen verwijderen 95–99% van alle opgeloste stoffen inclusief nitraten, pesticiden, PFAS, zware metalen en microplastics. Vereist een apart kraaantje of drukvat. De gouden standaard voor drinkwaterkwaliteit.',
+                tekst: 'Volgens ons het meest complete systeem voor huishoudelijk gebruik. Vier of vijf filterstappen houden doorgaans 95 tot 99% van de opgeloste stoffen tegen en verminderen ook nitraten, pesticiden, PFAS, zware metalen en microplastics sterk; hoeveel precies verschilt per systeem en per stof. Je tapt het water uit een aparte osmosekraan, een 3-weg-kraan of een 4-in-1 kraan; veel systemen hebben daarnaast een drukvat onder het aanrecht.',
               },
               {
                 titel: 'RO + UV-desinfectie',
@@ -251,7 +251,7 @@ export default function WaterfilterOnderAanrechtPage() {
               },
               {
                 titel: 'RO + heet en gekoeld water (4-in-1)',
-                tekst: 'De meest complete oplossing: osmosefiltratie gecombineerd met een heet-/koelunit (zeer heet water van circa 96 graden en gekoeld water). Eén kraan op het aanrecht vervangt de reguliere mengkraan en levert ook gewoon warm en koud water. Onder de spoelbak staan dan twee apparaten met elk een stopcontact. Meer info op de 4-in-1 kraan pagina.',
+                tekst: 'Volgens ons de meest complete oplossing: osmosefiltratie gecombineerd met een heet-/koelunit (zeer heet water van circa 96 graden en gekoeld water). Eén kraan op het aanrecht vervangt de reguliere mengkraan en levert ook gewoon warm en koud water. Onder de spoelbak staan dan twee apparaten met elk een stopcontact. Meer info op de 4-in-1 kraan pagina.',
               },
             ].map(v => (
               <div key={v.titel} className="border-l-4 border-[#005F8A] pl-4">
@@ -305,9 +305,9 @@ export default function WaterfilterOnderAanrechtPage() {
         <section id="kraan">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Dedicated tap vs omleidingsventiel</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Er zijn twee manieren om gefilterd water aan de keuken af te tappen:
+            Er zijn drie manieren om gefilterd water aan de keuken af te tappen:
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             <div className="bg-[#E0F2FE] rounded-2xl p-5">
               <p className="font-bold text-[#003F5C] mb-2">Dedicated tap (aparte kraan)</p>
               <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
@@ -328,11 +328,28 @@ export default function WaterfilterOnderAanrechtPage() {
                 <li>Zichtbaar op het aanrecht</li>
               </ul>
             </div>
+            <div className="bg-[#E0F2FE] rounded-2xl p-5">
+              <p className="font-bold text-[#003F5C] mb-2">3-weg-kraan of 4-in-1 kraan</p>
+              <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
+                <li>Vervangt je bestaande mengkraan</li>
+                <li>Geen extra gat boren nodig</li>
+                <li>Eigen, afgescheiden kanaal voor osmosewater</li>
+                <li>4-in-1: ook gekoeld en zeer heet gezuiverd water</li>
+              </ul>
+            </div>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Voor een RO-systeem is een dedicated tap altijd de voorkeur. Omleidingsventielen
-            werken prima voor inline koolstoffilters maar kunnen bij RO-systemen voor
-            drukproblemen zorgen doordat het aanwezige filter extra weerstand geeft.
+            Voor een RO-systeem kies je een eigen tappunt: een dedicated tap, of een 3-weg-kraan
+            zoals de{' '}
+            <Link href="/the-source" className="text-[#005F8A] underline">zuiver-water-kraan met The Source</Link>{' '}
+            of een{' '}
+            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan</Link>{' '}
+            op de plek van je mengkraan. Omleidingsventielen werken prima voor inline koolstoffilters
+            maar kunnen bij RO-systemen voor drukproblemen zorgen doordat het aanwezige filter extra
+            weerstand geeft. Wil je niets onder het aanrecht, dan is een osmoseapparaat op het
+            aanrecht zoals het{' '}
+            <Link href="/countertop-osmose" className="text-[#005F8A] underline">Water zuiver apparaat</Link>{' '}
+            een alternatief zonder kraan of installatie.
           </p>
         </section>
 

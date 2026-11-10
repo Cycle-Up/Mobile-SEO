@@ -4,6 +4,7 @@ import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
   title: 'Omgekeerde Osmose Prijs: Kosten & Vergelijking 2026',
@@ -89,12 +90,12 @@ const systeemPrijzen = [
     aanschaf: '€ 1.948',
     filterkosten: 'circa € 150 / jaar (gemiddeld)',
     installatie: 'Installateur aanbevolen (PureAqua: €299)',
-    membraanType: 'Geïntegreerd 75–100 GPD',
-    rejection: '97–99%',
-    flow: '150–250 L/uur',
-    afvalratio: 'Geoptimaliseerd 1:1',
+    membraanType: `PureAqua 4-in-1: ${FOUR_IN_ONE.filtration}`,
+    rejection: `SGS-test op nieuw systeem: PFOS ${FOUR_IN_ONE.lab.PFOS}, PFOA ${FOUR_IN_ONE.lab.PFOA}, lood ${FOUR_IN_ONE.lab.lood} minder`,
+    flow: `${FOUR_IN_ONE.chilled}; osmosecapaciteit niet gepubliceerd`,
+    afvalratio: 'niet gepubliceerd',
     aanbevolen: true,
-    badge: 'Premium & Aanbevolen',
+    badge: 'Onze keuze',
   },
 ];
 
@@ -198,8 +199,8 @@ export default function OsmosePrijsPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-10" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-10" />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -265,6 +266,13 @@ export default function OsmosePrijsPage() {
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-500 mt-4 leading-relaxed">
+            <strong className="text-gray-700">Openheid:</strong> de PureAqua 4-in-1 kraan wordt verkocht door
+            PureAqua, waaraan dit platform gelieerd is. &lsquo;Onze keuze&rsquo; is ons redactionele oordeel op basis
+            van de functies, de prijs en de gepubliceerde SGS-test, geen onafhankelijk keurmerk. Zoek je alleen
+            osmosewater zonder heet en gekoeld water, dan is een los onderbouwsysteem volgens ons goedkoper en
+            voldoende.
+          </p>
         </section>
 
         {/* Filterkosten */}
@@ -292,11 +300,11 @@ export default function OsmosePrijsPage() {
               </thead>
               <tbody>
                 {[
-                  { filter: 'Sedimentfilter', interval: '6–12 maanden', basis: '€ 10–20', premium: '€ 12–25', vierin1: 'Inbegrepen' },
-                  { filter: 'Koolstof voorfilter', interval: '6–12 maanden', basis: '€ 15–30', premium: '€ 18–35', vierin1: 'Inbegrepen' },
-                  { filter: 'RO-membraan', interval: '2–3 jaar', basis: '€ 40–70', premium: '€ 50–80', vierin1: 'Inbegrepen' },
-                  { filter: 'Koolstof nafilter', interval: '12 maanden', basis: '€ 15–25', premium: '€ 15–30', vierin1: 'Inbegrepen' },
-                  { filter: 'Remineralisatiefilter', interval: '12 maanden', basis: 'Nvt', premium: '€ 20–35', vierin1: 'Inbegrepen' },
+                  { filter: 'Sedimentfilter', interval: '6–12 maanden', basis: '€ 10–20', premium: '€ 12–25', vierin1: 'Eén voorfilter, circa jaarlijks' },
+                  { filter: 'Koolstof voorfilter', interval: '6–12 maanden', basis: '€ 15–30', premium: '€ 18–35', vierin1: 'Geen apart filter' },
+                  { filter: 'RO-membraan', interval: '2–3 jaar', basis: '€ 40–70', premium: '€ 50–80', vierin1: 'Circa elke 2 jaar' },
+                  { filter: 'Koolstof nafilter', interval: '12 maanden', basis: '€ 15–25', premium: '€ 15–30', vierin1: 'Geen apart filter' },
+                  { filter: 'Remineralisatiefilter', interval: '12 maanden', basis: 'Nvt', premium: '€ 20–35', vierin1: 'Circa jaarlijks' },
                   { filter: 'Totaal per jaar', interval: 'Geschat gemiddeld', basis: '€ 50–80', premium: '€ 60–100', vierin1: 'circa € 150 (gemiddeld)' },
                 ].map((r, i) => (
                   <tr
@@ -542,7 +550,7 @@ export default function OsmosePrijsPage() {
             {[
               { ratio: '1:5 (basis)', extraWater: '14.600 L/jaar', extraKosten: '€ 25–40/jaar', type: 'Basismodel' },
               { ratio: '1:2 (premium)', extraWater: '5.840 L/jaar', extraKosten: '€ 10–15/jaar', type: 'Premium met pomp' },
-              { ratio: '1:1 (4-in-1)', extraWater: '2.920 L/jaar', extraKosten: '€ 5–8/jaar', type: '4-in-1 geoptimaliseerd' },
+              { ratio: '1:1 (tankloos)', extraWater: '2.920 L/jaar', extraKosten: '€ 5–8/jaar', type: 'Tankloos systeem' },
             ].map(w => (
               <div key={w.ratio} className="bg-gray-50 rounded-xl p-4 text-sm">
                 <p className="font-bold text-gray-900 mb-1">{w.type}</p>
@@ -555,8 +563,9 @@ export default function OsmosePrijsPage() {
           <p className="text-gray-700 leading-relaxed">
             Het absolute verschil in waterkosten is beperkt (€5–40/jaar), maar een lagere afvalwaterratio
             verlengt ook de levensduur van het RO-membraan. Combineer dit met lagere filterkosten en
-            hogere doorstroomsnelheid, en een systeem met boostpomp of de 4-in-1 kraan rechtvaardigt
-            zijn hogere aanschafprijs al snel.
+            hogere doorstroomsnelheid, en een systeem met boostpomp of een tankloos systeem rechtvaardigt
+            zijn hogere aanschafprijs al snel. Voor de PureAqua 4-in-1 is geen afvalratio gepubliceerd;
+            die rekenen we hier daarom niet mee.
           </p>
         </section>
 
