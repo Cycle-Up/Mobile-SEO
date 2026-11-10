@@ -3,16 +3,17 @@ import Link from "next/link";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { CTABanner } from "@/components/CTABanner";
+import { FOUR_IN_ONE } from "@/lib/kranen.mjs";
 
 export const metadata: Metadata = {
   title: "Kokend water kraan garantie: wat is gedekt en hoe lang?",
   description:
-    "Kokend water kraan garantie: 2-5 jaar fabrieksgarantie. Quooker 2 jaar, PureAqua 3 jaar. Wat is gedekt, verlengde garantie en servicecontract opties.",
+    "Kokend water kraan garantie: standaard meestal 2 jaar. Quooker 2 jaar, PureAqua 4-in-1 2 jaar all-in. Wat is gedekt, verlengde garantie en servicecontracten.",
   alternates: { canonical: "https://waterfilterplatform.nl/kokend-water-kraan/garantie" },
   openGraph: {
     title: "Kokend water kraan garantie: wat is gedekt en hoe lang?",
     description:
-      "Kokend water kraan garantie: 2-5 jaar fabrieksgarantie. Quooker 2 jaar, PureAqua 3 jaar. Wat is gedekt, verlengde garantie en servicecontract opties.",
+      "Kokend water kraan garantie: standaard meestal 2 jaar. Quooker 2 jaar, PureAqua 4-in-1 2 jaar all-in. Wat is gedekt, verlengde garantie en servicecontracten.",
     type: "website",
   },
 };
@@ -21,7 +22,7 @@ const merkGaranties = [
   { merk: "Quooker", standaard: "2 jaar", verlengbaar: "Tot 5 jaar (serviceabonnement)" },
   { merk: "Grohe Blue", standaard: "2 jaar", verlengbaar: "Tot 3 jaar" },
   { merk: "Franke Vital", standaard: "2 jaar", verlengbaar: "-" },
-  { merk: "PureAqua 4-in-1", standaard: "3 jaar", verlengbaar: "Tot 5 jaar" },
+  { merk: "PureAqua 4-in-1", standaard: FOUR_IN_ONE.warranty, verlengbaar: "Geen verlenging bekend" },
 ];
 
 const faqItems = [
@@ -86,6 +87,7 @@ export default function KokendWaterKraanGarantiePage() {
           description:
             "Garantie op kokend water kranen: merkenoverzicht, wat is gedekt, verlengde garantie en servicecontracten.",
           datePublished: "2026-05-01",
+          dateModified: "2026-11-03",
           url: "https://waterfilterplatform.nl/kokend-water-kraan/garantie",
         }}
       />
@@ -99,10 +101,13 @@ export default function KokendWaterKraanGarantiePage() {
             <span className="mx-2">/</span>
             <span>Garantie</span>
           </nav>
+          <div className="inline-block text-xs bg-[#005F8A] text-white px-3 py-1 rounded-full mb-4 font-medium">
+            Bijgewerkt november 2026
+          </div>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Kokend water kraan garantie: duur, dekking en servicecontract
           </h1>
-          <QuickAnswer answer="De garantie op kokend water kranen varieert per merk: Quooker biedt 2 jaar fabrieksgarantie, Grohe en Franke 2-3 jaar, PureAqua 3 jaar. Verlengde garantie tot 5 jaar is beschikbaar via servicecontracten. De garantie dekt fabricagefouten maar niet slijtage of onjuiste installatie." />
+          <QuickAnswer answer="De standaardgarantie op kokend water kranen is bij de meeste merken 2 jaar: Quooker, Grohe en Franke geven 2 jaar fabrieksgarantie, PureAqua geeft op de 4-in-1 kraan 2 jaar all-in. Bij sommige merken kun je verlengen, bij Quooker tot 5 jaar via een serviceabonnement. De garantie dekt fabricagefouten maar niet slijtage of onjuiste installatie." />
         </div>
       </section>
 
@@ -145,7 +150,7 @@ export default function KokendWaterKraanGarantiePage() {
         <section id="merken" className="mb-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Garantieduur per merk</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De fabrieksgarantie verschilt aanzienlijk per merk. Hieronder een overzicht van de meest voorkomende merken op de Nederlandse markt:
+            De standaardgarantie is bij alle merken in dit overzicht 2 jaar; de verschillen zitten vooral in de verlengingsmogelijkheden. Hieronder een overzicht van de meest voorkomende merken op de Nederlandse markt:
           </p>
           <div className="overflow-x-auto -mx-4 px-4 mb-4">
             <table className="w-full min-w-[400px] text-sm border-collapse">
@@ -168,7 +173,7 @@ export default function KokendWaterKraanGarantiePage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed text-sm">
-            Quooker is marktleider in Nederland en biedt een CARE-abonnement voor garantieverlenging. PureAqua biedt van huis uit 3 jaar, wat boven het marktgemiddelde ligt. Franke Vital levert 2 jaar zonder verlengingsmogelijkheid via fabriekskanaal.
+            Quooker biedt een CARE-abonnement voor garantieverlenging. Op de 4-in-1 kraan geldt {FOUR_IN_ONE.warranty}, waaraan WaterfilterPlatform gelieerd is. Wat de all-in garantie precies omvat, lees je in de garantievoorwaarden van PureAqua. Franke Vital levert 2 jaar zonder verlengingsmogelijkheid via fabriekskanaal.
           </p>
         </section>
 
@@ -255,7 +260,7 @@ export default function KokendWaterKraanGarantiePage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed text-sm">
-            Voor een Quooker CARE-abonnement betaal je circa 100-180 euro per jaar afhankelijk van het model. Dit omvat jaarlijkse filterwissel, controle van de boiler en verlengde garantie tot 5 jaar. PureAqua biedt vergelijkbare abonnementen met dezelfde dekking.
+            Voor een Quooker CARE-abonnement betaal je circa 100-180 euro per jaar afhankelijk van het model. Dit omvat jaarlijkse filterwissel, controle van de boiler en verlengde garantie tot 5 jaar.
           </p>
         </section>
 

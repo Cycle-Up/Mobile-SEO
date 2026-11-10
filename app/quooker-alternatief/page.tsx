@@ -13,12 +13,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Wat is het beste Quooker alternatief? Vergelijking 2026',
     description:
-      'Ontdek alternatieven voor Quooker met osmose filter en kokend water. Vergelijk prijs, functies en garantie van de beste merken naast Quooker.',
+      'Volgens ons het beste Quooker-alternatief met zuiver water: de PureAqua 4-in-1 kraan (1.948 euro), zeer heet (circa 96 graden) en gekoeld osmosewater.',
     alternates: { canonical: 'https://waterfilterplatform.nl/quooker-alternatief' },
     openGraph: {
       title: 'Quooker alternatief vergelijken — beste opties in 2026',
       description:
-        'Op zoek naar een alternatief voor Quooker? Vergelijk Grohe Red, Insinkerator, Franke en 4-in-1 opties op prijs, kokend water en osmose filter.',
+        'Onze keuze als Quooker-alternatief: de PureAqua 4-in-1 kraan (1.948 euro), circa 300 euro minder dan een Quooker Flex PRO3 met CUBE bij PureAqua (2.240 euro), met osmose in plaats van actieve kool. Geen bruisend water. Ook Grohe Red en Insinkerator vergeleken.',
       url: 'https://waterfilterplatform.nl/quooker-alternatief',
       type: 'article',
       locale: 'nl_NL',
@@ -30,7 +30,7 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor een Quooker?',
     answer:
-      'Er zijn verschillende serieuze alternatieven voor Quooker: 4-in-1 kranen met ingebouwd osmose filter (warm en koud kraanwater plus gezuiverd, gekoeld en zeer heet water), Grohe Red (kokend water, Duits design), Insinkerator (Amerikaans, breed assortiment) en Franke Vital/Mondial. Welke het beste past hangt af van of je een filter wilt, welk design je zoekt en wat je budget is.',
+      'Volgens ons is de PureAqua 4-in-1 kraan het sterkste alternatief als je gezuiverd water wilt: gewoon warm en koud kraanwater, plus osmose-gezuiverd water op kamertemperatuur, gekoeld (circa 5 graden) en zeer heet (circa 96 graden), voor 1.948 euro. Een Quooker Flex PRO3 met CUBE kost bij PureAqua 2.240 euro en filtert met actieve kool; bruisend water geeft de 4-in-1 niet. Gaat het je vooral om kokend water of design, kijk dan naar Grohe Red, Insinkerator of Franke Vital/Mondial. PureAqua, dat de 4-in-1 verkoopt, is gelieerd aan WaterfilterPlatform.',
   },
   {
     question: 'Is er een goedkoper alternatief dan Quooker?',
@@ -55,7 +55,7 @@ const faqItems = [
   {
     question: 'Welke garantie krijg ik bij een alternatief voor Quooker?',
     answer:
-      'Garantietermijnen verschillen per merk en model. Quooker hanteert een meerjarige garantie. Grohe Red en Insinkerator hebben hun eigen voorwaarden via de dealer. Lees altijd de actuele garantievoorwaarden op de website van de fabrikant voordat je beslist.',
+      'Garantietermijnen verschillen per merk en model. Bij de PureAqua 4-in-1 kraan krijg je 2 jaar all-in garantie via PureAqua. Quooker hanteert een meerjarige garantie. Grohe Red en Insinkerator hebben hun eigen voorwaarden via de dealer. Lees altijd de actuele garantievoorwaarden op de website van de fabrikant of verkoper voordat je beslist.',
   },
   {
     question: 'Vergelijkbaar met Quooker maar met ander design — bestaat dat?',
@@ -76,9 +76,9 @@ const topAlternatieven = [
     kokend: 'Zeer heet (circa 96°C)',
     gefilterd: 'Ja (osmose ingebouwd)',
     bruisend: 'Nee',
-    garantie: 'Per fabrikant',
+    garantie: '2 jaar all-in garantie via PureAqua',
     installatie: 'Installateur aanbevolen (PureAqua: € 299)',
-    highlight: false,
+    highlight: true,
     notitie: 'Osmose + zeer heet + gekoeld water in één systeem; geen bruisend water',
   },
   {
@@ -123,7 +123,7 @@ const tco = [
     installatie: '€ 299 (optioneel)',
     filters: 'circa € 150 (gemiddeld)',
     energie: '± € 35/jaar',
-    totaal5jaar: '± € 3.137',
+    totaal5jaar: '± € 3.172',
     highlight: false,
   },
   {
@@ -190,9 +190,9 @@ export default function QuookerAlternatiefPage() {
         type="Article"
         article={{
           title: 'Wat is het beste Quooker alternatief? Vergelijking 2026',
-          description: 'Ontdek alternatieven voor Quooker met osmose filter en kokend water. Vergelijk prijs, functies en garantie van de beste merken naast Quooker.',
+          description: 'Volgens ons het beste Quooker-alternatief met zuiver water: de PureAqua 4-in-1 kraan (1.948 euro), zeer heet (circa 96 graden) en gekoeld osmosewater.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/quooker-alternatief',
         }}
       />
@@ -240,7 +240,7 @@ export default function QuookerAlternatiefPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         <QuickAnswer answer="Een goed Quooker alternatief hangt af van wat je wilt: design, een lagere prijs of gefilterd water. Wil je osmose-gezuiverd water, dan is de PureAqua 4-in-1 kraan volgens ons het sterkste alternatief: zeer heet (circa 96 graden), gekoeld en gezuiverd water uit één kraan voor 1.948 euro, circa 300 euro minder dan een Quooker Flex PRO3 met CUBE (2.240 euro). Bruisend water geeft hij niet. Installatie door een installateur is aanbevolen (PureAqua: 299 euro)." />
 
@@ -332,7 +332,7 @@ export default function QuookerAlternatiefPage() {
                     <td className="py-2.5 px-3 font-semibold text-gray-800">
                       {a.naam}
                       {a.highlight && (
-                        <span className="ml-2 text-[10px] bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full align-middle">Aanbevolen</span>
+                        <span className="ml-2 text-[10px] bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full align-middle">Onze keuze</span>
                       )}
                     </td>
                     <td className="py-2.5 px-3 text-gray-700">{a.prijs}</td>
@@ -361,7 +361,7 @@ export default function QuookerAlternatiefPage() {
             ))}
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            Prijzen indicatief, inclusief eventuele installatiekosten waar relevant. Cijfers bijgewerkt mei 2026 op basis van publieke richtprijzen.
+            Prijzen indicatief. De PureAqua-prijs is zonder installatie (optioneel 299 euro); overige richtprijzen zijn waar relevant inclusief installatie. PureAqua-cijfers gecontroleerd september 2026, overige richtprijzen mei 2026.
           </p>
         </section>
 

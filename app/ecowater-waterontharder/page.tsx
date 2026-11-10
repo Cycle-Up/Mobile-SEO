@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'EcoWater waterontharder: modellen, ervaringen en alternatief',
       description:
-        'Wat biedt een EcoWater waterontharder, voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Onafhankelijke uitleg.',
+        'Wat biedt een EcoWater waterontharder, voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Met bronnen en kanttekeningen.',
       url: 'https://waterfilterplatform.nl/ecowater-waterontharder',
       type: 'article',
       locale: 'nl_NL',
@@ -56,7 +56,7 @@ export default function EcowaterWaterontharderPage() {
           title: 'EcoWater waterontharder: modellen, ervaringen en alternatief',
           description: 'EcoWater waterontharder: wat biedt dit internationale merk, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/ecowater-waterontharder',
         }}
       />
@@ -86,8 +86,8 @@ export default function EcowaterWaterontharderPage() {
           <p className="text-gray-600 text-lg mb-6">
             <strong>EcoWater Systems</strong> is een internationaal (Amerikaans) merk voor
             waterontharders. Hieronder lees je wat EcoWater biedt, voor wie het geschikt is, waar
-            je op let bij de keuze en hoe het zich verhoudt tot alternatieven - onafhankelijk en zonder
-            verkoopprikkel.
+            je op let bij de keuze en hoe het zich verhoudt tot alternatieven. Onze eigen keuze is JOEP,
+            verkocht door PureAqua, waaraan wij gelieerd zijn.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -185,7 +185,8 @@ export default function EcowaterWaterontharderPage() {
           </p>
           <p className="text-xs text-gray-400 mt-4">
             WaterfilterPlatform verkoopt geen EcoWater-producten en ontvangt hiervoor geen vergoeding.
-            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt mei 2026.
+            JOEP, onze keuze, wordt wel verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.
+            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt november 2026.
           </p>
         </section>
 

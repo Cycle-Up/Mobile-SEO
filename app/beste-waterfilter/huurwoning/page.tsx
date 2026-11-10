@@ -11,14 +11,14 @@ import { CountertopRecommendation } from '@/components/CountertopRecommendation'
 export const metadata: Metadata = {
   title: "Beste waterfilter voor huurwoning: zonder boren of toestemming",
   description:
-    "Huurder? Compacte osmose, aanrechtfilter of filterkan: de beste filteropties voor huurwoningen zonder vaste installatie.",
+    "Huurder? Onze keuze is het PureAqua Water zuiver apparaat: osmose zonder boren of toestemming, 495 euro, heet water tot 95 graden. Plus filterkan en onderbouw.",
   alternates: {
     canonical: "https://waterfilterplatform.nl/beste-waterfilter/huurwoning",
   },
   openGraph: {
     title: "Beste waterfilter voor huurwoning: zonder boren of toestemming",
     description:
-      "Huurder? Compacte osmose, aanrechtfilter of filterkan: de beste filteropties voor huurwoningen zonder vaste installatie.",
+      "Onze keuze voor huurders: het PureAqua Water zuiver apparaat (495 euro). Omgekeerde osmose zonder boren of toestemming: stekker erin, tank vullen, klaar. Met remineralisatie en heet water tot 95 graden.",
     type: "article",
   },
 };
@@ -27,27 +27,27 @@ const faqItems = [
   {
     question: "Mag ik zonder toestemming een filter plaatsen?",
     answer:
-      "Een filterkan of aanrechtfilter dat via een adapter op de bestaande kraan wordt aangesloten, mag u zonder toestemming plaatsen. Er wordt niets aan de woning veranderd. Een onderbouw osmosefilter vereist een extra kraangat (boren) en een slangaansluiting op het leidingwerk. Dat zijn aanpassingen aan de woning en vereisen in principe toestemming van de verhuurder. Vraag dit altijd schriftelijk aan.",
+      "Een filterkan of een countertop-osmose mag u zonder toestemming gebruiken: er wordt niets aan de woning veranderd. Onze keuze, het PureAqua Water zuiver apparaat (495 euro), heeft zelfs geen aansluiting op de kraan nodig: stekker erin, tank vullen, klaar. Een onderbouw osmosefilter vraagt een slangaansluiting op het leidingwerk en een aparte osmosekraan (extra kraangat boren) of een 3-weg-kraan die uw keukenkraan vervangt. Dat zijn aanpassingen aan de woning en vereisen in principe toestemming van de verhuurder. Vraag dit altijd schriftelijk aan.",
   },
   {
     question: "Wat is het verschil met de filteropties voor een appartement?",
     answer:
-      "De filteropties voor huurwoning en appartement zijn grotendeels hetzelfde: aanrechtfilter of filterkan zonder installatie, onderbouw osmose alleen met toestemming. Het verschil is dat bij een appartement ook VvE-regels kunnen spelen. In een zelfstandige huurwoning is er uitsluitend de relatie met de verhuurder. De technische opties en kosten zijn identiek.",
+      "De filteropties voor huurwoning en appartement zijn grotendeels hetzelfde: aanrechtfilter of filterkan zonder installatie, onderbouw osmose alleen met toestemming. Het verschil is dat bij een appartement ook VvE-regels kunnen spelen. In een zelfstandige huurwoning is er uitsluitend de relatie met de verhuurder. Prijzen en filterprestaties verschillen per model, niet per woningtype.",
   },
   {
-    question: "Welk filter koop ik als ik weet dat ik binnenkort verhuist?",
+    question: "Welk filter koop ik als ik weet dat ik binnenkort verhuis?",
     answer:
-      "Kies voor een aanrechtfilter (countertop osmose) of filterkan. Beide zijn volledig verplaatsbaar en gaan eenvoudig mee naar uw volgende woning. Een aanrechtfilter met RO-membraan kost 200-350 euro en gaat 5-8 jaar mee. Vervang de filterpatronen voor de verhuizing zodat u in de nieuwe woning direct kunt beginnen.",
+      "Kies voor een countertop-osmose of een filterkan; beide verhuizen zo mee naar uw volgende woning. Onze keuze, het PureAqua Water zuiver apparaat, kost 495 euro; een AquaTru Classic kost 475 euro (zonder verwarming). Het filter van het Water zuiver apparaat gaat tot 1.200 liter of maximaal 12 maanden mee, dus vervang het kort voor de verhuizing zodat u in de nieuwe woning direct kunt beginnen.",
   },
   {
     question: "Filtert een aanrechtfilter PFAS?",
     answer:
-      "Ja, als het systeem een RO-membraan bevat. Een countertop osmosefilter met RO-technologie verwijdert PFAS voor 90-99%, lood voor 95-99% en nitraat voor 85-95%. Controleer altijd of het model een RO-membraan heeft en of het NSF/ANSI 58 gecertificeerd is. Een eenvoudig aanrechtfilter met alleen koolstoffilter (zonder RO-membraan) biedt deze bescherming niet.",
+      "Een aanrechtfilter met RO-membraan kan PFAS verminderen. Volgens de Amerikaanse EPA hoort omgekeerde osmose bij de meest effectieve technieken om PFAS te verminderen; hoeveel een specifiek apparaat haalt, hangt af van membraan, filterstaat en waterkwaliteit. Een NSF-certificaat is bij onze keuze niet aangetoond, en voor het Water zuiver apparaat is geen eigen PFAS-percentage gemeten. De EPA noemt ook actieve kool als techniek die PFAS kan verminderen, maar de prestatie verschilt sterk per filter. Een filterkan of eenvoudig koolfilter zonder onderbouwde test biedt die zekerheid niet.",
   },
   {
     question: "Wat zijn de kosten per jaar vergeleken?",
     answer:
-      "Filterkan: aanschaf 20-40 euro, patronen 30-50 euro per jaar, totaal onder 60 euro per jaar. Aanrechtfilter (countertop RO): aanschaf 200-350 euro, patronen 60-120 euro per jaar, totaal inclusief afschrijving over 6 jaar: 90-180 euro per jaar. Onderbouw osmose (met toestemming): aanschaf 300-500 euro, patronen 60-120 euro per jaar, totaal inclusief afschrijving: 110-200 euro per jaar.",
+      "Filterkan: aanschaf 20-40 euro, patronen 30-50 euro per jaar, totaal onder 60 euro per jaar. Aanrechtfilter (countertop RO): aanschaf bijvoorbeeld 475 euro (AquaTru Classic) of 495 euro (onze keuze, het Water zuiver apparaat); filterkosten verschillen per model, bij onze keuze gaat een filter tot 1.200 liter of maximaal 12 maanden mee. Onderbouw osmose (met toestemming): aanschaf 300 tot 800 euro plus installatie; ook hier verschillen de filterkosten per systeem. Een jaartotaal voor osmose noemen we bewust niet, omdat filterprijzen en levensduur per model verschillen.",
   },
 ];
 
@@ -74,8 +74,9 @@ export default function HuurwoningPage() {
         article={{
           title: "Beste waterfilter voor huurwoning: zonder boren of toestemming",
           description:
-            "Huurder? Compacte osmose, aanrechtfilter of filterkan: de beste filteropties voor huurwoningen zonder vaste installatie.",
-          datePublished: "2026-05-17",
+            "Huurder? Onze keuze is het PureAqua Water zuiver apparaat: osmose zonder boren of toestemming, 495 euro, heet water tot 95 graden. Plus filterkan en onderbouw.",
+          datePublished: "2026-05-29",
+          dateModified: "2026-11-03",
           url: "https://waterfilterplatform.nl/beste-waterfilter/huurwoning",
         }}
       />
@@ -96,13 +97,13 @@ export default function HuurwoningPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Beste waterfilter voor huurwoning
           </h1>
-          <QuickAnswer answer="Voor huurders zijn een aanrechtfilter (countertop osmose) of filterkan de beste keuzes — geen boren, geen toestemming nodig. Een aanrechtfilter filtert vergelijkbaar met een onderbouw osmosefilter en is volledig verplaatsbaar." />
+          <QuickAnswer answer="Onze keuze voor huurders is het PureAqua Water zuiver apparaat (495 euro): omgekeerde osmose zonder vaste installatie, dus geen boren en geen toestemming nodig. Stekker erin, tank vullen, klaar; het voegt mineralen toe en heeft zes temperatuurstanden tot 95 graden. Wilt u alleen een betere smaak voor weinig geld, dan volstaat een filterkan. Transparant: PureAqua, dat dit apparaat verkoopt, is gelieerd aan WaterfilterPlatform." />
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-03" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184', 'US EPA', 'Fabrikantspecificaties', 'PureAqua (prijs, september 2026)', 'bol.com (AquaTru-prijs, september 2026)']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
         <CTABanner context="osmose" />
 
         <CountertopRecommendation content="beste-waterfilter-huurwoning-countertop-aanbeveling" />
@@ -127,18 +128,24 @@ export default function HuurwoningPage() {
           </p>
 
           <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-            Aanrechtfilter als beste keuze
+            Aanrechtfilter: onze keuze voor huurders
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Een countertop osmosefilter is de beste keuze voor de meeste huurders die serieuze
-            filterprestaties willen zonder toestemming te hoeven vragen. Het systeem sluit aan
-            op de bestaande mengkraan via een standaard kraanadapter. Geen boorwerk, geen
-            loodgieterswerk, volledig verwijderbaar en mee te nemen bij verhuizing.
+            Een countertop osmosefilter is volgens ons de beste keuze voor de meeste huurders die
+            serieuze filterprestaties willen zonder toestemming te hoeven vragen. Onze keuze, het
+            Water zuiver apparaat, heeft geen enkele aansluiting nodig: stekker erin, tank vullen,
+            klaar. Andere modellen sluiten aan op de bestaande mengkraan via een standaard
+            kraanadapter. Geen boorwerk, geen loodgieterswerk, volledig verwijderbaar en mee te
+            nemen bij verhuizing.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Aanschafprijs: 200-350 euro. Jaarlijkse filterkosten: 60-120 euro. Filterprestaties:
-            PFAS 90-99%, lood 95-99%, nitraat 85-95%. Het systeem staat op het aanrecht en
-            neemt ca. 15-20 cm breedte in beslag. Meer informatie over aanrechtfilters met
+            Aanschafprijs: bijvoorbeeld 475 euro (AquaTru Classic) of 495 euro (onze keuze).
+            Filterkosten verschillen per model; bij onze keuze gaat een filter tot 1.200 liter of
+            maximaal 12 maanden mee. Volgens de Amerikaanse EPA hoort omgekeerde
+            osmose bij de meest effectieve technieken om PFAS te verminderen; hoeveel een
+            specifiek apparaat haalt, hangt af van membraan, filterstaat en waterkwaliteit. Voor
+            het Water zuiver apparaat is geen eigen PFAS-percentage gemeten. Onze keuze staat op
+            het aanrecht en meet circa 30 x 22 x 35 cm. Meer informatie over aanrechtfilters met
             RO-technologie vindt u op{" "}
             <Link
               href="/omgekeerde-osmose/kopen"
@@ -170,14 +177,15 @@ export default function HuurwoningPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             Als u van plan bent lang in de huurwoning te blijven en toestemming kunt krijgen
             van de verhuurder, is een onderbouw osmosefilter een overweging waard. Het systeem
-            zit uit het zicht onder het aanrecht, heeft een aparte gefilterde kraantap en
-            vereist minder aanrechtruimte dan een countertop model.
+            zit uit het zicht onder het aanrecht en vereist minder aanrechtruimte dan een
+            countertop model. U tapt het water uit een aparte osmosekraan, waarvoor een extra
+            kraangat nodig is, of uit een 3-weg-kraan die uw keukenkraan vervangt.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Vraag toestemming altijd schriftelijk. Geef aan dat u het kraangat bij vertrek
-            zult afdichten en het systeem volledig zult verwijderen. De meeste verhuurders
-            gaan hier mee akkoord. Aanschafprijs: 300-500 euro. Kosten installatie door een
-            loodgieter: 60-150 euro.
+            Vraag toestemming altijd schriftelijk. Geef aan dat u bij vertrek een eventueel
+            kraangat zult afdichten, de originele keukenkraan terugplaatst en het systeem
+            volledig zult verwijderen. De meeste verhuurders gaan hier mee akkoord.
+            Aanschafprijs: 300 tot 800 euro plus installatie.
           </p>
 
           <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -191,7 +199,8 @@ export default function HuurwoningPage() {
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Als u een onderbouw osmosefilter heeft geïnstalleerd met toestemming, verwijdert
-            u dit bij vertrek. Sluit het kraangat af met een blindplug (kosten: 5-10 euro) en
+            u dit bij vertrek. Sluit een extra kraangat af met een blindplug (kosten: 5-10 euro)
+            of plaats de originele keukenkraan terug, en
             sluit de wateraansluitingen onder het aanrecht terug aan op de originele
             configuratie. Documenteer dit met foto's bij oplevering.
           </p>
@@ -205,7 +214,7 @@ export default function HuurwoningPage() {
                 <tr className="bg-[#E0F2FE]">
                   <th className="border border-gray-300 px-3 py-2 text-left">Filter</th>
                   <th className="border border-gray-300 px-3 py-2 text-left">Installatie</th>
-                  <th className="border border-gray-300 px-3 py-2 text-left">Kosten/jaar</th>
+                  <th className="border border-gray-300 px-3 py-2 text-left">Kosten</th>
                   <th className="border border-gray-300 px-3 py-2 text-left">PFAS</th>
                   <th className="border border-gray-300 px-3 py-2 text-left">Lood</th>
                   <th className="border border-gray-300 px-3 py-2 text-left">Verplaatsbaar</th>
@@ -215,7 +224,7 @@ export default function HuurwoningPage() {
                 <tr>
                   <td className="border border-gray-300 px-3 py-2 font-medium">Filterkan</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">Geen</td>
-                  <td className="border border-gray-300 px-3 py-2">&lt;60 euro</td>
+                  <td className="border border-gray-300 px-3 py-2">&lt;60 euro per jaar</td>
                   <td className="border border-gray-300 px-3 py-2 text-red-600">Nee</td>
                   <td className="border border-gray-300 px-3 py-2 text-red-600">Nee</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">Ja</td>
@@ -233,17 +242,17 @@ export default function HuurwoningPage() {
                 <tr className="bg-gray-50">
                   <td className="border border-gray-300 px-3 py-2 font-medium">Aanrechtfilter (countertop RO)</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">Geen boren (tank vullen of kraanadapter)</td>
-                  <td className="border border-gray-300 px-3 py-2">90-180 euro</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">90-99%</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">95-99%</td>
+                  <td className="border border-gray-300 px-3 py-2">Aanschaf bijv. 475 euro (AquaTru Classic); filterkosten per model</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Vermindert (RO); % per apparaat</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Vermindert (RO); % per apparaat</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">Ja</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-300 px-3 py-2 font-medium">Onderbouw osmose (met toestemming)</td>
-                  <td className="border border-gray-300 px-3 py-2 text-yellow-600">Boren + toestemming</td>
-                  <td className="border border-gray-300 px-3 py-2">110-200 euro</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">90-99%</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">95-99%</td>
+                  <td className="border border-gray-300 px-3 py-2 text-yellow-600">Kraangat of 3-weg-kraan + toestemming</td>
+                  <td className="border border-gray-300 px-3 py-2">Aanschaf 300 tot 800 euro plus installatie; filterkosten per systeem</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Vermindert (RO); % per apparaat</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Vermindert (RO); % per apparaat</td>
                   <td className="border border-gray-300 px-3 py-2 text-yellow-600">Na verwijdering</td>
                 </tr>
               </tbody>
@@ -266,7 +275,7 @@ export default function HuurwoningPage() {
         </section>
 
         <div className="mt-8 p-5 bg-gray-50 rounded-xl border border-gray-200">
-          <h3 className="font-semibold text-[#003F5C] mb-3">Verwante paginas</h3>
+          <h3 className="font-semibold text-[#003F5C] mb-3">Verwante pagina&apos;s</h3>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/beste-waterfilter" className="text-[#005F8A] hover:underline">

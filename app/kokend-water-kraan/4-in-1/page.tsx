@@ -25,7 +25,7 @@ const faqItems = [
   {
     question: 'Wat doet een 4-in-1 kokend water kraan precies?',
     answer:
-      'Een 4-in-1 kraan levert vier temperatuurzones uit één kraan: koud leidingwater, warm water (voor thee op ± 60–80 °C), heet water (± 90 °C) en kokend water (100 °C of nagenoeg 100 °C). De kraan is verbonden met een geïsoleerde boiler onder het aanrecht die het water op temperatuur houdt. Sommige modellen bieden ook gefilterd water — dat maakt het technisch een 5-in-1 systeem.',
+      'Een 4-in-1 kraan levert vier temperatuurzones uit één kraan: koud leidingwater, warm water (voor thee op ± 60–80 °C), heet water (± 90 °C) en kokend water (100 °C of nagenoeg 100 °C). De kraan is verbonden met een geïsoleerde boiler onder het aanrecht die het water op temperatuur houdt. Biedt een kraan daarnaast gefilterd water, dan tellen veel merken dat als vijfde functie. De PureAqua 4-in-1 telt anders: gewoon warm en koud kraanwater, plus osmose-gezuiverd water op kamertemperatuur, gekoeld (circa 5 °C) en zeer heet (circa 96 °C, dus niet kokend).',
   },
   {
     question: 'Wat is het verschil tussen 2-in-1, 3-in-1 en 4-in-1 kranen?',
@@ -35,7 +35,7 @@ const faqItems = [
   {
     question: 'Is een 4-in-1 kraan met RO-filtratie een 5-in-1?',
     answer:
-      'Technisch gezien wel. Wanneer een 4-in-1 kraan wordt gekoppeld aan een omgekeerde osmose systeem, levert het koud gefilterd, warm gefilterd, heet gefilterd en kokend gefilterd water — plus eventueel ongefilterd kraanwater als bypass. De term "4-in-1 + RO" geeft aan dat alle vier functies gefilterd zijn via osmose.',
+      'Hoe je het telt, verschilt per merk. Tel je het gezuiverde water als extra functie, dan wel. De PureAqua 4-in-1 geeft gewoon warm en koud kraanwater, plus osmose-gezuiverd water op kamertemperatuur, gekoeld (circa 5 °C) en zeer heet (circa 96 °C). Niet alles is dus gefilterd: alleen het drink- en kookwater gaat door het membraan, het gewone warme en koude kraanwater niet.',
   },
   {
     question: 'Hoeveel energie verbruikt een 4-in-1 boiler?',
@@ -106,7 +106,7 @@ export default function KokendWaterKraan4In1Page() {
           description:
             'Wat een 4-in-1 tap biedt, vergelijking 2-in-1 en 3-in-1, RO als 5e functie en de beste 4-in-1+RO keuze voor 2026.',
           datePublished: '2025-09-01',
-          dateModified: '2026-05-14',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/kokend-water-kraan/4-in-1',
         }}
       />
@@ -156,8 +156,8 @@ export default function KokendWaterKraan4In1Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-03" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
         <FourInOneRecommendation content="kokend-water-kraan-4-in-1-aanbeveling" />
         <SgsResults />
         {/* Inhoudsopgave */}

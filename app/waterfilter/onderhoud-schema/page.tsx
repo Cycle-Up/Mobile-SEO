@@ -6,7 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Waterfilter onderhoud schema: wanneer vervangen? | 2026',
   description:
-    'Compleet onderhoud schema voor waterfilters: sedimentfilter (3-6m), koolstoffilter (6-12m), RO-membraan (2-5j), UV-lamp (12m). Checklist op basis van.',
+    'Onderhoudsschema voor waterfilters: sedimentfilter (3-6m), koolstoffilter (6-12m), RO-membraan (2-5j), UV-lamp (12m), plus een checklist per periode.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/onderhoud-schema' },
   openGraph: {
     title: 'Waterfilter onderhoud schema: wanneer vervangen?',
@@ -36,17 +36,17 @@ const faqItems = [
   {
     question: 'Heeft waterhardheid invloed op de onderhoudsfrequentie?',
     answer:
-      'Ja, zeker. In hardwatergebieden (boven 15 °dH, zoals veel delen van Zuid- en Oost-Nederland) raken filters sneller verzadigd. Sediment- en koolstoffilters moeten dan vaker gewisseld worden — soms al na 3 maanden. Het RO-membraan is robuuster, maar ook dat veroudert sneller bij hardwater zonder goed werkende voorfilters.',
+      'Ja, zeker. In hardwatergebieden (boven 15 °dH, zoals veel delen van Zuid- en Oost-Nederland) raken filters sneller verzadigd. Sediment- en koolstoffilters moeten dan vaker gewisseld worden, soms al na 3 maanden. Het RO-membraan is robuuster, maar ook dat veroudert sneller bij hardwater zonder goed werkende voorfilters.',
   },
   {
     question: 'Kan ik de filters zelf vervangen?',
     answer:
-      'Ja, de meeste filterpatronen zijn ontworpen voor eenvoudige doe-het-zelf vervanging. Je draait de filterbehuizing open met de meegeleverde sleutel, verwijdert het oude patroon en plaatst het nieuwe. Spoel het systeem daarna 5 tot 10 minuten door voordat je het water drinkt. Een 4-in-1 systeem heeft soms slechts één jaarlijkse module.',
+      'Ja, de meeste filterpatronen zijn ontworpen voor eenvoudige doe-het-zelf vervanging. Je draait de filterbehuizing open met de meegeleverde sleutel, verwijdert het oude patroon en plaatst het nieuwe. Spoel het systeem daarna 5 tot 10 minuten door voordat je het water drinkt. Ook een 4-in-1 kraan met osmose heeft meerdere filters: bij de PureAqua 4-in-1 wissel je voorfilter en remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar.',
   },
   {
     question: 'Wat zijn de tekenen dat mijn filter aan vervanging toe is?',
     answer:
-      'Signalen zijn: verminderde doorstroom of waterdruk, verandering in smaak of geur van het water, stijgende TDS-waarde (meetbaar met een TDS-meter) en verkleuring van de filterpatroon. Bij een UV-systeem: de lamp brandt op maar UV-output is niet visueel zichtbaar — vervang op interval.',
+      'Signalen zijn: verminderde doorstroom of waterdruk, verandering in smaak of geur van het water, stijgende TDS-waarde (meetbaar met een TDS-meter) en verkleuring van de filterpatroon. Bij een UV-systeem: de lamp brandt op maar UV-output is niet visueel zichtbaar, dus vervang op interval.',
   },
 ];
 
@@ -80,7 +80,7 @@ const schema = [
     interval: '12 maanden',
     intervalHard: '12 maanden',
     intervalZacht: '12 maanden',
-    indicatie: 'Op interval — UV-output niet visueel zichtbaar',
+    indicatie: 'Op interval, UV-output niet visueel zichtbaar',
     doel: 'Bacteriën, virussen inactiveren',
   },
   {
@@ -117,7 +117,7 @@ export default function WaterfilterOnderhoudSchemaPage() {
         article={{
           title: 'Waterfilter onderhoud schema: wanneer vervangen?',
           description:
-            'Compleet onderhoud schema voor waterfilters met filterwisselintervallen per type, invloed van waterhardheid en downloadbare checklist.',
+            'Onderhoudsschema voor waterfilters met filterwisselintervallen per type, invloed van waterhardheid en een onderhoudschecklist per periode.',
           datePublished: '2026-01-10',
           dateModified: '2026-05-14',
           url: 'https://waterfilterplatform.nl/waterfilter/onderhoud-schema',
@@ -147,7 +147,7 @@ export default function WaterfilterOnderhoudSchemaPage() {
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
             Een waterfilter werkt alleen goed als je het op tijd onderhoudt. Sedimentfilters,
-            koolstoffilters, RO-membranen en UV-lampen hebben elk een eigen wisselinterval —
+            koolstoffilters, RO-membranen en UV-lampen hebben elk een eigen wisselinterval,
             afhankelijk van jouw watertype en gebruik. Op deze pagina vind je een compleet
             onderhoudsschema plus een praktische checklist.
           </p>
@@ -291,8 +291,8 @@ export default function WaterfilterOnderhoudSchemaPage() {
                 tekst: 'Een TDS-meter kost circa €10–15 en geeft direct inzicht in de filterprestaties. Noteer de waarden zodat je trends herkent. Een plotselinge stijging van de TDS in het gefilterde water wijst op een defect membraan of verouderde filters.',
               },
               {
-                titel: 'Schrijf de wisseldate op het patroon',
-                tekst: 'Schrijf met een stift de datum van plaatsing op elke nieuwe filterpatroon. Zo vergeet je nooit wanneer een filter moet worden vervangen — ook handig als een monteur of andere huisgenoot het systeem beheert.',
+                titel: 'Schrijf de wisseldatum op het patroon',
+                tekst: 'Schrijf met een stift de datum van plaatsing op elke nieuwe filterpatroon. Zo vergeet je nooit wanneer een filter moet worden vervangen. Ook handig als een monteur of andere huisgenoot het systeem beheert.',
               },
               {
                 titel: 'Koop filterpakketten vooruit',
@@ -303,8 +303,8 @@ export default function WaterfilterOnderhoudSchemaPage() {
                 tekst: 'Staat het systeem langer dan 2 weken stil (vakantie)? Spoel het dan bij terugkomst grondig door voor gebruik. Bij stilstand langer dan een maand is een volledige sanitatie met desinfectiemiddel aanbevolen.',
               },
               {
-                titel: 'Overweeg een 4-in-1 systeem voor minder onderhoud',
-                tekst: 'Geïntegreerde 4-in-1 systemen gebruiken één filtermodule die je jaarlijks in één handeling wisselt. Minder gedoe, minder kans op vergeten wisselintervallen.',
+                titel: 'Ook een 4-in-1 kraan heeft een filterschema',
+                tekst: 'Ook een 4-in-1 kraan met osmose heeft meerdere filters: bij de PureAqua 4-in-1 wissel je voorfilter en remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar. Zet die momenten in je agenda, net als bij een los osmosesysteem.',
               },
             ].map(tip => (
               <div key={tip.titel} className="flex gap-3 items-start">
@@ -349,7 +349,7 @@ export default function WaterfilterOnderhoudSchemaPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { href: '/waterfilter/vervangen', title: 'Waterfilter vervangen', desc: 'Stap-voor-stap handleiding voor het wisselen van filterpatronen.' },
-              { href: '/omgekeerde-osmose/kopen', title: 'Osmose filter kopen', desc: 'Onafhankelijk overzicht van de beste RO-systemen voor thuis.' },
+              { href: '/omgekeerde-osmose/kopen', title: 'Osmose filter kopen', desc: 'Overzicht van osmosesystemen voor thuis, met onze keuze (The Source, via PureAqua) en de criteria.' },
               { href: '/waterhardheid/testen', title: 'Waterhardheid testen', desc: 'Hoe meet je de waterhardheid thuis? Methoden en nauwkeurigheid.' },
               { href: '/osmose-filter/prijs', title: 'Osmosefilter prijs 2026', desc: 'Aanschaf- en jaarkosten van alle prijsklassen vergeleken.' },
             ].map(l => (

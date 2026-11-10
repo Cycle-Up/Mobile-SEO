@@ -8,11 +8,11 @@ import { MethodologyBadge } from "@/components/MethodologyBadge";
 
 export const metadata: Metadata = {
   title: "Waterfilter keuzehulp: welk filter past bij jouw situatie?",
-  description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Zonder verkoopadvies.",
+  description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Met criteria en openheid over onze band met PureAqua.",
   alternates: { canonical: "https://waterfilterplatform.nl/keuzehulp" },
   openGraph: {
     title: "Waterfilter keuzehulp: welk filter past bij jouw situatie?",
-    description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Zonder verkoopadvies.",
+    description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Met criteria en openheid over onze band met PureAqua.",
     type: "website",
   },
 };
@@ -42,14 +42,6 @@ export default function KeuzehulpPage() {
         ]}
       />
       <SchemaOrg
-        type="FAQPage"
-        faqItems={[
-          { question: "Welk waterfilter heb ik nodig bij hard water?", answer: "Bij hard water (boven 14 °dH) zijn de beste opties een ionenwisselingsontharder voor het hele huis, of een omgekeerde osmosefilter aan de keukenkraan. Een filterkan of actief-koolfilter verwijdert geen kalk. Controleer uw waterhardheid op de pagina voor uw gemeente." },
-          { question: "Welk waterfilter is veilig voor babymelk?", answer: "Voor babymelk wordt een omgekeerde osmosefilter aanbevolen: het verwijdert nitraat, lood en PFAS die schadelijk kunnen zijn voor baby's. Gebruik altijd gefilterd water dat is opgewarmd, niet afgekoeld gekookt leidingwater zonder filtratie." },
-          { question: "Kan ik in een huurwoning een waterfilter installeren?", answer: "Ja. In een huurwoning zijn er opties zonder boren: een filterkan, een aanrechtfilter (zonder gat in het aanrecht) of een osmosefilter met een aparte kraan die met een klem aan de bestaande kraan wordt bevestigd. Vraag altijd toestemming voor permanente aanpassingen." },
-        ]}
-      />
-      <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: "Home", url: "https://waterfilterplatform.nl" },
@@ -60,9 +52,9 @@ export default function KeuzehulpPage() {
         type="Article"
         article={{
           title: "Waterfilter keuzehulp: welk filter past bij jouw situatie?",
-          description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Zonder verkoopadvies.",
+          description: "Stap-voor-stap keuzehulp voor waterfilters. Per situatie: hard water, PFAS, baby, huurwoning en budget. Met criteria en openheid over onze band met PureAqua.",
           datePublished: "2026-05-17",
-          dateModified: "2026-05-22",
+          dateModified: "2026-11-03",
           url: "https://waterfilterplatform.nl/keuzehulp",
         }}
       />
@@ -76,7 +68,7 @@ export default function KeuzehulpPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Waterfilter keuzehulp: welk filter past bij jouw situatie?
           </h1>
-          <QuickAnswer question="Welk waterfilter past bij mijn situatie?" answer="Het juiste waterfilter hangt af van uw specifieke situatie: de waterhardheid in uw gemeente, eventuele verontreinigingen zoals PFAS of lood, uw woonsituatie (koop of huur) en uw budget. Een osmosefilter biedt de breedste bescherming en verwijdert kalk, PFAS, lood en nitraat. Een waterontharder pakt alleen kalk aan voor het hele huis. Een filterkan volstaat voor smaak en chloor. Deze keuzehulp leidt u per situatie naar het meest passende systeem, zonder verborgen verkoopadvies." />
+          <QuickAnswer question="Welk waterfilter past bij mijn situatie?" answer="Het juiste waterfilter hangt af van uw specifieke situatie: de waterhardheid in uw gemeente, eventuele verontreinigingen zoals PFAS of lood, uw woonsituatie (koop of huur) en uw budget. Een osmosefilter biedt de breedste bescherming en verwijdert kalk, PFAS, lood en nitraat. Een waterontharder pakt alleen kalk aan voor het hele huis. Een filterkan volstaat voor smaak en chloor. Deze keuzehulp leidt u per situatie naar het meest passende systeem, met de criteria erbij." />
         </div>
       </section>
       <ClusterHub
@@ -94,8 +86,11 @@ export default function KeuzehulpPage() {
             u in een risicogebied voor PFAS of in een woning van voor 1960 met mogelijke loden leidingen?
             Heeft u een baby of jong gezin? Woont u in een huurwoning zonder mogelijkheid tot boren? Of
             zoekt u de beste keuze binnen een bepaald budget? Per situatie vindt u een eerlijke analyse
-            van de opties, een vergelijkingstabel en concrete aanbevelingen, zonder merkvoorkeur of
-            verborgen verkoopboodschap. Gebruik de sub-pagina die op uw situatie aansluit als startpunt.
+            van de opties en concrete aanbevelingen, op de meeste pagina's met een vergelijkingstabel.
+            Noemen we een product dat PureAqua verkoopt (zoals JOEP, het Water zuiver apparaat of
+            PureFilter Mineral+), dan staat op die pagina dat wij aan PureAqua gelieerd zijn; is het onze
+            keuze, dan staan ook de criteria erbij. Gebruik de sub-pagina die op uw situatie aansluit als
+            startpunt.
           </p>
         </>}
         pages={cluster.pages}
@@ -106,6 +101,9 @@ export default function KeuzehulpPage() {
         relatedClusters={cluster.relatedClusters}
       />
       <div className="max-w-4xl mx-auto px-4 pb-10">
+        <p className="text-xs text-gray-500 mb-2">
+          Laatst bijgewerkt: <time dateTime="2026-11-03">3 november 2026</time>
+        </p>
         <MethodologyBadge lastReviewed="2026-05-22" />
         <section className="mt-8 bg-[#E0F2FE] border border-[#BAE6FD] rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex-1">

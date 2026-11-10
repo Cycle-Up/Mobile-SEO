@@ -8,11 +8,11 @@ import { PureFilterCTA } from '@/components/PureFilterCTA';
 
 export const metadata: Metadata = {
   title: "PFAS of lood in drinkwater: wanneer is osmose de beste keuze?",
-  description: "Aangetoonde PFAS of lood in leidingwater? Osmose verwijdert 90-99% PFAS en 95-99% lood. Keuzegids voor verontreinigde situaties.",
+  description: "Aangetoonde PFAS of lood in leidingwater? Osmose verwijdert 85-99% PFAS en 95-99% lood. Keuzegids voor verontreinigde situaties.",
   alternates: { canonical: "https://waterfilterplatform.nl/keuzehulp/pfas-lood" },
   openGraph: {
     title: "PFAS of lood in drinkwater: wanneer is osmose de beste keuze?",
-    description: "Aangetoonde PFAS of lood in leidingwater? Osmose verwijdert 90-99% PFAS en 95-99% lood. Keuzegids voor verontreinigde situaties.",
+    description: "Aangetoonde PFAS of lood in leidingwater? Osmose verwijdert 85-99% PFAS en 95-99% lood. Keuzegids voor verontreinigde situaties.",
     type: "article",
   },
 };
@@ -29,7 +29,7 @@ const faqItems = [
       "Omgekeerde osmose is de meest effectieve thuisfilteroptie voor PFAS. Het RO-membraan (porieen 0,0001 micron) verwijdert 90-99% van langketenige PFAS (PFOS, PFOA) en 85-95% van kortketenige PFAS (GenX, PFBS). Actief kool adsorbeert deels PFAS (70-90% voor langketen), maar bij verzadiging kan een koolfilter PFAS teruggeven. Filterkannen bieden geen bescherming tegen PFAS.",
   },
   {
-    question: "Mijn huis is van voor 1960 -- hoe weet ik of ik loden leidingen heb?",
+    question: "Mijn huis is van voor 1960: hoe weet ik of ik loden leidingen heb?",
     answer:
       "U kunt dit op drie manieren nagaan. Ten eerste: raadpleeg de bouwdossiers van uw gemeente of vraag uw verhuurder. Ten tweede: laat uw leidingwater testen bij een gecertificeerd laboratorium (50-100 euro); een verhoogd loodgehalte bevestigt de aanwezigheid van lood in uw installatie. Ten derde: schakel een loodgieter in om de leidingen visueel te beoordelen. Loden leidingen zijn grijs, zacht en buigzaam; ze laten een zilverachtige streep achter als u er met een mes over krast.",
   },
@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: "Wat kost een osmosefilter per jaar alles inbegrepen?",
     answer:
-      "Een osmosefilter kost bij aanschaf 200-600 euro. De jaarlijkse gebruikskosten bestaan uit: voorfilters en nafilters (40-70 euro per jaar), membraanvervanging om de 2-3 jaar (50-100 euro gedeeld door levensduur), en iets extra waterverbruik door het concentraat (2-4 liter per liter gefilterd water). Totale jaarkosten liggen op 60-120 euro na aanschaf, afhankelijk van het model en het waterverbruik.",
+      "Een los onderbouw-osmosesysteem kost bij aanschaf doorgaans 300 tot 800 euro plus installatie. De jaarlijkse gebruikskosten bestaan uit: voorfilters en nafilters (40-70 euro per jaar), membraanvervanging om de 2-3 jaar (50-100 euro gedeeld door levensduur), en iets extra waterverbruik door het concentraat (bij oudere systemen 2 tot 4 liter per liter gefilterd water, bij moderne systemen met permeaatpomp of drukbooster circa 1 liter per liter of minder). Voor zo'n los systeem liggen de totale jaarkosten op 60-120 euro na aanschaf, afhankelijk van het model en het waterverbruik. Bij een systeem met 3-weg-kraan komt de kraan erbij en liggen de filterkosten hoger: The Source van PureAqua kost 395 euro, de 3-weg-kraan 540 tot 840 euro en de filters 149 euro per jaar. WaterfilterPlatform is gelieerd aan PureAqua.",
   },
   {
     question: "Is de combinatie PFAS + lood reden voor extra bezorgdheid?",
@@ -67,7 +67,7 @@ export default function PfasLoodPage() {
         article={{
           title: "PFAS of lood in drinkwater: wanneer is osmose de beste keuze?",
           description:
-            "Aangetoonde PFAS of lood in leidingwater? Osmose verwijdert 90-99% PFAS en 95-99% lood. Keuzegids voor verontreinigde situaties.",
+            "Aangetoonde PFAS of lood in leidingwater? Osmose verwijdert 85-99% PFAS en 95-99% lood. Keuzegids voor verontreinigde situaties.",
           datePublished: "2026-05-17",
           url: "https://waterfilterplatform.nl/keuzehulp/pfas-lood",
         }}
@@ -118,12 +118,12 @@ export default function PfasLoodPage() {
             Wat verwijdert omgekeerde osmose?
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Een RO-membraan heeft porieen van 0,0001 micron -- kleiner dan alle opgeloste ionen en
+            Een RO-membraan heeft porieen van 0,0001 micron, kleiner dan alle opgeloste ionen en
             de meeste organische verbindingen. Dat leidt tot de volgende verwijderingspercentages:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
             <li>
-              <strong>PFAS langketen (PFOS, PFOA, C8+):</strong> 95-99%
+              <strong>PFAS langketen (PFOS, PFOA, C8+):</strong> 90-99%
             </li>
             <li>
               <strong>PFAS kortketen (GenX, PFBS, C4-C7):</strong> 85-95%
@@ -152,7 +152,7 @@ export default function PfasLoodPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             Omgekeerde osmose is breed effectief, maar heeft grenzen. Enkele vluchtige organische
             stoffen (VOS) zoals chloroform zijn kleiner dan de membraanporieen en kunnen gedeeltelijk
-            passeren -- een actief-koolnafilter pakt deze aan, en de meeste kwalitatieve osmosesystemen
+            passeren. Een actief-koolnafilter pakt deze aan, en de meeste kwalitatieve osmosesystemen
             bevatten standaard een koolstofnafilter. Sommige bestrijdingsmiddelen met een zeer laag
             molecuulgewicht worden minder goed tegengehouden, hoewel de meeste pesticiden
             (molecuulgewicht 200-1000 Da) wel effectief worden verwijderd.
@@ -270,7 +270,7 @@ export default function PfasLoodPage() {
             </Link>
             <Link href="/filtertechnieken/omgekeerde-osmose" className="block border border-gray-200 rounded-lg p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <h3 className="font-semibold text-[#005F8A] mb-1">Omgekeerde osmose verwijdert PFAS en lood</h3>
-              <p className="text-sm text-gray-600">Waarom RO de meest effectieve filtertechniek is voor PFAS, lood en zware metalen (95-99% verwijdering).</p>
+              <p className="text-sm text-gray-600">Waarom RO de meest effectieve filtertechniek is voor PFAS, lood en zware metalen (PFAS 85-99%, lood 95-99%).</p>
             </Link>
           </div>
         </section>
@@ -283,7 +283,7 @@ export default function PfasLoodPage() {
           content="keuzehulp-pfas-lood-cta"
           label="Bekijk The Source (RO-systeem)"
           title="Zorgen over PFAS of lood?"
-          sub="Omgekeerde osmose verwijdert PFAS en lood tot circa 99 procent. Bekijk The Source bij onze partner PureAqua."
+          sub="Omgekeerde osmose vermindert PFAS en lood sterk. Eigen labwaarden van The Source staan niet in de productgegevens die wij controleerden. The Source, het osmosesysteem van onze partner PureAqua, kost 395 euro, plus een 3-weg-kraan van 540 tot 840 euro en filters van 149 euro per jaar."
         />
 
         <CTABanner context="osmose" />

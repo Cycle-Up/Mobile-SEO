@@ -840,8 +840,9 @@ export default function WaterOntharderPage() {
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Waterontharder-merken</h2>
           <p className="text-gray-600 text-sm mb-4">
-            Bekende merken op de Nederlandse en Belgische markt. Neutrale uitleg per merk, zonder
-            verkoopprikkel - beoordeel altijd op de juiste capaciteit, certificering en service.
+            Bekende merken op de Nederlandse en Belgische markt, met uitleg per merk. Onze keuze is
+            JOEP; JOEP en AquaCell worden verkocht door PureAqua, waaraan wij gelieerd zijn.
+            Beoordeel altijd op de juiste capaciteit, certificering en service.
           </p>
           <div className="flex flex-wrap gap-2">
             {[

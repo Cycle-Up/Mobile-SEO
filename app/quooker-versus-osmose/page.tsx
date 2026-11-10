@@ -5,16 +5,17 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 
 export const metadata: Metadata = {
   title: 'Quooker vs osmose filter: wat filtert meer en wat kost het? Vergelijking 2026',
   description:
-    'Quooker of osmose filter — wat zijn de echte verschillen? Vergelijking op filterwerkzaamheid, kosten, installatie en voor wie elk systeem geschikt is.',
+    'Quooker of osmose filter: wat zijn de echte verschillen? Vergelijking op filterwerkzaamheid, kosten, installatie en voor wie elk systeem geschikt is.',
   alternates: { canonical: 'https://waterfilterplatform.nl/quooker-versus-osmose' },
   openGraph: {
     title: 'Quooker vs osmose filter: wat filtert meer en wat kost het? Vergelijking 2026',
     description:
-      'Quooker of osmose filter — wat zijn de echte verschillen? Vergelijking op filterwerkzaamheid, kosten, installatie en voor wie elk systeem geschikt is.',
+      'Quooker of osmose filter: wat zijn de echte verschillen? Vergelijking op filterwerkzaamheid, kosten, installatie en voor wie elk systeem geschikt is.',
     url: 'https://waterfilterplatform.nl/quooker-versus-osmose',
     type: 'article',
     locale: 'nl_NL',
@@ -80,8 +81,9 @@ export default function QuookerVersusOsmosePage() {
         article={{
           title: 'Quooker vs osmose filter: wat filtert meer en wat kost het? Vergelijking 2026',
           description:
-            'Quooker of osmose filter — wat zijn de echte verschillen? Vergelijking op filterwerkzaamheid, kosten, installatie en voor wie elk systeem geschikt is.',
+            'Quooker of osmose filter: wat zijn de echte verschillen? Vergelijking op filterwerkzaamheid, kosten, installatie en voor wie elk systeem geschikt is.',
           datePublished: '2026-04-10',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/quooker-versus-osmose',
         }}
       />
@@ -99,7 +101,8 @@ export default function QuookerVersusOsmosePage() {
           <p className="text-gray-600 text-lg mb-6">
             Quooker en osmose zijn twee fundamenteel verschillende systemen. De Quooker filtert via actief kool en levert kokend water;
             een osmose filter zuivert via een RO-membraan en verwijdert 95–99% van vrijwel alle verontreinigingen.
-            Op deze pagina vergelijken we beide systemen onafhankelijk op filterwerkzaamheid, kosten, installatie en geschiktheid per situatie.
+            Op deze pagina vergelijken we beide systemen op filterwerkzaamheid, kosten, installatie en geschiktheid per situatie.
+            WaterfilterPlatform is gelieerd aan PureAqua, dat zowel Quooker als osmosesystemen verkoopt, waaronder de PureAqua 4-in-1 kraan en het Water zuiver apparaat.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -125,8 +128,8 @@ export default function QuookerVersusOsmosePage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-03" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         <QuickAnswer answer="Een Quooker filtert alleen chloor en geur via actief kool. Een osmosefilter verwijdert 95–99% van nitraten, PFAS, zware metalen, kalk en microplastics. Voor smaakverbetering volstaat de Quooker; voor echt puur drinkwater of hard water biedt osmose aanzienlijk meer. Je kunt osmose ook combineren mét een Quooker." />
 
@@ -163,8 +166,12 @@ export default function QuookerVersusOsmosePage() {
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed text-sm">
-            De twee technologieën zijn complementair: een Quooker verwarmt snel tot 100°C; osmose zuivert grondig maar levert koud water.
-            Combineren is mogelijk en levert het beste van beide werelden — zie verderop op deze pagina.
+            De twee technologieën zijn complementair: een Quooker verwarmt snel tot 100°C; een osmosefilter onder het aanrecht zonder verwarming zuivert grondig maar levert water op kraantemperatuur.
+            Er zijn ook osmosesystemen met heet water: de PureAqua 4-in-1 geeft osmose-gezuiverd water zeer heet (circa 96 graden) en gekoeld,
+            en het{' '}
+            <Link href="/countertop-osmose" className="text-[#005F8A] underline">PureAqua Water zuiver apparaat</Link>{' '}
+            verwarmt osmosewater zonder vaste installatie tot maximaal 95 graden.
+            Combineren is mogelijk en levert het beste van beide werelden; zie verderop op deze pagina.
           </p>
         </section>
 
@@ -181,7 +188,7 @@ export default function QuookerVersusOsmosePage() {
                 <tr className="bg-[#E0F2FE]">
                   <th className="text-left py-3 px-3 font-semibold text-[#003F5C]">Criterium</th>
                   <th className="py-3 px-3 font-semibold text-[#003F5C] text-left">Quooker FILTER/CUBE</th>
-                  <th className="py-3 px-3 font-semibold text-[#003F5C] text-left">Osmose filter (standalone RO)</th>
+                  <th className="py-3 px-3 font-semibold text-[#003F5C] text-left">Osmose filter (standalone RO, tenzij anders vermeld)</th>
                 </tr>
               </thead>
               <tbody>
@@ -195,7 +202,7 @@ export default function QuookerVersusOsmosePage() {
                   { criterium: 'Bacteriën', quooker: '✗', osmose: '✓ (membraan filtert vrijwel alle bacteriën)' },
                   { criterium: 'Microplastics', quooker: '✗', osmose: '✓ (RO-membraan <0,0001 µm)' },
                   { criterium: 'Zware metalen', quooker: '✗', osmose: '✓ 95–99%' },
-                  { criterium: 'Kokend water (100°C)', quooker: '✓', osmose: '✗ (apart systeem nodig)' },
+                  { criterium: 'Heet water', quooker: '✓ kokend (100°C)', osmose: '✗ bij een osmosefilter zonder verwarming; ✓ tot maximaal 95°C bij het Water zuiver apparaat; ✓ zeer heet (circa 96°C) bij de 4-in-1 kraan van PureAqua' },
                   { criterium: 'Bruisend water', quooker: '✓ (met CUBE)', osmose: '✗ (ook niet bij de PureAqua 4-in-1)' },
                   { criterium: 'Gekoeld water', quooker: '✓ (met CUBE, 4°C)', osmose: '✓ (bij de PureAqua 4-in-1, circa 5°C)' },
                   { criterium: 'Aanschafprijs', quooker: '€1.000–1.800', osmose: '€150–500' },
@@ -416,6 +423,7 @@ export default function QuookerVersusOsmosePage() {
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 osmose kraan</Link> of bekijk de brede vergelijking in ons artikel over de{' '}
             <Link href="/quooker-alternatief" className="text-[#005F8A] underline">beste Quooker alternatieven van 2026</Link>.
           </p>
+          <AffiliateDisclosure className="mt-4" />
         </section>
 
         {/* FAQ */}

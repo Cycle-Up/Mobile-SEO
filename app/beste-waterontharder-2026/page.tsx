@@ -18,7 +18,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Beste waterontharder 2026: onze keuze is JOEP',
       description:
-        'Welke waterontharder past in 2026 bij jouw huishouden en waterhardheid? Shortlist per profiel, selectiecriteria en 5-jaars kosten.',
+        'Onze keuze voor 2026 is de JOEP waterontharder: zeer compact (48 x 27 x 48,5 cm), tot 5 m3 per uur, 20 jaar fabrieksgarantie op de hars en 1.998 euro compleet geïnstalleerd. Plus shortlist per profiel en 5-jaarskosten.',
       url: 'https://waterfilterplatform.nl/beste-waterontharder-2026',
       type: 'article',
       locale: 'nl_NL',
@@ -154,7 +154,7 @@ export default function BesteWaterontharder2026Page() {
           title: 'Beste waterontharder 2026: onze keuze is JOEP (+ shortlist)',
           description: 'Beste waterontharder 2026: onze keuze is de JOEP (1.998 euro geïnstalleerd). Plus shortlist per situatie, merken, zout vs zoutloos en kosten over 5 jaar.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-09-24',
           url: 'https://waterfilterplatform.nl/beste-waterontharder-2026',
         }}
       />
@@ -201,7 +201,8 @@ export default function BesteWaterontharder2026Page() {
             Welke <strong>waterontharder</strong> past in 2026 het beste bij jouw huishouden? Dat hangt
             af van je waterhardheid, het aantal personen en je ruimte. We geven een{' '}
             <strong>shortlist per profiel</strong>, de belangrijkste selectiecriteria en de kosten over
-            vijf jaar - zonder merkvoorkeur.
+            vijf jaar. Onze keuze is JOEP (1.998 euro compleet geïnstalleerd), verkocht door PureAqua,
+            waaraan wij gelieerd zijn; de criteria en kanttekeningen staan erbij.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -222,7 +223,7 @@ export default function BesteWaterontharder2026Page() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-09-24" />
 
         <QuickAnswer
           question="Wat is de beste waterontharder in 2026?"
@@ -234,8 +235,8 @@ export default function BesteWaterontharder2026Page() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Shortlist per profiel</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
-            In plaats van een enkele winnaar kiezen we het beste systeemtype per situatie. Zo vind je
-            sneller wat bij jouw huishouden past.
+            Hieronder per profiel het beste systeemtype; voor gezinnen met hard water is dat JOEP
+            (zie hierboven).
           </p>
           <div className="space-y-3">
             {picks.map(p => (
@@ -244,12 +245,12 @@ export default function BesteWaterontharder2026Page() {
                   <p className="font-bold text-gray-900">
                     {p.profiel}
                     {p.highlight && (
-                      <span className="ml-2 text-[10px] bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full align-middle">Beste prijs-prestatie</span>
+                      <span className="ml-2 text-[10px] bg-[#005F8A] text-white px-1.5 py-0.5 rounded-full align-middle">Onze keuze: sterke prijs-prestatie</span>
                     )}
                   </p>
                   <span className="font-semibold text-[#005F8A] shrink-0 text-sm">{p.prijs}</span>
                 </div>
-                <p className="text-sm text-gray-700"><strong>{p.type}</strong> - {p.capaciteit}</p>
+                <p className="text-sm text-gray-700"><strong>{p.type}</strong>. Capaciteit: {p.capaciteit}</p>
                 <p className="text-sm text-gray-600 mt-1">{p.notitie}</p>
               </div>
             ))}
@@ -323,9 +324,9 @@ export default function BesteWaterontharder2026Page() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Bekende waterontharder-merken in Nederland</h2>
           <p className="text-gray-700 leading-relaxed mb-5">
-            De juiste keuze draait om het systeemtype en de capaciteit, niet om het merk. Toch helpt
-            het om de bekendste waterontharder-merken op de Nederlandse markt te kennen. Beoordeel ze
-            op capaciteit, certificering, zout- en waterverbruik en service - niet op naam alleen.
+            Naast onze keuze JOEP helpt het om de bekendste waterontharder-merken op de Nederlandse
+            markt te kennen. Overweeg je een ander merk, beoordeel het dan op systeemtype en
+            capaciteit, certificering, zout- en waterverbruik en service, niet op naam alleen.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {merken.map(([naam, beschrijving, href]) => (
@@ -338,8 +339,10 @@ export default function BesteWaterontharder2026Page() {
             ))}
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            Wij verkopen deze merken niet en ontvangen er geen vergoeding voor. Controleer actuele
-            specificaties en certificering altijd bij de leverancier. Bijgewerkt mei 2026.
+            JOEP (onze keuze) wordt verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is;
+            ook een AquaCell-ontharder is bij PureAqua verkrijgbaar. Koop je via onze links, dan
+            verdient PureAqua daaraan. Controleer actuele specificaties en certificering altijd bij de
+            leverancier. Bijgewerkt september 2026.
           </p>
         </section>
 

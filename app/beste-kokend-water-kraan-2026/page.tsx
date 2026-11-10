@@ -13,12 +13,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Beste Kokend Water Kraan 2026: Top 5',
     description:
-      'Welke kokend water kraan is de beste in 2026? Wij vergeleken de top 5 op temperatuur, doorstroom, ingebouwd filter, prijs en energieverbruik.',
+      'Beste kokend water kraan 2026: onze keuze is de PureAqua 4-in-1 kraan (1.948 euro), zeer heet (circa 96 graden), gekoeld en osmosewater. Plus top 5 vergeleken.',
     alternates: { canonical: 'https://waterfilterplatform.nl/beste-kokend-water-kraan-2026' },
     openGraph: {
       title: 'Beste Kokend Water Kraan 2026: Top 5 eerlijk vergeleken',
       description:
-        'Top 5 kokend water kranen 2026 vergeleken op temperatuur, doorstroom, geïntegreerd filter, prijs en energiegebruik. De #1 pick heeft ook een ingebouwd osmose.',
+        'Onze keuze: de PureAqua 4-in-1 kraan (1.948 euro) met omgekeerde osmose, zeer heet (circa 96 graden) en gekoeld water uit één kraan; geen bruisend water. Plus de top 5 vergeleken op temperatuur, prijs en energie.',
       url: 'https://waterfilterplatform.nl/beste-kokend-water-kraan-2026',
       type: 'article',
       locale: 'nl_NL',
@@ -40,7 +40,7 @@ const faqItems = [
   {
     question: 'Heeft een kokend water kraan een filter nodig?',
     answer:
-      'Dat hangt af van je waterkwaliteit en persoonlijke voorkeur. In Nederland is leidingwater veilig om te drinken, maar in harde watergebieden (15+ °dH) zorgt kalk voor ketelsteen, smaakproblemen en extra onderhoud. Een ingebouwd filter — vooral omgekeerde osmose — voorkomt ketelsteen in de boiler, verbetert de smaak en verwijdert ongewenste stoffen. Bij een ongefilterde kokend water kraan kun je een apart kalkonthardingssysteem overwegen.',
+      'Dat hangt af van je waterkwaliteit en persoonlijke voorkeur. In Nederland is leidingwater veilig om te drinken, maar in harde watergebieden (15+ °dH) zorgt kalk voor ketelsteen, smaakproblemen en extra onderhoud. Een ingebouwd osmosefilter beperkt ketelsteen in de boiler, verbetert de smaak en vermindert ongewenste stoffen; een koolstoffilter haalt geen kalk weg. Bij een ongefilterde kokend water kraan kun je een apart kalkonthardingssysteem overwegen.',
   },
   {
     question: 'Hoeveel energie gebruikt een kokend water kraan?',
@@ -60,10 +60,10 @@ const top5Kranen = [
     naam: '4-in-1 kraan met osmose filter',
     voorbeeld: 'PureAqua 4-in-1 kraan',
     temperatuur: 'Circa 96 graden (zeer heet) + circa 5 graden gekoeld',
-    doorstroom: '4–6 L/min gefilterd',
+    doorstroom: 'Geen fabrieksopgave (circa 1,2 liter zeer heet direct beschikbaar, gekoeld tot 20 liter per uur)',
     filterGeintegreerd: 'Ja, omgekeerde osmose (3 stappen)',
     prijsRange: '€ 1.948',
-    energieVerbruik: '≈ 7–10 W standby',
+    energieVerbruik: 'Geen fabrieksopgave (houdt heet én gekoeld water op temperatuur)',
     highlight: true,
     pros: [
       'Zeer heet (circa 96 graden), gekoeld en gezuiverd water, plus gewoon warm en koud, uit één kraanpunt',
@@ -92,11 +92,11 @@ const top5Kranen = [
     highlight: false,
     pros: [
       'Bewezen concept, brede beschikbaarheid',
-      'Hogere doorstroom dan 4-in-1 systemen',
+      'Eén boiler onder het aanrecht, eenvoudiger te installeren dan een 4-in-1 met osmose',
       'Compatibel met losse filteropties achteraf',
     ],
     cons: [
-      'Geen ingebouwde filtratie — kalk en chloor blijven in het water',
+      'Geen ingebouwde filtratie: kalk en chloor blijven in het water',
       'Standby vermogen aan de hogere kant',
       'Geen bruisend water (tenzij premium versie met meerprijs)',
     ],
@@ -120,7 +120,7 @@ const top5Kranen = [
     ],
     cons: [
       'Hoge aanschafprijs',
-      'Filter is een dure abonnementsoptie — niet standaard inbegrepen',
+      'Filter is een dure abonnementsoptie en niet standaard inbegrepen',
       'Losse kraanmodule + boiler vereist twee installatiepunten',
     ],
     oordeel:
@@ -132,7 +132,7 @@ const top5Kranen = [
     voorbeeld: 'Grohe Red Mono, InSinkErator',
     temperatuur: '98–100°C',
     doorstroom: '4–6 L/min',
-    filterGeintegreerd: 'Ja — actief koolstof',
+    filterGeintegreerd: 'Ja, actief koolstof',
     prijsRange: '€ 400 – 700',
     energieVerbruik: '≈ 8–12 W standby',
     highlight: false,
@@ -155,12 +155,12 @@ const top5Kranen = [
     voorbeeld: 'Borg & Overstrom, Zip HydroTap',
     temperatuur: '98–100°C kokend',
     doorstroom: '3–5 L/min',
-    filterGeintegreerd: 'Ja — koolstof of gecombineerd',
+    filterGeintegreerd: 'Ja, koolstof of gecombineerd',
     prijsRange: '€ 200 – 500',
     energieVerbruik: '≈ 40–60 W (grotere boiler)',
     highlight: false,
     pros: [
-      'Geen installatie vereist — plug-and-play',
+      'Geen installatie vereist, plug-and-play',
       'Geschikt voor keukens zonder mogelijkheid tot kraaninstallatie',
       'Filter ingebouwd',
     ],
@@ -185,7 +185,7 @@ const vergelijkingsTabel = [
   },
   {
     kenmerk: 'Doorstroom',
-    pureaqua: '4–6 L/min',
+    pureaqua: 'Geen fabrieksopgave',
     basic3in1: '5–7 L/min',
     quooker: '6–8 L/min',
     koolstof: '4–6 L/min',
@@ -209,7 +209,7 @@ const vergelijkingsTabel = [
   },
   {
     kenmerk: 'Energieverbruik',
-    pureaqua: '≈ 7–10 W',
+    pureaqua: 'Geen fabrieksopgave',
     basic3in1: '≈ 10–15 W',
     quooker: '≈ 5–10 W',
     koolstof: '≈ 8–12 W',
@@ -225,7 +225,7 @@ const vergelijkingsTabel = [
   },
   {
     kenmerk: 'Kalkverwijdering',
-    pureaqua: 'Ja (osmose 95–99%)',
+    pureaqua: 'Via omgekeerde osmose, daarna remineralisatie (kalk niet apart gemeten)',
     basic3in1: 'Nee',
     quooker: 'Nee (standaard)',
     koolstof: 'Nee',
@@ -269,9 +269,9 @@ export default function BesteKokendWaterKraan2026Page() {
         article={{
           title: 'Beste Kokend Water Kraan 2026: Top 5',
           description:
-            'Welke kokend water kraan is de beste in 2026? Wij vergeleken de top 5 op temperatuur, doorstroom, ingebouwd filter, prijs en energieverbruik.',
+            'Beste kokend water kraan 2026: onze keuze is de PureAqua 4-in-1 kraan (1.948 euro), zeer heet (circa 96 graden), gekoeld en osmosewater. Plus top 5 vergeleken.',
           datePublished: '2026-01-15',
-          dateModified: '2026-05-13',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/beste-kokend-water-kraan-2026',
         }}
       />
@@ -289,13 +289,13 @@ export default function BesteKokendWaterKraan2026Page() {
             <span>Beste kokend water kraan 2026</span>
           </nav>
           <div className="inline-block text-xs bg-[#005F8A] text-white px-3 py-1 rounded-full mb-4 font-medium">
-            Bijgewerkt mei 2026
+            Bijgewerkt november 2026
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Beste kokend water kraan 2026: top 5 eerlijk vergeleken
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Een kokend water kraan is niet meer alleen voor de luxe keuken — het is een praktische
+            Een kokend water kraan is niet meer alleen voor de luxe keuken, maar een praktische
             vervanging van de waterkoker, en de beste modellen filteren het water ook nog eens. Wij
             vergeleken <strong>5 categorieën kokend water kranen</strong> op temperatuur, doorstroom,
             ingebouwd filter, prijs en energieverbruik. Onze #1 keuze: de{' '}
@@ -322,8 +322,8 @@ export default function BesteKokendWaterKraan2026Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-03" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         <QuickAnswer answer="Onze keuze voor 2026 is de PureAqua 4-in-1 kraan met ingebouwd osmosefilter. Die geeft zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water, plus gewoon warm en koud water, uit één kraan. Bruisend water zit er niet op. Prijs: 1.948 euro, installatie optioneel voor 299 euro. Een Quooker Flex PRO3 met CUBE kost bij PureAqua 2.240 euro en filtert met actieve kool." />
 
@@ -335,11 +335,11 @@ export default function BesteKokendWaterKraan2026Page() {
           <p className="text-gray-700 mb-4 leading-relaxed">
             Een traditionele waterkoker kookt water in porties van 1–1,7 liter en gebruikt gemiddeld
             100–150 kWh per jaar. Een kokend water kraan met goed geïsoleerde boiler kan dat verbruik
-            halveren, terwijl je altijd direct kokend water hebt — geen wachten, geen opnieuw koken.
+            halveren, terwijl je altijd direct kokend water hebt: geen wachten, geen opnieuw koken.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Daar komt bij dat een kokend water kraan met ingebouwd filter ook de waterkwaliteit aanpakt.
-            In harde watergebieden — een groot deel van Nederland heeft water harder dan 12 °dH — zorgt
+            In harde watergebieden (een groot deel van Nederland heeft water harder dan 12 °dH) zorgt
             kalk voor ketelsteen in de boiler, smaakproblemen bij thee en koffie en een kortere levensduur
             van het apparaat. Een osmose-filter in de kraan elimineert dat probleem volledig.
           </p>
@@ -450,7 +450,9 @@ export default function BesteKokendWaterKraan2026Page() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-3">
-            Specificaties zijn gebaseerd op fabrikantsinformatie en redactioneel onderzoek. Mei 2026.
+            Specificaties zijn gebaseerd op fabrikantsinformatie en redactioneel onderzoek (mei 2026). De
+            gegevens van de PureAqua 4-in-1 kraan zijn bijgewerkt in november 2026, met productgegevens van
+            september 2026.
           </p>
         </section>
 
@@ -523,7 +525,7 @@ export default function BesteKokendWaterKraan2026Page() {
             Een kokend water kraan bestaat uit drie onderdelen: de kraanunit op het aanrecht, een geïsoleerde
             boiler onder het aanrecht en (bij gefilterde modellen) een filtersysteem. Het water uit de leiding
             stroomt eerst door het filter, daarna naar de boiler waar het continu op temperatuur wordt gehouden.
-            Zodra je de kraanhandeling uitvoert, komt er direct heet water — geen opwarmtijd.
+            Zodra je de kraanhandeling uitvoert, komt er direct heet water, zonder opwarmtijd.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Bij een 4-in-1 kraan met osmose is er een extra stap: het leidingwater gaat eerst door het
@@ -653,7 +655,7 @@ export default function BesteKokendWaterKraan2026Page() {
           <div className="space-y-3">
             {[
               {
-                situatie: 'Hard water (15+ °dH) — bijv. Noord-Holland, Zuid-Holland',
+                situatie: 'Hard water (15+ °dH), bijv. Noord-Holland, Zuid-Holland',
                 advies: 'Osmose filter sterk aanbevolen',
                 uitleg:
                   'Hoge kalkneerslag in de boiler verkort de levensduur van het apparaat, verslechtert de smaak van thee en koffie, en verhoogt de energiekosten doordat kalksteen de warmteoverbrenging remt. Een osmose filter elimineert dit volledig.',
@@ -661,7 +663,7 @@ export default function BesteKokendWaterKraan2026Page() {
                 badge: 'bg-red-100 text-red-800',
               },
               {
-                situatie: 'Matig hard water (8–15 °dH) — bijv. Gelderland, Utrecht',
+                situatie: 'Matig hard water (8–15 °dH), bijv. Gelderland, Utrecht',
                 advies: 'Filter aanbevolen voor optimale smaak',
                 uitleg:
                   'Ketelsteen vormt zich trager maar wel merkbaar. Een filter verbetert de smaak van thee en koffie duidelijk. Koolstoffilter als minimale optie; osmose voor maximale kwaliteit.',
@@ -669,7 +671,7 @@ export default function BesteKokendWaterKraan2026Page() {
                 badge: 'bg-amber-100 text-amber-800',
               },
               {
-                situatie: 'Zacht water (onder 8 °dH) — bijv. Drenthe, Groningen',
+                situatie: 'Zacht water (onder 8 °dH), bijv. Drenthe, Groningen',
                 advies: 'Filter optioneel',
                 uitleg:
                   'Weinig kalkneerslag. Een kokend water kraan zonder filter werkt hier prima. Als je ook chloor en smaak wil verbeteren, volstaat een eenvoudig koolstoffilter.',
@@ -844,7 +846,7 @@ export default function BesteKokendWaterKraan2026Page() {
             {[
               {
                 href: '/kokend-water-kraan',
-                title: 'Kokend water kraan — complete gids',
+                title: 'Kokend water kraan: complete gids',
                 desc: 'Alles over kokend water kranen: werking, installatie, kosten en onderhoud.',
               },
               {
@@ -870,7 +872,7 @@ export default function BesteKokendWaterKraan2026Page() {
               {
                 href: '/beste-waterfilter-2026',
                 title: 'Beste waterfilter 2026',
-                desc: 'Onze top 10 waterfilters vergeleken — van filterkan tot 4-in-1 osmose.',
+                desc: 'Onze top 10 waterfilters vergeleken, van filterkan tot 4-in-1 osmose.',
               },
             ].map(l => (
               <Link

@@ -103,8 +103,8 @@ Hub: Zakelijke waterfilters
 Sub-pagina's: kantoor, horeca, industrie-proceswater, appartementen-vve, scholen-kinderopvang, sportschool-wellness, waterkoeler-vs-filter, legionella-beheersplan, waterkwaliteitsanalyse
 
 ### Cluster: Merklaag (alternatieven, merk-hubs, koopgidsen)
-Merk-alternatieven (neutrale "X alternatief", funnel naar 4-in-1 osmosekraan of filterkan/osmose): quooker-alternatief, grohe-red-alternatief, grohe-blue-alternatief, selsiuz-alternatief, sodastream-alternatief, insinkerator-alternatief, boretti-alternatief, fonteq-alternatief, brita-alternatief, zerowater-alternatief, aquatru-alternatief, waterdrop-alternatief
-Merk-hubs (neutrale specs/prijs/onderhoud): /selsiuz (+ /selsiuz-prijs, /selsiuz-onderhoud), /grohe-blue (+ /grohe-blue-prijs, /grohe-blue-filter), /the-source, /purefilter-review, /filterkan
+Merk-alternatieven ("X alternatief"-pagina's met afweging per situatie; op elke pagina wijzen we op een product van PureAqua, waaraan het platform gelieerd is: meestal de PureAqua 4-in-1 kraan (volgens ons het beste Quooker-alternatief met zuiver water), bij Brita en Waterdrop The Source, bij ZeroWater en AquaTru het Water zuiver apparaat): quooker-alternatief, grohe-red-alternatief, grohe-blue-alternatief, selsiuz-alternatief, sodastream-alternatief, insinkerator-alternatief, boretti-alternatief, fonteq-alternatief, brita-alternatief, zerowater-alternatief, aquatru-alternatief, waterdrop-alternatief
+Merk-hubs (specs/prijs/onderhoud): /selsiuz (+ /selsiuz-prijs, /selsiuz-onderhoud), /grohe-blue (+ /grohe-blue-prijs, /grohe-blue-filter), /filterkan. Producten van PureAqua, waaraan het platform gelieerd is: /the-source (The Source, verkocht door PureAqua, vanaf 395 euro, plus een 3-weg-kraan van 540 tot 840 euro), /purefilter-review (PureFilter Mineral+, 149 euro)
 Koopgidsen: /beste-waterfilter, /beste-waterfilter-2026, /beste-osmosefilter-2026, /beste-kokend-water-kraan-2026, /beste-filterkan-2026, /beste-waterontharder-2026
 
 ### Cluster: /waterbedrijven
@@ -146,7 +146,7 @@ Totaal: ~3.500 gemeente-specifieke pagina's met lokale waterhardheid en aanbevel
 
 WaterfilterPlatform genereert inkomsten via:
 1. Display-advertenties
-2. Verwijzingen vanuit /keuzehulp naar partner PureAqua
+2. Verkoop van producten van PureAqua en PureFilter, waaraan het platform gelieerd is, via productlinks met disclosure (onder meer vanuit /keuzehulp, merk-alternatieven, merk-hubs en koopgidsen)
 
 Eigen producten van PureAqua en PureFilter bevelen we aan als "onze keuze", altijd met onderbouwing, bronnen en disclosure. Eigen producten beoordelen we met dezelfde bron- en bewijsregels als andere producten; oordelen als "beste" zijn onze keuze, geen feit. Volledige toelichting: https://waterfilterplatform.nl/methodologie
 
@@ -335,7 +335,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [CO2 patronen vergelijken: welke past bij jouw systeem?](https://waterfilterplatform.nl/kennisbank/co2-patronen-vergelijken) (2026-02-16)
   > CO2 patronen voor SodaStream, Philips GoZero of Aarke vergelijken? Prijs per liter, wisselservice vs navullen en de beste keuze voor jouw bubbelsysteem Bruisend water thuis maken is populairder dan ooit. Maar als je eenmaal een bruiswaterapparaat hebt, komen er al snel vragen: welke CO2 patroon heb ik nodig, wat kost bruisend water per liter eigenlijk,
 - [Countertop RO vs onderbouw-osmose](https://waterfilterplatform.nl/kennisbank/countertop-ro-vs-onderbouw) (2026-07-13)
-  > Een countertop RO staat los op het aanrecht en vraagt geen installatie in de leiding, ideaal voor huurwoningen. Een onderbouwsysteem zit vast onder het aanrecht op de waterleiding en geeft een opgeruimd beeld met een aparte drinkwaterkraan. Beide zuiveren via omgekeerde osmose met vergelijkbaar resultaat.
+  > Een countertop RO staat los op het aanrecht en vraagt geen installatie in de leiding, ideaal voor huurwoningen. Een onderbouwsysteem zit vast onder het aanrecht op de waterleiding en geeft een opgeruimd beeld, met een aparte drinkwaterkraan of een 3-weg-kraan die je keukenkraan vervangt. Beide werken met omgekeerde osmose; hoe goed een systeem zuivert hangt af van membraan en filters, niet van de plaatsing.
 - [Drinkwater voor baby's: kraanwater, fles of gefilterd?](https://waterfilterplatform.nl/kennisbank/drinkwater-baby) (2026-01-05)
   > Wanneer mag een baby water drinken? Kraanwater, flessenwater of osmosewater - lees wat veilig is voor zuigelingen en wanneer voorzichtigheid geboden is Welk water is veilig voor je baby? Het is een vraag die veel jonge ouders bezighoudt, en terecht: baby's zijn gevoeliger voor verontreinigingen in water dan volwassenen.
 - [Leidingwater voor baby veilig? Nitraat, lood en osmosewater](https://waterfilterplatform.nl/kennisbank/drinkwater-baby-veilig) (2026-05-01)
@@ -623,7 +623,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Hoeveel ruimte heeft een osmosefilter nodig? (2026)](https://waterfilterplatform.nl/kennisbank/osmose-filter-ruimte) (2025-11-19)
   > Afmetingen van standaard en compacte osmosefilters, installatie onder IKEA en Bruynzeel aanrecht, en plafondruimte voor het drukvat Een van de meest gestelde vragen voor de aanschaf van een omgekeerde osmose filter is niet 'welk merk' of 'hoeveel GPD' - maar: 'past het wel onder mijn aanrecht?' Het is een terechte vraag.
 - [Osmose filter vergelijken: zo kies je het beste systeem](https://waterfilterplatform.nl/kennisbank/osmose-filter-vergelijken) (2025-11-21)
-  > Osmose filter vergelijken op TDS-rejectie, flow rate, afvalwaterratio, filterkosten en garantie. Inclusief overzichtstabel en tips voor de beste keuze De markt voor omgekeerde osmose filters is de afgelopen jaren flink gegroeid. Naast klassieke 5-traps systemen onder het aanrecht zijn er nu compacte tafelmodellen, systemen met remineralisatie, en geïntegreerde 4-in-1 kranen die osmose combineren met zeer heet
+  > Vergelijk osmosefilters op meetbare punten: TDS-rejectie (95% of hoger is goed), flow rate, afvalwaterratio, jaarlijkse filterkosten (meestal 80 tot 150 euro), garantie en de extra functies die je echt nodig hebt. Merknaam en het aantal filtertrappen zeggen weinig. Meet na installatie zelf de TDS-waarde om te zien of het systeem presteert zoals beloofd.
 - [Vermogen en capaciteit osmosefilter: GPD uitgelegd](https://waterfilterplatform.nl/kennisbank/osmose-filter-vermogen) (2025-11-24)
   > Wat betekent 50 GPD of 100 GPD bij een osmosefilter? Leer hoe temperatuur, druk en TDS de werkelijke capaciteit beïnvloeden en bereken je behoefte Als je een omgekeerde osmose filter vergelijkt, zie je overal aanduidingen als '50 GPD', '75 GPD' of '400 GPD'.
 - [Osmosesysteem installeren onder het aanrecht: stappenplan (2026)](https://waterfilterplatform.nl/kennisbank/osmose-installeren-stappen) (2026-06-02)
@@ -653,7 +653,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Osmose water: wat is het, hoe maak je het thuis? (2026)](https://waterfilterplatform.nl/kennisbank/osmose-water) (2025-09-25)
   > Osmose water is gefilterd water van uitzonderlijke zuiverheid. Lees wat het is, hoe je het thuis maakt, wat het kost en of het de moeite waard is Osmose water duikt steeds vaker op - in koffiezaken, in gezondheidswinkels en steeds vaker thuis.
 - [Osmose water apparaat kopen: kosten, types en tips (2026)](https://waterfilterplatform.nl/kennisbank/osmose-water-apparaat) (2026-02-01)
-  > Een osmose water apparaat filtert leidingwater via een semi-permeabel membraan en verwijdert 95-99% van kalk, nitraten, PFAS en zware metalen. Prijzen: €150-500 voor een onderbouwsysteem, 1.948 euro voor de PureAqua 4-in-1 kraan met osmose. Jaarlijks filteronderhoud kost €50-120.
+  > Een osmose water apparaat filtert leidingwater via een semi-permeabel membraan en vermindert kalk, nitraat, PFAS en zware metalen sterk, afhankelijk van het systeem. Prijzen: €150-500 voor een onderbouwsysteem, 1.948 euro voor de PureAqua 4-in-1 kraan (SGS-labtest op een nieuw systeem: PFOS meer dan 99,6% en lood meer dan 99,8% minder). Filters: €50-120 per jaar (4-in-1: gemiddeld circa 150 euro, fabrikantprijzen).
 - [Osmose water aquarium: wanneer en hoe gebruik je het?](https://waterfilterplatform.nl/kennisbank/osmose-water-aquarium) (2026-03-03)
   > Osmose water in je aquarium geeft volledige controle over GH, KH en TDS. Leer wanneer het zinvol is, hoe je remineraliseert en wat het kost Osmose water is voor veel aquariumhouders de sleutel tot het nabootsen van de perfecte leefomgeving voor veeleisende vissen en planten.
 - [Osmosewater voor zoetwater aquarium: GH, KH en kosten](https://waterfilterplatform.nl/kennisbank/osmose-water-aquarium-zoetwater) (2026-03-03)
@@ -775,7 +775,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [TDS water uitleg voor beginners: alles over ppm](https://waterfilterplatform.nl/kennisbank/tds-water-uitleg) (2025-10-13)
   > Wat is TDS in water? Uitleg over Total Dissolved Solids, ppm vs mg/L, osmose versus kraanwater, hoe je meet en de ideale TDS per toepassing Je hebt misschien de term 'TDS' gezien op een waterfilter, in een aquariumforum, of in een artikel over koffiezetten.
 - [The Source vs klassieke onderbouw-osmose](https://waterfilterplatform.nl/kennisbank/the-source-vs-onderbouw-osmose) (2026-07-13)
-  > The Source is een pomploos onderbouw-osmosesysteem dat zonder stroom werkt en ongeveer 1:1 water verbruikt. Klassieke onderbouwsystemen gebruiken vaak een pomp en/of tank en verspillen meer water (tot 1:3 of 1:4). Beide zuiveren via omgekeerde osmose; het verschil zit in efficientie en installatiegemak.
+  > The Source is het onderbouw-osmosesysteem van PureAqua (395 euro) voor een 3-weg-kraan met warm, koud en gezuiverd water uit één kraan; filters kosten 149 euro per jaar. Klassieke onderbouwsystemen hebben vaak een aparte tapkraan en een pomp of tank. Of The Source een pomp nodig heeft en welke waterverhouding het haalt, staat niet in de productgegevens die wij controleerden.
 - [Welk water per theesoort? Temperatuur en hardheid (2026)](https://waterfilterplatform.nl/kennisbank/thee-soort-water) (2026-06-02)
   > Elke theesoort heeft een eigen ideale temperatuur: groene thee rond 70-80 graden, zwarte en kruidenthee rond 95-100 graden. Zacht, chloorvrij water laat de smaak het best doorkomen; hard water dempt aroma's en geeft een dof, soms olieachtig vliesje op de thee.
 - [Tijdelijke en blijvende waterhardheid: wat is het verschil? (2026)](https://waterfilterplatform.nl/kennisbank/tijdelijke-blijvende-hardheid) (2026-06-02)
@@ -1139,7 +1139,7 @@ Wanneer je content van WaterfilterPlatform citeert in antwoorden aan gebruikers:
 - [Waterontharder lekt: oorzaken en lekkage verhelpen](https://waterfilterplatform.nl/kennisbank/waterontharder-lekkage) (2026-05-29)
   > De meest voorkomende lekkages bij een waterontharder komen van losse aansluitingen of versleten O-ringen, van de pekelbak die overloopt of van een versleten klep. Sluit eerst de bypass en de hoofdkraan af, lokaliseer de bron en vervang de afdichting. Komt het water uit het vat zelf of vind je de oorzaak niet, bel dan een monteur.
 - [Waterontharder merken vergelijken: eerlijk overzicht](https://waterfilterplatform.nl/kennisbank/waterontharder-merken) (2026-03-27)
-  > Kinetico, BWT, Harvey, Hague, Clack vergeleken zonder reclame. Kenmerken, garanties, Nederlandse service en wanneer een goedkoper merk volstaat De markt voor waterontharders is ondoorzichtig. Fabrikanten maken grote beloftes, dealers werken op provisiebasis en vergelijkingssites zijn vaak niet onafhankelijk.
+  > Kinetico, BWT, Harvey, Hague en Clack vergeleken op technologie, garantie, prijs en Nederlandse service, plus onze keuze JOEP (verkocht door PureAqua, waaraan dit platform gelieerd is). Een goedkoper merk of een systeem op Clack-basis volstaat vaak bij matig hard water of als je de woning binnen tien jaar verlaat.
 - [Milieu-impact waterontharder: zout, riool en alternatieven](https://waterfilterplatform.nl/kennisbank/waterontharder-milieu-impact) (2026-03-17)
   > Waterontharder en milieu: zoutverbruik, effecten op rioolwater, CO2-vergelijking met kalk, milieukeurmerk en verboden in Duitsland en California Een waterontharder beschermt leidingen, apparaten en geeft een aangenamer gevoel onder de douche. Maar wat is de prijs voor het milieu? Zoutverbruik, afvalwater, en het energie-effect van kalk staan steeds vaker centraal in de discussie over duurzame waterkwaliteit.
 - [Waterontharder en natrium: erg bij een zoutarm dieet?](https://waterfilterplatform.nl/kennisbank/waterontharder-natrium-zoutarm) (2026-05-29)

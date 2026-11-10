@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
 
 export const metadata: Metadata = {
   title: 'Quooker CUBE: bruisend en gekoeld water — kosten, werking en alternatieven 2026',
@@ -48,7 +49,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil tussen Quooker CUBE en een 4-in-1 osmose kraan?',
     answer:
-      'Het grootste verschil zit in de filtermethode. De CUBE gebruikt een geactiveerde koolstoffilter — geschikt voor chloor en smaakverbetering, maar geen omgekeerde osmose. Een 4-in-1 osmose kraan heeft een RO-membraan dat 95–99% van nitraat, PFAS, kalk, zware metalen en microplastics verwijdert. De PureAqua 4-in-1 kost 1.948 euro, circa 300 euro minder dan een Quooker Flex PRO3 met CUBE (2.240 euro bij PureAqua), maar geeft geen bruisend water: wel zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. De Quooker biedt wél bruisend water en een vertrouwde gebruikservaring met dealer-installatie.',
+      'Het grootste verschil zit in de filtermethode. De CUBE gebruikt een geactiveerde koolstoffilter, geschikt voor chloor en smaakverbetering, maar geen omgekeerde osmose. Een 4-in-1 osmosekraan zoals de PureAqua 4-in-1 heeft een RO-membraan; een SGS-labtest op een nieuw exemplaar van het osmosesysteem van de PureAqua 4-in-1 mat meer dan 99,6% minder PFOS, 99,5% minder PFOA, meer dan 99,8% minder lood en 99,99% minder microplastics. Nitraat en kalk zijn in die test niet gemeten. De PureAqua 4-in-1 kost 1.948 euro, circa 300 euro minder dan een Quooker Flex PRO3 met CUBE (2.240 euro bij PureAqua), maar geeft geen bruisend water: wel zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. De Quooker biedt wél bruisend water en een vertrouwde gebruikservaring met dealer-installatie.',
   },
   {
     question: 'Kan ik de CUBE retourneren en een ander systeem installeren?',
@@ -96,9 +97,10 @@ export default function QuookerCubePage() {
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             De <strong>Quooker CUBE</strong> is een uitbreidingsmodule die gekoeld (4°C) en bruisend gefilterd water toevoegt aan een bestaande Quooker.
-            Op deze pagina vind je een onafhankelijke uitleg van de werking, de jaarlijkse kosten, CO₂-verbruik en
-            een eerlijke vergelijking met alternatieven zoals de{' '}
-            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 osmose kraan</Link>.
+            Op deze pagina vind je uitleg over de werking, de jaarlijkse kosten en het CO₂-verbruik, plus een
+            vergelijking met de{' '}
+            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">PureAqua 4-in-1 kraan</Link>.
+            Zowel de Quooker Flex PRO3 met CUBE als de PureAqua 4-in-1 worden verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -316,23 +318,23 @@ export default function QuookerCubePage() {
                 <tr className="bg-[#E0F2FE]">
                   <th className="text-left py-3 px-3 font-semibold text-[#003F5C]">Criterium</th>
                   <th className="py-3 px-3 font-semibold text-[#003F5C] text-left">Quooker CUBE</th>
-                  <th className="py-3 px-3 font-semibold text-[#003F5C] text-left">4-in-1 osmose kraan</th>
+                  <th className="py-3 px-3 font-semibold text-[#003F5C] text-left">PureAqua 4-in-1 (osmose)</th>
                 </tr>
               </thead>
               <tbody>
                 {[
                   { criterium: 'Filtermethode', cube: 'Actief kool', osmose: 'Omgekeerde osmose (RO)' },
-                  { criterium: 'Verwijdert chloor', cube: '✓ 90–95%', osmose: '✓ 95–99%' },
-                  { criterium: 'Verwijdert nitraat', cube: '✗ Nee', osmose: '✓ 85–95%' },
+                  { criterium: 'Verwijdert chloor', cube: '✓ 90–95%', osmose: '✓ meer dan 99,4% (SGS, nieuw systeem)' },
+                  { criterium: 'Verwijdert nitraat', cube: '✗ Nee', osmose: '✓ Ja, via osmose (niet gemeten in SGS-test)' },
                   { criterium: 'Verwijdert PFAS', cube: '✗ Nee', osmose: '✓ PFOS >99,6%, PFOA 99,5% (SGS, nieuw systeem)' },
-                  { criterium: 'Verwijdert kalk', cube: '✗ Nee', osmose: '✓ 95–99%' },
+                  { criterium: 'Verwijdert kalk', cube: '✗ Nee', osmose: '✓ Grotendeels, via osmose (niet gemeten in SGS-test)' },
                   { criterium: 'Bruisend water', cube: '✓ (CO₂)', osmose: '✗ Nee (PureAqua 4-in-1)' },
                   { criterium: 'Heet water', cube: '✓ kokend (via Quooker)', osmose: '✓ zeer heet (circa 96°C)' },
                   { criterium: 'Gekoeld water', cube: '✓ (4°C)', osmose: '✓ (circa 5°C)' },
                   { criterium: 'Aanschafprijs totaal', cube: '€2.240 (Flex PRO3 met CUBE, PureAqua)', osmose: '€1.948 (PureAqua 4-in-1)' },
                   { criterium: 'Jaarlijkse kosten', cube: '€110–175', osmose: 'Filters gemiddeld circa €150 (fabrikantprijzen omgerekend): voorfilter en remineralisatie jaarlijks, membraan elke 2 jaar' },
                   { criterium: 'Geschikt voor hard water', cube: '✗ Nee', osmose: '✓ Ja' },
-                  { criterium: 'Installatie', cube: 'Via Quooker-dealer', osmose: 'Installateur aanbevolen (PureAqua: €299)' },
+                  { criterium: 'Installatie', cube: 'Via Quooker-dealer', osmose: 'Installatie optioneel via PureAqua voor €299' },
                 ].map((r, i) => (
                   <tr key={r.criterium} className={`border-b border-gray-100 ${i % 2 === 0 ? '' : 'bg-gray-50/50'}`}>
                     <td className="py-2.5 px-3 font-semibold text-gray-700">{r.criterium}</td>
@@ -346,6 +348,7 @@ export default function QuookerCubePage() {
           <p className="text-xs text-gray-400 mt-2">
             Aanschafprijzen zijn indicatief en inclusief het Quooker-basisreservoir waar relevant. Controleer actuele prijzen bij dealers.
           </p>
+          <AffiliateDisclosure className="mt-2" />
         </section>
 
         {/* Wanneer CUBE, wanneer anders */}

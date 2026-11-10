@@ -6,6 +6,7 @@ import { HubCrossLinks } from '@/components/HubCrossLinks';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { PureFilterCTA } from '@/components/PureFilterCTA';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
   title: 'Welk waterfilter past bij u? Types & vergelijking 2026',
@@ -25,7 +26,7 @@ const faqItems = [
   {
     question: 'Welk waterfilter is het beste voor thuis?',
     answer:
-      'Het beste waterfilter hangt af van je doel. Wil je alleen chloor en smaak verbeteren? Dan volstaat een activekoolfilter of filterkan. Wil je ook nitraten, pesticiden, PFAS, zware metalen en microplastics verwijderen? Dan is omgekeerde osmose de beste keuze — het verwijdert 95–99% van alle opgeloste stoffen. Wil je daarnaast gekoeld en zeer heet water uit dezelfde kraan, dan is een 4-in-1 kraan met osmose de meest complete oplossing (de PureAqua 4-in-1 geeft geen bruisend water).',
+      'Het beste waterfilter hangt af van je doel. Wil je alleen chloor en smaak verbeteren? Dan volstaat een activekoolfilter of filterkan. Wil je ook nitraten, pesticiden, PFAS, zware metalen en microplastics verwijderen? Dan is omgekeerde osmose de beste keuze: het verwijdert 95–99% van alle opgeloste stoffen. Wil je daarnaast gekoeld en zeer heet water uit dezelfde kraan, dan is een 4-in-1 kraan met osmose volgens ons de meest complete oplossing (de PureAqua 4-in-1 geeft geen bruisend water).',
   },
   {
     question: 'Wat filtert een waterfilter precies?',
@@ -117,13 +118,13 @@ const filtertypes = [
     nr: '5',
     naam: '4-in-1 kraan (zeer heet + gekoeld + koud + warm + osmose)',
     prijs: '€ 1.948 aanschaf + filters gemiddeld circa €150/jr',
-    zuiverheid: 'Zeer hoog (95–99% via RO)',
+    zuiverheid: 'Zeer hoog (osmose). SGS-test op losse stoffen bij de PureAqua 4-in-1 (nieuw systeem): PFOS >99,6%, lood >99,8%',
     onderhoud: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke 2 jaar',
     ruimte: 'Twee apparaten onder aanrecht + 1 kraangat',
     installatiegemak: 'Installateur aanbevolen (optioneel 299 euro)',
     highlight: true,
     beschrijving:
-      'De 4-in-1 kraan combineert omgekeerde osmose (voorfilter, membraan, remineralisatie) met zeer heet (circa 96 °C), gekoeld en gezuiverd water, plus gewoon warm en koud water uit één kraan. Dit is de meest complete oplossing op het aanrecht; onder de spoelbak staan wel twee apparaten. Geen bruisend water.',
+      'De 4-in-1 kraan combineert omgekeerde osmose (voorfilter, membraan, remineralisatie) met zeer heet (circa 96 °C), gekoeld en gezuiverd water, plus gewoon warm en koud water uit één kraan. Volgens ons de meest complete oplossing op het aanrecht; onder de spoelbak staan wel twee apparaten. Geen bruisend water.',
   },
 ];
 
@@ -167,7 +168,7 @@ const vergelijkingstabel = [
   {
     type: '4-in-1 kraan + osmose',
     prijs: '€ 1.948',
-    zuiverheid: '95–99%',
+    zuiverheid: 'Zeer hoog (osmose); PureAqua 4-in-1, SGS per stof (nieuw systeem): PFOS >99,6%, lood >99,8%',
     onderhoud: 'Jaarlijks (membraan 2 jaar)',
     ruimte: 'Onder aanrecht (2 apparaten)',
     installatie: 'Installateur aanbevolen',
@@ -227,7 +228,7 @@ export default function WaterfilterPage() {
           description:
             'Complete gids over waterfilters: filterkan, koolstof, omgekeerde osmose, waterontharder en 4-in-1 kraan vergeleken op prijs, zuiverheid en onderhoud.',
           datePublished: '2025-10-01',
-          dateModified: '2026-05-13',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/waterfilter',
         }}
       />
@@ -275,7 +276,7 @@ export default function WaterfilterPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <QuickAnswer answer="Een waterfilter verwijdert verontreinigingen uit leidingwater. Het beste type hangt af van je doel: een osmosefilter verwijdert 99% van alles inclusief kalk; een koolstoffilter verbetert smaak en verwijdert chloor; een waterontharder pakt kalk in het hele huis aan. Nederlands kraanwater is veilig — een filter is een kwaliteitsverbetering, geen noodzaak." />
+        <QuickAnswer answer="Een waterfilter verwijdert verontreinigingen uit leidingwater. Het beste type hangt af van je doel: een osmosefilter verwijdert het breedste spectrum aan stoffen, inclusief kalk; een koolstoffilter verbetert smaak en verwijdert chloor; een waterontharder pakt kalk in het hele huis aan. Nederlands kraanwater is veilig; een filter is een kwaliteitsverbetering, geen noodzaak." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -422,6 +423,15 @@ export default function WaterfilterPage() {
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-gray-500 mt-2 leading-relaxed">
+            Zuiverheid bij filterkan, koolstof en osmose zijn indicatieve gemiddelden. De labwaarden bij de
+            4-in-1 gelden alleen voor de {FOUR_IN_ONE.name}: een{' '}
+            <a href={FOUR_IN_ONE.labReport.url} target="_blank" rel="noopener noreferrer" className="text-[#005F8A] underline">
+              {FOUR_IN_ONE.labReport.lab}-labtest
+            </a>{' '}
+            (rapport {FOUR_IN_ONE.labReport.number}, {FOUR_IN_ONE.labReport.date}) op een nieuw systeem, gemeten
+            per stof en dus geen totale zuiverheid.
+          </p>
         </section>
 
         {/* Per type uitgebreide uitleg */}
@@ -531,7 +541,16 @@ export default function WaterfilterPage() {
               Voordelen: geen aparte waterkoker meer, geen losse osmose-tap en geen flessenwater. Filters
               wissel je circa jaarlijks, het membraan circa elke twee jaar. De PureAqua 4-in-1 kost 1.948
               euro (installatie optioneel voor 299 euro), duidelijk meer dan een losse osmose-installatie.
-              Daar staat tegenover dat hij ook de waterkoker vervangt. Lees meer op de pagina{' '}
+              Daar staat tegenover dat hij ook de waterkoker vervangt. Een{' '}
+              <a href={FOUR_IN_ONE.labReport.url} target="_blank" rel="noopener noreferrer" className="text-[#005F8A] underline hover:no-underline">
+                {FOUR_IN_ONE.labReport.lab}-labtest
+              </a>{' '}
+              ({FOUR_IN_ONE.labReport.date}) op een nieuw systeem mat {FOUR_IN_ONE.lab.PFOS} minder PFOS en{' '}
+              {FOUR_IN_ONE.lab.lood} minder lood; details staan in onze{' '}
+              <Link href={FOUR_IN_ONE.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+                4-in-1 kraan review
+              </Link>
+              . PureAqua, dat de 4-in-1 verkoopt, is gelieerd aan WaterfilterPlatform. Lees meer op de pagina{' '}
               <Link href="/kokend-water-kraan/met-filter" className="text-[#005F8A] underline hover:no-underline">
                 kokend water kraan met filter
               </Link>

@@ -5,6 +5,7 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
   title: 'Waterfilter Kopen 2026: Eerlijke Koopgids',
@@ -99,10 +100,11 @@ const filtertypes = [
   },
   {
     nr: 5,
-    naam: '4-in-1 kraan (zeer heet + gekoeld + koud + warm + osmose)',
-    prijs: '€ 1.948',
+    naam: '4-in-1 kraan (zeer heet + gekoeld + koud + warm + osmose), zoals de PureAqua 4-in-1',
+    prijs: '€ 1.948 (PureAqua)',
     jaarkosten: 'gemiddeld circa € 150',
-    zuiverheid: 'Zeer hoog (95–99% via RO)',
+    zuiverheid: 'Zeer hoog, zelfde osmosetechniek als type 3. PureAqua 4-in-1 (SGS, nieuw systeem): PFOS >99,6% en lood >99,8% minder',
+    bron: { label: `SGS-rapport ${FOUR_IN_ONE.labReport.number} (pdf)`, url: FOUR_IN_ONE.labReport.url },
     onderhoud: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke 2 jaar',
     installatiegemak: 'Installateur aanbevolen (optioneel 299 euro)',
     highlight: true,
@@ -199,7 +201,7 @@ export default function WaterfilterKopenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184', `${FOUR_IN_ONE.labReport.lab}-rapport ${FOUR_IN_ONE.labReport.number} (PureAqua 4-in-1)`]} />
         <AuthorBox datePublished="2026-05-29" />
 
         {/* Inhoudsopgave */}
@@ -325,7 +327,14 @@ export default function WaterfilterKopenPage() {
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-1 text-xs text-gray-600 mb-3">
-                  <div><span className="text-gray-400">Zuiverheid:</span> {f.zuiverheid}</div>
+                  <div>
+                    <span className="text-gray-400">Zuiverheid:</span> {f.zuiverheid}
+                    {f.bron && (
+                      <>
+                        {' '}(<a href={f.bron.url} className="underline text-[#005F8A]" target="_blank" rel="noopener noreferrer">{f.bron.label}</a>)
+                      </>
+                    )}
+                  </div>
                   <div><span className="text-gray-400">Onderhoud:</span> {f.onderhoud}</div>
                   <div><span className="text-gray-400">Installatie:</span> {f.installatiegemak}</div>
                 </div>
@@ -372,7 +381,7 @@ export default function WaterfilterKopenPage() {
                   { type: 'Koolstoffilter kraan', aanschaf: '€ 30–100', jaar: '€ 30–80', zuiver: 'Matig', inst: 'Zelf, eenvoudig', hl: false },
                   { type: 'Omgekeerde osmose', aanschaf: '€ 150–500', jaar: '€ 60–150', zuiver: '95–99%', inst: 'Zelf, 30–60 min', hl: true },
                   { type: 'Waterontharder', aanschaf: '€ 500–1.500', jaar: '€ 85–240', zuiver: 'Alleen kalk', inst: 'Installateur', hl: false },
-                  { type: '4-in-1 kraan + osmose', aanschaf: '€ 1.948', jaar: 'circa € 150 (gemiddeld)', zuiver: '95–99%', inst: 'Installateur aanbevolen', hl: true },
+                  { type: 'PureAqua 4-in-1 kraan + osmose', aanschaf: '€ 1.948 (PureAqua)', jaar: 'circa € 150 (gemiddeld)', zuiver: 'PureAqua 4-in-1: PFOS >99,6% en lood >99,8% minder (SGS, nieuw systeem)', inst: 'Installateur aanbevolen', hl: true },
                 ].map(r => (
                   <tr
                     key={r.type}
@@ -389,8 +398,15 @@ export default function WaterfilterKopenPage() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-2">
-            Prijzen zijn indicatieve marktgemiddelden voor 2026. Jaarkosten zijn inclusief
-            filtervervanging exclusief aanschaf.
+            Prijzen zijn indicatieve marktgemiddelden voor 2026, behalve de PureAqua-prijs. Jaarkosten
+            zijn inclusief filtervervanging exclusief aanschaf. De zuiverheid bij de PureAqua 4-in-1 is
+            een productmeting per stof op een nieuw systeem (
+            <a href={FOUR_IN_ONE.labReport.url} className="underline" target="_blank" rel="noopener noreferrer">
+              {FOUR_IN_ONE.labReport.lab}-rapport {FOUR_IN_ONE.labReport.number}
+            </a>
+            ), geen totale zuiverheid. Het is dezelfde osmosetechniek als de rij omgekeerde osmose; het
+            percentage daar is een indicatie voor het type, geen meting. PureAqua is gelieerd aan
+            WaterfilterPlatform.
           </p>
         </section>
 

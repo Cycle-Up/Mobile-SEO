@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Viteau waterontharder: modellen, ervaringen en alternatief',
       description:
-        'Wat biedt een Viteau waterontharder, voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Onafhankelijke uitleg.',
+        'Wat biedt een Viteau waterontharder, voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Met bronnen en kanttekeningen.',
       url: 'https://waterfilterplatform.nl/viteau-waterontharder',
       type: 'article',
       locale: 'nl_NL',
@@ -56,7 +56,7 @@ export default function ViteauWaterontharderPage() {
           title: 'Viteau waterontharder: modellen, ervaringen en alternatief',
           description: 'Viteau waterontharder: wat biedt dit Nederlandse merk, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/viteau-waterontharder',
         }}
       />
@@ -86,8 +86,8 @@ export default function ViteauWaterontharderPage() {
           <p className="text-gray-600 text-lg mb-6">
             <strong>Viteau</strong> is een Nederlands merk van waterontharders met landelijke
             installatie en service. Hieronder lees je wat Viteau biedt, voor wie het geschikt is, waar
-            je op let bij de keuze en hoe het zich verhoudt tot alternatieven - onafhankelijk en zonder
-            verkoopprikkel.
+            je op let bij de keuze en hoe het zich verhoudt tot alternatieven. Onze eigen keuze is JOEP,
+            verkocht door PureAqua, waaraan wij gelieerd zijn.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -108,11 +108,11 @@ export default function ViteauWaterontharderPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         <QuickAnswer
           question="Is een Viteau waterontharder een goede keuze?"
-          answer="Viteau is een Nederlands merk met landelijke service, gebaseerd op ionenwisselaars met zout voor huishoudelijk gebruik. Voor een gezin in een hard-watergebied is het een prettige keuze als service en installatiegemak voor jou belangrijk zijn. Of het voor jou de beste keuze is hangt af van je waterhardheid, huishoudgrootte en budget - vergelijk capaciteit, zoutverbruik en prijs met andere merken."
+          answer={faqItems[0].answer}
         />
 
         <section>
@@ -132,7 +132,7 @@ export default function ViteauWaterontharderPage() {
             ].map(([t, d]) => (
               <div key={t} className="flex gap-3">
                 <span className="text-[#005F8A] font-bold">-</span>
-                <p className="text-gray-700"><strong>{t}</strong> - {d}</p>
+                <p className="text-gray-700"><strong>{t}</strong>: {d}</p>
               </div>
             ))}
           </div>
@@ -166,7 +166,7 @@ export default function ViteauWaterontharderPage() {
         <CTABanner context="waterhardheid" />
 
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waar let je op bij de keuze - en alternatieven</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waar let je op bij de keuze en welke alternatieven zijn er?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Beoordeel een Viteau waterontharder net als elk ander merk op de juiste capaciteit voor jouw
             waterhardheid en huishouden, het zout- en waterverbruik bij regeneratie, de certificering en
@@ -185,7 +185,8 @@ export default function ViteauWaterontharderPage() {
           </p>
           <p className="text-xs text-gray-400 mt-4">
             WaterfilterPlatform verkoopt geen Viteau-producten en ontvangt hiervoor geen vergoeding.
-            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt mei 2026.
+            JOEP, onze keuze, wordt wel verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.
+            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt november 2026.
           </p>
         </section>
 

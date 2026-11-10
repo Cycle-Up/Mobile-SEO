@@ -3,6 +3,10 @@ import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { DecisionTreeClient } from '@/components/DecisionTreeClient';
 import { AffiliateCTA } from '@/components/AffiliateCTA';
+import { TREES } from '@/lib/decisiontrees.mjs';
+
+// Tekstversie komt uit dezelfde boom als de interactieve hulp, zodat ze niet uit elkaar lopen.
+const tree = TREES['kokend-kraan-nodig'];
 
 export const metadata: Metadata = {
   title: "Heb ik een kokend water kraan nodig? Beslishulp",
@@ -48,23 +52,15 @@ export default function KokendKraanNodigTree() {
 
 
         <section className="mt-8">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe vaak gebruik je kokend water?</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">{tree.node.q}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div className="border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-800">Heel vaak, meerdere keren per dag</p>
-              <p className="text-sm text-gray-600 mt-1"><strong>Kokend water kraan overwegen.</strong> Bij intensief gebruik wegen gemak en ruimtebesparing op.</p>
-              <Link href="/kokend-water-kraan" className="text-sm text-[#005F8A] underline mt-1 inline-block">Lees meer</Link>
-            </div>
-            <div className="border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-800">Af en toe</p>
-              <p className="text-sm text-gray-600 mt-1"><strong>Een waterkoker volstaat.</strong> Bij incidenteel gebruik is een waterkoker goedkoper.</p>
-              <Link href="/vergelijken/kokend-kraan-vs-waterkoker" className="text-sm text-[#005F8A] underline mt-1 inline-block">Lees meer</Link>
-            </div>
-            <div className="border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-800">Ik wil ook gefilterd/gekoeld</p>
-              <p className="text-sm text-gray-600 mt-1"><strong>4-in-1 kraan.</strong> Combineert zeer heet (circa 96 graden), gekoeld en osmose-gezuiverd water. Bruisend water zit er niet op.</p>
-              <Link href="/4-in-1-kraan" className="text-sm text-[#005F8A] underline mt-1 inline-block">Lees meer</Link>
-            </div>
+            {tree.node.options.map((o) => (
+              <div key={o.label} className="border border-gray-100 rounded-xl p-4">
+                <p className="font-semibold text-gray-800">{o.label}</p>
+                <p className="text-sm text-gray-600 mt-1"><strong>{o.result.title}.</strong> {o.result.advice}</p>
+                <Link href={o.result.href} className="text-sm text-[#005F8A] underline mt-1 inline-block">Lees meer</Link>
+              </div>
+            ))}
           </div>
           <p className="text-xs text-gray-400 mt-4">Dit is een hulpmiddel; controleer altijd de specificaties en je eigen situatie.</p>
         </section>

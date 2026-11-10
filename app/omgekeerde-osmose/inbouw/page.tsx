@@ -7,12 +7,12 @@ import { CTABanner } from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Osmosefilter inbouw onder aanrecht: installatie en modellen 2026",
   description:
-    "Osmosefilter inbouw onder aanrecht: compact, verborgen, aparte kraan. Installatie 2-3 uur. Vergelijk aanrecht- en inline modellen. Top inbouwmodellen 2026.",
+    "Osmosefilter inbouw onder aanrecht: compact en verborgen, met aparte osmosekraan of 3-weg-kraan. Ruimte, installatiestappen en inbouwmodellen 2026.",
   alternates: { canonical: "https://waterfilterplatform.nl/omgekeerde-osmose/inbouw" },
   openGraph: {
     title: "Osmosefilter inbouw onder aanrecht: installatie en modellen 2026",
     description:
-      "Osmosefilter inbouw onder aanrecht: compact, verborgen, aparte kraan. Installatie 2-3 uur. Vergelijk aanrecht- en inline modellen. Top inbouwmodellen 2026.",
+      "Osmosefilter inbouw onder aanrecht: compact en verborgen, met aparte osmosekraan of 3-weg-kraan. Ruimte, installatiestappen en inbouwmodellen 2026.",
     type: "website",
   },
 };
@@ -26,22 +26,22 @@ const faqItems = [
   {
     question: "Heb ik een aparte kraan nodig bij een inbouw osmosefilter?",
     answer:
-      "Ja, bij een inbouw osmosefilter onder het aanrecht is een aparte osmosekraan verplicht. Deze kraan wordt geboord in het aanrechtblad of in een extra gat in de gootsteen. De kraan is alleen bestemd voor gefilterd water en heeft een eigen aansluiting op het drukvat.",
+      "Nee, niet verplicht. Losse inbouwsystemen worden meestal met een aparte osmosekraan geleverd, die in het aanrechtblad of in een extra gat in de gootsteen komt. U kunt ook een 3-weg-kraan nemen die uw keukenkraan vervangt: warm, koud en gezuiverd water uit één kraan, zonder aparte tapkraan ernaast. Zo werkt de zuiver-water-kraan met The Source (15 kraanmodellen van 540 tot 840 euro, The Source zelf vanaf 395 euro), verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.",
   },
   {
     question: "Hoe lang duurt de installatie van een inbouw osmosefilter?",
     answer:
-      "De installatie duurt gemiddeld 2 tot 3 uur voor een doe-het-zelver met basiskennis van loodgieterij. De meest tijdrovende stap is het boren van het gat voor de aparte kraan (37-38 mm) in het aanrechtblad. Alle aansluitingen zijn push-fit en vereisen geen solderen.",
+      "Voor een systeem met aparte osmosekraan rekent u als doe-het-zelver met basiskennis van loodgieterij op ongeveer 2 tot 3 uur. De meest tijdrovende stap is het boren van het gat voor die kraan (37-38 mm) in het aanrechtblad. Bij een 3-weg-kraan is boren meestal niet nodig: de 3-weg-kraan komt in het gat van de bestaande keukenkraan, die u dan wel eerst demonteert. PureAqua biedt voor The Source optioneel installatie aan voor 299 euro. Alle aansluitingen zijn push-fit en vereisen geen solderen.",
   },
   {
     question: "Wat is het verschil tussen een inbouw en een aanrechtmodel osmosefilter?",
     answer:
-      "Een inbouw osmosefilter (onderbouw) is onzichtbaar onder het aanrecht en levert water via een aparte kraan. Een aanrechtmodel staat zichtbaar op het aanrecht en filtert direct via de bestaande keukenkraan. Het aanrechtmodel is eenvoudiger te installeren maar neemt ruimte op het aanrecht in beslag.",
+      "Een inbouw osmosefilter (onderbouw) is onzichtbaar onder het aanrecht en levert water via een aparte osmosekraan of via een 3-weg-kraan die de keukenkraan vervangt. Een aanrechtmodel staat zichtbaar op het aanrecht en filtert direct via de bestaande keukenkraan. Het aanrechtmodel is eenvoudiger te installeren maar neemt ruimte op het aanrecht in beslag.",
   },
   {
     question: "Welke merken osmosefilters zijn geschikt voor inbouw?",
     answer:
-      "Populaire inbouwmodellen zijn van Aquaphor (RO-101, RO-207), Watts Premier, PureAqua en diverse systemen met Filmtec of DuPont membranen. Deze merken bieden betrouwbare membranen met een rejectie van 95-99%. Let bij de keuze op het membraantype, het aantal filtertrappen en de beschikbaarheid van vervangfilters.",
+      "Inbouwmodellen zijn onder meer van Aquaphor (RO-101, RO-207) en Watts Premier, diverse systemen met Filmtec- of DuPont-membranen en The Source van PureAqua (vanaf 395 euro, plus een 3-weg-kraan van 540 tot 840 euro). WaterfilterPlatform is gelieerd aan PureAqua. Let bij de keuze op het membraantype, het aantal filtertrappen en de beschikbaarheid van vervangfilters, en vraag per model naar een testrapport of NSF/ANSI 58-listing; voor The Source zijn geen eigen rejectiepercentages aangetoond.",
   },
   {
     question: "Hoe kan ik het drukvat horizontaal plaatsen?",
@@ -56,7 +56,7 @@ const faqItems = [
   {
     question: "Wat is het verschil tussen een inline osmosefilter en een onderbouwmodel?",
     answer:
-      "Een inline osmosefilter wordt ingebouwd in een bestaand apparaat zoals een koelkast of ijsmaker en is niet bedoeld als zelfstandig drinkwatersysteem. Een onderbouwmodel is een compleet systeem met drukvat en aparte kraan voor algemeen drinkwater. Inline filters zijn goedkoper maar minder geschikt als hoofdwaterfilter.",
+      "Een inline osmosefilter wordt ingebouwd in een bestaand apparaat zoals een koelkast of ijsmaker en is niet bedoeld als zelfstandig drinkwatersysteem. Een onderbouwmodel is een compleet drinkwatersysteem onder het aanrecht, met een aparte osmosekraan of een 3-weg-kraan als tappunt. Inline filters zijn goedkoper maar minder geschikt als hoofdwaterfilter.",
   },
 ];
 
@@ -82,9 +82,9 @@ const articleSchema = {
   "@type": "Article",
   headline: "Osmosefilter inbouw onder aanrecht: voordelen, installatie en modellen",
   description:
-    "Osmosefilter inbouw onder aanrecht: compact, verborgen, aparte kraan. Installatie 2-3 uur. Vergelijk aanrecht- en inline modellen. Top inbouwmodellen 2026.",
+    "Osmosefilter inbouw onder aanrecht: compact en verborgen, met aparte osmosekraan of 3-weg-kraan. Ruimte, installatiestappen en inbouwmodellen 2026.",
   datePublished: "2026-05-01",
-  dateModified: "2026-05-01",
+  dateModified: "2026-11-10",
   url: "https://waterfilterplatform.nl/omgekeerde-osmose/inbouw",
   publisher: {
     "@type": "Organization",
@@ -110,7 +110,7 @@ export default function OsmoseInbouwPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Osmosefilter inbouw onder aanrecht: voordelen, installatie en modellen
           </h1>
-          <QuickAnswer answer="Een ingebouwd osmosefilter onder het aanrecht is de meest populaire installatiemethode. Het systeem is verborgen en levert gefilterd water via een aparte kraan op het aanrecht. Installatie duurt 2-3 uur. De benodigde ruimte onder het aanrecht is circa 30x30x40 cm." />
+          <QuickAnswer answer="Een ingebouwd osmosefilter staat verborgen in de onderkast en levert gefilterd water via een aparte osmosekraan of via een 3-weg-kraan die uw keukenkraan vervangt (zoals de zuiver-water-kraan met The Source, verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is). Met een aparte osmosekraan duurt de installatie ongeveer 2-3 uur. De benodigde ruimte onder het aanrecht is circa 30x30x40 cm." />
         </div>
       </section>
 
@@ -121,10 +121,10 @@ export default function OsmoseInbouwPage() {
           Wat is een inbouw osmosefilter?
         </h2>
         <p className="text-gray-700 mb-4">
-          Een inbouw osmosefilter (ook wel onderbouwmodel of under-sink systeem genoemd) wordt volledig verborgen geïnstalleerd in de onderkast van uw gootsteen. Het systeem bestaat uit twee tot vier filterhuizen, een RO-membraanhouder, een drukvat en een aparte osmosekraan die u in het aanrechtblad boort. Het water wordt gefilterd, opgeslagen in het drukvat en via de aparte kraan getapt.
+          Een inbouw osmosefilter (ook wel onderbouwmodel of under-sink systeem genoemd) wordt volledig verborgen geïnstalleerd in de onderkast van uw gootsteen. Het systeem bestaat uit twee tot vier filterhuizen, een RO-membraanhouder, bij de meeste systemen een drukvat, en een tappunt: meestal een aparte osmosekraan die u in het aanrechtblad boort, of een 3-weg-kraan die uw keukenkraan vervangt en warm, koud en gezuiverd water uit één kraan geeft.
         </p>
         <p className="text-gray-700 mb-6">
-          Dit onderscheidt het inbouwmodel van een aanrechtmodel (dat zichtbaar op het aanrecht staat) en van inline filters (die ingebouwd zijn in specifieke apparaten zoals koelkasten of ijsmakers). Het inbouwmodel is voor de meeste Nederlandse huishoudens de beste keuze vanwege de onzichtbare installatie en het gemak van een dedicated osmosekraan.
+          Dit onderscheidt het inbouwmodel van een aanrechtmodel (dat zichtbaar op het aanrecht staat) en van inline filters (die ingebouwd zijn in specifieke apparaten zoals koelkasten of ijsmakers). Een inbouwmodel kiest u vooral vanwege de onzichtbare installatie en een vast tappunt voor osmosewater, via een eigen osmosekraan of via een 3-weg-kraan.
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
@@ -146,8 +146,8 @@ export default function OsmoseInbouwPage() {
                 <td className="border border-gray-200 px-4 py-2 font-medium">Inbouw (onderbouw)</td>
                 <td className="border border-gray-200 px-4 py-2">Onder aanrecht</td>
                 <td className="border border-gray-200 px-4 py-2">Nee</td>
-                <td className="border border-gray-200 px-4 py-2">Ja (geboord)</td>
-                <td className="border border-gray-200 px-4 py-2">200-600 euro</td>
+                <td className="border border-gray-200 px-4 py-2">Meestal (geboord), niet bij een 3-weg-kraan</td>
+                <td className="border border-gray-200 px-4 py-2">Doorgaans 300-800 euro plus installatie</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-200 px-4 py-2 font-medium">Aanrechtmodel</td>
@@ -189,7 +189,7 @@ export default function OsmoseInbouwPage() {
           Installatiestappen inbouw osmosefilter
         </h2>
         <p className="text-gray-700 mb-4">
-          De installatie van een inbouw osmosefilter is goed te doen zonder loodgieter. Reken op 2 tot 3 uur voor de volledige installatie.
+          De installatie van een inbouw osmosefilter is goed te doen zonder loodgieter. Reken voor een systeem met aparte osmosekraan op ongeveer 2 tot 3 uur voor de volledige installatie.
         </p>
 
         <div className="space-y-4 mb-8">
@@ -215,9 +215,9 @@ export default function OsmoseInbouwPage() {
           </div>
 
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-            <h3 className="font-semibold text-[#003F5C] mb-2">Stap 4: Aparte kraan boren (37-38 mm gat)</h3>
+            <h3 className="font-semibold text-[#003F5C] mb-2">Stap 4: Kraan plaatsen (aparte osmosekraan of 3-weg-kraan)</h3>
             <p className="text-gray-700">
-              Dit is de meest kritieke stap. Boor een gat van 37-38 mm in het aanrechtblad op een geschikte positie. Gebruik een gatzaag van de juiste maat en boor langzaam om breuk te voorkomen. Bij een granieten of composiet aanrecht is een diamantboor noodzakelijk. Monteer de osmosekraan van onderaf door het gat en draai de moer van bovenaf vast.
+              Bij een aparte osmosekraan is dit de meest kritieke stap. Boor een gat van 37-38 mm in het aanrechtblad op een geschikte positie. Gebruik een gatzaag van de juiste maat en boor langzaam om breuk te voorkomen. Bij een granieten of composiet aanrecht is een diamantboor noodzakelijk. Monteer de osmosekraan van onderaf door het gat en draai de moer van bovenaf vast. Kiest u een 3-weg-kraan, dan boort u meestal geen nieuw gat: de 3-weg-kraan komt in het gat van de bestaande keukenkraan, die u eerst demonteert. Volg daarbij de handleiding van de kraan.
             </p>
           </div>
 
@@ -231,16 +231,16 @@ export default function OsmoseInbouwPage() {
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-2">Stap 6: Eerste flush uitvoeren</h3>
             <p className="text-gray-700">
-              Open de watertoevoer en laat het systeem de eerste twee tankdullingen volledig vullen en wegtappen. Dit spoelt productieresten uit het membraan. Meet met een TDS-meter: na de eerste flush daalt de TDS aanzienlijk. Na de tweede of derde vulling is het water klaar voor consumptie.
+              Open de watertoevoer en laat het systeem de eerste twee tankvullingen volledig vullen en wegtappen. Dit spoelt productieresten uit het membraan. Meet met een TDS-meter: na de eerste flush daalt de TDS aanzienlijk. Na de tweede of derde vulling is het water klaar voor consumptie.
             </p>
           </div>
         </div>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          De aparte osmosekraan kiezen
+          De kraan kiezen: aparte osmosekraan of 3-weg-kraan
         </h2>
         <p className="text-gray-700 mb-4">
-          De aparte kraan is het enige zichtbare deel van uw inbouw osmosefilter. Er zijn drie veelvoorkomende typen:
+          Kiest u een aparte osmosekraan, dan is die het enige zichtbare deel van uw inbouw osmosefilter. Er zijn drie veelvoorkomende typen:
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
           <li>
@@ -253,16 +253,19 @@ export default function OsmoseInbouwPage() {
             <strong>RVS osmosekraan:</strong> volledig roestvrij staal, geen nikkel of chroomcoating. Aanbevolen bij nikkelgevoeligheid of als uw leidingwater een lage pH heeft.
           </li>
         </ul>
+        <p className="text-gray-700 mb-4">
+          Wilt u geen tweede kraan op het aanrecht, dan is een 3-weg-kraan het alternatief: die vervangt uw keukenkraan en geeft warm, koud en gezuiverd water uit één kraan. Een voorbeeld is de zuiver-water-kraan met The Source (15 kraanmodellen van 540 tot 840 euro, The Source zelf vanaf 395 euro), verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is. Meer daarover leest u in onze <Link href="/the-source" className="text-[#005F8A] underline">review van The Source</Link>.
+        </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          Populaire inbouwmodellen 2026
+          Inbouwmodellen en membranen 2026
         </h2>
         <p className="text-gray-700 mb-4">
-          Bij de keuze van een inbouw osmosefilter zijn de kwaliteit van het membraan en de beschikbaarheid van vervangfilters de twee belangrijkste criteria.
+          Bij de keuze van een inbouw osmosefilter zijn de kwaliteit van het membraan en de beschikbaarheid van vervangfilters de twee belangrijkste criteria. WaterfilterPlatform is gelieerd aan PureAqua, de verkoper van The Source.
         </p>
         <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
           <li>
-            <strong>Filmtec/DuPont membranen:</strong> de industriestandaard. Gebruikt door Watts Premier, PureAqua en vele andere merken. Rejectie 96-99%. Vervangmembranen breed verkrijgbaar.
+            <strong>Filmtec/DuPont membranen:</strong> de industriestandaard. Gebruikt door Watts Premier en vele andere merken. Rejectie 96-99% volgens fabrikantopgave. Vervangmembranen breed verkrijgbaar.
           </li>
           <li>
             <strong>Aquaphor RO-101 en RO-207:</strong> Europees merk (Russische oorsprong) met goede kwaliteit/prijsverhouding. Het RO-207 Morion heeft een geintegreerd drukvat wat compact is. Vervangfilters leverbaar via meerdere leveranciers.
@@ -271,7 +274,7 @@ export default function OsmoseInbouwPage() {
             <strong>Watts Premier:</strong> Amerikaans merk met bewezen betrouwbaarheid. Modellen met 4 en 5 trappen. Worden vaak door installateurs aanbevolen vanwege de robuuste bouw.
           </li>
           <li>
-            <strong>PureAqua:</strong> zakelijk gepositioneerd merk met uitstekende membranenen en een breed assortiment. Modellen met remineralisatiefilter beschikbaar.
+            <strong>The Source (PureAqua):</strong> onderbouw-osmosesysteem voor een 3-weg-kraan, vanaf 395 euro plus een kraan van 540 tot 840 euro. Onderhoud: één set van drie filters per jaar voor 149 euro. Voor The Source zijn geen eigen rejectiepercentages aangetoond. Zie de <Link href="/the-source" className="text-[#005F8A] underline">review van The Source</Link>.
           </li>
         </ul>
 
@@ -298,6 +301,7 @@ export default function OsmoseInbouwPage() {
             <li><Link href="/omgekeerde-osmose" className="hover:underline">Omgekeerde osmose: complete gids</Link></li>
             <li><Link href="/omgekeerde-osmose/kopen" className="hover:underline">Osmosefilter kopen: vergelijking en advies</Link></li>
             <li><Link href="/omgekeerde-osmose/diy" className="hover:underline">Osmosefilter zelf installeren: stappenplan</Link></li>
+            <li><Link href="/the-source" className="hover:underline">The Source review: osmosewater uit een 3-weg-kraan</Link></li>
           </ul>
         </div>
 

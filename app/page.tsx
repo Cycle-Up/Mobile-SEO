@@ -144,7 +144,7 @@ const clusters = [
     ),
     title: 'Vergelijkingen',
     desc: 'Osmose vs filterkan, waterfilter vs waterontharder: prestaties en kosten eerlijk naast elkaar.',
-    badge: 'Objectief',
+    badge: 'Prestaties en kosten',
   },
 ];
 

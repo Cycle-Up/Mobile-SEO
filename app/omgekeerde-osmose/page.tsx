@@ -9,16 +9,18 @@ import { OsmoseIllustration } from '@/components/OsmoseIllustration';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { CountertopCTA } from '@/components/CountertopCTA';
 import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
+import { THREE_WAY } from '@/lib/kranen.mjs';
+import { COUNTERTOP } from '@/lib/countertop.mjs';
 
 export const metadata: Metadata = {
   title: 'Wat is omgekeerde osmose? Uitleg & RO filter kopen 2026',
   description:
-    'Alles over omgekeerde osmose (RO): hoe het werkt, wat het verwijdert, kosten, onderhoud en welk osmose filter past bij jou. Complete gids.',
+    `Omgekeerde osmose uitgelegd: werking, kosten en onderhoud. Onze keuze voor osmosewater uit je eigen kraan: The Source met 3-weg-kraan (${THREE_WAY.sourcePrice} plus kraan).`,
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose' },
   openGraph: {
-    title: 'Omgekeerde osmose — complete gids over RO waterfilters',
+    title: 'Omgekeerde osmose: complete gids over RO waterfilters',
     description:
-      'De volledige gids over omgekeerde osmose: werking, voordelen, nadelen, kosten en de beste systemen voor thuis.',
+      `De volledige gids over omgekeerde osmose: werking, voor- en nadelen en kosten. Onze keuze voor thuis: The Source met 3-weg-kraan (${THREE_WAY.sourcePrice} plus kraan) of, zonder installatie, het ${COUNTERTOP.shortName} (${COUNTERTOP.price}).`,
     url: 'https://waterfilterplatform.nl/omgekeerde-osmose',
     type: 'article',
   },
@@ -171,11 +173,11 @@ export default function OmgekeerdeOsmosePage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'Omgekeerde osmose — uitleg, voordelen en filter kopen',
+          title: 'Omgekeerde osmose: uitleg, voordelen en filter kopen',
           description:
-            'Complete gids over omgekeerde osmose (RO): werking, voordelen, nadelen, kosten, onderhoud en de beste systemen voor thuis.',
+            `Omgekeerde osmose uitgelegd: werking, kosten en onderhoud. Onze keuze voor osmosewater uit je eigen kraan: The Source met 3-weg-kraan (${THREE_WAY.sourcePrice} plus kraan).`,
           datePublished: '2025-08-15',
-          dateModified: '2026-05-13',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/omgekeerde-osmose',
         }}
       />
@@ -223,7 +225,7 @@ export default function OmgekeerdeOsmosePage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <QuickAnswer answer="Een omgekeerde osmose filter verwijdert 95–99% van alle opgeloste stoffen uit leidingwater, waaronder kalk, nitraten, pesticiden en PFAS. Het systeem werkt via een semi-permeabel membraan dat verontreinigingen tegenhoudt. Voor Nederlandse huishoudens met hard water of waterkwaliteitszorgen is het de meest effectieve filteroplossing." />
+        <QuickAnswer answer={`Een omgekeerde osmose filter perst leidingwater door een semi-permeabel membraan dat het grootste deel van de opgeloste stoffen tegenhoudt, zoals kalk, nitraat, pesticiden en PFAS; hoeveel een specifiek apparaat haalt, hangt af van membraan, filterstaat en waterdruk. Tegen kalk in het hele huis is een waterontharder zoals JOEP (onze keuze) bedoeld; osmose zuivert het drinkwater aan de keukenkraan. Onze keuze daarvoor is een zuiver-water-kraan met The Source (${THREE_WAY.sourcePrice}, kraan ${THREE_WAY.tapPrice}, ${THREE_WAY.filters}); mag je niet verbouwen, dan het ${COUNTERTOP.name} (${COUNTERTOP.price}, zonder installatie).`} />
 
         <figure className="my-8">
           <OsmoseIllustration className="rounded-2xl shadow-sm" />
@@ -584,7 +586,7 @@ export default function OmgekeerdeOsmosePage() {
               {
                 titel: 'Huishoudens in hardwatergebied',
                 desc:
-                  'Woon je in een gemeente met water boven 10 °dH (vrijwel heel Zuid- en Oost-Nederland)? Dan bespaart RO je een hoop kalkellende. Check je gebied op de pagina waterhardheid per gemeente.',
+                  'Woon je in hardwatergebied? Osmose haalt kalk grotendeels uit je drinkwater aan de keukenkraan, dus veel minder kalkaanslag in waterkoker en koffiemachine. Tegen kalk in leidingen, douche en boiler is een waterontharder zoals JOEP (onze keuze) bedoeld. Check je gebied op de pagina waterhardheid per gemeente.',
               },
               {
                 titel: 'Gezinnen met jonge kinderen',
@@ -830,8 +832,8 @@ export default function OmgekeerdeOsmosePage() {
               },
               {
                 href: '/the-source',
-                title: 'The Source 50 (PureAqua)',
-                desc: 'Stroomloos osmosesysteem, circa 1:1 verhouding. Specificaties en kosten.',
+                title: 'The Source (PureAqua)',
+                desc: 'Osmose onder het aanrecht met een 3-weg-kraan. Specificaties en kosten.',
               },
               {
                 href: '/kokend-water-kraan/met-filter',

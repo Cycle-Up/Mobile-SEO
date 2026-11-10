@@ -11,12 +11,12 @@ export function generateMetadata(): Metadata {
   return {
     title: 'Kinetico waterontharder: modellen, ervaringen en alternatief',
     description:
-      'Kinetico waterontharder: wat biedt de non-electric twin-tank techniek, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en',
+      'Kinetico waterontharder: wat biedt de non-electric twin-tank techniek, voor wie is het geschikt en waar let je op? Plus alternatieven in 2026.',
     alternates: { canonical: 'https://waterfilterplatform.nl/kinetico-waterontharder' },
     openGraph: {
       title: 'Kinetico waterontharder: modellen, ervaringen en alternatief',
       description:
-        'Wat biedt een Kinetico waterontharder (non-electric twin-tank), voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Onafhankelijke uitleg.',
+        'Wat biedt een Kinetico waterontharder (non-electric twin-tank), voor wie is het geschikt en wat zijn de alternatieven? Met kanttekeningen en onze keuze.',
       url: 'https://waterfilterplatform.nl/kinetico-waterontharder',
       type: 'article',
       locale: 'nl_NL',
@@ -54,9 +54,9 @@ export default function KineticoWaterontharderPage() {
         type="Article"
         article={{
           title: 'Kinetico waterontharder: modellen, ervaringen en alternatief',
-          description: 'Kinetico waterontharder: wat biedt de non-electric twin-tank techniek, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en',
+          description: 'Kinetico waterontharder: wat biedt de non-electric twin-tank techniek, voor wie is het geschikt en waar let je op? Plus alternatieven in 2026.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/kinetico-waterontharder',
         }}
       />
@@ -86,8 +86,9 @@ export default function KineticoWaterontharderPage() {
           <p className="text-gray-600 text-lg mb-6">
             <strong>Kinetico</strong> is een internationaal merk dat bekend staat om non-electric
             waterontharders die op waterdruk werken. Hieronder lees je wat Kinetico biedt, voor wie het
-            geschikt is, waar je op let bij de keuze en hoe het zich verhoudt tot alternatieven -
-            onafhankelijk en zonder verkoopprikkel.
+            geschikt is, waar je op let bij de keuze en hoe het zich verhoudt tot alternatieven.
+            Onze eigen keuze is JOEP, verkocht door PureAqua, waaraan wij gelieerd zijn. JOEP heeft wel
+            een stopcontact nodig.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -108,11 +109,11 @@ export default function KineticoWaterontharderPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         <QuickAnswer
           question="Is een Kinetico waterontharder een goede keuze?"
-          answer="Kinetico levert non-electric twin-tank waterontharders die continu zacht water leveren en regenereren op basis van werkelijk verbruik in plaats van een timer. Dat maakt ze premium en betrouwbaar, maar ook hoger geprijsd en doorgaans via een dealer geïnstalleerd. Het is een goede keuze als je geen stroompunt bij de aansluiting hebt of een onderhoudsarme oplossing wilt - vergelijk capaciteit, zoutverbruik en certificering met andere merken."
+          answer={faqItems[0].answer}
         />
 
         <section>
@@ -167,7 +168,7 @@ export default function KineticoWaterontharderPage() {
         <CTABanner context="waterhardheid" />
 
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waar let je op bij de keuze - en alternatieven</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waar let je op bij de keuze en welke alternatieven zijn er?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Beoordeel een Kinetico waterontharder net als elk ander merk op de juiste capaciteit voor jouw
             waterhardheid en huishouden, het zout- en waterverbruik bij regeneratie, de certificering en
@@ -185,8 +186,10 @@ export default function KineticoWaterontharderPage() {
             <Link href="/vergelijken/waterontharder-vergelijken" className="text-[#005F8A] underline">waterontharder-vergelijking</Link>.
           </p>
           <p className="text-xs text-gray-400 mt-4">
-            WaterfilterPlatform verkoopt geen Kinetico-producten en ontvangt hiervoor geen vergoeding.
-            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt mei 2026.
+            JOEP, onze keuze, wordt verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is; koop je
+            via onze link, dan verdient PureAqua daaraan. Kinetico verkopen wij niet en daarvoor ontvangen wij
+            geen vergoeding. Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier.
+            Transparantietekst bijgewerkt november 2026; merkinformatie over Kinetico gecontroleerd mei 2026.
           </p>
         </section>
 

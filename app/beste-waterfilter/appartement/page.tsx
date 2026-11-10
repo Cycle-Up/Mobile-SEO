@@ -26,12 +26,12 @@ const faqItems = [
   {
     question: "Kan ik een osmosefilter plaatsen in een huurappartement?",
     answer:
-      "Een onderbouw osmosefilter vereist een extra kraangat en een slangaansluiting op het leidingwerk. Dat zijn aanpassingen aan de woning en vereist toestemming van de verhuurder of VvE. Een aanrechtfilter (countertop RO) is het alternatief: dit sluit aan op de bestaande kraan via een adapter, vereist geen boorwerk en is volledig verplaatsbaar. De filterprestaties zijn vergelijkbaar met een onderbouw osmosefilter.",
+      "Een onderbouw osmosefilter vraagt een slangaansluiting op het leidingwerk en een aparte kraan (extra kraangat) of een 3-weg-kraan die de keukenkraan vervangt. Een extra kraangat boren vraagt in principe toestemming van de verhuurder of VvE. Overleg ook bij een 3-weg-kraan of een aansluiting op het leidingwerk vooraf. Een aanrechtfilter (countertop RO) is het alternatief: boren is niet nodig en het apparaat verhuist mee. Countertop-osmose werkt met hetzelfde type RO-membraan als onderbouw osmose; de prestaties verschillen per model. Sommige modellen koppelt u met een adapter aan de kraan, andere vult u met de hand, zoals het PureAqua Water zuiver apparaat (stekker erin, tank vullen, klaar). Dat apparaat wordt verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.",
   },
   {
     question: "Wat is het verschil tussen een aanrechtfilter en onderbouw osmose?",
     answer:
-      "Een aanrechtfilter (countertop) staat zichtbaar op het aanrecht en sluit aan op de bestaande mengkraan via een adapter. Geen installatie nodig. Een onderbouw osmosefilter zit onder het aanrecht en vereist een aparte kraantap (extra gat boren). Filterprestaties zijn vergelijkbaar: beide gebruiken RO-technologie met sediment- en koolstofvoorfase. Het verschil zit in installatie, ruimtegebruik en prijs.",
+      "Een aanrechtfilter (countertop) staat zichtbaar op het aanrecht en sluit via een adapter aan op de bestaande mengkraan of wordt met de hand gevuld. Geen installatie nodig. Een onderbouw osmosefilter zit onder het aanrecht en vereist een aparte kraan (extra gat) of een 3-weg-kraan. Het werkingsprincipe is hetzelfde: beide gebruiken RO-technologie met sediment- en koolstofvoorfase; de prestaties verschillen per model. Het verschil zit in installatie, ruimtegebruik en prijs.",
   },
   {
     question: "Hoe groot is een compacte osmose-unit?",
@@ -75,6 +75,7 @@ export default function AppartementPage() {
           description:
             "Appartement met beperkte ruimte? Aanrechtfilter, onderbouw osmose of filterkan: welk filter past het beste zonder verbouwing.",
           datePublished: "2026-05-17",
+          dateModified: "2026-11-03",
           url: "https://waterfilterplatform.nl/beste-waterfilter/appartement",
         }}
       />
@@ -95,13 +96,13 @@ export default function AppartementPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Beste waterfilter voor een appartement
           </h1>
-          <QuickAnswer answer="Voor een appartement is een aanrechtfilter (countertop RO) of compacte onderbouw osmose het beste: geen verbouwing, geen extra kraan boren, en toch volwaardige filtratie. Een filterkan is goedkoper maar filtert geen PFAS of lood." />
+          <QuickAnswer answer="Voor een appartement is een aanrechtfilter (countertop RO) meestal de handigste keuze: geen boorwerk, geen aansluiting op het leidingwerk en het apparaat verhuist mee. Past er een compacte onderbouw osmose in de onderkast, dan tapt u gefilterd water uit een aparte kraan (extra kraangat) of een 3-weg-kraan; overleg dat vooraf met verhuurder of VvE. Een filterkan is goedkoper maar filtert geen PFAS of lood." />
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-03" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
         <CTABanner context="osmose" />
 
         <section className="mt-10">
@@ -128,9 +129,10 @@ export default function AppartementPage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Een countertop osmosefilter is de meest geschikte optie voor een appartement zonder
-            installatiemogelijkheden. Het systeem staat op het aanrecht en sluit aan op de
-            bestaande mengkraan via een standaard kraanadapter, die bij de meeste Europese kranen
-            past. Geen boorwerk, geen loodgieterswerk, geen toestemming nodig.
+            installatiemogelijkheden. Het systeem staat op het aanrecht. Sommige modellen sluit u
+            met een kraanadapter aan op de bestaande mengkraan, andere hebben een eigen
+            watertank die u met de hand vult. Geen boorwerk, geen loodgieterswerk, geen
+            toestemming nodig.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             De aanschafprijs bedraagt 200-350 euro. Jaarlijkse filterkosten (sedimentfilter,
@@ -152,14 +154,17 @@ export default function AppartementPage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Als u toestemming heeft van de VvE of verhuurder, biedt een compacte onderbouw
-            osmose-unit de voordelen van onzichtbare installatie en een aparte gefilterde
-            kraantap. Modellen met een breedte van 25-30 cm passen in de meeste
+            osmose-unit de voordelen van onzichtbare installatie en gefilterd water uit een
+            eigen kraan: een aparte osmosekraan of een 3-weg-kraan die uw keukenkraan vervangt
+            en warm, koud en gezuiverd water tapt. Modellen met een breedte van 25-30 cm passen in de meeste
             appartementkasten. Tankless-modellen (zonder opslagvat) zijn extra compact.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Installatie vereist het boren van een extra kraangat in het aanrechtblad of
-            de achterwand, plus een slangaansluiting op de koude wateraansluiting onder
-            het aanrecht. Aanschafprijs: 300-500 euro. Een afvoerslang voor het concentraatwater
+            Voor een aparte osmosekraan boort u een extra kraangat in het aanrechtblad of
+            de achterwand. Met een 3-weg-kraan is dat niet nodig, want die komt op de plek
+            van de bestaande keukenkraan. In beide gevallen komt er een slangaansluiting op
+            de koude wateraansluiting onder het aanrecht. Aanschafprijs van de unit: 300-500
+            euro; een 3-weg-kraan kost los extra. Een afvoerslang voor het concentraatwater
             (waste water) moet worden aangesloten op de sifon. Bespreek dit altijd vooraf
             met uw VvE-beheerder of verhuurder.
           </p>
@@ -206,7 +211,7 @@ export default function AppartementPage() {
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="border border-gray-300 px-3 py-2 font-medium">Aanrechtfilter (countertop RO)</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">Kraanadapter</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Adapter of tank vullen</td>
                   <td className="border border-gray-300 px-3 py-2">100-200 euro</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">90-99%</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">95-99%</td>
@@ -214,7 +219,7 @@ export default function AppartementPage() {
                 </tr>
                 <tr>
                   <td className="border border-gray-300 px-3 py-2 font-medium">Onderbouw osmose</td>
-                  <td className="border border-gray-300 px-3 py-2 text-yellow-600">Boren + toestemming</td>
+                  <td className="border border-gray-300 px-3 py-2 text-yellow-600">Kraangat of 3-weg-kraan, vooraf overleggen</td>
                   <td className="border border-gray-300 px-3 py-2">80-150 euro</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">90-99%</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">95-99%</td>

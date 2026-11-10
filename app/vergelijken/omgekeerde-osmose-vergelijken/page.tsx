@@ -82,13 +82,13 @@ export default function OmgekeerdeOsmoseVergelijkenPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Omgekeerde osmose vergelijken: typen, prestaties en kosten
           </h1>
-          <QuickAnswer answer="Er zijn 4 typen osmosefilters: onderbouw (meest populair, 300-700 euro), aanrechtfilter/countertop (verplaatsbaar, 200-400 euro), inline/koelkast (100-200 euro, minder capaciteit) en 4-in-1 kraan (incl. kokend water, 1.200-2.500 euro). Alle typen bereiken 95-99% reductie van PFAS, lood en nitraat." />
+          <QuickAnswer answer="Er zijn 4 typen osmosefilters: onderbouw (meest populair, 300-700 euro), aanrechtfilter/countertop (verplaatsbaar, 200-500 euro), inline/koelkast (100-200 euro, minder capaciteit) en 4-in-1 kraan (incl. zeer heet of kokend en gekoeld water, 1.200-2.500 euro). Goede systemen halen doorgaans 90 tot meer dan 99% minder PFAS en lood, maar de exacte waarde verschilt per model: controleer het testrapport. Voorbeeld: bij de PureAqua 4-in-1 (1.948 euro) mat SGS meer dan 99,6% minder PFOS en meer dan 99,8% minder lood." />
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-03" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
         <CTABanner context="osmose" />
 
         <section className="mt-10">
@@ -96,7 +96,7 @@ export default function OmgekeerdeOsmoseVergelijkenPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             De markt voor omgekeerde-osmosefilters heeft zich de afgelopen jaren sterk gediversificeerd.
             Naast het klassieke onderbouw systeem zijn er inmiddels compacte aanrechtmodellen, inlinefiltres
-            voor koelkasten met waterafgifte en gecombineerde systemen met kokend water. Elk type heeft
+            voor koelkasten met waterafgifte en gecombineerde systemen met zeer heet of kokend water. Elk type heeft
             zijn eigen toepassingsprofiel, installatievereisten en kostenstructuur.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -121,15 +121,15 @@ export default function OmgekeerdeOsmoseVergelijkenPage() {
               </thead>
               <tbody>
                 {[
-                  ["Aanschafprijs", "300-700 euro", "200-400 euro", "100-200 euro", "1.200-2.500 euro"],
+                  ["Aanschafprijs", "300-700 euro", "200-500 euro", "100-200 euro", "1.200-2.500 euro"],
                   ["Capaciteit (liter/dag)", "100-400 liter", "50-150 liter", "30-80 liter", "100-300 liter"],
-                  ["Filter-stages", "3-7 stages", "3-5 stages", "2-3 stages", "4-6 stages"],
-                  ["NSF-certificering", "NSF 58 / NSF 42", "NSF 58 / NSF 42", "NSF 58 (beperkt)", "NSF 58 / NSF 42"],
+                  ["Filter-stages", "3-7 stages", "3-7 stages (soms in één combicartridge)", "2-3 stages", "3-6 stages"],
+                  ["NSF-certificering", "Verschilt per model; controleer de NSF-database per model", "Verschilt per model; controleer de NSF-database per model", "Verschilt per model; controleer de NSF-database per model", "Verschilt per model; controleer de NSF-database per model"],
                   ["Installatie", "Vast (loodgieter aanbevolen)", "Verplaatsbaar, geen tools", "Vast (inline)", "Vast, professioneel"],
                   ["Membraanwissel gemak", "Eenvoudig (DIY)", "Eenvoudig (DIY)", "Moeilijk (achter koelkast)", "Matig (technicus)"],
                   ["Footprint", "Onder aanrecht", "Op aanrecht (30x20 cm)", "Achter koelkast", "Onder aanrecht + kraan"],
-                  ["Kokend water", "Nee", "Nee", "Nee", "Ja (95-100 graden)"],
-                  ["PFAS reductie", "95-99%", "95-99%", "90-98%", "95-99%"],
+                  ["Heet gezuiverd water", "Nee", "Alleen bij modellen met verwarming", "Nee", "Ja, zeer heet of kokend, afhankelijk van het model"],
+                  ["PFAS reductie (indicatie, verschilt per model)", "95-99% of meer", "95-99% of meer", "90-98%", "95-99% of meer"],
                   ["Jaarlijkse filterkosten", "80-150 euro", "60-120 euro", "50-100 euro", "100-200 euro"],
                 ].map(([eigenschap, onderbouw, aanrecht, inline, vierInEen], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
@@ -143,6 +143,15 @@ export default function OmgekeerdeOsmoseVergelijkenPage() {
               </tbody>
             </table>
           </div>
+          <p className="text-sm text-gray-600 leading-relaxed mb-6">
+            De tabel geeft marktindicaties per type, geen specificaties van een bepaald product. Twee
+            producten van onze partner PureAqua wijken op onderdelen af. Het PureAqua Water zuiver apparaat
+            (countertop, 495 euro) werkt met een 7-in-1-cartridge en verwarmt tot maximaal 95 graden. Voor
+            deze unit zijn geen universele PFAS-percentages aangetoond, dus die noemen we niet. De PureAqua
+            4-in-1 kraan (1.948 euro) filtert met omgekeerde osmose in drie stappen en geeft zeer heet water
+            van circa 96 graden. SGS mat op dit systeem meer dan 99,6% minder PFOS, 99,5% minder PFOA en meer
+            dan 99,8% minder lood (rapport NBF26-0009878-01).
+          </p>
 
           <h2 className="text-2xl font-bold text-[#003F5C] mt-10 mb-4">Wanneer welk type kiezen?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -188,12 +197,12 @@ export default function OmgekeerdeOsmoseVergelijkenPage() {
               </p>
             </div>
             <div className="border border-[#005F8A]/20 rounded-xl p-5 bg-[#E0F2FE]/30">
-              <h3 className="font-semibold text-[#005F8A] mb-2">Kokend water wens erbij</h3>
+              <h3 className="font-semibold text-[#005F8A] mb-2">Heet of kokend water erbij</h3>
               <p className="text-sm text-gray-700">
-                Kies een 4-in-1 kransysteem (zoals een Quooker met CUBE, die met actieve kool filtert, of een Grohe Blue Home).
+                Kies een 4-in-1 kransysteem (zoals een Quooker met CUBE, die kokend water geeft en met actieve kool filtert).
                 Duur in aanschaf maar combineert gefilterd, gekoeld, heet en soms bruisend water in
                 &eacute;&eacute;n kraan. De PureAqua 4-in-1 (1.948 euro) geeft zeer heet (circa 96 graden),
-                gekoeld en osmose-gezuiverd water, maar geen bruisend water.
+                gekoeld en osmose-gezuiverd water, maar geen kokend en geen bruisend water.
               </p>
             </div>
           </div>
@@ -297,10 +306,10 @@ export default function OmgekeerdeOsmoseVergelijkenPage() {
               </thead>
               <tbody>
                 {[
-                  ["Aanschaf + installatie", "500-900 euro", "200-400 euro", "150-250 euro", "1.500-3.000 euro"],
+                  ["Aanschaf + installatie", "500-900 euro", "200-500 euro", "150-250 euro", "1.500-3.000 euro"],
                   ["Filters per jaar", "80-150 euro", "60-120 euro", "50-100 euro", "100-200 euro"],
                   ["Membraanvervanging (2-3 jr)", "50-80 euro", "40-70 euro", "40-70 euro", "70-120 euro"],
-                  ["Totaal 5 jaar (TCO)", "950-1.850 euro", "600-1.200 euro", "550-1.000 euro", "2.500-5.500 euro"],
+                  ["Totaal 5 jaar (TCO)", "950-1.850 euro", "600-1.300 euro", "550-1.000 euro", "2.500-5.500 euro"],
                 ].map(([post, onderbouw, aanrecht, inline, vierInEen], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                     <td className="px-4 py-3 font-medium text-gray-700 border border-gray-200">{post}</td>

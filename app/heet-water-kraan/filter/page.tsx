@@ -32,7 +32,7 @@ const faqItems = [
   {
     question: 'Wat filtert omgekeerde osmose uit heet water?',
     answer:
-      'Omgekeerde osmose (RO) verwijdert 95-99% van vrijwel alle opgeloste stoffen: kalk, nitraten, PFAS (per- en polyfluoralkylstoffen), zware metalen (lood, arseen), pesticiden, medicijnresten, bacterieen, virussen en microplastics. Het osmosemembraan heeft porieen van 0,0001 micrometer. Dit is veruit de meest complete filtermethode die beschikbaar is voor huishoudelijk gebruik.',
+      'Omgekeerde osmose (RO) vermindert veel opgeloste stoffen sterk, waaronder kalk, nitraten, PFAS (per- en polyfluoralkylstoffen), zware metalen zoals lood, pesticiden, medicijnresten en microplastics. Hoeveel precies verschilt per stof, membraan, waterdruk en staat van de filters. Het osmosemembraan heeft porieen van circa 0,0001 micrometer. Van de gangbare filtermethoden voor thuis gaat osmose daarmee het verst.',
   },
   {
     question: 'Is gefilterd heet water beter dan ongefilterd?',
@@ -42,7 +42,7 @@ const faqItems = [
   {
     question: 'Welke heet water kraan heeft een ingebouwd osmosefilter?',
     answer:
-      'De PureAqua 4-in-1 kraan combineert omgekeerde osmose in drie stappen (voorfilter, membraan, remineralisatie) met zeer heet water van circa 96 graden en gekoeld water in e&eacute;n kraan. Quooker en Grohe Red bieden koolstoffilters als optie maar geen RO-membraan. Een losse RO-unit kan wel achter de meeste heet water boilers worden geschakeld.',
+      'De PureAqua 4-in-1 kraan combineert omgekeerde osmose in drie stappen (voorfilter, membraan, remineralisatie) met zeer heet water van circa 96 graden en gekoeld water in één kraan. Quooker en Grohe Red bieden koolstoffilters als optie maar geen RO-membraan. Een losse RO-unit kan wel achter de meeste heet water boilers worden geschakeld.',
   },
   {
     question: 'Hoe vaak moet het filter van een heet water kraan worden vervangen?',
@@ -52,12 +52,12 @@ const faqItems = [
   {
     question: 'Verwijdert een heet water kraan met filter ook PFAS?',
     answer:
-      'Een kalkfilter of eenvoudige koolstoffilter verwijdert geen of nauwelijks PFAS. Een actief koolstofblok (NSF/ANSI 53 gecertificeerd) verwijdert 70-90% van bepaalde PFAS-verbindingen. Alleen een omgekeerde osmose membraan verwijdert 95-99% van alle bekende PFAS-verbindingen betrouwbaar. Voor gebieden met PFAS-besmetting is een osmosefilter de enige betrouwbare oplossing.',
+      'Een kalkfilter of eenvoudige koolstoffilter verwijdert geen of nauwelijks PFAS. Een actief koolstofblok (NSF/ANSI 53 gecertificeerd) vermindert bepaalde PFAS-verbindingen gedeeltelijk, vaak 70-90%. Een omgekeerde osmose membraan vermindert PFAS doorgaans sterker. Bij de PureAqua 4-in-1 mat een SGS-labtest op een nieuw systeem meer dan 99,6% minder PFOS en 99,5% minder PFOA. Woont u in een gebied met PFAS in het drinkwater, dan ligt een osmosefilter het meest voor de hand; laat bij twijfel uw water testen.',
   },
   {
     question: 'Kan ik een los osmosefilter koppelen aan mijn bestaande heet water kraan?',
     answer:
-      'Ja, een losse omgekeerde osmose-unit (150-400 euro) kan worden aangesloten voor de heet water boiler. U sluit de permeaatuitgang van het RO-systeem aan op de koudwaterinlaat van de boiler via een 1/4 inch Quick Connect aansluiting. Zo verwarmt u altijd gefilterd water. Nadeel: meer onderdelen, meer ruimte onder aanrecht en twee aparte kranen. De PureAqua 4-in-1 kraan combineert dit in e&eacute;n kraan, met een heet-/koelunit en een osmose-unit onder de spoelbak.',
+      'Ja, een losse omgekeerde osmose-unit (150-400 euro) kan worden aangesloten voor de heet water boiler. U sluit de permeaatuitgang van het RO-systeem aan op de koudwaterinlaat van de boiler via een 1/4 inch Quick Connect aansluiting. Zo verwarmt u altijd gefilterd water. Nadeel: meer onderdelen, meer ruimte onder aanrecht en twee aparte kranen. De PureAqua 4-in-1 kraan combineert dit in één kraan, met een heet-/koelunit en een osmose-unit onder de spoelbak.',
   },
 ];
 
@@ -84,8 +84,8 @@ const filterOpties = [
   },
   {
     naam: 'Omgekeerde osmose (RO-membraan)',
-    verwijdert: 'Kalk, nitraten, PFAS, zware metalen, pesticiden, medicijnresten, bacterieen, virussen, microplastics (95-99%)',
-    verwijdertNiet: 'Kleine hoeveelheden gassen (CO2) - maar die zijn niet schadelijk',
+    verwijdert: 'Kalk, nitraten, PFAS, zware metalen, pesticiden, medicijnresten en microplastics (sterke vermindering; hoeveel verschilt per stof en systeem)',
+    verwijdertNiet: 'Opgeloste gassen zoals CO2 (niet schadelijk)',
     prijs: '60 - 100 euro/jaar',
     levensduur: '12-24 maanden membraan, 12 maanden pre/postfilters',
     doel: 'Maximale waterkwaliteit, volksgezondheid',
@@ -123,7 +123,7 @@ export default function HeetWaterKraanFilterPage() {
           description:
             'Een heet water kraan met geintegreerd waterfilter geeft instant heet en gefilterd water. Welke filteropties bestaan er en wat filtert het precies?',
           datePublished: '2026-05-01',
-          dateModified: '2026-05-16',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/heet-water-kraan/filter',
         }}
       />
@@ -186,7 +186,7 @@ export default function HeetWaterKraanFilterPage() {
 
         {/* Quick Answer */}
         <section>
-          <QuickAnswer answer="Een kalkfilter beschermt het verwarmingselement maar filtert geen PFAS of nitraten. Een koolstoffilter verbetert de smaak. Alleen omgekeerde osmose verwijdert 95-99% van alle verontreinigingen inclusief PFAS, nitraten en medicijnresten. De PureAqua 4-in-1 kraan combineert osmosefiltratie met zeer heet water (circa 96 graden) en gekoeld water in e&eacute;n kraan." />
+          <QuickAnswer answer="Een kalkfilter beschermt het verwarmingselement maar filtert geen PFAS of nitraten. Een koolstoffilter verbetert de smaak. Omgekeerde osmose gaat het verst en vermindert ook PFAS, lood en nitraat sterk. De PureAqua 4-in-1 kraan combineert osmose met zeer heet (circa 96 graden) en gekoeld water in één kraan; een SGS-labtest op een nieuw systeem mat meer dan 99,6% minder PFOS en meer dan 99,8% minder lood." />
         </section>
 
         {/* Waarom filter */}
@@ -222,8 +222,8 @@ export default function HeetWaterKraanFilterPage() {
             <div className="bg-red-50 border border-red-200 rounded-xl p-4">
               <p className="font-semibold text-red-900 mb-2">Reden 3: PFAS en nitraten blijven bij verhitting</p>
               <p className="text-sm text-gray-700 leading-relaxed">
-                PFAS (per- en polyfluoralkylstoffen) en nitraten verdwijnen niet bij verhitting &mdash;
-                ze concentreren juist als het water gedeeltelijk verdampt. In gebieden met PFAS in
+                PFAS (per- en polyfluoralkylstoffen) en nitraten verdwijnen niet bij verhitting.
+                Ze concentreren juist als het water gedeeltelijk verdampt. In gebieden met PFAS in
                 het drinkwater (diverse locaties in Nederland nabij industriegebieden of vliegvelden)
                 is gefilterd heet water geen luxe maar een gezondheidsmaatregel.
               </p>
@@ -268,7 +268,7 @@ export default function HeetWaterKraanFilterPage() {
                 </div>
                 {f.highlight && (
                   <p className="text-xs text-[#005F8A] font-semibold mt-3">
-                    Meest complete filtratie &mdash; aanbevolen voor schoon drinkwater en lange apparaatlevensduur
+                    Gaat het verst van de drie; onze aanbeveling voor schoon drinkwater en een lange apparaatlevensduur
                   </p>
                 )}
               </div>
@@ -339,7 +339,7 @@ export default function HeetWaterKraanFilterPage() {
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             De PureAqua 4-in-1 kraan combineert omgekeerde osmose in drie stappen met zeer heet water
-            (circa 96&deg;C) en gekoeld water (circa 5&deg;C) in e&eacute;n kraan. Een SGS-labtest op een
+            (circa 96&deg;C) en gekoeld water (circa 5&deg;C) in één kraan. Een SGS-labtest op een
             nieuw systeem mat voor PFOS meer dan 99,6%, voor PFOA 99,5% en voor lood meer dan 99,8% minder.
             De prijs is 1.948 euro; installatie is optioneel voor 299 euro.
           </p>
@@ -351,7 +351,7 @@ export default function HeetWaterKraanFilterPage() {
                   'Voorfilter, osmosemembraan en remineralisatiefilter zitten in de osmose-unit onder de spoelbak. Daarnaast staat een heet-/koelunit; samen hebben ze twee stopcontacten nodig. Installatie door een installateur is aanbevolen.',
               },
               {
-                titel: 'Vier waterfuncties uit e&eacute;n kraan',
+                titel: 'Vier waterfuncties uit één kraan',
                 tekst:
                   'Zeer heet (circa 96&deg;C), gekoeld en kamertemperatuur osmosewater, plus gewoon warm en koud kraanwater. Bruisend water zit er niet op.',
               },
@@ -431,8 +431,8 @@ export default function HeetWaterKraanFilterPage() {
             <p className="font-semibold text-[#003F5C] mb-2 text-sm">Tip: osmosefilter verlengt levensduur boiler</p>
             <p className="text-sm text-gray-700 leading-relaxed">
               Bij gebruik van een osmosefilter voor de boiler is ontkalkingsbeurt nagenoeg niet meer
-              nodig &mdash; het RO-membraan verwijdert 95-99% van calcium voor het water de boiler
-              bereikt. Hierdoor gaat het verwarmingselement aanzienlijk langer mee (8-12 jaar in
+              nodig, omdat het RO-membraan het grootste deel van de kalk (calcium) tegenhoudt voordat het
+              water de boiler bereikt. Hierdoor gaat het verwarmingselement aanzienlijk langer mee (8-12 jaar in
               plaats van 5-7 jaar).
             </p>
           </div>

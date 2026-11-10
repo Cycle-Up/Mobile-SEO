@@ -44,7 +44,7 @@ const faqItems = [
   {
     question: 'Is een losse osmose filter of een 4-in-1 kraan slimmer?',
     answer:
-      'Een losse osmose filter is goedkoper in aanschaf (€150–400) maar vereist een apart kraantje en biedt alleen koud gefilterd water. Een 4-in-1 kraan met osmose (PureAqua, €1.948) integreert osmosefiltratie met zeer heet (circa 96 graden), gekoeld en gewoon warm en koud water in één kraan; bruisend water zit er niet in. Wil je ook een kokendwaterfunctie, dan vervangt de 4-in-1 kraan twee losse systemen.',
+      'Een los osmosesysteem is goedkoper in aanschaf. Onder het aanrecht levert het gezuiverd water via een apart kraantje of via een 3-weg-kraan met een osmosesysteem zoals The Source van PureAqua (395 euro, plus een kraan van 540 tot 840 euro), en dan niet verwarmd. Wil je heet osmosewater zonder installatie, dan heeft een countertop zoals het PureAqua Water zuiver apparaat (495 euro) zes temperatuurstanden, van kamertemperatuur tot maximaal 95 graden. Een 4-in-1 kraan met osmose (PureAqua, 1.948 euro) integreert osmosefiltratie met zeer heet (circa 96 graden), gekoeld en gewoon warm en koud water in één kraan; bruisend water zit er niet in. Wil je ook zeer heet en gekoeld water uit de kraan, dan vervangt de 4-in-1 kraan twee losse systemen.',
   },
 ];
 
@@ -165,7 +165,7 @@ export default function OsmoseFilterKopenPage() {
             Osmose Filter Kopen in 2026: Welk Systeem Past bij Jou?
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Een osmose filter kopen is een slimme investering in je drinkwaterkwaliteit. Maar het aanbod is groot: tankless of met drukvat, 4-traps of 6-traps, onder het aanrecht of op het aanrecht, en standalone of geïntegreerd in een 4-in-1 kraan. In deze gids zetten we alles overzichtelijk voor je op een rij — zodat jij de beste keuze maakt.
+            Een osmose filter kopen is een slimme investering in je drinkwaterkwaliteit. Maar het aanbod is groot: tankless of met drukvat, 4-traps of 6-traps, onder het aanrecht of op het aanrecht, en standalone of geïntegreerd in een 4-in-1 kraan. In deze gids zetten we alles overzichtelijk voor je op een rij, zodat jij de beste keuze maakt.
           </p>
         </div>
       </section>
@@ -278,7 +278,7 @@ export default function OsmoseFilterKopenPage() {
             <div className="bg-gray-50 rounded-xl p-4">
               <h3 className="font-bold text-gray-800 mb-2">Onder het aanrecht</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                De meest gebruikte installatiemethode in Nederland. Het systeem is verborgen in de kast, aangesloten op de koudwaterleiding en afvoer. Je krijgt een apart kraantje (of gebruikt een bestaande 4-in-1 kraan). Vereist basisvaardigheden met loodgieterswerk.
+                De meest gebruikte installatiemethode in Nederland. Het systeem is verborgen in de kast, aangesloten op de koudwaterleiding en afvoer. Het gezuiverde water komt uit een apart kraantje, een 3-weg-kraan of een 4-in-1 kraan met osmose. Vereist basisvaardigheden met loodgieterswerk.
               </p>
               <ul className="mt-3 space-y-1 text-sm">
                 <li className="text-green-700">✓ Onzichtbaar, ruimtebesparend op aanrecht</li>
@@ -289,7 +289,7 @@ export default function OsmoseFilterKopenPage() {
             <div className="bg-gray-50 rounded-xl p-4">
               <h3 className="font-bold text-gray-800 mb-2">Op het aanrecht (countertop)</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Eenvoudig aan te sluiten op een bestaande kraan, geen verbouwing nodig. Ideaal voor huurders of mensen die snel willen beginnen. Nadeel is dat het apparaat zichtbaar op het aanrecht staat en doorgaans een lagere capaciteit heeft.
+                Geen verbouwing nodig: bij een tankmodel zoals het Water zuiver apparaat vul je de tank met kraanwater en steek je de stekker in het stopcontact. Ideaal voor huurders of mensen die snel willen beginnen. Nadeel is dat het apparaat zichtbaar op het aanrecht staat en doorgaans een lagere capaciteit heeft.
               </p>
               <ul className="mt-3 space-y-1 text-sm">
                 <li className="text-green-700">✓ Geen installatie, direct bruikbaar</li>
@@ -364,13 +364,13 @@ export default function OsmoseFilterKopenPage() {
             <div className="bg-gray-50 rounded-xl p-4">
               <h3 className="font-bold text-gray-800 mb-2">Standalone osmose filter</h3>
               <p className="text-sm text-gray-600 mb-3 leading-relaxed">
-                Filtert alleen drinkwater, geleverd via een apart kleine kraantje naast je gewone kraan. Je moet nog steeds een aparte waterkoker of kokendwaterfunctie aanschaffen als je ook kokend water wilt.
+                Filtert alleen drinkwater, geleverd via een apart kraantje naast je gewone kraan of via een 3-weg-kraan. Het gezuiverde water komt er niet verwarmd uit, dus voor heet water heb je nog een waterkoker of een aparte heetwaterkraan nodig.
               </p>
               <ul className="text-sm space-y-1">
-                <li className="text-green-700">✓ Lage instapprijs (€150–400)</li>
+                <li className="text-green-700">✓ Lager in aanschaf dan een 4-in-1 kraan</li>
                 <li className="text-green-700">✓ Eenvoudig te plaatsen</li>
-                <li className="text-gray-500">− Alleen koud gefilterd water</li>
-                <li className="text-gray-500">− Extra kraantje nodig</li>
+                <li className="text-gray-500">− Gefilterd water niet verwarmd</li>
+                <li className="text-gray-500">− Apart kraantje of 3-weg-kraan nodig</li>
                 <li className="text-gray-500">− Meerdere systemen naast elkaar</li>
               </ul>
             </div>

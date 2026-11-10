@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
 
 export const metadata: Metadata = {
   title: 'Quooker energieverbruik: hoeveel stroom gebruikt een Quooker per jaar?',
@@ -43,7 +44,7 @@ const faqItems = [
   {
     question: 'Hoe verhoudt de Quooker zich qua energieverbruik met een 4-in-1 kraan?',
     answer:
-      'Een 4-in-1 osmose kraan heeft ook een boiler, bij de PureAqua 4-in-1 voor zeer heet water van circa 96 graden, en verbruikt daarvoor in stand-by vergelijkbaar 10–20W. Omdat de PureAqua 4-in-1 ook water koelt (tot circa 5 graden), komt daar stroom voor de koeling bij. Het jaarlijkse verbruik ligt daardoor eerder in de buurt van een Quooker met CUBE dan van een Quooker PRO3 zonder CUBE. Het grote verschil zit in de filterwerkzaamheid — een 4-in-1 osmose kraan filtert via een RO-membraan — niet in het energieverbruik.',
+      'Een 4-in-1 osmose kraan heeft ook een boiler, bij de PureAqua 4-in-1 voor zeer heet water van circa 96 graden. Voor die kraan is geen fabrieksopgave van het stand-by verbruik bekend. Omdat hij ook water koelt (tot circa 5 graden), komt daar stroom voor de koeling bij. Reken daarom op meer verbruik dan een Quooker zonder CUBE. Het grote verschil zit in de filtering: een 4-in-1 osmose kraan filtert via een RO-membraan.',
   },
   {
     question: 'Verbruikt een Quooker meer energie bij kalk?',
@@ -118,6 +119,7 @@ export default function QuookerEnergieverbruikPage() {
           description:
             'Een Quooker verbruikt 10–17 Wh per uur in stand-by. Per jaar is dat €30–65 aan stroom. Vergelijking met waterkoker, insinkerator en 4-in-1 osmose kraan.',
           datePublished: '2026-03-25',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/quooker-energieverbruik',
         }}
       />
@@ -161,6 +163,7 @@ export default function QuookerEnergieverbruikPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
+        <AuthorBox datePublished="2026-03-25" dateModified="2026-11-03" />
 
         <QuickAnswer answer="Een Quooker verbruikt 10–17 Wh per uur in stand-by om het water op 110°C te houden. Op jaarbasis is dat 88–149 kWh, circa €30–55 bij €0,37/kWh. Vergeleken met een waterkoker die alleen water kookt als je het nodig hebt, verbruikt de Quooker meer — maar het is direct beschikbaar. ECO-modus verlaagt het verbruik met circa 30%." />
 

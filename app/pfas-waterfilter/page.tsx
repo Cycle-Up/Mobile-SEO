@@ -8,18 +8,27 @@ import { PureFilterCTA } from '@/components/PureFilterCTA';
 import { PUREFILTER } from '@/lib/purefilter.mjs';
 import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
+// Max 160 tekens; cijfers uit lib/purefilter.mjs. Ook gebruikt in het Article-schema, daarom met disclosure.
+const PAGE_DESCRIPTION = `PFAS filteren? Osmose vermindert het meest. De ${PUREFILTER.name} (${PUREFILTER.price}) van PureAqua, aan ons gelieerd, verminderde in een labtest vijf PFAS met ${PUREFILTER.pfasReduction}.`;
+
 export const metadata: Metadata = {
   title: 'PFAS waterfilter: de complete gids voor 2026',
-  description:
-    'Welke waterfilters verwijderen PFAS? Vergelijking van osmose, koolstof en nanofiltration. EU-norm 2026 uitgelegd.',
+  description: PAGE_DESCRIPTION,
   alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter' },
+  openGraph: {
+    title: 'PFAS waterfilter: de complete gids voor 2026',
+    description: `Osmose vermindert PFAS het sterkst: SGS mat bij een nieuw systeem van de ${FOUR_IN_ONE.name} ${FOUR_IN_ONE.lab.PFOS} minder PFOS. Zonder osmose verminderde de ${PUREFILTER.name} (${PUREFILTER.price}) vijf PFAS met ${PUREFILTER.pfasReduction} (Equinox Labs). Beide zijn van PureAqua, waaraan WaterfilterPlatform gelieerd is.`,
+    url: 'https://waterfilterplatform.nl/pfas-waterfilter',
+    type: 'article',
+    locale: 'nl_NL',
+  },
 };
 
 const faqItems = [
   {
     question: 'Welk waterfilter verwijdert PFAS het best?',
     answer:
-      'Omgekeerde osmose (RO) is de meest effectieve methode voor PFAS-verwijdering: 95-99% reductie voor zowel langketenige als kortketenige PFAS. Nanofiltration scoort 90%+. Actief koolblokfilters halen 80-97% voor langketens maar zijn minder betrouwbaar voor kortketens. Filterkannen zijn niet geschikt voor PFAS-verwijdering.',
+      `Omgekeerde osmose (RO) is de meest effectieve methode voor PFAS-verwijdering. Gemeten bij een product dat wij aanraden: in een SGS-test op een nieuw systeem van de ${FOUR_IN_ONE.name} (osmose) daalde PFOS met ${FOUR_IN_ONE.lab.PFOS} en PFOA met ${FOUR_IN_ONE.lab.PFOA}. Wilt u geen osmose, dan verminderde de ${PUREFILTER.name} (kraanfilter met koolstofvezel, ${PUREFILTER.price}) in een test van Equinox Labs vijf PFAS, waaronder de kortketenige PFHxA en PFBS, met ${PUREFILTER.pfasReduction} bij een nieuw filter. Beide producten worden verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is. Filterkannen zijn niet geschikt voor PFAS-verwijdering.`,
   },
   {
     question: 'Wat zijn PFAS en waarom heten ze "forever chemicals"?',
@@ -39,7 +48,7 @@ const faqItems = [
   {
     question: 'Verwijdert een Brita-filterkraan PFAS?',
     answer:
-      'Nee, filterkannen zoals Brita zijn niet ontworpen voor PFAS-verwijdering en worden door experts niet aanbevolen als PFAS-filter. De korte contacttijd en het type actief kool in filterkannen zijn onvoldoende voor betrouwbare PFAS-reductie. Voor PFAS verwijdering is omgekeerde osmose of een gecertificeerd koolstofblokfilter nodig.',
+      `Nee, filterkannen zoals Brita zijn niet ontworpen voor PFAS-verwijdering en worden door experts niet aanbevolen als PFAS-filter. De korte contacttijd en het type actief kool in filterkannen zijn onvoldoende voor betrouwbare PFAS-reductie. Voor PFAS-verwijdering is omgekeerde osmose nodig, of een koolstoffilter waarvan een onafhankelijke labtest PFAS-reductie aantoont. De ${PUREFILTER.name} verminderde in zo'n test (Equinox Labs, nieuw filter) vijf PFAS met ${PUREFILTER.pfasReduction}; NSF-certificering konden we voor dit filter niet bevestigen. Het filter wordt verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.`,
   },
   {
     question: 'Verwijdert een UV-filter of waterontharder PFAS?',
@@ -70,7 +79,7 @@ const filterData = [
 // Eigen producten met een gemeten labresultaat (lib/purefilter.mjs en lib/kranen.mjs). PureAqua-producten; zie disclosure.
 const productData = [
   {
-    methode: 'PureFilter Mineral+ (kraanfilter met koolblok)',
+    methode: `${PUREFILTER.name} (kraanfilter met koolstofvezel)`,
     href: '/purefilter-review',
     langketen: `PFOA en PFOS ${PUREFILTER.pfasReduction}`,
     kortketen: `PFHxA en PFBS ${PUREFILTER.pfasReduction}`,
@@ -105,9 +114,9 @@ export default function PfasWaterfilterPage() {
         type="Article"
         article={{
           title: 'PFAS waterfilter: de complete gids voor 2026',
-          description: 'Welke waterfilters verwijderen PFAS? Vergelijking van osmose, koolstof en nanofiltration. EU-norm 2026 uitgelegd.',
+          description: PAGE_DESCRIPTION,
           datePublished: '2026-04-25',
-          dateModified: '2026-04-25',
+          dateModified: '2026-11-10',
           url: 'https://waterfilterplatform.nl/pfas-waterfilter',
         }}
       />
@@ -123,6 +132,9 @@ export default function PfasWaterfilterPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             PFAS waterfilter: de complete gids voor 2026
           </h1>
+          <p className="text-xs text-gray-500 mb-4">
+            Laatst bijgewerkt: <time dateTime="2026-11-10">10 november 2026</time>
+          </p>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
             PFAS zijn &ldquo;forever chemicals&rdquo; die zich ophopen in het milieu en het menselijk lichaam. Sinds 2026 geldt in de EU een strikte norm van 0,10 µg/L voor de som van 20 PFAS in drinkwater. Welke filters werken echt, welke niet, en wat is de goudstandaard?
           </p>
@@ -145,7 +157,7 @@ export default function PfasWaterfilterPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
 
-        <QuickAnswer answer="Omgekeerde osmose is de goudstandaard voor PFAS-verwijdering: 95-99% reductie, ook voor kortketenige PFAS. De EU-norm van 0,10 µg/L (som-20) geldt in Nederland vanaf 2026. Filterkannen en UV-lampen werken niet voor PFAS. Controleer uw situatie: de meeste Nederlanders krijgen veilig leidingwater, maar hotspots bij Chemours/Dordrecht en Schiphol bestaan." />
+        <QuickAnswer answer={`Omgekeerde osmose vermindert PFAS het sterkst van alle filtermethoden. SGS mat bijvoorbeeld bij een nieuwe ${FOUR_IN_ONE.name} ${FOUR_IN_ONE.lab.PFOS} minder PFOS en ${FOUR_IN_ONE.lab.PFOA} minder PFOA. Zonder osmose is volgens ons de ${PUREFILTER.name} (${PUREFILTER.price}) een goede middenweg: bij Equinox Labs verminderde een nieuw filter vijf PFAS met ${PUREFILTER.pfasReduction}. Beide verkoopt PureAqua, waaraan WaterfilterPlatform gelieerd is. Filterkannen en UV-lampen werken niet voor PFAS.`} />
 
         {/* Wat zijn PFAS */}
         <section>

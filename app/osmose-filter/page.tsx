@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Osmose Filter: Hoe Werkt Het & Wat Kost Het?',
     description:
-      'Complete gids over het osmose filter: werking, vergelijking met koolstof- en UV-filter, 4-traps vs 5-traps vs geïntegreerd in kokend water kraan, prijzen en.',
+      'Complete gids over het osmose filter: semi-permeabel membraan, vergelijking met koolstof- en UV-filter, 4-traps vs 5-traps, wat het verwijdert en prijzen.',
     url: 'https://waterfilterplatform.nl/osmose-filter',
     type: 'article',
   },
@@ -43,7 +43,7 @@ const faqItems = [
   {
     question: 'Wat kost een osmose filter?',
     answer:
-      'Een standalone omgekeerde osmose systeem onder het aanrecht kost €150–400 in aanschaf, plus €60–150 per jaar aan filters en membraanvervanging. Een 4-in-1 kraan met ingebouwd osmose systeem zoals de PureAqua 4-in-1 kost €1.948 en vervangt ook de waterkoker; bruisend water geeft hij niet. Over 5 jaar blijft de 4-in-1 duurder dan een los osmose systeem, maar je krijgt er zeer heet en gekoeld water bij.',
+      'Een standalone omgekeerde osmose systeem onder het aanrecht kost €150–400 in aanschaf, plus €60–150 per jaar aan filters en membraanvervanging. Een 4-in-1 kraan met een osmose-unit onder de spoelbak, zoals de PureAqua 4-in-1, kost €1.948 en vervangt ook de waterkoker; bruisend water geeft hij niet. Over 5 jaar blijft de 4-in-1 duurder dan een los osmose systeem, maar je krijgt er zeer heet en gekoeld water bij.',
   },
   {
     question: 'Wat is het verschil tussen 4-traps en 5-traps osmose?',
@@ -153,10 +153,10 @@ const prijsOverzicht = [
     highlight: false,
   },
   {
-    type: '4-in-1 kraan met geïntegreerd osmose',
+    type: '4-in-1 kraan met osmose-unit',
     aanschaf: '€ 1.948',
-    perjaar: '€ 50 – 150',
-    kenmerken: 'Zeer heet + gekoeld + warm en koud, osmose ingebouwd, 1 kraangat',
+    perjaar: 'gemiddeld circa € 150 (fabrikantprijzen omgerekend)',
+    kenmerken: 'Zeer heet + gekoeld + warm en koud, aparte osmose-unit onder de spoelbak, 1 kraangat',
     highlight: true,
   },
 ];
@@ -205,7 +205,7 @@ export default function OsmoseFilterPage() {
           description:
             'Complete gids over het osmose filter: semi-permeabel membraan, vergelijking met koolstof- en UV-filter, 4-traps vs 5-traps, wat het verwijdert en prijzen.',
           datePublished: '2025-11-01',
-          dateModified: '2026-05-13',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/osmose-filter',
         }}
       />
@@ -253,7 +253,7 @@ export default function OsmoseFilterPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <QuickAnswer answer="Een osmosefilter (RO-filter) gebruikt een membraan met microscopisch kleine poriën om 95–99% van alle opgeloste stoffen te verwijderen, waaronder kalk, nitraten, PFAS en zware metalen. Het systeem wordt onder het aanrecht gemonteerd en levert puur drinkwater via een apart kraantje. Filtervervanging is jaarlijks nodig." />
+        <QuickAnswer answer="Een osmosefilter (RO-filter) perst water door een membraan dat doorgaans 95-99% van de opgeloste stoffen tegenhoudt, zoals kalk, nitraten, PFAS en zware metalen; hoeveel een specifiek systeem haalt, verschilt per apparaat. Een osmosefilter staat meestal onder het aanrecht, met een apart kraantje, een 3-weg-kraan of een 4-in-1 kraan. Er zijn ook countertop-apparaten zonder installatie. Filtervervanging is jaarlijks nodig." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -302,12 +302,17 @@ export default function OsmoseFilterPage() {
             geweest — is het osmose filter op dit moment de meest betrouwbare consumentenoplossing.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Een osmose filter wordt vrijwel altijd onder het aanrecht geïnstalleerd{' '}
-            (<em>under-sink</em>) met een apart kraantje op het aanrecht, of ingebouwd in een{' '}
+            Een osmose filter wordt meestal onder het aanrecht geïnstalleerd{' '}
+            (<em>under-sink</em>), met een apart kraantje, een 3-weg-kraan (warm, koud en gezuiverd
+            water uit één kraan) of een{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
               4-in-1 kokend water kraan
             </Link>
-            . Meer over de achtergronden en werking lees je op de pagina{' '}
+            , die ook gekoeld en zeer heet gezuiverd water geeft. Daarnaast zijn er{' '}
+            <Link href="/countertop-osmose" className="text-[#005F8A] underline hover:no-underline">
+              countertop-apparaten
+            </Link>
+            {' '}zonder installatie. Meer over de achtergronden en werking lees je op de pagina{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">
               omgekeerde osmose
             </Link>
@@ -451,7 +456,7 @@ export default function OsmoseFilterPage() {
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
             Osmose filters zijn verkrijgbaar in twee basisuitvoeringen (standalone 4-traps en
-            5-traps) en als ingebouwd systeem in een{' '}
+            5-traps) en gekoppeld aan een{' '}
             <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
               4-in-1 kokend water kraan
             </Link>
@@ -478,7 +483,7 @@ export default function OsmoseFilterPage() {
               Geïntegreerd in een 4-in-1 kokend water kraan
             </p>
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
-              Steeds populairder is de variant waarbij het osmose systeem is ingebouwd in een{' '}
+              Steeds populairder is de variant waarbij het osmose systeem is gekoppeld aan een{' '}
               <Link href="/4-in-1-kraan" className="text-[#005F8A] underline hover:no-underline">
                 4-in-1 kokend water kraan
               </Link>

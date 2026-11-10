@@ -12,12 +12,16 @@ import { PUREFILTER_ORG } from '@/lib/pureaqua-products.mjs';
 
 const URL = 'https://waterfilterplatform.nl/purefilter-review';
 const PUBLISHED = '2026-05-29';
-const MODIFIED = '2026-09-24';
+const MODIFIED = '2026-11-03';
+
+// Datum als '24 september 2026'. UTC zodat de dag niet verschuift per server-tijdzone.
+const formatDateNl = (iso: string) =>
+  new Date(`${iso}T12:00:00Z`).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 
 export function generateMetadata(): Metadata {
   const title = 'PureFilter Mineral+ review 2026: labtest, kosten en voor wie het past';
   const description =
-    'PureFilter Mineral+ getoetst: inline filter onder het aanrecht, labtest met 83-85% reductie van vijf PFAS, kosten per jaar en eerlijke grenzen van de claims.';
+    'PureFilter Mineral+ getoetst: inline filter onder het aanrecht, labtest met 83-85% reductie van vijf PFAS, kosten per liter en eerlijke grenzen van de claims.';
   return {
     title,
     description,
@@ -50,9 +54,9 @@ const faqItems = [
       `Het vermindert PFAS aantoonbaar, maar niet volledig. In een onafhankelijke labtest van Equinox Labs (2026) werd circa ${PUREFILTER.pfasReduction} reductie gemeten voor vijf PFAS: PFOA, PFOS, PFHxS, PFHxA en PFBS. Dat was een test op een nieuw filter met water waaraan PFAS waren toegevoegd. Omgekeerde osmose haalt doorgaans meer dan 90 procent van een breed scala aan PFAS weg. Wil je de maximale reductie, dan is osmose de sterkere keuze; wil je een flinke reductie zonder afvalwater en tank, dan is PureFilter een logische optie.`,
   },
   {
-    question: 'Wat kost PureFilter Mineral+ per jaar?',
+    question: 'Wat kost PureFilter Mineral+ in gebruik?',
     answer:
-      `De aanschaf is ${PUREFILTER.price} inclusief de eerste cartridge. Een cartridge gaat bij 1 tot 3 personen tot 12 maanden mee en bij 4 of meer personen ongeveer 6 maanden, of tot ${PUREFILTER.capacity}, wat het eerst komt. Een vervangcartridge kost ${PUREFILTER.cartridgePrice}, of ${PUREFILTER.cartridgeDuoPrice} voor twee (PureFilter.nl, september 2026). Bij volledige capaciteit komt dat neer op minder dan een halve cent per liter.`,
+      `De aanschaf is ${PUREFILTER.price} inclusief de eerste cartridge. Een vervangcartridge kost ${PUREFILTER.cartridgePrice}, of ${PUREFILTER.cartridgeDuoPrice} voor twee (PureFilter.nl, september 2026). Een cartridge heeft een capaciteit van ${PUREFILTER.capacity}; vervang hem uiterlijk na die hoeveelheid, of eerder als de fabrikant dat aangeeft (zie de productpagina). Bij volledige capaciteit kost gefilterd water zo minder dan een halve cent per liter. Een bedrag per jaar noemen we niet, omdat we geen gecontroleerde vervangtermijn in maanden hebben.`,
   },
   {
     question: 'Is PureFilter Mineral+ NSF-gecertificeerd?',
@@ -77,12 +81,7 @@ const specs = [
   ['Prijs', `${PUREFILTER.price} inclusief eerste cartridge (PureFilter.nl, september 2026)`],
   ['Vervangcartridge', `${PUREFILTER.cartridgePrice} (duo ${PUREFILTER.cartridgeDuoPrice})`],
   ['Capaciteit', PUREFILTER.capacity],
-  ['Filterduur', '1-3 personen tot 12 maanden, 4+ personen circa 6 maanden'],
-  ['Aansluiting', 'standaard 3/8" en 1/2", adapters meegeleverd'],
-  ['Werkdruk en temperatuur', '1,5-8,5 bar; 4-38 graden Celsius (alleen koud water)'],
-  ['Afmetingen en gewicht', '25,4 x 6,4 cm; circa 1 kg'],
   ['Afvalwater, tank, stroom', 'Geen'],
-  ['Garantie en retour', '5 jaar garantie, 40 dagen retour'],
   ['Onderliggend product', 'Tappwater InlinePro SMR'],
 ];
 
@@ -103,10 +102,10 @@ export default function PureFilterReviewPage() {
         article={{
           title: 'PureFilter Mineral+ review 2026: labtest, kosten en voor wie het past',
           description:
-            'Review van PureFilter Mineral+ met de onafhankelijke labtest naast de fabrikantclaims, kosten per jaar en een vergelijking met omgekeerde osmose en een filterkan.',
+            'Review van PureFilter Mineral+ met de onafhankelijke labtest naast de fabrikantclaims, kosten per liter en een vergelijking met omgekeerde osmose en een filterkan.',
           datePublished: PUBLISHED,
           dateModified: MODIFIED,
-          lastReviewed: MODIFIED,
+          lastReviewed: PUREFILTER.checkedAt,
           url: URL,
         }}
       />
@@ -166,7 +165,7 @@ export default function PureFilterReviewPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
-        <MethodologyBadge lastReviewed={MODIFIED} sources={['Equinox Labs-rapport', 'US EPA', 'NSF/ANSI-standaarden', 'RIVM']} />
+        <MethodologyBadge lastReviewed={PUREFILTER.checkedAt} sources={['Equinox Labs-rapport', 'US EPA', 'NSF/ANSI-standaarden', 'RIVM']} />
         <AuthorBox datePublished={PUBLISHED} dateModified={MODIFIED} />
 
         <QuickAnswer
@@ -186,7 +185,7 @@ export default function PureFilterReviewPage() {
                 <li>Geen afvalwater, geen tank en geen stroom nodig</li>
                 <li>Mineralen blijven in het water; smaak blijft vol</li>
                 <li>Zelf te installeren op de koude leiding onder het aanrecht</li>
-                <li>Lage kosten per liter; 5 jaar garantie en 40 dagen retour</li>
+                <li>Lage kosten per liter</li>
               </ul>
             </div>
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
@@ -333,17 +332,22 @@ export default function PureFilterReviewPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat kost het per jaar?</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat kost PureFilter Mineral+ in gebruik?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Je betaalt eenmalig {PUREFILTER.price}, inclusief de eerste cartridge. Daarna vervang je de cartridge
-            elke 6 tot 12 maanden, afhankelijk van je huishouden, voor {PUREFILTER.cartridgePrice} (twee voor {PUREFILTER.cartridgeDuoPrice}). Een
-            cartridge filtert {PUREFILTER.capacity}. Bij volledig gebruik kost gefilterd water daarmee minder dan
-            een halve cent per liter. Ter vergelijking: een huishouden dat dagelijks flessenwater koopt, is al snel
-            honderden euro&apos;s per jaar kwijt.
+            Je betaalt eenmalig {PUREFILTER.price}, inclusief de eerste cartridge. Een vervangcartridge kost{' '}
+            {PUREFILTER.cartridgePrice} (twee voor {PUREFILTER.cartridgeDuoPrice}) en filtert {PUREFILTER.capacity}.
+            Bij volledig gebruik kost gefilterd water daarmee minder dan een halve cent per liter. Flessenwater kost
+            per liter al snel tientallen keren zoveel; die rekensom maken we in{' '}
+            <Link href="/kennisbank/kraanwater-vs-flessenwater-kosten" className="text-[#005F8A] underline">
+              kraanwater vs flessenwater: de kosten
+            </Link>
+            . Een bedrag per jaar rekenen we hier niet uit, omdat we geen gecontroleerde vervangtermijn in maanden
+            hebben.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Vervang op tijd: een verzadigd koolstoffilter houdt steeds minder tegen. Zet daarom een herinnering
-            of neem een vervangabonnement als de verkoper dat aanbiedt.
+            Vervang op tijd: een verzadigd koolstoffilter houdt steeds minder tegen. Vervang de cartridge uiterlijk
+            na {PUREFILTER.capacity}, of eerder als de fabrikant dat aangeeft (zie de productpagina op
+            PureFilter.nl). Zet daarvoor een herinnering of neem een vervangabonnement als de verkoper dat aanbiedt.
           </p>
         </section>
 
@@ -403,7 +407,7 @@ export default function PureFilterReviewPage() {
           content="purefilter-review-cta"
           label="Bekijk PureFilter Mineral+ op PureFilter.nl"
           title="PureFilter Mineral+ bekijken"
-          sub={`${PUREFILTER.price} inclusief eerste cartridge, 5 jaar garantie en 40 dagen retour. Labtest: circa ${PUREFILTER.pfasReduction} minder van vijf PFAS.`}
+          sub={`${PUREFILTER.price} inclusief eerste cartridge. Labtest: circa ${PUREFILTER.pfasReduction} minder van vijf PFAS.`}
         />
 
         <section className="rounded-2xl border border-gray-100 p-5">
@@ -430,7 +434,7 @@ export default function PureFilterReviewPage() {
               ['Gebruikte bronnen', 'Productinformatie van PureFilter.nl en Tappwater, het gepubliceerde Equinox Labs-rapport, en onafhankelijke bronnen (EPA, NSF/ANSI-standaarden, RIVM) voor de techniek.'],
               ['Labrapport', 'Ja: Equinox Labs, april-mei 2026, PFAS-reductie voor vijf verbindingen onder testcondities.'],
               ['Certificaten', 'Geen officiele NSF-listing voor dit model gevonden.'],
-              ['Laatste controle', 'September 2026. Controleer actuele prijzen en specificaties op de productpagina.'],
+              ['Laatste controle', `Prijzen en specificaties gecontroleerd op ${formatDateNl(PUREFILTER.checkedAt)}; tekst herzien op ${formatDateNl(MODIFIED)}. Controleer actuele prijzen en specificaties op de productpagina.`],
               ['Commerciele relatie', 'PureFilter is een merk van PureAqua, waaraan dit platform gelieerd is. Daarom tonen we bij elke claim de bewijsstatus.'],
             ].map(([t, d]) => (
               <div key={t} className="flex gap-3">

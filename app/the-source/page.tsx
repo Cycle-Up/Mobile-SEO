@@ -7,18 +7,34 @@ import { FactCard } from '@/components/FactCard';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { buildShopUrl } from '@/lib/pureaqua.mjs';
+import { THREE_WAY, KRAAN_MARKET } from '@/lib/kranen.mjs';
 import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
+
+// Alle productfeiten komen uit THREE_WAY (lib/kranen.mjs); bedragen worden daaruit afgeleid.
+const euros = (s: string) => (s.match(/\d[\d.]*/g) ?? []).map(n => Number(n.replace(/\./g, '')));
+const fmt = (n: number) => n.toLocaleString('nl-NL');
+const [sourceEur] = euros(THREE_WAY.sourcePrice);
+const [tapMinEur, tapMaxEur] = euros(THREE_WAY.tapPrice);
+const [installEur] = euros(THREE_WAY.installation);
+const [filterEur] = euros(THREE_WAY.filters);
+const totalMin = fmt(sourceEur + tapMinEur);
+const totalMax = fmt(sourceEur + tapMaxEur);
+const totalMinInstalled = fmt(sourceEur + tapMinEur + installEur);
+const totalMaxInstalled = fmt(sourceEur + tapMaxEur + installEur);
+const filterPerMonth = Math.floor(filterEur / 12);
+const checkedAt = new Date(THREE_WAY.checkedAt).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+
+const PAGE_TITLE = 'The Source van PureAqua: osmose met 3-weg-kraan en kosten';
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'The Source 50 (PureAqua): stroomloze osmose, kosten en review',
-    description:
-      'The Source 50 van PureAqua: omgekeerde osmose onder het aanrecht met een 3-weg-kraan, circa 1:1 verhouding, vanaf 395 euro. Specificaties, kosten en afweging.',
+    title: PAGE_TITLE,
+    description: `The Source van PureAqua: omgekeerde osmose onder het aanrecht met een 3-weg-kraan. Systeem ${THREE_WAY.sourcePrice}, kraan ${THREE_WAY.tapPrice}, filters ${filterEur} euro per jaar.`,
     alternates: { canonical: 'https://waterfilterplatform.nl/the-source' },
     openGraph: {
-      title: 'The Source 50 (PureAqua): stroomloze osmose, kosten en review',
+      title: PAGE_TITLE,
       description:
-        'Wat biedt The Source 50, wat kost het en voor wie is het geschikt? Stroomloze RO, circa 1:1 verhouding, filterkosten en een eerlijke mineralen-nuance.',
+        'Wat biedt The Source, wat kost het en voor wie is het geschikt? Osmose met een 3-weg-kraan, totale kosten, filterkosten en een eerlijke mineralen-nuance.',
       url: 'https://waterfilterplatform.nl/the-source',
       type: 'article',
       locale: 'nl_NL',
@@ -26,58 +42,53 @@ export function generateMetadata(): Metadata {
   };
 }
 
-const faqItems = [
+const faqItems: { question: string; answer: string; link?: { href: string; label: string } }[] = [
   {
-    question: 'Wat is The Source 50?',
-    answer:
-      'The Source 50 is een omgekeerde-osmosesysteem (RO) van PureAqua dat onder het aanrecht wordt geplaatst en via een aparte kraan gezuiverd drinkwater levert. Een osmosemembraan houdt het grootste deel van de opgeloste stoffen tegen; het systeem werkt zonder stroom op de waterleidingdruk. Het is geschikt voor huishoudens tot ongeveer vier personen en kost vanaf 395 euro.',
-  },
-  {
-    question: 'Heeft The Source stroom nodig?',
-    answer:
-      'Nee. The Source werkt volledig op de druk die al in je waterleiding zit, die in de meeste Nederlandse huizen ruim voldoende is. Er is geen stopcontact of pomp nodig, er is geen energieverbruik, en het systeem levert zelfs zuiver water tijdens een stroomstoring.',
+    question: 'Wat is The Source?',
+    answer: `The Source is het omgekeerde-osmosesysteem (RO) van PureAqua voor onder het aanrecht; het gezuiverde water komt uit een 3-weg-kraan (warm, koud en gezuiverd water uit één kraan). Een osmosemembraan houdt het grootste deel van de opgeloste stoffen tegen. The Source kost ${THREE_WAY.sourcePrice}, de kraan ${THREE_WAY.tapPrice} (${THREE_WAY.tapModels}).`,
   },
   {
     question: 'Hoeveel water verspilt The Source?',
     answer:
-      'The Source werkt met een verhouding van ongeveer 1 op 1: voor elke liter zuiver water gaat er ruwweg een liter afvalwater doorheen. Oudere RO-systemen spoelen vaak 3 tot 4 liter weg per liter zuiver water. Een beetje afvalwater hoort onlosmakelijk bij omgekeerde osmose; de verhouding is dus laag maar niet nul.',
+      'Elk omgekeerde-osmosesysteem voert een deel van het water af als spoelwater; dat hoort onlosmakelijk bij de techniek. Oudere RO-systemen spoelen vaak 3 tot 4 liter weg per liter zuiver water (zie ons kennisbankartikel over waterverspilling bij osmose). Een afvalwaterverhouding voor The Source staat niet in de productgegevens die wij hebben gecontroleerd; vraag die na bij PureAqua als dit voor jou zwaar weegt.',
+    link: { href: '/kennisbank/hoeveel-water-verspilt-osmose', label: 'Hoeveel water verspilt een osmosesysteem?' },
   },
   {
     question: 'Verwijdert omgekeerde osmose ook mineralen?',
     answer:
-      'Ja. Omdat RO zo fijn filtert, haalt het naast verontreinigingen ook een deel van de van nature aanwezige mineralen weg, zoals calcium en magnesium. Voor de meeste mensen maakt dat in de praktijk weinig uit, omdat je het grootste deel van je mineralen uit voeding haalt en niet uit water. Wil je toch mineralen in je drinkwater houden, dan is The Source uit te breiden met een remineralisatiestap die na de zuivering mineralen weer toevoegt.',
+      'Ja. Omdat RO zo fijn filtert, haalt het naast verontreinigingen ook een deel van de van nature aanwezige mineralen weg, zoals calcium en magnesium. Voor de meeste mensen maakt dat in de praktijk weinig uit, omdat je het grootste deel van je mineralen uit voeding haalt en niet uit water. Wil je toch mineralen in je drinkwater houden, vraag dan bij PureAqua na of er voor The Source een remineralisatiestap is; die staat niet in de productgegevens die wij hebben gecontroleerd.',
   },
   {
-    question: 'Wat kost The Source 50 en wat zijn de jaarlijkse kosten?',
-    answer:
-      'The Source 50 kost vanaf 395 euro als eenmalige aanschaf. De jaarlijkse set van drie filters kost 149 euro, omgerekend ruim 12 euro per maand. Er is ook een gespreide optie via een abonnement (volgens de aanbieder circa 299 euro startkosten en 29 euro per maand, minimaal twaalf maanden). Voor veel huishoudens liggen de jaarlijkse kosten lager dan wat aan flessenwater wordt uitgegeven; de exacte terugverdientijd hangt af van je verbruik.',
+    question: 'Wat kost The Source en wat zijn de jaarlijkse kosten?',
+    answer: `The Source kost ${THREE_WAY.sourcePrice} en de bijbehorende 3-weg-kraan ${THREE_WAY.tapPrice}, samen ${totalMin} tot ${totalMax} euro. Installatie is optioneel voor ${installEur} euro. Daarna kost de jaarlijkse set van drie filters ${filterEur} euro, omgerekend ruim ${filterPerMonth} euro per maand. Of dat voordeliger uitpakt dan flessenwater, hangt af van je eigen verbruik.`,
   },
   {
     question: 'Hoe vaak moet ik de filters wisselen?',
-    answer:
-      'Ongeveer eens per jaar. Dankzij het click-on systeem doe je dat zelf in een paar minuten, zonder gereedschap en zonder loodgieter. De jaarlijkse set van drie filters kost 149 euro. Dat is meteen het enige onderhoud waar je aan moet denken.',
+    answer: `Je vervangt één set van drie filters per jaar; die set kost ${filterEur} euro. Wil je de filters zelf wisselen, vraag dan bij PureAqua na hoe dat gaat.`,
   },
   {
     question: 'Voor wie is The Source geschikt en voor wie minder?',
     answer:
-      'The Source 50 is geschikt voor huishoudens tot ongeveer vier personen die zeker willen zijn van hun drinkwater, een neutralere smaak willen of willen stoppen met flessenwater. Minder noodzakelijk is het als je geen behoefte hebt aan extra zuivering: Nederlands kraanwater is van hoge kwaliteit en veilig om te drinken. Heb je een groter huishouden, kijk dan of er een ruimer model in dezelfde lijn is.',
+      'The Source is volgens ons geschikt voor wie osmosewater direct uit de eigen keukenkraan wil, zonder extra tapkraan, bijvoorbeeld om zeker te zijn van het drinkwater, voor een neutralere smaak of om te stoppen met flessenwater. Minder noodzakelijk is het als je geen behoefte hebt aan extra zuivering: Nederlands kraanwater is van hoge kwaliteit en veilig om te drinken.',
   },
 ];
 
 const specs = [
   ['Type', 'Omgekeerde osmose (RO), onder het aanrecht'],
-  ['Filtratie', 'Omgekeerde osmose met voor- en nafilter (set van drie filters)'],
-  ['Energie', 'Stroomloos; werkt op waterleidingdruk'],
-  ['Afvalwaterverhouding', 'Circa 1:1 (oudere systemen vaak 3:1 tot 4:1)'],
-  ['Geschikt voor', 'Huishoudens tot circa 4 personen'],
-  ['Onderhoud', 'Filterset circa 1x per jaar, click-on, circa 5 minuten zonder gereedschap'],
-  ['Filterkosten', '149 euro per jaar (set van drie filters)'],
-  ['Aanschafprijs', 'Vanaf 395 euro (eenmalig)'],
-  ['Proefperiode', '100 dagen thuis uitproberen'],
-  ['Garantie', '2 jaar all-in'],
-  ['Optie', 'Uit te breiden met remineralisatiestap'],
-  ['Herkomst', 'Oorspronkelijk in de VS ontwikkeld, beproefd RO-ontwerp'],
+  ['Opbouw', `Een ${THREE_WAY.what.replace(/^een /, '')}`],
+  ['Prijs The Source', THREE_WAY.sourcePrice],
+  ['Kraan', `${THREE_WAY.tapPrice}, keuze uit ${THREE_WAY.tapModels}`],
+  ['The Source plus kraan', `${totalMin} tot ${totalMax} euro`],
+  ['Installatie', `Optioneel voor ${installEur} euro`],
+  ['Onderhoud', `Set van drie filters per jaar, ${filterEur} euro`],
   ['Aanbieder', 'PureAqua'],
+];
+
+const strengths = [
+  ['Osmosewater uit je eigen kraan', 'Warm, koud en gezuiverd water uit één 3-weg-kraan, zonder aparte tapkraan ernaast.'],
+  ['Keuze in kranen', `Keuze uit ${THREE_WAY.tapModels} en kleuren, van ${THREE_WAY.tapPrice}.`],
+  ['Overzichtelijk onderhoud', `Eén set van drie filters per jaar voor ${filterEur} euro.`],
+  ['Installatie naar keuze', `Laat het systeem installeren voor ${installEur} euro of schakel je eigen installateur in.`],
 ];
 
 export default function TheSourcePage() {
@@ -86,11 +97,11 @@ export default function TheSourcePage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'The Source 50 (PureAqua): stroomloze osmose, kosten en review',
+          title: PAGE_TITLE,
           description:
-            'Een eerlijke uitleg over The Source 50 van PureAqua: stroomloze omgekeerde osmose, circa 1:1 verhouding, kosten en de mineralen-nuance.',
+            'Een eerlijke uitleg over The Source van PureAqua: omgekeerde osmose onder het aanrecht met een 3-weg-kraan, kosten en de mineralen-nuance.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/the-source',
         }}
       />
@@ -105,18 +116,17 @@ export default function TheSourcePage() {
       />
       <SchemaOrg
         schema={[
-          { '@type': 'Brand', name: 'The Source', description: 'Stroomloos omgekeerde-osmosesysteem van PureAqua voor onder het aanrecht.' },
+          { '@type': 'Brand', name: 'The Source', description: 'Omgekeerde-osmosesysteem van PureAqua voor onder het aanrecht.' },
           {
             '@type': 'Product',
-            name: 'The Source 50',
+            name: 'The Source',
             description:
-              'Stroomloos omgekeerde-osmosesysteem voor onder het aanrecht dat op waterleidingdruk werkt, met een verhouding van circa 1:1, geschikt voor huishoudens tot 4 personen.',
+              'Omgekeerde-osmosesysteem van PureAqua voor onder het aanrecht, voor een 3-weg-kraan met warm, koud en gezuiverd water uit één kraan.',
             brand: { '@type': 'Brand', name: 'PureAqua' },
-            countryOfOrigin: 'US',
             offers: {
               '@type': 'Offer',
               priceCurrency: 'EUR',
-              price: '395.00',
+              price: `${sourceEur}.00`,
               availability: 'https://schema.org/InStock',
               url: 'https://pureaqua.nl',
             },
@@ -134,13 +144,13 @@ export default function TheSourcePage() {
             <span>The Source</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            The Source 50: stroomloze omgekeerde osmose van PureAqua
+            The Source: omgekeerde osmose van PureAqua met 3-weg-kraan
           </h1>
           <p className="text-gray-600 text-lg mb-6">
-            <strong>The Source 50</strong> is een omgekeerde-osmosesysteem van PureAqua dat onder je
-            aanrecht zuiver drinkwater levert. Het werkt zonder stroom en gebruikt ongeveer een
-            liter spoelwater per liter zuiver water. Hieronder de specificaties, sterke punten, kosten en een eerlijke
-            afweging - met bronvermelding en zonder verzonnen testoordelen.
+            <strong>The Source</strong> is een omgekeerde-osmosesysteem van PureAqua dat onder je
+            aanrecht zuiver drinkwater levert. Het gezuiverde water komt uit een 3-weg-kraan: warm, koud
+            en gezuiverd water uit één kraan. Hieronder de specificaties, sterke punten, kosten en een eerlijke
+            afweging, met bronvermelding en zonder verzonnen testoordelen.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -160,12 +170,12 @@ export default function TheSourcePage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['Fabrikant / PureAqua', 'RIVM', 'Vewin']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed={THREE_WAY.checkedAt} sources={['Fabrikant / PureAqua', 'RIVM', 'Vewin']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         <QuickAnswer
-          question="Wat is The Source 50 en is het een goede keuze?"
-          answer="The Source 50 is een omgekeerde-osmosesysteem van PureAqua voor onder het aanrecht. Het werkt stroomloos op de waterleidingdruk, gebruikt een afvalwaterverhouding van ongeveer 1 op 1 en is geschikt voor huishoudens tot vier personen. Het kost vanaf 395 euro met 149 euro per jaar aan filters. Of het de beste keuze is hangt af van je behoefte, huishoudgrootte en budget - Nederlands kraanwater is op zichzelf al veilig, dus RO is een keuze voor extra zuiverheid en smaak, geen noodzaak."
+          question="Wat is The Source en is het een goede keuze?"
+          answer={`The Source is het omgekeerde-osmosesysteem van PureAqua voor onder het aanrecht; het gezuiverde water komt uit een 3-weg-kraan (warm, koud en gezuiverd water uit één kraan). The Source kost ${THREE_WAY.sourcePrice} en de kraan ${THREE_WAY.tapPrice}, samen ${totalMin} tot ${totalMax} euro; filters kosten ${filterEur} euro per jaar. Of het bij je past, hangt af van je behoefte en budget. Nederlands kraanwater is al veilig, dus RO is een keuze voor extra zuiverheid en smaak, geen noodzaak.`}
         />
 
         <FactCard id="theSource" />
@@ -187,27 +197,26 @@ export default function TheSourcePage() {
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            Specificaties en prijzen afkomstig van de aanbieder (PureAqua). Controleer actuele waarden en
-            prijzen bij de verkoper. Bijgewerkt mei 2026.
+            Specificaties en prijzen uit de productgegevens van PureAqua; prijzen gecontroleerd op {checkedAt}.
+            Controleer actuele prijzen bij de verkoper.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Sterke punten van The Source</h2>
           <div className="bg-[#E0F2FE] rounded-2xl p-5 space-y-3 text-sm mb-4">
-            {[
-              ['Werkt zonder stroom', 'Draait op de druk in je waterleiding: geen stopcontact, geen pomp die kan stukgaan, geen energieverbruik en zelfs zuiver water tijdens een stroomstoring.'],
-              ['Zuinig met water (circa 1:1)', 'Voor elke liter zuiver water gaat er ruwweg een liter afvalwater doorheen, waar oudere systemen vaak 3 tot 4 liter wegspoelen.'],
-              ['Eenvoudig onderhoud', 'Filterset circa eens per jaar wisselen via een click-on systeem, in een paar minuten en zonder gereedschap.'],
-              ['Uit te breiden met mineralen', 'Een optionele remineralisatiestap voegt na de zuivering gecontroleerd mineralen weer toe.'],
-              ['Zonder risico proberen', '100 dagen proefperiode thuis en een all-in garantie van 2 jaar.'],
-            ].map(([t, d]) => (
+            {strengths.map(([t, d]) => (
               <div key={t} className="flex gap-3">
                 <span className="text-[#005F8A] font-bold">-</span>
-                <p className="text-gray-700"><strong>{t}</strong> - {d}</p>
+                <p className="text-gray-700"><strong>{t}</strong>: {d}</p>
               </div>
             ))}
           </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Niet in de productgegevens die wij hebben gecontroleerd: de garantietermijn, de
+            afvalwaterverhouding, of er stroom of een pomp nodig is en of er een remineralisatiestap bij kan.
+            Vraag die punten na bij PureAqua als ze voor jou meewegen.
+          </p>
           <p className="text-gray-700 leading-relaxed">
             Wil je eerst begrijpen hoe de techniek werkt? Lees onze uitleg over{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link>{' '}
@@ -219,12 +228,14 @@ export default function TheSourcePage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe werkt The Source?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Het water legt onder je aanrecht een korte route af. Eerst gaan de grovere zaken eruit via
-            voorfilters (sediment, roest en chloor), die meteen het gevoelige membraan beschermen.
-            Daarna duwt de waterleidingdruk het water door het RO-membraan: een opgerold vel met porien zo
-            klein dat vrijwel alleen watermoleculen erdoorheen passen. De achtergebleven verontreinigingen
-            spoelen weg als afvalwater. Op je aanrecht zie je alleen een aparte, strakke kraan voor het
-            gezuiverde water; je gewone kraan blijft gewoon werken voor afwassen en schoonmaken.
+            Het water legt onder je aanrecht een korte route af. The Source werkt met omgekeerde osmose en
+            een set van drie filters die je eens per jaar vervangt. Bij omgekeerde osmose gaat het water in
+            het algemeen eerst door een voorfilter, die grovere deeltjes tegenhoudt en het gevoelige membraan
+            beschermt. Daarna gaat het water door het RO-membraan: een opgerold vel met porien zo
+            klein dat vrijwel alleen watermoleculen erdoorheen passen. De tegengehouden stoffen
+            spoelen weg als afvalwater. Op je aanrecht zie je alleen de 3-weg-kraan: die geeft gewoon warm
+            en koud water voor afwassen en schoonmaken, en daarnaast het gezuiverde water, zonder aparte
+            tapkraan ernaast.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Meer technische achtergrond vind je in onze stap-voor-stap uitleg op de pagina over{' '}
@@ -237,17 +248,17 @@ export default function TheSourcePage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat kost zuiver water met The Source?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De aanschaf begint bij 395 euro voor een systeem dat jarenlang meegaat. Daarna betaal je nog
-            149 euro per jaar aan een set van drie filters, omgerekend ruim 12 euro per maand voor
-            onbeperkt zuiver water uit je kraan. Wie de kosten liever spreidt, kan volgens de aanbieder
-            kiezen voor een abonnement (circa 299 euro startkosten en 29 euro per maand, minimaal twaalf
-            maanden).
+            Reken voor de aanschaf met The Source ({THREE_WAY.sourcePrice}) plus een 3-weg-kraan naar keuze
+            ({THREE_WAY.tapPrice}, {THREE_WAY.tapModels}). Samen is dat {totalMin} tot {totalMax} euro.
+            Installatie is optioneel voor {installEur} euro; met installatie kom je op {totalMinInstalled} tot{' '}
+            {totalMaxInstalled} euro. Daarna betaal je {filterEur} euro per jaar voor een set van drie filters,
+            omgerekend ruim {filterPerMonth} euro per maand.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Vergelijk dat met flessenwater: een gezin dat dagelijks flessen koopt, is al snel tientallen
-            euro per maand kwijt, jaar in jaar uit. Voor veel huishoudens liggen de jaarlijkse RO-kosten
-            daardoor lager, en verdien je de aanschaf over een aantal jaren terug. De exacte uitkomst hangt
-            af van je eigen verbruik. Een volledige kostenopbouw per jaar vind je op onze pagina over{' '}
+            Ter vergelijking: onderbouw-osmosesystemen kosten doorgaans {KRAAN_MARKET.underSinkRange}. The
+            Source zelf valt binnen die bandbreedte; de 3-weg-kraan komt erbij, maar die levert ook je gewone
+            warme en koude water. Of osmose voordeliger uitpakt dan flessenwater, hangt af van je eigen
+            verbruik. Meer over de kosten van osmose lees je op onze pagina over{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">kosten en onderhoud van omgekeerde osmose</Link>.
           </p>
         </section>
@@ -259,13 +270,17 @@ export default function TheSourcePage() {
             naast verontreinigingen ook een deel van de van nature aanwezige mineralen tegen, zoals calcium
             en magnesium. Voor de meeste mensen maakt dat in de praktijk weinig uit, omdat je het grootste
             deel van je mineralen uit voeding haalt en niet uit water. Wil je toch mineralen in je
-            drinkwater houden, dan kun je The Source uitbreiden met een remineralisatiestap. Dit is algemene
-            informatie en geen medisch advies; raadpleeg bij twijfel een arts of dietist.
+            drinkwater houden, vraag dan bij PureAqua na of er voor The Source een remineralisatiestap
+            beschikbaar is. Dit is algemene informatie en geen medisch advies; raadpleeg bij twijfel een arts
+            of dietist.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            En hoewel de afvalwaterverhouding van circa 1 op 1 zuinig is, is die niet nul: een beetje
-            afvalwater hoort onlosmakelijk bij de techniek van omgekeerde osmose. We lichten de bekendste
-            bezwaren genuanceerd toe in ons artikel over de{' '}
+            Daarnaast gebruikt omgekeerde osmose altijd spoelwater: een deel van het water voert de
+            tegengehouden stoffen af. Dat hoort onlosmakelijk bij de techniek. Oudere systemen spoelen vaak
+            3 tot 4 liter weg per liter zuiver water, zie ons artikel over{' '}
+            <Link href="/kennisbank/hoeveel-water-verspilt-osmose" className="text-[#005F8A] underline">hoeveel water een osmosesysteem verspilt</Link>;
+            de verhouding voor The Source staat niet in de productgegevens die wij hebben gecontroleerd. We
+            lichten de bekendste bezwaren genuanceerd toe in ons artikel over de{' '}
             <Link href="/kennisbank/reverse-osmosis-nadelen" className="text-[#005F8A] underline">nadelen van reverse osmosis</Link>{' '}
             en of{' '}
             <Link href="/kennisbank/osmose-water-drinken" className="text-[#005F8A] underline">osmose water gezond is om te drinken</Link>.
@@ -275,11 +290,11 @@ export default function TheSourcePage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe kies je een RO-systeem?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Een RO-systeem koop je voor jaren. Let bij het vergelijken op zeven punten: de
+            Een RO-systeem is een flinke aankoop. Let bij het vergelijken op zeven punten: de
             afvalwaterverhouding, of het op stroom of waterdruk werkt, onafhankelijke certificering
             en testrapporten, hoe het omgaat met mineralen, het gemak en de kosten van het onderhoud, voor
-            welk huishouden het geschikt is, en de garantie en proefperiode. The Source vinkt deze punten
-            af, maar dezelfde checklist helpt je elk merk objectief te beoordelen.
+            welk huishouden het geschikt is, en de garantie en proefperiode. Leg The Source en andere merken
+            langs dezelfde checklist en vraag gegevens die ontbreken na bij de verkoper.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Zet The Source naast andere systemen in onze{' '}
@@ -292,9 +307,9 @@ export default function TheSourcePage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-3">Waar koop je The Source?</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            The Source wordt geleverd via onze partner PureAqua. Het systeem komt onder het aanrecht en is
-            in veel gevallen zelf te installeren met de meegeleverde handleiding; voor de aansluiting kun je
-            ook een installateur inschakelen.
+            The Source wordt geleverd via onze partner PureAqua. Het systeem komt onder het aanrecht, dus je
+            hebt daar ruimte en een afvoeraansluiting nodig. Installatie is optioneel voor {installEur} euro;
+            je kunt ook zelf een installateur inschakelen.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
@@ -316,7 +331,7 @@ export default function TheSourcePage() {
         <CTABanner context="osmose" />
 
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over The Source 50</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-6">Veelgestelde vragen over The Source</h2>
           <div className="space-y-3">
             {faqItems.map(item => (
               <details key={item.question} className="border border-gray-100 rounded-xl p-4 group">
@@ -325,6 +340,11 @@ export default function TheSourcePage() {
                   <span className="text-[#005F8A] group-open:rotate-180 transition-transform shrink-0 ml-2">v</span>
                 </summary>
                 <p className="mt-3 text-gray-600 text-sm leading-relaxed">{item.answer}</p>
+                {item.link && (
+                  <p className="mt-2 text-sm">
+                    <Link href={item.link.href} className="text-[#005F8A] underline">{item.link.label}</Link>
+                  </p>
+                )}
               </details>
             ))}
           </div>

@@ -33,7 +33,7 @@ const faqItems = [
   {
     question: "Wat kost osmose per jaar alles inbegrepen?",
     answer:
-      "Installatie 400-700 euro (eenmalig), filters 80-150 euro per jaar, water: osmose produceert 3-4 liter afvalwater per liter zuiver water. Totaal ca. 200-350 euro per jaar inclusief afschrijving.",
+      "Installatie 400-700 euro (eenmalig), filters 80-150 euro per jaar, water: oudere osmosesystemen spoelen vaak 3 tot 4 liter weg per liter zuiver water; de verhouding verschilt per systeem, dus vraag die na bij de aanbieder. Totaal ca. 200-350 euro per jaar inclusief afschrijving.",
   },
   {
     question: "Wanneer kies ik voor een waterontharder en wanneer voor osmose?",
@@ -91,7 +91,7 @@ export default function VergelijkenPage() {
           title: "Waterfilter vergelijken: osmose vs filterkan, waterontharder en meer",
           description: "Eerlijke vergelijkingen: osmose vs filterkan, waterfilter vs waterontharder, kraanwater vs flessenwater. Kosten, prestaties en milieu-impact.",
           datePublished: "2026-05-17",
-          dateModified: "2026-05-22",
+          dateModified: "2026-11-03",
           url: "https://waterfilterplatform.nl/vergelijken",
         }}
       />

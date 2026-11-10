@@ -30,7 +30,7 @@ function copyFor(context: Context, plaats?: string, dH?: number) {
     case 'vergelijken':
       return {
         title: 'Onze keuze als beste waterontharder 2026: JOEP',
-        sub: `JOEP: zeer compacte ionenwisselaar met zout, gemaakt in ${JOEP.madeIn}, ${JOEP.flow}, miniregeneratie bij hoog verbruik en 20 jaar fabrieksgarantie op de hars. ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd.`,
+        sub: `JOEP: zeer compacte ionenwisselaar met zout, gemaakt in ${JOEP.madeIn}, ${JOEP.flow} en 20 jaar fabrieksgarantie op de hars. ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd.`,
       };
     case 'merk':
       return {
