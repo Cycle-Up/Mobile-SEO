@@ -8,16 +8,30 @@ import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { JoepCTA } from '@/components/JoepCTA';
 import { JoepRecommendation } from '@/components/JoepRecommendation';
 import { PRODUCTS, buildProductSchema } from '@/lib/pureaqua-products.mjs';
-import { JOEP, JOEP_MIN_DH } from '@/lib/joep.mjs';
+import { JOEP, JOEP_MARKET, JOEP_MIN_DH, JOEP_NO_FUSS, JOEP_NO_FUSS_POINTS, JOEP_POSITIONING } from '@/lib/joep.mjs';
 
 const URL = 'https://waterfilterplatform.nl/joep-waterontharder';
 const PUBLISHED = '2026-05-29';
-const MODIFIED = '2026-09-24';
+const MODIFIED = '2026-11-10';
+const TITLE = 'JOEP compacte waterontharder: prijs, maten en ons oordeel';
+const H1 = 'JOEP waterontharder: compact, betaalbaar en onze keuze voor 2026';
+const DIMENSIONS = JOEP.dimensions.replace(' (h x b x d)', '');
+const MONTHS = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+// Datumstring direct formatteren, zodat de tijdzone van de server geen andere dag kan opleveren.
+const [CHECKED_Y, CHECKED_M, CHECKED_D] = JOEP.checkedAt.split('-').map(Number);
+const CHECKED = `${CHECKED_D} ${MONTHS[CHECKED_M - 1]} ${CHECKED_Y}`;
+const RESIN_MATCH = JOEP.manufacturerWarranty.match(/(\d+ jaar) op de hars/);
+if (!RESIN_MATCH) throw new Error(`Kan de harsgarantie niet lezen uit: ${JOEP.manufacturerWarranty}`);
+/** Bijvoorbeeld "20 jaar fabrieksgarantie op de hars", afgeleid uit lib/joep.mjs. */
+const RESIN_WARRANTY = `${RESIN_MATCH[1]} fabrieksgarantie op de hars`;
+const REGISTER_MATCH = JOEP_NO_FUSS_POINTS.warranty.match(/\((registreer [^)]+)\)/);
+if (!REGISTER_MATCH) throw new Error(`Kan de registratietermijn niet lezen uit: ${JOEP_NO_FUSS_POINTS.warranty}`);
+/** Bijvoorbeeld "registreer het apparaat binnen 30 dagen", afgeleid uit lib/joep.mjs. */
+const REGISTER = REGISTER_MATCH[1];
 
 export function generateMetadata(): Metadata {
-  const title = 'JOEP waterontharder: onze keuze als beste waterontharder 2026';
-  const description =
-    'JOEP waterontharder van AquaSens: 1.699 euro, of 1.998 euro compleet geïnstalleerd. Tot 5 m3 per uur, zoutverbruik, garantie en voor wie hij geschikt is.';
+  const title = TITLE;
+  const description = `JOEP, een compacte waterontharder van ${DIMENSIONS}: ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Specificaties, zout, garantie en voor wie.`;
   return {
     title,
     description,
@@ -29,35 +43,36 @@ export function generateMetadata(): Metadata {
 const faqItems = [
   {
     question: 'Wat is de beste waterontharder van Nederland?',
-    answer: `Onze keuze voor 2026 is de JOEP waterontharder. Wij vinden hem de beste keuze voor Nederlandse huishoudens met hard water, omdat hij zeer compact is (48 x 27 x 48,5 cm), in Engeland wordt gemaakt, ook via AquaCell werd verkocht, tot 5 m3 zacht water per uur levert en 20 jaar fabrieksgarantie op de hars heeft. Compleet geïnstalleerd kost hij ${JOEP.installedPrice}, terwijl complete ontharders doorgaans 1.000 tot 2.500 euro kosten. Transparant: WaterfilterPlatform is gelieerd aan PureAqua, dat JOEP verkoopt.`,
+    answer: `Onze keuze voor 2026 is de JOEP waterontharder. Wij vinden hem de beste keuze voor Nederlandse huishoudens met hard water, omdat hij compact is (${DIMENSIONS}), in ${JOEP.madeIn} wordt gemaakt, ook via AquaCell werd verkocht, ${JOEP.flow} zacht water levert en ${RESIN_WARRANTY} heeft. Compleet geïnstalleerd kost hij ${JOEP.installedPrice}, terwijl complete ontharders doorgaans ${JOEP_MARKET.typicalInstalledRange} kosten. Transparant: WaterfilterPlatform is gelieerd aan PureAqua, dat JOEP verkoopt.`,
   },
   {
     question: 'Wat is de JOEP waterontharder?',
-    answer:
-      'JOEP is een compacte waterontharder van AquaSens uit Joure. Het is een ionenwisselaar met zout: een harstank haalt calcium en magnesium uit al het water dat je huis binnenkomt, en een zoutbak spoelt de hars periodiek schoon. Het apparaat meet 48 x 27 x 48,5 cm en levert tot 5 m3 zacht water per uur.',
+    answer: `JOEP is een compacte waterontharder van AquaSens. Het is een ionenwisselaar met zout: een harstank haalt calcium en magnesium uit al het water dat je huis binnenkomt, en een zoutbak spoelt de hars periodiek schoon. Het apparaat meet ${JOEP.dimensions} en levert ${JOEP.flow} zacht water.`,
+  },
+  {
+    question: 'Hoe groot is de JOEP waterontharder?',
+    answer: `JOEP meet ${JOEP.dimensions}. Daarmee is het een compacte waterontharder die vaak in een meterkast, trapkast of keukenkastje past. Reken naast het apparaat op ruimte om de zoutbak bij te vullen (${JOEP.saltTank}), een aansluiting op de hoofdleiding na de watermeter, een afvoer voor het spoelwater en een stopcontact. Meet je plek vooraf op, inclusief de ruimte boven het deksel.`,
   },
   {
     question: 'Wat kost de JOEP waterontharder?',
-    answer: `Bij PureAqua kost JOEP ${JOEP.devicePrice} zonder installatie, of ${JOEP.installedPrice} compleet geïnstalleerd. Daarnaast betaal je voor zout (per regeneratie ${JOEP.saltPerRegeneration}, volgens de fabrikant theoretisch circa 15 kg per persoon per jaar bij 8 dH) en een beetje water en stroom voor de regeneratie. De fabrikant biedt vanaf het tweede jaar een optioneel serviceabonnement van 8,49 euro per maand. Controleer de actuele prijzen en voorwaarden bij de verkoper.`,
+    answer: `Bij PureAqua kost JOEP ${JOEP.devicePrice} zonder installatie, of ${JOEP.installedPrice} compleet geïnstalleerd. Daarnaast betaal je voor zout (per regeneratie ${JOEP.saltPerRegeneration}, ${JOEP.saltPerYear}) en een beetje water en stroom voor de regeneratie. Er is een ${JOEP.serviceSubscription}. Controleer de actuele prijzen en voorwaarden bij de verkoper.`,
   },
   {
     question: 'Gebruikt JOEP zout en stroom?',
     answer:
-      'Ja. JOEP is een ionenwisselaar en heeft onthardingszout nodig om de hars te regenereren; de zoutbak bevat maximaal 15 kg. Het apparaat heeft ook een stopcontact nodig voor de 12V-transformator van de besturing. Zoutloze apparaten die "kalk omvormen" zijn geen echte ontharders: ze halen de hardheid niet uit het water.',
+      `Ja. JOEP is een ionenwisselaar en heeft onthardingszout nodig om de hars te regenereren; de zoutbak bevat ${JOEP.saltTank}. Het apparaat heeft ook een stopcontact nodig voor de 12V-transformator van de besturing. Zoutloze apparaten die "kalk omvormen" zijn geen echte ontharders: ze halen de hardheid niet uit het water.`,
   },
   {
     question: 'Voor wie is JOEP geschikt?',
-    answer: `Voor huishoudens in een hardwatergebied, doorgaans vanaf circa ${JOEP_MIN_DH} dH, die kalk in het hele huis willen aanpakken met een compact apparaat. Heb je een groot huishouden, een hoog piekverbruik of een afwijkende waterdruk (buiten 1,5 tot 5 bar), laat dan vooraf checken of het formaat past. Bij zacht water onder circa 8 dH is een ontharder meestal niet nodig.`,
+    answer: `Voor huishoudens in een hardwatergebied, doorgaans vanaf circa ${JOEP_MIN_DH} dH, die kalk in het hele huis willen aanpakken met een compact apparaat. Heb je een groot huishouden, een hoog piekverbruik of een afwijkende waterdruk (buiten ${JOEP.pressure}), laat dan vooraf checken of het formaat past. Bij zachter water is een ontharder vaak niet nodig.`,
   },
   {
     question: 'Heb ik tijdens de regeneratie zacht water?',
-    answer:
-      'Nee. JOEP heeft een enkele harstank. Tijdens de regeneratie van circa een uur, standaard s nachts, loopt het water via de bypass en is het tijdelijk hard. Bij hoog verbruik kan JOEP een extra korte regeneratie uitvoeren. Wil je ook tijdens de regeneratie zacht water, dan is een tweecellige ontharder een alternatief.',
+    answer: `Nee. JOEP heeft een enkele harstank. Tijdens de regeneratie (${JOEP.regenerationTime}) loopt het water via de bypass en is het tijdelijk hard. Wil je ook tijdens de regeneratie zacht water, dan is een tweecellige ontharder een alternatief.`,
   },
   {
     question: 'Welke garantie krijg ik op JOEP?',
-    answer:
-      'De fabrikant AquaSens noemt 1 jaar all-in garantie, 2 jaar op onderdelen en 20 jaar op de hars, mits je het apparaat binnen 30 dagen registreert. Koop je via een verkoper zoals PureAqua, dan kunnen hun eigen installatie-, proef- en servicevoorwaarden aanvullend gelden. Lees die voorwaarden voor je bestelt.',
+    answer: `De fabrikant noemt ${JOEP.manufacturerWarranty}. Om die te behouden: ${REGISTER}. Koop je via een verkoper zoals PureAqua, dan kunnen hun eigen installatie-, proef- en servicevoorwaarden aanvullend gelden. Lees die voorwaarden voor je bestelt.`,
   },
 ];
 
@@ -82,7 +97,7 @@ const compare: [string, string, string, string][] = [
   ['Zacht water tijdens regeneratie', 'Nee (bypass)', 'Ja', 'n.v.t.'],
   ['Stopcontact nodig', 'Ja', 'Nee, voor ontharden', 'Meestal ja'],
   ['Zout nodig', 'Ja', 'Ja', 'Nee'],
-  ['Formaat', 'Compact', 'Compact', 'Klein'],
+  ['Formaat', `Compact (${DIMENSIONS})`, 'Compact', 'Klein'],
 ];
 
 export default function JoepWaterontharderPage() {
@@ -92,7 +107,7 @@ export default function JoepWaterontharderPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'JOEP waterontharder: onze keuze als beste waterontharder 2026',
+          title: TITLE,
           description:
             'Koopgids voor de JOEP waterontharder van AquaSens: prijs, specificaties, kosten, geschiktheid, installatie en garantie, met een eerlijke vergelijking.',
           datePublished: PUBLISHED,
@@ -112,7 +127,7 @@ export default function JoepWaterontharderPage() {
       />
       <SchemaOrg
         schema={[
-          { '@type': 'Brand', name: 'JOEP', description: 'Compacte waterontharder (ionenwisselaar met zout) van AquaSens uit Joure.' },
+          { '@type': 'Brand', name: 'JOEP', description: 'Compacte waterontharder (ionenwisselaar met zout) van AquaSens.' },
           buildProductSchema(product),
         ]}
       />
@@ -127,12 +142,13 @@ export default function JoepWaterontharderPage() {
             <span>JOEP</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            JOEP waterontharder: onze keuze als beste waterontharder 2026
+            {H1}
           </h1>
           <p className="text-gray-600 text-lg mb-4">
-            <strong>JOEP</strong> is een compacte waterontharder van AquaSens uit Joure. Hij haalt de kalk uit
-            al het water in huis, zodat kranen, douche, cv-ketel en apparaten niet meer verkalken. Hieronder lees
-            je wat hij kost, hoe hij werkt, voor wie hij past en waar je op moet letten.
+            <strong>JOEP</strong> is een compacte waterontharder van AquaSens: {DIMENSIONS}, dus hij past ook
+            waar weinig ruimte is (meet je plek wel vooraf op). Hij haalt de kalk uit al het water in huis, zodat kranen, douche, cv-ketel
+            en apparaten niet meer verkalken. {JOEP_POSITIONING} Hieronder lees je wat hij kost, hoe groot hij is,
+            hoe hij werkt, voor wie hij past en waar je op moet letten.
           </p>
           <div className="border border-amber-200 bg-amber-50 rounded-lg p-4 text-sm text-gray-800">
             <strong>Eerlijk vooraf:</strong> JOEP is een merk van AquaSens. PureAqua, waaraan WaterfilterPlatform
@@ -148,7 +164,7 @@ export default function JoepWaterontharderPage() {
 
         <QuickAnswer
           question="Is de JOEP de beste waterontharder?"
-          answer={`Ja. JOEP is onze keuze als beste waterontharder voor Nederland in 2026, voor huishoudens met hard water vanaf ongeveer ${JOEP_MIN_DH} dH. Hij is zeer compact en wordt gemaakt in Engeland. JOEP levert tot 5 m3 zacht water per uur, gebruikt ${JOEP.saltPerRegeneration} zout per regeneratie en heeft 20 jaar fabrieksgarantie op de hars. Bij PureAqua kost hij ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Let op: tijdens de nachtelijke regeneratie is het water tijdelijk hard en je hebt een stopcontact nodig.`}
+          answer={`Volgens ons wel: JOEP is onze keuze als beste waterontharder voor Nederland in 2026, voor huishoudens met hard water vanaf ongeveer ${JOEP_MIN_DH} dH. Hij is compact (${DIMENSIONS}) en wordt gemaakt in ${JOEP.madeIn}. JOEP levert ${JOEP.flow} zacht water, gebruikt ${JOEP.saltPerRegeneration} zout per regeneratie en heeft ${RESIN_WARRANTY}. Bij PureAqua kost hij ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Let op: tijdens de nachtelijke regeneratie is het water tijdelijk hard en je hebt een stopcontact nodig.`}
         />
 
         <FactCard id="joep" />
@@ -161,10 +177,9 @@ export default function JoepWaterontharderPage() {
             <div className="rounded-xl border border-green-200 bg-green-50 p-4">
               <p className="font-semibold text-green-800 mb-2">Sterke punten</p>
               <ul className="text-sm text-gray-700 space-y-1.5 list-disc pl-5">
-                <li>Compact formaat: 48 x 27 x 48,5 cm</li>
-                <li>Hoge doorstroom, tot 5 m3 per uur</li>
-                <li>Miniregeneratie bij hoog verbruik</li>
-                <li>20 jaar fabrieksgarantie op de hars</li>
+                <li>Compact formaat: {DIMENSIONS}</li>
+                <li>Hoge doorstroom, {JOEP.flow}</li>
+                <li>{RESIN_WARRANTY}</li>
                 <li>Zelf te installeren, of compleet geïnstalleerd voor {JOEP.installedPrice}</li>
               </ul>
             </div>
@@ -172,7 +187,7 @@ export default function JoepWaterontharderPage() {
               <p className="font-semibold text-gray-800 mb-2">Aandachtspunten</p>
               <ul className="text-sm text-gray-700 space-y-1.5 list-disc pl-5">
                 <li>Een formaat; bij groot huishouden of hoog piekverbruik eerst laten checken</li>
-                <li>Tijdens de regeneratie (circa 1 uur, s nachts) tijdelijk hard water</li>
+                <li>Tijdens de regeneratie ({JOEP.regenerationTime}) tijdelijk hard water</li>
                 <li>Heeft zout en een stopcontact nodig</li>
                 <li>Voegt natrium toe; bij een zoutarm dieet een apart drinkwatertappunt overwegen</li>
               </ul>
@@ -180,13 +195,49 @@ export default function JoepWaterontharderPage() {
           </div>
         </section>
 
+        <section id="compact">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Compacte waterontharder: past JOEP bij jou?</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Zoek je een compacte waterontharder, dan zijn de afmetingen het eerste waar je op let. JOEP meet{' '}
+            {JOEP.dimensions}: klein genoeg voor veel meterkasten, trapkasten of keukenkastjes.
+            Meet je plek wel altijd vooraf op. Volgens ons is dat precies waar &apos;zonder poespas&apos; begint: geen apart
+            hok nodig voor je ontharder.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4 mb-4">
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+              <p className="font-semibold text-gray-800 mb-2">Wat je nodig hebt op de plek</p>
+              <ul className="text-sm text-gray-700 space-y-1.5 list-disc pl-5">
+                <li>Vloerruimte van {DIMENSIONS}, plus ruimte boven het deksel om zout bij te vullen</li>
+                <li>Aansluiting op de hoofdleiding, na de watermeter</li>
+                <li>Een afvoer voor het spoelwater ({JOEP.waterPerRegeneration} per regeneratie)</li>
+                <li>Stroom: {JOEP.power}</li>
+                <li>Werkdruk van {JOEP.pressure} en watertemperatuur van {JOEP.temperature}</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+              <p className="font-semibold text-gray-800 mb-2">Zonder poespas, concreet</p>
+              <ul className="text-sm text-gray-700 space-y-1.5 list-disc pl-5">
+                {JOEP_NO_FUSS.map(p => (
+                  <li key={p}>{p}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <p className="text-gray-700 leading-relaxed">
+            Compact betekent wel een enkele harstank: tijdens de regeneratie ({JOEP.regenerationTime}) loopt het
+            water via de bypass. {JOEP_NO_FUSS_POINTS.maintenance}. Heb je een groot huishouden of een hoog
+            piekverbruik, laat dan vooraf checken of het formaat past. Meer over kleine ruimtes lees je in{' '}
+            <Link href="/waterontharder/appartement" className="text-[#005F8A] underline">waterontharder voor een appartement</Link>.
+          </p>
+        </section>
+
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Heb je een waterontharder nodig?</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Dat hangt vooral af van je waterhardheid. Onder circa 8 dH is water zacht en is een ontharder zelden
-            nodig. Tussen 8 en {JOEP_MIN_DH} dH is het vaak een kwestie van comfort. Vanaf ongeveer {JOEP_MIN_DH} dH,
-            zoals in grote delen van Brabant, Limburg en Gelderland, zie je snel kalkaanslag op kranen, in de
-            waterkoker en in de cv-ketel, en loont een ontharder voor het hele huis eerder.
+            Dat hangt vooral af van je waterhardheid. Een ontharder voor het hele huis is doorgaans pas zinvol
+            vanaf ongeveer {JOEP_MIN_DH} dH. Bij die hardheid, zoals in grote delen van Brabant, Limburg en
+            Gelderland, zie je snel kalkaanslag op kranen, in de waterkoker en in de cv-ketel. Bij zachter water
+            is een ontharder vooral een kwestie van comfort.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Zoek de hardheid in jouw gemeente op via{' '}
@@ -201,9 +252,8 @@ export default function JoepWaterontharderPage() {
           <p className="text-gray-700 leading-relaxed mb-3">
             JOEP wordt na de watermeter op de hoofdleiding aangesloten, zodat al het water in huis erdoor gaat. In
             de harstank worden calcium en magnesium, de stoffen die kalk vormen, uitgewisseld tegen natrium. Als de
-            hars vol zit, spoelt het apparaat hem schoon met pekel uit de zoutbak. Die regeneratie duurt circa een
-            uur en gebeurt standaard s nachts; in die tijd loopt het water via de bypass. Gebruik je veel water, dan
-            kan JOEP een extra korte regeneratie inlassen.
+            hars vol zit, spoelt het apparaat hem schoon met pekel uit de zoutbak. Tijdens die regeneratie
+            ({JOEP.regenerationTime}) loopt het water via de bypass.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Meer achtergrond:{' '}
@@ -239,14 +289,16 @@ export default function JoepWaterontharderPage() {
           <ul className="space-y-2 text-gray-700 list-disc pl-5">
             <li><strong>Aanschaf:</strong> {JOEP.devicePrice} zonder installatie bij PureAqua.</li>
             <li><strong>Compleet geïnstalleerd:</strong> {JOEP.installedPrice} bij PureAqua. Installeer je zelf met de handleiding, dan betaal je alleen het apparaat.</li>
-            <li><strong>Zout:</strong> {JOEP.saltPerRegeneration} per regeneratie; de fabrikant rekent theoretisch met circa 15 kg per persoon per jaar bij 8 dH. Bij harder water en meer verbruik is dat meer.</li>
+            <li><strong>Zout:</strong> {JOEP.saltPerRegeneration} per regeneratie; de fabrikant rekent {JOEP.saltPerYear}. Bij harder water en meer verbruik is dat meer.</li>
             <li><strong>Water en stroom:</strong> {JOEP.waterPerRegeneration} per regeneratie en het beperkte verbruik van de besturing.</li>
             <li><strong>Service:</strong> {JOEP.serviceSubscription}.</li>
           </ul>
           <p className="text-gray-700 leading-relaxed mt-4">
-            Reken je jaarlasten door met de{' '}
-            <Link href="/kennisbank/wat-kost-waterontharder-per-jaar" className="text-[#005F8A] underline">uitleg over de jaarkosten van een waterontharder</Link>{' '}
-            en vergelijk met een{' '}
+            Wat JOEP per jaar en over 5 en 10 jaar kost, rekenen we uit op{' '}
+            <Link href="/waterontharder/kosten" className="text-[#005F8A] underline">waterontharder kosten</Link>.
+            Marktprijzen van andere ontharders vind je op{' '}
+            <Link href="/waterontharder/prijs" className="text-[#005F8A] underline">waterontharder prijs</Link>,
+            en lees de vergelijking met een{' '}
             <Link href="/kennisbank/joep-vs-zoutontharder" className="text-[#005F8A] underline">klassieke zoutontharder</Link>.
           </p>
         </section>
@@ -294,7 +346,7 @@ export default function JoepWaterontharderPage() {
             Voor JOEP heb je drie dingen nodig: een aansluiting op de hoofdleiding na de watermeter, een afvoer voor
             het spoelwater en een stopcontact. Handige doe-het-zelvers kunnen hem met de handleiding zelf plaatsen;
             Wil je het uit handen geven, dan installeert PureAqua hem; compleet geïnstalleerd kost JOEP {JOEP.installedPrice}. Stel het apparaat na installatie in op de hardheid van
-            jouw kraanwater. Let op: registreer het apparaat binnen 30 dagen om de fabrieksgarantie te behouden.
+            jouw kraanwater. Let op: {REGISTER} om de fabrieksgarantie te behouden.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Meer weten? Lees{' '}
@@ -310,7 +362,7 @@ export default function JoepWaterontharderPage() {
             {[
               ['Bronnen', 'Officiele productinformatie en voorwaarden van AquaSens, de productpagina van PureAqua en algemene bronnen over waterhardheid.'],
               ['Wat we niet claimen', 'Geen besparingspercentages, gezondheidseffecten of certificeringen die we niet voor JOEP zelf konden herleiden.'],
-              ['Laatste controle', 'September 2026. Controleer actuele prijzen en voorwaarden bij de verkoper.'],
+              ['Laatste controle', `Prijzen en specificaties gecontroleerd op ${CHECKED}; pagina bijgewerkt in november 2026. Controleer actuele prijzen en voorwaarden bij de verkoper.`],
               ['Commerciele relatie', 'JOEP is een merk van AquaSens en wordt verkocht via PureAqua, waaraan dit platform gelieerd is.'],
             ].map(([t, d]) => (
               <div key={t} className="flex gap-3">

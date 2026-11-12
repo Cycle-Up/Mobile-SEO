@@ -24,12 +24,12 @@ const faqItems = [
   {
     question: "Wat is het verschil tussen Quooker en PureAqua?",
     answer:
-      "Het grootste verschil is het filtersysteem. Een Quooker levert heet of kokend water maar heeft geen ingebouwde waterfilter — een externe Quooker CUBE-eenheid voegt bruiswater toe maar filtert niet op PFAS of lood. PureAqua 4-in-1 heeft een ingebouwd osmosefilter: het water wordt gefilterd op moleculair niveau voordat het verhit of gekoeld wordt. Quooker werkt met een vacuüm boilertank (ca. 3 liter) en levert kokend water; de PureAqua 4-in-1 heeft een heet-/koelunit met een tank van 2,3 liter en levert zeer heet water van circa 96 graden, plus gekoeld water (circa 5 graden). Bruisend water geeft de PureAqua 4-in-1 niet.",
+      "Het grootste verschil is het filtersysteem. Een Quooker levert heet of kokend water maar heeft geen ingebouwde waterfilter. Een externe Quooker CUBE-eenheid voegt bruiswater toe maar filtert niet op PFAS of lood. PureAqua 4-in-1 heeft een ingebouwd osmosefilter: het water wordt gefilterd op moleculair niveau voordat het verhit of gekoeld wordt. Quooker werkt met een vacuüm boilertank (ca. 3 liter) en levert kokend water; de PureAqua 4-in-1 heeft een heet-/koelunit met een tank van 2,3 liter en levert zeer heet water van circa 96 graden, plus gekoeld water (circa 5 graden). Bruisend water geeft de PureAqua 4-in-1 niet.",
   },
   {
     question: "Hoe lang gaat een kokend water kraan mee?",
     answer:
-      "De meeste kwaliteitskranen (Quooker, Grohe Red, PureAqua) hebben een levensverwachting van 10-15 jaar bij normaal onderhoud. De boiler en het kraan-mechanisme zelf zijn robuust; de vervangende onderdelen zijn de filters en eventueel de verwarmingselementen. Quooker biedt een fabrieksgarantie van 2 jaar, PureAqua 2-5 jaar afhankelijk van het model. Regelmatig onderhoud (filterwissel, ontkalking) verlengt de levensduur aanzienlijk.",
+      "De meeste kwaliteitskranen (zoals Quooker en Grohe Red) hebben een levensverwachting van 10-15 jaar bij normaal onderhoud. De boiler en het kraan-mechanisme zelf zijn robuust; de vervangende onderdelen zijn de filters en eventueel de verwarmingselementen. Quooker biedt een fabrieksgarantie van 2 jaar; op de PureAqua 4-in-1 kraan krijg je 2 jaar all-in garantie via PureAqua. Regelmatig onderhoud (filterwissel, ontkalking) verlengt de levensduur aanzienlijk.",
   },
   {
     question: "Wat kost installatie van een kokend water kraan?",
@@ -82,7 +82,7 @@ export default function KokendWaterKraanMerkenPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Kokend water kraan merken vergelijken: Quooker, Grohe, PureAqua en meer
           </h1>
-          <QuickAnswer answer="De bekendste merken zijn Quooker (boilersysteem, 150-215°C standby), Grohe Red (boiler, rond design), PureAqua 4-in-1 (osmosefilter ingebouwd), InSinkErator (direct heating). Prijzen lopen van 500 tot 2.500 euro. Het grootste onderscheid: wel of geen ingebouwde waterfilter." />
+          <QuickAnswer answer="De bekendste merken zijn Quooker (vacuümboiler, 110°C in de tank), Grohe Red (boiler, rond design), PureAqua 4-in-1 (osmosefilter ingebouwd), InSinkErator (direct heating). Prijzen lopen van 500 tot 2.500 euro. Het grootste onderscheid: wel of geen ingebouwde waterfilter." />
         </div>
       </section>
 
@@ -114,10 +114,10 @@ export default function KokendWaterKraanMerkenPage() {
                   ["Aanschafprijs", "900-1.400 euro", "700-1.100 euro", "1.948 euro (installatie optioneel 299 euro)", "500-900 euro"],
                   ["Jaarlijkse kosten", "100-180 euro (filter + energie)", "80-150 euro", "Voor- en remineralisatiefilter jaarlijks, membraan elke 2 jaar", "60-120 euro"],
                   ["Capaciteit", "7 liter/uur", "5-6 liter/uur", "Circa 1,2 liter heet direct beschikbaar (tank 2,3 liter); gekoeld tot 20 liter/uur", "~6 liter/uur"],
-                  ["Technologie", "Vacuüm boiler (110°C)", "Boiler (150-210°C standby)", "Heet-/koelunit (circa 96°C en circa 5°C) + RO", "Direct heating"],
+                  ["Technologie", "Vacuüm boiler (110°C)", "Boiler (circa 100°C)", "Heet-/koelunit (circa 96°C en circa 5°C) + RO", "Direct heating"],
                   ["Ingebouwde waterfilter", "Nee (CUBE optioneel)", "Nee", "Ja, osmose (RO)", "Nee (optioneel)"],
                   ["Installatievereisten", "230V, gat aanrecht, 1/4\"", "230V, gat aanrecht, 1/4\"", "2 stopcontacten, 2 apparaten onder de spoelbak, afvoer", "230V, gat aanrecht, 1/4\""],
-                  ["Garantie", "2 jaar (fabrikant)", "2 jaar (fabrikant)", "2-3 jaar", "2 jaar"],
+                  ["Garantie", "2 jaar (fabrikant)", "2 jaar (fabrikant)", "2 jaar all-in (via PureAqua)", "2 jaar"],
                   ["Standby energie (dag)", "10-25 Wh/dag", "15-30 Wh/dag", "Geen fabrieksopgave (heet en gekoeld)", "0 Wh (geen standby)"],
                 ].map(([eigenschap, quooker, grohe, pureaqua, insinkerator], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
@@ -141,9 +141,9 @@ export default function KokendWaterKraanMerkenPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             <strong>Boilersystemen</strong> (Quooker, Grohe Red) bewaren een kleine hoeveelheid water
             continu op hoge temperatuur in een geïsoleerde tank. Quooker maakt gebruik van een
-            vacuümboiler die water op 110°C houdt onder verhoogde druk — dit kan pas bij 110°C koken
-            dankzij de hogere druk in de tank. Bij gebruik stroomt het water naar de kraan en koelt
-            het af tot 100°C bij atmosferische druk. Grohe Red houdt water op 150-210°C in standby.
+            vacuümboiler die water op 110°C houdt onder verhoogde druk. Door die hogere druk kookt het water in de
+            tank nog niet. Bij gebruik stroomt het water naar de kraan en koelt
+            het af tot 100°C bij atmosferische druk. Grohe Red levert kokend water van circa 100°C uit een geïsoleerde boiler.
             Het voordeel: vrijwel directe levering van kokend water zonder wachttijd. Het nadeel:
             continu energieverbruik, ook &apos;s nachts of tijdens vakanties.
           </p>

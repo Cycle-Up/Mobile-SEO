@@ -22,11 +22,11 @@ const COPY: Record<Context, { title: string; sub: string }> = {
   },
   filterkan: {
     title: 'Klaar met bijvullen?',
-    sub: `Met PureFilter Mineral+ komt gefilterd water direct uit je kraan. Eenmalig ${PUREFILTER.price}, daarna een navulfilter van ${PUREFILTER.cartridgePrice} per 6 tot 12 maanden; labtest: circa ${PUREFILTER.pfasReduction} minder van vijf PFAS.`,
+    sub: `Met PureFilter Mineral+ komt gefilterd water direct uit je kraan. Eenmalig ${PUREFILTER.price}, daarna een navulfilter van ${PUREFILTER.cartridgePrice} per ${PUREFILTER.capacity}; labtest: circa ${PUREFILTER.pfasReduction} minder van vijf PFAS.`,
   },
   algemeen: {
     title: 'Gefilterd water direct uit je kraan',
-    sub: `PureFilter Mineral+: compact filter onder het aanrecht, zonder afvalwater. ${PUREFILTER.price} inclusief eerste cartridge, 5 jaar garantie en 40 dagen retour.`,
+    sub: `PureFilter Mineral+: compact filter onder het aanrecht, zonder afvalwater. ${PUREFILTER.price} inclusief eerste cartridge; labtest: circa ${PUREFILTER.pfasReduction} minder van vijf PFAS.`,
   },
 };
 

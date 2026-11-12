@@ -34,8 +34,7 @@ export function ThreeWayRecommendation({ content }: ThreeWayRecommendationProps)
       </ul>
       <p className="text-sm text-gray-600 mb-5">
         <strong>Goed om te weten:</strong> je hebt ruimte onder het aanrecht en een afvoeraansluiting nodig, en een
-        osmosesysteem gebruikt spoelwater (bij The Source circa een liter per liter zuiver water). Mag of wil je niet
-        verbouwen, kies dan een{' '}
+        osmosesysteem gebruikt spoelwater. Mag of wil je niet verbouwen, kies dan een{' '}
         <Link href="/countertop-osmose" className="text-[#005F8A] underline">countertop-osmose</Link>.
       </p>
       <div className="flex flex-col sm:flex-row sm:items-center gap-3">

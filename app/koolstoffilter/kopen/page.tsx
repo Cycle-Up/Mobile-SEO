@@ -10,7 +10,7 @@ import { MethodologyBadge } from '@/components/MethodologyBadge';
 export const metadata: Metadata = {
   title: 'Koolstoffilter kopen: welk type past bij jou? Vergelijking 2026',
   description:
-    'Koopgids voor koolstoffilters: vergelijk filterkan, kraanfilter en inline blokfilter op prijs, filtercapaciteit en NSF-certificering. Onafhankelijk advies.',
+    'Koopgids koolstoffilter: vergelijk filterkan, kraanfilter en inline blokfilter op prijs, capaciteit en NSF-certificering. Open over onze band met PureAqua.',
   alternates: { canonical: 'https://waterfilterplatform.nl/koolstoffilter/kopen' },
   openGraph: {
     title: 'Koolstoffilter kopen — vergelijking en koopgids 2026',

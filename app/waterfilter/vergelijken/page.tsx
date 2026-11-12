@@ -6,11 +6,13 @@ import { TrustBar } from '@/components/TrustBar';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { SgsResults } from '@/components/SgsResults';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
   title: 'Welk waterfilter is de beste keuze? Vergelijking 2026',
   description:
-    'Waterfilter vergelijken: van koolstofblok en waterfilterkan tot osmosefilter en UV. Ontdek welk type waterfilter het beste bij jouw situatie, budget en.',
+    'Waterfilter vergelijken: koolstofblok, filterkan, osmose, UV en 4-in-1 kraan naast elkaar op prijs, wat ze verwijderen (ook PFAS) en installatiegemak.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/vergelijken' },
   openGraph: {
     title: 'Waterfilter Vergelijken 2026: Complete Gids',
@@ -25,7 +27,7 @@ const faqItems = [
   {
     question: 'Welk waterfilter verwijdert het meeste?',
     answer:
-      'Een omgekeerde osmose (RO) filter verwijdert het meeste: 95–99% van alle opgeloste stoffen inclusief zware metalen, nitraten, pesticiden, farmaceutische residuen en microplastics. Een koolstofblokfilter verwijdert chloor, geur en smaak maar geen opgeloste mineralen of zware metalen. UV-filters doden bacteriën en virussen maar verwijderen geen chemische verontreinigingen. Voor de beste waterkwaliteit is een RO-filter of een 4-in-1 kraan met geïntegreerde RO-filtratie de beste keuze.',
+      'Een omgekeerde osmose (RO) filter verwijdert het meeste: 95–99% van alle opgeloste stoffen inclusief zware metalen, nitraten, pesticiden, farmaceutische residuen en microplastics. Een koolstofblokfilter verwijdert chloor, geur en smaak maar geen opgeloste mineralen of zware metalen. UV-filters doden bacteriën en virussen maar verwijderen geen chemische verontreinigingen. Voor de beste waterkwaliteit is een RO-filter of een 4-in-1 kraan met geïntegreerde RO-filtratie volgens ons de beste keuze.',
   },
   {
     question: 'Wat is het verschil tussen een waterfilterkan en een onderbouw osmosefilter?',
@@ -35,7 +37,7 @@ const faqItems = [
   {
     question: 'Kan ik een waterfilter installeren in een huurwoning?',
     answer:
-      'Ja. Waterfilterkannen en aanrechtfilters vereisen geen installatie — ideaal voor huurders. Onderbouw RO-filters worden aangesloten via een omkeerbaar T-stuk op de koudwaterkraan, zonder permanente aanpassingen. Een 4-in-1 kraan vereist een boorgat in het aanrechtblad; vraag daarvoor toestemming aan uw verhuurder. UV-filters worden inline geplaatst op de waterleiding, wat ook omkeerbaar is.',
+      'Ja. Waterfilterkannen en aanrechtfilters vereisen geen installatie, dus ideaal voor huurders. Onderbouw RO-filters worden aangesloten via een omkeerbaar T-stuk op de koudwaterkraan, zonder permanente aanpassingen. Een 4-in-1 kraan vervangt de bestaande mengkraan en heeft dus geen extra kraangat nodig, wel ruimte en twee stopcontacten onder de spoelbak; vraag in een huurwoning eerst toestemming aan uw verhuurder. UV-filters worden inline geplaatst op de waterleiding, wat ook omkeerbaar is.',
   },
   {
     question: 'Welk waterfilter is het goedkoopst op jaarbasis?',
@@ -143,8 +145,19 @@ const filterTypes = [
     naam: 'Geïntegreerde 4-in-1 kokend water kraan',
     prijs: '€ 1.948',
     onderhoud: 'gemiddeld circa € 150 / jaar (fabrikantprijzen omgerekend)',
-    verwijdert: ['Zware metalen', 'Nitraten', 'Pesticiden', 'Farmaceutische residuen', 'Microplastics', 'Kalk (95–99%)', 'Chloor & geur', 'Sediment'],
-    verwijdertNiet: ['Bacteriën (zonder UV-module)', 'Vluchtige organische stoffen (beperkt)'],
+    // Per stof gemeten door SGS bij de PureAqua 4-in-1 (lib/kranen.mjs), geen generieke osmosepercentages.
+    verwijdert: [
+      `PFOS (SGS: ${FOUR_IN_ONE.lab.PFOS})`,
+      `PFOA (SGS: ${FOUR_IN_ONE.lab.PFOA})`,
+      `Lood (SGS: ${FOUR_IN_ONE.lab.lood})`,
+      `Vrij chloor (SGS: ${FOUR_IN_ONE.lab.chloor})`,
+      `Fluoride (SGS: ${FOUR_IN_ONE.lab.fluoride})`,
+      `Microplastics (SGS: ${FOUR_IN_ONE.lab.microplastics})`,
+      `Coliforme bacteriën (SGS: ${FOUR_IN_ONE.lab.coliform})`,
+      'Kalk (grotendeels, niet apart gemeten)',
+      'Sediment',
+    ],
+    verwijdertNiet: ['Geen UV-stap: geen vervanging voor desinfectie van onveilig water', 'Vluchtige organische stoffen (beperkt)'],
     installatie: 'Installateur aanbevolen (PureAqua: optioneel 299 euro)',
     moeilijkheid: 'Gemiddeld',
     voetafdruk: 'Twee apparaten onder aanrecht + één kraan',
@@ -157,12 +170,13 @@ const vergelijkMatrix = [
   { spec: 'Aanschafprijs', koolstof: '€ 50–150', kan: '€ 20–80', roOnderbouw: '€ 150–500', roAanrecht: '€ 100–350', uv: '€ 80–250', vierin1: '€ 1.948' },
   { spec: 'Onderhoud/jaar', koolstof: '€ 30–60', kan: '€ 60–120', roOnderbouw: '€ 50–120', roAanrecht: '€ 40–100', uv: '€ 30–80', vierin1: 'circa € 150 (gemiddeld)' },
   { spec: 'Chloor & geur', koolstof: 'Ja', kan: 'Ja', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
-  { spec: 'Kalk verwijderd', koolstof: 'Nee', kan: 'Gedeeltelijk', roOnderbouw: '95–99%', roAanrecht: '95–99%', uv: 'Nee', vierin1: '95–99%' },
-  { spec: 'Zware metalen', koolstof: 'Nee', kan: 'Gedeeltelijk', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
-  { spec: 'Nitraten', koolstof: 'Nee', kan: 'Nee', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
-  { spec: 'Bacteriën', koolstof: 'Nee', kan: 'Nee', roOnderbouw: 'Beperkt', roAanrecht: 'Beperkt', uv: 'Ja', vierin1: 'Beperkt' },
-  { spec: 'Pesticiden', koolstof: 'Gedeeltelijk', kan: 'Nee', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
-  { spec: 'Microplastics', koolstof: 'Gedeeltelijk', kan: 'Nee', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Ja' },
+  { spec: 'Kalk verwijderd', koolstof: 'Nee', kan: 'Gedeeltelijk', roOnderbouw: '95–99%', roAanrecht: '95–99%', uv: 'Nee', vierin1: 'Grotendeels (niet apart gemeten)' },
+  { spec: 'PFAS', koolstof: 'Gedeeltelijk', kan: 'Beperkt', roOnderbouw: 'Sterk (afhankelijk van systeem)', roAanrecht: 'Sterk (afhankelijk van systeem)', uv: 'Nee', vierin1: `SGS: PFOS ${FOUR_IN_ONE.lab.PFOS}, PFOA ${FOUR_IN_ONE.lab.PFOA} minder` },
+  { spec: 'Zware metalen', koolstof: 'Nee', kan: 'Gedeeltelijk', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: `SGS: lood ${FOUR_IN_ONE.lab.lood} minder` },
+  { spec: 'Nitraten', koolstof: 'Nee', kan: 'Nee', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Niet apart gemeten' },
+  { spec: 'Bacteriën', koolstof: 'Nee', kan: 'Nee', roOnderbouw: 'Beperkt', roAanrecht: 'Beperkt', uv: 'Ja', vierin1: `SGS: coliformen ${FOUR_IN_ONE.lab.coliform} minder` },
+  { spec: 'Pesticiden', koolstof: 'Gedeeltelijk', kan: 'Nee', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: 'Niet apart gemeten' },
+  { spec: 'Microplastics', koolstof: 'Gedeeltelijk', kan: 'Nee', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Nee', vierin1: `SGS: ${FOUR_IN_ONE.lab.microplastics}` },
   { spec: 'Kokend water', koolstof: 'Nee', kan: 'Nee', roOnderbouw: 'Nee', roAanrecht: 'Nee', uv: 'Nee', vierin1: 'Zeer heet (circa 96 °C)' },
   { spec: 'Installatiegemak', koolstof: 'Eenvoudig', kan: 'Geen', roOnderbouw: 'Gemiddeld', roAanrecht: 'Eenvoudig', uv: 'Gemiddeld', vierin1: 'Installateur' },
   { spec: 'Geschikt huurwoning', koolstof: 'Ja', kan: 'Ja', roOnderbouw: 'Ja', roAanrecht: 'Ja', uv: 'Ja', vierin1: 'Met toestemming' },
@@ -184,7 +198,7 @@ const scenarios = [
   {
     situatie: 'Eigenaar met hard water (>15 °dH)',
     beste: '4-in-1 kokend water kraan',
-    reden: 'In hardwatergebieden verwijdert het RO-membraan van de 4-in-1 kraan effectief kalk. Dit beschermt tevens de geïntegreerde boiler. Koolstoffilters verwijderen geen kalk. Een waterontharder pakt de kalk ook aan maar filtert geen andere verontreinigingen.',
+    reden: 'In hardwatergebieden haalt het RO-membraan van de 4-in-1 kraan het grootste deel van de kalk uit je drink- en kookwater. Dat ontziet ook de geïntegreerde boiler. Koolstoffilters verwijderen geen kalk. Een waterontharder pakt de kalk ook aan maar filtert geen andere verontreinigingen.',
     link: '/waterhardheid',
   },
   {
@@ -288,10 +302,10 @@ export default function WaterfilterVergelijkenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-10" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-10" />
 
-        <QuickAnswer answer="Waterfilters vergelijken: een osmosefilter verwijdert het meest (99%, inclusief kalk en nitraten, €150–500). Een koolstoffilter verbetert smaak en verwijdert chloor (€50–150). Een waterfilterkan is goedkoopst maar filtert minder (€20–80). Voor hard water of maximale zuiverheid is een osmosefilter de beste keuze." />
+        <QuickAnswer answer="Waterfilters vergelijken: een osmosefilter verwijdert het meest (doorgaans 95 tot 99% van de opgeloste stoffen, inclusief kalk en nitraten, €150–500). Een koolstoffilter verbetert smaak en verwijdert chloor (€50–150). Een waterfilterkan is goedkoopst maar filtert minder (€20–80). Voor hard water of maximale zuiverheid is een osmosefilter volgens ons de beste keuze. Nederlands kraanwater voldoet aan de wettelijke norm; een filter is een extra stap." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -488,7 +502,7 @@ export default function WaterfilterVergelijkenPage() {
                   'Effectief tegen zware metalen (lood, arseen)',
                   'Verwijdert nitraten, nitriet en pesticiden',
                   'Microplastics en farmaceutische residuen',
-                  'Kalkvrij water — geen kalkaanslag meer',
+                  'Vrijwel kalkvrij water, veel minder kalkaanslag',
                   'Aantoonbare kwaliteit via TDS-meter te meten',
                 ].map(v => (
                   <li key={v} className="flex gap-2">
@@ -531,12 +545,20 @@ export default function WaterfilterVergelijkenPage() {
             4-in-1 kokend water kraan: de premium all-in-one keuze
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            De <strong>geïntegreerde 4-in-1 kokend water kraan</strong> is de meest complete oplossing
-            in deze vergelijking. Het systeem combineert een volledig osmose filtersysteem met een
+            De <strong>geïntegreerde 4-in-1 kokend water kraan</strong> is volgens ons de meest complete
+            oplossing in deze vergelijking. Het systeem combineert een volledig osmose filtersysteem met een
             heet-/koelunit voor zeer heet water (circa 96 graden), gekoeld gefilterd water en gewoon
             warm en koud water. Sommige andere merken leveren ook bruisend water; de PureAqua 4-in-1
             niet. Alles uit één kraan, die uw bestaande keukenkraan vervangt.
           </p>
+          <p className="text-xs text-gray-500 mb-5 leading-relaxed">
+            <strong className="text-gray-700">Openheid:</strong> de PureAqua 4-in-1 kraan wordt verkocht door
+            PureAqua, waaraan dit platform gelieerd is. De cijfers hieronder komen uit het openbare SGS-testrapport
+            van de fabrikant; het oordeel &lsquo;meest compleet&rsquo; is van ons, geen keurmerk.
+          </p>
+          <div className="mb-5">
+            <SgsResults />
+          </div>
           <div className="bg-[#E0F2FE] rounded-2xl p-5 mb-5">
             <p className="font-semibold text-[#003F5C] mb-3">Wat de 4-in-1 kraan vervangt</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm text-center">

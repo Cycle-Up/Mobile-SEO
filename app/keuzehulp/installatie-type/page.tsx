@@ -32,7 +32,7 @@ const faqItems = [
   },
   {
     question: 'Heeft een osmosefilter een aparte kraan nodig?',
-    answer: 'Ja, een osmosefilter heeft altijd een aparte drinkwaterkraan naast de bestaande keukenkraan. Dit kraantje levert gefilterd water; het normale kraan blijft voor spoelwater. De extra kraan vereist een boorgat in het aanrecht. Veel aanrechten hebben al een derde gat voor zeeppomp of kokendwaterkraan; dat gat kan worden hergebruikt. Zonder extra gat is in sommige gevallen een kraandoorvoer in de waterleiding mogelijk, maar dit is minder gangbaar.',
+    answer: 'Niet altijd. Een klassiek onderbouwsysteem heeft een aparte drinkwaterkraan naast de bestaande keukenkraan; dat kraantje levert gefilterd water en de gewone kraan blijft voor spoelwater. Daarvoor is een boorgat in het aanrecht nodig. Veel aanrechten hebben al een derde gat voor zeeppomp of kokendwaterkraan; dat gat kan worden hergebruikt. Het kan ook zonder extra kraan. Met een 3-weg-kraan komt warm, koud en gezuiverd water uit één kraan, zoals bij The Source van PureAqua (The Source 395 euro, kranen 540 tot 840 euro). De PureAqua 4-in-1 kraan komt in plaats van uw mengkraan en geeft naast gewoon warm en koud kraanwater ook gezuiverd water. Een countertop-osmose zoals het PureAqua Water zuiver apparaat heeft geen kraan en geen installatie nodig: stekker erin, tank vullen, klaar. Deze drie producten worden verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.',
   },
   {
     question: 'Wat is de capaciteit van een onderkastfilter versus een filterkan?',
@@ -66,7 +66,7 @@ export default function InstallatieTypePage() {
             headline: 'Welk type waterfilter past bij uw keuken? Aanrecht, onderkast of inbouw',
             description: 'Vergelijk 4 installatietypes voor waterfilters: filterkan, aanrechtmodel, onderkastfilter en inbouw osmose.',
             datePublished: '2026-05-17',
-            dateModified: '2026-05-17',
+            dateModified: '2026-11-03',
             url: 'https://waterfilterplatform.nl/keuzehulp/installatie-type',
             publisher: { '@type': 'Organization', name: 'WaterfilterPlatform', url: 'https://waterfilterplatform.nl' },
           },
@@ -81,7 +81,7 @@ export default function InstallatieTypePage() {
           <h1 className="text-3xl font-bold text-[#003F5C] mb-3">
             Welk type waterfilter past bij uw keuken? Aanrecht, onderkast of inbouw
           </h1>
-          <QuickAnswer answer="Er zijn 4 installatietypes: filterkan (geen installatie, portable), aanrechtmodel (15 minuten op kraan, flexibel), onderkastfilter (professionele installatie, hogere capaciteit, eigen kraantje) en inbouw osmose (vaste installatie, aparte drinkwaterkraan, hoogste waterkwaliteit). Voor huurwoningen zijn de eerste twee het eenvoudigst; voor koopwoningen met kwaliteitswensen is osmose de beste keuze." />
+          <QuickAnswer answer="Er zijn 4 klassieke installatietypes: filterkan (geen installatie), aanrechtmodel (15 minuten op kraan), onderkastfilter (professionele installatie, eigen kraantje) en inbouw osmose (vaste installatie, aparte drinkwaterkraan of een 3-weg- of 4-in-1-kraan die uw keukenkraan vervangt). Countertop-osmose werkt zonder installatie. Voor huurwoningen zijn filterkan, aanrechtmodel en countertop-osmose het eenvoudigst; bij een koopwoning met kwaliteitswensen is osmose volgens ons de beste keuze." />
         </div>
       </section>
 
@@ -92,7 +92,7 @@ export default function InstallatieTypePage() {
 
           <div className="space-y-6">
             <div className="border border-gray-200 rounded-xl p-5">
-              <h3 className="text-xl font-semibold text-[#003F5C] mb-2">1. Filterkan — geen installatie, portabel</h3>
+              <h3 className="text-xl font-semibold text-[#003F5C] mb-2">1. Filterkan: geen installatie, portabel</h3>
               <div className="grid grid-cols-2 gap-3 text-sm mb-3">
                 <div>
                   <p className="font-medium text-gray-700">Prijs aanschaf</p>
@@ -100,7 +100,7 @@ export default function InstallatieTypePage() {
                 </div>
                 <div>
                   <p className="font-medium text-gray-700">Installatiemoeite</p>
-                  <p className="text-gray-600">Geen — direct gebruiksklaar</p>
+                  <p className="text-gray-600">Geen, direct gebruiksklaar</p>
                 </div>
                 <div>
                   <p className="font-medium text-gray-700">Geschikt voor huur</p>
@@ -117,7 +117,7 @@ export default function InstallatieTypePage() {
             </div>
 
             <div className="border border-gray-200 rounded-xl p-5">
-              <h3 className="text-xl font-semibold text-[#003F5C] mb-2">2. Aanrechtmodel — 15 minuten installatie op kraan</h3>
+              <h3 className="text-xl font-semibold text-[#003F5C] mb-2">2. Aanrechtmodel: 15 minuten installatie op kraan</h3>
               <div className="grid grid-cols-2 gap-3 text-sm mb-3">
                 <div>
                   <p className="font-medium text-gray-700">Prijs aanschaf</p>
@@ -125,7 +125,7 @@ export default function InstallatieTypePage() {
                 </div>
                 <div>
                   <p className="font-medium text-gray-700">Installatiemoeite</p>
-                  <p className="text-gray-600">Laag — kraanconnector</p>
+                  <p className="text-gray-600">Laag, kraanconnector</p>
                 </div>
                 <div>
                   <p className="font-medium text-gray-700">Geschikt voor huur</p>
@@ -142,7 +142,7 @@ export default function InstallatieTypePage() {
             </div>
 
             <div className="border border-gray-200 rounded-xl p-5">
-              <h3 className="text-xl font-semibold text-[#003F5C] mb-2">3. Onderkastfilter — professionele installatie, capaciteitsvoordeel</h3>
+              <h3 className="text-xl font-semibold text-[#003F5C] mb-2">3. Onderkastfilter: professionele installatie, capaciteitsvoordeel</h3>
               <div className="grid grid-cols-2 gap-3 text-sm mb-3">
                 <div>
                   <p className="font-medium text-gray-700">Prijs aanschaf</p>
@@ -150,7 +150,7 @@ export default function InstallatieTypePage() {
                 </div>
                 <div>
                   <p className="font-medium text-gray-700">Installatiemoeite</p>
-                  <p className="text-gray-600">Middel — loodgieter 1-2 uur</p>
+                  <p className="text-gray-600">Middel, loodgieter 1-2 uur</p>
                 </div>
                 <div>
                   <p className="font-medium text-gray-700">Geschikt voor huur</p>
@@ -167,7 +167,7 @@ export default function InstallatieTypePage() {
             </div>
 
             <div className="border border-gray-200 rounded-xl p-5 border-[#005F8A]">
-              <h3 className="text-xl font-semibold text-[#003F5C] mb-2">4. Inbouw osmose — vaste installatie, hoogste kwaliteit</h3>
+              <h3 className="text-xl font-semibold text-[#003F5C] mb-2">4. Inbouw osmose: vaste installatie, hoogste kwaliteit</h3>
               <div className="grid grid-cols-2 gap-3 text-sm mb-3">
                 <div>
                   <p className="font-medium text-gray-700">Prijs aanschaf</p>
@@ -175,7 +175,7 @@ export default function InstallatieTypePage() {
                 </div>
                 <div>
                   <p className="font-medium text-gray-700">Installatiemoeite</p>
-                  <p className="text-gray-600">Hoog — loodgieter halve dag</p>
+                  <p className="text-gray-600">Hoog, loodgieter halve dag</p>
                 </div>
                 <div>
                   <p className="font-medium text-gray-700">Geschikt voor huur</p>
@@ -187,9 +187,15 @@ export default function InstallatieTypePage() {
                 </div>
               </div>
               <p className="text-gray-700 text-sm">
-                Een osmosefilter met opslagtank levert de hoogste waterkwaliteit: PFAS, lood, nitraat, bacterien, medicijnresten — vrijwel alles wordt verwijderd. Het systeem heeft een eigen drinkwaterkraan naast de bestaande keukenkraan. Installatie omvat aansluiting op koud water, afvoer van concentraat, plaatsing van de opslagtank en aanluiting van de drinkwaterkraan. Ideaal voor koopwoningen waarbij kwaliteit prioriteit heeft.
+                Een osmosefilter met opslagtank verwijdert vrijwel alles: PFAS, lood, nitraat, bacterien en medicijnresten. Het gezuiverde water komt uit een eigen drinkwaterkraan naast de keukenkraan, of uit een 3-weg- of 4-in-1-kraan die de keukenkraan vervangt. Installatie omvat aansluiting op koud water, afvoer van concentraat, plaatsing van de opslagtank en aansluiting van de kraan. Ideaal voor koopwoningen waarbij kwaliteit prioriteit heeft.
               </p>
             </div>
+          </div>
+          <div className="mt-6 bg-gray-50 border border-gray-200 rounded-xl p-5">
+            <h3 className="text-lg font-semibold text-[#003F5C] mb-2">Osmose zonder installatie: countertop-osmose</h3>
+            <p className="text-gray-700 text-sm">
+              Wilt u osmose maar kunt of wilt u niet boren, bijvoorbeeld in een huurwoning? Een countertop-osmose staat op het aanrecht en heeft geen vaste installatie nodig. Het PureAqua Water zuiver apparaat (495 euro) werkt zo: stekker erin, tank vullen, klaar. Het levert circa 12 liter gefilterd water per uur. Meer leest u in onze <Link href="/countertop-osmose" className="text-[#005F8A] hover:underline">gids over countertop-osmose</Link>. Dit apparaat wordt verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.
+            </p>
           </div>
         </section>
 
@@ -297,8 +303,8 @@ export default function InstallatieTypePage() {
           campaign="omgekeerde-osmose"
           content="keuzehulp-installatie-type-cta"
           label="Bekijk de zuiver-water-kranen bij PureAqua"
-          title="Weet je welk installatietype past?"
-          sub="Bekijk de zuiver-water-kranen (inbouw) of vraag naar de Countertop RO (zonder installatie) bij onze partner PureAqua."
+          title="Weet u welk installatietype past?"
+          sub="Bekijk de zuiver-water-kranen (inbouw) bij PureAqua. Liever osmose zonder installatie? Dan is het PureAqua Water zuiver apparaat een optie."
         />
 
         <CTABanner context="osmose" />

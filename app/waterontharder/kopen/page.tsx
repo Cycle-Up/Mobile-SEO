@@ -5,120 +5,136 @@ import { AffiliateCTA } from '@/components/AffiliateCTA';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { QuickAnswer } from '@/components/QuickAnswer';
 import { JoepCTA } from '@/components/JoepCTA';
 import { JoepRecommendation } from '@/components/JoepRecommendation';
+import { JOEP, JOEP_MARKET, JOEP_MIN_DH, JOEP_POSITIONING } from '@/lib/joep.mjs';
+import { FOUR_IN_ONE, THREE_WAY } from '@/lib/kranen.mjs';
+import { COUNTERTOP } from '@/lib/countertop.mjs';
+import { FACTS } from '@/lib/facts.mjs';
+
+const PUBLISHED = '2026-05-29';
+const MODIFIED = '2026-11-10';
+const PAGE_URL = 'https://waterfilterplatform.nl/waterontharder/kopen';
+
+const TITLE = 'Waterontharder kopen: koopgids 2026';
+const DESCRIPTION =
+  'Waterontharder kopen? Check eerst hardheid, capaciteit, installatie en kosten over tien jaar. Met eerlijke alternatieven en JOEP als onze keuze, met prijs.';
 
 export const metadata: Metadata = {
-  title: 'Waterontharder Kopen 2026: Complete Gids',
-  description:
-    'Waterontharder kopen? Vergelijk ionenwisselaar, zoutloze TAC en kali-zout systemen. Leer op welke criteria je let: capaciteit, regeneratie, installatiekosten.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/kopen' },
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'Waterontharder Kopen 2026: Complete Gids',
-    description:
-      'Alles over waterontharder kopen: soorten, merken (Kinetico, BWT, Harvey, Hague), kosten, capaciteit en wanneer osmose een betere keuze is.',
-    url: 'https://waterfilterplatform.nl/waterontharder/kopen',
+    title: 'Waterontharder kopen: waar let je op en welke kiezen wij?',
+    description: DESCRIPTION,
+    url: PAGE_URL,
     type: 'article',
   },
 };
 
+const eur = (n: number) => Math.round(n).toLocaleString('nl-NL');
+const DEVICE = Number(JOEP.devicePriceSchema);
+const INSTALLED = Number(JOEP.installedPriceSchema);
+// Installatiemeerprijs bij PureAqua: verschil tussen compleet geïnstalleerd en alleen het apparaat.
+const joepInstallatie = eur(INSTALLED - DEVICE);
+// Optioneel serviceabonnement uit lib/joep.mjs ("... 8,49 euro per maand"), loopt vanaf het tweede jaar.
+const serviceMatch = JOEP.serviceSubscription.match(/(\d+,\d+) euro per maand/);
+if (!serviceMatch) throw new Error(`Kan geen abonnementsprijs lezen uit: ${JOEP.serviceSubscription}`);
+const SERVICE_PER_MONTH_LABEL = serviceMatch[1];
+const SERVICE_PER_MONTH = Number(SERVICE_PER_MONTH_LABEL.replace(',', '.'));
+const SERVICE_MONTHS_10Y = 9 * 12;
+const service10 = SERVICE_PER_MONTH * SERVICE_MONTHS_10Y;
+// Duur van een regeneratie uit lib/joep.mjs ("circa 1 uur, standaard ..."): alleen het deel voor de komma.
+const REGENERATIE_DUUR = JOEP.regenerationTime.split(',')[0];
+const PFAS_ADVIES = FACTS.pfasRivmAdvieswaarde.value;
+const EU_RICHTLIJN = FACTS.euRichtlijn.value;
+const NOS_GREENPEACE = 'https://nos.nl/artikel/2632030';
+
+const quickAnswer = `Een waterontharder kopen is doorgaans zinvol vanaf ongeveer ${JOEP_MIN_DH} dH. Let op vier dingen: capaciteit en doorstroom, installatie op de hoofdleiding (met afvoer en meestal een stopcontact), zout- en waterverbruik per regeneratie en de totale kosten over tien jaar. Complete ontharders kosten doorgaans ${JOEP_MARKET.typicalInstalledRange} geïnstalleerd. Onze keuze: ${JOEP_POSITIONING} Bij PureAqua kost JOEP ${JOEP.installedPrice} compleet geïnstalleerd, of ${JOEP.devicePrice} als je zelf installeert. Wil je alleen zuiver drinkwater, kies dan osmose voor de keukenkraan.`;
+
 const faqItems = [
   {
-    question: 'Wat is de beste waterontharder om te kopen in 2026?',
-    answer:
-      'De "beste" waterontharder hangt af van je situatie. Een ionenwisselaar met vraaggestuurde regeneratie (zoals van Kinetico of BWT) is de meest effectieve keuze voor gezinnen in harde watergebieden. Woon je in een appartement of ben je huurder, dan is een omgekeerde osmose systeem onder het aanrecht een praktischer alternatief: goedkoper in aanschaf, geen installatie op de hoofdleiding vereist en ook effectief tegen chloor en andere verontreinigingen.',
+    question: 'Welke waterontharder moet ik kopen?',
+    answer: `Dat hangt af van je situatie. Voor een huishouden met hard water dat kalk in het hele huis wil aanpakken, is onze keuze de JOEP waterontharder, een compacte ionenwisselaar met zout die ${JOEP.flow} levert. Woon je in een huurwoning zonder toestemming voor de hoofdleiding, of wil je vooral zuiver drinkwater, dan is een osmosesysteem voor de keukenkraan praktischer.`,
   },
   {
     question: 'Hoeveel kost een waterontharder inclusief installatie?',
-    answer:
-      'Een kwalitatieve ionenwisselaar kost €500–1.500 aanschaf. Installatie door een erkend loodgieter kost €150–350. Inclusief installatie betaal je dus €650–1.850 eenmalig. Daarna komen jaarlijkse kosten voor zout (€10–60), water en onderhoud (€50–100), totaal circa €85–240 per jaar. Een zoutloze TAC-systeem is al verkrijgbaar vanaf €200–800 maar verwijdert kalk niet echt.',
+    answer: `Een complete waterontharder kost doorgaans ${JOEP_MARKET.typicalInstalledRange} inclusief installatie; kwaliteitsmodellen zitten meestal tussen ${JOEP_MARKET.typicalQualityRange}. De JOEP kost bij PureAqua ${JOEP.devicePrice} als los apparaat of ${JOEP.installedPrice} compleet geïnstalleerd. Daarna betaal je vooral zout, en eventueel een serviceabonnement.`,
   },
   {
     question: 'Welke capaciteit heeft een waterontharder nodig voor een gezin van 4 personen?',
-    answer:
-      'Een gezin van 4 personen verbruikt gemiddeld 400–600 liter water per dag. Een ontharder met een harsvolume van 15–25 liter is voor de meeste gezinnen in hard-watergebieden (15–22 °dH) voldoende. Kies bij voorkeur een vraaggestuurd systeem dat automatisch regenereert wanneer het harsbed verzadigd is, in plaats van tijdgestuurd.',
+    answer: `Dat hangt af van de hardheid en je piekverbruik: hoeveel water er tegelijk loopt als bijvoorbeeld twee douches en de wasmachine aanstaan. Kijk daarom naar de maximale doorstroom per uur en laat bij twijfel meten of rekenen. Ter vergelijking: JOEP levert ${JOEP.flow}. Hoe je de capaciteit inschat, lees je in onze uitleg over capaciteit berekenen.`,
   },
   {
     question: 'Kan ik een waterontharder zelf installeren?',
-    answer:
-      'Technisch gezien is dat voor enkele modellen mogelijk, maar de meeste professionele ionenwisselaars worden op de hoofdwaterleiding aangesloten. Dit vereist loodgieterswerk: het afkoppelen van de bestaande watertoevoer, het plaatsen van bypass-kranen en het aansluiten van de afvoer voor het regeneratiespoelwater. Zoutloze TAC-systemen zijn soms eenvoudiger te installeren op een bestaande leiding.',
+    answer: `Als je handig bent met leidingwerk wel. Een ontharder komt op de hoofdwaterleiding, met bypass-kranen en een afvoer voor het spoelwater. Twijfel je, laat het dan een installateur doen. Bij JOEP scheelt zelf installeren bij PureAqua ${joepInstallatie} euro ten opzichte van de geïnstalleerde prijs.`,
   },
   {
     question: 'Wanneer is omgekeerde osmose beter dan een waterontharder?',
-    answer:
-      'Omgekeerde osmose is beter als je (1) in een appartement of huurwoning woont, (2) een kleiner huishouden hebt (1–2 personen), (3) naast kalk ook chloor, nitraten, PFAS of microplastics wilt verwijderen, of (4) geen ruimte hebt voor een ontharder in de meterkast of garage. Osmose filtert uitsluitend het drinkwater aan de keukenkraan en is goedkoper in aanschaf (vanaf circa €150). Een waterontharder onthardt het volledige huishoudelijk water inclusief douche- en waswater.',
+    answer: `Als het je vooral om het drinkwater gaat, als je huurt en de hoofdleiding niet mag aanpassen, of als je naast kalk ook andere stoffen uit je drinkwater wilt halen. Osmose zuivert alleen het water aan de keukenkraan en voegt geen natrium toe. Zonder installatie kan het ook, bijvoorbeeld met het ${COUNTERTOP.shortName} op het aanrecht (${COUNTERTOP.price}). Een waterontharder onthardt juist al het water in huis, inclusief douche- en waswater.`,
   },
 ];
 
 const soorten = [
   {
-    naam: 'Ionenwisselaar (zout)',
+    naam: 'Ionenwisselaar met zout',
     subtitel: 'Klassieke ontharding',
-    prijs: '€ 500 – 1.500',
-    effectiviteit: '95–99% kalkverwijdering',
-    jaarlijkseKosten: '€ 85 – 240 / jaar',
-    regeneratie: 'Zout + water (pekel)',
-    capaciteit: '15–30 L hars voor gezin van 4',
-    installatie: 'Loodgieter vereist (hoofdleiding)',
+    prijs: `${JOEP_MARKET.typicalInstalledRange} geïnstalleerd`,
+    effectiviteit: 'Maakt het water echt zacht',
+    jaarlijkseKosten: 'Vooral zout',
+    regeneratie: 'Zout en spoelwater',
     voordelen: [
-      'Volledige huisonthardering (douche, waswater, leidingen)',
-      'Bewezen meest effectieve techniek',
-      'Beschermt cv-ketel, wasmachine en vaatwasser',
-      'Vraaggestuurde modellen besparen 30–50% zout',
+      'Ontkalkt al het water in huis (douche, waswater, leidingen)',
+      'Bewezen techniek, resthardheid instelbaar',
+      'Beschermt cv-ketel, wasmachine en vaatwasser tegen kalk',
+      'Vraaggestuurde modellen regenereren alleen als het nodig is',
     ],
     nadelen: [
-      'Verhoogd natriumgehalte in drinkwater',
-      'Zout- en waterverbruik (milieu-impact)',
-      'Hoge aanschaf- en installatiekosten',
-      'Niet geschikt voor huurwoningen zonder toestemming',
+      'Iets meer natrium in het water',
+      'Zout bijvullen en spoelwater bij elke regeneratie',
+      'Installatie op de hoofdleiding nodig',
+      'In een huurwoning alleen met toestemming',
     ],
-    beste_voor: 'Eigenwoningbezitters in hard-watergebied (>15 °dH)',
+    beste_voor: `Huishoudens met hard water (vanaf circa ${JOEP_MIN_DH} dH) in een koopwoning`,
     highlight: true,
   },
   {
-    naam: 'Zoutloze ontharder (TAC)',
+    naam: 'Zoutloze waterverbeteraar (TAC)',
     subtitel: 'Template Assisted Crystallization',
-    prijs: '€ 200 – 800',
-    effectiviteit: 'Voorkomt aanslag (verwijdert kalk niet)',
-    jaarlijkseKosten: '€ 0 – 30 / jaar',
-    regeneratie: 'Geen — onderhoudsloos',
-    capaciteit: 'Geen hars; doorstroommodel',
-    installatie: 'Eenvoudiger; soms zelf te plaatsen',
+    prijs: 'Meestal goedkoper dan een ontharder met zout',
+    effectiviteit: 'Beperkt aanslag, verwijdert geen kalk',
+    jaarlijkseKosten: 'Laag; patroon af en toe vervangen',
+    regeneratie: 'Geen regeneratie',
     voordelen: [
-      'Geen zoutgebruik of afvalwater',
-      'Geen natriumtoevoeging aan drinkwater',
+      'Geen zout en geen spoelwater',
+      'Geen extra natrium in het water',
       'Weinig onderhoud',
-      'Milieuvriendelijker dan klassieke ontharder',
     ],
     nadelen: [
-      'Verwijdert kalk niet — zet het alleen om in niet-hechtende kristallen',
-      'Minder effectief bij zeer hard water (>20 °dH)',
-      'Bestaande kalkaanslag wordt niet opgelost',
-      'Geen bescherming voor het volledige leidingnet',
+      'Water blijft hard; de kalk zit er nog in',
+      'Minder effect bij zeer hard water',
+      'Lost bestaande kalkaanslag niet op',
     ],
-    beste_voor: 'Lichte kalklast; milieubewuste gebruikers; huurders',
+    beste_voor: 'Lichte kalklast en wie geen zout wil gebruiken',
     highlight: false,
   },
   {
-    naam: 'Kali-zout / kaliumchloride ontharder',
-    subtitel: 'Variant op klassieke ionenwisselaar',
-    prijs: '€ 500 – 1.500 + hogere zoutkosten',
-    effectiviteit: '95–99% kalkverwijdering',
-    jaarlijkseKosten: '€ 150 – 350 / jaar (duurder zout)',
-    regeneratie: 'Kaliumchloride in plaats van natriumchloride',
-    capaciteit: 'Identiek aan ionenwisselaar',
-    installatie: 'Loodgieter vereist (hoofdleiding)',
+    naam: 'Ontharder met kaliumchloride',
+    subtitel: 'Variant op de ionenwisselaar',
+    prijs: 'Als een ionenwisselaar, plus duurder zout',
+    effectiviteit: 'Maakt het water echt zacht',
+    jaarlijkseKosten: 'Hoger dan met gewoon onthardingszout',
+    regeneratie: 'Kaliumchloride in plaats van keukenzout',
     voordelen: [
-      'Voegt kalium toe in plaats van natrium (gezonder profiel)',
-      'Geschikt voor mensen op natriumarm dieet',
-      'Zelfde effectiviteit als klassieke ionenwisselaar',
+      'Voegt kalium toe in plaats van natrium',
+      'Zelfde onthardend effect als een gewone ionenwisselaar',
     ],
     nadelen: [
-      'Kaliumzout is 2–3x duurder dan natriumzout',
-      'Beperktere beschikbaarheid van zout',
-      'Geen milieuvoordeel ten opzichte van natriumsysteem',
+      'Kaliumzout is duurder en minder goed verkrijgbaar',
+      'Bij nierproblemen of een medisch dieet eerst overleggen met je arts',
     ],
-    beste_voor: 'Mensen met hoge bloeddruk of hartfalen; natriumarm dieet',
+    beste_voor: 'Wie natrium in het water wil vermijden',
     highlight: false,
   },
 ];
@@ -126,46 +142,40 @@ const soorten = [
 const merken = [
   {
     naam: 'Kinetico',
-    land: '🇺🇸 USA / NL distributie',
-    kenmerk: 'Non-elektrisch, twin-tank, vraaggestuurd',
-    prijsrange: '€ 900 – 2.000',
-    sterk: 'Zuinig zoutgebruik; no power required; betrouwbaar',
-    aandacht: 'Hogere aanschafprijs; service via dealer',
+    href: '/kinetico-waterontharder',
+    kenmerk: 'Twin-tank, werkt zonder stroom op waterkracht',
+    sterk: 'Continu zacht water, ook tijdens regeneratie',
+    aandacht: 'Prijs en service lopen via de dealer; vraag een offerte',
   },
   {
     naam: 'BWT',
-    land: '🇦🇹 Oostenrijk',
-    kenmerk: 'Breed assortiment; magnesiumtechnologie',
-    prijsrange: '€ 600 – 1.800',
-    sterk: 'Magnesium-ionenwisseling (gezonder drinkwater); groot servicenetwerk',
-    aandacht: 'Magnesiumpellets zijn duurder dan standaard zout',
+    href: '/bwt-waterontharder',
+    kenmerk: 'Breed assortiment, waaronder de compacte Perla Silk',
+    sterk: 'Veel keuze in formaten, ook compacte modellen',
+    aandacht: `Een vergelijkbaar compact model (${JOEP_MARKET.comparable.name}) kost circa ${JOEP_MARKET.comparable.installedPrice} geïnstalleerd`,
   },
   {
     naam: 'Harvey',
-    land: '🇬🇧 Groot-Brittannië',
-    kenmerk: 'Twin-tank, compact design',
-    prijsrange: '€ 700 – 1.500',
-    sterk: 'Compact formaat; continu zacht water; solide reputatie UK',
-    aandacht: 'Minder service-punten in NL dan BWT of Kinetico',
+    href: '/harvey-waterontharder',
+    kenmerk: 'Britse twin-tank, compact',
+    sterk: 'Compact formaat en continu zacht water',
+    aandacht: 'Britse fabrikant; vraag naar service en onderdelen in jouw regio',
   },
   {
-    naam: 'Hague',
-    land: '🇺🇸 USA / internationale distributie',
-    kenmerk: 'Whole-home water treatment',
-    prijsrange: '€ 1.200 – 3.000',
-    sterk: 'Combinatie ontharder + filter in één systeem; premium kwaliteit',
-    aandacht: 'Hogere prijs; beperkte NL distributie',
+    naam: 'AquaCell',
+    href: '/aquacell-waterontharder',
+    kenmerk: 'Bekende naam in waterontharding in Nederland',
+    sterk: 'Breed verkrijgbaar; JOEP werd ook via AquaCell verkocht',
+    aandacht: 'Verkocht door PureAqua, waaraan wij gelieerd zijn',
   },
 ];
 
 const kostentabel = [
-  { post: 'Aanschaf ontharder (enkelvoudig)', eenmalig: '€ 500 – 1.500', perjaar: '—' },
-  { post: 'Installatie loodgieter', eenmalig: '€ 150 – 350', perjaar: '—' },
-  { post: 'Zout (50–150 kg/jaar)', eenmalig: '—', perjaar: '€ 10 – 60' },
-  { post: 'Regeneratiewater (spoeling)', eenmalig: '—', perjaar: '€ 5 – 20' },
-  { post: 'Jaarlijks onderhoud / servicebeurt', eenmalig: '—', perjaar: '€ 50 – 100' },
-  { post: 'Harsvervanging (eens per 8–12 jr)', eenmalig: '—', perjaar: '€ 20 – 60' },
-  { post: 'Totaal jaarlijkse bedrijfskosten', eenmalig: '—', perjaar: '€ 85 – 240' },
+  { post: 'Complete ontharder inclusief installatie', eenmalig: JOEP_MARKET.typicalInstalledRange, perjaar: 'n.v.t.' },
+  { post: 'Kwaliteitsmodellen inclusief installatie', eenmalig: JOEP_MARKET.typicalQualityRange, perjaar: 'n.v.t.' },
+  { post: 'Topprijsklasse in de markt', eenmalig: JOEP_MARKET.topRange, perjaar: 'n.v.t.' },
+  { post: 'Zout', eenmalig: 'n.v.t.', perjaar: 'Afhankelijk van hardheid en verbruik' },
+  { post: 'Service of onderhoud', eenmalig: 'n.v.t.', perjaar: 'Vaak optioneel, verschilt per merk' },
 ];
 
 export default function WaterontharderKopenPage() {
@@ -173,11 +183,22 @@ export default function WaterontharderKopenPage() {
     <>
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
+        type="Article"
+        article={{
+          title: 'Waterontharder kopen: waar let je op en welke kiezen wij?',
+          description: DESCRIPTION,
+          datePublished: PUBLISHED,
+          dateModified: MODIFIED,
+          lastReviewed: MODIFIED,
+          url: PAGE_URL,
+        }}
+      />
+      <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: 'Home', url: 'https://waterfilterplatform.nl' },
           { name: 'Waterontharder', url: 'https://waterfilterplatform.nl/waterontharder' },
-          { name: 'Kopen', url: 'https://waterfilterplatform.nl/waterontharder/kopen' },
+          { name: 'Kopen', url: PAGE_URL },
         ]}
       />
 
@@ -192,60 +213,219 @@ export default function WaterontharderKopenPage() {
             <span>Kopen</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Waterontharder Kopen 2026: Complete Gids
+            Waterontharder kopen: waar let je op en welke kiezen wij?
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Overweeg je een <strong>waterontharder te kopen</strong>? Er zijn drie hoofdtypen —
-            ionenwisselaar met zout, zoutloze TAC en kali-zout variant — elk met eigen kosten, prestaties
-            en beperkingen. In deze gids lees je alles wat je moet weten vóórdat je een keuze maakt:
-            van capaciteitkeuze en regeneratiegebruik tot total cost of ownership en merkenvergelijking.
+            Overweeg je een <strong>waterontharder te kopen</strong>? Check eerst of je water hard genoeg is.
+            Daarna draait het om vier vragen: past de capaciteit bij je huishouden, kun je hem goed aansluiten,
+            hoeveel zout en water gebruikt hij, en wat kost hij over tien jaar? In deze koopgids lopen we die
+            vragen langs, met de alternatieven en onze eigen keuze.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="#soorten"
+              href="/waterhardheid"
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              Soorten vergelijken →
+              Waterhardheid in mijn gemeente
             </Link>
             <Link
-              href="/waterhardheid"
+              href="#koopcriteria"
               className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors text-sm"
             >
-              Waterhardheid in mijn gemeente
+              Naar de koopcriteria
             </Link>
           </div>
         </div>
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <div>
+          <AuthorBox datePublished={PUBLISHED} dateModified={MODIFIED} />
+          <QuickAnswer question="Waar let je op als je een waterontharder koopt?" answer={quickAnswer} />
+        </div>
+
+        <JoepRecommendation content="waterontharder-kopen-aanbeveling" />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
           <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
+            <li><a href="#eerst-checken" className="hover:underline">Eerst checken: heb je hem nodig?</a></li>
+            <li><a href="#koopcriteria" className="hover:underline">Koopcriteria</a></li>
+            <li><a href="#joep-criteria" className="hover:underline">JOEP langs de criteria</a></li>
             <li><a href="#soorten" className="hover:underline">Soorten waterontharders</a></li>
-            <li><a href="#koopkriteria" className="hover:underline">Koopkriteria</a></li>
-            <li><a href="#capaciteit" className="hover:underline">Capaciteit kiezen</a></li>
-            <li><a href="#tco" className="hover:underline">Total cost of ownership</a></li>
-            <li><a href="#merken" className="hover:underline">Merkenoverz icht</a></li>
+            <li><a href="#kosten" className="hover:underline">Kosten over tien jaar</a></li>
+            <li><a href="#merken" className="hover:underline">Merkenoverzicht</a></li>
             <li><a href="#wanneer-osmose" className="hover:underline">Wanneer osmose beter is</a></li>
             <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
           </ol>
         </section>
 
-        {/* Soorten */}
-        <JoepRecommendation content="waterontharder-kopen-aanbeveling" />
+        {/* Eerst checken */}
+        <section id="eerst-checken">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Eerst checken: heb je een waterontharder nodig?</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Een ontharder is volgens ons pas de moeite waard vanaf ongeveer {JOEP_MIN_DH} dH. Zoek de hardheid van
+            jouw kraanwater op bij{' '}
+            <Link href="/waterhardheid" className="text-[#005F8A] underline hover:no-underline">
+              waterhardheid per gemeente
+            </Link>
+            . Is je water zachter, dan levert een ontharder weinig op. Nederlands kraanwater voldoet aan de
+            wettelijke normen; een ontharder koop je voor minder kalk en minder onderhoud, niet voor je gezondheid.
+          </p>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li className="border border-gray-100 rounded-xl p-3">
+              <strong>Kalk in het hele huis, koopwoning:</strong> een ionenwisselaar met zout. Lees verder op deze
+              pagina.
+            </li>
+            <li className="border border-gray-100 rounded-xl p-3">
+              <strong>Liever geen zout:</strong> een{' '}
+              <Link href="/waterontharder/zoutloos" className="text-[#005F8A] underline hover:no-underline">
+                zoutloze waterontharder
+              </Link>{' '}
+              beperkt aanslag, maar het water blijft hard.
+            </li>
+            <li className="border border-gray-100 rounded-xl p-3">
+              <strong>Alleen zuiver drinkwater:</strong>{' '}
+              <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">
+                omgekeerde osmose
+              </Link>{' '}
+              voor de keukenkraan. Zie{' '}
+              <a href="#wanneer-osmose" className="text-[#005F8A] underline hover:no-underline">
+                wanneer osmose beter is
+              </a>
+              .
+            </li>
+            <li className="border border-gray-100 rounded-xl p-3">
+              <strong>Huurwoning:</strong> vraag eerst{' '}
+              <Link href="/waterontharder/verhuurder" className="text-[#005F8A] underline hover:no-underline">
+                toestemming aan de verhuurder
+              </Link>
+              , of kijk naar{' '}
+              <Link href="/waterontharder/huren" className="text-[#005F8A] underline hover:no-underline">
+                huren in plaats van kopen
+              </Link>
+              .
+            </li>
+          </ul>
+        </section>
 
-        <section id="soorten">
+        {/* Koopcriteria */}
+        <section id="koopcriteria">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Soorten waterontharders: ionenwisselaar, TAC en kali-zout
+            Koopcriteria: waar let je op bij een waterontharder?
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            Niet elke waterontharder werkt hetzelfde. Op de Nederlandse markt zijn drie relevante
-            technieken verkrijgbaar. Hieronder lichten we elk type toe, zodat je een weloverwogen keuze
-            kunt maken bij het waterontharder kopen.
+            Een waterontharder koop je voor jaren. Let bij de aanschaf op deze vier punten.
+          </p>
+          <div className="space-y-4">
+            {[
+              {
+                nr: '1',
+                titel: 'Capaciteit en doorstroom',
+                inhoud:
+                  'Een ontharder moet de hoeveelheid water aankunnen die tegelijk door je huis loopt, bijvoorbeeld twee douches en een wasmachine. Kijk naar de maximale doorstroom per uur en naar hoe vaak hij bij jouw hardheid moet regenereren. Een te kleine ontharder regenereert vaak, gebruikt meer zout en laat bij piekverbruik hard water door.',
+              },
+              {
+                nr: '2',
+                titel: 'Zout- en waterverbruik per regeneratie',
+                inhoud:
+                  'Bij elke regeneratie gaan zout en spoelwater naar de afvoer. Vraag naar het verbruik per regeneratie en naar de regeling: een vraaggestuurd model regenereert alleen als het hars echt vol is, een tijdgestuurd model op vaste momenten. Vraag ook hoe groot de zoutbak is: dat bepaalt hoe vaak je moet bijvullen.',
+              },
+              {
+                nr: '3',
+                titel: 'Installatie en ruimte',
+                inhoud:
+                  'Een ionenwisselaar komt op de hoofdwaterleiding, met bypass-kranen voor onderhoud. Hij heeft een afvoer nodig voor het spoelwater en meestal een stopcontact. Meet vooraf de ruimte in de meterkast, bijkeuken of kelder, en check of je waterdruk binnen het bereik van het apparaat valt.',
+              },
+              {
+                nr: '4',
+                titel: 'Kosten over tien jaar, garantie en service',
+                inhoud:
+                  'Kijk niet alleen naar de aanschafprijs. Tel aanschaf, installatie, zout en eventueel een serviceabonnement bij elkaar op over tien jaar. Let ook op de garantie, vooral op het hars, en op of een abonnement verplicht is of optioneel.',
+              },
+            ].map(k => (
+              <div key={k.nr} className="flex gap-4 items-start">
+                <div className="w-10 h-10 rounded-full bg-[#005F8A] text-white font-bold flex items-center justify-center shrink-0 text-sm">
+                  {k.nr}
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 mb-1">{k.titel}</p>
+                  <p className="text-sm text-gray-600 leading-relaxed">{k.inhoud}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-gray-700 mt-4 leading-relaxed">
+            Meer verdieping:{' '}
+            <Link href="/waterontharder/capaciteit" className="text-[#005F8A] underline hover:no-underline">
+              capaciteit berekenen
+            </Link>{' '}
+            en{' '}
+            <Link href="/waterontharder/installeren" className="text-[#005F8A] underline hover:no-underline">
+              waterontharder installeren
+            </Link>
+            .
+          </p>
+        </section>
+
+        {/* JOEP langs de criteria */}
+        <section id="joep-criteria">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">JOEP langs de koopcriteria</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Zo scoort onze keuze op dezelfde vier punten. Alle gegevens komen van de fabrikant (AquaSens) en de
+            prijzen van PureAqua, gecontroleerd in september 2026.
+          </p>
+          <div className="overflow-x-auto -mx-4 px-4">
+            <table className="w-full min-w-[520px] text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#003F5C] text-white">
+                  <th className="text-left py-2.5 px-3 font-semibold">Criterium</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">JOEP</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { criterium: 'Capaciteit en doorstroom', joep: `${JOEP.flow}` },
+                  {
+                    criterium: 'Zout- en waterverbruik',
+                    joep: `${JOEP.saltPerRegeneration} zout en ${JOEP.waterPerRegeneration} water per regeneratie; een regeneratie duurt ${REGENERATIE_DUUR}. Zoutverbruik: ${JOEP.saltPerYear}.`,
+                  },
+                  {
+                    criterium: 'Installatie en ruimte',
+                    joep: `Waterdruk ${JOEP.pressure}, watertemperatuur ${JOEP.temperature}; ${JOEP.power}.`,
+                  },
+                  {
+                    criterium: 'Kosten, garantie en service',
+                    joep: `Garantie: ${JOEP.manufacturerWarranty}. De kosten over tien jaar staan hieronder.`,
+                  },
+                ].map(r => (
+                  <tr key={r.criterium} className="border-b border-gray-100 align-top">
+                    <td className="py-2.5 px-3 font-medium">{r.criterium}</td>
+                    <td className="py-2.5 px-3 text-gray-700">{r.joep}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+            Formaat, zoutbak en de kanttekeningen bij JOEP staan in het blok &quot;Onze keuze 2026&quot; bovenaan
+            deze pagina. Alle details lees je in onze{' '}
+            <Link href={JOEP.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+              JOEP-koopgids
+            </Link>
+            .
+          </p>
+        </section>
+
+        {/* Soorten */}
+        <section id="soorten">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
+            Soorten waterontharders: met zout, zoutloos of kaliumchloride
+          </h2>
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            Niet elke waterontharder werkt hetzelfde. Dit zijn de drie typen die je in Nederland het vaakst
+            tegenkomt.
           </p>
           <div className="space-y-5">
             {soorten.map(s => (
@@ -259,19 +439,19 @@ export default function WaterontharderKopenPage() {
                     <p className="text-sm text-gray-500">{s.subtitel}</p>
                   </div>
                   <div className="text-right shrink-0">
-                    <p className="font-bold text-[#005F8A]">{s.prijs}</p>
+                    <p className="font-bold text-[#005F8A] text-sm">{s.prijs}</p>
                     {s.highlight && (
-                      <span className="text-xs bg-[#005F8A] text-white px-2 py-0.5 rounded-full">Meest effectief</span>
+                      <span className="text-xs bg-[#005F8A] text-white px-2 py-0.5 rounded-full">Haalt kalk echt weg</span>
                     )}
                   </div>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm mb-4">
                   <div className="bg-white/60 rounded-lg p-2">
-                    <p className="text-gray-400 text-xs mb-0.5">Effectiviteit</p>
+                    <p className="text-gray-400 text-xs mb-0.5">Effect</p>
                     <p className="font-medium text-gray-800">{s.effectiviteit}</p>
                   </div>
                   <div className="bg-white/60 rounded-lg p-2">
-                    <p className="text-gray-400 text-xs mb-0.5">Jaarlijkse kosten</p>
+                    <p className="text-gray-400 text-xs mb-0.5">Doorlopende kosten</p>
                     <p className="font-medium text-gray-800">{s.jaarlijkseKosten}</p>
                   </div>
                   <div className="bg-white/60 rounded-lg p-2 col-span-2 sm:col-span-1">
@@ -292,149 +472,28 @@ export default function WaterontharderKopenPage() {
                     <p className="font-semibold text-gray-700 mb-1">Nadelen</p>
                     <ul className="space-y-0.5">
                       {s.nadelen.map(n => (
-                        <li key={n} className="text-gray-500 text-xs">− {n}</li>
+                        <li key={n} className="text-gray-500 text-xs">- {n}</li>
                       ))}
                     </ul>
                   </div>
                 </div>
                 <p className="text-xs text-gray-600 border-t border-gray-200 pt-2 mt-2">
-                  <span className="font-semibold">Beste voor:</span> {s.beste_voor}
+                  <span className="font-semibold">Past bij:</span> {s.beste_voor}
                 </p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Koopkriteria */}
-        <section id="koopkriteria">
+        {/* Kosten */}
+        <section id="kosten">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Koopkriteria: waar let je op bij een waterontharder?
-          </h2>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            Een waterontharder kopen is een investering voor de lange termijn. Let bij de aanschaf op de
-            volgende vier kernpunten.
-          </p>
-          <div className="space-y-4">
-            {[
-              {
-                nr: '1',
-                titel: 'Capaciteit: liters per dag en harsvolume',
-                inhoud: `De capaciteit van een waterontharder wordt bepaald door het harsvolume (in liters) en de
-                  waterhardheid in jouw regio. Een eenvoudige vuistregel: een gezin van 4 personen in een
-                  gebied met 18 °dH heeft een ontharder nodig met minimaal 15–20 liter hars. Bij zeer
-                  hard water (>20 °dH) of een groot huishouden stijgt dat naar 20–30 liter. Controleer
-                  altijd het technisch datasheet: dit vermeldt de maximale hardheidsgraad en het
-                  waterverbruik vóór regeneratie. Een undersized ontharder regenereert te frequent,
-                  verbruikt meer zout en slijt sneller.`,
-              },
-              {
-                nr: '2',
-                titel: 'Regeneratie: water- en zoutgebruik',
-                inhoud: `De regeneratiecyclus is het moment waarop de ontharder zichzelf "herlaadt" met verse
-                  natriumionen via een spoeling met pekelwater. Modern vraaggestuurde systemen meten het
-                  werkelijke waterverbruik en starten regeneratie uitsluitend wanneer het harsbed bijna
-                  verzadigd is. Dit is 30–50% zuiniger dan de oudere tijdgestuurde systemen die elke
-                  nacht regenereren — ook als er nauwelijks water gebruikt is. Let bij aankoop op:
-                  (a) is het systeem vraaggestuurd of tijdgestuurd? (b) hoeveel zout verbruikt het per
-                  regeneratiecyclus (typisch 0,5–2 kg)? (c) hoeveel spoelwater gaat er per cyclus naar
-                  de afvoer (50–200 liter)?`,
-              },
-              {
-                nr: '3',
-                titel: 'Installatiecomplexiteit',
-                inhoud: `Een klassieke ionenwisselaar wordt op de hoofdwaterleiding aangesloten, vóór de
-                  verdere leidingverdeling in huis. Dit vereist loodgieterswerk, inclusief bypass-kranen
-                  waarmee je de ontharder kunt omzeilen voor onderhoud. Reken op 2–4 uur arbeid
-                  (€150–350). De ontharder zelf heeft ook een afvoer nodig voor het regeneratiespoelwater
-                  — in de meeste situaties voldoet de cv-ketelafvoer of een dichtbijgelegen sifon.
-                  Zoutloze TAC-systemen zijn eenvoudiger: zij worden in-line op de leiding geplaatst
-                  zonder afvoer, maar hebben ook geen zouttank nodig.`,
-              },
-              {
-                nr: '4',
-                titel: 'Kosten: aanschaf en total cost of ownership',
-                inhoud: `Kijk niet alleen naar de aanschafprijs, maar naar de totale kosten over 10 jaar.
-                  Een goedkopere ontharder van €500 met hogere jaarlijkse zout- en onderhoudskosten
-                  kan duurder uitvallen dan een kwalitatief systeem van €1.200 met vraaggestuurde
-                  regeneratie. Bereken de TCO: aanschaf + installatie + (jaarlijkse zout/water/onderhoud
-                  × 10 jaar) + eventuele harsvervanging. Zie de kostentabel verderop op deze pagina.`,
-              },
-            ].map(k => (
-              <div key={k.nr} className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-full bg-[#005F8A] text-white font-bold flex items-center justify-center shrink-0 text-sm">
-                  {k.nr}
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900 mb-1">{k.titel}</p>
-                  <p className="text-sm text-gray-600 leading-relaxed">{k.inhoud}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Capaciteit kiezen */}
-        <section id="capaciteit">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Capaciteit kiezen: hoeveel liter per dag?
+            Wat kost een waterontharder over tien jaar?
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De juiste capaciteit hangt af van drie factoren: het dagelijks waterverbruik van het
-            huishouden, de waterhardheid en de gewenste regeneratiefrequentie. Hieronder een praktisch
-            overzicht:
-          </p>
-          <div className="overflow-x-auto -mx-4 px-4 mb-4">
-            <table className="w-full min-w-[520px] text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#003F5C] text-white">
-                  <th className="text-left py-2.5 px-3 font-semibold">Huishouden</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Waterverbruik/dag</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Aanbevolen hars</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Regen. frequentie</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { huishouden: '1–2 personen', verbruik: '150–300 L', hars: '8–12 L', freq: '1× per 10–14 dagen' },
-                  { huishouden: '3–4 personen', verbruik: '350–600 L', hars: '15–20 L', freq: '1× per 7–10 dagen' },
-                  { huishouden: '5+ personen', verbruik: '600–900 L', hars: '25–35 L', freq: '1× per 5–7 dagen' },
-                  { huishouden: 'Groot gezin / hard water >20°dH', verbruik: '600–900 L', hars: '30–40 L (twin-tank)', freq: 'Continu zacht water' },
-                ].map(r => (
-                  <tr key={r.huishouden} className="border-b border-gray-100">
-                    <td className="py-2.5 px-3 font-medium">{r.huishouden}</td>
-                    <td className="py-2.5 px-3 text-right">{r.verbruik}</td>
-                    <td className="py-2.5 px-3 text-right">{r.hars}</td>
-                    <td className="py-2.5 px-3 text-right">{r.freq}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="bg-[#E0F2FE] rounded-xl p-4 text-sm text-gray-700">
-            <strong className="text-[#003F5C]">Tip:</strong> Kies liever iets te groot dan te klein.
-            Een ontharder die te frequent regenereert verbruikt meer zout en water, en slijt sneller.
-            Bij twijfel: kies het grotere model of kies een twin-tank systeem voor continue zachte
-            waterlevering ook tijdens regeneratiecycli.
-          </div>
-          <p className="text-gray-700 mt-4 leading-relaxed">
-            Weet je niet hoe hard het water is bij jou thuis? Controleer dit in onze{' '}
-            <Link href="/waterhardheid" className="text-[#005F8A] underline hover:no-underline">
-              waterhardheid per gemeente
-            </Link>{' '}
-            database. De hardheid heeft directe invloed op de benodigde harsgrootte.
-          </p>
-        </section>
-
-        {/* TCO */}
-        <section id="tco">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Total cost of ownership (TCO): wat kost een waterontharder echt?
-          </h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Veel mensen kijken alleen naar de aanschafprijs, maar de werkelijke kosten van een
-            waterontharder spreiden zich over vele jaren. Een lagere aanschafprijs gaat vaak gepaard
-            met hogere jaarlijkse kosten. Hieronder de TCO breakdown voor een klassieke ionenwisselaar
-            bij een gezin van 2–4 personen in een hard-watergebied (18–22 °dH):
+            Over tien jaar tellen drie posten op: de aanschaf met installatie, het zout en eventueel een
+            serviceabonnement. Een lagere aanschafprijs betekent dus niet automatisch lagere kosten. Dit zijn de
+            prijsklassen die we in de markt zien voor complete ontharders:
           </p>
           <div className="overflow-x-auto -mx-4 px-4 mb-4">
             <table className="w-full min-w-[460px] text-sm border-collapse">
@@ -442,19 +501,12 @@ export default function WaterontharderKopenPage() {
                 <tr className="bg-[#E0F2FE]">
                   <th className="text-left py-2.5 px-3 font-semibold text-[#003F5C]">Kostenpost</th>
                   <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Eenmalig</th>
-                  <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Per jaar</th>
+                  <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Doorlopend</th>
                 </tr>
               </thead>
               <tbody>
                 {kostentabel.map(r => (
-                  <tr
-                    key={r.post}
-                    className={
-                      r.post === 'Totaal jaarlijkse bedrijfskosten'
-                        ? 'bg-[#E0F2FE] font-semibold'
-                        : 'border-b border-gray-100'
-                    }
-                  >
+                  <tr key={r.post} className="border-b border-gray-100">
                     <td className="py-2.5 px-3">{r.post}</td>
                     <td className="py-2.5 px-3 text-right">{r.eenmalig}</td>
                     <td className="py-2.5 px-3 text-right">{r.perjaar}</td>
@@ -463,58 +515,91 @@ export default function WaterontharderKopenPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-gray-500 mb-4">
-            Indicatief voor een vraaggestuurde enkelvoudige ontharder. Tijdgestuurde modellen verbruiken
-            30–50% meer zout. Kali-zout varianten hebben 2–3× hogere zoutkosten.
+          <p className="text-sm text-gray-500 mb-6">
+            Prijsklassen: {JOEP_MARKET.rangeSources.join(' en ')}, peildatum september 2026.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-white border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-900 mb-2 text-sm">TCO over 10 jaar (midden scenario)</p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>Aanschaf + installatie: € 1.000</li>
-                <li>Jaarlijkse kosten (€ 160 × 10 jr): € 1.600</li>
-                <li>Harsvervanging (1×): € 250</li>
-                <li className="font-bold text-[#005F8A] border-t border-gray-100 pt-1 mt-1">Totaal 10 jaar: ± € 2.850</li>
-              </ul>
-            </div>
-            <div className="bg-white border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-900 mb-2 text-sm">Vergelijking: osmose systeem (10 jaar)</p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>Aanschaf (4-in-1 kraan): € 1.948</li>
-                <li>Filterkosten (€ 100 × 10 jr): € 1.000</li>
-                <li>Vervanging membraan (circa elke 2 jaar, 4×): € 400</li>
-                <li className="font-bold text-[#005F8A] border-t border-gray-100 pt-1 mt-1">Totaal 10 jaar: ± € 3.348</li>
-              </ul>
-            </div>
+          <h3 className="text-lg font-bold text-[#003F5C] mb-3">Rekenvoorbeeld: JOEP over tien jaar</h3>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Hieronder staat wat voor JOEP vaststaat: de prijs bij PureAqua en het optionele serviceabonnement van
+            de fabrikant ({SERVICE_PER_MONTH_LABEL} euro per maand, vanaf het tweede jaar, dus negen jaar binnen
+            de eerste tien). Zout laten we buiten het totaal, omdat dat afhangt van je hardheid en verbruik.
+          </p>
+          <div className="overflow-x-auto -mx-4 px-4 mb-3">
+            <table className="w-full min-w-[460px] text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#E0F2FE]">
+                  <th className="text-left py-2.5 px-3 font-semibold text-[#003F5C]">Post over tien jaar</th>
+                  <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Compleet geïnstalleerd</th>
+                  <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Zelf installeren</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100">
+                  <td className="py-2.5 px-3">Aanschaf bij PureAqua</td>
+                  <td className="py-2.5 px-3 text-right">{JOEP.installedPrice}</td>
+                  <td className="py-2.5 px-3 text-right">{JOEP.devicePrice}</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-2.5 px-3">Serviceabonnement (optioneel, jaar 2 tot en met 10)</td>
+                  <td className="py-2.5 px-3 text-right">circa {eur(service10)} euro</td>
+                  <td className="py-2.5 px-3 text-right">circa {eur(service10)} euro</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-2.5 px-3">Zout</td>
+                  <td className="py-2.5 px-3 text-right" colSpan={2}>variabel: afhankelijk van hardheid en verbruik</td>
+                </tr>
+                <tr className="bg-[#E0F2FE] font-semibold text-[#003F5C]">
+                  <td className="py-2.5 px-3">Totaal zonder zout en zonder abonnement</td>
+                  <td className="py-2.5 px-3 text-right">{eur(INSTALLED)} euro</td>
+                  <td className="py-2.5 px-3 text-right">{eur(DEVICE)} euro</td>
+                </tr>
+                <tr className="bg-[#E0F2FE] font-semibold text-[#003F5C]">
+                  <td className="py-2.5 px-3">Totaal zonder zout, met abonnement</td>
+                  <td className="py-2.5 px-3 text-right">circa {eur(INSTALLED + service10)} euro</td>
+                  <td className="py-2.5 px-3 text-right">circa {eur(DEVICE + service10)} euro</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <p className="text-gray-700 mt-4 leading-relaxed">
-            Let op: met een 4-in-1 kraan ben je over 10 jaar niet goedkoper uit dan met een
-            waterontharder, maar je krijgt er wel gekoeld en zeer heet gezuiverd water bij. Een
-            eenvoudig osmosesysteem onder het aanrecht is wel goedkoper. Een waterontharder onthardt
-            bovendien ook het douche-, was- en apparatenwater. De keuze hangt af van je prioriteiten.
+          <p className="text-xs text-gray-500 mb-4">
+            Prijzen bij PureAqua, bevestigd op 24 september 2026.
+            Fabrieksgarantie: {JOEP.manufacturerWarranty}.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Zoutverbruik bij JOEP: {JOEP.saltPerYear}; bij harder water ligt het hoger.
+            Reken je eigen zoutkosten uit met de{' '}
+            <Link href="/hulpmiddelen/waterontharder-zout-kosten" className="text-[#005F8A] underline hover:no-underline">
+              rekenhulp voor zoutkosten
+            </Link>
+            . Een volledige rekensom met zout, voor 5 en 10 jaar, staat in{' '}
+            <Link href="/waterontharder/kosten" className="text-[#005F8A] underline hover:no-underline">
+              kosten van een waterontharder
+            </Link>
+            ; marktprijzen per type vind je bij{' '}
+            <Link href="/waterontharder/prijs" className="text-[#005F8A] underline hover:no-underline">
+              waterontharder prijs
+            </Link>
+            .
           </p>
         </section>
 
         {/* Merken */}
         <section id="merken">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Merken overzicht: Kinetico, BWT, Harvey en Hague
+            Andere merken: Kinetico, BWT, Harvey en AquaCell
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Op de Nederlandse markt zijn diverse merken actief. Hieronder een objectief overzicht van
-            de meest voorkomende merken. Dit overzicht is informatief en beoogt geen specifieke
-            aanbeveling — vergelijk altijd meerdere offertes van erkende installateurs.
+            Naast onze keuze JOEP kom je in Nederland vaak deze merken tegen. Vergelijk bij twijfel meerdere
+            offertes van installateurs; prijzen en servicevoorwaarden verschillen sterk, ook bij hetzelfde merk.
           </p>
           <div className="space-y-4">
             {merken.map(m => (
               <div key={m.naam} className="border border-gray-100 rounded-xl p-4 bg-white">
-                <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
-                  <div>
-                    <h3 className="font-bold text-gray-900">{m.naam}</h3>
-                    <p className="text-xs text-gray-400">{m.land}</p>
-                  </div>
-                  <span className="text-sm font-semibold text-[#005F8A]">{m.prijsrange}</span>
-                </div>
+                <h3 className="font-bold text-gray-900 mb-1">
+                  <Link href={m.href} className="hover:text-[#005F8A]">
+                    {m.naam}
+                  </Link>
+                </h3>
                 <p className="text-xs text-gray-500 mb-2 italic">{m.kenmerk}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
                   <div>
@@ -529,11 +614,17 @@ export default function WaterontharderKopenPage() {
               </div>
             ))}
           </div>
-          <div className="bg-amber-50 border border-amber-100 rounded-xl p-4 mt-4 text-sm text-gray-700">
-            <strong className="text-amber-900">Kooptip:</strong> Vraag minimaal twee of drie offertes
-            van erkende waterbehandelingsbedrijven in jouw regio. De installatieprijzen en service
-            overeenkomsten kunnen sterk variëren, zelfs bij hetzelfde merk of model.
-          </div>
+          <p className="text-sm text-gray-600 mt-4">
+            Meer modellen naast elkaar zie je in{' '}
+            <Link href="/waterontharder/vergelijken" className="text-[#005F8A] underline hover:no-underline">
+              waterontharders vergelijken
+            </Link>{' '}
+            en de{' '}
+            <Link href="/beste-waterontharder-2026" className="text-[#005F8A] underline hover:no-underline">
+              koopgids beste waterontharder 2026
+            </Link>
+            .
+          </p>
         </section>
 
         {/* Wanneer osmose beter is */}
@@ -542,31 +633,31 @@ export default function WaterontharderKopenPage() {
             Wanneer is omgekeerde osmose een betere keuze dan een waterontharder?
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Een waterontharder is krachtig, maar niet voor iedereen de juiste oplossing. In de
-            onderstaande situaties is een <strong>omgekeerde osmose systeem</strong> een praktischer
-            en often goedkoper alternatief.
+            Een waterontharder is niet voor iedereen de juiste oplossing. In deze situaties is een{' '}
+            <strong>osmosesysteem</strong> voor de keukenkraan praktischer.
           </p>
           <div className="space-y-3 mb-6">
             {[
               {
                 situatie: 'Appartement of huurwoning',
                 uitleg:
-                  'Een ionenwisselaar installeren op de hoofdleiding vereist toestemming van de verhuurder en doorgaans professioneel loodgieterswerk. Een osmose systeem wordt eenvoudig onder het aanrecht gemonteerd op de koudwatertoevoer — geen toestemming vereist en volledig verwijderbaar bij verhuizing.',
+                  'Een ontharder op de hoofdleiding vraagt toestemming van de verhuurder en loodgieterswerk. Een osmosesysteem komt onder of op het aanrecht en neem je mee als je verhuist.',
               },
               {
-                situatie: '1 of 2 persoons huishouden',
+                situatie: 'Klein huishouden dat vooral om drinkwater geeft',
                 uitleg:
-                  'Voor kleine huishoudens zijn de kosten van een volledige ionenwisselaar (€650–1.850 inclusief installatie) moeilijk te rechtvaardigen. Een osmosefilter vanaf circa €150 geeft je schoon, kalkarm drinkwater voor één fractie van de prijs. De waterontharder onthardt ook douche- en waswater, maar voor kleine huishoudens zijn die kosten doorgaans niet noemenswaardig.',
+                  'Heb je vooral last van kalk in de waterkoker en de smaak van je drinkwater, dan is een volledige ontharder voor het hele huis vaak meer dan nodig.',
               },
               {
-                situatie: 'Je wilt ook chloor, pesticiden en PFAS verwijderen',
+                situatie: 'Je wilt ook andere stoffen uit je drinkwater halen',
                 uitleg:
-                  'Een waterontharder verwijdert uitsluitend kalk (calcium en magnesium). Chloor, nitraten, pesticiden, PFAS, medicijnresten en microplastics blijven ongemoeid. Omgekeerde osmose verwijdert 95–99% van alle opgeloste stoffen — een veel grondigere aanpak voor schoon drinkwater.',
+                  `Een waterontharder verwijdert alleen kalk. Chloor, PFAS, medicijnresten en andere opgeloste stoffen blijven in het water. Omgekeerde osmose haalt het grootste deel daarvan uit je drinkwater. Nederlands kraanwater voldoet aan de wettelijke normen, ook aan de EU-norm van 100 nanogram per liter voor de som van 20 PFAS. Volgens een Greenpeace-analyse uit september 2026 zit wel ongeveer een derde van het drinkwater boven de strengere RIVM-advieswaarde van ${PFAS_ADVIES} nanogram PFOA-equivalenten per liter. Extra zuivering blijft een persoonlijke keuze.`,
+                meer: true,
               },
               {
                 situatie: 'Je volgt een natriumarm dieet',
                 uitleg:
-                  'Een klassieke ionenwisselaar voegt natrium toe aan het water (ca. 10–20 mg Na⁺ per °dH verwijderd). In hard-watergebieden kan dit het natriumgehalte met 100–200 mg/L verhogen. Voor mensen met hoge bloeddruk, hartfalen of nierproblemen is osmose-gefilterd water de betere keuze: het natriumgehalte is verwaarloosbaar laag.',
+                  'Een ionenwisselaar voegt natrium toe aan het water, meer naarmate het water harder is. Osmosewater bevat juist heel weinig natrium. Volg je een medisch dieet, overleg dan met je arts.',
               },
             ].map(s => (
               <div key={s.situatie} className="flex gap-3 items-start border border-gray-100 rounded-xl p-4">
@@ -574,33 +665,56 @@ export default function WaterontharderKopenPage() {
                 <div>
                   <p className="font-semibold text-gray-900 text-sm">{s.situatie}</p>
                   <p className="text-sm text-gray-600 leading-relaxed mt-0.5">{s.uitleg}</p>
+                  {s.meer && (
+                    <p className="text-sm text-gray-600 leading-relaxed mt-1">
+                      Bron:{' '}
+                      <a href={NOS_GREENPEACE} className="text-[#005F8A] underline hover:no-underline" rel="noopener">
+                        NOS
+                      </a>
+                      . Wat dit betekent en welke filters PFAS verminderen, lees je in{' '}
+                      <Link href="/pfas-water" className="text-[#005F8A] underline hover:no-underline">
+                        PFAS in water
+                      </Link>
+                      .
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
           </div>
           <div className="bg-gradient-to-br from-[#E0F2FE] to-white border border-[#005F8A]/20 rounded-2xl p-5">
-            <p className="font-semibold text-[#003F5C] mb-2">
-              Kleinere huishoudens of huurders: osmose is vaak slimmer
-            </p>
-            <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-              Een 4-in-1 osmose kraan combineert omgekeerde osmose filtratie met zeer heet (circa 96
-              graden), gekoeld, warm en koud water uit één keukenkraan. Dit is de meest complete drinkwateroplossing
-              voor appartementen en kleine huishoudens. Bekijk het aanbod op onze{' '}
-              <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline hover:no-underline">
-                osmose filter kopen pagina
-              </Link>
-              .
-            </p>
+            <p className="font-semibold text-[#003F5C] mb-2">Osmose bij PureAqua: drie routes</p>
+            <ul className="text-sm text-gray-700 space-y-2 mb-4 leading-relaxed">
+              <li>
+                <Link href={COUNTERTOP.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+                  {COUNTERTOP.shortName}
+                </Link>{' '}
+                ({COUNTERTOP.price}): {COUNTERTOP.installation}. Handig in een huurwoning.
+              </li>
+              <li>
+                <Link href={THREE_WAY.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+                  {THREE_WAY.name}
+                </Link>
+                : osmose uit je eigen kraan, met The Source voor {THREE_WAY.sourcePrice} en een kraan van{' '}
+                {THREE_WAY.tapPrice}.
+              </li>
+              <li>
+                <Link href={FOUR_IN_ONE.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+                  {FOUR_IN_ONE.name}
+                </Link>{' '}
+                ({FOUR_IN_ONE.price}): {FOUR_IN_ONE.functions}.
+              </li>
+            </ul>
             <Link
               href="/omgekeerde-osmose/kopen"
               className="inline-block bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              Osmose systemen bekijken →
+              Osmose filter kopen: welk systeem past? →
             </Link>
           </div>
         </section>
 
-        <JoepCTA context="algemeen" content="waterontharder-kopen-joep" />
+        <JoepCTA context="hard-water" content="waterontharder-kopen-joep" />
 
         <AffiliateCTA
           destination="waterontharders"
@@ -617,10 +731,13 @@ export default function WaterontharderKopenPage() {
           <h2 className="text-xl font-bold text-[#003F5C] mb-4">Meer lezen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
+              { href: '/waterontharder', label: 'Waterontharder: wat het doet, wat het kost en onze keuze' },
+              { href: JOEP.reviewPath, label: 'JOEP waterontharder: specificaties, prijs en voor wie' },
               { href: '/beste-waterontharder-2026', label: 'Beste waterontharder 2026: koopgids en shortlist' },
-              { href: '/waterontharder', label: 'Waterontharder: werking, kosten en alternatieven' },
+              { href: '/waterontharder/zoutloos', label: 'Zoutloze waterontharder: werkt het echt?' },
+              { href: '/waterontharder/vs-osmose', label: 'Waterontharder of osmose: wanneer kies je wat?' },
+              { href: '/omgekeerde-osmose/kopen', label: 'Osmose filter kopen: welk systeem past bij jou?' },
               { href: '/kennisbank/waterontharder', label: 'Kennisbank: waterontharder' },
-              { href: '/omgekeerde-osmose/kopen', label: 'Osmose filter kopen — welk systeem past bij jou?' },
               { href: '/waterhardheid', label: 'Waterhardheid per gemeente in Nederland' },
             ].map(l => (
               <Link
@@ -633,6 +750,18 @@ export default function WaterontharderKopenPage() {
             ))}
           </div>
         </section>
+
+        <MethodologyBadge
+          lastReviewed={MODIFIED}
+          sources={[
+            'Fabrikant AquaSens (JOEP-specificaties)',
+            'PureAqua (prijzen)',
+            ...JOEP_MARKET.rangeSources,
+            'RIVM (advieswaarde PFAS)',
+            `EU-richtlijn ${EU_RICHTLIJN} (PFAS-norm)`,
+            'NOS (Greenpeace-analyse, september 2026)',
+          ]}
+        />
 
         {/* FAQ */}
         <section id="faq">

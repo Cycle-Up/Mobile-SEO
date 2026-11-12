@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CTABanner } from '@/components/CTABanner';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
 
 export const metadata: Metadata = {
   title: 'pH van osmosewater: waarom het zuur is en hoe u het corrigeert',
@@ -35,7 +36,7 @@ const faqSchema = {
       name: 'Welke pH heeft osmosewater normaal?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Vers osmosewater direct uit de druktank heeft doorgaans een pH van 5,0-6,5. Na contact met lucht in een glas kan de pH iets verder dalen door extra CO2-absorptie. Met een calciet remineralisatiefilter stijgt de pH naar 7,0-7,5. Met een calciet-magnesiet filter naar 7,0-7,8. Alkaliserende filters kunnen de pH tot 8-9 brengen, maar dit is voor de meeste mensen niet noodzakelijk.',
+        text: 'Vers osmosewater direct na het tappen heeft doorgaans een pH van 5,0-6,5. Na contact met lucht in een glas kan de pH iets verder dalen door extra CO2-absorptie. Met een calciet remineralisatiefilter stijgt de pH naar 7,0-7,5. Met een calciet-magnesiet filter naar 7,0-7,8. Alkaliserende filters kunnen de pH tot 8-9 brengen, maar dit is voor de meeste mensen niet noodzakelijk.',
       },
     },
     {
@@ -43,7 +44,7 @@ const faqSchema = {
       name: 'Kan osmosewater met lage pH leidingen beschadigen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, dit is een reeel risico. Water met een pH onder 6,5 is licht corrosief voor koperen en ijzeren leidingen en kan metaalionen oplossen. Osmosewater mag daarom niet door koperen huisleidingen stromen. Een osmosefilter wordt altijd direct op een aparte osmosekraan aangesloten, rechtstreeks van de druktank. Koper- en loodconcentraties in osmosewater zijn dan niet aan de orde.',
+        text: 'Ja, dit is een reeel risico. Water met een pH onder 6,5 is licht corrosief voor koperen en ijzeren leidingen en kan metaalionen oplossen. Osmosewater mag daarom niet door koperen huisleidingen stromen. Bij een onderbouwsysteem krijgt het een eigen leiding naar een aparte osmosekraan of naar een kraan die warm, koud en gezuiverd water combineert. Zo komt het osmosewater niet in contact met koperen huisleidingen.',
       },
     },
     {
@@ -87,7 +88,7 @@ const articleSchema = {
   description:
     'Osmosewater heeft een pH van 5-6 door CO2-absorptie na verwijdering van carbonaatbuffers. Niet schadelijk voor gezondheid. Remineralisatiefilter corrigeert.',
   datePublished: '2026-05-01',
-  dateModified: '2026-05-01',
+  dateModified: '2026-11-03',
   url: 'https://waterfilterplatform.nl/osmose-water/ph',
   publisher: {
     '@type': 'Organization',
@@ -133,6 +134,8 @@ export default function OsmoseWaterPhPage() {
           </p>
         </section>
 
+        <AuthorBox datePublished="2026-05-01" dateModified="2026-11-03" />
+
         <QuickAnswer answer="Osmosewater heeft een pH van 5-6 omdat het RO-membraan carbonaatbuffers verwijdert en het water daarna CO2 absorbeert. Dit is niet schadelijk: maagsap heeft pH 1,5. Een calciet remineralisatiefilter corrigeert de pH naar 7-7,5 voor optimale smaak en veiligheid voor leidingen." />
 
         <CTABanner context="osmose" />
@@ -149,8 +152,8 @@ export default function OsmoseWaterPhPage() {
         <p className="text-gray-700 mb-4">
           Het RO-membraan verwijdert 95-99% van alle opgeloste ionen, inclusief deze carbonaat- en
           calciumionen. Het resulterende osmosewater heeft geen buffercapaciteit meer. Wanneer het
-          water vervolgens in contact komt met lucht &mdash; in de druktank, de leidingen of in uw
-          glas &mdash; absorbeert het CO&sup2;. Die CO&sup2; reageert met water tot koolzuur
+          water vervolgens in contact komt met lucht, bijvoorbeeld in uw glas, absorbeert het
+          CO&sup2;. Die CO&sup2; reageert met water tot koolzuur
           (H&sup2;CO&sup3;), dat gedeeltelijk dissocieert en H&plus;-ionen vrijmaakt.
         </p>
         <p className="text-gray-700 mb-6">
@@ -205,7 +208,7 @@ export default function OsmoseWaterPhPage() {
         </p>
 
         <h2 className="text-2xl font-semibold text-[#005F8A] mt-8 mb-4">
-          pH en metaalcorrosie: waarom een aparte osmosekraan belangrijk is
+          pH en metaalcorrosie: waarom osmosewater een eigen leiding krijgt
         </h2>
         <p className="text-gray-700 mb-4">
           Een aspect van de lage pH dat wel praktisch relevant is: water met pH onder 6,5 is
@@ -214,10 +217,17 @@ export default function OsmoseWaterPhPage() {
           dit leiden tot verhoogde koperconcentraties in het water.
         </p>
         <p className="text-gray-700 mb-6">
-          Daarom wordt een osmosefilter <strong>altijd direct op een aparte osmosekraan</strong>{' '}
-          aangesloten, rechtstreeks vanuit de druktank via een eigen kunststof leiding. Het
-          osmosewater stroomt nooit door de koperen huisleidingen. Dit is de standaardinstallatie
-          voor alle onder-aanrecht RO-systemen. Zie onze uitleg over{' '}
+          Daarom loopt osmosewater van een onderbouwsysteem via een <strong>eigen leiding</strong>{' '}
+          naar een aparte osmosekraan of naar een kraan die warm, koud en gezuiverd water
+          combineert, zoals een{' '}
+          <Link href="/the-source" className="text-[#005F8A] underline">zuiver-water-kraan met The Source</Link>{' '}
+          of de{' '}
+          <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">PureAqua 4-in-1 kraan</Link>.
+          Bij de 4-in-1 kraan staat onder de spoelbak naast de osmose-unit ook een
+          heet-/koelunit, die het gezuiverde water verwarmt en koelt. Beide kranen worden verkocht
+          door PureAqua, waaraan WaterfilterPlatform gelieerd is. Zo komt het osmosewater niet in
+          contact met koperen huisleidingen. Dit is de gangbare installatie bij onderbouwsystemen.
+          Zie onze uitleg over{' '}
           <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link>{' '}
           voor meer details over de installatie.
         </p>
@@ -232,7 +242,7 @@ export default function OsmoseWaterPhPage() {
         <div className="space-y-4 mb-6">
           <div className="border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-2">
-              1. Calciet remineralisatiefilter (CaCO3) &mdash; Aanbevolen
+              1. Calciet remineralisatiefilter (CaCO3): aanbevolen
             </h3>
             <p className="text-gray-700 text-sm">
               Calciet reageert met het koolzuur in osmosewater en neutraliseert het. Dit verhoogt
@@ -243,7 +253,7 @@ export default function OsmoseWaterPhPage() {
           </div>
           <div className="border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-2">
-              2. Calciet + magnesiet combinatiefilter &mdash; Optimaal voor drinkwater
+              2. Calciet + magnesiet combinatiefilter: optimaal voor drinkwater
             </h3>
             <p className="text-gray-700 text-sm">
               Combineert calciet (CaCO&sup3;) met magnesiet (MgCO&sup3;) voor een pH van 7,0-7,8
@@ -255,7 +265,7 @@ export default function OsmoseWaterPhPage() {
           </div>
           <div className="border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-2">
-              3. Alkaliserende filterpatroon (ionenwisseling) &mdash; Gebruik met voorzichtigheid
+              3. Alkaliserende filterpatroon (ionenwisseling): gebruik met voorzichtigheid
             </h3>
             <p className="text-gray-700 text-sm">
               Verhoogt pH tot 8-9 via ionenwisseling. Kan echter overmatig natrium toevoegen, wat
@@ -266,7 +276,7 @@ export default function OsmoseWaterPhPage() {
           </div>
           <div className="border border-gray-200 rounded-lg p-4">
             <h3 className="font-semibold text-[#003F5C] mb-2">
-              4. Kaliumbicarbonaat dosering &mdash; Professioneel gebruik
+              4. Kaliumbicarbonaat dosering: professioneel gebruik
             </h3>
             <p className="text-gray-700 text-sm">
               Professionele oplossing voor nauwkeurige pH-controle. KHCO&sup3; lost op in water en

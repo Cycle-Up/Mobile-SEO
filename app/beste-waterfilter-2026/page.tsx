@@ -6,6 +6,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { PureFilterCTA } from '@/components/PureFilterCTA';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export function generateMetadata(): Metadata {
   return {
@@ -14,7 +15,7 @@ export function generateMetadata(): Metadata {
       'Welk waterfilter is het beste in 2026? We vergelijken filterkan, omgekeerde osmose, inline en 4-in-1 kraan op kosten, zuiverheid en installatie.',
     alternates: { canonical: 'https://waterfilterplatform.nl/beste-waterfilter-2026' },
     openGraph: {
-      title: 'Beste waterfilter 2026 — eerlijk getest en vergeleken',
+      title: 'Beste waterfilter 2026: eerlijk getest en vergeleken',
       description:
         'We zetten de vijf beste waterfilters van 2026 naast elkaar. Filterkan, osmose, inline, 4-in-1 kraan: welk type past bij jouw situatie en budget?',
       url: 'https://waterfilterplatform.nl/beste-waterfilter-2026',
@@ -28,32 +29,32 @@ const faqItems = [
   {
     question: 'Welk waterfilter is het beste in 2026?',
     answer:
-      'Het beste waterfilter in 2026 hangt af van je situatie. Voor wie puur, kalkvrij drinkwater wil en ook zeer heet en gekoeld water, is een 4-in-1 kraan met ingebouwde omgekeerde osmose het meest complete systeem (bruisend water zit er bij de PureAqua 4-in-1 niet op). Voor wie een laag budget heeft en alleen de smaak wil verbeteren, is een waterfilterkan zoals Brita een prima instapoplossing. Voor wie volledig gefilterd water voor het hele huishouden wil, is een onderaanrecht osmose systeem de beste keuze.',
+      'Het beste waterfilter in 2026 hangt af van je situatie. Voor wie osmose-gezuiverd drinkwater wil en ook zeer heet en gekoeld water, is een 4-in-1 kraan met ingebouwde omgekeerde osmose volgens ons het meest complete systeem (bruisend water zit er bij de PureAqua 4-in-1 niet op). Voor wie een laag budget heeft en alleen de smaak wil verbeteren, is een waterfilterkan zoals Brita een prima instapoplossing. Voor wie volledig gefilterd water voor het hele huishouden wil, is een onderaanrecht osmose systeem de beste keuze.',
   },
   {
     question: 'Wat filtert een omgekeerde osmose systeem precies?',
     answer:
-      'Een omgekeerd osmose filter haalt tot 99% van ongewenste stoffen uit leidingwater: kalk (calcium en magnesium), chloor, nitraten, nitriet, pesticiden, zware metalen zoals lood en koper, en microplastics. Een actief koolstoffilter als voorfilter verwijdert ook geuren en smaken. Een standaard filterkan als Brita filtert alleen chloor en chloramines — kalk en chemische stoffen gaan er grotendeels doorheen.',
+      'Een omgekeerd osmose filter haalt tot 99% van ongewenste stoffen uit leidingwater: kalk (calcium en magnesium), chloor, nitraten, nitriet, pesticiden, zware metalen zoals lood en koper, en microplastics. Een actief koolstoffilter als voorfilter verwijdert ook geuren en smaken. Een standaard filterkan als Brita filtert alleen chloor en chloramines; kalk en chemische stoffen gaan er grotendeels doorheen.',
   },
   {
     question: 'Wat zijn de kosten van een waterfilter per jaar?',
     answer:
-      'De jaarlijkse filterkosten variëren sterk per type. Een Brita-filterkan kost circa 40–80 euro per jaar aan vervangingsfilters. Een onderaanrecht osmose systeem kost 80–150 euro per jaar aan filters (afhankelijk van gebruik en waterhardheid). Voor de PureAqua 4-in-1 kraan met osmose zijn de filters gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend). Een inline keukenkraan filter kost 30–60 euro per jaar. Vergeet niet dat een filterkan ook aankoopkosten voor water vermijdt — maar mineraalwater flesjes nog meer.',
+      'De jaarlijkse filterkosten variëren sterk per type. Een Brita-filterkan kost circa 40 tot 80 euro per jaar aan vervangingsfilters. Een onderaanrecht osmose systeem kost 80 tot 150 euro per jaar aan filters (afhankelijk van gebruik en waterhardheid). Voor de PureAqua 4-in-1 kraan met osmose zijn de filters gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend). Een inline keukenkraan filter kost 30 tot 60 euro per jaar. Vergeet niet dat een filterkan ook aankoopkosten voor water vermijdt, maar mineraalwater flesjes nog meer.',
   },
   {
     question: 'Wat is het verschil tussen een filterkan en omgekeerde osmose?',
     answer:
-      'Een filterkan zoals Brita gebruikt actief koolstoffilter en ionenwisselaar om chloor en smaak te verbeteren. Kalk, nitraten en microplastics worden nauwelijks verwijderd. Een omgekeerd osmose systeem filtert via een semipermeable membraan dat tot 99% van alle opgeloste stoffen tegenhoudt — inclusief kalk, nitraten, pesticiden en zware metalen. Het resultaat is kwalitatief vergelijkbaar met gebotteld bronwater. Lees meer in onze vergelijking van filterkan vs osmose.',
+      'Een filterkan zoals Brita gebruikt actief koolstoffilter en ionenwisselaar om chloor en smaak te verbeteren. Kalk, nitraten en microplastics worden nauwelijks verwijderd. Een omgekeerd osmose systeem filtert via een semipermeable membraan dat tot 99% van alle opgeloste stoffen tegenhoudt, inclusief kalk, nitraten, pesticiden en zware metalen. Het resultaat is kwalitatief vergelijkbaar met gebotteld bronwater. Lees meer in onze vergelijking van filterkan vs osmose.',
   },
   {
     question: 'Hoe lang gaan waterfilterpatronen mee?',
     answer:
-      'Dat hangt af van het type filter en de waterhardheid in jouw gemeente. Brita-filters gaan 4 tot 6 weken mee (circa 150 liter). Osmose membranen gaan 12 tot 24 maanden mee bij normaal gebruik. Voorfilters bij osmose systemen (sediment, koolstof) wisselen elke 6–12 maanden. Bij de PureAqua 4-in-1 kraan vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar. Altijd controleren met de waterhardheid van jouw gemeente.',
+      'Dat hangt af van het type filter en de waterhardheid in jouw gemeente. Brita-filters gaan 4 tot 6 weken mee (circa 150 liter). Osmose membranen gaan 12 tot 24 maanden mee bij normaal gebruik. Voorfilters bij osmose systemen (sediment, koolstof) wisselen elke 6 tot 12 maanden. Bij de PureAqua 4-in-1 kraan vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar. Altijd controleren met de waterhardheid van jouw gemeente.',
   },
   {
     question: 'Kan ik een waterfilter zelf installeren?',
     answer:
-      'Ja, de meeste waterfilters zijn zelf te installeren. Een filterkan heeft geen installatie nodig. Inline filters plaatsen lukt zelf met standaard aansluitingen. Een onderaanrecht osmose systeem kost circa 1–2 uur en vereist een standaard kraankoppeling en een aansluiting op de afvoer. Voor een 4-in-1 kraan met osmosefilter is installatie door een installateur aanbevolen: er komen twee apparaten en twee stopcontacten onder de spoelbak. PureAqua biedt dat aan voor 299 euro.',
+      'Ja, de meeste waterfilters zijn zelf te installeren. Een filterkan heeft geen installatie nodig. Inline filters plaatsen lukt zelf met standaard aansluitingen. Een onderaanrecht osmose systeem kost circa 1 tot 2 uur en vereist een standaard kraankoppeling en een aansluiting op de afvoer. Voor een 4-in-1 kraan met osmosefilter is installatie door een installateur aanbevolen: er komen twee apparaten en twee stopcontacten onder de spoelbak. PureAqua biedt dat aan voor 299 euro.',
   },
 ];
 
@@ -173,17 +174,18 @@ const filterTypen = [
     voorbeelden: 'Geïntegreerde 4-in-1 osmosekraan',
     hoeHetWerkt:
       'De PureAqua 4-in-1 kraan combineert omgekeerde osmose in drie stappen met zeer heet water (circa 96 graden), gekoeld en gezuiverd water en gewoon warm en koud water uit één kraanpunt. Onder de spoelbak staan twee apparaten: een heet-/koelunit en een osmose-unit. Bruisend water zit er niet op.',
-    filtert: 'Kalk, chloor, nitraten, pesticiden, zware metalen, microplastics (tot 99%) — identiek aan standalone osmose.',
-    filtertNiet: 'Gasvormige stoffen als radon (beperkt). Zelfde beperkingen als osmose.',
+    filtert: 'Omgekeerde osmose in drie stappen. SGS-labtest op een nieuw systeem: PFOS meer dan 99,6%, PFOA 99,5%, lood meer dan 99,8%, chloor meer dan 99,4%, fluoride 97,6% en microplastics (polystyreen, 3 micrometer) 99,99% minder.',
+    filtertNiet: 'Kalk, nitraat en pesticiden zijn in de SGS-test niet apart gemeten. Na de osmose voegt het remineralisatiefilter weer mineralen toe.',
     kosten: 'Aanschaf € 1.948, installatie optioneel € 299. Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar; filters gemiddeld circa € 150 per jaar (fabrikantprijzen omgerekend).',
     pros: [
       '4 functies uit één kraan',
-      'Hoogste zuiveringsgraad',
-      'Geen apart filterappaar nodig',
+      'Door SGS getest op onder meer PFAS, lood, chloor en microplastics',
+      'Geen aparte tapkraan naast de kraan nodig',
       'Zeer heet en gekoeld water inbegrepen',
     ],
     cons: ['Hogere aanschafprijs dan standalone osmose', 'Twee apparaten onder de spoelbak; installateur aanbevolen', 'Geen bruisend water'],
-    voorWie: 'Wie het maximale wil: puur gefilterd drinkwater, zeer heet water, gekoeld water en warm water uit één kraan.',
+    voorWie: 'Wie osmose-gezuiverd drinkwater, zeer heet water, gekoeld water en gewoon warm en koud water uit één kraan wil.',
+    bron: FOUR_IN_ONE.labReport,
     link: '/kokend-water-kraan/met-filter',
     linkLabel: 'Kokend water kraan met filter',
   },
@@ -198,7 +200,7 @@ export default function BesteWaterfilter2026Page() {
           title: 'Beste waterfilter 2026: eerlijk getest & vergeleken',
           description: 'Welk waterfilter is het beste in 2026? We vergelijken filterkan, omgekeerde osmose, inline en 4-in-1 kraan op kosten, zuiverheid en installatie.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-10',
           url: 'https://waterfilterplatform.nl/beste-waterfilter-2026',
         }}
       />
@@ -264,8 +266,8 @@ export default function BesteWaterfilter2026Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-10" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184', 'SGS']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-10" />
 
         {/* Hoe we vergelijken */}
         <section>
@@ -369,7 +371,7 @@ export default function BesteWaterfilter2026Page() {
           </div>
           <p className="text-xs text-gray-400 mt-3">
             Scores zijn redactioneel en gebaseerd op een gewogen combinatie van zuiverheid, prijs, installatie,
-            onderhoud en geschiktheid voor Nederlandse huishoudens. Bijgewerkt mei 2026.
+            onderhoud en geschiktheid voor Nederlandse huishoudens. Bijgewerkt november 2026.
           </p>
         </section>
 
@@ -433,6 +435,16 @@ export default function BesteWaterfilter2026Page() {
                       </ul>
                     </div>
                   </div>
+                  {f.bron && (
+                    <p className="text-xs text-gray-500">
+                      Bron labwaarden:{' '}
+                      <a href={f.bron.url} target="_blank" rel="noopener noreferrer" className="text-[#005F8A] hover:underline">
+                        {f.bron.lab}-rapport {f.bron.number} ({f.bron.date})
+                      </a>
+                      . Alle meetwaarden en de toelichting staan in onze{' '}
+                      <Link href="/4-in-1-kraan" className="text-[#005F8A] hover:underline">review van de 4-in-1 kraan</Link>.
+                    </p>
+                  )}
                   <div className="bg-[#E0F2FE] rounded-lg p-3">
                     <p className="font-semibold text-[#003F5C] mb-1 text-xs">Voor wie?</p>
                     <p className="text-[#005F8A] text-xs leading-relaxed">{f.voorWie}</p>
@@ -461,7 +473,7 @@ export default function BesteWaterfilter2026Page() {
                 situatie: 'Maximale zuiverheid + zeer heet + gekoeld water',
                 advies: '4-in-1 kraan met omgekeerde osmose',
                 reden:
-                  'Combineert de hoogste filtratieprestaties met zeer heet (circa 96 graden) en gekoeld water uit één kraanpunt. Wil je bruisend water, kies dan een Quooker CUBE of Grohe Blue.',
+                  'Combineert osmosefiltratie (door SGS getest op onder meer PFAS, lood en microplastics) met zeer heet (circa 96 graden) en gekoeld water uit één kraanpunt. Wil je bruisend water, kies dan een Quooker CUBE of Grohe Blue.',
                 link: '/kokend-water-kraan/met-filter',
               },
               {

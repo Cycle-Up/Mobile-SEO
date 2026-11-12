@@ -6,6 +6,7 @@ import { SgsResults } from '@/components/SgsResults';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
   title: '4-in-1 kokend water kraan: koud, warm, heet en kokend | 2026',
@@ -25,7 +26,7 @@ const faqItems = [
   {
     question: 'Wat doet een 4-in-1 kokend water kraan precies?',
     answer:
-      'Een 4-in-1 kraan levert vier temperatuurzones uit één kraan: koud leidingwater, warm water (voor thee op ± 60–80 °C), heet water (± 90 °C) en kokend water (100 °C of nagenoeg 100 °C). De kraan is verbonden met een geïsoleerde boiler onder het aanrecht die het water op temperatuur houdt. Sommige modellen bieden ook gefilterd water — dat maakt het technisch een 5-in-1 systeem.',
+      'Een 4-in-1 kraan levert vier temperatuurzones uit één kraan: koud leidingwater, warm water (voor thee op ± 60–80 °C), heet water (± 90 °C) en kokend water (100 °C of nagenoeg 100 °C). De kraan is verbonden met een geïsoleerde boiler onder het aanrecht die het water op temperatuur houdt. Biedt een kraan daarnaast gefilterd water, dan tellen veel merken dat als vijfde functie. De PureAqua 4-in-1 telt anders: gewoon warm en koud kraanwater, plus osmose-gezuiverd water op kamertemperatuur, gekoeld (circa 5 °C) en zeer heet (circa 96 °C, dus niet kokend).',
   },
   {
     question: 'Wat is het verschil tussen 2-in-1, 3-in-1 en 4-in-1 kranen?',
@@ -35,7 +36,7 @@ const faqItems = [
   {
     question: 'Is een 4-in-1 kraan met RO-filtratie een 5-in-1?',
     answer:
-      'Technisch gezien wel. Wanneer een 4-in-1 kraan wordt gekoppeld aan een omgekeerde osmose systeem, levert het koud gefilterd, warm gefilterd, heet gefilterd en kokend gefilterd water — plus eventueel ongefilterd kraanwater als bypass. De term "4-in-1 + RO" geeft aan dat alle vier functies gefilterd zijn via osmose.',
+      'Hoe je het telt, verschilt per merk. Tel je het gezuiverde water als extra functie, dan wel. De PureAqua 4-in-1 geeft gewoon warm en koud kraanwater, plus osmose-gezuiverd water op kamertemperatuur, gekoeld (circa 5 °C) en zeer heet (circa 96 °C). Niet alles is dus gefilterd: alleen het drink- en kookwater gaat door het membraan, het gewone warme en koude kraanwater niet.',
   },
   {
     question: 'Hoeveel energie verbruikt een 4-in-1 boiler?',
@@ -50,7 +51,7 @@ const faqItems = [
   {
     question: 'Hoe lang gaat een 4-in-1 kraan mee?',
     answer:
-      'De boiler en kraanmechaniek zijn ontworpen voor een levensduur van 10–15 jaar. Filterpatronen worden jaarlijks vervangen. De belangrijkste onderhoudsfactor is ontkalking van de boiler — met RO-filtratie is kalkaanslag grotendeels afwezig, wat de levensduur van de boiler significant verlengt ten opzichte van gebruik met onbehandeld leidingwater.',
+      `Dat hangt af van gebruik en onderhoud. Bij de PureAqua 4-in-1 krijg je ${FOUR_IN_ONE.warranty}. Het voorfilter en het remineralisatiefilter vervang je circa jaarlijks, het osmosemembraan circa elke twee jaar. Omdat het water eerst door het osmosemembraan gaat, bouwt er in de heetwatertank veel minder kalk op dan bij onbehandeld leidingwater. Dat ontziet de boiler, maar volg voor ontkalken altijd de onderhoudsinstructies van de fabrikant.`,
   },
   {
     question: 'Kan ik een 4-in-1 kraan zelf installeren?',
@@ -60,7 +61,7 @@ const faqItems = [
   {
     question: 'Wat kost een 4-in-1 kraan per jaar aan onderhoud?',
     answer:
-      'Bij de PureAqua 4-in-1 kraan met RO-filtratie vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar (of eerder bij hoog gebruik). Reken voor de filters op gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend): circa 105 euro in een jaar zonder membraan, circa 200 euro in een jaar met membraan. Omdat het hete water al osmose-gezuiverd is, hoeft de boiler niet ontkalkt te worden.',
+      'Bij de PureAqua 4-in-1 kraan met RO-filtratie vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar (of eerder bij hoog gebruik). Reken voor de filters op gemiddeld circa 150 euro per jaar (fabrikantprijzen omgerekend): circa 105 euro in een jaar zonder membraan, circa 200 euro in een jaar met membraan. Omdat het hete water eerst door het osmosemembraan gaat, bouwt er veel minder kalk op in de boiler. Hoe vaak ontkalken dan nog nodig is, is niet apart gemeten; volg daarvoor de onderhoudsinstructies van de fabrikant.',
   },
 ];
 
@@ -106,7 +107,7 @@ export default function KokendWaterKraan4In1Page() {
           description:
             'Wat een 4-in-1 tap biedt, vergelijking 2-in-1 en 3-in-1, RO als 5e functie en de beste 4-in-1+RO keuze voor 2026.',
           datePublished: '2025-09-01',
-          dateModified: '2026-05-14',
+          dateModified: '2026-11-10',
           url: 'https://waterfilterplatform.nl/kokend-water-kraan/4-in-1',
         }}
       />
@@ -134,9 +135,9 @@ export default function KokendWaterKraan4In1Page() {
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
             Een 4-in-1 kokend water kraan levert vier temperaturen uit één elegante kraan.
-            Maar de beste variant gaat nog verder: gecombineerd met een ingebouwde omgekeerde
-            osmose filter heb je altijd gefilterd water op elke gewenste temperatuur. Geen
-            waterkoker meer. Geen kalkaanslag. Geen plastic flessen.
+            Volgens ons gaat de variant met ingebouwde omgekeerde osmose nog een stap verder:
+            dan komt je drink- en kookwater gefilterd uit de kraan, op kamertemperatuur, gekoeld
+            of zeer heet. Geen waterkoker meer, veel minder kalkaanslag en geen plastic flessen.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -156,8 +157,8 @@ export default function KokendWaterKraan4In1Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-10" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-10" />
         <FourInOneRecommendation content="kokend-water-kraan-4-in-1-aanbeveling" />
         <SgsResults />
         {/* Inhoudsopgave */}
@@ -239,7 +240,7 @@ export default function KokendWaterKraan4In1Page() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-gray-500">Gemarkeerde rij = aanbevolen keuze voor het beste eindresultaat.</p>
+          <p className="text-sm text-gray-500">Gemarkeerde rij = onze aanbeveling voor wie ook gefilterd water wil.</p>
           <p className="text-gray-700 mt-4 leading-relaxed">
             Een 2-in-1 kraan is de meest toegankelijke instap. Maar wie naast kokend water ook
             waterkwaliteit serieus neemt, mist met een 2-in-1 of 3-in-1 de filtratiestap die
@@ -258,20 +259,20 @@ export default function KokendWaterKraan4In1Page() {
           <div className="space-y-4 mb-6">
             {[
               {
-                titel: 'Geen kalkaanslag in de boiler',
-                tekst: 'RO-water bevat 95–99% minder calcium en magnesium. De boiler hoeft nooit te worden ontkalkt. Dit verlengt de levensduur van de boiler van gemiddeld 8 naar potentieel 15+ jaar.',
+                titel: 'Veel minder kalkaanslag in de boiler',
+                tekst: 'Het osmosemembraan haalt het grootste deel van de opgeloste mineralen, waaronder calcium en magnesium, uit het water voordat het wordt verwarmd. Het remineralisatiefilter voegt daarna weer een kleine hoeveelheid mineralen toe. Er bouwt daardoor veel minder kalk op dan bij onbehandeld kraanwater, maar "nooit ontkalken" kunnen we niet beloven: de kalkreductie van de PureAqua 4-in-1 is niet apart gemeten. Volg de onderhoudsinstructies van de fabrikant.',
               },
               {
                 titel: 'Betere smaak bij koffie en thee',
-                tekst: 'Gefilterd water bij 90–100 °C geeft koffie en thee een vollere, helderere smaak. Chloor en zware metalen die normaal aromavervlakking veroorzaken zijn volledig afwezig.',
+                tekst: `Chloor kan de smaak van koffie en thee vlakker maken. In de SGS-test op een nieuw systeem haalde het osmosesysteem van de PureAqua 4-in-1 ${FOUR_IN_ONE.lab.chloor} van het vrije chloor weg, en ${FOUR_IN_ONE.lab.lood} van het lood.`,
               },
               {
-                titel: 'Veiliger voor babymelk en koken',
-                tekst: 'Geen nitraten, pesticiden of PFAS in het water dat je gebruikt voor babymelk, soep of koken. Omgekeerde osmose verwijdert deze stoffen voor 95–99%.',
+                titel: 'Minder PFAS in drink- en kookwater',
+                tekst: `Ook het hete en gekoelde water komt door het osmosemembraan. SGS mat bij de PureAqua 4-in-1 ${FOUR_IN_ONE.lab.PFOS} minder PFOS en ${FOUR_IN_ONE.lab.PFOA} minder PFOA (nieuw systeem). Nederlands kraanwater voldoet aan de wettelijke norm; een filter is een extra stap voor wie PFAS verder wil verminderen.`,
               },
               {
                 titel: 'Eén systeem, geen extra kraan',
-                tekst: 'Zonder RO heb je bij een apart osmosesysteem een losse osmosekraan naast de kokendwaterkraan. Met een geïntegreerde oplossing heb je één kraan voor alle functies — rustiger op het werkblad.',
+                tekst: 'Een los osmosesysteem naast een kokendwaterkraan betekent vaak een extra kraantje, tenzij je een 3-weg-kraan gebruikt. De 4-in-1 vervangt je bestaande mengkraan en geeft alle functies uit één kraan, dus geen extra kraangat en een rustiger werkblad.',
               },
             ].map(v => (
               <div key={v.titel} className="flex gap-3 items-start">
@@ -295,14 +296,14 @@ export default function KokendWaterKraan4In1Page() {
         <section id="beste-keuze">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wanneer is een 4-in-1+RO systeem de beste keuze?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Een 4-in-1 kraan gecombineerd met ingebouwde omgekeerde osmose is het meest complete systeem voor de keuken. Dit zijn de situaties waarin het echt loont:
+            Een 4-in-1 kraan gecombineerd met ingebouwde omgekeerde osmose is volgens ons het meest complete systeem voor de keuken. Dit zijn de situaties waarin het echt loont:
           </p>
           <div className="bg-gradient-to-br from-[#E0F2FE] to-white rounded-2xl p-6 mb-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 {
                   kenmerk: 'Hard water in je gemeente',
-                  detail: 'Kalkaanslag in waterkoker, koffiezetapparaat en pan? RO verwijdert 95–99% van kalk.',
+                  detail: 'Kalkaanslag in waterkoker, koffiezetapparaat en pan? Omgekeerde osmose haalt het grootste deel van de kalk uit je drink- en kookwater.',
                 },
                 {
                   kenmerk: 'Je wilt altijd gefilterd water',
@@ -310,7 +311,7 @@ export default function KokendWaterKraan4In1Page() {
                 },
                 {
                   kenmerk: 'Voorspelbaar onderhoud',
-                  detail: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar; geen ontkalken.',
+                  detail: 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar; door osmosewater veel minder kalkaanslag.',
                 },
                 {
                   kenmerk: 'Geen waterkoker meer',
@@ -354,15 +355,15 @@ export default function KokendWaterKraan4In1Page() {
               <ul className="text-sm text-gray-600 space-y-1 list-disc list-inside">
                 <li>Voorfilter en remineralisatiefilter circa jaarlijks</li>
                 <li>Osmosemembraan circa elke twee jaar</li>
-                <li>Geen ontkalkingsbeurt dankzij RO-water</li>
+                <li>Veel minder kalkaanslag dankzij osmosewater (volg de onderhoudsinstructies)</li>
                 <li>Kosten filters: gemiddeld circa €150 per jaar (fabrikantprijzen omgerekend)</li>
               </ul>
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Doordat het water al gefilterd is via RO, is kalkaanslag in de boiler geen issue.
-            Systemen die werken op onbehandeld leidingwater moeten de boiler jaarlijks ontkalken —
-            een extra onderhoudsstap die bij een 4-in-1+RO systeem overbodig is.
+            Doordat het water eerst door het osmosemembraan gaat, bouwt er in de boiler veel minder kalk op.
+            Kokendwaterkranen op hard, ongefilterd leidingwater moeten geregeld worden ontkalkt; bij een
+            4-in-1 met osmose is dat veel minder vaak nodig.
           </p>
         </section>
 
@@ -401,20 +402,21 @@ export default function KokendWaterKraan4In1Page() {
                 <tr className="border-b border-gray-100">
                   <td className="py-2.5 px-3">Ontkalker</td>
                   <td className="py-2.5 px-3 text-right">€ 20–40/jr</td>
-                  <td className="py-2.5 px-3 text-right text-green-700">€ 0</td>
+                  <td className="py-2.5 px-3 text-right">minder vaak nodig (niet meegerekend)</td>
                 </tr>
                 <tr className="bg-[#E0F2FE] font-semibold">
                   <td className="py-2.5 px-3">Totaal na 5 jaar</td>
                   <td className="py-2.5 px-3 text-right">€ 2.200–3.300</td>
-                  <td className="py-2.5 px-3 text-right text-[#005F8A]">± € 2.663</td>
+                  <td className="py-2.5 px-3 text-right text-[#005F8A]">± € 2.663 (zonder ontkalken)</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-sm text-gray-600 mt-3 leading-relaxed">
             Bij een gezin dat flessenwater drinkt, is de terugverdientijd van een 4-in-1+RO
-            systeem (PureAqua: € 1.948, installatie optioneel € 299) in dit rekenvoorbeeld circa 3,5 tot 7 jaar.
-            Daarna is het jaarlijkse kostenvoordeel circa €280 tot €510 ten opzichte van de flessenwater + waterkoker combinatie.
+            systeem (PureAqua: € 1.948, installatie optioneel € 299) in dit rekenvoorbeeld circa 4 tot 7,5 jaar.
+            Daarna is het jaarlijkse kostenvoordeel circa €260 tot €470 ten opzichte van de flessenwater + waterkoker combinatie.
+            Ontkalken rekenen we in dat voordeel niet mee, omdat de kalkreductie van de 4-in-1 niet apart gemeten is.
           </p>
         </section>
 

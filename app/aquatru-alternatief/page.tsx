@@ -10,14 +10,14 @@ import { CountertopRecommendation } from '@/components/CountertopRecommendation'
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'AquaTru alternatief: osmose zonder werkblad-unit? (2026)',
+    title: 'AquaTru alternatief 2026: onze keuze en opties vergeleken',
     description:
-      'Zoek je een alternatief voor de AquaTru countertop osmose? Vergelijk filtering, capaciteit, kosten en ruimte met een onder-aanrecht osmosesysteem in 2026.',
+      'AquaTru-alternatief? Onze keuze: het PureAqua Water zuiver apparaat (495 euro). Ook osmose zonder installatie, maar met zes temperatuurstanden tot 95 graden.',
     alternates: { canonical: 'https://waterfilterplatform.nl/aquatru-alternatief' },
     openGraph: {
       title: 'AquaTru alternatief vergelijken - beste opties 2026',
       description:
-        'AquaTru is een osmose-unit op het werkblad zonder installatie. Een onder-aanrecht osmosesysteem filtert net zo grondig, maar bespaart ruimte en kost minder per liter.',
+        'Onze keuze als AquaTru-alternatief: het PureAqua Water zuiver apparaat (495 euro). Osmose zonder installatie, met remineralisatie en zes temperatuurstanden tot 95 graden; een AquaTru Classic (475 euro) verwarmt niet.',
       url: 'https://waterfilterplatform.nl/aquatru-alternatief',
       type: 'article',
       locale: 'nl_NL',
@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: 'Wat is een goed alternatief voor de AquaTru?',
     answer:
-      'Het sterkste alternatief is een onder-aanrecht omgekeerde-osmosesysteem. AquaTru is een osmose-unit die op het werkblad staat en geen installatie vereist; hij filtert grondig via omgekeerde osmose. Een onder-aanrecht systeem filtert net zo breed, maar verdwijnt uit het zicht, levert water uit een aparte kraan en heeft doorgaans lagere kosten per liter.',
+      'Onze keuze is het PureAqua Water zuiver apparaat (495 euro). Het werkt net als de AquaTru met omgekeerde osmose op het aanrecht, zonder boren of aansluiten. Daarna voegt het mineralen toe, en anders dan een AquaTru Classic (475 euro) heeft het zes temperatuurstanden tot 95 graden. Wil je gefilterd water uit een eigen kraan en mag je verbouwen, dan is een onder-aanrecht osmosesysteem het alternatief. Transparant: PureAqua, dat dit apparaat verkoopt, is gelieerd aan WaterfilterPlatform.',
   },
   {
     question: 'Is er een goedkoper alternatief dan AquaTru?',
@@ -49,7 +49,7 @@ const faqItems = [
   {
     question: 'Voor wie blijft AquaTru een goede keuze?',
     answer:
-      'AquaTru is logisch als je osmosewater wilt zonder te boren of installeren, bijvoorbeeld in een huurwoning of als tijdelijke oplossing. Heb je wel ruimte onder het aanrecht en gebruik je dagelijks veel water, dan is een vast osmosesysteem doorgaans voordeliger, ruimtebesparend en onderhoudsarmer.',
+      'AquaTru Classic is logisch als je osmosewater wilt zonder installatie en geen heet water nodig hebt: hij kost 475 euro, 20 euro minder dan het Water zuiver apparaat, dat wel verwarmt tot 95 graden. Heb je ruimte onder het aanrecht en gebruik je dagelijks veel water, dan is een vast osmosesysteem doorgaans voordeliger.',
   },
 ];
 
@@ -107,10 +107,10 @@ export default function AquaTruAlternatiefPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'AquaTru alternatief: osmose zonder werkblad-unit? (2026)',
-          description: 'Zoek je een alternatief voor de AquaTru countertop osmose? Vergelijk filtering, capaciteit, kosten en ruimte met een onder-aanrecht osmosesysteem in 2026.',
+          title: 'AquaTru alternatief 2026: onze keuze en opties vergeleken',
+          description: 'AquaTru-alternatief? Onze keuze: het PureAqua Water zuiver apparaat (495 euro). Ook osmose zonder installatie, maar met zes temperatuurstanden tot 95 graden.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/aquatru-alternatief',
         }}
       />
@@ -131,7 +131,7 @@ export default function AquaTruAlternatiefPage() {
             <span>AquaTru alternatief</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            AquaTru alternatief: osmose zonder unit op het aanrecht
+            AquaTru alternatief: onze keuze en de opties vergeleken
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             De <strong>AquaTru</strong> is een osmose-unit die op het werkblad staat en geen installatie
@@ -159,11 +159,11 @@ export default function AquaTruAlternatiefPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
         <MethodologyBadge lastReviewed="2026-05-29" sources={['US EPA', 'RIVM', 'Vewin', 'NSF/ANSI-standaarden']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         <QuickAnswer
           question="Wat is het beste AquaTru alternatief?"
-          answer="Het sterkste alternatief is een onder-aanrecht omgekeerde-osmosesysteem. Dat filtert net zo breed als de AquaTru - beide gebruiken osmose - maar verdwijnt uit het zicht, levert water continu uit een aparte kraan en kost doorgaans minder per liter dankzij standaard filters. AquaTru blijft handig als je osmosewater wilt zonder iets te installeren, bijvoorbeeld in een huurwoning."
+          answer="Wil je net als bij de AquaTru osmose zonder installatie, dan is volgens ons het PureAqua Water zuiver apparaat het sterkste alternatief: omgekeerde osmose met remineralisatie en zes temperatuurstanden tot 95 graden, voor 495 euro (AquaTru Classic 475 euro, zonder verwarming). Mag je wel installeren, dan verdwijnt een onder-aanrecht osmosesysteem uit het zicht. Dat levert water via een aparte kraan of via een 3-weg-kraan, zoals bij The Source van PureAqua. PureAqua is gelieerd aan WaterfilterPlatform."
         />
 
         <CountertopRecommendation content="aquatru-alternatief-countertop-aanbeveling" />
@@ -189,8 +189,9 @@ export default function AquaTruAlternatiefPage() {
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed">
-            AquaTru is sterk voor wie osmose wil zonder klussen. Wie ruimte wil besparen of lagere kosten
-            per liter zoekt, kijkt naar een vaste opstelling. Lees meer over{' '}
+            Een countertop zoals de AquaTru is sterk voor wie osmose wil zonder klussen. Wil je daarbij ook
+            heet water, dan verwarmt het Water zuiver apparaat tot 95 graden en een AquaTru Classic niet. Wie
+            ruimte wil besparen of lagere kosten per liter zoekt, kijkt naar een vaste opstelling. Lees meer over{' '}
             <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link>{' '}
             en de{' '}
             <Link href="/waterfilter/onder-aanrecht" className="text-[#005F8A] underline">onder-aanrecht waterfilters</Link>.
@@ -238,7 +239,7 @@ export default function AquaTruAlternatiefPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom onder-aanrecht osmose het sterkste alternatief is</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wanneer onder-aanrecht osmose beter past dan een countertop</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Wil je de grondige filtering van AquaTru behouden zonder unit op het aanrecht, dan is een{' '}
             <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">onder-aanrecht osmosesysteem</Link>{' '}
@@ -273,6 +274,7 @@ export default function AquaTruAlternatiefPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wanneer blijf je bij AquaTru?</h2>
           <div className="space-y-3">
             {[
+              ['Je hebt geen heet water nodig', 'De AquaTru Classic verwarmt niet en is daardoor 20 euro goedkoper dan het Water zuiver apparaat: 475 tegen 495 euro.'],
               ['Je wilt niet installeren', 'Geen boren of aansluiten onder de gootsteen - handig in een huurwoning of tijdelijk.'],
               ['Je verhuist vaak', 'Een werkblad-unit verhuist zo mee, zonder demontage van een vaste opstelling.'],
               ['Aanrechtruimte is geen probleem', 'Heb je ruimte over op het werkblad, dan is de unit een prima plug-and-play osmose.'],
@@ -291,9 +293,10 @@ export default function AquaTruAlternatiefPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Conclusie: welk alternatief past bij jou?</h2>
           <p className="text-gray-700 leading-relaxed mb-3">
-            AquaTru is een sterke plug-and-play osmose voor wie niets wil installeren. Maar voor wie ruimte
-            wil besparen, meer volume nodig heeft of lagere kosten per liter zoekt, biedt een{' '}
-            <strong>onder-aanrecht osmosesysteem</strong> dezelfde filtering in een praktischer vorm.
+            Onze keuze als AquaTru-alternatief is het <strong>PureAqua Water zuiver apparaat</strong> (495 euro):
+            net als de AquaTru osmose zonder installatie, met remineralisatie en, anders dan de AquaTru Classic,
+            zes temperatuurstanden tot 95 graden. Heb je ruimte onder het aanrecht en wil je gefilterd water uit de kraan, dan biedt een{' '}
+            <strong>onder-aanrecht osmosesysteem</strong> dezelfde techniek in een vaste opstelling.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Verder vergelijken? Lees over{' '}

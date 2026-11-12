@@ -103,8 +103,8 @@ Hub: Zakelijke waterfilters
 Sub-pagina's: kantoor, horeca, industrie-proceswater, appartementen-vve, scholen-kinderopvang, sportschool-wellness, waterkoeler-vs-filter, legionella-beheersplan, waterkwaliteitsanalyse
 
 ### Cluster: Merklaag (alternatieven, merk-hubs, koopgidsen)
-Merk-alternatieven (neutrale "X alternatief", funnel naar 4-in-1 osmosekraan of filterkan/osmose): quooker-alternatief, grohe-red-alternatief, grohe-blue-alternatief, selsiuz-alternatief, sodastream-alternatief, insinkerator-alternatief, boretti-alternatief, fonteq-alternatief, brita-alternatief, zerowater-alternatief, aquatru-alternatief, waterdrop-alternatief
-Merk-hubs (neutrale specs/prijs/onderhoud): /selsiuz (+ /selsiuz-prijs, /selsiuz-onderhoud), /grohe-blue (+ /grohe-blue-prijs, /grohe-blue-filter), /the-source, /purefilter-review, /filterkan
+Merk-alternatieven ("X alternatief"-pagina's met afweging per situatie; op elke pagina wijzen we op een product van PureAqua, waaraan het platform gelieerd is: meestal de PureAqua 4-in-1 kraan (volgens ons het beste Quooker-alternatief met zuiver water), bij Brita en Waterdrop The Source, bij ZeroWater en AquaTru het Water zuiver apparaat): quooker-alternatief, grohe-red-alternatief, grohe-blue-alternatief, selsiuz-alternatief, sodastream-alternatief, insinkerator-alternatief, boretti-alternatief, fonteq-alternatief, brita-alternatief, zerowater-alternatief, aquatru-alternatief, waterdrop-alternatief
+Merk-hubs (specs/prijs/onderhoud): /selsiuz (+ /selsiuz-prijs, /selsiuz-onderhoud), /grohe-blue (+ /grohe-blue-prijs, /grohe-blue-filter), /filterkan. Producten van PureAqua, waaraan het platform gelieerd is: /the-source (The Source, verkocht door PureAqua, vanaf 395 euro, plus een 3-weg-kraan van 540 tot 840 euro), /purefilter-review (PureFilter Mineral+, 149 euro)
 Koopgidsen: /beste-waterfilter, /beste-waterfilter-2026, /beste-osmosefilter-2026, /beste-kokend-water-kraan-2026, /beste-filterkan-2026, /beste-waterontharder-2026
 
 ### Cluster: /waterbedrijven
@@ -146,7 +146,7 @@ Totaal: ~3.500 gemeente-specifieke pagina's met lokale waterhardheid en aanbevel
 
 WaterfilterPlatform genereert inkomsten via:
 1. Display-advertenties
-2. Verwijzingen vanuit /keuzehulp naar partner PureAqua
+2. Verkoop van producten van PureAqua en PureFilter, waaraan het platform gelieerd is, via productlinks met disclosure (onder meer vanuit /keuzehulp, merk-alternatieven, merk-hubs en koopgidsen)
 
 Eigen producten van PureAqua en PureFilter bevelen we aan als "onze keuze", altijd met onderbouwing, bronnen en disclosure. Eigen producten beoordelen we met dezelfde bron- en bewijsregels als andere producten; oordelen als "beste" zijn onze keuze, geen feit. Volledige toelichting: https://waterfilterplatform.nl/methodologie
 

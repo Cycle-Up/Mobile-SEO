@@ -10,12 +10,12 @@ import { MethodologyBadge } from '@/components/MethodologyBadge';
 export const metadata: Metadata = {
   title: 'Omgekeerde Osmose Vergelijken 2026: Welk Systeem?',
   description:
-    'Omgekeerde osmose systemen vergelijken? Ontdek de verschillen tussen onderbouw, aanrecht en geïntegreerde 4-in-1 systemen op doorstroomsnelheid.',
+    'Omgekeerde osmose systemen vergelijken? De verschillen tussen onderbouw, aanrecht en een 4-in-1 kraan op prijs, filterkosten, tank en installatie.',
   alternates: { canonical: 'https://waterfilterplatform.nl/omgekeerde-osmose/vergelijken' },
   openGraph: {
     title: 'Omgekeerde Osmose Vergelijken 2026: Welk Systeem Past Bij Jou?',
     description:
-      'Vergelijk onderbouw RO, aanrechtmodel en geïntegreerde 4-in-1 kokend water kraan op specs: doorstroom (L/u), afvalwaterratio, tankvolume, filterkosten en.',
+      'Vergelijk onderbouw RO, aanrechtmodel en een 4-in-1 kokend water kraan met osmose op prijs, filterkosten, tankvolume, filterstappen en installatie.',
     url: 'https://waterfilterplatform.nl/omgekeerde-osmose/vergelijken',
     type: 'article',
   },
@@ -30,7 +30,7 @@ const faqItems = [
   {
     question: 'Hoeveel afvalwater produceert een omgekeerde osmose systeem?',
     answer:
-      'Conventionele osmose systemen zonder boostpomp produceren 2–5 liter afvalwater per liter schoon water (ratio 1:2 tot 1:5). Modernere systemen met boostpomp of permeaatpomp halen een verhouding van 1:1 of zelfs 2:1 (meer schoon dan afval). Premium systemen zoals geïntegreerde 4-in-1 kokend water kranen zijn ontworpen met een gunstige afvalwaterratio. Vraag altijd naar de exacte ratio bij aanschaf.',
+      'Conventionele osmose systemen zonder boostpomp produceren 2–5 liter afvalwater per liter schoon water (ratio 1:2 tot 1:5). Modernere systemen met boostpomp of permeaatpomp halen een verhouding van 1:1 of zelfs 2:1 (meer schoon dan afval). Voor de geïntegreerde 4-in-1 kraan in deze vergelijking is geen fabrieksopgave van de afvalwaterratio bekend. Vraag altijd naar de exacte ratio bij aanschaf.',
   },
   {
     question: 'Hoeveel filterstappen heeft een goed osmose systeem?',
@@ -40,19 +40,19 @@ const faqItems = [
   {
     question: 'Welk osmose systeem is het beste voor hard water?',
     answer:
-      'In harde watergebieden (>15 °dH) is een geïntegreerd onderbouwsysteem of 4-in-1 kokend water kraan met osmose filtratie de beste keuze. Het RO-membraan verwijdert effectief de calcium- en magnesiumionen die verantwoordelijk zijn voor kalkafzetting. Een boostpomp verbetert de prestaties bij lage waterdruk. Vergeet niet dat kalk ook het RO-membraan kan aantasten — kies een systeem met een goede sediment- en kalkfilter als voorfilter.',
+      'In harde watergebieden (>15 °dH) raden wij een onderbouwsysteem of een 4-in-1 kokend water kraan met osmose filtratie aan. Het RO-membraan verwijdert effectief de calcium- en magnesiumionen die verantwoordelijk zijn voor kalkafzetting. Een boostpomp verbetert de prestaties bij lage waterdruk. Vergeet niet dat kalk ook het RO-membraan kan aantasten: kies een systeem met een goede sediment- en kalkfilter als voorfilter.',
   },
   {
     question: 'Kan ik een osmose filter installeren in een huurwoning?',
     answer:
-      'Ja, de meeste onderbouw osmose systemen kunnen zonder toestemming van de verhuurder worden geïnstalleerd. Ze worden aangesloten op de bestaande koudwaterkraan onder het aanrecht via een T-stuk aansluiting — geen permanente aanpassing aan de waterleiding. De installatie is volledig omkeerbaar. Aanrechtmodellen zijn nog eenvoudiger: zij vereisen slechts een aansluiting op de keukenkraan via een adapter. Neem bij twijfel contact op met je verhuurder.',
+      'Ja, de meeste onderbouw osmose systemen kunnen zonder toestemming van de verhuurder worden geïnstalleerd. Ze worden aangesloten op de bestaande koudwaterkraan onder het aanrecht via een T-stuk aansluiting, zonder permanente aanpassing aan de waterleiding. De installatie is volledig omkeerbaar. Aanrechtmodellen zijn nog eenvoudiger: zij vereisen slechts een aansluiting op de keukenkraan via een adapter. Neem bij twijfel contact op met je verhuurder.',
   },
 ];
 
 const itemListSchema = {
   '@type': 'ItemList',
   name: 'Omgekeerde Osmose Systemen Vergelijken 2026',
-  description: 'Vergelijking van onderbouw RO, aanrechtmodel en geïntegreerde 4-in-1 kokend water kraan met osmosefilter op prijs, doorstroom en filterkosten.',
+  description: 'Vergelijking van onderbouw RO, aanrechtmodel en geïntegreerde 4-in-1 kokend water kraan met osmosefilter op prijs, filterkosten en installatie.',
   numberOfItems: 3,
   itemListElement: [
     {
@@ -101,24 +101,24 @@ const systemen = [
     naam: 'Geïntegreerde 4-in-1 Kokend Water Kraan',
     subtitel: 'Premium alles-in-één systeem',
     prijs: '€ 1.948',
-    doorstroom: '150–250 L/uur',
-    afvalratio: 'Geoptimaliseerd 1:1 of beter',
+    doorstroom: 'Geen fabrieksopgave (koelcapaciteit tot 20 liter per uur)',
+    afvalratio: 'Geen fabrieksopgave',
     tankinhoud: 'Heetwatertank 2,3 liter (circa 1,2 liter direct beschikbaar)',
     filterstappen: '3 stappen (voorfilter, osmosemembraan, remineralisatie)',
-    filterkosten: '€ 80 – 150 / jaar (filters jaarlijks, membraan 2-jaarlijks)',
+    filterkosten: 'Gemiddeld circa € 150 / jaar (indicatie op basis van omgerekende fabrikantprijzen, niet de PureAqua-prijs; filters jaarlijks, membraan circa elke 2 jaar)',
     installatie: 'Twee apparaten onder aanrecht, twee stopcontacten; installateur aanbevolen (PureAqua: € 299)',
     highlight: true,
-    badge: 'Premium & Aanbevolen',
+    badge: 'Volgens ons het meest compleet',
   },
 ];
 
 const vergelijkingSpec = [
-  { spec: 'Doorstroomsnelheid', onderbouw: '100–200 L/u (m. pomp)', aanrecht: '50–100 L/u', geintegreerd: '150–250 L/u' },
-  { spec: 'Afvalwaterratio', onderbouw: '1:2 tot 1:5', aanrecht: '1:2 tot 1:4', geintegreerd: '1:1 of beter' },
+  { spec: 'Doorstroomsnelheid', onderbouw: '100–200 L/u (m. pomp)', aanrecht: '50–100 L/u', geintegreerd: 'Geen fabrieksopgave' },
+  { spec: 'Afvalwaterratio', onderbouw: '1:2 tot 1:5', aanrecht: '1:2 tot 1:4', geintegreerd: 'Geen fabrieksopgave' },
   { spec: 'Tankvolume', onderbouw: '3–12 L', aanrecht: '1–3 L', geintegreerd: '2,3 L (heet)' },
   { spec: 'Aantal filterstappen', onderbouw: '4–7', aanrecht: '3–5', geintegreerd: '3' },
   { spec: 'Aanschafprijs', onderbouw: '€ 150 – 500', aanrecht: '€ 100 – 350', geintegreerd: '€ 1.948' },
-  { spec: 'Filterkosten / jaar', onderbouw: '€ 50 – 120', aanrecht: '€ 40 – 100', geintegreerd: '€ 80 – 150' },
+  { spec: 'Filterkosten / jaar', onderbouw: '€ 50 – 120', aanrecht: '€ 40 – 100', geintegreerd: 'Circa € 150 gemiddeld (fabrikantprijzen omgerekend)' },
   { spec: 'Kokend water', onderbouw: 'Nee', aanrecht: 'Nee', geintegreerd: 'Zeer heet (circa 96°C)' },
   { spec: 'Bruisend water', onderbouw: 'Nee', aanrecht: 'Nee', geintegreerd: 'Nee' },
   { spec: 'Installatiegemak', onderbouw: 'Matig (loodgieter handig)', aanrecht: 'Eenvoudig', geintegreerd: 'Installateur aanbevolen (twee stopcontacten)' },
@@ -137,28 +137,28 @@ const gebruikerssituaties = [
     situatie: 'Kleine keuken, weinig aanrechtruimte',
     beste: 'Onderbouw RO',
     reden:
-      'Alle componenten onder het aanrecht — vrijstaand aanrechtmodel neemt kostbare werkruimte in beslag. Een onderbouwsysteem met apart kraantje houdt het aanrecht vrij. Bij een 4-in-1 kraan zie je alleen de kraan, maar onder het aanrecht staan twee apparaten en er is één boortje in het aanrechtblad nodig.',
+      'Alle componenten onder het aanrecht, terwijl een vrijstaand aanrechtmodel kostbare werkruimte in beslag neemt. Een onderbouwsysteem met apart kraantje houdt het aanrecht vrij. Bij een 4-in-1 kraan zie je alleen de kraan, maar onder het aanrecht staan twee apparaten en er is één boortje in het aanrechtblad nodig.',
     link: null,
   },
   {
     situatie: 'Gezin met meerdere kinderen (hoog verbruik)',
-    beste: 'Onderbouw RO of 4-in-1 kokend water kraan',
+    beste: 'Onderbouw RO',
     reden:
-      'Gezinnen met hoog waterverbruik (150+ liter gefilterd water per dag) hebben een systeem nodig met grote tank en hoge doorstroomsnelheid. Een onderbouwsysteem met 8–12 liter tank en boostpomp — of een 4-in-1 systeem — voldoet aan dit profiel.',
+      'Gezinnen met hoog waterverbruik (150+ liter gefilterd water per dag) hebben een systeem nodig met grote tank en hoge doorstroomsnelheid. Een onderbouwsysteem met 8 tot 12 liter tank en boostpomp voldoet aan dit profiel. Bij een 4-in-1 kraan geeft de fabrikant geen doorstroom op en is de heetwatertank 2,3 liter (circa 1,2 liter direct beschikbaar).',
     link: null,
   },
   {
     situatie: 'Hard water gebied (>15 °dH)',
     beste: 'Geïntegreerde 4-in-1 kokend water kraan',
     reden:
-      'In hard-watergebieden verwijdert het RO-membraan van een 4-in-1 systeem effectief kalk, terwijl de geïntegreerde remineralisatiefilter gezonde mineralen terugplaatst. Het geoptimaliseerde afvalwaterratio is in harde watergebieden een extra voordeel.',
+      'In hard-watergebieden verwijdert het RO-membraan van een 4-in-1 systeem effectief kalk, terwijl de geïntegreerde remineralisatiefilter gezonde mineralen terugplaatst.',
     link: '/waterhardheid',
   },
   {
     situatie: 'Gezin dat kookwater wil besparen',
     beste: 'Geïntegreerde 4-in-1 kokend water kraan',
     reden:
-      'Een 4-in-1 kraan levert direct zeer heet water (circa 96°C) en gekoeld water: geen waterkoker meer nodig, geen wachttijd. In combinatie met osmose gefilterd water krijgt je het beste van beide werelden: kalkvrij én meteen heet.',
+      'Een 4-in-1 kraan levert direct zeer heet water (circa 96°C) en gekoeld water: geen waterkoker meer nodig, geen wachttijd. In combinatie met osmose gefilterd water krijg je het beste van beide werelden: kalkvrij én meteen heet.',
     link: '/4-in-1-kraan',
   },
 ];
@@ -216,10 +216,10 @@ export default function OsmoseVergelijkenPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-03" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184', 'Fabrikant / PureAqua (prijzen en filters)']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
-        <QuickAnswer answer="Er zijn drie typen osmosesystemen: onderbouw RO (€150–500, meest complete), aanrechtmodel (€100–350, makkelijkst te installeren) en geïntegreerde 4-in-1 kokend water kraan (€1.948, alles-in-één). Voor een gezin van 4 in een hard-watergebied is een onderbouw RO of 4-in-1 systeem de beste keuze." />
+        <QuickAnswer answer="Er zijn drie typen osmosesystemen: onderbouw RO (€150–500, meest complete), aanrechtmodel (€100–350, makkelijkst te installeren) en geïntegreerde 4-in-1 kokend water kraan (€1.948, alles-in-één). Voor een gezin van 4 in een hard-watergebied raden wij een onderbouw RO of 4-in-1 systeem aan." />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -389,7 +389,7 @@ export default function OsmoseVergelijkenPage() {
                   tank slaat vooraf gefilterd water op zodat je direct water hebt zonder wachttijd.
                   Een grotere tank (8–12 L) is prettig voor gezinnen met hoog verbruik. Een tank
                   van 3–5 L is voldoende voor 1–2 personen. Systemen zonder tank (tankloze systemen)
-                  produceren water op verzoek — direct, maar met een iets lagere stroomsnelheid.`,
+                  produceren water op verzoek: direct, maar met een iets lagere stroomsnelheid.`,
               },
               {
                 titel: 'Aantal filterstappen',
@@ -403,11 +403,12 @@ export default function OsmoseVergelijkenPage() {
               {
                 titel: 'Filtervervanging kosten per jaar',
                 uitleg: `De jaarlijkse filterkosten worden vaak vergeten bij de vergelijking, maar zijn
-                  cruciaal voor de total cost of ownership. Goedkope systemen met dure of veel filters
-                  kunnen duurder uitvallen dan kwalitatieve systemen met één jaarlijkse wissel. De
-                  geïntegreerde 4-in-1 kraan met osmose vervang je voorfilter en remineralisatiefilter circa jaarlijks
-                  en het membraan circa elke twee jaar: voorspelbaar in kosten. Vraag bij aanschaf altijd naar de specifieke
-                  filterreplacement kosten en hoe frequent de filters vervangen moeten worden.`,
+                  cruciaal voor de total cost of ownership. Een lage aanschafprijs zegt weinig als de
+                  filters duur zijn of vaak vervangen moeten worden. Bij de geïntegreerde 4-in-1 kraan
+                  met osmose vervang je voorfilter en remineralisatiefilter circa jaarlijks en het
+                  membraan circa elke twee jaar; op basis van omgerekende fabrikantprijzen is dat
+                  gemiddeld circa € 150 per jaar. Vraag bij aanschaf altijd naar de actuele
+                  vervangingskosten en hoe vaak de filters vervangen moeten worden.`,
               },
             ].map((s, i) => (
               <div key={s.titel} className="flex gap-4 items-start">
@@ -441,9 +442,8 @@ export default function OsmoseVergelijkenPage() {
                 'Geen aparte waterkoker meer nodig: direct zeer heet water (circa 96°C)',
                 'Omgekeerde osmose filtratie voor alle drinkwater en kookwater',
                 'Voorfilter en remineralisatiefilter circa jaarlijks, membraan circa elke twee jaar',
-                'Geoptimaliseerde afvalwaterratio — milieuvriendelijker dan basismodellen',
                 'Eén installatie vervangt waterkoker, Brita-kan en aparte osmosekraan',
-                'Strak design — één kraan in plaats van meerdere apparaten op het aanrecht',
+                'Strak design: één kraan in plaats van meerdere apparaten op het aanrecht',
               ].map(v => (
                 <div key={v} className="flex gap-2 items-start text-sm text-gray-700">
                   <span className="text-green-600 font-bold shrink-0">✓</span>
@@ -457,8 +457,7 @@ export default function OsmoseVergelijkenPage() {
               <p className="font-semibold text-gray-900 mb-2 text-sm">Voordelen ten opzichte van losse systemen</p>
               <ul className="text-sm text-gray-600 space-y-1">
                 <li className="flex gap-2"><span className="text-green-600">✓</span>Eén kraan voor alle functies</li>
-                <li className="flex gap-2"><span className="text-green-600">✓</span>Lagere totale filterkosten (één systeem)</li>
-                <li className="flex gap-2"><span className="text-green-600">✓</span>Hogere doorstroomsnelheid door geïntegreerde pomp</li>
+                <li className="flex gap-2"><span className="text-green-600">✓</span>Eén filterset voor gezuiverd, gekoeld en zeer heet water</li>
                 <li className="flex gap-2"><span className="text-green-600">✓</span>Gekoeld osmosewater zonder fles in de koelkast</li>
               </ul>
             </div>
@@ -509,23 +508,31 @@ export default function OsmoseVergelijkenPage() {
               </thead>
               <tbody>
                 {[
-                  { filter: 'Sedimentfilter', freq: 'Elk jaar', onderbouw: '€ 10–20', aanrecht: '€ 10–15', vierin1: 'Inbegrepen' },
-                  { filter: 'Koolstof voorfilter', freq: 'Elk jaar', onderbouw: '€ 15–30', aanrecht: '€ 10–20', vierin1: 'Inbegrepen' },
-                  { filter: 'RO-membraan', freq: 'Elke 2–3 jaar', onderbouw: '€ 40–80', aanrecht: '€ 30–60', vierin1: 'Inbegrepen' },
-                  { filter: 'Nafilter / remineralisatie', freq: 'Elk jaar', onderbouw: '€ 15–25', aanrecht: '€ 10–20', vierin1: 'Inbegrepen' },
-                  { filter: 'Complete jaarset (alle filters)', freq: 'Jaarlijks totaal', onderbouw: '€ 50–120', aanrecht: '€ 40–100', vierin1: '€ 80–150' },
+                  { filter: 'Sedimentfilter', freq: 'Elk jaar', onderbouw: '€ 10–20', aanrecht: '€ 10–15', vierin1: 'Eén voorfilter, circa jaarlijks', vierin1Rows: 2 },
+                  { filter: 'Koolstof voorfilter', freq: 'Elk jaar', onderbouw: '€ 15–30', aanrecht: '€ 10–20', vierin1: null, vierin1Rows: 1 },
+                  { filter: 'RO-membraan', freq: 'Elke 2–3 jaar', onderbouw: '€ 40–80', aanrecht: '€ 30–60', vierin1: 'Circa elke 2 jaar', vierin1Rows: 1 },
+                  { filter: 'Nafilter / remineralisatie', freq: 'Elk jaar', onderbouw: '€ 15–25', aanrecht: '€ 10–20', vierin1: 'Remineralisatiefilter, circa jaarlijks', vierin1Rows: 1 },
+                  { filter: 'Totaal per jaar (gemiddeld)', freq: 'Alle filters', onderbouw: '€ 50–120', aanrecht: '€ 40–100', vierin1: 'Circa € 150 gemiddeld*', vierin1Rows: 1 },
                 ].map((r, i) => (
-                  <tr key={r.filter} className={r.filter === 'Complete jaarset (alle filters)' ? 'bg-[#E0F2FE] font-semibold' : i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                  <tr key={r.filter} className={r.filter === 'Totaal per jaar (gemiddeld)' ? 'bg-[#E0F2FE] font-semibold' : i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                     <td className="py-2.5 px-3">{r.filter}</td>
                     <td className="py-2.5 px-3 text-center text-xs text-gray-500">{r.freq}</td>
                     <td className="py-2.5 px-3 text-center text-xs">{r.onderbouw}</td>
                     <td className="py-2.5 px-3 text-center text-xs">{r.aanrecht}</td>
-                    <td className="py-2.5 px-3 text-center text-xs">{r.vierin1}</td>
+                    {r.vierin1 !== null && (
+                      <td rowSpan={r.vierin1Rows} className="py-2.5 px-3 text-center text-xs">{r.vierin1}</td>
+                    )}
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-gray-500 mb-4">
+            * 4-in-1: indicatie op basis van fabrikantprijzen in Britse ponden (voorfilter 40, osmosemembraan
+            80 en remineralisatiefilter 50 pond; september 2026). Gemiddeld is dat circa 130 pond per jaar,
+            omgerekend circa € 150. In een jaar met membraanwissel betaal je meer, in een jaar zonder minder.
+            Dit is niet de PureAqua-prijs; vraag die na bij aankoop.
+          </p>
           <div className="bg-amber-50 border border-amber-100 rounded-xl p-4 text-sm text-gray-700">
             <strong className="text-amber-900">Let op:</strong> Het RO-membraan is de duurste
             filtercomponent maar gaat 2–3 jaar mee bij goed gebruik. Vervang het membraan op tijd:
@@ -583,7 +590,7 @@ export default function OsmoseVergelijkenPage() {
           >
             Bekijk osmose systemen →
           </Link>
-          <p className="text-xs text-blue-200 mt-3">Direct leverbaar · 2 jaar garantie</p>
+          <p className="text-xs text-blue-200 mt-3">4-in-1 kraan: 2 jaar all-in garantie via PureAqua</p>
         </section>
 
         {/* Interne links */}
@@ -592,7 +599,7 @@ export default function OsmoseVergelijkenPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { href: '/omgekeerde-osmose', label: 'Omgekeerde osmose: hoe werkt het?' },
-              { href: '/omgekeerde-osmose/kopen', label: 'Osmose filter kopen — welk systeem?' },
+              { href: '/omgekeerde-osmose/kopen', label: 'Osmose filter kopen: welk systeem?' },
               { href: '/4-in-1-kraan', label: '4-in-1 kokend water kraan met osmose filter' },
               { href: '/kennisbank/waterfilter-vergelijken', label: 'Kennisbank: waterfilter vergelijken' },
             ].map(l => (

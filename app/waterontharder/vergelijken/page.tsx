@@ -10,12 +10,12 @@ import { JoepCTA } from '@/components/JoepCTA';
 export const metadata: Metadata = {
   title: 'Waterontharder vergelijken: de beste modellen van 2026',
   description:
-    'Waterontharder vergelijken op capaciteit, zoutverbruik, NSF/ANSI 44 certificering, stroomverbruik en smart-bediening. 6-modellen tabel, 5-jaar TCO en wanneer.',
+    'Waterontharders vergeleken op zout, garantie en kosten, met 5-jaarskostentabel. Onze keuze: de JOEP, compact, tot 5 m3 per uur, 1.998 euro geïnstalleerd.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder/vergelijken' },
   openGraph: {
     title: 'Waterontharder vergelijken: de beste modellen van 2026',
     description:
-      'Vergelijk de beste waterontharders van 2026: Kinetico, Harvey, BWT, Ecowat en meer. Capaciteit, zoutverbruik, NSF-certificering, kosten en wie wat nodig.',
+      'Onze keuze is de JOEP waterontharder (1.998 euro geïnstalleerd, tot 5 m3 per uur, 20 jaar fabrieksgarantie op de hars). Vergeleken met Kinetico, Harvey, BWT en meer, met prijzen, garantie en een 5-jaarskostentabel.',
     url: 'https://waterfilterplatform.nl/waterontharder/vergelijken',
     type: 'article',
   },
@@ -25,12 +25,12 @@ const faqItems = [
   {
     question: 'Wat is het belangrijkste criterium bij het vergelijken van waterontharders?',
     answer:
-      'Capaciteit en regeneratielogica zijn de twee meest bepalende criteria. Een ontharder die te klein is voor jouw waterverbruik en waterhardheid zal te frequent regenereren, wat leidt tot hoger zout- en waterverbruik en snellere slijtage. Kies altijd een vraaggestuurde (demand-initiated) ontharder boven een tijdgestuurde — dat scheelt 30–50% op zout en water.',
+      'Capaciteit en regeneratielogica zijn de twee meest bepalende criteria. Een ontharder die te klein is voor jouw waterverbruik en waterhardheid zal te frequent regenereren, wat leidt tot hoger zout- en waterverbruik en snellere slijtage. Een vraaggestuurde (demand-initiated) ontharder bespaart doorgaans zout en water ten opzichte van een tijdgestuurde. Voor onze keuze, de JOEP waterontharder, staan de harscapaciteit en de manier van regeneratiesturing niet in onze bronnen. Wel bekend: een regeneratie duurt circa 1 uur (standaard \'s nachts) en gebruikt 0,9 tot 1,5 kg zout. De 5 m3 (5.000 liter) per uur van JOEP is de maximale doorstroom, niet de capaciteit tussen twee regeneraties. Laat bij een groot huishouden of zeer hard water vooraf checken of hij niet te vaak regenereert.',
   },
   {
     question: 'Wat betekent NSF/ANSI 44 certificering bij een waterontharder?',
     answer:
-      'NSF/ANSI 44 is de internationale productstandaard voor residentiële ionenwisselaars. Een gecertificeerd systeem voldoet aan aantoonbare prestatiespecificaties voor harshoeveelheid, zoutefficiëntie en materiaalkwaliteit. Voor de Nederlandse markt is NEN 1006 relevanter als installatienorm, maar NSF/ANSI 44 biedt aanvullende garantie voor productkwaliteit. Kies bij voorkeur een ontharder met deze certificering.',
+      'NSF/ANSI 44 is de internationale productstandaard voor residentiële ionenwisselaars. Een gecertificeerd systeem voldoet aan aantoonbare prestatiespecificaties voor harshoeveelheid, zoutefficiëntie en materiaalkwaliteit. Voor de Nederlandse markt is NEN 1006 relevanter als installatienorm, maar NSF/ANSI 44 biedt aanvullende garantie voor productkwaliteit. Het is een nuttig extra kwaliteitssignaal, geen harde eis. Voor onze keuze JOEP is geen NSF/ANSI 44-certificaat aangetoond; wij kiezen hem op formaat (48 x 27 x 48,5 cm), doorstroom tot 5 m3 per uur, 20 jaar fabrieksgarantie op de hars en 1.998 euro compleet geïnstalleerd.',
   },
   {
     question: 'Wat is het verschil tussen een single-tank en duplex (twin-tank) ontharder?',
@@ -69,7 +69,7 @@ const modellen = [
     naam: 'JOEP waterontharder',
     type: 'Compacte ionenwisselaar met zout (48 x 27 x 48,5 cm)',
     capaciteitL: 'tot 5 m3 per uur',
-    zoutPerJaar: '0,9–1,5 kg per regeneratie',
+    zoutPerJaar: '0,9 tot 1,5 kg per regeneratie (fabrikant: theoretisch circa 15 kg per persoon per jaar bij 8 dH)',
     stroomverbruik: 'Stopcontact (12V-transformator)',
     nsf44: false,
     smart: false,
@@ -97,7 +97,7 @@ const modellen = [
     type: 'Twin-tank, compact',
     capaciteitL: '25–40 L/dag',
     zoutPerJaar: '70–100 kg',
-    stroomverbruik: '< 5 W',
+    stroomverbruik: 'Geen (non-electric)',
     nsf44: true,
     smart: false,
     aanschaf: '€ 900 – 1.300',
@@ -241,8 +241,9 @@ export default function WaterontharderVergelijkenPage() {
         article={{
           title: 'Waterontharder vergelijken: de beste modellen van 2026',
           description:
-            'Vergelijk de beste waterontharders van 2026 op capaciteit, zoutverbruik, NSF/ANSI 44 certificering, stroomverbruik en smart-bediening.',
+            'Waterontharders vergeleken op zout, garantie en kosten, met 5-jaarskostentabel. Onze keuze: de JOEP, compact, tot 5 m3 per uur, 1.998 euro geïnstalleerd.',
           datePublished: '2026-04-22',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/waterontharder/vergelijken',
         }}
       />
@@ -265,7 +266,7 @@ export default function WaterontharderVergelijkenPage() {
           <div className="bg-white border border-[#005F8A]/30 rounded-xl p-4 mb-6">
             <p className="text-xs font-semibold text-[#005F8A] uppercase tracking-wide mb-1">Snel antwoord</p>
             <p className="text-gray-700 text-sm leading-relaxed">
-              De beste waterontharder voor een gemiddeld gezin in een hard-watergebied is een vraaggestuurde ionenwisselaar met NSF/ANSI 44 certificering. Kinetico en Harvey scoren het hoogst op zoutefficiëntie en betrouwbaarheid; BWT biedt smart-functies. Budget modellen zijn goedkoper in aanschaf maar duurder in gebruik.
+              Onze keuze is de JOEP waterontharder: een zeer compacte ionenwisselaar met zout (48 x 27 x 48,5 cm), tot 5 m3 per uur, 20 jaar fabrieksgarantie op de hars en 1.998 euro compleet geïnstalleerd (zelf installeren: 1.699 euro). Kinetico en Harvey zijn twin-tank-alternatieven die ook tijdens regeneratie zacht water leveren; BWT biedt smart-functies. Budget modellen zijn goedkoper in aanschaf maar duurder in gebruik. Transparant: JOEP wordt verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.
             </p>
           </div>
 
@@ -288,14 +289,14 @@ export default function WaterontharderVergelijkenPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
           <p className="font-semibold text-[#003F5C] mb-3 text-sm uppercase tracking-wide">Op deze pagina</p>
           <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
             <li><a href="#criteria" className="hover:underline">Koopkriteria</a></li>
-            <li><a href="#vergelijking" className="hover:underline">6-modellen vergelijkingstabel</a></li>
+            <li><a href="#vergelijking" className="hover:underline">7-modellen vergelijkingstabel</a></li>
             <li><a href="#zoutloos-vs-zout" className="hover:underline">Zoutloos vs. ionenwisselaar</a></li>
             <li><a href="#wie-wat" className="hover:underline">Wie heeft wat nodig?</a></li>
             <li><a href="#tco" className="hover:underline">5-jaar kostentabel</a></li>
@@ -324,7 +325,7 @@ export default function WaterontharderVergelijkenPage() {
                 nr: '2',
                 titel: 'Regeneratiefrequentie en -logica',
                 inhoud:
-                  'Tijdgestuurde ontharders regenereren op vaste momenten (bijv. elke nacht om 02:00), ongeacht het werkelijke waterverbruik. Dit leidt tot 30–50% meer zout- en watergebruik dan nodig. Vraaggestuurde systemen meten het werkelijke verbruik en regenereren alleen wanneer het harsbed daadwerkelijk verzadigd raakt. Kies altijd een vraaggestuurd systeem voor lagere gebruikskosten.',
+                  'Tijdgestuurde ontharders regenereren op vaste momenten (bijv. elke nacht om 02:00), ongeacht het werkelijke waterverbruik. Dit leidt tot meer zout- en watergebruik dan nodig. Vraaggestuurde systemen meten het werkelijke verbruik en regenereren alleen wanneer het harsbed daadwerkelijk verzadigd raakt. Een vraaggestuurd systeem houdt de gebruikskosten doorgaans lager.',
               },
               {
                 nr: '3',
@@ -336,7 +337,7 @@ export default function WaterontharderVergelijkenPage() {
                 nr: '4',
                 titel: 'NSF/ANSI 44 certificering',
                 inhoud:
-                  'NSF/ANSI 44 is de internationale productstandaard voor residentiële waterontharders. Gecertificeerde systemen zijn getest op harshoeveelheid, zoutefficiëntie, structurele integriteit en materiaalveiligheid. Een NSF 44-gecertificeerde ontharder geeft meer garantie over de kwaliteit dan een niet-gecertificeerd model. Vraag de leverancier naar het certificaatnummer om zelfstandig te verifiëren.',
+                  'NSF/ANSI 44 is de internationale productstandaard voor residentiële waterontharders. Gecertificeerde systemen zijn getest op harshoeveelheid, zoutefficiëntie, structurele integriteit en materiaalveiligheid. Een NSF 44-gecertificeerde ontharder geeft meer garantie over de kwaliteit dan een niet-gecertificeerd model. Het is een nuttig extra kwaliteitssignaal, geen harde eis. Voor onze keuze JOEP is geen NSF/ANSI 44-certificaat aangetoond. Vraag de leverancier naar het certificaatnummer om zelfstandig te verifiëren.',
               },
               {
                 nr: '5',
@@ -370,13 +371,13 @@ export default function WaterontharderVergelijkenPage() {
           </div>
         </section>
 
-        {/* 6-modellen vergelijkingstabel */}
+        {/* 7-modellen vergelijkingstabel */}
         <section id="vergelijking">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            6 modellen vergeleken: capaciteit, zout, kosten en garantie
+            7 modellen vergeleken: zout, kosten en garantie
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Hieronder vergelijken we zes waterontharders die representatief zijn voor het huidige aanbod in Nederland en België. Prijzen zijn richtprijzen exclusief installatie.
+            Hieronder vergelijken we onze keuze JOEP met zes waterontharders die representatief zijn voor het huidige aanbod in Nederland en België. Prijzen van de andere modellen zijn richtprijzen exclusief installatie; bij JOEP staat ook de prijs inclusief installatie.
           </p>
           <div className="overflow-x-auto -mx-4 px-4 mb-4">
             <table className="w-full min-w-[680px] text-sm border-collapse">

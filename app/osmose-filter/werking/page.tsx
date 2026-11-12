@@ -6,12 +6,12 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 export const metadata: Metadata = {
   title: 'Hoe Werkt een Osmose Filter? Complete Uitleg',
   description:
-    'Complete uitleg over hoe een osmosefilter werkt: het osmoseprincipe, semi-permeabel membraan (0,0001 micron), meerfasige filtratie, TDS-rejectie en.',
+    'Hoe werkt een osmosefilter? Uitleg over het osmoseprincipe, het membraan van 0,0001 micron, de filterstappen en wat TDS-rejectie in de praktijk betekent.',
   alternates: { canonical: 'https://waterfilterplatform.nl/osmose-filter/werking' },
   openGraph: {
     title: 'Hoe Werkt een Osmose Filter? Complete Uitleg',
     description:
-      'Van osmoseprincipe tot membraantechnologie: leer hoe een omgekeerde osmosefilter 95–99% van verontreinigingen verwijdert via een semi-permeabel membraan van.',
+      'Van osmoseprincipe tot membraan: zo houdt een omgekeerde osmosefilter 95 tot 99% van de opgeloste stoffen in leidingwater tegen.',
     url: 'https://waterfilterplatform.nl/osmose-filter/werking',
     type: 'article',
   },
@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: 'Hoe verschilt een ingebouwd osmosefilter in een 4-in-1 kraan van een losstaand systeem?',
     answer:
-      'Een losstaand onderbouwsysteem heeft een aparte druktank (3–12 liter) voor wateropslag en een apart osmosekraantje naast uw gewone kraan. Een 4-in-1 kokend water kraan integreert het osmosemembraan in het systeem onder het aanrecht en combineert gewoon warm en koud kraanwater met osmosewater op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) uit één elegante kraan; bruisend water zit er bij de PureAqua 4-in-1 niet in. De 4-in-1 heeft geen aparte druktank: het membraan produceert water direct on-demand of via een kleine interne buffer. Onder het aanrecht staan wel twee apparaten (heet-/koelunit en osmose-unit).',
+      'Een losstaand onderbouwsysteem levert osmosewater via een apart osmosekraantje naast uw gewone kraan of via een 3-weg-kraan die de gewone kraan vervangt (zoals bij The Source van PureAqua). Veel onderbouwsystemen hebben daarnaast een druktank van 3 tot 12 liter. Een 4-in-1 kokend water kraan integreert het osmosemembraan in het systeem onder het aanrecht en combineert gewoon warm en koud kraanwater met osmosewater op kamertemperatuur, gekoeld en zeer heet (circa 96 graden) uit één elegante kraan; bruisend water zit er bij de PureAqua 4-in-1 niet in. De 4-in-1 heeft geen aparte druktank: het membraan produceert water direct on-demand of via een kleine interne buffer. Onder het aanrecht staan wel twee apparaten (heet-/koelunit en osmose-unit).',
   },
 ];
 
@@ -603,11 +603,11 @@ export default function OsmoseFilterWerkingPage() {
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
               <p className="font-semibold text-gray-900 mb-3 text-sm">Losstaand onderbouwsysteem</p>
               <ul className="space-y-2 text-xs text-gray-700">
-                <li className="flex gap-2"><span className="text-gray-400 shrink-0">→</span>Aparte druktank (3–12 liter) voor opslag</li>
-                <li className="flex gap-2"><span className="text-gray-400 shrink-0">→</span>Extra kraantje naast bestaande keukenkraan</li>
+                <li className="flex gap-2"><span className="text-gray-400 shrink-0">→</span>Vaak een druktank van 3 tot 12 liter voor opslag</li>
+                <li className="flex gap-2"><span className="text-gray-400 shrink-0">→</span>Apart osmosekraantje naast de keukenkraan, of een 3-weg-kraan die de keukenkraan vervangt</li>
                 <li className="flex gap-2"><span className="text-gray-400 shrink-0">→</span>Gefilterd water op kamertemperatuur of koud</li>
                 <li className="flex gap-2"><span className="text-gray-400 shrink-0">→</span>Aparte waterkoker nodig voor kokend water</li>
-                <li className="flex gap-2"><span className="text-gray-400 shrink-0">→</span>Aanschafprijs: €150–500 (systeem)</li>
+                <li className="flex gap-2"><span className="text-gray-400 shrink-0">→</span>Aanschafprijs: doorgaans €300 tot €800 plus installatie</li>
                 <li className="flex gap-2"><span className="text-gray-400 shrink-0">→</span>Meerdere losse filtersets te vervangen</li>
               </ul>
             </div>

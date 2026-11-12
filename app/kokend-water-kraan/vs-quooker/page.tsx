@@ -9,7 +9,7 @@ import { QuickAnswer } from '@/components/QuickAnswer';
 export const metadata: Metadata = {
   title: 'Kokend water kraan vs Quooker: welke is beter in 2026?',
   description:
-    'Quooker of een 4-in-1 kokend water kraan met osmose? Eerlijke vergelijking op prijs, functies, filterkwaliteit en totale kosten — inclusief 12-criteria tabel.',
+    'Quooker of een 4-in-1 kokend water kraan met osmose? Eerlijke vergelijking op prijs, functies, filterkwaliteit en totale kosten, inclusief 12-criteria tabel.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan/vs-quooker' },
   openGraph: {
     title: 'Kokend water kraan vs Quooker: welke is beter in 2026?',
@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: 'Verwijdert een Quooker ook PFAS en nitraten?',
     answer:
-      'Nee. Een standaard Quooker heeft geen osmosefilter. De CUBE-tank van Quooker gebruikt een koolstoffilter die chloor en geur verbetert, maar PFAS, nitraten, lood, arseen en microplastics blijven aanwezig in het water — ook in het kokende water. Alleen een omgekeerde osmose filter verwijdert deze stoffen effectief.',
+      'Nee. Een standaard Quooker heeft geen osmosefilter. De CUBE-tank van Quooker gebruikt een koolstoffilter die chloor en geur verbetert, maar PFAS, nitraten, lood, arseen en microplastics blijven aanwezig in het water, ook in het kokende water. Alleen een omgekeerde osmose filter verwijdert deze stoffen effectief.',
   },
   {
     question: 'Wat kost een Quooker in totaal versus een 4-in-1 osmose kraan?',
@@ -44,12 +44,12 @@ const faqItems = [
   {
     question: 'Is een Quooker geschikt als ik PFAS in mijn drinkwater heb?',
     answer:
-      'Nee, een standaard Quooker (ook met CUBE) verwijdert geen PFAS. Hiervoor is omgekeerde osmose noodzakelijk — de enige bewezen technologie om PFAS effectief uit drinkwater te verwijderen. Kiest u voor een Quooker én osmosefiltratie, dan heeft u twee aparte systemen nodig. Een 4-in-1 kraan combineert beide in één product.',
+      'Nee, een standaard Quooker (ook met CUBE) verwijdert geen PFAS. Daarvoor heeft u een filter nodig dat PFAS aantoonbaar vermindert, zoals omgekeerde osmose: SGS mat bij een nieuwe PureAqua 4-in-1 meer dan 99,6% minder PFOS en 99,5% minder PFOA. Kiest u voor een Quooker én osmosefiltratie, dan heeft u twee aparte systemen nodig. Een 4-in-1 kraan combineert beide in één product.',
   },
   {
     question: 'Hoeveel energie verbruikt een Quooker versus een 4-in-1 kraan?',
     answer:
-      'Een Quooker verbruikt in standbymodus 3–5 watt per uur om het water op temperatuur te houden — circa €13–22 per jaar aan extra elektriciteitskosten. Voor de PureAqua 4-in-1 kraan is geen fabrieksopgave van het standbyverbruik bekend. Hij houdt zowel een heetwatertank als een koelunit op temperatuur, dus reken op meer dan een Quooker zonder CUBE.',
+      'Een Quooker verbruikt in standbymodus 3 tot 5 watt continu om het water op temperatuur te houden, goed voor circa €13 tot €22 per jaar aan extra elektriciteitskosten. Voor de PureAqua 4-in-1 kraan is geen fabrieksopgave van het standbyverbruik bekend. Hij houdt zowel een heetwatertank als een koelunit op temperatuur, dus reken op meer dan een Quooker zonder CUBE.',
   },
   {
     question: 'Kan ik een Quooker zelf installeren?',
@@ -166,8 +166,8 @@ export default function VsQuookerPage() {
           <p className="text-gray-700 mb-5 leading-relaxed">
             Zowel een Quooker (kokend, 100°C) als een PureAqua 4-in-1 kraan (zeer heet, circa 96°C) geven direct heet water via een geïsoleerd
             boilersysteem onder het aanrecht. U kunt water voor thee, pasta, koffie of sterilisatie direct tappen
-            zonder waterkoker. Beide systemen hebben een veiligheidsventiel dat brandwonden voorkomt en een slim
-            reservoir dat energie-efficiënt water op temperatuur houdt.
+            zonder waterkoker. Bij de PureAqua 4-in-1 is circa 1,2 liter heet water direct beschikbaar uit een
+            tank van 2,3 liter; daarna is hij in 3 tot 4 minuten weer op temperatuur.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
             <div className="bg-white border border-gray-100 rounded-xl p-4">
@@ -203,9 +203,9 @@ export default function VsQuookerPage() {
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Het cruciale verschil zit in de filtratie. Een Quooker geeft direct kokend <em>kraanwater</em> — wat in
-            Nederland van hoge kwaliteit is, maar bepaalde verontreinigingen als PFAS, nitraten en lood (uit
-            huisleidingen) nog steeds kan bevatten. Een 4-in-1 kraan met osmose filtert het water eerst met osmose
+            Het cruciale verschil zit in de filtratie. Een Quooker geeft direct kokend <em>kraanwater</em>. Dat is in
+            Nederland van hoge kwaliteit, maar kan bepaalde verontreinigingen als PFAS, nitraten en lood (uit
+            huisleidingen) nog steeds bevatten. Een 4-in-1 kraan met osmose filtert het water eerst met osmose
             voordat het wordt verwarmd of gekoeld.
           </p>
         </section>
@@ -217,7 +217,7 @@ export default function VsQuookerPage() {
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
             De Quooker heeft standaard geen osmosefilter. De CUBE voegt wel een koolstoffilter toe, maar een
-            koolstoffilter verwijdert geur, chloor en een deel van de organische stoffen — géén zware metalen,
+            koolstoffilter verwijdert geur, chloor en een deel van de organische stoffen, maar géén zware metalen,
             nitraten, PFAS of farmaceutische residuen. Dit zijn precies de verontreinigingen die in toenemende
             mate in het nieuws komen in Nederland:
           </p>
@@ -237,7 +237,7 @@ export default function VsQuookerPage() {
               },
               {
                 stof: 'Microplastics',
-                uitleg: 'Microplastics zijn aangetroffen in Nederlands leidingwater. Een RO-membraan houdt deeltjes groter dan 0,0001 micron tegen — vrijwel alle microplastics. Een koolstoffilter biedt hier geen bescherming.',
+                uitleg: 'Microplastics zijn aangetroffen in Nederlands leidingwater. Een RO-membraan houdt deeltjes groter dan 0,0001 micron tegen, en dat zijn vrijwel alle microplastics. Een koolstoffilter biedt hier geen bescherming.',
               },
             ].map(s => (
               <div key={s.stof} className="bg-red-50 border border-red-100 rounded-xl p-4 text-sm">
@@ -278,7 +278,7 @@ export default function VsQuookerPage() {
                   { post: 'Apart osmosesysteem', quooker: '€ 400–600', vierin1: 'Ingebouwd' },
                   { post: 'All-in aanschafprijs', quooker: '€ 2.640–2.840', vierin1: '€ 1.948' },
                   { post: 'Installatie (professional)', quooker: '€ 200–300', vierin1: '€ 299 (optioneel)' },
-                  { post: 'Filterkosten/jaar (CUBE circa jaarlijks)', quooker: '€ 39–49', vierin1: '—' },
+                  { post: 'Filterkosten/jaar (CUBE circa jaarlijks)', quooker: '€ 39–49', vierin1: 'n.v.t.' },
                   { post: 'Osmosefilterkosten/jaar', quooker: '€ 60–100 (apart)', vierin1: 'circa € 150 (gemiddeld)' },
                   { post: 'Totale kosten jaar 1', quooker: '€ 2.939–3.289', vierin1: '± € 2.352' },
                   { post: 'Totale kosten 3 jaar', quooker: '€ 3.137–3.587', vierin1: '± € 2.657' },
@@ -350,10 +350,10 @@ export default function VsQuookerPage() {
             Design en energieverbruik: wat zijn de verschillen?
           </h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            Beide systemen zijn ontworpen voor een moderne keuken en hebben een slank kraandesign dat naast
-            de bestaande mengkraan wordt geïnstalleerd. Quooker biedt een breder assortiment kraanafwerkingen
-            (mat zwart, geborsteld goud, chroom, brons) en heeft daarmee een voorsprong op het gebied van
-            designflexibiliteit. PureAqua 4-in-1 is verkrijgbaar in de meest gangbare afwerkingen.
+            Beide systemen zijn ontworpen voor een moderne keuken. De PureAqua 4-in-1 geeft ook gewoon warm en
+            koud kraanwater, dus u heeft geen aparte mengkraan ernaast nodig. Quooker biedt een breder
+            assortiment kraanafwerkingen (mat zwart, geborsteld goud, chroom, brons) en heeft daarmee een
+            voorsprong op het gebied van designflexibiliteit.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
             <div className="bg-white border border-gray-100 rounded-xl p-4">
@@ -370,16 +370,15 @@ export default function VsQuookerPage() {
               <ul className="space-y-1.5 text-sm text-gray-700">
                 <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Standby: geen fabrieksopgave bekend</li>
                 <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Houdt heet water én gekoeld water op temperatuur</li>
-                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Osmosepomp: kortstondig actief bij tappen</li>
-                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Vergelijkbaar energieprofiel met Quooker</li>
+                <li className="flex gap-2"><span className="text-gray-400 shrink-0">•</span>Waarschijnlijk hoger dan een Quooker zonder CUBE (heet én koelen)</li>
               </ul>
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Beide systemen zijn aanzienlijk energiezuiniger dan dagelijks een waterkoker opwarmen. Een
-            standaard waterkoker (2.000 watt) verbruikt bij 4× dagelijks gebruik circa 70–100 kWh per jaar,
-            terwijl de standby van een kokendwaterkraan op 26–44 kWh per jaar uitkomt. Op energiegebied
-            zijn Quooker en 4-in-1 kraan nagenoeg gelijkwaardig.
+            Een waterkoker die u 4x per dag gebruikt voor circa een halve liter water, verbruikt circa 70 tot
+            100 kWh per jaar (onze rekensom op basis van die aanname). Voor de PureAqua 4-in-1 is geen
+            fabrieksopgave van het standbyverbruik bekend; omdat hij heet én gekoeld water op temperatuur
+            houdt, kunt u er niet van uitgaan dat hij zuiniger is dan een waterkoker of een Quooker zonder CUBE.
           </p>
         </section>
 

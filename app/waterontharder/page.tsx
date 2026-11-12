@@ -6,152 +6,133 @@ import { HubCrossLinks } from '@/components/HubCrossLinks';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { AuthorBox } from '@/components/AuthorBox';
 import { JoepCTA } from '@/components/JoepCTA';
 import { JoepRecommendation } from '@/components/JoepRecommendation';
+import { JOEP, JOEP_MARKET, JOEP_MIN_DH, JOEP_POSITIONING } from '@/lib/joep.mjs';
+import { FOUR_IN_ONE, THREE_WAY } from '@/lib/kranen.mjs';
+import { COUNTERTOP } from '@/lib/countertop.mjs';
+import { FACTS } from '@/lib/facts.mjs';
+
+const PUBLISHED = '2025-09-01';
+const MODIFIED = '2026-11-10';
+const PAGE_URL = 'https://waterfilterplatform.nl/waterontharder';
+const ZACHT = FACTS.hardZachtGrens.value;
+const HARD = FACTS.hardGrens.value;
+const PFAS_ADVIES = FACTS.pfasRivmAdvieswaarde.value;
+const EU_RICHTLIJN = FACTS.euRichtlijn.value;
+// Duur van een regeneratie uit lib/joep.mjs ("circa 1 uur, standaard ..."): alleen het deel voor de komma.
+const REGENERATIE_DUUR = JOEP.regenerationTime.split(',')[0];
+const NOS_GREENPEACE = 'https://nos.nl/artikel/2632030';
+
+const TITLE = 'Waterontharder: werking en kosten';
+const DESCRIPTION =
+  'Wat een waterontharder doet, vanaf welke hardheid hij zinvol is en wat hij kost. Met eerlijke alternatieven en waarom JOEP volgens ons de slimste keuze is.';
 
 export const metadata: Metadata = {
-  title: 'Heb ik een waterontharder nodig? Werking, kosten & advies',
-  description:
-    'Alles over de waterontharder: hoe een ionenwisselaar werkt, soorten, kosten aanschaf en zout, onderhoud en wanneer een waterontharder kopen zinvol is.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/waterontharder' },
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'Waterontharder — werking, kosten en alternatieven',
-    description:
-      'Complete gids over de waterontharder: ionenwisselaar, zoutarm, magnetisch, kosten, onderhoud en vergelijking met osmose en kalkfilter.',
-    url: 'https://waterfilterplatform.nl/waterontharder',
+    title: 'Waterontharder: wat het doet, wat het kost en onze keuze',
+    description: DESCRIPTION,
+    url: PAGE_URL,
     type: 'article',
   },
 };
+
+const quickAnswer = `Een waterontharder haalt kalk (calcium en magnesium) uit al het water in huis, meestal via ionenwisseling met zout. Dat is doorgaans zinvol vanaf ongeveer ${JOEP_MIN_DH} dH; bij zacht water (tot ${ZACHT} dH) heb je hem niet nodig. Wil je alleen zuiver drinkwater, dan is osmose voor de keukenkraan logischer. Een zoutloos systeem verwijdert geen kalk, maar beperkt aanslag. Onze keuze: ${JOEP_POSITIONING} Bij PureAqua kost JOEP ${JOEP.installedPrice} compleet geïnstalleerd.`;
 
 const faqItems = [
   {
     question: 'Wat doet een waterontharder precies?',
     answer:
-      'Een waterontharder verwijdert calcium- en magnesiumionen — de veroorzakers van kalk — uit het leidingwater. De meest gebruikte techniek is ionenwisseling: hardheidsmineralen worden uitgewisseld tegen natriumionen op een harsbed. Het resultaat is zacht water dat geen kalkafzetting achterlaat op kranen, tegels of apparaten.',
+      'Een waterontharder haalt calcium en magnesium uit het leidingwater. Die twee mineralen veroorzaken kalk. De meest gebruikte techniek is ionenwisseling: de hardheidsmineralen worden op een harsbed uitgewisseld tegen natrium. Het resultaat is zacht water dat veel minder kalkaanslag achterlaat op kranen, tegels en apparaten.',
+  },
+  {
+    question: 'Heb ik een waterontharder nodig?',
+    answer: `Dat hangt af van de hardheid van je kraanwater. Vanaf ongeveer ${JOEP_MIN_DH} dH wordt een ontharder voor het hele huis doorgaans zinvol, zeker als je last hebt van kalk op kranen, in de douche en in apparaten. Bij zacht water (tot ${ZACHT} dH) heb je geen ontharder nodig. De hardheid verschilt sterk per gemeente; zoek die van jou op via onze pagina over waterhardheid per gemeente.`,
   },
   {
     question: 'Hoe werkt een ionenwisselaar waterontharder?',
-    answer:
-      'In de ontharderkolom zit een bed van kleine harskorrels beladen met natriumionen. Wanneer hard water door het harsbed stroomt, ruilen calcium- en magnesiumionen van plek met de natriumionen. Na verloop van tijd is het harsbed verzadigd en wordt het geregenereerd: een zoutoplossing (pekel) spoelt het harsbed schoon en laadt het opnieuw op met natrium. Dit regeneratieproces duurt 1-2 uur en verbruikt 5-15 kg zout per cyclus.',
+    answer: `In de ontharder zit een bed van kleine harskorrels met natrium. Stroomt hard water erdoor, dan nemen calcium en magnesium de plaats van het natrium in. Is het harsbed vol, dan regenereert de ontharder: een zoutoplossing spoelt het hars schoon en laadt het opnieuw op. Hoeveel zout en water dat kost, verschilt per model. Bij JOEP is dat volgens de fabrikant ${JOEP.saltPerRegeneration} zout en ${JOEP.waterPerRegeneration} water per regeneratie. Een regeneratie duurt ${REGENERATIE_DUUR} en gebeurt standaard 's nachts.`,
   },
   {
-    question: 'Mag je zacht water (van een waterontharder) drinken?',
+    question: 'Mag je zacht water van een waterontharder drinken?',
     answer:
-      'Dit is omstreden. Zacht water van een klassieke ionenwisselaar bevat meer natrium dan onbehandeld leidingwater. Voor de meeste gezonde volwassenen is het verschil verwaarloosbaar. Voor mensen die natriumarm dieet volgen, baby\'s en kleine kinderen wordt aanbevolen om een aparte aftappunt voor onbehandeld of gefilterd drinkwater te installeren. Controleer altijd de natriumwaarden in het eindproduct.',
+      'Ja, voor de meeste gezonde volwassenen is dat geen probleem. Zacht water van een ionenwisselaar bevat wel meer natrium dan onbehandeld kraanwater, en hoe meer kalk er wordt verwijderd, hoe meer natrium erbij komt. Volg je een natriumarm dieet of maak je flesvoeding, gebruik dan een aparte kraan met onbehandeld of gefilterd water en overleg bij twijfel met je arts of consultatiebureau.',
   },
   {
-    question: 'Wat is het verschil tussen een zout- en zoutarme waterontharder?',
+    question: 'Wat is het verschil tussen een ontharder met zout en een zoutloze waterontharder?',
     answer:
-      'Een klassieke waterontharder gebruikt zout (NaCl) om het harsbed te regenereren en wisselt calcium/magnesium tegen natrium. Een zoutarme waterontharder (ook wel "waterverbeteraar" of "zoutvrije ontharding") gebruikt een andere technologie zoals TAC (Template Assisted Crystallization) die kalk niet verwijdert maar omzet in een kristalvorm die niet aan oppervlakken hecht. Zoutarme systemen verwijderen kalk dus niet écht — ze voorkomen kalkaanslag.',
+      'Een klassieke ontharder met zout haalt calcium en magnesium echt uit het water. Een zoutloos systeem (bijvoorbeeld TAC) laat de kalk in het water, maar zet die om in kristallen die minder aan oppervlakken hechten. Zoutloos voorkomt dus deels aanslag, maar maakt het water niet zacht. Bij hard water werkt een ontharder met zout volgens ons beter.',
   },
   {
     question: 'Hoeveel zout verbruikt een waterontharder per jaar?',
-    answer:
-      'Een gemiddeld gezin van 4 personen verbruikt 50 tot 150 kg zout per jaar, afhankelijk van de waterhardheid in de regio, het waterverbruik en de instelling van de ontharder. Zout kost circa €0,20-0,40 per kg, wat neerkomt op €10-60 per jaar aan zoutkosten. Moderne ontharders met vraaggestuurde regeneratie verbruiken 30-50% minder zout dan oudere modellen.',
+    answer: `Dat hangt af van de hardheid, je waterverbruik en het model. Als rekenvoorbeeld: de fabrikant van JOEP noemt ${JOEP.saltPerYear}. Bij harder water en een groter huishouden ligt het verbruik hoger. Reken het voor je eigen situatie uit met onze rekenhulp voor zoutkosten.`,
   },
   {
-    question: 'Wat is het nadeel van een waterontharder ten opzichte van omgekeerde osmose?',
-    answer:
-      'Een waterontharder verwijdert alleen kalk (calcium en magnesium). Chloor, nitraten, pesticiden, zware metalen, PFAS en microplastics blijven in het water. Omgekeerde osmose verwijdert 95-99% van alle opgeloste stoffen — een veel grondiger filtratie. Bovendien voegt een waterontharder natrium toe aan het water, terwijl osmose water neutraal is. Wie zowel kalk als andere verontreinigingen wil aanpakken, combineert soms beide systemen.',
-  },
-  {
-    question: 'Is een waterontharder zinvol in mijn gemeente?',
-    answer:
-      'Een waterontharder is het meest zinvol bij een waterhardheid van 15 °dH (Duits graden) of hoger — dat is "hard" tot "zeer hard" water. Grote delen van Noord-Holland, Zuid-Holland, Zeeland, Noord-Brabant en Limburg hebben hard tot zeer hard leidingwater. Check de actuele waterhardheid voor jouw gemeente in onze waterhardheid-database.',
+    question: 'Verwijdert een waterontharder ook PFAS of andere stoffen?',
+    answer: `Nee. Een waterontharder verwijdert alleen kalk (calcium en magnesium). Chloor, PFAS, medicijnresten en andere opgeloste stoffen blijven in het water. Nederlands kraanwater voldoet aan de wettelijke normen, waaronder de EU-norm van 100 nanogram per liter voor de som van 20 PFAS. De RIVM-advieswaarde van ${PFAS_ADVIES} nanogram PFOA-equivalenten per liter is strenger: volgens een analyse van Greenpeace (september 2026, gemeld door de NOS) zit ongeveer een derde van het Nederlandse drinkwater daarboven. Wil je extra zuivering van je drinkwater, dan is omgekeerde osmose op de keukenkraan daarvoor de geschikte techniek; sommige huishoudens combineren beide.`,
   },
   {
     question: 'Wat kost een waterontharder kopen en installeren?',
-    answer:
-      'Een kwalitatieve enkelvoudige waterontharder voor huishoudelijk gebruik kost €500-1.500 aanschaf. Installatie door een loodgieter kost €150-350. Simpele koppelbare zoutvrije systemen zijn al verkrijgbaar vanaf €80-200 maar bieden beperkte prestaties. Reken daarnaast op €50-150 per jaar aan zout en €50-100 per jaar voor onderhoud.',
+    answer: `Een complete waterontharder kost doorgaans ${JOEP_MARKET.typicalInstalledRange} inclusief installatie, en voor kwaliteitsmodellen ligt dat meestal tussen ${JOEP_MARKET.typicalQualityRange}. Onze keuze JOEP kost bij PureAqua ${JOEP.devicePrice}, of ${JOEP.installedPrice} compleet geïnstalleerd. Daarna betaal je vooral zout en eventueel onderhoud.`,
   },
 ];
 
 const soortenOntharder = [
   {
-    naam: 'Ionenwisselaar (klassiek, met zout)',
-    werking: 'Wisselt calcium/magnesium tegen natrium via harsbed, regenereert met pekel',
-    effectiviteit: 'Verwijdert 95-99% kalk',
-    kosten: '€ 500 – 1.500 aanschaf',
-    nadeel: 'Voegt natrium toe; zoutgebruik; milieu-impact',
-    beste_voor: 'Gezinnen met hard water en hoge kalklast',
+    naam: 'Ionenwisselaar met zout (klassiek)',
+    werking: 'Wisselt calcium en magnesium tegen natrium via een harsbed en regenereert met zout',
+    effectiviteit: 'Maakt het water echt zacht; de resthardheid is in te stellen',
+    kosten: `${JOEP_MARKET.typicalInstalledRange} geïnstalleerd`,
+    nadeel: 'Iets meer natrium in het water; zoutverbruik en spoelwater',
+    beste_voor: `Woningen met hard water (vanaf circa ${JOEP_MIN_DH} dH) die kalk in het hele huis willen aanpakken`,
     highlight: true,
   },
   {
-    naam: 'Zoutarme waterverbeteraar (TAC / nano-technologie)',
-    werking: 'Zet kalk om in microscopische kristallen die niet hechten aan oppervlakken',
-    effectiviteit: 'Voorkomt kalkaanslag (verwijdert kalk niet)',
-    kosten: '€ 200 – 800 aanschaf',
-    nadeel: 'Verwijdert kalk niet écht; beperkte effectiviteit bij zeer hard water',
-    beste_voor: 'Mensen die het milieu willen sparen; huurders; lichte kalklast',
+    naam: 'Zoutloze waterverbeteraar (TAC)',
+    werking: 'Zet kalk om in kristallen die minder aan oppervlakken hechten',
+    effectiviteit: 'Beperkt aanslag, maar verwijdert geen kalk',
+    kosten: 'Meestal goedkoper dan een ontharder met zout',
+    nadeel: 'Water blijft hard; minder effect bij zeer hard water',
+    beste_voor: 'Lichte kalklast en wie geen zout wil gebruiken',
     highlight: false,
   },
   {
-    naam: 'Magnetische waterontharder',
-    werking: 'Magnetisch veld zou kalkdeeltjes anders structureren (wetenschappelijk omstreden)',
-    effectiviteit: 'Onbewezen; wisselende resultaten in onafhankelijke testen',
-    kosten: '€ 30 – 200 aanschaf',
-    nadeel: 'Weinig wetenschappelijk bewijs voor werkzaamheid',
-    beste_voor: 'Niet aanbevolen als primaire oplossing',
+    naam: 'Magnetische of elektronische ontharder',
+    werking: 'Een magnetisch of elektrisch veld zou kalk anders laten neerslaan',
+    effectiviteit: 'Wetenschappelijk omstreden; wisselende resultaten',
+    kosten: 'Laag in aanschaf',
+    nadeel: 'Weinig onafhankelijk bewijs dat het werkt',
+    beste_voor: 'Volgens ons niet geschikt als hoofdoplossing',
     highlight: false,
   },
   {
-    naam: 'Dubbele kolom (twin-tank) ontharder',
-    werking: 'Twee harskolommen wisselen af zodat altijd zacht water beschikbaar is',
-    effectiviteit: 'Continu zacht water, ook tijdens regeneratie',
-    kosten: '€ 800 – 2.500 aanschaf',
-    nadeel: 'Hogere aanschafprijs; meer ruimte nodig',
-    beste_voor: 'Grote gezinnen; grote woningen; commercieel gebruik',
+    naam: 'Twin-tank ontharder (twee kolommen)',
+    werking: 'Twee harskolommen wisselen elkaar af, zodat er altijd zacht water is',
+    effectiviteit: 'Ook zacht water tijdens de regeneratie',
+    kosten: 'Verschilt sterk per merk; vraag meerdere offertes aan',
+    nadeel: 'Doorgaans duurder en neemt meer ruimte in',
+    beste_voor: 'Grote huishoudens met een hoog piekverbruik',
     highlight: false,
   },
 ];
 
 const vergelijking = [
-  {
-    type: 'Waterontharder (ionenwisselaar)',
-    verwijdert: 'Alleen kalk',
-    zuiverheid: 'Kalk 95–99%',
-    kosten: '€ 100–250/jr',
-    ruimte: 'Meterkast/garage',
-    natrium: 'Verhoogd',
-    highlight: true,
-  },
-  {
-    type: 'Omgekeerde osmose',
-    verwijdert: 'Alle opgeloste stoffen',
-    zuiverheid: '95–99% breed spectrum',
-    kosten: '€ 60–150/jr',
-    ruimte: 'Onder aanrecht',
-    natrium: 'Geen',
-    highlight: false,
-  },
-  {
-    type: 'Kalkfilter / carbonaatfilter',
-    verwijdert: 'Kalk (carbonaat) deels',
-    zuiverheid: '40–70% kalk',
-    kosten: '€ 30–80/jr',
-    ruimte: 'Op leiding',
-    natrium: 'Geen',
-    highlight: false,
-  },
-  {
-    type: 'Magnetische ontharding',
-    verwijdert: 'Niets (omstreden werking)',
-    zuiverheid: 'Onbewezen',
-    kosten: '€ 0–10/jr',
-    ruimte: 'Op leiding',
-    natrium: 'Geen',
-    highlight: false,
-  },
+  { type: 'Waterontharder (ionenwisselaar)', verwijdert: 'Kalk, in het hele huis', waar: 'Op de hoofdleiding', natrium: 'Iets verhoogd', highlight: true },
+  { type: 'Omgekeerde osmose', verwijdert: 'Kalk en de meeste opgeloste stoffen, alleen drinkwater', waar: 'Onder of op het aanrecht', natrium: 'Niet verhoogd', highlight: false },
+  { type: 'Zoutloos systeem (TAC)', verwijdert: 'Niets; beperkt aanslag', waar: 'Op de hoofdleiding', natrium: 'Niet verhoogd', highlight: false },
+  { type: 'Magnetische ontharding', verwijdert: 'Niets (omstreden werking)', waar: 'Om de leiding', natrium: 'Niet verhoogd', highlight: false },
 ];
 
 const kostentabel = [
-  { post: 'Aanschaf ontharder (enkel)', eenmalig: '€ 500 – 1.500', perjaar: '—' },
-  { post: 'Installatie loodgieter', eenmalig: '€ 150 – 350', perjaar: '—' },
-  { post: 'Zout (50–150 kg/jr)', eenmalig: '—', perjaar: '€ 10 – 60' },
-  { post: 'Water (regeneratiespoeling)', eenmalig: '—', perjaar: '€ 5 – 20' },
-  { post: 'Jaarlijks onderhoud/service', eenmalig: '—', perjaar: '€ 50 – 100' },
-  { post: 'Vervanging hars (elke 8-12 jr)', eenmalig: '—', perjaar: '€ 20 – 60' },
-  { post: 'Totaal jaarlijks', eenmalig: '—', perjaar: '€ 85 – 240' },
+  { post: 'Complete ontharder inclusief installatie', eenmalig: JOEP_MARKET.typicalInstalledRange, perjaar: 'n.v.t.' },
+  { post: 'Kwaliteitsmodellen inclusief installatie', eenmalig: JOEP_MARKET.typicalQualityRange, perjaar: 'n.v.t.' },
+  { post: 'Zout', eenmalig: 'n.v.t.', perjaar: 'Afhankelijk van hardheid en verbruik' },
+  { post: 'Spoelwater bij regeneratie', eenmalig: 'n.v.t.', perjaar: `Per regeneratie, bij JOEP ${JOEP.waterPerRegeneration}` },
+  { post: 'Onderhoud of serviceabonnement', eenmalig: 'n.v.t.', perjaar: 'Optioneel, verschilt per merk' },
 ];
 
 export default function WaterOntharderPage() {
@@ -162,7 +143,7 @@ export default function WaterOntharderPage() {
           {
             '@type': 'ItemList',
             name: 'Waterontharder',
-            url: 'https://waterfilterplatform.nl/waterontharder',
+            url: PAGE_URL,
             numberOfItems: 31,
             itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Waterontharder in Appartement: Mag Dit & Welke Opties?', url: 'https://waterfilterplatform.nl/waterontharder/appartement' },
@@ -176,11 +157,11 @@ export default function WaterOntharderPage() {
             { '@type': 'ListItem', position: 9, name: 'Hoe lang gaat een waterontharder mee? Levensduur en onderhoud', url: 'https://waterfilterplatform.nl/waterontharder/hoe-lang' },
             { '@type': 'ListItem', position: 10, name: 'Waterontharder huren: voordelen, kosten en wanneer huren vs kopen', url: 'https://waterfilterplatform.nl/waterontharder/huren' },
             { '@type': 'ListItem', position: 11, name: 'Waterontharder installeren: kosten, stappen en loodgieter vs zelf doen', url: 'https://waterfilterplatform.nl/waterontharder/installeren' },
-            { '@type': 'ListItem', position: 12, name: 'Waterontharder Kopen 2026: Complete Gids', url: 'https://waterfilterplatform.nl/waterontharder/kopen' },
-            { '@type': 'ListItem', position: 13, name: 'Waterontharder kosten: aanschaf, zout en totale eigendomskosten', url: 'https://waterfilterplatform.nl/waterontharder/kosten' },
+            { '@type': 'ListItem', position: 12, name: 'Waterontharder kopen: koopgids 2026', url: 'https://waterfilterplatform.nl/waterontharder/kopen' },
+            { '@type': 'ListItem', position: 13, name: 'Waterontharder kosten per jaar en in totaal (2026)', url: 'https://waterfilterplatform.nl/waterontharder/kosten' },
             { '@type': 'ListItem', position: 14, name: 'Waterontharder nadelen: de eerlijke keerzijde op een rij', url: 'https://waterfilterplatform.nl/waterontharder/nadelen' },
             { '@type': 'ListItem', position: 15, name: 'Waterontharder onderhoud: jaarlijks schema, reiniging en hars', url: 'https://waterfilterplatform.nl/waterontharder/onderhoud' },
-            { '@type': 'ListItem', position: 16, name: 'Waterontharder Prijs: Kosten & Vergelijking 2026', url: 'https://waterfilterplatform.nl/waterontharder/prijs' },
+            { '@type': 'ListItem', position: 16, name: 'Waterontharder prijs 2026: marktprijzen en goedkope opties', url: 'https://waterfilterplatform.nl/waterontharder/prijs' },
             { '@type': 'ListItem', position: 17, name: 'Waterontharder regeneratie uitgelegd: hoe vaak en hoeveel zout?', url: 'https://waterfilterplatform.nl/waterontharder/regeneratie' },
             { '@type': 'ListItem', position: 18, name: 'Hoe lang duurt regeneratie waterontharder? Tijdgestuurde vs volumetrisch', url: 'https://waterfilterplatform.nl/waterontharder/regeneratie-tijd' },
             { '@type': 'ListItem', position: 19, name: 'Waterontharder storingen: diagnose en oplossingen voor veelvoorkomende problemen', url: 'https://waterfilterplatform.nl/waterontharder/storingen' },
@@ -204,19 +185,19 @@ export default function WaterOntharderPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'Waterontharder — werking, kosten en alternatieven',
-          description:
-            'Complete gids over de waterontharder: hoe een ionenwisselaar werkt, soorten, kosten, onderhoud en vergelijking met osmose en kalkfilter.',
-          datePublished: '2025-09-01',
-          dateModified: '2026-05-13',
-          url: 'https://waterfilterplatform.nl/waterontharder',
+          title: 'Waterontharder: wat het doet, wat het kost en onze keuze',
+          description: DESCRIPTION,
+          datePublished: PUBLISHED,
+          dateModified: MODIFIED,
+          lastReviewed: MODIFIED,
+          url: PAGE_URL,
         }}
       />
       <SchemaOrg
         type="BreadcrumbList"
         breadcrumbs={[
           { name: 'Home', url: 'https://waterfilterplatform.nl' },
-          { name: 'Waterontharder', url: 'https://waterfilterplatform.nl/waterontharder' },
+          { name: 'Waterontharder', url: PAGE_URL },
         ]}
       />
 
@@ -229,26 +210,26 @@ export default function WaterOntharderPage() {
             <span>Waterontharder</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            Waterontharder: werking, kosten en alternatieven
+            Waterontharder: wat het doet, wat het kost en onze keuze
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Een <strong>waterontharder</strong> verwijdert kalk uit leidingwater en voorkomt kalkaanslag op
-            kranen, tegels en huishoudelijke apparaten. Op deze pagina leggen we uit hoe een ionenwisselaar
-            werkt, welke soorten ontharders er zijn, wat een waterontharder kopen kost en wanneer een
-            alternatief — zoals omgekeerde osmose — de betere keuze is.
+            Een <strong>waterontharder</strong> haalt kalk uit al het water in huis. Zo voorkom je aanslag op
+            kranen, tegels en in apparaten zoals de cv-ketel en de wasmachine. Hier lees je vanaf welke hardheid
+            dat zinvol is, hoe een ontharder werkt, wat hij kost en wanneer een alternatief zoals omgekeerde
+            osmose beter past. Plus welke ontharder wij aanraden, en waarom.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/kennisbank/waterontharder"
+              href="/waterhardheid"
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              Meer over waterontharders →
+              Waterhardheid in mijn gemeente
             </Link>
             <Link
-              href="/waterhardheid"
+              href="/waterontharder/kopen"
               className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors text-sm"
             >
-              Waterhardheid in mijn gemeente
+              Koopgids waterontharder
             </Link>
           </div>
         </div>
@@ -256,7 +237,12 @@ export default function WaterOntharderPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
 
-        <QuickAnswer answer="Een waterontharder verwijdert kalk (calcium en magnesium) uit leidingwater via ionenwisseling. Het beschermt leidingen, cv-ketel, wasmachine en vaatwasser. In Nederland is een ontharder zinvol bij een waterhardheid boven 12°dH. Bij lagere hardheden is een osmosefilter op de keukenkraan een goedkoper en praktischer alternatief." />
+        <div>
+          <AuthorBox datePublished={PUBLISHED} dateModified={MODIFIED} />
+          <QuickAnswer question="Wat is een waterontharder en heb ik er een nodig?" answer={quickAnswer} />
+        </div>
+
+        <JoepRecommendation content="waterontharder-hub-aanbeveling" />
 
         {/* Inhoudsopgave */}
         <section className="bg-gray-50 rounded-2xl p-5">
@@ -264,55 +250,147 @@ export default function WaterOntharderPage() {
             Op deze pagina
           </p>
           <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-[#005F8A] list-decimal list-inside">
-            <li><a href="#wat-is" className="hover:underline">Wat is een waterontharder?</a></li>
+            <li><a href="#nodig" className="hover:underline">Heb je een waterontharder nodig?</a></li>
+            <li><a href="#onze-keuze" className="hover:underline">Voor wie JOEP wel en niet past</a></li>
             <li><a href="#hoe-werkt" className="hover:underline">Hoe werkt een ionenwisselaar?</a></li>
             <li><a href="#soorten" className="hover:underline">Soorten waterontharders</a></li>
             <li><a href="#voordelen" className="hover:underline">Voordelen</a></li>
             <li><a href="#nadelen" className="hover:underline">Nadelen (eerlijk)</a></li>
-            <li><a href="#vergelijking" className="hover:underline">Ontharder vs osmose vs kalkfilter</a></li>
-            <li><a href="#kosten" className="hover:underline">Kosten aanschaf + installatie + zout</a></li>
+            <li><a href="#vergelijking" className="hover:underline">Ontharder, osmose of zoutloos?</a></li>
+            <li><a href="#kosten" className="hover:underline">Kosten</a></li>
             <li><a href="#onderhoud" className="hover:underline">Onderhoud</a></li>
-            <li><a href="#voor-wie" className="hover:underline">Voor wie is het zinvol?</a></li>
             <li><a href="#faq" className="hover:underline">Veelgestelde vragen</a></li>
           </ol>
         </section>
 
-        {/* Wat is een waterontharder */}
-        <JoepRecommendation content="waterontharder-hub-aanbeveling" />
-
-        <section id="wat-is">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is een waterontharder?</h2>
+        {/* Heb je een waterontharder nodig */}
+        <section id="nodig">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Heb je een waterontharder nodig?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Een <strong>waterontharder</strong> is een apparaat dat de hardheid van leidingwater verlaagt door
-            calcium- en magnesiumionen te verwijderen. Dit zijn de twee mineralen die verantwoordelijk zijn voor
-            kalkafzetting op kranen, tegels, waterkokers, douchekoppen, verwarmingselementen en cv-ketels.
-          </p>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Waterhardheid wordt uitgedrukt in <strong>°dH</strong> (Duits graden) of mmol/L. Water geldt als:
-          </p>
-          <ul className="space-y-1 text-gray-700 list-disc list-inside mb-4">
-            <li>Zacht: 0–8 °dH (weinig kalk)</li>
-            <li>Matig hard: 8–15 °dH</li>
-            <li>Hard: 15–21 °dH</li>
-            <li>Zeer hard: boven 21 °dH (veel kalk, grote kans op problemen)</li>
-          </ul>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Grote delen van Nederland hebben hard tot zeer hard leidingwater. Met name in de kustprovincies
-            Noord- en Zuid-Holland, Zeeland en in Limburg en Noord-Brabant kan de waterhardheid oplopen tot 25
-            °dH of meer. In deze regio&apos;s is kalkoverlast een veelgehoorde klacht en wordt een
-            waterontharder kopen serieus overwogen door huizenbezitters. Wil je weten hoe hard het water in jouw
-            gemeente is? Bekijk de{' '}
+            Begin bij de hardheid van je kraanwater, uitgedrukt in Duitse hardheidsgraden (dH). Water tot{' '}
+            {ZACHT} dH geldt als zacht, vanaf {HARD} dH als hard. Een ontharder voor het hele huis wordt volgens
+            ons zinvol vanaf ongeveer {JOEP_MIN_DH} dH, zeker als je merkt dat kranen, douchewand en waterkoker
+            snel verkalken. De hardheid verschilt sterk per gemeente: zoek die van jou op bij{' '}
             <Link href="/waterhardheid" className="text-[#005F8A] underline hover:no-underline">
               waterhardheid per gemeente
             </Link>
             .
           </p>
+          <p className="text-gray-700 mb-5 leading-relaxed">
+            Belangrijk om te weten: Nederlands kraanwater voldoet aan de wettelijke normen, ook als het hard is.
+            Een ontharder is een keuze voor comfort en minder onderhoud aan leidingen en apparaten, geen
+            gezondheidsmaatregel. Welke oplossing past, hangt af van wat je wilt bereiken:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="border border-[#005F8A] bg-[#E0F2FE] rounded-2xl p-4">
+              <p className="font-semibold text-gray-900 mb-1 text-sm">Kalk in het hele huis, vanaf circa {JOEP_MIN_DH} dH</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Een ionenwisselaar met zout op de hoofdleiding. Onze keuze is de{' '}
+                <Link href={JOEP.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+                  JOEP waterontharder
+                </Link>{' '}
+                ({JOEP.installedPrice} compleet geïnstalleerd).
+              </p>
+            </div>
+            <div className="border border-gray-100 rounded-2xl p-4">
+              <p className="font-semibold text-gray-900 mb-1 text-sm">Lichte kalklast of liever geen zout</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Een{' '}
+                <Link href="/waterontharder/zoutloos" className="text-[#005F8A] underline hover:no-underline">
+                  zoutloos systeem
+                </Link>{' '}
+                beperkt aanslag, maar laat de kalk in het water. Bij hard water is het effect beperkt.
+              </p>
+            </div>
+            <div className="border border-gray-100 rounded-2xl p-4">
+              <p className="font-semibold text-gray-900 mb-1 text-sm">Alleen zuiver drinkwater</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Een ontharder filtert geen PFAS, chloor of medicijnresten. Daarvoor is{' '}
+                <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">
+                  omgekeerde osmose
+                </Link>{' '}
+                op de keukenkraan geschikt, bijvoorbeeld de{' '}
+                <Link href={FOUR_IN_ONE.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+                  {FOUR_IN_ONE.name}
+                </Link>{' '}
+                of een{' '}
+                <Link href={THREE_WAY.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+                  {THREE_WAY.name}
+                </Link>
+                .
+              </p>
+            </div>
+            <div className="border border-gray-100 rounded-2xl p-4">
+              <p className="font-semibold text-gray-900 mb-1 text-sm">Huurwoning</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Voor een ontharder op de hoofdleiding heb je{' '}
+                <Link href="/waterontharder/verhuurder" className="text-[#005F8A] underline hover:no-underline">
+                  toestemming van de verhuurder
+                </Link>{' '}
+                nodig. Voor zuiver drinkwater zonder boren kan het{' '}
+                <Link href={COUNTERTOP.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+                  {COUNTERTOP.shortName}
+                </Link>{' '}
+                ({COUNTERTOP.price}): omgekeerde osmose op het aanrecht, met de stekker in het stopcontact.
+              </p>
+            </div>
+          </div>
+          <p className="text-sm text-gray-600 mt-4">
+            Twijfel je nog? De{' '}
+            <Link href="/keuzehulp/hard-water" className="text-[#005F8A] underline hover:no-underline">
+              keuzehulp bij hard water
+            </Link>{' '}
+            zet de opties per situatie op een rij, en in{' '}
+            <Link href="/waterontharder/vs-osmose" className="text-[#005F8A] underline hover:no-underline">
+              waterontharder of osmose
+            </Link>{' '}
+            lees je het verschil in detail.
+          </p>
+        </section>
+
+        {/* Onze keuze */}
+        <section id="onze-keuze">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Voor wie JOEP wel en niet past</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Waarom JOEP onze keuze is, en wat &quot;zonder poespas&quot; concreet betekent, zie je in het blok
+            hierboven. Maar onze keuze is niet voor iedereen de juiste. Een eerlijk overzicht:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div className="bg-white border border-gray-100 rounded-2xl p-4">
+              <p className="font-semibold text-gray-900 mb-2 text-sm">Past goed als</p>
+              <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                {[
+                  `je water vanaf ongeveer ${JOEP_MIN_DH} dH hard is en je kalk in het hele huis wilt aanpakken`,
+                  'je in een koopwoning woont of toestemming hebt om de hoofdleiding aan te passen',
+                  `je weinig ruimte hebt: het apparaat meet ${JOEP.dimensions}`,
+                  `er een afvoer en een stopcontact in de buurt zijn (${JOEP.power})`,
+                  `je waterdruk ${JOEP.pressure} is`,
+                ].map(punt => (
+                  <li key={punt}>{punt}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-4">
+              <p className="font-semibold text-gray-900 mb-2 text-sm">Kies iets anders als</p>
+              <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700">
+                {[
+                  `je water zacht is (tot ${ZACHT} dH): dan heb je geen ontharder nodig`,
+                  'je alleen zuiver drinkwater wilt: kies dan osmose voor de keukenkraan',
+                  'je geen zout wilt bijvullen: een systeem zonder zout verwijdert geen kalk, maar beperkt aanslag',
+                  'je huurt en geen toestemming krijgt voor de hoofdleiding',
+                  'je een groot huishouden met een hoog piekverbruik hebt: laat dan eerst checken of het formaat past',
+                ].map(punt => (
+                  <li key={punt}>{punt}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
           <p className="text-gray-700 leading-relaxed">
-            De meestgebruikte techniek voor huishoudelijke waterontharding is de{' '}
-            <strong>ionenwisseling</strong>, ook wel ionenuitwisseling of ion exchange genoemd. Lees meer over de
-            achtergrond in ons artikel{' '}
-            <Link href="/kennisbank/waterhardheid-verlagen" className="text-[#005F8A] underline hover:no-underline">
-              waterhardheid verlagen
+            Ter vergelijking: complete ontharders kosten doorgaans {JOEP_MARKET.typicalInstalledRange}{' '}
+            geïnstalleerd. JOEP is daarmee niet het goedkoopste apparaat op de markt, maar zit volgens ons op een
+            eerlijke prijs voor wat je krijgt. Alle specificaties staan in onze{' '}
+            <Link href={JOEP.reviewPath} className="text-[#005F8A] underline hover:no-underline">
+              JOEP-koopgids
             </Link>
             .
           </p>
@@ -322,32 +400,31 @@ export default function WaterOntharderPage() {
         <section id="hoe-werkt">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Hoe werkt een ionenwisselaar?</h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            Het hart van een klassieke waterontharder is een cilindervormig reservoir gevuld met{' '}
-            <strong>ionenwisselaarhars</strong>: miljoenen kleine polymeerkralen, elk beladen met
-            natriumionen (Na⁺). Als het harde leidingwater door dit harsbed stroomt, vindt een
-            chemische uitwisseling plaats:
+            Het hart van een klassieke waterontharder is een tank met{' '}
+            <strong>ionenwisselaarhars</strong>: heel veel kleine kunststof korrels met natrium (Na⁺). Stroomt het
+            harde leidingwater erdoor, dan gebeurt het volgende:
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
                 nr: '1',
-                titel: 'Hardheidsmineralen binden aan het hars',
-                desc: 'Calcium (Ca²⁺) en magnesium (Mg²⁺) hebben een sterkere aantrekking tot het harsbed dan natrium. Ze verdringen de natriumionen en hechten aan de harskorrels.',
+                titel: 'Kalkmineralen binden aan het hars',
+                desc: 'Calcium (Ca²⁺) en magnesium (Mg²⁺) hechten sterker aan het hars dan natrium. Ze verdringen het natrium en blijven aan de korrels zitten.',
               },
               {
                 nr: '2',
-                titel: 'Natrium komt vrij in het water',
-                desc: 'Voor elke Ca²⁺ of Mg²⁺ die aan het hars bindt, komen twee Na⁺ ionen vrij in het doorstromende water. Het zachte water bevat dus meer natrium dan het inkomende harde water.',
+                titel: 'Natrium komt in het water',
+                desc: 'Voor elk calcium- of magnesiumion komen twee natriumionen vrij. Zacht water bevat dus iets meer natrium dan het harde water dat binnenkomt.',
               },
               {
                 nr: '3',
-                titel: 'Harsbed raakt verzadigd',
-                desc: 'Na verloop van tijd — afhankelijk van gebruik en waterhardheid — zijn alle natriumionen uitgewisseld en kan het hars geen kalk meer opnemen. De ontharder gaat dan in regeneratiemodus.',
+                titel: 'Het harsbed raakt vol',
+                desc: 'Na verloop van tijd, afhankelijk van verbruik en hardheid, kan het hars geen kalk meer opnemen. De ontharder start dan een regeneratie.',
               },
               {
                 nr: '4',
-                titel: 'Regeneratie met pekelwater',
-                desc: 'Een geconcentreerde zoutoplossing (NaCl-pekel) uit het zouttankreservoir spoelt het harsbed. De hoge natriumconcentratie verdringt de opgeslagen calcium en magnesium, die samen met het spoelwater naar de afvoer worden geleid. Het harsbed is daarna opnieuw beladen met natrium en klaar voor de volgende cyclus.',
+                titel: 'Regeneratie met zout',
+                desc: 'Een sterke zoutoplossing uit de zoutbak spoelt het hars. Het opgeslagen calcium en magnesium gaat met het spoelwater naar de afvoer en het hars is weer klaar voor gebruik.',
               },
             ].map(s => (
               <div key={s.nr} className="flex gap-4 items-start">
@@ -362,10 +439,13 @@ export default function WaterOntharderPage() {
             ))}
           </div>
           <div className="bg-[#E0F2FE] rounded-2xl p-5 text-sm text-gray-700">
-            <strong className="text-[#003F5C]">Let op:</strong> moderne ontharders zijn voorzien van een
-            vraaggestuurde of tijdgestuurde regeleenheid die de regeneratie automatisch activeert. Vraaggestuurde
-            systemen meten het werkelijke waterverbruik en regenereren alleen wanneer nodig — dit bespaart 30–50%
-            zout en water ten opzichte van oude tijdgestuurde modellen.
+            <strong className="text-[#003F5C]">Goed om te weten:</strong> moderne ontharders starten de
+            regeneratie automatisch. Modellen die op het werkelijke verbruik regenereren, gebruiken doorgaans
+            minder zout en water dan modellen die op vaste tijden regenereren. Meer uitleg vind je bij{' '}
+            <Link href="/waterontharder/werking" className="text-[#005F8A] underline hover:no-underline">
+              hoe een waterontharder werkt
+            </Link>
+            .
           </div>
         </section>
 
@@ -373,9 +453,8 @@ export default function WaterOntharderPage() {
         <section id="soorten">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Welke soorten waterontharders zijn er?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Niet elke &ldquo;waterontharder&rdquo; werkt hetzelfde. Op de markt zijn vier hoofdtypen, elk met
-            eigen voor- en nadelen. Het is belangrijk om ze van elkaar te onderscheiden, want de prestaties
-            lopen sterk uiteen.
+            Niet alles wat als &quot;waterontharder&quot; wordt verkocht, werkt hetzelfde. Dit zijn de vier
+            hoofdtypen, met hun voor- en nadelen.
           </p>
           <div className="space-y-4">
             {soortenOntharder.map(s => (
@@ -387,23 +466,22 @@ export default function WaterOntharderPage() {
                   <p className="font-bold text-gray-900 flex-1">{s.naam}</p>
                   {s.highlight && (
                     <span className="text-xs bg-[#005F8A] text-white px-2 py-0.5 rounded-full shrink-0">
-                      Meest effectief
+                      Haalt kalk echt weg
                     </span>
                   )}
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-sm">
                   <div><span className="text-gray-400">Werking:</span> <span className="text-gray-700">{s.werking}</span></div>
-                  <div><span className="text-gray-400">Effectiviteit:</span> <span className="text-gray-700">{s.effectiviteit}</span></div>
+                  <div><span className="text-gray-400">Effect:</span> <span className="text-gray-700">{s.effectiviteit}</span></div>
                   <div><span className="text-gray-400">Kosten:</span> <span className="text-gray-700">{s.kosten}</span></div>
                   <div><span className="text-gray-400">Nadeel:</span> <span className="text-gray-700">{s.nadeel}</span></div>
-                  <div className="sm:col-span-2"><span className="text-gray-400">Beste voor:</span> <span className="text-gray-700">{s.beste_voor}</span></div>
+                  <div className="sm:col-span-2"><span className="text-gray-400">Past bij:</span> <span className="text-gray-700">{s.beste_voor}</span></div>
                 </div>
               </div>
             ))}
           </div>
           <p className="text-gray-700 mt-4 leading-relaxed">
-            Voor een diepgaande uitleg over het verlagen van waterhardheid zonder klassieke zoutontharding, lees
-            ons artikel{' '}
+            Meer over kalk aanpakken zonder klassieke ontharder lees je in{' '}
             <Link href="/kennisbank/kalk-verwijderen-water" className="text-[#005F8A] underline hover:no-underline">
               kalk verwijderen uit water
             </Link>
@@ -415,40 +493,39 @@ export default function WaterOntharderPage() {
         <section id="voordelen">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat zijn de voordelen van een waterontharder?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            In regio&apos;s met hard water biedt een goed geïnstalleerde waterontharder concrete, merkbare
-            voordelen. Hieronder de belangrijkste:
+            Bij hard water levert een goed afgestelde ontharder merkbare voordelen op:
           </p>
           <div className="space-y-3">
             {[
               {
-                titel: 'Geen kalkaanslag meer op kranen, tegels en douche',
+                titel: 'Veel minder kalkaanslag op kranen, tegels en douche',
                 tekst:
-                  'De meest zichtbare verbetering: de witte vlekken op keuken- en badkamerkranen, de kalksluier op de douchecabine en de aanslag op tegels verdwijnen. Schoonmaken wordt een stuk eenvoudiger en ontkalker is niet langer nodig.',
+                  'Het meest zichtbare verschil: witte vlekken op kranen, een kalksluier op de douchewand en aanslag op tegels verdwijnen grotendeels. Schoonmaken gaat sneller en ontkalker heb je nauwelijks nog nodig.',
               },
               {
-                titel: 'Langere levensduur van huishoudelijke apparaten',
+                titel: 'Apparaten verkalken veel minder',
                 tekst:
-                  'Kalk beschadigt de verwarmingselementen in waterkokers, koffiezetters, wasmachines, vaatwassers en cv-ketels. Zacht water verlengt de levensduur van deze apparaten aanzienlijk — berekeningen van VEWIN tonen aan dat kalkaanslag het energieverbruik van een verwarmingselement tot 15% kan verhogen.',
+                  'Kalk zet zich af op verwarmingselementen in waterkokers, koffiemachines, wasmachines, vaatwassers en de cv-ketel. Zacht water beperkt die afzetting sterk, zodat je minder vaak hoeft te ontkalken.',
               },
               {
-                titel: 'Lager energieverbruik van cv-ketel en boiler',
+                titel: 'Verwarmen zonder kalklaag',
                 tekst:
-                  'Kalk isoleert verwarmingselementen en dwingt de ketel harder te werken. Een kalkvrije cv-ketel kan tot 12-15% energie besparen. Over de levensduur van de ketel kan dat een substantiële kostenbesparing opleveren.',
+                  'Een kalklaag werkt isolerend op een verwarmingselement of warmtewisselaar. Zonder die laag geeft het element zijn warmte beter af aan het water.',
               },
               {
-                titel: 'Minder wasmiddel en shampoo nodig',
+                titel: 'Vaak minder wasmiddel en zeep nodig',
                 tekst:
-                  'Zacht water schuimt beter dan hard water. Veel gebruikers merken dat ze 20-30% minder wasmiddel en shampoo nodig hebben. Ook wasverzachter is vaak niet meer nodig, omdat zacht water kleding van nature zachter houdt.',
+                  'Zacht water schuimt beter dan hard water, waardoor je vaak minder wasmiddel, zeep en shampoo nodig hebt. Hoeveel minder, hangt af van je hardheid en je gewoontes.',
               },
               {
-                titel: 'Zachtere huid en haar',
+                titel: 'Meer comfort onder de douche',
                 tekst:
-                  'Hard water kan de huid uitdrogen en haar dof maken doordat mineraalzouten achterblijven op het haar en in de huidporiën. Mensen met droge huid of eczeem rapporteren regelmatig verbeteringen na overstap naar zacht water.',
+                  'Zacht water laat minder kalkresten achter op huid, haar en douchewand. Sommige mensen ervaren dat als prettiger. Het is niet aangetoond dat zacht water huidaandoeningen voorkomt of geneest; heb je huidklachten, overleg dan met je huisarts.',
               },
               {
                 titel: 'Bescherming van leidingwerk',
                 tekst:
-                  'Op de lange termijn voorkomt ontharding ook kalkafzetting in de leidingen zelf, wat de doorstroom op peil houdt en storingen aan fittingen en appendages vermindert.',
+                  'Op lange termijn voorkomt ontharding ook kalkafzetting in leidingen, kranen en thermostaatkranen, zodat de doorstroom op peil blijft.',
               },
             ].map(v => (
               <div key={v.titel} className="flex gap-3 items-start">
@@ -466,58 +543,69 @@ export default function WaterOntharderPage() {
         <section id="nadelen">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat zijn de nadelen van een waterontharder?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Een waterontharder is geen wondermiddel. Hieronder de voornaamste bezwaren die je eerlijk
-            moet afwegen voordat je besluit een waterontharder te kopen.
+            Een waterontharder is geen wondermiddel. Weeg deze punten eerlijk af voordat je er een koopt.
           </p>
           <div className="space-y-4">
             <div className="bg-amber-50 border border-amber-100 rounded-2xl p-5">
-              <p className="font-semibold text-amber-900 mb-1">1. Verhoogd natriumgehalte in het drinkwater</p>
+              <p className="font-semibold text-amber-900 mb-1">1. Iets meer natrium in het water</p>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Bij elke Ca²⁺ of Mg²⁺ die wordt verwijderd, komen twee Na⁺ ionen vrij. In hard-watergebieden kan
-                het natriumgehalte van het zachte water 100–200 mg/L bereiken, terwijl de WHO een advieswaarde
-                van 200 mg/L aanhoudt. Voor gezonde volwassenen is dit geen gevaar, maar voor mensen met
-                hartfalen, hoge bloeddruk of nierproblemen — en voor zuigelingen — is een aparte aftap voor
-                onbehandeld of osmose-gefilterd drinkwater verstandig.
+                Voor elk verwijderd calcium- of magnesiumion komen twee natriumionen in het water. Hoe harder het
+                water, hoe meer natrium erbij komt. Voor gezonde volwassenen is dat geen probleem. Volg je een
+                natriumarm dieet of maak je flesvoeding, gebruik dan een aparte kraan met onbehandeld of gefilterd
+                water. Meer hierover in{' '}
+                <Link href="/waterontharder/gezondheid" className="text-[#005F8A] underline hover:no-underline">
+                  waterontharder en gezondheid
+                </Link>
+                .
               </p>
             </div>
             <div className="bg-amber-50 border border-amber-100 rounded-2xl p-5">
-              <p className="font-semibold text-amber-900 mb-1">2. Zout- en waterverbruik (milieu-impact)</p>
+              <p className="font-semibold text-amber-900 mb-1">2. Zout en spoelwater</p>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Regeneratie verbruikt 50–150 kg zout per jaar en 50–200 liter spoelwater per regeneratiecyclus.
-                Het zoute spoelwater gaat naar de riolering, wat druk legt op waterzuiveringsstations. Sommige
-                gemeenten ontmoedigen actief het gebruik van klassieke waterontharders om deze reden. Overleg
-                altijd met de gemeente of er lokale regels gelden.
+                Bij elke regeneratie gaan zout en spoelwater naar het riool. Hoeveel precies, verschilt per model
+                en per huishouden. Kijk bij het vergelijken naar het zout- en waterverbruik per regeneratie.
               </p>
             </div>
             <div className="bg-amber-50 border border-amber-100 rounded-2xl p-5">
-              <p className="font-semibold text-amber-900 mb-1">3. Hoge aanschaf- en installatiekosten</p>
+              <p className="font-semibold text-amber-900 mb-1">3. Aanschaf en installatie</p>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Een kwalitatieve ontharder met installatie kost €650–1.850. Bovendien moet het apparaat geplaatst
-                worden op de hoofdwaterleiding, wat een loodgieter vereist. Bij huurwoningen is aanpassen van de
-                hoofdleiding vaak niet toegestaan zonder toestemming van de verhuurder.
+                Een complete ontharder kost doorgaans {JOEP_MARKET.typicalInstalledRange} inclusief installatie.
+                Het apparaat komt op de hoofdwaterleiding en heeft een afvoer nodig, en meestal ook een
+                stopcontact. In een huurwoning mag je de hoofdleiding vaak niet zonder toestemming aanpassen.
               </p>
             </div>
             <div className="bg-amber-50 border border-amber-100 rounded-2xl p-5">
-              <p className="font-semibold text-amber-900 mb-1">4. Verwijdert alleen kalk — geen andere verontreinigingen</p>
+              <p className="font-semibold text-amber-900 mb-1">4. Alleen kalk, geen andere stoffen</p>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Een waterontharder verwijdert calcium en magnesium, maar laat chloor, nitraten, pesticiden, PFAS,
-                medicijnresten, zware metalen en microplastics ongemoeid. Wie naast kalkvrij ook schoon
-                drinkwater wil, heeft een aanvullende filtratietechniek nodig — zie de vergelijking verderop op
-                deze pagina.
+                Een waterontharder verwijdert calcium en magnesium, maar laat chloor, PFAS, medicijnresten en andere
+                opgeloste stoffen ongemoeid. Kraanwater voldoet aan de wettelijke EU-norm voor PFAS (100 nanogram
+                per liter voor de som van 20 PFAS), maar volgens een{' '}
+                <a href={NOS_GREENPEACE} className="text-[#005F8A] underline hover:no-underline" rel="noopener">
+                  Greenpeace-analyse (NOS, september 2026)
+                </a>{' '}
+                zit ongeveer een derde van het Nederlandse drinkwater boven de RIVM-advieswaarde van {PFAS_ADVIES}{' '}
+                nanogram PFOA-equivalenten per liter. Meer daarover lees je in{' '}
+                <Link href="/pfas-water" className="text-[#005F8A] underline hover:no-underline">
+                  PFAS in water
+                </Link>
+                . Wil je ook je drinkwater extra zuiveren, dan heb je daarnaast een andere techniek nodig; zie de
+                vergelijking hieronder.
               </p>
             </div>
             <div className="bg-amber-50 border border-amber-100 rounded-2xl p-5">
-              <p className="font-semibold text-amber-900 mb-1">5. Regelmatig onderhoud vereist</p>
+              <p className="font-semibold text-amber-900 mb-1">5. Onderhoud blijft nodig</p>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Zout bijvullen (maandelijks of tweemaandelijks), het hars periodiek desinfecteren, afsluitkranen
-                controleren en het apparaat eens per jaar laten nakijken door een servicemonteur. Wie dat
-                onderhoud verwaarloost, riskeert bacteriegroei in het zouttankreservoir en verslechtering van de
-                ontharder.
+                Je moet zout bijvullen en de zoutbak af en toe schoonmaken. Raakt het zout op, dan regenereert de
+                ontharder niet goed en komt er weer hard water uit de kraan.
               </p>
             </div>
           </div>
           <p className="text-gray-700 mt-4 leading-relaxed">
-            Meer over de gevolgen van kalk in huis en wat je ertegen kunt doen, lees je in ons artikel{' '}
+            Alle bezwaren op een rij staan in{' '}
+            <Link href="/waterontharder/nadelen" className="text-[#005F8A] underline hover:no-underline">
+              nadelen van een waterontharder
+            </Link>
+            . Meer over kalk in huis lees je in{' '}
             <Link href="/kennisbank/kalk-in-huis" className="text-[#005F8A] underline hover:no-underline">
               kalk in huis: oorzaken en oplossingen
             </Link>
@@ -528,25 +616,24 @@ export default function WaterOntharderPage() {
         {/* Vergelijking */}
         <section id="vergelijking">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Waterontharder vs omgekeerde osmose vs kalkfilter
+            Waterontharder, omgekeerde osmose of zoutloos?
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Wie last heeft van kalk heeft meerdere opties. Hieronder vergelijken we de drie meest gebruikte
-            technieken. Voor een nog diepgaandere analyse, lees ons{' '}
+            Deze technieken lossen verschillende problemen op. Een ontharder pakt kalk aan in het hele huis,
+            osmose zuivert alleen het drinkwater aan de keukenkraan. Voor een uitgebreide vergelijking, lees{' '}
             <Link href="/kennisbank/waterfilter-vergelijken" className="text-[#005F8A] underline hover:no-underline">
-              complete waterfilter vergelijking
+              waterfilters vergelijken
             </Link>
-            -artikel.
+            .
           </p>
           <div className="overflow-x-auto -mx-4 px-4">
-            <table className="w-full min-w-[580px] text-sm border-collapse">
+            <table className="w-full min-w-[560px] text-sm border-collapse">
               <thead>
                 <tr className="bg-[#003F5C] text-white">
                   <th className="text-left py-2.5 px-3 font-semibold">Type</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Verwijdert</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Zuiverheid</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Kosten/jr</th>
-                  <th className="py-2.5 px-3 font-semibold text-right">Natrium</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Wat het verwijdert</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Waar</th>
+                  <th className="text-left py-2.5 px-3 font-semibold">Natrium</th>
                 </tr>
               </thead>
               <tbody>
@@ -556,10 +643,9 @@ export default function WaterOntharderPage() {
                     className={r.highlight ? 'bg-[#E0F2FE] font-medium' : 'border-b border-gray-100'}
                   >
                     <td className="py-2.5 px-3 text-sm">{r.type}</td>
-                    <td className="py-2.5 px-3 text-right text-xs">{r.verwijdert}</td>
-                    <td className="py-2.5 px-3 text-right text-xs">{r.zuiverheid}</td>
-                    <td className="py-2.5 px-3 text-right text-xs">{r.kosten}</td>
-                    <td className="py-2.5 px-3 text-right text-xs">{r.natrium}</td>
+                    <td className="py-2.5 px-3 text-xs">{r.verwijdert}</td>
+                    <td className="py-2.5 px-3 text-xs">{r.waar}</td>
+                    <td className="py-2.5 px-3 text-xs">{r.natrium}</td>
                   </tr>
                 ))}
               </tbody>
@@ -567,24 +653,33 @@ export default function WaterOntharderPage() {
           </div>
           <div className="mt-5 space-y-4">
             <div className="bg-white border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-900 mb-1">Wanneer kies je voor een waterontharder?</p>
+              <p className="font-semibold text-gray-900 mb-1">Wanneer kies je een waterontharder?</p>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Als je primaire doel is kalkaanslag voorkomen in leidingen, cv-ketel, wasmachine en
-                badkamer, en je de volledige woning wilt ontharden (inclusief douchewater), dan is een
-                klassieke ionenwisselaar de meest directe oplossing. Zorg dan wel voor een aparte
-                drinkwatertap met osmose-filtratie of een onbehandeld aftappunt.
+                Als je kalk wilt voorkomen in leidingen, cv-ketel, wasmachine en badkamer, en al het water in huis
+                zacht wilt hebben, inclusief douchewater. Dan is een ionenwisselaar met zout volgens ons de meest
+                directe oplossing.
               </p>
             </div>
             <div className="bg-white border border-gray-100 rounded-xl p-4">
-              <p className="font-semibold text-gray-900 mb-1">Wanneer kies je voor omgekeerde osmose?</p>
+              <p className="font-semibold text-gray-900 mb-1">Wanneer kies je omgekeerde osmose?</p>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Als je wilt dat het drinkwater écht zuiver is — vrij van chloor, nitraten, pesticiden,
-                PFAS en microplastics — dan is{' '}
+                Als het je vooral om het drinkwater gaat. Een{' '}
                 <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">
-                  omgekeerde osmose
+                  osmosesysteem
                 </Link>{' '}
-                de betere keuze voor de keukenkraan. Een osmose systeem is goedkoper in aanschaf dan
-                een volledige huisontharder, vraagt minder onderhoud en voegt geen natrium toe.
+                haalt naast kalk ook het grootste deel van de andere opgeloste stoffen uit het water dat je drinkt
+                en kookt, en voegt geen natrium toe. Het werkt alleen voor de keukenkraan, niet voor douche en
+                apparaten. Sommige huishoudens combineren daarom een ontharder met osmose voor het drinkwater.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-xl p-4">
+              <p className="font-semibold text-gray-900 mb-1">Wanneer kies je zoutloos?</p>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Als je kalklast beperkt is en je geen zout wilt bijvullen. Verwacht geen zacht water: een{' '}
+                <Link href="/waterontharder/zoutloos" className="text-[#005F8A] underline hover:no-underline">
+                  zoutloze waterontharder
+                </Link>{' '}
+                verandert alleen hoe kalk neerslaat.
               </p>
             </div>
           </div>
@@ -592,11 +687,10 @@ export default function WaterOntharderPage() {
 
         {/* Kosten */}
         <section id="kosten">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Kosten: aanschaf, installatie en zout</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat kost een waterontharder?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De totale kosten van een waterontharder bestaan uit een eenmalig deel (aanschaf en installatie) en
-            terugkerende kosten (zout, water en onderhoud). Hieronder een realistisch overzicht voor een
-            gemiddeld gezin van 2–4 personen in een hard-watergebied.
+            De kosten bestaan uit een eenmalig deel (aanschaf en installatie) en doorlopende kosten (vooral zout).
+            Dit zijn de prijsklassen die we in de markt zien:
           </p>
           <div className="overflow-x-auto -mx-4 px-4">
             <table className="w-full min-w-[460px] text-sm border-collapse">
@@ -604,19 +698,12 @@ export default function WaterOntharderPage() {
                 <tr className="bg-[#E0F2FE]">
                   <th className="text-left py-2.5 px-3 font-semibold text-[#003F5C]">Kostenpost</th>
                   <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Eenmalig</th>
-                  <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Per jaar</th>
+                  <th className="py-2.5 px-3 font-semibold text-[#003F5C] text-right">Doorlopend</th>
                 </tr>
               </thead>
               <tbody>
                 {kostentabel.map(r => (
-                  <tr
-                    key={r.post}
-                    className={
-                      r.post === 'Totaal jaarlijks'
-                        ? 'bg-[#E0F2FE] font-semibold'
-                        : 'border-b border-gray-100'
-                    }
-                  >
+                  <tr key={r.post} className="border-b border-gray-100">
                     <td className="py-2.5 px-3">{r.post}</td>
                     <td className="py-2.5 px-3 text-right">{r.eenmalig}</td>
                     <td className="py-2.5 px-3 text-right">{r.perjaar}</td>
@@ -626,16 +713,27 @@ export default function WaterOntharderPage() {
             </table>
           </div>
           <p className="text-sm text-gray-600 mt-3 leading-relaxed">
-            Bedragen zijn indicatief voor een gezin van 2–4 personen, harde waterregio (18–22 °dH) en
-            een vraaggestuurde ontharder. Een hars-regeneratie kost gemiddeld €1–2 per cyclus.
+            Prijsklassen: {JOEP_MARKET.rangeSources.join(' en ')}, peildatum september 2026. Onze keuze JOEP kost
+            bij PureAqua {JOEP.devicePrice}, of {JOEP.installedPrice} compleet geïnstalleerd.
           </p>
           <p className="text-gray-700 mt-4 leading-relaxed">
-            Let op: bovenstaande kosten gelden voor de ontharding van het volledige huishoudelijk water.
-            Als je alleen het drinkwater wilt filteren, is een{' '}
-            <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">
-              osmose-systeem onder het aanrecht
+            Een uitgebreide rekensom staat in{' '}
+            <Link href="/waterontharder/kosten" className="text-[#005F8A] underline hover:no-underline">
+              kosten van een waterontharder
             </Link>{' '}
-            aanzienlijk goedkoper in aanschaf en onderhoud.
+            en{' '}
+            <Link href="/waterontharder/prijs" className="text-[#005F8A] underline hover:no-underline">
+              waterontharder prijs
+            </Link>
+            . Je zoutkosten per jaar bereken je met onze{' '}
+            <Link href="/hulpmiddelen/waterontharder-zout-kosten" className="text-[#005F8A] underline hover:no-underline">
+              rekenhulp voor zoutkosten
+            </Link>
+            . Wil je alleen het drinkwater zuiveren, dan is een{' '}
+            <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline hover:no-underline">
+              osmosesysteem
+            </Link>{' '}
+            vaak goedkoper.
           </p>
         </section>
 
@@ -643,41 +741,34 @@ export default function WaterOntharderPage() {
         <section id="onderhoud">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Onderhoud van een waterontharder</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Een waterontharder vraagt regelmatig onderhoud om goed te blijven functioneren en om
-            hygiënisch te blijven. Verwaarloosde ontharders kunnen een broedplaats worden voor bacteriën in
-            het zouttankcompartiment. Hieronder een overzicht van de vereiste onderhoudshandelingen:
+            Een waterontharder vraagt weinig, maar niet niets. Een verwaarloosde zoutbak kan vervuilen. Dit is
+            het gebruikelijke onderhoud:
           </p>
           <div className="space-y-3">
             {[
               {
                 onderdeel: 'Zout bijvullen',
-                interval: 'Maandelijks of tweemaandelijks',
+                interval: 'Als het niveau laag is',
                 actie:
-                  'Controleer het zoutniveau in het brinereservoir. Gebruik speciaal onthardingszout (tabletten of blokken), geen keukenzout. Zorg dat het reservoir nooit leeg raakt — dan regenereert de ontharder zonder pekel en verliest het hars zijn capaciteit.',
+                  'Gebruik speciaal onthardingszout (tabletten), geen keukenzout. Laat de zoutbak nooit leeg raken, anders regenereert het hars niet goed.',
               },
               {
-                onderdeel: 'Brinereservoir reinigen',
+                onderdeel: 'Zoutbak schoonmaken',
                 interval: 'Jaarlijks',
                 actie:
-                  'Leeg het zouttank en reinig het van zoutkorst en slijmvorming. Desinfecteer met een milde chlooroplossing en spoel grondig na. Dit voorkomt bacteriegroei en klontvorming van zout (bridging).',
+                  'Haal zoutkorsten en aanslag weg en spoel de bak goed na. Zo voorkom je verontreiniging en klonten zout.',
               },
               {
-                onderdeel: 'Harsbedcontrole',
-                interval: 'Elke 2–3 jaar (of bij servicemonteur)',
-                actie:
-                  'Laat de kwaliteit van het harsbed controleren. Na 8–12 jaar verliest het hars capaciteit en moet het worden vervangen. Dit kost €150–300 exclusief arbeid.',
-              },
-              {
-                onderdeel: 'Hardheid uitgangswater meten',
+                onderdeel: 'Hardheid controleren',
                 interval: 'Halfjaarlijks',
                 actie:
-                  'Meet met een sneltest de hardheid van het zachte water. Als de waarde boven de ingestelde doelwaarde stijgt, is bijstelling of harsvervanging nodig.',
+                  'Meet met een eenvoudige test de hardheid van het water uit de kraan. Stijgt die boven de ingestelde waarde, stel de ontharder dan bij of laat hem nakijken.',
               },
               {
-                onderdeel: 'Jaarlijkse servicebeurt',
-                interval: 'Jaarlijks (aanbevolen)',
+                onderdeel: 'Controle door een monteur',
+                interval: 'Naar behoefte',
                 actie:
-                  'Laat een erkende monteur de ontharder controleren: lekken, ventielen, regeneratieprogramma, zout- en waterverbruik en elektrische onderdelen.',
+                  'Laat bij twijfel lekken, ventielen en het regeneratieprogramma controleren. Sommige fabrikanten bieden hiervoor een optioneel serviceabonnement.',
               },
             ].map(r => (
               <div key={r.onderdeel} className="flex gap-3 items-start border border-gray-100 rounded-xl p-3">
@@ -692,70 +783,19 @@ export default function WaterOntharderPage() {
               </div>
             ))}
           </div>
-        </section>
-
-        {/* Voor wie */}
-        <section id="voor-wie">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Voor wie is een waterontharder zinvol?</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Een waterontharder is niet voor iedereen even relevant. Hieronder een overzicht van situaties
-            waarbij een waterontharder kopen de moeite waard is — en situaties waarbij een alternatief
-            beter past.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-            {[
-              {
-                titel: 'Woningen in hard-waterregio',
-                desc:
-                  'Woon je in een gemeente met water boven 15 °dH? Dan is kalkoverlast reëel en kan een ontharder de hoeveelheid schoonmaakwerk en apparaatstoringen flink verminderen.',
-              },
-              {
-                titel: 'Bezitters van een cv-ketel of lucht-warmtepomp',
-                desc:
-                  'Kalkafzetting op warmtewisselaars is een van de meest voorkomende oorzaken van rendementsverlies en vroegtijdige slijtage. Zacht water beschermt uw investering.',
-              },
-              {
-                titel: 'Gezinnen met een wasmachine en vaatwasser',
-                desc:
-                  'Zacht water verlengt de levensduur van verwarmingselementen in wasmachine en vaatwasser en vermindert het benodigde wasmiddel.',
-              },
-              {
-                titel: 'Mensen met droge huid of eczeem',
-                desc:
-                  'Zacht douchewater laat minder mineraalresidu op huid en haar achter. Sommige mensen met droge huid of eczeem merken verbetering.',
-              },
-              {
-                titel: 'Eigenaren van een nieuwbouwwoning',
-                desc:
-                  'Bij nieuwbouw is de aanleg van een ontharder eenvoudiger omdat de leidingen nog niet door kalk aangetast zijn. Integreer het systeem gelijk bij de installatie van de technische ruimte.',
-              },
-              {
-                titel: 'Niet geschikt: huurders zonder toestemming',
-                desc:
-                  'Installatie op de hoofdleiding vereist doorgaans toestemming van de verhuurder. Bij huurwoningen is een osmose-systeem onder de keukenkraan een eenvoudiger alternatief.',
-              },
-            ].map(p => (
-              <div key={p.titel} className="bg-white border border-gray-100 rounded-2xl p-4">
-                <p className="font-semibold text-gray-900 mb-1 text-sm">{p.titel}</p>
-                <p className="text-sm text-gray-600 leading-relaxed">{p.desc}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            Woon je in Amsterdam, Utrecht of een andere stad en wil je weten hoe hard het water is bij jou in
-            de buurt? Bekijk onze lokale informatie, zoals{' '}
-            <Link href="/waterhardheid/amsterdam" className="text-[#005F8A] underline hover:no-underline">
-              waterontharder Amsterdam
+          <p className="text-gray-700 mt-4 leading-relaxed">
+            Het volledige schema staat in{' '}
+            <Link href="/waterontharder/onderhoud" className="text-[#005F8A] underline hover:no-underline">
+              onderhoud van een waterontharder
             </Link>
-            . We hebben voor de grootste gemeenten de waterhardheid, kalkoverlast en meest geschikte
-            oplossingen op een rij gezet.
+            .
           </p>
         </section>
 
         {/* CTA */}
         <HubCrossLinks exclude="waterontharder" />
 
-        <JoepCTA context="algemeen" content="waterontharder-joep" />
+        <JoepCTA context="hard-water" content="waterontharder-joep" />
 
         <AffiliateCTA
           destination="waterontharders"
@@ -773,54 +813,54 @@ export default function WaterOntharderPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               {
+                href: '/waterontharder/kopen',
+                title: 'Waterontharder kopen',
+                desc: 'Koopgids: capaciteit, installatie, zout en kosten over tien jaar.',
+              },
+              {
+                href: JOEP.reviewPath,
+                title: 'JOEP waterontharder',
+                desc: 'Specificaties, prijs en voor wie onze keuze wel en niet past.',
+              },
+              {
                 href: '/kennisbank/waterontharder',
                 title: 'Kennisbank: waterontharder',
-                desc: 'Diepgaande achtergrond over ionenwisseling, harsbedtypes en marktoverzicht.',
+                desc: 'Achtergrond over ionenwisseling, harsbed en de markt.',
               },
               {
                 href: '/kennisbank/waterhardheid-verlagen',
                 title: 'Waterhardheid verlagen',
-                desc: 'Alle methoden om waterhardheid te verlagen — van ontharder tot osmose.',
+                desc: 'Alle methoden om waterhardheid te verlagen, van ontharder tot osmose.',
               },
               {
                 href: '/waterhardheid',
                 title: 'Waterhardheid per gemeente',
-                desc: 'Zoek de actuele waterhardheid op voor jouw woonplaats in Nederland.',
+                desc: 'Zoek de actuele waterhardheid op voor jouw woonplaats.',
               },
               {
                 href: '/omgekeerde-osmose',
                 title: 'Omgekeerde osmose',
-                desc: 'De alternatief voor drinkwater: 95–99% zuivering zonder natriumtoevoeging.',
+                desc: 'Het alternatief voor zuiver drinkwater, zonder natrium toe te voegen.',
               },
               {
                 href: '/kennisbank/kalk-verwijderen-water',
                 title: 'Kalk verwijderen uit water',
-                desc: 'Overzicht van alle technieken om kalk te verwijderen of te neutraliseren.',
-              },
-              {
-                href: '/kennisbank/kalk-in-huis',
-                title: 'Kalk in huis: oorzaken en oplossingen',
-                desc: 'Wat kalk doet met apparaten, leidingen en tegels — en hoe je het bestrijdt.',
+                desc: 'Overzicht van technieken om kalk te verwijderen of te neutraliseren.',
               },
               {
                 href: '/waterhardheid/amsterdam',
                 title: 'Waterhardheid in Amsterdam',
-                desc: 'Lokale waterhardheidsdata en de beste aanpak voor Amsterdamse woningen.',
-              },
-              {
-                href: '/kennisbank/waterfilter-vergelijken',
-                title: 'Waterfilter vergelijken',
-                desc: 'Alle filtertypes naast elkaar: osmose, ontharder, koolstof en filterkan.',
+                desc: 'Lokale hardheidsdata en de aanpak voor Amsterdamse woningen.',
               },
               {
                 href: '/stoffen-in-drinkwater/kalk-mineralen',
                 title: 'Kalk en mineralen in drinkwater',
-                desc: 'Calcium, magnesium en bicarbonaat: effecten op gezondheid, apparaten en smaak.',
+                desc: 'Calcium, magnesium en bicarbonaat: effect op apparaten en smaak.',
               },
               {
                 href: '/filtertechnieken/ionenwisseling',
                 title: 'Ionenwisseling als filtertechniek',
-                desc: 'Hoe een harsbed werkt, regeneratie met zout en toepassingen voor ontharding.',
+                desc: 'Hoe een harsbed werkt en waar ionenwisseling nog meer voor wordt gebruikt.',
               },
             ].map(l => (
               <Link
@@ -840,8 +880,9 @@ export default function WaterOntharderPage() {
         <section className="mt-8">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Waterontharder-merken</h2>
           <p className="text-gray-600 text-sm mb-4">
-            Bekende merken op de Nederlandse en Belgische markt. Neutrale uitleg per merk, zonder
-            verkoopprikkel - beoordeel altijd op de juiste capaciteit, certificering en service.
+            Bekende merken op de Nederlandse en Belgische markt, met uitleg per merk. Onze keuze is
+            JOEP; JOEP en AquaCell worden verkocht door PureAqua, waaraan wij gelieerd zijn.
+            Beoordeel altijd op de juiste capaciteit, certificering en service.
           </p>
           <div className="flex flex-wrap gap-2">
             {[
@@ -871,7 +912,7 @@ export default function WaterOntharderPage() {
             <Link href="/vergelijken/bwt-vs-grunbeck" className="text-[#005F8A] underline">BWT vs Grunbeck</Link>,{' '}
             <Link href="/vergelijken/harvey-vs-bwt" className="text-[#005F8A] underline">Harvey vs BWT</Link>{' '}
             of de{' '}
-            <Link href="/beste-waterontharder-2026" className="text-[#005F8A] underline">beste waterontharder koopgids</Link>.
+            <Link href="/beste-waterontharder-2026" className="text-[#005F8A] underline">koopgids beste waterontharder 2026</Link>.
           </p>
         </section>
 
@@ -888,19 +929,15 @@ export default function WaterOntharderPage() {
             </Link>
             <Link href="/waterontharder/gezondheid" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterontharder en gezondheid</p>
-              <p className="text-sm text-gray-500">Is onthard water gezond? Natrium, mineralen en voor wie oplet - genuanceerd.</p>
+              <p className="text-sm text-gray-500">Is onthard water gezond? Natrium, mineralen en voor wie oplet, genuanceerd.</p>
             </Link>
             <Link href="/filtertechnieken/ionenwisseling" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Ionenwisseling: hoe werkt onthardering?</p>
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Ionenwisseling: hoe werkt ontharding?</p>
               <p className="text-sm text-gray-500">De technische werking van ionenwisseling en wanneer het de juiste keuze is.</p>
             </Link>
             <Link href="/keuzehulp/hard-water" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Keuzehulp bij hard water</p>
-              <p className="text-sm text-gray-500">Welke oplossing past het beste bij uw situatie: ontharder, anti-kalkfilter of osmose?</p>
-            </Link>
-            <Link href="/waterhardheid" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Waterhardheid in uw gemeente</p>
-              <p className="text-sm text-gray-500">Zoek op postcode hoe hard het water is in uw regio.</p>
+              <p className="text-sm text-gray-500">Welke oplossing past bij jouw situatie: ontharder, anti-kalkfilter of osmose?</p>
             </Link>
             <Link href="/stoffen-in-drinkwater/kalk-mineralen" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
               <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors mb-1">Kalk en mineralen in drinkwater</p>
@@ -909,7 +946,16 @@ export default function WaterOntharderPage() {
           </div>
         </section>
 
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'ILT', 'EU-richtlijn 2020/2184', 'Vewin', 'WHO – Guidelines for Drinking-water Quality']} />
+        <MethodologyBadge
+          lastReviewed={MODIFIED}
+          sources={[
+            'RIVM (advieswaarde PFAS)',
+            `EU-richtlijn ${EU_RICHTLIJN} (PFAS-norm)`,
+            'NOS (Greenpeace-analyse, september 2026)',
+            'Fabrikant AquaSens (JOEP-specificaties)',
+            ...JOEP_MARKET.rangeSources,
+          ]}
+        />
 
         {/* FAQ */}
         <section id="faq">

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     question: 'Wat doet een 4-in-1 watersysteem precies?',
-    answer: 'Een 4-in-1 systeem levert via een enkel kraantje vier watertemperaturen: (1) gefilterd koud drinkwater via het osmosemembaan, (2) koud kraanwater zonder filtering, (3) warm water, en (4) kokend of zeer heet water (98 tot 100 graden; bij de PureAqua 4-in-1 kraan circa 96 graden). Sommige systemen, zoals de PureAqua 4-in-1, geven daarnaast gekoeld gezuiverd water. De filterketen bestaat uit een sedimentfilter, pre-koolstoffilter, RO-membraan en post-koolstoffilter. De geintegreerde boiler houdt een reservoir (1-3 liter) permanent op kooktemperatuur. Dit vervangt zowel de waterkoker als alle losse waterfilters.',
+    answer: 'Een 4-in-1 systeem levert via een enkel kraantje vier watertemperaturen: (1) gefilterd koud drinkwater via het osmosemembaan, (2) koud kraanwater zonder filtering, (3) warm water, en (4) kokend of zeer heet water (98 tot 100 graden; bij de PureAqua 4-in-1 kraan circa 96 graden). Sommige systemen, zoals de PureAqua 4-in-1, geven daarnaast gekoeld gezuiverd water. De filterketen bestaat meestal uit een sedimentfilter, pre-koolstoffilter, RO-membraan en post-koolstoffilter; de PureAqua 4-in-1 werkt met voorfilter, osmosemembraan en remineralisatie. De geintegreerde boiler houdt een reservoir (1-3 liter) permanent op kooktemperatuur. Dit vervangt zowel de waterkoker als alle losse waterfilters.',
   },
   {
     question: 'Is een 4-in-1 systeem goedkoper dan losse componenten?',
@@ -37,7 +37,7 @@ const faqItems = [
   },
   {
     question: 'Kan ik een all-in-one systeem in een huurwoning installeren?',
-    answer: 'Een 4-in-1 systeem vereist aansluiting op de koudwaterleiding, afvoer van concentraat naar de sifon, en een extra kraantje in het aanrecht (boorgat 35 mm). Dit is een permanente ingreep die toestemming van de verhuurder vereist. Bij vertrek kunt u het systeem meenemen en het boorgat afdichten. Voor huurwoningen zijn losse filterkannen of aanrechtmodellen eenvoudiger; een 4-in-1 is het meest geschikt voor koopwoningen.',
+    answer: 'Ja, als uw verhuurder toestemming geeft. Een 4-in-1 systeem komt in plaats van uw keukenkraan, dus een extra kraantje is niet nodig. Wel heeft u een aansluiting op de koudwaterleiding, een afvoer naar de sifon en stroom onder het aanrecht nodig. Bij de PureAqua 4-in-1 staan daar twee apparaten (een heet-/koelunit en een osmose-unit) die samen twee stopcontacten nodig hebben. Wilt u osmose zonder verbouwing, kijk dan naar een countertop zoals het PureAqua Water zuiver apparaat.',
   },
 ];
 
@@ -67,7 +67,7 @@ export default function AllInOnePage() {
             headline: 'All-in-one waterfilter — osmose + kokend water + koolstoffilter in 1 systeem',
             description: 'Een 4-in-1 systeem combineert RO-membraan, pre/post-koolfilter en kokendwaterboiler. 1 installatie, 1 kraantje.',
             datePublished: '2026-05-17',
-            dateModified: '2026-05-17',
+            dateModified: '2026-11-03',
             url: 'https://waterfilterplatform.nl/beste-waterfilter/all-in-one',
             publisher: { '@type': 'Organization', name: 'WaterfilterPlatform', url: 'https://waterfilterplatform.nl' },
           },
@@ -87,21 +87,21 @@ export default function AllInOnePage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-8">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184', 'SGS']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         <section>
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Wat doet een 4-in-1 watersysteem?</h2>
           <p className="text-gray-700 mb-4">
-            Een 4-in-1 systeem (ook wel all-in-one waterfilter of combinatiesysteem genoemd) is een geintegreerde installatie die alle functies van een osmosefilter en een kokendwaterkraan samenbrengt in een enkel apparaat onder het aanrecht met een enkel elegant kraantje.
+            Een 4-in-1 systeem (ook wel all-in-one waterfilter of combinatiesysteem genoemd) is een geintegreerde installatie die alle functies van een osmosefilter en een kokendwaterkraan samenbrengt in een installatie onder het aanrecht met een enkel elegant kraantje. Afhankelijk van het merk staat daar een apparaat of, zoals bij de PureAqua 4-in-1, twee.
           </p>
           <p className="text-gray-700 mb-4">
-            De filterketen bestaat standaard uit:
+            De filterketen bestaat meestal uit de stappen hieronder. De PureAqua 4-in-1 kraan werkt met drie stappen: voorfilter, osmosemembraan en remineralisatie.
           </p>
           <ol className="list-decimal pl-6 text-gray-700 space-y-2 text-sm mb-4">
             <li><strong>Sedimentfilter (5 micron):</strong> verwijdert zand, slib en zwevende deeltjes</li>
             <li><strong>Pre-koolstoffilter (CTO):</strong> verwijdert chloor, chloramine en organische stoffen die het RO-membraan beschadigen</li>
-            <li><strong>RO-membraan (0,0001 micron):</strong> verwijdert PFAS (95-99%), nitraat (85-95%), lood, bacterien, virussen, medicijnen en kalk</li>
+            <li><strong>RO-membraan:</strong> vermindert PFAS, lood en veel andere opgeloste stoffen sterk (bij de PureAqua 4-in-1 mat SGS op een nieuw systeem meer dan 99,6% minder PFOS en meer dan 99,8% minder lood; bron en rapport op de <Link href="/4-in-1-kraan" className="text-[#005F8A] hover:underline">pagina over de 4-in-1 kraan</Link>)</li>
             <li><strong>Post-koolstoffilter:</strong> verfijnt smaak en geur van het gefiltreerde water</li>
             <li><strong>Kokendwaterboiler:</strong> houdt 1,5-3 liter water permanent op of net onder kooktemperatuur (bij de PureAqua 4-in-1 kraan circa 96 graden)</li>
           </ol>
@@ -209,6 +209,7 @@ export default function AllInOnePage() {
             <li><Link href="/omgekeerde-osmose" className="text-[#005F8A] hover:underline">Omgekeerde osmose: complete gids</Link></li>
             <li><Link href="/kokend-water-kraan" className="text-[#005F8A] hover:underline">Kokend water kraan: vergelijking en advies</Link></li>
             <li><Link href="/4-in-1-kraan" className="text-[#005F8A] hover:underline">4-in-1 kraan: alles over combinatiesystemen</Link></li>
+            <li><Link href="/countertop-osmose" className="text-[#005F8A] hover:underline">Countertop osmose: zuiver water zonder vaste installatie</Link></li>
             <li><Link href="/beste-waterfilter" className="text-[#005F8A] hover:underline">Terug naar beste waterfilter overzicht</Link></li>
           </ul>
         </div>

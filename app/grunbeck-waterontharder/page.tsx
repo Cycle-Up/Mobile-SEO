@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Grunbeck waterontharder: modellen, ervaringen en alternatief',
       description:
-        'Wat biedt een Grunbeck waterontharder (softliQ), voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Onafhankelijke uitleg.',
+        'Wat biedt een Grunbeck waterontharder (softliQ), voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Met bronnen en kanttekeningen.',
       url: 'https://waterfilterplatform.nl/grunbeck-waterontharder',
       type: 'article',
       locale: 'nl_NL',
@@ -56,7 +56,7 @@ export default function GrunbeckWaterontharderPage() {
           title: 'Grunbeck waterontharder: modellen, ervaringen en alternatief',
           description: 'Grunbeck waterontharder: wat biedt de softliQ-serie, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/grunbeck-waterontharder',
         }}
       />
@@ -86,7 +86,8 @@ export default function GrunbeckWaterontharderPage() {
           <p className="text-gray-600 text-lg mb-6">
             <strong>Grunbeck</strong> is een Duitse premium fabrikant van waterbehandeling. Hieronder
             lees je wat Grunbeck biedt, voor wie het geschikt is, waar je op let bij de keuze en hoe het
-            zich verhoudt tot alternatieven - onafhankelijk en zonder verkoopprikkel.
+            zich verhoudt tot alternatieven. Onze eigen keuze is JOEP, verkocht door PureAqua, waaraan wij
+            gelieerd zijn.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -184,7 +185,8 @@ export default function GrunbeckWaterontharderPage() {
           </p>
           <p className="text-xs text-gray-400 mt-4">
             WaterfilterPlatform verkoopt geen Grunbeck-producten en ontvangt hiervoor geen vergoeding.
-            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt mei 2026.
+            JOEP, onze keuze, wordt wel verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.
+            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt november 2026.
           </p>
         </section>
 

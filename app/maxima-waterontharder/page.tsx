@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Maxima waterontharder: modellen, ervaringen en alternatief',
       description:
-        'Wat biedt een Maxima waterontharder, voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Onafhankelijke uitleg.',
+        'Wat biedt een Maxima waterontharder, voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Met kanttekeningen.',
       url: 'https://waterfilterplatform.nl/maxima-waterontharder',
       type: 'article',
       locale: 'nl_NL',
@@ -56,7 +56,7 @@ export default function MaximaWaterontharderPage() {
           title: 'Maxima waterontharder: modellen, ervaringen en alternatief',
           description: 'Maxima waterontharder: wat biedt dit betaalbare NL-marktmerk, voor wie is het geschikt en waar let je op? Plus een eerlijke afweging en alternatieven in 2026.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/maxima-waterontharder',
         }}
       />
@@ -86,8 +86,8 @@ export default function MaximaWaterontharderPage() {
           <p className="text-gray-600 text-lg mb-6">
             <strong>Maxima</strong> is een op de Nederlandse markt veel verkocht merk van betaalbare
             waterontharders. Hieronder lees je wat Maxima biedt, voor wie het geschikt is, waar
-            je op let bij de keuze en hoe het zich verhoudt tot alternatieven - onafhankelijk en zonder
-            verkoopprikkel.
+            je op let bij de keuze en hoe het zich verhoudt tot alternatieven. Onze eigen keuze is JOEP,
+            verkocht door PureAqua, waaraan wij gelieerd zijn.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -108,11 +108,11 @@ export default function MaximaWaterontharderPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
         <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
         <QuickAnswer
           question="Is een Maxima waterontharder een goede keuze?"
-          answer="Maxima is een betaalbaar NL-marktmerk met ionenwisselaars die met zout werken en een goede prijs-prestatieverhouding bieden voor gezinnen. Of het voor jou de beste keuze is hangt af van je waterhardheid, huishoudgrootte en budget - let vooral op de capaciteit, het zoutverbruik en de garantie en service, en vergelijk dit met andere merken."
+          answer="Maxima is een betaalbaar NL-marktmerk met ionenwisselaars die met zout werken en een goede prijs-prestatieverhouding bieden voor gezinnen. Of het voor jou de beste keuze is hangt af van je waterhardheid, huishoudgrootte en budget. Let vooral op de capaciteit, het zoutverbruik en de garantie en service, en vergelijk dit met andere merken."
         />
 
         <section>
@@ -132,7 +132,7 @@ export default function MaximaWaterontharderPage() {
             ].map(([t, d]) => (
               <div key={t} className="flex gap-3">
                 <span className="text-[#005F8A] font-bold">-</span>
-                <p className="text-gray-700"><strong>{t}</strong> - {d}</p>
+                <p className="text-gray-700"><strong>{t}</strong>: {d}</p>
               </div>
             ))}
           </div>
@@ -166,7 +166,7 @@ export default function MaximaWaterontharderPage() {
         <CTABanner context="waterhardheid" />
 
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waar let je op bij de keuze - en alternatieven</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waar let je op bij de keuze en welke alternatieven zijn er?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Beoordeel een Maxima waterontharder net als elk ander merk op de juiste capaciteit voor jouw
             waterhardheid en huishouden, het zout- en waterverbruik bij regeneratie, en de garantie en
@@ -185,7 +185,8 @@ export default function MaximaWaterontharderPage() {
           </p>
           <p className="text-xs text-gray-400 mt-4">
             WaterfilterPlatform verkoopt geen Maxima-producten en ontvangt hiervoor geen vergoeding.
-            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt mei 2026.
+            JOEP, onze keuze, en AquaCell worden wel verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.
+            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt november 2026.
           </p>
         </section>
 

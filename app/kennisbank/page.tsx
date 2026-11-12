@@ -1603,7 +1603,7 @@ const artikelen = [
   {
     slug: 'waterontharder-merken',
     titel: 'Waterontharder merken vergelijken: eerlijk overzicht',
-    samenvatting: 'Kinetico, BWT, Harvey, Hague, Clack vergeleken zonder reclame. Kenmerken, garanties, Nederlandse service en wanneer goedkoper volstaat.',
+    samenvatting: 'Kinetico, BWT, Harvey, Hague en Clack vergeleken, plus onze keuze JOEP (verkocht door PureAqua, waaraan wij gelieerd zijn). Garanties, service en prijzen.',
     categorie: 'Vergelijken',
     datum: '13 mei 2026',
   },

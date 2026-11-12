@@ -9,16 +9,17 @@ import { AuthorBox } from '@/components/AuthorBox';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
 import { CountertopRecommendation } from '@/components/CountertopRecommendation';
 import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
   title: 'Beste osmosefilter 2026: top 5 eerlijk vergeleken',
   description:
-    'Welk osmosefilter is het beste in 2026? Wij vergeleken 5 systemen op prijs, membraankwaliteit, filterstadia, tankgrootte en TCO. Met eerlijke reviews.',
+    'Beste osmosefilter 2026: onze keuze is The Source met zuiver-water-kraan (395 euro + kraan vanaf 540 euro, filters 149 euro per jaar). Plus top 5 vergeleken.',
   alternates: { canonical: 'https://waterfilterplatform.nl/beste-osmosefilter-2026' },
   openGraph: {
     title: 'Beste osmosefilter 2026: top 5 eerlijk vergeleken',
     description:
-      'Onze top 5 osmosefilters voor 2026 vergeleken op prijs, filterstadia, membraantype, tankgrootte en 5-jaar eigendomskosten.',
+      'Onze keuze voor osmosewater uit je eigen kraan: The Source met 3-weg-kraan (395 euro + kraan 540 tot 840 euro, filters 149 euro per jaar). Plus de top 5, met de PureAqua 4-in-1, vergeleken.',
     url: 'https://waterfilterplatform.nl/beste-osmosefilter-2026',
     type: 'article',
   },
@@ -28,7 +29,7 @@ const faqItems = [
   {
     question: 'Wat is het beste osmosefilter voor thuis in 2026?',
     answer:
-      'Dat hangt af van je situatie. Als je op zoek bent naar de meest complete oplossing, osmose filtratie gecombineerd met zeer heet (circa 96 graden), gekoeld, warm en koud water uit één kraan, is volgens ons de PureAqua 4-in-1 kraan met geïntegreerde RO de beste keuze. Bruisend water zit daar niet op. Wil je een puur under-sink osmose-systeem zonder extra functies, dan zijn de APEC ROES-50 en de iSpring RCC7AK uitstekende opties op prijs-kwaliteitsverhouding.',
+      'Dat hangt af van wat je wilt. Voor osmosewater uit je eigen keukenkraan is onze keuze een zuiver-water-kraan met The Source: The Source kost 395 euro, de 3-weg-kraan 540 tot 840 euro en de filters 149 euro per jaar. Wil je ook zeer heet (circa 96 graden) en gekoeld water uit één kraan, dan is volgens ons de PureAqua 4-in-1 kraan (1.948 euro) de completere keuze. Bruisend water zit er niet op. Zonder installatie, bijvoorbeeld in een huurwoning, raden wij het Water zuiver apparaat aan (495 euro). Zoek je alleen een losse budget-onderbouwset, dan zijn de APEC ROES-50 en de iSpring RCC7AK opties. Transparant: WaterfilterPlatform is gelieerd aan PureAqua, dat The Source, de 4-in-1 kraan en het Water zuiver apparaat verkoopt.',
   },
   {
     question: 'Hoeveel filterstadia heeft een goed osmosefilter?',
@@ -53,7 +54,7 @@ const faqItems = [
   {
     question: 'Wat zijn de totale kosten van een osmosefilter over 5 jaar?',
     answer:
-      'Reken op €400–1.500 over 5 jaar voor een goed systeem (afhankelijk van het type). Dat bestaat uit aanschaf (€150–1.000), jaarlijkse filtervervanging (€60–150/jr) en een membraanvervanging rond jaar 2–3 (€40–80). Ter vergelijking: een gezin van 4 personen die flessenwater koopt geeft €2.000–3.000 uit over 5 jaar. Een osmosefilter verdient zichzelf gemiddeld in 1 tot 3 jaar terug.',
+      'Dat hangt sterk af van het type. De vier losse onderbouwsets uit onze top 5 kosten volgens de rekensom op deze pagina circa 620 tot 1.020 euro over 5 jaar, inclusief filters en membraan. Onze keuze, The Source met zuiver-water-kraan, kost 935 tot 1.235 euro bij aanschaf (395 euro plus een kraan van 540 tot 840 euro); met 149 euro aan filters per jaar komt dat op circa 1.680 tot 1.980 euro over 5 jaar, zonder de optionele installatie van 299 euro. De 4-in-1 kraan komt op circa 2.663 euro over 5 jaar, maar geeft ook zeer heet en gekoeld water. Ter vergelijking: een gezin van 4 personen dat flessenwater koopt, is volgens dezelfde rekensom circa 2.500 euro kwijt over 5 jaar. Of en wanneer je een systeem terugverdient, hangt af van hoeveel flessenwater je nu koopt.',
   },
 ];
 
@@ -64,11 +65,11 @@ const top5 = [
     type: '4-in-1 kraan met geïntegreerd RO',
     prijs: '€ 1.948',
     filterstadia: 3,
-    membraantype: 'TFC Polyamide RO',
+    membraantype: 'Osmosemembraan',
     tankCapaciteit: '2,3 liter heetwatertank + koelunit',
-    afvalwaterRatio: '1:1 (met permeaatpomp)',
-    jaarlijkseKosten: '€ 80 – 150',
-    garantie: '5 jaar',
+    afvalwaterRatio: 'Geen opgave bekend',
+    jaarlijkseKosten: `gemiddeld circa € ${FOUR_IN_ONE.filterCostYearEur} (fabrikantprijzen omgerekend)`,
+    garantie: FOUR_IN_ONE.warranty,
     highlight: true,
     pros: [
       'Alles-in-één: osmose + zeer heet (circa 96 graden) + gekoeld + warm + koud',
@@ -190,7 +191,7 @@ const top5 = [
 const onderdelenVergelijking = [
   {
     onderdeel: 'Membraantype',
-    pureaqua: 'TFC Polyamide',
+    pureaqua: 'Osmosemembraan',
     apec: 'FILMTEC TFC',
     ispring: 'TFC Polyamide',
     aquamedic: 'TFC Polyamide',
@@ -214,7 +215,7 @@ const onderdelenVergelijking = [
   },
   {
     onderdeel: 'Afvalwater-ratio',
-    pureaqua: '1:1',
+    pureaqua: 'Geen opgave bekend',
     apec: '3:1',
     ispring: '3:1',
     aquamedic: '2:1',
@@ -222,7 +223,7 @@ const onderdelenVergelijking = [
   },
   {
     onderdeel: 'Zuiverheid',
-    pureaqua: '95–99%',
+    pureaqua: `SGS, nieuw systeem: ${FOUR_IN_ONE.lab.PFOS} minder PFOS, ${FOUR_IN_ONE.lab.PFOA} minder PFOA, ${FOUR_IN_ONE.lab.lood} minder lood`,
     apec: '95–99%',
     ispring: '95–99%',
     aquamedic: '95–98%',
@@ -308,9 +309,9 @@ export default function BesteOsmosefilter2026Page() {
         type="Article"
         article={{
           title: 'Beste osmosefilter 2026: top 5 eerlijk vergeleken',
-          description: 'Welk osmosefilter is het beste in 2026? Wij vergeleken 5 systemen op prijs, membraankwaliteit, filterstadia, tankgrootte en TCO. Met eerlijke reviews.',
+          description: 'Beste osmosefilter 2026: onze keuze is The Source met zuiver-water-kraan (395 euro + kraan vanaf 540 euro, filters 149 euro per jaar). Plus top 5 vergeleken.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/beste-osmosefilter-2026',
         }}
       />
@@ -329,7 +330,7 @@ export default function BesteOsmosefilter2026Page() {
         schema={[
           {
             '@type': 'ItemList',
-            name: 'Beste osmosefilters 2026',
+            name: 'Top 5 osmosesystemen 2026 vergeleken',
             url: 'https://waterfilterplatform.nl/beste-osmosefilter-2026',
             numberOfItems: top5.length,
             itemListOrder: 'https://schema.org/ItemListOrderAscending',
@@ -354,7 +355,7 @@ export default function BesteOsmosefilter2026Page() {
             <span>Beste osmosefilter 2026</span>
           </nav>
           <div className="inline-block text-xs bg-[#005F8A] text-white px-3 py-1 rounded-full mb-4 font-medium">
-            Bijgewerkt mei 2026
+            Bijgewerkt november 2026
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Beste osmosefilter 2026: top 5 eerlijk vergeleken
@@ -382,10 +383,10 @@ export default function BesteOsmosefilter2026Page() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-14">
-        <MethodologyBadge lastReviewed="2026-05-29" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
-        <AuthorBox datePublished="2026-05-29" />
+        <MethodologyBadge lastReviewed="2026-11-03" sources={['RIVM', 'Vewin', 'EU-richtlijn 2020/2184']} />
+        <AuthorBox datePublished="2026-05-29" dateModified="2026-11-03" />
 
-        <QuickAnswer answer="Het beste osmosefilter van 2026 is een 5-stadia onderbouwsysteem met remineralisatiefilter. Belangrijk: let op NSF/ANSI 58-certificering, een afvalwaterratio van 1:1 of beter, en een jaarlijkse filterwissel onder €100. Voor de meeste Nederlandse gezinnen is een systeem tussen €150 en €400 de beste prijs-kwaliteitskeuze." />
+        <QuickAnswer answer="Onze keuze voor 2026: een zuiver-water-kraan met The Source is volgens ons de beste manier om osmosewater uit je eigen kraan te tappen. The Source kost 395 euro, de 3-weg-kraan 540 tot 840 euro (15 modellen), filters 149 euro per jaar en installatie is optioneel voor 299 euro. Wil je ook zeer heet (circa 96 graden) en gekoeld water, dan is volgens ons de PureAqua 4-in-1 kraan (1.948 euro) de completere keuze; mag je niet verbouwen, dan het Water zuiver apparaat (495 euro, zonder installatie). Transparant: deze producten worden verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is." />
 
         {/* Vergelijkingscriteria */}
         <ThreeWayRecommendation content="beste-osmosefilter-2026-3weg-aanbeveling" />
@@ -472,11 +473,11 @@ export default function BesteOsmosefilter2026Page() {
                   <td className="py-2.5 px-3 font-bold text-[#005F8A] text-xs">Onze keuze</td>
                   <td className="py-2.5 px-3">
                     <Link href="/the-source" className="text-[#005F8A] underline">The Source met zuiver-water-kraan</Link>
-                    <span className="block text-xs text-gray-500">RO uit je eigen keukenkraan, stroomloos</span>
+                    <span className="block text-xs text-gray-500">RO met 3-weg-kraan: warm, koud en gezuiverd</span>
                   </td>
                   <td className="py-2.5 px-3 text-right text-xs">€ 395 + kraan € 540–840</td>
                   <td className="py-2.5 px-3 text-right text-xs">3</td>
-                  <td className="py-2.5 px-3 text-right text-xs">circa 1:1</td>
+                  <td className="py-2.5 px-3 text-right text-xs">Geen opgave bekend</td>
                   <td className="py-2.5 px-3 text-right text-xs">€ 149</td>
                 </tr>
                 {top5.map(t => (
@@ -499,7 +500,7 @@ export default function BesteOsmosefilter2026Page() {
 
         {/* Per product review cards */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-5">Hoe scoren de osmosefilters in onze reviews?</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-5">Hoe beoordelen wij de vijf osmosefilters?</h2>
           <div className="space-y-6">
             {top5.map(t => (
               <div
@@ -513,7 +514,7 @@ export default function BesteOsmosefilter2026Page() {
                       <h3 className="font-bold text-gray-900 text-lg">{t.naam}</h3>
                       {t.highlight && (
                         <span className="text-xs bg-[#005F8A] text-white px-2 py-0.5 rounded-full">
-                          Beste keuze
+                          Volgens ons het meest compleet
                         </span>
                       )}
                     </div>
@@ -604,8 +605,11 @@ export default function BesteOsmosefilter2026Page() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-3">
-            Specificaties gebaseerd op fabrikantsinformatie en onafhankelijke testen. Zuiverheid kan
-            variëren op basis van waterkwaliteit, druk en filterouderdom.
+            Specificaties gebaseerd op fabrikantsinformatie; wij hebben deze systemen niet zelf getest. De
+            zuiverheid bij de 4-in-1 is de reductie per stof uit het SGS-rapport van {FOUR_IN_ONE.labReport.date} op
+            een nieuw systeem. De 95 tot 99% bij de andere systemen is een indicatie van de totale retentie van
+            opgeloste stoffen en dus niet één op één vergelijkbaar. Zuiverheid kan variëren op basis van
+            waterkwaliteit, druk en filterouderdom.
           </p>
         </section>
 
@@ -769,8 +773,8 @@ export default function BesteOsmosefilter2026Page() {
               },
               {
                 href: '/the-source',
-                title: 'The Source 50 (PureAqua)',
-                desc: 'Stroomloos RO-systeem met circa 1:1 verhouding. Specificaties en kosten.',
+                title: 'The Source (PureAqua)',
+                desc: 'Osmose onder het aanrecht met een 3-weg-kraan. Specificaties en kosten.',
               },
               {
                 href: '/kennisbank/osmose-water-apparaat',

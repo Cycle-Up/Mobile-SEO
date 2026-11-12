@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: 'Harvey waterontharder: modellen, ervaringen en alternatief',
       description:
-        'Wat biedt een Harvey waterontharder (non-electric twin-tank op blokzout), voor wie is het geschikt en hoe verhoudt het zich tot alternatieven? Onafhankelijke uitleg.',
+        'Harvey waterontharder (non-electric twin-tank op blokzout): voor wie is het geschikt en welke alternatieven zijn er? Met kanttekeningen en onze eigen keuze.',
       url: 'https://waterfilterplatform.nl/harvey-waterontharder',
       type: 'article',
       locale: 'nl_NL',
@@ -56,7 +56,7 @@ export default function HarveyWaterontharderPage() {
           title: 'Harvey waterontharder: modellen, ervaringen en alternatief',
           description: 'Harvey waterontharder: wat biedt het non-electric twin-tank systeem op blokzout, voor wie is het geschikt en waar let je op? Plus alternatieven in 2026.',
           datePublished: '2026-05-29',
-          dateModified: '2026-05-29',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/harvey-waterontharder',
         }}
       />
@@ -87,7 +87,8 @@ export default function HarveyWaterontharderPage() {
             <strong>Harvey</strong> (Harvey Water Softeners) is een Brits merk dat bekend staat om
             non-electric, compacte twin-cylinder waterontharders. Hieronder lees je wat Harvey biedt,
             voor wie het geschikt is, waar je op let bij de keuze en hoe het zich verhoudt tot
-            alternatieven - onafhankelijk en zonder verkoopprikkel.
+            alternatieven. Onze eigen keuze is JOEP, verkocht door PureAqua, waaraan wij gelieerd zijn.
+            Let op: JOEP heeft wel een stopcontact nodig (12V-transformator), Harvey niet.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -186,7 +187,8 @@ export default function HarveyWaterontharderPage() {
           </p>
           <p className="text-xs text-gray-400 mt-4">
             WaterfilterPlatform verkoopt geen Harvey-producten en ontvangt hiervoor geen vergoeding.
-            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt mei 2026.
+            JOEP, onze keuze, wordt wel verkocht door PureAqua, waaraan WaterfilterPlatform gelieerd is.
+            Controleer actuele modellen, specificaties en prijzen altijd bij de leverancier. Bijgewerkt november 2026.
           </p>
         </section>
 

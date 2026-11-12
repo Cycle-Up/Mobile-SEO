@@ -23,7 +23,7 @@ const faqItems = [
   {
     question: "Mag ik zelf een filter installeren in mijn huurwoning?",
     answer:
-      "Een filterkan of aanrechtfilter dat alleen op de bestaande kraan wordt aangesloten via een adapter, mag u zonder toestemming plaatsen. Er wordt niets aan de woning veranderd. Een onderbouw osmosefilter vereist een extra kraan (boren in het aanrecht) en slangaansluiting op het leidingwerk. Dat is een aanpassing aan de woning en vereist in principe toestemming van de verhuurder. Raadpleeg bij twijfel uw huurcontract of vraag schriftelijk toestemming.",
+      "Een filterkan of aanrechtfilter dat alleen op de bestaande kraan wordt aangesloten via een adapter, mag u zonder toestemming plaatsen. Er wordt niets aan de woning veranderd. Een onderbouw osmosefilter vraagt een aansluiting op het leidingwerk en een aparte osmosekraan (boren in het aanrecht) of een 3-weg-kraan in plaats van uw keukenkraan. Dat is een aanpassing aan de woning en vereist in principe toestemming van de verhuurder. Wilt u osmosewater zonder iets te verbouwen, dan is een countertop-osmose zoals het PureAqua Water zuiver apparaat (stekker erin, tank vullen) de huurvriendelijke optie. Raadpleeg bij twijfel uw huurcontract of vraag schriftelijk toestemming.",
   },
   {
     question: "Wat filtert een Brita-kan echt?",
@@ -33,7 +33,7 @@ const faqItems = [
   {
     question: "Bestaat er een osmosefilter zonder boren?",
     answer:
-      "Ja. Countertop osmosefilters (aanrechtfilter met ingebouwde RO-technologie) sluiten aan op de bestaande mengkraan via een kraanadapter. Er is geen boor- of installatiewerk nodig. De filterprestaties zijn vergelijkbaar met een onderbouw osmosefilter: 90-99% PFAS-verwijdering, 95-99% loodverwijdering. Het nadeel is dat de filter zichtbaar op het aanrecht staat en de bestaande kraan tijdelijk bezet.",
+      "Ja. Countertop osmosefilters (aanrechtfilter met ingebouwde RO-technologie) vragen geen boor- of installatiewerk. Er zijn twee varianten: modellen die u met een kraanadapter op de bestaande mengkraan aansluit, waardoor die kraan tijdelijk bezet is, en modellen met een tank die u met de hand vult, zoals het PureAqua Water zuiver apparaat. Hoeveel PFAS of lood een apparaat verwijdert, verschilt per model. Kijk daarom naar de testresultaten van het specifieke apparaat en niet naar algemene percentages. Het nadeel is dat het apparaat zichtbaar op het aanrecht staat.",
   },
   {
     question: "Moet ik het filter meenemen als ik verhuis?",
@@ -43,7 +43,7 @@ const faqItems = [
   {
     question: "Wat kost een aanrechtfilter per jaar inclusief filters?",
     answer:
-      "Een countertop osmosefilter kost bij aanschaf 200-400 euro. De jaarlijkse filterkosten bedragen 60-120 euro (sedimentfilter, koolfilter en RO-membraan). Totale jaarkosten inclusief afschrijving over 5 jaar: 100-200 euro per jaar. Een filterkan is goedkoper (30-60 euro aanschaf, 40-70 euro per jaar aan filterpatronen), maar biedt beduidend minder filterprestaties.",
+      "Een countertop osmosefilter met kraanadapter kost bij aanschaf ongeveer 200-400 euro, met 60-120 euro per jaar aan filters (sedimentfilter, koolfilter en RO-membraan). Totale jaarkosten inclusief afschrijving over 5 jaar: 100-200 euro per jaar. Het PureAqua Water zuiver apparaat, met eigen tank en verwarming, kost 495 euro. Een filterkan is goedkoper (30-60 euro aanschaf, 40-70 euro per jaar aan filterpatronen), maar biedt beduidend minder filterprestaties.",
   },
   {
     question: "Is een filterkan genoeg voor PFAS of lood?",
@@ -71,6 +71,7 @@ export default function HuurwoningPage() {
           description:
             "Huurder? Filterkan, aanrechtfilter of inline-filter: welke waterfilter werkt zonder vaste installatie en toestemming verhuurder.",
           datePublished: "2026-05-17",
+          dateModified: "2026-11-10",
           url: "https://waterfilterplatform.nl/keuzehulp/huurwoning",
         }}
       />
@@ -87,7 +88,10 @@ export default function HuurwoningPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
             Waterfilter in huurwoning: welke opties zonder boren of installatie?
           </h1>
-          <QuickAnswer answer="In een huurwoning zijn filterkan, aanrechtfilter (countertop) en inline-filter de beste opties. Een onderbouw osmosefilter vereist een extra kraan en slangaansluiting en is zonder toestemming van de verhuurder onverstandig." />
+          <QuickAnswer answer="In een huurwoning zijn filterkan, aanrechtfilter (countertop) en inline-filter de beste opties. Een onderbouw osmosefilter vraagt een aansluiting op het leidingwerk en een aparte osmosekraan of een 3-weg-kraan in plaats van uw keukenkraan. Dat is een aanpassing waarvoor u toestemming van de verhuurder vraagt. Wilt u osmosewater zonder iets te verbouwen, dan is een countertop-osmose zoals het PureAqua Water zuiver apparaat (stekker erin, tank vullen) de huurvriendelijke optie." />
+          <p className="text-xs text-gray-500 mt-2">
+            Laatst bijgewerkt: <time dateTime="2026-11-10">10 november 2026</time>
+          </p>
         </div>
       </section>
 
@@ -133,16 +137,19 @@ export default function HuurwoningPage() {
             Aanrechtfilter (countertop osmose)
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Een countertop osmosefilter wordt aangesloten op de bestaande kraan via een
-            standaard kraanadapter. Er wordt niets aan de woning veranderd: geen boorwerk,
-            geen nieuwe kraan, geen aanpassing aan leidingen. Het systeem staat op het aanrecht
-            en produceert gefilterd water rechtstreeks.
+            Een countertop osmosefilter staat op het aanrecht en er wordt niets aan de woning
+            veranderd: geen boorwerk, geen nieuwe kraan, geen aanpassing aan leidingen. Er zijn
+            twee varianten. Sommige modellen sluit u met een standaard kraanadapter aan op de
+            bestaande kraan. Andere werken met een tank die u met de hand vult, zoals het
+            PureAqua Water zuiver apparaat: stekker erin, tank vullen.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            De filterprestaties zijn vergelijkbaar met een onderbouw osmosefilter: PFAS-verwijdering
-            90-99%, loodverwijdering 95-99%, nitraat 85-95%. Aanschafprijs: 200-400 euro.
-            Jaarlijkse filterkosten: 60-120 euro. Dit is de meest aanbevolen optie voor huurders
-            die serieuze filterprestaties willen zonder toestemming te hoeven vragen. Meer over dit
+            Omgekeerde osmose kan PFAS, lood en nitraat sterk verminderen, maar hoeveel precies
+            verschilt per apparaat. Algemene percentages zeggen niets over een specifiek model:
+            kijk naar de testresultaten van het apparaat zelf. Modellen met kraanadapter kosten
+            ongeveer 200-400 euro, met 60-120 euro per jaar aan filters. Het PureAqua Water zuiver
+            apparaat kost 495 euro. Wij raden dit type aan voor huurders die serieuze
+            filterprestaties willen zonder toestemming te hoeven vragen. Meer over dit
             type leest u op de pagina{" "}
             <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] hover:underline font-medium">
               osmosefilter kopen
@@ -172,10 +179,11 @@ export default function HuurwoningPage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Als u een onderbouw osmosefilter wilt installeren, is overleg met de verhuurder
-            noodzakelijk. Dit systeem vereist een extra kraangat in het aanrecht (boren) en
-            een slangaansluiting op het leidingwerk. In de meeste gevallen geldt: als u de
-            woning bij vertrek in originele staat terugbrengt (het kraangat afdichten), zijn
-            verhuurders bereid toestemming te geven. Vraag dit altijd schriftelijk aan en
+            noodzakelijk. Dit systeem vraagt een aansluiting op het leidingwerk en een aparte
+            osmosekraan (extra kraangat, boren) of een 3-weg-kraan in plaats van uw keukenkraan.
+            In de meeste gevallen geldt: als u de woning bij vertrek in de oorspronkelijke staat
+            terugbrengt (de originele kraan terugplaatsen en een eventueel extra kraangat
+            afdichten), zijn verhuurders bereid toestemming te geven. Vraag dit altijd schriftelijk aan en
             bewaar de bevestiging.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -207,7 +215,7 @@ export default function HuurwoningPage() {
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="border border-gray-300 px-3 py-2 font-medium">Aanrechtfilter (countertop RO)</td>
-                  <td className="border border-gray-300 px-3 py-2 text-green-700">Kraanadapter, geen boren</td>
+                  <td className="border border-gray-300 px-3 py-2 text-green-700">Kraanadapter of handmatig gevulde tank, geen boren</td>
                   <td className="border border-gray-300 px-3 py-2">100-200 euro</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">PFAS, lood, nitraat, kalk</td>
                 </tr>
@@ -219,7 +227,7 @@ export default function HuurwoningPage() {
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="border border-gray-300 px-3 py-2 font-medium">Onderbouw osmose (met toestemming)</td>
-                  <td className="border border-gray-300 px-3 py-2 text-red-600">Boren + leidingaansluiting</td>
+                  <td className="border border-gray-300 px-3 py-2 text-red-600">Leidingaansluiting + osmosekraan (boren) of 3-weg-kraan</td>
                   <td className="border border-gray-300 px-3 py-2">80-150 euro</td>
                   <td className="border border-gray-300 px-3 py-2 text-green-700">PFAS, lood, nitraat, kalk</td>
                 </tr>

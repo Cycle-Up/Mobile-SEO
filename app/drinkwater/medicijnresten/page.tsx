@@ -4,6 +4,7 @@ import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import Link from 'next/link';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
   title: 'Medicijnresten in drinkwater: risico\'s en filtratie (2026)',
@@ -86,7 +87,7 @@ const articleSchema = {
   headline: 'Medicijnresten in drinkwater: risico\'s en filtratie (2026)',
   description: 'Komen medicijnresten voor in Nederlands drinkwater? Wat zegt het RIVM? Welke filters verwijderen farmaceutische residuen?',
   datePublished: '2026-04-05',
-  dateModified: '2026-04-05',
+  dateModified: '2026-11-03',
   url: 'https://waterfilterplatform.nl/drinkwater/medicijnresten',
   publisher: {
     '@type': 'Organization',
@@ -420,13 +421,19 @@ export default function MedicijnrestenDrinkwaterPage() {
         </div>
 
         <div className="bg-[#E0F2FE] rounded-xl p-6 mb-8">
-          <h3 className="text-lg font-semibold text-[#003F5C] mb-2">Maximale drinkwaterfiltratie — inclusief medicijnresten</h3>
+          <h3 className="text-lg font-semibold text-[#003F5C] mb-2">Zuiver, zeer heet en gekoeld water uit één kraan</h3>
           <p className="text-gray-700 mb-4">
-            De PureAqua 4-in-1 osmose + kokend water kraan filtert 90–99% van farmaceutische residuen, naast kalk, PFAS, nitraat en zware metalen. De meest complete drinkwaterbescherming voor thuis.
+            De {FOUR_IN_ONE.name} combineert omgekeerde osmose met zeer heet (circa 96 graden) en gekoeld water. Een{' '}
+            <a href={FOUR_IN_ONE.labReport.url} target="_blank" rel="noopener noreferrer" className="text-[#005F8A] underline">SGS-labtest</a>{' '}
+            ({FOUR_IN_ONE.labReport.date}) op een nieuw systeem mat {FOUR_IN_ONE.lab.PFOS} minder PFOS, {FOUR_IN_ONE.lab.PFOA} minder PFOA en {FOUR_IN_ONE.lab.lood} minder lood; medicijnresten zijn in die test niet gemeten. Volgens ons is de 4-in-1 de completere keuze als je naast zuiver water ook zeer heet en gekoeld water wilt.
           </p>
-          <Link href="/omgekeerde-osmose/kopen" className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
-            Bekijk osmosefilters →
+          <p className="text-gray-600 text-sm mb-4">PureAqua, dat de 4-in-1 verkoopt, is gelieerd aan WaterfilterPlatform.</p>
+          <Link href={FOUR_IN_ONE.reviewPath} className="inline-block bg-[#005F8A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#003F5C] transition-colors">
+            Lees de 4-in-1 kraan review →
           </Link>
+          <p className="text-gray-600 text-sm mt-3">
+            Liever een los osmosefilter? <Link href="/omgekeerde-osmose/kopen" className="text-[#005F8A] underline">Bekijk osmosefilters</Link>.
+          </p>
         </div>
 
         <p className="text-gray-600 text-sm">

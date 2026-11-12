@@ -70,10 +70,10 @@ export default function OverOnsPage() {
         <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Onze missie</h2>
         <div className="space-y-4 text-gray-700 leading-relaxed">
           <p>
-            WaterfilterPlatform is opgericht omdat de zoekresultaten voor "waterfilter kopen" vrijwel volledig worden gedomineerd door webshops en affiliate-sites. Die paginas prijzen producten aan, maar bieden zelden neutrale context: wanneer is een filter nuttig? Welke techniek past bij welk waterprobleem? Wanneer volstaat gewoon kraanwater?
+            WaterfilterPlatform is opgericht omdat de zoekresultaten voor "waterfilter kopen" vrijwel volledig worden gedomineerd door webshops en affiliate-sites. Die pagina&apos;s prijzen producten aan, maar bieden zelden neutrale context: wanneer is een filter nuttig? Welke techniek past bij welk waterprobleem? Wanneer volstaat gewoon kraanwater?
           </p>
           <p>
-            Onze missie is eenvoudig: controleerbare, op feiten gebaseerde informatie bieden over drinkwaterkwaliteit en thuisfiltratie. Wij willen dat consumenten een weloverwogen keuze kunnen maken — ook als die keuze inhoudt dat ze helemaal geen filter nodig hebben.
+            Onze missie is eenvoudig: controleerbare, op feiten gebaseerde informatie bieden over drinkwaterkwaliteit en thuisfiltratie. Wij willen dat consumenten een weloverwogen keuze kunnen maken, ook als die keuze inhoudt dat ze helemaal geen filter nodig hebben.
           </p>
           <p>
             Nederlands kraanwater behoort tot de beste ter wereld. Toch zijn er situaties waarin filtratie zinvol is: oude loden leidingen, verhoogde PFAS-concentraties in bepaalde regio's, of een sterke voorkeur voor kalkvrij water voor koffie en thee. Wij leggen die nuance uit, ook als de conclusie is dat u geen filter nodig heeft.
@@ -108,10 +108,10 @@ export default function OverOnsPage() {
             Filterprestatiecijfers zijn afkomstig van fabrikantspecificaties en onafhankelijke tests, met name NSF/ANSI-certificeringsdata en laboratoriumstudies. De NSF-database (nsf.org) is openbaar toegankelijk en vermeldt per gecertificeerd product welke stoffen in welke mate worden verwijderd. Dat is onze eerste controlelaag.
           </p>
           <p>
-            Gezondheidsuitspraken toetsen wij altijd aan WHO- en RIVM-standpunten. Wij maken geen uitspraken als "gefilterd water is gezonder" zonder te specificeren in welke context, voor wie en op basis van welk bewijs. Het onderscheid tussen aangetoond causaal verband, correlatie en hypothetisch risico is voor ons wezenlijk — en wij maken dat onderscheid expliciet in onze teksten.
+            Gezondheidsuitspraken toetsen wij altijd aan WHO- en RIVM-standpunten. Wij maken geen uitspraken als "gefilterd water is gezonder" zonder te specificeren in welke context, voor wie en op basis van welk bewijs. Het onderscheid tussen aangetoond causaal verband, correlatie en hypothetisch risico is voor ons wezenlijk, en wij maken dat onderscheid expliciet in onze teksten.
           </p>
           <p>
-            Paginas worden bijgewerkt wanneer normen of wetenschappelijk inzicht veranderen. De datum van laatste herziening staat op elke inhoudelijke pagina vermeld. Als een EU-norm wordt aangescherpt — zoals de verlaging van de loodnorm van 10 naar 5 microgram per liter die in 2026 van kracht werd — passen wij de betreffende paginas zo snel mogelijk aan.
+            Pagina&apos;s worden bijgewerkt wanneer normen of wetenschappelijk inzicht veranderen. De datum van laatste herziening staat op elke inhoudelijke pagina vermeld. Als een norm wordt aangescherpt, zoals de EU-verlaging van de loodnorm van 10 naar 5 microgram per liter (uiterlijk per 12 januari 2036), passen wij de betreffende pagina&apos;s zo snel mogelijk aan.
           </p>
         </div>
       </section>
@@ -121,13 +121,13 @@ export default function OverOnsPage() {
           <h2 className="text-2xl font-bold text-[#005F8A] mb-4">Onze commerciele relatie met PureAqua en PureFilter</h2>
           <div className="bg-white rounded-2xl border border-blue-100 p-6 space-y-4 text-gray-700 leading-relaxed">
             <p>
-              Wij willen hier volledig transparant over zijn. WaterfilterPlatform is gelieerd aan PureAqua. PureAqua verkoopt onder meer osmosesystemen, 4-in-1-kranen en waterontharders via PureAqua.nl, en het inline-waterfilter PureFilter Mineral+ via PureFilter.nl. Onze hoofdredacteur is medeoprichter van PureAqua (zie de <Link href="/redactie" className="underline">redactiepagina</Link>). Sommige paginas verwijzen naar producten van PureAqua of PureFilter; koopt u via zo&apos;n link, dan verdient PureAqua daaraan.
+              Wij willen hier volledig transparant over zijn. WaterfilterPlatform is gelieerd aan PureAqua. PureAqua verkoopt onder meer osmosesystemen, 4-in-1-kranen en waterontharders via PureAqua.nl, en het inline-waterfilter PureFilter Mineral+ via PureFilter.nl. Onze hoofdredacteur is medeoprichter van PureAqua (zie de <Link href="/redactie" className="underline">redactiepagina</Link>). Sommige pagina&apos;s verwijzen naar producten van PureAqua of PureFilter; koopt u via zo&apos;n link, dan verdient PureAqua daaraan.
             </p>
             <p>
-              Juist daarom hanteren wij voor eigen producten dezelfde bron- en bewijsregels als voor andere merken: een claim die niet onafhankelijk is aangetoond, presenteren wij als geclaimd en niet als feit, en wij noemen de beperkingen erbij. Wij benoemen ook de nadelen van elk systeem. Wij adviseren actief wanneer een goedkopere oplossing beter past bij de situatie van de bezoeker. Een eenvoudige filterkan kan voor sommige huishoudens een betere keuze zijn dan een osmose-installatie van enkele honderden euros — en dat schrijven wij dan ook.
+              Juist daarom hanteren wij voor eigen producten dezelfde bron- en bewijsregels als voor andere merken: een claim die niet onafhankelijk is aangetoond, presenteren wij als geclaimd en niet als feit, en wij noemen de beperkingen erbij. Wij benoemen ook de nadelen van elk systeem. Wij adviseren actief wanneer een goedkopere oplossing beter past bij de situatie van de bezoeker. Een eenvoudige filterkan kan voor sommige huishoudens een betere keuze zijn dan een osmose-installatie van enkele honderden euro&apos;s, en dat schrijven wij dan ook.
             </p>
             <p>
-              Paginas met een commerciele link zijn herkenbaar: wij vermelden dit expliciet bij de betreffende productaanbevelingen. Puur informatieve paginas — zoals onze uitleg over drinkwaternormen, filtertechnieken of waterhardheid per gemeente — bevatten geen gelieerde links.
+              Pagina&apos;s met een commerciele link zijn herkenbaar: wij vermelden dit expliciet bij de betreffende productaanbevelingen. Puur informatieve pagina&apos;s, zoals onze uitleg over drinkwaternormen en filtertechnieken, bevatten geen gelieerde links. Op de gemeentepagina&apos;s over waterhardheid tonen wij wel een aanbeveling voor de JOEP waterontharder (vanaf 12 dH) of anders voor PureFilter Mineral+, altijd met disclosure.
             </p>
           </div>
         </div>
@@ -156,31 +156,31 @@ export default function OverOnsPage() {
             <li className="flex gap-3">
               <span className="text-[#005F8A] font-bold shrink-0">•</span>
               <span>
-                <strong>RIVM</strong> — Rijksinstituut voor Volksgezondheid en Milieu: gezondheidskundige normen en adviezen over stoffen in drinkwater
+                <strong>RIVM</strong> (Rijksinstituut voor Volksgezondheid en Milieu): gezondheidskundige normen en adviezen over stoffen in drinkwater
               </span>
             </li>
             <li className="flex gap-3">
               <span className="text-[#005F8A] font-bold shrink-0">•</span>
               <span>
-                <strong>KWR Watercycle Research Institute</strong> — onafhankelijk onderzoeksinstituut dat de Nederlandse drinkwatersector adviseert over kwaliteit en zuiveringstechnologie
+                <strong>KWR Watercycle Research Institute</strong>: onafhankelijk onderzoeksinstituut dat de Nederlandse drinkwatersector adviseert over kwaliteit en zuiveringstechnologie
               </span>
             </li>
             <li className="flex gap-3">
               <span className="text-[#005F8A] font-bold shrink-0">•</span>
               <span>
-                <strong>WHO</strong> — World Health Organization, Guidelines for Drinking-water Quality: internationale gezondheidsrichtlijnen voor drinkwater
+                <strong>WHO</strong> (World Health Organization), Guidelines for Drinking-water Quality: internationale gezondheidsrichtlijnen voor drinkwater
               </span>
             </li>
             <li className="flex gap-3">
               <span className="text-[#005F8A] font-bold shrink-0">•</span>
               <span>
-                <strong>EU-drinkwaterrichtlijn 2020/2184</strong> — Europese richtlijn die minimumeisen stelt aan de kwaliteit van voor menselijke consumptie bestemd water
+                <strong>EU-drinkwaterrichtlijn 2020/2184</strong>: Europese richtlijn die minimumeisen stelt aan de kwaliteit van voor menselijke consumptie bestemd water
               </span>
             </li>
             <li className="flex gap-3">
               <span className="text-[#005F8A] font-bold shrink-0">•</span>
               <span>
-                <strong>Nederlands Drinkwaterbesluit (Staatsblad)</strong> — de nationale omzetting van de EU-richtlijn, met wettelijk bindende normen voor drinkwaterkwaliteit in Nederland; zie ook onze{" "}
+                <strong>Nederlands Drinkwaterbesluit (Staatsblad)</strong>: de nationale omzetting van de EU-richtlijn, met wettelijk bindende normen voor drinkwaterkwaliteit in Nederland; zie ook onze{" "}
                 <Link href="/drinkwaternormen" className="text-[#005F8A] hover:underline">
                   pagina over drinkwaternormen
                 </Link>
@@ -189,19 +189,19 @@ export default function OverOnsPage() {
             <li className="flex gap-3">
               <span className="text-[#005F8A] font-bold shrink-0">•</span>
               <span>
-                <strong>NSF International</strong> — certificeringsdata voor waterfilters (NSF/ANSI 42, 53, 58 en 401), openbaar verifieerbaar via nsf.org
+                <strong>NSF International</strong>: certificeringsdata voor waterfilters (NSF/ANSI 42, 53, 58 en 401), openbaar verifieerbaar via nsf.org
               </span>
             </li>
             <li className="flex gap-3">
               <span className="text-[#005F8A] font-bold shrink-0">•</span>
               <span>
-                <strong>Kiwa Technology</strong> — Nederlandse keurmerken voor waterbehandelingsapparatuur en sanitaire producten
+                <strong>Kiwa Technology</strong>: Nederlandse keurmerken voor waterbehandelingsapparatuur en sanitaire producten
               </span>
             </li>
             <li className="flex gap-3">
               <span className="text-[#005F8A] font-bold shrink-0">•</span>
               <span>
-                <strong>Peer-reviewed publicaties</strong> — wetenschappelijke artikelen uit tijdschriften als Environment International, Nature Medicine en Environmental Research, met name over PFAS, microplastics en sporenmetalen in drinkwater
+                <strong>Peer-reviewed publicaties</strong>: wetenschappelijke artikelen uit tijdschriften als Environment International, Nature Medicine en Environmental Research, met name over PFAS, microplastics en sporenmetalen in drinkwater
               </span>
             </li>
           </ul>

@@ -2,97 +2,172 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
-import { CTABanner } from '@/components/CTABanner';
 import { HealthDisclaimer } from '@/components/HealthDisclaimer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { PureFilterCTA } from '@/components/PureFilterCTA';
+import { PUREFILTER } from '@/lib/purefilter.mjs';
+import { FOUR_IN_ONE, THREE_WAY } from '@/lib/kranen.mjs';
+import { COUNTERTOP } from '@/lib/countertop.mjs';
+
+const PAGE_TITLE = 'PFAS water testen: tester, thuistest of labtest?';
+const PAGE_URL = 'https://waterfilterplatform.nl/pfas-waterfilter/testen';
+// Max 160 tekens.
+const PAGE_DESCRIPTION =
+  'Een PFAS water tester voor thuis geeft hooguit een grove indicatie. Zo test je water op PFAS wel betrouwbaar: via je waterbedrijf of een labtest.';
 
 export const metadata: Metadata = {
-  title: 'PFAS in uw water testen: zo weet u wat erin zit',
-  description:
-    'Hoe test u uw drinkwater op PFAS? Stap-voor-stap gids: RIVM-kaart, drinkwaterbedrijf jaarrapport, labotests (EUR 80-200) en DIY-kits.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter/testen' },
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    url: PAGE_URL,
+    type: 'article',
+    locale: 'nl_NL',
+  },
 };
 
+// Zichtbare FAQ en FAQPage-JSON-LD gebruiken exact dezelfde tekst.
 const faqItems = [
   {
-    question: 'Kan ik thuis zelf PFAS in water meten?',
+    question: 'Bestaat er een betrouwbare PFAS water tester voor thuis?',
     answer:
-      'Eenvoudige indicatieve PFAS-thuistesten (striptest) bestaan, maar zijn onbetrouwbaar voor de lage concentraties die de EU-norm stelt (0,10 µg/L). Voor betrouwbare resultaten is laboratoriumanalyse via LC-MS/MS methode noodzakelijk. Thuistests zijn hooguit geschikt als grove indicatie bij sterk verhoogde waarden.',
+      'Voor zover wij weten niet. PFAS zitten in drinkwater in nanogrammen per liter: de wettelijke norm is 100 nanogram per liter voor de som van 20 PFAS en de RIVM-advieswaarde is 4,4 nanogram PFOA-equivalenten per liter. Zulke lage concentraties meet je alleen betrouwbaar met laboratoriumapparatuur (meestal LC-MS/MS). Een strip- of kleurtest die je zelf afleest geeft hooguit een grove indicatie bij sterk verhoogde waarden. Veel producten die als PFAS-testkit verkocht worden, zijn in feite een monsterpakket dat je naar een lab opstuurt; dat is dan gewoon een labtest.',
   },
   {
-    question: 'Hoeveel kost een professionele PFAS watertest?',
+    question: 'Wat kost een PFAS-test van je water?',
     answer:
-      'Een gecertificeerd PFAS-wateronderzoek kost €80-250 afhankelijk van het aantal gemeten verbindingen. Basispakketten meten de 20 EU-prioritaire PFAS; uitgebreide analyses omvatten tot 40+ verbindingen. Stuur een watermonster naar een geaccrediteerd laboratorium (NEN-EN-ISO/IEC 17025).',
+      'Dat hangt af van het laboratorium en van het aantal PFAS dat je laat meten. Wij noemen bewust geen bedrag, omdat we geen actuele en controleerbare prijslijst hebben. Vraag vooraf een offerte en vraag welke PFAS het lab meet. Wil je alleen weten wat er in je kraanwater zit, dan zijn de gegevens van je drinkwaterbedrijf gratis.',
   },
   {
-    question: 'Hoe neem ik een watermonster voor PFAS-analyse?',
+    question: 'Hoe neem ik een watermonster voor een PFAS-test?',
     answer:
-      'Gebruik uitsluitend het monsterflesje van het laboratorium (speciale PFAS-vrije containers). Spoel de kraan 2 minuten door voor het vullen. Bewaar het monster koel (2-8°C) en verstuur het dezelfde dag. Vermijd contact met plastic anders dan het monsterflesje — gewone flessen kunnen PFAS afgeven.',
+      'Volg precies de instructies van het laboratorium. Gebruik alleen het flesje dat het lab meestuurt, omdat sommige kunststoffen en materialen zelf PFAS kunnen bevatten. Labs vragen meestal om de kraan eerst even te laten doorlopen, het flesje goed af te sluiten, het monster koel te bewaren en het snel te versturen.',
   },
   {
     question: 'Controleren drinkwaterbedrijven al op PFAS?',
     answer:
-      'Ja, Nederlandse drinkwaterbedrijven meten PFAS verplicht en publiceren de resultaten in het jaarlijkse kwaliteitsverslag. Sinds 2026 toetsen zij aan de EU-norm (0,10 µg/L sum-20 PFAS). U kunt dit rapport opvragen bij uw waterleiding­bedrijf of downloaden van hun website.',
+      'Ja. Drinkwaterbedrijven meten PFAS en publiceren de waarden per leveringsgebied. Sinds januari 2026 geldt de Europese norm van 100 nanogram per liter voor de som van 20 PFAS, en Nederlands kraanwater voldoet daaraan. Op een deel van de plekken ligt de waarde wel boven de strengere RIVM-advieswaarde van 4,4 nanogram PFOA-equivalenten per liter, die geen wettelijke norm is.',
   },
   {
     question: 'Wanneer is een eigen PFAS-test zinvol?',
     answer:
-      'Eigen testen zijn zinvol als u (1) putwater of bronwater gebruikt, dat niet gemonitord wordt door drinkwaterbedrijven; (2) woont in een erkende PFAS-hotspot; (3) een bestaand filter wilt valideren na installatie; of (4) recentelijk waterlekkage of bodemverontreiniging hebt gehad.',
+      'Vooral in vier situaties: je drinkt water uit een eigen put of bron, dat niet door een drinkwaterbedrijf wordt gecontroleerd; je woont dicht bij een bekende PFAS-bron en wilt meer zekerheid; je wilt controleren wat een geplaatst filter doet; of er is in de buurt een incident geweest, bijvoorbeeld met blusschuim. Voor gewoon kraanwater zijn de gegevens van je drinkwaterbedrijf meestal de beste bron.',
   },
   {
-    question: 'Wat doe ik als mijn water te veel PFAS bevat?',
+    question: 'Wat doe ik als er veel PFAS in mijn water zit?',
     answer:
-      'Gebruik het water tijdelijk niet als drinkwater. Installeer direct een osmosefilter (NSF/ANSI 58-gecertificeerd) of gebruik gebotteld water. Meld de waarde aan uw gemeente en drinkwaterbedrijf. Eigenaren van particuliere putten in PFAS-hotspots hebben recht op advies van de gemeente.',
+      'Gaat het om water uit een eigen put, drink het dan niet en overleg met de GGD of je gemeente. Gaat het om kraanwater, neem dan contact op met je drinkwaterbedrijf: dat moet aan de wettelijke norm voldoen en kan de uitslag duiden. Wil je zelf extra marge, dan vermindert een waterfilter het deel van de PFAS dat via drinkwater binnenkomt. Omgekeerde osmose doet dat het sterkst.',
   },
   {
-    question: 'Zijn er gratis PFAS-tests beschikbaar in Nederland?',
+    question: 'Wat is het verschil tussen de som van 20 PFAS en PFOA-equivalenten?',
     answer:
-      'Gemeenten in PFAS-hotspot-gebieden bieden soms gratis of gesubsidieerde putwatertests aan. Check de website van uw gemeente of bel de milieudienst. RIVM en provincies organiseren ook periodieke monitoringscampagnes waarbij bewoners kunnen deelnemen.',
+      'De Europese norm telt de concentraties van 20 PFAS gewoon bij elkaar op. De RIVM-advieswaarde werkt met PFOA-equivalenten: elke stof wordt gewogen naar hoe giftig hij is ten opzichte van PFOA. Daardoor kan water ruim onder de wettelijke norm blijven en toch boven de advieswaarde uitkomen. Vraag het lab of het ook PFOA-equivalenten berekent, anders kun je de uitslag niet direct naast de RIVM-advieswaarde leggen.',
   },
   {
-    question: 'Wat is het verschil tussen sum-PFAS en individuele PFAS-meting?',
+    question: 'Meet een TDS-meter PFAS?',
     answer:
-      'De EU-norm werkt met de som van 20 specifieke PFAS-verbindingen (sum-20). Een basislaboratoriumtest meet precies die 20 verbindingen. Een uitgebreide test meet ook andere PFAS die niet in de EU-som zitten maar toch aanwezig kunnen zijn, zoals nieuwere GenX-varianten. Voor de meeste huishoudens is een sum-20 test voldoende. Woont u nabij een actieve chemische fabriek, dan is een breder PFAS-panel (40+) aan te raden.',
+      'Nee. Een TDS-meter meet de totale hoeveelheid opgeloste zouten en mineralen. PFAS zitten in zulke kleine hoeveelheden in water dat ze daarin niet zichtbaar zijn. Bij een osmosesysteem zegt een stijgende TDS-waarde wel iets over slijtage van het membraan, maar niet hoeveel PFAS er nog door komt.',
   },
 ];
 
 const breadcrumbs = [
   { name: 'Home', url: 'https://waterfilterplatform.nl' },
   { name: 'PFAS waterfilter', url: 'https://waterfilterplatform.nl/pfas-waterfilter' },
-  { name: 'Testen', url: 'https://waterfilterplatform.nl/pfas-waterfilter/testen' },
+  { name: 'Testen', url: PAGE_URL },
 ];
 
 const testMethoden = [
   {
-    methode: 'Thuistest (striptest)',
-    nauwkeurigheid: 'Laag (&lt;0,5 µg/L detectie)',
-    kosten: '€15-40',
-    tijd: '10-30 minuten',
-    geschikt: false,
-    noot: 'Niet geschikt voor EU-normcontrole',
+    methode: 'Gegevens van je drinkwaterbedrijf',
+    watJeWeet: 'Gemeten PFAS-waarden van het kraanwater in jouw leveringsgebied',
+    betrouwbaar: 'Ja, officiële metingen',
+    kosten: 'Gratis',
   },
   {
-    methode: 'Laboratorium (basis)',
-    nauwkeurigheid: 'Hoog (20 PFAS, ng/L)',
-    kosten: '€80-150',
-    tijd: '3-5 werkdagen',
-    geschikt: true,
-    noot: 'Dekt alle EU-prioritaire verbindingen',
+    methode: 'Labtest (monster naar een geaccrediteerd lab)',
+    watJeWeet: 'Concentratie per PFAS in jouw eigen watermonster, in nanogram per liter',
+    betrouwbaar: 'Ja, als het lab voor PFAS in water geaccrediteerd is',
+    kosten: 'Vraag een offerte; hangt af van het aantal stoffen',
   },
   {
-    methode: 'Laboratorium (uitgebreid)',
-    nauwkeurigheid: 'Zeer hoog (40+ PFAS)',
-    kosten: '€150-250',
-    tijd: '5-10 werkdagen',
-    geschikt: true,
-    noot: 'Aanbevolen voor putwater en hotspots',
+    methode: 'PFAS-testkit om op te sturen',
+    watJeWeet: 'Hetzelfde als een labtest: de kit is een monsterpakket voor een lab',
+    betrouwbaar: 'Zo betrouwbaar als het lab erachter',
+    kosten: 'Vraag na wat het lab meet en wat het kost',
   },
   {
-    methode: 'Drinkwaterbedrijf',
-    nauwkeurigheid: 'Zeer hoog (officieel)',
-    kosten: 'Gratis (via jaarverslag)',
-    tijd: 'Jaarlijks gepubliceerd',
-    geschikt: true,
-    noot: 'Alleen voor leidingwater, niet putwater',
+    methode: 'Thuistest die je zelf afleest (strip of kleur)',
+    watJeWeet: 'Hooguit een grove indicatie bij sterk verhoogde waarden',
+    betrouwbaar: 'Nee, niet om aan de norm of advieswaarde te toetsen',
+    kosten: 'Niet zinvol voor drinkwater, volgens ons',
+  },
+  {
+    methode: 'TDS-meter',
+    watJeWeet: 'Totaal opgeloste zouten en mineralen, geen PFAS',
+    betrouwbaar: 'Nee, meet geen PFAS',
+    kosten: 'Niet van toepassing',
+  },
+];
+
+const stappen = [
+  {
+    stap: '1',
+    titel: 'Kijk eerst wat je drinkwaterbedrijf meet',
+    tekst:
+      'Gebruik je kraanwater, zoek dan de waterkwaliteitsgegevens van je drinkwaterbedrijf op (vaak te vinden met je postcode). Daar staan de gemeten PFAS-waarden. Op onze PFAS-kaart van Nederland zie je hoe het in jouw regio zit.',
+  },
+  {
+    stap: '2',
+    titel: 'Kies een geaccrediteerd laboratorium',
+    tekst:
+      'Wil je je eigen water laten meten, kies dan een lab dat voor PFAS in water geaccrediteerd is volgens ISO/IEC 17025. In Nederland controleer je dat in het register van de Raad voor Accreditatie (RvA). Vraag welke PFAS het lab meet: minimaal de 20 uit de Europese norm, en bij voorkeur ook of het PFOA-equivalenten berekent.',
+  },
+  {
+    stap: '3',
+    titel: 'Neem het monster precies volgens de instructies',
+    tekst:
+      'Gebruik het flesje van het lab, niet je eigen fles. Volg de instructies over doorspoelen, vullen, koel bewaren en verzenden. Een slordig genomen monster kan de uitslag beïnvloeden.',
+  },
+  {
+    stap: '4',
+    titel: 'Lees de uitslag in nanogram per liter',
+    tekst:
+      'Tel de 20 PFAS uit de Europese lijst op en vergelijk de som met de wettelijke norm van 100 nanogram per liter. Wil je de uitslag naast de RIVM-advieswaarde van 4,4 nanogram PFOA-equivalenten per liter leggen, dan heb je de gewogen som nodig.',
+  },
+  {
+    stap: '5',
+    titel: 'Bepaal je vervolgstap',
+    tekst:
+      'Bij putwater met verhoogde waarden: drink het niet en overleg met de GGD of je gemeente. Bij kraanwater: neem bij twijfel contact op met je drinkwaterbedrijf. Wil je zelf extra marge, kijk dan welk waterfilter bij je situatie past.',
+  },
+];
+
+const situaties = [
+  {
+    situatie: 'Je drinkt water uit een eigen put of bron',
+    uitleg:
+      'Een eigen put valt niet onder de controle van een drinkwaterbedrijf. Wie dat water drinkt, weet zonder test niet wat erin zit.',
+    urgentie: 'Hoog',
+  },
+  {
+    situatie: 'Je woont dicht bij een bekende PFAS-bron',
+    uitleg:
+      'Bijvoorbeeld rond Chemours in Dordrecht of bij plekken waar PFAS-houdend blusschuim is gebruikt. Kraanwater blijft gecontroleerd, maar grond- en putwater kan plaatselijk hoger zijn.',
+    urgentie: 'Hoog bij putwater',
+  },
+  {
+    situatie: 'Je wilt weten wat je filter doet',
+    uitleg:
+      'Laat een monster nemen van ongefilterd en van gefilterd water en vergelijk de twee. Labresultaten van fabrikanten gelden meestal voor een nieuw filter; een eigen test laat zien hoe het bij jou zit.',
+    urgentie: 'Zinvol',
+  },
+  {
+    situatie: 'Er is een incident geweest in de buurt',
+    uitleg:
+      'Bijvoorbeeld een brand waarbij blusschuim is gebruikt, of een bekende bodemverontreiniging. Volg dan ook de adviezen van je gemeente.',
+    urgentie: 'Situationeel',
   },
 ];
 
@@ -104,12 +179,12 @@ export default function PfasWaterfilterTestenPage() {
       <SchemaOrg
         type="Article"
         article={{
-          title: 'PFAS in uw water testen: zo weet u wat erin zit',
-          description:
-            'Hoe test u uw drinkwater op PFAS? Stap-voor-stap gids: RIVM-kaart, drinkwaterbedrijf jaarrapport, labotests en DIY-kits. Resultaten interpreteren.',
+          title: PAGE_TITLE,
+          description: PAGE_DESCRIPTION,
           datePublished: '2026-04-25',
-          dateModified: '2026-04-25',
-          url: 'https://waterfilterplatform.nl/pfas-waterfilter/testen',
+          dateModified: '2026-11-10',
+          url: PAGE_URL,
+          sources: ['RIVM', 'EU-drinkwaterrichtlijn 2020/2184', 'Raad voor Accreditatie', 'NOS', 'Reformatorisch Dagblad'],
         }}
       />
 
@@ -123,98 +198,139 @@ export default function PfasWaterfilterTestenPage() {
             <span className="text-gray-700">Testen</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            PFAS in uw water testen: zo weet u wat erin zit
+            PFAS in water testen: wat een thuistest wel en niet kan
           </h1>
-          <QuickAnswer answer="Betrouwbare PFAS-meting vereist laboratoriumanalyse (LC-MS/MS methode, €80-250). Thuisstrips zijn onvoldoende nauwkeurig voor de EU-norm van 0,10 µg/L. Leidingwater van drinkwaterbedrijven wordt al jaarlijks gecontroleerd — eigen tests zijn vooral zinvol bij putwater of na een bekende verontreiniging." />
+          <p className="text-xs text-gray-500 mb-2">
+            Laatst bijgewerkt: <time dateTime="2026-11-10">10 november 2026</time>
+          </p>
+          <QuickAnswer
+            question="Hoe test je water op PFAS?"
+            answer="Wil je weten hoeveel PFAS in je kraanwater zit, kijk dan eerst bij je drinkwaterbedrijf: dat meet PFAS en publiceert de waarden gratis. Een PFAS water tester die je thuis zelf afleest geeft hooguit een grove indicatie, omdat PFAS in drinkwater in nanogrammen per liter voorkomt. Betrouwbaar meten kan alleen in een geaccrediteerd laboratorium. Een eigen labtest is vooral zinvol bij water uit een eigen put, dicht bij een bekende PFAS-bron of om een filter te controleren."
+          />
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
+        <AuthorBox datePublished="2026-04-25" dateModified="2026-11-10" />
         <HealthDisclaimer />
-        <CTABanner context="osmose" />
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Eerst de nuance: wat zegt de norm?</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Nederlands kraanwater voldoet aan de wettelijke PFAS-norm. Sinds januari 2026 mag de som van 20 PFAS niet
+            hoger zijn dan 100 nanogram per liter (0,1 microgram per liter), volgens de Europese drinkwaterrichtlijn
+            2020/2184. Het RIVM hanteert daarnaast een veel strengere advieswaarde van 4,4 nanogram PFOA-equivalenten per
+            liter. Die advieswaarde is geen wettelijke norm en telt anders: elke stof wordt gewogen naar zijn
+            giftigheid.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Een eigen test is dus geen verplichting. Het is een manier om zekerheid te krijgen in situaties waar de
+            controle van het drinkwaterbedrijf niet geldt, zoals bij een eigen put, of om te weten wat een filter bij
+            jou thuis doet.
+          </p>
+        </section>
+
+        <section className="mb-10 bg-[#F0F9FF] border border-[#BAE6FD] rounded-2xl p-5 md:p-6">
+          <h2 className="text-xl font-bold text-[#003F5C] mb-3">Waarom zoveel mensen nu hun water willen testen</h2>
+          <ul className="space-y-3 text-sm text-gray-700 leading-relaxed">
+            <li>
+              <strong>22 september 2026:</strong> volgens een analyse van Greenpeace ligt de PFAS-waarde in ongeveer een
+              derde van het Nederlandse drinkwater boven de RIVM-advieswaarde, met de hoogste waarden onder meer in
+              IJmuiden en Zaandam. Het water voldoet wel aan de wettelijke norm. Bron:{' '}
+              <a href="https://nos.nl/artikel/2632030" rel="noopener" className="text-[#005F8A] underline">NOS</a>.
+            </li>
+            <li>
+              <strong>September 2026:</strong> de Inspectie Leefomgeving en Transport (ILT) waarschuwt dat PFAS uit
+              bestrijdingsmiddelen, zoals het afbraakproduct TFA, een groeiend risico vormen voor drinkwater. Bron:{' '}
+              <a href="https://nos.nl/artikel/2630617" rel="noopener" className="text-[#005F8A] underline">NOS</a>.
+            </li>
+            <li>
+              <strong>30 oktober 2026:</strong> Noord-Holland, Zuid-Holland en Zeeland onderzoeken samen met het
+              ministerie van Infrastructuur en Waterstaat en de drinkwaterbedrijven wat PFAS langs de kust betekent voor
+              de drinkwaterwinning. Bron:{' '}
+              <a href="https://www.rd.nl/a/onderzoek-gevolgen-pfas-in-kustgebied-voor-winning-drinkwater" rel="noopener" className="text-[#005F8A] underline">Reformatorisch Dagblad</a>.
+            </li>
+          </ul>
+          <p className="text-sm text-gray-700 mt-4 leading-relaxed">
+            Benieuwd naar jouw regio? Bekijk de{' '}
+            <Link href="/kennisbank/pfas-nederland-kaart" className="text-[#005F8A] underline">PFAS-kaart van Nederland</Link>{' '}
+            of lees wat het betekent als{' '}
+            <Link href="/kennisbank/pfas-kraanwater-boven-rivm-advieswaarde" className="text-[#005F8A] underline">je kraanwater boven de RIVM-advieswaarde zit</Link>.
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat is een PFAS water tester eigenlijk?</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Onder de naam PFAS water tester of PFAS-testkit worden drie heel verschillende dingen verkocht. Het loont om
+            te weten welke je koopt:
+          </p>
+          <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2 leading-relaxed">
+            <li>
+              <strong>Een monsterpakket voor een lab.</strong> Je vult een flesje en stuurt het op; een laboratorium meet
+              de PFAS. Dit is een echte labtest. De waarde hangt af van het lab en van welke stoffen het meet.
+            </li>
+            <li>
+              <strong>Een strip- of kleurtest die je zelf afleest.</strong> Voor zover wij weten bestaat er geen
+              thuistest die PFAS betrouwbaar meet op het niveau van de wettelijke norm (100 nanogram per liter), laat
+              staan op het niveau van de RIVM-advieswaarde (4,4 nanogram PFOA-equivalenten per liter).
+            </li>
+            <li>
+              <strong>Een TDS-meter of digitale waterpen.</strong> Die meet opgeloste zouten en mineralen, geen PFAS.
+              Een lage TDS-waarde zegt niets over PFAS.
+            </li>
+          </ul>
+          <p className="text-gray-700 leading-relaxed">
+            Kortom: wil je PFAS in je water testen, dan kom je uit bij de gegevens van je drinkwaterbedrijf of bij een
+            laboratorium.
+          </p>
+        </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Vergelijking testmethoden voor PFAS in drinkwater
+            Testmethoden voor PFAS in water vergeleken
           </h2>
-          <div className="overflow-x-auto mb-4">
-            <table className="w-full text-sm border-collapse">
+          <div className="overflow-x-auto -mx-4 px-4 mb-3">
+            <table className="w-full min-w-[640px] text-sm border-collapse">
               <thead>
                 <tr className="bg-[#003F5C] text-white">
                   <th className="p-3 text-left">Methode</th>
-                  <th className="p-3 text-left">Nauwkeurigheid</th>
+                  <th className="p-3 text-left">Wat je te weten komt</th>
+                  <th className="p-3 text-left">Betrouwbaar voor PFAS?</th>
                   <th className="p-3 text-left">Kosten</th>
-                  <th className="p-3 text-left">Levertijd</th>
-                  <th className="p-3 text-center">Betrouwbaar</th>
                 </tr>
               </thead>
               <tbody>
                 {testMethoden.map((t, i) => (
-                  <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                  <tr key={t.methode} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                     <td className="p-3 font-medium text-[#003F5C]">{t.methode}</td>
-                    <td className="p-3"
-                        dangerouslySetInnerHTML={{ __html: t.nauwkeurigheid }}
-                    />
-                    <td className="p-3">{t.kosten}</td>
-                    <td className="p-3">{t.tijd}</td>
-                    <td className="p-3 text-center">
-                      {t.geschikt ? (
-                        <span className="text-green-600 font-bold">✓</span>
-                      ) : (
-                        <span className="text-red-500">✗</span>
-                      )}
-                    </td>
+                    <td className="p-3 text-gray-700">{t.watJeWeet}</td>
+                    <td className="p-3 text-gray-700">{t.betrouwbaar}</td>
+                    <td className="p-3 text-gray-700">{t.kosten}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-gray-500">
+            We noemen geen labprijzen, omdat we geen actuele en controleerbare prijslijst hebben. Vraag altijd vooraf
+            een offerte. Bijgewerkt november 2026.
+          </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Stap voor stap: hoe test u uw water op PFAS?
+            Stap voor stap: zo test je je water op PFAS
           </h2>
           <div className="space-y-4">
-            {[
-              {
-                stap: '1',
-                titel: 'Controleer eerst het jaarverslag van uw drinkwaterbedrijf',
-                tekst:
-                  'Als u leidingwater gebruikt, publiceer uw drinkwaterbedrijf jaarlijks de PFAS-waarden. Zoek "drinkwaterkwaliteit [naam bedrijf]" online of kijk op de website van Vitens, Evides, Waternet, PWN, Dunea of uw lokale bedrijf. Als de waarden ruim onder 0,05 µg/L liggen is verdere actie meestal niet nodig.',
-              },
-              {
-                stap: '2',
-                titel: 'Bestel een gecertificeerd watermonsterpakket',
-                tekst:
-                  'Kies een laboratorium met NEN-EN-ISO/IEC 17025-accreditatie voor PFAS-analyse in water. Het laboratorium stuurt u een speciaal PFAS-vrij monsterflesje toe. Gebruik nooit uw eigen fles — reguliere plastic flessen bevatten zelf PFAS die het resultaat beinvloeden.',
-              },
-              {
-                stap: '3',
-                titel: 'Neem het watermonster correct af',
-                tekst:
-                  'Laat de kraan 2 minuten vollopen zodat stilstaand water in leidingen wegspoelt. Vul het monsterflesje tot de rand en sluit direct af. Bewaar het monster bij 2-8°C. Verstuur hetzelfde dag via de bijgesloten retourverpakking.',
-              },
-              {
-                stap: '4',
-                titel: 'Interpreteer de resultaten',
-                tekst:
-                  'Het rapport vermeldt de waarden in ng/L of µg/L. De EU-grenswaarde is 0,10 µg/L (= 100 ng/L) voor de som van 20 prioritaire PFAS. Waarden boven deze grens betekenen dat uw water niet voldoet aan de drinkwaternorm. Bij putwater is ook een waarde boven 0,05 µg/L reden tot actie.',
-              },
-              {
-                stap: '5',
-                titel: 'Actie bij overschrijding',
-                tekst:
-                  'Gebruik het water tijdelijk niet als drinkwater. Installeer een osmosefilter (NSF/ANSI 58) of schakel over op gebotteld water. Meld de waarde bij uw gemeente. Eigenaren van putten kunnen aanspraak maken op gemeentelijke ondersteuning.',
-              },
-            ].map(item => (
+            {stappen.map(item => (
               <div key={item.stap} className="flex gap-4 items-start">
                 <div className="w-8 h-8 rounded-full bg-[#003F5C] text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
                   {item.stap}
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#005F8A] mb-1">{item.titel}</h3>
-                  <p className="text-gray-700 text-sm">{item.tekst}</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">{item.tekst}</p>
                 </div>
               </div>
             ))}
@@ -223,123 +339,71 @@ export default function PfasWaterfilterTestenPage() {
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Wanneer is een eigen PFAS-watertest noodzakelijk?
+            Wanneer is een eigen PFAS-test zinvol?
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            {[
-              {
-                situatie: 'U gebruikt putwater',
-                uitleg: 'Particuliere putten worden niet gecontroleerd door drinkwaterbedrijven. Met name ondiepe putten (&lt;30 m) in de buurt van industrieterreinen, vliegbases of intensieve landbouw lopen risico.',
-                urgentie: 'Hoog',
-              },
-              {
-                situatie: 'U woont in een PFAS-hotspot',
-                uitleg: 'Omgeving Dordrecht, Schiphol-zone, nabij militaire vliegbases (Volkel, Eindhoven, De Peel). Zelfs als uw drinkwaterbedrijf voldoet, kan het grondwater en putwater verhoogd zijn.',
-                urgentie: 'Hoog',
-              },
-              {
-                situatie: 'U wilt een geïnstalleerd filter valideren',
-                uitleg: 'Na installatie van een osmosefilter kunt u met een laboratoriumtest bevestigen dat het membraan functioneert. Meet het gefilterde water en vergelijk met onbehandeld water.',
-                urgentie: 'Aanbevolen',
-              },
-              {
-                situatie: 'U heeft bodemverontreiniging gehad',
-                uitleg: 'Lekkages van blusschuim op bedrijventerreinen of bij incidenten kunnen de lokale waterwinning beïnvloeden. Na een incident is testen een logische stap.',
-                urgentie: 'Situationeel',
-              },
-            ].map((item, i) => (
-              <div key={i} className="border rounded-lg p-4">
-                <div className="flex justify-between items-start mb-2">
+            {situaties.map(item => (
+              <div key={item.situatie} className="border rounded-lg p-4">
+                <div className="flex justify-between items-start gap-2 mb-2">
                   <h3 className="font-semibold text-[#005F8A]">{item.situatie}</h3>
-                  <span className={`text-xs px-2 py-1 rounded-full font-medium ${
-                    item.urgentie === 'Hoog' ? 'bg-red-100 text-red-700' :
-                    item.urgentie === 'Aanbevolen' ? 'bg-yellow-100 text-yellow-700' :
+                  <span className={`text-xs px-2 py-1 rounded-full font-medium shrink-0 ${
+                    item.urgentie.startsWith('Hoog') ? 'bg-red-100 text-red-700' :
+                    item.urgentie === 'Zinvol' ? 'bg-yellow-100 text-yellow-700' :
                     'bg-gray-100 text-gray-600'
                   }`}>{item.urgentie}</span>
                 </div>
-                <p className="text-sm text-gray-700"
-                   dangerouslySetInnerHTML={{ __html: item.uitleg }}
-                />
+                <p className="text-sm text-gray-700 leading-relaxed">{item.uitleg}</p>
               </div>
             ))}
           </div>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Filter installeren zonder te wachten op testresultaten?
-          </h2>
-          <p className="text-gray-700 mb-4">
-            Als u in een risicogebied woont, hoeft u niet te wachten op laboratoriumresultaten om actie te ondernemen. Een osmosefilter (NSF/ANSI 58-gecertificeerd) verwijdert PFAS ongeacht de beginconcentratie. Voor maximale gemoedsrust kunt u de test gebruiken om de filterprestatie te bevestigen: neem een watermonster vóór en ná het filter.
-          </p>
-          <div className="bg-blue-50 rounded-xl p-5">
-            <p className="text-[#003F5C] font-semibold mb-2">Advies voor PFAS-risicogebieden:</p>
-            <ol className="list-decimal list-inside space-y-1 text-sm text-gray-700">
-              <li>Installeer direct een gecertificeerd osmosefilter</li>
-              <li>Laat uw water testen voor en na installatie</li>
-              <li>Documenteer de resultaten voor gemeentelijke procedures</li>
-              <li>Vervang voorfilters halfjaarlijks, membraan om de 2 jaar</li>
-            </ol>
-          </div>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Stap 1: controleer de RIVM-kaart en het jaarverslag van uw drinkwaterbedrijf
-          </h2>
-          <p className="text-gray-700 mb-4">
-            Voordat u een eigen laboratoriumtest bestelt, zijn er twee gratis bronnen die al veel informatie geven:
-          </p>
-          <div className="space-y-4 mb-4">
-            <div className="bg-[#E0F2FE] rounded-xl p-4 text-sm">
-              <p className="font-semibold text-[#003F5C] mb-1">RIVM Wateratlas</p>
-              <p className="text-gray-700">Het RIVM publiceert interactieve kaarten met PFAS-metingen in grondwater, oppervlaktewater en drinkwater per regio. Zoek op uw postcode of gemeente om te zien of u in een risicogebied woont. De kaart is gratis toegankelijk via de RIVM-website.</p>
-            </div>
-            <div className="bg-[#E0F2FE] rounded-xl p-4 text-sm">
-              <p className="font-semibold text-[#003F5C] mb-1">Jaarverslag drinkwaterbedrijf</p>
-              <p className="text-gray-700">Elk drinkwaterbedrijf (Vitens, Evides, Waternet, PWN, Dunea, Brabant Water, WMD, etc.) is wettelijk verplicht jaarlijks de drinkwaterkwaliteit te publiceren inclusief PFAS-waarden. Download het jaarverslag via de website van uw drinkwaterbedrijf of vraag het op per e-mail. Zoek naar de tabel &ldquo;PFAS&rdquo; of &ldquo;Perfluorverbindingen&rdquo;.</p>
-            </div>
-          </div>
-          <p className="text-gray-700 mb-4">
-            Woont u nabij Chemours/Dordrecht, de Schiphol-zone of een militaire vliegbasis? Dan is ook controle van de lokale gemeente-informatie aan te raden. Gemeenten als Dordrecht, Papendrecht en Sliedrecht publiceren specifieke adviezen voor inwoners.
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Een filter controleren met een PFAS-test</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Heb je een waterfilter, dan kun je met twee labmonsters zien wat het doet: een van het ongefilterde
+            kraanwater en een van het gefilterde water, op dezelfde dag genomen. Let erop dat labresultaten van
+            fabrikanten meestal gelden voor een nieuw filter en voor de stoffen die getest zijn. Een filter dat al lang
+            meegaat, kan minder doen. Vervang filters daarom op tijd volgens het schema van de fabrikant.
           </p>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Gecertificeerde laboratoria in Nederland voor PFAS-analyse
-          </h2>
-          <p className="text-gray-700 mb-4">
-            Voor een professionele PFAS-watertest hebt u een NEN-EN-ISO/IEC 17025-geaccrediteerd laboratorium nodig. De volgende laboratoria bieden PFAS-wateranalyse aan voor particulieren:
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Liever meteen filteren?</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Je hoeft niet eerst te testen om een filter te nemen. Welk filter PFAS echt vermindert en wat bij jouw
+            situatie past, lees je in onze gids over het{' '}
+            <Link href="/pfas-waterfilter" className="text-[#005F8A] underline font-medium">PFAS waterfilter</Link>.
+            Kort samengevat is dit onze keuze:
           </p>
-          <div className="overflow-x-auto mb-4">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#003F5C] text-white">
-                  <th className="p-3 text-left">Laboratorium</th>
-                  <th className="p-3 text-left">Specialisatie</th>
-                  <th className="p-3 text-left">Typische kosten</th>
-                  <th className="p-3 text-left">Levertijd</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { lab: 'SGS Netherlands', spec: 'PFAS sum-20 + uitgebreid', prijs: 'EUR 120-250', tijd: '5-7 werkdagen' },
-                  { lab: 'Eurofins Milieu', spec: 'PFAS sum-20, breed PFAS-panel', prijs: 'EUR 100-220', tijd: '5-10 werkdagen' },
-                  { lab: 'Kiwa Technology', spec: 'PFAS drinkwater (officieel)', prijs: 'EUR 150-250', tijd: '7-10 werkdagen' },
-                  { lab: 'Analytisch Laboratorium Utrecht (ALU)', spec: 'PFAS particulieren, putwater', prijs: 'EUR 80-180', tijd: '3-5 werkdagen' },
-                ].map((r, i) => (
-                  <tr key={r.lab} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="p-3 font-medium text-[#003F5C]">{r.lab}</td>
-                    <td className="p-3 text-gray-700">{r.spec}</td>
-                    <td className="p-3 text-gray-700">{r.prijs}</td>
-                    <td className="p-3 text-gray-700">{r.tijd}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-gray-400 mb-4">Indicatieve prijzen en levertijden. Bijgewerkt mei 2026. Vraag altijd een offerte op bij het laboratorium voor uw specifieke situatie.</p>
+          <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2 text-sm leading-relaxed">
+            <li>
+              <strong>Zonder osmose of installatie-gedoe:</strong> de{' '}
+              <Link href={PUREFILTER.reviewPath} className="text-[#005F8A] underline">{PUREFILTER.name}</Link>{' '}
+              ({PUREFILTER.price}) op de koude leiding. Equinox Labs mat bij een nieuw filter {PUREFILTER.pfasReduction} minder
+              van vijf PFAS ({PUREFILTER.pfasTested.join(', ')}).
+            </li>
+            <li>
+              <strong>Maximaal zuiveren, plus zeer heet en gekoeld water:</strong> de{' '}
+              <Link href={FOUR_IN_ONE.reviewPath} className="text-[#005F8A] underline">{FOUR_IN_ONE.name}</Link>{' '}
+              ({FOUR_IN_ONE.price}). {FOUR_IN_ONE.labReport.lab} mat bij een nieuw osmosesysteem PFOS {FOUR_IN_ONE.lab.PFOS} en
+              PFOA {FOUR_IN_ONE.lab.PFOA} minder.
+            </li>
+            <li>
+              <strong>Osmosewater uit je eigen kraan:</strong> een{' '}
+              <Link href={THREE_WAY.reviewPath} className="text-[#005F8A] underline">zuiver-water-kraan met The Source</Link>.
+              Omgekeerde osmose; een eigen PFAS-meting is niet gepubliceerd.
+            </li>
+            <li>
+              <strong>Niet boren, bijvoorbeeld in een huurwoning:</strong> het{' '}
+              <Link href={COUNTERTOP.reviewPath} className="text-[#005F8A] underline">{COUNTERTOP.name}</Link>{' '}
+              ({COUNTERTOP.price}) op het aanrecht. Omgekeerde osmose; een eigen PFAS-meting is niet gepubliceerd.
+            </li>
+          </ul>
+          <p className="text-xs text-gray-500 mb-6">
+            Alle vier verkoopt PureAqua, waaraan WaterfilterPlatform gelieerd is.
+          </p>
+          <PureFilterCTA context="pfas" content="pfas-waterfilter-testen" />
         </section>
 
         <section className="mb-10">
@@ -347,12 +411,12 @@ export default function PfasWaterfilterTestenPage() {
             Veelgestelde vragen over PFAS testen
           </h2>
           <div className="space-y-3">
-            {faqItems.map((item, i) => (
-              <details key={i} className="border border-gray-200 rounded-lg">
+            {faqItems.map(item => (
+              <details key={item.question} className="border border-gray-200 rounded-lg">
                 <summary className="p-4 font-semibold text-[#005F8A] cursor-pointer hover:bg-gray-50">
                   {item.question}
                 </summary>
-                <p className="px-4 pb-4 text-gray-700 text-sm">{item.answer}</p>
+                <p className="px-4 pb-4 text-gray-700 text-sm leading-relaxed">{item.answer}</p>
               </details>
             ))}
           </div>
@@ -362,55 +426,52 @@ export default function PfasWaterfilterTestenPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Gerelateerde pagina&apos;s</h2>
           <div className="grid md:grid-cols-3 gap-4">
             <Link href="/pfas-waterfilter" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS waterfilter gids</h3>
-              <p className="text-sm text-gray-600">Welke filters werken werkelijk?</p>
+              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS waterfilter: onze keuze</h3>
+              <p className="text-sm text-gray-600">Welke filters PFAS echt verminderen, per situatie</p>
             </Link>
-            <Link href="/pfas-waterfilter/normen-2026" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">EU-normen 2026</h3>
-              <p className="text-sm text-gray-600">Grenswaarden en wetswijzigingen</p>
-            </Link>
-            <Link href="/pfas-waterfilter/gebieden-nederland" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS-gebieden Nederland</h3>
-              <p className="text-sm text-gray-600">Hotspots en risicokaart</p>
-            </Link>
-            <Link href="/pfas-waterfilter/kopen" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS waterfilter kopen</h3>
-              <p className="text-sm text-gray-600">Beste modellen 2026 vergeleken</p>
-            </Link>
-            <Link href="/omgekeerde-osmose" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">Omgekeerde osmose gids</h3>
-              <p className="text-sm text-gray-600">De goudstandaard voor PFAS-filtratie</p>
+            <Link href="/pfas-waterfilter/vergelijken" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
+              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS-filters vergelijken</h3>
+              <p className="text-sm text-gray-600">Osmose, koolstof en filterkan naast elkaar</p>
             </Link>
             <Link href="/pfas-water" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
               <h3 className="font-semibold text-[#003F5C] mb-1">PFAS in drinkwater</h3>
               <p className="text-sm text-gray-600">Risico&apos;s, normen en achtergrond</p>
             </Link>
-          </div>
-        </section>
-
-        <section className="mt-8 mb-10">
-          <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Link href="/pfas-waterfilter" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS waterfilter overzicht</p>
-              <p className="text-sm text-gray-500">PFAS waterfilter overzicht</p>
+            <Link href="/pfas-waterfilter/normen-2026" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
+              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS-normen 2026</h3>
+              <p className="text-sm text-gray-600">Wettelijke norm en RIVM-advieswaarde</p>
             </Link>
-            <Link href="/pfas-waterfilter/gebieden-nederland" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Is uw regio een risicogebied?</p>
-              <p className="text-sm text-gray-500">Is uw regio een risicogebied?</p>
+            <Link href="/pfas-waterfilter/gebieden-nederland" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
+              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS-gebieden in Nederland</h3>
+              <p className="text-sm text-gray-600">Waar de waarden hoger liggen</p>
             </Link>
-            <Link href="/drinkwaternormen/pfas" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS-normen: wanneer is er een probleem?</p>
-              <p className="text-sm text-gray-500">PFAS-normen: wanneer is er een probleem?</p>
-            </Link>
-            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Welke PFAS-stoffen zijn er?</p>
-              <p className="text-sm text-gray-500">Welke PFAS-stoffen zijn er?</p>
+            <Link href="/pfas-waterfilter/kopen" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
+              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS-filter kopen</h3>
+              <p className="text-sm text-gray-600">Opties en kosten naast elkaar</p>
             </Link>
           </div>
         </section>
 
-        <CTABanner context="osmose" />
+        <section className="mt-8 pt-6 border-t border-gray-100" aria-label="Bronnen">
+          <h2 className="text-sm font-semibold text-gray-700 mb-3">Bronnen</h2>
+          <ul className="space-y-1.5 text-xs text-gray-500 leading-relaxed">
+            <li>Europese drinkwaterrichtlijn 2020/2184: norm van 0,1 microgram per liter voor de som van 20 PFAS.</li>
+            <li>RIVM: advieswaarde van 4,4 nanogram PFOA-equivalenten per liter drinkwater.</li>
+            <li>Raad voor Accreditatie (RvA): register van geaccrediteerde laboratoria (ISO/IEC 17025).</li>
+            <li>
+              NOS, 22 september 2026:{' '}
+              <a href="https://nos.nl/artikel/2632030" rel="noopener" className="underline">analyse Greenpeace over PFAS in drinkwater</a>.
+            </li>
+            <li>
+              NOS, september 2026:{' '}
+              <a href="https://nos.nl/artikel/2630617" rel="noopener" className="underline">ILT over PFAS in bestrijdingsmiddelen</a>.
+            </li>
+            <li>
+              Reformatorisch Dagblad, 30 oktober 2026:{' '}
+              <a href="https://www.rd.nl/a/onderzoek-gevolgen-pfas-in-kustgebied-voor-winning-drinkwater" rel="noopener" className="underline">onderzoek naar PFAS in het kustgebied</a>.
+            </li>
+          </ul>
+        </section>
       </div>
     </>
   );

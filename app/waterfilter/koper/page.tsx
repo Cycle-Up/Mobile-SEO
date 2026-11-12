@@ -5,7 +5,7 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 
 export const metadata: Metadata = {
-  title: "Koper in leidingwater: risico's van koperen leidingen en waterfilters",
+  title: "Koper in leidingwater: risico's en welk waterfilter helpt",
   description:
     'Koper in leidingwater komt van koperen huisleidingen. EU-norm is 2 mg/L. Bij nieuw leidingwerk en zacht zuur water kan koper boven de norm uitkomen.',
   alternates: { canonical: 'https://waterfilterplatform.nl/waterfilter/koper' },
@@ -43,7 +43,7 @@ const faqSchema = {
       name: 'Zijn zuigelingen extra gevoelig voor koper in water?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. De lever van zuigelingen (0-12 maanden) is nog niet volledig in staat koper te verwerken en uit te scheiden. De WHO en EFSA bevelen aan om bij de bereiding van flesvoeding voor zuigelingen water te gebruiken met een kopergehalte lager dan 0,1 mg/L, ruim onder de drinkwaternorm van 2 mg/L. Osmosewater (koper onder 0,02 mg/L) is een veilige keuze voor flesvoeding. Gebruik nooit warm kraanwater rechtstreeks voor zuigelingenvoeding.',
+        text: 'Ja. De lever van zuigelingen (0-12 maanden) is nog niet volledig in staat koper te verwerken en uit te scheiden. De WHO en EFSA bevelen aan om bij de bereiding van flesvoeding voor zuigelingen water te gebruiken met een kopergehalte lager dan 0,1 mg/L, ruim onder de drinkwaternorm van 2 mg/L. Een osmosefilter verlaagt het kopergehalte doorgaans sterk. Twijfelt u over uw leidingen, laat het water dan testen en vraag het consultatiebureau om advies over flesvoeding. Gebruik nooit warm kraanwater rechtstreeks voor zuigelingenvoeding.',
       },
     },
     {
@@ -75,7 +75,7 @@ const faqSchema = {
       name: 'Hoe effectief is een osmosefilter voor koperverwijdering?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Een osmosefilter verwijdert 97 tot 99% van koper (Cu2+) uit drinkwater. Bij een inkomende concentratie van 0,3 mg/L daalt koper naar minder dan 0,01 mg/L in het gefilterde water, veilig voor alle risicogroepen inclusief zuigelingen. Osmose verwijdert naast koper ook lood, zink, cadmium, nitraat en PFAS. Zorg dat het osmosewater via een aparte osmosekraan wordt afgetapt en NIET door koperen leidingen wordt geleid, omdat osmosewater (pH 5-6) corrosiever is dan normaal leidingwater.',
+        text: 'Een osmosefilter verwijdert doorgaans 97 tot 99% van koper (Cu2+) uit drinkwater; de precieze reductie verschilt per systeem. Bij een inkomende concentratie van 0,3 mg/L daalt koper dan naar minder dan 0,01 mg/L, ruim onder de richtwaarde van 0,1 mg/L voor flesvoeding. Hoort u bij een risicogroep, zoals zuigelingen of mensen met de ziekte van Wilson, laat uw water dan testen en overleg met uw arts of het consultatiebureau. Osmose vermindert naast koper ook lood, zink, cadmium, nitraat en PFAS. Tap osmosewater via een eigen kanaal (een aparte osmosekraan, een 3-weg-kraan of een 4-in-1 kraan) en leid het NIET door koperen leidingen, omdat osmosewater zonder remineralisatie (pH 5-6) corrosiever is dan normaal leidingwater.',
       },
     },
   ],
@@ -87,7 +87,7 @@ const articleSchema = {
   description:
     'Koper in leidingwater komt van koperen huisleidingen. EU-norm 2 mg/L. Bij nieuw leidingwerk en zacht zuur water kan koper boven de norm uitkomen.',
   datePublished: '2026-05-01',
-  dateModified: '2026-05-01',
+  dateModified: '2026-11-10',
   url: 'https://waterfilterplatform.nl/waterfilter/koper',
   publisher: {
     '@type': 'Organization',
@@ -181,9 +181,17 @@ export default function WaterfilterKoperPage() {
             Waarschuwing: Osmosewater door koperleidingen
           </p>
           <p className="text-gray-700 text-sm mt-1">
-            Osmosewater heeft een lage pH (5&ndash;6) en vrijwel geen buffercapaciteit. Het is
-            bijzonder corrosief voor koperleidingen. Laat osmosewater NOOIT door bestaande koperen
-            leidingen lopen. Installeer altijd een aparte osmosekraan direct op het osmosesysteem.
+            Osmosewater zonder remineralisatie heeft een lage pH (5&ndash;6) en vrijwel geen
+            buffercapaciteit. Het is bijzonder corrosief voor koperleidingen. Laat osmosewater NOOIT
+            door bestaande koperen leidingen lopen, maar tap het via een eigen, afgescheiden kanaal
+            direct vanaf het osmosesysteem. Dat kan een aparte osmosekraan zijn, maar ook een
+            3-weg-kraan zoals de{' '}
+            <Link href="/the-source" className="text-[#005F8A] underline">zuiver-water-kraan met The Source</Link>{' '}
+            of een{' '}
+            <Link href="/4-in-1-kraan" className="text-[#005F8A] underline">4-in-1 kraan</Link>{' '}
+            die je bestaande mengkraan vervangt. Een osmoseapparaat op het aanrecht, zoals het{' '}
+            <Link href="/countertop-osmose" className="text-[#005F8A] underline">Water zuiver apparaat</Link>,
+            heeft helemaal geen kraan of leidingaansluiting nodig.
           </p>
         </div>
 
@@ -276,11 +284,14 @@ export default function WaterfilterKoperPage() {
             </div>
             <p className="text-gray-700 text-sm mb-2">
               Een <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">osmosefilter</Link>{' '}
-              verwijdert 97&ndash;99% van koper via het semipermeabele membraan. Bij een inkomende
-              concentratie van 0,3 mg/L daalt koper naar minder dan 0,01 mg/L &mdash; veilig voor
-              alle risicogroepen inclusief zuigelingen en patienten met de ziekte van Wilson. Tevens
-              effectief voor lood, zink, cadmium, nitraat en PFAS. Installeer altijd een aparte
-              osmosekraan; leid osmosewater NOOIT door koperleidingen.
+              verwijdert doorgaans 97&ndash;99% van koper via het semipermeabele membraan; de precieze
+              reductie verschilt per systeem. Bij een inkomende concentratie van 0,3 mg/L daalt koper dan
+              naar minder dan 0,01 mg/L, ruim onder de richtwaarde van 0,1 mg/L voor flesvoeding. Hoort u
+              bij een risicogroep, zoals zuigelingen of mensen met de ziekte van Wilson, laat uw water dan
+              testen en overleg met uw arts of het consultatiebureau. Tevens effectief voor lood, zink,
+              cadmium, nitraat en PFAS. Tap osmosewater via een eigen kanaal
+              (een aparte osmosekraan, een 3-weg-kraan of een 4-in-1 kraan); leid het NOOIT door
+              koperleidingen.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-gray-500">
               <span>Koper: 97&ndash;99%</span>

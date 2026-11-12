@@ -4,86 +4,147 @@ import { CTABanner } from '@/components/CTABanner';
 import { HealthDisclaimer } from '@/components/HealthDisclaimer';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
+import { AuthorBox } from '@/components/AuthorBox';
 import { PureFilterCTA } from '@/components/PureFilterCTA';
+import { FourInOneRecommendation } from '@/components/FourInOneRecommendation';
+import { ThreeWayRecommendation } from '@/components/ThreeWayRecommendation';
 import { PUREFILTER } from '@/lib/purefilter.mjs';
-import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
+import { FOUR_IN_ONE, THREE_WAY, KRAAN_MARKET } from '@/lib/kranen.mjs';
+import { COUNTERTOP } from '@/lib/countertop.mjs';
+
+const PAGE_TITLE = 'PFAS waterfilter 2026: welke filters werken echt';
+const PAGE_URL = 'https://waterfilterplatform.nl/pfas-waterfilter';
+
+// Max 160 tekens; cijfers uit lib/. Ook gebruikt in het Article-schema, daarom met disclosure.
+const PAGE_DESCRIPTION = `PFAS waterfilter: osmosekraan ${FOUR_IN_ONE.lab.PFOA} minder PFOA (SGS), leidingfilter ${PUREFILTER.pfasReduction} minder van vijf PFAS (Equinox). Onze keuze per situatie; gelieerd aan PureAqua.`;
 
 export const metadata: Metadata = {
-  title: 'PFAS waterfilter: de complete gids voor 2026',
-  description:
-    'Welke waterfilters verwijderen PFAS? Vergelijking van osmose, koolstof en nanofiltration. EU-norm 2026 uitgelegd.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter' },
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: PAGE_TITLE,
+    description: `Welk PFAS waterfilter werkt echt? Osmose vermindert PFAS het sterkst: SGS mat bij een nieuw systeem van de ${FOUR_IN_ONE.name} ${FOUR_IN_ONE.lab.PFOS} minder PFOS. Zonder osmose verminderde de ${PUREFILTER.name} (${PUREFILTER.price}) vijf PFAS met ${PUREFILTER.pfasReduction} (Equinox Labs). Beide zijn van PureAqua, waaraan WaterfilterPlatform gelieerd is.`,
+    url: PAGE_URL,
+    type: 'article',
+    locale: 'nl_NL',
+  },
 };
 
+// Zichtbare FAQ en FAQPage-JSON-LD gebruiken exact dezelfde tekst.
 const faqItems = [
   {
-    question: 'Welk waterfilter verwijdert PFAS het best?',
+    question: 'Welk filter haalt PFAS uit kraanwater?',
     answer:
-      'Omgekeerde osmose (RO) is de meest effectieve methode voor PFAS-verwijdering: 95-99% reductie voor zowel langketenige als kortketenige PFAS. Nanofiltration scoort 90%+. Actief koolblokfilters halen 80-97% voor langketens maar zijn minder betrouwbaar voor kortketens. Filterkannen zijn niet geschikt voor PFAS-verwijdering.',
+      `Omgekeerde osmose haalt de meeste PFAS uit kraanwater, ook een deel van de kortketenige stoffen. Een goed koolstoffilter vermindert vooral langketenige PFAS zoals PFOS en PFOA. Gemeten bij producten die wij aanraden: SGS mat bij een nieuw osmosesysteem van de ${FOUR_IN_ONE.name} ${FOUR_IN_ONE.lab.PFOS} minder PFOS en ${FOUR_IN_ONE.lab.PFOA} minder PFOA. Zonder osmose verminderde een nieuwe ${PUREFILTER.name} (${PUREFILTER.price}) bij Equinox Labs vijf PFAS (${PUREFILTER.pfasTested.join(', ')}) met ${PUREFILTER.pfasReduction}. Beide verkoopt PureAqua, waaraan WaterfilterPlatform gelieerd is. Geen enkel filter haalt aantoonbaar elke PFAS-stof weg.`,
   },
   {
-    question: 'Wat zijn PFAS en waarom heten ze "forever chemicals"?',
+    question: 'Is er een PFAS-filter voor op de kraan?',
     answer:
-      'PFAS (per- en polyfluoralkylstoffen) zijn een groep van meer dan 4.700 synthetische verbindingen met een uiterst stabiele koolstof-fluorbinding (C-F). Deze binding is de sterkste in de organische chemie en breekt niet af door zonlicht, hitte of biologische processen. Daardoor hopen PFAS zich permanent op in het milieu en in het menselijk lichaam — vandaar de naam "forever chemicals".',
+      `Ja, in drie vormen. Een opzetfilter direct op de kraan is klein en het water heeft weinig contacttijd; voor PFAS vonden wij daar weinig gepubliceerd bewijs voor. Een filter op de koude leiding onder het aanrecht, zoals de ${PUREFILTER.name}, filtert het koude water dat uit je gewone kraan komt; een nieuw filter verminderde vijf PFAS met ${PUREFILTER.pfasReduction} (Equinox Labs). Wil je osmosewater uit de kraan, dan kies je een zuiver-water-kraan met een osmosesysteem onder het aanrecht, zoals The Source, of de ${FOUR_IN_ONE.name}, die ook zeer heet en gekoeld water geeft. Osmose is volgens ons de sterkste optie, maar vraagt meer ruimte en installatie.`,
   },
   {
-    question: 'Wat is de EU-norm voor PFAS in drinkwater in 2026?',
+    question: 'Filtert een filterkan (Brita) PFAS?',
     answer:
-      'Sinds 2026 geldt de EU-drinkwaterrichtlijn (2020/2184) met een norm van 0,10 µg/L voor de som van 20 PFAS-verbindingen (PFAS-20 parameter). Voor de vier meest gevaarlijke stoffen (PFOS, PFOA, PFNA en PFHxS samen) geldt een aparte norm van 0,05 µg/L. Nederlandse drinkwaterbedrijven zijn wettelijk verplicht hieraan te voldoen.',
+      'Daar is weinig over bekend. Voor de filterkannen die in Nederland verkocht worden vonden wij weinig onafhankelijk gepubliceerd bewijs over PFAS. Het actieve kool in een filterkan kan een deel van de langketenige PFAS afvangen, maar de contacttijd is kort, het filter raakt snel verzadigd en kortketenige PFAS houdt een gewoon koolfilter minder goed vast dan langketenige; het zeer kortketenige TFA nauwelijks. Noemt een fabrikant PFAS-reductie, kijk dan welke stoffen getest zijn en of dat met een nieuw of gebruikt filter was. Voor PFAS zijn osmose of een getest koolstoffilter op de leiding volgens ons een betere keuze.',
+  },
+  {
+    question: 'Waar koop je een PFAS-filter?',
+    answer:
+      `Online bij gespecialiseerde waterfilterwinkels en bouwmarkten; osmosesystemen ook via een installateur. Wil je weten hoeveel PFAS een concreet filter haalt, dan heb je een openbaar labrapport of certificaat met PFAS-claim nodig. Dat is er voor twee van de vier filters die wij in deze gids als onze keuze noemen: de ${PUREFILTER.name} (Equinox Labs) en de ${FOUR_IN_ONE.name} (SGS). Voor de zuiver-water-kranen met The Source en het ${COUNTERTOP.shortName} bestaat geen eigen PFAS-meting; daar baseren we onze keuze op de osmosetechniek, niet op een productmeting. Alle vier koop je bij PureFilter.nl en PureAqua.nl. WaterfilterPlatform is gelieerd aan PureAqua. Op onze pagina over een PFAS-filter kopen zetten we de opties en kosten naast elkaar.`,
+  },
+  {
+    question: 'Wat is de wettelijke norm voor PFAS in drinkwater?',
+    answer:
+      'Sinds januari 2026 geldt in de hele EU een norm van 0,1 microgram per liter (100 nanogram per liter) voor de som van 20 PFAS, uit de Europese drinkwaterrichtlijn 2020/2184. Daarnaast hanteert het RIVM een veel strengere advieswaarde van 4,4 nanogram PFOA-equivalenten per liter. Die advieswaarde is geen wettelijke norm en telt anders: stoffen worden gewogen naar hun giftigheid. Nederlands kraanwater voldoet aan de wettelijke norm.',
   },
   {
     question: 'Is kraanwater in Nederland veilig wat PFAS betreft?',
     answer:
-      'Volgens RIVM voldoet de overgrote meerderheid van het Nederlandse leidingwater aan de EU-PFAS-norm. Er zijn echter bekende hotspots: de omgeving van Dordrecht/Papendrecht (Chemours), regio Schiphol en gebieden nabij militaire vliegbases. Particuliere putten en bronwater zijn niet beschermd door drinkwaterzuivering en vormen een groter risico.',
+      'Nederlands kraanwater voldoet aan de wettelijke norm en wordt streng gecontroleerd. Op een deel van de plekken ligt de PFAS-waarde wel boven de strengere RIVM-advieswaarde: volgens een analyse van Greenpeace (september 2026) geldt dat voor ongeveer een derde van het drinkwater. Het RIVM noemt voedsel en drinkwater de belangrijkste bronnen van PFAS-inname. Gebruik je water uit een eigen put, dan valt dat niet onder de controle van een drinkwaterbedrijf.',
   },
   {
-    question: 'Verwijdert een Brita-filterkraan PFAS?',
+    question: 'Wat zijn PFAS en waarom heten ze "forever chemicals"?',
     answer:
-      'Nee, filterkannen zoals Brita zijn niet ontworpen voor PFAS-verwijdering en worden door experts niet aanbevolen als PFAS-filter. De korte contacttijd en het type actief kool in filterkannen zijn onvoldoende voor betrouwbare PFAS-reductie. Voor PFAS verwijdering is omgekeerde osmose of een gecertificeerd koolstofblokfilter nodig.',
+      'PFAS (per- en polyfluoralkylstoffen) zijn een groep van duizenden synthetische stoffen met een uiterst stabiele koolstof-fluorbinding. Die binding breekt niet af door zonlicht, hitte of biologische processen. Daardoor blijven PFAS heel lang in het milieu en kunnen ze zich ophopen in het lichaam; vandaar de bijnaam "forever chemicals".',
   },
   {
     question: 'Verwijdert een UV-filter of waterontharder PFAS?',
     answer:
-      'Nee. UV-lampen hebben geen enkel effect op PFAS — ze bestrijden alleen bacterieen en virussen. Waterontharders (ionenwisselaars voor kalk) verwijderen evenmin PFAS. Alleen mechanische filtratie via een osmosemembraan of adsorptie via actief kool kan PFAS reduceren.',
+      'Nee. UV-licht heeft geen effect op PFAS; het is bedoeld tegen bacteriën en virussen. Een gewone waterontharder (ionenwisselaar voor kalk) verwijdert evenmin PFAS. Vooral een osmosemembraan, nanofiltratie en adsorptie aan actief kool kunnen PFAS verminderen.',
   },
   {
     question: 'Hoe lang gaat een osmosefilter mee voor PFAS-verwijdering?',
     answer:
-      'Een osmosemembraan blijft doorgaans 2-3 jaar effectief voor PFAS-verwijdering. De voorfilters (sediment en koolstof) vervang je jaarlijks. Overschrijd nooit de aanbevolen vervangingsdatum: een beschadigd membraan laat PFAS door zonder dat dit zichtbaar is aan de smaak of kleur van het water.',
+      `Dat verschilt per systeem en per waterverbruik, dus houd je aan het schema van de fabrikant. Bij de ${FOUR_IN_ONE.name} is dat: ${FOUR_IN_ONE.filters}. Bij The Source is het ${THREE_WAY.filters}. Vervang op tijd: een versleten membraan of verzadigd voorfilter zie of proef je niet, terwijl het wel meer PFAS kan doorlaten. Labresultaten gelden altijd voor een nieuw filter.`,
   },
   {
     question: 'Wat is het verschil tussen PFOS, PFOA en de PFAS-20?',
     answer:
-      'PFOS (perfluoroctaansulfonzuur) en PFOA (perfluoroctaanzuur) zijn de twee bekendste en meest onderzochte PFAS-verbindingen. De PFAS-20 is de set van 20 specifieke PFAS-verbindingen die de EU heeft aangewezen voor monitoring in drinkwater, waaronder PFOS, PFOA, PFNA, PFHxS en 16 andere verbindingen. De EU-norm van 0,10 µg/L geldt voor de som van deze 20 stoffen.',
+      'PFOS (perfluoroctaansulfonzuur) en PFOA (perfluoroctaanzuur) zijn de twee bekendste en best onderzochte PFAS. De PFAS-20 is de lijst van 20 PFAS die de EU in drinkwater laat meten, waaronder PFOS, PFOA, PFNA en PFHxS. De wettelijke norm van 0,1 microgram per liter geldt voor de som van deze 20 stoffen.',
   },
 ];
 
+// Kwalitatieve indeling per filtertype (zelfde oordeel als /pfas-waterfilter/kopen). Percentages noemen we
+// alleen per product met een eigen labrapport, zie productData hieronder.
 const filterData = [
-  { methode: 'Omgekeerde osmose (RO)', langketen: '95-99%', kortketen: '85-95%', kosten: 'EUR 150-1.200', aanbevolen: true },
-  { methode: 'Nanofiltration (NF)', langketen: '90-99%', kortketen: '80-90%', kosten: 'EUR 300-800', aanbevolen: true },
-  { methode: 'Actief kool (blokfilter)', langketen: '80-97%', kortketen: '40-70%', kosten: 'EUR 50-200', aanbevolen: false },
-  { methode: 'Actief kool (GAC granulaat)', langketen: '70-90%', kortketen: '30-60%', kosten: 'EUR 30-100', aanbevolen: false },
-  { methode: 'Filterkraan (Brita-type)', langketen: 'Onbekend', kortketen: 'Onbekend', kosten: 'EUR 50-100', aanbevolen: false },
-  { methode: 'UV-lamp', langketen: '0%', kortketen: '0%', kosten: 'EUR 30-150', aanbevolen: false },
+  { methode: 'Omgekeerde osmose (RO)', langketen: 'Sterk', kortketen: 'Grotendeels', aanbevolen: true },
+  { methode: 'Nanofiltratie (NF)', langketen: 'Sterk', kortketen: 'Gedeeltelijk', aanbevolen: true },
+  { methode: 'Koolstofblok of koolstofvezel op de leiding, met PFAS-labtest', langketen: 'Goed', kortketen: 'Wisselend; zie de geteste stoffen', aanbevolen: true },
+  { methode: 'Actief kool zonder PFAS-labtest (blok of granulaat)', langketen: 'Onbekend tot redelijk', kortketen: 'Zwak', aanbevolen: false },
+  { methode: 'Filterkan (Brita-type)', langketen: 'Onbekend', kortketen: 'Onbekend', aanbevolen: false },
+  { methode: 'UV-lamp', langketen: 'Geen effect', kortketen: 'Geen effect', aanbevolen: false },
 ];
 
 // Eigen producten met een gemeten labresultaat (lib/purefilter.mjs en lib/kranen.mjs). PureAqua-producten; zie disclosure.
 const productData = [
   {
-    methode: 'PureFilter Mineral+ (kraanfilter met koolblok)',
-    href: '/purefilter-review',
-    langketen: `PFOA en PFOS ${PUREFILTER.pfasReduction}`,
-    kortketen: `PFHxA en PFBS ${PUREFILTER.pfasReduction}`,
-    kosten: `EUR 149, navulfilter ${PUREFILTER.cartridgePrice}`,
+    methode: `${PUREFILTER.name} (filter op de koude leiding, koolstofvezel)`,
+    href: PUREFILTER.reviewPath,
+    stoffen: PUREFILTER.pfasTested.join(', '),
+    resultaat: `${PUREFILTER.pfasReduction} minder, totaal van de vijf geteste PFAS`,
+    kosten: `${PUREFILTER.price}, navulfilter ${PUREFILTER.cartridgePrice}`,
     bron: 'Equinox Labs, nieuw filter, gespiked water',
   },
   {
-    methode: 'PureAqua 4-in-1 kraan (osmose)',
-    href: '/4-in-1-kraan',
-    langketen: `PFOS ${FOUR_IN_ONE.lab.PFOS}, PFOA ${FOUR_IN_ONE.lab.PFOA}`,
-    kortketen: 'Niet apart gemeten',
-    kosten: `EUR 1.948`,
-    bron: 'SGS, nieuw systeem',
+    methode: `${FOUR_IN_ONE.name} (osmose)`,
+    href: FOUR_IN_ONE.reviewPath,
+    stoffen: 'PFOS, PFOA',
+    resultaat: `PFOS ${FOUR_IN_ONE.lab.PFOS}, PFOA ${FOUR_IN_ONE.lab.PFOA} minder`,
+    kosten: FOUR_IN_ONE.price,
+    bron: `${FOUR_IN_ONE.labReport.lab}, nieuw systeem`,
+  },
+];
+
+// Keuzetabel bovenaan: onze keuze per situatie. Alleen gemeten cijfers waar een labrapport bestaat.
+const choiceRows = [
+  {
+    situatie: 'Minder PFAS zonder osmose, tank of afvalwater; filter op de koude leiding',
+    keuze: PUREFILTER.name,
+    href: PUREFILTER.reviewPath,
+    gemeten: `Equinox Labs: ${PUREFILTER.pfasReduction} minder van vijf PFAS (nieuw filter)`,
+    prijs: PUREFILTER.price,
+  },
+  {
+    situatie: `Maximaal zuiveren, plus zeer heet (${FOUR_IN_ONE.hot.split(';')[0]}) en gekoeld water uit één kraan`,
+    keuze: FOUR_IN_ONE.name,
+    href: FOUR_IN_ONE.reviewPath,
+    gemeten: `${FOUR_IN_ONE.labReport.lab}: PFOS ${FOUR_IN_ONE.lab.PFOS} en PFOA ${FOUR_IN_ONE.lab.PFOA} minder (nieuw systeem)`,
+    prijs: FOUR_IN_ONE.price,
+  },
+  {
+    situatie: 'Osmosewater uit je eigen keukenkraan, zonder extra tapkraantje',
+    keuze: 'Zuiver-water-kraan met The Source',
+    href: THREE_WAY.reviewPath,
+    gemeten: 'Geen eigen PFAS-meting; onze keuze rust op de osmosetechniek',
+    prijs: `${THREE_WAY.sourcePrice} plus kraan (${THREE_WAY.tapPrice})`,
+  },
+  {
+    situatie: 'Huurwoning of niet boren: osmose op het aanrecht',
+    keuze: COUNTERTOP.name,
+    href: COUNTERTOP.reviewPath,
+    gemeten: 'Geen eigen PFAS-meting; onze keuze rust op de osmosetechniek',
+    prijs: COUNTERTOP.price,
   },
 ];
 
@@ -98,17 +159,18 @@ export default function PfasWaterfilterPage() {
         type="BreadcrumbList"
         breadcrumbs={[
           { name: 'Home', url: 'https://waterfilterplatform.nl' },
-          { name: 'PFAS waterfilter', url: 'https://waterfilterplatform.nl/pfas-waterfilter' },
+          { name: 'PFAS waterfilter', url: PAGE_URL },
         ]}
       />
       <SchemaOrg
         type="Article"
         article={{
-          title: 'PFAS waterfilter: de complete gids voor 2026',
-          description: 'Welke waterfilters verwijderen PFAS? Vergelijking van osmose, koolstof en nanofiltration. EU-norm 2026 uitgelegd.',
+          title: PAGE_TITLE,
+          description: PAGE_DESCRIPTION,
           datePublished: '2026-04-25',
-          dateModified: '2026-04-25',
-          url: 'https://waterfilterplatform.nl/pfas-waterfilter',
+          dateModified: '2026-11-10',
+          url: PAGE_URL,
+          sources: ['RIVM', 'EFSA (2020)', 'IARC (2023)', 'EU-drinkwaterrichtlijn 2020/2184', 'Equinox Labs', 'SGS', 'NOS', 'Reformatorisch Dagblad'],
         }}
       />
 
@@ -121,23 +183,29 @@ export default function PfasWaterfilterPage() {
             <span className="text-[#003F5C]">PFAS waterfilter</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            PFAS waterfilter: de complete gids voor 2026
+            {PAGE_TITLE}
           </h1>
+          <p className="text-xs text-gray-500 mb-4">
+            Laatst bijgewerkt: <time dateTime="2026-11-10">10 november 2026</time>
+          </p>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            PFAS zijn &ldquo;forever chemicals&rdquo; die zich ophopen in het milieu en het menselijk lichaam. Sinds 2026 geldt in de EU een strikte norm van 0,10 µg/L voor de som van 20 PFAS in drinkwater. Welke filters werken echt, welke niet, en wat is de goudstandaard?
+            Wil je PFAS uit je kraanwater filteren? Hier lees je welke filtertypes PFAS echt verminderen, wat
+            labtests daarover zeggen en welk filter volgens ons bij jouw situatie past. Eerst de nuance: Nederlands
+            kraanwater voldoet aan de wettelijke PFAS-norm. Een filter is een keuze voor extra marge, bijvoorbeeld als
+            de waarde in jouw regio boven de strengere RIVM-advieswaarde ligt.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
-              href="#filtertabel"
+              href="#keuze"
               className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm"
             >
-              Vergelijkingstabel filters
+              Welk PFAS-filter past bij mij?
             </Link>
             <Link
               href="/pfas-waterfilter/kopen"
               className="border border-[#005F8A] text-[#005F8A] font-semibold px-5 py-2.5 rounded-xl hover:bg-[#E0F2FE] transition-colors text-sm"
             >
-              PFAS waterfilter kopen
+              PFAS-filter kopen
             </Link>
           </div>
         </div>
@@ -145,39 +213,133 @@ export default function PfasWaterfilterPage() {
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
 
-        <QuickAnswer answer="Omgekeerde osmose is de goudstandaard voor PFAS-verwijdering: 95-99% reductie, ook voor kortketenige PFAS. De EU-norm van 0,10 µg/L (som-20) geldt in Nederland vanaf 2026. Filterkannen en UV-lampen werken niet voor PFAS. Controleer uw situatie: de meeste Nederlanders krijgen veilig leidingwater, maar hotspots bij Chemours/Dordrecht en Schiphol bestaan." />
+        <div>
+          <AuthorBox datePublished="2026-04-25" dateModified="2026-11-10" />
+          <QuickAnswer
+            question="Welk waterfilter vermindert PFAS?"
+            answer={`Omgekeerde osmose vermindert PFAS het sterkst; een goed koolstoffilter helpt vooral tegen langketenige PFAS, filterkannen en UV-lampen nauwelijks of niet. Onze keuze per situatie: wil je maximaal zuiveren plus zeer heet en gekoeld water, dan de ${FOUR_IN_ONE.name} (${FOUR_IN_ONE.labReport.lab}, nieuw systeem: PFOS ${FOUR_IN_ONE.lab.PFOS} en PFOA ${FOUR_IN_ONE.lab.PFOA} minder). Wil je osmosewater uit je eigen kraan, dan een zuiver-water-kraan met The Source (geen eigen PFAS-meting; onze keuze rust op de osmosetechniek). Geen osmose of tank, dan de ${PUREFILTER.name} (${PUREFILTER.price}; Equinox Labs: ${PUREFILTER.pfasReduction} minder van vijf PFAS bij een nieuw filter). Mag je niet boren, dan het ${COUNTERTOP.shortName} op het aanrecht (ook osmose, ook zonder eigen PFAS-meting). Alle vier verkoopt PureAqua, waaraan WaterfilterPlatform gelieerd is.`}
+          />
+        </div>
+
+        {/* Keuzetabel */}
+        <section id="keuze">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Onze keuze per situatie</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Percentages noemen we alleen waar een onafhankelijk labrapport van het product zelf bestaat. Prijzen,
+            filterkosten en installatie per product zetten we naast elkaar op onze pagina{' '}
+            <Link href="/pfas-waterfilter/kopen" className="text-[#005F8A] underline">PFAS-filter kopen</Link>.
+          </p>
+          <div className="overflow-x-auto -mx-4 px-4 mb-3">
+            <table className="w-full min-w-[560px] text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#003F5C] text-white">
+                  <th className="text-left py-2.5 px-3 font-semibold text-xs">Jouw situatie</th>
+                  <th className="text-left py-2.5 px-3 font-semibold text-xs">Onze keuze</th>
+                  <th className="text-left py-2.5 px-3 font-semibold text-xs">PFAS-bewijs</th>
+                  <th className="text-left py-2.5 px-3 font-semibold text-xs">Prijs</th>
+                </tr>
+              </thead>
+              <tbody>
+                {choiceRows.map((row, i) => (
+                  <tr key={row.keuze} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                    <td className="py-2.5 px-3 text-xs text-gray-700">{row.situatie}</td>
+                    <td className="py-2.5 px-3 text-xs font-medium">
+                      <Link href={row.href} className="text-[#005F8A] underline">{row.keuze}</Link>
+                    </td>
+                    <td className="py-2.5 px-3 text-xs text-gray-700">{row.gemeten}</td>
+                    <td className="py-2.5 px-3 text-xs text-gray-600">{row.prijs}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-500 mb-6">
+            Alle vier producten verkoopt PureAqua, waaraan WaterfilterPlatform gelieerd is. Labcijfers gelden voor de
+            geteste stoffen en een nieuw filter of systeem. Lees ook het <a href={FOUR_IN_ONE.labReport.url} rel="noopener" className="underline">SGS-testrapport (pdf)</a> en
+            het <a href={PUREFILTER.labReportUrl} rel="noopener" className="underline">Equinox-testrapport (pdf)</a>.
+          </p>
+          <PureFilterCTA context="pfas" content="pfas-waterfilter-keuze" />
+        </section>
+
+        {/* Actueel */}
+        <section className="bg-[#F0F9FF] border border-[#BAE6FD] rounded-2xl p-5 md:p-6">
+          <h2 className="text-xl font-bold text-[#003F5C] mb-3">Actueel: PFAS in het nieuws (najaar 2026)</h2>
+          <ul className="space-y-3 text-sm text-gray-700 leading-relaxed">
+            <li>
+              <strong>22 september 2026:</strong> volgens een analyse van Greenpeace ligt de PFAS-waarde in ongeveer een
+              derde van het Nederlandse drinkwater boven de RIVM-advieswaarde, met de hoogste waarden onder meer in
+              IJmuiden en Zaandam. Het water voldoet wel aan de wettelijke norm. Bron:{' '}
+              <a href="https://nos.nl/artikel/2632030" rel="noopener" className="text-[#005F8A] underline">NOS</a>.
+            </li>
+            <li>
+              <strong>September 2026:</strong> de Inspectie Leefomgeving en Transport (ILT) waarschuwt dat PFAS uit
+              bestrijdingsmiddelen, zoals het afbraakproduct TFA, een groeiend risico vormen voor drinkwater. TFA is een
+              zeer kortketenige PFAS die actief kool slecht vasthoudt. Bron:{' '}
+              <a href="https://nos.nl/artikel/2630617" rel="noopener" className="text-[#005F8A] underline">NOS</a>.
+            </li>
+            <li>
+              <strong>30 oktober 2026:</strong> Noord-Holland, Zuid-Holland en Zeeland onderzoeken samen met het
+              ministerie van Infrastructuur en Waterstaat en de drinkwaterbedrijven wat PFAS langs de kust betekent voor
+              de drinkwaterwinning. Bron:{' '}
+              <a href="https://www.rd.nl/a/onderzoek-gevolgen-pfas-in-kustgebied-voor-winning-drinkwater" rel="noopener" className="text-[#005F8A] underline">Reformatorisch Dagblad</a>.
+            </li>
+          </ul>
+          <p className="text-sm text-gray-700 mt-4 leading-relaxed">
+            Wil je weten hoe het bij jou zit? Bekijk de{' '}
+            <Link href="/kennisbank/pfas-nederland-kaart" className="text-[#005F8A] underline">PFAS-kaart van Nederland</Link>{' '}
+            of lees wat het betekent als{' '}
+            <Link href="/kennisbank/pfas-kraanwater-boven-rivm-advieswaarde" className="text-[#005F8A] underline">je kraanwater boven de RIVM-advieswaarde zit</Link>.
+          </p>
+        </section>
 
         {/* Wat zijn PFAS */}
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat zijn PFAS?</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            PFAS staat voor per- en polyfluoralkylstoffen: een verzamelnaam voor meer dan 4.700 synthetische chemische verbindingen. De bekendste zijn PFOS (perfluoroctaansulfonzuur) en PFOA (perfluoroctaanzuur), maar ook GenX-stoffen, PFNA en PFHxS behoren tot de familie. Wat ze gemeen hebben is de extreem stabiele koolstof-fluorbinding (C-F-binding) — de sterkste binding in de organische chemie.
+            PFAS staat voor per- en polyfluoralkylstoffen: een verzamelnaam voor duizenden synthetische stoffen. De
+            bekendste zijn PFOS (perfluoroctaansulfonzuur) en PFOA (perfluoroctaanzuur), maar ook GenX, PFNA, PFHxS en
+            het zeer kortketenige TFA horen bij de familie. Wat ze gemeen hebben is de extreem stabiele
+            koolstof-fluorbinding.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Door deze binding breken PFAS niet af in het milieu, door zonlicht of door biologische processen. Ze stapelen zich op in de bodem, grondwater, oppervlaktewater en het menselijk lichaam. Dat is waarom ze &ldquo;forever chemicals&rdquo; worden genoemd: eenmaal uitgestoten, blijven ze praktisch permanent aanwezig.
+            Door die binding breken PFAS nauwelijks af in het milieu. Ze komen in bodem, grondwater, oppervlaktewater en
+            in ons lichaam terecht. Daarom worden ze &ldquo;forever chemicals&rdquo; genoemd.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            PFAS zijn decennialang verwerkt in antiaanbaklagen (Teflon), impregneersprays voor kleding en meubels, AFFF-blusschuim, voedselprikkagen, cosmetica en industriele processen. De gezondheidseffecten bij langdurige blootstelling aan hoge concentraties zijn ernstig: schildklierproblemen, verminderde werking van het immuunsysteem, verhoogd cholesterol, en bij PFOS en PFOA een verhoogd risico op nierkanker en testiskanker.
+            PFAS zitten of zaten in antiaanbaklagen, impregneersprays, blusschuim, voedselverpakkingen, cosmetica en
+            industriële processen. Over de gezondheid zeggen de officiële beoordelaars het volgende. De Europese
+            voedselautoriteit EFSA noemt in haar beoordeling uit 2020 een verminderde reactie van het immuunsysteem op
+            vaccinaties bij kinderen het meest kritische effect; in haar beoordeling uit 2018 keek EFSA naar een verhoogd
+            cholesterolgehalte. Het kankeronderzoeksinstituut IARC van de Wereldgezondheidsorganisatie deelde PFOA in
+            2023 in als kankerverwekkend voor mensen en PFOS als mogelijk kankerverwekkend. Die beoordelingen gaan over
+            langdurige blootstelling via alle bronnen samen, niet over één glas kraanwater.
           </p>
         </section>
 
-        {/* EU-norm */}
+        {/* Normen */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">De EU-norm 2026: wat veranderde er?</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">PFAS-normen: wettelijke norm en RIVM-advies</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Vanaf 2026 is de EU-drinkwaterrichtlijn (2020/2184) volledig van kracht in Nederland. De nieuwe norm introduceert de zogenoemde PFAS-20 parameter: de som van 20 specifieke PFAS-verbindingen in drinkwater mag niet meer dan <strong>0,10 µg/L</strong> bedragen. Voor de vier meest toxische verbindingen samen (PFOS, PFOA, PFNA en PFHxS) geldt bovendien een strengere grenswaarde van <strong>0,05 µg/L</strong>.
+            Sinds januari 2026 geldt de Europese drinkwaterrichtlijn (2020/2184) voor PFAS: de som van 20 PFAS mag niet
+            hoger zijn dan <strong>0,1 microgram per liter</strong> (100 nanogram per liter). Dat is de wettelijke norm,
+            en Nederlands kraanwater voldoet daaraan.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Dit is een fundamentele verandering ten opzichte van de vorige situatie, waarbij alleen voor individuele stoffen normen golden. De nieuwe aanpak erkent dat een mengsel van meerdere PFAS-verbindingen — elk onder de individuele grenswaarde — samen toch schadelijk kan zijn (mengselwerking).
+            Het RIVM hanteert daarnaast een veel strengere advieswaarde van <strong>4,4 nanogram PFOA-equivalenten per
+            liter</strong>. Die is afgeleid van de veilige wekelijkse inname die de Europese voedselautoriteit EFSA in
+            2020 vaststelde voor vier PFAS samen. Het is geen wettelijke norm en het telt anders dan de EU-norm: elke stof
+            wordt gewogen naar zijn giftigheid.
           </p>
           <div className="bg-[#E0F2FE] rounded-xl p-5 mb-4">
-            <p className="font-semibold text-[#003F5C] mb-2">Wat betekent 0,10 µg/L in de praktijk?</p>
+            <p className="font-semibold text-[#003F5C] mb-2">Wat betekent dat in de praktijk?</p>
             <p className="text-gray-700 text-sm leading-relaxed">
-              0,10 microgram per liter is een uiterst lage concentratie. Ter vergelijking: een suikerkorrel weegt circa 1.000 microgram. De EU-norm is vastgesteld op basis van pragmatische haalbaarheid voor drinkwaterbedrijven — niet op basis van een vastgesteld &ldquo;veilig&rdquo; niveau voor de volksgezondheid. Het EFSA (de Europese voedselautoriteit) stelde in 2020 dat er eigenlijk geen veilig niveau bestaat voor PFOS en PFOA.
+              Water kan dus ruim onder de wettelijke norm blijven en toch boven de RIVM-advieswaarde uitkomen. Het RIVM
+              noemt voedsel en drinkwater de belangrijkste bronnen van PFAS-inname. Een filter verlaagt alleen het deel
+              dat via drinkwater binnenkomt.
             </p>
           </div>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Meer over normen en wetgeving leest u op onze pagina <Link href="/pfas-waterfilter/normen-2026" className="text-[#005F8A] underline">PFAS normen 2026</Link>.
+            Meer over normen en wetgeving lees je op onze pagina <Link href="/pfas-waterfilter/normen-2026" className="text-[#005F8A] underline">PFAS normen 2026</Link>.
           </p>
         </section>
 
@@ -185,19 +347,18 @@ export default function PfasWaterfilterPage() {
         <section>
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">PFAS in Nederlands drinkwater: de huidige situatie</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Volgens het RIVM (Rijksinstituut voor Volksgezondheid en Milieu) voldoet de overgrote meerderheid van het Nederlandse leidingwater aan de EU-norm. Drinkwaterbedrijven zijn wettelijk verplicht het water te zuiveren en te monitoren voordat het uw kraan bereikt.
-          </p>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Er zijn echter bekende risicogebieden waar historisch verhoogde PFAS-concentraties zijn gemeten:
+            Drinkwaterbedrijven zijn wettelijk verplicht het water te zuiveren en te controleren voordat het je kraan
+            bereikt. De PFAS-waarden verschillen wel per regio, vooral waar drinkwater uit rivier- of duinwater wordt
+            gemaakt en rond plekken met een geschiedenis van PFAS-uitstoot:
           </p>
           <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2 text-sm leading-relaxed">
-            <li><strong>Dordrecht/Papendrecht:</strong> Historische uitstoot door de Chemours-fabriek (voorheen DuPont). Oasen, het lokale drinkwaterbedrijf, past actieve behandeling toe en voldoet nu aan de norm.</li>
-            <li><strong>Omgeving Schiphol:</strong> PFAS-houdend AFFF-blusschuim uit jarenlange brandoefeningen heeft het grondwater beinvloed. Waternet monitort regelmatig.</li>
-            <li><strong>Militaire vliegbases:</strong> Gilze-Rijen, Eindhoven Airport, De Peel — vergelijkbare blusschuimproblematiek in de omgeving.</li>
-            <li><strong>Particuliere putten en bronwater:</strong> Niet beschermd door drinkwaterzuivering; het grootste risico voor individuele huishoudens.</li>
+            <li><strong>Dordrecht en omgeving:</strong> historische uitstoot door de Chemours-fabriek (voorheen DuPont).</li>
+            <li><strong>Omgeving Schiphol en militaire vliegvelden:</strong> PFAS-houdend blusschuim uit brandoefeningen heeft plaatselijk het grondwater beïnvloed.</li>
+            <li><strong>Kustgebied:</strong> provincies en drinkwaterbedrijven onderzoeken wat PFAS langs de kust betekent voor de drinkwaterwinning.</li>
+            <li><strong>Eigen putten en bronwater:</strong> niet gecontroleerd door een drinkwaterbedrijf; laat het water zelf testen als je het drinkt.</li>
           </ul>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Bekijk per regio de situatie op onze pagina <Link href="/pfas-waterfilter/gebieden-nederland" className="text-[#005F8A] underline">PFAS risicogebieden in Nederland</Link>, of leer hoe u uw water kunt laten <Link href="/pfas-waterfilter/testen" className="text-[#005F8A] underline">testen op PFAS</Link>.
+            Bekijk per regio de situatie op onze pagina <Link href="/pfas-waterfilter/gebieden-nederland" className="text-[#005F8A] underline">PFAS risicogebieden in Nederland</Link>, of lees hoe je je water kunt laten <Link href="/pfas-waterfilter/testen" className="text-[#005F8A] underline">testen op PFAS</Link>.
           </p>
         </section>
 
@@ -205,7 +366,10 @@ export default function PfasWaterfilterPage() {
         <section id="filtertabel">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Vergelijking: welke filters verwijderen PFAS?</h2>
           <p className="text-gray-700 mb-5 leading-relaxed">
-            Niet alle waterfilters zijn geschikt voor PFAS-verwijdering. De onderstaande tabel vergelijkt zes filtermethoden op effectiviteit voor zowel langketenige PFAS (C8 en langer, zoals PFOS en PFOA) als kortketenige PFAS (C4-C7, zoals GenX en PFBS).
+            Niet elk waterfilter is geschikt om PFAS te filteren. De tabel geeft ons oordeel over zes filtermethoden voor
+            langketenige PFAS (zoals PFOS en PFOA) en kortketenige PFAS (zoals GenX en PFBS). Bij koolstoffilters maakt
+            het type veel uit: een koolstofblok- of koolstofvezelfilter met een openbare PFAS-labtest raden we aan, een
+            koolfilter zonder zo&apos;n test niet.
           </p>
           <div className="overflow-x-auto -mx-4 px-4 mb-4">
             <table className="w-full min-w-[560px] text-sm border-collapse">
@@ -214,7 +378,6 @@ export default function PfasWaterfilterPage() {
                   <th className="text-left py-2.5 px-3 font-semibold text-xs">Filtermethode</th>
                   <th className="py-2 px-2 font-semibold text-center text-xs">Langketenige PFAS</th>
                   <th className="py-2 px-2 font-semibold text-center text-xs">Kortketenige PFAS</th>
-                  <th className="py-2 px-2 font-semibold text-center text-xs">Systeemkosten</th>
                   <th className="py-2 px-2 font-semibold text-center text-xs">Aanbevolen</th>
                 </tr>
               </thead>
@@ -224,7 +387,6 @@ export default function PfasWaterfilterPage() {
                     <td className="py-2.5 px-3 font-medium text-gray-800 text-xs">{row.methode}</td>
                     <td className={`py-2.5 px-2 text-center text-xs font-medium ${row.aanbevolen ? 'text-green-700' : 'text-gray-600'}`}>{row.langketen}</td>
                     <td className={`py-2.5 px-2 text-center text-xs font-medium ${row.aanbevolen ? 'text-green-700' : 'text-red-600'}`}>{row.kortketen}</td>
-                    <td className="py-2.5 px-2 text-center text-xs text-gray-600">{row.kosten}</td>
                     <td className="py-2.5 px-2 text-center text-xs">
                       {row.aanbevolen
                         ? <span className="text-green-700 font-semibold">Ja</span>
@@ -235,15 +397,15 @@ export default function PfasWaterfilterPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-gray-400 mb-6">Indicatieve verwijderingspercentages op basis van gepubliceerde laboratoriumdata en NSF/ANSI testresultaten. Bijgewerkt september 2026.</p>
+          <p className="text-xs text-gray-400 mb-6">Kwalitatief oordeel van de redactie per filtertype, geen meting. Wat een concreet product haalt, lees je alleen af aan een labrapport van dat product. Bijgewerkt november 2026.</p>
           <h3 className="text-lg font-bold text-[#003F5C] mb-3">Gemeten: producten met een eigen PFAS-labtest</h3>
           <div className="overflow-x-auto -mx-4 px-4 mb-3">
             <table className="w-full min-w-[560px] text-sm border-collapse">
               <thead>
                 <tr className="bg-[#003F5C] text-white">
                   <th className="text-left py-2.5 px-3 font-semibold text-xs">Product</th>
-                  <th className="py-2 px-2 font-semibold text-center text-xs">Langketenige PFAS</th>
-                  <th className="py-2 px-2 font-semibold text-center text-xs">Kortketenige PFAS</th>
+                  <th className="py-2 px-2 font-semibold text-center text-xs">Geteste stoffen</th>
+                  <th className="py-2 px-2 font-semibold text-center text-xs">Gemeten reductie</th>
                   <th className="py-2 px-2 font-semibold text-center text-xs">Prijs</th>
                   <th className="py-2 px-2 font-semibold text-center text-xs">Bron</th>
                 </tr>
@@ -254,8 +416,8 @@ export default function PfasWaterfilterPage() {
                     <td className="py-2.5 px-3 font-medium text-xs">
                       <Link href={row.href} className="text-[#005F8A] underline">{row.methode}</Link>
                     </td>
-                    <td className="py-2.5 px-2 text-center text-xs text-gray-700">{row.langketen}</td>
-                    <td className="py-2.5 px-2 text-center text-xs text-gray-700">{row.kortketen}</td>
+                    <td className="py-2.5 px-2 text-center text-xs text-gray-700">{row.stoffen}</td>
+                    <td className="py-2.5 px-2 text-center text-xs text-gray-700">{row.resultaat}</td>
                     <td className="py-2.5 px-2 text-center text-xs text-gray-600">{row.kosten}</td>
                     <td className="py-2.5 px-2 text-center text-xs text-gray-600">{row.bron}</td>
                   </tr>
@@ -267,50 +429,63 @@ export default function PfasWaterfilterPage() {
             Beide producten zijn van PureAqua, waaraan WaterfilterPlatform gelieerd is. De cijfers gelden voor de
             geteste stoffen en een nieuw filter of systeem; ze zeggen niets over alle PFAS of over een oud filter.
           </p>
+          <FourInOneRecommendation content="pfas-waterfilter-aanbeveling" />
         </section>
 
-        {/* Waarom osmose de goudstandaard is */}
+        {/* Waarom osmose */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom omgekeerde osmose de goudstandaard is</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Waarom omgekeerde osmose PFAS het best filtert</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Een omgekeerd osmosefilter gebruikt een semipermeable membraan met porieen van slechts <strong>0,0001 micrometer</strong> — kleiner dan de meeste PFAS-moleculen. Water wordt onder druk door het membraan geperst; de PFAS-verbindingen blijven aan de vuile kant achter en worden afgevoerd via het concentraatstroom.
+            Een osmosefilter perst water onder druk door een semipermeabel membraan met uiterst kleine poriën. De meeste
+            PFAS-moleculen passeren dat membraan niet en worden met het spoelwater afgevoerd.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            De effectiviteit: 95-99% reductie voor langketenige PFAS zoals PFOS en PFOA, en 85-95% voor kortketenige PFAS zoals GenX en PFBS. Dit zijn de hoogste reductiepercentages van alle consumentenapparaten. NSF/ANSI 58-gecertificeerde osmosesystemen zijn onafhankelijk getest op PFAS-verwijdering.
+            Osmose houdt langketenige PFAS zoals PFOS en PFOA sterk tegen en ook het grootste deel van de kortketenige
+            PFAS. Volgens ons is het daarmee de sterkste PFAS-filter voor thuis. Hoeveel een concreet systeem haalt,
+            verschilt per membraan en per stof. Een voorbeeld met eigen meting: SGS mat bij een nieuw osmosesysteem van
+            de {FOUR_IN_ONE.name} {FOUR_IN_ONE.lab.PFOS} minder PFOS en {FOUR_IN_ONE.lab.PFOA} minder PFOA. Bij
+            osmosesystemen met een NSF/ANSI 58-certificaat voor PFOA en PFOS is de reductie onafhankelijk vastgesteld;
+            kijk bij andere systemen naar een openbaar labrapport. Losse osmosesystemen onder het aanrecht kosten
+            doorgaans {KRAAN_MARKET.underSinkRange}.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Een bijkomend voordeel: osmose verwijdert tegelijk ook nitraten, lood, arseen, kalk, microplastics en andere verontreinigingen. Het is een alomvattende oplossing, niet alleen voor PFAS.
+            Osmose vermindert tegelijk ook stoffen als lood, nitraat, kalk en microplastics. Nadelen: je hebt ruimte en
+            een afvoer onder het aanrecht nodig, het systeem gebruikt spoelwater en de filters moeten op tijd vervangen
+            worden. Meer uitleg vind je bij <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link>{' '}
+            en <Link href="/pfas-waterfilter/osmose" className="text-[#005F8A] underline">osmose tegen PFAS</Link>.
           </p>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Wilt u weten welk model u het beste kunt kopen? Lees onze gids <Link href="/pfas-waterfilter/kopen" className="text-[#005F8A] underline">PFAS waterfilter kopen</Link> of bekijk de uitgebreide pagina over <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose</Link>.
+          <ThreeWayRecommendation content="pfas-waterfilter-aanbeveling" />
+          <p className="text-gray-700 mt-4 leading-relaxed text-sm">
+            Mag je niet boren of verbouwen, bijvoorbeeld in een huurwoning? Dan is het{' '}
+            <Link href={COUNTERTOP.reviewPath} className="text-[#005F8A] underline">{COUNTERTOP.name}</Link> onze keuze:
+            omgekeerde osmose op het aanrecht, zonder vaste installatie, voor {COUNTERTOP.price}.
           </p>
         </section>
 
         {/* Wat NIET werkt */}
         <section>
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat werkt NIET voor PFAS?</h2>
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Wat werkt niet (of nauwelijks) tegen PFAS?</h2>
           <div className="space-y-4">
             <div className="border-l-4 border-red-300 pl-4">
-              <h3 className="font-semibold text-gray-900 mb-1">Filterkannen (Brita, BWT, etc.)</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">Niet aanbevolen voor PFAS. De korte contacttijd en het type actief kool in filterkannen zijn onvoldoende voor betrouwbare PFAS-reductie. Filterkannen zijn ontworpen voor chloor en smaakverbetering, niet voor chemische verontreinigingen.</p>
+              <h3 className="font-semibold text-gray-900 mb-1">Filterkannen (Brita, BWT en andere)</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">Over PFAS-reductie door filterkannen is weinig onafhankelijk gepubliceerd. De contacttijd met het actieve kool is kort en kortketenige PFAS houdt actief kool slecht vast. Filterkannen zijn vooral gemaakt voor chloor, kalk en smaak.</p>
             </div>
             <div className="border-l-4 border-red-300 pl-4">
               <h3 className="font-semibold text-gray-900 mb-1">UV-lampen</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">UV-licht heeft geen enkel effect op PFAS. UV-filters zijn ontworpen voor microbiologische ontsmetting (bacterieen, virussen) en werken niet tegen chemische verontreinigingen.</p>
+              <p className="text-gray-700 text-sm leading-relaxed">UV-licht heeft geen effect op PFAS. UV-filters zijn bedoeld tegen bacteriën en virussen, niet tegen chemische stoffen.</p>
             </div>
             <div className="border-l-4 border-red-300 pl-4">
               <h3 className="font-semibold text-gray-900 mb-1">Koken</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">Koken heeft geen effect op PFAS. Integendeel: bij langdurig koken verdampt het water en stijgt de PFAS-concentratie in het resterende water.</p>
+              <p className="text-gray-700 text-sm leading-relaxed">Koken haalt geen PFAS uit water. Bij lang koken verdampt water en stijgt de concentratie in wat overblijft juist een beetje.</p>
             </div>
             <div className="border-l-4 border-yellow-300 pl-4">
-              <h3 className="font-semibold text-gray-900 mb-1">Actief koolfilters (GAC-granulaat)</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">Minder effectief dan koolstofblokfilters en zeker minder dan osmose. Werkt redelijk voor langketenige PFAS maar geeft onbetrouwbare resultaten voor kortketenige varianten. Risico op verzadiging: een uitgeput koolfilter kan PFAS teruggeven aan het water.</p>
+              <h3 className="font-semibold text-gray-900 mb-1">Actief koolfilters (granulaat)</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">Minder effectief dan koolstofblokfilters en zeker minder dan osmose. Redelijk voor langketenige PFAS, wisselend voor kortketenige. Een verzadigd filter kan bovendien PFAS weer loslaten.</p>
             </div>
           </div>
         </section>
 
         <HealthDisclaimer />
-        <PureFilterCTA context="pfas" content="pfas-waterfilter-purefilter" />
 
         <CTABanner context="osmose" />
 
@@ -319,16 +494,16 @@ export default function PfasWaterfilterPage() {
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Meer lezen over PFAS en waterfilters</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { href: '/pfas-waterfilter/osmose', label: 'RO verwijdert 95-99% PFAS: alles uitgelegd' },
+              { href: '/pfas-waterfilter/kopen', label: 'PFAS-filter kopen: onze keuze per situatie' },
+              { href: '/pfas-waterfilter/osmose', label: 'Osmose tegen PFAS: alles uitgelegd' },
               { href: '/pfas-waterfilter/vergelijken', label: 'PFAS-filters vergelijken: RO vs koolstof vs NF' },
               { href: '/pfas-waterfilter/kosten', label: 'Kosten PFAS-filter: TCO-berekening 5 jaar' },
               { href: '/pfas-waterfilter/huis', label: 'PFAS filteren thuis: per woningtype' },
               { href: '/pfas-waterfilter/pfas-soorten', label: 'PFAS-soorten: PFOS, PFOA, GenX uitgelegd' },
-              { href: '/pfas-waterfilter/kopen', label: 'PFAS waterfilter kopen: beste modellen 2026' },
-              { href: '/pfas-waterfilter/testen', label: 'PFAS in uw water testen: hoe en waar?' },
+              { href: '/pfas-waterfilter/testen', label: 'PFAS in je water testen: hoe en waar?' },
               { href: '/pfas-waterfilter/normen-2026', label: 'PFAS normen 2026: EU-limiet uitgelegd' },
               { href: '/pfas-waterfilter/gebieden-nederland', label: 'PFAS hotspots per regio in Nederland' },
-              { href: '/pfas-water', label: 'PFAS in drinkwater: risicos en normen' },
+              { href: '/pfas-water', label: 'PFAS in drinkwater: risico\'s en normen' },
             ].map(l => (
               <Link
                 key={l.href}
@@ -356,8 +531,6 @@ export default function PfasWaterfilterPage() {
             ))}
           </div>
         </section>
-
-        <CTABanner context="osmose" />
 
         <p className="text-gray-500 text-xs mt-4">
           Meer lezen: <Link href="/pfas-water" className="text-[#005F8A] underline">PFAS in drinkwater</Link>, <Link href="/waterfilter/soorten" className="text-[#005F8A] underline">alle soorten waterfilters</Link> en <Link href="/omgekeerde-osmose" className="text-[#005F8A] underline">omgekeerde osmose gids</Link>.

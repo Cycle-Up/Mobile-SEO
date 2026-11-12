@@ -77,6 +77,7 @@ export default function PfasFactsheet() {
               ['/drinkwaternormen/pfas', "PFAS-norm"],
               ['/kennisbank/pfas-drinkwater', "PFAS in drinkwater"],
               ['/antwoorden/verwijdert-osmose-pfas', "Verwijdert osmose PFAS?"],
+              ['/pfas-waterfilter', "PFAS waterfilter: welke filters werken"],
             ].map(([href, t]) => (
               <Link key={href} href={href} className="block border border-gray-100 rounded-xl p-3 text-sm font-medium text-gray-800 hover:text-[#005F8A] hover:border-[#005F8A] transition-all">{t}</Link>
             ))}

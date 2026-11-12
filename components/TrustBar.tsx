@@ -9,6 +9,16 @@ function CheckIcon() {
   );
 }
 
+function InfoIcon() {
+  return (
+    <svg viewBox="0 0 14 14" fill="none" className="w-3.5 h-3.5 shrink-0 text-gray-500" aria-hidden="true">
+      <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M7 6.25v3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="7" cy="4.25" r="0.75" fill="currentColor" />
+    </svg>
+  );
+}
+
 function ChevronRightSmall() {
   return (
     <svg viewBox="0 0 12 12" fill="none" className="w-3 h-3 shrink-0" aria-hidden="true">
@@ -23,15 +33,17 @@ export function TrustBar() {
       <div className="max-w-4xl mx-auto flex flex-wrap items-center gap-x-5 gap-y-1.5 justify-center sm:justify-start">
         <span className="flex items-center gap-1.5">
           <CheckIcon />
-          Onafhankelijke redactie
+          Openbare methodologie en bronnen
+        </span>
+        <span className="flex items-center gap-1.5">
+          <InfoIcon />
+          <Link href="/over-ons" className="underline hover:text-[#003F5C] transition-colors">
+            Gelieerd aan PureAqua (PureAqua.nl, PureFilter.nl)
+          </Link>
         </span>
         <span className="flex items-center gap-1.5">
           <CheckIcon />
-          Geen affiliate-commissie
-        </span>
-        <span className="flex items-center gap-1.5">
-          <CheckIcon />
-          Gebaseerd op fabrikantspecificaties &amp; NSF-data
+          Gebaseerd op fabrikantspecificaties en openbare labrapporten waar beschikbaar
         </span>
         <Link
           href="/methodologie"

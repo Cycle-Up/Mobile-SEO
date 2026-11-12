@@ -8,16 +8,17 @@ import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { KokendWaterKraanDiagram } from '@/components/KokendWaterKraanDiagram';
 import { MethodologyBadge } from '@/components/MethodologyBadge';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
 
 export const metadata: Metadata = {
   title: 'Kokend water kraan kopen? Complete gids & vergelijking 2026',
   description:
-    'Kokend water kraan: hoe werkt het, welke merken zijn er en wat zijn de kosten? Vergelijk Quooker, Grohe, Insinkerator en 4-in-1 systemen met osmose in deze.',
+    'Kokend water kraan: hoe werkt het, welke merken zijn er en wat kost het? Vergelijk Quooker, Grohe, InSinkErator en 4-in-1 kranen met osmose op prijs.',
   alternates: { canonical: 'https://waterfilterplatform.nl/kokend-water-kraan' },
   openGraph: {
-    title: 'Kokend water kraan — hoe werkt het en welk merk past bij jou?',
+    title: 'Kokend water kraan: hoe werkt het en welk merk past bij jou?',
     description:
-      'Direct 100°C water uit de kraan. Vergelijk merken, prijzen, filteropties en vind de beste kokend water kraan voor jouw keuken.',
+      'Direct kokend of zeer heet water uit de kraan. Vergelijk merken, prijzen, filteropties en vind de beste kokend water kraan voor jouw keuken.',
     url: 'https://waterfilterplatform.nl/kokend-water-kraan',
     type: 'article',
   },
@@ -62,7 +63,7 @@ const faqItems = [
   {
     question: 'Hoe vaak moet je het filter van een kokend water kraan vervangen?',
     answer:
-      'Bij een kokend water kraan met osmosefilter vervang je het filterpatroon meestal eenmaal per jaar. Het osmose-membraan zelf gaat 2-3 jaar mee. Standaard kokend water kranen zonder filter hebben geen filtervervanging nodig, maar wel periodieke ontkalking als je hard water hebt.',
+      'Bij een kokend water kraan met osmosefilter vervang je de filterpatronen meestal eenmaal per jaar en het osmosemembraan minder vaak. Bij de PureAqua 4-in-1 vervang je het voorfilter en het remineralisatiefilter circa jaarlijks en het osmosemembraan circa elke twee jaar (of eerder bij hoog gebruik). Standaard kokend water kranen zonder filter hebben geen filtervervanging nodig, maar wel periodieke ontkalking als je hard water hebt.',
   },
   {
     question: 'Kan ik een kokend water kraan zelf installeren?',
@@ -72,7 +73,7 @@ const faqItems = [
   {
     question: 'Wat is het verschil tussen een kokend water kraan en een heet water kraan?',
     answer:
-      'In de praktijk worden de termen door elkaar gebruikt. Strikt genomen levert een heet water kraan water tussen 70°C en 98°C (ideaal voor de meeste theesoorten en directe afwas), terwijl een kokend water kraan echt 100°C levert (voor koken, blancheren en pasta). Veel 4-in-1 modellen leveren beide temperaturen vanuit dezelfde kraan.',
+      'In de praktijk worden de termen door elkaar gebruikt. Strikt genomen levert een heet water kraan water tussen 70°C en 98°C (ideaal voor de meeste theesoorten en directe afwas), terwijl een kokend water kraan echt 100°C levert (voor koken, blancheren en pasta), zoals een Quooker. Een 4-in-1 kraan met osmose, zoals de PureAqua 4-in-1, geeft zeer heet water van circa 96°C en valt strikt genomen dus onder de heet water kranen.',
   },
 ];
 
@@ -83,7 +84,7 @@ const vergelijking = [
     tank: '2,3 liter',
     functies: ['Zeer heet (circa 96°C)', 'Gekoeld (circa 5°C)', 'Osmosewater', 'Warm en koud'],
     filter: 'Omgekeerde osmose ingebouwd',
-    garantie: '5 jaar',
+    garantie: FOUR_IN_ONE.warranty,
     installatie: 'Installateur aanbevolen (optioneel € 299)',
     highlight: true,
     note: 'Onze keuze: zeer heet, gekoeld en osmosewater in één kraan',
@@ -214,7 +215,7 @@ export default function KokendWaterKraanPage() {
           description:
             'Alles over de kokend water kraan: werking, soorten, merken, kosten, installatie en onderhoud.',
           datePublished: '2026-01-10',
-          dateModified: '2026-05-13',
+          dateModified: '2026-11-03',
           url: 'https://waterfilterplatform.nl/kokend-water-kraan',
         }}
       />
@@ -231,7 +232,7 @@ export default function KokendWaterKraanPage() {
             Kokend water kraan
           </h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Met een kokend water kraan (ook wel kokendwaterkraan) heb je direct 100°C water uit de kraan — geen waterkoker, geen wachten. In deze complete gids leggen we uit hoe een kokend water kraan werkt, welke soorten er zijn, wat ze kosten en welke systemen — Quooker, Grohe, InSinkErator en 4-in-1 met osmose — het beste bij jouw keuken passen.
+            Met een kokend water kraan (ook wel kokendwaterkraan) heb je direct kokend of zeer heet water uit de kraan (bij de PureAqua 4-in-1 circa 96 graden), zonder waterkoker en zonder wachten. In deze complete gids leggen we uit hoe een kokend water kraan werkt, welke soorten er zijn, wat ze kosten en welke systemen (Quooker, Grohe, InSinkErator en 4-in-1 met osmose) het beste bij jouw keuken passen.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/kokend-water-kraan/vergelijken" className="bg-[#005F8A] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[#003F5C] transition-colors text-sm">
@@ -245,7 +246,7 @@ export default function KokendWaterKraanPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 py-10 space-y-12">
-        <QuickAnswer answer="Een kokend water kraan levert direct 100°C heet water via een geïsoleerde boiler onder het aanrecht. De beste modellen combineren kokend, koud, warm en bruisend water in één kraanpunt. Een 4-in-1 uitvoering met osmosefilter beschermt bovendien de boiler tegen kalkafzetting en geeft gefilterd drinkwater." />
+        <QuickAnswer answer="Een kokend water kraan levert direct (bijna) kokend water uit een geïsoleerde boiler onder het aanrecht; een Quooker geeft 100 graden. Sommige modellen, zoals een Quooker met CUBE, geven ook gekoeld en bruisend water. Een 4-in-1 kraan met osmose, zoals de PureAqua 4-in-1 (1.948 euro), geeft gewoon warm en koud kraanwater plus osmose-gezuiverd water op kamertemperatuur, gekoeld (circa 5 graden) en zeer heet (circa 96 graden). Bruisend water zit er niet op." />
 
         <FourInOneRecommendation content="kokend-water-kraan-aanbeveling" />
 
@@ -320,8 +321,8 @@ export default function KokendWaterKraanPage() {
                 tekst: 'Vervangt je bestaande mengkraan: één kraan voor kokend, koud en warm leidingwater. Het meest gekochte type. Voorbeeld: Quooker Combi+ of Grohe Red Duo. Prijs: € 1.100-2.000.',
               },
               {
-                titel: '4-in-1: kokend + koud + warm + bruisend (of gefilterd)',
-                tekst: 'De meest complete kraan. Levert alle vier de temperaturen plus bruisend of gefilterd water. Voorbeeld: 4-in-1 kraan met osmose (gekoeld en gefilterd, geen bruisend; € 1.948) of Quooker Fusion + CUBE (met bruisend).',
+                titel: '4-in-1: kokend of zeer heet + koud + warm + gekoeld, bruisend of gefilterd',
+                tekst: 'De meest complete kraan. Naast kokend of zeer heet, koud en warm water geeft hij een vierde functie: gekoeld, bruisend of gefilterd water. Voorbeeld: 4-in-1 kraan met osmose (zeer heet circa 96°C, gekoeld en gefilterd, geen bruisend; € 1.948) of Quooker Fusion + CUBE (kokend, gekoeld en bruisend).',
               },
             ].map(t => (
               <div key={t.titel} className="border border-gray-100 rounded-xl p-4 bg-white">

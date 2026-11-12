@@ -3,143 +3,105 @@ import Link from 'next/link';
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { QuickAnswer } from '@/components/QuickAnswer';
 import { CTABanner } from '@/components/CTABanner';
+import { HealthDisclaimer } from '@/components/HealthDisclaimer';
+import { AuthorBox } from '@/components/AuthorBox';
+import { AffiliateDisclosure } from '@/components/AffiliateDisclosure';
+import { PUREFILTER } from '@/lib/purefilter.mjs';
+import { FOUR_IN_ONE } from '@/lib/kranen.mjs';
+import { COUNTERTOP } from '@/lib/countertop.mjs';
+import { SourcesSection } from '@/components/SourcesSection';
+
+// Filterkeuze-invalshoek: "welk pfas filter regio". Regionale hotspots en meetwaarden per
+// waterbedrijf staan op /leidingwater/pfas; deze pagina vertaalt je situatie naar een filter.
+const PAGE_URL = 'https://waterfilterplatform.nl/pfas-waterfilter/gebieden-nederland';
+const PAGE_TITLE = 'Welk PFAS-filter past bij jouw regio en waterbron?';
+const PAGE_DESCRIPTION =
+  'Welk PFAS-filter past bij jouw regio? Van kraanwater boven de RIVM-advieswaarde tot een eigen put: zo kies je tussen osmose, een leidingfilter of eerst testen.';
+const DATE_PUBLISHED = '2026-04-25';
+const DATE_MODIFIED = '2026-11-10';
 
 export const metadata: Metadata = {
-  title: 'PFAS in drinkwater per regio: risicogebieden in Nederland',
-  description:
-    'Overzicht van PFAS-hotspots in Nederland per regio: Dordrecht/Chemours, Schiphol, militaire bases, Zeeland. Per gebied: bron, gemeten niveaus.',
-  alternates: { canonical: 'https://waterfilterplatform.nl/pfas-waterfilter/gebieden-nederland' },
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    type: 'article',
+    url: PAGE_URL,
+  },
 };
+
+const QUICK_ANSWER = `Welk PFAS-filter bij je past, hangt minder af van je provincie dan van drie vragen: hoeveel PFAS zit er in jouw kraanwater, gebruik je kraanwater of een eigen put, en mag je in je woning boren. Drinkwaterbedrijven moeten voldoen aan de wettelijke EU-norm van 100 nanogram per liter voor de som van 20 PFAS. Ligt jouw water boven de RIVM-advieswaarde van 4,4 nanogram per liter in PFOA-equivalenten en wil je zo veel mogelijk verminderen, dan past omgekeerde osmose. Wil je geen osmose, dan is een leidingfilter een tussenstap. Heb je een eigen put bij een bekende PFAS-bron, laat het water dan eerst testen.`;
 
 const faqItems = [
   {
-    question: 'Welke gebieden in Nederland hebben de hoogste PFAS-concentraties in drinkwater?',
+    question: 'Welk PFAS-filter past bij mijn regio?',
     answer:
-      'De bekendste PFAS-hotspots zijn: (1) Dordrecht/Papendrecht — jarenlange PFAS-lozingen door Chemours/DuPont; (2) zone rondom Amsterdam Schiphol — gebruik van PFAS-houdend blusschuim; (3) omgeving militaire vliegbases Volkel, Eindhoven, De Peel, Woensdrecht en Leeuwarden. Putwateren in deze gebieden kunnen sterk verhoogde PFAS-waarden hebben.',
+      'Kijk eerst hoeveel PFAS er in jouw kraanwater zit; dat verschilt per waterbedrijf. Ligt het boven de RIVM-advieswaarde van 4,4 nanogram per liter in PFOA-equivalenten en wil je zo veel mogelijk verminderen, dan past omgekeerde osmose. Wil je verminderen zonder osmose of afvalwater, dan is een leidingfilter met een openbaar labrapport een tussenstap. Woon je in een huurwoning en mag je niet boren, dan kun je osmose op het aanrecht gebruiken.',
   },
   {
-    question: 'Is het leidingwater in Dordrecht veilig om te drinken?',
+    question: 'Heb ik een PFAS-filter nodig als mijn kraanwater aan de norm voldoet?',
     answer:
-      'Drinkwaterbedrijf Oasen heeft aanvullende zuivering geïnstalleerd voor het bronwater in de Dordrecht-regio. Het geleverde leidingwater voldoet aan de EU-PFAS-norm (0,10 µg/L sum-20). Particuliere putten in het gebied zijn een ander verhaal: die worden niet gemonitord en kunnen nog altijd verhoogde GenX-waarden hebben.',
+      'Drinkwaterbedrijven moeten voldoen aan de wettelijke EU-norm van 100 nanogram per liter voor de som van 20 PFAS. Voldoet jouw kraanwater daaraan, dan is een filter geen verplichting maar een persoonlijke keuze. Sommige mensen kiezen er toch voor omdat hun water boven de RIVM-advieswaarde van 4,4 nanogram per liter in PFOA-equivalenten ligt.',
   },
   {
-    question: 'Wat doet Schiphol met PFAS in het grondwater?',
+    question: 'Waar zie ik hoeveel PFAS er in mijn kraanwater zit?',
     answer:
-      'Schiphol en haar omgeving hebben decennialang PFAS-houdend blusschuim (AFFF) gebruikt op brandoefenterreinen. Dit heeft het grondwater over een groot gebied vervuild. De drinkwaterbedrijven rondom Schiphol (PWN, Waternet) zuiveren het bronwater extra. Bewoners met ondiepe putten in een straal van 5-10 km rondom Schiphol lopen een verhoogd risico.',
+      'Je drinkwaterbedrijf publiceert jaarlijks de gemeten waarden. Op onze pagina over PFAS in leidingwater per regio zetten we de bekende hotspots en waterbedrijven op een rij en leggen we uit hoe je jouw adres opzoekt.',
   },
   {
-    question: 'Zijn militaire vliegbases in Nederland een risico voor drinkwater?',
+    question: 'Wat als ik een eigen put gebruik?',
     answer:
-      'Ja. Militaire vliegbases in Nederland hebben jarenlang PFAS-houdend blusschuim gebruikt. Vliegbases met bekende grondwaterverontreiniging: Volkel (Noord-Brabant), Eindhoven, De Peel, Woensdrecht en Leeuwarden. Bewoners in een straal van enkele kilometers die putwater gebruiken, wordt geadviseerd het water te testen.',
+      'Particuliere putten worden niet door drinkwaterbedrijven gecontroleerd. Woon je in de buurt van een bekende PFAS-bron, zoals een vliegveld waar blusschuim is gebruikt of een chemische fabriek, laat het water dan eerst testen en volg het advies van je gemeente of GGD. Een filter is daarna een aanvulling, geen vervanging van dat advies.',
   },
   {
-    question: 'Hoe weet ik of mijn gemeente een PFAS-hotspot is?',
+    question: 'Werkt een filterkan tegen PFAS?',
     answer:
-      'Raadpleeg de interactieve kaart van RIVM (rivm.nl), de PFAS-kaart van het Kennisportaal PFAS van de Rijksoverheid, of de jaarlijkse drinkwaterkwaliteitsrapportage van uw drinkwaterbedrijf. U kunt ook de gemeente bellen — gemeenten in erkende hotspots zijn verplicht bewoners te informeren.',
-  },
-  {
-    question: 'Geldt de PFAS-hotspot ook voor mensen verder weg van de bron?',
-    answer:
-      'PFAS-verontreiniging verspreidt zich via grondwater en oppervlaktewater. Afhankelijk van grondwaterstroming kan verontreiniging zich over tientallen kilometers verspreiden. Woonachtig zijn in een naburige gemeente van een hotspot is geen garantie voor veilig putwater. Individuele testing is de enige zekerheid.',
-  },
-  {
-    question: 'Kan ik een osmosefilter gebruiken als ik in een PFAS-hotspot woon?',
-    answer:
-      'Ja, een NSF/ANSI 58-gecertificeerd osmosefilter verwijdert 95-99% van alle PFAS-verbindingen, inclusief GenX. Het is de meest effectieve consumentenoplossing voor zowel hotspot-gebieden als als preventieve maatregel. Na installatie kunt u een laboratoriumtest uitvoeren om de PFAS-verwijdering te bevestigen.',
-  },
-  {
-    question: 'Welke informatiebronnen kan ik raadplegen over PFAS in mijn regio?',
-    answer:
-      'De betrouwbaarste bronnen zijn: (1) RIVM Wateratlas voor kaarten met PFAS-metingen in grondwater; (2) het jaarverslag drinkwaterkwaliteit van uw drinkwaterbedrijf (Vitens, Evides, Waternet, PWN, Dunea, Brabant Water etc.); (3) de website van uw gemeente voor lokale adviezen; (4) het Kennisportaal PFAS van de Rijksoverheid (pfas.expertisecentrumbodem.nl) voor informatie over bodem- en grondwaterverontreiniging.',
+      'Dat verschilt per filterkan en hangt af van wat er gemeten is. Claimt een fabrikant PFAS-reductie, kijk dan in het labrapport welke stoffen er gemeten zijn en of het rapport openbaar is. Wij noemen op deze pagina geen filterkan als keuze voor PFAS. Wil je PFAS gericht verminderen, kies dan voor omgekeerde osmose of een filter met een openbaar labrapport waarin PFAS zijn gemeten.',
   },
 ];
 
-const breadcrumbs = [
-  { name: 'Home', url: 'https://waterfilterplatform.nl' },
-  { name: 'PFAS waterfilter', url: 'https://waterfilterplatform.nl/pfas-waterfilter' },
-  { name: 'Gebieden Nederland', url: 'https://waterfilterplatform.nl/pfas-waterfilter/gebieden-nederland' },
-];
-
-const hotspots = [
+const keuzes = [
   {
-    naam: 'Dordrecht / Papendrecht',
-    bron: 'Chemours (voorheen DuPont)',
-    stof: 'GenX (HFPO-DA), PFOA',
-    risico: 'Hoog voor putwater',
-    status: 'Leidingwater voldoet aan norm na extra zuivering',
-    provincie: 'Zuid-Holland',
+    situatie: 'Kraanwater onder de RIVM-advieswaarde',
+    advies: 'Voor PFAS is een filter niet nodig. Wil je er toch een, bijvoorbeeld voor de smaak, kies dan op basis van je andere wensen.',
   },
   {
-    naam: 'Schiphol-regio',
-    bron: 'Brandoefenterreinen (AFFF-blusschuim)',
-    stof: 'PFOS, PFOA, PFHxS',
-    risico: 'Hoog voor ondiepe putten',
-    status: 'Drinkwaterbedrijven zuiveren extra',
-    provincie: 'Noord-Holland',
+    situatie: 'Kraanwater boven de RIVM-advieswaarde, zo veel mogelijk verminderen',
+    advies: 'Omgekeerde osmose onder het aanrecht of in een kraan. Dit vermindert PFAS volgens de beschikbare metingen het sterkst.',
   },
   {
-    naam: 'Vliegbasis Volkel',
-    bron: 'Militaire brandoefeningen',
-    stof: 'PFOS, PFOA',
-    risico: 'Hoog voor putwater in omgeving',
-    status: 'Gemeente Maashorst informeert bewoners',
-    provincie: 'Noord-Brabant',
+    situatie: 'Verminderen zonder osmose, tank of afvalwater',
+    advies: 'Een leidingfilter met een openbaar labrapport. Minder reductie dan osmose, wel eenvoudiger en goedkoper.',
   },
   {
-    naam: 'Vliegbasis Eindhoven',
-    bron: 'Militaire brandoefeningen',
-    stof: 'PFOS, PFOA',
-    risico: 'Matig-hoog voor putwater',
-    status: 'Monitoring actief, gemeente informeert',
-    provincie: 'Noord-Brabant',
+    situatie: 'Huurwoning of je mag niet boren',
+    advies: 'Osmose op het aanrecht, zonder vaste installatie. Kijk ook bij PFAS-filter per woningtype.',
   },
   {
-    naam: 'Vliegbasis De Peel',
-    bron: 'Militaire brandoefeningen',
-    stof: 'PFOS, PFOA, PFHxS',
-    risico: 'Hoog voor putwater in omgeving',
-    status: 'Verhoogde waarden bevestigd door Defensie',
-    provincie: 'Noord-Brabant / Limburg',
-  },
-  {
-    naam: 'Vliegbasis Woensdrecht',
-    bron: 'Militaire brandoefeningen',
-    stof: 'PFOS, PFOA',
-    risico: 'Matig voor putwater',
-    status: 'Onderzoek lopend',
-    provincie: 'Noord-Brabant',
-  },
-  {
-    naam: 'Vliegbasis Leeuwarden',
-    bron: 'Militaire brandoefeningen',
-    stof: 'PFOS, PFOA',
-    risico: 'Matig voor putwater',
-    status: 'Gemeente informeert bewoners',
-    provincie: 'Friesland',
-  },
-  {
-    naam: 'Landbouwgebieden (algemeen)',
-    bron: 'PFAS-houdende gewasbescherming, slib',
-    stof: 'Diverse PFAS-verbindingen',
-    risico: 'Variabel, afhankelijk van locatie',
-    status: 'Diffuse verontreiniging, niet specifiek',
-    provincie: 'Landelijk',
+    situatie: 'Eigen put bij een bekende PFAS-bron',
+    advies: 'Eerst het water laten testen en het advies van gemeente of GGD volgen. Daarna eventueel osmose als aanvulling.',
   },
 ];
 
 export default function PfasGebiedenNederlandPage() {
   return (
     <>
-      <SchemaOrg type="BreadcrumbList" breadcrumbs={breadcrumbs} />
+      <SchemaOrg type="BreadcrumbList" breadcrumbs={[
+        { name: 'Home', url: 'https://waterfilterplatform.nl' },
+        { name: 'PFAS waterfilter', url: 'https://waterfilterplatform.nl/pfas-waterfilter' },
+        { name: 'Filter per regio', url: PAGE_URL },
+      ]} />
       <SchemaOrg type="FAQPage" faqItems={faqItems} />
       <SchemaOrg
         type="Article"
         article={{
-          title: 'PFAS in drinkwater per regio: risicogebieden in Nederland',
-          description: 'Overzicht van PFAS-hotspots in Nederland per regio: Dordrecht/Chemours, Schiphol, militaire bases. Per gebied: bron, niveaus, bedrijf en status.',
-          datePublished: '2026-04-25',
-          dateModified: '2026-04-25',
-          url: 'https://waterfilterplatform.nl/pfas-waterfilter/gebieden-nederland',
+          title: PAGE_TITLE,
+          description: PAGE_DESCRIPTION,
+          datePublished: DATE_PUBLISHED,
+          dateModified: DATE_MODIFIED,
+          url: PAGE_URL,
         }}
       />
 
@@ -150,180 +112,118 @@ export default function PfasGebiedenNederlandPage() {
             <span className="mx-2">/</span>
             <Link href="/pfas-waterfilter" className="hover:underline">PFAS waterfilter</Link>
             <span className="mx-2">/</span>
-            <span className="text-gray-700">Gebieden Nederland</span>
+            <span className="text-gray-700">Filter per regio</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-[#003F5C] mb-4">
-            PFAS in drinkwater per regio: risicogebieden in Nederland
+            Welk PFAS-filter past bij jouw regio en waterbron?
           </h1>
-          <QuickAnswer answer="De grootste PFAS-hotspots in Nederland zijn: de omgeving van Dordrecht/Papendrecht (Chemours-lozingen), de regio rondom Amsterdam Schiphol, en de gebieden nabij militaire vliegbases (Volkel, Eindhoven, De Peel, Woensdrecht, Leeuwarden). Leidingwater voldoet daar na extra zuivering aan de EU-norm; putwater in die gebieden is een ander verhaal." />
+          <QuickAnswer answer={QUICK_ANSWER} />
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <CTABanner context="osmose" />
+        <AuthorBox datePublished={DATE_PUBLISHED} dateModified={DATE_MODIFIED} />
+        <HealthDisclaimer />
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Bekende PFAS-hotspots in Nederland
+            Stap 1: zoek uit hoeveel PFAS er in jouw water zit
           </h2>
-          <p className="text-gray-700 mb-6">
-            Onderstaande kaart geeft een overzicht van gebieden waar PFAS-verontreiniging van grond- en drinkwater is vastgesteld of wordt onderzocht. Voor putwateren in deze gebieden is individuele testing sterk aanbevolen.
+          <p className="text-gray-700 mb-4">
+            Hoeveel PFAS er in je kraanwater zit, hangt vooral af van de bron van je drinkwaterbedrijf. Daarom
+            verschilt het per regio. Welke gebieden en waterbedrijven de hoogste waarden hebben, lees je op onze pagina{' '}
+            <Link href="/leidingwater/pfas" className="text-[#005F8A] underline">PFAS in leidingwater per regio</Link>.
+            Daar leggen we ook uit hoe je de meetwaarden voor jouw adres vindt.
           </p>
+          <p className="text-gray-700 mb-4">
+            Leg die waarden naast twee getallen. De wettelijke EU-norm is 100 nanogram per liter voor de som van 20
+            PFAS; daar moeten drinkwaterbedrijven aan voldoen. Het RIVM adviseert daarnaast 4,4 nanogram per liter
+            in PFOA-equivalenten. Hoe die twee zich verhouden, staat op{' '}
+            <Link href="/drinkwaternormen/pfas" className="text-[#005F8A] underline">PFAS-normen voor drinkwater</Link>.
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
+            Stap 2: kies een filter dat bij je situatie past
+          </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#003F5C] text-white">
-                  <th className="p-3 text-left">Gebied</th>
-                  <th className="p-3 text-left">Provincie</th>
-                  <th className="p-3 text-left">Bron</th>
-                  <th className="p-3 text-left">Risico putwater</th>
-                  <th className="p-3 text-left">Status leidingwater</th>
+                  <th className="p-3 text-left">Jouw situatie</th>
+                  <th className="p-3 text-left">Wat past</th>
                 </tr>
               </thead>
               <tbody>
-                {hotspots.map((h, i) => (
-                  <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="p-3 font-medium text-[#003F5C]">{h.naam}</td>
-                    <td className="p-3 text-xs">{h.provincie}</td>
-                    <td className="p-3 text-xs">{h.bron}</td>
-                    <td className="p-3">
-                      <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
-                        h.risico.startsWith('Hoog') ? 'bg-red-100 text-red-700' :
-                        h.risico.startsWith('Matig') ? 'bg-yellow-100 text-yellow-700' :
-                        'bg-gray-100 text-gray-600'
-                      }`}>{h.risico}</span>
-                    </td>
-                    <td className="p-3 text-xs text-gray-600">{h.status}</td>
+                {keuzes.map((k, i) => (
+                  <tr key={k.situatie} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                    <td className="p-3 font-medium text-[#003F5C]">{k.situatie}</td>
+                    <td className="p-3 text-gray-700">{k.advies}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-gray-500 mt-2">
-            Bronnen: RIVM, Defensie-onderzoeken, provinciale rapportages. Status leidingwater geldt voor openbare waterlevering, niet voor particuliere putten.
-          </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Dordrecht en de Chemours-verontreiniging
+            Wat er gemeten is bij de filters die wij noemen
           </h2>
           <p className="text-gray-700 mb-4">
-            De meest bekende PFAS-casus in Nederland is de verontreiniging rondom de chemische fabriek Chemours (voorheen DuPont) in Dordrecht. Chemours loost al decennia PFAS in de Maas en de lucht. In de periode 2012-2019 werd het PFAS-type GenX (HFPO-DA) in verhoogde concentraties gevonden in de directe omgeving.
+            Een filter kies je het best op basis van een openbaar labrapport waarin PFAS zijn gemeten. Dit zijn de
+            opties die wij in onze{' '}
+            <Link href="/pfas-waterfilter" className="text-[#005F8A] underline">gids over PFAS-waterfilters</Link>{' '}
+            als onze keuze per situatie noemen:
           </p>
-          <div className="grid md:grid-cols-2 gap-4 mb-4">
-            <div className="bg-red-50 rounded-xl p-4">
-              <h3 className="font-semibold text-red-700 mb-2">Risicogebied putwater</h3>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>Straal 10-20 km rondom de fabriek</li>
-                <li>Bijzonder: Sliedrecht, Hardinxveld, Giessendam</li>
-                <li>Ondiepe putten (&lt;30 m) meest risicovol</li>
-                <li>GenX en PFOA vastgesteld in grondwater</li>
-              </ul>
-            </div>
-            <div className="bg-green-50 rounded-xl p-4">
-              <h3 className="font-semibold text-green-700 mb-2">Leidingwater na zuivering</h3>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>Drinkwaterbedrijf Oasen: extra actief-kool zuivering</li>
-                <li>Geleverd leidingwater voldoet aan EU-norm</li>
-                <li>Jaarlijkse controle en publicatie resultaten</li>
-                <li>Toch kiezen veel bewoners voor osmosefilter</li>
-              </ul>
-            </div>
-          </div>
+          <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-3">
+            <li>
+              <strong>Osmose in de kraan:</strong> SGS mat bij een nieuw osmosesysteem van de{' '}
+              <Link href={FOUR_IN_ONE.reviewPath} className="text-[#005F8A] underline">{FOUR_IN_ONE.name}</Link>{' '}
+              {FOUR_IN_ONE.lab.PFOS} minder PFOS en {FOUR_IN_ONE.lab.PFOA} minder PFOA ({FOUR_IN_ONE.price}).
+            </li>
+            <li>
+              <strong>Leidingfilter zonder osmose:</strong> bij Equinox Labs verminderde een nieuwe{' '}
+              <Link href={PUREFILTER.reviewPath} className="text-[#005F8A] underline">{PUREFILTER.name}</Link>{' '}
+              ({PUREFILTER.price}) vijf PFAS ({PUREFILTER.pfasTested.join(', ')}) met {PUREFILTER.pfasReduction}.
+            </li>
+            <li>
+              <strong>Osmose op het aanrecht:</strong> het{' '}
+              <Link href={COUNTERTOP.reviewPath} className="text-[#005F8A] underline">{COUNTERTOP.shortName}</Link>{' '}
+              ({COUNTERTOP.price}) werkt zonder vaste installatie. Voor dit apparaat bestaat geen eigen PFAS-meting;
+              onze keuze rust op de osmosetechniek.
+            </li>
+          </ul>
+          <p className="text-gray-700 mb-4">
+            Geen enkel filter haalt aantoonbaar elke PFAS-stof weg. Wil je na installatie weten wat je filter doet,
+            lees dan hoe je{' '}
+            <Link href="/pfas-waterfilter/testen" className="text-[#005F8A] underline">water laat testen op PFAS</Link>.
+          </p>
+          <AffiliateDisclosure className="mt-2" />
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Schiphol en PFAS-verontreiniging in grondwater
+            Woon je bij een bekende PFAS-bron?
           </h2>
           <p className="text-gray-700 mb-4">
-            Op het terrein van Amsterdam Airport Schiphol en omliggende brandoefenterreinen is decennialang PFAS-houdend blusschuim (Aqueous Film-Forming Foam, AFFF) gebruikt. Dit schuim bevat hoge concentraties PFOS en PFOA en heeft het grondwater over een groot gebied vervuild.
+            Rond de Chemours-fabriek in Dordrecht en rond vliegvelden waar jarenlang PFAS-houdend blusschuim is
+            gebruikt, is PFAS in bodem en grondwater gevonden. Voor kraanwater verandert dat weinig aan je keuze: het
+            drinkwaterbedrijf zuivert en meet, en de stappen hierboven gelden ook daar. Het verschil zit bij een eigen
+            put. Die wordt niet gecontroleerd, dus laat het water testen en volg het advies van je gemeente of GGD
+            voordat je een filter kiest.
           </p>
-          <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-5 mb-4">
-            <p className="font-semibold text-yellow-800 mb-2">Risicozone:</p>
-            <p className="text-sm text-gray-700">
-              Bewoners in de gemeenten Haarlemmermeer, Aalsmeer, Amstelveen en omliggende kernen die putwater gebruiken of wonen nabij bekende waterwingebieden, worden geadviseerd hun water te testen. Het drinkwaterbedrijf PWN en Waternet zuiveren actief, maar oppervlaktewater en putwater in de regio kunnen nog verhoogde waarden hebben.
-            </p>
-          </div>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Militaire vliegbases: wat u moet weten
-          </h2>
           <p className="text-gray-700 mb-4">
-            Defensie heeft erkend dat op vrijwel alle Nederlandse militaire vliegvelden PFAS-houdend blusschuim is gebruikt. Het ministerie van Defensie voert systematisch bodemonderzoek uit en informeert omwonenden.
+            Woon je in een huurwoning of appartement, dan bepaalt je woningtype mee wat je kunt installeren. Dat werken
+            we uit op{' '}
+            <Link href="/pfas-waterfilter/huis" className="text-[#005F8A] underline">PFAS-filter per woningtype</Link>.
           </p>
-          <div className="space-y-3">
-            {[
-              {
-                basis: 'Vliegbasis Volkel (Noord-Brabant)',
-                detail: 'Gemeente Maashorst heeft bewoners in een straal van 1,5 km geadviseerd geen putwater te gebruiken voor consumptie. PFOS-concentraties in grondwater vielen boven de norm.',
-              },
-              {
-                basis: 'Vliegbasis De Peel (Noord-Brabant/Limburg)',
-                detail: 'PFOS en PFHxS vastgesteld in grondwater. Gemeenten Venray en Horst aan de Maas informeren bewoners met putten in de risicozone.',
-              },
-              {
-                basis: 'Leeuwarden Air Base (Friesland)',
-                detail: 'Onderzoek toonde verhoogde PFAS-waarden in nabijgelegen grondwater. Gemeente Leeuwarden heeft bewoners met putten geadviseerd te testen.',
-              },
-            ].map((item, i) => (
-              <div key={i} className="bg-gray-50 rounded-lg p-4 border-l-4 border-[#003F5C]">
-                <h3 className="font-semibold text-[#005F8A] mb-1">{item.basis}</h3>
-                <p className="text-sm text-gray-700">{item.detail}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">
-            Weet u niet of uw gebied een hotspot is?
-          </h2>
-          <p className="text-gray-700 mb-4">
-            Controleer via de volgende stappen of uw regio een verhoogd PFAS-risico heeft:
-          </p>
-          <div className="space-y-3">
-            {[
-              {
-                stap: '1',
-                actie: 'Raadpleeg het jaarverslag van uw drinkwaterbedrijf',
-                detail: 'Vitens, Evides, Waternet, PWN, Dunea, Brabant Water — alle bedrijven publiceren PFAS-metingen jaarlijks online.',
-              },
-              {
-                stap: '2',
-                actie: 'Bekijk de RIVM-PFAS-kaart',
-                detail: 'RIVM publiceert interactieve kaarten met gemeten PFAS-concentraties in grondwater en oppervlaktewater per regio.',
-              },
-              {
-                stap: '3',
-                actie: 'Neem contact op met uw gemeente',
-                detail: 'Gemeenten in bekende hotspots hebben informatiepunten en kunnen doorverwijzen naar subsidie-aanvragen voor putwatertests.',
-              },
-              {
-                stap: '4',
-                actie: 'Laat uw putwater testen',
-                detail: 'Bij twijfel of als u putwater gebruikt: een laboratoriumtest (€80-150) geeft zekerheid. Positief resultaat? Installeer direct een osmosefilter.',
-              },
-            ].map(item => (
-              <div key={item.stap} className="flex gap-4 items-start">
-                <div className="w-8 h-8 rounded-full bg-[#003F5C] text-white flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
-                  {item.stap}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-[#005F8A] mb-1">{item.actie}</h3>
-                  <p className="text-gray-700 text-sm">{item.detail}</p>
-                </div>
-              </div>
-            ))}
-          </div>
         </section>
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-[#003F5C] mb-6">
-            Veelgestelde vragen over PFAS-gebieden in Nederland
+            Veelgestelde vragen over een PFAS-filter per regio
           </h2>
           <div className="space-y-3">
             {faqItems.map((item, i) => (
@@ -337,57 +237,36 @@ export default function PfasGebiedenNederlandPage() {
           </div>
         </section>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#003F5C] mb-4">Meer over PFAS en waterfilters</h2>
-          <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/pfas-waterfilter" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS waterfilter gids</h3>
-              <p className="text-sm text-gray-600">Welke filters werken voor PFAS?</p>
-            </Link>
-            <Link href="/pfas-waterfilter/kopen" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS filter kopen</h3>
-              <p className="text-sm text-gray-600">Beste waterfilters voor PFAS-verwijdering</p>
-            </Link>
-            <Link href="/pfas-waterfilter/testen" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">Water testen op PFAS</h3>
-              <p className="text-sm text-gray-600">Laboratoriumanalyse stap voor stap</p>
-            </Link>
-            <Link href="/pfas-waterfilter/normen-2026" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS normen 2026</h3>
-              <p className="text-sm text-gray-600">EU-limiet en Nederlandse wetgeving</p>
-            </Link>
-            <Link href="/omgekeerde-osmose" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">Omgekeerde osmose gids</h3>
-              <p className="text-sm text-gray-600">Alles over osmosefilters in Nederland</p>
-            </Link>
-            <Link href="/pfas-water" className="block p-4 bg-[#E0F2FE] rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 className="font-semibold text-[#003F5C] mb-1">PFAS in drinkwater</h3>
-              <p className="text-sm text-gray-600">Risico&apos;s, normen en gezondheid</p>
-            </Link>
-          </div>
-        </section>
-
         <section className="mt-8 mb-10">
           <h2 className="text-xl font-bold text-[#005F8A] mb-4">Gerelateerde onderwerpen</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link href="/pfas-waterfilter" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS waterfilter overzicht</p>
-              <p className="text-sm text-gray-500">PFAS waterfilter overzicht</p>
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS-waterfilter gids</p>
+              <p className="text-sm text-gray-500">Welke filters PFAS verminderen en wat er gemeten is</p>
             </Link>
-            <Link href="/drinkwaternormen/pfas" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS-normen in drinkwater</p>
-              <p className="text-sm text-gray-500">PFAS-normen in drinkwater</p>
+            <Link href="/leidingwater/pfas" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS in leidingwater per regio</p>
+              <p className="text-sm text-gray-500">Hotspots in Nederland en hoe je jouw adres opzoekt</p>
             </Link>
-            <Link href="/stoffen-in-drinkwater/pfas-overzicht" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Wat zijn PFAS-stoffen?</p>
-              <p className="text-sm text-gray-500">Wat zijn PFAS-stoffen?</p>
+            <Link href="/pfas-waterfilter/huis" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS-filter per woningtype</p>
+              <p className="text-sm text-gray-500">Huur, koop of appartement: wat je kunt installeren</p>
             </Link>
             <Link href="/pfas-waterfilter/testen" className="group border border-gray-100 rounded-xl p-4 hover:border-[#005F8A] hover:shadow-sm transition-all">
-              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">PFAS testen in uw water</p>
-              <p className="text-sm text-gray-500">PFAS testen in uw water</p>
+              <p className="font-semibold text-gray-800 group-hover:text-[#005F8A] transition-colors">Water testen op PFAS</p>
+              <p className="text-sm text-gray-500">Laboratoriumanalyse stap voor stap</p>
             </Link>
           </div>
         </section>
+
+        <SourcesSection
+          sources={[
+            'Europese Drinkwaterrichtlijn 2020/2184/EU, PFAS-parameters van kracht per 12 januari 2026',
+            'RIVM, PFAS in drinkwater en de advieswaarde van 4,4 ng/L PFOA-equivalenten',
+            `Equinox Labs, labrapport ${PUREFILTER.name} (2026): ${PUREFILTER.labReportUrl}`,
+            `${FOUR_IN_ONE.labReport.lab}, rapport ${FOUR_IN_ONE.labReport.number} (${FOUR_IN_ONE.labReport.date}): ${FOUR_IN_ONE.labReport.url}`,
+          ]}
+        />
 
         <CTABanner context="osmose" />
       </div>
